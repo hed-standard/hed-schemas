@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED library="test" version="v0.0.1">
+<HED library="test" version="0.0.1">
    <node>
       <name>Event</name>
       <node>
