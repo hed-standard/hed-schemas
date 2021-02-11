@@ -1,0 +1,714 @@
+<?xml version="1.0" ?>
+<HED version="0.0.1-score">
+   <node>
+      <name>Modulators</name>
+      <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency).</description>
+      <node>
+         <name>Intermittent-photic-stimulation</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Hyperventilation</name>
+         <node>
+            <name>Quality-of-hyperventilation</name>
+            <node>
+               <name>Refused</name>
+            </node>
+            <node>
+               <name>Poor-effort</name>
+            </node>
+            <node>
+               <name>Good-effort</name>
+            </node>
+            <node>
+               <name>Excellent-effort</name>
+            </node>
+         </node>
+      </node>
+      <node>
+         <name>Sleep-deprivation</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Sleep-following-sleep-deprivation</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Natural-sleep</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Induced-sleep</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Drowsiness</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Awakening</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Medication-administered-during-recording</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Medication-withdrawal-or-reduction-during-recording</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Manual-eye-closure</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Manual-eye-opening</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Auditory-stimulation</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Nociceptive-stimulation</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Physical-effort</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Cognitive-tasks</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Other-modulators-and-procedures</name>
+         <node takesValue="true">
+            <name>#</name>
+         </node>
+      </node>
+   </node>
+   <node>
+      <name>Background-activity</name>
+      <description>An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.</description>
+      <node>
+         <name>Posterior-dominant-rhythm</name>
+         <description>Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.</description>
+      </node>
+      <node>
+         <name>Mu-rhythm</name>
+         <description>EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 µV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.</description>
+      </node>
+      <node>
+         <name>Other-organized-rhythms</name>
+         <description>EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfil the criteria of the posterior dominant rhythm.</description>
+      </node>
+      <node>
+         <name>Special-features</name>
+         <description>Special Features.</description>
+         <node>
+            <name>Continous-background-activity</name>
+         </node>
+         <node>
+            <name>Nearly-continous-background-activity</name>
+         </node>
+         <node>
+            <name>Discontinuous-background-activity</name>
+         </node>
+         <node>
+            <name>Burst-suppression</name>
+            <description>EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 µV) and which occurs simultaneously over all head regions.</description>
+         </node>
+         <node>
+            <name>Burst-attenuation</name>
+         </node>
+         <node>
+            <name>Suppression</name>
+            <description>Periods showing activity under 10 µV (referential montage) and interrupting the background (ongoing) activity.</description>
+         </node>
+         <node>
+            <name>Electrocerebral-inactivity</name>
+            <description>Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artefacts. Sensitivity has to be increased up to 2 µV/mm; recording time: at least 30 minutes.</description>
+         </node>
+      </node>
+   </node>
+   <node>
+      <name>Sleep-drowsiness</name>
+      <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
+      <node>
+         <name>Sleep-architecture</name>
+         <description>Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Sleep-stage-reached</name>
+         <description>For “normal sleep patterns” the sleep stages reached during the recording can be specified</description>
+         <node>
+            <name>N1</name>
+            <description>Sleep stage 1</description>
+         </node>
+         <node>
+            <name>N2</name>
+            <description>Sleep stage 2</description>
+         </node>
+         <node>
+            <name>N3</name>
+            <description>Sleep stage 3</description>
+         </node>
+         <node>
+            <name>REM</name>
+            <description>Rapid eye movement</description>
+         </node>
+      </node>
+      <node>
+         <name>Sleep-spindles</name>
+         <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 µV in the adult. Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Vertex-waves</name>
+         <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 µV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>K-complexes</name>
+         <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration &gt; 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Saw-tooth waves</name>
+         <description>Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>POSTS</name>
+         <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 µV. Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Hypnagogic-hypersynchrony</name>
+         <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Non-reactive-sleep</name>
+         <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with Findings-attributes tags</description>
+      </node>
+   </node>
+   <node>
+      <name>Interictal-findings</name>
+      <description>EEG patterns / transients that are distinguished form the background activity, considered abnormal, but are not recorded during ictal period (seizure) or postictal period; the presence of interictal findings does not necessarily imply that the patient has epilepsy.</description>
+      <node>
+         <name>Epileptiform-interictal-activity</name>
+      </node>
+      <node>
+         <name>Abnormal-interictal-rhythmic-activity</name>
+      </node>
+      <node>
+         <name>Special-patterns</name>
+      </node>
+   </node>
+   <node>
+      <name>Episodes</name>
+      <description>Clinical episodes or electrographic seizures.</description>
+   </node>
+   <node>
+      <name>Physiologic-patterns</name>
+      <description>EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.</description>
+   </node>
+   <node>
+      <name>Uncertain-significance-patterns</name>
+      <description>EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).</description>
+   </node>
+   <node>
+      <name>EEG-artifacts</name>
+   </node>
+   <node>
+      <name>Polygraphic-channels</name>
+   </node>
+   <node>
+      <name>Findings-attributes</name>
+      <node>
+         <name>Not-possible-to-determine</name>
+         <description>Not possible to determine</description>
+      </node>
+      <node>
+         <name>Normal</name>
+         <description>Normal</description>
+      </node>
+      <node>
+         <name>No-definite-abnormality</name>
+      </node>
+      <node>
+         <name>Abnormal</name>
+      </node>
+      <node>
+         <name>Yes</name>
+      </node>
+      <node>
+         <name>No</name>
+      </node>
+      <node>
+         <name>Frequency</name>
+         <description>Hz Values (numbers) typed in.</description>
+         <node takesValue="true" isNumeric="true" unitClass="frequency">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Amplitude</name>
+         <description>µV Values (numbers) typed in.</description>
+         <node takesValue="true" isNumeric="true" unitClass="amplitude">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Duration</name>
+         <description>An offset that is implicit after duration time passed from the onset.</description>
+         <node takesValue="true" isNumeric="true" unitClass="time">
+            <name>#</name>
+            <node>
+               <name>Symmetrical</name>
+            </node>
+            <node>
+               <name>LowerLeft</name>
+               <description>Lower on the left side.</description>
+            </node>
+            <node>
+               <name>LowerRigth</name>
+               <description>Lower on the right side.</description>
+            </node>
+         </node>
+      </node>
+      <node>
+         <name>Significance</name>
+         <description>Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Asymmetry</name>
+      </node>
+      <node>
+         <name>Increased</name>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Continous-during</name>
+         <description>Continous during non-rapid-eye-movement-sleep (NRS)</description>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Decreased</name>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Stopped-by</name>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Unmodified</name>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Only-during-sleep</name>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+      <node>
+         <name>Change-of-patterns</name>
+         <description>Change of patterns during sleep/awakening</description>
+         <node takesValue="true">
+            <name>#</name>
+            <description>free text</description>
+         </node>
+      </node>
+   </node>
+   <node>
+      <name>Findings-details</name>
+      <node>
+         <name>Findings-Morphology</name>
+         <node>
+            <name>Delta-activity</name>
+            <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+         </node>
+         <node>
+            <name>Theta-activity</name>
+            <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+         </node>
+         <node>
+            <name>Alpha-activity</name>
+            <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag</description>
+         </node>
+         <node>
+            <name>Beta-activity</name>
+            <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 µV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag</description>
+         </node>
+         <node>
+            <name>Gamma-activity</name>
+         </node>
+         <node>
+            <name>Spike</name>
+            <description>A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
+         </node>
+         <node>
+            <name>Spike-and-slow-wave</name>
+            <description>A pattern consisting of a spike followed by a slow wave.</description>
+         </node>
+         <node>
+            <name>Runs-of-rapid-spikes</name>
+            <description>Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity</description>
+         </node>
+         <node>
+            <name>Polyspikes</name>
+            <description>Two or more consecutive spikes.</description>
+         </node>
+         <node>
+            <name>Polyspike-and-slow-wave</name>
+            <description>Two or more consecutive spikes associated with one or more slow waves.</description>
+         </node>
+         <node>
+            <name>Sharp-wave</name>
+            <description>A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over ¼-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
+         </node>
+         <node>
+            <name>Sharp-and-slow-wave</name>
+            <description>A sequence of a sharp wave and a slow wave.</description>
+         </node>
+         <node>
+            <name>Slow-sharp-wave</name>
+            <description>A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave.</description>
+         </node>
+         <node>
+            <name>Hypsarrhythmia-classic</name>
+         </node>
+         <node>
+            <name>Hypsarrhythmia-modified</name>
+         </node>
+         <node>
+            <name>Polymorphic-delta</name>
+            <description>EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology.</description>
+         </node>
+         <node>
+            <name>FIRDA</name>
+            <description>Frontal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.</description>
+         </node>
+         <node>
+            <name>OIRDA</name>
+            <description>Occipital intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children</description>
+         </node>
+         <node>
+            <name>TIRDA</name>
+            <description>Temporal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
+         </node>
+      </node>
+      <node>
+         <name>Source-analysis</name>
+         <description>??? Look in the papaers how is this different from location ??? there are more options but seems the same...</description>
+      </node>
+      <node>
+         <name>Findings-Location</name>
+         <node>
+            <name>Laterality</name>
+            <node>
+               <name>Left</name>
+            </node>
+            <node>
+               <name>Rigth</name>
+            </node>
+            <node>
+               <name>Midline</name>
+            </node>
+            <node>
+               <name>Diffuse-asynchronous</name>
+            </node>
+         </node>
+         <node>
+            <name>Region</name>
+            <node>
+               <name>Frontal</name>
+            </node>
+            <node>
+               <name>Temporal</name>
+            </node>
+            <node>
+               <name>Central</name>
+            </node>
+            <node>
+               <name>Parietal</name>
+            </node>
+            <node>
+               <name>Occipital</name>
+            </node>
+         </node>
+         <node>
+            <name>Sensors</name>
+            <description>TO THINK HOW TO USE: list all electrodes/channels in montage??</description>
+         </node>
+      </node>
+      <node>
+         <name>Findings-Modulators</name>
+         <description>Accepts tags from Findings-attributes and Modulators. For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are shown as options.</description>
+         <node>
+            <name>Reactivity</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Eye-closure</name>
+            <description>Eye closure sensitivity. Used with Findings-attributes tags</description>
+         </node>
+      </node>
+      <node>
+         <name>Findings-Time-related-features</name>
+         <description>Important to estimate how often an interictal abnormality is seen in the recording.</description>
+         <node>
+            <name>Appearance-mode</name>
+            <description>Describes how the non-ictal EEG patern/graphoelement is distributed through the recording</description>
+            <node>
+               <name>Random</name>
+               <description>Occurrence of the the non-ictal EEG pattern / graphoelement without any rhytmicity / periodicity</description>
+            </node>
+            <node>
+               <name>Periodic</name>
+               <description>Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).</description>
+            </node>
+            <node>
+               <name>Variable</name>
+               <description>Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording</description>
+            </node>
+         </node>
+         <node>
+            <name>Discharge-patern</name>
+            <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
+            <node>
+               <name>Single-discharge</name>
+               <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Findings-attributes tags</description>
+            </node>
+            <node>
+               <name>Rhythmic-trains-or-bursts</name>
+               <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Findings-attributes tags</description>
+            </node>
+            <node>
+               <name>Arhythmic-trains-or-bursts</name>
+               <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Findings-attributes tags</description>
+            </node>
+            <node>
+               <name>Fragmented</name>
+               <node takesValue="true">
+                  <name>#</name>
+                  <description>free text</description>
+               </node>
+            </node>
+         </node>
+      </node>
+      <node>
+         <name>Incidence</name>
+         <description>how often it occurs/time-epoch</description>
+         <node>
+            <name>Only-once</name>
+         </node>
+         <node>
+            <name>Rare</name>
+            <description>less than 1/h</description>
+         </node>
+         <node>
+            <name>Uncommon</name>
+            <description>1/5 min to 1/h</description>
+         </node>
+         <node>
+            <name>Occasional</name>
+            <description>1/min to 1/5min</description>
+         </node>
+         <node>
+            <name>Frequent</name>
+            <description>1/10 s to 1/min</description>
+         </node>
+         <node>
+            <name>Abundant</name>
+            <description>&gt;1/10 s)</description>
+         </node>
+      </node>
+      <node>
+         <name>Prevalence</name>
+         <description>(the percentage of the recording covered by the train/burst</description>
+         <node>
+            <name>Rare</name>
+            <description>&lt;1%</description>
+         </node>
+         <node>
+            <name>Occasional</name>
+            <description>1–9%</description>
+         </node>
+         <node>
+            <name>Frequent</name>
+            <description>10–49%</description>
+         </node>
+         <node>
+            <name>Abundant</name>
+            <description>50–89%</description>
+         </node>
+         <node>
+            <name>Continuous</name>
+            <description>&gt;90%</description>
+         </node>
+      </node>
+      <node>
+         <name>Extent</name>
+         <description>percentage of occurrence during the recording</description>
+         <node takesValue="true" isNumeric="true">
+            <name>#</name>
+         </node>
+      </node>
+      <node>
+         <name>Propagation</name>
+         <description>Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>Multifocal</name>
+         <description>Used with Findings-attributes tags</description>
+      </node>
+      <node>
+         <name>PDR-Amplitude-range</name>
+         <description>Used with Findings-attributes tags</description>
+         <node>
+            <name>Low</name>
+            <description>Low (less than 20 µV)</description>
+         </node>
+         <node>
+            <name>Medium</name>
+            <description>Medium (between 20 and 70 µV)</description>
+         </node>
+         <node>
+            <name>High</name>
+            <description>High ( more than 70 µV)</description>
+         </node>
+      </node>
+      <node>
+         <name>PDR-Amplitude-asymmetry</name>
+         <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. Used with Asymmetry tags</description>
+      </node>
+      <node>
+         <name>PDR-Frequency-asymmetry</name>
+         <description>Used with Asymmetry tags</description>
+      </node>
+      <node>
+         <name>PDR-Eye-opening</name>
+         <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. Used with Findings-attributes tags</description>
+         <node>
+            <name>ReducedLeft</name>
+            <description>Reduced left side reactivity</description>
+         </node>
+         <node>
+            <name>ReducedRigth</name>
+            <description>Reduced right side reactivity</description>
+         </node>
+         <node>
+            <name>ReducedBoth</name>
+            <description>Reduced reactivity on both sides</description>
+         </node>
+      </node>
+      <node>
+         <name>PDR-Organization</name>
+         <description>Used with Findings-attributes tags</description>
+         <node>
+            <name>PoorlyOrganized</name>
+            <description>Poorly organized</description>
+         </node>
+         <node>
+            <name>Disorganized</name>
+            <description>Disorganized</description>
+         </node>
+         <node>
+            <name>MarkedlyDisorganized</name>
+            <description>Markedly disorganized</description>
+         </node>
+      </node>
+      <node>
+         <name>PDR-Caveat</name>
+         <description>Used with Findings-attributes tags</description>
+         <node>
+            <name>Only-open-eyes-during-the-recording</name>
+            <node takesValue="true">
+               <name>#</name>
+               <description>free text</description>
+            </node>
+         </node>
+         <node>
+            <name>Sleep-deprived</name>
+            <node takesValue="true">
+               <name>#</name>
+               <description>free text</description>
+            </node>
+         </node>
+         <node>
+            <name>Drowsy</name>
+            <node takesValue="true">
+               <name>#</name>
+               <description>free text</description>
+            </node>
+         </node>
+         <node>
+            <name>Only-following-hyperventilation</name>
+         </node>
+      </node>
+      <node>
+         <name>Absence-of-PDR</name>
+         <node>
+            <name>Artifacts</name>
+         </node>
+         <node>
+            <name>Extreme-low-voltage</name>
+         </node>
+         <node>
+            <name>Eye-closure-could-not-be-achieved</name>
+         </node>
+         <node>
+            <name>Lack-of-awake-period</name>
+         </node>
+         <node>
+            <name>Lack-of-compliance</name>
+         </node>
+         <node>
+            <name>Other-causes</name>
+         </node>
+      </node>
+   </node>
+</HED>
