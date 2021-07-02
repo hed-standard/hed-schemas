@@ -5,8 +5,11 @@
       <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency).</description>
       <node>
          <name>Intermittent-photic-stimulation</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
@@ -29,92 +32,137 @@
       </node>
       <node>
          <name>Sleep-deprivation</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Sleep-following-sleep-deprivation</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Natural-sleep</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Induced-sleep</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Drowsiness</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Awakening</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Medication-administered-during-recording</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Medication-withdrawal-or-reduction-during-recording</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Manual-eye-closure</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Manual-eye-opening</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Auditory-stimulation</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Nociceptive-stimulation</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Physical-effort</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Cognitive-tasks</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Other-modulators-and-procedures</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
    </node>
@@ -171,7 +219,7 @@
       </node>
       <node>
          <name>Sleep-stage-reached</name>
-         <description>For “normal sleep patterns” the sleep stages reached during the recording can be specified</description>
+         <description>For normal sleep patterns the sleep stages reached during the recording can be specified</description>
          <node>
             <name>N1</name>
             <description>Sleep stage 1</description>
@@ -199,10 +247,10 @@
       </node>
       <node>
          <name>K-complexes</name>
-         <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration &gt; 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags</description>
+         <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags</description>
       </node>
       <node>
-         <name>Saw-tooth waves</name>
+         <name>Saw-tooth-waves</name>
          <description>Used with Findings-attributes tags</description>
       </node>
       <node>
@@ -229,6 +277,21 @@
       </node>
       <node>
          <name>Special-patterns</name>
+         <node>
+            <name>PDs</name>
+            <description>Periodic discharges not further specified (PDs).</description>
+         </node>
+         <node>
+            <name>Extreme-delta-brush</name>
+         </node>
+         <node>
+            <name>Burst-suppression</name>
+            <description>? How is it different from tag in Background-activity?</description>
+         </node>
+         <node>
+            <name>Burst-attenuation</name>
+            <description>? How is it different from tag in Background-activity?</description>
+         </node>
       </node>
    </node>
    <node>
@@ -245,25 +308,21 @@
    </node>
    <node>
       <name>EEG-artifacts</name>
+      <description>When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.</description>
    </node>
    <node>
       <name>Polygraphic-channels</name>
+      <description>Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).</description>
    </node>
    <node>
       <name>Findings-attributes</name>
+      <description>Subtree tree for general properties</description>
       <node>
          <name>Not-possible-to-determine</name>
          <description>Not possible to determine</description>
       </node>
       <node>
-         <name>Normal</name>
-         <description>Normal</description>
-      </node>
-      <node>
          <name>No-definite-abnormality</name>
-      </node>
-      <node>
-         <name>Abnormal</name>
       </node>
       <node>
          <name>Yes</name>
@@ -274,33 +333,52 @@
       <node>
          <name>Frequency</name>
          <description>Hz Values (numbers) typed in.</description>
-         <node takesValue="true" isNumeric="true" unitClass="frequency">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>isNumeric</name>
+            </attribute>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
+            <attribute>
+               <name>unitClass</name>
+               <value>frequency</value>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Amplitude</name>
          <description>µV Values (numbers) typed in.</description>
-         <node takesValue="true" isNumeric="true" unitClass="amplitude">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>isNumeric</name>
+            </attribute>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
+            <attribute>
+               <name>unitClass</name>
+               <value>amplitude</value>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Duration</name>
          <description>An offset that is implicit after duration time passed from the onset.</description>
-         <node takesValue="true" isNumeric="true" unitClass="time">
+         <node>
             <name>#</name>
-            <node>
-               <name>Symmetrical</name>
-            </node>
-            <node>
-               <name>LowerLeft</name>
-               <description>Lower on the left side.</description>
-            </node>
-            <node>
-               <name>LowerRigth</name>
-               <description>Lower on the right side.</description>
-            </node>
+            <attribute>
+               <name>isNumeric</name>
+            </attribute>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
+            <attribute>
+               <name>unitClass</name>
+               <value>time</value>
+            </attribute>
          </node>
       </node>
       <node>
@@ -309,63 +387,71 @@
       </node>
       <node>
          <name>Asymmetry</name>
-      </node>
-      <node>
-         <name>Increased</name>
-         <node takesValue="true">
-            <name>#</name>
-            <description>free text</description>
+         <node>
+            <name>LowerLeft</name>
+            <description>Lower on the left side.</description>
+         </node>
+         <node>
+            <name>LowerRigth</name>
+            <description>Lower on the right side.</description>
          </node>
       </node>
       <node>
-         <name>Continous-during</name>
-         <description>Continous during non-rapid-eye-movement-sleep (NRS)</description>
-         <node takesValue="true">
+         <name>Increased</name>
+         <node>
             <name>#</name>
             <description>free text</description>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Decreased</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
             <description>free text</description>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Stopped-by</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
             <description>free text</description>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
+         </node>
+      </node>
+      <node>
+         <name>Triggered-by</name>
+         <node>
+            <name>#</name>
+            <description>free text</description>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
          <name>Unmodified</name>
-         <node takesValue="true">
+         <node>
             <name>#</name>
             <description>free text</description>
-         </node>
-      </node>
-      <node>
-         <name>Only-during-sleep</name>
-         <node takesValue="true">
-            <name>#</name>
-            <description>free text</description>
-         </node>
-      </node>
-      <node>
-         <name>Change-of-patterns</name>
-         <description>Change of patterns during sleep/awakening</description>
-         <node takesValue="true">
-            <name>#</name>
-            <description>free text</description>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
    </node>
    <node>
-      <name>Findings-details</name>
+      <name>Findings-property</name>
+      <description>Descriptive elements</description>
       <node>
-         <name>Findings-Morphology</name>
+         <name>Morphology-property</name>
          <node>
             <name>Delta-activity</name>
             <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
@@ -439,13 +525,95 @@
             <name>TIRDA</name>
             <description>Temporal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
          </node>
+         <node>
+            <name>Superimposed-activity</name>
+            <node>
+               <name>Fast-activity</name>
+            </node>
+            <node>
+               <name>Rhythmic-activity</name>
+            </node>
+         </node>
+         <node>
+            <name>Sharpness</name>
+            <node>
+               <name>Spiky</name>
+            </node>
+            <node>
+               <name>Sharp</name>
+            </node>
+            <node>
+               <name>Sharply-contoured</name>
+            </node>
+            <node>
+               <name>Blunt</name>
+            </node>
+         </node>
+         <node>
+            <name>Number-of-phases</name>
+            <node>
+               <name>1</name>
+            </node>
+            <node>
+               <name>2</name>
+            </node>
+            <node>
+               <name>3</name>
+            </node>
+            <node>
+               <name>greater-than-3</name>
+            </node>
+         </node>
+         <node>
+            <name>Triphasic-morphology</name>
+         </node>
+         <node>
+            <name>Absolute-amplitude</name>
+            <node>
+               <name>Very-low</name>
+               <description>&lt;20 µV)</description>
+            </node>
+            <node>
+               <name>Low</name>
+               <description>20–49 µV</description>
+            </node>
+            <node>
+               <name>Medium</name>
+               <description>50–199 µV</description>
+            </node>
+            <node>
+               <name>High</name>
+               <description>≥200 µV</description>
+            </node>
+         </node>
+         <node>
+            <name>Relative-amplitude</name>
+            <node>
+               <name>Less-than-equal-2</name>
+            </node>
+            <node>
+               <name>Greater-than-2</name>
+            </node>
+         </node>
+         <node>
+            <name>Polarity</name>
+            <node>
+               <name>Positive</name>
+            </node>
+            <node>
+               <name>Negative</name>
+            </node>
+            <node>
+               <name>Unclear</name>
+            </node>
+         </node>
       </node>
       <node>
          <name>Source-analysis</name>
-         <description>??? Look in the papaers how is this different from location ??? there are more options but seems the same...</description>
+         <description>? Look in the papaers how is this different from location as there are more options but seems the same...</description>
       </node>
       <node>
-         <name>Findings-Location</name>
+         <name>Location-property</name>
          <node>
             <name>Laterality</name>
             <node>
@@ -481,23 +649,120 @@
          </node>
          <node>
             <name>Sensors</name>
-            <description>TO THINK HOW TO USE: list all electrodes/channels in montage??</description>
+            <description>lists all corresponding sensors (electrodes/channels in montage)</description>
+            <node>
+               <name>#</name>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+            </node>
          </node>
       </node>
       <node>
-         <name>Findings-Modulators</name>
-         <description>Accepts tags from Findings-attributes and Modulators. For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are shown as options.</description>
+         <name>Modulators-property</name>
+         <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
          <node>
             <name>Reactivity</name>
             <description>Used with Findings-attributes tags</description>
          </node>
          <node>
-            <name>Eye-closure</name>
+            <name>Eye-closure-sensitivity</name>
             <description>Eye closure sensitivity. Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Eye-opening-passive</name>
+            <description>Passive eye opening. Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Medication-effect</name>
+            <description>Medications effect on EEG. Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Medication-reduction-effect</name>
+            <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Auditive-stimuli-effect</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Nociceptive-stimuli-effect</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Physical-effort-effect</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Cognitive-tasks-effect</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>Other-modulators-effect</name>
+            <description>Used with Findings-attributes tags</description>
+         </node>
+         <node>
+            <name>IPS-effect</name>
+            <node>
+               <name>Posterior-stimulus-dependent-response</name>
+            </node>
+            <node>
+               <name>Posterior-stimulus-independent-response-limited</name>
+               <description>limited to the stimulus-train</description>
+            </node>
+            <node>
+               <name>Posterior-stimulus-independent-response-self-sustained</name>
+            </node>
+            <node>
+               <name>Generalized-photoparoxysmal-response-limited</name>
+               <description>limited to the stimulus-train</description>
+            </node>
+            <node>
+               <name>Generalized-photoparoxysmal-response-self-sustained</name>
+            </node>
+            <node>
+               <name>Activation-of-pre-existing-epileptogenic-area</name>
+            </node>
+         </node>
+         <node>
+            <name>Modulators-effect</name>
+            <description>Tags for describing the influence of the modulators</description>
+            <node>
+               <name>Continuous-during-NRS</name>
+               <description>Continuous during non-rapid-eye-movement-sleep (NRS)</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Only-during</name>
+               <node>
+                  <name>#</name>
+                  <description>Only during Sleep/Awakening/Hyperventilation/Physical effort/Cognitive task. Free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Change-of-patterns</name>
+               <description>Change of patterns during sleep/awakening</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
+            </node>
          </node>
       </node>
       <node>
-         <name>Findings-Time-related-features</name>
+         <name>Time-related-features-property</name>
          <description>Important to estimate how often an interictal abnormality is seen in the recording.</description>
          <node>
             <name>Appearance-mode</name>
@@ -532,10 +797,130 @@
             </node>
             <node>
                <name>Fragmented</name>
-               <node takesValue="true">
+            </node>
+            <node>
+               <name>#</name>
+               <description>free text</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+            </node>
+         </node>
+      </node>
+      <node>
+         <name>PDR-property</name>
+         <node>
+            <name>PDR-Amplitude-range</name>
+            <description>Used with Findings-attributes tags</description>
+            <node>
+               <name>Low</name>
+               <description>Low (less than 20 µV)</description>
+            </node>
+            <node>
+               <name>Medium</name>
+               <description>Medium (between 20 and 70 µV)</description>
+            </node>
+            <node>
+               <name>High</name>
+               <description>High ( more than 70 µV)</description>
+            </node>
+         </node>
+         <node>
+            <name>PDR-Amplitude-asymmetry</name>
+            <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. Used with Asymmetry tags</description>
+         </node>
+         <node>
+            <name>PDR-Frequency-asymmetry</name>
+            <description>Used with Asymmetry tags</description>
+         </node>
+         <node>
+            <name>PDR-Eye-opening</name>
+            <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. Used with Findings-attributes tags</description>
+            <node>
+               <name>ReducedLeft</name>
+               <description>Reduced left side reactivity</description>
+            </node>
+            <node>
+               <name>ReducedRigth</name>
+               <description>Reduced right side reactivity</description>
+            </node>
+            <node>
+               <name>ReducedBoth</name>
+               <description>Reduced reactivity on both sides</description>
+            </node>
+         </node>
+         <node>
+            <name>PDR-Organization</name>
+            <description>Used with Findings-attributes tags</description>
+            <node>
+               <name>PoorlyOrganized</name>
+               <description>Poorly organized</description>
+            </node>
+            <node>
+               <name>Disorganized</name>
+               <description>Disorganized</description>
+            </node>
+            <node>
+               <name>MarkedlyDisorganized</name>
+               <description>Markedly disorganized</description>
+            </node>
+         </node>
+         <node>
+            <name>PDR-Caveat</name>
+            <description>Used with Findings-attributes tags</description>
+            <node>
+               <name>Only-open-eyes-during-the-recording</name>
+               <node>
                   <name>#</name>
                   <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
                </node>
+            </node>
+            <node>
+               <name>Sleep-deprived</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Drowsy</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Only-following-hyperventilation</name>
+            </node>
+         </node>
+         <node>
+            <name>Absence-of-PDR</name>
+            <node>
+               <name>Artifacts</name>
+            </node>
+            <node>
+               <name>Extreme-low-voltage</name>
+            </node>
+            <node>
+               <name>Eye-closure-could-not-be-achieved</name>
+            </node>
+            <node>
+               <name>Lack-of-awake-period</name>
+            </node>
+            <node>
+               <name>Lack-of-compliance</name>
+            </node>
+            <node>
+               <name>Other-causes</name>
             </node>
          </node>
       </node>
@@ -568,33 +953,39 @@
       </node>
       <node>
          <name>Prevalence</name>
-         <description>(the percentage of the recording covered by the train/burst</description>
+         <description>the percentage of the recording covered by the train/burst</description>
          <node>
             <name>Rare</name>
-            <description>&lt;1%</description>
+            <description>Less than 1%</description>
          </node>
          <node>
             <name>Occasional</name>
-            <description>1–9%</description>
+            <description>1 to 9%</description>
          </node>
          <node>
             <name>Frequent</name>
-            <description>10–49%</description>
+            <description>10 to 49%</description>
          </node>
          <node>
             <name>Abundant</name>
-            <description>50–89%</description>
+            <description>50 to 89%</description>
          </node>
          <node>
             <name>Continuous</name>
-            <description>&gt;90%</description>
+            <description>Greater than 90%</description>
          </node>
       </node>
       <node>
          <name>Extent</name>
          <description>percentage of occurrence during the recording</description>
-         <node takesValue="true" isNumeric="true">
+         <node>
             <name>#</name>
+            <attribute>
+               <name>isNumeric</name>
+            </attribute>
+            <attribute>
+               <name>takesValue</name>
+            </attribute>
          </node>
       </node>
       <node>
@@ -605,110 +996,132 @@
          <name>Multifocal</name>
          <description>Used with Findings-attributes tags</description>
       </node>
-      <node>
-         <name>PDR-Amplitude-range</name>
-         <description>Used with Findings-attributes tags</description>
-         <node>
-            <name>Low</name>
-            <description>Low (less than 20 µV)</description>
-         </node>
-         <node>
-            <name>Medium</name>
-            <description>Medium (between 20 and 70 µV)</description>
-         </node>
-         <node>
-            <name>High</name>
-            <description>High ( more than 70 µV)</description>
-         </node>
-      </node>
-      <node>
-         <name>PDR-Amplitude-asymmetry</name>
-         <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. Used with Asymmetry tags</description>
-      </node>
-      <node>
-         <name>PDR-Frequency-asymmetry</name>
-         <description>Used with Asymmetry tags</description>
-      </node>
-      <node>
-         <name>PDR-Eye-opening</name>
-         <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. Used with Findings-attributes tags</description>
-         <node>
-            <name>ReducedLeft</name>
-            <description>Reduced left side reactivity</description>
-         </node>
-         <node>
-            <name>ReducedRigth</name>
-            <description>Reduced right side reactivity</description>
-         </node>
-         <node>
-            <name>ReducedBoth</name>
-            <description>Reduced reactivity on both sides</description>
-         </node>
-      </node>
-      <node>
-         <name>PDR-Organization</name>
-         <description>Used with Findings-attributes tags</description>
-         <node>
-            <name>PoorlyOrganized</name>
-            <description>Poorly organized</description>
-         </node>
-         <node>
-            <name>Disorganized</name>
-            <description>Disorganized</description>
-         </node>
-         <node>
-            <name>MarkedlyDisorganized</name>
-            <description>Markedly disorganized</description>
-         </node>
-      </node>
-      <node>
-         <name>PDR-Caveat</name>
-         <description>Used with Findings-attributes tags</description>
-         <node>
-            <name>Only-open-eyes-during-the-recording</name>
-            <node takesValue="true">
-               <name>#</name>
-               <description>free text</description>
-            </node>
-         </node>
-         <node>
-            <name>Sleep-deprived</name>
-            <node takesValue="true">
-               <name>#</name>
-               <description>free text</description>
-            </node>
-         </node>
-         <node>
-            <name>Drowsy</name>
-            <node takesValue="true">
-               <name>#</name>
-               <description>free text</description>
-            </node>
-         </node>
-         <node>
-            <name>Only-following-hyperventilation</name>
-         </node>
-      </node>
-      <node>
-         <name>Absence-of-PDR</name>
-         <node>
-            <name>Artifacts</name>
-         </node>
-         <node>
-            <name>Extreme-low-voltage</name>
-         </node>
-         <node>
-            <name>Eye-closure-could-not-be-achieved</name>
-         </node>
-         <node>
-            <name>Lack-of-awake-period</name>
-         </node>
-         <node>
-            <name>Lack-of-compliance</name>
-         </node>
-         <node>
-            <name>Other-causes</name>
-         </node>
-      </node>
    </node>
+   <unitClassDefinitions/>
+   <unitModifierDefinitions/>
+   <schemaAttributeDefinitions>
+      <schemaAttributeDefinition>
+         <name>allowedCharacter</name>
+         <description>An attribute of unit classes schema value placeholders indicating a special character that is allowed in expressing the value of that placeholder.</description>
+         <property>
+            <name>unitClassProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>defaultUnits</name>
+         <description>An attribute of unit classes specifying the default units for a tag.</description>
+         <property>
+            <name>unitClassProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>extensionAllowed</name>
+         <description>Users can add unlimited levels of child nodes under this tag.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>isNumeric</name>
+         <description>The tag hashtag placeholder must be replaced by a numerical value.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>position</name>
+         <description>Used to specify the order of the required and recommended tags in canonical order for display. The position attribute value should be an integer and the order can start at 0 or 1. Required or recommended tags without this attribute or with negative position will be shown after the others in canonical ordering.</description>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>predicateType</name>
+         <description>One of propertyOf, subclassOf, passThrough -- used to facilitate mapping to OWL or RDF.</description>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>recommended</name>
+         <description>A HED string tagging an event is recommended to include this tag.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>relatedTag</name>
+         <description>Additional HED tags suggested to be used with this tag. This attribute is used by tagging tools.</description>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>requireChild</name>
+         <description>One of its descendants must be chosen to tag an event.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>required</name>
+         <description>Every HED string tagging an event should include this tag.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>SIUnit</name>
+         <description>Designates the name of an SI unit so it can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>unitClassProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>SIUnitModifier</name>
+         <description>SI unit modifier indicating a multiple or submultiple of a base unit.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>unitModifierProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>SIUnitSymbolModifier</name>
+         <description>SI unit symbol modifier indicating a multiple or submultiple of a base unit symbol.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>unitModifierProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>suggestedTag</name>
+         <description>Additional HED tags suggested to be used with this tag. This attribute is used by tagging tools.</description>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>takesValue</name>
+         <description>This tag will have a hashtag placeholder child in the schema which is expected to be replaced with a user-defined value.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>unique</name>
+         <description>Only one of this tag or its descendants can be used within a single tag group or event.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>unitSymbol</name>
+         <description>Abbreviation or symbol representing a type of unit. Unit symbols  represent both the singular and the plural and thus cannot be pluralized.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>unitClassProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>unitClass</name>
+         <description>Specifies the type of a unit for a tag.</description>
+      </schemaAttributeDefinition>
+   </schemaAttributeDefinitions>
 </HED>
