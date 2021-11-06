@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'HED library schema'
+project = 'HED schema library'
 copyright = '2021, HED Working Group'
 author = 'HED Working Group'
 

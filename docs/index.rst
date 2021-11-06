@@ -8,6 +8,7 @@ A PDF version of this document can be found `here <https://hed-library-schema.re
    :caption: Contents:
 
    Introduction.md
+   Library_schema_overview.md
    SCORE_library.md
 
 
