@@ -241,7 +241,7 @@ Reference:
                 ** Muscle-Name
                     *** <nowiki># {takesValue}[free text]</nowiki>
                 ** EMG-features
-                    *** Myoclonus-rhythmic <nowiki> [Used with Findings-attributes tags]</nowiki>]
+                    *** Myoclonus-rhythmic <nowiki> [Used with Findings-attributes tags]</nowiki>
                         **** <nowiki># {takesValue}[free text]</nowiki>
                     *** Myoclonus-arrhythmic
                         **** <nowiki># {takesValue}[free text]</nowiki>
