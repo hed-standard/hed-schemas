@@ -1,4 +1,4 @@
-Library schema
+# SCORE schema
 
 The variety and complexity of events in electrophysiological experiments makes full 
 documentation challenging. As more experiments move out of controlled laboratory environments
