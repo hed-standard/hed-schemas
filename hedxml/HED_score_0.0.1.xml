@@ -647,10 +647,10 @@ Reference:
                <node>
                   <name>#</name>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>takesValue</name>
+                     <name>isNumeric</name>
                   </attribute>
                </node>
             </node>
@@ -988,10 +988,10 @@ Reference:
             <node>
                <name>#</name>
                <attribute>
-                  <name>isNumeric</name>
+                  <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>takesValue</name>
+                  <name>isNumeric</name>
                </attribute>
                <attribute>
                   <name>unitClass</name>
@@ -1005,10 +1005,10 @@ Reference:
             <node>
                <name>#</name>
                <attribute>
-                  <name>isNumeric</name>
+                  <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>takesValue</name>
+                  <name>isNumeric</name>
                </attribute>
                <attribute>
                   <name>unitClass</name>
@@ -1022,10 +1022,10 @@ Reference:
             <node>
                <name>#</name>
                <attribute>
-                  <name>isNumeric</name>
+                  <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>takesValue</name>
+                  <name>isNumeric</name>
                </attribute>
                <attribute>
                   <name>unitClass</name>
@@ -1646,10 +1646,10 @@ Reference:
                <node>
                   <name>#</name>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>takesValue</name>
+                     <name>isNumeric</name>
                   </attribute>
                </node>
             </node>
@@ -2263,10 +2263,10 @@ Reference:
                   <node>
                      <name>#</name>
                      <attribute>
-                        <name>isNumeric</name>
+                        <name>takesValue</name>
                      </attribute>
                      <attribute>
-                        <name>takesValue</name>
+                        <name>isNumeric</name>
                      </attribute>
                      <attribute>
                         <name>unitClass</name>
@@ -2279,10 +2279,10 @@ Reference:
                   <node>
                      <name>#</name>
                      <attribute>
-                        <name>isNumeric</name>
+                        <name>takesValue</name>
                      </attribute>
                      <attribute>
-                        <name>takesValue</name>
+                        <name>isNumeric</name>
                      </attribute>
                      <attribute>
                         <name>unitClass</name>
@@ -2300,10 +2300,10 @@ Reference:
                <node>
                   <name>#</name>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>takesValue</name>
+                     <name>isNumeric</name>
                   </attribute>
                </node>
             </node>
@@ -2336,10 +2336,10 @@ Reference:
                <node>
                   <name>#</name>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>takesValue</name>
+                     <name>isNumeric</name>
                   </attribute>
                   <attribute>
                      <name>unitClass</name>
@@ -2397,9 +2397,6 @@ Reference:
          </node>
       </node>
    </schema>
-   <unitClassDefinitions/>
-   <unitModifierDefinitions/>
-   <valueClassDefinitions/>
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
          <name>allowedCharacter</name>
