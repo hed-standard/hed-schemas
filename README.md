@@ -1,4 +1,4 @@
-# Hierarchical Event Descriptors (HED) Library Schema
+# Hierarchical Event Descriptors (HED) Schema Library
 
 
 ## Viewing the HED vocabulary
