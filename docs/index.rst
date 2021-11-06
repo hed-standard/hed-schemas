@@ -4,7 +4,7 @@ Welcome to HED schema library documentation!
 A PDF version of this document can be found `here <https://hed-library-schema.readthedocs.io/_/downloads/en/latest/pdf/>`_
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 4
    :caption: Contents:
 
    Introduction.md
