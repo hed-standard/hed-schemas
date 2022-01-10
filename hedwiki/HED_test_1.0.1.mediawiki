@@ -1,4 +1,4 @@
-HED library:test, version: 0.0.1 
+HED library="test" version="1.0.1"
 
 !# start hed 
 
