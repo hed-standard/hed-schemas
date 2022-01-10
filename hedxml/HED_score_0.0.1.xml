@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="0.0.1-score">
+<HED library="score" version="0.0.1">
    <prologue>This schema is Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG: SCORE based on the first official release that includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
 Data sharing using standard definitions enables applications of automated tools to optimize analyses, reduce errors, and ultimately to advance the understanding of the human brain.
 This implementation of SCORE in an open-source, machine-readable format using HED to enables its use in machine analysis and mega-analysis.
@@ -192,10 +192,10 @@ Reference:
             <name>Special-features</name>
             <description>Special Features.</description>
             <node>
-               <name>Continous-background-activity</name>
+               <name>Continuous-background-activity</name>
             </node>
             <node>
-               <name>Nearly-continous-background-activity</name>
+               <name>Nearly-continuous-background-activity</name>
             </node>
             <node>
                <name>Discontinuous-background-activity</name>
@@ -313,7 +313,7 @@ Reference:
                   <name>Impaired-awareness</name>
                </node>
                <node>
-                  <name>Awareness-unkown</name>
+                  <name>Awareness-unknown</name>
                </node>
                <node>
                   <name>Focal-to-bilateral-tonic-clonic</name>
@@ -323,7 +323,7 @@ Reference:
                <name>Generalized-onset</name>
             </node>
             <node>
-               <name>Unkown-onset</name>
+               <name>Unknown-onset</name>
             </node>
             <node>
                <name>Unclassified</name>
@@ -477,7 +477,7 @@ Reference:
          </node>
       </node>
       <node>
-         <name>Uncertain-significance-patterns</name>
+         <name>Uncertain-significant-patterns</name>
          <description>EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).</description>
          <node>
             <name>Sharp-transient-pattern</name>
@@ -527,7 +527,7 @@ Reference:
             <description>Rhythmical activity recorded over cranial bone defects. Usually it is in the 6 to 11/sec range, does not respond to movements.</description>
          </node>
          <node>
-            <name>Other-uncertain-significance-patterns</name>
+            <name>Other-uncertain-significant-patterns</name>
          </node>
       </node>
       <node>
@@ -587,7 +587,7 @@ Reference:
                <description>Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
             </node>
             <node>
-               <name>EMG0artifact</name>
+               <name>EMG-artifact</name>
                <description>Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
             </node>
          </node>
@@ -603,7 +603,7 @@ Reference:
                <description>Artefacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).</description>
             </node>
             <node>
-               <name>Artifitial-ventilation-artifact</name>
+               <name>Artificial-ventilation-artifact</name>
             </node>
             <node>
                <name>Electrode-pops</name>
@@ -650,7 +650,8 @@ Reference:
                      <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
                   </attribute>
                </node>
             </node>
@@ -895,13 +896,6 @@ Reference:
                <node>
                   <name>PLMS</name>
                   <description>Periodic limb movements in sleep</description>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
                </node>
                <node>
                   <name>Spasm</name>
@@ -991,11 +985,12 @@ Reference:
                   <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>isNumeric</name>
+                  <name>valueClass</name>
+                  <value>numericClass</value>
                </attribute>
                <attribute>
                   <name>unitClass</name>
-                  <value>frequency</value>
+                  <value>frequencyUnits</value>
                </attribute>
             </node>
          </node>
@@ -1008,11 +1003,8 @@ Reference:
                   <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>isNumeric</name>
-               </attribute>
-               <attribute>
-                  <name>unitClass</name>
-                  <value>amplitude</value>
+                  <name>valueClass</name>
+                  <value>numericClass</value>
                </attribute>
             </node>
          </node>
@@ -1025,11 +1017,12 @@ Reference:
                   <name>takesValue</name>
                </attribute>
                <attribute>
-                  <name>isNumeric</name>
+                  <name>valueClass</name>
+                  <value>numericClass</value>
                </attribute>
                <attribute>
                   <name>unitClass</name>
-                  <value>timeUnits/second</value>
+                  <value>timeUnits</value>
                </attribute>
             </node>
          </node>
@@ -1044,7 +1037,7 @@ Reference:
                <description>Lower on the left side.</description>
             </node>
             <node>
-               <name>LowerRigth</name>
+               <name>LowerRight</name>
                <description>Lower on the right side.</description>
             </node>
          </node>
@@ -1529,7 +1522,7 @@ Reference:
             </node>
             <node>
                <name>Medication-reduction-effect-clinical</name>
-               <description>Medications reduction or withdrawl clinical effect. Used with Findings-attributes tags</description>
+               <description>Medications reduction or withdrawal clinical effect. Used with Findings-attributes tags</description>
             </node>
             <node>
                <name>Other-modulators-effect-clinical</name>
@@ -1600,7 +1593,7 @@ Reference:
             <description>Important to estimate how often an interictal abnormality is seen in the recording.</description>
             <node>
                <name>Appearance-mode</name>
-               <description>Describes how the non-ictal EEG patern/graphoelement is distributed through the recording</description>
+               <description>Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording</description>
                <node>
                   <name>Random</name>
                   <description>Occurrence of the the non-ictal EEG pattern / graphoelement without any rhytmicity / periodicity</description>
@@ -1615,7 +1608,7 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Discharge-patern</name>
+               <name>Discharge-pattern</name>
                <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
                <node>
                   <name>Single-discharge</name>
@@ -1631,13 +1624,13 @@ Reference:
                </node>
                <node>
                   <name>Fragmented</name>
-               </node>
-               <node>
-                  <name>#</name>
-                  <description>free text</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1649,7 +1642,8 @@ Reference:
                      <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
                   </attribute>
                </node>
             </node>
@@ -1657,7 +1651,7 @@ Reference:
          <node>
             <name>PDR-property</name>
             <node>
-               <name>PDR-Amplitude-range</name>
+               <name>PDR-amplitude-range</name>
                <description>Used with Findings-attributes tags</description>
                <node>
                   <name>Low-range</name>
@@ -2266,11 +2260,12 @@ Reference:
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
-                        <name>isNumeric</name>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
                      </attribute>
                      <attribute>
                         <name>unitClass</name>
-                        <value>timeUnits/second</value>
+                        <value>timeUnits</value>
                      </attribute>
                   </node>
                </node>
@@ -2282,11 +2277,12 @@ Reference:
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
-                        <name>isNumeric</name>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
                      </attribute>
                      <attribute>
                         <name>unitClass</name>
-                        <value>timeUnits/second</value>
+                        <value>timeUnits</value>
                      </attribute>
                   </node>
                </node>
@@ -2303,7 +2299,8 @@ Reference:
                      <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
                   </attribute>
                </node>
             </node>
@@ -2339,11 +2336,12 @@ Reference:
                      <name>takesValue</name>
                   </attribute>
                   <attribute>
-                     <name>isNumeric</name>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
                   </attribute>
                   <attribute>
                      <name>unitClass</name>
-                     <value>timeUnits/second</value>
+                     <value>timeUnits</value>
                   </attribute>
                </node>
             </node>
@@ -2397,42 +2395,685 @@ Reference:
          </node>
       </node>
    </schema>
+   <unitClassDefinitions>
+      <unitClassDefinition>
+         <name>accelerationUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m-per-s^2</value>
+         </attribute>
+         <unit>
+            <name>m-per-s^2</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>angleUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>radian</value>
+         </attribute>
+         <unit>
+            <name>radian</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>rad</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>degree</name>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>areaUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m^2</value>
+         </attribute>
+         <unit>
+            <name>m^2</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>currencyUnits</name>
+         <description>Units indicating the worth of something.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>$</value>
+         </attribute>
+         <unit>
+            <name>dollar</name>
+         </unit>
+         <unit>
+            <name>$</name>
+            <attribute>
+               <name>unitPrefix</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>point</name>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>frequencyUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>Hz</value>
+         </attribute>
+         <unit>
+            <name>hertz</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Hz</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>intensityUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>dB</value>
+         </attribute>
+         <unit>
+            <name>dB</name>
+            <description>Intensity expressed as ratio to a threshold. Often used for sound intensity.</description>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>candela</name>
+            <description>Units used to express light intensity.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>cd</name>
+            <description>Units used to express light intensity.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>jerkUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m-per-s^3</value>
+         </attribute>
+         <unit>
+            <name>m-per-s^3</name>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>memorySizeUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>B</value>
+         </attribute>
+         <unit>
+            <name>byte</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>B</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>physicalLengthUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m</value>
+         </attribute>
+         <unit>
+            <name>foot</name>
+         </unit>
+         <unit>
+            <name>inch</name>
+         </unit>
+         <unit>
+            <name>metre</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>m</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mile</name>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>speedUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m-per-s</value>
+         </attribute>
+         <unit>
+            <name>m-per-s</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mph</name>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>kph</name>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>timeUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>s</value>
+         </attribute>
+         <unit>
+            <name>second</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>s</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>day</name>
+         </unit>
+         <unit>
+            <name>minute</name>
+         </unit>
+         <unit>
+            <name>hour</name>
+            <description>Should be in 24-hour format.</description>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>volumeUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>m^3</value>
+         </attribute>
+         <unit>
+            <name>m^3</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>weightUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>g</value>
+         </attribute>
+         <unit>
+            <name>g</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>gram</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+         </unit>
+         <unit>
+            <name>pound</name>
+         </unit>
+         <unit>
+            <name>lb</name>
+         </unit>
+      </unitClassDefinition>
+   </unitClassDefinitions>
+   <unitModifierDefinitions>
+      <unitModifierDefinition>
+         <name>deca</name>
+         <description>SI unit multiple representing 10^1</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>da</name>
+         <description>SI unit multiple representing 10^1</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>hecto</name>
+         <description>SI unit multiple representing 10^2</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>h</name>
+         <description>SI unit multiple representing 10^2</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>kilo</name>
+         <description>SI unit multiple representing 10^3</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>k</name>
+         <description>SI unit multiple representing 10^3</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>mega</name>
+         <description>SI unit multiple representing 10^6</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>M</name>
+         <description>SI unit multiple representing 10^6</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>giga</name>
+         <description>SI unit multiple representing 10^9</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>G</name>
+         <description>SI unit multiple representing 10^9</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>tera</name>
+         <description>SI unit multiple representing 10^12</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>T</name>
+         <description>SI unit multiple representing 10^12</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>peta</name>
+         <description>SI unit multiple representing 10^15</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>P</name>
+         <description>SI unit multiple representing 10^15</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>exa</name>
+         <description>SI unit multiple representing 10^18</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>E</name>
+         <description>SI unit multiple representing 10^18</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>zetta</name>
+         <description>SI unit multiple representing 10^21</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>Z</name>
+         <description>SI unit multiple representing 10^21</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>yotta</name>
+         <description>SI unit multiple representing 10^24</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>Y</name>
+         <description>SI unit multiple representing 10^24</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>deci</name>
+         <description>SI unit submultiple representing 10^-1</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>d</name>
+         <description>SI unit submultiple representing 10^-1</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>centi</name>
+         <description>SI unit submultiple representing 10^-2</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>c</name>
+         <description>SI unit submultiple representing 10^-2</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>milli</name>
+         <description>SI unit submultiple representing 10^-3</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>m</name>
+         <description>SI unit submultiple representing 10^-3</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>micro</name>
+         <description>SI unit submultiple representing 10^-6</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>u</name>
+         <description>SI unit submultiple representing 10^-6</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>nano</name>
+         <description>SI unit submultiple representing 10^-9</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>n</name>
+         <description>SI unit submultiple representing 10^-9</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>pico</name>
+         <description>SI unit submultiple representing 10^-12</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>p</name>
+         <description>SI unit submultiple representing 10^-12</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>femto</name>
+         <description>SI unit submultiple representing 10^-15</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>f</name>
+         <description>SI unit submultiple representing 10^-15</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>atto</name>
+         <description>SI unit submultiple representing 10^-18</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>a</name>
+         <description>SI unit submultiple representing 10^-18</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>zepto</name>
+         <description>SI unit submultiple representing 10^-21</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>z</name>
+         <description>SI unit submultiple representing 10^-21</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>yocto</name>
+         <description>SI unit submultiple representing 10^-24</description>
+         <attribute>
+            <name>SIUnitModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+      <unitModifierDefinition>
+         <name>y</name>
+         <description>SI unit submultiple representing 10^-24</description>
+         <attribute>
+            <name>SIUnitSymbolModifier</name>
+         </attribute>
+      </unitModifierDefinition>
+   </unitModifierDefinitions>
+   <valueClassDefinitions>
+      <valueClassDefinition>
+         <name>dateTimeClass</name>
+         <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.</description>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>digits</value>
+            <value>T</value>
+            <value>-</value>
+            <value>:</value>
+         </attribute>
+      </valueClassDefinition>
+      <valueClassDefinition>
+         <name>nameClass</name>
+         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.</description>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>letters</value>
+            <value>digits</value>
+            <value>_</value>
+            <value>-</value>
+         </attribute>
+      </valueClassDefinition>
+      <valueClassDefinition>
+         <name>numericClass</name>
+         <description>Value must be a valid numerical value.</description>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>digits</value>
+            <value>E</value>
+            <value>e</value>
+            <value>+</value>
+            <value>-</value>
+            <value>.</value>
+         </attribute>
+      </valueClassDefinition>
+      <valueClassDefinition>
+         <name>posixPath</name>
+         <description>Posix path specification.</description>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>digits</value>
+            <value>letters</value>
+            <value>/</value>
+            <value>:</value>
+         </attribute>
+      </valueClassDefinition>
+      <valueClassDefinition>
+         <name>textClass</name>
+         <description>Value class designating values that have the characteristics of text such as in descriptions.</description>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>letters</value>
+            <value>digits</value>
+            <value>blank</value>
+            <value>+</value>
+            <value>-</value>
+            <value>:</value>
+            <value>;</value>
+            <value>.</value>
+            <value>/</value>
+            <value>(</value>
+            <value>)</value>
+            <value>?</value>
+            <value>*</value>
+            <value>%</value>
+            <value>$</value>
+            <value>@</value>
+         </attribute>
+      </valueClassDefinition>
+   </valueClassDefinitions>
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
          <name>allowedCharacter</name>
-         <description>A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder with those units.</description>
+         <description>A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
          <property>
             <name>valueClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>defaultUnits</name>
-         <description>A schema attribute of unit classes specifying the default units for a tag.</description>
+         <description>A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.</description>
          <property>
             <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>extensionAllowed</name>
-         <description>A schema attribute indicating that users can add unlimited levels of child nodes under this tag.</description>
+         <description>A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
          <property>
             <name>boolProperty</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>isNumeric</name>
-         <description>A schema attribute indicating that the tag hashtag placeholder must be replaced by a numerical value.</description>
-         <property>
-            <name>boolProperty</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>position</name>
-         <description>Used to specify the order of the required and recommended tags in canonical order for display. The position attribute value should be an integer and the order can start at 0 or 1. Required or recommended tags without this attribute or with negative position will be shown after the others in canonical ordering.</description>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>predicateType</name>
-         <description>One of propertyOf, subclassOf, passThrough -- used to facilitate mapping to OWL or RDF.</description>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>recommended</name>
@@ -2502,7 +3143,7 @@ Reference:
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>takesValue</name>
-         <description>A schema attribute indicating the tag is a hashtag placeholder which is expected to be replaced with a user-defined value.</description>
+         <description>A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -2547,7 +3188,7 @@ Reference:
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>valueClass</name>
-         <description>A schema attribute indicating this is a value class.</description>
+         <description>A schema attribute specifying which value class this value tag belongs to.</description>
       </schemaAttributeDefinition>
    </schemaAttributeDefinitions>
    <propertyDefinitions>
