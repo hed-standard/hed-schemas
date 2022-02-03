@@ -62,9 +62,9 @@ Reference:
         ** Continuous-background-activity
         ** Nearly-continuous-background-activity
         ** Discontinuous-background-activity
-        ** Background-Burst-suppression <nowiki>[EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV) and which occurs simultaneously over all head regions.]</nowiki>
-        ** Background-sBurst-attenuation
-        ** Suppression <nowiki>[Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity.]</nowiki>
+        ** Background-burst-suppression <nowiki>[EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV) and which occurs simultaneously over all head regions.]</nowiki>
+        ** Background-burst-attenuation
+        ** Background-activity-suppression <nowiki>[Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity.]</nowiki>
         ** Electrocerebral-inactivity <nowiki>[Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artefacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes.]</nowiki>
 
 
@@ -269,32 +269,12 @@ Reference:
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 
-'''Findings-attributes''' <nowiki> [Subtree tree for general properties]</nowiki>
+'''Finding-attributes''' <nowiki> [Subtree tree for general properties]</nowiki>
 
-    * Not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-    * No-definite-abnormality
-    * Yes
-    * No
+    * Significance <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema 'Normal'/'Abnormal' tags]</nowiki>
+        ** No-definite-abnormality
+        ** Significance-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-    * Frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
-        ** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-
-    * Amplitude <nowiki>[microV Values (numbers) typed in.]</nowiki>
-        ** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
-
-    * Duration <nowiki> [An offset that is implicit after duration time passed from the onset.] </nowiki>
-        ** <nowiki> # {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-
-    * Significance <nowiki>[Used with Findings-attributes tags]</nowiki>
-
-    * Asymmetry
-        ** LowerLeft <nowiki>[Lower on the left side.]</nowiki>
-        ** LowerRight <nowiki>[Lower on the right side.]</nowiki>
-
-    * Increased
-        ** <nowiki># {takesValue}[free text]</nowiki>
-    * Decreased
-        ** <nowiki># {takesValue}[free text]</nowiki>
     * Stopped-by
         ** <nowiki># {takesValue}[free text]</nowiki>
     * Triggered-by
@@ -303,14 +283,40 @@ Reference:
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 
-'''Findings-property ''' <nowiki> [Descriptive elements. Similar to main HED /Property Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
+'''Finding-property ''' <nowiki> [Descriptive elements. Similar to main HED /Property Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
-    * Morphology-property
+    * Signal-morphology-property
         ** Delta-activity <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag]</nowiki>
+            ***  Delta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            ***  Delta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
+            *** <nowiki># {takesValue}[free text]</nowiki>
+
         ** Theta-activity <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag]</nowiki>
+            ***  Theta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            ***  Theta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
+            *** <nowiki># {takesValue}[free text]</nowiki>
         ** Alpha-activity <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag]</nowiki>
+            ***  Alpha-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            ***  Alpha-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
+            *** <nowiki># {takesValue}[free text]</nowiki>
         ** Beta-activity <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag]</nowiki>
+            *** Beta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Beta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
+            *** <nowiki># {takesValue}[free text]</nowiki>
         ** Gamma-activity
+            ***  Gamma-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            ***  Gamma-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
+            *** <nowiki># {takesValue}[free text]</nowiki>
         ** Spike <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies. ]</nowiki>
         ** Spike-and-slow-wave <nowiki>[A pattern consisting of a spike followed by a slow wave.]</nowiki>
         ** Runs-of-rapid-spikes <nowiki> [Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity] </nowiki>
@@ -369,15 +375,15 @@ Reference:
         ** Brain-region-laterality <nowiki> [Uses Location-property/Laterality tags] </nowiki>
         ** Brain-region-SA
 
-    * Location-property
-        ** Laterality
+    * Location-property <nowiki>[Location can be scored for findings.]</nowiki>
+        ** Brain-laterality
             *** Left
             *** Left-greater-right
             *** Right
             *** Right-greater-left
             *** Midline
             *** Diffuse-asynchronous
-        ** Region
+        ** Brain-region
             *** Frontal
             *** Temporal
             *** Central
@@ -391,7 +397,7 @@ Reference:
             *** Trunk
             *** Visceral
             *** Hemi
-        ** Centricity
+        ** Brain-Centricity
             *** Axial
             *** Proximal-limb
             *** Distal-limb
@@ -400,17 +406,29 @@ Reference:
         ** Propagation <nowiki>[Used with Findings-attributes tags]</nowiki>
         ** Multifocal <nowiki>[Used with Findings-attributes tags]</nowiki>
 
-        * Modulators-property <nowiki>[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
-        ** Reactivity <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity. Used with Findings-attributes tags]</nowiki>
-        ** Eye-opening-passive <nowiki>[Passive eye opening. Used with Findings-attributes tags]</nowiki>
-        ** Medication-effect-EEG <nowiki>[Medications effect on EEG. Used with Findings-attributes tags]</nowiki>
-        ** Medication-reduction-effect-EEG <nowiki>[Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags]</nowiki>
-        ** Auditive-stimuli-effect <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Other-modulators-effect-EEG <nowiki>[Used with Findings-attributes tags]</nowiki>
+    * Modulators-property <nowiki>[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
+        ** Reactivity <nowiki></nowiki>
+            *** Reactive
+            *** Not-reactive
+        ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity.]</nowiki>
+            *** Eye-closure-sensitivity-exists
+            *** No-eye-closure-sensitivity
+        ** Eye-opening-passive <nowiki>[Passive eye opening. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Eye-opening-passive-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Medication-effect-EEG <nowiki>[Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Medication-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Medication-reduction-effect-EEG <nowiki>[Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Medication-reduction-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Auditive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Auditive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Nociceptive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Physical-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+            *** Cognitive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Other-modulators-effect-EEG
+            *** <nowiki># {takesValue}[free text]</nowiki>
         ** Facilitating-factors <nowiki>[Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence).]</nowiki>
             *** Alcohol
                 **** <nowiki># {takesValue}[free text]</nowiki>
@@ -433,15 +451,29 @@ Reference:
                  **** <nowiki># {takesValue}[free text]</nowiki>
         ** Medication-effect-clinical <nowiki>[Medications clinical effect. Used with Findings-attributes tags]</nowiki>
         ** Medication-reduction-effect-clinical <nowiki>[Medications reduction or withdrawal clinical effect. Used with Findings-attributes tags]</nowiki>
-        ** Other-modulators-effect-clinical <nowiki>[Used with Findings-attributes tags]</nowiki>
+        ** Other-modulators-effect-clinical
+            *** <nowiki># {takesValue}[free text]</nowiki>
 
         ** IPS-effect
-            *** Posterior-stimulus-dependent-response
-            *** Posterior-stimulus-independent-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
-            *** Posterior-stimulus-independent-response-self-sustained
-            *** Generalized-photoparoxysmal-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
-            *** Generalized-photoparoxysmal-response-self-sustained
-            *** Activation-of-pre-existing-epileptogenic-area
+            *** Posterior-stimulus-dependent-IPS-response
+                ***  Posterior-stimulus-dependent-IPS-response-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>        
+            *** Posterior-stimulus-independent-IPS-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
+                ***  Posterior-stimulus-independent-IPS-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Posterior-stimulus-independent-IPS-response-self-sustained
+                ***  Posterior-stimulus-independent-IPS-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Generalized-photoparoxysmal-IPS-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
+                ***  Generalized-photoparoxysmal-IPS-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Generalized-photoparoxysmal-IPS-response-self-sustained
+                ***  Generalized-photoparoxysmal-IPS-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Activation-of-pre-existing-epileptogenic-area-IPS-effect
+                ***  Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                    **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            *** Unmodified-IPS-effect
 
         ** Modulators-effect <nowiki>[Tags for describing the influence of the modulators]</nowiki>
             *** Continuous-during-NRS <nowiki>[Continuous during non-rapid-eye-movement-sleep (NRS)]</nowiki>
@@ -465,36 +497,50 @@ Reference:
         ** Extent <nowiki>[percentage of occurrence during the recording (background activity)]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
-    * PDR-property
-        ** PDR-amplitude-range <nowiki>[Used with Findings-attributes tags]</nowiki>
+    * PDR-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
+        
+        **  PDR-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+            
+        ** PDR-amplitude-range
             *** Low-range <nowiki>[Low (less than 20 microV)]</nowiki>
             *** Medium-range <nowiki>[Medium (between 20 and 70 microV)]</nowiki>
             *** High-range <nowiki>[High ( more than 70 microV)]</nowiki>
+            **** PDR-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. Used with Asymmetry tags]</nowiki>
+        ** PDR-Amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema 'Symmetrical' tag]</nowiki>
+            *** PDR-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
+            *** PDR-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
+            *** PDR-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Frequency-asymmetry <nowiki>[Used with Asymmetry tags]</nowiki>
+        ** PDR-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema 'Symmetrical' tag]</nowiki>
+            *** PDR-frequency-asymmetry-LowerLeft <nowiki>[Hz lower on the left side.]</nowiki>
+            *** PDR-frequency-asymmetry-LowerRight <nowiki>[Hz lower on the right side.]</nowiki>
 
-        ** PDR-Eye-opening <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. Used with Findings-attributes tags]</nowiki>
-            *** ReducedLeft <nowiki>[Reduced left side reactivity]</nowiki>
-            *** ReducedRigth <nowiki>[Reduced right side reactivity]</nowiki>
-            *** ReducedBoth <nowiki>[Reduced reactivity on both sides]</nowiki>
+        ** PDR-Eye-opening-reactivity <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
+            *** PDR-Eye-opening-reactivity-exists <nowiki>[When annotated 'Yes']</nowiki>
+            *** PDR-Eye-opening-reactivity-reducedLeft <nowiki>[Reduced left side reactivity]</nowiki>
+            *** PDR-Eye-opening-reactivity-reducedRigth <nowiki>[Reduced right side reactivity]</nowiki>
+            *** PDR-Eye-opening-reactivity-reducedBoth <nowiki>[Reduced reactivity on both sides]</nowiki>
+            *** PDR-Eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Organization <nowiki>[Used with Findings-attributes tags]</nowiki>
-            *** PoorlyOrganized <nowiki>[Poorly organized]</nowiki>
-            *** Disorganized <nowiki>[Disorganized]</nowiki>
-            *** MarkedlyDisorganized <nowiki>[Markedly disorganized]</nowiki>
+        ** PDR-Organization <nowiki>[When normal could be labeled with base schema 'Normal' tag]</nowiki>
+            *** PDR-Organization-poorlyOrganized <nowiki>[Poorly organized]</nowiki>
+            *** PDR-Organization-disorganized <nowiki>[Disorganized]</nowiki>
+            *** PDR-Organization-markedlyDisorganized <nowiki>[Markedly disorganized]</nowiki>
 
-        ** PDR-Caveat <nowiki>[Used with Findings-attributes tags]</nowiki>
-            *** Only-open-eyes-during-the-recording
+        ** PDR-Caveat <nowiki>[Caveats to the annotation of PDR]</nowiki>
+            *** No-PDR-Caveat
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Sleep-deprived-caveat
+            *** PDR-Caveat-only-open-eyes-during-the-recording
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Drowsy
+            *** PDR-Caveat-sleep-deprived-caveat
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Only-following-hyperventilation
+            *** PDR-Caveat-drowsy
+                **** <nowiki># {takesValue}[free text]</nowiki>
+            *** PDR-Caveat-only-following-hyperventilation
 
-        ** Absence-of-PDR
+        ** Absence-of-PDR <nowiki>[Reason for absence of PDR]</nowiki>
             *** Artifacts
             *** Extreme-low-voltage
             *** Eye-closure-could-not-be-achieved
@@ -503,19 +549,19 @@ Reference:
             *** Other-causes
 
     * Incidence <nowiki>[how often it occurs/time-epoch]</nowiki>
-        ** Only-once
+        ** Only-once-incidence
         ** Rare-incidence <nowiki> [less than 1/h]</nowiki>
-        ** Uncommon <nowiki>[1/5 min to 1/h]</nowiki>
+        ** Uncommon-incidence <nowiki>[1/5 min to 1/h]</nowiki>
         ** Occasional-incidence <nowiki>[1/min to 1/5min]</nowiki>
         ** Frequent-incidence <nowiki>[1/10 s to 1/min]</nowiki>
         ** Abundant-incidence <nowiki>[ greater than 1/10 s)]</nowiki>
 
     * Prevalence <nowiki>[the percentage of the recording covered by the train/burst]</nowiki>
-        ** Rare <nowiki>[Less than 1 percents]</nowiki>
-        ** Occasional <nowiki>[1 to 9 percents]</nowiki>
-        ** Frequent <nowiki>[10 to 49 percents]</nowiki>
-        ** Abundant <nowiki>[50 to 89 percents]</nowiki>
-        ** Continuous <nowiki>[Greater than 90 percents]</nowiki>
+        ** Rare-prevalence <nowiki>[Less than 1 percents]</nowiki>
+        ** Occasional- <nowiki>[1 to 9 percents]</nowiki>
+        ** Frequent-prevalence <nowiki>[10 to 49 percents]</nowiki>
+        ** Abundant-prevalence <nowiki>[50 to 89 percents]</nowiki>
+        ** Continuous-prevalence <nowiki>[Greater than 90 percents]</nowiki>
 
     * Episode-property
         ** Epileptic-seizure-classification <nowiki> [Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
@@ -668,135 +714,135 @@ Reference:
 !# end schema 
 
 '''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-* accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki>
-** m-per-s^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
-* angleUnits <nowiki>{defaultUnits=radian}</nowiki>
-** radian <nowiki>{SIUnit}</nowiki>
-** rad <nowiki>{SIUnit, unitSymbol}</nowiki>
-** degree
-* areaUnits <nowiki>{defaultUnits=m^2}</nowiki>
-** m^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
-* currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki>
-** dollar
-** $ <nowiki>{unitPrefix, unitSymbol}</nowiki>
-** point
-* frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
-** hertz  <nowiki>{SIUnit}</nowiki>
-** Hz <nowiki>{SIUnit, unitSymbol}</nowiki>
-* intensityUnits <nowiki>{defaultUnits=dB}</nowiki>
-** dB <nowiki>{unitSymbol}[Intensity expressed as ratio to a threshold. Often used for sound intensity.]</nowiki>
-** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki>
-** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>
-* jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki>
-** m-per-s^3 <nowiki>{unitSymbol}</nowiki>
-* memorySizeUnits <nowiki>{defaultUnits=B}</nowiki>
-** byte <nowiki>{SIUnit}</nowiki>
-** B <nowiki>{SIUnit, unitSymbol}</nowiki>
-* physicalLengthUnits <nowiki>{defaultUnits=m}</nowiki>
-** foot
-** inch
-** metre <nowiki>{SIUnit}</nowiki>
-** m <nowiki>{SIUnit, unitSymbol}</nowiki>
-** mile
-* speedUnits <nowiki>{defaultUnits=m-per-s}</nowiki>
-** m-per-s <nowiki>{SIUnit, unitSymbol}</nowiki>
-** mph <nowiki>{unitSymbol}</nowiki>
-** kph <nowiki>{unitSymbol}</nowiki>
-* timeUnits <nowiki>{defaultUnits=s}</nowiki>
-** second <nowiki>{SIUnit}</nowiki>
-** s <nowiki>{SIUnit, unitSymbol}</nowiki>
-** day
-** minute
-** hour <nowiki>[Should be in 24-hour format.]</nowiki>
-* volumeUnits <nowiki>{defaultUnits=m^3}</nowiki>
-** m^3 <nowiki>{SIUnit, unitSymbol}</nowiki>
-* weightUnits <nowiki>{defaultUnits=g}</nowiki>
-** g <nowiki>{SIUnit, unitSymbol}</nowiki>
-** gram <nowiki>{SIUnit}</nowiki>
-** pound
-** lb
-
+    * accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki>
+        ** m-per-s^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
+    * angleUnits <nowiki>{defaultUnits=radian}</nowiki>
+        ** radian <nowiki>{SIUnit}</nowiki>
+        ** rad <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** degree
+    * areaUnits <nowiki>{defaultUnits=m^2}</nowiki>
+        ** m^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
+    * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki>
+        ** dollar
+        ** $ <nowiki>{unitPrefix, unitSymbol}</nowiki>
+        ** point
+    * frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
+        ** hertz  <nowiki>{SIUnit}</nowiki>
+        ** Hz <nowiki>{SIUnit, unitSymbol}</nowiki>
+    * AamplitudeUnits <nowiki>{defaultUnits=microvolts}</nowiki>
+        ** microvolts
+    * intensityUnits <nowiki>{defaultUnits=dB}</nowiki>
+        ** dB <nowiki>{unitSymbol}[Intensity expressed as ratio to a threshold. Often used for sound intensity.]</nowiki>
+        ** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki>
+        ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>
+    * jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki>
+        ** m-per-s^3 <nowiki>{unitSymbol}</nowiki>
+    * memorySizeUnits <nowiki>{defaultUnits=B}</nowiki>
+        ** byte <nowiki>{SIUnit}</nowiki>
+        ** B <nowiki>{SIUnit, unitSymbol}</nowiki>
+    * physicalLengthUnits <nowiki>{defaultUnits=m}</nowiki>
+        ** foot
+        ** inch
+        ** metre <nowiki>{SIUnit}</nowiki>
+        ** m <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** mile
+    * speedUnits <nowiki>{defaultUnits=m-per-s}</nowiki>
+        ** m-per-s <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** mph <nowiki>{unitSymbol}</nowiki>
+        ** kph <nowiki>{unitSymbol}</nowiki>
+    * timeUnits <nowiki>{defaultUnits=s}</nowiki>
+        ** second <nowiki>{SIUnit}</nowiki>
+        ** s <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** day
+        ** minute
+        ** hour <nowiki>[Should be in 24-hour format.]</nowiki>
+    * volumeUnits <nowiki>{defaultUnits=m^3}</nowiki>
+        ** m^3 <nowiki>{SIUnit, unitSymbol}</nowiki>
+    * weightUnits <nowiki>{defaultUnits=g}</nowiki>
+        ** g <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** gram <nowiki>{SIUnit}</nowiki>
+        ** pound
+        ** lb
 
 '''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-* deca <nowiki>{SIUnitModifier} [SI unit multiple representing 10^1]</nowiki>
-* da <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^1]</nowiki>
-* hecto <nowiki>{SIUnitModifier} [SI unit multiple representing 10^2]</nowiki>
-* h <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^2]</nowiki>
-* kilo <nowiki>{SIUnitModifier} [SI unit multiple representing 10^3]</nowiki>
-* k <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^3]</nowiki>
-* mega <nowiki>{SIUnitModifier} [SI unit multiple representing 10^6]</nowiki>
-* M <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^6]</nowiki>
-* giga <nowiki>{SIUnitModifier} [SI unit multiple representing 10^9]</nowiki>
-* G <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^9]</nowiki>
-* tera <nowiki>{SIUnitModifier} [SI unit multiple representing 10^12]</nowiki>
-* T <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^12]</nowiki>
-* peta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^15]</nowiki>
-* P <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^15]</nowiki>
-* exa <nowiki>{SIUnitModifier} [SI unit multiple representing 10^18]</nowiki>
-* E <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^18]</nowiki>
-* zetta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^21]</nowiki>
-* Z <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^21]</nowiki>
-* yotta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^24]</nowiki>
-* Y <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^24]</nowiki>
-* deci <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-1]</nowiki>
-* d <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-1]</nowiki>
-* centi <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-2]</nowiki>
-* c <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-2]</nowiki>
-* milli <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-3]</nowiki>
-* m <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-3]</nowiki>
-* micro <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-6]</nowiki>
-* u <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-6]</nowiki>
-* nano <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-9]</nowiki>
-* n <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-9]</nowiki>
-* pico <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-12]</nowiki>
-* p <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-12]</nowiki>
-* femto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-15]</nowiki>
-* f <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-15]</nowiki>
-* atto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-18]</nowiki>
-* a <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-18]</nowiki>
-* zepto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-21]</nowiki>
-* z <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-21]</nowiki>
-* yocto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-24]</nowiki>
-* y <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-24]</nowiki>
-
+    * deca <nowiki>{SIUnitModifier} [SI unit multiple representing 10^1]</nowiki>
+    * da <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^1]</nowiki>
+    * hecto <nowiki>{SIUnitModifier} [SI unit multiple representing 10^2]</nowiki>
+    * h <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^2]</nowiki>
+    * kilo <nowiki>{SIUnitModifier} [SI unit multiple representing 10^3]</nowiki>
+    * k <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^3]</nowiki>
+    * mega <nowiki>{SIUnitModifier} [SI unit multiple representing 10^6]</nowiki>
+    * M <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^6]</nowiki>
+    * giga <nowiki>{SIUnitModifier} [SI unit multiple representing 10^9]</nowiki>
+    * G <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^9]</nowiki>
+    * tera <nowiki>{SIUnitModifier} [SI unit multiple representing 10^12]</nowiki>
+    * T <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^12]</nowiki>
+    * peta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^15]</nowiki>
+    * P <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^15]</nowiki>
+    * exa <nowiki>{SIUnitModifier} [SI unit multiple representing 10^18]</nowiki>
+    * E <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^18]</nowiki>
+    * zetta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^21]</nowiki>
+    * Z <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^21]</nowiki>
+    * yotta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^24]</nowiki>
+    * Y <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^24]</nowiki>
+    * deci <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-1]</nowiki>
+    * d <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-1]</nowiki>
+    * centi <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-2]</nowiki>
+    * c <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-2]</nowiki>
+    * milli <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-3]</nowiki>
+    * m <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-3]</nowiki>
+    * micro <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-6]</nowiki>
+    * u <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-6]</nowiki>
+    * nano <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-9]</nowiki>
+    * n <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-9]</nowiki>
+    * pico <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-12]</nowiki>
+    * p <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-12]</nowiki>
+    * femto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-15]</nowiki>
+    * f <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-15]</nowiki>
+    * atto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-18]</nowiki>
+    * a <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-18]</nowiki>
+    * zepto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-21]</nowiki>
+    * z <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-21]</nowiki>
+    * yocto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-24]</nowiki>
+    * y <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-24]</nowiki>
 
 '''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
-* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki>
-* nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
-* numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
-* posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki>
-* textClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=blank, allowedCharacter=+, allowedCharacter=-, allowedCharacter=:, allowedCharacter=;, allowedCharacter=., allowedCharacter=/, allowedCharacter=(, allowedCharacter=), allowedCharacter=?, allowedCharacter=*, allowedCharacter=%, allowedCharacter=$, allowedCharacter=@}[Value class designating values that have the characteristics of text such as in descriptions.]</nowiki>
-
+    * dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki>
+    * nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
+    * numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
+    * posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki>
+    * textClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=blank, allowedCharacter=+, allowedCharacter=-, allowedCharacter=:, allowedCharacter=;, allowedCharacter=., allowedCharacter=/, allowedCharacter=(, allowedCharacter=), allowedCharacter=?, allowedCharacter=*, allowedCharacter=%, allowedCharacter=$, allowedCharacter=@}[Value class designating values that have the characteristics of text such as in descriptions.]</nowiki>
 
 '''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
-* allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
-* defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-* extensionAllowed <nowiki>{boolProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
-* recommended  <nowiki>{boolProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki>
-* relatedTag <nowiki>[A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.]</nowiki>
-* requireChild  <nowiki>{boolProperty}[A schema attribute indicating that one of the node elements descendants must be included when using this tag.]</nowiki>
-* required <nowiki>{boolProperty}[A schema attribute indicating that every event-level HED string should include this tag.]</nowiki>
-* SIUnit  <nowiki>{boolProperty, unitProperty}[A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
-* SIUnitModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.]</nowiki>
-* SIUnitSymbolModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
-* tagGroup <nowiki>{boolProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki>
-* takesValue <nowiki>{boolProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
-* topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group.] </nowiki>
-* unique <nowiki>{boolProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki>
-* unitClass <nowiki>[A schema attribute specifying which unit class this value tag belongs to.]</nowiki>
-* unitPrefix <nowiki>{boolProperty, unitProperty}[A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki>
-* unitSymbol <nowiki>{boolProperty, unitProperty}[A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-* valueClass <nowiki>[A schema attribute specifying which value class this value tag belongs to.]</nowiki>
+    * allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
+    * defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
+    * extensionAllowed <nowiki>{boolProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
+    * recommended  <nowiki>{boolProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki>
+    * relatedTag <nowiki>[A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.]</nowiki>
+    * requireChild  <nowiki>{boolProperty}[A schema attribute indicating that one of the node elements descendants must be included when using this tag.]</nowiki>
+    * required <nowiki>{boolProperty}[A schema attribute indicating that every event-level HED string should include this tag.]</nowiki>
+    * SIUnit  <nowiki>{boolProperty, unitProperty}[A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
+    * SIUnitModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.]</nowiki>
+    * SIUnitSymbolModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.]</nowiki>
+    * suggestedTag <nowiki>[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+    * tagGroup <nowiki>{boolProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki>
+    * takesValue <nowiki>{boolProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
+    * topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group.] </nowiki>
+    * unique <nowiki>{boolProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki>
+    * unitClass <nowiki>[A schema attribute specifying which unit class this value tag belongs to.]</nowiki>
+    * unitPrefix <nowiki>{boolProperty, unitProperty}[A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki>
+    * unitSymbol <nowiki>{boolProperty, unitProperty}[A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
+    * valueClass <nowiki>[A schema attribute specifying which value class this value tag belongs to.]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
-* boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
-* unitClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit classes.]</nowiki>
-* unitModifierProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit modifier classes.]</nowiki>
-* unitProperty <nowiki>[Indicates that the schema attribute is meant to be applied to units within a unit class.]</nowiki>
-* valueClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to value classes.]</nowiki>
+    * boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
+    * unitClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit classes.]</nowiki>
+    * unitModifierProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit modifier classes.]</nowiki>
+    * unitProperty <nowiki>[Indicates that the schema attribute is meant to be applied to units within a unit class.]</nowiki>
+    * valueClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to value classes.]</nowiki>
+
 
 '''Epilogue'''
-TPA, November 2021
+TPA, February 2022
 
 !# end hed
