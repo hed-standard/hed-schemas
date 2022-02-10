@@ -271,7 +271,7 @@ Reference:
 
 '''Finding-attributes''' <nowiki> [Subtree tree for general properties]</nowiki>
 
-    * Significance <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema 'Normal'/'Abnormal' tags]</nowiki>
+    * Significance <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags]</nowiki>
         ** No-definite-abnormality
         ** Significance-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
@@ -413,19 +413,19 @@ Reference:
         ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity.]</nowiki>
             *** Eye-closure-sensitivity-exists
             *** No-eye-closure-sensitivity
-        ** Eye-opening-passive <nowiki>[Passive eye opening. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Eye-opening-passive <nowiki>[Passive eye opening. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Eye-opening-passive-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Medication-effect-EEG <nowiki>[Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Medication-effect-EEG <nowiki>[Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Medication-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Medication-reduction-effect-EEG <nowiki>[Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Medication-reduction-effect-EEG <nowiki>[Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Medication-reduction-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Auditive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Auditive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Auditive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Nociceptive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Physical-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing']</nowiki>
+        ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Cognitive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
         ** Other-modulators-effect-EEG
             *** <nowiki># {takesValue}[free text]</nowiki>
@@ -508,23 +508,23 @@ Reference:
             *** High-range <nowiki>[High ( more than 70 microV)]</nowiki>
             **** PDR-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema 'Symmetrical' tag]</nowiki>
+        ** PDR-Amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
             *** PDR-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
             *** PDR-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
             *** PDR-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema 'Symmetrical' tag]</nowiki>
+        ** PDR-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
             *** PDR-frequency-asymmetry-LowerLeft <nowiki>[Hz lower on the left side.]</nowiki>
             *** PDR-frequency-asymmetry-LowerRight <nowiki>[Hz lower on the right side.]</nowiki>
 
         ** PDR-Eye-opening-reactivity <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
-            *** PDR-Eye-opening-reactivity-exists <nowiki>[When annotated 'Yes']</nowiki>
+            *** PDR-Eye-opening-reactivity-exists <nowiki>[When annotated Yes]</nowiki>
             *** PDR-Eye-opening-reactivity-reducedLeft <nowiki>[Reduced left side reactivity]</nowiki>
             *** PDR-Eye-opening-reactivity-reducedRigth <nowiki>[Reduced right side reactivity]</nowiki>
             *** PDR-Eye-opening-reactivity-reducedBoth <nowiki>[Reduced reactivity on both sides]</nowiki>
             *** PDR-Eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Organization <nowiki>[When normal could be labeled with base schema 'Normal' tag]</nowiki>
+        ** PDR-Organization <nowiki>[When normal could be labeled with base schema Normal tag]</nowiki>
             *** PDR-Organization-poorlyOrganized <nowiki>[Poorly organized]</nowiki>
             *** PDR-Organization-disorganized <nowiki>[Disorganized]</nowiki>
             *** PDR-Organization-markedlyDisorganized <nowiki>[Markedly disorganized]</nowiki>

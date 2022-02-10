@@ -201,14 +201,14 @@ Reference:
                <name>Discontinuous-background-activity</name>
             </node>
             <node>
-               <name>Background-Burst-suppression</name>
+               <name>Background-burst-suppression</name>
                <description>EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV) and which occurs simultaneously over all head regions.</description>
             </node>
             <node>
-               <name>Background-sBurst-attenuation</name>
+               <name>Background-burst-attenuation</name>
             </node>
             <node>
-               <name>Suppression</name>
+               <name>Background-activity-suppression</name>
                <description>Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity.</description>
             </node>
             <node>
@@ -961,104 +961,17 @@ Reference:
          </node>
       </node>
       <node>
-         <name>Findings-attributes</name>
+         <name>Finding-attributes</name>
          <description>Subtree tree for general properties</description>
          <node>
-            <name>Not-possible-to-determine</name>
-            <description>Not possible to determine</description>
-         </node>
-         <node>
-            <name>No-definite-abnormality</name>
-         </node>
-         <node>
-            <name>Yes</name>
-         </node>
-         <node>
-            <name>No</name>
-         </node>
-         <node>
-            <name>Frequency</name>
-            <description>Hz Values (numbers) typed in.</description>
-            <node>
-               <name>#</name>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>numericClass</value>
-               </attribute>
-               <attribute>
-                  <name>unitClass</name>
-                  <value>frequencyUnits</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Amplitude</name>
-            <description>microV Values (numbers) typed in.</description>
-            <node>
-               <name>#</name>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>numericClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Duration</name>
-            <description>An offset that is implicit after duration time passed from the onset.</description>
-            <node>
-               <name>#</name>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>numericClass</value>
-               </attribute>
-               <attribute>
-                  <name>unitClass</name>
-                  <value>timeUnits</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
             <name>Significance</name>
-            <description>Used with Findings-attributes tags</description>
-         </node>
-         <node>
-            <name>Asymmetry</name>
+            <description>Significance of finding. When normal/abnormal could be labeled with base schema 'Normal'/'Abnormal' tags</description>
             <node>
-               <name>LowerLeft</name>
-               <description>Lower on the left side.</description>
+               <name>No-definite-abnormality</name>
             </node>
             <node>
-               <name>LowerRight</name>
-               <description>Lower on the right side.</description>
-            </node>
-         </node>
-         <node>
-            <name>Increased</name>
-            <node>
-               <name>#</name>
-               <description>free text</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Decreased</name>
-            <node>
-               <name>#</name>
-               <description>free text</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
+               <name>Significance-not-possible-to-determine</name>
+               <description>Not possible to determine</description>
             </node>
          </node>
          <node>
@@ -1093,28 +1006,243 @@ Reference:
          </node>
       </node>
       <node>
-         <name>Findings-property</name>
+         <name>Finding-property</name>
          <description>Descriptive elements. Similar to main HED /Property Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.</description>
          <node>
-            <name>Morphology-property</name>
+            <name>Signal-morphology-property</name>
             <node>
                <name>Delta-activity</name>
                <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+               <node>
+                  <name>Delta-activity-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Delta-activity-amplitude</name>
+                  <description>microvolts Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>amplitudeUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Theta-activity</name>
                <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+               <node>
+                  <name>Theta-activity-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Theta-activity-amplitude</name>
+                  <description>microvolts Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>amplitudeUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Alpha-activity</name>
                <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag</description>
+               <node>
+                  <name>Alpha-activity-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Alpha-activity-amplitude</name>
+                  <description>microvolts Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>amplitudeUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Beta-activity</name>
                <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag</description>
+               <node>
+                  <name>Beta-activity-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Beta-activity-amplitude</name>
+                  <description>microvolts Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>amplitudeUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Gamma-activity</name>
+               <node>
+                  <name>Gamma-activity-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Gamma-activity-amplitude</name>
+                  <description>microvolts Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>amplitudeUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Spike</name>
@@ -1281,8 +1409,9 @@ Reference:
          </node>
          <node>
             <name>Location-property</name>
+            <description>Location can be scored for findings.</description>
             <node>
-               <name>Laterality</name>
+               <name>Brain-laterality</name>
                <node>
                   <name>Left</name>
                </node>
@@ -1303,7 +1432,7 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Region</name>
+               <name>Brain-region</name>
                <node>
                   <name>Frontal</name>
                </node>
@@ -1345,7 +1474,7 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Centricity</name>
+               <name>Brain-Centricity</name>
                <node>
                   <name>Axial</name>
                </node>
@@ -1380,43 +1509,88 @@ Reference:
             <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
             <node>
                <name>Reactivity</name>
-               <description>Used with Findings-attributes tags</description>
+               <node>
+                  <name>Reactive</name>
+               </node>
+               <node>
+                  <name>Not-reactive</name>
+               </node>
             </node>
             <node>
                <name>Eye-closure-sensitivity</name>
-               <description>Eye closure sensitivity. Used with Findings-attributes tags</description>
+               <description>Eye closure sensitivity.</description>
+               <node>
+                  <name>Eye-closure-sensitivity-exists</name>
+               </node>
+               <node>
+                  <name>No-eye-closure-sensitivity</name>
+               </node>
             </node>
             <node>
                <name>Eye-opening-passive</name>
-               <description>Passive eye opening. Used with Findings-attributes tags</description>
+               <description>Passive eye opening. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Eye-opening-passive-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Medication-effect-EEG</name>
-               <description>Medications effect on EEG. Used with Findings-attributes tags</description>
+               <description>Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Medication-effect-EEG-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags</description>
+               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Auditive-stimuli-effect-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Physical-effort-effect</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Physical-stimuli-effect-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Cognitive-tasks-effect</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <node>
+                  <name>Cognitive-stimuli-effect-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
             <node>
                <name>Other-modulators-effect-EEG</name>
-               <description>Used with Findings-attributes tags</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Facilitating-factors</name>
@@ -1526,29 +1700,146 @@ Reference:
             </node>
             <node>
                <name>Other-modulators-effect-clinical</name>
-               <description>Used with Findings-attributes tags</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>IPS-effect</name>
                <node>
-                  <name>Posterior-stimulus-dependent-response</name>
+                  <name>Posterior-stimulus-dependent-IPS-response</name>
                </node>
                <node>
-                  <name>Posterior-stimulus-independent-response-limited</name>
+                  <name>Posterior-stimulus-dependent-IPS-response-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Posterior-stimulus-independent-IPS-response-limited</name>
                   <description>limited to the stimulus-train</description>
                </node>
                <node>
-                  <name>Posterior-stimulus-independent-response-self-sustained</name>
+                  <name>Posterior-stimulus-independent-IPS-response-limited-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
-                  <name>Generalized-photoparoxysmal-response-limited</name>
+                  <name>Posterior-stimulus-independent-IPS-response-self-sustained</name>
+               </node>
+               <node>
+                  <name>Posterior-stimulus-independent-IPS-response-self-sustained-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Generalized-photoparoxysmal-IPS-response-limited</name>
                   <description>limited to the stimulus-train</description>
                </node>
                <node>
-                  <name>Generalized-photoparoxysmal-response-self-sustained</name>
+                  <name>Generalized-photoparoxysmal-IPS-response-limited-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
-                  <name>Activation-of-pre-existing-epileptogenic-area</name>
+                  <name>Generalized-photoparoxysmal-IPS-response-self-sustained</name>
+               </node>
+               <node>
+                  <name>Generalized-photoparoxysmal-IPS-response-self-sustained-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect</name>
+               </node>
+               <node>
+                  <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency</name>
+                  <description>Hz Values (numbers) typed in.</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Unmodified-IPS-effect</name>
                </node>
             </node>
             <node>
@@ -1650,9 +1941,27 @@ Reference:
          </node>
          <node>
             <name>PDR-property</name>
+            <description>Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.</description>
+            <node>
+               <name>PDR-frequency</name>
+               <description>Hz Values (numbers) typed in.</description>
+               <node>
+                  <name>#</name>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
+                  </attribute>
+                  <attribute>
+                     <name>unitClass</name>
+                     <value>frequencyUnits</value>
+                  </attribute>
+               </node>
+            </node>
             <node>
                <name>PDR-amplitude-range</name>
-               <description>Used with Findings-attributes tags</description>
                <node>
                   <name>Low-range</name>
                   <description>Low (less than 20 microV)</description>
@@ -1664,53 +1973,85 @@ Reference:
                <node>
                   <name>High-range</name>
                   <description>High ( more than 70 microV)</description>
+                  <node>
+                     <name>PDR-amplitude-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
                </node>
             </node>
             <node>
                <name>PDR-Amplitude-asymmetry</name>
-               <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. Used with Asymmetry tags</description>
-            </node>
-            <node>
-               <name>PDR-Frequency-asymmetry</name>
-               <description>Used with Asymmetry tags</description>
-            </node>
-            <node>
-               <name>PDR-Eye-opening</name>
-               <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. Used with Findings-attributes tags</description>
+               <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema 'Symmetrical' tag</description>
                <node>
-                  <name>ReducedLeft</name>
+                  <name>PDR-amplitude-asymmetry-LowerLeft</name>
+                  <description>Amplitude lower on the left side.</description>
+               </node>
+               <node>
+                  <name>PDR-amplitude-asymmetry-LowerRight</name>
+                  <description>Amplitude lower on the right side.</description>
+               </node>
+               <node>
+                  <name>PDR-amplitude-asymmetry-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
+            </node>
+            <node>
+               <name>PDR-frequency-asymmetry</name>
+               <description>When symmetrical could be labeled with base schema 'Symmetrical' tag</description>
+               <node>
+                  <name>PDR-frequency-asymmetry-LowerLeft</name>
+                  <description>Hz lower on the left side.</description>
+               </node>
+               <node>
+                  <name>PDR-frequency-asymmetry-LowerRight</name>
+                  <description>Hz lower on the right side.</description>
+               </node>
+            </node>
+            <node>
+               <name>PDR-Eye-opening-reactivity</name>
+               <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.</description>
+               <node>
+                  <name>PDR-Eye-opening-reactivity-exists</name>
+                  <description>When annotated 'Yes'</description>
+               </node>
+               <node>
+                  <name>PDR-Eye-opening-reactivity-reducedLeft</name>
                   <description>Reduced left side reactivity</description>
                </node>
                <node>
-                  <name>ReducedRigth</name>
+                  <name>PDR-Eye-opening-reactivity-reducedRigth</name>
                   <description>Reduced right side reactivity</description>
                </node>
                <node>
-                  <name>ReducedBoth</name>
+                  <name>PDR-Eye-opening-reactivity-reducedBoth</name>
                   <description>Reduced reactivity on both sides</description>
+               </node>
+               <node>
+                  <name>PDR-Eye-opening-reactivity-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
                </node>
             </node>
             <node>
                <name>PDR-Organization</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>When normal could be labeled with base schema 'Normal' tag</description>
                <node>
-                  <name>PoorlyOrganized</name>
+                  <name>PDR-Organization-poorlyOrganized</name>
                   <description>Poorly organized</description>
                </node>
                <node>
-                  <name>Disorganized</name>
+                  <name>PDR-Organization-disorganized</name>
                   <description>Disorganized</description>
                </node>
                <node>
-                  <name>MarkedlyDisorganized</name>
+                  <name>PDR-Organization-markedlyDisorganized</name>
                   <description>Markedly disorganized</description>
                </node>
             </node>
             <node>
                <name>PDR-Caveat</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>Caveats to the annotation of PDR</description>
                <node>
-                  <name>Only-open-eyes-during-the-recording</name>
+                  <name>No-PDR-Caveat</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1720,7 +2061,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Sleep-deprived-caveat</name>
+                  <name>PDR-Caveat-only-open-eyes-during-the-recording</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1730,7 +2071,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Drowsy</name>
+                  <name>PDR-Caveat-sleep-deprived-caveat</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1740,11 +2081,22 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Only-following-hyperventilation</name>
+                  <name>PDR-Caveat-drowsy</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>PDR-Caveat-only-following-hyperventilation</name>
                </node>
             </node>
             <node>
                <name>Absence-of-PDR</name>
+               <description>Reason for absence of PDR</description>
                <node>
                   <name>Artifacts</name>
                </node>
@@ -1769,14 +2121,14 @@ Reference:
             <name>Incidence</name>
             <description>how often it occurs/time-epoch</description>
             <node>
-               <name>Only-once</name>
+               <name>Only-once-incidence</name>
             </node>
             <node>
                <name>Rare-incidence</name>
                <description>less than 1/h</description>
             </node>
             <node>
-               <name>Uncommon</name>
+               <name>Uncommon-incidence</name>
                <description>1/5 min to 1/h</description>
             </node>
             <node>
@@ -1796,23 +2148,23 @@ Reference:
             <name>Prevalence</name>
             <description>the percentage of the recording covered by the train/burst</description>
             <node>
-               <name>Rare</name>
+               <name>Rare-prevalence</name>
                <description>Less than 1 percents</description>
             </node>
             <node>
-               <name>Occasional</name>
+               <name>Occasional-</name>
                <description>1 to 9 percents</description>
             </node>
             <node>
-               <name>Frequent</name>
+               <name>Frequent-prevalence</name>
                <description>10 to 49 percents</description>
             </node>
             <node>
-               <name>Abundant</name>
+               <name>Abundant-prevalence</name>
                <description>50 to 89 percents</description>
             </node>
             <node>
-               <name>Continuous</name>
+               <name>Continuous-prevalence</name>
                <description>Greater than 90 percents</description>
             </node>
          </node>
@@ -2496,6 +2848,16 @@ Reference:
             <attribute>
                <name>unitSymbol</name>
             </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>AamplitudeUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>microvolts</value>
+         </attribute>
+         <unit>
+            <name>microvolts</name>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
@@ -3213,5 +3575,5 @@ Reference:
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>TPA, November 2021</epilogue>
+   <epilogue>TPA, February 2022</epilogue>
 </HED>
