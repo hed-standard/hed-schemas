@@ -965,7 +965,7 @@ Reference:
          <description>Subtree tree for general properties</description>
          <node>
             <name>Significance</name>
-            <description>Significance of finding. When normal/abnormal could be labeled with base schema 'Normal'/'Abnormal' tags</description>
+            <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags</description>
             <node>
                <name>No-definite-abnormality</name>
             </node>
@@ -1528,7 +1528,7 @@ Reference:
             </node>
             <node>
                <name>Eye-opening-passive</name>
-               <description>Passive eye opening. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Passive eye opening. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Eye-opening-passive-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1536,7 +1536,7 @@ Reference:
             </node>
             <node>
                <name>Medication-effect-EEG</name>
-               <description>Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Medication-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1544,7 +1544,7 @@ Reference:
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1552,7 +1552,7 @@ Reference:
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Auditive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1560,7 +1560,7 @@ Reference:
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1568,7 +1568,7 @@ Reference:
             </node>
             <node>
                <name>Physical-effort-effect</name>
-               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Physical-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1576,7 +1576,7 @@ Reference:
             </node>
             <node>
                <name>Cognitive-tasks-effect</name>
-               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema 'Increasing'/'Decreasing'</description>
+               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Cognitive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1981,7 +1981,7 @@ Reference:
             </node>
             <node>
                <name>PDR-Amplitude-asymmetry</name>
-               <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema 'Symmetrical' tag</description>
+               <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag</description>
                <node>
                   <name>PDR-amplitude-asymmetry-LowerLeft</name>
                   <description>Amplitude lower on the left side.</description>
@@ -1997,7 +1997,7 @@ Reference:
             </node>
             <node>
                <name>PDR-frequency-asymmetry</name>
-               <description>When symmetrical could be labeled with base schema 'Symmetrical' tag</description>
+               <description>When symmetrical could be labeled with base schema Symmetrical tag</description>
                <node>
                   <name>PDR-frequency-asymmetry-LowerLeft</name>
                   <description>Hz lower on the left side.</description>
@@ -2012,7 +2012,7 @@ Reference:
                <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.</description>
                <node>
                   <name>PDR-Eye-opening-reactivity-exists</name>
-                  <description>When annotated 'Yes'</description>
+                  <description>When annotated Yes</description>
                </node>
                <node>
                   <name>PDR-Eye-opening-reactivity-reducedLeft</name>
@@ -2033,7 +2033,7 @@ Reference:
             </node>
             <node>
                <name>PDR-Organization</name>
-               <description>When normal could be labeled with base schema 'Normal' tag</description>
+               <description>When normal could be labeled with base schema Normal tag</description>
                <node>
                   <name>PDR-Organization-poorlyOrganized</name>
                   <description>Poorly organized</description>
