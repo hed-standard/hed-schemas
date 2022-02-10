@@ -405,6 +405,9 @@ Reference:
             *** <nowiki># {takesValue}</nowiki>
         ** Propagation <nowiki>[Used with Findings-attributes tags]</nowiki>
         ** Multifocal <nowiki>[Used with Findings-attributes tags]</nowiki>
+        ** Sleep-abnormal-amplitude-asymmetry <nowiki>[Absence or consistenly marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement]</nowiki>
+            *** Location-abnormal-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
+            *** Location-abnormal-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
 
     * Modulators-property <nowiki>[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
         ** Reactivity <nowiki></nowiki>
