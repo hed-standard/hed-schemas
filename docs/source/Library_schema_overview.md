@@ -24,7 +24,7 @@ part of a library used in conjunction with core modules of the programming langu
 Similar to the design principles imposed on function names and subclass organization in 
 software development, HED library schemas must conform to some basic rules:
 
-``````{annotation} Rules for HED library schema design.
+``````{admonition} Rules for HED library schema design.
 :class: tip
 
 1. Every term must be unique within the library schema and must conform to the rules for
@@ -50,7 +50,8 @@ adhere to [semantic versioning](https://semver.org/).
 A HED library schema is defined in the same way as the base HED schema except that it has an
 additional attribute name-value pair, `library="xxx"` in the schema header. We will use as an
 illustration a library schema for driving. Syntax details for a library schema are similar to
-those for the base HED schema. (See [Appendix A: Schema format](Appendix_A.md#a-schema-format)
+those for the base HED schema.
+(See the [HED schema format specification](https://hed-specification.readthedocs.io/en/latest/03_Schema.html)
 for more details).
 
 ````{admonition} **Example:** Driving library schema (MEDIAWIKI template).
