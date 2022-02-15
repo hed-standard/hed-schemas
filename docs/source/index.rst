@@ -1,7 +1,12 @@
-Welcome to HED schema library documentation!
-=============================================
+HED schema library
+===================
 
-A PDF version of this document can be found `here <https://hed-library-schema.readthedocs.io/_/downloads/en/latest/pdf/>`_
+
+.. sidebar:: **Downloads**
+
+   `HED tools <https://hed-schema-library.readthedocs.io/_/downloads/en/latest/pdf/>`_
+
+Note:  this is a work in progress. More information is coming.
 
 .. toctree::
    :maxdepth: 4
