@@ -337,39 +337,51 @@ Reference:
         ** OIRDA <nowiki>[Occipital intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children]</nowiki>
         ** TIRDA <nowiki>[Temporal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. ]</nowiki>
 
-        ** PDs-property
-            *** Superimposed-activity
-                **** Fast-activity
-                **** Rhythmic-activity
+        ** PDs-property <nowiki> [Periodic discharges not further specified (PDs)]</nowiki>
+            *** PD-superimposed-activity
+                **** Fast-superimposed-activity
+                    *****  Fast-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                **** Rhythmic-superimposed-activity
+                    *****  Rhythmic-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                ***** PD-superimposed-activity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Sharpness
-                **** Spiky
-                **** Sharp
-                **** Sharply-contoured
-                **** Blunt
+            *** PD-sharpness
+                **** Spiky-PD-sharpness
+                **** Sharp-PD-sharpness
+                **** Sharply-contoured-PD-sharpness
+                **** Blunt-PD-sharpness
+                **** PD-sharpness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Number-of-phases
-                **** 1-phase
-                **** 2-phases
-                **** 3-phases
-                **** Greater-than-3
+            *** Number-of-PD-phases
+                **** 1-PD-phase
+                **** 2-PD-phases
+                **** 3-PD-phases
+                **** Greater-than-3-PD-phases
+                **** Number-of-PD-phases-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Triphasic-morphology
+            *** PD-triphasic-morphology
+                **** PD-triphasic-morphology-exists
+                **** No-PD-triphasic-morphology
+                **** Triphasic-morphology-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Absolute-amplitude
-                **** Very-low <nowiki>[lower than 20 microV)]</nowiki>
-                **** Low <nowiki>[20 to 49 microV]</nowiki>
-                **** Medium <nowiki>[50 to 199 microV]</nowiki>
-                **** High <nowiki>[greater than 200 microV]</nowiki>
+            *** PD-absolute-amplitude
+                **** PD-absolute-amplitude-very-low <nowiki>[lower than 20 microV)]</nowiki>
+                **** Low-PD-absolute-amplitude <nowiki>[20 to 49 microV]</nowiki>
+                **** Medium-PD-absolute-amplitude <nowiki>[50 to 199 microV]</nowiki>
+                **** High-PD-absolute-amplitude <nowiki>[greater than 200 microV]</nowiki>
+                **** PD-absolute-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Relative-amplitude
-                **** Less-than-equal-2
-                **** Greater-than-2
+            *** PD-Relative-amplitude
+                **** PD-Relative-amplitude-less-than-equal-2
+                **** PD-Relative-amplitude-greater-than-2
+                **** PD-Relative-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Polarity
-                **** Positive
-                **** Negative
-                **** Unclear
+            *** PD-Polarity
+                **** Positive-PD-Polarity
+                **** Negative-PD-Polarity
+                **** Unclear-PD-Polarity
 
     * Source-analysis <nowiki>[How the current in the brain reaches the electrode sensors.]</nowiki>
         ** Brain-region-laterality <nowiki> [Uses Location-property/Laterality tags] </nowiki>
@@ -428,7 +440,7 @@ Reference:
         ** Propagation <nowiki>[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
             *** Propagation-observed
             *** Propagation-not-observed
-        ** Multifocal <nowiki> [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing “multifocal” as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
+        ** Multifocal <nowiki> [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
             *** Multifocal-observed
             *** Multifocal-not-observed
             *** Multifocal-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
@@ -516,17 +528,40 @@ Reference:
             *** Random-appearance-mode <nowiki>[Occurrence of the the non-ictal EEG pattern / graphoelement without any rhytmicity / periodicity ]</nowiki>
             *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds). ]</nowiki>
             *** Variable-appearance-mode <nowiki>[Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording]</nowiki>
+            *** Intermittent-appearance-mode
+            *** Continuous-appearance-mode
             *** Appearance-mode-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        
         ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
-            *** Single-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Findings-attributes tags]</nowiki>
-            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Findings-attributes tags]</nowiki>
+            *** Single-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Finding-property/Incidence tag]</nowiki>
+            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevelance tag]</nowiki>
                 **** Rhythmic-trains-or-bursts--frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Arhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Findings-attributes tags]</nowiki>
+            *** Arhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevelance tag]</nowiki>
             *** Fragmented-discharge-pattern
                 **** <nowiki># {takesValue}[free text]</nowiki>
+        
         ** Extent <nowiki>[percentage of occurrence during the recording (background activity)]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+        
+
+        ** PD-Time-related-features <nowiki> [Periodic discharges not further specified (PDs) time-relayed features tags]</nowiki>
+            *** PD-duration
+                **** Very-brief-PD-duration <nowiki>[less than 10 sec]</nowiki>
+                **** Brief-PD-duration <nowiki>[10 to 59 sec]</nowiki>
+                **** Intermidiate-PD-duration <nowiki>[1 to 4.9 min]</nowiki>
+                **** Long-PD-duration <nowiki>[5 to 59 min]</nowiki>
+                **** Very-long-PD-duration <nowiki>[greater than 1 hour]</nowiki>
+                **** PD-duration-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** PD-onset
+                **** Sudden-PD-onset
+                **** Gradual-PD-onset
+                **** PD-onset-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** PD-dynamics
+                **** Evolving-PD-dynamics
+                **** Flunctuating-PD-dynamics
+                **** Static-PD-dynamics
+                **** PD-dynamics-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
     * PDR-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
         

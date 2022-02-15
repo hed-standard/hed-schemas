@@ -222,7 +222,7 @@ Reference:
          <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
          <node>
             <name>Sleep-architecture</name>
-            <description>Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Findings-attributes tags</description>
+            <description>Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance</description>
          </node>
          <node>
             <name>Sleep-stage-reached</name>
@@ -246,11 +246,11 @@ Reference:
          </node>
          <node>
             <name>Sleep-spindles</name>
-            <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Findings-attributes tags</description>
+            <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Finding-attributes/significance</description>
          </node>
          <node>
             <name>Vertex-waves</name>
-            <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Findings-attributes tags</description>
+            <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Finding-attributes/significance</description>
          </node>
          <node>
             <name>K-complexes</name>
@@ -258,19 +258,19 @@ Reference:
          </node>
          <node>
             <name>Saw-tooth-waves</name>
-            <description>Used with Findings-attributes tags</description>
+            <description>Used with Finding-attributes/significance</description>
          </node>
          <node>
             <name>POSTS</name>
-            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with Findings-attributes tags</description>
+            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with inding-attributes/significance tags</description>
          </node>
          <node>
             <name>Hypnagogic-hypersynchrony</name>
-            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with Findings-attributes tags</description>
+            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with inding-attributes/significance</description>
          </node>
          <node>
             <name>Non-reactive-sleep</name>
-            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with Findings-attributes tags</description>
+            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with inding-attributes/significance</description>
          </node>
       </node>
       <node>
@@ -1245,42 +1245,43 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Spike</name>
+               <name>Spike-morphology</name>
                <description>A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
             </node>
             <node>
-               <name>Spike-and-slow-wave</name>
+               <name>Spike-and-slow-wave-morphology</name>
                <description>A pattern consisting of a spike followed by a slow wave.</description>
             </node>
             <node>
-               <name>Runs-of-rapid-spikes</name>
+               <name>Runs-of-rapid-spikes-morphology</name>
                <description>Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity</description>
             </node>
             <node>
-               <name>Polyspikes</name>
+               <name>Polyspikes-morphology</name>
                <description>Two or more consecutive spikes.</description>
             </node>
             <node>
-               <name>Polyspike-and-slow-wave</name>
+               <name>Polyspike-and-slow-wave-morphology</name>
                <description>Two or more consecutive spikes associated with one or more slow waves.</description>
             </node>
             <node>
-               <name>Sharp-wave</name>
+               <name>Sharp-wave-morphology</name>
                <description>A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over 1/4-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
             </node>
             <node>
-               <name>Sharp-and-slow-wave</name>
+               <name>Sharp-and-slow-wave-morphology</name>
                <description>A sequence of a sharp wave and a slow wave.</description>
             </node>
             <node>
-               <name>Slow-sharp-wave</name>
+               <name>Slow-sharp-wave-morphology</name>
                <description>A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave.</description>
             </node>
             <node>
-               <name>Hypsarrhythmia-classic</name>
+               <name>Hypsarrhythmia-classic-morphology</name>
+               <description>Abnormal interictal high amplitude waves and a background of irregular spikes.</description>
             </node>
             <node>
-               <name>Hypsarrhythmia-modified</name>
+               <name>Hypsarrhythmia-modified-morphology</name>
             </node>
             <node>
                <name>Fast-spike-activity</name>
@@ -1312,86 +1313,153 @@ Reference:
             </node>
             <node>
                <name>PDs-property</name>
+               <description>Periodic discharges not further specified (PDs)</description>
                <node>
-                  <name>Superimposed-activity</name>
+                  <name>PD-superimposed-activity</name>
                   <node>
-                     <name>Fast-activity</name>
+                     <name>Fast-superimposed-activity</name>
+                     <node>
+                        <name>Fast-superimposed-activity-frequency</name>
+                        <description>Hz Values (numbers) typed in.</description>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                        </node>
+                     </node>
                   </node>
                   <node>
-                     <name>Rhythmic-activity</name>
+                     <name>Rhythmic-superimposed-activity</name>
+                     <node>
+                        <name>Rhythmic-superimposed-activity-frequency</name>
+                        <description>Hz Values (numbers) typed in.</description>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
+                        <name>PD-superimposed-activity-not-possible-to-determine</name>
+                        <description>Not possible to determine</description>
+                     </node>
                   </node>
                </node>
                <node>
-                  <name>Sharpness</name>
+                  <name>PD-sharpness</name>
                   <node>
-                     <name>Spiky</name>
+                     <name>Spiky-PD-sharpness</name>
                   </node>
                   <node>
-                     <name>Sharp</name>
+                     <name>Sharp-PD-sharpness</name>
                   </node>
                   <node>
-                     <name>Sharply-contoured</name>
+                     <name>Sharply-contoured-PD-sharpness</name>
                   </node>
                   <node>
-                     <name>Blunt</name>
-                  </node>
-               </node>
-               <node>
-                  <name>Number-of-phases</name>
-                  <node>
-                     <name>1-phase</name>
+                     <name>Blunt-PD-sharpness</name>
                   </node>
                   <node>
-                     <name>2-phases</name>
-                  </node>
-                  <node>
-                     <name>3-phases</name>
-                  </node>
-                  <node>
-                     <name>Greater-than-3</name>
+                     <name>PD-sharpness-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>Triphasic-morphology</name>
+                  <name>Number-of-PD-phases</name>
+                  <node>
+                     <name>1-PD-phase</name>
+                  </node>
+                  <node>
+                     <name>2-PD-phases</name>
+                  </node>
+                  <node>
+                     <name>3-PD-phases</name>
+                  </node>
+                  <node>
+                     <name>Greater-than-3-PD-phases</name>
+                  </node>
+                  <node>
+                     <name>Number-of-PD-phases-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
                </node>
                <node>
-                  <name>Absolute-amplitude</name>
+                  <name>PD-triphasic-morphology</name>
                   <node>
-                     <name>Very-low</name>
+                     <name>PD-triphasic-morphology-exists</name>
+                  </node>
+                  <node>
+                     <name>No-PD-triphasic-morphology</name>
+                  </node>
+                  <node>
+                     <name>Triphasic-morphology-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>PD-absolute-amplitude</name>
+                  <node>
+                     <name>PD-absolute-amplitude-very-low</name>
                      <description>lower than 20 microV)</description>
                   </node>
                   <node>
-                     <name>Low</name>
+                     <name>Low-PD-absolute-amplitude</name>
                      <description>20 to 49 microV</description>
                   </node>
                   <node>
-                     <name>Medium</name>
+                     <name>Medium-PD-absolute-amplitude</name>
                      <description>50 to 199 microV</description>
                   </node>
                   <node>
-                     <name>High</name>
+                     <name>High-PD-absolute-amplitude</name>
                      <description>greater than 200 microV</description>
                   </node>
-               </node>
-               <node>
-                  <name>Relative-amplitude</name>
                   <node>
-                     <name>Less-than-equal-2</name>
-                  </node>
-                  <node>
-                     <name>Greater-than-2</name>
+                     <name>PD-absolute-amplitude-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>Polarity</name>
+                  <name>PD-Relative-amplitude</name>
                   <node>
-                     <name>Positive</name>
+                     <name>PD-Relative-amplitude-less-than-equal-2</name>
                   </node>
                   <node>
-                     <name>Negative</name>
+                     <name>PD-Relative-amplitude-greater-than-2</name>
                   </node>
                   <node>
-                     <name>Unclear</name>
+                     <name>PD-Relative-amplitude-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>PD-Polarity</name>
+                  <node>
+                     <name>Positive-PD-Polarity</name>
+                  </node>
+                  <node>
+                     <name>Negative-PD-Polarity</name>
+                  </node>
+                  <node>
+                     <name>Unclear-PD-Polarity</name>
                   </node>
                </node>
             </node>
@@ -1404,7 +1472,73 @@ Reference:
                <description>Uses Location-property/Laterality tags</description>
             </node>
             <node>
-               <name>Brain-region-SA</name>
+               <name>Brain-region-source-analysis</name>
+               <node>
+                  <name>Brain-region-frontal-perisylvian-superior-surface</name>
+               </node>
+               <node>
+                  <name>Brain-region-frontal-lateral</name>
+               </node>
+               <node>
+                  <name>Brain-region-frontal-mesial</name>
+               </node>
+               <node>
+                  <name>Brain-region-frontal-polar</name>
+               </node>
+               <node>
+                  <name>Brain-region-frontal-orbitofrontal</name>
+               </node>
+               <node>
+                  <name>Brain-region-temporal-polar</name>
+               </node>
+               <node>
+                  <name>Brain-region-temporal-basal</name>
+               </node>
+               <node>
+                  <name>Brain-region-temporal-lateral-anterior</name>
+               </node>
+               <node>
+                  <name>Brain-region-temporal-lateral-posterior</name>
+               </node>
+               <node>
+                  <name>Brain-region-temporal-perisylvian-inferior-surface</name>
+               </node>
+               <node>
+                  <name>Brain-region-cental-lateral-convexity</name>
+               </node>
+               <node>
+                  <name>Brain-region-cental-mesial</name>
+               </node>
+               <node>
+                  <name>Brain-region-cental-sulcus-anterior-surface</name>
+               </node>
+               <node>
+                  <name>Brain-region-cental-sulcus-posterior-surface</name>
+               </node>
+               <node>
+                  <name>Brain-region-cental-opercular</name>
+               </node>
+               <node>
+                  <name>Brain-region-parietal-lateral-convexity</name>
+               </node>
+               <node>
+                  <name>Brain-region-parietal-mesial</name>
+               </node>
+               <node>
+                  <name>Brain-region-parietal-opercular</name>
+               </node>
+               <node>
+                  <name>Brain-region-occipital-lateral</name>
+               </node>
+               <node>
+                  <name>Brain-region-occipital-mesial</name>
+               </node>
+               <node>
+                  <name>Brain-region-occipital-basal</name>
+               </node>
+               <node>
+                  <name>Brain-region-insula</name>
+               </node>
             </node>
          </node>
          <node>
@@ -1497,11 +1631,27 @@ Reference:
             </node>
             <node>
                <name>Propagation</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
+               <node>
+                  <name>Propagation-observed</name>
+               </node>
+               <node>
+                  <name>Propagation-not-observed</name>
+               </node>
             </node>
             <node>
                <name>Multifocal</name>
-               <description>Used with Findings-attributes tags</description>
+               <description>When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.</description>
+               <node>
+                  <name>Multifocal-observed</name>
+               </node>
+               <node>
+                  <name>Multifocal-not-observed</name>
+               </node>
+               <node>
+                  <name>Multifocal-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
             </node>
          </node>
          <node>
@@ -1536,7 +1686,7 @@ Reference:
             </node>
             <node>
                <name>Medication-effect-EEG</name>
-               <description>Medications effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Medications effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Medication-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1544,7 +1694,7 @@ Reference:
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1552,7 +1702,7 @@ Reference:
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Auditive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1560,7 +1710,7 @@ Reference:
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1568,7 +1718,7 @@ Reference:
             </node>
             <node>
                <name>Physical-effort-effect</name>
-               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Physical-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1576,7 +1726,7 @@ Reference:
             </node>
             <node>
                <name>Cognitive-tasks-effect</name>
-               <description>Used with Findings-attributes tags.Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Cognitive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1886,35 +2036,63 @@ Reference:
                <name>Appearance-mode</name>
                <description>Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording</description>
                <node>
-                  <name>Random</name>
+                  <name>Random-appearance-mode</name>
                   <description>Occurrence of the the non-ictal EEG pattern / graphoelement without any rhytmicity / periodicity</description>
                </node>
                <node>
-                  <name>Periodic</name>
+                  <name>Periodic-appearance-mode</name>
                   <description>Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).</description>
                </node>
                <node>
-                  <name>Variable</name>
+                  <name>Variable-appearance-mode</name>
                   <description>Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording</description>
+               </node>
+               <node>
+                  <name>Intermittent-appearance-mode</name>
+               </node>
+               <node>
+                  <name>Continuous-appearance-mode</name>
+               </node>
+               <node>
+                  <name>Appearance-mode-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
                </node>
             </node>
             <node>
                <name>Discharge-pattern</name>
                <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
                <node>
-                  <name>Single-discharge</name>
-                  <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Findings-attributes tags</description>
+                  <name>Single-discharge-pattern</name>
+                  <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Finding-property/Incidence tag</description>
                </node>
                <node>
-                  <name>Rhythmic-trains-or-bursts</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Findings-attributes tags</description>
+                  <name>Rhythmic-trains-or-bursts-discharge-pattern</name>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevelance tag</description>
+                  <node>
+                     <name>Rhythmic-trains-or-bursts--frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                </node>
                <node>
-                  <name>Arhythmic-trains-or-bursts</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Findings-attributes tags</description>
+                  <name>Arhythmic-trains-or-bursts-discharge-pattern</name>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevelance tag</description>
                </node>
                <node>
-                  <name>Fragmented</name>
+                  <name>Fragmented-discharge-pattern</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1936,6 +2114,66 @@ Reference:
                      <name>valueClass</name>
                      <value>numericClass</value>
                   </attribute>
+               </node>
+            </node>
+            <node>
+               <name>PD-Time-related-features</name>
+               <description>Periodic discharges not further specified (PDs) time-relayed features tags</description>
+               <node>
+                  <name>PD-duration</name>
+                  <node>
+                     <name>Very-brief-PD-duration</name>
+                     <description>less than 10 sec</description>
+                  </node>
+                  <node>
+                     <name>Brief-PD-duration</name>
+                     <description>10 to 59 sec</description>
+                  </node>
+                  <node>
+                     <name>Intermidiate-PD-duration</name>
+                     <description>1 to 4.9 min</description>
+                  </node>
+                  <node>
+                     <name>Long-PD-duration</name>
+                     <description>5 to 59 min</description>
+                  </node>
+                  <node>
+                     <name>Very-long-PD-duration</name>
+                     <description>greater than 1 hour</description>
+                  </node>
+                  <node>
+                     <name>PD-duration-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>PD-onset</name>
+                  <node>
+                     <name>Sudden-PD-onset</name>
+                  </node>
+                  <node>
+                     <name>Gradual-PD-onset</name>
+                  </node>
+                  <node>
+                     <name>PD-onset-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>PD-dynamics</name>
+                  <node>
+                     <name>Evolving-PD-dynamics</name>
+                  </node>
+                  <node>
+                     <name>Flunctuating-PD-dynamics</name>
+                  </node>
+                  <node>
+                     <name>Static-PD-dynamics</name>
+                  </node>
+                  <node>
+                     <name>PD-dynamics-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
                </node>
             </node>
          </node>
@@ -2166,6 +2404,24 @@ Reference:
             <node>
                <name>Continuous-prevalence</name>
                <description>Greater than 90 percents</description>
+            </node>
+         </node>
+         <node>
+            <name>Sleep-property</name>
+            <node>
+               <name>Sleep-abnormal-amplitude-asymmetry</name>
+               <description>Absence or consistenly marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement</description>
+               <node>
+                  <name>Sleep-abnormal-amplitude-asymmetry-exists</name>
+               </node>
+               <node>
+                  <name>Sleep-abnormal-amplitude-asymmetry-LowerLeft</name>
+                  <description>Amplitude lower on the left side.</description>
+               </node>
+               <node>
+                  <name>Sleep-abnormal-amplitude-asymmetry-LowerRight</name>
+                  <description>Amplitude lower on the right side.</description>
+               </node>
             </node>
          </node>
          <node>
