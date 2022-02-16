@@ -101,14 +101,14 @@ Reference:
 '''Episodes''' <nowiki> [Clinical episodes or electrographic seizures.] </nowiki>
 
     * Epileptic-seizure
-        ** Focal-onset
-            *** Aware
-            *** Impaired-awareness
-            *** Awareness-unknown
-            *** Focal-to-bilateral-tonic-clonic
-        ** Generalized-onset
-        ** Unknown-onset
-        ** Unclassified
+        ** Focal-onset-epileptic-seizure
+            *** Aware-focal-onset-epileptic-seizure
+            *** Impaired-awareness-focal-onset-epileptic-seizure
+            *** Awareness-unknown-focal-onset-epileptic-seizure
+            *** Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure
+        ** Generalized-onset-epileptic-seizure
+        ** Unknown-onset-epileptic-seizure
+        ** Unclassified-epileptic-seizure
     * Subtle-seizure <nowiki> [Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bycicling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges , and are clearly epileptic, ictal EEG often does not show typical epileptic activity] </nowiki>
     * Electrographic-seizure <nowiki> [Referred usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify] </nowiki>
     * PNES <nowiki> [Psychogenic nonepileptic seizure] </nowiki>
@@ -205,12 +205,12 @@ Reference:
     * Respiration
         ** Oxygen-saturation
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
-        ** Respiration-features
-            *** Apnoe <nowiki> [Add duration and comments in free text]</nowiki>
+        ** Respiration-feature
+            *** Apnoe-respiration-feature <nowiki> [Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Hypopnea <nowiki> [Add duration and comments in free text]</nowiki>
+            *** Hypopnea-respiration-feature <nowiki> [Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Apnea-hypopnea-index <nowiki> [events/h. Used with Findings-attributes tags]</nowiki>
+            *** Apnea-hypopnea-index-respiration-feature <nowiki> [events/h. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue}[free text]</nowiki>
@@ -221,7 +221,7 @@ Reference:
     * ECG <nowiki> [electrocardiography]</nowiki>
         ** QT-period
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** ECG-features
+        ** ECG-feature
             *** Sinus-rhythm <nowiki> [Normal rhythm. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Arrhythmia
@@ -245,7 +245,7 @@ Reference:
             *** Bilateral-muscle
         ** Muscle-Name
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** EMG-features
+        ** EMG-feature
             *** Myoclonus-rhythmic <nowiki> [Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Myoclonus-arrhythmic
@@ -409,7 +409,7 @@ Reference:
             *** Brain-region-occipital-basal
             *** Brain-region-insula
 
-    * Location-property <nowiki>[Location can be scored for findings.]</nowiki>
+    * Location-property <nowiki>[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left > right, right > left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
         ** Brain-laterality
             *** Left
             *** Left-greater-right
@@ -637,36 +637,36 @@ Reference:
     
     * Episode-property
         ** Epileptic-seizure-classification <nowiki> [Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
-            *** Motor-onset
-                **** Myoclonic-seizure
-                **** Negative-myoclonic-seizure
-                **** Clonic-seizure
-                **** Tonic-seizure
-                **** Atonic-seizure
-                **** Myoclonic-Atonic-seizure
-                **** Myoclonic-tonoc-clonic-seizure
-                **** Tonic-clonic-seizure
-                **** Automatism-seizure
-                **** Hyperkinetic-seizure
+            *** Motor-onset-epileptic-seizure
+                **** Myoclonic-motor-onset-epileptic-seizure
+                **** Negative-myoclonic-motor-onset-epileptic-seizure
+                **** Clonic-motor-onset-epileptic-seizure
+                **** Tonic-motor-onset-epileptic-seizure
+                **** Atonic-motor-onset-epileptic-seizure
+                **** Myoclonic-Atonic-motor-onset-epileptic-seizure
+                **** Myoclonic-tonoc-clonic-motor-onset-epileptic-seizure
+                **** Tonic-clonic-motor-onset-epileptic-seizure
+                **** Automatism-motor-onset-epileptic-seizure
+                **** Hyperkinetic-motor-onset-epileptic-seizure
                 **** Epileptic-spasm-episode
-            *** Nonmotor-onset
-                **** Behavior-arrest-seizure
-                **** Sensory-seizure
-                **** Emotional-seizure
-                **** Cognitive-seizure
-                **** Autonomic-seizure
-            *** Absence
-                **** Typical-absence-seizure
-                **** Atypical-absence-seizure
-                **** Myoclonic-absence-seizure
-                **** Eyelid-myoclonia-seizure
+            *** Nonmotor-onset-epileptic-seizure
+                **** Behavior-arrest-nonmotor-onse-epileptic-seizure
+                **** Sensory-nonmotor-onse-epileptic-seizure
+                **** Emotional-nonmotor-onse-epileptic-seizure
+                **** Cognitive-nonmotor-onse-epileptic-seizure
+                **** Autonomic-nonmotor-onse-epileptic-seizure
+            *** Absence-epileptic-seizure
+                **** Typical-absence-epileptic-seizure
+                **** Atypical-absence-epileptic-seizure
+                **** Myoclonic-absence-epileptic-seizure
+                **** Eyelid-myoclonia-epileptic-seizure
 
-        ** Episode-phase <nowiki>[The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal. ]</nowiki>
+        ** Episode-phase <nowiki>[The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.]</nowiki>
             *** Initial
             *** Subsequent
-            *** Postictal
+            *** Postictal        
                 
-        ** Seizure-semiology
+        ** Seizure-semiology <nowiki>[Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki
             *** Motor-manifestation
                 **** Elementary-motor
                     ***** Tonic <nowiki> [A sustained increase in muscle contraction lasting a few seconds to minutes. ]</nowiki>
@@ -746,42 +746,91 @@ Reference:
                         ****** <nowiki># {takesValue}[free text]</nowiki>
             *** Other-manifestation
                 **** <nowiki># {takesValue}[free text]</nowiki>
-        ** Ictal-EEG
+
+        ** Postictal-semiology
+            *** Unconscious-postictal
+            *** Quick-recovery-of-consciousness-postictal <nowiki>[Quick recovery of awareness and responsivness.]</nowiki>
+            *** Aphasia-or-dysphasia-postictal <nowiki>[Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.]</nowiki>
+            *** Postictal-behavioral-change <nowiki>[Occurring immeddiatly after a aseizure. Including pshychosis, hypomanina, obsessive-compulsive behaviour.]</nowiki>
+            *** Hemianopia-postictal <nowiki>[Postictal visual loss in a a hemi field.]
+            *** Postictal-impaired-cognition <nowiki>[Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, excution, praxis, speech]</nowiki>
+            *** Postictal-dysphoria <nowiki>[Depression, irritability, euphoric mood, fear, anxiety]</nowiki>
+            *** Postictal-headache <nowiki>[Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.]</nowiki>
+            *** Postictal-nose-wiping <nowiki>[Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.]</nowiki>
+            *** Postictal-anterograde-amnesia <nowiki>[Impaired ability to remember new material]</nowiki
+            *** Postictal-retrograde-amnesia <nowiki>[Impaired ability to recall previously remember material]</nowiki
+            *** Postictal-paresis <nowiki>[Todds palsy. Any unilaterar posticatl dysfunction relating to motor, language, sensory and/or integrative functions.]</nowiki>
+            *** Postictal-sleep <nowiki>[Invincible need to sleep after a seizure.]
+            *** Postictal-unilateral-myoclonic-jerks <nowiki>[unilateral motor phenomena, other then  specified, occuring in postictal phase.]</nowiki>
+            *** Other-postictal-unilateral-motor-phenomena
+                ***** <nowiki># {takesValue}[free text]</nowiki>
+
+        ** Polygraphic-channel-relation-to-episode
+            *** Polygraphic-channel-cause-to-episode
+            *** Polygraphic-channel-consequence-of-episode
+            *** Polygraphic-channel-relation-to-episode-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+        ** Ictal-EEG-patterns
             *** Obscured-by-artifacts
             *** Ictal-EEG-activity
+            *** Postictal-EEG-activity
 
-    * Time-context-property
-        ** Consciousness <nowiki>[Used with Findings-attributes tags]</nowiki>
-            *** Not-tested
-            *** Affected
-            *** Mildly-affected
-            *** Not-affected
-        ** Episode-awareness <nowiki>[Used with Findings-attributes tags]</nowiki>
-        ** Start-relationship
-            *** Clinical-start-followed-EEG
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
-            *** EEG-start-followed-clinical
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
-            *** Simultaneous
-        ** Event-count <nowiki>[Event per recording]</nowiki>
-            *** <nowiki> # {takesValue, valueClass=numericClass} </nowiki>
-        ** State-start <nowiki>[State at the start of the episode]</nowiki>
-            *** From-sleep
-                **** <nowiki># {takesValue}[free text]</nowiki>
-            *** From-awake
-                **** <nowiki># {takesValue}[free text]</nowiki>
-        ** Postictal-phase
-            *** <nowiki> # {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-        ** Prodome <nowiki>[Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
-            *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Tongue-biting
-        ** Seizure-dynamics
-            *** Evolution-morphology
-                **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Evolution-frequency
-                **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Evolution-location
-                **** <nowiki># {takesValue}[free text]</nowiki>
+        ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration/#]</nowiki>
+            *** Episode-consciousness
+                **** Episode-consciousness-not-tested
+                **** Episode-consciousness-affected
+                **** Episode-consciousness-mildly-affected
+                **** Episode-consciousness-not-affected
+                **** Episode-consciousness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+            *** Episode-awareness
+                **** Episode-awareness-exists
+                **** No-episode-awareness
+                **** Episode-awareness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+            *** Clinical-EEG-temporal-relationship
+                **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by # seconds]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
+                **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by # seconds]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
+                **** Simultaneous
+                **** Clinical-EEG-temporal-relationship-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+            *** Event-count <nowiki>[Number of stereotypical episodes during the recording]</nowiki>
+                **** <nowiki> # {takesValue, valueClass=numericClass} </nowiki>
+                **** Event-count-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            
+            *** State-episode-start <nowiki>[State at the start of the episode]</nowiki>
+                **** Episode-start-from-sleep
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+                **** Episode-start-from-awake
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+                **** State-episode-start-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+            *** Episode-postictal-phase
+                **** <nowiki> # {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
+                **** Postictal-phase-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+
+            *** Episode-prodome <nowiki>[Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
+                **** Episode-prodome-exists
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+                **** No-episode-prodome
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+
+            *** Episode-tongue-biting
+                **** Episode-tongue-biting-exists
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+                **** No-episode-tongue-biting
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+
+            *** Seizure-dynamics <nowiki>[Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location)]</nowiki>
+                **** Evolution-morphology
+                    ***** <nowiki># {takesValue}[free text]</nowiki>
+                **** Evolution-frequency
+                    **** <nowiki># {takesValue}[free text]</nowiki>
+                **** Evolution-location
+                    ***** <nowiki># {takesValue}[free text]</nowiki> 
+                **** Seizure-dynamics-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>       
 
 !# end schema 
 
