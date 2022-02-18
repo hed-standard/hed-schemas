@@ -305,28 +305,28 @@ Reference:
          <node>
             <name>Epileptic-seizure</name>
             <node>
-               <name>Focal-onset</name>
+               <name>Focal-onset-epileptic-seizure</name>
                <node>
-                  <name>Aware</name>
+                  <name>Aware-focal-onset-epileptic-seizure</name>
                </node>
                <node>
-                  <name>Impaired-awareness</name>
+                  <name>Impaired-awareness-focal-onset-epileptic-seizure</name>
                </node>
                <node>
-                  <name>Awareness-unknown</name>
+                  <name>Awareness-unknown-focal-onset-epileptic-seizure</name>
                </node>
                <node>
-                  <name>Focal-to-bilateral-tonic-clonic</name>
+                  <name>Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure</name>
                </node>
             </node>
             <node>
-               <name>Generalized-onset</name>
+               <name>Generalized-onset-epileptic-seizure</name>
             </node>
             <node>
-               <name>Unknown-onset</name>
+               <name>Unknown-onset-epileptic-seizure</name>
             </node>
             <node>
-               <name>Unclassified</name>
+               <name>Unclassified-epileptic-seizure</name>
             </node>
          </node>
          <node>
@@ -656,9 +656,9 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Respiration-features</name>
+               <name>Respiration-feature</name>
                <node>
-                  <name>Apnoe</name>
+                  <name>Apnoe-respiration-feature</name>
                   <description>Add duration and comments in free text</description>
                   <node>
                      <name>#</name>
@@ -669,7 +669,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Hypopnea</name>
+                  <name>Hypopnea-respiration-feature</name>
                   <description>Add duration and comments in free text</description>
                   <node>
                      <name>#</name>
@@ -680,7 +680,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Apnea-hypopnea-index</name>
+                  <name>Apnea-hypopnea-index-respiration-feature</name>
                   <description>events/h. Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -737,7 +737,7 @@ Reference:
                </node>
             </node>
             <node>
-               <name>ECG-features</name>
+               <name>ECG-feature</name>
                <node>
                   <name>Sinus-rhythm</name>
                   <description>Normal rhythm. Used with Findings-attributes tags</description>
@@ -851,7 +851,7 @@ Reference:
                </node>
             </node>
             <node>
-               <name>EMG-features</name>
+               <name>EMG-feature</name>
                <node>
                   <name>Myoclonus-rhythmic</name>
                   <description>Used with Findings-attributes tags</description>
@@ -1357,10 +1357,10 @@ Reference:
                            </attribute>
                         </node>
                      </node>
-                     <node>
-                        <name>PD-superimposed-activity-not-possible-to-determine</name>
-                        <description>Not possible to determine</description>
-                     </node>
+                  </node>
+                  <node>
+                     <name>PD-superimposed-activity-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
@@ -1543,7 +1543,7 @@ Reference:
          </node>
          <node>
             <name>Location-property</name>
-            <description>Location can be scored for findings.</description>
+            <description>Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.</description>
             <node>
                <name>Brain-laterality</name>
                <node>
@@ -1862,130 +1862,130 @@ Reference:
                <name>IPS-effect</name>
                <node>
                   <name>Posterior-stimulus-dependent-IPS-response</name>
-               </node>
-               <node>
-                  <name>Posterior-stimulus-dependent-IPS-response-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Posterior-stimulus-dependent-IPS-response-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Posterior-stimulus-independent-IPS-response-limited</name>
                   <description>limited to the stimulus-train</description>
-               </node>
-               <node>
-                  <name>Posterior-stimulus-independent-IPS-response-limited-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Posterior-stimulus-independent-IPS-response-limited-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Posterior-stimulus-independent-IPS-response-self-sustained</name>
-               </node>
-               <node>
-                  <name>Posterior-stimulus-independent-IPS-response-self-sustained-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Posterior-stimulus-independent-IPS-response-self-sustained-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-IPS-response-limited</name>
                   <description>limited to the stimulus-train</description>
-               </node>
-               <node>
-                  <name>Generalized-photoparoxysmal-IPS-response-limited-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Generalized-photoparoxysmal-IPS-response-limited-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-IPS-response-self-sustained</name>
-               </node>
-               <node>
-                  <name>Generalized-photoparoxysmal-IPS-response-self-sustained-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Generalized-photoparoxysmal-IPS-response-self-sustained-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect</name>
-               </node>
-               <node>
-                  <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency</name>
-                  <description>Hz Values (numbers) typed in.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
+                     <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency</name>
+                     <description>Hz Values (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -2211,10 +2211,10 @@ Reference:
                <node>
                   <name>High-range</name>
                   <description>High ( more than 70 microV)</description>
-                  <node>
-                     <name>PDR-amplitude-not-possible-to-determine</name>
-                     <description>Not possible to determine</description>
-                  </node>
+               </node>
+               <node>
+                  <name>PDR-amplitude-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
                </node>
             </node>
             <node>
@@ -2430,72 +2430,72 @@ Reference:
                <name>Epileptic-seizure-classification</name>
                <description>Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
                <node>
-                  <name>Motor-onset</name>
+                  <name>Motor-onset-epileptic-seizure</name>
                   <node>
-                     <name>Myoclonic-seizure</name>
+                     <name>Myoclonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Negative-myoclonic-seizure</name>
+                     <name>Negative-myoclonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Clonic-seizure</name>
+                     <name>Clonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Tonic-seizure</name>
+                     <name>Tonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Atonic-seizure</name>
+                     <name>Atonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-Atonic-seizure</name>
+                     <name>Myoclonic-Atonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-tonoc-clonic-seizure</name>
+                     <name>Myoclonic-tonoc-clonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Tonic-clonic-seizure</name>
+                     <name>Tonic-clonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Automatism-seizure</name>
+                     <name>Automatism-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Hyperkinetic-seizure</name>
+                     <name>Hyperkinetic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
                      <name>Epileptic-spasm-episode</name>
                   </node>
                </node>
                <node>
-                  <name>Nonmotor-onset</name>
+                  <name>Nonmotor-onset-epileptic-seizure</name>
                   <node>
-                     <name>Behavior-arrest-seizure</name>
+                     <name>Behavior-arrest-nonmotor-onse-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Sensory-seizure</name>
+                     <name>Sensory-nonmotor-onse-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Emotional-seizure</name>
+                     <name>Emotional-nonmotor-onse-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Cognitive-seizure</name>
+                     <name>Cognitive-nonmotor-onse-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Autonomic-seizure</name>
+                     <name>Autonomic-nonmotor-onse-epileptic-seizure</name>
                   </node>
                </node>
                <node>
-                  <name>Absence</name>
+                  <name>Absence-epileptic-seizure</name>
                   <node>
-                     <name>Typical-absence-seizure</name>
+                     <name>Typical-absence-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Atypical-absence-seizure</name>
+                     <name>Atypical-absence-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-absence-seizure</name>
+                     <name>Myoclonic-absence-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Eyelid-myoclonia-seizure</name>
+                     <name>Eyelid-myoclonia-epileptic-seizure</name>
                   </node>
                </node>
             </node>
@@ -2514,6 +2514,7 @@ Reference:
             </node>
             <node>
                <name>Seizure-semiology</name>
+               <description>Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
                <node>
                   <name>Motor-manifestation</name>
                   <node>
@@ -2827,178 +2828,344 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Ictal-EEG</name>
+               <name>Postictal-semiology</name>
+               <node>
+                  <name>Unconscious-postictal</name>
+               </node>
+               <node>
+                  <name>Quick-recovery-of-consciousness-postictal</name>
+                  <description>Quick recovery of awareness and responsivness.</description>
+               </node>
+               <node>
+                  <name>Aphasia-or-dysphasia-postictal</name>
+                  <description>Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.</description>
+               </node>
+               <node>
+                  <name>Postictal-behavioral-change</name>
+                  <description>Occurring immeddiatly after a aseizure. Including pshychosis, hypomanina, obsessive-compulsive behaviour.</description>
+               </node>
+               <node>
+                  <name>Hemianopia-postictal</name>
+                  <description>Postictal visual loss in a a hemi field.</description>
+               </node>
+               <node>
+                  <name>Postictal-impaired-cognition</name>
+                  <description>Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, excution, praxis, speech</description>
+               </node>
+               <node>
+                  <name>Postictal-dysphoria</name>
+                  <description>Depression, irritability, euphoric mood, fear, anxiety</description>
+               </node>
+               <node>
+                  <name>Postictal-headache</name>
+                  <description>Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.</description>
+               </node>
+               <node>
+                  <name>Postictal-nose-wiping</name>
+                  <description>Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.</description>
+               </node>
+               <node>
+                  <name>Postictal-anterograde-amnesia</name>
+                  <description>Impaired ability to remember new material</description>
+               </node>
+               <node>
+                  <name>Postictal-retrograde-amnesia</name>
+                  <description>Impaired ability to recall previously remember material</description>
+               </node>
+               <node>
+                  <name>Postictal-paresis</name>
+                  <description>Todds palsy. Any unilaterar posticatl dysfunction relating to motor, language, sensory and/or integrative functions.</description>
+               </node>
+               <node>
+                  <name>Postictal-sleep</name>
+                  <description>Invincible need to sleep after a seizure.</description>
+               </node>
+               <node>
+                  <name>Postictal-unilateral-myoclonic-jerks</name>
+                  <description>unilateral motor phenomena, other then  specified, occuring in postictal phase.</description>
+               </node>
+               <node>
+                  <name>Other-postictal-unilateral-motor-phenomena</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Polygraphic-channel-relation-to-episode</name>
+               <node>
+                  <name>Polygraphic-channel-cause-to-episode</name>
+               </node>
+               <node>
+                  <name>Polygraphic-channel-consequence-of-episode</name>
+               </node>
+               <node>
+                  <name>Polygraphic-channel-relation-to-episode-not-possible-to-determine</name>
+                  <description>Not possible to determine</description>
+               </node>
+            </node>
+            <node>
+               <name>Ictal-EEG-patterns</name>
                <node>
                   <name>Obscured-by-artifacts</name>
                </node>
                <node>
                   <name>Ictal-EEG-activity</name>
                </node>
+               <node>
+                  <name>Postictal-EEG-activity</name>
+               </node>
+            </node>
+            <node>
+               <name>Episode-time-context-property</name>
+               <description>Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration</description>
+               <node>
+                  <name>Episode-consciousness</name>
+                  <node>
+                     <name>Episode-consciousness-not-tested</name>
+                  </node>
+                  <node>
+                     <name>Episode-consciousness-affected</name>
+                  </node>
+                  <node>
+                     <name>Episode-consciousness-mildly-affected</name>
+                  </node>
+                  <node>
+                     <name>Episode-consciousness-not-affected</name>
+                  </node>
+                  <node>
+                     <name>Episode-consciousness-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Episode-awareness</name>
+                  <node>
+                     <name>Episode-awareness-exists</name>
+                  </node>
+                  <node>
+                     <name>No-episode-awareness</name>
+                  </node>
+                  <node>
+                     <name>Episode-awareness-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Clinical-EEG-temporal-relationship</name>
+                  <node>
+                     <name>Clinical-start-followed-EEG</name>
+                     <description>Clinical start, followed by EEG start by X seconds</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>timeUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>EEG-start-followed-clinical</name>
+                     <description>EEG start, followed by clinical start by X seconds</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>timeUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Simultaneous</name>
+                  </node>
+                  <node>
+                     <name>Clinical-EEG-temporal-relationship-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Event-count</name>
+                  <description>Number of stereotypical episodes during the recording</description>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Event-count-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>State-episode-start</name>
+                  <description>State at the start of the episode</description>
+                  <node>
+                     <name>Episode-start-from-sleep</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Episode-start-from-awake</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>State-episode-start-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Episode-postictal-phase</name>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>timeUnits</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Postictal-phase-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Episode-prodome</name>
+                  <description>Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).</description>
+                  <node>
+                     <name>Episode-prodome-exists</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>No-episode-prodome</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Episode-tongue-biting</name>
+                  <node>
+                     <name>Episode-tongue-biting-exists</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>No-episode-tongue-biting</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Seizure-dynamics</name>
+                  <description>Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location)</description>
+                  <node>
+                     <name>Evolution-morphology</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Evolution-frequency</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Evolution-location</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Seizure-dynamics-not-possible-to-determine</name>
+                     <description>Not possible to determine</description>
+                  </node>
+               </node>
             </node>
          </node>
          <node>
-            <name>Time-context-property</name>
+            <name>Artifact-significance-to-recording</name>
+            <description>It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.</description>
             <node>
-               <name>Consciousness</name>
-               <description>Used with Findings-attributes tags</description>
-               <node>
-                  <name>Not-tested</name>
-               </node>
-               <node>
-                  <name>Affected</name>
-               </node>
-               <node>
-                  <name>Mildly-affected</name>
-               </node>
-               <node>
-                  <name>Not-affected</name>
-               </node>
+               <name>Recording-not-interpretable-due-to-artifact</name>
             </node>
             <node>
-               <name>Episode-awareness</name>
-               <description>Used with Findings-attributes tags</description>
+               <name>Recording-of-reduced-diagnostic-value-due-to-artifact</name>
             </node>
             <node>
-               <name>Start-relationship</name>
-               <node>
-                  <name>Clinical-start-followed-EEG</name>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>timeUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>EEG-start-followed-clinical</name>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>timeUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Simultaneous</name>
-               </node>
-            </node>
-            <node>
-               <name>Event-count</name>
-               <description>Event per recording</description>
-               <node>
-                  <name>#</name>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>numericClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>State-start</name>
-               <description>State at the start of the episode</description>
-               <node>
-                  <name>From-sleep</name>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>From-awake</name>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-            </node>
-            <node>
-               <name>Postictal-phase</name>
-               <node>
-                  <name>#</name>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>numericClass</value>
-                  </attribute>
-                  <attribute>
-                     <name>unitClass</name>
-                     <value>timeUnits</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Prodome</name>
-               <description>Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).</description>
-               <node>
-                  <name>#</name>
-                  <description>free text</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Tongue-biting</name>
-            </node>
-            <node>
-               <name>Seizure-dynamics</name>
-               <node>
-                  <name>Evolution-morphology</name>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Evolution-frequency</name>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Evolution-location</name>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
+               <name>Artifact-does-not-interfer-recording</name>
             </node>
          </node>
       </node>

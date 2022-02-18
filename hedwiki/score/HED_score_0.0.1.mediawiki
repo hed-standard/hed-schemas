@@ -663,12 +663,12 @@ Reference:
             *** Subsequent
             *** Postictal        
                 
-        ** Seizure-semiology <nowiki>[Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki
+        ** Seizure-semiology <nowiki>[Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
             *** Motor-manifestation
                 **** Elementary-motor
-                    ***** Tonic <nowiki>[A sustained increase in muscle contraction lasting a few seconds to minutes. ]</nowiki>
+                    ***** Tonic <nowiki>[A sustained increase in muscle contraction lasting a few seconds to minutes.]</nowiki>
                     ***** Dystonic <nowiki>[Sustained contractions of both agonist and antagonist muscles producing athetoid or twisting movements, which, when prolonged, may produce abnormal postures.]</nowiki>
-                    ***** Epileptic-spasm <nowiki>[A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not so sustained as a tonic seizure (i.e., about 1 s). Limited forms may occur: grimacing, head nodding. Frequent occurrence in clusters. ] </nowiki>
+                    ***** Epileptic-spasm <nowiki>[A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not so sustained as a tonic seizure (i.e., about 1 s). Limited forms may occur: grimacing, head nodding. Frequent occurrence in clusters.] </nowiki>
                     ***** Postural <nowiki>[Adoption of a posture that may be bilaterally symmetric or asymmetric (as in a fencing posture) ]</nowiki>
                     ***** Versive <nowiki>[A sustained, forced conjugate ocular, cephalic, and/or truncal rotation or lateral deviation from the midline]</nowiki>
                     ***** Clonic <nowiki>[Myoclonus that is regularly repetitive, involves the same muscle groups, at a frequency of about 2 to 3 c/s, and is prolonged. Synonym: rhythmic myoclonus ]</nowiki>
@@ -749,15 +749,15 @@ Reference:
             *** Quick-recovery-of-consciousness-postictal <nowiki>[Quick recovery of awareness and responsivness.]</nowiki>
             *** Aphasia-or-dysphasia-postictal <nowiki>[Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.]</nowiki>
             *** Postictal-behavioral-change <nowiki>[Occurring immeddiatly after a aseizure. Including pshychosis, hypomanina, obsessive-compulsive behaviour.]</nowiki>
-            *** Hemianopia-postictal <nowiki>[Postictal visual loss in a a hemi field.]
+            *** Hemianopia-postictal <nowiki>[Postictal visual loss in a a hemi field.]</nowiki>
             *** Postictal-impaired-cognition <nowiki>[Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, excution, praxis, speech]</nowiki>
             *** Postictal-dysphoria <nowiki>[Depression, irritability, euphoric mood, fear, anxiety]</nowiki>
             *** Postictal-headache <nowiki>[Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.]</nowiki>
             *** Postictal-nose-wiping <nowiki>[Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.]</nowiki>
-            *** Postictal-anterograde-amnesia <nowiki>[Impaired ability to remember new material]</nowiki
-            *** Postictal-retrograde-amnesia <nowiki>[Impaired ability to recall previously remember material]</nowiki
+            *** Postictal-anterograde-amnesia <nowiki>[Impaired ability to remember new material]</nowiki>
+            *** Postictal-retrograde-amnesia <nowiki>[Impaired ability to recall previously remember material]</nowiki>
             *** Postictal-paresis <nowiki>[Todds palsy. Any unilaterar posticatl dysfunction relating to motor, language, sensory and/or integrative functions.]</nowiki>
-            *** Postictal-sleep <nowiki>[Invincible need to sleep after a seizure.]
+            *** Postictal-sleep <nowiki>[Invincible need to sleep after a seizure.]</nowiki>
             *** Postictal-unilateral-myoclonic-jerks <nowiki>[unilateral motor phenomena, other then  specified, occuring in postictal phase.]</nowiki>
             *** Other-postictal-unilateral-motor-phenomena
                 **** <nowiki># {takesValue}[free text]</nowiki>
@@ -772,7 +772,7 @@ Reference:
             *** Ictal-EEG-activity
             *** Postictal-EEG-activity
 
-        ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration/#]</nowiki>
+        ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration]</nowiki>
             *** Episode-consciousness
                 **** Episode-consciousness-not-tested
                 **** Episode-consciousness-affected
@@ -786,9 +786,9 @@ Reference:
                 **** Episode-awareness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
             *** Clinical-EEG-temporal-relationship
-                **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by # seconds]</nowiki>
+                **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
-                **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by # seconds]</nowiki>
+                **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** Simultaneous
                 **** Clinical-EEG-temporal-relationship-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
