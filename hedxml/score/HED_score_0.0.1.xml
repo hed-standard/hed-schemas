@@ -4,8 +4,9 @@
 Data sharing using standard definitions enables applications of automated tools to optimize analyses, reduce errors, and ultimately to advance the understanding of the human brain.
 This implementation of SCORE in an open-source, machine-readable format using HED to enables its use in machine analysis and mega-analysis.
 Reference:
-[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013)
-[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017)</prologue>
+[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
+[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017).
+This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Clinic). This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
    <schema>
       <node>
          <name>Modulators</name>
@@ -189,7 +190,7 @@ Reference:
             <description>EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfil the criteria of the posterior dominant rhythm.</description>
          </node>
          <node>
-            <name>Special-features</name>
+            <name>Special-background-activity-features</name>
             <description>Special Features.</description>
             <node>
                <name>Continuous-background-activity</name>
@@ -228,19 +229,19 @@ Reference:
             <name>Sleep-stage-reached</name>
             <description>For normal sleep patterns the sleep stages reached during the recording can be specified</description>
             <node>
-               <name>N1</name>
+               <name>Sleep-stage-N1</name>
                <description>Sleep stage 1</description>
             </node>
             <node>
-               <name>N2</name>
+               <name>Sleep-stage-N2</name>
                <description>Sleep stage 2</description>
             </node>
             <node>
-               <name>N3</name>
+               <name>Sleep-stage-N3</name>
                <description>Sleep stage 3</description>
             </node>
             <node>
-               <name>REM</name>
+               <name>Sleep-stage-REM</name>
                <description>Rapid eye movement</description>
             </node>
          </node>
@@ -249,19 +250,19 @@ Reference:
             <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Finding-attributes/significance</description>
          </node>
          <node>
-            <name>Vertex-waves</name>
+            <name>Sleep-vertex-wave</name>
             <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Finding-attributes/significance</description>
          </node>
          <node>
-            <name>K-complexes</name>
+            <name>Sleep-K-complex</name>
             <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags</description>
          </node>
          <node>
-            <name>Saw-tooth-waves</name>
+            <name>Sleep-saw-tooth-waves</name>
             <description>Used with Finding-attributes/significance</description>
          </node>
          <node>
-            <name>POSTS</name>
+            <name>Sleep-POSTS</name>
             <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with inding-attributes/significance tags</description>
          </node>
          <node>
@@ -283,19 +284,19 @@ Reference:
             <name>Abnormal-interictal-rhythmic-activity</name>
          </node>
          <node>
-            <name>Special-patterns</name>
+            <name>Interictal-special-patterns</name>
             <node>
-               <name>PDs</name>
+               <name>Interictal-PDs</name>
                <description>Periodic discharges not further specified (PDs).</description>
             </node>
             <node>
-               <name>Extreme-delta-brush</name>
+               <name>Interictal-extreme-delta-brush</name>
             </node>
             <node>
-               <name>Burst-suppression</name>
+               <name>Interictal-burst-suppression</name>
             </node>
             <node>
-               <name>Burst-attenuation</name>
+               <name>Interictal-burst-attenuation</name>
             </node>
          </node>
       </node>
@@ -338,13 +339,13 @@ Reference:
             <description>Referred usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify</description>
          </node>
          <node>
-            <name>PNES</name>
+            <name>Seizure-PNES</name>
             <description>Psychogenic nonepileptic seizure</description>
          </node>
          <node>
             <name>Sleep-related-episodes</name>
             <node>
-               <name>Arousal</name>
+               <name>Sleep-related-arousal</name>
                <description>Normal</description>
             </node>
             <node>
@@ -360,7 +361,7 @@ Reference:
                <description>Periodic limb movement in sleep. Episodes characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
             </node>
             <node>
-               <name>RBD</name>
+               <name>REM-sleep-behavioral-disorder</name>
                <description>REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder.</description>
             </node>
             <node>
@@ -403,7 +404,6 @@ Reference:
             <name>Other-episodes</name>
             <node>
                <name>#</name>
-               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
                </attribute>
@@ -474,6 +474,13 @@ Reference:
          </node>
          <node>
             <name>Other-physiologic-patterns</name>
+            <node>
+               <name>#</name>
+               <description>free text</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+            </node>
          </node>
       </node>
       <node>
@@ -534,22 +541,22 @@ Reference:
          <name>EEG-artifacts</name>
          <description>When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.</description>
          <node>
-            <name>Biological-artifacts</name>
+            <name>Biological-artifact</name>
             <description>Used with Findings-property/ tags</description>
             <node>
-               <name>Eye-blinks</name>
+               <name>Eye-blinks-artifact</name>
                <description>Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.</description>
             </node>
             <node>
-               <name>Eye-movements-horizontal</name>
+               <name>Eye-movements-horizontal-artifact</name>
                <description>There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
             </node>
             <node>
-               <name>Eye-movements-vertical</name>
+               <name>Eye-movements-vertical-artifact</name>
                <description>The EEG shows positive potentials (50-100 micro V) with bifrontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
             </node>
             <node>
-               <name>Slow-eye-movements</name>
+               <name>Slow-eye-movements-artifact</name>
                <description>Slow, rolling eye-movements, seen during drowsiness.</description>
             </node>
             <node>
@@ -592,7 +599,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Non-biological-artifacts</name>
+            <name>Non-biological-artifact</name>
             <description>Used with Findings-property/ tags</description>
             <node>
                <name>Power-supply-artifact</name>
@@ -606,7 +613,7 @@ Reference:
                <name>Artificial-ventilation-artifact</name>
             </node>
             <node>
-               <name>Electrode-pops</name>
+               <name>Electrode-pops-artifact</name>
                <description>Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.</description>
             </node>
             <node>
@@ -615,7 +622,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Other-artifacts</name>
+            <name>Other-EEG-artifacts</name>
             <description>Used with Findings-property/ tags</description>
             <node>
                <name>#</name>
@@ -643,7 +650,7 @@ Reference:
          <node>
             <name>Respiration</name>
             <node>
-               <name>Oxygen-saturation</name>
+               <name>Respiration-oxygen-saturation</name>
                <node>
                   <name>#</name>
                   <attribute>
@@ -727,7 +734,7 @@ Reference:
             <name>ECG</name>
             <description>electrocardiography</description>
             <node>
-               <name>QT-period</name>
+               <name>ECG-QT-period</name>
                <node>
                   <name>#</name>
                   <description>free text</description>
@@ -739,7 +746,7 @@ Reference:
             <node>
                <name>ECG-feature</name>
                <node>
-                  <name>Sinus-rhythm</name>
+                  <name>ECG-Sinus-rhythm</name>
                   <description>Normal rhythm. Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -750,7 +757,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Arrhythmia</name>
+                  <name>ECG-Arrhythmia</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -760,7 +767,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Asystolia</name>
+                  <name>ECG-Asystolia</name>
                   <description>duration: range in seconds. Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -771,7 +778,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Bradycardia</name>
+                  <name>ECG-Bradycardia</name>
                   <description>beats/min: range. Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -782,7 +789,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Extrasystole</name>
+                  <name>ECG-Extrasystole</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -792,7 +799,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Ventricular-premature-depolarization</name>
+                  <name>ECG-Ventricular-premature-depolarization</name>
                   <description>Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -803,7 +810,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Tachycardia</name>
+                  <name>ECG-Tachycardia</name>
                   <description>beats/min: range. Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -829,19 +836,19 @@ Reference:
             <name>EMG</name>
             <description>electromyography</description>
             <node>
-               <name>Muscle-side</name>
+               <name>EMG-Muscle-side</name>
                <node>
-                  <name>Left-muscle</name>
+                  <name>EMG-left-muscle</name>
                </node>
                <node>
-                  <name>Right-muscle</name>
+                  <name>EMG-right-muscle</name>
                </node>
                <node>
-                  <name>Bilateral-muscle</name>
+                  <name>EMG-bilateral-muscle</name>
                </node>
             </node>
             <node>
-               <name>Muscle-Name</name>
+               <name>EMG-Muscle-Name</name>
                <node>
                   <name>#</name>
                   <description>free text</description>
@@ -853,7 +860,7 @@ Reference:
             <node>
                <name>EMG-feature</name>
                <node>
-                  <name>Myoclonus-rhythmic</name>
+                  <name>EMG-Myoclonus-rhythmic</name>
                   <description>Used with Findings-attributes tags</description>
                   <node>
                      <name>#</name>
@@ -864,7 +871,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Myoclonus-arrhythmic</name>
+                  <name>EMG-Myoclonus-arrhythmic</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -874,7 +881,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Myoclonus-synchronous</name>
+                  <name>EMG-Myoclonus-synchronous</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -884,7 +891,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Myoclonus-asynchronous</name>
+                  <name>EMG-Myoclonus-asynchronous</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -894,11 +901,11 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>PLMS</name>
+                  <name>EMG-PLMS</name>
                   <description>Periodic limb movements in sleep</description>
                </node>
                <node>
-                  <name>Spasm</name>
+                  <name>EMG-Spasm</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -908,7 +915,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Tonic-contraction</name>
+                  <name>EMG-Tonic-contraction</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -918,7 +925,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Asymmetric-activation-left-first</name>
+                  <name>EMG-Asymmetric-activation-left-first</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -928,7 +935,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Asymmetric-activation-right-first</name>
+                  <name>EMG-Asymmetric-activation-right-first</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -950,7 +957,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Other-channels</name>
+            <name>Other-polygraphic-channels</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -964,7 +971,7 @@ Reference:
          <name>Finding-attributes</name>
          <description>Subtree tree for general properties</description>
          <node>
-            <name>Significance</name>
+            <name>Attributes-significance</name>
             <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags</description>
             <node>
                <name>No-definite-abnormality</name>
@@ -975,7 +982,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Stopped-by</name>
+            <name>Attributes-stopped-by</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -985,7 +992,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Triggered-by</name>
+            <name>Attributes-triggered-by</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -995,7 +1002,7 @@ Reference:
             </node>
          </node>
          <node>
-            <name>Unmodified</name>
+            <name>Attributes-unmodified</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -1547,76 +1554,76 @@ Reference:
             <node>
                <name>Brain-laterality</name>
                <node>
-                  <name>Left</name>
+                  <name>Brain-laterality-left</name>
                </node>
                <node>
-                  <name>Left-greater-right</name>
+                  <name>Brain-laterality-left-greater-right</name>
                </node>
                <node>
-                  <name>Right</name>
+                  <name>Brain-laterality-right</name>
                </node>
                <node>
-                  <name>Right-greater-left</name>
+                  <name>Brain-laterality-right-greater-left</name>
                </node>
                <node>
-                  <name>Midline</name>
+                  <name>Brain-laterality-midline</name>
                </node>
                <node>
-                  <name>Diffuse-asynchronous</name>
+                  <name>Brain-laterality-diffuse-asynchronous</name>
                </node>
             </node>
             <node>
                <name>Brain-region</name>
                <node>
-                  <name>Frontal</name>
+                  <name>Brain-region-frontal</name>
                </node>
                <node>
-                  <name>Temporal</name>
+                  <name>Brain-region-temporal</name>
                </node>
                <node>
-                  <name>Central</name>
+                  <name>Brain-region-central</name>
                </node>
                <node>
-                  <name>Parietal</name>
+                  <name>Brain-region-parietal</name>
                </node>
                <node>
-                  <name>Occipital</name>
+                  <name>Brain-region-occipital</name>
                </node>
             </node>
             <node>
                <name>Body-part</name>
                <node>
-                  <name>Eyelid</name>
+                  <name>Body-part-eyelid</name>
                </node>
                <node>
-                  <name>Face</name>
+                  <name>Body-part-face</name>
                </node>
                <node>
-                  <name>Arm</name>
+                  <name>Body-part-arm</name>
                </node>
                <node>
-                  <name>Leg</name>
+                  <name>Body-part-leg</name>
                </node>
                <node>
-                  <name>Trunk</name>
+                  <name>Body-part-trunk</name>
                </node>
                <node>
-                  <name>Visceral</name>
+                  <name>Body-part-visceral</name>
                </node>
                <node>
-                  <name>Hemi</name>
+                  <name>Body-part-hemi</name>
                </node>
             </node>
             <node>
-               <name>Brain-Centricity</name>
+               <name>Brain-centricity</name>
                <node>
-                  <name>Axial</name>
+                  <name>Brain-centricity-axial</name>
                </node>
                <node>
-                  <name>Proximal-limb</name>
+                  <name>Brain-centricity-proximal-limb</name>
                </node>
                <node>
-                  <name>Distal-limb</name>
+                  <name>Brain-centricity-distal-limb</name>
                </node>
             </node>
             <node>
@@ -1658,12 +1665,12 @@ Reference:
             <name>Modulators-property</name>
             <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
             <node>
-               <name>Reactivity</name>
+               <name>Modulators-reactivity</name>
                <node>
-                  <name>Reactive</name>
+                  <name>Modulators-reactive</name>
                </node>
                <node>
-                  <name>Not-reactive</name>
+                  <name>Modulators-not-reactive</name>
                </node>
             </node>
             <node>
@@ -1743,10 +1750,10 @@ Reference:
                </node>
             </node>
             <node>
-               <name>Facilitating-factors</name>
+               <name>Facilitating-factor</name>
                <description>Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence).</description>
                <node>
-                  <name>Alcohol</name>
+                  <name>Facilitating-factor-alcohol</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1756,7 +1763,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Awake</name>
+                  <name>Facilitating-factor-awake</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1766,7 +1773,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Catamenial</name>
+                  <name>Facilitating-factor-catamenial</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1776,7 +1783,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Fever</name>
+                  <name>Facilitating-factor-fever</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1786,7 +1793,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Sleep</name>
+                  <name>Facilitating-factor-sleep</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1796,7 +1803,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Sleep-deprived</name>
+                  <name>Facilitating-factor-sleep-deprived</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1806,7 +1813,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Other</name>
+                  <name>Facilitating-factor-other</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1996,7 +2003,7 @@ Reference:
                <name>Modulators-effect</name>
                <description>Tags for describing the influence of the modulators</description>
                <node>
-                  <name>Continuous-during-NRS</name>
+                  <name>Modulators-effect-continuous-during-NRS</name>
                   <description>Continuous during non-rapid-eye-movement-sleep (NRS)</description>
                   <node>
                      <name>#</name>
@@ -2007,7 +2014,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Only-during</name>
+                  <name>Modulators-effect-only-during</name>
                   <node>
                      <name>#</name>
                      <description>Only during Sleep/Awakening/Hyperventilation/Physical effort/Cognitive task. Free text</description>
@@ -2017,7 +2024,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Change-of-patterns</name>
+                  <name>Modulators-effect-change-of-patterns</name>
                   <description>Change of patterns during sleep/awakening</description>
                   <node>
                      <name>#</name>
@@ -2336,22 +2343,22 @@ Reference:
                <name>Absence-of-PDR</name>
                <description>Reason for absence of PDR</description>
                <node>
-                  <name>Artifacts</name>
+                  <name>Absence-of-PDR-artifacts</name>
                </node>
                <node>
-                  <name>Extreme-low-voltage</name>
+                  <name>Absence-of-PDR-extreme-low-voltage</name>
                </node>
                <node>
-                  <name>Eye-closure-could-not-be-achieved</name>
+                  <name>Absence-of-PDR-eye-closure-could-not-be-achieved</name>
                </node>
                <node>
-                  <name>Lack-of-awake-period</name>
+                  <name>Absence-of-PDR-lack-of-awake-period</name>
                </node>
                <node>
-                  <name>Lack-of-compliance</name>
+                  <name>Absence-of-PDR-lack-of-compliance</name>
                </node>
                <node>
-                  <name>Other-causes</name>
+                  <name>Absence-of-PDR-other-causes</name>
                </node>
             </node>
          </node>
@@ -2390,7 +2397,7 @@ Reference:
                <description>Less than 1 percents</description>
             </node>
             <node>
-               <name>Occasional-</name>
+               <name>Occasional-prevalence</name>
                <description>1 to 9 percents</description>
             </node>
             <node>
@@ -2468,19 +2475,19 @@ Reference:
                <node>
                   <name>Nonmotor-onset-epileptic-seizure</name>
                   <node>
-                     <name>Behavior-arrest-nonmotor-onse-epileptic-seizure</name>
+                     <name>Behavior-arrest-nonmotor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Sensory-nonmotor-onse-epileptic-seizure</name>
+                     <name>Sensory-nonmotor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Emotional-nonmotor-onse-epileptic-seizure</name>
+                     <name>Emotional-nonmotor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Cognitive-nonmotor-onse-epileptic-seizure</name>
+                     <name>Cognitive-nonmotor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Autonomic-nonmotor-onse-epileptic-seizure</name>
+                     <name>Autonomic-nonmotor-onset-epileptic-seizure</name>
                   </node>
                </node>
                <node>
@@ -2503,84 +2510,84 @@ Reference:
                <name>Episode-phase</name>
                <description>The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.</description>
                <node>
-                  <name>Initial</name>
+                  <name>Episode-phase-initial</name>
                </node>
                <node>
-                  <name>Subsequent</name>
+                  <name>Episode-phase-subsequent</name>
                </node>
                <node>
-                  <name>Postictal</name>
+                  <name>Episode-phase-postictal</name>
                </node>
             </node>
             <node>
                <name>Seizure-semiology</name>
                <description>Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
                <node>
-                  <name>Motor-manifestation</name>
+                  <name>Semiology-motor-manifestation</name>
                   <node>
                      <name>Elementary-motor</name>
                      <node>
-                        <name>Tonic</name>
+                        <name>Semiology-motor-tonic</name>
                         <description>A sustained increase in muscle contraction lasting a few seconds to minutes.</description>
                      </node>
                      <node>
-                        <name>Dystonic</name>
+                        <name>Semiology-motor-dystonic</name>
                         <description>Sustained contractions of both agonist and antagonist muscles producing athetoid or twisting movements, which, when prolonged, may produce abnormal postures.</description>
                      </node>
                      <node>
-                        <name>Epileptic-spasm</name>
+                        <name>Semiology-motor-epileptic-spasm</name>
                         <description>A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not so sustained as a tonic seizure (i.e., about 1 s). Limited forms may occur: grimacing, head nodding. Frequent occurrence in clusters.</description>
                      </node>
                      <node>
-                        <name>Postural</name>
+                        <name>Semiology-motor-postural</name>
                         <description>Adoption of a posture that may be bilaterally symmetric or asymmetric (as in a fencing posture)</description>
                      </node>
                      <node>
-                        <name>Versive</name>
+                        <name>Semiology-motor-versive</name>
                         <description>A sustained, forced conjugate ocular, cephalic, and/or truncal rotation or lateral deviation from the midline</description>
                      </node>
                      <node>
-                        <name>Clonic</name>
+                        <name>Semiology-motor-clonic</name>
                         <description>Myoclonus that is regularly repetitive, involves the same muscle groups, at a frequency of about 2 to 3 c/s, and is prolonged. Synonym: rhythmic myoclonus</description>
                      </node>
                      <node>
-                        <name>Myoclonic</name>
+                        <name>Semiology-motor-myoclonic</name>
                         <description>Characterized by myoclonus. MYOCLONUS : sudden, brief (lower than 100 ms) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal)</description>
                      </node>
                      <node>
-                        <name>Jacksonian-march</name>
+                        <name>Semiology-motor-jacksonian-march</name>
                         <description>Term indicating spread of clonic movements through contiguous body parts unilaterally</description>
                      </node>
                      <node>
-                        <name>Negative-myoclonus</name>
+                        <name>Semiology-motor-negative-myoclonus</name>
                         <description>Characterized by negative myoclonus. NEGATIVE MYOCLONUS: interruption of tonic muscular activity for lower than 500 ms without evidence of preceding myoclonia.</description>
                      </node>
                      <node>
-                        <name>Tonic-clonic</name>
+                        <name>Semiology-motor-tonic-clonic</name>
                         <description>A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.</description>
                         <node>
-                           <name>Without-figure-of-four</name>
+                           <name>Semiology-motor-tonic-clonic-without-figure-of-four</name>
                         </node>
                         <node>
-                           <name>With-figure-of-four-extension-left-elbow</name>
+                           <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-left-elbow</name>
                         </node>
                         <node>
-                           <name>With-figure-of-four-extension-right-elbow</name>
+                           <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-right-elbow</name>
                         </node>
                      </node>
                      <node>
-                        <name>Astatic</name>
+                        <name>Semiology-motor-astatic</name>
                         <description>Loss of erect posture that results from an atonic, myoclonic, or tonic mechanism. Synonym: drop attack.</description>
                      </node>
                      <node>
-                        <name>Atonic</name>
+                        <name>Semiology-motor-atonic</name>
                         <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting greator or equal to 1 to 2 s, involving head, trunk, jaw, or limb musculature.</description>
                      </node>
                      <node>
-                        <name>Eye-blinking</name>
+                        <name>Semiology-motor-eye-blinking</name>
                      </node>
                      <node>
-                        <name>Other-elementary-motor</name>
+                        <name>Semiology-motor-other-elementary-motor</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2591,49 +2598,49 @@ Reference:
                      </node>
                   </node>
                   <node>
-                     <name>Automatisms</name>
+                     <name>Semiology-motor-automatisms</name>
                      <node>
-                        <name>Mimetic</name>
+                        <name>Semiology-motor-automatisms-mimetic</name>
                         <description>Facial expression suggesting an emotional state, often fear.</description>
                      </node>
                      <node>
-                        <name>Oroalimentary</name>
+                        <name>Semiology-motor-automatisms-oroalimentary</name>
                         <description>Lip smacking, lip pursing, chewing, licking, tooth grinding, or swallowing.</description>
                      </node>
                      <node>
-                        <name>Dacrystic</name>
+                        <name>Semiology-motor-automatisms-dacrystic</name>
                         <description>Bursts of crying.</description>
                      </node>
                      <node>
-                        <name>Dyspraxic</name>
+                        <name>Semiology-motor-automatisms-dyspraxic</name>
                         <description>Inability to perform learned movements spontaneously or on command or imitation despite intact relevant motor and sensory systems and adequate comprehension and cooperation</description>
                      </node>
                      <node>
-                        <name>Manual</name>
+                        <name>Semiology-motor-automatisms-manual</name>
                         <description>1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.</description>
                      </node>
                      <node>
-                        <name>Gestural</name>
+                        <name>Semiology-motor-automatisms-gestural</name>
                         <description>Semipurposive, asynchronous hand movements. Often unilateral.</description>
                      </node>
                      <node>
-                        <name>Pedal</name>
+                        <name>Semiology-motor-automatisms-pedal</name>
                         <description>1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.</description>
                      </node>
                      <node>
-                        <name>Hypermotor</name>
+                        <name>Semiology-motor-automatisms-hypermotor</name>
                         <description>1. Involves predominantly proximal limb or axial muscles producing irregular sequential ballistic movements, such as pedaling, pelvic thrusting, thrashing, rocking movements. 2. Increase in rate of ongoing movements or inappropriately rapid performance of a movement.</description>
                      </node>
                      <node>
-                        <name>Hypokinetic</name>
+                        <name>Semiology-motor-automatisms-hypokinetic</name>
                         <description>A decrease in amplitude and/or rate or arrest of ongoing motor activity.</description>
                      </node>
                      <node>
-                        <name>Gelastic</name>
+                        <name>Semiology-motor-automatisms-gelastic</name>
                         <description>Bursts of laughter or giggling, usually without an appropriate affective tone.</description>
                      </node>
                      <node>
-                        <name>Other-Automatism</name>
+                        <name>Semiology-motor-other-automatisms</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2649,46 +2656,46 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Non-motor-manifestation</name>
+                  <name>Semiology-non-motor-manifestation</name>
                   <node>
-                     <name>Sensory</name>
+                     <name>Semiology-sensory</name>
                      <node>
-                        <name>Headache</name>
+                        <name>Semiology-sensory-headache</name>
                         <description>Headache occurring in close temporal proximity to the seizure or as the sole seizure manifestation</description>
                      </node>
                      <node>
-                        <name>Visual</name>
+                        <name>Semiology-sensory-visual</name>
                         <description>Flashing or flickering lights, spots, simple patterns, scotomata, or amaurosis.</description>
                      </node>
                      <node>
-                        <name>Auditory</name>
+                        <name>Semiology-sensory-auditory</name>
                         <description>Buzzing, drumming sounds or single tones.</description>
                      </node>
                      <node>
-                        <name>Olfactory</name>
+                        <name>Semiology-sensory-olfactory</name>
                      </node>
                      <node>
-                        <name>Gustatory</name>
+                        <name>Semiology-sensory-gustatory</name>
                         <description>Taste sensations including acidic, bitter, salty, sweet, or metallic.</description>
                      </node>
                      <node>
-                        <name>Epigastric</name>
+                        <name>Semiology-sensory-epigastric</name>
                         <description>Abdominal discomfort including nausea, emptiness, tightness, churning, butterflies, malaise, pain, and hunger; sensation may rise to chest or throat. Some phenomena may reflect ictal autonomic dysfunction.</description>
                      </node>
                      <node>
-                        <name>Somatosensory</name>
+                        <name>Semiology-sensory-somatosensory</name>
                         <description>Tingling, numbness, electric-shock sensation, sense of movement or desire to move.</description>
                      </node>
                      <node>
-                        <name>Painful</name>
+                        <name>Semiology-sensory-painful</name>
                         <description>Peripheral (lateralized/bilateral), cephalic, abdominal</description>
                      </node>
                      <node>
-                        <name>Autonomic-sensation</name>
+                        <name>Semiology-sensory-autonomic-sensation</name>
                         <description>A sensation consistent with involvement of the autonomic nervous system, including cardiovascular, gastrointestinal,  sudomotor, vasomotor, and thermoregulatory functions. (Thus autonomic aura; cf. autonomic events  3.0).</description>
                      </node>
                      <node>
-                        <name>Other-sensory</name>
+                        <name>Semiology-sensory-other</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2699,31 +2706,31 @@ Reference:
                      </node>
                   </node>
                   <node>
-                     <name>Experiential</name>
+                     <name>Semiology-experiential</name>
                      <node>
-                        <name>Affective-emotional</name>
+                        <name>Semiology-experiential-affective-emotional</name>
                         <description>Components include fear, depression, joy, and (rarely) anger.</description>
                      </node>
                      <node>
-                        <name>Hallucinatory</name>
+                        <name>Semiology-experiential-hallucinatory</name>
                         <description>Composite perceptions without corresponding external stimuli involving visual, auditory, somatosensory, olfactory, and/or gustatory phenomena. Example: hearing  and seeing  people talking.</description>
                      </node>
                      <node>
-                        <name>Illusory</name>
+                        <name>Semiology-experiential-illusory</name>
                         <description>An alteration of actual percepts involving the visual, auditory, somatosensory, olfactory, or gustatory systems.</description>
                      </node>
                      <node>
-                        <name>Mnemonic</name>
+                        <name>Semiology-experiential-mnemonic</name>
                         <description>Components that reflect ictal dysmnesia such as feelings of familiarity (deja-vu) and unfamiliarity (jamais-vu).</description>
                         <node>
-                           <name>Deja-vu</name>
+                           <name>Semiology-experiential-mnemonic-Deja-vu</name>
                         </node>
                         <node>
-                           <name>Jamais-vu</name>
+                           <name>Semiology-experiential-mnemonic-Jamais-vu</name>
                         </node>
                      </node>
                      <node>
-                        <name>Other-experiential</name>
+                        <name>Semiology-experiential-other</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2734,25 +2741,25 @@ Reference:
                      </node>
                   </node>
                   <node>
-                     <name>Dyscognitive</name>
+                     <name>Semiology-dyscognitive</name>
                      <description>The term describes events in which (1) disturbance of cognition is the predominant or most apparent feature, and (2a) two or more of the following components are involved, or (2b) involvement of such components remains undetermined. Otherwise, use the more specific term (e.g., mnemonic experiential seizure  or hallucinatory experiential seizure). Components of cognition: ++ perception: symbolic conception of sensory information ++ attention: appropriate selection of a principal perception or task ++ emotion: appropriate affective significance of a perception ++ memory: ability to store and retrieve percepts or concepts ++ executive function: anticipation, selection, monitoring of consequences, and initiation of motor activity including praxis, speech</description>
                   </node>
                   <node>
-                     <name>Language-related</name>
+                     <name>Semiology-language-related</name>
                      <node>
-                        <name>Vocalization</name>
+                        <name>Semiology-language-related-vocalization</name>
                      </node>
                      <node>
-                        <name>Verbalization</name>
+                        <name>Semiology-language-related-verbalization</name>
                      </node>
                      <node>
-                        <name>Dysphasia</name>
+                        <name>Semiology-language-related-dysphasia</name>
                      </node>
                      <node>
-                        <name>Aphasia</name>
+                        <name>Semiology-language-related-aphasia</name>
                      </node>
                      <node>
-                        <name>Other-language-related</name>
+                        <name>Semiology-language-related-other</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2763,49 +2770,49 @@ Reference:
                      </node>
                   </node>
                   <node>
-                     <name>Autonomic</name>
+                     <name>Semiology-autonomic</name>
                      <node>
-                        <name>Pupillary</name>
+                        <name>Semiology-autonomic-pupillary</name>
                         <description>Mydriasis, miosis (either bilateral or unilateral)</description>
                      </node>
                      <node>
-                        <name>Hypersalivation</name>
+                        <name>Semiology-autonomic-hypersalivation</name>
                         <description>Increase in production of saliva leading to uncontrollable drooling</description>
                      </node>
                      <node>
-                        <name>Respiratory-apnoeic</name>
+                        <name>Semiology-autonomic-respiratory-apnoeic</name>
                         <description>subjective shortness of breath, hyperventilation, stridor, coughing, choking, apnea, oxygen desaturation, neurogenic pulmonary edema</description>
                      </node>
                      <node>
-                        <name>Cardiovascular</name>
+                        <name>Semiology-autonomic-cardiovascular</name>
                         <description>Modifications of heart rate (tachycardia, bradycardia), cardiac arrhythmias (such as sinus arrhythmia, sinus arrest, supraventricular tachycardia, atrial premature depolarizations, ventricular premature depolarizations, atrio-ventricular block, bundle branch block, atrioventricular nodal escape rhythm, asystole)</description>
                      </node>
                      <node>
-                        <name>Gastrointestinal</name>
+                        <name>Semiology-autonomic-gastrointestinal</name>
                         <description>Nausea, eructation, vomiting, retching, abdominal sensations, abdominal pain, flatulence, spitting, diarrhoea</description>
                      </node>
                      <node>
-                        <name>Urinary-incontinence</name>
+                        <name>Semiology-autonomic-urinary-incontinence</name>
                         <description>urinary urge (intense urinary urge at the beginning of seizures), urinary incontinence, ictal urination (rare symptom of partial seizures without loss of consciousness)</description>
                      </node>
                      <node>
-                        <name>Genital</name>
+                        <name>Semiology-autonomic-genital</name>
                         <description>Sexual auras (erotic thoughts and feelings, sexual arousal and orgasm). Genital auras (unpleasant, sometimes painful, frightening or emotionally neutral somatosensory sensations in the genitals that can be accompanied by ictal orgasm). Sexual automatisms (hypermotor movements consisting of writhing, thrusting, rhythmic movements of the pelvis, arms and legs, sometimes associated with picking and rhythmic manipulation of the groin or genitalia, exhibitionism and masturbation)</description>
                      </node>
                      <node>
-                        <name>Vasomotor</name>
+                        <name>Semiology-autonomic-vasomotor</name>
                         <description>Flushing or pallor (may be accompanied by feelings of warmth, cold and pain)</description>
                      </node>
                      <node>
-                        <name>Sudomotor</name>
+                        <name>Semiology-autonomic-sudomotor</name>
                         <description>Sweating and piloerection ( may be accompanied by feelings of warmth, cold and pain)</description>
                      </node>
                      <node>
-                        <name>Thermoregulatory</name>
+                        <name>Semiology-autonomic-thermoregulatory</name>
                         <description>Hyperthermia, fever</description>
                      </node>
                      <node>
-                        <name>Other-autonomic</name>
+                        <name>Semiology-autonomic-other</name>
                         <node>
                            <name>#</name>
                            <description>free text</description>
@@ -2817,7 +2824,7 @@ Reference:
                   </node>
                </node>
                <node>
-                  <name>Other-manifestation</name>
+                  <name>Semiology-manifestation-other</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2830,62 +2837,62 @@ Reference:
             <node>
                <name>Postictal-semiology</name>
                <node>
-                  <name>Unconscious-postictal</name>
+                  <name>Postictal-semiology-unconscious</name>
                </node>
                <node>
-                  <name>Quick-recovery-of-consciousness-postictal</name>
+                  <name>Postictal-semiology-quick-recovery-of-consciousness</name>
                   <description>Quick recovery of awareness and responsivness.</description>
                </node>
                <node>
-                  <name>Aphasia-or-dysphasia-postictal</name>
+                  <name>Postictal-semiology-aphasia-or-dysphasia</name>
                   <description>Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.</description>
                </node>
                <node>
-                  <name>Postictal-behavioral-change</name>
+                  <name>Postictal-semiology-behavioral-change</name>
                   <description>Occurring immeddiatly after a aseizure. Including pshychosis, hypomanina, obsessive-compulsive behaviour.</description>
                </node>
                <node>
-                  <name>Hemianopia-postictal</name>
+                  <name>Postictal-semiology-hemianopia</name>
                   <description>Postictal visual loss in a a hemi field.</description>
                </node>
                <node>
-                  <name>Postictal-impaired-cognition</name>
+                  <name>Postictal-semiology-impaired-cognition</name>
                   <description>Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, excution, praxis, speech</description>
                </node>
                <node>
-                  <name>Postictal-dysphoria</name>
+                  <name>Postictal-semiology-dysphoria</name>
                   <description>Depression, irritability, euphoric mood, fear, anxiety</description>
                </node>
                <node>
-                  <name>Postictal-headache</name>
+                  <name>Postictal-semiology-headache</name>
                   <description>Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.</description>
                </node>
                <node>
-                  <name>Postictal-nose-wiping</name>
+                  <name>Postictal-semiology-nose-wiping</name>
                   <description>Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.</description>
                </node>
                <node>
-                  <name>Postictal-anterograde-amnesia</name>
+                  <name>Postictal-semiology-anterograde-amnesia</name>
                   <description>Impaired ability to remember new material</description>
                </node>
                <node>
-                  <name>Postictal-retrograde-amnesia</name>
+                  <name>Postictal-semiology-retrograde-amnesia</name>
                   <description>Impaired ability to recall previously remember material</description>
                </node>
                <node>
-                  <name>Postictal-paresis</name>
+                  <name>Postictal-semiology-paresis</name>
                   <description>Todds palsy. Any unilaterar posticatl dysfunction relating to motor, language, sensory and/or integrative functions.</description>
                </node>
                <node>
-                  <name>Postictal-sleep</name>
+                  <name>Postictal-semiology-sleep</name>
                   <description>Invincible need to sleep after a seizure.</description>
                </node>
                <node>
-                  <name>Postictal-unilateral-myoclonic-jerks</name>
+                  <name>Postictal-semiology-unilateral-myoclonic-jerks</name>
                   <description>unilateral motor phenomena, other then  specified, occuring in postictal phase.</description>
                </node>
                <node>
-                  <name>Other-postictal-unilateral-motor-phenomena</name>
+                  <name>Postictal-semiology-other-unilateral-motor-phenomena</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2911,7 +2918,7 @@ Reference:
             <node>
                <name>Ictal-EEG-patterns</name>
                <node>
-                  <name>Obscured-by-artifacts</name>
+                  <name>Ictal-EEG-patterns-obscured-by-artifacts</name>
                </node>
                <node>
                   <name>Ictal-EEG-activity</name>
