@@ -14,13 +14,13 @@ This project was supported by the by the National Institute of Mental Health of 
 
 !# start schema
 
-'''Modulators''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency).]</nowiki>
+'''Modulators''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
     * Intermittent-photic-stimulation
-        ** <nowiki># {takesValue}</nowiki>
+        ** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
     * Hyperventilation
         ** Quality-of-hyperventilation
-            *** Refused
+            *** Refused-procedure
             *** Poor-effort
             *** Good-effort
             *** Excellent-effort
@@ -62,7 +62,7 @@ This project was supported by the by the National Institute of Mental Health of 
     * Mu-rhythm <nowiki>[EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.]</nowiki>
     * Other-organized-rhythms <nowiki>[EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfil the criteria of the posterior dominant rhythm.]</nowiki>
 
-    * Special-background-activity-features <nowiki>[Special Features.]</nowiki>
+    * Special-background-activity-features <nowiki>[Special Features. Special features contains scoring options for the background activity of critically ill patients.]</nowiki>
         ** Continuous-background-activity
         ** Nearly-continuous-background-activity
         ** Discontinuous-background-activity
@@ -74,13 +74,17 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Sleep-drowsiness''' <nowiki>[The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).]</nowiki>
 
-    * Sleep-architecture <nowiki>[Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance]</nowiki>
+    * Sleep-architecture <nowiki>[For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance]</nowiki>
+        ** Normal-sleep-architecture
+        ** Abnormal-sleep-architecture
+        ** Sleep-architecture-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
     * Sleep-stage-reached <nowiki>[For normal sleep patterns the sleep stages reached during the recording can be specified]</nowiki>
         ** Sleep-stage-N1 <nowiki>[Sleep stage 1]</nowiki>
         ** Sleep-stage-N2 <nowiki>[Sleep stage 2]</nowiki>
         ** Sleep-stage-N3 <nowiki>[Sleep stage 3]</nowiki>
         ** Sleep-stage-REM <nowiki>[Rapid eye movement]</nowiki>
+        ** Sleep-stage-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
     * Sleep-spindles <nowiki>[Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Finding-attributes/significance]</nowiki>
     * Sleep-vertex-wave <nowiki>[Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Finding-attributes/significance]</nowiki>
@@ -165,8 +169,8 @@ This project was supported by the by the National Institute of Mental Health of 
     * Rudimentary-spike-wave-complex <nowiki>[Synonym: Pseudo petit mal discharge. Paroxysmal discharge that consists of generalized or nearly generalized high voltage 3 to 4/sec waves with poorly developed spike in the positive trough between the slow waves, occurring in drowsiness only. It is found only in infancy and early childhood when marked hypnagogic rhythmical theta activity is paramount in the drowsy state.]</nowiki>
     * Slow-fused-transient <nowiki>[A posterior slow-wave preceded by a sharp-contoured potential that blends together with the ensuing slow wave, in children.] </nowiki>
     * Needle-like-occipital-spikes-blind <nowiki>[Spike discharges of a particularly fast and needle-like character develop over the occipital region in most congenitally blind children. Completely disappear during childhood or adolescence.] </nowiki>
-    * SREDA <nowiki>[Subclinical rhythmic EEG discharge of adults. A rhythmic pattern seen in the adult age group, mainly in the waking state or drowsiness. It consists of a mixture of frequencies, often predominant in the theta range. The onset may be fairly abrupt with widespread sharp rhythmical theta and occasionally with delta activity. As to the spatial distribution, a maximum of this discharge is usually found over the centroparietal region and especially over the vertex. It may resemble a seizure discharge but is not accompanied by any clinical signs or symptoms.] </nowiki>
-    * RTTD <nowiki>[Rhythmic temporal theta burst of drowsiness. Characteristic burst of 4-7 Hz waves frequently notched by faster waves, occurring over the temporal regions of the head during drowsiness. Synonym: psychomotor variant pattern. Comment: this is a pattern of drowsiness that is of no clinical significance.]</nowiki>
+    * Subclinical-rhythmic-EEG-discharge-adults <nowiki>[Subclinical rhythmic EEG discharge of adults (SERDA). A rhythmic pattern seen in the adult age group, mainly in the waking state or drowsiness. It consists of a mixture of frequencies, often predominant in the theta range. The onset may be fairly abrupt with widespread sharp rhythmical theta and occasionally with delta activity. As to the spatial distribution, a maximum of this discharge is usually found over the centroparietal region and especially over the vertex. It may resemble a seizure discharge but is not accompanied by any clinical signs or symptoms.] </nowiki>
+    * Rhythmic-temporal-theta-burst-drowsiness <nowiki>[Rhythmic temporal theta burst of drowsiness (RTTD). Characteristic burst of 4-7 Hz waves frequently notched by faster waves, occurring over the temporal regions of the head during drowsiness. Synonym: psychomotor variant pattern. Comment: this is a pattern of drowsiness that is of no clinical significance.]</nowiki>
     * Temporal-slowing-elderly <nowiki>[Focal theta and/or delta activity over the temporal regions, especially the left, in persons over the age of 60. Amplitudes are low/similar to the background activity. Comment: focal temporal theta was found in 20 percent of people between the ages of 40-59 years, and 40 percent of people between 60 and 79 years. One third of people older than 60 years had focal temporal delta activity.] </nowiki>
     * Breach-rhythm <nowiki>[Rhythmical activity recorded over cranial bone defects. Usually it is in the 6 to 11/sec range, does not respond to movements. ] </nowiki>
     * Other-uncertain-significant-patterns
@@ -271,7 +275,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 
-'''Finding-attributes''' <nowiki>[Subtree tree for general properties]</nowiki>
+'''Finding-attribute''' <nowiki>[Subtree tree for general properties]</nowiki>
 
     * Attributes-significance <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags]</nowiki>
         ** No-definite-abnormality
@@ -288,36 +292,37 @@ This project was supported by the by the National Institute of Mental Health of 
 '''Finding-property''' <nowiki>[Descriptive elements. Similar to main HED /Property Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
     * Signal-morphology-property
-        ** Delta-activity <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
+        ** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
             ***  Delta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Delta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Theta-activity <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
+        ** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
             ***  Theta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Theta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Alpha-activity <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag]</nowiki>
+        ** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag]</nowiki>
             ***  Alpha-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Alpha-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Beta-activity <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag]</nowiki>
+        ** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag]</nowiki>
             *** Beta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             *** Beta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Gamma-activity
+        ** Gamma-activity-morphology
             ***  Gamma-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Gamma-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
+
 
         ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies. ]</nowiki>
         ** Spike-and-slow-wave-morphology <nowiki>[A pattern consisting of a spike followed by a slow wave.]</nowiki>
@@ -327,63 +332,64 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Sharp-wave-morphology <nowiki>[A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over 1/4-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies. ]</nowiki>
         ** Sharp-and-slow-wave-morphology <nowiki>[A sequence of a sharp wave and a slow wave. ]</nowiki>
         ** Slow-sharp-wave-morphology <nowiki>[A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave. ]</nowiki>
+        ** High-frequency-oscillation-morphology <nowiki>[HFO]</nowiki>
         ** Hypsarrhythmia-classic-morphology <nowiki>[Abnormal interictal high amplitude waves and a background of irregular spikes.]</nowiki>
         ** Hypsarrhythmia-modified-morphology
 
-        ** Fast-spike-activity <nowiki>[A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.] </nowiki>
-        ** Low-voltage-fast-activity <nowiki>[Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.] </nowiki>
-        ** Polysharp-waves <nowiki>[A sequence of two or more sharp-waves.]</nowiki>
+        ** Fast-spike-activity-morphology <nowiki>[A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.] </nowiki>
+        ** Low-voltage-fast-activity-morphology <nowiki>[Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.] </nowiki>
+        ** Polysharp-waves-morphology <nowiki>[A sequence of two or more sharp-waves.]</nowiki>
 
-        ** Polymorphic-delta <nowiki>[EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology. ]</nowiki>
-        ** FIRDA <nowiki>[Frontal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults. ]</nowiki>
-        ** OIRDA <nowiki>[Occipital intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children]</nowiki>
-        ** TIRDA <nowiki>[Temporal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. ]</nowiki>
+        ** Polymorphic-delta-activity-morphology <nowiki>[EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology. ]</nowiki>
+        ** Frontal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults. ]</nowiki>
+        ** Occipital-intermittent-rhythmic-delta-activity-morphology  <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children]</nowiki>
+        ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. ]</nowiki>
 
-        ** PDs-property <nowiki>[Periodic discharges not further specified (PDs)]</nowiki>
-            *** PD-superimposed-activity
-                **** Fast-superimposed-activity
-                    *****  Fast-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+        ** Periodic-discharges-property <nowiki>[Periodic discharges not further specified (PDs)]</nowiki>
+            *** Periodic-discharges-superimposed-activity
+                **** Periodic-discharges-fast-superimposed-activity
+                    *****  Periodic-discharges-fast-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                         ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                **** Rhythmic-superimposed-activity
-                    *****  Rhythmic-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** Periodic-discharges-rhythmic-superimposed-activity
+                    *****  Periodic-discharges-rhythmic-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                         ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                **** PD-superimposed-activity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+                **** Periodic-discharges-superimposed-activity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** PD-sharpness
-                **** Spiky-PD-sharpness
-                **** Sharp-PD-sharpness
-                **** Sharply-contoured-PD-sharpness
-                **** Blunt-PD-sharpness
-                **** PD-sharpness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-sharpness
+                **** Spiky-periodic-discharge-sharpness
+                **** Sharp-periodic-discharge-sharpness
+                **** Sharply-contoured-periodic-discharge-sharpness
+                **** Blunt-periodic-discharge-sharpness
+                **** Periodic-discharge-sharpness-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Number-of-PD-phases
-                **** 1-PD-phase
-                **** 2-PD-phases
-                **** 3-PD-phases
-                **** Greater-than-3-PD-phases
-                **** Number-of-PD-phases-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Number-of-periodic-discharge-phases
+                **** 1-periodic-discharge-phase
+                **** 2-periodic-discharge-phases
+                **** 3-periodic-discharge-phases
+                **** Greater-than-3-periodic-discharge-phases
+                **** Number-of-periodic-discharge-phases-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** PD-triphasic-morphology
-                **** PD-triphasic-morphology-exists
-                **** No-PD-triphasic-morphology
-                **** Triphasic-morphology-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-triphasic-morphology
+                **** Periodic-discharge-triphasic-morphology-exists
+                **** No-periodic-discharge-triphasic-morphology
+                **** Periodic-discharge-triphasic-morphology-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** PD-absolute-amplitude
-                **** PD-absolute-amplitude-very-low <nowiki>[lower than 20 microV)]</nowiki>
-                **** Low-PD-absolute-amplitude <nowiki>[20 to 49 microV]</nowiki>
-                **** Medium-PD-absolute-amplitude <nowiki>[50 to 199 microV]</nowiki>
-                **** High-PD-absolute-amplitude <nowiki>[greater than 200 microV]</nowiki>
-                **** PD-absolute-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-absolute-amplitude
+                **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[lower than 20 microV)]</nowiki>
+                **** Low-periodic-discharge-absolute-amplitude <nowiki>[20 to 49 microV]</nowiki>
+                **** Medium-periodic-discharge-absolute-amplitude <nowiki>[50 to 199 microV]</nowiki>
+                **** High-periodic-discharge-absolute-amplitude <nowiki>[greater than 200 microV]</nowiki>
+                **** Periodic-discharge-absolute-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** PD-Relative-amplitude
-                **** PD-Relative-amplitude-less-than-equal-2
-                **** PD-Relative-amplitude-greater-than-2
-                **** PD-Relative-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-Relative-amplitude
+                **** Periodic-discharge-relative-amplitude-less-than-equal-2
+                **** Periodic-discharge-relative-amplitude-greater-than-2
+                **** Periodic-discharge-relative-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** PD-Polarity
-                **** Positive-PD-Polarity
-                **** Negative-PD-Polarity
-                **** Unclear-PD-Polarity
+            *** Periodic-discharge-polarity
+                **** Positive-periodic-discharge-polarity
+                **** Negative-periodic-discharge-polarity
+                **** Unclear-periodic-discharge-polarity
 
     * Source-analysis <nowiki>[How the current in the brain reaches the electrode sensors.]</nowiki>
         ** Brain-region-laterality <nowiki>[Uses Location-property/Laterality tags] </nowiki>
@@ -449,7 +455,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 
     * Modulators-property <nowiki>[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
-        ** Modulators-reactivity <nowiki></nowiki>
+        ** Modulators-reactivity <nowiki>[Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
             *** Modulators-reactive
             *** Modulators-not-reactive
         ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity.]</nowiki>
@@ -496,26 +502,26 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Other-modulators-effect-clinical
             *** <nowiki># {takesValue}[free text]</nowiki>
 
-        ** IPS-effect
-            *** Posterior-stimulus-dependent-IPS-response
-                ****  Posterior-stimulus-dependent-IPS-response-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+        ** Intermittent-photic-stimulation-effect
+            *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response
+                ****  Posterior-stimulus-dependent-intermittent-photic-stimulation-response-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Posterior-stimulus-independent-IPS-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
-                ****  Posterior-stimulus-independent-IPS-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
+                ****  Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Posterior-stimulus-independent-IPS-response-self-sustained
-                ****  Posterior-stimulus-independent-IPS-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained
+                ****  Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Generalized-photoparoxysmal-IPS-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
-                ****  Generalized-photoparoxysmal-IPS-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited <nowiki>[limited to the stimulus-train] </nowiki>
+                ****  Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Generalized-photoparoxysmal-IPS-response-self-sustained
-                ****  Generalized-photoparoxysmal-IPS-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained
+                ****  Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Activation-of-pre-existing-epileptogenic-area-IPS-effect
-                ****  Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+            *** Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect
+                ****  Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Unmodified-IPS-effect
+            *** Unmodified-intermittent-photic-stimulation-effect
 
         ** Modulators-effect <nowiki>[Tags for describing the influence of the modulators]</nowiki>
             *** Modulators-effect-continuous-during-NRS <nowiki>[Continuous during non-rapid-eye-movement-sleep (NRS)]</nowiki>
@@ -537,99 +543,99 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
             *** Single-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Finding-property/Incidence tag]</nowiki>
             *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevalence tag]</nowiki>
-                **** Rhythmic-trains-or-bursts--frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+                **** Rhythmic-trains-or-bursts-discharge-pattern-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             *** Arhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevalence tag]</nowiki>
             *** Fragmented-discharge-pattern
                 **** <nowiki># {takesValue}[free text]</nowiki>
 
-        ** Extent <nowiki>[percentage of occurrence during the recording (background activity)]</nowiki>
+        ** Background activity-extent <nowiki>[percentage of occurrence during the recording (background activity)]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
 
-        ** PD-Time-related-features <nowiki>[Periodic discharges not further specified (PDs) time-relayed features tags]</nowiki>
-            *** PD-duration
-                **** Very-brief-PD-duration <nowiki>[less than 10 sec]</nowiki>
-                **** Brief-PD-duration <nowiki>[10 to 59 sec]</nowiki>
-                **** Intermediate-PD-duration <nowiki>[1 to 4.9 min]</nowiki>
-                **** Long-PD-duration <nowiki>[5 to 59 min]</nowiki>
-                **** Very-long-PD-duration <nowiki>[greater than 1 hour]</nowiki>
-                **** PD-duration-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-            *** PD-onset
-                **** Sudden-PD-onset
-                **** Gradual-PD-onset
-                **** PD-onset-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-            *** PD-dynamics
-                **** Evolving-PD-dynamics
-                **** Fluctuating-PD-dynamics
-                **** Static-PD-dynamics
-                **** PD-dynamics-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Periodic-discharge-time-related-features <nowiki>[Periodic discharges not further specified (PDs) time-relayed features tags]</nowiki>
+            *** Periodic-discharge-duration
+                **** Very-brief-periodic-discharge-duration <nowiki>[less than 10 sec]</nowiki>
+                **** Brief-periodic-discharge-duration <nowiki>[10 to 59 sec]</nowiki>
+                **** Intermediate-periodic-discharge-duration <nowiki>[1 to 4.9 min]</nowiki>
+                **** Long-periodic-discharge-duration <nowiki>[5 to 59 min]</nowiki>
+                **** Very-long-periodic-discharge-duration <nowiki>[greater than 1 hour]</nowiki>
+                **** Periodic-discharge--duration-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-onset
+                **** Sudden-periodic-discharge-onset
+                **** Gradual-periodic-discharge-onset
+                **** Periodic-discharge-onset-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Periodic-discharge-dynamics
+                **** Evolving-periodic-discharge-dynamics
+                **** Fluctuating-periodic-discharge-dynamics
+                **** Static-periodic-discharge-dynamics
+                **** Periodic-discharge-dynamics-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-    * PDR-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
+    * Posterior-dominant-rhythm-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
 
-        **  PDR-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
+        **  Posterior-dominant-rhythm-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
 
-        ** PDR-amplitude-range
-            *** Low-range <nowiki>[Low (less than 20 microV)]</nowiki>
-            *** Medium-range <nowiki>[Medium (between 20 and 70 microV)]</nowiki>
-            *** High-range <nowiki>[High ( more than 70 microV)]</nowiki>
-            *** PDR-amplitude-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Posterior-dominant-rhythm-amplitude-range
+            *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV)]</nowiki>
+            *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV)]</nowiki>
+            *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High ( more than 70 microV)]</nowiki>
+            *** Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
-            *** PDR-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
-            *** PDR-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
-            *** PDR-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Posterior-dominant-rhythm-amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
+            *** Posterior-dominant-rhythm-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
+            *** Posterior-dominant-rhythm-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
+            *** Posterior-dominant-rhythm-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
-            *** PDR-frequency-asymmetry-LowerLeft <nowiki>[Hz lower on the left side.]</nowiki>
-            *** PDR-frequency-asymmetry-LowerRight <nowiki>[Hz lower on the right side.]</nowiki>
+        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
+            *** Posterior-dominant-rhythm-frequency-asymmetry-LowerLeft <nowiki>[Hz lower on the left side.]</nowiki>
+            *** Posterior-dominant-rhythm-frequency-asymmetry-LowerRight <nowiki>[Hz lower on the right side.]</nowiki>
 
-        ** PDR-Eye-opening-reactivity <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
-            *** PDR-Eye-opening-reactivity-exists <nowiki>[When annotated Yes]</nowiki>
-            *** PDR-Eye-opening-reactivity-reducedLeft <nowiki>[Reduced left side reactivity]</nowiki>
-            *** PDR-Eye-opening-reactivity-reducedRigth <nowiki>[Reduced right side reactivity]</nowiki>
-            *** PDR-Eye-opening-reactivity-reducedBoth <nowiki>[Reduced reactivity on both sides]</nowiki>
-            *** PDR-Eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-exists <nowiki>[When annotated Yes]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reducedLeft <nowiki>[Reduced left side reactivity]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reducedRigth <nowiki>[Reduced right side reactivity]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reducedBoth <nowiki>[Reduced reactivity on both sides]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-        ** PDR-Organization <nowiki>[When normal could be labeled with base schema Normal tag]</nowiki>
-            *** PDR-Organization-poorlyOrganized <nowiki>[Poorly organized]</nowiki>
-            *** PDR-Organization-disorganized <nowiki>[Disorganized]</nowiki>
-            *** PDR-Organization-markedlyDisorganized <nowiki>[Markedly disorganized]</nowiki>
+        ** Posterior-dominant-rhythm-organization <nowiki>[When normal could be labeled with base schema Normal tag]</nowiki>
+            *** Posterior-dominant-rhythm-organization-poorlyOrganized <nowiki>[Poorly organized]</nowiki>
+            *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized]</nowiki>
+            *** Posterior-dominant-rhythm-organization-markedlyDisorganized <nowiki>[Markedly disorganized]</nowiki>
 
-        ** PDR-Caveat <nowiki>[Caveats to the annotation of PDR]</nowiki>
-            *** No-PDR-Caveat
+        ** Posterior-dominant-rhythm-caveat <nowiki>[Caveats to the annotation of PDR]</nowiki>
+            *** No-posterior-dominant-rhythm-caveat
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** PDR-Caveat-only-open-eyes-during-the-recording
+            *** Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** PDR-Caveat-sleep-deprived-caveat
+            *** Posterior-dominant-rhythm-caveat-sleep-deprived-caveat
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** PDR-Caveat-drowsy
+            *** Posterior-dominant-rhythm-caveat-drowsy
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** PDR-Caveat-only-following-hyperventilation
+            *** Posterior-dominant-rhythm-caveat-only-following-hyperventilation
 
-        ** Absence-of-PDR <nowiki>[Reason for absence of PDR]</nowiki>
-            *** Absence-of-PDR-artifacts
-            *** Absence-of-PDR-extreme-low-voltage
-            *** Absence-of-PDR-eye-closure-could-not-be-achieved
-            *** Absence-of-PDR-lack-of-awake-period
-            *** Absence-of-PDR-lack-of-compliance
-            *** Absence-of-PDR-other-causes
+        ** Absence-of-posterior-dominant-rhythm <nowiki>[Reason for absence of PDR]</nowiki>
+            *** Absence-of-posterior-dominant-rhythm-artifacts
+            *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage
+            *** Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved
+            *** Absence-of-posterior-dominant-rhythm-lack-of-awake-period
+            *** Absence-of-posterior-dominant-rhythm-lack-of-compliance
+            *** Absence-of-posterior-dominant-rhythm-other-causes
 
-    * Incidence <nowiki>[how often it occurs/time-epoch]</nowiki>
-        ** Only-once-incidence
-        ** Rare-incidence <nowiki>[less than 1/h]</nowiki>
-        ** Uncommon-incidence <nowiki>[1/5 min to 1/h]</nowiki>
-        ** Occasional-incidence <nowiki>[1/min to 1/5min]</nowiki>
-        ** Frequent-incidence <nowiki>[1/10 s to 1/min]</nowiki>
-        ** Abundant-incidence <nowiki>[ greater than 1/10 s)]</nowiki>
+    * Finding-incidence <nowiki>[how often it occurs/time-epoch]</nowiki>
+        ** Only-once-finding-incidence
+        ** Rare-finding-incidence <nowiki>[less than 1/h]</nowiki>
+        ** Uncommon-finding-incidence <nowiki>[1/5 min to 1/h]</nowiki>
+        ** Occasional-finding-incidence <nowiki>[1/min to 1/5min]</nowiki>
+        ** Frequent-finding-incidence <nowiki>[1/10 s to 1/min]</nowiki>
+        ** Abundant-finding-incidence <nowiki>[ greater than 1/10 s)]</nowiki>
 
-    * Prevalence <nowiki>[the percentage of the recording covered by the train/burst]</nowiki>
-        ** Rare-prevalence <nowiki>[Less than 1 precents]</nowiki>
-        ** Occasional-prevalence <nowiki>[1 to 9 percent’s]</nowiki>
-        ** Frequent-prevalence <nowiki>[10 to 49 precents]</nowiki>
-        ** Abundant-prevalence <nowiki>[50 to 89 percent’s]</nowiki>
-        ** Continuous-prevalence <nowiki>[Greater than 90 precents]</nowiki>
+    * Finding-prevalence <nowiki>[the percentage of the recording covered by the train/burst]</nowiki>
+        ** Rare-finding-prevalence <nowiki>[Less than 1 precents]</nowiki>
+        ** Occasional-finding-prevalence <nowiki>[1 to 9 percents]</nowiki>
+        ** Frequent-finding-prevalence <nowiki>[10 to 49 precents]</nowiki>
+        ** Abundant-finding-prevalence <nowiki>[50 to 89 percents]</nowiki>
+        ** Continuous-finding-prevalence <nowiki>[Greater than 90 precents]</nowiki>
 
     * Sleep-property
         ** Sleep-abnormal-amplitude-asymmetry <nowiki>[Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement]</nowiki>
