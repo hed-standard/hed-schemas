@@ -6,17 +6,26 @@ This implementation of SCORE in an open-source, machine-readable format using HE
 Reference:
 [1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017).
-This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Clinic). This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
+This mediawiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Clinic).
+This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
    <schema>
       <node>
          <name>Modulators</name>
-         <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency).</description>
+         <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.</description>
          <node>
             <name>Intermittent-photic-stimulation</name>
             <node>
                <name>#</name>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>numericClass</value>
+               </attribute>
+               <attribute>
+                  <name>unitClass</name>
+                  <value>frequencyUnits</value>
                </attribute>
             </node>
          </node>
@@ -25,7 +34,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             <node>
                <name>Quality-of-hyperventilation</name>
                <node>
-                  <name>Refused</name>
+                  <name>Refused-procedure</name>
                </node>
                <node>
                   <name>Poor-effort</name>
@@ -191,7 +200,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Special-background-activity-features</name>
-            <description>Special Features.</description>
+            <description>Special Features. Special features contains scoring options for the background activity of critically ill patients.</description>
             <node>
                <name>Continuous-background-activity</name>
             </node>
@@ -214,7 +223,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             </node>
             <node>
                <name>Electrocerebral-inactivity</name>
-               <description>Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artefacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes.</description>
+               <description>Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artifacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes.</description>
             </node>
          </node>
       </node>
@@ -223,7 +232,17 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
          <node>
             <name>Sleep-architecture</name>
-            <description>Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance</description>
+            <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance</description>
+            <node>
+               <name>Normal-sleep-architecture</name>
+            </node>
+            <node>
+               <name>Abnormal-sleep-architecture</name>
+            </node>
+            <node>
+               <name>Sleep-architecture-not-possible-to-determine</name>
+               <description>Not possible to determine</description>
+            </node>
          </node>
          <node>
             <name>Sleep-stage-reached</name>
@@ -244,6 +263,10 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <name>Sleep-stage-REM</name>
                <description>Rapid eye movement</description>
             </node>
+            <node>
+               <name>Sleep-stage-not-possible-to-determine</name>
+               <description>Not possible to determine</description>
+            </node>
          </node>
          <node>
             <name>Sleep-spindles</name>
@@ -263,15 +286,15 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Sleep-POSTS</name>
-            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with inding-attributes/significance tags</description>
+            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with finding-attributes/significance tags</description>
          </node>
          <node>
             <name>Hypnagogic-hypersynchrony</name>
-            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with inding-attributes/significance</description>
+            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with finding-attributes/significance</description>
          </node>
          <node>
             <name>Non-reactive-sleep</name>
-            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with inding-attributes/significance</description>
+            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with finding-attributes/significance</description>
          </node>
       </node>
       <node>
@@ -286,8 +309,24 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          <node>
             <name>Interictal-special-patterns</name>
             <node>
-               <name>Interictal-PDs</name>
+               <name>Interictal-periodic-discharges</name>
                <description>Periodic discharges not further specified (PDs).</description>
+            </node>
+            <node>
+               <name>Generalized-periodic-discharges</name>
+               <description>GPDs</description>
+            </node>
+            <node>
+               <name>Lateralized-periodic-discharges</name>
+               <description>LPDs</description>
+            </node>
+            <node>
+               <name>Bilateral-independent-periodic-discharges</name>
+               <description>BIPDs</description>
+            </node>
+            <node>
+               <name>Multifocal-periodic-discharges</name>
+               <description>MfPDs</description>
             </node>
             <node>
                <name>Interictal-extreme-delta-brush</name>
@@ -332,7 +371,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Subtle-seizure</name>
-            <description>Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bycicling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges , and are clearly epileptic, ictal EEG often does not show typical epileptic activity</description>
+            <description>Seizure type frequent in neonates, sometimes referred to as motor automatism; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges , and are clearly epileptic, ictal EEG often does not show typical epileptic activity</description>
          </node>
          <node>
             <name>Electrographic-seizure</name>
@@ -340,7 +379,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Seizure-PNES</name>
-            <description>Psychogenic nonepileptic seizure</description>
+            <description>Psychogenic non-epileptic seizure</description>
          </node>
          <node>
             <name>Sleep-related-episodes</name>
@@ -357,8 +396,8 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <description>Episodes of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule.</description>
             </node>
             <node>
-               <name>Sleep-PLMS</name>
-               <description>Periodic limb movement in sleep. Episodes characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
+               <name>Sleep-periodic-limb-movement</name>
+               <description>PLMS. Periodic limb movement in sleep. Episodes characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
             </node>
             <node>
                <name>REM-sleep-behavioral-disorder</name>
@@ -366,14 +405,14 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             </node>
             <node>
                <name>Sleep-walking</name>
-               <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, nonbehavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hypersynchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.</description>
+               <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.</description>
             </node>
          </node>
          <node>
             <name>Pediatric-episodes</name>
             <node>
                <name>Hyperekplexia</name>
-               <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breathholding spells.</description>
+               <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.</description>
             </node>
             <node>
                <name>Jactatio-capitis-nocturna</name>
@@ -390,7 +429,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Paroxysmal-motor-event</name>
-            <description>Paroxysmal phenomena during neonatal or childhood periods characterized by recurrent motor or behavioural signs or symptoms that must be distinguishes from epileptic disorders.</description>
+            <description>Paroxysmal phenomena during neonatal or childhood periods characterized by recurrent motor or behavioral signs or symptoms that must be distinguishes from epileptic disorders.</description>
          </node>
          <node>
             <name>Syncope</name>
@@ -427,10 +466,11 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Ciganek-rhythm</name>
+            <description>Midline theta rhythm (Ciganek rhythm) may be observed during wakefulness or drowsiness. The frequency is 4-7 Hz, and the location is midline (ie, vertex). The morphology is rhythmic, smooth, sinusoidal, arciform, spiky, or mu-like.</description>
          </node>
          <node>
             <name>Lambda-wave</name>
-            <description>Diphasic sharp transient occurring over occipital regions of the head of waking subjects during visual exploration. The main component is positive relative to other areas. Timelocked to saccadic eye movement. Amplitude varies but is generally below 50 micro V.</description>
+            <description>Diphasic sharp transient occurring over occipital regions of the head of waking subjects during visual exploration. The main component is positive relative to other areas. Time-locked to saccadic eye movement. Amplitude varies but is generally below 50 micro V.</description>
          </node>
          <node>
             <name>Posterior-slow-waves-youth</name>
@@ -438,7 +478,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Diffuse-slowing-hyperventilation</name>
-            <description>Diffuse slowing induced by hyperventilation. Bilateral, diffuse slowing during hyperventilation. Recorded in 70 precent of normal children (3-5 years) and less then 10 precent of adults. Usually appear in the posterior regions and spread forward in younger age group, whereas they tend to appear in the frontal regions and spread backward in the older age group.</description>
+            <description>Diffuse slowing induced by hyperventilation. Bilateral, diffuse slowing during hyperventilation. Recorded in 70 percent of normal children (3-5 years) and less then 10 percent of adults. Usually appear in the posterior regions and spread forward in younger age group, whereas they tend to appear in the frontal regions and spread backward in the older age group.</description>
          </node>
          <node>
             <name>Photic-driving</name>
@@ -446,7 +486,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Photomyogenic-response</name>
-            <description>A response to intermittent photic stimulation characterized by the appearance in the record of brief, repetitive muscular artifacts (spikes) over the anterior regions of the head. These often increase gradually in amplitude as stimuli are continued and cease promptly when the stimulus is withdrawn. Comment: this response is frequently associated with flutter of the eyelids and vertical oscillations of the eyeballs and sometimes with discrete jerking mostly involving the musculature of the face and head. (Preferred to synonym: photomyoclonic response).</description>
+            <description>A response to intermittent photic stimulation characterized by the appearance in the record of brief, repetitive muscular artifacts (spikes) over the anterior regions of the head. These often increase gradually in amplitude as stimuli are continued and cease promptly when the stimulus is withdrawn. Comment: this response is frequently associated with flutter of the eyelids and vertical oscillations of the eyeballs and sometimes with discrete jerking mostly involving the musculature of the face and head. (Preferred to synonym: photo-myoclonic response).</description>
          </node>
          <node>
             <name>Arousal-pattern</name>
@@ -495,7 +535,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Small-sharp-spikes</name>
-            <description>Benign Epileptiform Transients of Sleep (BETS). Small sharp spikes (SSS) of very short duration and low amplitude, often followed by a small theta wave, occurring in the temporal regions during drowsiness and light sleep. They occur on one or both sides (often asynchronously). The main negative and positive components are of about equally spiky character. Rarely seen in children, they are seen most often in adults and the elderly. Two thirds of the patients have a history of epileptic seizures.</description>
+            <description>Benign epileptiform Transients of Sleep (BETS). Small sharp spikes (SSS) of very short duration and low amplitude, often followed by a small theta wave, occurring in the temporal regions during drowsiness and light sleep. They occur on one or both sides (often asynchronously). The main negative and positive components are of about equally spiky character. Rarely seen in children, they are seen most often in adults and the elderly. Two thirds of the patients have a history of epileptic seizures.</description>
          </node>
          <node>
             <name>Fourteen-six-Hz-positive-burst</name>
@@ -503,7 +543,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
          <node>
             <name>Six-Hz-spike-slow-wave</name>
-            <description>Spike and slow wave complexes at 4-7Hz, but mostly at 6 Hz occurring generally in brief bursts bilaterally and synchronously, symmetrically or asymmetrically, and either confined to or of larger amplitude over the posterior or anterior regions of the head. The spike has a strong positive component. Amplitude varies but is generally smaller than that of spike-andslow-wave complexes repeating at slower rates. Comment: this pattern should be distinguished from epileptiform discharges. Synonym: wave and spike phantom.</description>
+            <description>Spike and slow wave complexes at 4-7Hz, but mostly at 6 Hz occurring generally in brief bursts bilaterally and synchronously, symmetrically or asymmetrically, and either confined to or of larger amplitude over the posterior or anterior regions of the head. The spike has a strong positive component. Amplitude varies but is generally smaller than that of spike-and slow-wave complexes repeating at slower rates. Comment: this pattern should be distinguished from epileptiform discharges. Synonym: wave and spike phantom.</description>
          </node>
          <node>
             <name>Rudimentary-spike-wave-complex</name>
@@ -518,16 +558,16 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             <description>Spike discharges of a particularly fast and needle-like character develop over the occipital region in most congenitally blind children. Completely disappear during childhood or adolescence.</description>
          </node>
          <node>
-            <name>SREDA</name>
-            <description>Subclinical rhythmic EEG discharge of adults. A rhythmic pattern seen in the adult age group, mainly in the waking state or drowsiness. Itconsists of a mixture of frequencies, often predominant in the theta range. The onset may be fairly abrupt with widespread sharp rhythmical theta and occasionally with delta activity. As to the spatial distribution, a maximum of this discharge is usually found over the centroparietal region and especially over the vertex. It may resemble a seizure discharge but is not accompanied by any clinical signs or symptoms.</description>
+            <name>Subclinical-rhythmic-EEG-discharge-adults</name>
+            <description>Subclinical rhythmic EEG discharge of adults (SERDA). A rhythmic pattern seen in the adult age group, mainly in the waking state or drowsiness. It consists of a mixture of frequencies, often predominant in the theta range. The onset may be fairly abrupt with widespread sharp rhythmical theta and occasionally with delta activity. As to the spatial distribution, a maximum of this discharge is usually found over the centroparietal region and especially over the vertex. It may resemble a seizure discharge but is not accompanied by any clinical signs or symptoms.</description>
          </node>
          <node>
-            <name>RTTD</name>
-            <description>Rhythmic temporal theta burst of drowsiness. Characteristic burst of 4-7 Hz waves frequently notched by faster waves, occurring over the temporal regions of the head during drowsiness. Synonym: psychomotor variant pattern. Comment: this is a pattern of drowsiness that is of no clinical significance.</description>
+            <name>Rhythmic-temporal-theta-burst-drowsiness</name>
+            <description>Rhythmic temporal theta burst of drowsiness (RTTD). Characteristic burst of 4-7 Hz waves frequently notched by faster waves, occurring over the temporal regions of the head during drowsiness. Synonym: psychomotor variant pattern. Comment: this is a pattern of drowsiness that is of no clinical significance.</description>
          </node>
          <node>
             <name>Temporal-slowing-elderly</name>
-            <description>Focal theta and/or delta activity over the temporal regions, especially the left, in persons over the age of 60. Amplitudes are low/ similar to the background activity. Comment: focal temporal theta was found in 20 precent of people between the ages of 40-59 years, and 40 precent of people between 60 and 79 years. One third of people older than 60 years had focal temporal delta activity.</description>
+            <description>Focal theta and/or delta activity over the temporal regions, especially the left, in persons over the age of 60. Amplitudes are low/similar to the background activity. Comment: focal temporal theta was found in 20 percent of people between the ages of 40-59 years, and 40 percent of people between 60 and 79 years. One third of people older than 60 years had focal temporal delta activity.</description>
          </node>
          <node>
             <name>Breach-rhythm</name>
@@ -553,11 +593,14 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             </node>
             <node>
                <name>Eye-movements-vertical-artifact</name>
-               <description>The EEG shows positive potentials (50-100 micro V) with bifrontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
+               <description>The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
             </node>
             <node>
                <name>Slow-eye-movements-artifact</name>
                <description>Slow, rolling eye-movements, seen during drowsiness.</description>
+            </node>
+            <node>
+               <name>Nystagmus</name>
             </node>
             <node>
                <name>Chewing-artifact</name>
@@ -571,7 +614,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             </node>
             <node>
                <name>Rocking-patting-artifact</name>
-               <description>Quasi-rhythmical artefacts in recordings from infants caused by rocking/ patting.</description>
+               <description>Quasi-rhythmical artifacts in recordings from infants caused by rocking/ patting.</description>
             </node>
             <node>
                <name>Movement-artifact</name>
@@ -610,6 +653,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <description>Artefacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).</description>
             </node>
             <node>
+               <name>Dialysis-artifact</name>
+            </node>
+            <node>
                <name>Artificial-ventilation-artifact</name>
             </node>
             <node>
@@ -638,7 +684,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          <description>Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).</description>
          <node>
             <name>EOG</name>
-            <description>electrooculography</description>
+            <description>Electrooculography</description>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -968,16 +1014,16 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          </node>
       </node>
       <node>
-         <name>Finding-attributes</name>
+         <name>Finding-attribute</name>
          <description>Subtree tree for general properties</description>
          <node>
-            <name>Attributes-significance</name>
+            <name>Finding-significance</name>
             <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags</description>
             <node>
                <name>No-definite-abnormality</name>
             </node>
             <node>
-               <name>Significance-not-possible-to-determine</name>
+               <name>Finding-significance-not-possible-to-determine</name>
                <description>Not possible to determine</description>
             </node>
          </node>
@@ -1018,8 +1064,8 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          <node>
             <name>Signal-morphology-property</name>
             <node>
-               <name>Delta-activity</name>
-               <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+               <name>Delta-activity-morphology</name>
+               <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag</description>
                <node>
                   <name>Delta-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1065,8 +1111,8 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>Theta-activity</name>
-               <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organised rhythms). Used with Amplitude tag</description>
+               <name>Theta-activity-morphology</name>
+               <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag</description>
                <node>
                   <name>Theta-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1112,7 +1158,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>Alpha-activity</name>
+               <name>Alpha-activity-morphology</name>
                <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag</description>
                <node>
                   <name>Alpha-activity-frequency</name>
@@ -1159,7 +1205,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>Beta-activity</name>
+               <name>Beta-activity-morphology</name>
                <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag</description>
                <node>
                   <name>Beta-activity-frequency</name>
@@ -1206,7 +1252,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>Gamma-activity</name>
+               <name>Gamma-activity-morphology</name>
                <node>
                   <name>Gamma-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1284,6 +1330,10 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <description>A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave.</description>
             </node>
             <node>
+               <name>High-frequency-oscillation-morphology</name>
+               <description>HFO</description>
+            </node>
+            <node>
                <name>Hypsarrhythmia-classic-morphology</name>
                <description>Abnormal interictal high amplitude waves and a background of irregular spikes.</description>
             </node>
@@ -1291,42 +1341,42 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <name>Hypsarrhythmia-modified-morphology</name>
             </node>
             <node>
-               <name>Fast-spike-activity</name>
+               <name>Fast-spike-activity-morphology</name>
                <description>A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.</description>
             </node>
             <node>
-               <name>Low-voltage-fast-activity</name>
+               <name>Low-voltage-fast-activity-morphology</name>
                <description>Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.</description>
             </node>
             <node>
-               <name>Polysharp-waves</name>
+               <name>Polysharp-waves-morphology</name>
                <description>A sequence of two or more sharp-waves.</description>
             </node>
             <node>
-               <name>Polymorphic-delta</name>
+               <name>Polymorphic-delta-activity-morphology</name>
                <description>EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology.</description>
             </node>
             <node>
-               <name>FIRDA</name>
-               <description>Frontal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.</description>
+               <name>Frontal-intermittent-rhythmic-delta-activity-morphology</name>
+               <description>Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.</description>
             </node>
             <node>
-               <name>OIRDA</name>
-               <description>Occipital intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children</description>
+               <name>Occipital-intermittent-rhythmic-delta-activity-morphology</name>
+               <description>Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children</description>
             </node>
             <node>
-               <name>TIRDA</name>
-               <description>Temporal intermittent rhythmic delta activity. Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
+               <name>Temporal-intermittent-rhythmic-delta-activity-morphology</name>
+               <description>Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
             </node>
             <node>
-               <name>PDs-property</name>
+               <name>Periodic-discharges-property</name>
                <description>Periodic discharges not further specified (PDs)</description>
                <node>
-                  <name>PD-superimposed-activity</name>
+                  <name>Periodic-discharges-superimposed-activity</name>
                   <node>
-                     <name>Fast-superimposed-activity</name>
+                     <name>Periodic-discharges-fast-superimposed-activity</name>
                      <node>
-                        <name>Fast-superimposed-activity-frequency</name>
+                        <name>Periodic-discharges-fast-superimposed-activity-frequency</name>
                         <description>Hz Values (numbers) typed in.</description>
                         <node>
                            <name>#</name>
@@ -1345,9 +1395,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                   </node>
                   <node>
-                     <name>Rhythmic-superimposed-activity</name>
+                     <name>Periodic-discharges-rhythmic-superimposed-activity</name>
                      <node>
-                        <name>Rhythmic-superimposed-activity-frequency</name>
+                        <name>Periodic-discharges-rhythmic-superimposed-activity-frequency</name>
                         <description>Hz Values (numbers) typed in.</description>
                         <node>
                            <name>#</name>
@@ -1366,107 +1416,107 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                   </node>
                   <node>
-                     <name>PD-superimposed-activity-not-possible-to-determine</name>
+                     <name>Periodic-discharges-superimposed-activity-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-sharpness</name>
+                  <name>Periodic-discharge-sharpness</name>
                   <node>
-                     <name>Spiky-PD-sharpness</name>
+                     <name>Spiky-periodic-discharge-sharpness</name>
                   </node>
                   <node>
-                     <name>Sharp-PD-sharpness</name>
+                     <name>Sharp-periodic-discharge-sharpness</name>
                   </node>
                   <node>
-                     <name>Sharply-contoured-PD-sharpness</name>
+                     <name>Sharply-contoured-periodic-discharge-sharpness</name>
                   </node>
                   <node>
-                     <name>Blunt-PD-sharpness</name>
+                     <name>Blunt-periodic-discharge-sharpness</name>
                   </node>
                   <node>
-                     <name>PD-sharpness-not-possible-to-determine</name>
+                     <name>Periodic-discharge-sharpness-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>Number-of-PD-phases</name>
+                  <name>Number-of-periodic-discharge-phases</name>
                   <node>
-                     <name>1-PD-phase</name>
+                     <name>1-periodic-discharge-phase</name>
                   </node>
                   <node>
-                     <name>2-PD-phases</name>
+                     <name>2-periodic-discharge-phases</name>
                   </node>
                   <node>
-                     <name>3-PD-phases</name>
+                     <name>3-periodic-discharge-phases</name>
                   </node>
                   <node>
-                     <name>Greater-than-3-PD-phases</name>
+                     <name>Greater-than-3-periodic-discharge-phases</name>
                   </node>
                   <node>
-                     <name>Number-of-PD-phases-not-possible-to-determine</name>
+                     <name>Number-of-periodic-discharge-phases-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-triphasic-morphology</name>
+                  <name>Periodic-discharge-triphasic-morphology</name>
                   <node>
-                     <name>PD-triphasic-morphology-exists</name>
+                     <name>Periodic-discharge-triphasic-morphology-exists</name>
                   </node>
                   <node>
-                     <name>No-PD-triphasic-morphology</name>
+                     <name>No-periodic-discharge-triphasic-morphology</name>
                   </node>
                   <node>
-                     <name>Triphasic-morphology-not-possible-to-determine</name>
+                     <name>Periodic-discharge-triphasic-morphology-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-absolute-amplitude</name>
+                  <name>Periodic-discharge-absolute-amplitude</name>
                   <node>
-                     <name>PD-absolute-amplitude-very-low</name>
+                     <name>Periodic-discharge-absolute-amplitude-very-low</name>
                      <description>lower than 20 microV)</description>
                   </node>
                   <node>
-                     <name>Low-PD-absolute-amplitude</name>
+                     <name>Low-periodic-discharge-absolute-amplitude</name>
                      <description>20 to 49 microV</description>
                   </node>
                   <node>
-                     <name>Medium-PD-absolute-amplitude</name>
+                     <name>Medium-periodic-discharge-absolute-amplitude</name>
                      <description>50 to 199 microV</description>
                   </node>
                   <node>
-                     <name>High-PD-absolute-amplitude</name>
+                     <name>High-periodic-discharge-absolute-amplitude</name>
                      <description>greater than 200 microV</description>
                   </node>
                   <node>
-                     <name>PD-absolute-amplitude-not-possible-to-determine</name>
+                     <name>Periodic-discharge-absolute-amplitude-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-Relative-amplitude</name>
+                  <name>Periodic-discharge-Relative-amplitude</name>
                   <node>
-                     <name>PD-Relative-amplitude-less-than-equal-2</name>
+                     <name>Periodic-discharge-relative-amplitude-less-than-equal-2</name>
                   </node>
                   <node>
-                     <name>PD-Relative-amplitude-greater-than-2</name>
+                     <name>Periodic-discharge-relative-amplitude-greater-than-2</name>
                   </node>
                   <node>
-                     <name>PD-Relative-amplitude-not-possible-to-determine</name>
+                     <name>Periodic-discharge-relative-amplitude-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-Polarity</name>
+                  <name>Periodic-discharge-polarity</name>
                   <node>
-                     <name>Positive-PD-Polarity</name>
+                     <name>Positive-periodic-discharge-polarity</name>
                   </node>
                   <node>
-                     <name>Negative-PD-Polarity</name>
+                     <name>Negative-periodic-discharge-polarity</name>
                   </node>
                   <node>
-                     <name>Unclear-PD-Polarity</name>
+                     <name>Unclear-periodic-discharge-polarity</name>
                   </node>
                </node>
             </node>
@@ -1511,19 +1561,19 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   <name>Brain-region-temporal-perisylvian-inferior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-cental-lateral-convexity</name>
+                  <name>Brain-region-central-lateral-convexity</name>
                </node>
                <node>
-                  <name>Brain-region-cental-mesial</name>
+                  <name>Brain-region-central-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-cental-sulcus-anterior-surface</name>
+                  <name>Brain-region-central-sulcus-anterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-cental-sulcus-posterior-surface</name>
+                  <name>Brain-region-central-sulcus-posterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-cental-opercular</name>
+                  <name>Brain-region-central-opercular</name>
                </node>
                <node>
                   <name>Brain-region-parietal-lateral-convexity</name>
@@ -1666,6 +1716,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
             <node>
                <name>Modulators-reactivity</name>
+               <description>Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.</description>
                <node>
                   <name>Modulators-reactive</name>
                </node>
@@ -1701,7 +1752,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawl effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Medications reduction or withdrawal effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1866,11 +1917,11 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>IPS-effect</name>
+               <name>Intermittent-photic-stimulation-effect</name>
                <node>
-                  <name>Posterior-stimulus-dependent-IPS-response</name>
+                  <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</name>
                   <node>
-                     <name>Posterior-stimulus-dependent-IPS-response-frequency</name>
+                     <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1889,10 +1940,10 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Posterior-stimulus-independent-IPS-response-limited</name>
+                  <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited</name>
                   <description>limited to the stimulus-train</description>
                   <node>
-                     <name>Posterior-stimulus-independent-IPS-response-limited-frequency</name>
+                     <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1911,9 +1962,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Posterior-stimulus-independent-IPS-response-self-sustained</name>
+                  <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained</name>
                   <node>
-                     <name>Posterior-stimulus-independent-IPS-response-self-sustained-frequency</name>
+                     <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1932,10 +1983,10 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Generalized-photoparoxysmal-IPS-response-limited</name>
+                  <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited</name>
                   <description>limited to the stimulus-train</description>
                   <node>
-                     <name>Generalized-photoparoxysmal-IPS-response-limited-frequency</name>
+                     <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1954,9 +2005,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Generalized-photoparoxysmal-IPS-response-self-sustained</name>
+                  <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained</name>
                   <node>
-                     <name>Generalized-photoparoxysmal-IPS-response-self-sustained-frequency</name>
+                     <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1975,9 +2026,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect</name>
+                  <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect</name>
                   <node>
-                     <name>Activation-of-pre-existing-epileptogenic-area-IPS-effect-frequency</name>
+                     <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -1996,7 +2047,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Unmodified-IPS-effect</name>
+                  <name>Unmodified-intermittent-photic-stimulation-effect</name>
                </node>
             </node>
             <node>
@@ -2044,7 +2095,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <description>Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording</description>
                <node>
                   <name>Random-appearance-mode</name>
-                  <description>Occurrence of the the non-ictal EEG pattern / graphoelement without any rhytmicity / periodicity</description>
+                  <description>Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity</description>
                </node>
                <node>
                   <name>Periodic-appearance-mode</name>
@@ -2074,9 +2125,9 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Rhythmic-trains-or-bursts-discharge-pattern</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevelance tag</description>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevalence tag</description>
                   <node>
-                     <name>Rhythmic-trains-or-bursts--frequency</name>
+                     <name>Rhythmic-trains-or-bursts-discharge-pattern-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
                         <name>#</name>
@@ -2096,7 +2147,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Arhythmic-trains-or-bursts-discharge-pattern</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevelance tag</description>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevalence tag</description>
                </node>
                <node>
                   <name>Fragmented-discharge-pattern</name>
@@ -2110,7 +2161,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>Extent</name>
+               <name>Background-activity-extent</name>
                <description>percentage of occurrence during the recording (background activity)</description>
                <node>
                   <name>#</name>
@@ -2124,71 +2175,122 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>PD-Time-related-features</name>
+               <name>Periodic-discharge-time-related-features</name>
                <description>Periodic discharges not further specified (PDs) time-relayed features tags</description>
                <node>
-                  <name>PD-duration</name>
+                  <name>Periodic-discharge-duration</name>
                   <node>
-                     <name>Very-brief-PD-duration</name>
+                     <name>Very-brief-periodic-discharge-duration</name>
                      <description>less than 10 sec</description>
                   </node>
                   <node>
-                     <name>Brief-PD-duration</name>
+                     <name>Brief-periodic-discharge-duration</name>
                      <description>10 to 59 sec</description>
                   </node>
                   <node>
-                     <name>Intermidiate-PD-duration</name>
+                     <name>Intermediate-periodic-discharge-duration</name>
                      <description>1 to 4.9 min</description>
                   </node>
                   <node>
-                     <name>Long-PD-duration</name>
+                     <name>Long-periodic-discharge-duration</name>
                      <description>5 to 59 min</description>
                   </node>
                   <node>
-                     <name>Very-long-PD-duration</name>
+                     <name>Very-long-periodic-discharge-duration</name>
                      <description>greater than 1 hour</description>
                   </node>
                   <node>
-                     <name>PD-duration-not-possible-to-determine</name>
+                     <name>Periodic-discharge--duration-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-onset</name>
+                  <name>Periodic-discharge-onset</name>
                   <node>
-                     <name>Sudden-PD-onset</name>
+                     <name>Sudden-periodic-discharge-onset</name>
                   </node>
                   <node>
-                     <name>Gradual-PD-onset</name>
+                     <name>Gradual-periodic-discharge-onset</name>
                   </node>
                   <node>
-                     <name>PD-onset-not-possible-to-determine</name>
+                     <name>Periodic-discharge-onset-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
                <node>
-                  <name>PD-dynamics</name>
+                  <name>Periodic-discharge-dynamics</name>
                   <node>
-                     <name>Evolving-PD-dynamics</name>
+                     <name>Evolving-periodic-discharge-dynamics</name>
                   </node>
                   <node>
-                     <name>Flunctuating-PD-dynamics</name>
+                     <name>Fluctuating-periodic-discharge-dynamics</name>
                   </node>
                   <node>
-                     <name>Static-PD-dynamics</name>
+                     <name>Static-periodic-discharge-dynamics</name>
                   </node>
                   <node>
-                     <name>PD-dynamics-not-possible-to-determine</name>
+                     <name>Periodic-discharge-dynamics-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
             </node>
          </node>
          <node>
-            <name>PDR-property</name>
+            <name>Finding-incidence</name>
+            <description>how often it occurs/time-epoch</description>
+            <node>
+               <name>Only-once-finding-incidence</name>
+            </node>
+            <node>
+               <name>Rare-finding-incidence</name>
+               <description>less than 1/h</description>
+            </node>
+            <node>
+               <name>Uncommon-finding-incidence</name>
+               <description>1/5 min to 1/h</description>
+            </node>
+            <node>
+               <name>Occasional-finding-incidence</name>
+               <description>1/min to 1/5min</description>
+            </node>
+            <node>
+               <name>Frequent-finding-incidence</name>
+               <description>1/10 s to 1/min</description>
+            </node>
+            <node>
+               <name>Abundant-finding-incidence</name>
+               <description>greater than 1/10 s)</description>
+            </node>
+         </node>
+         <node>
+            <name>Finding-prevalence</name>
+            <description>the percentage of the recording covered by the train/burst</description>
+            <node>
+               <name>Rare-finding-prevalence</name>
+               <description>Less than 1 precents</description>
+            </node>
+            <node>
+               <name>Occasional-finding-prevalence</name>
+               <description>1 to 9 percents</description>
+            </node>
+            <node>
+               <name>Frequent-finding-prevalence</name>
+               <description>10 to 49 precents</description>
+            </node>
+            <node>
+               <name>Abundant-finding-prevalence</name>
+               <description>50 to 89 percents</description>
+            </node>
+            <node>
+               <name>Continuous-finding-prevalence</name>
+               <description>Greater than 90 precents</description>
+            </node>
+         </node>
+         <node>
+            <name>Posterior-dominant-rhythm-property</name>
             <description>Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.</description>
             <node>
-               <name>PDR-frequency</name>
+               <name>Posterior-dominant-rhythm-frequency</name>
                <description>Hz Values (numbers) typed in.</description>
                <node>
                   <name>#</name>
@@ -2206,97 +2308,97 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
             </node>
             <node>
-               <name>PDR-amplitude-range</name>
+               <name>Posterior-dominant-rhythm-amplitude-range</name>
                <node>
-                  <name>Low-range</name>
+                  <name>Low-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Low (less than 20 microV)</description>
                </node>
                <node>
-                  <name>Medium-range</name>
+                  <name>Medium-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Medium (between 20 and 70 microV)</description>
                </node>
                <node>
-                  <name>High-range</name>
+                  <name>High-posterior-dominant-rhythm-amplitude-range</name>
                   <description>High ( more than 70 microV)</description>
                </node>
                <node>
-                  <name>PDR-amplitude-not-possible-to-determine</name>
+                  <name>Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
                </node>
             </node>
             <node>
-               <name>PDR-Amplitude-asymmetry</name>
+               <name>Posterior-dominant-rhythm-amplitude-asymmetry</name>
                <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag</description>
                <node>
-                  <name>PDR-amplitude-asymmetry-LowerLeft</name>
+                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-left</name>
                   <description>Amplitude lower on the left side.</description>
                </node>
                <node>
-                  <name>PDR-amplitude-asymmetry-LowerRight</name>
+                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-right</name>
                   <description>Amplitude lower on the right side.</description>
                </node>
                <node>
-                  <name>PDR-amplitude-asymmetry-not-possible-to-determine</name>
+                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
                </node>
             </node>
             <node>
-               <name>PDR-frequency-asymmetry</name>
+               <name>Posterior-dominant-rhythm-frequency-asymmetry</name>
                <description>When symmetrical could be labeled with base schema Symmetrical tag</description>
                <node>
-                  <name>PDR-frequency-asymmetry-LowerLeft</name>
+                  <name>Posterior-dominant-rhythm-frequency-asymmetry-lower-left</name>
                   <description>Hz lower on the left side.</description>
                </node>
                <node>
-                  <name>PDR-frequency-asymmetry-LowerRight</name>
+                  <name>Posterior-dominant-rhythm-frequency-asymmetry-lower-right</name>
                   <description>Hz lower on the right side.</description>
                </node>
             </node>
             <node>
-               <name>PDR-Eye-opening-reactivity</name>
+               <name>Posterior-dominant-rhythm-eye-opening-reactivity</name>
                <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.</description>
                <node>
-                  <name>PDR-Eye-opening-reactivity-exists</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
                   <description>When annotated Yes</description>
                </node>
                <node>
-                  <name>PDR-Eye-opening-reactivity-reducedLeft</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left</name>
                   <description>Reduced left side reactivity</description>
                </node>
                <node>
-                  <name>PDR-Eye-opening-reactivity-reducedRigth</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-rigth</name>
                   <description>Reduced right side reactivity</description>
                </node>
                <node>
-                  <name>PDR-Eye-opening-reactivity-reducedBoth</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both</name>
                   <description>Reduced reactivity on both sides</description>
                </node>
                <node>
-                  <name>PDR-Eye-opening-reactivity-not-possible-to-determine</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
                </node>
             </node>
             <node>
-               <name>PDR-Organization</name>
+               <name>Posterior-dominant-rhythm-organization</name>
                <description>When normal could be labeled with base schema Normal tag</description>
                <node>
-                  <name>PDR-Organization-poorlyOrganized</name>
+                  <name>Posterior-dominant-rhythm-organization-poorly-organized</name>
                   <description>Poorly organized</description>
                </node>
                <node>
-                  <name>PDR-Organization-disorganized</name>
+                  <name>Posterior-dominant-rhythm-organization-disorganized</name>
                   <description>Disorganized</description>
                </node>
                <node>
-                  <name>PDR-Organization-markedlyDisorganized</name>
+                  <name>Posterior-dominant-rhythm-organization-markedly-disorganized</name>
                   <description>Markedly disorganized</description>
                </node>
             </node>
             <node>
-               <name>PDR-Caveat</name>
+               <name>Posterior-dominant-rhythm-caveat</name>
                <description>Caveats to the annotation of PDR</description>
                <node>
-                  <name>No-PDR-Caveat</name>
+                  <name>No-posterior-dominant-rhythm-caveat</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2306,7 +2408,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>PDR-Caveat-only-open-eyes-during-the-recording</name>
+                  <name>Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2316,7 +2418,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>PDR-Caveat-sleep-deprived-caveat</name>
+                  <name>Posterior-dominant-rhythm-caveat-sleep-deprived-caveat</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2326,7 +2428,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>PDR-Caveat-drowsy</name>
+                  <name>Posterior-dominant-rhythm-caveat-drowsy</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -2336,88 +2438,37 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>PDR-Caveat-only-following-hyperventilation</name>
+                  <name>Posterior-dominant-rhythm-caveat-only-following-hyperventilation</name>
                </node>
             </node>
             <node>
-               <name>Absence-of-PDR</name>
+               <name>Absence-of-posterior-dominant-rhythm</name>
                <description>Reason for absence of PDR</description>
                <node>
-                  <name>Absence-of-PDR-artifacts</name>
+                  <name>Absence-of-posterior-dominant-rhythm-artifacts</name>
                </node>
                <node>
-                  <name>Absence-of-PDR-extreme-low-voltage</name>
+                  <name>Absence-of-posterior-dominant-rhythm-extreme-low-voltage</name>
                </node>
                <node>
-                  <name>Absence-of-PDR-eye-closure-could-not-be-achieved</name>
+                  <name>Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved</name>
                </node>
                <node>
-                  <name>Absence-of-PDR-lack-of-awake-period</name>
+                  <name>Absence-of-posterior-dominant-rhythm-lack-of-awake-period</name>
                </node>
                <node>
-                  <name>Absence-of-PDR-lack-of-compliance</name>
+                  <name>Absence-of-posterior-dominant-rhythm-lack-of-compliance</name>
                </node>
                <node>
-                  <name>Absence-of-PDR-other-causes</name>
+                  <name>Absence-of-posterior-dominant-rhythm-other-causes</name>
                </node>
-            </node>
-         </node>
-         <node>
-            <name>Incidence</name>
-            <description>how often it occurs/time-epoch</description>
-            <node>
-               <name>Only-once-incidence</name>
-            </node>
-            <node>
-               <name>Rare-incidence</name>
-               <description>less than 1/h</description>
-            </node>
-            <node>
-               <name>Uncommon-incidence</name>
-               <description>1/5 min to 1/h</description>
-            </node>
-            <node>
-               <name>Occasional-incidence</name>
-               <description>1/min to 1/5min</description>
-            </node>
-            <node>
-               <name>Frequent-incidence</name>
-               <description>1/10 s to 1/min</description>
-            </node>
-            <node>
-               <name>Abundant-incidence</name>
-               <description>greater than 1/10 s)</description>
-            </node>
-         </node>
-         <node>
-            <name>Prevalence</name>
-            <description>the percentage of the recording covered by the train/burst</description>
-            <node>
-               <name>Rare-prevalence</name>
-               <description>Less than 1 percents</description>
-            </node>
-            <node>
-               <name>Occasional-prevalence</name>
-               <description>1 to 9 percents</description>
-            </node>
-            <node>
-               <name>Frequent-prevalence</name>
-               <description>10 to 49 percents</description>
-            </node>
-            <node>
-               <name>Abundant-prevalence</name>
-               <description>50 to 89 percents</description>
-            </node>
-            <node>
-               <name>Continuous-prevalence</name>
-               <description>Greater than 90 percents</description>
             </node>
          </node>
          <node>
             <name>Sleep-property</name>
             <node>
                <name>Sleep-abnormal-amplitude-asymmetry</name>
-               <description>Absence or consistenly marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement</description>
+               <description>Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement</description>
                <node>
                   <name>Sleep-abnormal-amplitude-asymmetry-exists</name>
                </node>
@@ -2457,7 +2508,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      <name>Myoclonic-Atonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-tonoc-clonic-motor-onset-epileptic-seizure</name>
+                     <name>Myoclonic-tonic-clonic-motor-onset-epileptic-seizure</name>
                   </node>
                   <node>
                      <name>Tonic-clonic-motor-onset-epileptic-seizure</name>
@@ -2525,7 +2576,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <node>
                   <name>Semiology-motor-manifestation</name>
                   <node>
-                     <name>Elementary-motor</name>
+                     <name>Semiology-elementary-motor</name>
                      <node>
                         <name>Semiology-motor-tonic</name>
                         <description>A sustained increase in muscle contraction lasting a few seconds to minutes.</description>
@@ -2581,7 +2632,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                      <node>
                         <name>Semiology-motor-atonic</name>
-                        <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting greator or equal to 1 to 2 s, involving head, trunk, jaw, or limb musculature.</description>
+                        <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting greater or equal to 1 to 2 s, involving head, trunk, jaw, or limb musculature.</description>
                      </node>
                      <node>
                         <name>Semiology-motor-eye-blinking</name>
@@ -2651,8 +2702,8 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                   </node>
                   <node>
-                     <name>Motor-behavioral-arrest</name>
-                     <description>Interruption of ongoing motor activity or of ongoing behaviours with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue)</description>
+                     <name>Semiology-motor-behavioral-arrest</name>
+                     <description>Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue)</description>
                   </node>
                </node>
                <node>
@@ -2789,7 +2840,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                      <node>
                         <name>Semiology-autonomic-gastrointestinal</name>
-                        <description>Nausea, eructation, vomiting, retching, abdominal sensations, abdominal pain, flatulence, spitting, diarrhoea</description>
+                        <description>Nausea, eructation, vomiting, retching, abdominal sensations, abdominal pain, flatulence, spitting, diarrhea</description>
                      </node>
                      <node>
                         <name>Semiology-autonomic-urinary-incontinence</name>
@@ -2841,7 +2892,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Postictal-semiology-quick-recovery-of-consciousness</name>
-                  <description>Quick recovery of awareness and responsivness.</description>
+                  <description>Quick recovery of awareness and responsiveness.</description>
                </node>
                <node>
                   <name>Postictal-semiology-aphasia-or-dysphasia</name>
@@ -2849,7 +2900,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Postictal-semiology-behavioral-change</name>
-                  <description>Occurring immeddiatly after a aseizure. Including pshychosis, hypomanina, obsessive-compulsive behaviour.</description>
+                  <description>Occurring immediately after a aseizure. Including psychosis, hypomanina, obsessive-compulsive behavior.</description>
                </node>
                <node>
                   <name>Postictal-semiology-hemianopia</name>
@@ -2857,7 +2908,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Postictal-semiology-impaired-cognition</name>
-                  <description>Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, excution, praxis, speech</description>
+                  <description>Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, execution, praxis, speech</description>
                </node>
                <node>
                   <name>Postictal-semiology-dysphoria</name>
@@ -2881,7 +2932,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Postictal-semiology-paresis</name>
-                  <description>Todds palsy. Any unilaterar posticatl dysfunction relating to motor, language, sensory and/or integrative functions.</description>
+                  <description>Todds palsy. Any unilateral postictal dysfunction relating to motor, language, sensory and/or integrative functions.</description>
                </node>
                <node>
                   <name>Postictal-semiology-sleep</name>
@@ -2889,7 +2940,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                </node>
                <node>
                   <name>Postictal-semiology-unilateral-myoclonic-jerks</name>
-                  <description>unilateral motor phenomena, other then  specified, occuring in postictal phase.</description>
+                  <description>unilateral motor phenomena, other then  specified, occurring in postictal phase.</description>
                </node>
                <node>
                   <name>Postictal-semiology-other-unilateral-motor-phenomena</name>
@@ -3076,10 +3127,10 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                   </node>
                </node>
                <node>
-                  <name>Episode-prodome</name>
+                  <name>Episode-prodrome</name>
                   <description>Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).</description>
                   <node>
-                     <name>Episode-prodome-exists</name>
+                     <name>Episode-prodrome-exists</name>
                      <node>
                         <name>#</name>
                         <description>free text</description>
@@ -3089,7 +3140,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                      </node>
                   </node>
                   <node>
-                     <name>No-episode-prodome</name>
+                     <name>No-episode-prodrome</name>
                      <node>
                         <name>#</name>
                         <description>free text</description>
@@ -3172,7 +3223,7 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
                <name>Recording-of-reduced-diagnostic-value-due-to-artifact</name>
             </node>
             <node>
-               <name>Artifact-does-not-interfer-recording</name>
+               <name>Artifact-does-not-interfere-recording</name>
             </node>
          </node>
       </node>
@@ -4005,5 +4056,5 @@ This media wiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cl
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>TPA, February 2022</epilogue>
+   <epilogue>TPA, April 2022</epilogue>
 </HED>
