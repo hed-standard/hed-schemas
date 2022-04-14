@@ -1,4 +1,4 @@
-HED library="score" version="0.0.1"
+HED library="score" version="0.0.2"
 
 '''Prologue'''
 This schema is Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG: SCORE based on the first official release that includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
