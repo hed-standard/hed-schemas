@@ -20,10 +20,10 @@ This project was supported by the by the National Institute of Mental Health of 
         ** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
     * Hyperventilation
         ** Quality-of-hyperventilation
-            *** Refused-procedure
-            *** Poor-effort
-            *** Good-effort
-            *** Excellent-effort
+            *** Hyperventilation-refused-procedure
+            *** Hyperventilation-poor-effort
+            *** Hyperventilation-good-effort
+            *** Hyperventilation-excellent-effort
     * Sleep-deprivation
         ** <nowiki># {takesValue}</nowiki>
     * Sleep-following-sleep-deprivation
@@ -135,7 +135,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Hyperekplexia <nowiki>[Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.] </nowiki>
         ** Jactatio-capitis-nocturna <nowiki>[Relatively common in normal children at the time of going to bed, especially during the first year of life, the rhythmic head movements persist during sleep. Usually, these phenomena disappear before 3 years of age.] </nowiki>
         ** Pavor-nocturnus <nowiki>[Nocturnal episodes characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years. ] </nowiki>
-        ** Stereotypical-behavior <nowiki>[Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures). ] </nowiki>
+        ** Stereotypical-behavior-pediatric-episodes <nowiki>[Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures). ] </nowiki>
 
     * Paroxysmal-motor-event <nowiki>[Paroxysmal phenomena during neonatal or childhood periods characterized by recurrent motor or behavioral signs or symptoms that must be distinguishes from epileptic disorders. ] </nowiki>
     * Syncope <nowiki>[Episode with loss of consciousness and muscle tone that is abrupt in onset, of short duration and followed by rapid recovery; it occurs in response to transient impairment of cerebral perfusion. Typical prodromal symptoms often herald onset of syncope and postictal symptoms are minimal. Syncopal convulsions resulting from cerebral anoxia are common but are not a form of epilepsy, nor are there any accompanying EEG ictal discharges. ] </nowiki>
@@ -157,8 +157,8 @@ This project was supported by the by the National Institute of Mental Health of 
     * Photomyogenic-response <nowiki>[A response to intermittent photic stimulation characterized by the appearance in the record of brief, repetitive muscular artifacts (spikes) over the anterior regions of the head. These often increase gradually in amplitude as stimuli are continued and cease promptly when the stimulus is withdrawn. Comment: this response is frequently associated with flutter of the eyelids and vertical oscillations of the eyeballs and sometimes with discrete jerking mostly involving the musculature of the face and head. (Preferred to synonym: photo-myoclonic response).] </nowiki>
     * Arousal-pattern <nowiki>[Arousal pattern in children. Prolonged, marked high voltage 4-6/s activity in all leads with some intermixed slower frequencies, in children.] </nowiki>
     * Sleep-spindles-patterns <nowiki>[Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 micro V in the adult.] </nowiki>
-    * Vertex-wave <nowiki>[Vertex sharp transient. Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 micro V. Abbreviation: V wave. Synonym: vertex sharp wave.] </nowiki>
-    * K-complex <nowiki>[A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during non-REM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.] </nowiki>
+    * Vertex-wave-patterns <nowiki>[Vertex sharp transient. Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 micro V. Abbreviation: V wave. Synonym: vertex sharp wave.] </nowiki>
+    * K-complex-patterns <nowiki>[A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during non-REM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.] </nowiki>
     * POSTS-pattern <nowiki>[Positive occipital sharp transient of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 micro V.] </nowiki>
     * Frontal-arousal-rhythm <nowiki>[Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.] </nowiki>
     * Other-physiologic-patterns
@@ -179,16 +179,16 @@ This project was supported by the by the National Institute of Mental Health of 
     * Temporal-slowing-elderly <nowiki>[Focal theta and/or delta activity over the temporal regions, especially the left, in persons over the age of 60. Amplitudes are low/similar to the background activity. Comment: focal temporal theta was found in 20 percent of people between the ages of 40-59 years, and 40 percent of people between 60 and 79 years. One third of people older than 60 years had focal temporal delta activity.] </nowiki>
     * Breach-rhythm <nowiki>[Rhythmical activity recorded over cranial bone defects. Usually it is in the 6 to 11/sec range, does not respond to movements. ] </nowiki>
     * Other-uncertain-significant-patterns
-
+        ** <nowiki># {takesValue}[free text]</nowiki>
 
 '''EEG-artifacts''' <nowiki>[When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.]</nowiki>
 
     * Biological-artifact <nowiki>[Used with Findings-property/ tags]</nowiki>
-        ** Eye-blinks-artifact <nowiki>[Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.]</nowiki>
-        ** Eye-movements-horizontal-artifact <nowiki>[There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.] </nowiki>
-        ** Eye-movements-vertical-artifact <nowiki>[The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.]</nowiki>
-        ** Slow-eye-movements-artifact <nowiki>[Slow, rolling eye-movements, seen during drowsiness.]</nowiki>
-        ** Nystagmus
+        ** Eye-blink-artifact <nowiki>[Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.]</nowiki>
+        ** Eye-movement-horizontal-artifact <nowiki>[There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.] </nowiki>
+        ** Eye-movement-vertical-artifact <nowiki>[The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.]</nowiki>
+        ** Slow-eye-movement-artifact <nowiki>[Slow, rolling eye-movements, seen during drowsiness.]</nowiki>
+        ** Nystagmus-artifact
         ** Chewing-artifact
         ** Sucking-artifact
         ** Glossokinetic-artifact <nowiki>[The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.] </nowiki>
@@ -219,62 +219,62 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Respiration-oxygen-saturation
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
         ** Respiration-feature
-            *** Apnoe-respiration-feature <nowiki>[Add duration and comments in free text]</nowiki>
+            *** Apnoe-respiration <nowiki>[Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Hypopnea-respiration-feature <nowiki>[Add duration and comments in free text]</nowiki>
+            *** Hypopnea-respiration <nowiki>[Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Apnea-hypopnea-index-respiration-feature <nowiki>[events/h. Used with Findings-attributes tags]</nowiki>
+            *** Apnea-hypopnea-index-respiration <nowiki>[events/h. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Tachypnea <nowiki>[cycles per min. Used with Findings-attributes tags]</nowiki>
+            *** Tachypnea-respiration <nowiki>[cycles per min. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Other-respiration-features
+            *** Other-respiration-feature
                 **** <nowiki># {takesValue}[free text]</nowiki>
     * ECG <nowiki>[electrocardiography]</nowiki>
         ** ECG-QT-period
             *** <nowiki># {takesValue}[free text]</nowiki>
         ** ECG-feature
-            *** ECG-Sinus-rhythm <nowiki>[Normal rhythm. Used with Findings-attributes tags]</nowiki>
+            *** ECG-sinus-rhythm <nowiki>[Normal rhythm. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Arrhythmia
+            *** ECG-arrhythmia
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Asystolia <nowiki>[duration: range in seconds. Used with Findings-attributes tags]</nowiki>
+            *** ECG-asystolia <nowiki>[duration: range in seconds. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Bradycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
+            *** ECG-bradycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Extrasystole
+            *** ECG-extrasystole
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Ventricular-premature-depolarization <nowiki>[Used with Findings-attributes tags]</nowiki>
+            *** ECG-ventricular-premature-depolarization <nowiki>[Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-Tachycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
+            *** ECG-tachycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Other-ECG-features
+            *** Other-ECG-feature
                 **** <nowiki># {takesValue}[free text]</nowiki>
     * EMG <nowiki>[electromyography]</nowiki>
-        ** EMG-Muscle-side
+        ** EMG-muscle-side
             *** EMG-left-muscle
             *** EMG-right-muscle
             *** EMG-bilateral-muscle
-        ** EMG-Muscle-Name
+        ** EMG-muscle-Name
             *** <nowiki># {takesValue}[free text]</nowiki>
         ** EMG-feature
-            *** EMG-Myoclonus-rhythmic <nowiki>[Used with Findings-attributes tags]</nowiki>
+            *** EMG-myoclonus-rhythmic <nowiki>[Used with Findings-attributes tags]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Myoclonus-arrhythmic
+            *** EMG-myoclonus-arrhythmic
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Myoclonus-synchronous
+            *** EMG-myoclonus-synchronous
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Myoclonus-asynchronous
+            *** EMG-myoclonus-asynchronous
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** EMG-PLMS <nowiki>[Periodic limb movements in sleep] </nowiki>
-            *** EMG-Spasm
+            *** EMG-spasm
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Tonic-contraction
+            *** EMG-tonic-contraction
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Asymmetric-activation-left-first
+            *** EMG-asymmetric-activation-left-first
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** EMG-Asymmetric-activation-right-first
+            *** EMG-asymmetric-activation-right-first
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Other-EMG-features
                 **** <nowiki># {takesValue}[free text]</nowiki>
@@ -285,14 +285,14 @@ This project was supported by the by the National Institute of Mental Health of 
 '''Finding-attribute''' <nowiki>[Subtree tree for general properties]</nowiki>
 
     * Finding-significance <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags]</nowiki>
-        ** No-definite-abnormality
+        ** Finding-no-definite-abnormality
         ** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-    * Attributes-stopped-by
+    * Finding-stopped-by
         ** <nowiki># {takesValue}[free text]</nowiki>
-    * Attributes-triggered-by
+    * Finding-triggered-by
         ** <nowiki># {takesValue}[free text]</nowiki>
-    * Attributes-unmodified
+    * Finding-unmodified
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 
@@ -352,7 +352,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Occipital-intermittent-rhythmic-delta-activity-morphology  <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children]</nowiki>
         ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. ]</nowiki>
 
-        ** Periodic-discharges-property <nowiki>[Periodic discharges not further specified (PDs)]</nowiki>
+        ** Periodic-discharges-morphology <nowiki>[Periodic discharges not further specified (PDs)]</nowiki>
             *** Periodic-discharges-superimposed-activity
                 **** Periodic-discharges-fast-superimposed-activity
                     *****  Periodic-discharges-fast-superimposed-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
