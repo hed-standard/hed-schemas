@@ -399,30 +399,30 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Unclear-periodic-discharge-polarity
 
     * Source-analysis <nowiki>[How the current in the brain reaches the electrode sensors.]</nowiki>
-        ** Brain-region-laterality <nowiki>[Uses Location-property/Laterality tags] </nowiki>
+        ** Brain-region-source-analysis-laterality <nowiki>[Uses Location-property/Laterality tags] </nowiki>
         ** Brain-region-source-analysis
-            *** Brain-region-frontal-perisylvian-superior-surface
-            *** Brain-region-frontal-lateral
-            *** Brain-region-frontal-mesial
-            *** Brain-region-frontal-polar
-            *** Brain-region-frontal-orbitofrontal
-            *** Brain-region-temporal-polar
-            *** Brain-region-temporal-basal
-            *** Brain-region-temporal-lateral-anterior
-            *** Brain-region-temporal-lateral-posterior
-            *** Brain-region-temporal-perisylvian-inferior-surface
-            *** Brain-region-central-lateral-convexity
-            *** Brain-region-central-mesial
-            *** Brain-region-central-sulcus-anterior-surface
-            *** Brain-region-central-sulcus-posterior-surface
-            *** Brain-region-central-opercular
-            *** Brain-region-parietal-lateral-convexity
-            *** Brain-region-parietal-mesial
-            *** Brain-region-parietal-opercular
-            *** Brain-region-occipital-lateral
-            *** Brain-region-occipital-mesial
-            *** Brain-region-occipital-basal
-            *** Brain-region-insula
+            *** Brain-region-source-analysis-frontal-perisylvian-superior-surface
+            *** Brain-region-source-analysis-frontal-lateral
+            *** Brain-region-source-analysis-frontal-mesial
+            *** Brain-region-source-analysis-frontal-polar
+            *** Brain-region-source-analysis-frontal-orbitofrontal
+            *** Brain-region-source-analysis-temporal-polar
+            *** Brain-region-source-analysis-temporal-basal
+            *** Brain-region-source-analysis-temporal-lateral-anterior
+            *** Brain-region-source-analysis-temporal-lateral-posterior
+            *** Brain-region-source-analysis-temporal-perisylvian-inferior-surface
+            *** Brain-region-source-analysis-central-lateral-convexity
+            *** Brain-region-source-analysis-central-mesial
+            *** Brain-region-source-analysis-central-sulcus-anterior-surface
+            *** Brain-region-source-analysis-central-sulcus-posterior-surface
+            *** Brain-region-source-analysis-central-opercular
+            *** Brain-region-source-analysis-parietal-lateral-convexity
+            *** Brain-region-source-analysis-parietal-mesial
+            *** Brain-region-source-analysis-parietal-opercular
+            *** Brain-region-source-analysis-occipital-lateral
+            *** Brain-region-source-analysis-occipital-mesial
+            *** Brain-region-source-analysis-occipital-basal
+            *** Brain-region-source-analysis-insula
 
     * Location-property <nowiki>[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
         ** Brain-laterality
@@ -479,9 +479,9 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
             *** Nociceptive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
         ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
-            *** Physical-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Physical-effort-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
         ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
-            *** Cognitive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+            *** Cognitive-tasks-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
         ** Other-modulators-effect-EEG
             *** <nowiki># {takesValue}[free text]</nowiki>
         ** Facilitating-factor <nowiki>[Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence).]</nowiki>
@@ -566,7 +566,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Intermediate-periodic-discharge-duration <nowiki>[1 to 4.9 min]</nowiki>
                 **** Long-periodic-discharge-duration <nowiki>[5 to 59 min]</nowiki>
                 **** Very-long-periodic-discharge-duration <nowiki>[greater than 1 hour]</nowiki>
-                **** Periodic-discharge--duration-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+                **** Periodic-discharge-duration-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
             *** Periodic-discharge-onset
                 **** Sudden-periodic-discharge-onset
                 **** Gradual-periodic-discharge-onset
@@ -600,7 +600,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Posterior-dominant-rhythm-amplitude-range
             *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV)]</nowiki>
             *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV)]</nowiki>
-            *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High ( more than 70 microV)]</nowiki>
+            *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV)]</nowiki>
             *** Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
         ** Posterior-dominant-rhythm-amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag]</nowiki>
@@ -648,8 +648,8 @@ This project was supported by the by the National Institute of Mental Health of 
     * Sleep-property
         ** Sleep-abnormal-amplitude-asymmetry <nowiki>[Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement]</nowiki>
             *** Sleep-abnormal-amplitude-asymmetry-exists
-            *** Sleep-abnormal-amplitude-asymmetry-LowerLeft <nowiki>[Amplitude lower on the left side.]</nowiki>
-            *** Sleep-abnormal-amplitude-asymmetry-LowerRight <nowiki>[Amplitude lower on the right side.]</nowiki>
+            *** Sleep-abnormal-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
+            *** Sleep-abnormal-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
 
     * Episode-property
         ** Epileptic-seizure-classification <nowiki>[Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
@@ -675,7 +675,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Typical-absence-epileptic-seizure
                 **** Atypical-absence-epileptic-seizure
                 **** Myoclonic-absence-epileptic-seizure
-                **** Eyelid-myoclonia-epileptic-seizure
+                **** Eyelid-myoclonia-absence-epileptic-seizure
 
         ** Episode-phase <nowiki>[The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.]</nowiki>
             *** Episode-phase-initial
@@ -809,12 +809,12 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
-                **** Simultaneous
+                **** Simultaneous-start-clinical-EEG
                 **** Clinical-EEG-temporal-relationship-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-            *** Event-count <nowiki>[Number of stereotypical episodes during the recording]</nowiki>
+            *** Episode-event-count <nowiki>[Number of stereotypical episodes during the recording]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-                **** Event-count-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+                **** Episode-event-count-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
             *** State-episode-start <nowiki>[State at the start of the episode]</nowiki>
                 **** Episode-start-from-sleep
@@ -825,7 +825,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
             *** Episode-postictal-phase
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-                **** Postictal-phase-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
+                **** Episode-postictal-phase-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
             *** Episode-prodrome <nowiki>[Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
                 **** Episode-prodrome-exists
@@ -840,11 +840,11 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue}[free text]</nowiki>
 
             *** Seizure-dynamics <nowiki>[Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location)]</nowiki>
-                **** Evolution-morphology
+                **** Seizure-dynamics-evolution-morphology
                     ***** <nowiki># {takesValue}[free text]</nowiki>
-                **** Evolution-frequency
+                **** Seizure-dynamics-evolution-frequency
                     ***** <nowiki># {takesValue}[free text]</nowiki>
-                **** Evolution-location
+                **** Seizure-dynamics-evolution-location
                     ***** <nowiki># {takesValue}[free text]</nowiki>
                 **** Seizure-dynamics-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
@@ -871,7 +871,7 @@ This project was supported by the by the National Institute of Mental Health of 
     * frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
         ** hertz  <nowiki>{SIUnit}</nowiki>
         ** Hz <nowiki>{SIUnit, unitSymbol}</nowiki>
-    * AamplitudeUnits <nowiki>{defaultUnits=microvolts}</nowiki>
+    * amplitudeUnits <nowiki>{defaultUnits=microvolts}</nowiki>
         ** microvolts
     * intensityUnits <nowiki>{defaultUnits=dB}</nowiki>
         ** dB <nowiki>{unitSymbol}[Intensity expressed as ratio to a threshold. Often used for sound intensity.]</nowiki>
