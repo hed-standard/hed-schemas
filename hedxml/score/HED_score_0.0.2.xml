@@ -35,15 +35,59 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Quality-of-hyperventilation</name>
                <node>
                   <name>Hyperventilation-refused-procedure</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Hyperventilation-poor-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Hyperventilation-good-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Hyperventilation-excellent-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
          </node>
@@ -51,8 +95,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Sleep-deprivation</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -60,8 +109,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Sleep-following-sleep-deprivation</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -69,8 +123,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Natural-sleep</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -78,8 +137,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Induced-sleep</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -87,8 +151,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Drowsiness</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -96,8 +165,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Awakening</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -105,8 +179,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Medication-administered-during-recording</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -114,8 +193,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Medication-withdrawal-or-reduction-during-recording</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -123,8 +207,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Manual-eye-closure</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -132,8 +221,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Manual-eye-opening</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -141,8 +235,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Auditory-stimulation</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -150,8 +249,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Nociceptive-stimulation</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -159,8 +263,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Physical-effort</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -168,8 +277,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Cognitive-tasks</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -177,8 +291,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Other-modulators-and-procedures</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -246,6 +365,17 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Sleep-architecture-not-possible-to-determine</name>
                <description>Not possible to determine</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -254,22 +384,77 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Sleep-stage-N1</name>
                <description>Sleep stage 1</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sleep-stage-N2</name>
                <description>Sleep stage 2</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sleep-stage-N3</name>
                <description>Sleep stage 3</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sleep-stage-REM</name>
                <description>Rapid eye movement</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sleep-stage-not-possible-to-determine</name>
                <description>Not possible to determine</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -474,8 +659,13 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Other-episode</name>
             <node>
                <name>#</name>
+               <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -551,6 +741,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>takesValue</name>
                </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
             </node>
          </node>
       </node>
@@ -611,6 +805,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -799,6 +997,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>takesValue</name>
                </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
             </node>
          </node>
       </node>
@@ -817,6 +1019,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -850,6 +1056,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -860,6 +1070,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -876,6 +1090,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -885,6 +1103,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -901,6 +1123,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -910,6 +1136,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -930,6 +1160,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -940,12 +1174,30 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>ECG-sinus-rhythm-frequency</name>
                      <description>beats/min (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -956,6 +1208,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -968,6 +1224,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -975,12 +1235,30 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>ECG-bradycardia-frequency</name>
                      <description>beats/min (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -992,6 +1270,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -999,12 +1281,30 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>ECG-ventricular-premature-depolarization-frequency</name>
                      <description>beats/min (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1013,12 +1313,30 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>ECG-tachycardia-frequency</name>
                      <description>beats/min (numbers) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1029,6 +1347,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1045,12 +1367,45 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>EMG-muscle-side</name>
                <node>
                   <name>EMG-left-muscle</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>EMG-right-muscle</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>EMG-bilateral-muscle</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1061,6 +1416,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -1070,12 +1429,30 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>EMG-myoclonus-rhythmic-frequency</name>
                      <description>numbers typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1087,6 +1464,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -1097,6 +1478,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -1106,6 +1491,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1121,6 +1510,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -1130,6 +1523,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1141,6 +1538,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -1151,6 +1552,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -1160,6 +1565,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -1173,6 +1582,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>takesValue</name>
                </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
             </node>
          </node>
       </node>
@@ -1184,10 +1597,32 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags</description>
             <node>
                <name>Finding-no-definite-abnormality</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Finding-significance-not-possible-to-determine</name>
                <description>Not possible to determine</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -1197,6 +1632,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -1208,6 +1647,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>takesValue</name>
                </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
             </node>
          </node>
          <node>
@@ -1217,6 +1660,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>free text</description>
                <attribute>
                   <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
                </attribute>
             </node>
          </node>
@@ -1271,6 +1718,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -1317,6 +1768,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>free text</description>
                   <attribute>
                      <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
                   </attribute>
                </node>
             </node>
@@ -1365,6 +1820,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -1412,6 +1871,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -1458,50 +1921,175 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
                <name>Spike-morphology</name>
                <description>A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Spike-and-slow-wave-morphology</name>
                <description>A pattern consisting of a spike followed by a slow wave.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Runs-of-rapid-spikes-morphology</name>
                <description>Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Polyspikes-morphology</name>
                <description>Two or more consecutive spikes.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Polyspike-and-slow-wave-morphology</name>
                <description>Two or more consecutive spikes associated with one or more slow waves.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sharp-wave-morphology</name>
                <description>A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over 1/4-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Sharp-and-slow-wave-morphology</name>
                <description>A sequence of a sharp wave and a slow wave.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Slow-sharp-wave-morphology</name>
                <description>A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>High-frequency-oscillation-morphology</name>
                <description>HFO</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Hypsarrhythmia-classic-morphology</name>
                <description>Abnormal interictal high amplitude waves and a background of irregular spikes.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Hypsarrhythmia-modified-morphology</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Fast-spike-activity-morphology</name>
@@ -1518,18 +2106,62 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Polymorphic-delta-activity-morphology</name>
                <description>EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Frontal-intermittent-rhythmic-delta-activity-morphology</name>
                <description>Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Occipital-intermittent-rhythmic-delta-activity-morphology</name>
                <description>Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Temporal-intermittent-rhythmic-delta-activity-morphology</name>
                <description>Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Periodic-discharges-morphology</name>
@@ -1556,6 +2188,17 @@ This project was supported by the by the National Institute of Mental Health of 
                            </attribute>
                         </node>
                      </node>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharges-rhythmic-superimposed-activity</name>
@@ -1577,61 +2220,226 @@ This project was supported by the by the National Institute of Mental Health of 
                            </attribute>
                         </node>
                      </node>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharges-superimposed-activity-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-sharpness</name>
                   <node>
                      <name>Spiky-periodic-discharge-sharpness</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Sharp-periodic-discharge-sharpness</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Sharply-contoured-periodic-discharge-sharpness</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Blunt-periodic-discharge-sharpness</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-sharpness-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Number-of-periodic-discharge-phases</name>
                   <node>
                      <name>1-periodic-discharge-phase</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>2-periodic-discharge-phases</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>3-periodic-discharge-phases</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Greater-than-3-periodic-discharge-phases</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Number-of-periodic-discharge-phases-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-triphasic-morphology</name>
                   <node>
                      <name>Periodic-discharge-triphasic-morphology-exists</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>No-periodic-discharge-triphasic-morphology</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-triphasic-morphology-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -1639,47 +2447,168 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Periodic-discharge-absolute-amplitude-very-low</name>
                      <description>lower than 20 microV)</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Low-periodic-discharge-absolute-amplitude</name>
                      <description>20 to 49 microV</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Medium-periodic-discharge-absolute-amplitude</name>
                      <description>50 to 199 microV</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>High-periodic-discharge-absolute-amplitude</name>
                      <description>greater than 200 microV</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-absolute-amplitude-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-Relative-amplitude</name>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-less-than-equal-2</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-greater-than-2</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-polarity</name>
                   <node>
                      <name>Positive-periodic-discharge-polarity</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Negative-periodic-discharge-polarity</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Unclear-periodic-discharge-polarity</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -1768,75 +2697,306 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Brain-laterality</name>
                <node>
                   <name>Brain-laterality-left</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-laterality-left-greater-right</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-laterality-right</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-laterality-right-greater-left</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-laterality-midline</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-laterality-diffuse-asynchronous</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
                <name>Brain-region</name>
                <node>
                   <name>Brain-region-frontal</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-region-temporal</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-region-central</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-region-parietal</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-region-occipital</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
                <name>Body-part</name>
                <node>
                   <name>Body-part-eyelid</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-face</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-arm</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-leg</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-trunk</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-visceral</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Body-part-hemi</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
                <name>Brain-centricity</name>
                <node>
                   <name>Brain-centricity-axial</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-centricity-proximal-limb</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Brain-centricity-distal-limb</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1844,8 +3004,13 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>lists all corresponding sensors (electrodes/channels in montage)</description>
                <node>
                   <name>#</name>
+                  <description>free text</description>
                   <attribute>
                      <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
                   </attribute>
                </node>
             </node>
@@ -1854,9 +3019,31 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
                <node>
                   <name>Finding-propagation-observed</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Finding-propagation-not-observed</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1864,13 +3051,46 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.</description>
                <node>
                   <name>Multifocal-observed</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Multifocal-not-observed</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Multifocal-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
          </node>
@@ -1882,9 +3102,31 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.</description>
                <node>
                   <name>Modulators-reactive</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Modulators-not-reactive</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1892,9 +3134,31 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Eye closure sensitivity.</description>
                <node>
                   <name>Eye-closure-sensitivity-exists</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>No-eye-closure-sensitivity</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1909,6 +3173,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Eye-opening-passive-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1922,6 +3197,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Medication-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1935,6 +3221,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1948,6 +3245,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Auditive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1962,6 +3270,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1976,6 +3295,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Physical-effort-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1990,6 +3320,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Cognitive-tasks-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -1999,6 +3340,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>free text</description>
                   <attribute>
                      <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
                   </attribute>
                </node>
             </node>
@@ -2013,6 +3358,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2022,6 +3371,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2033,6 +3386,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2042,6 +3399,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2053,6 +3414,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2063,6 +3428,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2072,6 +3441,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2087,6 +3460,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2096,6 +3473,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2126,12 +3507,27 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
                <name>Intermittent-photic-stimulation-effect</name>
                <node>
                   <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
@@ -2155,6 +3551,17 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited</name>
                   <description>limited to the stimulus-train</description>
                   <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+                  <node>
                      <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
@@ -2175,6 +3582,17 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
@@ -2198,6 +3616,17 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited</name>
                   <description>limited to the stimulus-train</description>
                   <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+                  <node>
                      <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
@@ -2218,6 +3647,17 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
@@ -2240,6 +3680,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect</name>
                   <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+                  <node>
                      <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
                      <node>
@@ -2260,6 +3711,17 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Unmodified-intermittent-photic-stimulation-effect</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2274,6 +3736,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2283,6 +3749,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>Only during Sleep/Awakening/Hyperventilation/Physical effort/Cognitive task. Free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2294,6 +3764,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2308,24 +3782,90 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Random-appearance-mode</name>
                   <description>Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Periodic-appearance-mode</name>
                   <description>Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Variable-appearance-mode</name>
                   <description>Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Intermittent-appearance-mode</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Continuous-appearance-mode</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Appearance-mode-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2338,6 +3878,17 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>suggestedTag</name>
                      <value>Finding-property/Finding-incidence</value>
                   </attribute>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Rhythmic-trains-or-bursts-discharge-pattern</name>
@@ -2346,6 +3897,17 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>suggestedTag</name>
                      <value>Finding-property/Finding-prevalence</value>
                   </attribute>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Rhythmic-trains-or-bursts-discharge-pattern-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
@@ -2372,6 +3934,17 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>suggestedTag</name>
                      <value>Finding-property/Finding-prevalence</value>
                   </attribute>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Fragmented-discharge-pattern</name>
@@ -2381,12 +3954,16 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
             </node>
             <node>
-               <name>Background-activity-extent</name>
-               <description>percentage of occurrence during the recording (background activity)</description>
+               <name>Finding-extent</name>
+               <description>percentage of occurrence during the recording (background activity and interictal finding)</description>
                <node>
                   <name>#</name>
                   <attribute>
@@ -2406,55 +3983,198 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Very-brief-periodic-discharge-duration</name>
                      <description>less than 10 sec</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Brief-periodic-discharge-duration</name>
                      <description>10 to 59 sec</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Intermediate-periodic-discharge-duration</name>
                      <description>1 to 4.9 min</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Long-periodic-discharge-duration</name>
                      <description>5 to 59 min</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Very-long-periodic-discharge-duration</name>
                      <description>greater than 1 hour</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-duration-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-onset</name>
                   <node>
                      <name>Sudden-periodic-discharge-onset</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Gradual-periodic-discharge-onset</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-onset-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Periodic-discharge-dynamics</name>
                   <node>
                      <name>Evolving-periodic-discharge-dynamics</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Fluctuating-periodic-discharge-dynamics</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Static-periodic-discharge-dynamics</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Periodic-discharge-dynamics-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -2464,26 +4184,92 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>how often it occurs/time-epoch</description>
             <node>
                <name>Only-once-finding-incidence</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Rare-finding-incidence</name>
                <description>less than 1/h</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Uncommon-finding-incidence</name>
                <description>1/5 min to 1/h</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Occasional-finding-incidence</name>
                <description>1/min to 1/5min</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Frequent-finding-incidence</name>
                <description>1/10 s to 1/min</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Abundant-finding-incidence</name>
                <description>greater than 1/10 s)</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -2492,22 +4278,77 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Rare-finding-prevalence</name>
                <description>Less than 1 precents</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Occasional-finding-prevalence</name>
                <description>1 to 9 percents</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Frequent-finding-prevalence</name>
                <description>10 to 49 precents</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Abundant-finding-prevalence</name>
                <description>50 to 89 percents</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Continuous-finding-prevalence</name>
                <description>Greater than 90 precents</description>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -2536,18 +4377,62 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Low-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Low (less than 20 microV)</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Medium-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Medium (between 20 and 70 microV)</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>High-posterior-dominant-rhythm-amplitude-range</name>
                   <description>High (more than 70 microV)</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2556,14 +4441,47 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-left</name>
                   <description>Amplitude lower on the left side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-right</name>
                   <description>Amplitude lower on the right side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-asymmetry-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2572,10 +4490,32 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Posterior-dominant-rhythm-frequency-asymmetry-lower-left</name>
                   <description>Hz lower on the left side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-frequency-asymmetry-lower-right</name>
                   <description>Hz lower on the right side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2584,22 +4524,77 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
                   <description>When annotated Yes</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left</name>
                   <description>Reduced left side reactivity</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-rigth</name>
                   <description>Reduced right side reactivity</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both</name>
                   <description>Reduced reactivity on both sides</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2608,14 +4603,47 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Posterior-dominant-rhythm-organization-poorly-organized</name>
                   <description>Poorly organized</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-organization-disorganized</name>
                   <description>Disorganized</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-organization-markedly-disorganized</name>
                   <description>Markedly disorganized</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -2629,6 +4657,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2638,6 +4670,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2649,6 +4685,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -2658,6 +4698,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -2670,21 +4714,87 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Reason for absence of PDR</description>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-artifacts</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-extreme-low-voltage</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-lack-of-awake-period</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-lack-of-compliance</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-other-causes</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
          </node>
@@ -2695,14 +4805,47 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement</description>
                <node>
                   <name>Sleep-abnormal-amplitude-asymmetry-exists</name>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Sleep-abnormal-amplitude-asymmetry-lower-left</name>
                   <description>Amplitude lower on the left side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Sleep-abnormal-amplitude-asymmetry-lower-right</name>
                   <description>Amplitude lower on the right side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
          </node>
@@ -2869,6 +5012,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <attribute>
                               <name>takesValue</name>
                            </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
+                           </attribute>
                         </node>
                      </node>
                   </node>
@@ -2921,6 +5068,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <description>free text</description>
                            <attribute>
                               <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
                            </attribute>
                         </node>
                      </node>
@@ -2977,6 +5128,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <attribute>
                               <name>takesValue</name>
                            </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
+                           </attribute>
                         </node>
                      </node>
                   </node>
@@ -3012,6 +5167,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <attribute>
                               <name>takesValue</name>
                            </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
+                           </attribute>
                         </node>
                      </node>
                   </node>
@@ -3040,6 +5199,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <description>free text</description>
                            <attribute>
                               <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
                            </attribute>
                         </node>
                      </node>
@@ -3094,6 +5257,10 @@ This project was supported by the by the National Institute of Mental Health of 
                            <attribute>
                               <name>takesValue</name>
                            </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>textClass</value>
+                           </attribute>
                         </node>
                      </node>
                   </node>
@@ -3105,6 +5272,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
@@ -3174,6 +5345,10 @@ This project was supported by the by the National Institute of Mental Health of 
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
             </node>
@@ -3188,6 +5363,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Polygraphic-channel-relation-to-episode-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
+                  <node>
+                     <name>#</name>
+                     <description>free text</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
@@ -3209,32 +5395,120 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Episode-consciousness</name>
                   <node>
                      <name>Episode-consciousness-not-tested</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Episode-consciousness-affected</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Episode-consciousness-mildly-affected</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Episode-consciousness-not-affected</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Episode-consciousness-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
                   <name>Episode-awareness</name>
                   <node>
                      <name>Episode-awareness-exists</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>No-episode-awareness</name>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                   <node>
                      <name>Episode-awareness-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3244,16 +5518,13 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>Clinical start, followed by EEG start by X seconds</description>
                      <node>
                         <name>#</name>
+                        <description>free text</description>
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
                         <attribute>
                            <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>timeUnits</value>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -3262,16 +5533,13 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>EEG start, followed by clinical start by X seconds</description>
                      <node>
                         <name>#</name>
+                        <description>free text</description>
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
                         <attribute>
                            <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>timeUnits</value>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -3281,6 +5549,17 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Clinical-EEG-temporal-relationship-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3288,17 +5567,29 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>Number of stereotypical episodes during the recording</description>
                   <node>
                      <name>#</name>
+                     <description>free text</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                   <node>
                      <name>Episode-event-count-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3312,6 +5603,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
@@ -3322,11 +5617,26 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
                      <name>State-episode-start-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3348,6 +5658,17 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Episode-postictal-phase-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3361,6 +5682,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
@@ -3370,6 +5695,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <description>free text</description>
                         <attribute>
                            <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -3384,6 +5713,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
@@ -3393,6 +5726,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <description>free text</description>
                         <attribute>
                            <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -3408,6 +5745,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
@@ -3417,6 +5758,10 @@ This project was supported by the by the National Institute of Mental Health of 
                         <description>free text</description>
                         <attribute>
                            <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -3428,11 +5773,26 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
                      </node>
                   </node>
                   <node>
                      <name>Seizure-dynamics-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
+                     <node>
+                        <name>#</name>
+                        <description>free text</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -3442,12 +5802,45 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.</description>
             <node>
                <name>Recording-not-interpretable-due-to-artifact</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Recording-of-reduced-diagnostic-value-due-to-artifact</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Artifact-does-not-interfere-recording</name>
+               <node>
+                  <name>#</name>
+                  <description>free text</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
       </node>
