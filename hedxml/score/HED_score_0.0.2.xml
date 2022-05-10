@@ -10,7 +10,7 @@ This mediawiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Cli
 This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
    <schema>
       <node>
-         <name>Modulators</name>
+         <name>Modulator</name>
          <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.</description>
          <node>
             <name>Intermittent-photic-stimulation</name>
@@ -34,16 +34,16 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Quality-of-hyperventilation</name>
                <node>
-                  <name>Refused-procedure</name>
+                  <name>Hyperventilation-refused-procedure</name>
                </node>
                <node>
-                  <name>Poor-effort</name>
+                  <name>Hyperventilation-poor-effort</name>
                </node>
                <node>
-                  <name>Good-effort</name>
+                  <name>Hyperventilation-good-effort</name>
                </node>
                <node>
-                  <name>Excellent-effort</name>
+                  <name>Hyperventilation-excellent-effort</name>
                </node>
             </node>
          </node>
@@ -232,7 +232,11 @@ This project was supported by the by the National Institute of Mental Health of 
          <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
          <node>
             <name>Sleep-architecture</name>
-            <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance</description>
+            <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
                <name>Normal-sleep-architecture</name>
             </node>
@@ -270,31 +274,58 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Sleep-spindles</name>
-            <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Finding-attributes/significance</description>
+            <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-vertex-wave</name>
-            <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Finding-attributes/significance</description>
+            <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-K-complex</name>
-            <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags</description>
+            <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-saw-tooth-waves</name>
-            <description>Used with Finding-attributes/significance</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-POSTS</name>
-            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with finding-attributes/significance tags</description>
+            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Hypnagogic-hypersynchrony</name>
-            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with finding-attributes/significance</description>
+            <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
          <node>
             <name>Non-reactive-sleep</name>
-            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with finding-attributes/significance</description>
+            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
          </node>
       </node>
       <node>
@@ -340,7 +371,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
       </node>
       <node>
-         <name>Episodes</name>
+         <name>Episode</name>
          <description>Clinical episodes or electrographic seizures.</description>
          <node>
             <name>Epileptic-seizure</name>
@@ -423,7 +454,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Nocturnal episodes characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years.</description>
             </node>
             <node>
-               <name>Stereotypical-behavior</name>
+               <name>Pediatric-stereotypical-behavior-episode</name>
                <description>Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures).</description>
             </node>
          </node>
@@ -440,7 +471,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>A sudden decrement in muscle tone and loss of deep tendon reflexes, leading to muscle weakness, paralysis, or postural collapse. Cataplexy usually is precipitated by an outburst of emotional expression-notably laughter, anger, or startle. It is one of the tetrad of symptoms of narcolepsy. During cataplexy, respiration and voluntary eye movements are not compromised. Consciousness is preserved.</description>
          </node>
          <node>
-            <name>Other-episodes</name>
+            <name>Other-episode</name>
             <node>
                <name>#</name>
                <attribute>
@@ -450,10 +481,10 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
       </node>
       <node>
-         <name>Physiologic-patterns</name>
+         <name>Physiologic-pattern</name>
          <description>EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.</description>
          <node>
-            <name>Rhythmic-activity-patterns</name>
+            <name>Rhythmic-activity-pattern</name>
             <description>Not further specified</description>
          </node>
          <node>
@@ -493,15 +524,15 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Arousal pattern in children. Prolonged, marked high voltage 4-6/s activity in all leads with some intermixed slower frequencies, in children.</description>
          </node>
          <node>
-            <name>Sleep-spindles-patterns</name>
+            <name>Sleep-spindles-pattern</name>
             <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 micro V in the adult.</description>
          </node>
          <node>
-            <name>Vertex-wave</name>
+            <name>Vertex-wave-pattern</name>
             <description>Vertex sharp transient. Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 micro V. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
          </node>
          <node>
-            <name>K-complex</name>
+            <name>K-complex-pattern</name>
             <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during non-REM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
          </node>
          <node>
@@ -513,7 +544,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.</description>
          </node>
          <node>
-            <name>Other-physiologic-patterns</name>
+            <name>Other-physiologic-pattern</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -524,7 +555,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
       </node>
       <node>
-         <name>Uncertain-significant-patterns</name>
+         <name>Uncertain-significant-pattern</name>
          <description>EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).</description>
          <node>
             <name>Sharp-transient-pattern</name>
@@ -574,102 +605,194 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Rhythmical activity recorded over cranial bone defects. Usually it is in the 6 to 11/sec range, does not respond to movements.</description>
          </node>
          <node>
-            <name>Other-uncertain-significant-patterns</name>
+            <name>Other-uncertain-significant-pattern</name>
+            <node>
+               <name>#</name>
+               <description>free text</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+            </node>
          </node>
       </node>
       <node>
-         <name>EEG-artifacts</name>
+         <name>EEG-artifact</name>
          <description>When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.</description>
          <node>
             <name>Biological-artifact</name>
-            <description>Used with Findings-property/ tags</description>
             <node>
-               <name>Eye-blinks-artifact</name>
+               <name>Eye-blink-artifact</name>
                <description>Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
-               <name>Eye-movements-horizontal-artifact</name>
+               <name>Eye-movement-horizontal-artifact</name>
                <description>There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
-               <name>Eye-movements-vertical-artifact</name>
+               <name>Eye-movement-vertical-artifact</name>
                <description>The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
-               <name>Slow-eye-movements-artifact</name>
+               <name>Slow-eye-movement-artifact</name>
                <description>Slow, rolling eye-movements, seen during drowsiness.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
-               <name>Nystagmus</name>
+               <name>Nystagmus-artifact</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Chewing-artifact</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Sucking-artifact</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Glossokinetic-artifact</name>
                <description>The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Rocking-patting-artifact</name>
                <description>Quasi-rhythmical artifacts in recordings from infants caused by rocking/ patting.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Movement-artifact</name>
                <description>Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Respiration-artifact</name>
                <description>Respiration can produce 2 kinds of artifacts. One type is in the form of slow and rhythmic activity, synchronous with the body movements of respiration and mechanically affecting the impedance of (usually) one electrode. The other type can be slow or sharp waves that occur synchronously with inhalation or exhalation and involve those electrodes on which the patient is lying.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Pulse-artifact</name>
                <description>Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>ECG-artifact</name>
                <description>Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Sweat-artifact</name>
                <description>Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>EMG-artifact</name>
                <description>Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
          </node>
          <node>
             <name>Non-biological-artifact</name>
-            <description>Used with Findings-property/ tags</description>
             <node>
                <name>Power-supply-artifact</name>
                <description>50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Induction-artifact</name>
                <description>Artefacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Dialysis-artifact</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Artificial-ventilation-artifact</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Electrode-pops-artifact</name>
                <description>Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
             <node>
                <name>Salt-bridge-artifact</name>
                <description>Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Significance</value>
+               </attribute>
             </node>
          </node>
          <node>
-            <name>Other-EEG-artifacts</name>
-            <description>Used with Findings-property/ tags</description>
+            <name>Other-EEG-artifact</name>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -683,8 +806,12 @@ This project was supported by the by the National Institute of Mental Health of 
          <name>Polygraphic-channels</name>
          <description>Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).</description>
          <node>
-            <name>EOG</name>
+            <name>EOG-channel-finding</name>
             <description>Electrooculography</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -694,7 +821,11 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Respiration</name>
+            <name>Respiration-channel-finding</name>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
                <name>Respiration-oxygen-saturation</name>
                <node>
@@ -711,7 +842,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Respiration-feature</name>
                <node>
-                  <name>Apnoe-respiration-feature</name>
+                  <name>Apnoe-respiration</name>
                   <description>Add duration and comments in free text</description>
                   <node>
                      <name>#</name>
@@ -722,7 +853,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Hypopnea-respiration-feature</name>
+                  <name>Hypopnea-respiration</name>
                   <description>Add duration and comments in free text</description>
                   <node>
                      <name>#</name>
@@ -733,8 +864,12 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Apnea-hypopnea-index-respiration-feature</name>
-                  <description>events/h. Used with Findings-attributes tags</description>
+                  <name>Apnea-hypopnea-index-respiration</name>
+                  <description>events/h.</description>
+                  <node>
+                     <name>Apnea-hypopnea-index-respiration-frequency</name>
+                     <description>events/h (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -754,8 +889,12 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Tachypnea</name>
-                  <description>cycles per min. Used with Findings-attributes tags</description>
+                  <name>Tachypnea-respiration</name>
+                  <description>cycles per min.</description>
+                  <node>
+                     <name>Tachypnea-respiration-frequency</name>
+                     <description>cycles/min (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -765,7 +904,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Other-respiration-features</name>
+                  <name>Other-respiration-feature</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -777,8 +916,12 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>ECG</name>
+            <name>ECG-channel-finding</name>
             <description>electrocardiography</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
                <name>ECG-QT-period</name>
                <node>
@@ -792,8 +935,12 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>ECG-feature</name>
                <node>
-                  <name>ECG-Sinus-rhythm</name>
-                  <description>Normal rhythm. Used with Findings-attributes tags</description>
+                  <name>ECG-sinus-rhythm</name>
+                  <description>Normal rhythm.</description>
+                  <node>
+                     <name>ECG-sinus-rhythm-frequency</name>
+                     <description>beats/min (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -803,7 +950,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Arrhythmia</name>
+                  <name>ECG-arrhythmia</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -813,8 +960,8 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Asystolia</name>
-                  <description>duration: range in seconds. Used with Findings-attributes tags</description>
+                  <name>ECG-asystolia</name>
+                  <description>Add duration and comments in free text</description>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -824,8 +971,11 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Bradycardia</name>
-                  <description>beats/min: range. Used with Findings-attributes tags</description>
+                  <name>ECG-bradycardia</name>
+                  <node>
+                     <name>ECG-bradycardia-frequency</name>
+                     <description>beats/min (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -835,7 +985,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Extrasystole</name>
+                  <name>ECG-extrasystole</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -845,8 +995,11 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Ventricular-premature-depolarization</name>
-                  <description>Used with Findings-attributes tags</description>
+                  <name>ECG-ventricular-premature-depolarization</name>
+                  <node>
+                     <name>ECG-ventricular-premature-depolarization-frequency</name>
+                     <description>beats/min (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -856,8 +1009,11 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>ECG-Tachycardia</name>
-                  <description>beats/min: range. Used with Findings-attributes tags</description>
+                  <name>ECG-tachycardia</name>
+                  <node>
+                     <name>ECG-tachycardia-frequency</name>
+                     <description>beats/min (numbers) typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -867,7 +1023,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Other-ECG-features</name>
+                  <name>Other-ECG-feature</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -879,10 +1035,14 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>EMG</name>
+            <name>EMG-channel-finding</name>
             <description>electromyography</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-attribute/Significance</value>
+            </attribute>
             <node>
-               <name>EMG-Muscle-side</name>
+               <name>EMG-muscle-side</name>
                <node>
                   <name>EMG-left-muscle</name>
                </node>
@@ -894,7 +1054,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>EMG-Muscle-Name</name>
+               <name>EMG-muscle-Name</name>
                <node>
                   <name>#</name>
                   <description>free text</description>
@@ -906,8 +1066,11 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>EMG-feature</name>
                <node>
-                  <name>EMG-Myoclonus-rhythmic</name>
-                  <description>Used with Findings-attributes tags</description>
+                  <name>EMG-myoclonus-rhythmic</name>
+                  <node>
+                     <name>EMG-myoclonus-rhythmic-frequency</name>
+                     <description>numbers typed in.</description>
+                  </node>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -917,7 +1080,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Myoclonus-arrhythmic</name>
+                  <name>EMG-myoclonus-arrhythmic</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -927,7 +1090,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Myoclonus-synchronous</name>
+                  <name>EMG-myoclonus-synchronous</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -937,7 +1100,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Myoclonus-asynchronous</name>
+                  <name>EMG-myoclonus-asynchronous</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -951,7 +1114,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>Periodic limb movements in sleep</description>
                </node>
                <node>
-                  <name>EMG-Spasm</name>
+                  <name>EMG-spasm</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -961,7 +1124,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Tonic-contraction</name>
+                  <name>EMG-tonic-contraction</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -971,7 +1134,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Asymmetric-activation-left-first</name>
+                  <name>EMG-asymmetric-activation-left-first</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -981,7 +1144,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-Asymmetric-activation-right-first</name>
+                  <name>EMG-asymmetric-activation-right-first</name>
                   <node>
                      <name>#</name>
                      <description>free text</description>
@@ -1003,7 +1166,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Other-polygraphic-channels</name>
+            <name>Other-polygraphic-channel</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -1020,7 +1183,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Finding-significance</name>
             <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags</description>
             <node>
-               <name>No-definite-abnormality</name>
+               <name>Finding-no-definite-abnormality</name>
             </node>
             <node>
                <name>Finding-significance-not-possible-to-determine</name>
@@ -1028,7 +1191,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Attributes-stopped-by</name>
+            <name>Finding-stopped-by</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -1038,7 +1201,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Attributes-triggered-by</name>
+            <name>Finding-triggered-by</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -1048,7 +1211,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Attributes-unmodified</name>
+            <name>Finding-unmodified</name>
             <node>
                <name>#</name>
                <description>free text</description>
@@ -1065,7 +1228,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Signal-morphology-property</name>
             <node>
                <name>Delta-activity-morphology</name>
-               <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag</description>
+               <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
                <node>
                   <name>Delta-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1112,7 +1275,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Theta-activity-morphology</name>
-               <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag</description>
+               <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
                <node>
                   <name>Theta-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1159,7 +1322,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Alpha-activity-morphology</name>
-               <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag</description>
+               <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).</description>
                <node>
                   <name>Alpha-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1206,7 +1369,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Beta-activity-morphology</name>
-               <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag</description>
+               <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
                <node>
                   <name>Beta-activity-frequency</name>
                   <description>Hz Values (numbers) typed in.</description>
@@ -1369,7 +1532,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.</description>
             </node>
             <node>
-               <name>Periodic-discharges-property</name>
+               <name>Periodic-discharges-morphology</name>
                <description>Periodic discharges not further specified (PDs)</description>
                <node>
                   <name>Periodic-discharges-superimposed-activity</name>
@@ -1525,76 +1688,76 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Source-analysis</name>
             <description>How the current in the brain reaches the electrode sensors.</description>
             <node>
-               <name>Brain-region-laterality</name>
+               <name>Brain-region-source-analysis-laterality</name>
                <description>Uses Location-property/Laterality tags</description>
             </node>
             <node>
                <name>Brain-region-source-analysis</name>
                <node>
-                  <name>Brain-region-frontal-perisylvian-superior-surface</name>
+                  <name>Brain-region-source-analysis-frontal-perisylvian-superior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-frontal-lateral</name>
+                  <name>Brain-region-source-analysis-frontal-lateral</name>
                </node>
                <node>
-                  <name>Brain-region-frontal-mesial</name>
+                  <name>Brain-region-source-analysis-frontal-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-frontal-polar</name>
+                  <name>Brain-region-source-analysis-frontal-polar</name>
                </node>
                <node>
-                  <name>Brain-region-frontal-orbitofrontal</name>
+                  <name>Brain-region-source-analysis-frontal-orbitofrontal</name>
                </node>
                <node>
-                  <name>Brain-region-temporal-polar</name>
+                  <name>Brain-region-source-analysis-temporal-polar</name>
                </node>
                <node>
-                  <name>Brain-region-temporal-basal</name>
+                  <name>Brain-region-source-analysis-temporal-basal</name>
                </node>
                <node>
-                  <name>Brain-region-temporal-lateral-anterior</name>
+                  <name>Brain-region-source-analysis-temporal-lateral-anterior</name>
                </node>
                <node>
-                  <name>Brain-region-temporal-lateral-posterior</name>
+                  <name>Brain-region-source-analysis-temporal-lateral-posterior</name>
                </node>
                <node>
-                  <name>Brain-region-temporal-perisylvian-inferior-surface</name>
+                  <name>Brain-region-source-analysis-temporal-perisylvian-inferior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-central-lateral-convexity</name>
+                  <name>Brain-region-source-analysis-central-lateral-convexity</name>
                </node>
                <node>
-                  <name>Brain-region-central-mesial</name>
+                  <name>Brain-region-source-analysis-central-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-central-sulcus-anterior-surface</name>
+                  <name>Brain-region-source-analysis-central-sulcus-anterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-central-sulcus-posterior-surface</name>
+                  <name>Brain-region-source-analysis-central-sulcus-posterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-central-opercular</name>
+                  <name>Brain-region-source-analysis-central-opercular</name>
                </node>
                <node>
-                  <name>Brain-region-parietal-lateral-convexity</name>
+                  <name>Brain-region-source-analysis-parietal-lateral-convexity</name>
                </node>
                <node>
-                  <name>Brain-region-parietal-mesial</name>
+                  <name>Brain-region-source-analysis-parietal-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-parietal-opercular</name>
+                  <name>Brain-region-source-analysis-parietal-opercular</name>
                </node>
                <node>
-                  <name>Brain-region-occipital-lateral</name>
+                  <name>Brain-region-source-analysis-occipital-lateral</name>
                </node>
                <node>
-                  <name>Brain-region-occipital-mesial</name>
+                  <name>Brain-region-source-analysis-occipital-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-occipital-basal</name>
+                  <name>Brain-region-source-analysis-occipital-basal</name>
                </node>
                <node>
-                  <name>Brain-region-insula</name>
+                  <name>Brain-region-source-analysis-insula</name>
                </node>
             </node>
          </node>
@@ -1687,17 +1850,17 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Propagation</name>
+               <name>Finding-propagation</name>
                <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
                <node>
-                  <name>Propagation-observed</name>
+                  <name>Finding-propagation-observed</name>
                </node>
                <node>
-                  <name>Propagation-not-observed</name>
+                  <name>Finding-propagation-not-observed</name>
                </node>
             </node>
             <node>
-               <name>Multifocal</name>
+               <name>Multifocal-finding</name>
                <description>When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.</description>
                <node>
                   <name>Multifocal-observed</name>
@@ -1736,7 +1899,13 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Eye-opening-passive</name>
-               <description>Passive eye opening. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Passive eye opening. Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-attribute/Finding-triggered-by</value>
+               </attribute>
                <node>
                   <name>Eye-opening-passive-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1744,7 +1913,12 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Medication-effect-EEG</name>
-               <description>Medications effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Medications effect on EEG. Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+               </attribute>
                <node>
                   <name>Medication-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1752,7 +1926,12 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawal effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+               </attribute>
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1760,7 +1939,12 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+               </attribute>
                <node>
                   <name>Auditive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1768,7 +1952,13 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
-               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-attribute/Finding-triggered-by</value>
+               </attribute>
                <node>
                   <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
@@ -1776,17 +1966,29 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Physical-effort-effect</name>
-               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-attribute/Finding-triggered-by</value>
+               </attribute>
                <node>
-                  <name>Physical-stimuli-effect-not-possible-to-determine</name>
+                  <name>Physical-effort-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
                </node>
             </node>
             <node>
                <name>Cognitive-tasks-effect</name>
-               <description>Used with Findings-attributes tags and base schema Increasing/Decreasing</description>
+               <description>Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-attribute/Finding-triggered-by</value>
+               </attribute>
                <node>
-                  <name>Cognitive-stimuli-effect-not-possible-to-determine</name>
+                  <name>Cognitive-tasks-effect-not-possible-to-determine</name>
                   <description>Not possible to determine</description>
                </node>
             </node>
@@ -1900,11 +2102,21 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Medication-effect-clinical</name>
-               <description>Medications clinical effect. Used with Findings-attributes tags</description>
+               <description>Medications clinical effect. Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+               </attribute>
             </node>
             <node>
                <name>Medication-reduction-effect-clinical</name>
-               <description>Medications reduction or withdrawal clinical effect. Used with Findings-attributes tags</description>
+               <description>Medications reduction or withdrawal clinical effect. Used with base schema Increasing/Decreasing</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-attribute/Finding-stopped-by</value>
+                  <value>Finding-attribute/Finding-unmodified</value>
+               </attribute>
             </node>
             <node>
                <name>Other-modulators-effect-clinical</name>
@@ -2121,11 +2333,19 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
                <node>
                   <name>Single-discharge-pattern</name>
-                  <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Finding-property/Incidence tag</description>
+                  <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-property/Finding-incidence</value>
+                  </attribute>
                </node>
                <node>
                   <name>Rhythmic-trains-or-bursts-discharge-pattern</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevalence tag</description>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-property/Finding-prevalence</value>
+                  </attribute>
                   <node>
                      <name>Rhythmic-trains-or-bursts-discharge-pattern-frequency</name>
                      <description>Hz Values (numbers) typed in.</description>
@@ -2147,7 +2367,11 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Arhythmic-trains-or-bursts-discharge-pattern</name>
-                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevalence tag</description>
+                  <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-property/Finding-prevalence</value>
+                  </attribute>
                </node>
                <node>
                   <name>Fragmented-discharge-pattern</name>
@@ -2200,7 +2424,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      <description>greater than 1 hour</description>
                   </node>
                   <node>
-                     <name>Periodic-discharge--duration-not-possible-to-determine</name>
+                     <name>Periodic-discharge-duration-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
@@ -2319,7 +2543,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>High-posterior-dominant-rhythm-amplitude-range</name>
-                  <description>High ( more than 70 microV)</description>
+                  <description>High (more than 70 microV)</description>
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine</name>
@@ -2473,11 +2697,11 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Sleep-abnormal-amplitude-asymmetry-exists</name>
                </node>
                <node>
-                  <name>Sleep-abnormal-amplitude-asymmetry-LowerLeft</name>
+                  <name>Sleep-abnormal-amplitude-asymmetry-lower-left</name>
                   <description>Amplitude lower on the left side.</description>
                </node>
                <node>
-                  <name>Sleep-abnormal-amplitude-asymmetry-LowerRight</name>
+                  <name>Sleep-abnormal-amplitude-asymmetry-lower-right</name>
                   <description>Amplitude lower on the right side.</description>
                </node>
             </node>
@@ -2553,7 +2777,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>Myoclonic-absence-epileptic-seizure</name>
                   </node>
                   <node>
-                     <name>Eyelid-myoclonia-epileptic-seizure</name>
+                     <name>Eyelid-myoclonia-absence-epileptic-seizure</name>
                   </node>
                </node>
             </node>
@@ -3052,7 +3276,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </node>
                   </node>
                   <node>
-                     <name>Simultaneous</name>
+                     <name>Simultaneous-start-clinical-EEG</name>
                   </node>
                   <node>
                      <name>Clinical-EEG-temporal-relationship-not-possible-to-determine</name>
@@ -3060,7 +3284,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Event-count</name>
+                  <name>Episode-event-count</name>
                   <description>Number of stereotypical episodes during the recording</description>
                   <node>
                      <name>#</name>
@@ -3073,7 +3297,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </attribute>
                   </node>
                   <node>
-                     <name>Event-count-not-possible-to-determine</name>
+                     <name>Episode-event-count-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
@@ -3122,7 +3346,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </attribute>
                   </node>
                   <node>
-                     <name>Postictal-phase-not-possible-to-determine</name>
+                     <name>Episode-postictal-phase-not-possible-to-determine</name>
                      <description>Not possible to determine</description>
                   </node>
                </node>
@@ -3177,7 +3401,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Seizure-dynamics</name>
                   <description>Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location)</description>
                   <node>
-                     <name>Evolution-morphology</name>
+                     <name>Seizure-dynamics-evolution-morphology</name>
                      <node>
                         <name>#</name>
                         <description>free text</description>
@@ -3187,7 +3411,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </node>
                   </node>
                   <node>
-                     <name>Evolution-frequency</name>
+                     <name>Seizure-dynamics-evolution-frequency</name>
                      <node>
                         <name>#</name>
                         <description>free text</description>
@@ -3197,7 +3421,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </node>
                   </node>
                   <node>
-                     <name>Evolution-location</name>
+                     <name>Seizure-dynamics-evolution-location</name>
                      <node>
                         <name>#</name>
                         <description>free text</description>
@@ -3332,7 +3556,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
-         <name>AamplitudeUnits</name>
+         <name>amplitudeUnits</name>
          <attribute>
             <name>defaultUnits</name>
             <value>microvolts</value>

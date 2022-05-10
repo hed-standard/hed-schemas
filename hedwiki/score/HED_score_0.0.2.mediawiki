@@ -14,7 +14,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 !# start schema
 
-'''Modulators''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
+'''Modulator''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
     * Intermittent-photic-stimulation
         ** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
@@ -74,7 +74,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Sleep-drowsiness''' <nowiki>[The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).]</nowiki>
 
-    * Sleep-architecture <nowiki>[For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle. Used with Finding-attributes/significance]</nowiki>
+    * Sleep-architecture <nowiki> {suggestedTag=Finding-attribute/Significance}[For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.]</nowiki>
         ** Normal-sleep-architecture
         ** Abnormal-sleep-architecture
         ** Sleep-architecture-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
@@ -86,13 +86,13 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Sleep-stage-REM <nowiki>[Rapid eye movement]</nowiki>
         ** Sleep-stage-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
-    * Sleep-spindles <nowiki>[Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult. Used with Finding-attributes/significance]</nowiki>
-    * Sleep-vertex-wave <nowiki>[Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave. Used with Finding-attributes/significance]</nowiki>
-    * Sleep-K-complex <nowiki>[A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.  Used with Findings-attributes tags]</nowiki>
-    * Sleep-saw-tooth-waves <nowiki>[Used with Finding-attributes/significance]</nowiki>
-    * Sleep-POSTS <nowiki>[Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV. Used with finding-attributes/significance tags]</nowiki>
-    * Hypnagogic-hypersynchrony <nowiki>[Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.  Used with finding-attributes/significance]</nowiki>
-    * Non-reactive-sleep <nowiki>[EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken. Used with finding-attributes/significance]</nowiki>
+    * Sleep-spindles <nowiki> {suggestedTag=Finding-attribute/Significance} [Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.]</nowiki>
+    * Sleep-vertex-wave <nowiki> {suggestedTag=Finding-attribute/Significance} [Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.]</nowiki>
+    * Sleep-K-complex <nowiki> {suggestedTag=Finding-attribute/Significance}[A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.]</nowiki>
+    * Sleep-saw-tooth-waves <nowiki> {suggestedTag=Finding-attribute/Significance} </nowiki>
+    * Sleep-POSTS <nowiki> {suggestedTag=Finding-attribute/Significance} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.]</nowiki>
+    * Hypnagogic-hypersynchrony {suggestedTag=Finding-attribute/Significance} <nowiki>[Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.]</nowiki>
+    * Non-reactive-sleep <nowiki> {suggestedTag=Finding-attribute/Significance} [EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken.]</nowiki>
 
 
 '''Interictal-findings''' <nowiki>[EEG patterns / transients that are distinguished form the background activity, considered abnormal, but are not recorded during ictal period (seizure) or postictal period; the presence of interictal findings does not necessarily imply that the patient has epilepsy.]</nowiki>
@@ -110,7 +110,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Interictal-burst-attenuation <nowiki>[]</nowiki>
 
 
-'''Episodes''' <nowiki>[Clinical episodes or electrographic seizures.] </nowiki>
+'''Episode''' <nowiki>[Clinical episodes or electrographic seizures.] </nowiki>
 
     * Epileptic-seizure
         ** Focal-onset-epileptic-seizure
@@ -135,7 +135,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Hyperekplexia <nowiki>[Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.] </nowiki>
         ** Jactatio-capitis-nocturna <nowiki>[Relatively common in normal children at the time of going to bed, especially during the first year of life, the rhythmic head movements persist during sleep. Usually, these phenomena disappear before 3 years of age.] </nowiki>
         ** Pavor-nocturnus <nowiki>[Nocturnal episodes characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years. ] </nowiki>
-        ** Stereotypical-behavior-pediatric-episode <nowiki>[Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures). ] </nowiki>
+        ** Pediatric-stereotypical-behavior-episode <nowiki>[Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures). ] </nowiki>
 
     * Paroxysmal-motor-event <nowiki>[Paroxysmal phenomena during neonatal or childhood periods characterized by recurrent motor or behavioral signs or symptoms that must be distinguishes from epileptic disorders. ] </nowiki>
     * Syncope <nowiki>[Episode with loss of consciousness and muscle tone that is abrupt in onset, of short duration and followed by rapid recovery; it occurs in response to transient impairment of cerebral perfusion. Typical prodromal symptoms often herald onset of syncope and postictal symptoms are minimal. Syncopal convulsions resulting from cerebral anoxia are common but are not a form of epilepsy, nor are there any accompanying EEG ictal discharges. ] </nowiki>
@@ -144,7 +144,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** <nowiki># {takesValue}[]</nowiki>
 
 
-'''Physiologic-patterns''' <nowiki>[EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.]</nowiki>
+'''Physiologic-pattern''' <nowiki>[EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.]</nowiki>
 
     * Rhythmic-activity-pattern <nowiki>[Not further specified] </nowiki>
     * Slow-alpha-variant-rhythm <nowiki>[Characteristic rhythms mostly at 4-5 Hz, recorded most prominently over the posterior regions of the head. Generally alternate, or are intermixed, with alpha rhythm to which they often are harmonically related. Amplitude varies but is frequently close to 50 micro V. Blocked or attenuated by attention, especially visual, and mental effort. Comment: slow alpha variant rhythms should be distinguished from posterior slow waves characteristic of children and adolescents and occasionally seen in young adults.] </nowiki>
@@ -164,7 +164,7 @@ This project was supported by the by the National Institute of Mental Health of 
     * Other-physiologic-pattern
         ** <nowiki># {takesValue}[free text]</nowiki>
 
-'''Uncertain-significant-patterns''' <nowiki>[EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).]</nowiki>
+'''Uncertain-significant-pattern''' <nowiki>[EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).]</nowiki>
 
     * Sharp-transient-pattern
     * Wicket-spikes <nowiki>[Spike-like monophasic negative single waves or trains of waves occurring over the temporal regions during drowsiness that have an arcuate or mu-like appearance. These are mainly seen in older individuals and represent a benign variant that is of little clinical significance. ] </nowiki>
@@ -181,41 +181,41 @@ This project was supported by the by the National Institute of Mental Health of 
     * Other-uncertain-significant-pattern
         ** <nowiki># {takesValue}[free text]</nowiki>
 
-'''EEG-artifacts''' <nowiki>[When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.]</nowiki>
+'''EEG-artifact''' <nowiki>[When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.]</nowiki>
 
-    * Biological-artifact <nowiki>[Used with Findings-property/ tags]</nowiki>
-        ** Eye-blink-artifact <nowiki>[Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.]</nowiki>
-        ** Eye-movement-horizontal-artifact <nowiki>[There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.] </nowiki>
-        ** Eye-movement-vertical-artifact <nowiki>[The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.]</nowiki>
-        ** Slow-eye-movement-artifact <nowiki>[Slow, rolling eye-movements, seen during drowsiness.]</nowiki>
-        ** Nystagmus-artifact
-        ** Chewing-artifact
-        ** Sucking-artifact
-        ** Glossokinetic-artifact <nowiki>[The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.] </nowiki>
-        ** Rocking-patting-artifact <nowiki>[Quasi-rhythmical artifacts in recordings from infants caused by rocking/ patting.]</nowiki>
-        ** Movement-artifact <nowiki>[Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.] </nowiki>
-        ** Respiration-artifact <nowiki>[Respiration can produce 2 kinds of artifacts. One type is in the form of slow and rhythmic activity, synchronous with the body movements of respiration and mechanically affecting the impedance of (usually) one electrode. The other type can be slow or sharp waves that occur synchronously with inhalation or exhalation and involve those electrodes on which the patient is lying.] </nowiki>
-        ** Pulse-artifact <nowiki>[Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).]</nowiki>
-        ** ECG-artifact <nowiki>[Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.] </nowiki>
-        ** Sweat-artifact <nowiki>[Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.] </nowiki>
-        ** EMG-artifact <nowiki>[Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.] </nowiki>
+    * Biological-artifact
+        ** Eye-blink-artifact <nowiki> {suggestedTag=Finding-attribute/Significance} [Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.]</nowiki>
+        ** Eye-movement-horizontal-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.] </nowiki>
+        ** Eye-movement-vertical-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.]</nowiki>
+        ** Slow-eye-movement-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Slow, rolling eye-movements, seen during drowsiness.]</nowiki>
+        ** Nystagmus-artifact {suggestedTag=Finding-attribute/Significance}
+        ** Chewing-artifact {suggestedTag=Finding-attribute/Significance}
+        ** Sucking-artifact {suggestedTag=Finding-attribute/Significance}
+        ** Glossokinetic-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.] </nowiki>
+        ** Rocking-patting-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Quasi-rhythmical artifacts in recordings from infants caused by rocking/ patting.]</nowiki>
+        ** Movement-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.] </nowiki>
+        ** Respiration-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Respiration can produce 2 kinds of artifacts. One type is in the form of slow and rhythmic activity, synchronous with the body movements of respiration and mechanically affecting the impedance of (usually) one electrode. The other type can be slow or sharp waves that occur synchronously with inhalation or exhalation and involve those electrodes on which the patient is lying.] </nowiki>
+        ** Pulse-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).]</nowiki>
+        ** ECG-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.] </nowiki>
+        ** Sweat-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.] </nowiki>
+        ** EMG-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.] </nowiki>
 
-    * Non-biological-artifact <nowiki>[Used with Findings-property/ tags]</nowiki>
-        ** Power-supply-artifact <nowiki>[50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.] </nowiki>
-        ** Induction-artifact <nowiki>[Artefacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit). ] </nowiki>
-        ** Dialysis-artifact
-        ** Artificial-ventilation-artifact
-        ** Electrode-pops-artifact <nowiki>[Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.] </nowiki>
-        ** Salt-bridge-artifact <nowiki>[Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage.] </nowiki>
+    * Non-biological-artifact
+        ** Power-supply-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.] </nowiki>
+        ** Induction-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Artefacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit). ] </nowiki>
+        ** Dialysis-artifact {suggestedTag=Finding-attribute/Significance}
+        ** Artificial-ventilation-artifact {suggestedTag=Finding-attribute/Significance}
+        ** Electrode-pops-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.] </nowiki>
+        ** Salt-bridge-artifact {suggestedTag=Finding-attribute/Significance} <nowiki>[Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage.] </nowiki>
 
-    * Other-EEG-artifacts <nowiki>[Used with Findings-property/ tags]</nowiki>
+    * Other-EEG-artifact <nowiki> {suggestedTag=Finding-attribute/Significance} </nowiki>
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 '''Polygraphic-channels''' <nowiki>[Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality). ]</nowiki>
 
-    * EOG <nowiki>[Electrooculography]</nowiki>
+    * EOG-channel-finding <nowiki> {suggestedTag=Finding-attribute/Significance} [Electrooculography]</nowiki>
         ** <nowiki># {takesValue}[free text]</nowiki>
-    * Respiration
+    * Respiration-channel-finding <nowiki> {suggestedTag=Finding-attribute/Significance}</nowiki>
         ** Respiration-oxygen-saturation
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
         ** Respiration-feature
@@ -223,35 +223,41 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Hypopnea-respiration <nowiki>[Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Apnea-hypopnea-index-respiration <nowiki>[events/h. Used with Findings-attributes tags]</nowiki>
+            *** Apnea-hypopnea-index-respiration <nowiki>[events/h.]</nowiki>
+                **** Apnea-hypopnea-index-respiration-frequency <nowiki>[events/h (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** Tachypnea-respiration <nowiki>[cycles per min. Used with Findings-attributes tags]</nowiki>
+            *** Tachypnea-respiration <nowiki>[cycles per min.]</nowiki>
+                **** Tachypnea-respiration-frequency <nowiki>[cycles/min (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Other-respiration-feature
                 **** <nowiki># {takesValue}[free text]</nowiki>
-    * ECG <nowiki>[electrocardiography]</nowiki>
+    * ECG-channel-finding <nowiki> {suggestedTag=Finding-attribute/Significance} [electrocardiography]</nowiki>
         ** ECG-QT-period
             *** <nowiki># {takesValue}[free text]</nowiki>
         ** ECG-feature
-            *** ECG-sinus-rhythm <nowiki>[Normal rhythm. Used with Findings-attributes tags]</nowiki>
+            *** ECG-sinus-rhythm <nowiki>[Normal rhythm.]</nowiki>
+                **** ECG-sinus-rhythm-frequency <nowiki>[beats/min (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** ECG-arrhythmia
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-asystolia <nowiki>[duration: range in seconds. Used with Findings-attributes tags]</nowiki>
+            *** ECG-asystolia <nowiki>[Add duration and comments in free text]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-bradycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
+            *** ECG-bradycardia
+                **** ECG-bradycardia-frequency <nowiki>[beats/min (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** ECG-extrasystole
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-ventricular-premature-depolarization <nowiki>[Used with Findings-attributes tags]</nowiki>
+            *** ECG-ventricular-premature-depolarization
+                **** ECG-ventricular-premature-depolarization-frequency <nowiki>[beats/min (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
-            *** ECG-tachycardia <nowiki>[beats/min: range. Used with Findings-attributes tags]</nowiki>
+            *** ECG-tachycardia
+                **** ECG-tachycardia-frequency <nowiki>[beats/min (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Other-ECG-feature
                 **** <nowiki># {takesValue}[free text]</nowiki>
-    * EMG <nowiki>[electromyography]</nowiki>
+    * EMG-channel-finding <nowiki> {suggestedTag=Finding-attribute/Significance} [electromyography]</nowiki>
         ** EMG-muscle-side
             *** EMG-left-muscle
             *** EMG-right-muscle
@@ -259,7 +265,8 @@ This project was supported by the by the National Institute of Mental Health of 
         ** EMG-muscle-Name
             *** <nowiki># {takesValue}[free text]</nowiki>
         ** EMG-feature
-            *** EMG-myoclonus-rhythmic <nowiki>[Used with Findings-attributes tags]</nowiki>
+            *** EMG-myoclonus-rhythmic
+                **** EMG-myoclonus-rhythmic-frequency <nowiki>[numbers typed in.]</nowiki>
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** EMG-myoclonus-arrhythmic
                 **** <nowiki># {takesValue}[free text]</nowiki>
@@ -278,7 +285,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Other-EMG-features
                 **** <nowiki># {takesValue}[free text]</nowiki>
-    * Other-polygraphic-channels
+    * Other-polygraphic-channel
         ** <nowiki># {takesValue}[free text]</nowiki>
 
 
@@ -299,25 +306,25 @@ This project was supported by the by the National Institute of Mental Health of 
 '''Finding-property''' <nowiki>[Descriptive elements. Similar to main HED /Property Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
     * Signal-morphology-property
-        ** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
+        ** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
             ***  Delta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Delta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms). Used with Amplitude tag]</nowiki>
+        ** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
             ***  Theta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Theta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm). Used with Amplitude tag]</nowiki>
+        ** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).]</nowiki>
             ***  Alpha-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             ***  Alpha-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=amplitudeUnits}</nowiki>
             *** <nowiki># {takesValue}[free text]</nowiki>
-        ** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse. Used with Amplitude tag]</nowiki>
+        ** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
             *** Beta-activity-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
             *** Beta-activity-amplitude <nowiki>[microvolts Values (numbers) typed in.]</nowiki>
@@ -452,10 +459,10 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Brain-centricity-distal-limb
         ** Sensors <nowiki>[lists all corresponding sensors (electrodes/channels in montage)]</nowiki>
             *** <nowiki># {takesValue}</nowiki>
-        ** Propagation <nowiki>[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
-            *** Propagation-observed
-            *** Propagation-not-observed
-        ** Multifocal <nowiki>[When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
+        ** Finding-propagation <nowiki>[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
+            *** Finding-propagation-observed
+            *** Finding-propagation-not-observed
+        ** Multifocal-finding <nowiki>[When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
             *** Multifocal-observed
             *** Multifocal-not-observed
             *** Multifocal-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
@@ -468,19 +475,19 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity.]</nowiki>
             *** Eye-closure-sensitivity-exists
             *** No-eye-closure-sensitivity
-        ** Eye-opening-passive <nowiki>[Passive eye opening. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Eye-opening-passive <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified, suggestedTag=Finding-attribute/Finding-triggered-by} [Passive eye opening. Used with base schema Increasing/Decreasing]</nowiki>
             *** Eye-opening-passive-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Medication-effect-EEG <nowiki>[Medications effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Medication-effect-EEG <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified} [Medications effect on EEG. Used with base schema Increasing/Decreasing]</nowiki>
             *** Medication-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Medication-reduction-effect-EEG <nowiki>[Medications reduction or withdrawal effect on EEG. Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Medication-reduction-effect-EEG <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified} [Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing]</nowiki>
             *** Medication-reduction-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Auditive-stimuli-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Auditive-stimuli-effect <nowiki>{suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified} [Used with base schema Increasing/Decreasing]</nowiki>
             *** Auditive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Nociceptive-stimuli-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Nociceptive-stimuli-effect <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified, suggestedTag=Finding-attribute/Finding-triggered-by} [Used with base schema Increasing/Decreasing]</nowiki>
             *** Nociceptive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Physical-effort-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Physical-effort-effect <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified, suggestedTag=Finding-attribute/Finding-triggered-by} [Used with base schema Increasing/Decreasing]</nowiki>
             *** Physical-effort-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
-        ** Cognitive-tasks-effect <nowiki>[Used with Findings-attributes tags and base schema Increasing/Decreasing]</nowiki>
+        ** Cognitive-tasks-effect <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified, suggestedTag=Finding-attribute/Finding-triggered-by} [Used with base schema Increasing/Decreasing]</nowiki>
             *** Cognitive-tasks-effect-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
         ** Other-modulators-effect-EEG
             *** <nowiki># {takesValue}[free text]</nowiki>
@@ -504,8 +511,8 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue}[free text]</nowiki>
             *** Reflex-provoked
                  **** <nowiki># {takesValue}[free text]</nowiki>
-        ** Medication-effect-clinical <nowiki>[Medications clinical effect. Used with Findings-attributes tags]</nowiki>
-        ** Medication-reduction-effect-clinical <nowiki>[Medications reduction or withdrawal clinical effect. Used with Findings-attributes tags]</nowiki>
+        ** Medication-effect-clinical <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified} [Medications clinical effect. Used with base schema Increasing/Decreasing]</nowiki>
+        ** Medication-reduction-effect-clinical <nowiki> {suggestedTag=Finding-attribute/Finding-stopped-by, suggestedTag=Finding-attribute/Finding-unmodified}  [Medications reduction or withdrawal clinical effect. Used with base schema Increasing/Decreasing]</nowiki>
         ** Other-modulators-effect-clinical
             *** <nowiki># {takesValue}[free text]</nowiki>
 
@@ -548,11 +555,11 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Appearance-mode-not-possible-to-determine <nowiki>[Not possible to determine]</nowiki>
 
         ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
-            *** Single-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. Used with Finding-property/Incidence tag]</nowiki>
-            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. Used with Finding-property/Prevalence tag]</nowiki>
+            *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-property/Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.]</nowiki>
+            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-property/Finding-prevalence}[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.]</nowiki>
                 **** Rhythmic-trains-or-bursts-discharge-pattern-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Arhythmic-trains-or-bursts-discharge-pattern <nowiki>[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. Used with Finding-property/Prevalence tag]</nowiki>
+            *** Arhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-property/Finding-prevalence} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.]</nowiki>
             *** Fragmented-discharge-pattern
                 **** <nowiki># {takesValue}[free text]</nowiki>
 
@@ -642,7 +649,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Absence-of-posterior-dominant-rhythm-lack-of-awake-period
             *** Absence-of-posterior-dominant-rhythm-lack-of-compliance
             *** Absence-of-posterior-dominant-rhythm-other-causes
-
 
 
     * Sleep-property
