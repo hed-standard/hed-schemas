@@ -49,7 +49,7 @@ levels of changes in the semantic version:
 As modifications to the HED library schema are proposed, they are entered into the
 `PROPOSED.md` document for discussion.
 Approved changes and corrections are first made in a working version of the
-schema that is located in the `prerelease` subdirectory and can be viewed
+schema that is located in the `prerelease` subdirectory. and can be viewed
 using the following viewer:
 
 > [**Expandable html view of the prerelease HED library schema**](https://www.hedtags.org/display_hed_library_prelease.html) 
