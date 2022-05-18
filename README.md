@@ -11,8 +11,8 @@ their official release.**
 
 | Library name | Version | Description |
 | ------------ | ------- | --------------------------- |
-|  [score](./schema_libraries/score) | 0.0.1   | Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
-|  [testlib](./schema_libraries/testlib) | 1.0.1   | A prerelease copy of same schema as HED 8.0.1 for testing. |
+|  [score](library_schemas/score) | 0.0.1   | Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
+|  [testlib](library_schemas/testlib) | 1.0.1   | A prerelease copy of same schema as HED 8.0.1 for testing. |
 
 **Note:** The website contains both `.mediawiki` and `.xml` versions of the schema.
 The schemas are located in the `hedwiki` and `hedxml` subdirectories, respectively,
