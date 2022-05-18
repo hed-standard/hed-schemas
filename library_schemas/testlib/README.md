@@ -13,7 +13,7 @@ for the testing of tools.
 ### Viewing the prerelease version
 
 During revision prior to official release, a working copy of the next
-version of the schema is available in the `prelease` directory and can be viewed
+version of the schema is available in the `prerelease` directory and can be viewed
 at:
 
 > [**Expandable html view of the prelease version of the testlib HED Library Schema**](https://www.hedtags.org/display_hed_testlib_prerelease.html) 
