@@ -52,5 +52,5 @@ As modifications to the HED library schema are proposed, they are entered into t
 `PROPOSED.md` document for discussion.
 Approved changes and corrections are first made in a working version of the
 schema that is located in the `prerelease` subdirectory. 
-Upon final review, the new HED schema is released and moved to the respective
+Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
