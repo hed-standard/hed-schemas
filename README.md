@@ -3,11 +3,13 @@
 **The HED library schema are currently under review and subject to change
 their official release.**
 
-### Viewing the HED Library Schema vocabulary
-> [**Expandable html view of HED Library Schema**](http://www.hedtags.org/display_hed_library.html) 
-
 
 ### HED Library Schema
+
+The individual library schema are located in their own directories under the
+`library_schemas` directory. The following table gives links to the `READMEs`
+for the individual library schemas, which contain viewers and other information
+specific to each schema.
 
 | Library name | Version | Description |
 | ------------ | ------- | --------------------------- |
@@ -49,10 +51,6 @@ levels of changes in the semantic version:
 As modifications to the HED library schema are proposed, they are entered into the
 `PROPOSED.md` document for discussion.
 Approved changes and corrections are first made in a working version of the
-schema that is located in the `prerelease` subdirectory. and can be viewed
-using the following viewer:
-
-> [**Expandable html view of the prerelease HED library schema**](https://www.hedtags.org/display_hed_library_prelease.html) 
-
-Upon final review, the new HED schema is released and moved to the respective `hedxml`
-directory of the respective library schema.
+schema that is located in the `prerelease` subdirectory. 
+Upon final review, the new HED schema is released and moved to the respective
+`hedxml` directory of the respective library schema.
