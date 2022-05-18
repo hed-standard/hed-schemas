@@ -11,9 +11,48 @@ their official release.**
 
 | Library name | Version | Description |
 | ------------ | ------- | --------------------------- |
-|  score       | 0.0.1   | Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
-|  test        | 1.0.1   | A prerelease copy of same schema as HED 8.0.1 for testing. |
+|  [score](./schema_libraries/score) | 0.0.1   | Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
+|  [testlib](./schema_libraries/testlib) | 1.0.1   | A prerelease copy of same schema as HED 8.0.1 for testing. |
 
 **Note:** The website contains both `.mediawiki` and `.xml` versions of the schema.
-The schemas are located in the `./mediawiki` and `./xml` directories, respectively,
-in subdirectories identified by library name.
+The schemas are located in the `hedwiki` and `hedxml` subdirectories, respectively,
+of the library schema directory.
+
+## HED semantic versioning
+
+HED library schema use the following rules for
+changing the semantic version *major.minor.patch*. These rules are
+based on the assumption that the short form will not require retagging
+for patch-level or minor-version changes. A validation error might occur
+during for patch-level or minor-version changes for changes or
+corrections in tag values or units. 
+
+Here is a summary of the types of changes that correspond to different
+levels of changes in the semantic version:
+
+| Change                          | Semantic-level | 
+| ---------------------------------- | -------------- |
+| Major addition to HED functionality     | Major  |
+| Tag deleted from schema.                | Major  |
+| Unit or unit class removed from node.   | Major  |
+| New tag added to the schema.            | Minor  |
+| New attribute added to schema.          | Minor  |
+| New unit class or unit added to schema. | Minor  |
+| New unit class added to node.           | Minor  |
+| Node moved in schema without change in meaning. | Minor |
+| Revision of description field in schema.        | Patch   |
+| Correction of suggestedTag or relatedTag.       | Patch  |
+| Correction of wiki syntax such as closing tags. | Patch |
+
+## HED revision process
+
+As modifications to the HED library schema are proposed, they are entered into the
+`PROPOSED.md` document for discussion.
+Approved changes and corrections are first made in a working version of the
+schema that is located in the `prerelease` subdirectory and can be viewed
+using the following viewer:
+
+> [**Expandable html view of the prerelease HED library schema**](https://www.hedtags.org/display_hed_library_prelease.html) 
+
+Upon final review, the new HED schema is released and moved to the respective `hedxml`
+directory of the respective library schema.
