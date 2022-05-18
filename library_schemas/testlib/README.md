@@ -7,7 +7,7 @@ The `testlib` HED library schema is a copy of the base schema that is used
 for the testing of tools.
 
 ### Viewing the testlib HED Library Schema
-> [**Expandable html view of SCORE HED Library Schema**](https://www.hedtags.org/display_hed_testlib.html) 
+> [**Expandable html view of testlib HED Library Schema**](https://www.hedtags.org/display_hed_testlib.html) 
 
 
 ### Viewing the prerelease version
