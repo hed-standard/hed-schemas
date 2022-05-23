@@ -871,18 +871,18 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** Semiology-motor-eye-blinking
                     ***** Semiology-motor-other-elementary-motor
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Semiology-motor-automatisms
-                    ***** Semiology-motor-automatisms-mimetic <nowiki>[Facial expression suggesting an emotional state, often fear.]</nowiki>
-                    ***** Semiology-motor-automatisms-oroalimentary <nowiki>[Lip smacking, lip pursing, chewing, licking, tooth grinding, or swallowing.]</nowiki>
-                    ***** Semiology-motor-automatisms-dacrystic <nowiki>[Bursts of crying.]</nowiki>
-                    ***** Semiology-motor-automatisms-dyspraxic <nowiki>[Inability to perform learned movements spontaneously or on command or imitation despite intact relevant motor and sensory systems and adequate comprehension and cooperation.]</nowiki>
-                    ***** Semiology-motor-automatisms-manual <nowiki>[1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.]</nowiki>
-                    ***** Semiology-motor-automatisms-gestural <nowiki>[Semipurposive, asynchronous hand movements. Often unilateral.]</nowiki>
-                    ***** Semiology-motor-automatisms-pedal <nowiki>[1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.]</nowiki>
-                    ***** Semiology-motor-automatisms-hypermotor <nowiki>[1. Involves predominantly proximal limb or axial muscles producing irregular sequential ballistic movements, such as pedaling, pelvic thrusting, thrashing, rocking movements. 2. Increase in rate of ongoing movements or inappropriately rapid performance of a movement.]</nowiki>
-                    ***** Semiology-motor-automatisms-hypokinetic <nowiki>[A decrease in amplitude and/or rate or arrest of ongoing motor activity.]</nowiki>
-                    ***** Semiology-motor-automatisms-gelastic <nowiki>[Bursts of laughter or giggling, usually without an appropriate affective tone.]</nowiki>
-                    ***** Semiology-motor-other-automatisms
+                **** Semiology-motor-automatism
+                    ***** Semiology-motor-automatism-mimetic <nowiki>[Facial expression suggesting an emotional state, often fear.]</nowiki>
+                    ***** Semiology-motor-automatism-oroalimentary <nowiki>[Lip smacking, lip pursing, chewing, licking, tooth grinding, or swallowing.]</nowiki>
+                    ***** Semiology-motor-automatism-dacrystic <nowiki>[Bursts of crying.]</nowiki>
+                    ***** Semiology-motor-automatism-dyspraxic <nowiki>[Inability to perform learned movements spontaneously or on command or imitation despite intact relevant motor and sensory systems and adequate comprehension and cooperation.]</nowiki>
+                    ***** Semiology-motor-automatism-manual <nowiki>[1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.]</nowiki>
+                    ***** Semiology-motor-automatism-gestural <nowiki>[Semipurposive, asynchronous hand movements. Often unilateral.]</nowiki>
+                    ***** Semiology-motor-automatism-pedal <nowiki>[1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.]</nowiki>
+                    ***** Semiology-motor-automatism-hypermotor <nowiki>[1. Involves predominantly proximal limb or axial muscles producing irregular sequential ballistic movements, such as pedaling, pelvic thrusting, thrashing, rocking movements. 2. Increase in rate of ongoing movements or inappropriately rapid performance of a movement.]</nowiki>
+                    ***** Semiology-motor-automatism-hypokinetic <nowiki>[A decrease in amplitude and/or rate or arrest of ongoing motor activity.]</nowiki>
+                    ***** Semiology-motor-automatism-gelastic <nowiki>[Bursts of laughter or giggling, usually without an appropriate affective tone.]</nowiki>
+                    ***** Semiology-motor-other-automatism
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Semiology-motor-behavioral-arrest <nowiki>[Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue).]</nowiki>
             *** Semiology-non-motor-manifestation
@@ -1101,46 +1101,46 @@ This project was supported by the by the National Institute of Mental Health of 
 
 
 '''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-    * deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10^1]</nowiki>
-    * da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10^1]</nowiki>
-    * hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10^2]</nowiki>
-    * h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10^2]</nowiki>
-    * kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3]</nowiki>
-    * k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3]</nowiki>
-    * mega <nowiki>{SIUnitModifier, conversionFactor=10^6} [SI unit multiple representing 10^6]</nowiki>
-    * M <nowiki>{SIUnitSymbolModifier, conversionFactor=10^6} [SI unit multiple representing 10^6]</nowiki>
-    * giga <nowiki>{SIUnitModifier, conversionFactor=10^9} [SI unit multiple representing 10^9]</nowiki>
-    * G <nowiki>{SIUnitSymbolModifier, conversionFactor=10^9} [SI unit multiple representing 10^9]</nowiki>
-    * tera <nowiki>{SIUnitModifier, conversionFactor=10^12} [SI unit multiple representing 10^12]</nowiki>
-    * T <nowiki>{SIUnitSymbolModifier, conversionFactor=10^12} [SI unit multiple representing 10^12]</nowiki>
-    * peta <nowiki>{SIUnitModifier, conversionFactor=10^15} [SI unit multiple representing 10^15]</nowiki>
-    * P <nowiki>{SIUnitSymbolModifier, conversionFactor=10^15} [SI unit multiple representing 10^15]</nowiki>
-    * exa <nowiki>{SIUnitModifier, conversionFactor=10^18} [SI unit multiple representing 10^18]</nowiki>
-    * E <nowiki>{SIUnitSymbolModifier, conversionFactor=10^18} [SI unit multiple representing 10^18]</nowiki>
-    * zetta <nowiki>{SIUnitModifier, conversionFactor=10^21} [SI unit multiple representing 10^21]</nowiki>
-    * Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^21} [SI unit multiple representing 10^21]</nowiki>
-    * yotta <nowiki>{SIUnitModifier, conversionFactor=10^24} [SI unit multiple representing 10^24]</nowiki>
-    * Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^24} [SI unit multiple representing 10^24]</nowiki>
-    * deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10^-1]</nowiki>
-    * d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10^-1]</nowiki>
-    * centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2]</nowiki>
-    * c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2]</nowiki>
-    * milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3]</nowiki>
-    * m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3]</nowiki>
-    * micro <nowiki>{SIUnitModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6]</nowiki>
-    * u <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6]</nowiki>
-    * nano <nowiki>{SIUnitModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9]</nowiki>
-    * n <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9]</nowiki>
-    * pico <nowiki>{SIUnitModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12]</nowiki>
-    * p <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12]</nowiki>
-    * femto <nowiki>{SIUnitModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15]</nowiki>
-    * f <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15]</nowiki>
-    * atto <nowiki>{SIUnitModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18]</nowiki>
-    * a <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18]</nowiki>
-    * zepto <nowiki>{SIUnitModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21]</nowiki>
-    * z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21]</nowiki>
-    * yocto <nowiki>{SIUnitModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24]</nowiki>
-    * y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24]</nowiki>
+    * deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
+    * da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
+    * hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
+    * h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
+    * kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
+    * k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
+    * mega <nowiki>{SIUnitModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
+    * M <nowiki>{SIUnitSymbolModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
+    * giga <nowiki>{SIUnitModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
+    * G <nowiki>{SIUnitSymbolModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
+    * tera <nowiki>{SIUnitModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
+    * T <nowiki>{SIUnitSymbolModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
+    * peta <nowiki>{SIUnitModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
+    * P <nowiki>{SIUnitSymbolModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
+    * exa <nowiki>{SIUnitModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
+    * E <nowiki>{SIUnitSymbolModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
+    * zetta <nowiki>{SIUnitModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
+    * Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
+    * yotta <nowiki>{SIUnitModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
+    * Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
+    * deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10^-1.]</nowiki>
+    * d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10^-1.]</nowiki>
+    * centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
+    * c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
+    * milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
+    * m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
+    * micro <nowiki>{SIUnitModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
+    * u <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
+    * nano <nowiki>{SIUnitModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
+    * n <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
+    * pico <nowiki>{SIUnitModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
+    * p <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
+    * femto <nowiki>{SIUnitModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
+    * f <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
+    * atto <nowiki>{SIUnitModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
+    * a <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
+    * zepto <nowiki>{SIUnitModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
+    * z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
+    * yocto <nowiki>{SIUnitModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
+    * y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
 
 '''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
     * dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki>
