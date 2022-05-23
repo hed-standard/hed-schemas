@@ -1046,96 +1046,105 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
     * accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki>
-        ** m-per-s^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * angleUnits <nowiki>{defaultUnits=radian}</nowiki>
-        ** radian <nowiki>{SIUnit}</nowiki>
-        ** rad <nowiki>{SIUnit, unitSymbol}</nowiki>
-        ** degree
+        ** radian <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** degree <nowiki>{conversionFactor=0.0174533}</nowiki>
     * areaUnits <nowiki>{defaultUnits=m^2}</nowiki>
-        ** m^2 <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki>
-        ** dollar
-        ** $ <nowiki>{unitPrefix, unitSymbol}</nowiki>
+        ** dollar <nowiki>{conversionFactor=1.0}</nowiki>
+        ** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** euro
         ** point
-    * frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
-        ** hertz  <nowiki>{SIUnit}</nowiki>
-        ** Hz <nowiki>{SIUnit, unitSymbol}</nowiki>
-    * amplitudeUnits <nowiki>{defaultUnits=microvolts}</nowiki>
-        ** microvolts
+    * electricPotentialUnits <nowiki>{defaultUnits=uv}</nowiki>
+        ** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001}</nowiki>
+        ** Volt <nowiki>{SIUnit, conversionFactor=0.000001}</nowiki>
+        * frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
+        ** hertz  <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * intensityUnits <nowiki>{defaultUnits=dB}</nowiki>
-        ** dB <nowiki>{unitSymbol}[Intensity expressed as ratio to a threshold. Often used for sound intensity.]</nowiki>
+        ** dB <nowiki>{unitSymbol, conversionFactor=1.0}[Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
         ** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki>
         ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>
     * jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki>
-        ** m-per-s^3 <nowiki>{unitSymbol}</nowiki>
+        ** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0}</nowiki>
+    * magneticFieldUnits <nowiki>{defaultUnits=fT}[Units used to magnetic field intensity.]</nowiki>
+        ** tesla <nowiki>{SIUnit, conversionFactor=10^-15}</nowiki>
+        ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10^-15}</nowiki>
     * memorySizeUnits <nowiki>{defaultUnits=B}</nowiki>
-        ** byte <nowiki>{SIUnit}</nowiki>
-        ** B <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** byte <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * physicalLengthUnits <nowiki>{defaultUnits=m}</nowiki>
-        ** foot
-        ** inch
-        ** metre <nowiki>{SIUnit}</nowiki>
-        ** m <nowiki>{SIUnit, unitSymbol}</nowiki>
-        ** mile
+        ** foot <nowiki>{conversionFactor=0.3048}</nowiki>
+        ** inch <nowiki>{conversionFactor=0.0254}</nowiki>
+        ** metre <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** mile <nowiki>{conversionFactor=1609.34}</nowiki>
     * speedUnits <nowiki>{defaultUnits=m-per-s}</nowiki>
-        ** m-per-s <nowiki>{SIUnit, unitSymbol}</nowiki>
-        ** mph <nowiki>{unitSymbol}</nowiki>
-        ** kph <nowiki>{unitSymbol}</nowiki>
+        ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** mph <nowiki>{unitSymbol, conversionFactor=0.44704}</nowiki>
+        ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
+    * temperatureUnits <nowiki>{defaultUnits=degree Celsius}</nowiki>
+        ** degree Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * timeUnits <nowiki>{defaultUnits=s}</nowiki>
-        ** second <nowiki>{SIUnit}</nowiki>
-        ** s <nowiki>{SIUnit, unitSymbol}</nowiki>
-        ** day
-        ** minute
-        ** hour <nowiki>[Should be in 24-hour format.]</nowiki>
+        ** second <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** day <nowiki>{conversionFactor=86400}</nowiki>
+        ** minute <nowiki>{conversionFactor=60}</nowiki>
+        ** hour <nowiki>{conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
     * volumeUnits <nowiki>{defaultUnits=m^3}</nowiki>
-        ** m^3 <nowiki>{SIUnit, unitSymbol}</nowiki>
+        ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
     * weightUnits <nowiki>{defaultUnits=g}</nowiki>
-        ** g <nowiki>{SIUnit, unitSymbol}</nowiki>
-        ** gram <nowiki>{SIUnit}</nowiki>
-        ** pound
-        ** lb
+        ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+        ** gram <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+        ** pound <nowiki>{conversionFactor=453.592}</nowiki>
+        ** lb <nowiki>{conversionFactor=453.592}</nowiki>
+
 
 '''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-    * deca <nowiki>{SIUnitModifier} [SI unit multiple representing 10^1]</nowiki>
-    * da <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^1]</nowiki>
-    * hecto <nowiki>{SIUnitModifier} [SI unit multiple representing 10^2]</nowiki>
-    * h <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^2]</nowiki>
-    * kilo <nowiki>{SIUnitModifier} [SI unit multiple representing 10^3]</nowiki>
-    * k <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^3]</nowiki>
-    * mega <nowiki>{SIUnitModifier} [SI unit multiple representing 10^6]</nowiki>
-    * M <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^6]</nowiki>
-    * giga <nowiki>{SIUnitModifier} [SI unit multiple representing 10^9]</nowiki>
-    * G <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^9]</nowiki>
-    * tera <nowiki>{SIUnitModifier} [SI unit multiple representing 10^12]</nowiki>
-    * T <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^12]</nowiki>
-    * peta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^15]</nowiki>
-    * P <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^15]</nowiki>
-    * exa <nowiki>{SIUnitModifier} [SI unit multiple representing 10^18]</nowiki>
-    * E <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^18]</nowiki>
-    * zetta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^21]</nowiki>
-    * Z <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^21]</nowiki>
-    * yotta <nowiki>{SIUnitModifier} [SI unit multiple representing 10^24]</nowiki>
-    * Y <nowiki>{SIUnitSymbolModifier} [SI unit multiple representing 10^24]</nowiki>
-    * deci <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-1]</nowiki>
-    * d <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-1]</nowiki>
-    * centi <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-2]</nowiki>
-    * c <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-2]</nowiki>
-    * milli <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-3]</nowiki>
-    * m <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-3]</nowiki>
-    * micro <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-6]</nowiki>
-    * u <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-6]</nowiki>
-    * nano <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-9]</nowiki>
-    * n <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-9]</nowiki>
-    * pico <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-12]</nowiki>
-    * p <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-12]</nowiki>
-    * femto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-15]</nowiki>
-    * f <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-15]</nowiki>
-    * atto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-18]</nowiki>
-    * a <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-18]</nowiki>
-    * zepto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-21]</nowiki>
-    * z <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-21]</nowiki>
-    * yocto <nowiki>{SIUnitModifier} [SI unit submultiple representing 10^-24]</nowiki>
-    * y <nowiki>{SIUnitSymbolModifier} [SI unit submultiple representing 10^-24]</nowiki>
+    * deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10^1]</nowiki>
+    * da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10^1]</nowiki>
+    * hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10^2]</nowiki>
+    * h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10^2]</nowiki>
+    * kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3]</nowiki>
+    * k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3]</nowiki>
+    * mega <nowiki>{SIUnitModifier, conversionFactor=10^6} [SI unit multiple representing 10^6]</nowiki>
+    * M <nowiki>{SIUnitSymbolModifier, conversionFactor=10^6} [SI unit multiple representing 10^6]</nowiki>
+    * giga <nowiki>{SIUnitModifier, conversionFactor=10^9} [SI unit multiple representing 10^9]</nowiki>
+    * G <nowiki>{SIUnitSymbolModifier, conversionFactor=10^9} [SI unit multiple representing 10^9]</nowiki>
+    * tera <nowiki>{SIUnitModifier, conversionFactor=10^12} [SI unit multiple representing 10^12]</nowiki>
+    * T <nowiki>{SIUnitSymbolModifier, conversionFactor=10^12} [SI unit multiple representing 10^12]</nowiki>
+    * peta <nowiki>{SIUnitModifier, conversionFactor=10^15} [SI unit multiple representing 10^15]</nowiki>
+    * P <nowiki>{SIUnitSymbolModifier, conversionFactor=10^15} [SI unit multiple representing 10^15]</nowiki>
+    * exa <nowiki>{SIUnitModifier, conversionFactor=10^18} [SI unit multiple representing 10^18]</nowiki>
+    * E <nowiki>{SIUnitSymbolModifier, conversionFactor=10^18} [SI unit multiple representing 10^18]</nowiki>
+    * zetta <nowiki>{SIUnitModifier, conversionFactor=10^21} [SI unit multiple representing 10^21]</nowiki>
+    * Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^21} [SI unit multiple representing 10^21]</nowiki>
+    * yotta <nowiki>{SIUnitModifier, conversionFactor=10^24} [SI unit multiple representing 10^24]</nowiki>
+    * Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^24} [SI unit multiple representing 10^24]</nowiki>
+    * deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10^-1]</nowiki>
+    * d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10^-1]</nowiki>
+    * centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2]</nowiki>
+    * c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2]</nowiki>
+    * milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3]</nowiki>
+    * m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3]</nowiki>
+    * micro <nowiki>{SIUnitModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6]</nowiki>
+    * u <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6]</nowiki>
+    * nano <nowiki>{SIUnitModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9]</nowiki>
+    * n <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9]</nowiki>
+    * pico <nowiki>{SIUnitModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12]</nowiki>
+    * p <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12]</nowiki>
+    * femto <nowiki>{SIUnitModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15]</nowiki>
+    * f <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15]</nowiki>
+    * atto <nowiki>{SIUnitModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18]</nowiki>
+    * a <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18]</nowiki>
+    * zepto <nowiki>{SIUnitModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21]</nowiki>
+    * z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21]</nowiki>
+    * yocto <nowiki>{SIUnitModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24]</nowiki>
+    * y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24]</nowiki>
 
 '''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
     * dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki>
@@ -1146,6 +1155,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
     * allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
+    * conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The multiplicative factor to multiply these units to convert to default units.]</nowiki>
     * defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
     * extensionAllowed <nowiki>{boolProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
     * recommended  <nowiki>{boolProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki>
@@ -1158,7 +1168,7 @@ This project was supported by the by the National Institute of Mental Health of 
     * suggestedTag <nowiki>[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
     * tagGroup <nowiki>{boolProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki>
     * takesValue <nowiki>{boolProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
-    * topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group.] </nowiki>
+    * topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.] </nowiki>
     * unique <nowiki>{boolProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki>
     * unitClass <nowiki>[A schema attribute specifying which unit class this value tag belongs to.]</nowiki>
     * unitPrefix <nowiki>{boolProperty, unitProperty}[A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki>
