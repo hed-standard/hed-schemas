@@ -5569,6 +5569,20 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
+                  <node>
+                     <name>Clinical-EEG-temporal-relationship-notes</name>
+                     <description>Clinical notes to annotate the clinical-EEG temporal relationship.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
                </node>
                <node>
                   <name>Episode-event-count</name>

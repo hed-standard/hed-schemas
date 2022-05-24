@@ -989,6 +989,8 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Simultaneous-start-clinical-EEG
                 **** Clinical-EEG-temporal-relationship-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Clinical-EEG-temporal-relationship-notes <nowiki>[Clinical notes to annotate the clinical-EEG temporal relationship.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}</nowiki>
 
             *** Episode-event-count <nowiki>[Number of stereotypical episodes during the recording.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
