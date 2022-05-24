@@ -527,24 +527,24 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Interictal-special-patterns</name>
             <node>
-               <name>Interictal-periodic-discharge</name>
-               <description>Periodic discharge not further specified (PD).</description>
+               <name>Interictal-periodic-discharges</name>
+               <description>Periodic discharge not further specified (PDs).</description>
             </node>
             <node>
-               <name>Generalized-periodic-discharge</name>
-               <description>GPD.</description>
+               <name>Generalized-periodic-discharges</name>
+               <description>GPDs.</description>
             </node>
             <node>
-               <name>Lateralized-periodic-discharge</name>
-               <description>LPD.</description>
+               <name>Lateralized-periodic-discharges</name>
+               <description>LPDs.</description>
             </node>
             <node>
-               <name>Bilateral-independent-periodic-discharge</name>
-               <description>BIPD.</description>
+               <name>Bilateral-independent-periodic-discharges</name>
+               <description>BIPDs.</description>
             </node>
             <node>
-               <name>Multifocal-periodic-discharge</name>
-               <description>MfPD.</description>
+               <name>Multifocal-periodic-discharges</name>
+               <description>MfPDs.</description>
             </node>
             <node>
                <name>Interictal-extreme-delta-brush</name>
@@ -589,7 +589,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Subtle-seizure</name>
-            <description>Seizure type frequent in neonates, sometimes referred to as motor automatism; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges, and are clearly epileptic, ictal EEG often does not show typical epileptic activity.</description>
+            <description>Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges, and are clearly epileptic, ictal EEG often does not show typical epileptic activity.</description>
          </node>
          <node>
             <name>Electrographic-seizure</name>
@@ -6374,7 +6374,7 @@ This project was supported by the by the National Institute of Mental Health of 
    <unitModifierDefinitions>
       <unitModifierDefinition>
          <name>deca</name>
-         <description>SI unit multiple representing 10^1</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6385,7 +6385,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
-         <description>SI unit multiple representing 10^1</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6396,7 +6396,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
-         <description>SI unit multiple representing 10^2</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6407,7 +6407,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
-         <description>SI unit multiple representing 10^2</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6418,7 +6418,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
-         <description>SI unit multiple representing 10^3</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6429,7 +6429,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
-         <description>SI unit multiple representing 10^3</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6440,7 +6440,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
-         <description>SI unit multiple representing 10^6</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6451,7 +6451,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
-         <description>SI unit multiple representing 10^6</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6462,7 +6462,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
-         <description>SI unit multiple representing 10^9</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6473,7 +6473,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
-         <description>SI unit multiple representing 10^9</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6484,7 +6484,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
-         <description>SI unit multiple representing 10^12</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6495,7 +6495,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
-         <description>SI unit multiple representing 10^12</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6506,7 +6506,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
-         <description>SI unit multiple representing 10^15</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6517,7 +6517,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
-         <description>SI unit multiple representing 10^15</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6528,7 +6528,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
-         <description>SI unit multiple representing 10^18</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6539,7 +6539,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
-         <description>SI unit multiple representing 10^18</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6550,7 +6550,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
-         <description>SI unit multiple representing 10^21</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6561,7 +6561,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
-         <description>SI unit multiple representing 10^21</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6572,7 +6572,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
-         <description>SI unit multiple representing 10^24</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6583,7 +6583,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
-         <description>SI unit multiple representing 10^24</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6594,7 +6594,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
-         <description>SI unit submultiple representing 10^-1</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6605,7 +6605,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
-         <description>SI unit submultiple representing 10^-1</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6616,7 +6616,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
-         <description>SI unit submultiple representing 10^-2</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6627,7 +6627,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
-         <description>SI unit submultiple representing 10^-2</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6638,7 +6638,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
-         <description>SI unit submultiple representing 10^-3</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6649,7 +6649,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
-         <description>SI unit submultiple representing 10^-3</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6660,7 +6660,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
-         <description>SI unit submultiple representing 10^-6</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6671,7 +6671,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
-         <description>SI unit submultiple representing 10^-6</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6682,7 +6682,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
-         <description>SI unit submultiple representing 10^-9</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6693,7 +6693,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
-         <description>SI unit submultiple representing 10^-9</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6704,7 +6704,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
-         <description>SI unit submultiple representing 10^-12</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6715,7 +6715,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
-         <description>SI unit submultiple representing 10^-12</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6726,7 +6726,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
-         <description>SI unit submultiple representing 10^-15</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6737,7 +6737,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
-         <description>SI unit submultiple representing 10^-15</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6748,7 +6748,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
-         <description>SI unit submultiple representing 10^-18</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6759,7 +6759,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
-         <description>SI unit submultiple representing 10^-18</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6770,7 +6770,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
-         <description>SI unit submultiple representing 10^-21</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6781,7 +6781,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
-         <description>SI unit submultiple representing 10^-21</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6792,7 +6792,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
-         <description>SI unit submultiple representing 10^-24</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6803,7 +6803,7 @@ This project was supported by the by the National Institute of Mental Health of 
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
-         <description>SI unit submultiple representing 10^-24</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
