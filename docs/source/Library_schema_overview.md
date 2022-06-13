@@ -32,16 +32,22 @@ HED schema terms.
 2. Schema terms should be readily understood by most users. The terms should not be ambiguous and should be meaningful in themselves without reference to their position in the schema hierarchy.
 3. If possible, no schema sub-tree should have more than 7 direct subordinate sub-trees.
 4. Terms that are used independently of one another should be in different sub-trees (orthogonality).
+5. Every term in the hierarchy satistifies the **is-a** relationship with its parent.
+In other words if B has A as a parent in the schema hierarchy, then B is an example of A.
+Searching for A will also return B (search generality).
 
 ``````
 
 As in Python programming, we anticipate that many HED schema libraries may be defined 
-and used, in addition to the base HED schema. Libraries allow individual research 
-communities to annotate details of events in experiments designed to answer questions 
-of interest to particular research or clinical communities. Since it would be impossible 
-to avoid naming conflicts across schema libraries that may be built in parallel by different
-user communities, HED supports schema library namespaces. Users will be able to add library 
-tags qualified with namespace designators. All HED schemas, including library schemas, 
+and used, in addition to the base HED schema. Libraries allow individual research or
+clinical communities to annotate details of events in experiments designed to answer questions 
+of interest to particular to those communities.
+
+Since it would be impossible to avoid naming conflicts across schema libraries
+that may be built in parallel by different user communities,
+HED supports schema library namespaces.
+Users will be able to add library tags qualified with namespace designators.
+All HED schemas, including library schemas, 
 adhere to [semantic versioning](https://semver.org/). 
 
 
