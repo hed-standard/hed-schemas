@@ -14,8 +14,14 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Modulator</name>
          <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Intermittent-photic-stimulation</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>#</name>
                <attribute>
@@ -35,6 +41,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Hyperventilation</name>
             <node>
                <name>Quality-of-hyperventilation</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Hyperventilation-refused-procedure</name>
                   <node>
@@ -291,6 +300,12 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Other-modulator-or-procedure</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -307,40 +322,144 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Background-activity</name>
          <description>An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Posterior-dominant-rhythm</name>
             <description>Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-significance-to-recording</value>
+               <value>Posterior-dominant-rhythm-frequency</value>
+               <value>Posterior-dominant-rhythm-amplitude-range</value>
+               <value>Posterior-dominant-rhythm-amplitude-asymmetry</value>
+               <value>Posterior-dominant-rhythm-frequency-asymmetry</value>
+               <value>Posterior-dominant-rhythm-eye-opening-reactivity</value>
+               <value>Posterior-dominant-rhythm-organization</value>
+               <value>Posterior-dominant-rhythm-caveat</value>
+               <value>Absence-of-posterior-dominant-rhythm</value>
+            </attribute>
          </node>
          <node>
             <name>Mu-rhythm</name>
             <description>EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-frequency</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+            </attribute>
          </node>
          <node>
             <name>Other-organized-rhythm</name>
             <description>EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfill the criteria of the posterior dominant rhythm.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Delta-activity-morphology</value>
+               <value>Theta-activity-morphology</value>
+               <value>Alpha-activity-morphology</value>
+               <value>Beta-activity-morphology</value>
+               <value>Gamma-activity-morphology</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Special-background-activity-feature</name>
             <description>Special Features. Special features contains scoring options for the background activity of critically ill patients.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Continuous-background-activity</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Delta-activity-morphology</value>
+                  <value>Theta-activity-morphology</value>
+                  <value>Alpha-activity-morphology</value>
+                  <value>Beta-activity-morphology</value>
+                  <value>Gamma-activity-morphology</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Nearly-continuous-background-activity</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Delta-activity-morphology</value>
+                  <value>Theta-activity-morphology</value>
+                  <value>Alpha-activity-morphology</value>
+                  <value>Beta-activity-morphology</value>
+                  <value>Gamma-activity-morphology</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Discontinuous-background-activity</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Delta-activity-morphology</value>
+                  <value>Theta-activity-morphology</value>
+                  <value>Alpha-activity-morphology</value>
+                  <value>Beta-activity-morphology</value>
+                  <value>Gamma-activity-morphology</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Background-burst-suppression</name>
                <description>EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV) and which occurs simultaneously over all head regions.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Background-burst-attenuation</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Background-activity-suppression</name>
                <description>Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+                  <value>Appearance-mode</value>
+               </attribute>
             </node>
             <node>
                <name>Electrocerebral-inactivity</name>
@@ -349,15 +468,14 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
       </node>
       <node>
-         <name>Sleep-drowsiness</name>
+         <name>Sleep-and-drowsiness</name>
          <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Sleep-architecture</name>
             <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Finding-significance</value>
-            </attribute>
             <node>
                <name>Normal-sleep-architecture</name>
             </node>
@@ -383,6 +501,13 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Sleep-stage-reached</name>
             <description>For normal sleep patterns the sleep stages reached during the recording can be specified</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-significance-to-recording</value>
+            </attribute>
             <node>
                <name>Sleep-stage-N1</name>
                <description>Sleep stage 1.</description>
@@ -464,7 +589,11 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -472,7 +601,11 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -480,14 +613,23 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
             <name>Sleep-saw-tooth-waves</name>
+            <description>Vertex negative 2-5 Hz waves occuring in series during REM sleep</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -495,7 +637,11 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -503,162 +649,580 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Sleep-abnormal-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
             <name>Non-reactive-sleep</name>
             <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Finding-significance</value>
-            </attribute>
          </node>
       </node>
       <node>
          <name>Interictal-finding</name>
          <description>EEG pattern / transient that is distinguished form the background activity, considered abnormal, but is not recorded during ictal period (seizure) or postictal period; the presence of an interictal finding does not necessarily imply that the patient has epilepsy.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Epileptiform-interictal-activity</name>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Spike-morphology</value>
+               <value>Spike-and-slow-wave-morphology</value>
+               <value>Runs-of-rapid-spikes-morphology</value>
+               <value>Polyspikes-morphology</value>
+               <value>Polyspike-and-slow-wave-morphology</value>
+               <value>Sharp-wave-morphology</value>
+               <value>Sharp-and-slow-wave-morphology</value>
+               <value>Slow-sharp-wave-morphology</value>
+               <value>High-frequency-oscillation-morphology</value>
+               <value>Hypsarrhythmia-classic-morphology</value>
+               <value>Hypsarrhythmia-modified-morphology</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Finding-propagation</value>
+               <value>Multifocal-finding</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+               <value>Finding-incidence</value>
+            </attribute>
          </node>
          <node>
             <name>Abnormal-interictal-rhythmic-activity</name>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Delta-activity-morphology</value>
+               <value>Theta-activity-morphology</value>
+               <value>Alpha-activity-morphology</value>
+               <value>Beta-activity-morphology</value>
+               <value>Gamma-activity-morphology</value>
+               <value>Polymorphic-delta-activity-morphology</value>
+               <value>Frontal-intermittent-rhythmic-delta-activity-morphology</value>
+               <value>Occipital-intermittent-rhythmic-delta-activity-morphology</value>
+               <value>Temporal-intermittent-rhythmic-delta-activity-morphology</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+               <value>Finding-incidence</value>
+            </attribute>
          </node>
          <node>
             <name>Interictal-special-patterns</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Interictal-periodic-discharges</name>
                <description>Periodic discharge not further specified (PDs).</description>
-            </node>
-            <node>
-               <name>Generalized-periodic-discharges</name>
-               <description>GPDs.</description>
-            </node>
-            <node>
-               <name>Lateralized-periodic-discharges</name>
-               <description>LPDs.</description>
-            </node>
-            <node>
-               <name>Bilateral-independent-periodic-discharges</name>
-               <description>BIPDs.</description>
-            </node>
-            <node>
-               <name>Multifocal-periodic-discharges</name>
-               <description>MfPDs.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Periodic-discharges-superimposed-activity</value>
+                  <value>Periodic-discharge-sharpness</value>
+                  <value>Number-of-periodic-discharge-phases</value>
+                  <value>Periodic-discharge-triphasic-morphology</value>
+                  <value>Periodic-discharge-absolute-amplitude</value>
+                  <value>Periodic-discharge-relative-amplitude</value>
+                  <value>Periodic-discharge-polarity</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Periodic-discharge-duration</value>
+                  <value>Periodic-discharge-onset</value>
+                  <value>Periodic-discharge-dynamics</value>
+               </attribute>
+               <node>
+                  <name>Generalized-periodic-discharges</name>
+                  <description>GPDs.</description>
+               </node>
+               <node>
+                  <name>Lateralized-periodic-discharges</name>
+                  <description>LPDs.</description>
+               </node>
+               <node>
+                  <name>Bilateral-independent-periodic-discharges</name>
+                  <description>BIPDs.</description>
+               </node>
+               <node>
+                  <name>Multifocal-periodic-discharges</name>
+                  <description>MfPDs.</description>
+               </node>
             </node>
             <node>
                <name>Interictal-extreme-delta-brush</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Appearance-mode</value>
+                  <value>Discharge-pattern</value>
+               </attribute>
             </node>
             <node>
                <name>Interictal-burst-suppression</name>
+               <description>Pattern characterized by burst of theta and/pr delta waves, at times intermixed with faster waves, and intervening periods of low amplitude (below 20 uV).</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
             <node>
                <name>Interictal-burst-attenuation</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Finding-extent</value>
+               </attribute>
             </node>
          </node>
       </node>
       <node>
          <name>Episode</name>
          <description>Clinical episode or electrographic seizure.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Epileptic-seizure</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Focal-onset-epileptic-seizure</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Seizure-dynamics</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
                <node>
                   <name>Aware-focal-onset-epileptic-seizure</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-phase</value>
+                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-dynamics</value>
+                     <value>Episode-consciousness</value>
+                     <value>Episode-awareness</value>
+                     <value>Clinical-EEG-temporal-relationship</value>
+                     <value>Episode-event-count</value>
+                     <value>State-episode-start</value>
+                     <value>Episode-postictal-phase</value>
+                     <value>Episode-prodrome</value>
+                     <value>Episode-tongue-biting</value>
+                  </attribute>
                </node>
                <node>
                   <name>Impaired-awareness-focal-onset-epileptic-seizure</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-phase</value>
+                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-dynamics</value>
+                     <value>Episode-consciousness</value>
+                     <value>Episode-awareness</value>
+                     <value>Clinical-EEG-temporal-relationship</value>
+                     <value>Episode-event-count</value>
+                     <value>State-episode-start</value>
+                     <value>Episode-postictal-phase</value>
+                     <value>Episode-prodrome</value>
+                     <value>Episode-tongue-biting</value>
+                  </attribute>
                </node>
                <node>
                   <name>Awareness-unknown-focal-onset-epileptic-seizure</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-phase</value>
+                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-dynamics</value>
+                     <value>Episode-consciousness</value>
+                     <value>Episode-awareness</value>
+                     <value>Clinical-EEG-temporal-relationship</value>
+                     <value>Episode-event-count</value>
+                     <value>State-episode-start</value>
+                     <value>Episode-postictal-phase</value>
+                     <value>Episode-prodrome</value>
+                     <value>Episode-tongue-biting</value>
+                  </attribute>
                </node>
                <node>
                   <name>Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-phase</value>
+                     <value>Seizure-dynamics</value>
+                     <value>Episode-consciousness</value>
+                     <value>Episode-awareness</value>
+                     <value>Clinical-EEG-temporal-relationship</value>
+                     <value>Episode-event-count</value>
+                     <value>State-episode-start</value>
+                     <value>Episode-postictal-phase</value>
+                     <value>Episode-prodrome</value>
+                     <value>Episode-tongue-biting</value>
+                  </attribute>
                </node>
             </node>
             <node>
                <name>Generalized-onset-epileptic-seizure</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Epileptic-seizure-classification</value>
+                  <value>Seizure-dynamics</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Unknown-onset-epileptic-seizure</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Epileptic-seizure-classification</value>
+                  <value>Seizure-dynamics</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Unclassified-epileptic-seizure</name>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Seizure-dynamics</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
          </node>
          <node>
             <name>Subtle-seizure</name>
             <description>Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges, and are clearly epileptic, ictal EEG often does not show typical epileptic activity.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Electrographic-seizure</name>
             <description>Referred usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Seizure-PNES</name>
             <description>Psychogenic non-epileptic seizure.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-related-episode</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Sleep-related-arousal</name>
                <description>Normal.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Benign-sleep-myoclonus</name>
                <description>A distinctive disorder of sleep characterized by a) neonatal onset, b) rhythmic myoclonic jerks only during sleep and c) abrupt and consistent cessation with arousal, d) absence of concomitant electrographic changes suggestive of seizures, and e) good outcome.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Confusional-awakening</name>
                <description>Episode of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Sleep-periodic-limb-movement</name>
                <description>PLMS. Periodic limb movement in sleep. Episodes are characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>REM-sleep-behavioral-disorder</name>
                <description>REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Sleep-walking</name>
                <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
          </node>
          <node>
             <name>Pediatric-episode</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Hyperekplexia</name>
                <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Jactatio-capitis-nocturna</name>
                <description>Relatively common in normal children at the time of going to bed, especially during the first year of life, the rhythmic head movements persist during sleep. Usually, these phenomena disappear before 3 years of age.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Pavor-nocturnus</name>
                <description>A nocturnal episode characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
             <node>
                <name>Pediatric-stereotypical-behavior-episode</name>
                <description>Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures).</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Episode-phase</value>
+                  <value>Finding-significance-to-recording</value>
+                  <value>Episode-consciousness</value>
+                  <value>Episode-awareness</value>
+                  <value>Clinical-EEG-temporal-relationship</value>
+                  <value>Episode-event-count</value>
+                  <value>State-episode-start</value>
+                  <value>Episode-postictal-phase</value>
+                  <value>Episode-prodrome</value>
+                  <value>Episode-tongue-biting</value>
+               </attribute>
             </node>
          </node>
          <node>
             <name>Paroxysmal-motor-event</name>
             <description>Paroxysmal phenomena during neonatal or childhood periods characterized by recurrent motor or behavioral signs or symptoms that must be distinguishes from epileptic disorders.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Syncope</name>
             <description>Episode with loss of consciousness and muscle tone that is abrupt in onset, of short duration and followed by rapid recovery; it occurs in response to transient impairment of cerebral perfusion. Typical prodromal symptoms often herald onset of syncope and postictal symptoms are minimal. Syncopal convulsions resulting from cerebral anoxia are common but are not a form of epilepsy, nor are there any accompanying EEG ictal discharges.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Cataplexy</name>
             <description>A sudden decrement in muscle tone and loss of deep tendon reflexes, leading to muscle weakness, paralysis, or postural collapse. Cataplexy usually is precipitated by an outburst of emotional expression-notably laughter, anger, or startle. It is one of the tetrad of symptoms of narcolepsy. During cataplexy, respiration and voluntary eye movements are not compromised. Consciousness is preserved.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
          </node>
          <node>
             <name>Other-episode</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -675,68 +1239,193 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Physiologic-pattern</name>
          <description>EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Rhythmic-activity-pattern</name>
             <description>Not further specified.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Delta-activity-morphology</value>
+               <value>Theta-activity-morphology</value>
+               <value>Alpha-activity-morphology</value>
+               <value>Beta-activity-morphology</value>
+               <value>Gamma-activity-morphology</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Slow-alpha-variant-rhythm</name>
             <description>Characteristic rhythms mostly at 4-5 Hz, recorded most prominently over the posterior regions of the head. Generally alternate, or are intermixed, with alpha rhythm to which they often are harmonically related. Amplitude varies but is frequently close to 50 micro V. Blocked or attenuated by attention, especially visual, and mental effort. Comment: slow alpha variant rhythms should be distinguished from posterior slow waves characteristic of children and adolescents and occasionally seen in young adults.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Fast-alpha-variant-rhythm</name>
             <description>Characteristic rhythm at 14-20 Hz, detected most prominently over the posterior regions of the head. May alternate or be intermixed with alpha rhythm. Blocked or attenuated by attention, especially visual, and mental effort.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Ciganek-rhythm</name>
             <description>Midline theta rhythm (Ciganek rhythm) may be observed during wakefulness or drowsiness. The frequency is 4-7 Hz, and the location is midline (ie, vertex). The morphology is rhythmic, smooth, sinusoidal, arciform, spiky, or mu-like.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Lambda-wave</name>
             <description>Diphasic sharp transient occurring over occipital regions of the head of waking subjects during visual exploration. The main component is positive relative to other areas. Time-locked to saccadic eye movement. Amplitude varies but is generally below 50 micro V.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Posterior-slow-waves-youth</name>
             <description>Waves in the delta and theta range, of variable form, lasting 0.35 to 0.5 s or longer without any consistent periodicity, found in the range of 6-12 years (occasionally seen in young adults). Alpha waves are almost always intermingled or superimposed. Reactive similar to alpha activity.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Diffuse-slowing-hyperventilation</name>
             <description>Diffuse slowing induced by hyperventilation. Bilateral, diffuse slowing during hyperventilation. Recorded in 70 percent of normal children (3-5 years) and less then 10 percent of adults. Usually appear in the posterior regions and spread forward in younger age group, whereas they tend to appear in the frontal regions and spread backward in the older age group.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Photic-driving</name>
             <description>Physiologic response consisting of rhythmic activity elicited over the posterior regions of the head by repetitive photic stimulation at frequencies of about 5-30 Hz. Comments: term should be limited to activity time-locked to the stimulus and of frequency identical or harmonically related to the stimulus frequency. Photic driving should be distinguished from the visual evoked potentials elicited by isolated flashes of light or flashes repeated at very low frequency.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Photomyogenic-response</name>
             <description>A response to intermittent photic stimulation characterized by the appearance in the record of brief, repetitive muscular artifacts (spikes) over the anterior regions of the head. These often increase gradually in amplitude as stimuli are continued and cease promptly when the stimulus is withdrawn. Comment: this response is frequently associated with flutter of the eyelids and vertical oscillations of the eyeballs and sometimes with discrete jerking mostly involving the musculature of the face and head. (Preferred to synonym: photo-myoclonic response).</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Arousal-pattern</name>
             <description>Arousal pattern in children. Prolonged, marked high voltage 4-6/s activity in all leads with some intermixed slower frequencies, in children.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Sleep-spindles-pattern</name>
             <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 micro V in the adult.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Vertex-wave-pattern</name>
             <description>Vertex sharp transient. Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 micro V. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>K-complex-pattern</name>
             <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during non-REM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>POSTS-pattern</name>
             <description>Positive occipital sharp transient of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 micro V.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Frontal-arousal-rhythm</name>
             <description>Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Other-physiologic-pattern</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -753,8 +1442,19 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Uncertain-significant-pattern</name>
          <description>EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Sharp-transient-pattern</name>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Wicket-spikes</name>
@@ -763,30 +1463,86 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Small-sharp-spikes</name>
             <description>Benign epileptiform Transients of Sleep (BETS). Small sharp spikes (SSS) of very short duration and low amplitude, often followed by a small theta wave, occurring in the temporal regions during drowsiness and light sleep. They occur on one or both sides (often asynchronously). The main negative and positive components are of about equally spiky character. Rarely seen in children, they are seen most often in adults and the elderly. Two thirds of the patients have a history of epileptic seizures.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Fourteen-six-Hz-positive-burst</name>
             <description>Burst of arch-shaped waves at 13-17 Hz and/or 5-7-Hz but most commonly at 14 and or 6 Hz seen generally over the posterior temporal and adjacent areas of one or both sides of the head during sleep. The sharp peaks of its component waves are positive with respect to other regions. Amplitude varies but is generally below 75  micro V. Comments: (1) best demonstrated by referential recording using contralateral earlobe or other remote, reference electrodes. (2) This pattern has no established clinical significance.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Six-Hz-spike-slow-wave</name>
             <description>Spike and slow wave complexes at 4-7Hz, but mostly at 6 Hz occurring generally in brief bursts bilaterally and synchronously, symmetrically or asymmetrically, and either confined to or of larger amplitude over the posterior or anterior regions of the head. The spike has a strong positive component. Amplitude varies but is generally smaller than that of spike-and slow-wave complexes repeating at slower rates. Comment: this pattern should be distinguished from epileptiform discharges. Synonym: wave and spike phantom.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Rudimentary-spike-wave-complex</name>
             <description>Synonym: Pseudo petit mal discharge. Paroxysmal discharge that consists of generalized or nearly generalized high voltage 3 to 4/sec waves with poorly developed spike in the positive trough between the slow waves, occurring in drowsiness only. It is found only in infancy and early childhood when marked hypnagogic rhythmical theta activity is paramount in the drowsy state.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Slow-fused-transient</name>
             <description>A posterior slow-wave preceded by a sharp-contoured potential that blends together with the ensuing slow wave, in children.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Needle-like-occipital-spikes-blind</name>
             <description>Spike discharges of a particularly fast and needle-like character develop over the occipital region in most congenitally blind children. Completely disappear during childhood or adolescence.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Subclinical-rhythmic-EEG-discharge-adults</name>
             <description>Subclinical rhythmic EEG discharge of adults (SERDA). A rhythmic pattern seen in the adult age group, mainly in the waking state or drowsiness. It consists of a mixture of frequencies, often predominant in the theta range. The onset may be fairly abrupt with widespread sharp rhythmical theta and occasionally with delta activity. As to the spatial distribution, a maximum of this discharge is usually found over the centroparietal region and especially over the vertex. It may resemble a seizure discharge but is not accompanied by any clinical signs or symptoms.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Rhythmic-temporal-theta-burst-drowsiness</name>
@@ -795,13 +1551,35 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Temporal-slowing-elderly</name>
             <description>Focal theta and/or delta activity over the temporal regions, especially the left, in persons over the age of 60. Amplitudes are low/similar to the background activity. Comment: focal temporal theta was found in 20 percent of people between the ages of 40-59 years, and 40 percent of people between 60 and 79 years. One third of people older than 60 years had focal temporal delta activity.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Breach-rhythm</name>
             <description>Rhythmical activity recorded over cranial bone defects. Usually it is in the 6 to 11/sec range, does not respond to movements.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
          </node>
          <node>
             <name>Other-uncertain-significant-pattern</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -816,32 +1594,50 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
       </node>
       <node>
-         <name>EEG-artifact</name>
+         <name>Artifact</name>
          <description>When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Biological-artifact</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Eye-blink-artifact</name>
-               <description>Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.</description>
+               <description>Example for EEG: Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Eye-movement-horizontal-artifact</name>
-               <description>There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
+               <description>Example for EEG: There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Eye-movement-vertical-artifact</name>
-               <description>The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
+               <description>Example for EEG: The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -849,28 +1645,40 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Slow, rolling eye-movements, seen during drowsiness.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Nystagmus-artifact</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Chewing-artifact</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Sucking-artifact</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -878,23 +1686,35 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Rocking-patting-artifact</name>
-               <description>Quasi-rhythmical artifacts in recordings from infants caused by rocking/ patting.</description>
+               <description>Quasi-rhythmical artifacts in recordings from infants caused by rocking/patting.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Movement-artifact</name>
-               <description>Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.</description>
+               <description>Example for EEG: Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -902,23 +1722,35 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Respiration can produce 2 kinds of artifacts. One type is in the form of slow and rhythmic activity, synchronous with the body movements of respiration and mechanically affecting the impedance of (usually) one electrode. The other type can be slow or sharp waves that occur synchronously with inhalation or exhalation and involve those electrodes on which the patient is lying.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Pulse-artifact</name>
-               <description>Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).</description>
+               <description>Example for EEG: Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>ECG-artifact</name>
-               <description>Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.</description>
+               <description>Example for EEG: Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -926,7 +1758,11 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -934,18 +1770,25 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+                  <value>Multifocal-finding</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
          </node>
          <node>
             <name>Non-biological-artifact</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Power-supply-artifact</name>
                <description>50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -953,21 +1796,21 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Artifacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Dialysis-artifact</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
                <name>Artificial-ventilation-artifact</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -975,7 +1818,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
             <node>
@@ -983,15 +1826,21 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-significance</value>
+                  <value>Artifact-significance-to-recording</value>
                </attribute>
             </node>
          </node>
          <node>
-            <name>Other-EEG-artifact</name>
+            <name>Other-artifact</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
                <name>#</name>
@@ -1009,12 +1858,15 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Polygraphic-channel-finding</name>
          <description>Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>EOG-channel-finding</name>
             <description>Electrooculography</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
                <name>#</name>
@@ -1032,7 +1884,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Respiration-channel-finding</name>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
                <name>Respiration-oxygen-saturation</name>
@@ -1133,6 +1985,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Other-respiration-feature</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1152,7 +2010,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>Electrocardiography.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
                <name>ECG-QT-period</name>
@@ -1344,6 +2202,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Other-ECG-feature</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1363,7 +2227,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>electromyography</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance</value>
+               <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
                <name>EMG-muscle-side</name>
@@ -1562,6 +2426,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Other-EMG-features</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1578,85 +2448,12 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Other-polygraphic-channel</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-      </node>
-      <node>
-         <name>Finding-attribute</name>
-         <description>Subtree tree for general properties.</description>
-         <node>
-            <name>Finding-significance</name>
-            <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.</description>
-            <node>
-               <name>Finding-no-definite-abnormality</name>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Finding-significance-not-possible-to-determine</name>
-               <description>Not possible to determine.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-         </node>
-         <node>
-            <name>Finding-stopped-by</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Finding-triggered-by</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Finding-unmodified</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>extensionAllowed</name>
+            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -1673,8 +2470,14 @@ This project was supported by the by the National Institute of Mental Health of 
       <node>
          <name>Finding-property</name>
          <description>Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
          <node>
             <name>Signal-morphology-property</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Delta-activity-morphology</name>
                <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
@@ -2616,87 +3419,106 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Source-analysis</name>
+            <name>Finding-source-analysis</name>
             <description>How the current in the brain reaches the electrode sensors.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
-               <name>Brain-region-source-analysis-laterality</name>
+               <name>Finding-source-analysis-laterality</name>
                <description>Uses Location-property/Laterality tags.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-region</value>
+               </attribute>
             </node>
             <node>
-               <name>Brain-region-source-analysis</name>
+               <name>Finding-source-analysis</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
-                  <name>Brain-region-source-analysis-frontal-perisylvian-superior-surface</name>
+                  <name>Finding-source-analysis-frontal-perisylvian-superior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-frontal-lateral</name>
+                  <name>Finding-source-analysis-frontal-lateral</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-frontal-mesial</name>
+                  <name>Finding-source-analysis-frontal-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-frontal-polar</name>
+                  <name>Finding-source-analysis-frontal-polar</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-frontal-orbitofrontal</name>
+                  <name>Finding-source-analysis-frontal-orbitofrontal</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-temporal-polar</name>
+                  <name>Finding-source-analysis-temporal-polar</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-temporal-basal</name>
+                  <name>Finding-source-analysis-temporal-basal</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-temporal-lateral-anterior</name>
+                  <name>Finding-source-analysis-temporal-lateral-anterior</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-temporal-lateral-posterior</name>
+                  <name>Finding-source-analysis-temporal-lateral-posterior</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-temporal-perisylvian-inferior-surface</name>
+                  <name>Finding-source-analysis-temporal-perisylvian-inferior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-central-lateral-convexity</name>
+                  <name>Finding-source-analysis-central-lateral-convexity</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-central-mesial</name>
+                  <name>Finding-source-analysis-central-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-central-sulcus-anterior-surface</name>
+                  <name>Finding-source-analysis-central-sulcus-anterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-central-sulcus-posterior-surface</name>
+                  <name>Finding-source-analysis-central-sulcus-posterior-surface</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-central-opercular</name>
+                  <name>Finding-source-analysis-central-opercular</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-parietal-lateral-convexity</name>
+                  <name>Finding-source-analysis-parietal-lateral-convexity</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-parietal-mesial</name>
+                  <name>Finding-source-analysis-parietal-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-parietal-opercular</name>
+                  <name>Finding-source-analysis-parietal-opercular</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-occipital-lateral</name>
+                  <name>Finding-source-analysis-occipital-lateral</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-occipital-mesial</name>
+                  <name>Finding-source-analysis-occipital-mesial</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-occipital-basal</name>
+                  <name>Finding-source-analysis-occipital-basal</name>
                </node>
                <node>
-                  <name>Brain-region-source-analysis-insula</name>
+                  <name>Finding-source-analysis-insula</name>
                </node>
             </node>
          </node>
          <node>
             <name>Location-property</name>
             <description>Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Brain-laterality</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Brain-laterality-left</name>
                   <node>
@@ -2784,6 +3606,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Brain-region</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Brain-region-frontal</name>
                   <node>
@@ -2857,6 +3682,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Body-part</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Body-part-eyelid</name>
                   <node>
@@ -2958,6 +3786,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Brain-centricity</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Brain-centricity-axial</name>
                   <node>
@@ -3004,6 +3835,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Sensors</name>
                <description>Lists all corresponding sensors (electrodes/channels in montage).</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -3019,6 +3853,15 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Finding-propagation</name>
                <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Brain-laterality</value>
+                  <value>Brain-region</value>
+                  <value>Sensors</value>
+               </attribute>
                <node>
                   <name>Finding-propagation-observed</name>
                   <node>
@@ -3051,6 +3894,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Multifocal-finding</name>
                <description>When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Multifocal-observed</name>
                   <node>
@@ -3099,6 +3945,9 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Modulators-property</name>
             <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Modulators-reactivity</name>
                <description>Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.</description>
@@ -3168,9 +4017,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Passive eye opening. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
-                  <value>Finding-attribute/Finding-triggered-by</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
+                  <value>Finding-triggered-by</value>
                </attribute>
                <node>
                   <name>Eye-opening-passive-not-possible-to-determine</name>
@@ -3193,8 +4042,8 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
                </attribute>
                <node>
                   <name>Medication-effect-EEG-not-possible-to-determine</name>
@@ -3217,8 +4066,8 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
                </attribute>
                <node>
                   <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
@@ -3241,8 +4090,8 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
                </attribute>
                <node>
                   <name>Auditive-stimuli-effect-not-possible-to-determine</name>
@@ -3265,9 +4114,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
-                  <value>Finding-attribute/Finding-triggered-by</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
+                  <value>Finding-triggered-by</value>
                </attribute>
                <node>
                   <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
@@ -3290,9 +4139,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
-                  <value>Finding-attribute/Finding-triggered-by</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
+                  <value>Finding-triggered-by</value>
                </attribute>
                <node>
                   <name>Physical-effort-effect-not-possible-to-determine</name>
@@ -3315,9 +4164,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
-                  <value>Finding-attribute/Finding-triggered-by</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
+                  <value>Finding-triggered-by</value>
                </attribute>
                <node>
                   <name>Cognitive-task-effect-not-possible-to-determine</name>
@@ -3337,6 +4186,12 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Other-modulators-effect-EEG</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>extensionAllowed</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -3438,6 +4293,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Facilitating-factor-other</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3488,8 +4349,8 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications clinical effect. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
                </attribute>
             </node>
             <node>
@@ -3497,8 +4358,8 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications reduction or withdrawal clinical effect. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-attribute/Finding-stopped-by</value>
-                  <value>Finding-attribute/Finding-unmodified</value>
+                  <value>Finding-stopped-by</value>
+                  <value>Finding-unmodified</value>
                </attribute>
             </node>
             <node>
@@ -3776,11 +4637,17 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Time-related-features-property</name>
+            <name>Time-related-property</name>
             <description>Important to estimate how often an interictal abnormality is seen in the recording.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Appearance-mode</name>
                <description>Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Random-appearance-mode</name>
                   <description>Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.</description>
@@ -3873,12 +4740,15 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Discharge-pattern</name>
                <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Single-discharge-pattern</name>
                   <description>Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.</description>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-property/Finding-incidence</value>
+                     <value>Finding-incidence</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -3897,7 +4767,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.</description>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-property/Finding-prevalence</value>
+                     <value>Finding-prevalence</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -3934,7 +4804,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.</description>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-property/Finding-prevalence</value>
+                     <value>Finding-prevalence</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -4180,182 +5050,185 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
             </node>
-         </node>
-         <node>
-            <name>Finding-incidence</name>
-            <description>How often it occurs/time-epoch.</description>
             <node>
-               <name>Only-once-finding-incidence</name>
+               <name>Finding-incidence</name>
+               <description>How often it occurs/time-epoch.</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Only-once-finding-incidence</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Rare-finding-incidence</name>
+                  <description>less than 1/h</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Uncommon-finding-incidence</name>
+                  <description>1/5 min to 1/h.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Occasional-finding-incidence</name>
+                  <description>1/min to 1/5min.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Frequent-finding-incidence</name>
+                  <description>1/10 s to 1/min.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Abundant-finding-incidence</name>
+                  <description>Greater than 1/10 s).</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>
-               <name>Rare-finding-incidence</name>
-               <description>less than 1/h</description>
+               <name>Finding-prevalence</name>
+               <description>The percentage of the recording covered by the train/burst.</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Rare-finding-prevalence</name>
+                  <description>Less than 1 precent.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
-            </node>
-            <node>
-               <name>Uncommon-finding-incidence</name>
-               <description>1/5 min to 1/h.</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Occasional-finding-prevalence</name>
+                  <description>1 to 9 percent.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
-            </node>
-            <node>
-               <name>Occasional-finding-incidence</name>
-               <description>1/min to 1/5min.</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Frequent-finding-prevalence</name>
+                  <description>10 to 49 precent.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
-            </node>
-            <node>
-               <name>Frequent-finding-incidence</name>
-               <description>1/10 s to 1/min.</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Abundant-finding-prevalence</name>
+                  <description>50 to 89 percent.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
-            </node>
-            <node>
-               <name>Abundant-finding-incidence</name>
-               <description>Greater than 1/10 s).</description>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-         </node>
-         <node>
-            <name>Finding-prevalence</name>
-            <description>The percentage of the recording covered by the train/burst.</description>
-            <node>
-               <name>Rare-finding-prevalence</name>
-               <description>Less than 1 precent.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Occasional-finding-prevalence</name>
-               <description>1 to 9 percent.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Frequent-finding-prevalence</name>
-               <description>10 to 49 precent.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Abundant-finding-prevalence</name>
-               <description>50 to 89 percent.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Continuous-finding-prevalence</name>
-               <description>Greater than 90 precent.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
+                  <name>Continuous-finding-prevalence</name>
+                  <description>Greater than 90 precent.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
          </node>
          <node>
             <name>Posterior-dominant-rhythm-property</name>
             <description>Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Posterior-dominant-rhythm-frequency</name>
                <description>Value in Hz (number) typed in.</description>
@@ -4786,6 +5659,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-other-causes</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4802,6 +5681,9 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Sleep-property</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Sleep-abnormal-amplitude-asymmetry</name>
                <description>Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.</description>
@@ -4853,9 +5735,15 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Episode-property</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
                <name>Epileptic-seizure-classification</name>
                <description>Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Motor-onset-epileptic-seizure</name>
                   <node>
@@ -4929,6 +5817,15 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Episode-phase</name>
                <description>The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Seizure-semiology-manifestation</value>
+                  <value>Postictal-semiology-manifestation</value>
+                  <value>Ictal-EEG-patterns</value>
+               </attribute>
                <node>
                   <name>Episode-phase-initial</name>
                </node>
@@ -4940,8 +5837,11 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Seizure-semiology</name>
+               <name>Seizure-semiology-manifestation</name>
                <description>Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Semiology-motor-manifestation</name>
                   <node>
@@ -4949,65 +5849,175 @@ This project was supported by the by the National Institute of Mental Health of 
                      <node>
                         <name>Semiology-motor-tonic</name>
                         <description>A sustained increase in muscle contraction lasting a few seconds to minutes.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-dystonic</name>
                         <description>Sustained contractions of both agonist and antagonist muscles producing athetoid or twisting movements, which, when prolonged, may produce abnormal postures.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-epileptic-spasm</name>
                         <description>A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not so sustained as a tonic seizure (i.e., about 1 s). Limited forms may occur: grimacing, head nodding. Frequent occurrence in clusters.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-postural</name>
                         <description>Adoption of a posture that may be bilaterally symmetric or asymmetric (as in a fencing posture).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-versive</name>
                         <description>A sustained, forced conjugate ocular, cephalic, and/or truncal rotation or lateral deviation from the midline.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Body-part</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-clonic</name>
                         <description>Myoclonus that is regularly repetitive, involves the same muscle groups, at a frequency of about 2 to 3 c/s, and is prolonged. Synonym: rhythmic myoclonus .</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-myoclonic</name>
                         <description>Characterized by myoclonus. MYOCLONUS : sudden, brief (lower than 100 ms) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-jacksonian-march</name>
                         <description>Term indicating spread of clonic movements through contiguous body parts unilaterally.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-negative-myoclonus</name>
                         <description>Characterized by negative myoclonus. NEGATIVE MYOCLONUS: interruption of tonic muscular activity for lower than 500 ms without evidence of preceding myoclonia.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-tonic-clonic</name>
                         <description>A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.</description>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
                         <node>
                            <name>Semiology-motor-tonic-clonic-without-figure-of-four</name>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Brain-laterality</value>
+                              <value>Body-part</value>
+                              <value>Brain-centricity</value>
+                              <value>Episode-event-count</value>
+                           </attribute>
                         </node>
                         <node>
                            <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-left-elbow</name>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Brain-laterality</value>
+                              <value>Body-part</value>
+                              <value>Brain-centricity</value>
+                              <value>Episode-event-count</value>
+                           </attribute>
                         </node>
                         <node>
                            <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-right-elbow</name>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Brain-laterality</value>
+                              <value>Body-part</value>
+                              <value>Brain-centricity</value>
+                              <value>Episode-event-count</value>
+                           </attribute>
                         </node>
                      </node>
                      <node>
                         <name>Semiology-motor-astatic</name>
                         <description>Loss of erect posture that results from an atonic, myoclonic, or tonic mechanism. Synonym: drop attack.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-atonic</name>
                         <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting greater or equal to 1 to 2 s, involving head, trunk, jaw, or limb musculature.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-eye-blinking</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-other-elementary-motor</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5026,45 +6036,125 @@ This project was supported by the by the National Institute of Mental Health of 
                      <node>
                         <name>Semiology-motor-automatisms-mimetic</name>
                         <description>Facial expression suggesting an emotional state, often fear.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-oroalimentary</name>
                         <description>Lip smacking, lip pursing, chewing, licking, tooth grinding, or swallowing.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-dacrystic</name>
                         <description>Bursts of crying.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-dyspraxic</name>
                         <description>Inability to perform learned movements spontaneously or on command or imitation despite intact relevant motor and sensory systems and adequate comprehension and cooperation.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-manual</name>
                         <description>1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-gestural</name>
                         <description>Semipurposive, asynchronous hand movements. Often unilateral.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-pedal</name>
                         <description>1. Indicates principally distal components, bilateral or unilateral. 2. Fumbling, tapping, manipulating movements.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-hypermotor</name>
                         <description>1. Involves predominantly proximal limb or axial muscles producing irregular sequential ballistic movements, such as pedaling, pelvic thrusting, thrashing, rocking movements. 2. Increase in rate of ongoing movements or inappropriately rapid performance of a movement.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-hypokinetic</name>
                         <description>A decrease in amplitude and/or rate or arrest of ongoing motor activity.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-automatisms-gelastic</name>
                         <description>Bursts of laughter or giggling, usually without an appropriate affective tone.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-responsiveness</value>
+                           <value>Episode-appearance</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-motor-other-automatisms</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5081,6 +6171,13 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Semiology-motor-behavioral-arrest</name>
                      <description>Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue).</description>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Brain-laterality</value>
+                        <value>Body-part</value>
+                        <value>Brain-centricity</value>
+                        <value>Episode-event-count</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -5090,40 +6187,92 @@ This project was supported by the by the National Institute of Mental Health of 
                      <node>
                         <name>Semiology-sensory-headache</name>
                         <description>Headache occurring in close temporal proximity to the seizure or as the sole seizure manifestation.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-visual</name>
                         <description>Flashing or flickering lights, spots, simple patterns, scotomata, or amaurosis.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-auditory</name>
                         <description>Buzzing, drumming sounds or single tones.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-olfactory</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Body-part</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-gustatory</name>
                         <description>Taste sensations including acidic, bitter, salty, sweet, or metallic.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-epigastric</name>
                         <description>Abdominal discomfort including nausea, emptiness, tightness, churning, butterflies, malaise, pain, and hunger; sensation may rise to chest or throat. Some phenomena may reflect ictal autonomic dysfunction.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-somatosensory</name>
                         <description>Tingling, numbness, electric-shock sensation, sense of movement or desire to move.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-painful</name>
                         <description>Peripheral (lateralized/bilateral), cephalic, abdominal.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-autonomic-sensation</name>
                         <description>A sensation consistent with involvement of the autonomic nervous system, including cardiovascular, gastrointestinal,  sudomotor, vasomotor, and thermoregulatory functions. (Thus autonomic aura; cf. autonomic events  3.0).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-sensory-other</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5142,27 +6291,53 @@ This project was supported by the by the National Institute of Mental Health of 
                      <node>
                         <name>Semiology-experiential-affective-emotional</name>
                         <description>Components include fear, depression, joy, and (rarely) anger.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-experiential-hallucinatory</name>
                         <description>Composite perceptions without corresponding external stimuli involving visual, auditory, somatosensory, olfactory, and/or gustatory phenomena. Example: hearing  and seeing  people talking.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-experiential-illusory</name>
                         <description>An alteration of actual percepts involving the visual, auditory, somatosensory, olfactory, or gustatory systems.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-experiential-mnemonic</name>
                         <description>Components that reflect ictal dysmnesia such as feelings of familiarity (deja-vu) and unfamiliarity (jamais-vu).</description>
                         <node>
                            <name>Semiology-experiential-mnemonic-Deja-vu</name>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Episode-event-count</value>
+                           </attribute>
                         </node>
                         <node>
                            <name>Semiology-experiential-mnemonic-Jamais-vu</name>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Episode-event-count</value>
+                           </attribute>
                         </node>
                      </node>
                      <node>
                         <name>Semiology-experiential-other</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5179,23 +6354,49 @@ This project was supported by the by the National Institute of Mental Health of 
                   <node>
                      <name>Semiology-dyscognitive</name>
                      <description>The term describes events in which (1) disturbance of cognition is the predominant or most apparent feature, and (2a) two or more of the following components are involved, or (2b) involvement of such components remains undetermined. Otherwise, use the more specific term (e.g., mnemonic experiential seizure  or hallucinatory experiential seizure). Components of cognition: ++ perception: symbolic conception of sensory information ++ attention: appropriate selection of a principal perception or task ++ emotion: appropriate affective significance of a perception ++ memory: ability to store and retrieve percepts or concepts ++ executive function: anticipation, selection, monitoring of consequences, and initiation of motor activity including praxis, speech.</description>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Episode-event-count</value>
+                     </attribute>
                   </node>
                   <node>
                      <name>Semiology-language-related</name>
                      <node>
                         <name>Semiology-language-related-vocalization</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-language-related-verbalization</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-language-related-dysphasia</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-language-related-aphasia</name>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-language-related-other</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5214,45 +6415,93 @@ This project was supported by the by the National Institute of Mental Health of 
                      <node>
                         <name>Semiology-autonomic-pupillary</name>
                         <description>Mydriasis, miosis (either bilateral or unilateral).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-hypersalivation</name>
                         <description>Increase in production of saliva leading to uncontrollable drooling</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-respiratory-apnoeic</name>
                         <description>subjective shortness of breath, hyperventilation, stridor, coughing, choking, apnea, oxygen desaturation, neurogenic pulmonary edema.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-cardiovascular</name>
                         <description>Modifications of heart rate (tachycardia, bradycardia), cardiac arrhythmias (such as sinus arrhythmia, sinus arrest, supraventricular tachycardia, atrial premature depolarizations, ventricular premature depolarizations, atrio-ventricular block, bundle branch block, atrioventricular nodal escape rhythm, asystole).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-gastrointestinal</name>
                         <description>Nausea, eructation, vomiting, retching, abdominal sensations, abdominal pain, flatulence, spitting, diarrhea.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-urinary-incontinence</name>
                         <description>urinary urge (intense urinary urge at the beginning of seizures), urinary incontinence, ictal urination (rare symptom of partial seizures without loss of consciousness).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-genital</name>
                         <description>Sexual auras (erotic thoughts and feelings, sexual arousal and orgasm). Genital auras (unpleasant, sometimes painful, frightening or emotionally neutral somatosensory sensations in the genitals that can be accompanied by ictal orgasm). Sexual automatisms (hypermotor movements consisting of writhing, thrusting, rhythmic movements of the pelvis, arms and legs, sometimes associated with picking and rhythmic manipulation of the groin or genitalia, exhibitionism and masturbation).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-vasomotor</name>
                         <description>Flushing or pallor (may be accompanied by feelings of warmth, cold and pain).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-sudomotor</name>
                         <description>Sweating and piloerection (may be accompanied by feelings of warmth, cold and pain).</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-thermoregulatory</name>
                         <description>Hyperthermia, fever.</description>
+                        <attribute>
+                           <name>suggestedTag</name>
+                           <value>Episode-event-count</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Semiology-autonomic-other</name>
+                        <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
+                           <name>extensionAllowed</name>
+                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -5269,6 +6518,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Semiology-manifestation-other</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5283,53 +6538,109 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Postictal-semiology</name>
+               <name>Postictal-semiology-manifestation</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Postictal-semiology-unconscious</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-quick-recovery-of-consciousness</name>
                   <description>Quick recovery of awareness and responsiveness.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-aphasia-or-dysphasia</name>
                   <description>Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-behavioral-change</name>
                   <description>Occurring immediately after a aseizure. Including psychosis, hypomanina, obsessive-compulsive behavior.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-hemianopia</name>
                   <description>Postictal visual loss in a a hemi field.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Brain-laterality</value>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-impaired-cognition</name>
                   <description>Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, execution, praxis, speech.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-dysphoria</name>
                   <description>Depression, irritability, euphoric mood, fear, anxiety.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-headache</name>
                   <description>Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-nose-wiping</name>
                   <description>Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Brain-laterality</value>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-anterograde-amnesia</name>
                   <description>Impaired ability to remember new material.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-retrograde-amnesia</name>
                   <description>Impaired ability to recall previously remember material.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-paresis</name>
                   <description>Todds palsy. Any unilateral postictal dysfunction relating to motor, language, sensory and/or integrative functions.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Brain-laterality</value>
+                     <value>Body-part</value>
+                     <value>Brain-centricity</value>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-semiology-sleep</name>
@@ -5341,6 +6652,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Postictal-semiology-other-unilateral-motor-phenomena</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5388,6 +6705,12 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Postictal-EEG-activity</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Brain-laterality</value>
+                     <value>Body-part</value>
+                     <value>Brain-centricity</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -5756,6 +7079,83 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
+                  <name>Episode-responsiveness</name>
+                  <node>
+                     <name>Episode-responsiveness-preserved</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Episode-responsiveness-affected</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Episode-responsiveness-not-possible-to-determine</name>
+                     <description>Not possible to determine.</description>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Episode-appearance</name>
+                  <node>
+                     <name>Episode-appearance-interactive</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Episode-appearance-spontaneous</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
                   <name>Seizure-dynamics</name>
                   <description>Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).</description>
                   <node>
@@ -5819,10 +7219,112 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Artifact-significance-to-recording</name>
-            <description>It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.</description>
+            <name>Other-finding-property</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
             <node>
-               <name>Recording-not-interpretable-due-to-artifact</name>
+               <name>Artifact-significance-to-recording</name>
+               <description>It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <node>
+                  <name>Recording-not-interpretable-due-to-artifact</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Recording-of-reduced-diagnostic-value-due-to-artifact</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Artifact-does-not-interfere-recording</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Finding-significance-to-recording</name>
+               <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.</description>
+               <node>
+                  <name>Finding-no-definite-abnormality</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Finding-significance-not-possible-to-determine</name>
+                  <description>Not possible to determine.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Finding-frequency</name>
+               <description>Value in Hz (number) typed in.</description>
+               <node>
+                  <name>#</name>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
+                  </attribute>
+                  <attribute>
+                     <name>unitClass</name>
+                     <value>frequencyUnits</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Finding-stopped-by</name>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -5836,7 +7338,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Recording-of-reduced-diagnostic-value-due-to-artifact</name>
+               <name>Finding-triggered-by</name>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -5850,7 +7352,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Artifact-does-not-interfere-recording</name>
+               <name>Finding-unmodified</name>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -7068,5 +8570,5 @@ This project was supported by the by the National Institute of Mental Health of 
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>TPA, April 2022</epilogue>
+   <epilogue>TPA, August 2022</epilogue>
 </HED>
