@@ -18,304 +18,316 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>requireChild</name>
          </attribute>
          <node>
-            <name>Intermittent-photic-stimulation</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
+            <name>Sleep-modulator</name>
             <node>
-               <name>#</name>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>numericClass</value>
-               </attribute>
-               <attribute>
-                  <name>unitClass</name>
-                  <value>frequencyUnits</value>
-               </attribute>
+               <name>Sleep-deprivation</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Sleep-following-sleep-deprivation</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Natural-sleep</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Induced-sleep</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Drowsiness</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Awakening</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
-            <name>Hyperventilation</name>
+            <name>Medication-modulator</name>
             <node>
-               <name>Quality-of-hyperventilation</name>
+               <name>Medication-administered-during-recording</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Medication-withdrawal-or-reduction-during-recording</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+         </node>
+         <node>
+            <name>Eye-modulator</name>
+            <node>
+               <name>Manual-eye-closure</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Manual-eye-opening</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+         </node>
+         <node>
+            <name>Stimulation-modulator</name>
+            <node>
+               <name>Intermittent-photic-stimulation</name>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <node>
-                  <name>Hyperventilation-refused-procedure</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
+                  </attribute>
+                  <attribute>
+                     <name>unitClass</name>
+                     <value>frequencyUnits</value>
+                  </attribute>
                </node>
+            </node>
+            <node>
+               <name>Auditory-stimulation</name>
                <node>
-                  <name>Hyperventilation-poor-effort</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
+            </node>
+            <node>
+               <name>Nociceptive-stimulation</name>
                <node>
-                  <name>Hyperventilation-good-effort</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
+            </node>
+         </node>
+         <node>
+            <name>Other-modulator</name>
+            <node>
+               <name>Hyperventilation</name>
                <node>
-                  <name>Hyperventilation-excellent-effort</name>
+                  <name>Quality-of-hyperventilation</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>Hyperventilation-refused-procedure</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Hyperventilation-poor-effort</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Hyperventilation-good-effort</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Hyperventilation-excellent-effort</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
-         </node>
-         <node>
-            <name>Sleep-deprivation</name>
             <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
+               <name>Physical-effort</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
-         </node>
-         <node>
-            <name>Sleep-following-sleep-deprivation</name>
             <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
+               <name>Cognitive-task</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
-         </node>
-         <node>
-            <name>Natural-sleep</name>
             <node>
-               <name>#</name>
-               <description>Free text.</description>
+               <name>Other-modulator-or-procedure</name>
                <attribute>
-                  <name>takesValue</name>
+                  <name>requireChild</name>
                </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Induced-sleep</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Drowsiness</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Awakening</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Medication-administered-during-recording</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Medication-withdrawal-or-reduction-during-recording</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Manual-eye-closure</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Manual-eye-opening</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Auditory-stimulation</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Nociceptive-stimulation</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Physical-effort</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Cognitive-task</name>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Other-modulator-or-procedure</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
-               <name>extensionAllowed</name>
-            </attribute>
-            <node>
-               <name>#</name>
-               <description>Free text.</description>
-               <attribute>
-                  <name>takesValue</name>
-               </attribute>
-               <attribute>
-                  <name>valueClass</name>
-                  <value>textClass</value>
-               </attribute>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
          </node>
       </node>
@@ -360,9 +372,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>requireChild</name>
             </attribute>
             <attribute>
-               <name>extensionAllowed</name>
-            </attribute>
-            <attribute>
                <name>suggestedTag</name>
                <value>Delta-activity-morphology</value>
                <value>Theta-activity-morphology</value>
@@ -376,6 +385,17 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
+            <node>
+               <name>#</name>
+               <description>Free text.</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
+            </node>
          </node>
          <node>
             <name>Special-background-activity-feature</name>
@@ -1220,9 +1240,6 @@ This project was supported by the by the National Institute of Mental Health of 
             <attribute>
                <name>requireChild</name>
             </attribute>
-            <attribute>
-               <name>extensionAllowed</name>
-            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -1423,9 +1440,6 @@ This project was supported by the by the National Institute of Mental Health of 
             <attribute>
                <name>requireChild</name>
             </attribute>
-            <attribute>
-               <name>extensionAllowed</name>
-            </attribute>
             <node>
                <name>#</name>
                <description>Free text.</description>
@@ -1576,9 +1590,6 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Other-uncertain-significant-pattern</name>
             <attribute>
                <name>requireChild</name>
-            </attribute>
-            <attribute>
-               <name>extensionAllowed</name>
             </attribute>
             <node>
                <name>#</name>
@@ -1836,9 +1847,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>requireChild</name>
             </attribute>
             <attribute>
-               <name>extensionAllowed</name>
-            </attribute>
-            <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
             </attribute>
@@ -1987,9 +1995,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Other-respiration-feature</name>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -2204,9 +2209,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Other-ECG-feature</name>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -2429,9 +2431,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
-                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2450,9 +2449,6 @@ This project was supported by the by the National Institute of Mental Health of 
             <name>Other-polygraphic-channel</name>
             <attribute>
                <name>requireChild</name>
-            </attribute>
-            <attribute>
-               <name>extensionAllowed</name>
             </attribute>
             <node>
                <name>#</name>
@@ -4189,9 +4185,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
-               <attribute>
-                  <name>extensionAllowed</name>
-               </attribute>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -4295,9 +4288,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Facilitating-factor-other</name>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -5662,9 +5652,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
-                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -6015,9 +6002,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>requireChild</name>
                         </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
-                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -6152,9 +6136,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>requireChild</name>
                         </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
-                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -6270,9 +6251,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>requireChild</name>
                         </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
-                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -6335,9 +6313,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>requireChild</name>
                         </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
-                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -6393,9 +6368,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>Semiology-language-related-other</name>
                         <attribute>
                            <name>requireChild</name>
-                        </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
                         </attribute>
                         <node>
                            <name>#</name>
@@ -6499,9 +6471,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <attribute>
                            <name>requireChild</name>
                         </attribute>
-                        <attribute>
-                           <name>extensionAllowed</name>
-                        </attribute>
                         <node>
                            <name>#</name>
                            <description>Free text.</description>
@@ -6520,9 +6489,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Semiology-manifestation-other</name>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -6654,9 +6620,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Postictal-semiology-other-unilateral-motor-phenomena</name>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>extensionAllowed</name>
                   </attribute>
                   <node>
                      <name>#</name>
