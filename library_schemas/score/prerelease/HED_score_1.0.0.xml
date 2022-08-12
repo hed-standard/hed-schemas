@@ -343,9 +343,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
-               <value>Posterior-dominant-rhythm-frequency</value>
-               <value>Posterior-dominant-rhythm-amplitude-range</value>
-               <value>Posterior-dominant-rhythm-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
                <value>Posterior-dominant-rhythm-frequency-asymmetry</value>
                <value>Posterior-dominant-rhythm-eye-opening-reactivity</value>
                <value>Posterior-dominant-rhythm-organization</value>
@@ -613,7 +611,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -625,7 +623,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -637,7 +635,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -649,7 +647,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -661,7 +659,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -673,7 +671,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Sleep-abnormal-amplitude-asymmetry</value>
+               <value>Finding-amplitude-asymmetry</value>
             </attribute>
          </node>
          <node>
@@ -5220,24 +5218,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>requireChild</name>
             </attribute>
             <node>
-               <name>Posterior-dominant-rhythm-frequency</name>
-               <description>Value in Hz (number) typed in.</description>
-               <node>
-                  <name>#</name>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>numericClass</value>
-                  </attribute>
-                  <attribute>
-                     <name>unitClass</name>
-                     <value>frequencyUnits</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
                <name>Posterior-dominant-rhythm-amplitude-range</name>
                <node>
                   <name>Low-posterior-dominant-rhythm-amplitude-range</name>
@@ -5286,55 +5266,6 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-            </node>
-            <node>
-               <name>Posterior-dominant-rhythm-amplitude-asymmetry</name>
-               <description>A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag.</description>
-               <node>
-                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-left</name>
-                  <description>Amplitude lower on the left side.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-lower-right</name>
-                  <description>Amplitude lower on the right side.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Posterior-dominant-rhythm-amplitude-asymmetry-not-possible-to-determine</name>
                   <description>Not possible to determine.</description>
                   <node>
                      <name>#</name>
@@ -5652,60 +5583,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-            </node>
-         </node>
-         <node>
-            <name>Sleep-property</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <node>
-               <name>Sleep-abnormal-amplitude-asymmetry</name>
-               <description>Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.</description>
-               <node>
-                  <name>Sleep-abnormal-amplitude-asymmetry-exists</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Sleep-abnormal-amplitude-asymmetry-lower-left</name>
-                  <description>Amplitude lower on the left side.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Sleep-abnormal-amplitude-asymmetry-lower-right</name>
-                  <description>Amplitude lower on the right side.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -7284,6 +7161,55 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>unitClass</name>
                      <value>frequencyUnits</value>
                   </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Finding-amplitude-asymmetry</name>
+               <description>For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.</description>
+               <node>
+                  <name>Finding-amplitude-asymmetry-lower-left</name>
+                  <description>Amplitude lower on the left side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Finding-amplitude-asymmetry-lower-right</name>
+                  <description>Amplitude lower on the right side.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Finding-amplitude-asymmetry-not-possible-to-determine</name>
+                  <description>Not possible to determine.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
             </node>
             <node>

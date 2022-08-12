@@ -69,7 +69,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Background-activity''' <nowiki> {requireChild} [An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.]</nowiki>
 
-    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Posterior-dominant-rhythm-frequency, suggestedTag=Posterior-dominant-rhythm-amplitude-range, suggestedTag=Posterior-dominant-rhythm-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-frequency-asymmetry, suggestedTag=Posterior-dominant-rhythm-eye-opening-reactivity, suggestedTag=Posterior-dominant-rhythm-organization, suggestedTag=Posterior-dominant-rhythm-caveat, suggestedTag=Absence-of-posterior-dominant-rhythm}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.]</nowiki>
+    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency suggestedTag=Posterior-dominant-rhythm-amplitude-range, suggestedTag=Finding-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-frequency-asymmetry, suggestedTag=Posterior-dominant-rhythm-eye-opening-reactivity, suggestedTag=Posterior-dominant-rhythm-organization, suggestedTag=Posterior-dominant-rhythm-caveat, suggestedTag=Absence-of-posterior-dominant-rhythm}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.]</nowiki>
     * Mu-rhythm <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors} [EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.]</nowiki>
     * Other-organized-rhythm <nowiki> {requireChild, suggestedTag=Delta-activity-morphology, suggestedTag=Theta-activity-morphology, suggestedTag=Alpha-activity-morphology, suggestedTag=Beta-activity-morphology, suggestedTag=Gamma-activity-morphology, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfill the criteria of the posterior dominant rhythm.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -104,12 +104,12 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Sleep-stage-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Sleep-spindles <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.]</nowiki>
-    * Sleep-vertex-wave <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.]</nowiki>
-    * Sleep-K-complex <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.]</nowiki>
-    * Sleep-saw-tooth-waves <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [Vertex negative 2-5 Hz waves occuring in series during REM sleep]</nowiki>
-    * Sleep-POSTS <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.]</nowiki>
-    * Hypnagogic-hypersynchrony <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Sleep-abnormal-amplitude-asymmetry} [Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.]</nowiki>
+    * Sleep-spindles <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.]</nowiki>
+    * Sleep-vertex-wave <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.]</nowiki>
+    * Sleep-K-complex <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.]</nowiki>
+    * Sleep-saw-tooth-waves <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Vertex negative 2-5 Hz waves occuring in series during REM sleep]</nowiki>
+    * Sleep-POSTS <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.]</nowiki>
+    * Hypnagogic-hypersynchrony <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.]</nowiki>
     * Non-reactive-sleep <nowiki> [EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken.]</nowiki>
 
 
@@ -734,8 +734,6 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Posterior-dominant-rhythm-property <nowiki> {requireChild} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
-        **  Posterior-dominant-rhythm-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
 
         ** Posterior-dominant-rhythm-amplitude-range
             *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV).]</nowiki>
@@ -745,14 +743,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-        ** Posterior-dominant-rhythm-amplitude-asymmetry <nowiki>[A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
-            *** Posterior-dominant-rhythm-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
@@ -806,14 +796,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Absence-of-posterior-dominant-rhythm-other-causes {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Sleep-property {requireChild}
-        ** Sleep-abnormal-amplitude-asymmetry <nowiki>[Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.]</nowiki>
-            *** Sleep-abnormal-amplitude-asymmetry-exists
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Sleep-abnormal-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Sleep-abnormal-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * Episode-property {requireChild}
         ** Epileptic-seizure-classification <nowiki> {requireChild} [Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
             *** Motor-onset-epileptic-seizure
@@ -1054,8 +1036,17 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        
         ** Finding-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+        ** Finding-amplitude-asymmetry <nowiki>[For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.]</nowiki>
+            *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Finding-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Finding-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
         ** Finding-stopped-by
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Finding-triggered-by
