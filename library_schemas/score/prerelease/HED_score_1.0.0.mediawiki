@@ -29,11 +29,13 @@ This project was supported by the by the National Institute of Mental Health of 
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Awakening
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+    
     * Medication-modulator
         ** Medication-administered-during-recording
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Medication-withdrawal-or-reduction-during-recording
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>    
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki> 
+   
     * Eye-modulator
         ** Manual-eye-closure
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -320,36 +322,38 @@ This project was supported by the by the National Institute of Mental Health of 
 '''Finding-property''' <nowiki>{requireChild} [Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
     
     * Signal-morphology-property {requireChild}
-        ** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
-            ***  Delta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            ***  Delta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).]</nowiki>
-            ***  Theta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            ***  Theta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).]</nowiki>
-            ***  Alpha-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            ***  Alpha-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
-            *** Beta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            *** Beta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Gamma-activity-morphology
-            ***  Gamma-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-            ***  Gamma-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        
+        ** Rhythmic-activity-morphology <nowiki>[EEG activity consisting of a sequence of waves approximately constant period.]</nowiki>
+            *** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
+                ****  Delta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                ****  Delta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).]</nowiki>
+                ****  Theta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                ****  Theta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).]</nowiki>
+                ****  Alpha-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                ****  Alpha-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
+                **** Beta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                **** Beta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Gamma-activity-morphology
+                ****  Gamma-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                ****  Gamma-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -375,8 +379,21 @@ This project was supported by the by the National Institute of Mental Health of 
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Fast-spike-activity-morphology <nowiki>[A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Low-voltage-fast-activity-morphology <nowiki>[Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Polysharp-waves-morphology <nowiki>[A sequence of two or more sharp-waves.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Slow-wave-large-amplitude-morphology
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Irregular-delta-or-theta-activity-morphology <nowiki>[EEG activity consisting of repetitive waves of inconsistent wave-duration but in delta and/or theta rang (greater than 125 ms).]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Electrodecremental-change-morphology <nowiki>[Sudden desynchronization of electrical activity.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** DC-shift-morphology <nowiki>[Shift of negative polarity of the direct current recordings, during seizures.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Disappearance-of-ongoing-activity-morphology <nowiki>[Disappearance of the EEG activity that preceded the ictal event but still remnants of background activity (thus not enough to name it electrodecremental change).]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Polymorphic-delta-activity-morphology <nowiki>[EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -387,8 +404,8 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Periodic-discharges-morphology <nowiki>[Periodic discharges not further specified (PDs).]</nowiki>
-            *** Periodic-discharges-superimposed-activity
+        ** Periodic-discharges-morphology <nowiki> {requireChild} [Periodic discharges not further specified (PDs).]</nowiki>
+            *** Periodic-discharges-superimposed-activity {requireChild}
                 **** Periodic-discharges-fast-superimposed-activity
                     *****  Periodic-discharges-fast-superimposed-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
                         ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
@@ -400,7 +417,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharges-superimposed-activity-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-sharpness
+            *** Periodic-discharge-sharpness {requireChild}
                 **** Spiky-periodic-discharge-sharpness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Sharp-periodic-discharge-sharpness
@@ -412,7 +429,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-sharpness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Number-of-periodic-discharge-phases
+            *** Number-of-periodic-discharge-phases {requireChild}
                 **** 1-periodic-discharge-phase
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** 2-periodic-discharge-phases
@@ -424,7 +441,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Number-of-periodic-discharge-phases-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-triphasic-morphology
+            *** Periodic-discharge-triphasic-morphology {requireChild}
                 **** Periodic-discharge-triphasic-morphology-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-periodic-discharge-triphasic-morphology
@@ -432,7 +449,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-triphasic-morphology-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-absolute-amplitude
+            *** Periodic-discharge-absolute-amplitude {requireChild}
                 **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[Lower than 20 microV.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Low-periodic-discharge-absolute-amplitude <nowiki>[20 to 49 microV.]</nowiki>
@@ -444,7 +461,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-absolute-amplitude-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-relative-amplitude
+            *** Periodic-discharge-relative-amplitude {requireChild}
                 **** Periodic-discharge-relative-amplitude-less-than-equal-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-relative-amplitude-greater-than-2
@@ -452,7 +469,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-relative-amplitude-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-polarity
+            *** Periodic-discharge-polarity {requireChild}
                 **** Positive-periodic-discharge-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Negative-periodic-discharge-polarity
@@ -461,8 +478,8 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Finding-source-analysis <nowiki> {requireChild}[How the current in the brain reaches the electrode sensors.]</nowiki>
-        ** Finding-source-analysis-laterality <nowiki> {requireChild,suggestedTag=Brain-region} [Uses Location-property/Laterality tags.] </nowiki>
-        ** Finding-source-analysis {requireChild}
+        ** Finding-source-analysis-laterality <nowiki> {requireChild,suggestedTag=Brain-laterality} </nowiki>
+        ** Finding-source-analysis-brain-region {requireChild}
             *** Finding-source-analysis-frontal-perisylvian-superior-surface
             *** Finding-source-analysis-frontal-lateral
             *** Finding-source-analysis-frontal-mesial
@@ -550,12 +567,12 @@ This project was supported by the by the National Institute of Mental Health of 
 
 
     * Modulators-property <nowiki> {requireChild}[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
-        ** Modulators-reactivity <nowiki>[Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
+        ** Modulators-reactivity <nowiki> {requireChild} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
             *** Modulators-reactive
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Modulators-not-reactive
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Eye-closure-sensitivity <nowiki>[Eye closure sensitivity.]</nowiki>
+        ** Eye-closure-sensitivity <nowiki> {requireChild} [Eye closure sensitivity.]</nowiki>
             *** Eye-closure-sensitivity-exists
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** No-eye-closure-sensitivity
@@ -598,17 +615,17 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Facilitating-factor-other {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Provocative-factor <nowiki>[Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.]</nowiki>
+        ** Provocative-factor <nowiki> {requireChild} [Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.]</nowiki>
             *** Hyperventilation-provoked
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Reflex-provoked
                  **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Medication-effect-clinical <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications clinical effect. Used with base schema Increasing/Decreasing.]</nowiki>
         ** Medication-reduction-effect-clinical <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications reduction or withdrawal clinical effect. Used with base schema Increasing/Decreasing.]</nowiki>
-        ** Other-modulators-effect-clinical
+        ** Other-modulators-effect-clinical {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Intermittent-photic-stimulation-effect
+        ** Intermittent-photic-stimulation-effect {requireChild}
             *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 ****  Posterior-stimulus-dependent-intermittent-photic-stimulation-response-frequency <nowiki>[Hz Values (numbers) typed in.]</nowiki>
@@ -636,7 +653,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Unmodified-intermittent-photic-stimulation-effect
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Modulators-effect <nowiki>[Tags for describing the influence of the modulators]</nowiki>
+        ** Modulators-effect <nowiki> {requireChild} [Tags for describing the influence of the modulators]</nowiki>
             *** Modulators-effect-continuous-during-NRS <nowiki>[Continuous during non-rapid-eye-movement-sleep (NRS)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Modulators-effect-only-during
@@ -644,8 +661,8 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Modulators-effect-change-of-patterns <nowiki>[Change of patterns during sleep/awakening.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Time-related-property <nowiki>{requireChild} [Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
-        ** Appearance-mode <nowiki>{requireChild} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
+    * Time-related-property <nowiki> {requireChild} [Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
+        ** Appearance-mode <nowiki> {requireChild} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
             *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).]</nowiki>
@@ -674,8 +691,8 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Finding-extent <nowiki>[Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
-        ** Periodic-discharge-time-related-features <nowiki>[Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
-            *** Periodic-discharge-duration
+        ** Periodic-discharge-time-related-features <nowiki> {requireChild} [Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
+            *** Periodic-discharge-duration {requireChild}
                 **** Very-brief-periodic-discharge-duration <nowiki>[Less than 10 sec.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Brief-periodic-discharge-duration <nowiki>[10 to 59 sec.]</nowiki>
@@ -688,14 +705,14 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-duration-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-onset
+            *** Periodic-discharge-onset {requireChild}
                 **** Sudden-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Gradual-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-onset-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-dynamics
+            *** Periodic-discharge-dynamics {requireChild}
                 **** Evolving-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Fluctuating-periodic-discharge-dynamics
@@ -705,9 +722,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-dynamics-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    
-    
-        ** Finding-incidence <nowiki>[How often it occurs/time-epoch.]</nowiki>
+        ** Finding-incidence <nowiki> {requireChild} [How often it occurs/time-epoch.]</nowiki>
             *** Only-once-finding-incidence
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Rare-finding-incidence <nowiki>[less than 1/h]</nowiki>
@@ -721,7 +736,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-prevalence <nowiki>[The percentage of the recording covered by the train/burst.]</nowiki>
+        ** Finding-prevalence <nowiki> {requireChild} [The percentage of the recording covered by the train/burst.]</nowiki>
             *** Rare-finding-prevalence <nowiki>[Less than 1 precent.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Occasional-finding-prevalence <nowiki>[1 to 9 percent.]</nowiki>
@@ -735,7 +750,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
     * Posterior-dominant-rhythm-property <nowiki> {requireChild} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
 
-        ** Posterior-dominant-rhythm-amplitude-range
+        ** Posterior-dominant-rhythm-amplitude-range {requireChild}
             *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV).]</nowiki>
@@ -745,13 +760,13 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki>[When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
+        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki> {requireChild} [When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-left <nowiki>[Hz lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-right <nowiki>[Hz lower on the right side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki>[Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {requireChild} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-exists <nowiki>[When annotated Yes.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity.]</nowiki>
@@ -763,7 +778,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-organization <nowiki>[When normal could be labeled with base schema Normal tag.]</nowiki>
+        ** Posterior-dominant-rhythm-organization <nowiki> {requireChild} [When normal could be labeled with base schema Normal tag.]</nowiki>
             *** Posterior-dominant-rhythm-organization-poorly-organized <nowiki>[Poorly organized.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized.]</nowiki>
@@ -771,7 +786,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-caveat <nowiki>[Caveat to the annotation of PDR.]</nowiki>
+        ** Posterior-dominant-rhythm-caveat <nowiki> {requireChild} [Caveat to the annotation of PDR.]</nowiki>
             *** No-posterior-dominant-rhythm-caveat
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording
@@ -782,7 +797,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-caveat-only-following-hyperventilation
 
-        ** Absence-of-posterior-dominant-rhythm <nowiki>[Reason for absence of PDR.]</nowiki>
+        ** Absence-of-posterior-dominant-rhythm <nowiki> {requireChild} [Reason for absence of PDR.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-artifacts
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage
@@ -925,19 +940,20 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Postictal-semiology-other-unilateral-motor-phenomena {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Polygraphic-channel-relation-to-episode
+        ** Polygraphic-channel-relation-to-episode {requireChild}
             *** Polygraphic-channel-cause-to-episode
             *** Polygraphic-channel-consequence-of-episode
             *** Polygraphic-channel-relation-to-episode-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Ictal-EEG-patterns
-            *** Ictal-EEG-patterns-obscured-by-artifacts
-            *** Ictal-EEG-activity
+            *** Ictal-EEG-patterns-obscured-by-artifacts <nowiki>[The interpretation of the EEG is not possible due to artifacts.]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Ictal-EEG-activity {suggestedTag=Polyspikes-morphology, suggestedTag=Fast-spike-activity-morphology, suggestedTag=Low-voltage-fast-activity-morphology, suggestedTag=Polysharp-waves-morphology, suggestedTag=Spike-and-slow-wave-morphology, suggestedTag=Polyspike-and-slow-wave-morphology, suggestedTag=Sharp-and-slow-wave-morphology, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Slow-wave-large-amplitude-morphology, suggestedTag=Irregular-delta-or-theta-activity-morphology, suggestedTag=Electrodecremental-change-morphology, suggestedTag=DC-shift-morphology, suggestedTag=Disappearance-of-ongoing-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-source-analysis-laterality, suggestedTag=Finding-source-analysis-brain-region,suggestedTag=Episode-event-count}
             *** Postictal-EEG-activity {suggestedTag=Brain-laterality, suggestedTag=Body-part, suggestedTag=Brain-centricity}
 
         ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.]</nowiki>
-            *** Episode-consciousness
+            *** Episode-consciousness {requireChild}
                 **** Episode-consciousness-not-tested
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-consciousness-affected
@@ -949,7 +965,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-consciousness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-awareness
+            *** Episode-awareness {requireChild}
                 **** Episode-awareness-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-episode-awareness
@@ -957,7 +973,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-awareness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Clinical-EEG-temporal-relationship
+            *** Clinical-EEG-temporal-relationship {requireChild}
                 **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds.]</nowiki>
@@ -973,7 +989,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-event-count-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** State-episode-start <nowiki>[State at the start of the episode.]</nowiki>
+            *** State-episode-start <nowiki> {requireChild} [State at the start of the episode.]</nowiki>
                 **** Episode-start-from-sleep
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-start-from-awake
@@ -986,19 +1002,19 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-postictal-phase-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-prodrome <nowiki>[Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
+            *** Episode-prodrome <nowiki> {requireChild} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
                 **** Episode-prodrome-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-episode-prodrome
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-tongue-biting
+            *** Episode-tongue-biting {requireChild}
                 **** Episode-tongue-biting-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-episode-tongue-biting
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-responsiveness
+            *** Episode-responsiveness {requireChild}
                 **** Episode-responsiveness-preserved
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-responsiveness-affected
@@ -1006,13 +1022,13 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-responsiveness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-appearance
+            *** Episode-appearance {requireChild}
                 **** Episode-appearance-interactive
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-appearance-spontaneous
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Seizure-dynamics <nowiki>[Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).]</nowiki>
+            *** Seizure-dynamics <nowiki> {requireChild} [Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).]</nowiki>
                 **** Seizure-dynamics-evolution-morphology
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Seizure-dynamics-evolution-frequency
@@ -1031,7 +1047,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Artifact-does-not-interfere-recording
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Finding-significance-to-recording <nowiki>[Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.]</nowiki>
+        ** Finding-significance-to-recording <nowiki> {requireChild} [Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.]</nowiki>
             *** Finding-no-definite-abnormality
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
@@ -1039,7 +1055,7 @@ This project was supported by the by the National Institute of Mental Health of 
         
         ** Finding-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-        ** Finding-amplitude-asymmetry <nowiki>[For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.]</nowiki>
+        ** Finding-amplitude-asymmetry <nowiki> {requireChild} [For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>

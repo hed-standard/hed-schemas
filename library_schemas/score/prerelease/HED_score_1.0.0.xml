@@ -2473,257 +2473,261 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>requireChild</name>
             </attribute>
             <node>
-               <name>Delta-activity-morphology</name>
-               <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
+               <name>Rhythmic-activity-morphology</name>
+               <description>EEG activity consisting of a sequence of waves approximately constant period.</description>
                <node>
-                  <name>Delta-activity-frequency</name>
-                  <description>Value in Hz (number) typed in.</description>
+                  <name>Delta-activity-morphology</name>
+                  <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
+                  <node>
+                     <name>Delta-activity-frequency</name>
+                     <description>Value in Hz (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Delta-activity-amplitude</name>
+                     <description>Value in microvolts (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>electricPotentialUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>#</name>
+                     <description>Free text.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
                <node>
-                  <name>Delta-activity-amplitude</name>
-                  <description>Value in microvolts (number) typed in.</description>
+                  <name>Theta-activity-morphology</name>
+                  <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).</description>
+                  <node>
+                     <name>Theta-activity-frequency</name>
+                     <description>Value in Hz (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Theta-activity-amplitude</name>
+                     <description>Value in microvolts (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>electricPotentialUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>#</name>
+                     <description>Free text.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>electricPotentialUnits</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Theta-activity-morphology</name>
-               <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).</description>
-               <node>
-                  <name>Theta-activity-frequency</name>
-                  <description>Value in Hz (number) typed in.</description>
+                  <name>Alpha-activity-morphology</name>
+                  <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).</description>
+                  <node>
+                     <name>Alpha-activity-frequency</name>
+                     <description>Value in Hz (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Alpha-activity-amplitude</name>
+                     <description>Value in microvolts (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>electricPotentialUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>#</name>
+                     <description>Free text.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
                <node>
-                  <name>Theta-activity-amplitude</name>
-                  <description>Value in microvolts (number) typed in.</description>
+                  <name>Beta-activity-morphology</name>
+                  <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
+                  <node>
+                     <name>Beta-activity-frequency</name>
+                     <description>Value in Hz (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Beta-activity-amplitude</name>
+                     <description>Value in microvolts (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>electricPotentialUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>#</name>
+                     <description>Free text.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>electricPotentialUnits</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
                </node>
                <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Alpha-activity-morphology</name>
-               <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).</description>
-               <node>
-                  <name>Alpha-activity-frequency</name>
-                  <description>Value in Hz (number) typed in.</description>
+                  <name>Gamma-activity-morphology</name>
+                  <node>
+                     <name>Gamma-activity-frequency</name>
+                     <description>Value in Hz (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Gamma-activity-amplitude</name>
+                     <description>Value in microvolts (number) typed in.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>electricPotentialUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>#</name>
+                     <description>Free text.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
+                        <value>textClass</value>
                      </attribute>
                   </node>
-               </node>
-               <node>
-                  <name>Alpha-activity-amplitude</name>
-                  <description>Value in microvolts (number) typed in.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>electricPotentialUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Beta-activity-morphology</name>
-               <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
-               <node>
-                  <name>Beta-activity-frequency</name>
-                  <description>Value in Hz (number) typed in.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Beta-activity-amplitude</name>
-                  <description>Value in microvolts (number) typed in.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>electricPotentialUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Gamma-activity-morphology</name>
-               <node>
-                  <name>Gamma-activity-frequency</name>
-                  <description>Value in Hz (number) typed in.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>frequencyUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Gamma-activity-amplitude</name>
-                  <description>Value in microvolts (number) typed in.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>unitClass</name>
-                        <value>electricPotentialUnits</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
                </node>
             </node>
             <node>
@@ -2893,14 +2897,121 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Fast-spike-activity-morphology</name>
                <description>A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Low-voltage-fast-activity-morphology</name>
                <description>Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Polysharp-waves-morphology</name>
                <description>A sequence of two or more sharp-waves.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Slow-wave-large-amplitude-morphology</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Irregular-delta-or-theta-activity-morphology</name>
+               <description>EEG activity consisting of repetitive waves of inconsistent wave-duration but in delta and/or theta rang (greater than 125 ms).</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Electrodecremental-change-morphology</name>
+               <description>Sudden desynchronization of electrical activity.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>DC-shift-morphology</name>
+               <description>Shift of negative polarity of the direct current recordings, during seizures.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Disappearance-of-ongoing-activity-morphology</name>
+               <description>Disappearance of the EEG activity that preceded the ictal event but still remnants of background activity (thus not enough to name it electrodecremental change).</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
             </node>
             <node>
                <name>Polymorphic-delta-activity-morphology</name>
@@ -2965,8 +3076,14 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Periodic-discharges-morphology</name>
                <description>Periodic discharges not further specified (PDs).</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Periodic-discharges-superimposed-activity</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Periodic-discharges-fast-superimposed-activity</name>
                      <node>
@@ -3049,6 +3166,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-sharpness</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Spiky-periodic-discharge-sharpness</name>
                      <node>
@@ -3123,6 +3243,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Number-of-periodic-discharge-phases</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>1-periodic-discharge-phase</name>
                      <node>
@@ -3197,6 +3320,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-triphasic-morphology</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Periodic-discharge-triphasic-morphology-exists</name>
                      <node>
@@ -3243,6 +3369,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-absolute-amplitude</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Periodic-discharge-absolute-amplitude-very-low</name>
                      <description>Lower than 20 microV.</description>
@@ -3321,6 +3450,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-relative-amplitude</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-less-than-equal-2</name>
                      <node>
@@ -3367,6 +3499,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-polarity</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Positive-periodic-discharge-polarity</name>
                      <node>
@@ -3420,17 +3555,16 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
             <node>
                <name>Finding-source-analysis-laterality</name>
-               <description>Uses Location-property/Laterality tags.</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Brain-region</value>
+                  <value>Brain-laterality</value>
                </attribute>
             </node>
             <node>
-               <name>Finding-source-analysis</name>
+               <name>Finding-source-analysis-brain-region</name>
                <attribute>
                   <name>requireChild</name>
                </attribute>
@@ -3945,6 +4079,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Modulators-reactivity</name>
                <description>Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Modulators-reactive</name>
                   <node>
@@ -3977,6 +4114,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Eye-closure-sensitivity</name>
                <description>Eye closure sensitivity.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Eye-closure-sensitivity-exists</name>
                   <node>
@@ -4303,6 +4443,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Provocative-factor</name>
                <description>Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Hyperventilation-provoked</name>
                   <node>
@@ -4352,6 +4495,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Other-modulators-effect-clinical</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -4366,6 +4512,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Intermittent-photic-stimulation-effect</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</name>
                   <node>
@@ -4578,6 +4727,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Modulators-effect</name>
                <description>Tags for describing the influence of the modulators</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Modulators-effect-continuous-during-NRS</name>
                   <description>Continuous during non-rapid-eye-movement-sleep (NRS)</description>
@@ -4838,8 +4990,14 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Periodic-discharge-time-related-features</name>
                <description>Periodic discharges not further specified (PDs) time-relayed features tags.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Periodic-discharge-duration</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Very-brief-periodic-discharge-duration</name>
                      <description>Less than 10 sec.</description>
@@ -4933,6 +5091,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-onset</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Sudden-periodic-discharge-onset</name>
                      <node>
@@ -4979,6 +5140,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Periodic-discharge-dynamics</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Evolving-periodic-discharge-dynamics</name>
                      <node>
@@ -5041,6 +5205,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Finding-incidence</name>
                <description>How often it occurs/time-epoch.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Only-once-finding-incidence</name>
                   <node>
@@ -5134,6 +5301,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Finding-prevalence</name>
                <description>The percentage of the recording covered by the train/burst.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Rare-finding-prevalence</name>
                   <description>Less than 1 precent.</description>
@@ -5219,6 +5389,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
             <node>
                <name>Posterior-dominant-rhythm-amplitude-range</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Low-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Low (less than 20 microV).</description>
@@ -5283,6 +5456,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Posterior-dominant-rhythm-frequency-asymmetry</name>
                <description>When symmetrical could be labeled with base schema Symmetrical tag.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Posterior-dominant-rhythm-frequency-asymmetry-lower-left</name>
                   <description>Hz lower on the left side.</description>
@@ -5317,6 +5493,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Posterior-dominant-rhythm-eye-opening-reactivity</name>
                <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
                   <description>When annotated Yes.</description>
@@ -5396,6 +5575,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Posterior-dominant-rhythm-organization</name>
                <description>When normal could be labeled with base schema Normal tag.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Posterior-dominant-rhythm-organization-poorly-organized</name>
                   <description>Poorly organized.</description>
@@ -5445,6 +5627,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Posterior-dominant-rhythm-caveat</name>
                <description>Caveat to the annotation of PDR.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>No-posterior-dominant-rhythm-caveat</name>
                   <node>
@@ -5508,6 +5693,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Absence-of-posterior-dominant-rhythm</name>
                <description>Reason for absence of PDR.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Absence-of-posterior-dominant-rhythm-artifacts</name>
                   <node>
@@ -6513,6 +6701,9 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Polygraphic-channel-relation-to-episode</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Polygraphic-channel-cause-to-episode</name>
                </node>
@@ -6539,9 +6730,43 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Ictal-EEG-patterns</name>
                <node>
                   <name>Ictal-EEG-patterns-obscured-by-artifacts</name>
+                  <description>The interpretation of the EEG is not possible due to artifacts.</description>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Ictal-EEG-activity</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Polyspikes-morphology</value>
+                     <value>Fast-spike-activity-morphology</value>
+                     <value>Low-voltage-fast-activity-morphology</value>
+                     <value>Polysharp-waves-morphology</value>
+                     <value>Spike-and-slow-wave-morphology</value>
+                     <value>Polyspike-and-slow-wave-morphology</value>
+                     <value>Sharp-and-slow-wave-morphology</value>
+                     <value>Rhythmic-activity-morphology</value>
+                     <value>Slow-wave-large-amplitude-morphology</value>
+                     <value>Irregular-delta-or-theta-activity-morphology</value>
+                     <value>Electrodecremental-change-morphology</value>
+                     <value>DC-shift-morphology</value>
+                     <value>Disappearance-of-ongoing-activity-morphology</value>
+                     <value>Brain-laterality</value>
+                     <value>Brain-region</value>
+                     <value>Sensors</value>
+                     <value>Finding-source-analysis-laterality</value>
+                     <value>Finding-source-analysis-brain-region</value>
+                     <value>Episode-event-count</value>
+                  </attribute>
                </node>
                <node>
                   <name>Postictal-EEG-activity</name>
@@ -6558,6 +6783,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.</description>
                <node>
                   <name>Episode-consciousness</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-consciousness-not-tested</name>
                      <node>
@@ -6632,6 +6860,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Episode-awareness</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-awareness-exists</name>
                      <node>
@@ -6678,6 +6909,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Clinical-EEG-temporal-relationship</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Clinical-start-followed-EEG</name>
                      <description>Clinical start, followed by EEG start by X seconds.</description>
@@ -6779,6 +7013,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>State-episode-start</name>
                   <description>State at the start of the episode.</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-start-from-sleep</name>
                      <node>
@@ -6858,6 +7095,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Episode-prodrome</name>
                   <description>Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-prodrome-exists</name>
                      <node>
@@ -6889,6 +7129,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Episode-tongue-biting</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-tongue-biting-exists</name>
                      <node>
@@ -6920,6 +7163,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Episode-responsiveness</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-responsiveness-preserved</name>
                      <node>
@@ -6966,6 +7212,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Episode-appearance</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Episode-appearance-interactive</name>
                      <node>
@@ -6998,6 +7247,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Seizure-dynamics</name>
                   <description>Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Seizure-dynamics-evolution-morphology</name>
                      <node>
@@ -7115,6 +7367,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Finding-significance-to-recording</name>
                <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Finding-no-definite-abnormality</name>
                   <node>
@@ -7166,6 +7421,9 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Finding-amplitude-asymmetry</name>
                <description>For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <node>
                   <name>Finding-amplitude-asymmetry-lower-left</name>
                   <description>Amplitude lower on the left side.</description>
