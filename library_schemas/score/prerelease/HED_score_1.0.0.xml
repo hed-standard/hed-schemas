@@ -496,7 +496,7 @@ This project was supported by the by the National Institute of Mental Health of 
             <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-not-possible-to-determine</value>
+               <value>Property-not-possible-to-determine</value>
             </attribute>
             <node>
                <name>Normal-sleep-architecture</name>
@@ -513,7 +513,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-not-possible-to-determine</value>
+               <value>Property-not-possible-to-determine</value>
                <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
@@ -3061,7 +3061,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharges-fast-superimposed-activity</name>
@@ -3135,7 +3135,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Spiky-periodic-discharge-sharpness</name>
@@ -3201,7 +3201,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>1-periodic-discharge-phase</name>
@@ -3267,7 +3267,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-triphasic-morphology-exists</name>
@@ -3305,7 +3305,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-absolute-amplitude-very-low</name>
@@ -3375,7 +3375,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-less-than-equal-2</name>
@@ -3936,7 +3936,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                </attribute>
                <node>
                   <name>Multifocal-observed</name>
@@ -4049,7 +4049,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Passive eye opening. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
@@ -4060,7 +4060,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
@@ -4070,7 +4070,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
@@ -4080,7 +4080,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
@@ -4090,7 +4090,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
@@ -4101,7 +4101,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
@@ -4112,7 +4112,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
@@ -4590,7 +4590,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                </attribute>
                <node>
                   <name>Random-appearance-mode</name>
@@ -4789,7 +4789,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Very-brief-periodic-discharge-duration</name>
@@ -4874,7 +4874,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Sudden-periodic-discharge-onset</name>
@@ -4912,7 +4912,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Evolving-periodic-discharge-dynamics</name>
@@ -5150,7 +5150,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                </attribute>
                <node>
                   <name>Low-posterior-dominant-rhythm-amplitude-range</name>
@@ -5243,7 +5243,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                </attribute>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
@@ -6440,7 +6440,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Finding-not-possible-to-determine</value>
+                  <value>Property-not-possible-to-determine</value>
                </attribute>
                <node>
                   <name>Polygraphic-channel-cause-to-episode</name>
@@ -6511,7 +6511,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-consciousness-not-tested</name>
@@ -6574,7 +6574,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Episode-awareness</name>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-awareness-exists</name>
@@ -6609,7 +6609,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Clinical-EEG-temporal-relationship</name>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Clinical-start-followed-EEG</name>
@@ -6670,7 +6670,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <description>Number of stereotypical episodes during the recording.</description>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -6691,7 +6691,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-start-from-sleep</name>
@@ -6726,7 +6726,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Episode-postictal-phase</name>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -6819,7 +6819,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <attribute>
                      <name>suggestedTag</name>
-                     <value>Finding-not-possible-to-determine</value>
+                     <value>Property-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-responsiveness-preserved</name>
@@ -7153,7 +7153,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Finding-not-possible-to-determine</name>
+               <name>Property-not-possible-to-determine</name>
                <description>Not possible to determine.</description>
                <node>
                   <name>#</name>
