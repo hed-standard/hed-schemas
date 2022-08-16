@@ -88,13 +88,11 @@ This project was supported by the by the National Institute of Mental Health of 
 
 '''Sleep-and-drowsiness''' <nowiki> {requireChild} [The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).]</nowiki>
 
-    * Sleep-architecture <nowiki> [For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.]</nowiki>
+    * Sleep-architecture <nowiki> {suggestedTag=Finding-not-possible-to-determine} [For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.]</nowiki>
         ** Normal-sleep-architecture
         ** Abnormal-sleep-architecture
-        ** Sleep-architecture-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Sleep-stage-reached <nowiki> {requireChild, suggestedTag=Finding-significance-to-recording} [For normal sleep patterns the sleep stages reached during the recording can be specified]</nowiki>
+    * Sleep-stage-reached <nowiki> {requireChild, suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-significance-to-recording} [For normal sleep patterns the sleep stages reached during the recording can be specified]</nowiki>
         ** Sleep-stage-N1 <nowiki>[Sleep stage 1.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sleep-stage-N2 <nowiki>[Sleep stage 2.]</nowiki>
@@ -102,8 +100,6 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Sleep-stage-N3 <nowiki>[Sleep stage 3.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sleep-stage-REM <nowiki>[Rapid eye movement.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Sleep-stage-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Sleep-spindles <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 microV in the adult.]</nowiki>
@@ -405,7 +401,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Periodic-discharges-morphology <nowiki> {requireChild} [Periodic discharges not further specified (PDs).]</nowiki>
-            *** Periodic-discharges-superimposed-activity {requireChild}
+            *** Periodic-discharges-superimposed-activity {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Periodic-discharges-fast-superimposed-activity
                     *****  Periodic-discharges-fast-superimposed-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
                         ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
@@ -414,10 +410,8 @@ This project was supported by the by the National Institute of Mental Health of 
                     *****  Periodic-discharges-rhythmic-superimposed-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
                         ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharges-superimposed-activity-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-sharpness {requireChild}
+            *** Periodic-discharge-sharpness {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Spiky-periodic-discharge-sharpness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Sharp-periodic-discharge-sharpness
@@ -426,10 +420,8 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Blunt-periodic-discharge-sharpness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-sharpness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Number-of-periodic-discharge-phases {requireChild}
+            *** Number-of-periodic-discharge-phases {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** 1-periodic-discharge-phase
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** 2-periodic-discharge-phases
@@ -438,18 +430,14 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Greater-than-3-periodic-discharge-phases
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Number-of-periodic-discharge-phases-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-triphasic-morphology {requireChild}
+            *** Periodic-discharge-triphasic-morphology {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Periodic-discharge-triphasic-morphology-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-periodic-discharge-triphasic-morphology
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-triphasic-morphology-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-absolute-amplitude {requireChild}
+            *** Periodic-discharge-absolute-amplitude {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[Lower than 20 microV.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Low-periodic-discharge-absolute-amplitude <nowiki>[20 to 49 microV.]</nowiki>
@@ -458,18 +446,14 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** High-periodic-discharge-absolute-amplitude <nowiki>[Greater than 200 microV.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-absolute-amplitude-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-relative-amplitude {requireChild}
+            *** Periodic-discharge-relative-amplitude {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Periodic-discharge-relative-amplitude-less-than-equal-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-relative-amplitude-greater-than-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-relative-amplitude-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-polarity {requireChild}
+            *** Periodic-discharge-polarity <nowiki> {requireChild, suggestedTag=} []</nowiki>
                 **** Positive-periodic-discharge-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Negative-periodic-discharge-polarity
@@ -557,14 +541,11 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-propagation-not-observed
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Multifocal-finding <nowiki> {requireChild} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
+        ** Multifocal-finding <nowiki> {requireChild, suggestedTag=Finding-not-possible-to-determine} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
             *** Multifocal-observed
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Multifocal-not-observed
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Multifocal-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
 
     * Modulators-property <nowiki> {requireChild}[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
         ** Modulators-reactivity <nowiki> {requireChild} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
@@ -577,27 +558,13 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** No-eye-closure-sensitivity
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Eye-opening-passive {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by}  <nowiki>  [Passive eye opening. Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Eye-opening-passive-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Medication-effect-EEG <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified}  [Medications effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Medication-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Medication-reduction-effect-EEG <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Medication-reduction-effect-EEG-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Auditive-stimuli-effect <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Auditive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Nociceptive-stimuli-effect <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Nociceptive-stimuli-effect-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Physical-effort-effect <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing]</nowiki>
-            *** Physical-effort-effect-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[free text]</nowiki>
-        ** Cognitive-task-effect <nowiki> {suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing.]</nowiki>
-            *** Cognitive-task-effect-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Eye-opening-passive {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by}  <nowiki>  [Passive eye opening. Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Medication-effect-EEG <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified}  [Medications effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Medication-reduction-effect-EEG <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Auditive-stimuli-effect <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Nociceptive-stimuli-effect <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Physical-effort-effect <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing]</nowiki>
+        ** Cognitive-task-effect <nowiki> {suggestedTag=Finding-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing.]</nowiki>
         ** Other-modulators-effect-EEG {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Facilitating-factor <nowiki>[Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence).]</nowiki>
@@ -662,7 +629,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Time-related-property <nowiki> {requireChild} [Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
-        ** Appearance-mode <nowiki> {requireChild} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
+        ** Appearance-mode <nowiki> {requireChild, suggestedTag=Finding-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
             *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).]</nowiki>
@@ -672,8 +639,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Intermittent-appearance-mode
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Continuous-appearance-mode
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Appearance-mode-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Discharge-pattern <nowiki> {requireChild} [Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
@@ -692,7 +657,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
         ** Periodic-discharge-time-related-features <nowiki> {requireChild} [Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
-            *** Periodic-discharge-duration {requireChild}
+            *** Periodic-discharge-duration {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Very-brief-periodic-discharge-duration <nowiki>[Less than 10 sec.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Brief-periodic-discharge-duration <nowiki>[10 to 59 sec.]</nowiki>
@@ -703,23 +668,17 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Very-long-periodic-discharge-duration <nowiki>[Greater than 1 hour.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-duration-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-onset {requireChild}
+            *** Periodic-discharge-onset {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Sudden-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Gradual-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-onset-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-dynamics {requireChild}
+            *** Periodic-discharge-dynamics {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Evolving-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Fluctuating-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Static-periodic-discharge-dynamics
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-dynamics-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Finding-incidence <nowiki> {requireChild} [How often it occurs/time-epoch.]</nowiki>
@@ -750,14 +709,12 @@ This project was supported by the by the National Institute of Mental Health of 
 
     * Posterior-dominant-rhythm-property <nowiki> {requireChild} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
 
-        ** Posterior-dominant-rhythm-amplitude-range {requireChild}
+        ** Posterior-dominant-rhythm-amplitude-range {requireChild, suggestedTag=Finding-not-possible-to-determine}
             *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV).]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki> {requireChild} [When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
@@ -766,7 +723,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-right <nowiki>[Hz lower on the right side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {requireChild} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {requireChild, suggestedTag=Finding-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-exists <nowiki>[When annotated Yes.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity.]</nowiki>
@@ -774,8 +731,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-rigth <nowiki>[Reduced right side reactivity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[free text]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both <nowiki>[Reduced reactivity on both sides.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Posterior-dominant-rhythm-organization <nowiki> {requireChild} [When normal could be labeled with base schema Normal tag.]</nowiki>
@@ -940,11 +895,9 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Postictal-semiology-other-unilateral-motor-phenomena {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Polygraphic-channel-relation-to-episode {requireChild}
+        ** Polygraphic-channel-relation-to-episode {requireChild, suggestedTag=Finding-not-possible-to-determine}
             *** Polygraphic-channel-cause-to-episode
             *** Polygraphic-channel-consequence-of-episode
-            *** Polygraphic-channel-relation-to-episode-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Ictal-EEG-patterns
             *** Ictal-EEG-patterns-obscured-by-artifacts <nowiki>[The interpretation of the EEG is not possible due to artifacts.]</nowiki>
@@ -953,7 +906,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Postictal-EEG-activity {suggestedTag=Brain-laterality, suggestedTag=Body-part, suggestedTag=Brain-centricity}
 
         ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.]</nowiki>
-            *** Episode-consciousness {requireChild}
+            *** Episode-consciousness {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Episode-consciousness-not-tested
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-consciousness-affected
@@ -962,45 +915,33 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-consciousness-not-affected
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Episode-consciousness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-awareness {requireChild}
+            *** Episode-awareness {suggestedTag=Finding-not-possible-to-determine}
                 **** Episode-awareness-exists
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** No-episode-awareness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Episode-awareness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Clinical-EEG-temporal-relationship {requireChild}
+            *** Clinical-EEG-temporal-relationship {suggestedTag=Finding-not-possible-to-determine}
                 **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** Simultaneous-start-clinical-EEG
-                **** Clinical-EEG-temporal-relationship-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Clinical-EEG-temporal-relationship-notes <nowiki>[Clinical notes to annotate the clinical-EEG temporal relationship.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}</nowiki>
 
-            *** Episode-event-count <nowiki>[Number of stereotypical episodes during the recording.]</nowiki>
+            *** Episode-event-count <nowiki> {suggestedTag=Finding-not-possible-to-determine} [Number of stereotypical episodes during the recording.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-                **** Episode-event-count-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** State-episode-start <nowiki> {requireChild} [State at the start of the episode.]</nowiki>
+            *** State-episode-start <nowiki> {requireChild, suggestedTag=Finding-not-possible-to-determine} [State at the start of the episode.]</nowiki>
                 **** Episode-start-from-sleep
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-start-from-awake
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** State-episode-start-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-postictal-phase
+            *** Episode-postictal-phase {suggestedTag=Finding-not-possible-to-determine}
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-                **** Episode-postictal-phase-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Episode-prodrome <nowiki> {requireChild} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
                 **** Episode-prodrome-exists
@@ -1014,12 +955,10 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** No-episode-tongue-biting
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-responsiveness {requireChild}
+            *** Episode-responsiveness {requireChild, suggestedTag=Finding-not-possible-to-determine}
                 **** Episode-responsiveness-preserved
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-responsiveness-affected
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Episode-responsiveness-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Episode-appearance {requireChild}
@@ -1055,6 +994,7 @@ This project was supported by the by the National Institute of Mental Health of 
         
         ** Finding-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+        
         ** Finding-amplitude-asymmetry <nowiki> {requireChild} [For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -1070,6 +1010,8 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Finding-unmodified
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
+        ** Finding-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 !# end schema
 

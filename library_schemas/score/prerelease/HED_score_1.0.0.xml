@@ -494,26 +494,15 @@ This project was supported by the by the National Institute of Mental Health of 
          <node>
             <name>Sleep-architecture</name>
             <description>For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Finding-not-possible-to-determine</value>
+            </attribute>
             <node>
                <name>Normal-sleep-architecture</name>
             </node>
             <node>
                <name>Abnormal-sleep-architecture</name>
-            </node>
-            <node>
-               <name>Sleep-architecture-not-possible-to-determine</name>
-               <description>Not possible to determine.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
             </node>
          </node>
          <node>
@@ -524,6 +513,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
             <attribute>
                <name>suggestedTag</name>
+               <value>Finding-not-possible-to-determine</value>
                <value>Finding-significance-to-recording</value>
             </attribute>
             <node>
@@ -574,21 +564,6 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Sleep-stage-REM</name>
                <description>Rapid eye movement.</description>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Sleep-stage-not-possible-to-determine</name>
-               <description>Not possible to determine.</description>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
@@ -3084,6 +3059,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>Periodic-discharges-fast-superimposed-activity</name>
                      <node>
@@ -3148,26 +3127,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharges-superimposed-activity-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-sharpness</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Spiky-periodic-discharge-sharpness</name>
@@ -3225,26 +3193,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharge-sharpness-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Number-of-periodic-discharge-phases</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>1-periodic-discharge-phase</name>
@@ -3302,26 +3259,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Number-of-periodic-discharge-phases-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-triphasic-morphology</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-triphasic-morphology-exists</name>
@@ -3351,26 +3297,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharge-triphasic-morphology-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-absolute-amplitude</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-absolute-amplitude-very-low</name>
@@ -3432,26 +3367,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharge-absolute-amplitude-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-relative-amplitude</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-less-than-equal-2</name>
@@ -3469,21 +3393,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>Periodic-discharge-relative-amplitude-greater-than-2</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Periodic-discharge-relative-amplitude-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -4025,6 +3934,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
+               </attribute>
                <node>
                   <name>Multifocal-observed</name>
                   <node>
@@ -4041,21 +3954,6 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Multifocal-not-observed</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Multifocal-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4151,172 +4049,74 @@ This project was supported by the by the National Institute of Mental Health of 
                <description>Passive eye opening. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
                </attribute>
-               <node>
-                  <name>Eye-opening-passive-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Medication-effect-EEG</name>
                <description>Medications effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
-               <node>
-                  <name>Medication-effect-EEG-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
                <description>Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
-               <node>
-                  <name>Medication-reduction-effect-EEG-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                </attribute>
-               <node>
-                  <name>Auditive-stimuli-effect-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
                </attribute>
-               <node>
-                  <name>Nociceptive-stimuli-effect-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Physical-effort-effect</name>
                <description>Used with base schema Increasing/Decreasing</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
                </attribute>
-               <node>
-                  <name>Physical-effort-effect-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>free text</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Cognitive-task-effect</name>
                <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
                </attribute>
-               <node>
-                  <name>Cognitive-task-effect-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
             </node>
             <node>
                <name>Other-modulators-effect-EEG</name>
@@ -4788,6 +4588,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
+               </attribute>
                <node>
                   <name>Random-appearance-mode</name>
                   <description>Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.</description>
@@ -4849,21 +4653,6 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Continuous-appearance-mode</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Appearance-mode-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4998,6 +4787,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>Very-brief-periodic-discharge-duration</name>
                      <description>Less than 10 sec.</description>
@@ -5073,26 +4866,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharge-duration-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-onset</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Sudden-periodic-discharge-onset</name>
@@ -5122,26 +4904,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Periodic-discharge-onset-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Periodic-discharge-dynamics</name>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Evolving-periodic-discharge-dynamics</name>
@@ -5173,21 +4944,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>Static-periodic-discharge-dynamics</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Periodic-discharge-dynamics-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -5392,6 +5148,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
+               </attribute>
                <node>
                   <name>Low-posterior-dominant-rhythm-amplitude-range</name>
                   <description>Low (less than 20 microV).</description>
@@ -5425,21 +5185,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>High-posterior-dominant-rhythm-amplitude-range</name>
                   <description>High (more than 70 microV).</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Posterior-dominant-rhythm-amplitude-range-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5496,6 +5241,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
+               </attribute>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
                   <description>When annotated Yes.</description>
@@ -5544,21 +5293,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both</name>
                   <description>Reduced reactivity on both sides.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -6704,26 +6438,15 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Finding-not-possible-to-determine</value>
+               </attribute>
                <node>
                   <name>Polygraphic-channel-cause-to-episode</name>
                </node>
                <node>
                   <name>Polygraphic-channel-consequence-of-episode</name>
-               </node>
-               <node>
-                  <name>Polygraphic-channel-relation-to-episode-not-possible-to-determine</name>
-                  <description>Not possible to determine.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
                </node>
             </node>
             <node>
@@ -6786,6 +6509,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>Episode-consciousness-not-tested</name>
                      <node>
@@ -6842,26 +6569,12 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Episode-consciousness-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Episode-awareness</name>
                   <attribute>
-                     <name>requireChild</name>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-awareness-exists</name>
@@ -6891,26 +6604,12 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>Episode-awareness-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Clinical-EEG-temporal-relationship</name>
                   <attribute>
-                     <name>requireChild</name>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Clinical-start-followed-EEG</name>
@@ -6952,21 +6651,6 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>Simultaneous-start-clinical-EEG</name>
                   </node>
                   <node>
-                     <name>Clinical-EEG-temporal-relationship-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
                      <name>Clinical-EEG-temporal-relationship-notes</name>
                      <description>Clinical notes to annotate the clinical-EEG temporal relationship.</description>
                      <node>
@@ -6984,6 +6668,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Episode-event-count</name>
                   <description>Number of stereotypical episodes during the recording.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <attribute>
@@ -6994,27 +6682,16 @@ This project was supported by the by the National Institute of Mental Health of 
                         <value>numericClass</value>
                      </attribute>
                   </node>
-                  <node>
-                     <name>Episode-event-count-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>State-episode-start</name>
                   <description>State at the start of the episode.</description>
                   <attribute>
                      <name>requireChild</name>
+                  </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
                   </attribute>
                   <node>
                      <name>Episode-start-from-sleep</name>
@@ -7044,24 +6721,13 @@ This project was supported by the by the National Institute of Mental Health of 
                         </attribute>
                      </node>
                   </node>
-                  <node>
-                     <name>State-episode-start-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Episode-postictal-phase</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <attribute>
@@ -7075,21 +6741,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>unitClass</name>
                         <value>timeUnits</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Episode-postictal-phase-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
@@ -7166,6 +6817,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-not-possible-to-determine</value>
+                  </attribute>
                   <node>
                      <name>Episode-responsiveness-preserved</name>
                      <node>
@@ -7182,21 +6837,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>Episode-responsiveness-affected</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Episode-responsiveness-not-possible-to-determine</name>
-                     <description>Not possible to determine.</description>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -7500,6 +7140,21 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Finding-unmodified</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Finding-not-possible-to-determine</name>
+               <description>Not possible to determine.</description>
                <node>
                   <name>#</name>
                   <description>Free text.</description>
