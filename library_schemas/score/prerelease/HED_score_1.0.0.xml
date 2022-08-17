@@ -3263,39 +3263,21 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Periodic-discharge-triphasic-morphology</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
+                     <value>Property-exists</value>
+                     <value>Property-absence</value>
                   </attribute>
                   <node>
-                     <name>Periodic-discharge-triphasic-morphology-exists</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>No-periodic-discharge-triphasic-morphology</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -3891,80 +3873,44 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Finding-propagation</name>
                <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
+                  <value>Property-exists</value>
+                  <value>Property-absence</value>
                   <value>Brain-laterality</value>
                   <value>Brain-region</value>
                   <value>Sensors</value>
                </attribute>
                <node>
-                  <name>Finding-propagation-observed</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Finding-propagation-not-observed</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
                <name>Multifocal-finding</name>
                <description>When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
+                  <value>Property-exists</value>
+                  <value>Property-absence</value>
                </attribute>
                <node>
-                  <name>Multifocal-observed</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Multifocal-not-observed</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
          </node>
@@ -3980,68 +3926,41 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Property-exists</value>
+                  <value>Property-absence</value>
+               </attribute>
                <node>
-                  <name>Modulators-reactive</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Modulators-not-reactive</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
                <name>Eye-closure-sensitivity</name>
                <description>Eye closure sensitivity.</description>
                <attribute>
-                  <name>requireChild</name>
+                  <name>suggestedTag</name>
+                  <value>Property-exists</value>
+                  <value>Property-absence</value>
                </attribute>
                <node>
-                  <name>Eye-closure-sensitivity-exists</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>No-eye-closure-sensitivity</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
                </node>
             </node>
             <node>
@@ -5239,27 +5158,9 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Posterior-dominant-rhythm-eye-opening-reactivity</name>
                <description>Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                </attribute>
-               <node>
-                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-exists</name>
-                  <description>When annotated Yes.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
                <node>
                   <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left</name>
                   <description>Reduced left side reactivity.</description>
@@ -6575,34 +6476,19 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
+                     <value>Property-exists</value>
+                     <value>Property-absence</value>
                   </attribute>
                   <node>
-                     <name>Episode-awareness-exists</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>No-episode-awareness</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -6747,69 +6633,39 @@ This project was supported by the by the National Institute of Mental Health of 
                   <name>Episode-prodrome</name>
                   <description>Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).</description>
                   <attribute>
-                     <name>requireChild</name>
+                     <name>suggestedTag</name>
+                     <value>Property-exists</value>
+                     <value>Property-absence</value>
                   </attribute>
                   <node>
-                     <name>Episode-prodrome-exists</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>No-episode-prodrome</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
                   <name>Episode-tongue-biting</name>
                   <attribute>
-                     <name>requireChild</name>
+                     <name>suggestedTag</name>
+                     <value>Property-exists</value>
+                     <value>Property-absence</value>
                   </attribute>
                   <node>
-                     <name>Episode-tongue-biting-exists</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>No-episode-tongue-biting</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -7155,6 +7011,34 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>Property-not-possible-to-determine</name>
                <description>Not possible to determine.</description>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Property-exists</name>
+               <node>
+                  <name>#</name>
+                  <description>Free text.</description>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>textClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Property-absence</name>
                <node>
                   <name>#</name>
                   <description>Free text.</description>

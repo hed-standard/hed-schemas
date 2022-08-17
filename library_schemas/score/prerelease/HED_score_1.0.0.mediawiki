@@ -431,11 +431,8 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Greater-than-3-periodic-discharge-phases
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-triphasic-morphology {requireChild, suggestedTag=Property-not-possible-to-determine}
-                **** Periodic-discharge-triphasic-morphology-exists
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** No-periodic-discharge-triphasic-morphology
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Periodic-discharge-triphasic-morphology <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} []</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Periodic-discharge-absolute-amplitude {requireChild, suggestedTag=Property-not-possible-to-determine}
                 **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[Lower than 20 microV.]</nowiki>
@@ -536,28 +533,16 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage).]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Finding-propagation <nowiki> {requireChild, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors}[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
-            *** Finding-propagation-observed
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Finding-propagation-not-observed
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Multifocal-finding <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
-            *** Multifocal-observed
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Multifocal-not-observed
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Finding-propagation <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors}[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Multifocal-finding <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Modulators-property <nowiki> {requireChild}[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
-        ** Modulators-reactivity <nowiki> {requireChild} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
-            *** Modulators-reactive
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Modulators-not-reactive
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Eye-closure-sensitivity <nowiki> {requireChild} [Eye closure sensitivity.]</nowiki>
-            *** Eye-closure-sensitivity-exists
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** No-eye-closure-sensitivity
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Modulators-reactivity <nowiki> {requireChild, suggestedTag=Property-exists,suggestedTag=Property-absence} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Eye-closure-sensitivity <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} [Eye closure sensitivity.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Eye-opening-passive {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by}  <nowiki>  [Passive eye opening. Used with base schema Increasing/Decreasing.]</nowiki>
         ** Medication-effect-EEG <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified}  [Medications effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
         ** Medication-reduction-effect-EEG <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
@@ -723,9 +708,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-right <nowiki>[Hz lower on the right side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-exists <nowiki>[When annotated Yes.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {suggestedTag=Property-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-rigth <nowiki>[Reduced right side reactivity.]</nowiki>
@@ -916,11 +899,8 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Episode-consciousness-not-affected
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-awareness {suggestedTag=Property-not-possible-to-determine}
-                **** Episode-awareness-exists
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** No-episode-awareness
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Episode-awareness {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence}
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Clinical-EEG-temporal-relationship {suggestedTag=Property-not-possible-to-determine}
                 **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds.]</nowiki>
@@ -943,17 +923,11 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Episode-postictal-phase {suggestedTag=Property-not-possible-to-determine}
                 **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
 
-            *** Episode-prodrome <nowiki> {requireChild} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
-                **** Episode-prodrome-exists
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** No-episode-prodrome
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Episode-prodrome <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-tongue-biting {requireChild}
-                **** Episode-tongue-biting-exists
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** No-episode-tongue-biting
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Episode-tongue-biting {suggestedTag=Property-exists,suggestedTag=Property-absence}
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Episode-responsiveness {requireChild, suggestedTag=Property-not-possible-to-determine}
                 **** Episode-responsiveness-preserved
@@ -1012,6 +986,12 @@ This project was supported by the by the National Institute of Mental Health of 
 
         ** Property-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Property-exists
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Property-absence
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+
 
 !# end schema
 
