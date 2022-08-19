@@ -450,7 +450,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-relative-amplitude-greater-than-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-polarity <nowiki> {requireChild, suggestedTag=} []</nowiki>
+            *** Periodic-discharge-polarity <nowiki> {requireChild} []</nowiki>
                 **** Positive-periodic-discharge-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Negative-periodic-discharge-polarity
@@ -638,9 +638,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Fragmented-discharge-pattern
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-extent <nowiki>[Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
-            *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
-
         ** Periodic-discharge-time-related-features <nowiki> {requireChild} [Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
             *** Periodic-discharge-duration {requireChild, suggestedTag=Property-not-possible-to-determine}
                 **** Very-brief-periodic-discharge-duration <nowiki>[Less than 10 sec.]</nowiki>
@@ -665,6 +662,9 @@ This project was supported by the by the National Institute of Mental Health of 
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Static-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+        ** Finding-extent <nowiki>[Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
         ** Finding-incidence <nowiki> {requireChild} [How often it occurs/time-epoch.]</nowiki>
             *** Only-once-finding-incidence
@@ -860,6 +860,7 @@ This project was supported by the by the National Institute of Mental Health of 
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Semiology-manifestation-other {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
         ** Postictal-semiology-manifestation {requireChild}
             *** Postictal-semiology-unconscious {suggestedTag=Episode-event-count}
             *** Postictal-semiology-quick-recovery-of-consciousness <nowiki> {suggestedTag=Episode-event-count} [Quick recovery of awareness and responsiveness.]</nowiki>
@@ -953,6 +954,7 @@ This project was supported by the by the National Institute of Mental Health of 
 
 
     * Other-finding-property {requireChild}
+    
         ** Artifact-significance-to-recording <nowiki> {requireChild} [It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.]</nowiki>
             *** Recording-not-interpretable-due-to-artifact
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -960,6 +962,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Artifact-does-not-interfere-recording
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
         ** Finding-significance-to-recording <nowiki> {requireChild} [Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.]</nowiki>
             *** Finding-no-definite-abnormality
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
