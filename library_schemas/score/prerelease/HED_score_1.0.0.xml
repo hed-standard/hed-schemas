@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <HED library="score" version="1.0.0">
-   <prologue>This schema is Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG: SCORE based on the first official release that includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
+   <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG (SCORE). It includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
 Data sharing using standard definitions enables applications of automated tools to optimize analyses, reduce errors, and ultimately to advance the understanding of the human brain.
-This implementation of SCORE in an open-source, machine-readable format using HED to enables its use in machine analysis and mega-analysis.
+This implementation of SCORE in HED is open-source and machine-readable in order to enable the use of SCORE in automated mega-analyses.
 
 Reference:
 [1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017).
 
-This mediawiki schema was implemented by Tal Pal Attia and Dora Hermes (Mayo Clinic).
+This mediawiki schema was implemented by Tal Pal Attia, Kay Robbins, Scott Makeig and Dora Hermes (Mayo Clinic).
 This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
    <schema>
       <node>
@@ -218,116 +218,62 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Other-modulator</name>
+            <name>Hyperventilation</name>
             <node>
-               <name>Hyperventilation</name>
-               <node>
-                  <name>Quality-of-hyperventilation</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <node>
-                     <name>Hyperventilation-refused-procedure</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Hyperventilation-poor-effort</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Hyperventilation-good-effort</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Hyperventilation-excellent-effort</name>
-                     <node>
-                        <name>#</name>
-                        <description>Free text.</description>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>textClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-               </node>
-            </node>
-            <node>
-               <name>Physical-effort</name>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Cognitive-task</name>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Other-modulator-or-procedure</name>
+               <name>#</name>
+               <description>Free text.</description>
                <attribute>
-                  <name>requireChild</name>
+                  <name>takesValue</name>
                </attribute>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-               </node>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
+            </node>
+         </node>
+         <node>
+            <name>Physical-effort</name>
+            <node>
+               <name>#</name>
+               <description>Free text.</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
+            </node>
+         </node>
+         <node>
+            <name>Cognitive-task</name>
+            <node>
+               <name>#</name>
+               <description>Free text.</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
+            </node>
+         </node>
+         <node>
+            <name>Other-modulator-or-procedure</name>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <node>
+               <name>#</name>
+               <description>Free text.</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
             </node>
          </node>
       </node>
@@ -396,7 +342,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Special-background-activity-feature</name>
+            <name>Background-activity-special-feature</name>
             <description>Special Features. Special features contains scoring options for the background activity of critically ill patients.</description>
             <attribute>
                <name>requireChild</name>
@@ -651,7 +597,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </node>
          <node>
             <name>Non-reactive-sleep</name>
-            <description>EEG activity consisting of normal sleep graphoelemts, but which cannot be interrupted by external stimuli/ the patient cannot be waken.</description>
+            <description>EEG activity consisting of normal sleep graphoelements, but which cannot be interrupted by external stimuli/ the patient cannot be waken.</description>
          </node>
       </node>
       <node>
@@ -812,7 +758,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -829,7 +775,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -846,7 +792,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Epileptic-seizure-classification</value>
+                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -880,7 +826,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
-                  <value>Epileptic-seizure-classification</value>
+                  <value>Seizure-classification</value>
                   <value>Seizure-dynamics</value>
                   <value>Episode-consciousness</value>
                   <value>Episode-awareness</value>
@@ -897,7 +843,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
-                  <value>Epileptic-seizure-classification</value>
+                  <value>Seizure-classification</value>
                   <value>Seizure-dynamics</value>
                   <value>Episode-consciousness</value>
                   <value>Episode-awareness</value>
@@ -1821,7 +1767,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
             <attribute>
                <name>suggestedTag</name>
-               <value>Finding-significance-to-recording</value>
+               <value>Artifact-significance-to-recording</value>
             </attribute>
             <node>
                <name>#</name>
@@ -1844,7 +1790,7 @@ This project was supported by the by the National Institute of Mental Health of 
          </attribute>
          <node>
             <name>EOG-channel-finding</name>
-            <description>Electrooculography</description>
+            <description>ElectroOculoGraphy.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
@@ -1884,7 +1830,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>Respiration-feature</name>
                <node>
                   <name>Apnoe-respiration</name>
-                  <description>Add duration and comments in free text.</description>
+                  <description>Add duration (range in seconds) and comments in free text.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1899,7 +1845,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Hypopnea-respiration</name>
-                  <description>Add duration and comments in free text</description>
+                  <description>Add duration (range in seconds) and comments in free text</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1915,9 +1861,12 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Apnea-hypopnea-index-respiration</name>
                   <description>Events/h.</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Apnea-hypopnea-index-respiration-frequency</name>
-                     <description>events/h (numbers) typed in.</description>
+                     <description>Events/h (numbers) typed in.</description>
                   </node>
                   <node>
                      <name>#</name>
@@ -1947,10 +1896,13 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Tachypnea-respiration</name>
-                  <description>cycles per min.</description>
+                  <description>Cycles/min.</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
                      <name>Tachypnea-respiration-frequency</name>
-                     <description>cycles/min (numbers) typed in.</description>
+                     <description>Cycles/min (numbers) typed in.</description>
                   </node>
                   <node>
                      <name>#</name>
@@ -2055,7 +2007,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-asystolia</name>
-                  <description>Add duration and comments in free text.</description>
+                  <description>Add duration (range in seconds) and comments in free text.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2266,77 +2218,94 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>EMG-feature</name>
                <node>
-                  <name>EMG-myoclonus-rhythmic</name>
+                  <name>Negative-myoclonus</name>
                   <node>
-                     <name>EMG-myoclonus-rhythmic-frequency</name>
-                     <description>Numbers typed in.</description>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>EMG-myoclonus</name>
+                  <node>
+                     <name>EMG-myoclonus-rhythmic</name>
+                     <node>
+                        <name>EMG-myoclonus-rhythmic-frequency</name>
+                        <description>Numbers typed in.</description>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                        </node>
+                     </node>
                      <node>
                         <name>#</name>
+                        <description>Free text.</description>
                         <attribute>
                            <name>takesValue</name>
                         </attribute>
                         <attribute>
                            <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
+                           <value>textClass</value>
                         </attribute>
                      </node>
                   </node>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>EMG-myoclonus-arrhythmic</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
-               </node>
-               <node>
-                  <name>EMG-myoclonus-arrhythmic</name>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>EMG-myoclonus-synchronous</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
-               </node>
-               <node>
-                  <name>EMG-myoclonus-synchronous</name>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>EMG-myoclonus-asynchronous</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>EMG-myoclonus-asynchronous</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -2372,31 +2341,37 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>EMG-asymmetric-activation-left-first</name>
+                  <name>EMG-asymmetric-activation</name>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>EMG-asymmetric-activation-left-first</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
-               </node>
-               <node>
-                  <name>EMG-asymmetric-activation-right-first</name>
                   <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
+                     <name>EMG-asymmetric-activation-right-first</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -2554,7 +2529,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Alpha-activity-morphology</name>
-                  <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm (alpha rhythm).</description>
+                  <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm (alpha rhythm).</description>
                   <node>
                      <name>Alpha-activity-frequency</name>
                      <description>Value in Hz (number) typed in.</description>
@@ -2605,7 +2580,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Beta-activity-morphology</name>
-                  <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfil the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
+                  <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
                   <node>
                      <name>Beta-activity-frequency</name>
                      <description>Value in Hz (number) typed in.</description>
@@ -3394,7 +3369,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      <name>requireChild</name>
                   </attribute>
                   <node>
-                     <name>Positive-periodic-discharge-polarity</name>
+                     <name>Periodic-discharge-postitive-polarity</name>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -3408,7 +3383,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </node>
                   </node>
                   <node>
-                     <name>Negative-periodic-discharge-polarity</name>
+                     <name>Periodic-discharge-negative-polarity</name>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -3422,7 +3397,7 @@ This project was supported by the by the National Institute of Mental Health of 
                      </node>
                   </node>
                   <node>
-                     <name>Unclear-periodic-discharge-polarity</name>
+                     <name>Periodic-discharge-unclear-polarity</name>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -4444,6 +4419,68 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
+               <name>Quality-of-hyperventilation</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <node>
+                  <name>Hyperventilation-refused-procedure</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Hyperventilation-poor-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Hyperventilation-good-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Hyperventilation-excellent-effort</name>
+                  <node>
+                     <name>#</name>
+                     <description>Free text.</description>
+                     <attribute>
+                        <name>takesValue</name>
+                     </attribute>
+                     <attribute>
+                        <name>valueClass</name>
+                        <value>textClass</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
                <name>Modulators-effect</name>
                <description>Tags for describing the influence of the modulators</description>
                <attribute>
@@ -4648,7 +4685,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Arhythmic-trains-or-bursts-discharge-pattern</name>
+                  <name>Arrhythmic-trains-or-bursts-discharge-pattern</name>
                   <description>Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.</description>
                   <attribute>
                      <name>suggestedTag</name>
@@ -4679,20 +4716,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <value>textClass</value>
                      </attribute>
                   </node>
-               </node>
-            </node>
-            <node>
-               <name>Finding-extent</name>
-               <description>Percentage of occurrence during the recording (background activity and interictal finding).</description>
-               <node>
-                  <name>#</name>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>numericClass</value>
-                  </attribute>
                </node>
             </node>
             <node>
@@ -4878,6 +4901,20 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
+               <name>Finding-extent</name>
+               <description>Percentage of occurrence during the recording (background activity and interictal finding).</description>
+               <node>
+                  <name>#</name>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
                <name>Finding-incidence</name>
                <description>How often it occurs/time-epoch.</description>
                <attribute>
@@ -4981,7 +5018,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <node>
                   <name>Rare-finding-prevalence</name>
-                  <description>Less than 1 precent.</description>
+                  <description>Less than 1 percent.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5011,7 +5048,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Frequent-finding-prevalence</name>
-                  <description>10 to 49 precent.</description>
+                  <description>10 to 49 percent.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5041,7 +5078,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Continuous-finding-prevalence</name>
-                  <description>Greater than 90 precent.</description>
+                  <description>Greater than 90 percent.</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5177,7 +5214,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                </node>
                <node>
-                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-rigth</name>
+                  <name>Posterior-dominant-rhythm-eye-opening-reactivity-reduced-right</name>
                   <description>Reduced right side reactivity.</description>
                   <node>
                      <name>#</name>
@@ -5426,78 +5463,78 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>requireChild</name>
             </attribute>
             <node>
-               <name>Epileptic-seizure-classification</name>
+               <name>Seizure-classification</name>
                <description>Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <node>
-                  <name>Motor-onset-epileptic-seizure</name>
+                  <name>Motor-onset-seizure</name>
                   <node>
-                     <name>Myoclonic-motor-onset-epileptic-seizure</name>
+                     <name>Myoclonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Negative-myoclonic-motor-onset-epileptic-seizure</name>
+                     <name>Negative-myoclonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Clonic-motor-onset-epileptic-seizure</name>
+                     <name>Clonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Tonic-motor-onset-epileptic-seizure</name>
+                     <name>Tonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Atonic-motor-onset-epileptic-seizure</name>
+                     <name>Atonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-Atonic-motor-onset-epileptic-seizure</name>
+                     <name>Myoclonic-atonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-tonic-clonic-motor-onset-epileptic-seizure</name>
+                     <name>Myoclonic-tonic-clonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Tonic-clonic-motor-onset-epileptic-seizure</name>
+                     <name>Tonic-clonic-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Automatism-motor-onset-epileptic-seizure</name>
+                     <name>Automatism-motor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Hyperkinetic-motor-onset-epileptic-seizure</name>
+                     <name>Hyperkinetic-motor-onset-seizure</name>
                   </node>
                   <node>
                      <name>Epileptic-spasm-episode</name>
                   </node>
                </node>
                <node>
-                  <name>Nonmotor-onset-epileptic-seizure</name>
+                  <name>Nonmotor-onset-seizure</name>
                   <node>
-                     <name>Behavior-arrest-nonmotor-onset-epileptic-seizure</name>
+                     <name>Behavior-arrest-nonmotor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Sensory-nonmotor-onset-epileptic-seizure</name>
+                     <name>Sensory-nonmotor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Emotional-nonmotor-onset-epileptic-seizure</name>
+                     <name>Emotional-nonmotor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Cognitive-nonmotor-onset-epileptic-seizure</name>
+                     <name>Cognitive-nonmotor-onset-seizure</name>
                   </node>
                   <node>
-                     <name>Autonomic-nonmotor-onset-epileptic-seizure</name>
+                     <name>Autonomic-nonmotor-onset-seizure</name>
                   </node>
                </node>
                <node>
-                  <name>Absence-epileptic-seizure</name>
+                  <name>Absence-seizure</name>
                   <node>
-                     <name>Typical-absence-epileptic-seizure</name>
+                     <name>Typical-absence-seizure</name>
                   </node>
                   <node>
-                     <name>Atypical-absence-epileptic-seizure</name>
+                     <name>Atypical-absence-seizure</name>
                   </node>
                   <node>
-                     <name>Myoclonic-absence-epileptic-seizure</name>
+                     <name>Myoclonic-absence-seizure</name>
                   </node>
                   <node>
-                     <name>Eyelid-myoclonia-absence-epileptic-seizure</name>
+                     <name>Eyelid-myoclonia-absence-seizure</name>
                   </node>
                </node>
             </node>
@@ -6916,7 +6953,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Finding-amplitude-asymmetry</name>
-               <description>For Posterior dominant rhythm: A difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 precent) of a normal sleep graphoelement.</description>
+               <description>For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
