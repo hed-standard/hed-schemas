@@ -2218,21 +2218,21 @@ This project was supported by the by the National Institute of Mental Health of 
             <node>
                <name>EMG-feature</name>
                <node>
-                  <name>Negative-myoclonus</name>
-                  <node>
-                     <name>#</name>
-                     <description>Free text.</description>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>textClass</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
                   <name>EMG-myoclonus</name>
+                  <node>
+                     <name>Negative-myoclonus</name>
+                     <node>
+                        <name>#</name>
+                        <description>Free text.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>textClass</value>
+                        </attribute>
+                     </node>
+                  </node>
                   <node>
                      <name>EMG-myoclonus-rhythmic</name>
                      <node>

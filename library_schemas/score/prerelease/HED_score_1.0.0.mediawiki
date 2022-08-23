@@ -281,19 +281,19 @@ This project was supported by the by the National Institute of Mental Health of 
         ** EMG-muscle-name
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** EMG-feature
-            *** Negative-myoclonus
-              **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** EMG-myoclonus
-              **** EMG-myoclonus-rhythmic
-                  ***** EMG-myoclonus-rhythmic-frequency <nowiki>[Numbers typed in.]</nowiki>
-                      ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-              **** EMG-myoclonus-arrhythmic
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-              **** EMG-myoclonus-synchronous
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-              **** EMG-myoclonus-asynchronous
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Negative-myoclonus
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** EMG-myoclonus-rhythmic
+                    ***** EMG-myoclonus-rhythmic-frequency <nowiki>[Numbers typed in.]</nowiki>
+                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
+                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                    **** EMG-myoclonus-arrhythmic
+                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                    **** EMG-myoclonus-synchronous
+                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                    **** EMG-myoclonus-asynchronous
+                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** EMG-PLMS <nowiki>[Periodic limb movements in sleep.] </nowiki>
             *** EMG-spasm
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
