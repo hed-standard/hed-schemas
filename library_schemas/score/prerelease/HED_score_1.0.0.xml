@@ -1864,10 +1864,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
-                  <node>
-                     <name>Apnea-hypopnea-index-respiration-frequency</name>
-                     <description>Events/h (numbers) typed in.</description>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1900,10 +1900,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
-                  <node>
-                     <name>Tachypnea-respiration-frequency</name>
-                     <description>Cycles/min (numbers) typed in.</description>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -1961,24 +1961,10 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>ECG-sinus-rhythm</name>
                   <description>Normal rhythm.</description>
-                  <node>
-                     <name>ECG-sinus-rhythm-frequency</name>
-                     <description>Beats/min (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2022,24 +2008,10 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-bradycardia</name>
-                  <node>
-                     <name>ECG-bradycardia-frequency</name>
-                     <description>Beats/min (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2068,24 +2040,10 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-ventricular-premature-depolarization</name>
-                  <node>
-                     <name>ECG-ventricular-premature-depolarization-frequency</name>
-                     <description>Beats/min (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2100,24 +2058,10 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-tachycardia</name>
-                  <node>
-                     <name>ECG-tachycardia-frequency</name>
-                     <description>Beats/min (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2235,24 +2179,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>EMG-myoclonus-rhythmic</name>
-                     <node>
-                        <name>EMG-myoclonus-rhythmic-frequency</name>
-                        <description>Numbers typed in.</description>
-                        <node>
-                           <name>#</name>
-                           <attribute>
-                              <name>takesValue</name>
-                           </attribute>
-                           <attribute>
-                              <name>valueClass</name>
-                              <value>numericClass</value>
-                           </attribute>
-                           <attribute>
-                              <name>unitClass</name>
-                              <value>frequencyUnits</value>
-                           </attribute>
-                        </node>
-                     </node>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Finding-frequency</value>
+                     </attribute>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -2428,42 +2358,11 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Delta-activity-morphology</name>
                   <description>EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).</description>
-                  <node>
-                     <name>Delta-activity-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Delta-activity-amplitude</name>
-                     <description>Value in microvolts (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>electricPotentialUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                     <value>Finding-amplitude</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2479,42 +2378,11 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Theta-activity-morphology</name>
                   <description>EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).</description>
-                  <node>
-                     <name>Theta-activity-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Theta-activity-amplitude</name>
-                     <description>Value in microvolts (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>electricPotentialUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                     <value>Finding-amplitude</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2530,42 +2398,11 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Alpha-activity-morphology</name>
                   <description>EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm (alpha rhythm).</description>
-                  <node>
-                     <name>Alpha-activity-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Alpha-activity-amplitude</name>
-                     <description>Value in microvolts (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>electricPotentialUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                     <value>Finding-amplitude</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2581,42 +2418,11 @@ This project was supported by the by the National Institute of Mental Health of 
                <node>
                   <name>Beta-activity-morphology</name>
                   <description>EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.</description>
-                  <node>
-                     <name>Beta-activity-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Beta-activity-amplitude</name>
-                     <description>Value in microvolts (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>electricPotentialUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                     <value>Finding-amplitude</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2631,42 +2437,11 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Gamma-activity-morphology</name>
-                  <node>
-                     <name>Gamma-activity-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Gamma-activity-amplitude</name>
-                     <description>Value in microvolts (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>electricPotentialUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                     <value>Finding-amplitude</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3040,24 +2815,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   </attribute>
                   <node>
                      <name>Periodic-discharges-fast-superimposed-activity</name>
-                     <node>
-                        <name>Periodic-discharges-fast-superimposed-activity-frequency</name>
-                        <description>Value in Hz (number) typed in.</description>
-                        <node>
-                           <name>#</name>
-                           <attribute>
-                              <name>takesValue</name>
-                           </attribute>
-                           <attribute>
-                              <name>valueClass</name>
-                              <value>numericClass</value>
-                           </attribute>
-                           <attribute>
-                              <name>unitClass</name>
-                              <value>frequencyUnits</value>
-                           </attribute>
-                        </node>
-                     </node>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Finding-frequency</value>
+                     </attribute>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -3072,24 +2833,10 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>Periodic-discharges-rhythmic-superimposed-activity</name>
-                     <node>
-                        <name>Periodic-discharges-rhythmic-superimposed-activity-frequency</name>
-                        <description>Value in Hz (number) typed in.</description>
-                        <node>
-                           <name>#</name>
-                           <attribute>
-                              <name>takesValue</name>
-                           </attribute>
-                           <attribute>
-                              <name>valueClass</name>
-                              <value>numericClass</value>
-                           </attribute>
-                           <attribute>
-                              <name>unitClass</name>
-                              <value>frequencyUnits</value>
-                           </attribute>
-                        </node>
-                     </node>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Finding-frequency</value>
+                     </attribute>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
@@ -3414,13 +3161,13 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
          </node>
          <node>
-            <name>Finding-source-analysis</name>
+            <name>Source-analysis-property</name>
             <description>How the current in the brain reaches the electrode sensors.</description>
             <attribute>
                <name>requireChild</name>
             </attribute>
             <node>
-               <name>Finding-source-analysis-laterality</name>
+               <name>Source-analysis-laterality</name>
                <attribute>
                   <name>requireChild</name>
                </attribute>
@@ -3430,75 +3177,75 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
             </node>
             <node>
-               <name>Finding-source-analysis-brain-region</name>
+               <name>Source-analysis-brain-region</name>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <node>
-                  <name>Finding-source-analysis-frontal-perisylvian-superior-surface</name>
+                  <name>Source-analysis-frontal-perisylvian-superior-surface</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-frontal-lateral</name>
+                  <name>Source-analysis-frontal-lateral</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-frontal-mesial</name>
+                  <name>Source-analysis-frontal-mesial</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-frontal-polar</name>
+                  <name>Source-analysis-frontal-polar</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-frontal-orbitofrontal</name>
+                  <name>Source-analysis-frontal-orbitofrontal</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-temporal-polar</name>
+                  <name>Source-analysis-temporal-polar</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-temporal-basal</name>
+                  <name>Source-analysis-temporal-basal</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-temporal-lateral-anterior</name>
+                  <name>Source-analysis-temporal-lateral-anterior</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-temporal-lateral-posterior</name>
+                  <name>Source-analysis-temporal-lateral-posterior</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-temporal-perisylvian-inferior-surface</name>
+                  <name>Source-analysis-temporal-perisylvian-inferior-surface</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-central-lateral-convexity</name>
+                  <name>Source-analysis-central-lateral-convexity</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-central-mesial</name>
+                  <name>Source-analysis-central-mesial</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-central-sulcus-anterior-surface</name>
+                  <name>Source-analysis-central-sulcus-anterior-surface</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-central-sulcus-posterior-surface</name>
+                  <name>Source-analysis-central-sulcus-posterior-surface</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-central-opercular</name>
+                  <name>Source-analysis-central-opercular</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-parietal-lateral-convexity</name>
+                  <name>Source-analysis-parietal-lateral-convexity</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-parietal-mesial</name>
+                  <name>Source-analysis-parietal-mesial</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-parietal-opercular</name>
+                  <name>Source-analysis-parietal-opercular</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-occipital-lateral</name>
+                  <name>Source-analysis-occipital-lateral</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-occipital-mesial</name>
+                  <name>Source-analysis-occipital-mesial</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-occipital-basal</name>
+                  <name>Source-analysis-occipital-basal</name>
                </node>
                <node>
-                  <name>Finding-source-analysis-insula</name>
+                  <name>Source-analysis-insula</name>
                </node>
             </node>
          </node>
@@ -3828,7 +3575,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </node>
             <node>
                <name>Sensors</name>
-               <description>Lists all corresponding sensors (electrodes/channels in montage).</description>
+               <description>Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
@@ -4211,6 +3958,10 @@ This project was supported by the by the National Institute of Mental Health of 
                </attribute>
                <node>
                   <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4221,29 +3972,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited</name>
                   <description>limited to the stimulus-train</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4254,28 +3991,14 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4286,29 +4009,15 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited</name>
                   <description>Limited to the stimulus-train.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4319,28 +4028,14 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4351,28 +4046,14 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
                   <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect</name>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Finding-frequency</value>
+                  </attribute>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -4383,24 +4064,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect-frequency</name>
-                     <description>Hz Values (numbers) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
@@ -4653,6 +4316,7 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-prevalence</value>
+                     <value>Finding-frequency</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -4664,24 +4328,6 @@ This project was supported by the by the National Institute of Mental Health of 
                         <name>valueClass</name>
                         <value>textClass</value>
                      </attribute>
-                  </node>
-                  <node>
-                     <name>Rhythmic-trains-or-bursts-discharge-pattern-frequency</name>
-                     <description>Value in Hz (number) typed in.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
-                     </node>
                   </node>
                </node>
                <node>
@@ -6424,8 +6070,8 @@ This project was supported by the by the National Institute of Mental Health of 
                      <value>Brain-laterality</value>
                      <value>Brain-region</value>
                      <value>Sensors</value>
-                     <value>Finding-source-analysis-laterality</value>
-                     <value>Finding-source-analysis-brain-region</value>
+                     <value>Source-analysis-laterality</value>
+                     <value>Source-analysis-brain-region</value>
                      <value>Episode-event-count</value>
                   </attribute>
                </node>
@@ -6948,6 +6594,24 @@ This project was supported by the by the National Institute of Mental Health of 
                   <attribute>
                      <name>unitClass</name>
                      <value>frequencyUnits</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Finding-amplitude</name>
+               <description>Value in microvolts (number) typed in.</description>
+               <node>
+                  <name>#</name>
+                  <attribute>
+                     <name>takesValue</name>
+                  </attribute>
+                  <attribute>
+                     <name>valueClass</name>
+                     <value>numericClass</value>
+                  </attribute>
+                  <attribute>
+                     <name>unitClass</name>
+                     <value>electricPotentialUnits</value>
                   </attribute>
                </node>
             </node>
