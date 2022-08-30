@@ -232,21 +232,11 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-<<<<<<< HEAD
             *** Apnea-hypopnea-index-respiration <nowiki> {requireChild,suggestedTag=Finding-frequency} [Events/h.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Tachypnea-respiration <nowiki> {requireChild,suggestedTag=Finding-frequency} [Cycles/min.]</nowiki>
-=======
-            *** Apnea-hypopnea-index-respiration <nowiki> {requireChild} [Events/h.]</nowiki>
-                **** Apnea-hypopnea-index-respiration-frequency <nowiki>[Events/h (numbers) typed in.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-respiration
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Tachypnea-respiration <nowiki> {requireChild} [Cycles/min.]</nowiki>
-                **** Tachypnea-respiration-frequency <nowiki>[Cycles/min (numbers) typed in.]</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-respiration-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -284,13 +274,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** EMG-myoclonus
                 **** Negative-myoclonus
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-<<<<<<< HEAD
                 **** EMG-myoclonus-rhythmic {suggestedTag=Finding-frequency}
-=======
-                **** EMG-myoclonus-rhythmic
-                    ***** EMG-myoclonus-rhythmic-frequency <nowiki>[Numbers typed in.]</nowiki>
-                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
                         ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                     **** EMG-myoclonus-arrhythmic
                         ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -319,7 +303,6 @@ This project was supported by the by the National Institute of Mental Health of 
     * Signal-morphology-property {requireChild}
 
         ** Rhythmic-activity-morphology <nowiki>[EEG activity consisting of a sequence of waves approximately constant period.]</nowiki>
-<<<<<<< HEAD
             *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Theta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).]</nowiki>
@@ -329,37 +312,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Beta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Gamma-activity-morphology {suggestedTag=Finding-frequency,suggestedTag=Finding-amplitude}
-=======
-            *** Delta-activity-morphology <nowiki>[EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
-                ****  Delta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                ****  Delta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Theta-activity-morphology <nowiki>[EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).]</nowiki>
-                ****  Theta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                ****  Theta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Alpha-activity-morphology <nowiki>[EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm (alpha rhythm).]</nowiki>
-                ****  Alpha-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                ****  Alpha-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Beta-activity-morphology <nowiki>[EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
-                **** Beta-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                **** Beta-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Gamma-activity-morphology
-                ****  Gamma-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                ****  Gamma-activity-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.]</nowiki>
@@ -413,19 +365,9 @@ This project was supported by the by the National Institute of Mental Health of 
 
         ** Periodic-discharges-morphology <nowiki> {requireChild} [Periodic discharges not further specified (PDs).]</nowiki>
             *** Periodic-discharges-superimposed-activity {requireChild, suggestedTag=Property-not-possible-to-determine}
-<<<<<<< HEAD
                 **** Periodic-discharges-fast-superimposed-activity {suggestedTag=Finding-frequency}
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharges-rhythmic-superimposed-activity {suggestedTag=Finding-frequency}
-=======
-                **** Periodic-discharges-fast-superimposed-activity
-                    *****  Periodic-discharges-fast-superimposed-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharges-rhythmic-superimposed-activity
-                    *****  Periodic-discharges-rhythmic-superimposed-activity-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                        ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Periodic-discharge-sharpness {requireChild, suggestedTag=Property-not-possible-to-determine}
@@ -475,7 +417,6 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** Periodic-discharge-unclear-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-<<<<<<< HEAD
     * Source-analysis-property <nowiki> {requireChild}[How the current in the brain reaches the electrode sensors.]</nowiki>
         ** Source-analysis-laterality <nowiki> {requireChild,suggestedTag=Brain-laterality} </nowiki>
         ** Source-analysis-brain-region {requireChild}
@@ -501,33 +442,6 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Source-analysis-occipital-mesial
             *** Source-analysis-occipital-basal
             *** Source-analysis-insula
-=======
-    * Finding-source-analysis <nowiki> {requireChild}[How the current in the brain reaches the electrode sensors.]</nowiki>
-        ** Finding-source-analysis-laterality <nowiki> {requireChild,suggestedTag=Brain-laterality} </nowiki>
-        ** Finding-source-analysis-brain-region {requireChild}
-            *** Finding-source-analysis-frontal-perisylvian-superior-surface
-            *** Finding-source-analysis-frontal-lateral
-            *** Finding-source-analysis-frontal-mesial
-            *** Finding-source-analysis-frontal-polar
-            *** Finding-source-analysis-frontal-orbitofrontal
-            *** Finding-source-analysis-temporal-polar
-            *** Finding-source-analysis-temporal-basal
-            *** Finding-source-analysis-temporal-lateral-anterior
-            *** Finding-source-analysis-temporal-lateral-posterior
-            *** Finding-source-analysis-temporal-perisylvian-inferior-surface
-            *** Finding-source-analysis-central-lateral-convexity
-            *** Finding-source-analysis-central-mesial
-            *** Finding-source-analysis-central-sulcus-anterior-surface
-            *** Finding-source-analysis-central-sulcus-posterior-surface
-            *** Finding-source-analysis-central-opercular
-            *** Finding-source-analysis-parietal-lateral-convexity
-            *** Finding-source-analysis-parietal-mesial
-            *** Finding-source-analysis-parietal-opercular
-            *** Finding-source-analysis-occipital-lateral
-            *** Finding-source-analysis-occipital-mesial
-            *** Finding-source-analysis-occipital-basal
-            *** Finding-source-analysis-insula
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
 
     * Location-property <nowiki>{requireChild}[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
         ** Brain-laterality {requireChild}
@@ -576,11 +490,7 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-centricity-distal-limb
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-<<<<<<< HEAD
         ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
-=======
-        ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage).]</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Finding-propagation <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors}[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -627,11 +537,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Intermittent-photic-stimulation-effect {requireChild}
-<<<<<<< HEAD
             *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response {suggestedTag=Finding-frequency}
-=======
-            *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [limited to the stimulus-train] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -680,15 +586,8 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Discharge-pattern <nowiki> {requireChild} [Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
             *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-<<<<<<< HEAD
             *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence, suggestedTag=Finding-frequency} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-=======
-            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence}[Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Rhythmic-trains-or-bursts-discharge-pattern-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
             *** Arrhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Fragmented-discharge-pattern
@@ -942,11 +841,7 @@ This project was supported by the by the National Institute of Mental Health of 
         ** Ictal-EEG-patterns
             *** Ictal-EEG-patterns-obscured-by-artifacts <nowiki>[The interpretation of the EEG is not possible due to artifacts.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-<<<<<<< HEAD
             *** Ictal-EEG-activity {suggestedTag=Polyspikes-morphology, suggestedTag=Fast-spike-activity-morphology, suggestedTag=Low-voltage-fast-activity-morphology, suggestedTag=Polysharp-waves-morphology, suggestedTag=Spike-and-slow-wave-morphology, suggestedTag=Polyspike-and-slow-wave-morphology, suggestedTag=Sharp-and-slow-wave-morphology, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Slow-wave-large-amplitude-morphology, suggestedTag=Irregular-delta-or-theta-activity-morphology, suggestedTag=Electrodecremental-change-morphology, suggestedTag=DC-shift-morphology, suggestedTag=Disappearance-of-ongoing-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Source-analysis-laterality, suggestedTag=Source-analysis-brain-region,suggestedTag=Episode-event-count}
-=======
-            *** Ictal-EEG-activity {suggestedTag=Polyspikes-morphology, suggestedTag=Fast-spike-activity-morphology, suggestedTag=Low-voltage-fast-activity-morphology, suggestedTag=Polysharp-waves-morphology, suggestedTag=Spike-and-slow-wave-morphology, suggestedTag=Polyspike-and-slow-wave-morphology, suggestedTag=Sharp-and-slow-wave-morphology, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Slow-wave-large-amplitude-morphology, suggestedTag=Irregular-delta-or-theta-activity-morphology, suggestedTag=Electrodecremental-change-morphology, suggestedTag=DC-shift-morphology, suggestedTag=Disappearance-of-ongoing-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-source-analysis-laterality, suggestedTag=Finding-source-analysis-brain-region,suggestedTag=Episode-event-count}
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
             *** Postictal-EEG-activity {suggestedTag=Brain-laterality, suggestedTag=Body-part, suggestedTag=Brain-centricity}
 
         ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.]</nowiki>
@@ -1031,13 +926,10 @@ This project was supported by the by the National Institute of Mental Health of 
 
         ** Finding-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
-<<<<<<< HEAD
         
         ** Finding-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
 
-=======
->>>>>>> d53496f79cc271123bf9ebabc5123a74a54591c5
 
         ** Finding-amplitude-asymmetry <nowiki> {requireChild} [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
