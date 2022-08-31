@@ -232,11 +232,11 @@ This project was supported by the by the National Institute of Mental Health of 
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Apnea-hypopnea-index-respiration <nowiki> {requireChild,suggestedTag=Finding-frequency} [Events/h.]</nowiki>
+            *** Apnea-hypopnea-index-respiration <nowiki> {requireChild} [Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Tachypnea-respiration <nowiki> {requireChild,suggestedTag=Finding-frequency} [Cycles/min.]</nowiki>
+            *** Tachypnea-respiration <nowiki> {requireChild} [Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-respiration-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -244,19 +244,19 @@ This project was supported by the by the National Institute of Mental Health of 
         ** ECG-QT-period
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** ECG-feature
-            *** ECG-sinus-rhythm <nowiki>{suggestedTag=Finding-frequency}[Normal rhythm.]</nowiki>
+            *** ECG-sinus-rhythm <nowiki>[Normal rhythm. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** ECG-arrhythmia
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** ECG-asystolia <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-bradycardia {suggestedTag=Finding-frequency}
+            *** ECG-bradycardia <nowiki>[Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** ECG-extrasystole
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-ventricular-premature-depolarization {suggestedTag=Finding-frequency}
+            *** ECG-ventricular-premature-depolarization <nowiki>[Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-tachycardia {suggestedTag=Finding-frequency}
+            *** ECG-tachycardia <nowiki>[Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-ECG-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -274,7 +274,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** EMG-myoclonus
                 **** Negative-myoclonus
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** EMG-myoclonus-rhythmic {suggestedTag=Finding-frequency}
+                **** EMG-myoclonus-rhythmic
                         ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                     **** EMG-myoclonus-arrhythmic
                         ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
