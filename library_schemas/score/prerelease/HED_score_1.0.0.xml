@@ -1860,13 +1860,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Apnea-hypopnea-index-respiration</name>
-                  <description>Events/h.</description>
+                  <description>Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -1896,13 +1892,9 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>Tachypnea-respiration</name>
-                  <description>Cycles/min.</description>
+                  <description>Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <attribute>
                      <name>requireChild</name>
-                  </attribute>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
                   </attribute>
                   <node>
                      <name>#</name>
@@ -1960,11 +1952,7 @@ This project was supported by the by the National Institute of Mental Health of 
                <name>ECG-feature</name>
                <node>
                   <name>ECG-sinus-rhythm</name>
-                  <description>Normal rhythm.</description>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
-                  </attribute>
+                  <description>Normal rhythm. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2008,10 +1996,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-bradycardia</name>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
-                  </attribute>
+                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2040,10 +2025,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-ventricular-premature-depolarization</name>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
-                  </attribute>
+                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2058,10 +2040,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
                <node>
                   <name>ECG-tachycardia</name>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Finding-frequency</value>
-                  </attribute>
+                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -2179,10 +2158,6 @@ This project was supported by the by the National Institute of Mental Health of 
                   </node>
                   <node>
                      <name>EMG-myoclonus-rhythmic</name>
-                     <attribute>
-                        <name>suggestedTag</name>
-                        <value>Finding-frequency</value>
-                     </attribute>
                      <node>
                         <name>#</name>
                         <description>Free text.</description>
