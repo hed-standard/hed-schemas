@@ -114,9 +114,7 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Lateralized-periodic-discharges <nowiki>[LPDs.]</nowiki>
             *** Bilateral-independent-periodic-discharges <nowiki>[BIPDs.]</nowiki>
             *** Multifocal-periodic-discharges <nowiki>[MfPDs.]</nowiki>
-        ** Interictal-extreme-delta-brush {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
-        ** Interictal-burst-suppression <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-extent} [Pattern characterized by burst of theta and/pr delta waves, at times intermixed with faster waves, and intervening periods of low amplitude (below 20 uV).]</nowiki>
-        ** Interictal-burst-attenuation {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-extent}
+        ** Extreme-delta-brush {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
 
 
 '''Episode''' <nowiki> {requireChild} [Clinical episode or electrographic seizure.] </nowiki>
