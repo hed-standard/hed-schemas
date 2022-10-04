@@ -116,10 +116,12 @@ This project was supported by the by the National Institute of Mental Health of 
             *** Multifocal-periodic-discharges <nowiki>[MfPDs.]</nowiki>
         ** Extreme-delta-brush {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
 
-'''Critically-ill-patients-patterns''' <nowiki> {requireChild} [Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology (Hirsch et al., 2013).] </nowiki>
+
+'''Critically-ill-patients-patterns''' <nowiki> {requireChild} [Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Hirsch et al., 2013).] </nowiki>
     * Critically-ill-patients-periodic-discharges <nowiki> {suggestedTag=Periodic-discharges-superimposed-activity, suggestedTag=Periodic-discharge-sharpness, suggestedTag=Number-of-periodic-discharge-phases, suggestedTag=Periodic-discharge-triphasic-morphology, suggestedTag=Periodic-discharge-absolute-amplitude, suggestedTag=Periodic-discharge-relative-amplitude, suggestedTag=Periodic-discharge-polarity, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-duration, suggestedTag=Periodic-discharge-onset, suggestedTag=Periodic-discharge-dynamics} [Periodic discharges (PDs).]</nowiki>
     * Rhythmic-delta-activity <nowiki> {suggestedTag=Periodic-discharges-superimposed-activity, suggestedTag=Periodic-discharge-absolute-amplitude, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-duration, suggestedTag=Periodic-discharge-onset, suggestedTag=Periodic-discharge-dynamics} [RDA] </nowiki>
     * Spike-or-sharp-and-wave <nowiki> {suggestedTag=Periodic-discharge-sharpness, suggestedTag=Number-of-periodic-discharge-phases, suggestedTag=Periodic-discharge-triphasic-morphology, suggestedTag=Periodic-discharge-absolute-amplitude, suggestedTag=Periodic-discharge-relative-amplitude, suggestedTag=Periodic-discharge-polarity, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-duration, suggestedTag=Periodic-discharge-onset, suggestedTag=Periodic-discharge-dynamics} [SW] </nowiki>
+
 
 '''Episode''' <nowiki> {requireChild} [Clinical episode or electrographic seizure.] </nowiki>
 
