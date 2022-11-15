@@ -1,15 +1,11 @@
 <?xml version="1.0" ?>
 <HED library="score" version="1.0.0">
-   <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG (SCORE). It includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
-Data sharing using standard definitions enables applications of automated tools to optimize analyses, reduce errors, and ultimately to advance the understanding of the human brain.
-This implementation of SCORE in HED is open-source and machine-readable in order to enable the use of SCORE in automated mega-analyses.
+   <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE) for describing events occurring during neuroimaging time series recordings.
+The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
+The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
-Reference:
-[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
-[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017).
-
-This mediawiki schema was implemented by Tal Pal Attia, Kay Robbins, Scott Makeig and Dora Hermes (Mayo Clinic).
-This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
+Future extensions may be implemented in the HED-SCORE library schema.
+For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.</prologue>
    <schema>
       <node>
          <name>Modulator</name>
@@ -7933,5 +7929,13 @@ This project was supported by the by the National Institute of Mental Health of 
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>TPA, August 2022</epilogue>
+   <epilogue>The Standardized Computer-based Organized Reporting of EEG (SCORE) is a standard terminology for scalp EEG data assessment designed for use in clinical practice that may also be used for research purposes.
+The SCORE standard defines terms for describing phenomena observed in scalp EEG data. It is also potentially applicable (with some suitable extensions) to EEG recorded in critical care and neonatal settings.
+The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
+A second revised and extended version of SCORE achieved international consensus.
+
+[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
+[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017). 
+
+TPA, November 2022</epilogue>
 </HED>
