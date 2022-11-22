@@ -1,15 +1,11 @@
 <?xml version="1.0" ?>
 <HED library="score" version="1.0.0">
-   <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation for Standardized Computer-based Organized Reporting of EEG (SCORE). It includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
-Data sharing using standard definitions enables applications of automated tools to optimize analyses, reduce errors, and ultimately to advance the understanding of the human brain.
-This implementation of SCORE in HED is open-source and machine-readable in order to enable the use of SCORE in automated mega-analyses.
+   <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
+The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
+The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
-Reference:
-[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
-[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017).
-
-This mediawiki schema was implemented by Tal Pal Attia, Kay Robbins, Scott Makeig and Dora Hermes (Mayo Clinic).
-This project was supported by the by the National Institute of Mental Health of the National Institutes of Health under Award Number R01MH122258 (DH). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</prologue>
+Future extensions may be implemented in the HED-SCORE library schema.
+For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.</prologue>
    <schema>
       <node>
          <name>Modulator</name>
@@ -289,6 +285,8 @@ This project was supported by the by the National Institute of Mental Health of 
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
+               <value>Finding-frequency</value>
+               <value>Posterior-dominant-rhythm-amplitude-range</value>
                <value>Finding-amplitude-asymmetry</value>
                <value>Posterior-dominant-rhythm-frequency-asymmetry</value>
                <value>Posterior-dominant-rhythm-eye-opening-reactivity</value>
@@ -536,7 +534,28 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
          </node>
          <node>
-            <name>Sleep-vertex-wave</name>
+            <name>Arousal-pattern</name>
+            <description>Arousal pattern in children. Prolonged, marked high voltage 4-6/s activity in all leads with some intermixed slower frequencies, in children.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
+         </node>
+         <node>
+            <name>Frontal-arousal-rhythm</name>
+            <description>Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Appearance-mode</value>
+               <value>Discharge-pattern</value>
+            </attribute>
+         </node>
+         <node>
+            <name>Vertex-wave</name>
             <description>Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
             <attribute>
                <name>suggestedTag</name>
@@ -548,7 +567,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
          </node>
          <node>
-            <name>Sleep-K-complex</name>
+            <name>K-complex</name>
             <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
             <attribute>
                <name>suggestedTag</name>
@@ -560,7 +579,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
          </node>
          <node>
-            <name>Sleep-saw-tooth-waves</name>
+            <name>Saw-tooth-waves</name>
             <description>Vertex negative 2-5 Hz waves occuring in series during REM sleep</description>
             <attribute>
                <name>suggestedTag</name>
@@ -572,7 +591,7 @@ This project was supported by the by the National Institute of Mental Health of 
             </attribute>
          </node>
          <node>
-            <name>Sleep-POSTS</name>
+            <name>POSTS</name>
             <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.</description>
             <attribute>
                <name>suggestedTag</name>
@@ -694,7 +713,7 @@ This project was supported by the by the National Institute of Mental Health of 
                </node>
             </node>
             <node>
-               <name>Interictal-extreme-delta-brush</name>
+               <name>Extreme-delta-brush</name>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Brain-laterality</value>
@@ -704,27 +723,71 @@ This project was supported by the by the National Institute of Mental Health of 
                   <value>Discharge-pattern</value>
                </attribute>
             </node>
-            <node>
-               <name>Interictal-burst-suppression</name>
-               <description>Pattern characterized by burst of theta and/pr delta waves, at times intermixed with faster waves, and intervening periods of low amplitude (below 20 uV).</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Finding-extent</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Interictal-burst-attenuation</name>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Finding-extent</value>
-               </attribute>
-            </node>
+         </node>
+      </node>
+      <node>
+         <name>Critically-ill-patients-patterns</name>
+         <description>Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Hirsch et al., 2013).</description>
+         <attribute>
+            <name>requireChild</name>
+         </attribute>
+         <node>
+            <name>Critically-ill-patients-periodic-discharges</name>
+            <description>Periodic discharges (PDs).</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Periodic-discharges-superimposed-activity</value>
+               <value>Periodic-discharge-sharpness</value>
+               <value>Number-of-periodic-discharge-phases</value>
+               <value>Periodic-discharge-triphasic-morphology</value>
+               <value>Periodic-discharge-absolute-amplitude</value>
+               <value>Periodic-discharge-relative-amplitude</value>
+               <value>Periodic-discharge-polarity</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Finding-frequency</value>
+               <value>Periodic-discharge-duration</value>
+               <value>Periodic-discharge-onset</value>
+               <value>Periodic-discharge-dynamics</value>
+            </attribute>
+         </node>
+         <node>
+            <name>Rhythmic-delta-activity</name>
+            <description>RDA</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Periodic-discharges-superimposed-activity</value>
+               <value>Periodic-discharge-absolute-amplitude</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Finding-frequency</value>
+               <value>Periodic-discharge-duration</value>
+               <value>Periodic-discharge-onset</value>
+               <value>Periodic-discharge-dynamics</value>
+            </attribute>
+         </node>
+         <node>
+            <name>Spike-or-sharp-and-wave</name>
+            <description>SW</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Periodic-discharge-sharpness</value>
+               <value>Number-of-periodic-discharge-phases</value>
+               <value>Periodic-discharge-triphasic-morphology</value>
+               <value>Periodic-discharge-absolute-amplitude</value>
+               <value>Periodic-discharge-relative-amplitude</value>
+               <value>Periodic-discharge-polarity</value>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Multifocal-finding</value>
+               <value>Finding-frequency</value>
+               <value>Periodic-discharge-duration</value>
+               <value>Periodic-discharge-onset</value>
+               <value>Periodic-discharge-dynamics</value>
+            </attribute>
          </node>
       </node>
       <node>
@@ -1284,72 +1347,6 @@ This project was supported by the by the National Institute of Mental Health of 
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Arousal-pattern</name>
-            <description>Arousal pattern in children. Prolonged, marked high voltage 4-6/s activity in all leads with some intermixed slower frequencies, in children.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Brain-laterality</value>
-               <value>Brain-region</value>
-               <value>Sensors</value>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Sleep-spindles-pattern</name>
-            <description>Burst at 11-15 Hz but mostly at 12-14 Hz generally diffuse but of higher voltage over the central regions of the head, occurring during sleep. Amplitude varies but is mostly below 50 micro V in the adult.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Brain-laterality</value>
-               <value>Brain-region</value>
-               <value>Sensors</value>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Vertex-wave-pattern</name>
-            <description>Vertex sharp transient. Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 micro V. Abbreviation: V wave. Synonym: vertex sharp wave.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Brain-laterality</value>
-               <value>Brain-region</value>
-               <value>Sensors</value>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>K-complex-pattern</name>
-            <description>A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during non-REM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>POSTS-pattern</name>
-            <description>Positive occipital sharp transient of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 micro V.</description>
-            <attribute>
-               <name>suggestedTag</name>
-               <value>Brain-laterality</value>
-               <value>Brain-region</value>
-               <value>Sensors</value>
-               <value>Appearance-mode</value>
-               <value>Discharge-pattern</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Frontal-arousal-rhythm</name>
-            <description>Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.</description>
-            <attribute>
-               <name>suggestedTag</name>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -7932,5 +7929,13 @@ This project was supported by the by the National Institute of Mental Health of 
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>TPA, August 2022</epilogue>
+   <epilogue>The Standardized Computer-based Organized Reporting of EEG (SCORE) is a standard terminology for scalp EEG data assessment designed for use in clinical practice that may also be used for research purposes.
+The SCORE standard defines terms for describing phenomena observed in scalp EEG data. It is also potentially applicable (with some suitable extensions) to EEG recorded in critical care and neonatal settings.
+The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
+A second revised and extended version of SCORE achieved international consensus.
+
+[1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
+[2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017). 
+
+TPA, November 2022</epilogue>
 </HED>
