@@ -1,28 +1,32 @@
-# Hierarchical Event Descriptors (HED) Schema Library
+# Hierarchical Event Descriptors (HED) Schemas
 
-**The HED library schema are currently under review and subject to change
-their official release.**
+HED is an evolving framework for the description and formal annotation of events 
+identified in time series data. The HED ecosystem includes a structured vocabulary (HED schema)
+together with tools for validation and for using HED annotations in data search, 
+extraction, and analysis. While HED can be used to annotate any type of event, 
+the current HED community focuses on annotation of events in human 
+electrophysiological and behavioral data such as EEG, MEG, iEEG, eye-tracking, 
+motion-capture, EKG, and audiovisual recording.
+
+The **HED schemas** are hierarchically-structured vocabularies for annotation.
+The HED ecosystem includes a **standard schema** for basic the basic vocabulary
+needed for annotation as well as specialized **library schemas** for
+the additional field-specific terms needed to complete an annotation.
 
 
-### HED Library Schema
-
-The individual library schema are located in their own directories under the
-`library_schemas` directory. The following table gives links to the `READMEs`
-for the individual library schemas, which contain viewers and other information
-specific to each schema.
-
-| Library name | Version | Description |
-| ------------ | ------- | --------------------------- |
-|  [score](library_schemas/score) | 0.0.1   | Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
-|  [testlib](library_schemas/testlib) | 1.0.1   | A prerelease copy of same schema as HED 8.0.1 for testing. |
+| Schema | Version | Viewer | Description |
+| ------------ | ------- | -------- | ------------------------- |
+| [standard](standard_schema) | 8.1.0 | --------------------------- |
+| [score](library_schemas/score) | 0.0.1   | [**Viewer**](https://www.hedtags.org/display_hed_score.html)  Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
+|  [testlib](library_schemas/testlib) | 1.0.1 |   | A prerelease copy of same schema as HED 8.0.1 for testing. |
 
 **Note:** The website contains both `.mediawiki` and `.xml` versions of the schema.
 The schemas are located in the `hedwiki` and `hedxml` subdirectories, respectively,
-of the library schema directory.
+of the respective schema directory.
 
 ## HED semantic versioning
 
-HED library schema use the following rules for
+HED schema use the following rules for
 changing the semantic version *major.minor.patch*. These rules are
 based on the assumption that the short form will not require retagging
 for patch-level or minor-version changes. A validation error might occur
@@ -48,8 +52,8 @@ levels of changes in the semantic version:
 
 ## HED revision process
 
-As modifications to the HED library schema are proposed, they are entered into the
-`PROPOSED.md` document for discussion.
+As modifications to the HED schema are proposed, they are entered into the
+`PROPOSED.md` document in their respective directory for discussion.
 Approved changes and corrections are first made in a working version of the
 schema that is located in the `prerelease` subdirectory. 
 Upon final review, the new HED schema is released and moved to the
