@@ -8,7 +8,7 @@ HED schemas
 
    `HED tools <https://hed-schemas.readthedocs.io/_/downloads/en/latest/pdf/>`_
 
-Note:  this is a work in progress. More information is coming. This is testing the update link.
+Note:  this is a work in progress. More information is coming. This is testing the update link.  New link in progress.
 
 .. toctree::
    :maxdepth: 4
