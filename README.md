@@ -14,10 +14,10 @@ needed for annotation as well as specialized **library schemas** for
 the additional field-specific terms needed to complete an annotation.
 
 
-| Schema | Version | Viewer | Description |
-| ------------ | ------- | -------- | ------------------------- |
-| [standard](standard_schema) | 8.1.0 | --------------------------- |
-| [score](library_schemas/score) | 0.0.1   | [**Viewer**](https://www.hedtags.org/display_hed_score.html)  Library schema based on the SCORE standard for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html) for additional information.) |
+| Schema | Latest<br/>version | Viewers | Description |
+| ------ | ------- | ------ | ---------------| ------------------------- |
+| [standard](standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/>[**Prelease**](https://www.hedtags.org/display_hed_prelease.html)  |
+| [score](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/>[**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
 |  [testlib](library_schemas/testlib) | 1.0.1 |   | A prerelease copy of same schema as HED 8.0.1 for testing. |
 
 **Note:** The website contains both `.mediawiki` and `.xml` versions of the schema.
