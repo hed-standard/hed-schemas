@@ -17,3 +17,11 @@ version of the schema is available in the `prerelease` directory and can be view
 at:
 
 > [**Expandable html view of the prelease version of the testlib HED Library Schema**](https://www.hedtags.org/display_hed_testlib_prerelease.html) 
+
+
+## Stable links for HED validation
+
+> [**Stable directory link for software requiring a HED schema for validation**](https://github.com/hed-standard/hed-schemas/tree/main/standard_schema/hedxml)
+
+> [**Stable link for the latest version of the HED**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml)
+

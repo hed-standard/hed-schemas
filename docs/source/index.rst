@@ -14,9 +14,10 @@ Note:  this is a work in progress. More information is coming. This is testing t
    :maxdepth: 4
    :caption: Contents:
 
-   Introduction.md
-   Library_schema_overview.md
-   SCORE_library.md
+   introduction_to_hed_schemas.md
+   hed_library_schemas.md
+   hed_score_library.md
+   schema_development_guide.md
 
 
 .. toctree::
