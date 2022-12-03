@@ -1,6 +1,20 @@
-# Hierarchical Event Descriptors (HED) Schemas
+# HED schemas
 
-HED is an evolving framework for the description and formal annotation of events 
+The **HED schemas** are hierarchically-structured vocabularies for annotating data.
+The HED ecosystem includes a **standard schema** containing the basic vocabulary
+needed for annotation of experimental data as well as specialized **library schemas** for
+the additional field-specific terms needed to complete an annotation.
+
+
+| Schema | Current version | Viewers | Description |
+| ------ | --------------- | ------- | ------------------------- |  
+| [standard](standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prelease**](https://www.hedtags.org/display_hed_prelease.html)  | Basic vocabulary for annotating data. |
+| [score](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
+|  [testlib](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
+
+
+## About HED
+HED (Hierarchical Event Descriptors) is an evolving framework for the description and formal annotation of events 
 identified in time series data. The HED ecosystem includes a structured vocabulary (HED schema)
 together with tools for validation and for using HED annotations in data search, 
 extraction, and analysis. While HED can be used to annotate any type of event, 
@@ -8,28 +22,25 @@ the current HED community focuses on annotation of events in human
 electrophysiological and behavioral data such as EEG, MEG, iEEG, eye-tracking, 
 motion-capture, EKG, and audiovisual recording.
 
-The **HED schemas** are hierarchically-structured vocabularies for annotation.
-The HED ecosystem includes a **standard schema** for basic the basic vocabulary
-needed for annotation as well as specialized **library schemas** for
-the additional field-specific terms needed to complete an annotation.
+## Using HED vocabularies
 
+Access to the HED vocabularies hosted in this repository
+happens automatically through tools in the HED ecosystem.
 
-| Schema | Latest<br/>version | Viewers | Description |
-| ------ | ------- | ------ | ---------------| ------------------------- |
-| [standard](standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/>[**Prelease**](https://www.hedtags.org/display_hed_prelease.html)  |
-| [score](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/>[**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
-|  [testlib](library_schemas/testlib) | 1.0.1 |   | A prerelease copy of same schema as HED 8.0.1 for testing. |
+## Developing a new HED vocabulary
 
-**Note:** The website contains both `.mediawiki` and `.xml` versions of the schema.
-The schemas are located in the `hedwiki` and `hedxml` subdirectories, respectively,
-of the respective schema directory.
+To begin to develop your own library post an issue in this repository.
+
 
 ## HED semantic versioning
 
 HED schema use the following rules for
-changing the semantic version *major.minor.patch*. These rules are
-based on the assumption that the short form will not require retagging
-for patch-level or minor-version changes. A validation error might occur
+changing the  *major.minor.patch* semantic version.
+These rules are based on the assumption that the HED short form
+(**Needs link**) will not require data annotators to retag their data for patch-level or minor-version changes of the schema.
+That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. 
+However, the reverse is not necessarily true.
+In addition, validation errors might occur
 during for patch-level or minor-version changes for changes or
 corrections in tag values or units. 
 
