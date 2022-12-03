@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'HED schema library'
+project = 'HED schemas'
 copyright = '2021-{}, HED Working Group'.format(date.today().year)
 author = 'HED Working Group'
 

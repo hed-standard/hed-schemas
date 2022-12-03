@@ -1,4 +1,4 @@
-HED schema library
+HED schemas
 ===================
 
 
@@ -6,7 +6,9 @@ HED schema library
 
    `HED tools <https://hed-schema-library.readthedocs.io/_/downloads/en/latest/pdf/>`_
 
-Note:  this is a work in progress. More information is coming.
+   `HED tools <https://hed-schemas.readthedocs.io/_/downloads/en/latest/pdf/>`_
+
+Note:  this is a work in progress. More information is coming. This is testing the update link.
 
 .. toctree::
    :maxdepth: 4
