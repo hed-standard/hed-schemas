@@ -1,5 +1,5 @@
 
-## Schema revision guidelines
+## Schema development guide
 
 As modifications to the HED schema are proposed, they are entered into the
 [PROPOSED](PROPOSED.md) document for discussion.

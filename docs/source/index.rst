@@ -17,7 +17,7 @@ Note:  this is a work in progress. More information is coming. This is testing t
    introduction_to_hed_schemas.md
    hed_library_schemas.md
    hed_score_library.md
-   schema_revisions_guidelines.md
+   schema_development_guide.md
 
 
 .. toctree::
