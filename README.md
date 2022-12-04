@@ -15,9 +15,8 @@ the additional field-specific terms needed to complete an annotation.
 
 ## About HED
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
-formal annotation of events and other information in data. 
-identified in time series data. 
-The HED ecosystem includes a structured vocabulary (HED schema)
+formal annotation of events and other information in data.
+The HED ecosystem includes a structured vocabulary (specified by a HED schema)
 together with tools for validation and for using HED annotations in data search, 
 extraction, and analysis. 
 
