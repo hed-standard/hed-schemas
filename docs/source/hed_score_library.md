@@ -16,12 +16,13 @@ The top levels of the HED schema library for SCORE correspond to the main EEG gr
 
 The SCORE HED schema library is intended to describe all normal and abnormal EEG features. Therefore, description of patient information, referral and recording condition information, administrative data, and continuous EEG monitoring in neonates is beyond this scope.
 
-### Validation
+## Validation
 The HED schema library for SCORE was converted and validated using the HED tools. See more [here](https://hedtools.ucsd.edu/hed).
 
 ## Brain imaging data structure (BIDS)
 HED schema library for SCORE is compatible with the BIDS human and machine-readable events annotations .tsv files, see more [here](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html#appendix-iii-hierarchical-event-descriptors).
-A HED schema library for SCORE annotations implementation example is available [here](https://github.com/tpatpa/bids-examples/tree/master/xeeg_hed_score).
+An implementation example using HED schema library for SCORE annotations is available
+[here](https://github.com/tpatpa/bids-examples/tree/master/xeeg_hed_score).
 
 ---
 *Manuscript: Tal Pal Attia et al., (in prep). "Hierarchical Event Descriptor library schema for clinical EEG data annotation".*

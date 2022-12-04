@@ -89,16 +89,16 @@ version 8.1.0, along with library schema `testlib` version 1.0.2.
 Tags from the `testlib` schema library are to be prefixed with `la:`.
 
 
-````{admonition} **Example:** Proposed specification of library schema in BIDS.
+`````{admonition} **Example:** Proposed specification of library schema in BIDS.
 
 ```json
 {
     "Name": "A wonderful experiment",
     "BIDSVersion": "1.8.0",
-    "HEDVersion": ["8.1.0", la:testa_1.0.2]
+    "HEDVersion": ["8.1.0", "la:testa_1.0.2"]
 }
 ```
-````
+`````
 
 The `"la"` library schema is the `./hedxml/HED_libraryA_1.0.2.xml` file found in the
 [`hed-schemas`](https://github.com/hed-standard/hed-schemas) GitHub repository.
