@@ -17,8 +17,11 @@ Note:  this is a work in progress.
    schema_development_guide.md
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Resources:
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
 

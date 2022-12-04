@@ -24,11 +24,12 @@ HED schema library for SCORE is compatible with the BIDS human and machine-reada
 An implementation example using HED schema library for SCORE annotations is available
 [here](https://github.com/tpatpa/bids-examples/tree/master/xeeg_hed_score).
 
----
-*Manuscript: Tal Pal Attia et al., (in prep). "Hierarchical Event Descriptor library schema for clinical EEG data annotation".*
+## References
 
 [1]: Beniczky, Sándor, et al. "Standardized computer‐based organized reporting of EEG: SCORE." Epilepsia 54.6 (2013): 1112-1124.
 
 [2]: Beniczky, Sándor, et al. "Standardized computer-based organized reporting of EEG: SCORE–second version." Clinical Neurophysiology 128.11 (2017): 2334-2346.
 
-[3]: https://www.holbergeeg.com/educational-platform
+[3]: Holberg Education platform. https://www.holbergeeg.com/educational-platform
+
+[4]: *Manuscript: Tal Pal Attia et al., (in prep). "Hierarchical Event Descriptor library schema for clinical EEG data annotation".*

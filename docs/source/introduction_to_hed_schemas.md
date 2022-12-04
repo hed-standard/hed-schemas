@@ -26,49 +26,43 @@ machine-actionable. However, HED annotations and framework can be used to incorp
 other types of metadata into analysis by providing a common API (Application Programming 
 Interface) for building inter-operable tools. 
 
+## Role of library schemas
+
+**To avoid** uncontrolled expansion of the base HED vocabulary with specialized terminology, 
+HED supports the creation of library schema, which are specialized vocabularies that can
+be used in conjunction with the base schema to analyze specific aspects of interest.
+
+To use a programming analogy, when programmers write a Python module, the resulting code 
+does not become part of the Python language or core library. Instead, the module becomes 
+part of a library used in conjunction with core modules of the programming language. 
+HED annotations may contain any combination of tags from the standard vocabulary and/or
+HED library vocabularies.
+
+Several library schemas are currently under development including the SCORE library
+for describing data features of clinical interest (e.g., seizure, sleep stage IV) as
+well as schemas for describing features in language structure and video.
+
+Each library schema has its own directory under in the 
+[**hed-schemas**](https://github.com/hed-standard/hed-schemas) GitHub repository.
+
 ## The HED community and resources
 
 All HED-related source and documentation repositories are housed on the HED-standard 
 organization GitHub site, [https://github.com/hed-standard](https://github.com/hed-standard),
 which is maintained by the HED Working Group. HED development is open-source and
 community-based. The official HED website [https://www.hedtags.org](https://www.hedtags.org)
-for a list of additional resources. Tg
+for a list of additional resources. 
 
-The HED Working Group invites those interested in HED to contribute to the development process. 
-Users are encouraged to use the *Issues* mechanism of the `hed-specification`
-repository on the GitHub `hed-standard` working group website: 
-[https://github.com/hed-standard/hed-specification/issues](https://github.com/hed-standard/hed-specification/issues)
-to ask for help or make suggestions. The HED discussion forum 
-[https://github.com/hed-standard/hed-specification/discussions](https://github.com/hed-standard/hed-specification/discussions) is maintained for in depth 
-discussions of HED issues and evolution.
+The HED Working Group invites those interested in HED to contribute to the HED ecosystem and development process.
 
+HED schemas are community-driven. Users can contribute to existing schema or
+propose the development of new schema by posting an
+[**issue**](https://github.com/hed-standard/hed-schemas/issues) to the 
+[**hed-schemas**](https://github.com/hed-standard/hed-schemas) GitHub repository.
 
-## Adding to the vocabulary
+The HED discussion forum is:
+[https://github.com/hed-standard/hed-schemas/discussions](https://github.com/hed-standard/hed-schemas/discussions) 
 
-The HED vocabulary is organized hierarchically (in a schema) to make it easier for users to 
-annotate and search for terms.
-Although the users are allowed to extend the schema in most places by adding more specific
-tags, expansion should be avoided unless absolutely necessary because only the
-terms in the official schema will be shared among users.
-
-The way to add a tag 
-Users who wish to add a HED
-
-## Role of library schemas
-
-**To avoid** uncontrolled expansion of the base HED vocabulary with specialized terminology, 
-HED supports the creation of library schema, which are specialized vocabularies that can
-be used in conjunction with the base schema to analyze specific aspects of interest. 
-Experiments in any given subfield can contribute to pressure to add 
-overly-specific terms and jargon to the schema hierarchy—for example, adding musical 
-terms to tag events in music-based experiments, video markup terms for experiments 
-involving movie viewing, traffic terms for experiments involving
-virtual driving, and so forth. 
-
-Clinical fields using neuroimaging also have their own specific
-vocabularies for describing data features of clinical interest (e.g., seizure, sleep stage IV).
-Including these discipline-specific terms quickly makes the base HED schema unwieldy and less
-usable by the broader user community.
 
 ## HED schemas in BIDS
 
@@ -104,4 +98,3 @@ The `"la"` library schema is the `./hedxml/HED_libraryA_1.0.2.xml` file found in
 [`hed-schemas`](https://github.com/hed-standard/hed-schemas) GitHub repository.
 The specification indicates that annotations using HED tags from this library 
 have the `la:` prefix (e.g., `la:XXX`). 
-
