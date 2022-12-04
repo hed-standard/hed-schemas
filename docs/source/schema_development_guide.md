@@ -1,26 +1,20 @@
 
-## Schema development guide
+# Schema development guide
 
-# Design principles for schema
+## Design principles for schema
 
-
-Third generation HED instead introduces the concept of the **HED library schema**. 
-To use a programming analogy, when programmers write a Python module, the resulting code 
-does not become part of the Python language or core library. Instead, the module becomes 
-part of a library used in conjunction with core modules of the programming language. 
-
-Similar to the design principles imposed on function names and subclass organization in 
-software development, HED schemas must conform to some basic rules:
+All HED schema (both the standard and library schemas) must conform to certain design principles
+in addition to properly validating.
 
 ``````{admonition} Rules for HED schema design.
 :class: tip
 
-1. Every term must be unique within the schema and must conform to the rules for
+1. [**Unique**] Every term must be unique within the schema and must conform to the rules for
 HED schema terms.
-2. Schema terms should be readily understood by most users. The terms should not be ambiguous and should be meaningful in themselves without reference to their position in the schema hierarchy.
-3. If possible, no schema sub-tree should have more than 7 direct subordinate sub-trees.
-4. Terms that are used independently of one another should be in different sub-trees (orthogonality).
-5. Every term in the hierarchy satistifies the **is-a** relationship with its parent.
+2. [**Meaningful**] Schema terms should be readily understood by most users. The terms should not be ambiguous and should be meaningful in themselves **without** reference to their position in the schema hierarchy.
+3. [**Organized**] If possible, a schema sub-tree should have no more than 7 direct subordinate sub-trees.
+4. [**Orthogonal**] Terms that are used independently of one another should be in different sub-trees (orthogonality).
+5. [**Sub-classed**]Every term in the hierarchy satistifies the **is-a** relationship with its parent.
 In other words if B has A as a parent in the schema hierarchy, then B is an example of A.
 Searching for A will also return B (search generality).
 
