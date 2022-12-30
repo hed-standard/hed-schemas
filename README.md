@@ -91,6 +91,10 @@ and events with temporal extent.
 
 ## HED revision process
 
+If you want to suggest a new feature or a change to the standard HED schema or one
+of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
+to this repository and it will find its way to the right place.
+
 As modifications to the HED schema are proposed, they are entered into the
 `PROPOSED.md` document in their respective directory for discussion.
 Approved changes and corrections are first made in a working version of the
@@ -98,8 +102,10 @@ schema that is located in the `prerelease` subdirectory.
 Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
 
+For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html)
 
 ## Tools to help with HED annotations
+
 The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
 CTagger can be used as a standalone application or can be called from EEGLAB via the
 [hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
@@ -111,7 +117,6 @@ Please refer to the linked repositories for more documentation on how to start H
 The current online HED tools include an online validator of spreadsheets (Excel or tsv)
 containing HED tags. 
 Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
-Many other tools including the HED file   
 
 The released version of the web-based HED tools are located at [https://hedtools.ucsd.edu/hed](https://hedtools.ucsd.edu/hed).
 The development version of the tools, used to test features before release,
@@ -133,4 +138,3 @@ of the [hed-web](https://github.com/hed-standard/hed-web) repository of
 The following working document describes the origin of the descriptions associated with individual nodes in the HED hierarchy. Many terms appear in the NCIT ontology (National Cancer Institute Thesaurus OBO edition).
 
 > [**Google doc with mapping of HED-3G term descriptions to existing ontology terms**](https://drive.google.com/file/d/13y17OwwNBlHdhB7hguSmOBdxn0Uk4hsI/view?usp=sharing) 
-
