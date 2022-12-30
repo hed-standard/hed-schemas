@@ -15,7 +15,7 @@ See the [**HED project homepage**](https://hedtags.org) and
 particularly the [**How do you use HED?**](https://www.hed-resources.org/en/latest/HowCanYouUseHed.html)
 for information about how to get started or how to get involved in the HED community.
 
-# Viewing HED schemas
+## Viewing HED schemas
 
 The **HED schemas** are hierarchically-structured vocabularies for annotating data.
 The HED ecosystem includes a **standard schema** containing the basic vocabulary
@@ -29,12 +29,51 @@ the additional field-specific terms needed to complete an annotation.
 | [**score**](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
 |  [**testlib**](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
 
+## HED revision process
+
+If you want to suggest a new feature or a change to the standard HED schema or one
+of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
+to this repository and it will find its way to the right place.
+
+As modifications to the HED schema are proposed, they are entered into the
+`PROPOSED.md` document in their respective directory for discussion.
+Approved changes and corrections are first made in a working version of the
+schema that is located in the `prerelease` subdirectory. 
+Upon final review, the new HED schema is released and moved to the
+`hedxml` directory of the respective library schema.
+
+For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html)
+
+
+## Tools to help with HED annotations
+
+The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
+CTagger can be used as a standalone application or can be called from EEGLAB via the
+[hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
+Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
+
+
+## Web-based HED tools
+
+The current online HED tools include an online validator of spreadsheets (Excel or tsv)
+containing HED tags. 
+Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
+
+The released version of the web-based HED tools are located at [https://hedtools.ucsd.edu/hed](https://hedtools.ucsd.edu/hed).
+The development version of the tools, used to test features before release,
+is located at [https://hedtools.ucsd.edu/hed_dev](https://hedtools.ucsd.edu/hed_dev).
+
+The tools can be run locally using the `runserver.py` function the hedweb module
+of the [hed-web](https://github.com/hed-standard/hed-web) repository of 
+[hed-standard](https://github.com/hed-standard).
+
+
 ## HED semantic versioning
 
 HED schema use the following rules for
 changing the  *major.minor.patch* semantic version.
-These rules are based on the assumption that the HED short form
-(**Needs link**) will not require data annotators to retag their data for patch-level or minor-version changes of the schema.
+These rules are based on the assumption that the [**HED tag**](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) 
+short form will not require data annotators to retag their data for patch-level or minor-version changes of the schema.
 That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. 
 However, the reverse is not necessarily true.
 In addition, validation errors might occur
@@ -89,42 +128,6 @@ design within the data as well as the ability to handle event context
 and events with temporal extent.
 
 
-## HED revision process
-
-If you want to suggest a new feature or a change to the standard HED schema or one
-of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
-to this repository and it will find its way to the right place.
-
-As modifications to the HED schema are proposed, they are entered into the
-`PROPOSED.md` document in their respective directory for discussion.
-Approved changes and corrections are first made in a working version of the
-schema that is located in the `prerelease` subdirectory. 
-Upon final review, the new HED schema is released and moved to the
-`hedxml` directory of the respective library schema.
-
-For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html)
-
-## Tools to help with HED annotations
-
-The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
-CTagger can be used as a standalone application or can be called from EEGLAB via the
-[hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
-Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
-
-
-## Web-based HED tools
-
-The current online HED tools include an online validator of spreadsheets (Excel or tsv)
-containing HED tags. 
-Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
-
-The released version of the web-based HED tools are located at [https://hedtools.ucsd.edu/hed](https://hedtools.ucsd.edu/hed).
-The development version of the tools, used to test features before release,
-is located at [https://hedtools.ucsd.edu/hed_dev](https://hedtools.ucsd.edu/hed_dev).
-
-The tools can be run locally using the `runserver.py` function the hedweb module
-of the [hed-web](https://github.com/hed-standard/hed-web) repository of 
-[hed-standard](https://github.com/hed-standard).
 
 ## Stable links for HED validation
 
