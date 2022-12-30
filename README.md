@@ -1,18 +1,3 @@
-# HED schemas
-
-The **HED schemas** are hierarchically-structured vocabularies for annotating data.
-The HED ecosystem includes a **standard schema** containing the basic vocabulary
-needed for annotation of experimental data as well as specialized **library schemas** for
-the additional field-specific terms needed to complete an annotation.
-
-
-| Schema | Current version | Viewers | Description |
-| ------ | --------------- | ------- | ------------------------- |  
-| [**standard**](./standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_prelease.html)  | Basic vocabulary for annotating data. |
-| [**score**](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
-|  [**testlib**](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
-
-
 ## About HED
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
 formal annotation of events and other information in data.
@@ -25,15 +10,24 @@ the current HED community focuses on annotation of events in human
 neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking, 
 motion-capture, EKG, and audiovisual recording. 
 
-## Using HED vocabularies
+See the [**HED project homepage**](https://hedtags.org) and
+[**HED resources**](https://www.hed-resources.org/en/latest/index.html),
+particularly the [**How do you use HED?**](https://www.hed-resources.org/en/latest/HowCanYouUseHed.html)
+for information about how to get started or how to get involved in the HED community.
 
-Access to the HED vocabularies hosted in this repository
-happens automatically through tools in the HED ecosystem.
+# Viewing HED schemas
 
-## Developing a new HED vocabulary
+The **HED schemas** are hierarchically-structured vocabularies for annotating data.
+The HED ecosystem includes a **standard schema** containing the basic vocabulary
+needed for annotation of experimental data as well as specialized **library schemas** for
+the additional field-specific terms needed to complete an annotation.
 
-To begin to develop your own library post an issue in this repository.
 
+| Schema | Current version | Viewers | Description |
+| ------ | --------------- | ------- | ------------------------- |  
+| [**standard**](./standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_prelease.html)  | Basic vocabulary for annotating data. |
+| [**score**](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
+|  [**testlib**](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
 
 ## HED semantic versioning
 
@@ -106,40 +100,37 @@ Upon final review, the new HED schema is released and moved to the
 
 
 ## Tools to help with HED annotations
-The GUI tool [_CTagger_](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. CTagger can be used as a standalone application or can be called from EEGLAB via the [hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
+The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
+CTagger can be used as a standalone application or can be called from EEGLAB via the
+[hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
+Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
 
 
 ## Web-based HED tools
 
-The current web-based HED tools include an online validator of spreadsheets (Excel or tsv)
-containing HED tags. Schema tools are available for converting HED schema specifications between `.mediawiki` and
-`.xml` formats. 
-Also available is a tool for checking for duplicate nodes in schema and for converting
-HED annotations between short and long forms.  
+The current online HED tools include an online validator of spreadsheets (Excel or tsv)
+containing HED tags. 
+Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
+Many other tools including the HED file   
 
-The current web-based HED tools are located at [https://hedtags.ucsd.edu/hed](https://hedtags.ucsd.edu/hed).  
+The released version of the web-based HED tools are located at [https://hedtools.ucsd.edu/hed](https://hedtools.ucsd.edu/hed).
+The development version of the tools, used to test features before release,
+is located at [https://hedtools.ucsd.edu/hed_dev](https://hedtools.ucsd.edu/hed_dev).
 
 The tools can be run locally using the `runserver.py` function the hedweb module
-of the [hed-python](https://github.com/hed-standard/hed-python) repository of 
+of the [hed-web](https://github.com/hed-standard/hed-web) repository of 
 [hed-standard](https://github.com/hed-standard).
 
 ## Stable links for HED validation
 
-> [**Stable directory link for software requiring a HED schema for validation**](https://github.com/hed-standard/hed-specification/tree/master/hedxml)
+> [**Stable directory link for software requiring a HED schema for validation**](https://github.com/hed-standard/hed-schemas/standard_schema/tree/main/hedxml)
 
-> [**Stable link for the latest version of the HED**](https://raw.githubusercontent.com/hed-standard/hed-specification/master/hedxml/HEDLatest.xml)
+> [**Stable link for the latest version of the HED**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml)
 
 
-## HED-3G library schema
+### Mapping HED tags to defined terms in existing ontologies
 
-HED-3G supports library schema, which are specialized vocabularies used in conjunction with the
-base vocabulary to support annotation of specialized datasets. Communities may develop and submit
-library schema.  HED library schema are hosted on the repository: 
-[https://github.com/hed-standard/hed-schema-library](https://github.com/hed-standard/hed-schema-library)
-
-### HED-3G document mapping to defined terms in existing ontologies
-
-The following working document describes the origin of the descriptions associated with individual nodes in the HED-3G hierarchy. Many terms appear in the NCIT ontology (National Cancer Institute Thesaurus OBO edition).
+The following working document describes the origin of the descriptions associated with individual nodes in the HED hierarchy. Many terms appear in the NCIT ontology (National Cancer Institute Thesaurus OBO edition).
 
 > [**Google doc with mapping of HED-3G term descriptions to existing ontology terms**](https://drive.google.com/file/d/13y17OwwNBlHdhB7hguSmOBdxn0Uk4hsI/view?usp=sharing) 
 

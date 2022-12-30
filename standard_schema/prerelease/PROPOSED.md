@@ -1,6 +1,8 @@
 ## Proposed modifications for future releases of the HED schema
 
-This is a record of proposed changes/corrections to the HED schema for future release. As suggestions reach consensus they will be incorporated into the prerelease version. 
+This is a record of proposed changes/corrections to the HED schema for future release. 
+As consensus is reached on suggestions, they will be incorporated into the prerelease version. 
+
 #### Tags to add
 
 - *Inhibit* - should this be under *Perform* or *Think*?

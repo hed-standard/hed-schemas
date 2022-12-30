@@ -112,7 +112,7 @@ do not require an update of the HED tools or the HED specification.
 ## HED revision process
 
 As modifications to the HED schema are proposed, they are entered into the
-[PROPOSED](PROPOSED.md) document for discussion.
+[PROPOSED](prerelease/PROPOSED.md) document for discussion.
 Approved changes and corrections are first made in a working version of the
 schema that is located in the [prelease directory](https://github.com/hed-standard/hed-specification/tree/master/prelease) and can be viewed
 using the following viewer:

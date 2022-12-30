@@ -1,7 +1,7 @@
 # Introduction to HED schemas
 
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
-formal annotation of events and other information in data.
+formal annotation of events and other types of data.
 The HED ecosystem includes a structured vocabulary (specified by a HED schema)
 together with tools for validation and for using HED annotations in data search, 
 extraction, and analysis. 
@@ -29,7 +29,7 @@ Interface) for building inter-operable tools.
 ## Role of library schemas
 
 **To avoid** uncontrolled expansion of the base HED vocabulary with specialized terminology, 
-HED supports the creation of library schema, which are specialized vocabularies that can
+HED supports the creation of library schemas, which are specialized vocabularies that can
 be used in conjunction with the base schema to analyze specific aspects of interest.
 
 To use a programming analogy, when programmers write a Python module, the resulting code 
@@ -50,8 +50,7 @@ Each library schema has its own directory under in the
 All HED-related source and documentation repositories are housed on the HED-standard 
 organization GitHub site, [https://github.com/hed-standard](https://github.com/hed-standard),
 which is maintained by the HED Working Group. HED development is open-source and
-community-based. The official HED website [https://www.hedtags.org](https://www.hedtags.org)
-for a list of additional resources. 
+community-based. The official HED website [https://www.hedtags.org](https://www.hedtags.org). 
 
 The HED Working Group invites those interested in HED to contribute to the HED ecosystem and development process.
 
@@ -59,9 +58,6 @@ HED schemas are community-driven. Users can contribute to existing schema or
 propose the development of new schema by posting an
 [**issue**](https://github.com/hed-standard/hed-schemas/issues) to the 
 [**hed-schemas**](https://github.com/hed-standard/hed-schemas) GitHub repository.
-
-The HED discussion forum is:
-[https://github.com/hed-standard/hed-schemas/discussions](https://github.com/hed-standard/hed-schemas/discussions) 
 
 
 ## HED schemas in BIDS
@@ -71,7 +67,7 @@ is a widely-used standard that specifies how neuroimaging data should be organiz
 HED is well-integrated into the BIDS standard.
 
 The most common use case (for 99.9% of the HED users) is to use the standard 
-HED schema available on GitHub in the `hedxml` directory of the `hed-specification` repository 
+HED schema available on GitHub in the `standard_schema` directory of the 
 ([https://github.com/hed-standard/hed-schemas/tree/main/standard_schema/hedxml](https://github.com/hed-standard/hed-schemas/tree/main/standard_schema/hedxml)).
 
 Starting with BIDS version 1.8.0, BIDS allows the value associated with the
@@ -89,12 +85,12 @@ Tags from the `testlib` schema library are to be prefixed with `la:`.
 {
     "Name": "A wonderful experiment",
     "BIDSVersion": "1.8.0",
-    "HEDVersion": ["8.1.0", "la:testa_1.0.2"]
+    "HEDVersion": ["8.1.0", "la:testlib_1.0.2"]
 }
 ```
 `````
 
-The `"la"` library schema is the `./hedxml/HED_libraryA_1.0.2.xml` file found in the
-[`hed-schemas`](https://github.com/hed-standard/hed-schemas) GitHub repository.
+The `"la"` library schema is the `./library_schemas/testlib/hedxml/HED_testlib_1.0.2.xml` file found in the
+[**hed-schemas**](https://github.com/hed-standard/hed-schemas) GitHub repository.
 The specification indicates that annotations using HED tags from this library 
 have the `la:` prefix (e.g., `la:XXX`). 
