@@ -33,23 +33,23 @@ the additional field-specific terms needed to complete an annotation.
 
 If you want to suggest a new feature or a change to the standard HED schema or one
 of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
-to this repository and it will find its way to the right place.
+to this repository, and it will find its way to the right place.
 
-As modifications to the HED schema are proposed, they are entered into the
-`PROPOSED.md` document in their respective directory for discussion.
+As modifications to a HED schema are proposed, they are entered into the
+`PROPOSED.md` document in the schema's respective directory for discussion.
 Approved changes and corrections are first made in a working version of the
 schema that is located in the `prerelease` subdirectory. 
 Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
 
-For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html)
+For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html).
 
 
 ## Tools to help with HED annotations
 
 The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
 CTagger can be used as a standalone application or can be called from EEGLAB via the
-[hedtools plug-in](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
+[**hedtools plug-in**](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
 Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
 
 
@@ -59,13 +59,9 @@ The current online HED tools include an online validator of spreadsheets (Excel 
 containing HED tags. 
 Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
 
-The released version of the web-based HED tools are located at [https://hedtools.ucsd.edu/hed](https://hedtools.ucsd.edu/hed).
+The released version of the web-based HED tools is located at [**https://hedtools.ucsd.edu/hed**](https://hedtools.ucsd.edu/hed).
 The development version of the tools, used to test features before release,
-is located at [https://hedtools.ucsd.edu/hed_dev](https://hedtools.ucsd.edu/hed_dev).
-
-The tools can be run locally using the `runserver.py` function the hedweb module
-of the [hed-web](https://github.com/hed-standard/hed-web) repository of 
-[hed-standard](https://github.com/hed-standard).
+is located at [**https://hedtools.ucsd.edu/hed_dev**](https://hedtools.ucsd.edu/hed_dev).
 
 
 ## HED semantic versioning
@@ -98,9 +94,9 @@ levels of changes in the semantic version:
 | Correction of wiki syntax such as closing tags. | Patch |
 
 **Note:** It is an official policy that once in a schema, a node will not be removed.
-If a node becomes out-of-date, a `deprecated` tag will be added as an attribute.
+If a node becomes out-of-date, a `deprecated` attribute will be added to the tag in the schema.
 Suggested replacement tags should be included in the node description.
-A suggested replacement should be added to the tag_patch table.
+A suggested replacement should be added to the tag patch table.
 
 ## HED generations and schema versions 
 The HED system has gone through two major restructurings since the original system
