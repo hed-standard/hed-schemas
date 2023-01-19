@@ -1,25 +1,27 @@
-HED schema library
+HED schemas
 ===================
 
 
 .. sidebar:: **Downloads**
 
-   `HED tools <https://hed-schema-library.readthedocs.io/_/downloads/en/latest/pdf/>`_
+   `HED schemas (PDF <https://hed-schemas.readthedocs.io/_/downloads/en/latest/pdf/>`_
 
-Note:  this is a work in progress. More information is coming.
+Note:  this is a work in progress.
 
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
 
-   Introduction.md
-   Library_schema_overview.md
-   SCORE_library.md
+   introduction_to_hed_schemas.md
+   hed_score_library.md
+   schema_development_guide.md
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Resources:
+Indices and tables
+==================
 
-   Documentation.md
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
 
