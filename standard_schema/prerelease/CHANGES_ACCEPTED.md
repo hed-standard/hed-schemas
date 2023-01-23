@@ -37,7 +37,7 @@ Proposed (@MichaelJachan) add schema attribute `conversionFactor` which takes a 
 that are not SIUnits and gives the multiplicative conversion factor between the
 specified units and the default units.  (Suggest adding to version 8.1. @VisLab).
 
-**Response**: Added in version 8.10.
+**Response**: Added in version 8.1.0.
 
 <hr/>
 

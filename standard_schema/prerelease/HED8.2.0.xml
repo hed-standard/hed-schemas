@@ -6994,6 +6994,13 @@
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
+         <name>inLibrary</name>
+         <description>Indicates this node came from the named library schema, not the standard schema.</description>
+         <property>
+            <name>elementProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
          <name>recommended</name>
          <description>A schema attribute indicating that the event-level HED string should include this tag.</description>
          <property>
@@ -7113,6 +7120,10 @@
       <propertyDefinition>
          <name>boolProperty</name>
          <description>Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.</description>
+      </propertyDefinition>
+      <propertyDefinition>
+         <name>elementProperty</name>
+         <description>Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>unitClassProperty</name>
