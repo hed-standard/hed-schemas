@@ -3,7 +3,6 @@
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
-
 Future extensions may be implemented in the HED-SCORE library schema.
 For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.</prologue>
    <schema>
@@ -3394,12 +3393,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
             </node>
             <node>
-               <name>Body-part</name>
+               <name>Body-part-location</name>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <node>
-                  <name>Body-part-eyelid</name>
+                  <name>Eyelid-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3413,7 +3412,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-face</name>
+                  <name>Face-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3427,7 +3426,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-arm</name>
+                  <name>Arm-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3441,7 +3440,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-leg</name>
+                  <name>Leg-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3455,7 +3454,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-trunk</name>
+                  <name>Trunk-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3469,7 +3468,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-visceral</name>
+                  <name>Visceral-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -3483,7 +3482,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                </node>
                <node>
-                  <name>Body-part-hemi</name>
+                  <name>Hemi-location</name>
                   <node>
                      <name>#</name>
                      <description>Free text.</description>
@@ -5194,7 +5193,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5205,7 +5204,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5216,7 +5215,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5227,7 +5226,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5237,7 +5236,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <description>A sustained, forced conjugate ocular, cephalic, and/or truncal rotation or lateral deviation from the midline.</description>
                         <attribute>
                            <name>suggestedTag</name>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Episode-event-count</value>
                         </attribute>
                      </node>
@@ -5247,7 +5246,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5258,7 +5257,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5269,7 +5268,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5280,7 +5279,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5296,7 +5295,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                            <attribute>
                               <name>suggestedTag</name>
                               <value>Brain-laterality</value>
-                              <value>Body-part</value>
+                              <value>Body-part-location</value>
                               <value>Brain-centricity</value>
                               <value>Episode-event-count</value>
                            </attribute>
@@ -5306,7 +5305,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                            <attribute>
                               <name>suggestedTag</name>
                               <value>Brain-laterality</value>
-                              <value>Body-part</value>
+                              <value>Body-part-location</value>
                               <value>Brain-centricity</value>
                               <value>Episode-event-count</value>
                            </attribute>
@@ -5316,7 +5315,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                            <attribute>
                               <name>suggestedTag</name>
                               <value>Brain-laterality</value>
-                              <value>Body-part</value>
+                              <value>Body-part-location</value>
                               <value>Brain-centricity</value>
                               <value>Episode-event-count</value>
                            </attribute>
@@ -5328,7 +5327,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5339,7 +5338,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5408,7 +5407,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-responsiveness</value>
                            <value>Episode-appearance</value>
@@ -5456,7 +5455,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-responsiveness</value>
                            <value>Episode-appearance</value>
@@ -5469,7 +5468,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-responsiveness</value>
                            <value>Episode-appearance</value>
@@ -5510,7 +5509,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <attribute>
                         <name>suggestedTag</name>
                         <value>Brain-laterality</value>
-                        <value>Body-part</value>
+                        <value>Body-part-location</value>
                         <value>Brain-centricity</value>
                         <value>Episode-event-count</value>
                      </attribute>
@@ -5551,7 +5550,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <name>Semiology-sensory-olfactory</name>
                         <attribute>
                            <name>suggestedTag</name>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Episode-event-count</value>
                         </attribute>
                      </node>
@@ -5577,7 +5576,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5588,7 +5587,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>suggestedTag</name>
                            <value>Brain-laterality</value>
-                           <value>Body-part</value>
+                           <value>Body-part-location</value>
                            <value>Brain-centricity</value>
                            <value>Episode-event-count</value>
                         </attribute>
@@ -5958,7 +5957,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Brain-laterality</value>
-                     <value>Body-part</value>
+                     <value>Body-part-location</value>
                      <value>Brain-centricity</value>
                      <value>Episode-event-count</value>
                   </attribute>
@@ -6052,7 +6051,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Brain-laterality</value>
-                     <value>Body-part</value>
+                     <value>Body-part-location</value>
                      <value>Brain-centricity</value>
                   </attribute>
                </node>
@@ -7933,9 +7932,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 The SCORE standard defines terms for describing phenomena observed in scalp EEG data. It is also potentially applicable (with some suitable extensions) to EEG recorded in critical care and neonatal settings.
 The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
 A second revised and extended version of SCORE achieved international consensus.
-
 [1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017). 
-
 TPA, November 2022</epilogue>
 </HED>
