@@ -25,7 +25,7 @@ the additional field-specific terms needed to complete an annotation.
 
 | Schema | Current version | Viewers | Description |
 | ------ | --------------- | ------- | ------------------------- |  
-| [**standard**](./standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_prelease.html)  | Basic vocabulary for annotating data. |
+| [**standard**](./standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_prerelease.html)  | Basic vocabulary for annotating data. |
 | [**score**](library_schemas/score) | 0.0.1   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [Score docs](https://hed-schema-library.readthedocs.io/en/latest/SCORE_library.html).) |
 |  [**testlib**](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
 
@@ -123,13 +123,11 @@ introduction of annotations of condition variables and experimental
 design within the data as well as the ability to handle event context 
 and events with temporal extent.
 
-
-
 ## Stable links for HED validation
 
 > [**Stable directory link for software requiring a HED schema for validation**](https://github.com/hed-standard/hed-schemas/standard_schema/tree/main/hedxml)
 
-> [**Stable link for the latest version of the HED**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml)
+> [**Stable link for the latest version of the HED standard schema**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml)
 
 
 ### Mapping HED tags to defined terms in existing ontologies

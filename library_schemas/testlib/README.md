@@ -16,7 +16,7 @@ During revision prior to official release, a working copy of the next
 version of the schema is available in the `prerelease` directory and can be viewed
 at:
 
-> [**Expandable html view of the prelease version of the testlib HED Library Schema**](https://www.hedtags.org/display_hed_testlib_prerelease.html) 
+> [**Expandable html view of the prerelease version of the testlib HED Library Schema**](https://www.hedtags.org/display_hed_testlib_prerelease.html) 
 
 
 ## Stable links for HED validation
