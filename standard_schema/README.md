@@ -114,10 +114,10 @@ do not require an update of the HED tools or the HED specification.
 As modifications to the HED schema are proposed, they are entered into the
 [PROPOSED](prerelease/PROPOSED.md) document for discussion.
 Approved changes and corrections are first made in a working version of the
-schema that is located in the [prelease directory](https://github.com/hed-standard/hed-specification/tree/master/prelease) and can be viewed
+schema that is located in the [prerelease directory](https://github.com/hed-standard/hed-specification/tree/master/prelease) and can be viewed
 using the following viewer:
 
-> [**Expandable html view of the prerelease HED schema**](https://www.hedtags.org/display_hed_prelease.html) 
+> [**Expandable html view of the prerelease HED schema**](https://www.hedtags.org/display_hed_prerelease.html) 
 
 Upon final review, the new HED schema is released and moved to the
 [hedxml directory](https://github.com/hed-standard/hed-specification/tree/master/hedxml).
