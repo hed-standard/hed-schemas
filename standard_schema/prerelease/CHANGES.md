@@ -10,3 +10,5 @@ and updated the `relatedTags` of other spatial relationship tags.
 * Added a `deprecated` schema attribute to indicate that this tag should no longer be used.
   This boolean attribute was added to provide a schema evolution path without removing any tags.
 * Corrected missing open parenthesis in description for `Relation/Connective-relation/Performed-using`.
+* Added an `inLibrary` schema attribute indicating that this term is from a partner library schema in a merged schema.
+* Added an `elementProperty` as a schema property. This indicates that the item applies to all items.
