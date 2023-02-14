@@ -10,9 +10,7 @@ The SCORE implementation in HED tackles these textual reports' lack of machine r
 
 ## Development
 
-The SCORE HED schema library maintains the hierarchy as in the SCORE EEG Educational Platform[^3] and presented in SCORE papers. The SCORE EEG Educational Platform is interactive web-based software that teaches how to use the SCORE standard. The educational platform guided the development process by permitting the interactive inspection of the main types of EEG graphoelements included in the SCORE report and the appropriate low-level nodes for each of them.
-
-The top levels of the HED schema library for SCORE correspond to the main EEG graphoelements, including Modulators, Background activity, Sleep and drowsiness, Interictal findings, Episodes, Physiologic patterns, Uncertain significance patterns, EEG artifacts, and Polygraphic channels.
+The SCORE HED schema library maintains the hierarchy as presented in SCORE papers [^1,2]. The top levels of the HED schema library for SCORE correspond to the main EEG graphoelements, including Modulators, Background activity, Sleep and drowsiness, Interictal findings, Episodes, Physiologic patterns, Uncertain significance patterns, EEG artifacts, and Polygraphic channels.
 
 The SCORE HED schema library is intended to describe all normal and abnormal EEG features. Therefore, description of patient information, referral and recording condition information, administrative data, and continuous EEG monitoring in neonates is beyond this scope.
 
@@ -30,6 +28,4 @@ An implementation example using HED schema library for SCORE annotations is avai
 
 [2]: Beniczky, Sándor, et al. "Standardized computer-based organized reporting of EEG: SCORE–second version." Clinical Neurophysiology 128.11 (2017): 2334-2346.
 
-[3]: Holberg Education platform. https://www.holbergeeg.com/educational-platform
-
-[4]: *Manuscript: Tal Pal Attia et al., (in prep). "Hierarchical Event Descriptor library schema for clinical EEG data annotation".*
+[3]: *Manuscript: Tal Pal Attia et al., (in prep). "Hierarchical Event Descriptor library schema for clinical EEG data annotation".*
