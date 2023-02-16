@@ -12,3 +12,4 @@ and updated the `relatedTags` of other spatial relationship tags.
 * Corrected missing open parenthesis in description for `Relation/Connective-relation/Performed-using`.
 * Added an `inLibrary` schema attribute indicating that this term is from a partner library schema in a merged schema.
 * Added an `elementProperty` as a schema property. This indicates that the item applies to all items.
+* Added `Property/Data-property/Data-marker/Temporal-marker/Inset` as a special tag to mark intermediate points in an ongoing event.

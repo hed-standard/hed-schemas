@@ -932,6 +932,9 @@
                      <node>
                         <name>Gentalia</name>
                         <description>The external organs of reproduction.</description>
+                        <attribute>
+                           <name>deprecated</name>
+                        </attribute>
                      </node>
                      <node>
                         <name>Hip</name>
@@ -2131,6 +2134,13 @@
                <node>
                   <name>Temporal-marker</name>
                   <description>An indicator placed at a particular time in the data.</description>
+                  <node>
+                     <name>Inset</name>
+                     <description>Labels an intermediate point in an ongoing event.</description>
+                     <attribute>
+                        <name>topLevelTagGroup</name>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Onset</name>
                      <description>Labels the start or beginning of something, usually an event.</description>
