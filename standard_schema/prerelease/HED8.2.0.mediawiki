@@ -211,7 +211,7 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 ***** Torso-back <nowiki>[The rear surface of the human body from the shoulders to the hips.]</nowiki>
 ***** Buttocks <nowiki>[The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
 ***** Torso-chest <nowiki>[The anterior side of the thorax from the neck to the abdomen.]</nowiki>
-***** Gentalia <nowiki>[The external organs of reproduction.]</nowiki>
+***** Gentalia <nowiki>{deprecated}[The external organs of reproduction.]</nowiki>
 ***** Hip <nowiki>[The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
 ***** Waist <nowiki>[The abdominal circumference at the navel.]</nowiki>
 **** Upper-extremity <nowiki>[Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
@@ -494,6 +494,7 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 ** Data-marker <nowiki>[An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>[An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker<nowiki>[An indicator placed at a particular time in the data.]</nowiki>
+**** Inset <nowiki>{topLevelTagGroup}[Labels an intermediate point in an ongoing event.]</nowiki>
 **** Onset <nowiki>{topLevelTagGroup}[Labels the start or beginning of something, usually an event.]</nowiki>
 **** Offset <nowiki>{topLevelTagGroup}[Labels the time at which something stops.]</nowiki>
 **** Pause <nowiki>[Indicates the temporary interruption of  the operation a process and subsequently wait for a signal to continue.]</nowiki>
