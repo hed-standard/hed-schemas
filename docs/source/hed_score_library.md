@@ -6,7 +6,7 @@ In this study, we make the SCORE standard machine-readable using the Hierarchica
 
 We show several examples of annotations using the HED-SCORE library schema in the Brain Imaging Data Structure (BIDS). The HED-SCORE library schema can be used by many researchers worldwide to annotate electrophysiology measurements from the human brain.
 
-
+![](_static/Illustration_combined_eeg.png)
 
 ## Development
 
