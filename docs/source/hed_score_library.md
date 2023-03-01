@@ -1,16 +1,18 @@
 # SCORE schema library
 
-The manual review and interpretation of the EEG is critical to the value of the EEG as a diagnostic tool but is highly sensitive to subjectivity. The consensus between experts interpreting the same EEG is higher when using the same structured standard. Still, EEG is very complex, making it difficult to describe it in structured fields adequately. Free-text fields might be more flexible but suffer from incompleteness, lack of consistency, and the limited ability to share reports. Therefore, the standardization of clinical terminology holds considerable potential for the field. 
+Sharing data in standardized, reproducible formats enables powerful mega-analyses that advance neuroscience. In the clinical setting of epilepsy research, the standardization of clinical terminology of electrophysiological events holds great potential for large-scale computation. Machine readability of electrophysiological event annotations is key to allow analyses across various tools and packages. The Standardized Computer-based Organized Reporting of EEG (SCORE)[1],[2] standard is a textual description for annotating EEG and ictal clinical events using standardized terms.
 
-The Standardized Computer-based Organized Reporting of EEG (SCORE)[1],[2] is a standardized terminology for annotating EEG and ictal clinical events currently used in commercial software to create a standardized report. The SCORE standard goal is to give epileptologists a computerized tool and standard terminology that can be used in clinical practice and maximize interobserver agreement. The 1^st^ SCORE version received European consensus, endorsed by the European Chapter of the IFCN and the International League Against Epilepsy (ILAE) Commission on European Affairs. The 2nd SCORE version is a revised terminology extended from the 1^st^ version with additional terms from multiple classifications, glossaries, and standard terminologies that have achieved international consensus.
+In this study, we make the SCORE standard machine-readable using the Hierarchical Event Descriptor (HED) library schema. HED library schemas allow researchers to extend the standard HED schema vocabulary by supporting specialized vocabularies. Our SCORE standard implementation in HED tackles the SCORE textual reports’ lack of machine readability and makes the SCORE standard available and machine-readable by open-source software.
 
-The SCORE implementation in HED tackles these textual reports' lack of machine readability and makes SCORE available for and machine-readable by open-source software. Many researchers worldwide can use the SCORE library to reduce errors in clinical evaluations and perform advanced mega-analyses, ultimately advancing the understanding of the human brain.
+We show several examples of annotations using the HED-SCORE library schema in the Brain Imaging Data Structure (BIDS). The HED-SCORE library schema can be used by many researchers worldwide to annotate electrophysiology measurements from the human brain.
 
-![SFN poster](_static/SFNposter_TPA.png)
+
 
 ## Development
 
-The SCORE HED schema library maintains the hierarchy as presented in SCORE papers [^1,2]. The top levels of the HED schema library for SCORE correspond to the main EEG graphoelements, including Modulators, Background activity, Sleep and drowsiness, Interictal findings, Episodes, Physiologic patterns, Uncertain significance patterns, EEG artifacts, and Polygraphic channels.
+The HED-SCORE library schema maintains the hierarchy as presented in SCORE papers [^1,2]. With the GitHub commit history reflecting the development process of the HED-SCORE library schema.
+
+In the HED standard schema, top levels identify events of interest. Annotating events includes identifying graphoelements and their morphology, which can be followed by location, features related to time, and the effect of modulators. The top levels of the HED-SCORE library schema correspond to the main types of events described in the SCORE papers.
 
 The SCORE HED schema library is intended to describe all normal and abnormal EEG features. Therefore, description of patient information, referral and recording condition information, administrative data, and continuous EEG monitoring in neonates is beyond this scope.
 
@@ -20,7 +22,7 @@ The HED schema library for SCORE was converted and validated using the HED tools
 ## Brain imaging data structure (BIDS)
 HED schema library for SCORE is compatible with the BIDS human and machine-readable events annotations .tsv files, see more [here](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html#appendix-iii-hierarchical-event-descriptors).
 An implementation example using HED schema library for SCORE annotations is available
-[here](https://github.com/tpatpa/bids-examples/tree/master/xeeg_hed_score).
+[here](https://github.com/bids-standard/bids-examples).
 
 ## References
 
