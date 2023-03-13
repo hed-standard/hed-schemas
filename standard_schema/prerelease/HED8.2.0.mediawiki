@@ -1184,6 +1184,7 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 * physicalLengthUnits <nowiki>{defaultUnits=m}</nowiki> 
 ** foot <nowiki>{conversionFactor=0.3048}</nowiki>
 ** inch <nowiki>{conversionFactor=0.0254}</nowiki>
+** meter <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** metre <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** mile <nowiki>{conversionFactor=1609.34}</nowiki>
@@ -1263,30 +1264,33 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 '''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
 * allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
 * conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The multiplicative factor to multiply these units to convert to default units.]</nowiki>
-* deprecated <nowiki>{boolProperty}[This tag is out of date and should no longer be used.]</nowiki>
+* deprecated <nowiki>{boolProperty, elementProperty}[This tag is out of date and should no longer be used.]</nowiki>
 * defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-* extensionAllowed <nowiki>{boolProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
+* extensionAllowed <nowiki>{boolProperty, nodeProperty, isInherited}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
 * inLibrary <nowiki>{elementProperty} [Indicates this node came from the named library schema, not the standard schema.]</nowiki>
-* recommended  <nowiki>{boolProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki> 
-* relatedTag <nowiki>[A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.]</nowiki> 
-* requireChild  <nowiki>{boolProperty}[A schema attribute indicating that one of the node elements descendants must be included when using this tag.]</nowiki> 
-* required <nowiki>{boolProperty}[A schema attribute indicating that every event-level HED string should include this tag.]</nowiki>
+* recommended  <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki> 
+* relatedTag <nowiki>{nodeProperty, isInherited}[A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.]</nowiki> 
+* requireChild  <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating that one of the node elements descendants must be included when using this tag.]</nowiki> 
+* required <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating that every event-level HED string should include this tag.]</nowiki>
 * SIUnit  <nowiki>{boolProperty, unitProperty}[A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
 * SIUnitModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.]</nowiki> 
 * SIUnitSymbolModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
-* tagGroup <nowiki>{boolProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki> 
-* takesValue <nowiki>{boolProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki> 
-* topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.] </nowiki>
-* unique <nowiki>{boolProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki> 
-* unitClass <nowiki>[A schema attribute specifying which unit class this value tag belongs to.]</nowiki> 
+* suggestedTag <nowiki>{nodeProperty, isInherited}[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+* tagGroup <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki> 
+* takesValue <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki> 
+* topLevelTagGroup <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.] </nowiki>
+* unique <nowiki>{boolProperty, nodeProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki> 
+* unitClass <nowiki>{nodeProperty}[A schema attribute specifying which unit class this value tag belongs to.]</nowiki> 
 * unitPrefix <nowiki>{boolProperty, unitProperty}[A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki> 
 * unitSymbol <nowiki>{boolProperty, unitProperty}[A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-* valueClass <nowiki>[A schema attribute specifying which value class this value tag belongs to.]</nowiki> 
+* valueClass <nowiki>{nodeProperty}[A schema attribute specifying which value class this value tag belongs to.]</nowiki> 
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
 * boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
 * elementProperty <nowiki>[Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).]</nowiki>
+* isInherited <nowiki>[Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes
+for nodes.]</nowiki>
+* nodeProperty <nowiki>[Indicates this schema attribute applies to node (tag-term) elements. This was added to allow for an attribute to apply to multiple elements.]</nowiki>
 * unitClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit classes.]</nowiki>
 * unitModifierProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit modifier classes.]</nowiki>
 * unitProperty <nowiki>[Indicates that the schema attribute is meant to be applied to units within a unit class.]</nowiki> 
