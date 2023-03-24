@@ -797,14 +797,28 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Epileptic-seizure</name>
+            <description>The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.</description>
             <attribute>
                <name>requireChild</name>
             </attribute>
             <node>
                <name>Focal-onset-epileptic-seizure</name>
+               <description>Focal seizures can be divided into focal aware and impaired awareness seizures, with additional motor and nonmotor classifications.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
+                  <value>Automatism-motor-seizure</value>
+                  <value>Atonic-motor-seizure</value>
+                  <value>Clonic-motor-seizure</value>
+                  <value>Epileptic-spasm-episode</value>
+                  <value>Hyperkinetic-motor-seizure</value>
+                  <value>Myoclonic-motor-seizure</value>
+                  <value>Tonic-motor-seizure</value>
+                  <value>Autonomic-nonmotor-seizure</value>
+                  <value>Behavior-arrest-nonmotor-seizure</value>
+                  <value>Cognitive-nonmotor-seizure</value>
+                  <value>Emotional-nonmotor-seizure</value>
+                  <value>Sensory-nonmotor-seizure</value>
                   <value>Seizure-dynamics</value>
                   <value>Episode-consciousness</value>
                   <value>Episode-awareness</value>
@@ -820,7 +834,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -837,7 +850,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -854,7 +866,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
-                     <value>Seizure-classification</value>
                      <value>Seizure-dynamics</value>
                      <value>Episode-consciousness</value>
                      <value>Episode-awareness</value>
@@ -868,6 +879,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure</name>
+                  <description>A seizure type with focal onset, with awareness or impaired awareness, either motor or non-motor, progressing to bilateral tonic clonic activity. The prior term was seizure with partial onset with secondary generalization. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Episode-phase</value>
@@ -885,10 +897,22 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Generalized-onset-epileptic-seizure</name>
+               <description>Generalized-onset seizures are classified as motor or nonmotor (absence), without using awareness level as a classifier, as most but not all of these seizures are linked with impaired awareness.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
-                  <value>Seizure-classification</value>
+                  <value>Tonic-clonic-motor-seizure</value>
+                  <value>Clonic-motor-seizure</value>
+                  <value>Tonic-motor-seizure</value>
+                  <value>Myoclonic-motor-seizure</value>
+                  <value>Myoclonic-tonic-clonic-motor-seizure</value>
+                  <value>Myoclonic-atonic-motor-seizure</value>
+                  <value>Atonic-motor-seizure</value>
+                  <value>Epileptic-spasm-episode</value>
+                  <value>Typical-absence-seizure</value>
+                  <value>Atypical-absence-seizure</value>
+                  <value>Myoclonic-absence-seizure</value>
+                  <value>Eyelid-myoclonia-absence-seizure</value>
                   <value>Seizure-dynamics</value>
                   <value>Episode-consciousness</value>
                   <value>Episode-awareness</value>
@@ -902,10 +926,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Unknown-onset-epileptic-seizure</name>
+               <description>Even if the onset of seizures is unknown, they may exhibit characteristics that fall into categories such as motor, nonmotor, tonic-clonic, epileptic spasms, or behavior arrest.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
-                  <value>Seizure-classification</value>
+                  <value>Tonic-clonic-motor-seizure</value>
+                  <value>Epileptic-spasm-episode</value>
+                  <value>Behavior-arrest-nonmotor-seizure</value>
                   <value>Seizure-dynamics</value>
                   <value>Episode-consciousness</value>
                   <value>Episode-awareness</value>
@@ -919,6 +946,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Unclassified-epileptic-seizure</name>
+               <description>Referring to a seizure type that cannot be described by the ILAE 2017 classification either because of inadequate information or unusual clinical features.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Episode-phase</value>
@@ -5081,77 +5109,98 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Seizure-classification</name>
-               <description>Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
+               <description>Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
                <node>
-                  <name>Motor-onset-seizure</name>
+                  <name>Motor-seizure</name>
+                  <description>Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   <node>
-                     <name>Myoclonic-motor-onset-seizure</name>
+                     <name>Myoclonic-motor-seizure</name>
+                     <description>Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Negative-myoclonic-motor-onset-seizure</name>
+                     <name>Negative-myoclonic-motor-seizure</name>
                   </node>
                   <node>
-                     <name>Clonic-motor-onset-seizure</name>
+                     <name>Clonic-motor-seizure</name>
+                     <description>Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Tonic-motor-onset-seizure</name>
+                     <name>Tonic-motor-seizure</name>
+                     <description>A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Atonic-motor-onset-seizure</name>
+                     <name>Atonic-motor-seizure</name>
+                     <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Myoclonic-atonic-motor-onset-seizure</name>
+                     <name>Myoclonic-atonic-motor-seizure</name>
+                     <description>A generalized seizure type with a myoclonic jerk leading to an atonic motor component. This type was previously called myoclonic astatic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Myoclonic-tonic-clonic-motor-onset-seizure</name>
+                     <name>Myoclonic-tonic-clonic-motor-seizure</name>
+                     <description>One or a few jerks of limbs bilaterally, followed by a tonic clonic seizure. The initial jerks can be considered to be either a brief period of clonus or myoclonus. Seizures with this characteristic are common in juvenile myoclonic epilepsy. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Tonic-clonic-motor-onset-seizure</name>
+                     <name>Tonic-clonic-motor-seizure</name>
+                     <description>A sequence consisting of a tonic followed by a clonic phase. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Automatism-motor-onset-seizure</name>
+                     <name>Automatism-motor-seizure</name>
+                     <description>A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Hyperkinetic-motor-onset-seizure</name>
+                     <name>Hyperkinetic-motor-seizure</name>
                   </node>
                   <node>
                      <name>Epileptic-spasm-episode</name>
+                     <description>A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                </node>
                <node>
-                  <name>Nonmotor-onset-seizure</name>
+                  <name>Nonmotor-seizure</name>
+                  <description>Focal or generalized seizure types in which motor activity is not prominent. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   <node>
-                     <name>Behavior-arrest-nonmotor-onset-seizure</name>
+                     <name>Behavior-arrest-nonmotor-seizure</name>
+                     <description>Arrest (pause) of activities, freezing, immobilization, as in behavior arrest seizure. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Sensory-nonmotor-onset-seizure</name>
+                     <name>Sensory-nonmotor-seizure</name>
+                     <description>A perceptual experience not caused by appropriate stimuli in the external world. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Emotional-nonmotor-onset-seizure</name>
+                     <name>Emotional-nonmotor-seizure</name>
+                     <description>Seizures presenting with an emotion or the appearance of having an emotion as an early prominent feature, such as fear, spontaneous joy or euphoria, laughing (gelastic), or crying (dacrystic). Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Cognitive-nonmotor-onset-seizure</name>
+                     <name>Cognitive-nonmotor-seizure</name>
+                     <description>Pertaining to thinking and higher cortical functions, such as language, spatial perception, memory, and praxis. The previous term for similar usage as a seizure type was psychic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
-                     <name>Autonomic-nonmotor-onset-seizure</name>
+                     <name>Autonomic-nonmotor-seizure</name>
+                     <description>A distinct alteration of autonomic nervous system function involving cardiovascular, pupillary, gastrointestinal, sudomotor, vasomotor, and thermoregulatory functions. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                </node>
                <node>
                   <name>Absence-seizure</name>
+                  <description>Absence seizures present with a sudden cessation of activity and awareness. Absence seizures tend to occur in younger age groups, have more sudden start and termination, and they usually display less complex automatisms than do focal seizures with impaired awareness, but the distinctions are not absolute. EEG information may be required for accurate classification. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   <node>
                      <name>Typical-absence-seizure</name>
+                     <description>A sudden onset, interruption of ongoing activities, a blank stare, possibly a brief upward deviation of the eyes. Usually the patient will be unresponsive when spoken to. Duration is a few seconds to half a minute with very rapid recovery. Although not always available, an EEG would show generalized epileptiform discharges during the event. An absence seizure is by definition a seizure of generalized onset. The word is not synonymous with a blank stare, which also can be encountered with focal onset seizures. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
                      <name>Atypical-absence-seizure</name>
+                     <description>An absence seizure with changes in tone that are more pronounced than in typical absence or the onset and/or cessation is not abrupt, often associated with slow, irregular, generalized spike-wave activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
                      <name>Myoclonic-absence-seizure</name>
+                     <description>A myoclonic absence seizure refers to an absence seizure with rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with three-per-second generalized spike-wave discharges. Duration is typically 10 to 60 s. Impairment of consciousness may not be obvious. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                   <node>
                      <name>Eyelid-myoclonia-absence-seizure</name>
+                     <description>Eyelid myoclonia are myoclonic jerks of the eyelids and upward deviation of the eyes, often precipitated by closing the eyes or by light. Eyelid myoclonia can be associated with absences, but also can be motor seizures without a corresponding absence, making them difficult to categorize. The 2017 classification groups them with nonmotor (absence) seizures, which may seem counterintuitive, but the myoclonia in this instance is meant to link with absence, rather than with nonmotor. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                   </node>
                </node>
             </node>
@@ -5179,7 +5228,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Seizure-semiology-manifestation</name>
-               <description>Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
+               <description>Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
                <attribute>
                   <name>requireChild</name>
                </attribute>
@@ -7934,5 +7983,5 @@ The SCORE standard received European consensus and has been endorsed by the Euro
 A second revised and extended version of SCORE achieved international consensus.
 [1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017). 
-TPA, January 2023</epilogue>
+TPA, March 2023</epilogue>
 </HED>
