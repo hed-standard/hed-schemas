@@ -494,9 +494,9 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 ** Data-marker <nowiki>[An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>[An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker<nowiki>[An indicator placed at a particular time in the data.]</nowiki>
-**** Inset <nowiki>{topLevelTagGroup}[Labels an intermediate point in an ongoing event.]</nowiki>
-**** Onset <nowiki>{topLevelTagGroup}[Labels the start or beginning of something, usually an event.]</nowiki>
-**** Offset <nowiki>{topLevelTagGroup}[Labels the time at which something stops.]</nowiki>
+**** Inset <nowiki>{topLevelTagGroup,relatedTag=Onset,relatedTag=Offset}[Marks an intermediate point in an ongoing event of temporal extent.]</nowiki>
+**** Onset <nowiki>{topLevelTagGroup,relatedTag=Inset,relatedTag=Offset}[Marks the start of an ongoing event of temporal extent.]</nowiki>
+**** Offset <nowiki>{topLevelTagGroup,relatedTag=Onset, relatedTag=Inset}[Marks the end of an event of temporal extent.]</nowiki>
 **** Pause <nowiki>[Indicates the temporary interruption of  the operation a process and subsequently wait for a signal to continue.]</nowiki>
 **** Time-out <nowiki>[A cancellation or cessation that automatically occurs when a predefined interval of time has passed without a certain event occurring.]</nowiki>
 **** Time-sync <nowiki>[A synchronization signal whose purpose to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.]</nowiki>
@@ -668,9 +668,9 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 ****** Volume <nowiki>[The amount of three dimensional space occupied by an object or the capacity of a space or container.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=volumeUnits}</nowiki>
 **** Temporal-value <nowiki>[A characteristic of or relating to time or limited by time.]</nowiki>
-***** Delay <nowiki>[Time during which some action is awaited.]</nowiki>
+***** Delay <nowiki>{topLevelTagGroup, relatedTag=Duration}[The time at which an event start time is delayed from the current onset time. This tag defines the start time of an event of temporal extent and may be used with the Duration tag.]</nowiki>
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki> 
-***** Duration <nowiki>[The period of time during which something occurs or continues.]</nowiki>
+***** Duration <nowiki>{topLevelTagGroup, relatedTag=Delay}[The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.]</nowiki>
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
 ***** Time-interval <nowiki>[The period of time separating two instances, events, or occurrences.]</nowiki>
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>     
@@ -1288,8 +1288,7 @@ This schema includes an xsd and requires unit class, unit modifier, value class,
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
 * boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
 * elementProperty <nowiki>[Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).]</nowiki>
-* isInherited <nowiki>[Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes
-for nodes.]</nowiki>
+* isInherited <nowiki>[Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes for nodes.]</nowiki>
 * nodeProperty <nowiki>[Indicates this schema attribute applies to node (tag-term) elements. This was added to allow for an attribute to apply to multiple elements.]</nowiki>
 * unitClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit classes.]</nowiki>
 * unitModifierProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit modifier classes.]</nowiki>
