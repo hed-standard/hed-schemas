@@ -47,7 +47,7 @@ and tagging hints.
 * - Viewer
   - Link
 * - Expandable HTML	
-  - [https://www.hedtags.org/display_hed.html?version=8.0.0](https://www.hedtags.org/display_hed.html?version=8.0.0)
+  - [https://www.hedtags.org/display_hed.html](https://www.hedtags.org/display_hed.html)
 * - Mediawiki	
   - [https://github.com/hed-standard/hed-specification/blob/master/hedwiki/HED8.0.0.mediawiki](https://github.com/hed-standard/hed-specification/blob/master/hedwiki/HED8.0.0.mediawiki)
 * - XML	
