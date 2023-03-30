@@ -22,14 +22,15 @@ The HED ecosystem includes a **standard schema** containing the basic vocabulary
 needed for annotation of experimental data as well as specialized **library schemas** for
 the additional field-specific terms needed to complete an annotation.
 
-All released HED schemas are now available through the [**HED Schema Browser**](http://www.hedtags.org/display_hed.html).
-The preleased versions still have individual viewers as summarized in the following table:
-
-| Schema | Latest<br/>version| Description | Prerelease<br/>viewer  |
+| Schema | Latest<br/>version| Description | Prerelease<br/>version  |
 | ------ | --------------- | ------- | ------------------------- |  
-| [**standard**](./standard_schema) | 8.1.0 | Basic vocabulary for annotating data. | [**Prerelease 8.2.0**](https://www.hedtags.org/display_hed_prerelease.html)  | 
-| [**score**](library_schemas/score) | 1.0.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |[**Prerelease 1.0.1**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  
-|  [**testlib**](library_schemas/testlib) | 1.0.1 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | [**Prerelease 1.0.2**](https://www.hedtags.org/display_hed_testlib_prerelease.html) |  
+| [**standard**](./standard_schema) | 8.1.0 | Basic vocabulary for annotating data. | 8.2.0 | 
+| [**score**](library_schemas/score) | 1.0.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.0 |  
+|  [**testlib**](library_schemas/testlib) | 1.0.1 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 1.0.2 |  
+
+
+All released HED schemas are now available through the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
+The prereleased schema versions are available through [**HED Schema Prerelease Browser**](https://hedtags.org/display_hed_prerelease.html)
 
 ## HED revision process
 

@@ -1,4 +1,4 @@
-HED library="score" version="1.0.1"
+HED library="score" version="1.1.0"
 
 '''Prologue'''
 This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
