@@ -933,7 +933,8 @@
                         <name>Gentalia</name>
                         <description>The external organs of reproduction.</description>
                         <attribute>
-                           <name>deprecated</name>
+                           <name>deprecatedFrom</name>
+                           <value>8.1.0</value>
                         </attribute>
                      </node>
                      <node>
@@ -7022,11 +7023,8 @@
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>deprecated</name>
-         <description>This tag is out of date and should no longer be used.</description>
-         <property>
-            <name>boolProperty</name>
-         </property>
+         <name>deprecatedFrom</name>
+         <description>Indicates that this element is deprecated. The value of the attribute is the latest schema version in which the element appeared in undeprecated form.</description>
          <property>
             <name>elementProperty</name>
          </property>
@@ -7053,7 +7051,7 @@
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
-         <description>Indicates this node came from the named library schema, not the standard schema.</description>
+         <description>Indicates this schema element came from the named library schema, not the standard schema.</description>
          <property>
             <name>elementProperty</name>
          </property>
