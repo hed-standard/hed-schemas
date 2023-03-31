@@ -22,6 +22,10 @@ The HED schema vocabulary can be viewed at:
 
 > [**Expandable html view of the HED schema**](http://www.hedtags.org/display_hed.html) 
 
+The prerelease version can be viewed at:
+
+> [**Expandable html view of the prerelease version**](http://www.hedtags.org/display_hed_prerelease.html) 
+
 ## HED white papers
 
 The following white papers give an overview of HED and how it is used.

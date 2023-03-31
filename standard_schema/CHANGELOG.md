@@ -37,5 +37,5 @@
 * Added `Property/Data-property/Data-value/Categorical-value/Categorical-level-value/Large`
 and `Property/Data-property/Data-value/Categorical-value/Categorical-level-value/Small`.
 * Corrected some descriptions for items under `Categorical-level-value`.
-* Added electricPotentialUnits and magneticFieldUnits for EEG and MEG signals respectively.
+* Added `electricPotentialUnits` and `magneticFieldUnits` for EEG and MEG signals respectively.
 * Small punctuation corrections.
