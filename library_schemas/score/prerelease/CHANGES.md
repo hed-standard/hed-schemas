@@ -2,9 +2,9 @@
 
 * 'Epileptic-seizure': description update
 * 'Focal-onset-epileptic-seizure': replaced '{suggestedTag=Seizure-classification}' with '{suggestedTag=Automatism-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Hyperkinetic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Autonomic-nonmotor-seizure, suggestedTag=Behavior-arrest-nonmotor-seizure, suggestedTag=Cognitive-nonmotor-seizure, suggestedTag=Emotional-nonmotor-seizure, suggestedTag=Sensory-nonmotor-seizure}'
-* 'Aware-focal-onset-epileptic-seizure' removed '{suggestedTag=Seizure-classification}'
-* 'Impaired-awareness-focal-onset-epileptic-seizure' removed '{suggestedTag=Seizure-classification}'
-* 'Awareness-unknown-focal-onset-epileptic-seizure' removed '{suggestedTag=Seizure-classification}'
+* 'Aware-focal-onset-epileptic-seizure': removed '{suggestedTag=Seizure-classification}'
+* 'Impaired-awareness-focal-onset-epileptic-seizure': removed '{suggestedTag=Seizure-classification}'
+* 'Awareness-unknown-focal-onset-epileptic-seizure': removed '{suggestedTag=Seizure-classification}'
 * 'Generalized-onset-epileptic-seizure: replaced '{suggestedTag=Seizure-classification}' with '{suggestedTag=Tonic-clonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Myoclonic-tonic-clonic-motor-seizure, suggestedTag=Myoclonic-atonic-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Typical-absence-seizure, suggestedTag=Atypical-absence-seizure, suggestedTag=Myoclonic-absence-seizure, suggestedTag=Eyelid-myoclonia-absence-seizure,}'
 * 'Unknown-onset-epileptic-seizure' : replaced '{suggestedTag=Seizure-classification}' with '{suggestedTag=Tonic-clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Behavior-arrest-nonmotor-seizure}'
 * 'Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure': description update
