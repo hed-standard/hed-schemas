@@ -4,13 +4,6 @@
 their official release.**
 
 ### Viewing the SCORE HED Library Schema
-> [**Expandable html view of SCORE HED Library Schema**](https://www.hedtags.org/display_hed_score.html) 
+> The HED SCORE library can be viewed using the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
 
-
-### Viewing the prerelease version
-
-During revision prior to official release, a working copy of the next
-version of the schema is available in the `prerelease` directory and can be viewed
-at:
-
-> [**Expandable html view of the prerelease version of the SCORE HED Library Schema**](https://www.hedtags.org/display_hed_score_prerelease.html) 
+> The HED SCORE library prerelease version can be viewed using the [**HED Schema Prerelease Browser**](https://www.hedtags.org/display_hed_prerelease.html) 
