@@ -2146,6 +2146,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <name>topLevelTagGroup</name>
                      </attribute>
                      <attribute>
+                        <name>reserved</name>
+                     </attribute>
+                     <attribute>
                         <name>relatedTag</name>
                         <value>Onset</value>
                         <value>Offset</value>
@@ -2158,6 +2161,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <name>topLevelTagGroup</name>
                      </attribute>
                      <attribute>
+                        <name>reserved</name>
+                     </attribute>
+                     <attribute>
                         <name>relatedTag</name>
                         <value>Inset</value>
                         <value>Offset</value>
@@ -2168,6 +2174,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                      <description>Marks the end of an event of temporal extent.</description>
                      <attribute>
                         <name>topLevelTagGroup</name>
+                     </attribute>
+                     <attribute>
+                        <name>reserved</name>
                      </attribute>
                      <attribute>
                         <name>relatedTag</name>
@@ -3455,6 +3464,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                            <name>topLevelTagGroup</name>
                         </attribute>
                         <attribute>
+                           <name>reserved</name>
+                        </attribute>
+                        <attribute>
                            <name>relatedTag</name>
                            <value>Duration</value>
                         </attribute>
@@ -3478,6 +3490,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <description>The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.</description>
                         <attribute>
                            <name>topLevelTagGroup</name>
+                        </attribute>
+                        <attribute>
+                           <name>reserved</name>
                         </attribute>
                         <attribute>
                            <name>relatedTag</name>
@@ -3981,6 +3996,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the definition.</description>
@@ -3998,6 +4016,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                <description>A HED specific utility tag that is grouped with an expanded definition. The child value of the Def-expand is the name of the expanded definition.</description>
                <attribute>
                   <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>reserved</name>
                </attribute>
                <attribute>
                   <name>tagGroup</name>
@@ -4020,6 +4041,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                   <name>requireChild</name>
                </attribute>
                <attribute>
+                  <name>reserved</name>
+               </attribute>
+               <attribute>
                   <name>topLevelTagGroup</name>
                </attribute>
                <node>
@@ -4037,6 +4061,9 @@ For additional information and tutorials see https://www.hed-resources.org.
             <node>
                <name>Event-context</name>
                <description>A special HED tag inserted as part of a top-level tag group to contain information about the interrelated conditions under which the event occurs. The event context includes information about other events that are ongoing when this event happens.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <attribute>
                   <name>topLevelTagGroup</name>
                </attribute>
@@ -7055,7 +7082,7 @@ For additional information and tutorials see https://www.hed-resources.org.
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
-         <description>Indicates this schema element came from the named library schema, not the standard schema.</description>
+         <description>Indicates this schema element came from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
             <name>elementProperty</name>
          </property>
@@ -7096,6 +7123,23 @@ For additional information and tutorials see https://www.hed-resources.org.
          <property>
             <name>boolProperty</name>
          </property>
+         <property>
+            <name>nodeProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>reserved</name>
+         <description>A schema attribute indicating that this tag has special meaning and requires special handling by tools.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>nodeProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>rooted</name>
+         <description>Indicates a top-level library schema node is identical to a node of the same name in the partnered standard schema. This attribute can only appear in nodes that have the inLibrary schema attribute.</description>
          <property>
             <name>nodeProperty</name>
          </property>

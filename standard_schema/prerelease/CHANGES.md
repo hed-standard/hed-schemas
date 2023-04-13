@@ -1,5 +1,8 @@
 ## Changes proposed for 8.2.0
 
+* Added the `withStandard` attribute in library schema header to represent the partnered schema. This is first supported for versions >=8.2.0.
+* Added the `rooted` schema attribute applied to a top-level node in the library schema with the same node name as a node in the standard partnered schema. The subtree under this library node is placed under its partnered standard schema node when the schemas are merged.
+* Added `reserved` schema attribute as per issue #50. Added this attribute to `Definition`, `Def`, `Def-expand`, `Event-context`, `Delay`, `Duration`,`Inset`, `Onset`, and `Offset`.
 * Added the `isInherited` schema property to the `Properties`. Added this to schema property to:
 `extensionAllowed`, `suggestedTag` and `relatedTag` as per hed-specification issue #428.
 * Added `meter` and claimed it as an `SIUnit`. The actual SI unit is `metre`.
