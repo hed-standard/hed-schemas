@@ -20,5 +20,5 @@ BIDS or another standard specifies details.
 * Added `Relation/Spatial-relation/Left-center-of` and `Relation/Spatial-relation/Right-center-of`
 and updated the `relatedTags` of other spatial relationship tags.
 * Corrected missing open parenthesis in description for `Relation/Connective-relation/Performed-using`.
-* Added an `inLibrary` schema attribute indicating that this term is from a partner library schema in a merged schema.
+* Added an `inLibrary` schema attribute indicating that this term is from a partner library schema in a merged schema. The attribute takes the library name as a value.
 * Added `Property/Data-property/Data-marker/Temporal-marker/Inset` as a special tag to mark intermediate points in an ongoing event.
