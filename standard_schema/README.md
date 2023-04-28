@@ -1,11 +1,12 @@
 # Hierarchical Event Descriptors (HED)
-### HED schema version 8.1.0 was released 5/23/2022.
+### HED schema version 8.2.0 was released 4/28/2023.
 
 **Note** This repository is primarily for managing the HED vocabulary. If you just 
-want to annotate your data, please visit the [**HED resources**](https://readthedocs.org/projects/hed-examples/) documentation website. 
+want to annotate your data, please visit the [**HED resources**](https://www.hed-resources.org) documentation website. 
 
 The full HED specification is available at the
-[**HED specification**](https://hed-specification.readthedocs.io/en/latest/index.html) website. 
+[**HED specification**](https://hed-specification.readthedocs.io/en/latest/index.html) website. The HED schema versions are now documented with DOIs.
+See [**https://doi.org/10.5281/zenodo.7876037**](https://doi.org/10.5281/zenodo.7876037).
 
 ## What is HED?
 HED is an evolving framework for the description and formal annotation of events 
