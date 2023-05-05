@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED library="testlib" version="2.0.0" withStandard="8.2.0">
+<HED library="testlib" version="2.0.1" withStandard="8.2.0">
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
@@ -17333,7 +17333,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -17360,7 +17360,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -17437,7 +17437,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -17525,7 +17525,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <description>Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).</description>
       </propertyDefinition>
       <propertyDefinition>
-         <name>isInherited</name>
+         <name>isInheritedProperty</name>
          <description>Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes for nodes.</description>
       </propertyDefinition>
       <propertyDefinition>
