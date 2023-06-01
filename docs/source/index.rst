@@ -12,7 +12,7 @@ Note:  this is a work in progress.
    :maxdepth: 4
    :caption: Contents:
 
-   hed_score_library.md
+   hed_score_schema.md
 
 
 Indices and tables
