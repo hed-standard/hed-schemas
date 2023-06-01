@@ -10,6 +10,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 !# start schema
 
+                      . . .
+'''Data-mode''' <nowiki>{rooted=Statistical-value}[A value that occurs most often in data.]</nowiki>   
+* <nowiki># {takesValue, valueClass=numericClass}</nowiki> 
+
 '''Modulator''' <nowiki> {requireChild} [External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
     * Sleep-modulator

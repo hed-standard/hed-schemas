@@ -23,9 +23,7 @@ needed for annotation of experimental data as well as specialized **library sche
 the additional field-specific terms needed to complete an annotation.
 
 
-All released HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
-The prereleased schema versions are available through [**HED Schema Prerelease Browser**](https://www.hedtags.org/display_hed_prerelease.html)
-
+All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
 
 The following table summarizes the current versions of the HED schemas.
 
@@ -33,7 +31,7 @@ The following table summarizes the current versions of the HED schemas.
 | ------ | --------------- | ------- | ------------------------- | ---- |
 | [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
 | [**score**](library_schemas/score) | 1.0.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.0 |  |
-|  [**testlib**](library_schemas/testlib) | 1.0.1 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 1.0.2 |  |
+|  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
 
 
 ## HED revision process
