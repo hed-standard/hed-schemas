@@ -1,4 +1,4 @@
-# SCORE schema library
+# HED SCORE schema
 
 Sharing data in standardized, reproducible formats enables powerful mega-analyses that advance neuroscience. In the clinical setting of epilepsy research, the standardization of clinical terminology of electrophysiological events holds great potential for large-scale computation. Machine readability of electrophysiological event annotations is key to allow analyses across various tools and packages. The Standardized Computer-based Organized Reporting of EEG (SCORE)[1],[2] standard is a textual description for annotating EEG and ictal clinical events using standardized terms.
 

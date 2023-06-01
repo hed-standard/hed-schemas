@@ -1,10 +1,8 @@
 <?xml version="1.0" ?>
-<HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.2.0" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
+<HED unmerged="True" version="8.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
    <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
-
-For additional information and tutorials see https://www.hed-resources.org.
 
 </prologue>
    <schema>
@@ -2146,6 +2144,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <name>topLevelTagGroup</name>
                      </attribute>
                      <attribute>
+                        <name>reserved</name>
+                     </attribute>
+                     <attribute>
                         <name>relatedTag</name>
                         <value>Onset</value>
                         <value>Offset</value>
@@ -2158,6 +2159,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <name>topLevelTagGroup</name>
                      </attribute>
                      <attribute>
+                        <name>reserved</name>
+                     </attribute>
+                     <attribute>
                         <name>relatedTag</name>
                         <value>Inset</value>
                         <value>Offset</value>
@@ -2168,6 +2172,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                      <description>Marks the end of an event of temporal extent.</description>
                      <attribute>
                         <name>topLevelTagGroup</name>
+                     </attribute>
+                     <attribute>
+                        <name>reserved</name>
                      </attribute>
                      <attribute>
                         <name>relatedTag</name>
@@ -3455,6 +3462,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                            <name>topLevelTagGroup</name>
                         </attribute>
                         <attribute>
+                           <name>reserved</name>
+                        </attribute>
+                        <attribute>
                            <name>relatedTag</name>
                            <value>Duration</value>
                         </attribute>
@@ -3478,6 +3488,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                         <description>The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.</description>
                         <attribute>
                            <name>topLevelTagGroup</name>
+                        </attribute>
+                        <attribute>
+                           <name>reserved</name>
                         </attribute>
                         <attribute>
                            <name>relatedTag</name>
@@ -3981,6 +3994,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                <attribute>
                   <name>requireChild</name>
                </attribute>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the definition.</description>
@@ -3998,6 +4014,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                <description>A HED specific utility tag that is grouped with an expanded definition. The child value of the Def-expand is the name of the expanded definition.</description>
                <attribute>
                   <name>requireChild</name>
+               </attribute>
+               <attribute>
+                  <name>reserved</name>
                </attribute>
                <attribute>
                   <name>tagGroup</name>
@@ -4020,6 +4039,9 @@ For additional information and tutorials see https://www.hed-resources.org.
                   <name>requireChild</name>
                </attribute>
                <attribute>
+                  <name>reserved</name>
+               </attribute>
+               <attribute>
                   <name>topLevelTagGroup</name>
                </attribute>
                <node>
@@ -4037,6 +4059,9 @@ For additional information and tutorials see https://www.hed-resources.org.
             <node>
                <name>Event-context</name>
                <description>A special HED tag inserted as part of a top-level tag group to contain information about the interrelated conditions under which the event occurs. The event context includes information about other events that are ongoing when this event happens.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <attribute>
                   <name>topLevelTagGroup</name>
                </attribute>
@@ -7050,12 +7075,12 @@ For additional information and tutorials see https://www.hed-resources.org.
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
-         <description>Indicates this schema element came from the named library schema, not the standard schema.</description>
+         <description>Indicates this schema element came from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
             <name>elementProperty</name>
          </property>
@@ -7077,7 +7102,7 @@ For additional information and tutorials see https://www.hed-resources.org.
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -7096,6 +7121,23 @@ For additional information and tutorials see https://www.hed-resources.org.
          <property>
             <name>boolProperty</name>
          </property>
+         <property>
+            <name>nodeProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>reserved</name>
+         <description>A schema attribute indicating that this tag has special meaning and requires special handling by tools.</description>
+         <property>
+            <name>boolProperty</name>
+         </property>
+         <property>
+            <name>nodeProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>rooted</name>
+         <description>Indicates a top-level library schema node is identical to a node of the same name in the partnered standard schema. This attribute can only appear in nodes that have the inLibrary schema attribute.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7137,7 +7179,7 @@ For additional information and tutorials see https://www.hed-resources.org.
             <name>nodeProperty</name>
          </property>
          <property>
-            <name>isInherited</name>
+            <name>isInheritedProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -7225,7 +7267,7 @@ For additional information and tutorials see https://www.hed-resources.org.
          <description>Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).</description>
       </propertyDefinition>
       <propertyDefinition>
-         <name>isInherited</name>
+         <name>isInheritedProperty</name>
          <description>Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes for nodes.</description>
       </propertyDefinition>
       <propertyDefinition>
@@ -7249,7 +7291,6 @@ For additional information and tutorials see https://www.hed-resources.org.
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>This is an updated version of the schema format. The properties are now part of the schema. The schema attributes are designed to be checked in software rather than hard-coded. The schema attributes, themselves have properties.
-
+   <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
 </epilogue>
 </HED>
