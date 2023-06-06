@@ -1,4 +1,6 @@
+# CHANGELOG for HED score library schema
 
-# CHANGELOG for HED score schema 1.0.0
+## Changes for HED score schema 1.0.0 released Jan 28, 2023.
 
-Initial release
+* Initial release 
+
