@@ -1,7 +1,7 @@
 HED library="testlib" version="2.0.0" withStandard="8.2.0" unmerged="true"
 
 '''Prologue'''
-This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
+This is a This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
@@ -13,6 +13,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                       . . .
 '''Data-mode''' <nowiki>{rooted=Statistical-value}[A value that occurs most often in data.]</nowiki>   
 * <nowiki># {takesValue, valueClass=numericClass}</nowiki> 
+
+'''Special-node''' <nowiki>{extensionAllowed}[This is a special experimental node.]</nowiki>
+* Another-node
+** Still-Another-1
 
 '''Modulator''' <nowiki> {requireChild} [External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
