@@ -1,0 +1,178 @@
+HED library="lisa" version="0.0.1" withStandard="8.2.0" unmerged="true"
+
+'''Prologue'''
+LISA is a Hierarchical Event Descriptors Library Schema for Linguistic Stimuli Annotation. The schema allows for detailed annotation of neuroimaging experiments that involve language events, from carefully controlled experiments specifically targeting the neuroscience of language processing, to more complex naturalistic paradigms that involve written or spoken language.
+
+LISA allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics, while the individual words in the sentence can simultaneously be associated with word-level characteristics, and so on. Annotation possibilities are extensive and cover characteristics of multiple language allowing for comparisons between languages.
+
+!# start schema
+
+'''Grapheme''' <nowiki>{rooted=Language-item}[The smallest meaningful contrastive unit in a writing system]</nowiki>
+
+'''Logogram''' <nowiki>{rooted=Language-item}[A sign or character representing a morpheme,word or phrase, such as those used in shorthand and some writing systems]</nowiki>
+
+'''Mora''' <nowiki>{rooted=Language-item}[A basic timing unit in the phonology of some spoken languages, equal to or shorter than a syllable.]</nowiki>
+'''Morpheme''' <nowiki>{rooted=Language-item}[A meaningful unit of a language that cannot be further divided.]</nowiki>
+
+'''Vowel''' <nowiki>{rooted=Phoneme}[A speech sound which is produced by a comparatively open configuration of the vocal tract, with vibration of the vocal cords but without audible friction, and which is a unit of the sound system of a language that forms the nucleus of a syllable.]</nowiki>
+* Short-vowel <nowiki>[A vowel sound that is pronounced in a short form.]</nowiki>
+* Long-vowel <nowiki>[A vowel sound that is pronounced in a long form.]</nowiki>
+** Diphthongs <nowiki>[A sound formed by the combination of two vowels.]</nowiki>
+
+'''Consonant''' <nowiki>{rooted=Phoneme}[A basic speech sound in which the breath is at least partly obstructed and which can be combined with a vowel to form a syllable.]</nowiki>
+
+'''Language-unit-property''' <nowiki>{rooted=Property}[A property of a linguistic unit within a framework of language analysis.]</nowiki>
+* Morphological-role <nowiki>[The morphological role of a linguistic unit.]</nowiki>
+** Morpohological-type <nowiki>[The type of a morpheme.]</nowiki>
+*** Free-morpohological-type <nowiki>[A morpheme type that can stand alone as a word.]</nowiki>
+*** Bound-morpohological-type <nowiki>[A morpheme type that cannot stand alone as a word.]</nowiki>
+** Morphological-function <nowiki>[The function of a morpheme.]</nowiki>
+*** Word-formation-function <nowiki>[Creating a new world.]</nowiki>
+**** To-noun <nowiki>[To make into a noun.]</nowiki>
+**** To-verb <nowiki>[To make into a verb.]</nowiki>
+**** To-adjective <nowiki>[To make into an adjective.]</nowiki>
+**** To-adverb <nowiki>[To make into an adverb]</nowiki>
+**** Reverse-meaning <nowiki>[To reverse the meaning of the free morpheme.]</nowiki>
+**** Intensify <nowiki>[To increase the intensity of the free morpheme.]</nowiki>
+*** Inflective-morphological-function <nowiki>[Changing the grammatical function of a word.]</nowiki>
+**** Conjugation-morphology <nowiki>[Identifying the voice, mood, tense, number, and person of a verb.]</nowiki>
+**** Declinition-morphology <nowiki>[Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.]</nowiki>
+** Morphological-position <nowiki>[The position a morpheme takes relative to the free morpheme of a word.]</nowiki>
+*** Affix <nowiki>[A morpheme that is attached to a word stem to form a new word or word form.]</nowiki>
+**** Prefix <nowiki>[Position of a morpheme at the beginning of a word.]</nowiki>
+**** Suffix <nowiki>[Position of a morpheme at the end of a word.]</nowiki>
+**** Infix <nowiki>[Position of a morpheme in the middle of a word.]</nowiki>
+**** Circumfix <nowiki>[Position of a morpheme split in two parts, one places at the start of a word, and the other at the end.]</nowiki>
+*** Non-concatenative-morphology <nowiki>[Process of word formation and inflection in which the stem  may be modified (without stringing morphemes together sequentially).]</nowiki>
+**** Apophony <nowiki>[Regular vowel variation.]</nowiki>
+**** Conversion <nowiki>[No change]</nowiki>
+**** Transfixation <nowiki>[Interdigitation of vowel and consonant morphemes]</nowiki>
+**** Reduplication <nowiki>[Duplication of all or part of the root word]</nowiki>
+**** Truncation <nowiki>[Removal of phonological material from root.]</nowiki>
+* Lexical-role <nowiki>[The role of a linguistic unit in a specific vocabulary.]</nowiki>
+** Lexical-content-role <nowiki>[The content role of a linguistic unit in a specific vocabulary]</nowiki>
+*** Noun <nowiki>[Pertaining to words or vocabulary]</nowiki>
+*** Verb <nowiki>[Describing an action.]</nowiki>
+**** Auxiliary-verb <nowiki>[A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).]</nowiki>
+***** Modal-verb <nowiki>[An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.]</nowiki>
+**** Transitive-verb <nowiki>[A verb that requires an object to receive the action.]</nowiki>
+**** Intransative-verb <nowiki>[A verb that does not require an object.]</nowiki>
+***** Unergative-verb <nowiki>[An intransitive verb whose subject is an agent]</nowiki>
+***** Unaccusative-verb <nowiki>[An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).]</nowiki>
+*** Adjective <nowiki>[Naming an attribute, added to or grammatically related to a noun to modify or describe it.]</nowiki>
+*** Adverb <nowiki>[Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.]</nowiki>
+** Lexical-function-role <nowiki>[The function role of a linguistic unit in a specific vocabulary.]</nowiki>
+*** Preposition <nowiki>[Governing, and preceding, a noun or pronoun and expressing a relation to another word or element in the clause.]</nowiki>
+*** Postposition <nowiki>[Governing and appearing after a noun or pronoun and expressing a relation to another word or element in the clause.]</nowiki>
+*** Determiner <nowiki>[Determining the kind of reference a noun or noun group has.]</nowiki>
+*** Pronoun <nowiki>[Referring either to the participants in the discourse (e.g., I, you) or to someone or something mentioned elsewhere in the discourse.]</nowiki>
+*** Conjunction <nowiki>[Connecting clauses or sentences or to coordinate words in the same clause.]</nowiki>
+*** Complementizer <nowiki>[Marking an embedded clause as functioning as a complement, typically a subordinating conjunction or infinitive to]</nowiki>
+*** Numeral-classifier <nowiki>[Denoting a number.]</nowiki>
+*** Interjection <nowiki>[Made especially as an aside of interruption.]</nowiki>
+*** Negation-word <nowiki>[Denying the truth of a clause or sentence.]</nowiki>
+*** Particle <nowiki>[Part of the class of words such as in, up, off, over, used, with verbs to make phrasal verbs.]</nowiki>
+*** Numeral <nowiki>[Denoting a number.]</nowiki>
+* Clause-type <nowiki>[The role of a clause.]</nowiki>
+** Independent-clause <nowiki>[Containing a subject and verb but cannot be a sentence.]</nowiki>
+** Dependent-clause <nowiki>[Containing a subject and verb and can be a sentence.]</nowiki>
+* Phrase-role <nowiki>[The role of phrase.]</nowiki>
+** Noun-phrase <nowiki>[Functioning in a sentence as subject, object, or prepositional object.]</nowiki>
+** Verb-phrase <nowiki>[Containing the verb and any direct or indirect object, but not the subject.]</nowiki>
+** Adjective-phrase <nowiki>[Headed by an adjective and provides context, clarity, or details that support that]</nowiki>
+** Adverb-phrase <nowiki>[Functioning as an adverb in a sentence.]</nowiki>
+** Prepositional-phrase <nowiki>[Consisting of a preposition and its object.]</nowiki>
+
+'''Language-unit-frequency''' <nowiki>{rooted=Quantitative-value}[The frequency with which a unit occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.]</nowiki>
+* Word-frequency <nowiki>[The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.]</nowiki>
+* Bigram-frequency <nowiki>[The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.]</nowiki>
+
+'''Language-unit-probability''' <nowiki>{rooted=Quantitative-value}[The probability of a specific language unit occurring in a specific context]</nowiki>
+* Cloze-probablity <nowiki>[The proportion of people who fill a gap in given sentence with a given word]</nowiki>
+
+'''Orthographic-neighborhood-size''' <nowiki>{rooted=Quantitative-value}[The number of closely resembling word-forms.]</nowiki>
+
+'''Language''' <nowiki>{rooted=Item}[A system of communication used by a particular country or community.]</nowiki>
+* Indo-European-language <nowiki>[A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.]</nowiki>
+** Germanic-language <nowiki>[A system of communication belonging to the family of languages spoken in Europe, North America, Oceania and Southern Africa.]</nowiki>
+*** English <nowiki>[A system of communication]</nowiki>
+*** Dutch <nowiki>[A system of communication]</nowiki>
+*** German <nowiki>[A system of communication]</nowiki>
+*** Swedish <nowiki>[A system of communication]</nowiki>
+*** Norwegian <nowiki>[A system of communication]</nowiki>
+*** Danish <nowiki>[A system of communication]</nowiki>
+*** Icelandic <nowiki>[A system of communication]</nowiki>
+** Romance-language <nowiki>[A system of communication belonging to the family of languages which derive from Latin.]</nowiki>
+*** Spanish <nowiki>[A system of communication]</nowiki>
+*** French <nowiki>[A system of communication]</nowiki>
+*** Italian <nowiki>[A system of communication]</nowiki>
+*** Portuguese <nowiki>[A system of communication]</nowiki>
+*** Galacian <nowiki>[A system of communication]</nowiki>
+*** Catalan <nowiki>[A system of communication]</nowiki>
+*** Romanian <nowiki>[A system of communication]</nowiki>
+*** Rhaeto-Romance <nowiki>[A system of communication]</nowiki>
+** Slavic-language <nowiki>[A system of communication belonging to the family of languages spoken in Central, Eastern and South-Eastern Europe.]</nowiki>
+*** Russian <nowiki>[A system of communication]</nowiki>
+*** Czech <nowiki>[A system of communication]</nowiki>
+*** Polish <nowiki>[A system of communication]</nowiki>
+*** Slovak <nowiki>[A system of communication]</nowiki>
+*** Ukrainian <nowiki>[A system of communication]</nowiki>
+*** Bulgarian <nowiki>[A system of communication]</nowiki>
+*** Macedonian <nowiki>[A system of communication]</nowiki>
+*** Croatian <nowiki>[A system of communication used in some countries bordering the Baltic sea.]</nowiki>
+** Baltic-language <nowiki>[A system of communication]</nowiki>
+*** Lithuanian <nowiki>[A system of communication]</nowiki>
+*** Latvian <nowiki>[A system of communication]</nowiki>
+* Sino-Tibetan-language <nowiki>[A system of communication belonging to the family of languages spoken in parts of Eastern Asia.]</nowiki>
+** Sinitic <nowiki>[]</nowiki>
+*** Mandarin-Chinese <nowiki>[A system of communication]</nowiki>
+*** Wu-Chinese <nowiki>[A system of communication]</nowiki>
+*** Xiang-Chinese <nowiki>[A system of communication]</nowiki>
+*** Gan-Chinese <nowiki>[A system of communication]</nowiki>
+*** Yue-Chinese <nowiki>[A system of communication]</nowiki>
+** Burmo-Qiangic <nowiki>[A system of communication belonging to the family of languages spoken in Southwest China and Myanmar.]</nowiki>
+*** Burmese <nowiki>[A system of communication]</nowiki>
+* Atlantic-Congo <nowiki>[A system of communication belonging to the family of languages spoken in Central and Eastern Africa]</nowiki>
+** Swahili <nowiki>[A system of communication]</nowiki>
+* Afrosiatic-language <nowiki>[A system of communication belonging to the family of languages spoken in subregions of Western Asia, North Africa, the Horn of Africa, and parts of the Sahara/Sahel.]</nowiki>
+** Arabic <nowiki>[A system of communication]</nowiki>
+** Hebrew <nowiki>[A system of communication]</nowiki>
+* Austronesian-language <nowiki>[A system of communication belonging to the family of languages spoken in  Maritime Southeast Asia, Madagascar, the islands of the Pacific Ocean and Taiwan.]</nowiki>
+** Malay <nowiki>[A system of communication]</nowiki>
+* Austroasiatic <nowiki>[A system of communication belonging to the family of languages spoken in Mainland Southeast Asia and South Asia.]</nowiki>
+** Vietnamese <nowiki>[A system of communication]</nowiki>
+* Dravidian <nowiki>[A system of communication belonging to the family of languages spoken in Southern India ]</nowiki>
+** Tamil <nowiki>[A system of communication]</nowiki>
+* Japonic <nowiki>[A system of communication belonging to the family of languages spoken mostly in Japan.]</nowiki>
+** Japanese <nowiki>[A system of communication]</nowiki>
+* Koreanic <nowiki>[A system of communication]</nowiki>
+** Korean <nowiki>[A system of communication]</nowiki>
+* Tai-Kadai <nowiki>[A system of communication]</nowiki>
+** Thai <nowiki>[A system of communication]</nowiki>
+* Turkic <nowiki>[A system of communication belonging to the family of languages spoken in subregions of Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia (Siberia), and Western Asia.]</nowiki>
+** Turkish <nowiki>[A system of communication]</nowiki>
+* Uralic <nowiki>[A system of communication belonging to the family of languages spoken in regions of Europe and northern Asia.]</nowiki>
+** Finnish <nowiki>[A system of communication]</nowiki>
+** Hungarian <nowiki>[A system of communication]</nowiki>
+** Estonian <nowiki>[A system of communication]</nowiki>
+
+'''Language-property''' <nowiki>{rooted=Property}[A property relating to a specific system of communication used by a particular country or group of people.]</nowiki>
+* Morphological-language-type <nowiki>[Morphological property relating to a specific system of communication used by a particular country or group of people.]</nowiki>
+** Morphological-isolating-type <nowiki>[Having a morpheme per word ratio close to one.]</nowiki>
+** Morphological-polysynthetic-type <nowiki>[Can encode the subject and the verb (and sometimes the object) into a single word.]</nowiki>
+** Morphological-syntactic-type <nowiki>[Having a high morpheme per word ratio.]</nowiki>
+** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes which each correspond to a single grammatical feature.]</nowiki>
+** Morphological-fusional-type <nowiki>[Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki> 
+* Orthographic-type <nowiki>[The type of unit each symbol serves to represent in written language.]</nowiki>
+** Segmental-or-Alphabetic-type <nowiki>[Representing a phoneme per character.]</nowiki>
+*** Shallow-orthographic <nowiki>[Having a one-to-one or close to one-on-one correspondence between phonemes and the graphemes that represent them.]</nowiki>
+*** Deep-orthographic <nowiki>[Not having a one-to-one correspondence between phonemes and graphemes that represent them.]</nowiki>
+** Logographic-type <nowiki>[Representing an entire spoken word per grapheme.]</nowiki>
+** Syllabary-type <nowiki>[Representing one syllable per grapheme.]</nowiki>
+
+!# end schema 
+
+'''Epilogue'''
+The current prerelease of the schema is primarily centered around written language and current development focusses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. 
+
+!# end hed 

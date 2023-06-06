@@ -10,8 +10,8 @@ the current HED community focuses on annotation of events in human
 neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking, 
 motion-capture, EKG, and audiovisual recording. 
 
-See the [**HED project homepage**](https://hedtags.org) and
-[**HED resources**](https://www.hed-resources.org/en/latest/index.html),
+See the [**HED project homepage**](https://www.hedtags.org) and
+[**HED resources**](https://www.hed-resources.org),
 particularly the [**How do you use HED?**](https://www.hed-resources.org/en/latest/HowCanYouUseHed.html)
 for information about how to get started or how to get involved in the HED community.
 
@@ -30,7 +30,9 @@ The following table summarizes the current versions of the HED schemas.
 | Schema | Latest<br/>version| Description | Prerelease<br/>version  | DOI  |
 | ------ | --------------- | ------- | ------------------------- | ---- |
 | [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 1.0.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.0 |  |
+| [**score**](library_schemas/score) | 1.0.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.0 | 10.5281/zenodo.7897596  |
+|  [**lisa**](library_schemas/lisa) |  | LISA linguistic stimuli annotation vocabulary. | 0.0.1 |  |
+
 |  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
 
 
