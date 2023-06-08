@@ -39,7 +39,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Stimulation-modulator
-        ** Intermittent-photic-stimulation {requireChild, suggestedTag=Posterior-stimulus-dependent-intermittent-photic-stimulation-response, suggestedTag=Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited, suggestedTag=Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained, suggestedTag=Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited, suggestedTag=Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained, suggestedTag=Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect, suggestedTag=Unmodified-intermittent-photic-stimulation-effect}
+        ** Intermittent-photic-stimulation {requireChild, suggestedTag=Intermittent-photic-stimulation-effect}
             *** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
         ** Auditory-stimulation
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>

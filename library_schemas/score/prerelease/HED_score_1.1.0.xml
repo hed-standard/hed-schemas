@@ -357,13 +357,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</value>
-                  <value>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited</value>
-                  <value>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained</value>
-                  <value>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited</value>
-                  <value>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained</value>
-                  <value>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect</value>
-                  <value>Unmodified-intermittent-photic-stimulation-effect</value>
+                  <value>Intermittent-photic-stimulation-effect</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
