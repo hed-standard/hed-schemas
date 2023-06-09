@@ -536,13 +536,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
                <value>Finding-frequency</value>
-               <value>Posterior-dominant-rhythm-amplitude-range</value>
                <value>Finding-amplitude-asymmetry</value>
-               <value>Posterior-dominant-rhythm-frequency-asymmetry</value>
-               <value>Posterior-dominant-rhythm-eye-opening-reactivity</value>
-               <value>Posterior-dominant-rhythm-organization</value>
-               <value>Posterior-dominant-rhythm-caveat</value>
-               <value>Absence-of-posterior-dominant-rhythm</value>
+               <value>Posterior-dominant-rhythm-property</value>
             </attribute>
             <attribute>
                <name>inLibrary</name>
@@ -573,11 +568,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <attribute>
                <name>suggestedTag</name>
-               <value>Delta-activity-morphology</value>
-               <value>Theta-activity-morphology</value>
-               <value>Alpha-activity-morphology</value>
-               <value>Beta-activity-morphology</value>
-               <value>Gamma-activity-morphology</value>
+               <value>Rhythmic-activity-morphology</value>
                <value>Finding-significance-to-recording</value>
                <value>Brain-laterality</value>
                <value>Brain-region</value>
@@ -619,11 +610,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Continuous-background-activity</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Delta-activity-morphology</value>
-                  <value>Theta-activity-morphology</value>
-                  <value>Alpha-activity-morphology</value>
-                  <value>Beta-activity-morphology</value>
-                  <value>Gamma-activity-morphology</value>
+                  <value>Rhythmic-activity-morphology</value>
                   <value>Brain-laterality</value>
                   <value>Brain-region</value>
                   <value>Sensors</value>
@@ -638,11 +625,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Nearly-continuous-background-activity</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Delta-activity-morphology</value>
-                  <value>Theta-activity-morphology</value>
-                  <value>Alpha-activity-morphology</value>
-                  <value>Beta-activity-morphology</value>
-                  <value>Gamma-activity-morphology</value>
+                  <value>Rhythmic-activity-morphology</value>
                   <value>Brain-laterality</value>
                   <value>Brain-region</value>
                   <value>Sensors</value>
@@ -657,11 +640,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Discontinuous-background-activity</name>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Delta-activity-morphology</value>
-                  <value>Theta-activity-morphology</value>
-                  <value>Alpha-activity-morphology</value>
-                  <value>Beta-activity-morphology</value>
-                  <value>Gamma-activity-morphology</value>
+                  <value>Rhythmic-activity-morphology</value>
                   <value>Brain-laterality</value>
                   <value>Brain-region</value>
                   <value>Sensors</value>
@@ -1810,20 +1789,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <description>Periodic discharges (PDs).</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Periodic-discharges-superimposed-activity</value>
-               <value>Periodic-discharge-sharpness</value>
-               <value>Number-of-periodic-discharge-phases</value>
-               <value>Periodic-discharge-triphasic-morphology</value>
-               <value>Periodic-discharge-absolute-amplitude</value>
-               <value>Periodic-discharge-relative-amplitude</value>
-               <value>Periodic-discharge-polarity</value>
+               <value>Periodic-discharge-morphology</value>
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
                <value>Finding-frequency</value>
-               <value>Periodic-discharge-duration</value>
-               <value>Periodic-discharge-onset</value>
-               <value>Periodic-discharge-dynamics</value>
+               <value>Periodic-discharge-time-related-features</value>
             </attribute>
             <attribute>
                <name>inLibrary</name>
@@ -1835,15 +1806,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <description>RDA</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Periodic-discharges-superimposed-activity</value>
+               <value>Periodic-discharge-superimposed-activity</value>
                <value>Periodic-discharge-absolute-amplitude</value>
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
                <value>Finding-frequency</value>
-               <value>Periodic-discharge-duration</value>
-               <value>Periodic-discharge-onset</value>
-               <value>Periodic-discharge-dynamics</value>
+               <value>Periodic-discharge-time-related-features</value>
             </attribute>
             <attribute>
                <name>inLibrary</name>
@@ -1866,9 +1835,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Sensors</value>
                <value>Multifocal-finding</value>
                <value>Finding-frequency</value>
-               <value>Periodic-discharge-duration</value>
-               <value>Periodic-discharge-onset</value>
-               <value>Periodic-discharge-dynamics</value>
+               <value>Periodic-discharge-time-related-features</value>
             </attribute>
             <attribute>
                <name>inLibrary</name>
@@ -3163,7 +3130,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
             </node>
             <node>
-               <name>Periodic-discharges-morphology</name>
+               <name>Periodic-discharge-morphology</name>
                <description>Periodic discharges not further specified (PDs).</description>
                <attribute>
                   <name>requireChild</name>
@@ -3173,7 +3140,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>score</value>
                </attribute>
                <node>
-                  <name>Periodic-discharges-superimposed-activity</name>
+                  <name>Periodic-discharge-superimposed-activity</name>
                   <attribute>
                      <name>requireChild</name>
                   </attribute>
@@ -3186,7 +3153,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <value>score</value>
                   </attribute>
                   <node>
-                     <name>Periodic-discharges-fast-superimposed-activity</name>
+                     <name>Periodic-discharge-fast-superimposed-activity</name>
                      <attribute>
                         <name>suggestedTag</name>
                         <value>Finding-frequency</value>
@@ -3212,7 +3179,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </node>
                   </node>
                   <node>
-                     <name>Periodic-discharges-rhythmic-superimposed-activity</name>
+                     <name>Periodic-discharge-rhythmic-superimposed-activity</name>
                      <attribute>
                         <name>suggestedTag</name>
                         <value>Finding-frequency</value>
@@ -9451,11 +9418,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Abnormal-interictal-rhythmic-activity</name>
             <attribute>
                <name>suggestedTag</name>
-               <value>Delta-activity-morphology</value>
-               <value>Theta-activity-morphology</value>
-               <value>Alpha-activity-morphology</value>
-               <value>Beta-activity-morphology</value>
-               <value>Gamma-activity-morphology</value>
+               <value>Rhythmic-activity-morphology</value>
                <value>Polymorphic-delta-activity-morphology</value>
                <value>Frontal-intermittent-rhythmic-delta-activity-morphology</value>
                <value>Occipital-intermittent-rhythmic-delta-activity-morphology</value>
@@ -9486,19 +9449,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <description>Periodic discharge not further specified (PDs).</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Periodic-discharges-superimposed-activity</value>
-                  <value>Periodic-discharge-sharpness</value>
-                  <value>Number-of-periodic-discharge-phases</value>
-                  <value>Periodic-discharge-triphasic-morphology</value>
-                  <value>Periodic-discharge-absolute-amplitude</value>
-                  <value>Periodic-discharge-relative-amplitude</value>
-                  <value>Periodic-discharge-polarity</value>
+                  <value>Periodic-discharge-morphology</value>
                   <value>Brain-laterality</value>
                   <value>Brain-region</value>
                   <value>Sensors</value>
-                  <value>Periodic-discharge-duration</value>
-                  <value>Periodic-discharge-onset</value>
-                  <value>Periodic-discharge-dynamics</value>
+                  <value>Periodic-discharge-time-related-features</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -10522,11 +10477,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <description>Not further specified.</description>
             <attribute>
                <name>suggestedTag</name>
-               <value>Delta-activity-morphology</value>
-               <value>Theta-activity-morphology</value>
-               <value>Alpha-activity-morphology</value>
-               <value>Beta-activity-morphology</value>
-               <value>Gamma-activity-morphology</value>
+               <value>Rhythmic-activity-morphology</value>
                <value>Brain-laterality</value>
                <value>Brain-region</value>
                <value>Sensors</value>
