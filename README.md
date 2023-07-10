@@ -1,3 +1,8 @@
+[![Documentation Status](https://readthedocs.org/projects/hed-schemas/badge/?version=latest)](https://hed-schemas.readthedocs.io/en/latest/?badge=latest)
+Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) 
+SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
+[![@HEDstandard](http://img.shields.io/twitter/follow/hedstandard.svg?style=social)](https://twitter.com/HEDstandard)
+
 ## About HED
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
 formal annotation of events and other information in data.

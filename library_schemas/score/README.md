@@ -19,4 +19,3 @@ A second revised and extended version of SCORE achieved international consensus.
 
 [1] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128.11 (2017). 
-
