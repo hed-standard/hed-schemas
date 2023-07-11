@@ -8,4 +8,5 @@ LISA allows for annotation of language stimuli on different levels through the o
 
 ## Development
 
-LISA is currently under development and only available in prerelease. The current version of the schema is primarily centered around written language and further development focusses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. 
+LISA is currently under development and only available in prerelease. The current version of the schema is primarily centered around written language and further development focusses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary.
+If you are interested in participating in this effort or have any comments or suggestions, please post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) to this repository.
