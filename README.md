@@ -1,3 +1,8 @@
+[![Documentation Status](https://readthedocs.org/projects/hed-schemas/badge/?version=latest)](https://hed-schemas.readthedocs.io/en/latest/?badge=latest)
+Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) 
+SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
+[![@HEDstandard](http://img.shields.io/twitter/follow/hedstandard.svg?style=social)](https://twitter.com/HEDstandard)
+
 ## About HED
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
 formal annotation of events and other information in data.
@@ -10,8 +15,8 @@ the current HED community focuses on annotation of events in human
 neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking, 
 motion-capture, EKG, and audiovisual recording. 
 
-See the [**HED project homepage**](https://hedtags.org) and
-[**HED resources**](https://www.hed-resources.org/en/latest/index.html),
+See the [**HED project homepage**](https://www.hedtags.org) and
+[**HED resources**](https://www.hed-resources.org),
 particularly the [**How do you use HED?**](https://www.hed-resources.org/en/latest/HowCanYouUseHed.html)
 for information about how to get started or how to get involved in the HED community.
 
@@ -23,11 +28,17 @@ needed for annotation of experimental data as well as specialized **library sche
 the additional field-specific terms needed to complete an annotation.
 
 
-| Schema | Current version | Viewers | Description |
-| ------ | --------------- | ------- | ------------------------- |  
-| [**standard**](./standard_schema) | 8.1.0 | [**Latest**](http://www.hedtags.org/display_hed.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_prerelease.html)  | Basic vocabulary for annotating data. |
-| [**score**](library_schemas/score) | 1.0.0   | [**Latest**](https://www.hedtags.org/display_hed_score.html) <br/> [**Prerelease**](https://www.hedtags.org/display_hed_score_prerelease.html)  |  SCORE standard vocabulary for clinical neurological annotation (See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |
-|  [**testlib**](library_schemas/testlib) | 1.0.1 | [**Latest**](https://www.hedtags.org/display_hed_testlib.html) <br/>  [**Prerelease**](https://www.hedtags.org/display_hed_testlib_prerelease.html) | A copy of the HED standard vocabulary for testing. <br/> (May not be stable.) |
+All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
+
+The following table summarizes the current versions of the HED schemas.
+
+| Schema | Latest<br/>version| Description | Prerelease<br/>version  | DOI  |
+| ------ | --------------- | ------- | ------------------------- | ---- |
+| [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
+| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.1 | 10.5281/zenodo.7897596  |
+|  [**lisa**](library_schemas/lisa) |  | LISA linguistic stimuli annotation vocabulary. | 0.0.1 |  |
+|  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
+
 
 ## HED revision process
 

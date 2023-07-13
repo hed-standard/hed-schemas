@@ -1,4 +1,4 @@
-HED library="score" version="1.0.1"
+HED library="testlib" version="2.0.1" withStandard="8.2.0" unmerged="true"
 
 '''Prologue'''
 This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
@@ -9,6 +9,10 @@ Future extensions may be implemented in the HED-SCORE library schema.
 For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.
 
 !# start schema
+
+                      . . .
+'''Data-mode''' <nowiki>{rooted=Statistical-value}[A value that occurs most often in data.]</nowiki>   
+* <nowiki># {takesValue, valueClass=numericClass}</nowiki> 
 
 '''Modulator''' <nowiki> {requireChild} [External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
@@ -121,15 +125,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Episode''' <nowiki> {requireChild} [Clinical episode or electrographic seizure.] </nowiki>
 
-    * Epileptic-seizure {requireChild}
-        ** Focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-            *** Aware-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-classification, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-            *** Impaired-awareness-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-classification, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-            *** Awareness-unknown-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-classification, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-            *** Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-        ** Generalized-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-classification, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-        ** Unknown-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-classification, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
-        ** Unclassified-epileptic-seizure <nowiki>{suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} </nowiki>
+    * Epileptic-seizure <nowiki> {requireChild} [The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.]</nowiki>
+        ** Focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Automatism-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Hyperkinetic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Autonomic-nonmotor-seizure, suggestedTag=Behavior-arrest-nonmotor-seizure, suggestedTag=Cognitive-nonmotor-seizure, suggestedTag=Emotional-nonmotor-seizure, suggestedTag=Sensory-nonmotor-seizure, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}[Focal seizures can be divided into focal aware and impaired awareness seizures, with additional motor and nonmotor classifications.]</nowiki>
+            *** Aware-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
+            *** Impaired-awareness-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
+            *** Awareness-unknown-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
+            *** Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [A seizure type with focal onset, with awareness or impaired awareness, either motor or non-motor, progressing to bilateral tonic clonic activity. The prior term was seizure with partial onset with secondary generalization. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+        ** Generalized-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Tonic-clonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Myoclonic-tonic-clonic-motor-seizure, suggestedTag=Myoclonic-atonic-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Typical-absence-seizure, suggestedTag=Atypical-absence-seizure, suggestedTag=Myoclonic-absence-seizure, suggestedTag=Eyelid-myoclonia-absence-seizure, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}[Generalized-onset seizures are classified as motor or nonmotor (absence), without using awareness level as a classifier, as most but not all of these seizures are linked with impaired awareness.]</nowiki>
+        ** Unknown-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Tonic-clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Behavior-arrest-nonmotor-seizure, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}[Even if the onset of seizures is unknown, they may exhibit characteristics that fall into categories such as motor, nonmotor, tonic-clonic, epileptic spasms, or behavior arrest.]</nowiki>
+        ** Unclassified-epileptic-seizure <nowiki>{suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}[Referring to a seizure type that cannot be described by the ILAE 2017 classification either because of inadequate information or unusual clinical features.]</nowiki>
     * Subtle-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges, and are clearly epileptic, ictal EEG often does not show typical epileptic activity.] </nowiki>
     * Electrographic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Referred usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify.] </nowiki>
     * Seizure-PNES <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Psychogenic non-epileptic seizure.] </nowiki>
@@ -701,37 +705,49 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Episode-property {requireChild}
-        ** Seizure-classification <nowiki> {requireChild} [Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
-            *** Motor-onset-seizure
-                **** Myoclonic-motor-onset-seizure
-                **** Negative-myoclonic-motor-onset-seizure
-                **** Clonic-motor-onset-seizure
-                **** Tonic-motor-onset-seizure
-                **** Atonic-motor-onset-seizure
-                **** Myoclonic-atonic-motor-onset-seizure
-                **** Myoclonic-tonic-clonic-motor-onset-seizure
-                **** Tonic-clonic-motor-onset-seizure
-                **** Automatism-motor-onset-seizure
-                **** Hyperkinetic-motor-onset-seizure
-                **** Epileptic-spasm-episode
-            *** Nonmotor-onset-seizure
-                **** Behavior-arrest-nonmotor-onset-seizure
-                **** Sensory-nonmotor-onset-seizure
-                **** Emotional-nonmotor-onset-seizure
-                **** Cognitive-nonmotor-onset-seizure
-                **** Autonomic-nonmotor-onset-seizure
-            *** Absence-seizure
-                **** Typical-absence-seizure
-                **** Atypical-absence-seizure
-                **** Myoclonic-absence-seizure
-                **** Eyelid-myoclonia-absence-seizure
+        ** Seizure-classification <nowiki> {requireChild} [Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
+            *** Motor-seizure <nowiki>[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+            *** Motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-motor-seizure <nowiki>[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Myoclonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Negative-myoclonic-motor-seizure
+                **** Negative-myoclonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+
+                **** Clonic-motor-seizure <nowiki>[Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Tonic-motor-seizure <nowiki>[A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Tonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Atonic-motor-seizure <nowiki>[Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Atonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-atonic-motor-seizure <nowiki>[A generalized seizure type with a myoclonic jerk leading to an atonic motor component. This type was previously called myoclonic astatic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Myoclonic-atonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-tonic-clonic-motor-seizure <nowiki>[One or a few jerks of limbs bilaterally, followed by a tonic clonic seizure. The initial jerks can be considered to be either a brief period of clonus or myoclonus. Seizures with this characteristic are common in juvenile myoclonic epilepsy. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Myoclonic-tonic-clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Tonic-clonic-motor-seizure <nowiki>[A sequence consisting of a tonic followed by a clonic phase. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Tonic-clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Automatism-motor-seizure <nowiki>[A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Automatism-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Hyperkinetic-motor-seizure
+                **** Hyperkinetic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Epileptic-spasm-episode <nowiki>[A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+            *** Nonmotor-seizure <nowiki>[Focal or generalized seizure types in which motor activity is not prominent. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Behavior-arrest-nonmotor-seizure <nowiki>[Arrest (pause) of activities, freezing, immobilization, as in behavior arrest seizure. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Sensory-nonmotor-seizure <nowiki>[A perceptual experience not caused by appropriate stimuli in the external world. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Emotional-nonmotor-seizure <nowiki>[Seizures presenting with an emotion or the appearance of having an emotion as an early prominent feature, such as fear, spontaneous joy or euphoria, laughing (gelastic), or crying (dacrystic). Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Cognitive-nonmotor-seizure <nowiki>[Pertaining to thinking and higher cortical functions, such as language, spatial perception, memory, and praxis. The previous term for similar usage as a seizure type was psychic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Autonomic-nonmotor-seizure <nowiki>[A distinct alteration of autonomic nervous system function involving cardiovascular, pupillary, gastrointestinal, sudomotor, vasomotor, and thermoregulatory functions. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+            *** Absence-seizure <nowiki>[Absence seizures present with a sudden cessation of activity and awareness. Absence seizures tend to occur in younger age groups, have more sudden start and termination, and they usually display less complex automatisms than do focal seizures with impaired awareness, but the distinctions are not absolute. EEG information may be required for accurate classification. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Typical-absence-seizure <nowiki>[A sudden onset, interruption of ongoing activities, a blank stare, possibly a brief upward deviation of the eyes. Usually the patient will be unresponsive when spoken to. Duration is a few seconds to half a minute with very rapid recovery. Although not always available, an EEG would show generalized epileptiform discharges during the event. An absence seizure is by definition a seizure of generalized onset. The word is not synonymous with a blank stare, which also can be encountered with focal onset seizures. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Atypical-absence-seizure <nowiki>[An absence seizure with changes in tone that are more pronounced than in typical absence or the onset and/or cessation is not abrupt, often associated with slow, irregular, generalized spike-wave activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Myoclonic-absence-seizure <nowiki>[A myoclonic absence seizure refers to an absence seizure with rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with three-per-second generalized spike-wave discharges. Duration is typically 10 to 60 s. Impairment of consciousness may not be obvious. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
+                **** Eyelid-myoclonia-absence-seizure <nowiki>[Eyelid myoclonia are myoclonic jerks of the eyelids and upward deviation of the eyes, often precipitated by closing the eyes or by light. Eyelid myoclonia can be associated with absences, but also can be motor seizures without a corresponding absence, making them difficult to categorize. The 2017 classification groups them with nonmotor (absence) seizures, which may seem counterintuitive, but the myoclonia in this instance is meant to link with absence, rather than with nonmotor. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
 
         ** Episode-phase <nowiki> {requireChild, suggestedTag=Seizure-semiology-manifestation,suggestedTag=Postictal-semiology-manifestation,suggestedTag=Ictal-EEG-patterns} [The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.]</nowiki>
             *** Episode-phase-initial
             *** Episode-phase-subsequent
             *** Episode-phase-postictal
 
-        ** Seizure-semiology-manifestation <nowiki> {requireChild} [Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
+        ** Seizure-semiology-manifestation <nowiki> {requireChild} [Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
             *** Semiology-motor-manifestation
                 **** Semiology-elementary-motor
                     ***** Semiology-motor-tonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [A sustained increase in muscle contraction lasting a few seconds to minutes.]</nowiki>
@@ -953,145 +969,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 !# end schema
 
-'''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-    * accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki>
-        ** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * angleUnits <nowiki>{defaultUnits=radian}</nowiki>
-        ** radian <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** degree <nowiki>{conversionFactor=0.0174533}</nowiki>
-    * areaUnits <nowiki>{defaultUnits=m^2}</nowiki>
-        ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki>
-        ** dollar <nowiki>{conversionFactor=1.0}</nowiki>
-        ** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** euro
-        ** point
-    * electricPotentialUnits <nowiki>{defaultUnits=uv}</nowiki>
-        ** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001}</nowiki>
-        ** Volt <nowiki>{SIUnit, conversionFactor=0.000001}</nowiki>
-        * frequencyUnits <nowiki>{defaultUnits=Hz}</nowiki>
-        ** hertz  <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * intensityUnits <nowiki>{defaultUnits=dB}</nowiki>
-        ** dB <nowiki>{unitSymbol, conversionFactor=1.0}[Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
-        ** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki>
-        ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>
-    * jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki>
-        ** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0}</nowiki>
-    * magneticFieldUnits <nowiki>{defaultUnits=fT}[Units used to magnetic field intensity.]</nowiki>
-        ** tesla <nowiki>{SIUnit, conversionFactor=10^-15}</nowiki>
-        ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10^-15}</nowiki>
-    * memorySizeUnits <nowiki>{defaultUnits=B}</nowiki>
-        ** byte <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * physicalLengthUnits <nowiki>{defaultUnits=m}</nowiki>
-        ** foot <nowiki>{conversionFactor=0.3048}</nowiki>
-        ** inch <nowiki>{conversionFactor=0.0254}</nowiki>
-        ** metre <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** mile <nowiki>{conversionFactor=1609.34}</nowiki>
-    * speedUnits <nowiki>{defaultUnits=m-per-s}</nowiki>
-        ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** mph <nowiki>{unitSymbol, conversionFactor=0.44704}</nowiki>
-        ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
-    * temperatureUnits <nowiki>{defaultUnits=degree Celsius}</nowiki>
-        ** degree Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * timeUnits <nowiki>{defaultUnits=s}</nowiki>
-        ** second <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** day <nowiki>{conversionFactor=86400}</nowiki>
-        ** minute <nowiki>{conversionFactor=60}</nowiki>
-        ** hour <nowiki>{conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
-    * volumeUnits <nowiki>{defaultUnits=m^3}</nowiki>
-        ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-    * weightUnits <nowiki>{defaultUnits=g}</nowiki>
-        ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-        ** gram <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-        ** pound <nowiki>{conversionFactor=453.592}</nowiki>
-        ** lb <nowiki>{conversionFactor=453.592}</nowiki>
-
-
-'''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-    * deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
-    * da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
-    * hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
-    * h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
-    * kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
-    * k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
-    * mega <nowiki>{SIUnitModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
-    * M <nowiki>{SIUnitSymbolModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
-    * giga <nowiki>{SIUnitModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
-    * G <nowiki>{SIUnitSymbolModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
-    * tera <nowiki>{SIUnitModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
-    * T <nowiki>{SIUnitSymbolModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
-    * peta <nowiki>{SIUnitModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
-    * P <nowiki>{SIUnitSymbolModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
-    * exa <nowiki>{SIUnitModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
-    * E <nowiki>{SIUnitSymbolModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
-    * zetta <nowiki>{SIUnitModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
-    * Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
-    * yotta <nowiki>{SIUnitModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
-    * Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
-    * deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10^-1.]</nowiki>
-    * d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10^-1.]</nowiki>
-    * centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
-    * c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
-    * milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
-    * m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
-    * micro <nowiki>{SIUnitModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
-    * u <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
-    * nano <nowiki>{SIUnitModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
-    * n <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
-    * pico <nowiki>{SIUnitModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
-    * p <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
-    * femto <nowiki>{SIUnitModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
-    * f <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
-    * atto <nowiki>{SIUnitModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
-    * a <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
-    * zepto <nowiki>{SIUnitModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
-    * z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
-    * yocto <nowiki>{SIUnitModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
-    * y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
-
-'''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
-    * dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki>
-    * nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
-    * numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
-    * posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki>
-    * textClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=blank, allowedCharacter=+, allowedCharacter=-, allowedCharacter=:, allowedCharacter=;, allowedCharacter=., allowedCharacter=/, allowedCharacter=(, allowedCharacter=), allowedCharacter=?, allowedCharacter=*, allowedCharacter=%, allowedCharacter=$, allowedCharacter=@}[Value class designating values that have the characteristics of text such as in descriptions.]</nowiki>
-
-'''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
-    * allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
-    * conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The multiplicative factor to multiply these units to convert to default units.]</nowiki>
-    * defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-    * extensionAllowed <nowiki>{boolProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
-    * recommended  <nowiki>{boolProperty}[A schema attribute indicating that the event-level HED string should include this tag.]</nowiki>
-    * relatedTag <nowiki>[A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.]</nowiki>
-    * requireChild  <nowiki>{boolProperty}[A schema attribute indicating that one of the node elements descendants must be included when using this tag.]</nowiki>
-    * required <nowiki>{boolProperty}[A schema attribute indicating that every event-level HED string should include this tag.]</nowiki>
-    * SIUnit  <nowiki>{boolProperty, unitProperty}[A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
-    * SIUnitModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.]</nowiki>
-    * SIUnitSymbolModifier <nowiki>{boolProperty, unitModifierProperty}[A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.]</nowiki>
-    * suggestedTag <nowiki>[A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
-    * tagGroup <nowiki>{boolProperty}[A schema attribute indicating the tag can only appear inside a tag group.] </nowiki>
-    * takesValue <nowiki>{boolProperty}[A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
-    * topLevelTagGroup <nowiki>{boolProperty}[A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.] </nowiki>
-    * unique <nowiki>{boolProperty}[A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.]</nowiki>
-    * unitClass <nowiki>[A schema attribute specifying which unit class this value tag belongs to.]</nowiki>
-    * unitPrefix <nowiki>{boolProperty, unitProperty}[A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki>
-    * unitSymbol <nowiki>{boolProperty, unitProperty}[A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-    * valueClass <nowiki>[A schema attribute specifying which value class this value tag belongs to.]</nowiki>
-
-'''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
-    * boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
-    * unitClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit classes.]</nowiki>
-    * unitModifierProperty <nowiki>[Indicates that the schema attribute is meant to be applied to unit modifier classes.]</nowiki>
-    * unitProperty <nowiki>[Indicates that the schema attribute is meant to be applied to units within a unit class.]</nowiki>
-    * valueClassProperty <nowiki>[Indicates that the schema attribute is meant to be applied to value classes.]</nowiki>
-
-
 '''Epilogue'''
 The Standardized Computer-based Organized Reporting of EEG (SCORE) is a standard terminology for scalp EEG data assessment designed for use in clinical practice that may also be used for research purposes.
 The SCORE standard defines terms for describing phenomena observed in scalp EEG data. It is also potentially applicable (with some suitable extensions) to EEG recorded in critical care and neonatal settings.
@@ -1101,6 +978,6 @@ A second revised and extended version of SCORE achieved international consensus.
 [1] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128.11 (2017). 
 
-TPA, January 2023
+TPA, March 2023
 
 !# end hed
