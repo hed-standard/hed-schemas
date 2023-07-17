@@ -155,6 +155,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Read <nowiki>[Interpret something that is written or printed.]</nowiki>
 ** Repeat <nowiki>[Make do or perform again.]</nowiki>
 ** Rest <nowiki>[Be inactive in order to regain strength, health, or energy.]</nowiki>
+** Ride <nowiki>[Ride on an animal or in a vehicle. Ride conveys some notion that another agent has partial or total control of the motion.]</nowiki>
 ** Write <nowiki>[Communicate or express by means of letters or symbols written or imprinted on a surface.]</nowiki>
 * Think <nowiki>[Direct the mind toward someone or something or use the mind actively to form connected ideas.]</nowiki>
 ** Allow <nowiki>[Allow access to something such as allowing a car to pass.]</nowiki> 
@@ -326,7 +327,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Machine <nowiki>[A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
 **** Measurement-device <nowiki>[A device in which a measure function inheres.]</nowiki>
 ***** Clock <nowiki>[A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
-****** Clock-face <nowiki>[A location identifier based on clockface numbering or anatomic subregion.]</nowiki>
+****** Clock-face <nowiki>{deprecatedFrom=8.3.0}[A location identifier based on clockface numbering or anatomic subregion.]</nowiki>
 **** Robot <nowiki>[A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
 **** Tool <nowiki>[A component that is not part of a device but is designed to support its assemby or operation.]</nowiki>
 ***	Document <nowiki>[A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.]</nowiki>
@@ -342,7 +343,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Paper <nowiki>[A thin sheet material produced by mechanically or chemically processing cellulose fibres derived from wood, rags, grasses or other vegetable sources in water.]</nowiki>
 **** Plastic <nowiki>[Various high-molecular-weight thermoplastic or thermosetting polymers that are capable of being molded, extruded, drawn, or otherwise shaped and then hardened into a form.]</nowiki>
 **** Steel <nowiki>[An alloy made up of iron with typically a few tenths of a percent of carbon to improve its strength and fracture resistance compared to iron.]</nowiki>
-*** Media <nowiki>[Media are audo/visual/audiovisual modes of communicating information for mass consumption.]</nowiki>
+*** Media <nowiki>[Media are audio/visual/audiovisual modes of communicating information for mass consumption.]</nowiki>
 **** Media-clip <nowiki>[A short segment of media.]</nowiki>
 ***** Audio-clip <nowiki>[A short segment of audio.]</nowiki>
 ***** Audiovisual-clip <nowiki>[A short media segment containing both audio and video.]</nowiki>

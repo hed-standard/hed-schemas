@@ -173,6 +173,6 @@ LISA allows for annotation of language stimuli on different levels through the o
 !# end schema 
 
 '''Epilogue'''
-The current prerelease of the schema is primarily centered around written language and current development focusses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. 
+The current prerelease of the schema is primarily centered around written language and current development focuses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. 
 
 !# end hed 
