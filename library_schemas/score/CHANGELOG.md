@@ -1,6 +1,6 @@
 # CHANGELOG for HED score library schema
 
-## Changes for score 1.1.0
+## Changes for score 1.1.0 released July 12, 2023.
 * Partnered with HED standard schema 8.2.0
 * 'Epileptic-seizure': description update
 * 'Focal-onset-epileptic-seizure': replaced '{suggestedTag=Seizure-classification}' with '{suggestedTag=Automatism-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Hyperkinetic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Autonomic-nonmotor-seizure, suggestedTag=Behavior-arrest-nonmotor-seizure, suggestedTag=Cognitive-nonmotor-seizure, suggestedTag=Emotional-nonmotor-seizure, suggestedTag=Sensory-nonmotor-seizure}'
