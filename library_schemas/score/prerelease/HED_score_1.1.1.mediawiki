@@ -10,7 +10,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 !# start schema
 
-'''Modulator''' <nowiki> {requireChild} [External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
+'''Modulator''' <nowiki> [External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
     * Sleep-modulator
         ** Sleep-deprivation
@@ -39,7 +39,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Stimulation-modulator
-        ** Intermittent-photic-stimulation {requireChild, suggestedTag=Intermittent-photic-stimulation-effect}
+        ** Intermittent-photic-stimulation {suggestedTag=Intermittent-photic-stimulation-effect}
             *** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
         ** Auditory-stimulation
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -56,14 +56,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Background-activity''' <nowiki> {requireChild} [An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.]</nowiki>
+'''Background-activity''' <nowiki> [An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.]</nowiki>
 
     * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-property}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.]</nowiki>
     * Mu-rhythm <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors} [EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.]</nowiki>
     * Other-organized-rhythm <nowiki> {requireChild, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfill the criteria of the posterior dominant rhythm.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Background-activity-special-feature <nowiki> {requireChild} [Special Features. Special features contains scoring options for the background activity of critically ill patients.]</nowiki>
+    * Background-activity-special-feature <nowiki> [Special Features. Special features contains scoring options for the background activity of critically ill patients.]</nowiki>
         ** Continuous-background-activity {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-extent}
         ** Nearly-continuous-background-activity {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-extent}
         ** Discontinuous-background-activity {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-extent}
@@ -73,7 +73,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Electrocerebral-inactivity <nowiki>[Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artifacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes.]</nowiki>
 
 
-'''Sleep-and-drowsiness''' <nowiki> {requireChild} [The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).]</nowiki>
+'''Sleep-and-drowsiness''' <nowiki> [The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).]</nowiki>
 
     * Sleep-architecture <nowiki> {suggestedTag=Property-not-possible-to-determine} [For longer recordings. Only to be scored if whole-night sleep is part of the recording. It is a global descriptor of the structure and pattern of sleep: estimation of the amount of time spent in REM and NREM sleep, sleep duration, NREM-REM cycle.]</nowiki>
         ** Normal-sleep-architecture
@@ -100,11 +100,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Non-reactive-sleep <nowiki> [EEG activity consisting of normal sleep graphoelements, but which cannot be interrupted by external stimuli/ the patient cannot be waken.]</nowiki>
 
 
-'''Interictal-finding''' <nowiki> {requireChild} [EEG pattern / transient that is distinguished form the background activity, considered abnormal, but is not recorded during ictal period (seizure) or postictal period; the presence of an interictal finding does not necessarily imply that the patient has epilepsy.]</nowiki>
+'''Interictal-finding''' <nowiki> [EEG pattern / transient that is distinguished form the background activity, considered abnormal, but is not recorded during ictal period (seizure) or postictal period; the presence of an interictal finding does not necessarily imply that the patient has epilepsy.]</nowiki>
 
     * Epileptiform-interictal-activity {suggestedTag=Spike-morphology, suggestedTag=Spike-and-slow-wave-morphology, suggestedTag=Runs-of-rapid-spikes-morphology, suggestedTag=Polyspikes-morphology, suggestedTag=Polyspike-and-slow-wave-morphology, suggestedTag=Sharp-wave-morphology, suggestedTag=Sharp-and-slow-wave-morphology, suggestedTag=Slow-sharp-wave-morphology, suggestedTag=High-frequency-oscillation-morphology, suggestedTag=Hypsarrhythmia-classic-morphology, suggestedTag=Hypsarrhythmia-modified-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-propagation, suggestedTag=Multifocal-finding, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern, suggestedTag=Finding-incidence}
     * Abnormal-interictal-rhythmic-activity {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Polymorphic-delta-activity-morphology, suggestedTag=Frontal-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Occipital-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Temporal-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern, suggestedTag=Finding-incidence}
-    * Interictal-special-patterns {requireChild}
+    * Interictal-special-patterns 
         ** Interictal-periodic-discharges <nowiki> {suggestedTag=Periodic-discharge-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Periodic-discharge-time-related-features} [Periodic discharge not further specified (PDs).]</nowiki>
             *** Generalized-periodic-discharges <nowiki>[GPDs.]</nowiki>
             *** Lateralized-periodic-discharges <nowiki>[LPDs.]</nowiki>
@@ -113,15 +113,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Extreme-delta-brush {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
 
 
-'''Critically-ill-patients-patterns''' <nowiki> {requireChild} [Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Hirsch et al., 2013).] </nowiki>
+'''Critically-ill-patients-patterns''' <nowiki> [Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Hirsch et al., 2013).] </nowiki>
     * Critically-ill-patients-periodic-discharges <nowiki> {suggestedTag=Periodic-discharge-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-time-related-features} [Periodic discharges (PDs).]</nowiki>
     * Rhythmic-delta-activity <nowiki> {suggestedTag=Periodic-discharge-superimposed-activity, suggestedTag=Periodic-discharge-absolute-amplitude, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-time-related-features} [RDA] </nowiki>
     * Spike-or-sharp-and-wave <nowiki> {suggestedTag=Periodic-discharge-sharpness, suggestedTag=Number-of-periodic-discharge-phases, suggestedTag=Periodic-discharge-triphasic-morphology, suggestedTag=Periodic-discharge-absolute-amplitude, suggestedTag=Periodic-discharge-relative-amplitude, suggestedTag=Periodic-discharge-polarity, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Finding-frequency, suggestedTag=Periodic-discharge-time-related-features} [SW] </nowiki>
 
 
-'''Episode''' <nowiki> {requireChild} [Clinical episode or electrographic seizure.] </nowiki>
+'''Episode''' <nowiki> [Clinical episode or electrographic seizure.] </nowiki>
 
-    * Epileptic-seizure <nowiki> {requireChild} [The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.]</nowiki>
+    * Epileptic-seizure <nowiki> [The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.]</nowiki>
         ** Focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Automatism-motor-seizure, suggestedTag=Atonic-motor-seizure, suggestedTag=Clonic-motor-seizure, suggestedTag=Epileptic-spasm-episode, suggestedTag=Hyperkinetic-motor-seizure, suggestedTag=Myoclonic-motor-seizure, suggestedTag=Tonic-motor-seizure, suggestedTag=Autonomic-nonmotor-seizure, suggestedTag=Behavior-arrest-nonmotor-seizure, suggestedTag=Cognitive-nonmotor-seizure, suggestedTag=Emotional-nonmotor-seizure, suggestedTag=Sensory-nonmotor-seizure, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}[Focal seizures can be divided into focal aware and impaired awareness seizures, with additional motor and nonmotor classifications.]</nowiki>
             *** Aware-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
             *** Impaired-awareness-focal-onset-epileptic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Seizure-dynamics, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting}</nowiki>
@@ -133,14 +133,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Subtle-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Seizure type frequent in neonates, sometimes referred to as motor automatisms; they may include random and roving eye movements, sucking, chewing motions, tongue protrusion, rowing or swimming or boxing movements of the arms, pedaling and bicycling movements of the lower limbs; apneic seizures are relatively common. Although some subtle seizures are associated with rhythmic ictal EEG discharges, and are clearly epileptic, ictal EEG often does not show typical epileptic activity.] </nowiki>
     * Electrographic-seizure <nowiki> {suggestedTag=Episode-phase, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Referred usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify.] </nowiki>
     * Seizure-PNES <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Psychogenic non-epileptic seizure.] </nowiki>
-    * Sleep-related-episode {requireChild}
+    * Sleep-related-episode
         ** Sleep-related-arousal <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Normal.] </nowiki>
         ** Benign-sleep-myoclonus <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [A distinctive disorder of sleep characterized by a) neonatal onset, b) rhythmic myoclonic jerks only during sleep and c) abrupt and consistent cessation with arousal, d) absence of concomitant electrographic changes suggestive of seizures, and e) good outcome.] </nowiki>
         ** Confusional-awakening <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Episode of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule.] </nowiki>
         ** Sleep-periodic-limb-movement <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [PLMS. Periodic limb movement in sleep. Episodes are characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.] </nowiki>
         ** REM-sleep-behavioral-disorder <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder.] </nowiki>
         ** Sleep-walking <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.] </nowiki>
-    * Pediatric-episode {requireChild}
+    * Pediatric-episode
         ** Hyperekplexia <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.] </nowiki>
         ** Jactatio-capitis-nocturna <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [Relatively common in normal children at the time of going to bed, especially during the first year of life, the rhythmic head movements persist during sleep. Usually, these phenomena disappear before 3 years of age.] </nowiki>
         ** Pavor-nocturnus <nowiki> {suggestedTag=Episode-phase, suggestedTag=Finding-significance-to-recording, suggestedTag=Episode-consciousness, suggestedTag=Episode-awareness, suggestedTag=Clinical-EEG-temporal-relationship, suggestedTag=Episode-event-count, suggestedTag=State-episode-start, suggestedTag=Episode-postictal-phase, suggestedTag=Episode-prodrome, suggestedTag=Episode-tongue-biting} [A nocturnal episode characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years.] </nowiki>
@@ -152,7 +152,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Physiologic-pattern''' <nowiki> {requireChild} [EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.]</nowiki>
+'''Physiologic-pattern''' <nowiki> [EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.]</nowiki>
 
     * Rhythmic-activity-pattern <nowiki> {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [Not further specified.] </nowiki>
     * Slow-alpha-variant-rhythm <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [Characteristic rhythms mostly at 4-5 Hz, recorded most prominently over the posterior regions of the head. Generally alternate, or are intermixed, with alpha rhythm to which they often are harmonically related. Amplitude varies but is frequently close to 50 micro V. Blocked or attenuated by attention, especially visual, and mental effort. Comment: slow alpha variant rhythms should be distinguished from posterior slow waves characteristic of children and adolescents and occasionally seen in young adults.] </nowiki>
@@ -167,7 +167,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Uncertain-significant-pattern''' <nowiki> {requireChild} [EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).]</nowiki>
+'''Uncertain-significant-pattern''' <nowiki> [EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).]</nowiki>
 
     * Sharp-transient-pattern {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
     * Wicket-spikes <nowiki> [Spike-like monophasic negative single waves or trains of waves occurring over the temporal regions during drowsiness that have an arcuate or mu-like appearance. These are mainly seen in older individuals and represent a benign variant that is of little clinical significance.] </nowiki>
@@ -185,9 +185,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Artifact''' <nowiki>{requireChild} [When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.]</nowiki>
+'''Artifact''' <nowiki> [When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.]</nowiki>
 
-    * Biological-artifact {requireChild}
+    * Biological-artifact
         ** Eye-blink-artifact <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Artifact-significance-to-recording} [Example for EEG: Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.]</nowiki>
         ** Eye-movement-horizontal-artifact <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Artifact-significance-to-recording} [Example for EEG: There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.] </nowiki>
         ** Eye-movement-vertical-artifact <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Artifact-significance-to-recording} [Example for EEG: The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.]</nowiki>
@@ -204,7 +204,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Sweat-artifact <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Artifact-significance-to-recording} [Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.] </nowiki>
         ** EMG-artifact <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Multifocal-finding, suggestedTag=Artifact-significance-to-recording} [Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.] </nowiki>
 
-    * Non-biological-artifact {requireChild}
+    * Non-biological-artifact
         ** Power-supply-artifact <nowiki> {suggestedTag=Artifact-significance-to-recording} [50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.] </nowiki>
         ** Induction-artifact <nowiki> {suggestedTag=Artifact-significance-to-recording} [Artifacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).] </nowiki>
         ** Dialysis-artifact {suggestedTag=Artifact-significance-to-recording}
@@ -216,7 +216,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Polygraphic-channel-finding''' <nowiki>{requireChild}[Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).]</nowiki>
+'''Polygraphic-channel-finding''' <nowiki> [Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).]</nowiki>
 
     * EOG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ElectroOculoGraphy.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -228,11 +228,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Apnea-hypopnea-index-respiration <nowiki> {requireChild} [Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
+            *** Apnea-hypopnea-index-respiration <nowiki> [Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-respiration
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Tachypnea-respiration <nowiki> {requireChild} [Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
+            *** Tachypnea-respiration <nowiki> [Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-respiration-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -283,7 +283,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** EMG-tonic-contraction
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-asymmetric-activation {requireChild}
+            *** EMG-asymmetric-activation 
               **** EMG-asymmetric-activation-left-first
                   ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
               **** EMG-asymmetric-activation-right-first
@@ -294,9 +294,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
-'''Finding-property''' <nowiki>{requireChild} [Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
+'''Finding-property''' <nowiki> [Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
-    * Signal-morphology-property {requireChild}
+    * Signal-morphology-property
 
         ** Rhythmic-activity-morphology <nowiki>[EEG activity consisting of a sequence of waves approximately constant period.]</nowiki>
             *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
@@ -354,19 +354,19 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Frontal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Occipital-intermittent-rhythmic-delta-activity-morphology  <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children.]</nowiki>
+        ** Occipital-intermittent-rhythmic-delta-activity-morphology <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Periodic-discharge-morphology <nowiki> {requireChild} [Periodic discharges not further specified (PDs).]</nowiki>
-            *** Periodic-discharge-superimposed-activity {requireChild, suggestedTag=Property-not-possible-to-determine}
+        ** Periodic-discharge-morphology <nowiki> [Periodic discharges not further specified (PDs).]</nowiki>
+            *** Periodic-discharge-superimposed-activity {suggestedTag=Property-not-possible-to-determine}
                 **** Periodic-discharge-fast-superimposed-activity {suggestedTag=Finding-frequency}
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-rhythmic-superimposed-activity {suggestedTag=Finding-frequency}
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-sharpness {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Periodic-discharge-sharpness {suggestedTag=Property-not-possible-to-determine}
                 **** Spiky-periodic-discharge-sharpness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Sharp-periodic-discharge-sharpness
@@ -376,7 +376,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Blunt-periodic-discharge-sharpness
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Number-of-periodic-discharge-phases {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Number-of-periodic-discharge-phases {suggestedTag=Property-not-possible-to-determine}
                 **** 1-periodic-discharge-phase
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** 2-periodic-discharge-phases
@@ -389,7 +389,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Periodic-discharge-triphasic-morphology <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} []</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-absolute-amplitude {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Periodic-discharge-absolute-amplitude {suggestedTag=Property-not-possible-to-determine}
                 **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[Lower than 20 microV.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Low-periodic-discharge-absolute-amplitude <nowiki>[20 to 49 microV.]</nowiki>
@@ -399,13 +399,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** High-periodic-discharge-absolute-amplitude <nowiki>[Greater than 200 microV.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-relative-amplitude {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Periodic-discharge-relative-amplitude {suggestedTag=Property-not-possible-to-determine}
                 **** Periodic-discharge-relative-amplitude-less-than-equal-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-relative-amplitude-greater-than-2
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-polarity <nowiki> {requireChild} </nowiki>
+            *** Periodic-discharge-polarity
                 **** Periodic-discharge-postitive-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Periodic-discharge-negative-polarity
@@ -413,9 +413,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Periodic-discharge-unclear-polarity
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Source-analysis-property <nowiki> {requireChild}[How the current in the brain reaches the electrode sensors.]</nowiki>
-        ** Source-analysis-laterality <nowiki> {requireChild,suggestedTag=Brain-laterality} </nowiki>
-        ** Source-analysis-brain-region {requireChild}
+    * Source-analysis-property <nowiki> [How the current in the brain reaches the electrode sensors.]</nowiki>
+        ** Source-analysis-laterality <nowiki> {suggestedTag=Brain-laterality} </nowiki>
+        ** Source-analysis-brain-region 
             *** Source-analysis-frontal-perisylvian-superior-surface
             *** Source-analysis-frontal-lateral
             *** Source-analysis-frontal-mesial
@@ -439,8 +439,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Source-analysis-occipital-basal
             *** Source-analysis-insula
 
-    * Location-property <nowiki>{requireChild}[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
-        ** Brain-laterality {requireChild}
+    * Location-property <nowiki>[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
+        ** Brain-laterality 
             *** Brain-laterality-left
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-laterality-left-greater-right
@@ -453,7 +453,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-laterality-diffuse-asynchronous
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Brain-region {requireChild}
+        ** Brain-region 
             *** Brain-region-frontal
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-region-temporal
@@ -464,7 +464,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-region-occipital
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Body-part-location {requireChild}
+        ** Body-part-location 
             *** Eyelid-location
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Face-location
@@ -479,7 +479,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hemi-location
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Brain-centricity {requireChild}
+        ** Brain-centricity 
             *** Brain-centricity-axial
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-centricity-proximal-limb
@@ -493,13 +493,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Multifocal-finding <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Modulators-property <nowiki> {requireChild}[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
-        ** Modulators-reactivity <nowiki> {requireChild, suggestedTag=Property-exists,suggestedTag=Property-absence} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
+    * Modulators-property <nowiki> [For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.]</nowiki>
+        ** Modulators-reactivity <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} [Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Eye-closure-sensitivity <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} [Eye closure sensitivity.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Eye-opening-passive {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by}  <nowiki>  [Passive eye opening. Used with base schema Increasing/Decreasing.]</nowiki>
-        ** Medication-effect-EEG <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified}  [Medications effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Eye-opening-passive {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by}  <nowiki> [Passive eye opening. Used with base schema Increasing/Decreasing.]</nowiki>
+        ** Medication-effect-EEG <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
         ** Medication-reduction-effect-EEG <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.]</nowiki>
         ** Auditive-stimuli-effect <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified} [Used with base schema Increasing/Decreasing.]</nowiki>
         ** Nociceptive-stimuli-effect <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Finding-stopped-by, suggestedTag=Finding-unmodified, suggestedTag=Finding-triggered-by} [Used with base schema Increasing/Decreasing.]</nowiki>
@@ -522,7 +522,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Facilitating-factor-other {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Provocative-factor <nowiki> {requireChild} [Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.]</nowiki>
+        ** Provocative-factor <nowiki> [Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.]</nowiki>
             *** Hyperventilation-provoked
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Reflex-provoked
@@ -532,7 +532,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Other-modulators-effect-clinical {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Intermittent-photic-stimulation-effect {requireChild}
+        ** Intermittent-photic-stimulation-effect 
             *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response {suggestedTag=Finding-frequency}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [limited to the stimulus-train] </nowiki>
@@ -548,7 +548,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Unmodified-intermittent-photic-stimulation-effect
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Quality-of-hyperventilation {requireChild}
+        ** Quality-of-hyperventilation 
             *** Hyperventilation-refused-procedure
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hyperventilation-poor-effort
@@ -558,7 +558,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Hyperventilation-excellent-effort
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Modulators-effect <nowiki> {requireChild} [Tags for describing the influence of the modulators]</nowiki>
+        ** Modulators-effect <nowiki> [Tags for describing the influence of the modulators]</nowiki>
             *** Modulators-effect-continuous-during-NRS <nowiki>[Continuous during non-rapid-eye-movement-sleep (NRS)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Modulators-effect-only-during
@@ -566,8 +566,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Modulators-effect-change-of-patterns <nowiki>[Change of patterns during sleep/awakening.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Time-related-property <nowiki> {requireChild} [Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
-        ** Appearance-mode <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
+    * Time-related-property <nowiki> [Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
+        ** Appearance-mode <nowiki> {suggestedTag=Property-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
             *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).]</nowiki>
@@ -579,7 +579,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Continuous-appearance-mode
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Discharge-pattern <nowiki> {requireChild} [Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
+        ** Discharge-pattern <nowiki> [Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
             *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence, suggestedTag=Finding-frequency} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.]</nowiki>
@@ -589,8 +589,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Fragmented-discharge-pattern
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Periodic-discharge-time-related-features <nowiki> {requireChild} [Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
-            *** Periodic-discharge-duration {requireChild, suggestedTag=Property-not-possible-to-determine}
+        ** Periodic-discharge-time-related-features <nowiki> [Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
+            *** Periodic-discharge-duration {suggestedTag=Property-not-possible-to-determine}
                 **** Very-brief-periodic-discharge-duration <nowiki>[Less than 10 sec.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Brief-periodic-discharge-duration <nowiki>[10 to 59 sec.]</nowiki>
@@ -601,12 +601,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Very-long-periodic-discharge-duration <nowiki>[Greater than 1 hour.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-onset {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Periodic-discharge-onset {suggestedTag=Property-not-possible-to-determine}
                 **** Sudden-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Gradual-periodic-discharge-onset
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-dynamics {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Periodic-discharge-dynamics {suggestedTag=Property-not-possible-to-determine}
                 **** Evolving-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Fluctuating-periodic-discharge-dynamics
@@ -617,7 +617,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Finding-extent <nowiki>[Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
-        ** Finding-incidence <nowiki> {requireChild} [How often it occurs/time-epoch.]</nowiki>
+        ** Finding-incidence <nowiki> [How often it occurs/time-epoch.]</nowiki>
             *** Only-once-finding-incidence
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Rare-finding-incidence <nowiki>[less than 1/h]</nowiki>
@@ -628,10 +628,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Frequent-finding-incidence <nowiki>[1/10 s to 1/min.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s).]</nowiki>
+            *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-prevalence <nowiki> {requireChild} [The percentage of the recording covered by the train/burst.]</nowiki>
+        ** Finding-prevalence <nowiki> [The percentage of the recording covered by the train/burst.]</nowiki>
             *** Rare-finding-prevalence <nowiki>[Less than 1 percent.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Occasional-finding-prevalence <nowiki>[1 to 9 percent.]</nowiki>
@@ -643,9 +643,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Continuous-finding-prevalence <nowiki>[Greater than 90 percent.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Posterior-dominant-rhythm-property <nowiki> {requireChild} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
+    * Posterior-dominant-rhythm-property <nowiki> [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
 
-        ** Posterior-dominant-rhythm-amplitude-range {requireChild, suggestedTag=Property-not-possible-to-determine}
+        ** Posterior-dominant-rhythm-amplitude-range {suggestedTag=Property-not-possible-to-determine}
             *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV).]</nowiki>
@@ -653,7 +653,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV).]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki> {requireChild} [When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
+        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki> [When symmetrical could be labeled with base schema Symmetrical tag.]</nowiki>
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-left <nowiki>[Hz lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-frequency-asymmetry-lower-right <nowiki>[Hz lower on the right side.]</nowiki>
@@ -667,7 +667,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both <nowiki>[Reduced reactivity on both sides.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-organization <nowiki> {requireChild} [When normal could be labeled with base schema Normal tag.]</nowiki>
+        ** Posterior-dominant-rhythm-organization <nowiki> [When normal could be labeled with base schema Normal tag.]</nowiki>
             *** Posterior-dominant-rhythm-organization-poorly-organized <nowiki>[Poorly organized.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized.]</nowiki>
@@ -675,7 +675,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-caveat <nowiki> {requireChild} [Caveat to the annotation of PDR.]</nowiki>
+        ** Posterior-dominant-rhythm-caveat <nowiki> [Caveat to the annotation of PDR.]</nowiki>
             *** No-posterior-dominant-rhythm-caveat
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording
@@ -686,7 +686,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-caveat-only-following-hyperventilation
 
-        ** Absence-of-posterior-dominant-rhythm <nowiki> {requireChild} [Reason for absence of PDR.]</nowiki>
+        ** Absence-of-posterior-dominant-rhythm <nowiki> [Reason for absence of PDR.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-artifacts
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage
@@ -700,8 +700,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Absence-of-posterior-dominant-rhythm-other-causes {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Episode-property {requireChild}
-        ** Seizure-classification <nowiki> {requireChild} [Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
+    * Episode-property 
+        ** Seizure-classification <nowiki> [Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
             *** Motor-seizure <nowiki>[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
             *** Motor-onset-seizure {deprecatedFrom=1.0.0}
                 **** Myoclonic-motor-seizure <nowiki>[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
@@ -738,12 +738,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Myoclonic-absence-seizure <nowiki>[A myoclonic absence seizure refers to an absence seizure with rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with three-per-second generalized spike-wave discharges. Duration is typically 10 to 60 s. Impairment of consciousness may not be obvious. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
                 **** Eyelid-myoclonia-absence-seizure <nowiki>[Eyelid myoclonia are myoclonic jerks of the eyelids and upward deviation of the eyes, often precipitated by closing the eyes or by light. Eyelid myoclonia can be associated with absences, but also can be motor seizures without a corresponding absence, making them difficult to categorize. The 2017 classification groups them with nonmotor (absence) seizures, which may seem counterintuitive, but the myoclonia in this instance is meant to link with absence, rather than with nonmotor. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
 
-        ** Episode-phase <nowiki> {requireChild, suggestedTag=Seizure-semiology-manifestation,suggestedTag=Postictal-semiology-manifestation,suggestedTag=Ictal-EEG-patterns} [The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.]</nowiki>
+        ** Episode-phase <nowiki> {suggestedTag=Seizure-semiology-manifestation,suggestedTag=Postictal-semiology-manifestation,suggestedTag=Ictal-EEG-patterns} [The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.]</nowiki>
             *** Episode-phase-initial
             *** Episode-phase-subsequent
             *** Episode-phase-postictal
 
-        ** Seizure-semiology-manifestation <nowiki> {requireChild} [Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
+        ** Seizure-semiology-manifestation <nowiki> [Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
             *** Semiology-motor-manifestation
                 **** Semiology-elementary-motor
                     ***** Semiology-motor-tonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [A sustained increase in muscle contraction lasting a few seconds to minutes.]</nowiki>
@@ -752,10 +752,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                     ***** Semiology-motor-postural <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Adoption of a posture that may be bilaterally symmetric or asymmetric (as in a fencing posture).]</nowiki>
                     ***** Semiology-motor-versive <nowiki> {suggestedTag=Body-part-location, suggestedTag=Episode-event-count}  <nowiki>[A sustained, forced conjugate ocular, cephalic, and/or truncal rotation or lateral deviation from the midline.]</nowiki>
                     ***** Semiology-motor-clonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Myoclonus that is regularly repetitive, involves the same muscle groups, at a frequency of about 2 to 3 c/s, and is prolonged. Synonym: rhythmic myoclonus .]</nowiki>
-                    ***** Semiology-motor-myoclonic <nowiki>    {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Characterized by myoclonus. MYOCLONUS : sudden, brief (lower than 100 ms) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal).]</nowiki>
+                    ***** Semiology-motor-myoclonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Characterized by myoclonus. MYOCLONUS : sudden, brief (lower than 100 ms) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal).]</nowiki>
                     ***** Semiology-motor-jacksonian-march <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Term indicating spread of clonic movements through contiguous body parts unilaterally.]</nowiki>
-                    ***** Semiology-motor-negative-myoclonus <nowiki>  {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Characterized by negative myoclonus. NEGATIVE MYOCLONUS: interruption of tonic muscular activity for lower than 500 ms without evidence of preceding myoclonia.]</nowiki>
-                    ***** Semiology-motor-tonic-clonic <nowiki> {requireChild} [A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.]</nowiki>
+                    ***** Semiology-motor-negative-myoclonus <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Characterized by negative myoclonus. NEGATIVE MYOCLONUS: interruption of tonic muscular activity for lower than 500 ms without evidence of preceding myoclonia.]</nowiki>
+                    ***** Semiology-motor-tonic-clonic <nowiki> [A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.]</nowiki>
                         ****** Semiology-motor-tonic-clonic-without-figure-of-four {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count}
                         ****** Semiology-motor-tonic-clonic-with-figure-of-four-extension-left-elbow {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count}
                         ****** Semiology-motor-tonic-clonic-with-figure-of-four-extension-right-elbow {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count}
@@ -824,7 +824,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Semiology-manifestation-other {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Postictal-semiology-manifestation {requireChild}
+        ** Postictal-semiology-manifestation 
             *** Postictal-semiology-unconscious {suggestedTag=Episode-event-count}
             *** Postictal-semiology-quick-recovery-of-consciousness <nowiki> {suggestedTag=Episode-event-count} [Quick recovery of awareness and responsiveness.]</nowiki>
             *** Postictal-semiology-aphasia-or-dysphasia <nowiki> {suggestedTag=Episode-event-count} [Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.]</nowiki>
@@ -842,7 +842,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Postictal-semiology-other-unilateral-motor-phenomena {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Polygraphic-channel-relation-to-episode {requireChild, suggestedTag=Property-not-possible-to-determine}
+        ** Polygraphic-channel-relation-to-episode {suggestedTag=Property-not-possible-to-determine}
             *** Polygraphic-channel-cause-to-episode
             *** Polygraphic-channel-consequence-of-episode
 
@@ -853,7 +853,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Postictal-EEG-activity {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity}
 
         ** Episode-time-context-property <nowiki>[Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.]</nowiki>
-            *** Episode-consciousness {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Episode-consciousness {suggestedTag=Property-not-possible-to-determine}
                 **** Episode-consciousness-not-tested
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-consciousness-affected
@@ -878,7 +878,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Episode-event-count <nowiki> {suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
 
-            *** State-episode-start <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [State at the start of the episode.]</nowiki>
+            *** State-episode-start <nowiki> {suggestedTag=Property-not-possible-to-determine} [State at the start of the episode.]</nowiki>
                 **** Episode-start-from-sleep
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-start-from-awake
@@ -893,19 +893,19 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Episode-tongue-biting {suggestedTag=Property-exists,suggestedTag=Property-absence}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-responsiveness {requireChild, suggestedTag=Property-not-possible-to-determine}
+            *** Episode-responsiveness {suggestedTag=Property-not-possible-to-determine}
                 **** Episode-responsiveness-preserved
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-responsiveness-affected
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-appearance {requireChild}
+            *** Episode-appearance 
                 **** Episode-appearance-interactive
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-appearance-spontaneous
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Seizure-dynamics <nowiki> {requireChild} [Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).]</nowiki>
+            *** Seizure-dynamics <nowiki> [Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).]</nowiki>
                 **** Seizure-dynamics-evolution-morphology
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Seizure-dynamics-evolution-frequency
@@ -918,7 +918,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
     * Other-finding-property {requireChild}
 
-        ** Artifact-significance-to-recording <nowiki> {requireChild} [It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.]</nowiki>
+        ** Artifact-significance-to-recording <nowiki> [It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.]</nowiki>
             *** Recording-not-interpretable-due-to-artifact
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Recording-of-reduced-diagnostic-value-due-to-artifact
@@ -926,7 +926,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Artifact-does-not-interfere-recording
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-significance-to-recording <nowiki> {requireChild} [Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.]</nowiki>
+        ** Finding-significance-to-recording <nowiki> [Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.]</nowiki>
             *** Finding-no-definite-abnormality
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
@@ -939,7 +939,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
 
 
-        ** Finding-amplitude-asymmetry <nowiki> {requireChild} [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
+        ** Finding-amplitude-asymmetry <nowiki> [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
@@ -984,6 +984,6 @@ A second revised and extended version of SCORE achieved international consensus.
 [1] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128.11 (2017). 
 
-TPA, March 2023
+TPA, July 2023
 
 !# end hed
