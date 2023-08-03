@@ -97,9 +97,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Modulator</name>
          <description>External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -353,9 +350,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Intermittent-photic-stimulation</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
                   <value>Intermittent-photic-stimulation-effect</value>
                </attribute>
@@ -523,9 +517,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Background-activity</name>
          <description>An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -599,9 +590,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Background-activity-special-feature</name>
             <description>Special Features. Special features contains scoring options for the background activity of critically ill patients.</description>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -1415,17 +1403,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Artifact</name>
          <description>When relevant for the clinical interpretation, artifacts can be scored by specifying the type and the location.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
          <node>
             <name>Biological-artifact</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -1667,9 +1649,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Non-biological-artifact</name>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
@@ -1778,9 +1757,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Critically-ill-patients-patterns</name>
          <description>Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Hirsch et al., 2013).</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -1847,18 +1823,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Episode</name>
          <description>Clinical episode or electrographic seizure.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
          <node>
             <name>Epileptic-seizure</name>
             <description>The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.</description>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -2120,9 +2090,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Sleep-related-episode</name>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
@@ -2255,9 +2222,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Pediatric-episode</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -2440,17 +2404,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Finding-property</name>
          <description>Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
          <node>
             <name>Signal-morphology-property</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -3133,17 +3091,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Periodic-discharge-morphology</name>
                <description>Periodic discharges not further specified (PDs).</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
                <node>
                   <name>Periodic-discharge-superimposed-activity</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -3207,9 +3159,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Periodic-discharge-sharpness</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -3309,9 +3258,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Number-of-periodic-discharge-phases</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -3440,9 +3386,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Periodic-discharge-absolute-amplitude</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
                   </attribute>
@@ -3546,9 +3489,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Periodic-discharge-relative-amplitude</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
                   </attribute>
@@ -3603,9 +3543,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Periodic-discharge-polarity</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3683,17 +3620,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Source-analysis-property</name>
             <description>How the current in the brain reaches the electrode sensors.</description>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Source-analysis-laterality</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Brain-laterality</value>
@@ -3705,9 +3636,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Source-analysis-brain-region</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -3872,17 +3800,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Location-property</name>
             <description>Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.</description>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Brain-laterality</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -4023,9 +3945,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Brain-region</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -4142,9 +4061,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Body-part-location</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -4307,9 +4223,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Brain-centricity</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -4471,18 +4384,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Modulators-property</name>
             <description>For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored.</description>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Modulators-reactivity</name>
                <description>Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-exists</value>
@@ -4832,9 +4739,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Provocative-factor</name>
                <description>Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -4936,9 +4840,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Intermittent-photic-stimulation-effect</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -5127,9 +5028,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Quality-of-hyperventilation</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -5226,9 +5124,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Modulators-effect</name>
                <description>Tags for describing the influence of the modulators</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -5306,18 +5201,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Time-related-property</name>
             <description>Important to estimate how often an interictal abnormality is seen in the recording.</description>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Appearance-mode</name>
                <description>Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
@@ -5444,9 +5333,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Discharge-pattern</name>
                <description>Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -5559,17 +5445,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Periodic-discharge-time-related-features</name>
                <description>Periodic discharges not further specified (PDs) time-relayed features tags.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
                <node>
                   <name>Periodic-discharge-duration</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -5697,9 +5577,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Periodic-discharge-onset</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
                   </attribute>
@@ -5754,9 +5631,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Periodic-discharge-dynamics</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -5858,9 +5732,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-incidence</name>
                <description>How often it occurs/time-epoch.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -5981,7 +5852,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Abundant-finding-incidence</name>
-                  <description>Greater than 1/10 s).</description>
+                  <description>Greater than 1/10 s.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -6006,9 +5877,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-prevalence</name>
                <description>The percentage of the recording covered by the train/burst.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6134,17 +6002,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Posterior-dominant-rhythm-property</name>
             <description>Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.</description>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Posterior-dominant-rhythm-amplitude-range</name>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
@@ -6226,9 +6088,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Posterior-dominant-rhythm-frequency-asymmetry</name>
                <description>When symmetrical could be labeled with base schema Symmetrical tag.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6365,9 +6224,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Posterior-dominant-rhythm-organization</name>
                <description>When normal could be labeled with base schema Normal tag.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -6444,9 +6300,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Posterior-dominant-rhythm-caveat</name>
                <description>Caveat to the annotation of PDR.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6550,9 +6403,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Absence-of-posterior-dominant-rhythm</name>
                <description>Reason for absence of PDR.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6697,18 +6547,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Episode-property</name>
             <attribute>
-               <name>requireChild</name>
-            </attribute>
-            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Seizure-classification</name>
                <description>Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -7021,9 +6865,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Episode-phase</name>
                <description>The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
                   <value>Seizure-semiology-manifestation</value>
                   <value>Postictal-semiology-manifestation</value>
@@ -7058,9 +6899,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Seizure-semiology-manifestation</name>
                <description>Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -7213,9 +7051,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <node>
                         <name>Semiology-motor-tonic-clonic</name>
                         <description>A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.</description>
-                        <attribute>
-                           <name>requireChild</name>
-                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>score</value>
@@ -8058,9 +7893,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Postictal-semiology-manifestation</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -8257,9 +8089,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Polygraphic-channel-relation-to-episode</name>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                </attribute>
@@ -8363,9 +8192,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Episode-consciousness</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -8613,9 +8439,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>State-episode-start</name>
                   <description>State at the start of the episode.</description>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
                   </attribute>
@@ -8755,9 +8578,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Episode-responsiveness</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
                   </attribute>
@@ -8813,9 +8633,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Episode-appearance</name>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
@@ -8867,9 +8684,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Seizure-dynamics</name>
                   <description>Spatiotemporal dynamics can be scored (evolution in morphology; evolution in frequency; evolution in location).</description>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -8979,9 +8793,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Artifact-significance-to-recording</name>
                <description>It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.</description>
                <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -9055,9 +8866,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-significance-to-recording</name>
                <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -9163,9 +8971,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-amplitude-asymmetry</name>
                <description>For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -9379,9 +9184,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Interictal-finding</name>
          <description>EEG pattern / transient that is distinguished form the background activity, considered abnormal, but is not recorded during ictal period (seizure) or postictal period; the presence of an interictal finding does not necessarily imply that the patient has epilepsy.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -9437,9 +9239,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Interictal-special-patterns</name>
-            <attribute>
-               <name>requireChild</name>
-            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -10466,9 +10265,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Physiologic-pattern</name>
          <description>EEG graphoelements or rhythms that are considered normal. They only should be scored if the physician considers that they have a specific clinical significance for the recording.</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -10644,9 +10440,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Polygraphic-channel-finding</name>
          <description>Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -10764,9 +10557,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>Apnea-hypopnea-index-respiration</name>
                   <description>Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
                   <attribute>
-                     <name>requireChild</name>
-                  </attribute>
-                  <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
@@ -10811,9 +10601,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Tachypnea-respiration</name>
                   <description>Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -11369,9 +11156,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>EMG-asymmetric-activation</name>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -15718,9 +15502,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <name>Sleep-and-drowsiness</name>
          <description>The features of the ongoing activity during sleep are scored here. If abnormal graphoelements appear, disappear or change their morphology during sleep, that is not scored here but at the entry corresponding to that graphooelement (as a modulator).</description>
          <attribute>
-            <name>requireChild</name>
-         </attribute>
-         <attribute>
             <name>inLibrary</name>
             <value>score</value>
          </attribute>
@@ -15995,9 +15776,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       <node>
          <name>Uncertain-significant-pattern</name>
          <description>EEG graphoelements or rhythms that resemble abnormal patterns but that are not necessarily associated with a pathology, and the physician does not consider them abnormal in the context of the scored recording (like normal variants and patterns).</description>
-         <attribute>
-            <name>requireChild</name>
-         </attribute>
          <attribute>
             <name>inLibrary</name>
             <value>score</value>
@@ -17512,5 +17290,5 @@ A second revised and extended version of SCORE achieved international consensus.
 [1] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54.6 (2013).
 [2] Beniczky, Sandor, et al. &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128.11 (2017). 
 
-TPA, March 2023</epilogue>
+TPA, July 2023</epilogue>
 </HED>
