@@ -18,7 +18,7 @@ Note:  this is a work in progress.
    :caption: Contents:
 
    introduction_to_hed_schemas.md
-   hed_lisa_schema.md
+   hed_language_schema.md
    hed_score_schema.md
 
 
