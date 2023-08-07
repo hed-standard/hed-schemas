@@ -103,7 +103,7 @@ version 8.2.0, along with library schema `score` version 1.1.0.
 There is no need to use a prefix.
 
 
-`````{admonition} **Example:** Proposed specification of library schema in BIDS.
+`````{admonition} **Example:** Partnered library schema version designation in BIDS.
 
 ```json
 {
