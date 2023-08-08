@@ -93,4 +93,23 @@ Tags from the `testlib` schema library are to be prefixed with `la:`.
 The `"la"` library schema is the `./library_schemas/testlib/hedxml/HED_testlib_1.0.2.xml` file found in the
 [**hed-schemas**](https://github.com/hed-standard/hed-schemas) GitHub repository.
 The specification indicates that annotations using HED tags from this library 
-have the `la:` prefix (e.g., `la:XXX`). 
+have the `la:` prefix (e.g., `la:XXX`).
+
+
+Starting with HED schema version 8.2.0, HED supports [partnered schemas](https://www.hed-resources.org/en/latest/HedSchemas.html#types-of-schemas), which are library schemas that are merged with a standard schema.
+
+The following example specifies that the annotations in this dataset use HED standard schema
+version 8.2.0, along with library schema `score` version 1.1.0.
+There is no need to use a prefix.
+
+
+`````{admonition} **Example:** Partnered library schema version designation in BIDS.
+
+```json
+{
+    "Name": "A wonderful experiment",
+    "BIDSVersion": "1.8.0",
+    "HEDVersion": "score_1.1.0"
+}
+```
+`````
