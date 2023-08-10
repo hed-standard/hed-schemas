@@ -614,7 +614,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Static-periodic-discharge-dynamics
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-extent <nowiki>[Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
+        ** Finding-extent <nowiki> {requireChild} [Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 
         ** Finding-incidence <nowiki> [How often it occurs/time-epoch.]</nowiki>
@@ -872,10 +872,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
                 **** Simultaneous-start-clinical-EEG
-                **** Clinical-EEG-temporal-relationship-notes <nowiki>[Clinical notes to annotate the clinical-EEG temporal relationship.]</nowiki>
+                **** Clinical-EEG-temporal-relationship-notes <nowiki> {requireChild} [Clinical notes to annotate the clinical-EEG temporal relationship.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}</nowiki>
 
-            *** Episode-event-count <nowiki> {suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording.]</nowiki>
+            *** Episode-event-count <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
 
             *** State-episode-start <nowiki> {suggestedTag=Property-not-possible-to-determine} [State at the start of the episode.]</nowiki>
@@ -932,10 +932,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-frequency <nowiki>[Value in Hz (number) typed in.]</nowiki>
+        ** Finding-frequency <nowiki> {requireChild} [Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
         
-        ** Finding-amplitude <nowiki>[Value in microvolts (number) typed in.]</nowiki>
+        ** Finding-amplitude <nowiki> {requireChild} [Value in microvolts (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits}</nowiki>
 
 
@@ -947,9 +947,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Finding-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-stopped-by
+        ** Finding-stopped-by {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Finding-triggered-by
+        ** Finding-triggered-by {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Finding-unmodified
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>

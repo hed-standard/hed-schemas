@@ -5711,6 +5711,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Finding-extent</name>
                <description>Percentage of occurrence during the recording (background activity and interictal finding).</description>
                <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -8390,6 +8393,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>Clinical-EEG-temporal-relationship-notes</name>
                      <description>Clinical notes to annotate the clinical-EEG temporal relationship.</description>
                      <attribute>
+                        <name>requireChild</name>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
                      </attribute>
@@ -8412,6 +8418,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Episode-event-count</name>
                   <description>Number of stereotypical episodes during the recording.</description>
+                  <attribute>
+                     <name>requireChild</name>
+                  </attribute>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Property-not-possible-to-determine</value>
@@ -8920,6 +8929,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Finding-frequency</name>
                <description>Value in Hz (number) typed in.</description>
                <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -8945,6 +8957,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-amplitude</name>
                <description>Value in microvolts (number) typed in.</description>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -9048,6 +9063,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Finding-stopped-by</name>
                <attribute>
+                  <name>requireChild</name>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -9069,6 +9087,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Finding-triggered-by</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
