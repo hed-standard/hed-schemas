@@ -743,7 +743,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Episode-phase-postictal
 
         ** Seizure-semiology-manifestation <nowiki> [Seizure semiology refers to the clinical features or signs that are observed during a seizure, such as the type of movements or behaviors exhibited by the person having the seizure, the duration of the seizure, the level of consciousness, and any associated symptoms such as aura or postictal confusion. In other words, seizure semiology describes the physical manifestations of a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags.]</nowiki>
-            *** Semiology-motor-manifestation
+            *** Semiology-motor-manifestation <nowiki> [Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement.]</nowiki>
                 **** Semiology-elementary-motor <nowiki> [A single type of contraction of a muscle or group of muscles that is usually stereotyped and not decomposable into phases. (However, see tonic–clonic, an elementary motor sequence).]</nowiki>
                     ***** Semiology-motor-tonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [A sustained increase in muscle contraction lasting a few seconds to minutes.]</nowiki>
                     ***** Semiology-motor-dystonic <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Sustained contractions of both agonist and antagonist muscles producing athetoid or twisting movements, which, when prolonged, may produce abnormal postures.]</nowiki>
@@ -778,7 +778,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Semiology-motor-behavioral-arrest <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity, suggestedTag=Episode-event-count} [Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue).]</nowiki>
             *** Semiology-non-motor-manifestation
-                **** Semiology-sensory
+                **** Semiology-sensory <nowiki>[A perceptual experience not caused by appropriate stimuli in the external world. Modifies “seizure” or “aura.”]</nowiki>
                     ***** Semiology-sensory-headache <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Episode-event-count} [Headache occurring in close temporal proximity to the seizure or as the sole seizure manifestation.]</nowiki>
                     ***** Semiology-sensory-visual <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Episode-event-count} [Flashing or flickering lights, spots, simple patterns, scotomata, or amaurosis.]</nowiki>
                     ***** Semiology-sensory-auditory <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Episode-event-count} [Buzzing, drumming sounds or single tones.]</nowiki>
@@ -790,7 +790,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                     ***** Semiology-sensory-autonomic-sensation <nowiki> {suggestedTag=Episode-event-count} [A sensation consistent with involvement of the autonomic nervous system, including cardiovascular, gastrointestinal,  sudomotor, vasomotor, and thermoregulatory functions. (Thus autonomic aura; cf. autonomic events  3.0).]</nowiki>
                     ***** Semiology-sensory-other {requireChild}
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Semiology-experiential
+                **** Semiology-experiential <nowiki>[Affective, mnemonic, or composite perceptual phenomena including illusory or composite hallucinatory events; these may appear alone or in combination. Included are feelings of depersonalization. These phenomena have subjective qualities similar to those experienced in life but are recognized by the subject as occurring outside of actual context.]</nowiki>
                     ***** Semiology-experiential-affective-emotional <nowiki> {suggestedTag=Episode-event-count} [Components include fear, depression, joy, and (rarely) anger.]</nowiki>
                     ***** Semiology-experiential-hallucinatory <nowiki> {suggestedTag=Episode-event-count} [Composite perceptions without corresponding external stimuli involving visual, auditory, somatosensory, olfactory, and/or gustatory phenomena. Example: hearing  and seeing  people talking.]</nowiki>
                     ***** Semiology-experiential-illusory <nowiki> {suggestedTag=Episode-event-count} [An alteration of actual percepts involving the visual, auditory, somatosensory, olfactory, or gustatory systems.]</nowiki>
@@ -807,7 +807,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                     ***** Semiology-language-related-aphasia {suggestedTag=Episode-event-count}
                     *****  Semiology-language-related-other {requireChild}
                         ****** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Semiology-autonomic
+                **** Semiology-autonomic <nowiki>[A sensation consistent with involvement of the autonomic nervous system, including cardiovascular, gastrointestinal, sudomotor, vasomotor, and thermoregulatory functions.]</nowiki>
                     ***** Semiology-autonomic-pupillary <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Episode-event-count} [Mydriasis, miosis (either bilateral or unilateral).]</nowiki>
                     ***** Semiology-autonomic-hypersalivation<nowiki> {suggestedTag=Episode-event-count} [Increase in production of saliva leading to uncontrollable drooling ]</nowiki>
                     ***** Semiology-autonomic-respiratory-apnoeic <nowiki> {suggestedTag=Episode-event-count} [subjective shortness of breath, hyperventilation, stridor, coughing, choking, apnea, oxygen desaturation, neurogenic pulmonary edema.]</nowiki>
