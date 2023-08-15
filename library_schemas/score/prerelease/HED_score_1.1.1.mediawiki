@@ -464,7 +464,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Brain-region-occipital
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Body-part-location 
+        ** Body-part-location <nowiki> [Refers to area involved (i.e., arm, leg, face, trunk, and other).] </nowiki>
             *** Eyelid-location
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Face-location
@@ -479,12 +479,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Hemi-location
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Brain-centricity 
-            *** Brain-centricity-axial
+        ** Brain-centricity <nowiki> [Modifier describes proximity to the body axis.]</nowiki>
+            *** Brain-centricity-axial <nowiki> [Involves trunk, including neck.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-centricity-proximal-limb
+            *** Brain-centricity-proximal-limb <nowiki> [Signifies involvement from shoulders to wrist, hip to ankle.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-centricity-distal-limb
+            *** Brain-centricity-distal-limb <nowiki> [Indicates involvement of fingers, hands, toes, and/or feet.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
