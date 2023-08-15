@@ -218,9 +218,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Polygraphic-channel-finding''' <nowiki> [Changes observed in polygraphic channels can be scored: EOG, Respiration, ECG, EMG, other polygraphic channel (+ free text), and their significance logged (normal, abnormal, no definite abnormality).]</nowiki>
 
-    * EOG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ElectroOculoGraphy.]</nowiki>
+    * EOG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [EOG channel findings refer to the observations and characteristics associated with the recording of electrooculographic signals.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording}</nowiki>
+    * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Respiration channel findings involve the observations and characteristics associated with the recording of respiratory signals.] </nowiki>
         ** Respiration-oxygen-saturation {requireChild}
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
         ** Respiration-feature
@@ -236,7 +236,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-respiration-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Electrocardiography.]</nowiki>
+    * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ECG channel findings include observations and characteristics associated with the Electrocardiogram recording.]</nowiki>
         ** ECG-QT-period {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** ECG-feature
@@ -256,7 +256,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-ECG-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [electromyography]</nowiki>
+    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [EMG channel findings involve distinctive muscular activity patterns and characteristics observed in the Electromyography recording.]</nowiki>
         ** EMG-muscle-side
             *** EMG-left-muscle
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -296,7 +296,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Finding-property''' <nowiki> [Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
-    * Signal-morphology-property
+    * Signal-morphology-property <nowiki> [Signal morphology pertains to the visual and occasionally structural attributes employed for the description and characterization of findings.] </nowiki>
 
         ** Rhythmic-activity-morphology <nowiki>[EEG activity consisting of a sequence of waves approximately constant period.]</nowiki>
             *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
@@ -700,7 +700,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Absence-of-posterior-dominant-rhythm-other-causes {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Episode-property 
+    * Episode-property <nowiki> [Episode property pertains to the set of characteristics that collectively depict different aspects of an episode, encompassing its manifestations and phases.] </nowiki>
         ** Seizure-classification <nowiki> [Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
             *** Motor-seizure <nowiki>[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
                 **** Myoclonic-motor-seizure <nowiki>[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
