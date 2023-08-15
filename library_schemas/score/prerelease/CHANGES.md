@@ -7,3 +7,5 @@
 * Moved 'Motor-onset-seizure' children to 'Motor-seizure' since 'Motor-onset-seizure' was deprecated from score_1.0.0.
 
 * Added suggestedTag from base schema to: 'Apnea-hypopnea-index-respiration', 'Tachypnea-respiration', 'ECG-sinus-rhythm', 'ECG-bradycardia', 'ECG-ventricular-premature-depolarization', 'ECG-tachycardia', 'Eye-opening-passive', 'Medication-effect-EEG', 'Medication-reduction-effect-EEG', 'Auditive-stimuli-effect', 'Nociceptive-stimuli-effect', 'Physical-effort-effect', 'Cognitive-task-effect', 'Medication-effect-clinical', 'Medication-reduction-effect-clinical', 'Posterior-dominant-rhythm-frequency-asymmetry', 'Posterior-dominant-rhythm-organization', 'Episode-time-context-property', 'Finding-significance-to-recording', 'Finding-amplitude-asymmetry'
+
+* Moved ‘suggestedTag’ from all children of ‘Biological-artifact’ to ‘Biological-artifact’ as it is inherited.
