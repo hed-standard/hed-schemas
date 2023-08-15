@@ -440,18 +440,18 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Source-analysis-insula
 
     * Location-property <nowiki>[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, hemi-) and centricity (axial, proximal limb, distal limb) can be scored.]</nowiki>
-        ** Brain-laterality 
-            *** Brain-laterality-left
+        ** Brain-laterality <nowiki>[Brain laterality denote the lateralization of the finding observed.]</nowiki>
+            *** Brain-laterality-left <nowiki>[Finding primarily involving the left hemisphere of the brain.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-laterality-left-greater-right
+            *** Brain-laterality-left-greater-right <nowiki>[The left hemisphere exhibits greater activity or significance compared to the right hemisphere.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-laterality-right
+            *** Brain-laterality-right <nowiki>[Finding primarily involving the right hemisphere of the brain.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-laterality-right-greater-left
+            *** Brain-laterality-right-greater-left <nowiki>[The right hemisphere exhibits greater activity or significance compared to the left hemisphere.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-laterality-midline
+            *** Brain-laterality-midline <nowiki>[Finding located at or near the midline, involving both hemispheres equally or nearly equally.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-laterality-diffuse-asynchronous
+            *** Brain-laterality-diffuse-asynchronous <nowiki>[Finding characterized by widespread or asynchronous activity across both hemispheres.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Brain-region 
             *** Brain-region-frontal
