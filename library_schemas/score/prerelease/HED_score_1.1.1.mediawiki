@@ -532,18 +532,18 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Other-modulators-effect-clinical {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Intermittent-photic-stimulation-effect 
-            *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response {suggestedTag=Finding-frequency}
+        ** Intermittent-photic-stimulation-effect <nowiki> [The effect of Intermittent Photic Stimulation (IPS) is scored according to the terminology proposed by Kasteleijn-Nolst Trenité et al. (2001).]</nowiki>
+            *** Posterior-stimulus-dependent-intermittent-photic-stimulation-response <nowiki> {suggestedTag=Finding-frequency} [Anomalous steady-state VEPs, of unusually sharp waveform or high amplitude. Some types have clinical correlates, for instance, occipital spikes after suppression of generalized PPR by medication and high-amplitude VEPs in neuronal ceroid lipofuscinosis.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [limited to the stimulus-train] </nowiki>
+            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [Limited to the stimulus train: Activity confined to or maximal at the back of the head and not at the flash frequency or at a harmonic thereof. The term includes delta and theta activity and frank epileptiform patterns.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained {suggestedTag=Finding-frequency}
+            *** Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained <nowiki> {suggestedTag=Finding-frequency} [Self-sustaining: Self-sustaining posterior stimulus-independent responses that outlast the stimulus train. These often last many seconds and may evolve to an overt seizure.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [Limited to the stimulus-train.] </nowiki>
+            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited <nowiki> {suggestedTag=Finding-frequency} [Limited to the stimulus train: Comprises multiple spikes or spike-and-wave activity, which are apparently generalized, but may be of greater amplitude at the front or back of the head. It is termed a “photoconvulsive response (PCR)” by Bickford et al., and corresponds to type 4 response of Waltz et al. .] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained {suggestedTag=Finding-frequency}
+            *** Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained <nowiki> {suggestedTag=Finding-frequency} [Self-sustaining: Generalized PPR continuing after stimulation. This may not be demonstrated unless the stimulus train is terminated as soon as a generalized PPR is identified. It was termed “prolonged photoconvulsive response” by Reilly and Peters, and has a strong association with epilepsy and visually induced seizures in patients referred for clinical EEG examination. Its prevalence in asymptomatic general populations is unknown, but was found in five of 13,658 apparently healthy aircrew by Gregory et al..] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect {suggestedTag=Finding-frequency}
+            *** Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect <nowiki> {suggestedTag=Finding-frequency} [Rarely, photic stimulation may activate an epileptogenic cortex, which is also spontaneously active; IPS could then also elicit a seizure by stimulating this, usually posterior located, area. It is questionable whether this should be considered a PPR, and it does not figure in established classifications.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Unmodified-intermittent-photic-stimulation-effect
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
