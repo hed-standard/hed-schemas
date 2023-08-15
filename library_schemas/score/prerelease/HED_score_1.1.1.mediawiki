@@ -221,7 +221,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * EOG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ElectroOculoGraphy.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording}</nowiki>
-        ** Respiration-oxygen-saturation
+        ** Respiration-oxygen-saturation {requireChild}
             *** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
         ** Respiration-feature
             *** Apnoe-respiration <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
@@ -237,7 +237,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Other-respiration-feature {requireChild}
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Electrocardiography.]</nowiki>
-        ** ECG-QT-period
+        ** ECG-QT-period {requireChild}
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** ECG-feature
             *** ECG-sinus-rhythm <nowiki>[Normal rhythm. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency]</nowiki>
