@@ -1408,6 +1408,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Biological-artifact</name>
+            <description>Biological artifacts involve distinct and identifiable variations in clinical recordings arising from physiological sources, potentially affecting the interpretation of the data.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Brain-laterality</value>
+               <value>Brain-region</value>
+               <value>Sensors</value>
+               <value>Multifocal-finding</value>
+               <value>Artifact-significance-to-recording</value>
+            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -1415,14 +1424,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Eye-blink-artifact</name>
                <description>Example for EEG: Fp1/Fp2 become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye. If it is in F8 rather than Fp2 then the electrodes are plugged in wrong.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1432,14 +1433,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Eye-movement-horizontal-artifact</name>
                <description>Example for EEG: There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1447,14 +1440,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Eye-movement-vertical-artifact</name>
                <description>Example for EEG: The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1464,24 +1449,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Slow-eye-movement-artifact</name>
                <description>Slow, rolling eye-movements, seen during drowsiness.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
             </node>
             <node>
                <name>Nystagmus-artifact</name>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1490,28 +1463,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Chewing-artifact</name>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
             </node>
             <node>
                <name>Sucking-artifact</name>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1521,14 +1478,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Glossokinetic-artifact</name>
                <description>The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1536,14 +1485,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Rocking-patting-artifact</name>
                <description>Quasi-rhythmical artifacts in recordings from infants caused by rocking/patting.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1553,14 +1494,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Movement-artifact</name>
                <description>Example for EEG: Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1568,14 +1501,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Respiration-artifact</name>
                <description>Respiration can produce 2 kinds of artifacts. One type is in the form of slow and rhythmic activity, synchronous with the body movements of respiration and mechanically affecting the impedance of (usually) one electrode. The other type can be slow or sharp waves that occur synchronously with inhalation or exhalation and involve those electrodes on which the patient is lying.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1585,14 +1510,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Pulse-artifact</name>
                <description>Example for EEG: Occurs when an EEG electrode is placed over a pulsating vessel. The pulsation can cause slow waves that may simulate EEG activity. A direct relationship exists between ECG and the pulse waves (200-300 millisecond delay after ECG equals QRS complex).</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1600,14 +1517,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>ECG-artifact</name>
                <description>Example for EEG: Far-field potential generated in the heart. The voltage and apparent surface of the artifact vary from derivation to derivation and, consequently, from montage to montage. The artifact is observed best in referential montages using earlobe electrodes A1 and A2. ECG artifact is recognized easily by its rhythmicity/regularity and coincidence with the ECG tracing.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1617,14 +1526,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Sweat-artifact</name>
                <description>Is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1633,14 +1534,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>EMG-artifact</name>
                <description>Myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (ex..: clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Brain-laterality</value>
-                  <value>Brain-region</value>
-                  <value>Sensors</value>
-                  <value>Multifocal-finding</value>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1648,6 +1541,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Non-biological-artifact</name>
+            <description>Non-biological artifacts refer to anomalies in recordings introduced by external factors, potentially impacting the interpretation of the data.</description>
+            <attribute>
+               <name>suggestedTag</name>
+               <value>Artifact-significance-to-recording</value>
+            </attribute>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -1655,10 +1553,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Power-supply-artifact</name>
                <description>50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1668,10 +1562,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Induction-artifact</name>
                <description>Artifacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit).</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1679,20 +1569,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Dialysis-artifact</name>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
             </node>
             <node>
                <name>Artificial-ventilation-artifact</name>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1702,10 +1584,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Electrode-pops-artifact</name>
                <description>Are brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -1713,10 +1591,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Salt-bridge-artifact</name>
                <description>Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Artifact-significance-to-recording</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -1762,7 +1636,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Critically-ill-patients-periodic-discharges</name>
-            <description>Periodic discharges (PDs).</description>
+            <description>Periodic discharges (PDs): Periodic - repetition of a waveform with relatively uniform morphology and duration with a quantifiable inter-discharge interval between consecutive waveforms and recurrence of the waveform at nearly regular intervals.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Periodic-discharge-morphology</value>
@@ -1779,7 +1653,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Rhythmic-delta-activity</name>
-            <description>RDA</description>
+            <description>Rhythmic Delta Activity (RDA): Rhythmic - repetition of a waveform with relatively uniform morphology and duration, and without an interval between consecutive waveforms. RDA - rhythmic activity less than or equal to 4 Hz. The duration of one cycle (i.e., the period) of the rhythmic pattern should vary by less than 50 percent from the duration of the subsequent cycle for the majority (greater than 50 percent) of cycle pairs to qualify as rhythmic.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Periodic-discharge-superimposed-activity</value>
@@ -1797,7 +1671,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Spike-or-sharp-and-wave</name>
-            <description>SW</description>
+            <description>Spike-and-wave or Sharp-and-wave (SW) - polyspike, spike or sharp wave consistently followed by a slow wave in a regularly repeating and alternating pattern (spike-wave-spike-wave-spike-wave), with a consistent relationship between the spike (or polyspike or sharp wave) component and the slow wave; and with no interval between one spike-wave complex and the next (if there is an interval, this would qualify as PDs, where each discharge is a spike-and- wave).</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Periodic-discharge-sharpness</value>
@@ -1830,15 +1704,27 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>Epileptic-seizure</name>
             <description>The ILAE presented a revised seizure classification that divides seizures into focal, generalized onset, or unknown onset.</description>
             <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Seizure-dynamics</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Focal-onset-epileptic-seizure</name>
-               <description>Focal seizures can be divided into focal aware and impaired awareness seizures, with additional motor and nonmotor classifications.</description>
+               <description>A seizure that originates in a specific area of the brain (focal onset). Focal seizures can be divided into focal aware and impaired awareness seizures, with additional motor and nonmotor classifications.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Episode-phase</value>
                   <value>Automatism-motor-seizure</value>
                   <value>Atonic-motor-seizure</value>
                   <value>Clonic-motor-seizure</value>
@@ -1851,15 +1737,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>Cognitive-nonmotor-seizure</value>
                   <value>Emotional-nonmotor-seizure</value>
                   <value>Sensory-nonmotor-seizure</value>
-                  <value>Seizure-dynamics</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -1868,38 +1745,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Aware-focal-onset-epileptic-seizure</name>
                   <attribute>
-                     <name>suggestedTag</name>
-                     <value>Episode-phase</value>
-                     <value>Seizure-dynamics</value>
-                     <value>Episode-consciousness</value>
-                     <value>Episode-awareness</value>
-                     <value>Clinical-EEG-temporal-relationship</value>
-                     <value>Episode-event-count</value>
-                     <value>State-episode-start</value>
-                     <value>Episode-postictal-phase</value>
-                     <value>Episode-prodrome</value>
-                     <value>Episode-tongue-biting</value>
-                  </attribute>
-                  <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
                </node>
                <node>
                   <name>Impaired-awareness-focal-onset-epileptic-seizure</name>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Episode-phase</value>
-                     <value>Seizure-dynamics</value>
-                     <value>Episode-consciousness</value>
-                     <value>Episode-awareness</value>
-                     <value>Clinical-EEG-temporal-relationship</value>
-                     <value>Episode-event-count</value>
-                     <value>State-episode-start</value>
-                     <value>Episode-postictal-phase</value>
-                     <value>Episode-prodrome</value>
-                     <value>Episode-tongue-biting</value>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -1908,19 +1759,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Awareness-unknown-focal-onset-epileptic-seizure</name>
                   <attribute>
-                     <name>suggestedTag</name>
-                     <value>Episode-phase</value>
-                     <value>Seizure-dynamics</value>
-                     <value>Episode-consciousness</value>
-                     <value>Episode-awareness</value>
-                     <value>Clinical-EEG-temporal-relationship</value>
-                     <value>Episode-event-count</value>
-                     <value>State-episode-start</value>
-                     <value>Episode-postictal-phase</value>
-                     <value>Episode-prodrome</value>
-                     <value>Episode-tongue-biting</value>
-                  </attribute>
-                  <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
@@ -1928,19 +1766,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <node>
                   <name>Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure</name>
                   <description>A seizure type with focal onset, with awareness or impaired awareness, either motor or non-motor, progressing to bilateral tonic clonic activity. The prior term was seizure with partial onset with secondary generalization. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Episode-phase</value>
-                     <value>Seizure-dynamics</value>
-                     <value>Episode-consciousness</value>
-                     <value>Episode-awareness</value>
-                     <value>Clinical-EEG-temporal-relationship</value>
-                     <value>Episode-event-count</value>
-                     <value>State-episode-start</value>
-                     <value>Episode-postictal-phase</value>
-                     <value>Episode-prodrome</value>
-                     <value>Episode-tongue-biting</value>
-                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -1952,7 +1777,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <description>Generalized-onset seizures are classified as motor or nonmotor (absence), without using awareness level as a classifier, as most but not all of these seizures are linked with impaired awareness.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Episode-phase</value>
                   <value>Tonic-clonic-motor-seizure</value>
                   <value>Clonic-motor-seizure</value>
                   <value>Tonic-motor-seizure</value>
@@ -1965,15 +1789,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>Atypical-absence-seizure</value>
                   <value>Myoclonic-absence-seizure</value>
                   <value>Eyelid-myoclonia-absence-seizure</value>
-                  <value>Seizure-dynamics</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -1985,19 +1800,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <description>Even if the onset of seizures is unknown, they may exhibit characteristics that fall into categories such as motor, nonmotor, tonic-clonic, epileptic spasms, or behavior arrest.</description>
                <attribute>
                   <name>suggestedTag</name>
-                  <value>Episode-phase</value>
                   <value>Tonic-clonic-motor-seizure</value>
                   <value>Epileptic-spasm-episode</value>
                   <value>Behavior-arrest-nonmotor-seizure</value>
-                  <value>Seizure-dynamics</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -2007,19 +1812,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Unclassified-epileptic-seizure</name>
                <description>Referring to a seizure type that cannot be described by the ILAE 2017 classification either because of inadequate information or unusual clinical features.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Seizure-dynamics</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2090,25 +1882,25 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Sleep-related-episode</name>
             <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Sleep-related-arousal</name>
                <description>Normal.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2118,19 +1910,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Benign-sleep-myoclonus</name>
                <description>A distinctive disorder of sleep characterized by a) neonatal onset, b) rhythmic myoclonic jerks only during sleep and c) abrupt and consistent cessation with arousal, d) absence of concomitant electrographic changes suggestive of seizures, and e) good outcome.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -2138,19 +1917,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Confusional-awakening</name>
                <description>Episode of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2160,19 +1926,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Sleep-periodic-limb-movement</name>
                <description>PLMS. Periodic limb movement in sleep. Episodes are characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -2180,19 +1933,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>REM-sleep-behavioral-disorder</name>
                <description>REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2202,19 +1942,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Sleep-walking</name>
                <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -2223,25 +1950,25 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <node>
             <name>Pediatric-episode</name>
             <attribute>
+               <name>suggestedTag</name>
+               <value>Episode-phase</value>
+               <value>Finding-significance-to-recording</value>
+               <value>Episode-consciousness</value>
+               <value>Episode-awareness</value>
+               <value>Clinical-EEG-temporal-relationship</value>
+               <value>Episode-event-count</value>
+               <value>State-episode-start</value>
+               <value>Episode-postictal-phase</value>
+               <value>Episode-prodrome</value>
+               <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>score</value>
             </attribute>
             <node>
                <name>Hyperekplexia</name>
                <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2251,19 +1978,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Jactatio-capitis-nocturna</name>
                <description>Relatively common in normal children at the time of going to bed, especially during the first year of life, the rhythmic head movements persist during sleep. Usually, these phenomena disappear before 3 years of age.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -2272,19 +1986,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>Pavor-nocturnus</name>
                <description>A nocturnal episode characterized by age of onset of less than five years (mean age 18 months, with peak prevalence at five to seven years), appearance of signs of panic two hours after falling asleep with crying, screams, a fearful expression, inability to recognize other people including parents (for a duration of 5-15 minutes), amnesia upon awakening. Pavor nocturnus occurs in patients almost every night for months or years (but the frequency is highly variable and may be as low as once a month) and is likely to disappear spontaneously at the age of six to eight years.</description>
                <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
-               <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
@@ -2292,19 +1993,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <node>
                <name>Pediatric-stereotypical-behavior-episode</name>
                <description>Repetitive motor behavior in children, typically rhythmic and persistent; usually not paroxysmal and rarely suggest epilepsy. They include headbanging, head-rolling, jactatio capitis nocturna, body rocking, buccal or lingual movements, hand flapping and related mannerisms, repetitive hand-waving (to self-induce photosensitive seizures).</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Episode-phase</value>
-                  <value>Finding-significance-to-recording</value>
-                  <value>Episode-consciousness</value>
-                  <value>Episode-awareness</value>
-                  <value>Clinical-EEG-temporal-relationship</value>
-                  <value>Episode-event-count</value>
-                  <value>State-episode-start</value>
-                  <value>Episode-postictal-phase</value>
-                  <value>Episode-prodrome</value>
-                  <value>Episode-tongue-biting</value>
-               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -2409,6 +2097,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Signal-morphology-property</name>
+            <description>Signal morphology pertains to the visual and occasionally structural attributes employed for the description and characterization of findings.</description>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -3805,12 +3494,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Brain-laterality</name>
+               <description>Brain laterality denote the lateralization of the finding observed.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
                <node>
                   <name>Brain-laterality-left</name>
+                  <description>Finding primarily involving the left hemisphere of the brain.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3833,6 +3524,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-laterality-left-greater-right</name>
+                  <description>The left hemisphere exhibits greater activity or significance compared to the right hemisphere.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3855,6 +3547,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-laterality-right</name>
+                  <description>Finding primarily involving the right hemisphere of the brain.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3877,6 +3570,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-laterality-right-greater-left</name>
+                  <description>The right hemisphere exhibits greater activity or significance compared to the left hemisphere.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3899,6 +3593,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-laterality-midline</name>
+                  <description>Finding located at or near the midline, involving both hemispheres equally or nearly equally.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -3921,6 +3616,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-laterality-diffuse-asynchronous</name>
+                  <description>Finding characterized by widespread or asynchronous activity across both hemispheres.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -4061,6 +3757,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Body-part-location</name>
+               <description>Refers to area involved (i.e., arm, leg, face, trunk, and other).</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -4222,12 +3919,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Brain-centricity</name>
+               <description>Modifier describes proximity to the body axis.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
                <node>
                   <name>Brain-centricity-axial</name>
+                  <description>Involves trunk, including neck.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -4250,6 +3949,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-centricity-proximal-limb</name>
+                  <description>Signifies involvement from shoulders to wrist, hip to ankle.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -4272,6 +3972,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Brain-centricity-distal-limb</name>
+                  <description>Indicates involvement of fingers, hands, toes, and/or feet.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -4445,13 +4146,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Eye-opening-passive</name>
-               <description>Passive eye opening. Used with base schema Increasing/Decreasing.</description>
+               <description>Passive eye opening.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4460,12 +4163,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Medication-effect-EEG</name>
-               <description>Medications effect on EEG. Used with base schema Increasing/Decreasing.</description>
+               <description>Medications effect on EEG.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4474,12 +4179,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Medication-reduction-effect-EEG</name>
-               <description>Medications reduction or withdrawal effect on EEG. Used with base schema Increasing/Decreasing.</description>
+               <description>Medications reduction or withdrawal effect on EEG.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4488,12 +4195,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Auditive-stimuli-effect</name>
-               <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4502,13 +4210,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Nociceptive-stimuli-effect</name>
-               <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4517,13 +4226,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Physical-effort-effect</name>
-               <description>Used with base schema Increasing/Decreasing</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4532,13 +4242,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Cognitive-task-effect</name>
-               <description>Used with base schema Increasing/Decreasing.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Property-not-possible-to-determine</value>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
                   <value>Finding-triggered-by</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4789,11 +4500,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Medication-effect-clinical</name>
-               <description>Medications clinical effect. Used with base schema Increasing/Decreasing.</description>
+               <description>Medications clinical effect.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4802,11 +4515,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Medication-reduction-effect-clinical</name>
-               <description>Medications reduction or withdrawal clinical effect. Used with base schema Increasing/Decreasing.</description>
+               <description>Medications reduction or withdrawal clinical effect.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Finding-stopped-by</value>
                   <value>Finding-unmodified</value>
+                  <value>Increasing</value>
+                  <value>Decreasing</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4840,12 +4555,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Intermittent-photic-stimulation-effect</name>
+               <description>The effect of Intermittent Photic Stimulation (IPS) is scored according to the terminology proposed by Kasteleijn-Nolst Trenite et al. (2001).</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
                </attribute>
                <node>
                   <name>Posterior-stimulus-dependent-intermittent-photic-stimulation-response</name>
+                  <description>Anomalous steady-state VEPs, of unusually sharp waveform or high amplitude. Some types have clinical correlates, for instance, occipital spikes after suppression of generalized PPR by medication and high-amplitude VEPs in neuronal ceroid lipofuscinosis.</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -4872,7 +4589,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-limited</name>
-                  <description>limited to the stimulus-train</description>
+                  <description>Limited to the stimulus train: Activity confined to or maximal at the back of the head and not at the flash frequency or at a harmonic thereof. The term includes delta and theta activity and frank epileptiform patterns.</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -4899,6 +4616,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Posterior-stimulus-independent-intermittent-photic-stimulation-response-self-sustained</name>
+                  <description>Self-sustaining: Self-sustaining posterior stimulus-independent responses that outlast the stimulus train. These often last many seconds and may evolve to an overt seizure.</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -4925,7 +4643,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-limited</name>
-                  <description>Limited to the stimulus-train.</description>
+                  <description>Limited to the stimulus train: Comprises multiple spikes or spike-and-wave activity, which are apparently generalized, but may be of greater amplitude at the front or back of the head. It is termed a photoconvulsive response (PCR) by Bickford et al., and corresponds to type 4 response of Waltz et al. .</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -4952,6 +4670,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-intermittent-photic-stimulation-response-self-sustained</name>
+                  <description>Self-sustaining: Generalized PPR continuing after stimulation. This may not be demonstrated unless the stimulus train is terminated as soon as a generalized PPR is identified. It was termed prolonged photoconvulsive response by Reilly and Peters, and has a strong association with epilepsy and visually induced seizures in patients referred for clinical EEG examination. Its prevalence in asymptomatic general populations is unknown, but was found in five of 13,658 apparently healthy aircrew by Gregory et al..</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -4978,6 +4697,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Activation-of-pre-existing-epileptogenic-area-intermittent-photic-stimulation-effect</name>
+                  <description>Rarely, photic stimulation may activate an epileptogenic cortex, which is also spontaneously active; IPS could then also elicit a seizure by stimulating this, usually posterior located, area. It is questionable whether this should be considered a PPR, and it does not figure in established classifications.</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Finding-frequency</value>
@@ -6090,7 +5810,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Posterior-dominant-rhythm-frequency-asymmetry</name>
-               <description>When symmetrical could be labeled with base schema Symmetrical tag.</description>
+               <description>When symmetrical could be labeled with suggested tag.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Symmetrical</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6225,7 +5949,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Posterior-dominant-rhythm-organization</name>
-               <description>When normal could be labeled with base schema Normal tag.</description>
+               <description>When normal could be labeled with suggested tag.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Normal</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -6549,6 +6277,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Episode-property</name>
+            <description>Episode property pertains to the set of characteristics that collectively depict different aspects of an episode, encompassing its manifestations and phases.</description>
             <attribute>
                <name>inLibrary</name>
                <value>score</value>
@@ -6567,6 +6296,92 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
+                  <node>
+                     <name>Myoclonic-motor-seizure</name>
+                     <description>Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Negative-myoclonic-motor-seizure</name>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Clonic-motor-seizure</name>
+                     <description>Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Tonic-motor-seizure</name>
+                     <description>A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Atonic-motor-seizure</name>
+                     <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Myoclonic-atonic-motor-seizure</name>
+                     <description>A generalized seizure type with a myoclonic jerk leading to an atonic motor component. This type was previously called myoclonic astatic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Myoclonic-tonic-clonic-motor-seizure</name>
+                     <description>One or a few jerks of limbs bilaterally, followed by a tonic clonic seizure. The initial jerks can be considered to be either a brief period of clonus or myoclonus. Seizures with this characteristic are common in juvenile myoclonic epilepsy. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Tonic-clonic-motor-seizure</name>
+                     <description>A sequence consisting of a tonic followed by a clonic phase. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Automatism-motor-seizure</name>
+                     <description>A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Hyperkinetic-motor-seizure</name>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Epileptic-spasm-episode</name>
+                     <description>A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>score</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Motor-onset-seizure</name>
@@ -6579,26 +6394,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <value>score</value>
                   </attribute>
                   <node>
-                     <name>Myoclonic-motor-seizure</name>
-                     <description>Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Myoclonic-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
                         <value>1.0.0</value>
                      </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Negative-myoclonic-motor-seizure</name>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -6616,27 +6416,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Clonic-motor-seizure</name>
-                     <description>Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Clonic-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
                         <value>1.0.0</value>
                      </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Tonic-motor-seizure</name>
-                     <description>A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -6654,27 +6438,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Atonic-motor-seizure</name>
-                     <description>Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Atonic-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
                         <value>1.0.0</value>
                      </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Myoclonic-atonic-motor-seizure</name>
-                     <description>A generalized seizure type with a myoclonic jerk leading to an atonic motor component. This type was previously called myoclonic astatic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -6692,27 +6460,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Myoclonic-tonic-clonic-motor-seizure</name>
-                     <description>One or a few jerks of limbs bilaterally, followed by a tonic clonic seizure. The initial jerks can be considered to be either a brief period of clonus or myoclonus. Seizures with this characteristic are common in juvenile myoclonic epilepsy. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Myoclonic-tonic-clonic-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
                         <value>1.0.0</value>
                      </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Tonic-clonic-motor-seizure</name>
-                     <description>A sequence consisting of a tonic followed by a clonic phase. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -6730,14 +6482,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Automatism-motor-seizure</name>
-                     <description>A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Automatism-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
@@ -6749,26 +6493,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Hyperkinetic-motor-seizure</name>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Hyperkinetic-motor-onset-seizure</name>
                      <attribute>
                         <name>deprecatedFrom</name>
                         <value>1.0.0</value>
                      </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>score</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Epileptic-spasm-episode</name>
-                     <description>A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -6866,7 +6595,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Episode-phase</name>
-               <description>The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: onset, propagation, and postictal.</description>
+               <description>The electroclinical findings (i.e., the seizure semiology and the ictal EEG) are divided in three phases: initial, subsequent and postictal.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Seizure-semiology-manifestation</value>
@@ -6908,12 +6637,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Semiology-motor-manifestation</name>
+                  <description>Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
                   </attribute>
                   <node>
                      <name>Semiology-elementary-motor</name>
+                     <description>A single type of contraction of a muscle or group of muscles that is usually stereotyped and not decomposable into phases. However, see tonic-clonic, an elementary motor sequence.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -7055,18 +6786,18 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <name>Semiology-motor-tonic-clonic</name>
                         <description>A sequence consisting of a tonic followed by a clonic phase. Variants such as clonic-tonic-clonic may be seen. Asymmetry of limb posture during the tonic phase of a GTC: one arm is rigidly extended at the elbow (often with the fist clenched tightly and flexed at the wrist), whereas the opposite arm is flexed at the elbow.</description>
                         <attribute>
+                           <name>suggestedTag</name>
+                           <value>Brain-laterality</value>
+                           <value>Body-part-location</value>
+                           <value>Brain-centricity</value>
+                           <value>Episode-event-count</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>score</value>
                         </attribute>
                         <node>
                            <name>Semiology-motor-tonic-clonic-without-figure-of-four</name>
-                           <attribute>
-                              <name>suggestedTag</name>
-                              <value>Brain-laterality</value>
-                              <value>Body-part-location</value>
-                              <value>Brain-centricity</value>
-                              <value>Episode-event-count</value>
-                           </attribute>
                            <attribute>
                               <name>inLibrary</name>
                               <value>score</value>
@@ -7075,26 +6806,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <node>
                            <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-left-elbow</name>
                            <attribute>
-                              <name>suggestedTag</name>
-                              <value>Brain-laterality</value>
-                              <value>Body-part-location</value>
-                              <value>Brain-centricity</value>
-                              <value>Episode-event-count</value>
-                           </attribute>
-                           <attribute>
                               <name>inLibrary</name>
                               <value>score</value>
                            </attribute>
                         </node>
                         <node>
                            <name>Semiology-motor-tonic-clonic-with-figure-of-four-extension-right-elbow</name>
-                           <attribute>
-                              <name>suggestedTag</name>
-                              <value>Brain-laterality</value>
-                              <value>Body-part-location</value>
-                              <value>Brain-centricity</value>
-                              <value>Episode-event-count</value>
-                           </attribute>
                            <attribute>
                               <name>inLibrary</name>
                               <value>score</value>
@@ -7171,6 +6888,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                   <node>
                      <name>Semiology-motor-automatisms</name>
+                     <description>A more or less coordinated, repetitive, motor activity usually occurring when cognition is impaired and for which the subject is usually amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of ongoing preictal motor activity.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -7379,6 +7097,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </attribute>
                   <node>
                      <name>Semiology-sensory</name>
+                     <description>A perceptual experience not caused by appropriate stimuli in the external world. Modifies seizure or aura.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -7528,6 +7247,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                   <node>
                      <name>Semiology-experiential</name>
+                     <description>Affective, mnemonic, or composite perceptual phenomena including illusory or composite hallucinatory events; these may appear alone or in combination. Included are feelings of depersonalization. These phenomena have subjective qualities similar to those experienced in life but are recognized by the subject as occurring outside of actual context.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -7714,6 +7434,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                   <node>
                      <name>Semiology-autonomic</name>
+                     <description>A sensation consistent with involvement of the autonomic nervous system, including cardiovascular, gastrointestinal, sudomotor, vasomotor, and thermoregulatory functions.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>score</value>
@@ -8188,7 +7909,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Episode-time-context-property</name>
-               <description>Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Temporal-value/Duration.</description>
+               <description>Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with suggested tag.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Duration</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -8874,7 +8599,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Finding-significance-to-recording</name>
-               <description>Significance of finding. When normal/abnormal could be labeled with base schema Normal/Abnormal tags.</description>
+               <description>Significance of finding. When normal/abnormal could be labeled with with suggested tags.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Normal</value>
+                  <value>Abnormal</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -8985,7 +8715,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Finding-amplitude-asymmetry</name>
-               <description>For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with base schema Symmetrical tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.</description>
+               <description>For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with suggested tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.</description>
+               <attribute>
+                  <name>suggestedTag</name>
+                  <value>Symmetrical</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -9281,7 +9015,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Generalized-periodic-discharges</name>
-                  <description>GPDs.</description>
+                  <description>GPDs. The term generalized refers to any bilateral, bisynchronous and symmetric pattern, even if it has a restricted field (e.g. bifrontal)</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -9289,7 +9023,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Lateralized-periodic-discharges</name>
-                  <description>LPDs.</description>
+                  <description>LPDs. Lateralized includes unilateral and bilateral synchronous but asymmetric; includes focal, regional and hemispheric patterns.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -9297,7 +9031,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Bilateral-independent-periodic-discharges</name>
-                  <description>BIPDs.</description>
+                  <description>BIPDs. Bilateral Independent refers to the presence of 2 independent (asynchronous) lateralized patterns, one in each hemisphere</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -9305,7 +9039,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Multifocal-periodic-discharges</name>
-                  <description>MfPDs.</description>
+                  <description>MfPDs. Multifocal refers to the presence of at least three independent lateralized patterns with at least one in each hemisphere</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10466,7 +10200,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>EOG-channel-finding</name>
-            <description>ElectroOculoGraphy.</description>
+            <description>EOG channel findings refer to the observations and characteristics associated with the recording of electrooculographic signals.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
@@ -10493,6 +10227,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Respiration-channel-finding</name>
+            <description>Respiration channel findings involve the observations and characteristics associated with the recording of respiratory signals.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
@@ -10503,6 +10238,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Respiration-oxygen-saturation</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -10576,7 +10314,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Apnea-hypopnea-index-respiration</name>
-                  <description>Events/h. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <description>Events/h.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10621,7 +10363,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Tachypnea-respiration</name>
-                  <description>Cycles/min. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <description>Cycles/min.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10671,7 +10417,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>ECG-channel-finding</name>
-            <description>Electrocardiography.</description>
+            <description>ECG channel findings include observations and characteristics associated with the Electrocardiogram recording.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
@@ -10682,6 +10428,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>ECG-QT-period</name>
+               <attribute>
+                  <name>requireChild</name>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -10710,7 +10459,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>ECG-sinus-rhythm</name>
-                  <description>Normal rhythm. Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <description>Normal rhythm.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10778,7 +10531,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>ECG-bradycardia</name>
-                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10823,7 +10579,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>ECG-ventricular-premature-depolarization</name>
-                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10846,7 +10605,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>ECG-tachycardia</name>
-                  <description>Frequency can be tagged with base schema /Property/Data-property/Data-value/Spatiotemporal-value/Rate-of-change/Frequency</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Frequency</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>score</value>
@@ -10896,7 +10658,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>EMG-channel-finding</name>
-            <description>electromyography</description>
+            <description>EMG channel findings involve distinctive muscular activity patterns and characteristics observed in the Electromyography recording.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
