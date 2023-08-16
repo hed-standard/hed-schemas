@@ -106,10 +106,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Abnormal-interictal-rhythmic-activity {suggestedTag=Rhythmic-activity-morphology, suggestedTag=Polymorphic-delta-activity-morphology, suggestedTag=Frontal-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Occipital-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Temporal-intermittent-rhythmic-delta-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern, suggestedTag=Finding-incidence}
     * Interictal-special-patterns 
         ** Interictal-periodic-discharges <nowiki> {suggestedTag=Periodic-discharge-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Periodic-discharge-time-related-features} [Periodic discharge not further specified (PDs).]</nowiki>
-            *** Generalized-periodic-discharges <nowiki>[GPDs.]</nowiki>
-            *** Lateralized-periodic-discharges <nowiki>[LPDs.]</nowiki>
-            *** Bilateral-independent-periodic-discharges <nowiki>[BIPDs.]</nowiki>
-            *** Multifocal-periodic-discharges <nowiki>[MfPDs.]</nowiki>
+            *** Generalized-periodic-discharges <nowiki>[GPDs. The term “generalized” refers to any bilateral, bisynchronous and symmetric pattern, even if it has a restricted field (e.g. bifrontal)]</nowiki>
+            *** Lateralized-periodic-discharges <nowiki>[LPDs. Lateralized includes unilateral and bilateral synchronous but asymmetric; includes focal, regional and hemispheric patterns.]</nowiki>
+            *** Bilateral-independent-periodic-discharges <nowiki>[BIPDs. Bilateral Independent refers to the presence of 2 independent (asynchronous) lateralized patterns, one in each hemisphere]</nowiki>
+            *** Multifocal-periodic-discharges <nowiki>[MfPDs. Multifocal refers to the presence of at least three independent lateralized patterns with at least one in each hemisphere]</nowiki>
         ** Extreme-delta-brush {suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern}
 
 
