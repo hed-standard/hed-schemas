@@ -9,8 +9,7 @@ Future extensions may be implemented in the HED-SCORE library schema.
 For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.
 
 !# start schema
-
-                      . . .
+                     
 '''Data-mode''' <nowiki>{rooted=Statistical-value}[A value that occurs most often in data.]</nowiki>   
 * <nowiki># {takesValue, valueClass=numericClass}</nowiki> 
 
@@ -98,8 +97,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Frontal-arousal-rhythm <nowiki> {suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [Prolonged (up to 20s) rhythmical sharp or spiky activity over the frontal areas (maximum over the frontal midline) seen at arousal from sleep in children with minimal cerebral dysfunction.] </nowiki>
     * Vertex-wave <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Sharp potential, maximal at the vertex, negative relative to other areas, apparently occurring spontaneously during sleep or in response to a sensory stimulus during sleep or wakefulness. May be single or repetitive. Amplitude varies but rarely exceeds 250 microV. Abbreviation: V wave. Synonym: vertex sharp wave.]</nowiki>
     * K-complex <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality.]</nowiki>
-    * Saw-tooth-waves <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Vertex negative 2-5 Hz waves occuring in series during REM sleep]</nowiki>
-    * POSTS <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.]</nowiki>
+    * Saw-tooth-waves <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Vertex negative 2-5 Hz waves occurring in series during REM sleep]</nowiki>
+    * POSTS <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally below 50 microV.]</nowiki>
     * Hypnagogic-hypersynchrony <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children.]</nowiki>
     * Non-reactive-sleep <nowiki> [EEG activity consisting of normal sleep graphoelements, but which cannot be interrupted by external stimuli/ the patient cannot be waken.]</nowiki>
 
@@ -707,28 +706,28 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Episode-property {requireChild}
         ** Seizure-classification <nowiki> {requireChild} [Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).] </nowiki>
             *** Motor-seizure <nowiki>[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-            *** Motor-onset-seizure {deprecatedFrom=1.0.0}
+            *** Motor-onset-seizure 
                 **** Myoclonic-motor-seizure <nowiki>[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Myoclonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-motor-onset-seizure 
                 **** Negative-myoclonic-motor-seizure
-                **** Negative-myoclonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Negative-myoclonic-motor-onset-seizure
 
                 **** Clonic-motor-seizure <nowiki>[Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Clonic-motor-onset-seizure 
                 **** Tonic-motor-seizure <nowiki>[A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Tonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Tonic-motor-onset-seizure 
                 **** Atonic-motor-seizure <nowiki>[Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Atonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Atonic-motor-onset-seizure 
                 **** Myoclonic-atonic-motor-seizure <nowiki>[A generalized seizure type with a myoclonic jerk leading to an atonic motor component. This type was previously called myoclonic astatic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Myoclonic-atonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-atonic-motor-onset-seizure 
                 **** Myoclonic-tonic-clonic-motor-seizure <nowiki>[One or a few jerks of limbs bilaterally, followed by a tonic clonic seizure. The initial jerks can be considered to be either a brief period of clonus or myoclonus. Seizures with this characteristic are common in juvenile myoclonic epilepsy. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Myoclonic-tonic-clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Myoclonic-tonic-clonic-motor-onset-seizure 
                 **** Tonic-clonic-motor-seizure <nowiki>[A sequence consisting of a tonic followed by a clonic phase. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Tonic-clonic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Tonic-clonic-motor-onset-seizure 
                 **** Automatism-motor-seizure <nowiki>[A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
-                **** Automatism-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Automatism-motor-onset-seizure 
                 **** Hyperkinetic-motor-seizure
-                **** Hyperkinetic-motor-onset-seizure {deprecatedFrom=1.0.0}
+                **** Hyperkinetic-motor-onset-seizure 
                 **** Epileptic-spasm-episode <nowiki>[A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
             *** Nonmotor-seizure <nowiki>[Focal or generalized seizure types in which motor activity is not prominent. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>
                 **** Behavior-arrest-nonmotor-seizure <nowiki>[Arrest (pause) of activities, freezing, immobilization, as in behavior arrest seizure. Definition from ILAE 2017 Classification of Seizure Types Expanded Version]</nowiki>

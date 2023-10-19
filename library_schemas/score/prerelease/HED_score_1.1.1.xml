@@ -15501,7 +15501,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Saw-tooth-waves</name>
-            <description>Vertex negative 2-5 Hz waves occuring in series during REM sleep</description>
+            <description>Vertex negative 2-5 Hz waves occurring in series during REM sleep</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
@@ -15517,7 +15517,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>POSTS</name>
-            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally bellow 50 microV.</description>
+            <description>Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally below 50 microV.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Finding-significance-to-recording</value>
