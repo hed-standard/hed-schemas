@@ -1,0 +1,30 @@
+---
+name: Codespell
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+permissions:
+  contents: read
+
+jobs:
+  codespell:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Prepare directory list
+      run: |
+        DIRS=$(find . -type d -name 'prerelease' | tr '\n' ' ')
+        echo "DIRS_TO_CHECK=$DIRS" >> $GITHUB_ENV
+    - name: Run codespell
+      uses: codespell-project/actions-codespell@v2
+      with:
+        check_filenames: false
+        path: |
+          docs/*
+          ${{ env.DIRS_TO_CHECK }}
