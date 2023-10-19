@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED unmerged="True" version="8.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
+<HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.3.0" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
    <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
@@ -213,16 +213,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
-                  <name>Thumbs-down</name>
-                  <description>Extend the thumb downward to indicate disapproval.</description>
+                  <name>Thumb-up</name>
+                  <description>Extend the thumb upward to indicate approval.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Move-upper-extremity</value>
                   </attribute>
                </node>
                <node>
-                  <name>Thumb-up</name>
-                  <description>Extend the thumb upward to indicate approval.</description>
+                  <name>Thumbs-down</name>
+                  <description>Extend the thumb downward to indicate disapproval.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Move-upper-extremity</value>
@@ -387,6 +387,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <description>Return to a stable, upright body position.</description>
                </node>
                <node>
+                  <name>Shudder</name>
+                  <description>Tremble convulsively, sometimes as a result of fear or revulsion.</description>
+               </node>
+               <node>
                   <name>Sit-down</name>
                   <description>Move from a standing to a sitting position.</description>
                </node>
@@ -401,10 +405,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Stretch</name>
                   <description>Straighten or extend body or a part of body to its full length, typically so as to tighten muscles or in order to reach something.</description>
-               </node>
-               <node>
-                  <name>Shudder</name>
-                  <description>Tremble convulsively, sometimes as a result of fear or revulsion.</description>
                </node>
                <node>
                   <name>Stumble</name>
@@ -648,16 +648,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>Direct gaze toward someone or something or in a specified direction.</description>
             </node>
             <node>
+               <name>Sense-by-touch</name>
+               <description>Sense something through receptors in the skin.</description>
+            </node>
+            <node>
                <name>Smell</name>
                <description>Inhale in order to ascertain an odor or scent.</description>
             </node>
             <node>
                <name>Taste</name>
                <description>Sense a flavor in the mouth and throat on contact with a substance.</description>
-            </node>
-            <node>
-               <name>Sense-by-touch</name>
-               <description>Sense something through receptors in the skin.</description>
             </node>
          </node>
          <node>
@@ -702,6 +702,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Rest</name>
                <description>Be inactive in order to regain strength, health, or energy.</description>
+            </node>
+            <node>
+               <name>Ride</name>
+               <description>Ride on an animal or in a vehicle. Ride conveys some notion that another agent has partial or total control of the motion.</description>
             </node>
             <node>
                <name>Write</name>
@@ -773,7 +777,11 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Predict</name>
-               <description>Say or estimate that something will happen or will be a consequence of something without having exact informaton.</description>
+               <description>Say or estimate that something will happen or will be a consequence of something without having exact information.</description>
+            </node>
+            <node>
+               <name>Recall</name>
+               <description>Remember information by mental effort.</description>
             </node>
             <node>
                <name>Recognize</name>
@@ -782,10 +790,6 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Respond</name>
                <description>React to something such as a treatment or a stimulus.</description>
-            </node>
-            <node>
-               <name>Recall</name>
-               <description>Remember information by mental effort.</description>
             </node>
             <node>
                <name>Switch-attention</name>
@@ -820,10 +824,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>Head</name>
                      <description>The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.</description>
                      <node>
-                        <name>Hair</name>
-                        <description>The filamentous outgrowth of the epidermis.</description>
-                     </node>
-                     <node>
                         <name>Ear</name>
                         <description>A sense organ needed for the detection of sound and for establishing balance.</description>
                      </node>
@@ -855,17 +855,21 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <description>Fleshy fold which surrounds the opening of the mouth.</description>
                         </node>
                         <node>
-                           <name>Nose</name>
-                           <description>A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.</description>
-                        </node>
-                        <node>
                            <name>Mouth</name>
                            <description>The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.</description>
+                        </node>
+                        <node>
+                           <name>Nose</name>
+                           <description>A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.</description>
                         </node>
                         <node>
                            <name>Teeth</name>
                            <description>The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.</description>
                         </node>
+                     </node>
+                     <node>
+                        <name>Hair</name>
+                        <description>The filamentous outgrowth of the epidermis.</description>
                      </node>
                   </node>
                   <node>
@@ -920,16 +924,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>Torso</name>
                      <description>The body excluding the head and neck and limbs.</description>
                      <node>
-                        <name>Torso-back</name>
-                        <description>The rear surface of the human body from the shoulders to the hips.</description>
-                     </node>
-                     <node>
                         <name>Buttocks</name>
                         <description>The round fleshy parts that form the lower rear area of a human trunk.</description>
-                     </node>
-                     <node>
-                        <name>Torso-chest</name>
-                        <description>The anterior side of the thorax from the neck to the abdomen.</description>
                      </node>
                      <node>
                         <name>Gentalia</name>
@@ -942,6 +938,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <node>
                         <name>Hip</name>
                         <description>The lateral prominence of the pelvis from the waist to the thigh.</description>
+                     </node>
+                     <node>
+                        <name>Torso-back</name>
+                        <description>The rear surface of the human body from the shoulders to the hips.</description>
+                     </node>
+                     <node>
+                        <name>Torso-chest</name>
+                        <description>The anterior side of the thorax from the neck to the abdomen.</description>
                      </node>
                      <node>
                         <name>Waist</name>
@@ -987,12 +991,12 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </node>
                         </node>
                         <node>
-                           <name>Palm</name>
-                           <description>The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.</description>
-                        </node>
-                        <node>
                            <name>Knuckles</name>
                            <description>A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.</description>
+                        </node>
+                        <node>
+                           <name>Palm</name>
+                           <description>The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.</description>
                         </node>
                      </node>
                      <node>
@@ -1090,18 +1094,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Geometric-object</name>
                <description>An object or a representation that has structure and topology in space.</description>
                <node>
-                  <name>Pattern</name>
-                  <description>An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.</description>
-                  <node>
-                     <name>Dots</name>
-                     <description>A small round mark or spot.</description>
-                  </node>
-                  <node>
-                     <name>LED-pattern</name>
-                     <description>A pattern created by lighting selected members of a fixed light emitting diode array.</description>
-                  </node>
-               </node>
-               <node>
                   <name>2D-shape</name>
                   <description>A planar, two-dimensional shape.</description>
                   <node>
@@ -1181,6 +1173,18 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A polyhedron of which one face is a polygon of any number of sides, and the other faces are triangles with a common vertex.</description>
                   </node>
                </node>
+               <node>
+                  <name>Pattern</name>
+                  <description>An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.</description>
+                  <node>
+                     <name>Dots</name>
+                     <description>A small round mark or spot.</description>
+                  </node>
+                  <node>
+                     <name>LED-pattern</name>
+                     <description>A pattern created by lighting selected members of a fixed light emitting diode array.</description>
+                  </node>
+               </node>
             </node>
             <node>
                <name>Ingestible-object</name>
@@ -1193,24 +1197,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <name>Building</name>
                   <description>A structure that has a roof and walls and stands more or less permanently in one place.</description>
                   <node>
-                     <name>Room</name>
-                     <description>An area within a building enclosed by walls and floor and ceiling.</description>
-                  </node>
-                  <node>
-                     <name>Roof</name>
-                     <description>A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.</description>
-                  </node>
-                  <node>
-                     <name>Entrance</name>
-                     <description>The means or place of entry.</description>
-                  </node>
-                  <node>
                      <name>Attic</name>
                      <description>A room or a space immediately below the roof of a building.</description>
                   </node>
                   <node>
                      <name>Basement</name>
                      <description>The part of a building that is wholly or partly below ground level.</description>
+                  </node>
+                  <node>
+                     <name>Entrance</name>
+                     <description>The means or place of entry.</description>
+                  </node>
+                  <node>
+                     <name>Roof</name>
+                     <description>A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.</description>
+                  </node>
+                  <node>
+                     <name>Room</name>
+                     <description>An area within a building enclosed by walls and floor and ceiling.</description>
                   </node>
                </node>
                <node>
@@ -1329,26 +1333,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>Output-device</name>
                         <description>Any piece of computer hardware equipment which converts information into human understandable form.</description>
                         <node>
-                           <name>Display-device</name>
-                           <description>An output device for presentation of information in visual or tactile form the latter used for example in tactile electronic displays for blind people.</description>
-                           <node>
-                              <name>Head-mounted-display</name>
-                              <description>An instrument that functions as a display device, worn on the head or as part of a helmet, that has a small display optic in front of one (monocular HMD) or each eye (binocular HMD).</description>
-                           </node>
-                           <node>
-                              <name>LED-display</name>
-                              <description>A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.</description>
-                           </node>
-                           <node>
-                              <name>Computer-screen</name>
-                              <description>An electronic device designed as a display or a physical device designed to be a protective meshwork.</description>
-                              <node>
-                                 <name>Screen-window</name>
-                                 <description>A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.</description>
-                              </node>
-                           </node>
-                        </node>
-                        <node>
                            <name>Auditory-device</name>
                            <description>A device designed to produce sound.</description>
                            <node>
@@ -1358,6 +1342,26 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <node>
                               <name>Loudspeaker</name>
                               <description>A device designed to convert electrical signals to sounds that can be heard.</description>
+                           </node>
+                        </node>
+                        <node>
+                           <name>Display-device</name>
+                           <description>An output device for presentation of information in visual or tactile form the latter used for example in tactile electronic displays for blind people.</description>
+                           <node>
+                              <name>Computer-screen</name>
+                              <description>An electronic device designed as a display or a physical device designed to be a protective meshwork.</description>
+                              <node>
+                                 <name>Screen-window</name>
+                                 <description>A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.</description>
+                              </node>
+                           </node>
+                           <node>
+                              <name>Head-mounted-display</name>
+                              <description>An instrument that functions as a display device, worn on the head or as part of a helmet, that has a small display optic in front of one (monocular HMD) or each eye (binocular HMD).</description>
+                           </node>
+                           <node>
+                              <name>LED-display</name>
+                              <description>A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.</description>
                            </node>
                         </node>
                      </node>
@@ -1403,6 +1407,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <node>
                            <name>Clock-face</name>
                            <description>A location identifier based on clockface numbering or anatomic subregion.</description>
+                           <attribute>
+                              <name>deprecatedFrom</name>
+                              <value>8.3.0</value>
+                           </attribute>
                         </node>
                      </node>
                   </node>
@@ -1412,12 +1420,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Tool</name>
-                     <description>A component that is not part of a device but is designed to support its assemby or operation.</description>
+                     <description>A component that is not part of a device but is designed to support its assembly or operation.</description>
                   </node>
                </node>
                <node>
                   <name>Document</name>
                   <description>A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</description>
+                  <node>
+                     <name>Book</name>
+                     <description>A volume made up of pages fastened along one edge and enclosed between protective covers.</description>
+                  </node>
                   <node>
                      <name>Letter</name>
                      <description>A written message addressed to a person or organization.</description>
@@ -1425,10 +1437,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <node>
                      <name>Note</name>
                      <description>A brief written record.</description>
-                  </node>
-                  <node>
-                     <name>Book</name>
-                     <description>A volume made up of pages fastened along one edge and enclosed between protective covers.</description>
                   </node>
                   <node>
                      <name>Notebook</name>
@@ -1469,7 +1477,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Media</name>
-                  <description>Media are audo/visual/audiovisual modes of communicating information for mass consumption.</description>
+                  <description>Media are audio/visual/audiovisual modes of communicating information for mass consumption.</description>
                   <node>
                      <name>Media-clip</name>
                      <description>A short segment of media.</description>
@@ -1600,7 +1608,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Truck</name>
-                     <description>A motor vehicle which, as its primary funcion, transports cargo rather than human passangers.</description>
+                     <description>A motor vehicle which, as its primary function, transports cargo rather than human passangers.</description>
                   </node>
                </node>
             </node>
@@ -1642,7 +1650,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             <description>Mechanical vibrations transmitted by an elastic medium. Something that can be heard.</description>
             <node>
                <name>Environmental-sound</name>
-               <description>Sounds occuring in the environment. An accumulation of noise pollution that occurs outside. This noise can be caused by transport, industrial, and recreational activities.</description>
+               <description>Sounds occurring in the environment. An accumulation of noise pollution that occurs outside. This noise can be caused by transport, industrial, and recreational activities.</description>
                <node>
                   <name>Crowd-sound</name>
                   <description>Noise produced by a mixture of sounds from a large group of people.</description>
@@ -1656,12 +1664,12 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Musical-sound</name>
                <description>Sound produced by continuous and regular vibrations, as opposed to noise.</description>
                <node>
-                  <name>Tone</name>
-                  <description>A musical note, warble, or other sound used as a particular signal on a telephone or answering machine.</description>
-               </node>
-               <node>
                   <name>Instrument-sound</name>
                   <description>Sound produced by a musical instrument.</description>
+               </node>
+               <node>
+                  <name>Tone</name>
+                  <description>A musical note, warble, or other sound used as a particular signal on a telephone or answering machine.</description>
                </node>
                <node>
                   <name>Vocalized-sound</name>
@@ -1680,12 +1688,12 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <description>Wavering cries like sounds made by a sheep, goat, or calf.</description>
                </node>
                <node>
-                  <name>Crowing</name>
-                  <description>Loud shrill sounds characteristic of roosters.</description>
-               </node>
-               <node>
                   <name>Chirping</name>
                   <description>Short, sharp, high-pitched noises like sounds made by small birds or an insects.</description>
+               </node>
+               <node>
+                  <name>Crowing</name>
+                  <description>Loud shrill sounds characteristic of roosters.</description>
                </node>
                <node>
                   <name>Growling</name>
@@ -1728,10 +1736,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <description>A persistent vibratory sound often made by a buzzer device and used to indicate something incorrect.</description>
                </node>
                <node>
-                  <name>Ka-ching</name>
-                  <description>The sound made by a mechanical cash register, often to designate a reward.</description>
-               </node>
-               <node>
                   <name>Click</name>
                   <description>The sound made by a mechanical cash register, often to designate a reward.</description>
                </node>
@@ -1742,6 +1746,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Horn-blow</name>
                   <description>A loud sound made by forcing air through a sound device that funnels air to create the sound, often used to sound an alert.</description>
+               </node>
+               <node>
+                  <name>Ka-ching</name>
+                  <description>The sound made by a mechanical cash register, often to designate a reward.</description>
                </node>
                <node>
                   <name>Siren</name>
@@ -1785,10 +1793,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>Concentrating and focusing mental energy on the task or surroundings.</description>
                   </node>
                   <node>
-                     <name>Distracted</name>
-                     <description>Lacking in concentration because of being preoccupied.</description>
-                  </node>
-                  <node>
                      <name>Awake</name>
                      <description>In a non sleeping state.</description>
                   </node>
@@ -1799,6 +1803,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <node>
                      <name>Comatose</name>
                      <description>In a state of profound unconsciousness associated with markedly depressed cerebral activity.</description>
+                  </node>
+                  <node>
+                     <name>Distracted</name>
+                     <description>Lacking in concentration because of being preoccupied.</description>
                   </node>
                   <node>
                      <name>Drowsy</name>
@@ -1994,16 +2002,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>Positioned in a recumbent body position whereby the person lies on its stomach and faces downward.</description>
                   </node>
                   <node>
+                     <name>Seated-with-chin-rest</name>
+                     <description>Using a device that supports the chin and head.</description>
+                  </node>
+                  <node>
                      <name>Sitting</name>
                      <description>In a seated position.</description>
                   </node>
                   <node>
                      <name>Standing</name>
                      <description>Assuming or maintaining an erect upright position.</description>
-                  </node>
-                  <node>
-                     <name>Seated-with-chin-rest</name>
-                     <description>Using a device that supports the chin and head.</description>
                   </node>
                </node>
             </node>
@@ -2076,8 +2084,32 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
+                  <name>Ethnicity</name>
+                  <description>Belong to a social group that has a common national or cultural tradition. Use with Label to avoid extension.</description>
+               </node>
+               <node>
                   <name>Gender</name>
                   <description>Characteristics that are socially constructed, including norms, behaviors, and roles based on sex.</description>
+               </node>
+               <node>
+                  <name>Handedness</name>
+                  <description>Individual preference for use of a hand, known as the dominant hand.</description>
+                  <node>
+                     <name>Ambidextrous</name>
+                     <description>Having no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot.</description>
+                  </node>
+                  <node>
+                     <name>Left-handed</name>
+                     <description>Preference for using the left hand or foot for tasks requiring the use of a single hand or foot.</description>
+                  </node>
+                  <node>
+                     <name>Right-handed</name>
+                     <description>Preference for using the right hand or foot for tasks requiring the use of a single hand or foot.</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Race</name>
+                  <description>Belonging to a group sharing physical or social qualities as defined within a specified society. Use with Label to avoid extension.</description>
                </node>
                <node>
                   <name>Sex</name>
@@ -2087,37 +2119,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>Biological sex of an individual with female sexual organs such ova.</description>
                   </node>
                   <node>
-                     <name>Male</name>
-                     <description>Biological sex of an individual with male sexual organs producing sperm.</description>
-                  </node>
-                  <node>
                      <name>Intersex</name>
                      <description>Having genitalia and/or secondary sexual characteristics of indeterminate sex.</description>
                   </node>
-               </node>
-               <node>
-                  <name>Ethnicity</name>
-                  <description>Belong to a social group that has a common national or cultural tradition. Use with Label to avoid extension.</description>
-               </node>
-               <node>
-                  <name>Handedness</name>
-                  <description>Individual preference for use of a hand, known as the dominant hand.</description>
                   <node>
-                     <name>Left-handed</name>
-                     <description>Preference for using the left hand or foot for tasks requiring the use of a single hand or foot.</description>
+                     <name>Male</name>
+                     <description>Biological sex of an individual with male sexual organs producing sperm.</description>
                   </node>
-                  <node>
-                     <name>Right-handed</name>
-                     <description>Preference for using the right hand or foot for tasks requiring the use of a single hand or foot.</description>
-                  </node>
-                  <node>
-                     <name>Ambidextrous</name>
-                     <description>Having no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot.</description>
-                  </node>
-               </node>
-               <node>
-                  <name>Race</name>
-                  <description>Belonging to a group sharing physical or social qualities as defined within a specified society. Use with Label to avoid extension.</description>
                </node>
             </node>
          </node>
@@ -2153,21 +2161,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                   </node>
                   <node>
-                     <name>Onset</name>
-                     <description>Marks the start of an ongoing event of temporal extent.</description>
-                     <attribute>
-                        <name>topLevelTagGroup</name>
-                     </attribute>
-                     <attribute>
-                        <name>reserved</name>
-                     </attribute>
-                     <attribute>
-                        <name>relatedTag</name>
-                        <value>Inset</value>
-                        <value>Offset</value>
-                     </attribute>
-                  </node>
-                  <node>
                      <name>Offset</name>
                      <description>Marks the end of an event of temporal extent.</description>
                      <attribute>
@@ -2180,6 +2173,21 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>relatedTag</name>
                         <value>Onset</value>
                         <value>Inset</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Onset</name>
+                     <description>Marks the start of an ongoing event of temporal extent.</description>
+                     <attribute>
+                        <name>topLevelTagGroup</name>
+                     </attribute>
+                     <attribute>
+                        <name>reserved</name>
+                     </attribute>
+                     <attribute>
+                        <name>relatedTag</name>
+                        <value>Inset</value>
+                        <value>Offset</value>
                      </attribute>
                   </node>
                   <node>
@@ -2437,19 +2445,19 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                      </node>
                      <node>
-                        <name>Congruent</name>
-                        <description>Concordance of multiple evidence lines. In agreement or harmony.</description>
-                        <attribute>
-                           <name>relatedTag</name>
-                           <value>Incongruent</value>
-                        </attribute>
-                     </node>
-                     <node>
                         <name>Complex</name>
                         <description>Hard, involved or complicated, elaborate, having many parts.</description>
                         <attribute>
                            <name>relatedTag</name>
                            <value>Simple</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Congruent</name>
+                        <description>Concordance of multiple evidence lines. In agreement or harmony.</description>
+                        <attribute>
+                           <name>relatedTag</name>
+                           <value>Incongruent</value>
                         </attribute>
                      </node>
                      <node>
@@ -2846,24 +2854,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <name>Physical-value</name>
                   <description>The value of some physical property of something.</description>
                   <node>
-                     <name>Weight</name>
-                     <description>The relative mass or the quantity of matter contained by something.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>weightUnits</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
                      <name>Temperature</name>
                      <description>A measure of hot or cold based on the average kinetic energy of the atoms or molecules in the system.</description>
                      <node>
@@ -2878,6 +2868,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <attribute>
                            <name>unitClass</name>
                            <value>temperatureUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Weight</name>
+                     <description>The relative mass or the quantity of matter contained by something.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>weightUnits</value>
                         </attribute>
                      </node>
                   </node>
@@ -2971,153 +2979,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
-                  <name>Statistical-value</name>
-                  <description>A value based on or employing the principles of statistics.</description>
-                  <attribute>
-                     <name>extensionAllowed</name>
-                  </attribute>
-                  <node>
-                     <name>Data-maximum</name>
-                     <description>The largest possible quantity or degree.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Data-mean</name>
-                     <description>The sum of a set of values divided by the number of values in the set.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Data-median</name>
-                     <description>The value which has an equal number of values greater and less than it.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Data-minimum</name>
-                     <description>The smallest possible quantity.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Probability</name>
-                     <description>A measure of the expectation of the occurrence of a particular event.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Standard-deviation</name>
-                     <description>A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Statistical-accuracy</name>
-                     <description>A measure of closeness to true value expressed as a number between 0 and 1.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Statistical-precision</name>
-                     <description>A quantitative representation of the degree of accuracy necessary for or associated with a particular action.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Statistical-recall</name>
-                     <description>Sensitivity is a measurement datum qualifying a binary classification test and is computed by substracting the false negative rate to the integral numeral 1.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Statistical-uncertainty</name>
-                     <description>A measure of the inherent variability of repeated observation measurements of a quantity including quantities evaluated by statistical methods and by other means.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-               </node>
-               <node>
                   <name>Spatiotemporal-value</name>
                   <description>A property relating to space and/or time.</description>
                   <node>
@@ -3178,20 +3039,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                      </node>
                      <node>
-                        <name>Sampling-rate</name>
-                        <description>The number of digital samples taken or recorded per unit of time.</description>
-                        <node>
-                           <name>#</name>
-                           <attribute>
-                              <name>takesValue</name>
-                           </attribute>
-                           <attribute>
-                              <name>unitClass</name>
-                              <value>frequencyUnits</value>
-                           </attribute>
-                        </node>
-                     </node>
-                     <node>
                         <name>Refresh-rate</name>
                         <description>The frequency with which the image on a computer monitor or similar electronic display screen is refreshed, usually expressed in hertz.</description>
                         <node>
@@ -3202,6 +3049,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <attribute>
                               <name>valueClass</name>
                               <value>numericClass</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
+                        <name>Sampling-rate</name>
+                        <description>The number of digital samples taken or recorded per unit of time.</description>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
                            </attribute>
                         </node>
                      </node>
@@ -3379,44 +3240,26 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </node>
                         </node>
                         <node>
-                           <name>Length</name>
-                           <description>The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.</description>
-                           <node>
-                              <name>#</name>
-                              <attribute>
-                                 <name>takesValue</name>
-                              </attribute>
-                              <attribute>
-                                 <name>valueClass</name>
-                                 <value>numericClass</value>
-                              </attribute>
-                              <attribute>
-                                 <name>unitClass</name>
-                                 <value>physicalLengthUnits</value>
-                              </attribute>
-                           </node>
-                        </node>
-                        <node>
-                           <name>Width</name>
-                           <description>The extent or measurement of something from side to side.</description>
-                           <node>
-                              <name>#</name>
-                              <attribute>
-                                 <name>takesValue</name>
-                              </attribute>
-                              <attribute>
-                                 <name>valueClass</name>
-                                 <value>numericClass</value>
-                              </attribute>
-                              <attribute>
-                                 <name>unitClass</name>
-                                 <value>physicalLengthUnits</value>
-                              </attribute>
-                           </node>
-                        </node>
-                        <node>
                            <name>Height</name>
                            <description>The vertical measurement or distance from the base to the top of an object.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                              <attribute>
+                                 <name>unitClass</name>
+                                 <value>physicalLengthUnits</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
+                           <name>Length</name>
+                           <description>The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.</description>
                            <node>
                               <name>#</name>
                               <attribute>
@@ -3447,6 +3290,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <attribute>
                                  <name>unitClass</name>
                                  <value>volumeUnits</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
+                           <name>Width</name>
+                           <description>The extent or measurement of something from side to side.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                              <attribute>
+                                 <name>unitClass</name>
+                                 <value>physicalLengthUnits</value>
                               </attribute>
                            </node>
                         </node>
@@ -3549,6 +3410,153 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                   </node>
                </node>
+               <node>
+                  <name>Statistical-value</name>
+                  <description>A value based on or employing the principles of statistics.</description>
+                  <attribute>
+                     <name>extensionAllowed</name>
+                  </attribute>
+                  <node>
+                     <name>Data-maximum</name>
+                     <description>The largest possible quantity or degree.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Data-mean</name>
+                     <description>The sum of a set of values divided by the number of values in the set.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Data-median</name>
+                     <description>The value which has an equal number of values greater and less than it.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Data-minimum</name>
+                     <description>The smallest possible quantity.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Probability</name>
+                     <description>A measure of the expectation of the occurrence of a particular event.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Standard-deviation</name>
+                     <description>A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Statistical-accuracy</name>
+                     <description>A measure of closeness to true value expressed as a number between 0 and 1.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Statistical-precision</name>
+                     <description>A quantitative representation of the degree of accuracy necessary for or associated with a particular action.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Statistical-recall</name>
+                     <description>Sensitivity is a measurement datum qualifying a binary classification test and is computed by subtracting the false negative rate to the integral numeral 1.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Statistical-uncertainty</name>
+                     <description>A measure of the inherent variability of repeated observation measurements of a quantity including quantities evaluated by statistical methods and by other means.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
             </node>
             <node>
                <name>Data-variability-attribute</name>
@@ -3605,16 +3613,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
-                  <name>Flickering</name>
-                  <description>Moving irregularly or unsteadily or burning or shining fitfully or with a fluctuating light.</description>
-               </node>
-               <node>
                   <name>Estimated-value</name>
                   <description>Something that has been calculated or measured approximately.</description>
                </node>
                <node>
                   <name>Exact-value</name>
                   <description>A value that is viewed to the true value according to some standard.</description>
+               </node>
+               <node>
+                  <name>Flickering</name>
+                  <description>Moving irregularly or unsteadily or burning or shining fitfully or with a fluctuating light.</description>
                </node>
                <node>
                   <name>Fractal</name>
@@ -3660,8 +3668,16 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>Environmental-property</name>
             <description>Relating to or arising from the surroundings of an agent.</description>
             <node>
+               <name>Augmented-reality</name>
+               <description>Using technology that enhances real-world experiences with computer-derived digital overlays to change some aspects of perception of the natural environment. The digital content is shown to the user through a smart device or glasses and responds to changes in the environment.</description>
+            </node>
+            <node>
                <name>Indoors</name>
                <description>Located inside a building or enclosure.</description>
+            </node>
+            <node>
+               <name>Motion-platform</name>
+               <description>A mechanism that creates the feelings of being in a real motion environment.</description>
             </node>
             <node>
                <name>Outdoors</name>
@@ -3672,22 +3688,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>Located in a place that exists in real space and time under realistic conditions.</description>
             </node>
             <node>
-               <name>Virtual-world</name>
-               <description>Using technology that creates immersive, computer-generated experiences that a person can interact with and navigate through. The digital content is generally delivered to the user through some type of headset and responds to changes in head position or through interaction with other types of sensors. Existing in a virtual setting such as a simulation or game environment.</description>
-            </node>
-            <node>
-               <name>Augmented-reality</name>
-               <description>Using technology that enhances real-world experiences with computer-derived digital overlays to change some aspects of perception of the natural environment. The digital content is shown to the user through a smart device or glasses and responds to changes in the environment.</description>
-            </node>
-            <node>
-               <name>Motion-platform</name>
-               <description>A mechanism that creates the feelings of being in a real motion environment.</description>
-            </node>
-            <node>
-               <name>Urban</name>
-               <description>Relating to, located in, or characteristic of a city or densely populated area.</description>
-            </node>
-            <node>
                <name>Rural</name>
                <description>Of or pertaining to the country as opposed to the city.</description>
             </node>
@@ -3696,7 +3696,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>Characterization of the physical features of a tract of land.</description>
                <node>
                   <name>Composite-terrain</name>
-                  <description>Tracts of land characterized by a mixure of physical features.</description>
+                  <description>Tracts of land characterized by a mixture of physical features.</description>
                </node>
                <node>
                   <name>Dirt-terrain</name>
@@ -3734,6 +3734,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <name>Uneven-terrain</name>
                   <description>Tracts of land that are not level, smooth, or regular.</description>
                </node>
+            </node>
+            <node>
+               <name>Urban</name>
+               <description>Relating to, located in, or characteristic of a city or densely populated area.</description>
+            </node>
+            <node>
+               <name>Virtual-world</name>
+               <description>Using technology that creates immersive, computer-generated experiences that a person can interact with and navigate through. The digital content is generally delivered to the user through some type of headset and responds to changes in head position or through interaction with other types of sensors. Existing in a virtual setting such as a simulation or game environment.</description>
             </node>
          </node>
          <node>
@@ -4294,20 +4302,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                   </node>
                   <node>
-                     <name>Timbre</name>
-                     <description>The perceived sound quality of a singing voice or musical instrument.</description>
-                     <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>nameClass</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
                      <name>Sound-volume</name>
                      <description>The sound pressure level (SPL) usually the ratio to a reference signal estimated as the lower bound of hearing.</description>
                      <node>
@@ -4322,6 +4316,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <attribute>
                            <name>unitClass</name>
                            <value>intensityUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Timbre</name>
+                     <description>The perceived sound quality of a singing voice or musical instrument.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>nameClass</value>
                         </attribute>
                      </node>
                   </node>
@@ -4403,36 +4411,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <name>Blue-color</name>
                            <description>CSS color group.</description>
                            <node>
+                              <name>Blue</name>
+                              <description>CSS-color 0x0000FF.</description>
+                           </node>
+                           <node>
                               <name>CadetBlue</name>
                               <description>CSS-color 0x5F9EA0.</description>
                            </node>
                            <node>
-                              <name>SteelBlue</name>
-                              <description>CSS-color 0x4682B4.</description>
-                           </node>
-                           <node>
-                              <name>LightSteelBlue</name>
-                              <description>CSS-color 0xB0C4DE.</description>
-                           </node>
-                           <node>
-                              <name>LightBlue</name>
-                              <description>CSS-color 0xADD8E6.</description>
-                           </node>
-                           <node>
-                              <name>PowderBlue</name>
-                              <description>CSS-color 0xB0E0E6.</description>
-                           </node>
-                           <node>
-                              <name>LightSkyBlue</name>
-                              <description>CSS-color 0x87CEFA.</description>
-                           </node>
-                           <node>
-                              <name>SkyBlue</name>
-                              <description>CSS-color 0x87CEEB.</description>
-                           </node>
-                           <node>
                               <name>CornflowerBlue</name>
                               <description>CSS-color 0x6495ED.</description>
+                           </node>
+                           <node>
+                              <name>DarkBlue</name>
+                              <description>CSS-color 0x00008B.</description>
                            </node>
                            <node>
                               <name>DeepSkyBlue</name>
@@ -4443,104 +4435,120 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0x1E90FF.</description>
                            </node>
                            <node>
-                              <name>RoyalBlue</name>
-                              <description>CSS-color 0x4169E1.</description>
+                              <name>LightBlue</name>
+                              <description>CSS-color 0xADD8E6.</description>
                            </node>
                            <node>
-                              <name>Blue</name>
-                              <description>CSS-color 0x0000FF.</description>
+                              <name>LightSkyBlue</name>
+                              <description>CSS-color 0x87CEFA.</description>
+                           </node>
+                           <node>
+                              <name>LightSteelBlue</name>
+                              <description>CSS-color 0xB0C4DE.</description>
                            </node>
                            <node>
                               <name>MediumBlue</name>
                               <description>CSS-color 0x0000CD.</description>
                            </node>
                            <node>
-                              <name>DarkBlue</name>
-                              <description>CSS-color 0x00008B.</description>
+                              <name>MidnightBlue</name>
+                              <description>CSS-color 0x191970.</description>
                            </node>
                            <node>
                               <name>Navy</name>
                               <description>CSS-color 0x000080.</description>
                            </node>
                            <node>
-                              <name>MidnightBlue</name>
-                              <description>CSS-color 0x191970.</description>
+                              <name>PowderBlue</name>
+                              <description>CSS-color 0xB0E0E6.</description>
+                           </node>
+                           <node>
+                              <name>RoyalBlue</name>
+                              <description>CSS-color 0x4169E1.</description>
+                           </node>
+                           <node>
+                              <name>SkyBlue</name>
+                              <description>CSS-color 0x87CEEB.</description>
+                           </node>
+                           <node>
+                              <name>SteelBlue</name>
+                              <description>CSS-color 0x4682B4.</description>
                            </node>
                         </node>
                         <node>
                            <name>Brown-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>Cornsilk</name>
-                              <description>CSS-color 0xFFF8DC.</description>
+                              <name>Bisque</name>
+                              <description>CSS-color 0xFFE4C4.</description>
                            </node>
                            <node>
                               <name>BlanchedAlmond</name>
                               <description>CSS-color 0xFFEBCD.</description>
                            </node>
                            <node>
-                              <name>Bisque</name>
-                              <description>CSS-color 0xFFE4C4.</description>
-                           </node>
-                           <node>
-                              <name>NavajoWhite</name>
-                              <description>CSS-color 0xFFDEAD.</description>
-                           </node>
-                           <node>
-                              <name>Wheat</name>
-                              <description>CSS-color 0xF5DEB3.</description>
+                              <name>Brown</name>
+                              <description>CSS-color 0xA52A2A.</description>
                            </node>
                            <node>
                               <name>BurlyWood</name>
                               <description>CSS-color 0xDEB887.</description>
                            </node>
                            <node>
-                              <name>Tan</name>
-                              <description>CSS-color 0xD2B48C.</description>
+                              <name>Chocolate</name>
+                              <description>CSS-color 0xD2691E.</description>
                            </node>
                            <node>
-                              <name>RosyBrown</name>
-                              <description>CSS-color 0xBC8F8F.</description>
-                           </node>
-                           <node>
-                              <name>SandyBrown</name>
-                              <description>CSS-color 0xF4A460.</description>
-                           </node>
-                           <node>
-                              <name>GoldenRod</name>
-                              <description>CSS-color 0xDAA520.</description>
+                              <name>Cornsilk</name>
+                              <description>CSS-color 0xFFF8DC.</description>
                            </node>
                            <node>
                               <name>DarkGoldenRod</name>
                               <description>CSS-color 0xB8860B.</description>
                            </node>
                            <node>
-                              <name>Peru</name>
-                              <description>CSS-color 0xCD853F.</description>
+                              <name>GoldenRod</name>
+                              <description>CSS-color 0xDAA520.</description>
                            </node>
                            <node>
-                              <name>Chocolate</name>
-                              <description>CSS-color 0xD2691E.</description>
+                              <name>Maroon</name>
+                              <description>CSS-color 0x800000.</description>
+                           </node>
+                           <node>
+                              <name>NavajoWhite</name>
+                              <description>CSS-color 0xFFDEAD.</description>
                            </node>
                            <node>
                               <name>Olive</name>
                               <description>CSS-color 0x808000.</description>
                            </node>
                            <node>
+                              <name>Peru</name>
+                              <description>CSS-color 0xCD853F.</description>
+                           </node>
+                           <node>
+                              <name>RosyBrown</name>
+                              <description>CSS-color 0xBC8F8F.</description>
+                           </node>
+                           <node>
                               <name>SaddleBrown</name>
                               <description>CSS-color 0x8B4513.</description>
+                           </node>
+                           <node>
+                              <name>SandyBrown</name>
+                              <description>CSS-color 0xF4A460.</description>
                            </node>
                            <node>
                               <name>Sienna</name>
                               <description>CSS-color 0xA0522D.</description>
                            </node>
                            <node>
-                              <name>Brown</name>
-                              <description>CSS-color 0xA52A2A.</description>
+                              <name>Tan</name>
+                              <description>CSS-color 0xD2B48C.</description>
                            </node>
                            <node>
-                              <name>Maroon</name>
-                              <description>CSS-color 0x800000.</description>
+                              <name>Wheat</name>
+                              <description>CSS-color 0xF5DEB3.</description>
                            </node>
                         </node>
                         <node>
@@ -4551,80 +4559,100 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0x00FFFF.</description>
                            </node>
                            <node>
+                              <name>Aquamarine</name>
+                              <description>CSS-color 0x7FFFD4.</description>
+                           </node>
+                           <node>
                               <name>Cyan</name>
                               <description>CSS-color 0x00FFFF.</description>
+                           </node>
+                           <node>
+                              <name>DarkTurquoise</name>
+                              <description>CSS-color 0x00CED1.</description>
                            </node>
                            <node>
                               <name>LightCyan</name>
                               <description>CSS-color 0xE0FFFF.</description>
                            </node>
                            <node>
-                              <name>PaleTurquoise</name>
-                              <description>CSS-color 0xAFEEEE.</description>
+                              <name>MediumTurquoise</name>
+                              <description>CSS-color 0x48D1CC.</description>
                            </node>
                            <node>
-                              <name>Aquamarine</name>
-                              <description>CSS-color 0x7FFFD4.</description>
+                              <name>PaleTurquoise</name>
+                              <description>CSS-color 0xAFEEEE.</description>
                            </node>
                            <node>
                               <name>Turquoise</name>
                               <description>CSS-color 0x40E0D0.</description>
                            </node>
+                        </node>
+                        <node>
+                           <name>Gray-color</name>
+                           <description>CSS color group.</description>
                            <node>
-                              <name>MediumTurquoise</name>
-                              <description>CSS-color 0x48D1CC.</description>
+                              <name>Black</name>
+                              <description>CSS-color 0x000000.</description>
                            </node>
                            <node>
-                              <name>DarkTurquoise</name>
-                              <description>CSS-color 0x00CED1.</description>
+                              <name>DarkGray</name>
+                              <description>CSS-color 0xA9A9A9.</description>
+                           </node>
+                           <node>
+                              <name>DarkSlateGray</name>
+                              <description>CSS-color 0x2F4F4F.</description>
+                           </node>
+                           <node>
+                              <name>DimGray</name>
+                              <description>CSS-color 0x696969.</description>
+                           </node>
+                           <node>
+                              <name>Gainsboro</name>
+                              <description>CSS-color 0xDCDCDC.</description>
+                           </node>
+                           <node>
+                              <name>Gray</name>
+                              <description>CSS-color 0x808080.</description>
+                           </node>
+                           <node>
+                              <name>LightGray</name>
+                              <description>CSS-color 0xD3D3D3.</description>
+                           </node>
+                           <node>
+                              <name>LightSlateGray</name>
+                              <description>CSS-color 0x778899.</description>
+                           </node>
+                           <node>
+                              <name>Silver</name>
+                              <description>CSS-color 0xC0C0C0.</description>
+                           </node>
+                           <node>
+                              <name>SlateGray</name>
+                              <description>CSS-color 0x708090.</description>
                            </node>
                         </node>
                         <node>
                            <name>Green-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>GreenYellow</name>
-                              <description>CSS-color 0xADFF2F.</description>
-                           </node>
-                           <node>
                               <name>Chartreuse</name>
                               <description>CSS-color 0x7FFF00.</description>
                            </node>
                            <node>
-                              <name>LawnGreen</name>
-                              <description>CSS-color 0x7CFC00.</description>
+                              <name>DarkCyan</name>
+                              <description>CSS-color 0x008B8B.</description>
                            </node>
                            <node>
-                              <name>Lime</name>
-                              <description>CSS-color 0x00FF00.</description>
+                              <name>DarkGreen</name>
+                              <description>CSS-color 0x006400.</description>
                            </node>
                            <node>
-                              <name>LimeGreen</name>
-                              <description>CSS-color 0x32CD32.</description>
+                              <name>DarkOliveGreen</name>
+                              <description>CSS-color 0x556B2F.</description>
                            </node>
                            <node>
-                              <name>PaleGreen</name>
-                              <description>CSS-color 0x98FB98.</description>
-                           </node>
-                           <node>
-                              <name>LightGreen</name>
-                              <description>CSS-color 0x90EE90.</description>
-                           </node>
-                           <node>
-                              <name>MediumSpringGreen</name>
-                              <description>CSS-color 0x00FA9A.</description>
-                           </node>
-                           <node>
-                              <name>SpringGreen</name>
-                              <description>CSS-color 0x00FF7F.</description>
-                           </node>
-                           <node>
-                              <name>MediumSeaGreen</name>
-                              <description>CSS-color 0x3CB371.</description>
-                           </node>
-                           <node>
-                              <name>SeaGreen</name>
-                              <description>CSS-color 0x2E8B57.</description>
+                              <name>DarkSeaGreen</name>
+                              <description>CSS-color 0x8FBC8F.</description>
                            </node>
                            <node>
                               <name>ForestGreen</name>
@@ -4635,164 +4663,152 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0x008000.</description>
                            </node>
                            <node>
-                              <name>DarkGreen</name>
-                              <description>CSS-color 0x006400.</description>
+                              <name>GreenYellow</name>
+                              <description>CSS-color 0xADFF2F.</description>
                            </node>
                            <node>
-                              <name>YellowGreen</name>
-                              <description>CSS-color 0x9ACD32.</description>
+                              <name>LawnGreen</name>
+                              <description>CSS-color 0x7CFC00.</description>
                            </node>
                            <node>
-                              <name>OliveDrab</name>
-                              <description>CSS-color 0x6B8E23.</description>
-                           </node>
-                           <node>
-                              <name>DarkOliveGreen</name>
-                              <description>CSS-color 0x556B2F.</description>
-                           </node>
-                           <node>
-                              <name>MediumAquaMarine</name>
-                              <description>CSS-color 0x66CDAA.</description>
-                           </node>
-                           <node>
-                              <name>DarkSeaGreen</name>
-                              <description>CSS-color 0x8FBC8F.</description>
+                              <name>LightGreen</name>
+                              <description>CSS-color 0x90EE90.</description>
                            </node>
                            <node>
                               <name>LightSeaGreen</name>
                               <description>CSS-color 0x20B2AA.</description>
                            </node>
                            <node>
-                              <name>DarkCyan</name>
-                              <description>CSS-color 0x008B8B.</description>
+                              <name>Lime</name>
+                              <description>CSS-color 0x00FF00.</description>
+                           </node>
+                           <node>
+                              <name>LimeGreen</name>
+                              <description>CSS-color 0x32CD32.</description>
+                           </node>
+                           <node>
+                              <name>MediumAquaMarine</name>
+                              <description>CSS-color 0x66CDAA.</description>
+                           </node>
+                           <node>
+                              <name>MediumSeaGreen</name>
+                              <description>CSS-color 0x3CB371.</description>
+                           </node>
+                           <node>
+                              <name>MediumSpringGreen</name>
+                              <description>CSS-color 0x00FA9A.</description>
+                           </node>
+                           <node>
+                              <name>OliveDrab</name>
+                              <description>CSS-color 0x6B8E23.</description>
+                           </node>
+                           <node>
+                              <name>PaleGreen</name>
+                              <description>CSS-color 0x98FB98.</description>
+                           </node>
+                           <node>
+                              <name>SeaGreen</name>
+                              <description>CSS-color 0x2E8B57.</description>
+                           </node>
+                           <node>
+                              <name>SpringGreen</name>
+                              <description>CSS-color 0x00FF7F.</description>
                            </node>
                            <node>
                               <name>Teal</name>
                               <description>CSS-color 0x008080.</description>
                            </node>
-                        </node>
-                        <node>
-                           <name>Gray-color</name>
-                           <description>CSS color group.</description>
                            <node>
-                              <name>Gainsboro</name>
-                              <description>CSS-color 0xDCDCDC.</description>
-                           </node>
-                           <node>
-                              <name>LightGray</name>
-                              <description>CSS-color 0xD3D3D3.</description>
-                           </node>
-                           <node>
-                              <name>Silver</name>
-                              <description>CSS-color 0xC0C0C0.</description>
-                           </node>
-                           <node>
-                              <name>DarkGray</name>
-                              <description>CSS-color 0xA9A9A9.</description>
-                           </node>
-                           <node>
-                              <name>DimGray</name>
-                              <description>CSS-color 0x696969.</description>
-                           </node>
-                           <node>
-                              <name>Gray</name>
-                              <description>CSS-color 0x808080.</description>
-                           </node>
-                           <node>
-                              <name>LightSlateGray</name>
-                              <description>CSS-color 0x778899.</description>
-                           </node>
-                           <node>
-                              <name>SlateGray</name>
-                              <description>CSS-color 0x708090.</description>
-                           </node>
-                           <node>
-                              <name>DarkSlateGray</name>
-                              <description>CSS-color 0x2F4F4F.</description>
-                           </node>
-                           <node>
-                              <name>Black</name>
-                              <description>CSS-color 0x000000.</description>
+                              <name>YellowGreen</name>
+                              <description>CSS-color 0x9ACD32.</description>
                            </node>
                         </node>
                         <node>
                            <name>Orange-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>Orange</name>
-                              <description>CSS-color 0xFFA500.</description>
+                              <name>Coral</name>
+                              <description>CSS-color 0xFF7F50.</description>
                            </node>
                            <node>
                               <name>DarkOrange</name>
                               <description>CSS-color 0xFF8C00.</description>
                            </node>
                            <node>
-                              <name>Coral</name>
-                              <description>CSS-color 0xFF7F50.</description>
-                           </node>
-                           <node>
-                              <name>Tomato</name>
-                              <description>CSS-color 0xFF6347.</description>
+                              <name>Orange</name>
+                              <description>CSS-color 0xFFA500.</description>
                            </node>
                            <node>
                               <name>OrangeRed</name>
                               <description>CSS-color 0xFF4500.</description>
+                           </node>
+                           <node>
+                              <name>Tomato</name>
+                              <description>CSS-color 0xFF6347.</description>
                            </node>
                         </node>
                         <node>
                            <name>Pink-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>Pink</name>
-                              <description>CSS-color 0xFFC0CB.</description>
-                           </node>
-                           <node>
-                              <name>LightPink</name>
-                              <description>CSS-color 0xFFB6C1.</description>
+                              <name>DeepPink</name>
+                              <description>CSS-color 0xFF1493.</description>
                            </node>
                            <node>
                               <name>HotPink</name>
                               <description>CSS-color 0xFF69B4.</description>
                            </node>
                            <node>
-                              <name>DeepPink</name>
-                              <description>CSS-color 0xFF1493.</description>
+                              <name>LightPink</name>
+                              <description>CSS-color 0xFFB6C1.</description>
+                           </node>
+                           <node>
+                              <name>MediumVioletRed</name>
+                              <description>CSS-color 0xC71585.</description>
                            </node>
                            <node>
                               <name>PaleVioletRed</name>
                               <description>CSS-color 0xDB7093.</description>
                            </node>
                            <node>
-                              <name>MediumVioletRed</name>
-                              <description>CSS-color 0xC71585.</description>
+                              <name>Pink</name>
+                              <description>CSS-color 0xFFC0CB.</description>
                            </node>
                         </node>
                         <node>
                            <name>Purple-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>Lavender</name>
-                              <description>CSS-color 0xE6E6FA.</description>
+                              <name>BlueViolet</name>
+                              <description>CSS-color 0x8A2BE2.</description>
                            </node>
                            <node>
-                              <name>Thistle</name>
-                              <description>CSS-color 0xD8BFD8.</description>
+                              <name>DarkMagenta</name>
+                              <description>CSS-color 0x8B008B.</description>
                            </node>
                            <node>
-                              <name>Plum</name>
-                              <description>CSS-color 0xDDA0DD.</description>
+                              <name>DarkOrchid</name>
+                              <description>CSS-color 0x9932CC.</description>
                            </node>
                            <node>
-                              <name>Orchid</name>
-                              <description>CSS-color 0xDA70D6.</description>
+                              <name>DarkSlateBlue</name>
+                              <description>CSS-color 0x483D8B.</description>
                            </node>
                            <node>
-                              <name>Violet</name>
-                              <description>CSS-color 0xEE82EE.</description>
+                              <name>DarkViolet</name>
+                              <description>CSS-color 0x9400D3.</description>
                            </node>
                            <node>
                               <name>Fuchsia</name>
                               <description>CSS-color 0xFF00FF.</description>
+                           </node>
+                           <node>
+                              <name>Indigo</name>
+                              <description>CSS-color 0x4B0082.</description>
+                           </node>
+                           <node>
+                              <name>Lavender</name>
+                              <description>CSS-color 0xE6E6FA.</description>
                            </node>
                            <node>
                               <name>Magenta</name>
@@ -4803,26 +4819,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0xBA55D3.</description>
                            </node>
                            <node>
-                              <name>DarkOrchid</name>
-                              <description>CSS-color 0x9932CC.</description>
-                           </node>
-                           <node>
-                              <name>DarkViolet</name>
-                              <description>CSS-color 0x9400D3.</description>
-                           </node>
-                           <node>
-                              <name>BlueViolet</name>
-                              <description>CSS-color 0x8A2BE2.</description>
-                           </node>
-                           <node>
-                              <name>DarkMagenta</name>
-                              <description>CSS-color 0x8B008B.</description>
-                           </node>
-                           <node>
-                              <name>Purple</name>
-                              <description>CSS-color 0x800080.</description>
-                           </node>
-                           <node>
                               <name>MediumPurple</name>
                               <description>CSS-color 0x9370DB.</description>
                            </node>
@@ -4831,76 +4827,160 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0x7B68EE.</description>
                            </node>
                            <node>
-                              <name>SlateBlue</name>
-                              <description>CSS-color 0x6A5ACD.</description>
+                              <name>Orchid</name>
+                              <description>CSS-color 0xDA70D6.</description>
                            </node>
                            <node>
-                              <name>DarkSlateBlue</name>
-                              <description>CSS-color 0x483D8B.</description>
+                              <name>Plum</name>
+                              <description>CSS-color 0xDDA0DD.</description>
+                           </node>
+                           <node>
+                              <name>Purple</name>
+                              <description>CSS-color 0x800080.</description>
                            </node>
                            <node>
                               <name>RebeccaPurple</name>
                               <description>CSS-color 0x663399.</description>
                            </node>
                            <node>
-                              <name>Indigo</name>
-                              <description>CSS-color 0x4B0082.</description>
+                              <name>SlateBlue</name>
+                              <description>CSS-color 0x6A5ACD.</description>
+                           </node>
+                           <node>
+                              <name>Thistle</name>
+                              <description>CSS-color 0xD8BFD8.</description>
+                           </node>
+                           <node>
+                              <name>Violet</name>
+                              <description>CSS-color 0xEE82EE.</description>
                            </node>
                         </node>
                         <node>
                            <name>Red-color</name>
                            <description>CSS color group.</description>
                            <node>
-                              <name>LightSalmon</name>
-                              <description>CSS-color 0xFFA07A.</description>
+                              <name>Crimson</name>
+                              <description>CSS-color 0xDC143C.</description>
                            </node>
                            <node>
-                              <name>Salmon</name>
-                              <description>CSS-color 0xFA8072.</description>
+                              <name>DarkRed</name>
+                              <description>CSS-color 0x8B0000.</description>
                            </node>
                            <node>
                               <name>DarkSalmon</name>
                               <description>CSS-color 0xE9967A.</description>
                            </node>
                            <node>
-                              <name>LightCoral</name>
-                              <description>CSS-color 0xF08080.</description>
+                              <name>FireBrick</name>
+                              <description>CSS-color 0xB22222.</description>
                            </node>
                            <node>
                               <name>IndianRed</name>
                               <description>CSS-color 0xCD5C5C.</description>
                            </node>
                            <node>
-                              <name>Crimson</name>
-                              <description>CSS-color 0xDC143C.</description>
+                              <name>LightCoral</name>
+                              <description>CSS-color 0xF08080.</description>
+                           </node>
+                           <node>
+                              <name>LightSalmon</name>
+                              <description>CSS-color 0xFFA07A.</description>
                            </node>
                            <node>
                               <name>Red</name>
                               <description>CSS-color 0xFF0000.</description>
                            </node>
                            <node>
-                              <name>FireBrick</name>
-                              <description>CSS-color 0xB22222.</description>
+                              <name>Salmon</name>
+                              <description>CSS-color 0xFA8072.</description>
+                           </node>
+                        </node>
+                        <node>
+                           <name>White-color</name>
+                           <description>CSS color group.</description>
+                           <node>
+                              <name>AliceBlue</name>
+                              <description>CSS-color 0xF0F8FF.</description>
                            </node>
                            <node>
-                              <name>DarkRed</name>
-                              <description>CSS-color 0x8B0000.</description>
+                              <name>AntiqueWhite</name>
+                              <description>CSS-color 0xFAEBD7.</description>
+                           </node>
+                           <node>
+                              <name>Azure</name>
+                              <description>CSS-color 0xF0FFFF.</description>
+                           </node>
+                           <node>
+                              <name>Beige</name>
+                              <description>CSS-color 0xF5F5DC.</description>
+                           </node>
+                           <node>
+                              <name>FloralWhite</name>
+                              <description>CSS-color 0xFFFAF0.</description>
+                           </node>
+                           <node>
+                              <name>GhostWhite</name>
+                              <description>CSS-color 0xF8F8FF.</description>
+                           </node>
+                           <node>
+                              <name>HoneyDew</name>
+                              <description>CSS-color 0xF0FFF0.</description>
+                           </node>
+                           <node>
+                              <name>Ivory</name>
+                              <description>CSS-color 0xFFFFF0.</description>
+                           </node>
+                           <node>
+                              <name>LavenderBlush</name>
+                              <description>CSS-color 0xFFF0F5.</description>
+                           </node>
+                           <node>
+                              <name>Linen</name>
+                              <description>CSS-color 0xFAF0E6.</description>
+                           </node>
+                           <node>
+                              <name>MintCream</name>
+                              <description>CSS-color 0xF5FFFA.</description>
+                           </node>
+                           <node>
+                              <name>MistyRose</name>
+                              <description>CSS-color 0xFFE4E1.</description>
+                           </node>
+                           <node>
+                              <name>OldLace</name>
+                              <description>CSS-color 0xFDF5E6.</description>
+                           </node>
+                           <node>
+                              <name>SeaShell</name>
+                              <description>CSS-color 0xFFF5EE.</description>
+                           </node>
+                           <node>
+                              <name>Snow</name>
+                              <description>CSS-color 0xFFFAFA.</description>
+                           </node>
+                           <node>
+                              <name>White</name>
+                              <description>CSS-color 0xFFFFFF.</description>
+                           </node>
+                           <node>
+                              <name>WhiteSmoke</name>
+                              <description>CSS-color 0xF5F5F5.</description>
                            </node>
                         </node>
                         <node>
                            <name>Yellow-color</name>
                            <description>CSS color group.</description>
                            <node>
+                              <name>DarkKhaki</name>
+                              <description>CSS-color 0xBDB76B.</description>
+                           </node>
+                           <node>
                               <name>Gold</name>
                               <description>CSS-color 0xFFD700.</description>
                            </node>
                            <node>
-                              <name>Yellow</name>
-                              <description>CSS-color 0xFFFF00.</description>
-                           </node>
-                           <node>
-                              <name>LightYellow</name>
-                              <description>CSS-color 0xFFFFE0.</description>
+                              <name>Khaki</name>
+                              <description>CSS-color 0xF0E68C.</description>
                            </node>
                            <node>
                               <name>LemonChiffon</name>
@@ -4911,100 +4991,28 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <description>CSS-color 0xFAFAD2.</description>
                            </node>
                            <node>
-                              <name>PapayaWhip</name>
-                              <description>CSS-color 0xFFEFD5.</description>
+                              <name>LightYellow</name>
+                              <description>CSS-color 0xFFFFE0.</description>
                            </node>
                            <node>
                               <name>Moccasin</name>
                               <description>CSS-color 0xFFE4B5.</description>
                            </node>
                            <node>
-                              <name>PeachPuff</name>
-                              <description>CSS-color 0xFFDAB9.</description>
-                           </node>
-                           <node>
                               <name>PaleGoldenRod</name>
                               <description>CSS-color 0xEEE8AA.</description>
                            </node>
                            <node>
-                              <name>Khaki</name>
-                              <description>CSS-color 0xF0E68C.</description>
+                              <name>PapayaWhip</name>
+                              <description>CSS-color 0xFFEFD5.</description>
                            </node>
                            <node>
-                              <name>DarkKhaki</name>
-                              <description>CSS-color 0xBDB76B.</description>
-                           </node>
-                        </node>
-                        <node>
-                           <name>White-color</name>
-                           <description>CSS color group.</description>
-                           <node>
-                              <name>White</name>
-                              <description>CSS-color 0xFFFFFF.</description>
+                              <name>PeachPuff</name>
+                              <description>CSS-color 0xFFDAB9.</description>
                            </node>
                            <node>
-                              <name>Snow</name>
-                              <description>CSS-color 0xFFFAFA.</description>
-                           </node>
-                           <node>
-                              <name>HoneyDew</name>
-                              <description>CSS-color 0xF0FFF0.</description>
-                           </node>
-                           <node>
-                              <name>MintCream</name>
-                              <description>CSS-color 0xF5FFFA.</description>
-                           </node>
-                           <node>
-                              <name>Azure</name>
-                              <description>CSS-color 0xF0FFFF.</description>
-                           </node>
-                           <node>
-                              <name>AliceBlue</name>
-                              <description>CSS-color 0xF0F8FF.</description>
-                           </node>
-                           <node>
-                              <name>GhostWhite</name>
-                              <description>CSS-color 0xF8F8FF.</description>
-                           </node>
-                           <node>
-                              <name>WhiteSmoke</name>
-                              <description>CSS-color 0xF5F5F5.</description>
-                           </node>
-                           <node>
-                              <name>SeaShell</name>
-                              <description>CSS-color 0xFFF5EE.</description>
-                           </node>
-                           <node>
-                              <name>Beige</name>
-                              <description>CSS-color 0xF5F5DC.</description>
-                           </node>
-                           <node>
-                              <name>OldLace</name>
-                              <description>CSS-color 0xFDF5E6.</description>
-                           </node>
-                           <node>
-                              <name>FloralWhite</name>
-                              <description>CSS-color 0xFFFAF0.</description>
-                           </node>
-                           <node>
-                              <name>Ivory</name>
-                              <description>CSS-color 0xFFFFF0.</description>
-                           </node>
-                           <node>
-                              <name>AntiqueWhite</name>
-                              <description>CSS-color 0xFAEBD7.</description>
-                           </node>
-                           <node>
-                              <name>Linen</name>
-                              <description>CSS-color 0xFAF0E6.</description>
-                           </node>
-                           <node>
-                              <name>LavenderBlush</name>
-                              <description>CSS-color 0xFFF0F5.</description>
-                           </node>
-                           <node>
-                              <name>MistyRose</name>
-                              <description>CSS-color 0xFFE4E1.</description>
+                              <name>Yellow</name>
+                              <description>CSS-color 0xFFFF00.</description>
                            </node>
                         </node>
                      </node>
@@ -5039,6 +5047,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>HSV-color</name>
                         <description>A color representation that models how colors appear under light.</description>
                         <node>
+                           <name>HSV-value</name>
+                           <description>An attribute of a visual sensation according to which an area appears to emit more or less light.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
                            <name>Hue</name>
                            <description>Attribute of a visual sensation according to which an area appears to be similar to one of the perceived colors.</description>
                            <node>
@@ -5068,39 +5090,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                               </attribute>
                            </node>
                         </node>
-                        <node>
-                           <name>HSV-value</name>
-                           <description>An attribute of a visual sensation according to which an area appears to emit more or less light.</description>
-                           <node>
-                              <name>#</name>
-                              <attribute>
-                                 <name>takesValue</name>
-                              </attribute>
-                              <attribute>
-                                 <name>valueClass</name>
-                                 <value>numericClass</value>
-                              </attribute>
-                           </node>
-                        </node>
                      </node>
                      <node>
                         <name>RGB-color</name>
                         <description>A color from the RGB schema.</description>
-                        <node>
-                           <name>RGB-red</name>
-                           <description>The red component.</description>
-                           <node>
-                              <name>#</name>
-                              <description>R value of RGB between 0 and 1.</description>
-                              <attribute>
-                                 <name>takesValue</name>
-                              </attribute>
-                              <attribute>
-                                 <name>valueClass</name>
-                                 <value>numericClass</value>
-                              </attribute>
-                           </node>
-                        </node>
                         <node>
                            <name>RGB-blue</name>
                            <description>The blue component.</description>
@@ -5122,6 +5115,21 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <node>
                               <name>#</name>
                               <description>G value of RGB between 0 and 1.</description>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
+                           <name>RGB-red</name>
+                           <description>The red component.</description>
+                           <node>
+                              <name>#</name>
+                              <description>R value of RGB between 0 and 1.</description>
                               <attribute>
                                  <name>takesValue</name>
                               </attribute>
@@ -5247,6 +5255,99 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>extensionAllowed</name>
             </attribute>
             <node>
+               <name>Task-action-type</name>
+               <description>How an agent action should be interpreted in terms of the task specification.</description>
+               <node>
+                  <name>Appropriate-action</name>
+                  <description>An action suitable or proper in the circumstances.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Inappropriate-action</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Correct-action</name>
+                  <description>An action that was a correct response in the context of the task.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Incorrect-action</value>
+                     <value>Indeterminate-action</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Correction</name>
+                  <description>An action offering an improvement to replace a mistake or error.</description>
+               </node>
+               <node>
+                  <name>Done-indication</name>
+                  <description>An action that indicates that the participant has completed this step in the task.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Ready-indication</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Imagined-action</name>
+                  <description>Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.</description>
+               </node>
+               <node>
+                  <name>Inappropriate-action</name>
+                  <description>An action not in keeping with what is correct or proper for the task.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Appropriate-action</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Incorrect-action</name>
+                  <description>An action considered wrong or incorrect in the context of the task.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Correct-action</value>
+                     <value>Indeterminate-action</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Indeterminate-action</name>
+                  <description>An action that cannot be distinguished between two or more possibibities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Correct-action</value>
+                     <value>Incorrect-action</value>
+                     <value>Miss</value>
+                     <value>Near-miss</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Miss</name>
+                  <description>An action considered to be a failure in the context of the task. For example, if the agent is supposed to try to hit a target and misses.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Near-miss</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Near-miss</name>
+                  <description>An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Miss</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Omitted-action</name>
+                  <description>An expected response was skipped.</description>
+               </node>
+               <node>
+                  <name>Ready-indication</name>
+                  <description>An action that indicates that the participant is ready to perform the next step in the task.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Done-indication</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
                <name>Task-attentional-demand</name>
                <description>Strategy for allocating attention toward goal-relevant information.</description>
                <node>
@@ -5318,6 +5419,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Task-effect-evidence</name>
                <description>The evidence supporting the conclusion that the event had the specified effect.</description>
                <node>
+                  <name>Behavioral-evidence</name>
+                  <description>An indication or conclusion based on the behavior of an agent.</description>
+               </node>
+               <node>
                   <name>Computational-evidence</name>
                   <description>A type of evidence in which data are produced, and/or generated, and/or analyzed on a computer.</description>
                </node>
@@ -5328,10 +5433,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Intended-effect</name>
                   <description>A phenomenon that is intended to follow and be caused by some previous phenomenon.</description>
-               </node>
-               <node>
-                  <name>Behavioral-evidence</name>
-                  <description>An indication or conclusion based on the behavior of an agent.</description>
                </node>
             </node>
             <node>
@@ -5364,99 +5465,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Warning</name>
                   <description>Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.</description>
-               </node>
-            </node>
-            <node>
-               <name>Task-action-type</name>
-               <description>How an agent action should be interpreted in terms of the task specification.</description>
-               <node>
-                  <name>Appropriate-action</name>
-                  <description>An action suitable or proper in the circumstances.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Inappropriate-action</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Correct-action</name>
-                  <description>An action that was a correct response in the context of the task.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Incorrect-action</value>
-                     <value>Indeterminate-action</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Correction</name>
-                  <description>An action offering an improvement to replace a mistake or error.</description>
-               </node>
-               <node>
-                  <name>Done-indication</name>
-                  <description>An action that indicates that the participant has completed this step in the task.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Ready-indication</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Incorrect-action</name>
-                  <description>An action considered wrong or incorrect in the context of the task.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Correct-action</value>
-                     <value>Indeterminate-action</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Imagined-action</name>
-                  <description>Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.</description>
-               </node>
-               <node>
-                  <name>Inappropriate-action</name>
-                  <description>An action not in keeping with what is correct or proper for the task.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Appropriate-action</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Indeterminate-action</name>
-                  <description>An action that cannot be distinguished between two or more possibibities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Correct-action</value>
-                     <value>Incorrect-action</value>
-                     <value>Miss</value>
-                     <value>Near-miss</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Omitted-action</name>
-                  <description>An expected response was skipped.</description>
-               </node>
-               <node>
-                  <name>Miss</name>
-                  <description>An action considered to be a failure in the context of the task. For example, if the agent is supposed to try to hit a target and misses.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Near-miss</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Near-miss</name>
-                  <description>An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Miss</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Ready-indication</name>
-                  <description>An action that indicates that the participant is ready to perform the next step in the task.</description>
-                  <attribute>
-                     <name>relatedTag</name>
-                     <value>Done-indication</value>
-                  </attribute>
                </node>
             </node>
             <node>
@@ -5551,16 +5559,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
+                  <name>Penalty</name>
+                  <description>A disadvantage, loss, or hardship due to some action.</description>
+               </node>
+               <node>
                   <name>Planned</name>
                   <description>Something that was decided on or arranged in advance.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Unplanned</value>
                   </attribute>
-               </node>
-               <node>
-                  <name>Penalty</name>
-                  <description>A disadvantage, loss, or hardship due to some action.</description>
                </node>
                <node>
                   <name>Priming</name>
@@ -5627,12 +5635,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.</description>
             </node>
             <node>
-               <name>Less-than</name>
-               <description>(A, (Less-than, B)) indicates that A is smaller than B. Here A and B could refer to sizes, orders, positions or other quantities.</description>
-            </node>
-            <node>
-               <name>Less-than-or-equal-to</name>
-               <description>(A, (Less-than-or-equal-to, B)) indicates that the relative size or order of A is smaller than or equal to B.</description>
+               <name>Equal-to</name>
+               <description>(A, (Equal-to, B)) indicates that the size or order of A is the same as that of B.</description>
             </node>
             <node>
                <name>Greater-than</name>
@@ -5643,8 +5647,12 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>(A, (Greater-than-or-equal-to, B)) indicates that the relative size or order of A is bigger than or the same as that of B.</description>
             </node>
             <node>
-               <name>Equal-to</name>
-               <description>(A, (Equal-to, B)) indicates that the size or order of A is the same as that of B.</description>
+               <name>Less-than</name>
+               <description>(A, (Less-than, B)) indicates that A is smaller than B. Here A and B could refer to sizes, orders, positions or other quantities.</description>
+            </node>
+            <node>
+               <name>Less-than-or-equal-to</name>
+               <description>(A, (Less-than-or-equal-to, B)) indicates that the relative size or order of A is smaller than or equal to B.</description>
             </node>
             <node>
                <name>Not-equal-to</name>
@@ -5914,6 +5922,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                <description>(A, (Top-of, B)) means A is on the uppermost part, side, or surface of B.</description>
             </node>
             <node>
+               <name>Underneath</name>
+               <description>(A, (Underneath, B)) means A is situated directly below and may be concealed by B.</description>
+            </node>
+            <node>
                <name>Upper-center-of</name>
                <description>(A, (Upper-center-of, B)) means A is situated on the upper center part of B (due north). This relation is often used to specify qualitative information about screen position.</description>
                <attribute>
@@ -5951,10 +5963,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <value>Upper-center-of</value>
                   <value>Lower-right-of</value>
                </attribute>
-            </node>
-            <node>
-               <name>Underneath</name>
-               <description>(A, (Underneath, B)) means A is situated directly below and may be concealed by B.</description>
             </node>
             <node>
                <name>Within</name>
@@ -7052,17 +7060,17 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>deprecatedFrom</name>
-         <description>Indicates that this element is deprecated. The value of the attribute is the latest schema version in which the element appeared in undeprecated form.</description>
-         <property>
-            <name>elementProperty</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
          <name>defaultUnits</name>
          <description>A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.</description>
          <property>
             <name>unitClassProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>deprecatedFrom</name>
+         <description>This element is deprecated. The value of the attribute is the latest schema version in which the element appeared before it was deprecated.</description>
+         <property>
+            <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
@@ -7080,14 +7088,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
-         <description>Indicates this schema element came from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
+         <description>This schema element is from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>recommended</name>
-         <description>A schema attribute indicating that the event-level HED string should include this tag.</description>
+         <description>Any event-level HED string should include this tag.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7107,7 +7115,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>requireChild</name>
-         <description>A schema attribute indicating that one of the node elements descendants must be included when using this tag.</description>
+         <description>One of the node elements descendants must be included when using this tag.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7117,7 +7125,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>required</name>
-         <description>A schema attribute indicating that every event-level HED string should include this tag.</description>
+         <description>Every event-level HED string should include this tag.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7127,7 +7135,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>reserved</name>
-         <description>A schema attribute indicating that this tag has special meaning and requires special handling by tools.</description>
+         <description>This tag has special meaning and requires special handling by tools.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7137,7 +7145,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>rooted</name>
-         <description>Indicates a top-level library schema node is identical to a node of the same name in the partnered standard schema. This attribute can only appear in nodes that have the inLibrary schema attribute.</description>
+         <description>A top-level library schema node should appear under indicated node in partnered standard schema.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7264,31 +7272,31 @@ Each term in this vocabulary has a human-readable description and may include ad
       </propertyDefinition>
       <propertyDefinition>
          <name>elementProperty</name>
-         <description>Indicates this schema attribute can apply to any type of element(tag term, unit class, etc).</description>
+         <description>Indicates a schema attribute can apply to any type of element (tag term, unit class, etc).</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>isInheritedProperty</name>
-         <description>Indicates that this attribute is inherited by child nodes. This property only applies to schema attributes for nodes.</description>
+         <description>Indicates a schema attribute is inherited by child nodes. This property only applies to schema attributes for nodes.</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>nodeProperty</name>
-         <description>Indicates this schema attribute applies to node (tag-term) elements. This was added to allow for an attribute to apply to multiple elements.</description>
+         <description>Indicates a attribute applies to node (tag-term) elements. This was added to allow for an attribute to apply to multiple elements.</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>unitClassProperty</name>
-         <description>Indicates that the schema attribute is meant to be applied to unit classes.</description>
+         <description>Indicates a schema attribute applies to unit classes.</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>unitModifierProperty</name>
-         <description>Indicates that the schema attribute is meant to be applied to unit modifier classes.</description>
+         <description>Indicates a schema attribute applies to unit modifier classes.</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>unitProperty</name>
-         <description>Indicates that the schema attribute is meant to be applied to units within a unit class.</description>
+         <description>Indicates a schema attribute applies to units within a unit class.</description>
       </propertyDefinition>
       <propertyDefinition>
          <name>valueClassProperty</name>
-         <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
+         <description>Indicates a schema attribute applies to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
    <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
