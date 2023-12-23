@@ -90,19 +90,25 @@ corrections in tag values or units.
 Here is a summary of the types of changes that correspond to different
 levels of changes in the semantic version:
 
-| Change                          | Semantic-level | 
-| ---------------------------------- | -------------- |
-| Major addition to HED functionality     | Major  |
-| Tag deleted from schema.                | Major  |
-| Unit or unit class removed from node.   | Major  |
-| New tag added to the schema.            | Minor  |
-| New attribute added to schema.          | Minor  |
-| New unit class or unit added to schema. | Minor  |
-| New unit class added to node.           | Minor  |
-| Node moved in schema without change in meaning. | Minor |
-| Revision of description field in schema.        | Patch   |
-| Correction of suggestedTag or relatedTag.       | Patch  |
-| Correction of wiki syntax such as closing tags. | Patch |
+| Change                                              | Semantic-level |
+|-----------------------------------------------------|----------------|
+| Major addition to HED functionality                 | Major          |
+| Tag deleted from schema.                            | Major          |
+| Unit or unit class removed from node.               | Major          |
+| Node attribute value changed (excluding below)      | Major          |
+| Inherited attribute change                          | Minor          |
+| New property added to schema                        | Minor          |
+| New value class added to schema                     | Minor          |
+| New unit modifier added to schema                   | Minor          |
+| New tag added to the schema.                        | Minor          |
+| New attribute added to schema.                      | Minor          |
+| New unit class or unit added to schema.             | Minor          |
+| New unit class added to node.                       | Minor          |
+| New value class added to node.                      | Minor          |
+| Node moved in schema without change in meaning.     | Minor          |
+| Revision of description field in schema.            | Patch          |
+| Correction of suggestedTag or relatedTag.           | Patch          |
+
 
 **Note:** It is an official policy that once in a schema, a node will not be removed.
 If a node becomes out-of-date, a `deprecated` attribute will be added to the tag in the schema.
