@@ -13,46 +13,46 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 '''Modulator''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
     * Sleep-modulator
-        ** Sleep-deprivation
+        ** Sleep-deprivation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Sleep-following-sleep-deprivation
+        ** Sleep-following-sleep-deprivation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Natural-sleep
+        ** Natural-sleep <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Induced-sleep
+        ** Induced-sleep <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Drowsiness
+        ** Drowsiness <nowiki> [When sleep/drowsiness features are scored during drowsiness, drowsiness should be listed as a modulator (Source: Beniczky ea 2017, Section 7 and Table 2).]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Awakening
+        ** Awakening <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Medication-modulator
-        ** Medication-administered-during-recording
+        ** Medication-administered-during-recording <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Medication-withdrawal-or-reduction-during-recording
+        ** Medication-withdrawal-or-reduction-during-recording <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Eye-modulator
-        ** Manual-eye-closure
+        ** Manual-eye-closure <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Manual-eye-opening
+        ** Manual-eye-opening <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Stimulation-modulator
-        ** Intermittent-photic-stimulation {suggestedTag=Intermittent-photic-stimulation-effect}
+        ** Intermittent-photic-stimulation {suggestedTag=Intermittent-photic-stimulation-effect} <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue,valueClass=numericClass, unitClass=frequencyUnits} </nowiki>
-        ** Auditory-stimulation
+        ** Auditory-stimulation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Nociceptive-stimulation
+        ** Nociceptive-stimulation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Hyperventilation
+    * Hyperventilation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Physical-effort
+    * Physical-effort <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Cognitive-task
+    * Cognitive-task <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Other-modulator-or-procedure {requireChild}
+    * Other-modulator-or-procedure {requireChild} <nowiki> [Free text describing other modulators or procedures, Source: Beniczky ea 2017, Table 2.]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
@@ -968,7 +968,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
 
-'''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
+'''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
 
@@ -978,8 +978,8 @@ The SCORE standard defines terms for describing phenomena observed in scalp EEG 
 The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
 A second revised and extended version of SCORE achieved international consensus.
 
-[1] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54.6 (2013).
-[2] Beniczky, Sandor, et al. "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128.11 (2017). 
+[1] Beniczky ea 2013: "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54.6
+[2] Beniczky ea 2017: "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128.11 
 
 TPA, July 2023
 
