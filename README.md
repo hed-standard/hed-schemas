@@ -21,12 +21,10 @@ particularly the [**How do you use HED?**](https://www.hed-resources.org/en/late
 for information about how to get started or how to get involved in the HED community.
 
 ## Viewing HED schemas
-
 The **HED schemas** are hierarchically-structured vocabularies for annotating data.
 The HED ecosystem includes a **standard schema** containing the basic vocabulary
 needed for annotation of experimental data as well as specialized **library schemas** for
 the additional field-specific terms needed to complete an annotation.
-
 
 All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
 
@@ -35,13 +33,24 @@ The following table summarizes the current versions of the HED schemas.
 | Schema | Latest<br/>version| Description | Prerelease<br/>version  | DOI  |
 | ------ | --------------- | ------- | ------------------------- | ---- |
 | [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_library.html).) |1.1.1 | 10.5281/zenodo.7897596  |
+| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html.) |1.1.1 | 10.5281/zenodo.7897596  |
 |  [**lisa**](library_schemas/lisa) |  | LISA linguistic stimuli annotation vocabulary. | 0.0.1 |  |
 |  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
 
+## HED formats
+HED schemas are stored in two formats: `.mediawiki` and `.xml`.
+The `.mediawiki` Markdown format is used by schema developers to create and
+maintain HED schemas. For each schema, the `.mediawiki` versions are
+stored in the respective `.mediawiki` directory for the schema.
+
+The `.mediawiki` format is converted to an equivalent
+`.xml` format for use with all HED analysis and validation tools. 
+For each schema, the `.xml` versions are
+stored in the respective `.xml` directory for the schema.
+An online schema conversion tool is available at as part of the
+[**HED online tools**](https://hedtools.org/hed/schemas).
 
 ## HED revision process
-
 If you want to suggest a new feature or a change to the standard HED schema or one
 of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
 to this repository, and it will find its way to the right place.
@@ -53,36 +62,29 @@ schema that is located in the `prerelease` subdirectory.
 Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
 
-For a more complete view of the process see the [**HED schema development guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.html).
-
+For a more complete view of the process see the [**HED schema developer's guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.htmlhttps://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html).
 
 ## Tools to help with HED annotations
-
-The GUI tool [**CTagger**](https://github.com/hed-standard/CTagger) is available to help users with the annotation process. 
+The GUI tool [**CTagger**](https://www.hed-resources.org/en/latest/CTaggerGuiTaggingTool.html) is available to help users with the annotation process. 
 CTagger can be used as a standalone application or can be called from EEGLAB via the
-[**hedtools plug-in**](https://github.com/hed-standard/hed-matlab) to annotate an EEGLAB dataset/STUDY directly. 
+[**hedtools plug-in**](https://www.hed-resources.org/en/latest/HedMatlabTools.html) to annotate an EEGLAB dataset/STUDY directly. 
 Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
 
-
 ## Web-based HED tools
-
 The current online HED tools include an online validator of spreadsheets (Excel or tsv)
 containing HED tags. 
 Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
 
-The released version of the web-based HED tools is located at [**https://hedtools.ucsd.edu/hed**](https://hedtools.ucsd.edu/hed).
+The released version of the web-based HED tools is located at [**https://hedtools.org**](https://hedtools.org).
 The development version of the tools, used to test features before release,
-is located at [**https://hedtools.ucsd.edu/hed_dev**](https://hedtools.ucsd.edu/hed_dev).
-
+is located at [**https://hedtools.org/hed_dev**](https://hedtools.org/hed_dev).
 
 ## HED semantic versioning
-
-HED schema use the following rules for
+HED schemas use the following rules for
 changing the  *major.minor.patch* semantic version.
-These rules are based on the assumption that the [**HED tag**](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) 
-short form will not require data annotators to retag their data for patch-level or minor-version changes of the schema.
-That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. 
-However, the reverse is not necessarily true.
+These rules are based on the assumption that annotators using the [**HED tag**](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) 
+short form will not have to retag their data for patch-level or minor-version changes of the schema.
+That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*.
 In addition, validation errors might occur
 during for patch-level or minor-version changes for changes or
 corrections in tag values or units. 
@@ -90,27 +92,28 @@ corrections in tag values or units.
 Here is a summary of the types of changes that correspond to different
 levels of changes in the semantic version:
 
-| Change                                              | Semantic-level |
-|-----------------------------------------------------|----------------|
-| Major addition to HED functionality                 | Major          |
-| Tag deleted from schema.                            | Major          |
-| Unit or unit class removed from node.               | Major          |
-| Node attribute value changed (excluding below)      | Major          |
-| Inherited attribute change                          | Minor          |
-| New property added to schema                        | Minor          |
-| New value class added to schema                     | Minor          |
-| New unit modifier added to schema                   | Minor          |
-| New tag added to the schema.                        | Minor          |
-| New attribute added to schema.                      | Minor          |
-| New unit class or unit added to schema.             | Minor          |
-| New unit class added to node.                       | Minor          |
-| New value class added to node.                      | Minor          |
-| Node moved in schema without change in meaning.     | Minor          |
-| Revision of description field in schema.            | Patch          |
-| Correction of suggestedTag or relatedTag.           | Patch          |
+| Change                                          | Semantic-level |
+|-------------------------------------------------|----------------|
+| Major addition to HED functionality             | Major          |
+| Tag deleted from schema.                        | Major          |
+| Unit or unit class removed from node.           | Major          |
+| Node attribute value changed                    | Minor          |
+| Inherited attribute change                      | Minor          |
+| New property added to schema                    | Minor          |
+| New value class added to schema                 | Minor          |
+| New unit modifier added to schema               | Minor          |
+| New tag added to the schema.                    | Minor          |
+| New attribute added to schema.                  | Minor          |
+| New unit class or unit added to schema.         | Minor          |
+| New unit class added to node.                   | Minor          |
+| New value class added to node.                  | Minor          |
+| Node moved in schema without change in meaning. | Minor          |
+| Revision of description field in schema.        | Patch          |
+| Correction of suggestedTag or relatedTag.       | Patch          |
 
 
-**Note:** It is an official policy that once in a schema, a node will not be removed.
+**Note:** It is an official policy that once in a schema, a node will not be removed without
+a major schema version change.
 If a node becomes out-of-date, a `deprecated` attribute will be added to the tag in the schema.
 Suggested replacement tags should be included in the node description.
 A suggested replacement should be added to the tag patch table.
@@ -146,9 +149,10 @@ and events with temporal extent.
 
 > [**Stable link for the latest version of the HED standard schema**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml).
 
+The full HED specification is available at the
+[**HED specification**](https://hed-specification.readthedocs.io/en/latest/index.html) website. 
 
-### Mapping HED tags to defined terms in existing ontologies
-
-The following working document describes the origin of the descriptions associated with individual nodes in the HED hierarchy. Many terms appear in the NCIT ontology (National Cancer Institute Thesaurus OBO edition).
-
-> [**Google doc with mapping of HED-3G term descriptions to existing ontology terms**](https://drive.google.com/file/d/13y17OwwNBlHdhB7hguSmOBdxn0Uk4hsI/view?usp=sharing) 
+### HED ontologies
+Efforts are underway to map HED to a formal ontology in order to leverage links to 
+other terminologies and vocabularies. The development effort is housed on the
+[**hed-ontology**](https://github.com/hed-standard/hed-ontology) GitHub repository.
