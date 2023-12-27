@@ -1,6 +1,6 @@
 HED version="8.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd"
 
-'''Prologue'''
+'''Prologue''' <wiki>[An overview of the schema and its purpose.]</nowiki>
 The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
@@ -1153,7 +1153,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 !# end schema 
 
 '''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-* accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki> 
+* aomment ccelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki> 
 ** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * angleUnits <nowiki>{defaultUnits=radian}</nowiki> 
 ** radian <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
@@ -1256,7 +1256,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
 
 
-'''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
+'''Value classes''' <nowiki>[Rules for the values provided for placeholders.]</nowiki>
 * dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki> 
 * nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
 * numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
@@ -1266,7 +1266,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 
 '''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
 * allowedCharacter <nowiki>{valueClassProperty}[A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
-* conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The multiplicative factor to multiply these units to convert to default units.]</nowiki>
+* conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The factor to multiply these units by to convert to default units.]</nowiki>
 * defaultUnits <nowiki>{unitClassProperty}[A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
 * deprecatedFrom <nowiki>{elementProperty}[This element is deprecated. The value of the attribute is the latest schema version in which the element appeared before it was deprecated.]</nowiki>
 * extensionAllowed <nowiki>{boolProperty, nodeProperty, isInheritedProperty}[A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
@@ -1300,6 +1300,6 @@ Each term in this vocabulary has a human-readable description and may include ad
 * unitProperty <nowiki>[Indicates a schema attribute applies to units within a unit class.]</nowiki> 
 * valueClassProperty <nowiki>[Indicates a schema attribute applies to value classes.]</nowiki>
 
-'''Epilogue'''
+'''Epilogue'''<wiki>[This section citation, licensing, and other information.]</nowiki>
 This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
 !# end hed 
