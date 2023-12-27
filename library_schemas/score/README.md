@@ -19,15 +19,17 @@ A second revised and extended version of SCORE achieved international consensus.
 
 ### References
 
-[1] Pal Attia, T. et al. (2023 preprint).  
-*Hierarchical Event Descriptor library schema for EEG data annotation*   
-[https://arxiv.org/abs/2310.15173](https://arxiv.org/abs/2310.15173).   
-[2] Beniczky, S, et al. (2013).  
-*Standardized computer based organized reporting of EEG: SCORE.*  
-Epilepsia 54.6 (2013).  
-[3] Beniczky, S., et al. (2017).  
-*Standardized computer based organized reporting of EEG: SCORE second version.*  
-Clinical Neurophysiology 128.11 (2017). 
+> [1] Pal Attia, T. et al. (2023 preprint).  
+> *Hierarchical Event Descriptor library schema for EEG data annotation*   
+> [https://arxiv.org/abs/2310.15173](https://arxiv.org/abs/2310.15173).   
+
+> [2] Beniczky, S, et al. (2013).  
+> *Standardized computer based organized reporting of EEG: SCORE.*  
+> Epilepsia 54.6 (2013).  
+
+> [3] Beniczky, S., et al. (2017).  
+> *Standardized computer based organized reporting of EEG: SCORE second version.*  
+> Clinical Neurophysiology 128.11 (2017). 
 
 ## Stable links for HED SCORE
 

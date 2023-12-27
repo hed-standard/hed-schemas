@@ -27,7 +27,7 @@ about versioning, availability, and other information.
 The purpose of the HED standard schema is to provide a standardized 
 annotation vocabulary that is generally applicable for most neuroimaging
 and behavioral experiments. More specialized terms can be available by
-extending tag paths in the standardized schema or, if available, by using
+extending tag paths in the standard schema or, if available, by using
 terms from more specialized vocabularies.
 
 ## Viewing the HED schema
