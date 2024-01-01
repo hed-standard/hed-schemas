@@ -222,39 +222,37 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in respiration sensors. (Source: Beniczky ea 2017, Section 13.)]</nowiki>
         ** Respiration-oxygen-saturation <nowiki> {requireChild} </nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-        ** Respiration-feature
-            *** Apnoe-respiration <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Apnea-hypopnea-index-respiration <nowiki> {suggestedTag=Frequency} [Events/h.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-respiration
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Tachypnea-respiration <nowiki> {suggestedTag=Frequency} [Cycles/min.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Other-respiration-feature <nowiki> {requireChild} </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Apnoe-respiration <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Apnea-hypopnea-index-respiration <nowiki> {suggestedTag=Frequency} [Events/h.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Periodic-respiration
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Tachypnea-respiration <nowiki> {suggestedTag=Frequency} [Cycles/min.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Other-respiration-feature <nowiki> {requireChild} </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ECG channel findings include observations and characteristics associated with the Electrocardiogram recording.]</nowiki>
         ** ECG-QT-period <nowiki> {requireChild} </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-feature
-            *** ECG-sinus-rhythm <nowiki> {suggestedTag=Frequency} [Normal rhythm.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-arrhythmia
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-asystolia <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-bradycardia <nowiki> {suggestedTag=Frequency} </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-extrasystole
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-ventricular-premature-depolarization <nowiki> {suggestedTag=Frequency} </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** ECG-tachycardia <nowiki> {suggestedTag=Frequency} </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Other-ECG-feature {requireChild}
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-sinus-rhythm <nowiki> {suggestedTag=Frequency} [Normal rhythm.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-arrhythmia
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-asystolia <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-bradycardia <nowiki> {suggestedTag=Frequency} </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-extrasystole
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-ventricular-premature-depolarization <nowiki> {suggestedTag=Frequency} </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** ECG-tachycardia <nowiki> {suggestedTag=Frequency} </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Other-ECG-feature {requireChild}
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [EMG channel findings involve distinctive muscular activity patterns and characteristics observed in the Electromyography recording.]</nowiki>
         ** EMG-muscle-side
             *** EMG-left-muscle
@@ -265,30 +263,29 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** EMG-muscle-name
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-feature
-            *** EMG-myoclonus
-                **** Negative-myoclonus
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** EMG-myoclonus-rhythmic
-                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                    **** EMG-myoclonus-arrhythmic
-                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                    **** EMG-myoclonus-synchronous
-                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                    **** EMG-myoclonus-asynchronous
-                        ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-PLMS <nowiki>[Periodic limb movements in sleep.]</nowiki>
-            *** EMG-spasm
+        ** EMG-myoclonus
+            *** Negative-myoclonus
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-tonic-contraction
+            *** EMG-myoclonus-rhythmic
+                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                *** EMG-myoclonus-arrhythmic
+                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                *** EMG-myoclonus-synchronous
+                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                *** EMG-myoclonus-asynchronous
+                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** EMG-PLMS <nowiki>[Periodic limb movements in sleep.]</nowiki>
+        ** EMG-spasm
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** EMG-tonic-contraction
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** EMG-asymmetric-activation 
+            *** EMG-asymmetric-activation-left-first
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-asymmetric-activation 
-              **** EMG-asymmetric-activation-left-first
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-              **** EMG-asymmetric-activation-right-first
-                  ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Other-EMG-features <nowiki> {requireChild} </nowiki>
+            *** EMG-asymmetric-activation-right-first
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Other-EMG-features <nowiki> {requireChild} </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * Other-polygraphic-channel <nowiki> {requireChild} </nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
