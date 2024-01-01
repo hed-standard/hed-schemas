@@ -219,42 +219,42 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
     * EOG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Electrooculogram (EOG) channel findings. (Source: Beniczky ea 2017, Section 13.)]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in respiration sensors. (Source: Beniczky ea 2017, Section 13.)]</nowiki>
-        ** Respiration-oxygen-saturation <nowiki> {requireChild} </nowiki>
+    * Respiration-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in respiration sensors. (Source: Beniczky ea 2017, Section 13, Table 16.)]</nowiki>
+        ** Oxygen-saturation <nowiki> {requireChild}[Percentage + free text. (Source: Beniczky ea 2013, Table 9; Beniczky ea 2017, Table 16.)] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
+        ** Apnea <nowiki>[Duration (range in seconds). (Source: Beniczky ea 2013, Table 9.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-        ** Apnoe-respiration <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
+        ** Hypopnea <nowiki>[Duration (range in seconds). (Source: Beniczky ea 2013, Table 9.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** Apnea-hypopnea-index <nowiki> {suggestedTag=Frequency} [Events/hour. (Source: Beniczky ea 2013, Table 9.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** Periodic-respiration <nowiki> [Source: Beniczky ea 2017, Table 16] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.(Source: Beniczky ea 2017, Table 16.)]</nowiki>
+        ** Tachypnea <nowiki> {suggestedTag=Frequency} [Numerical value for cycles / minute. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** Other-respiration-feature <nowiki> {requireChild} [Source: Beniczky ea 2017, Table 16] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Hypopnea-respiration <nowiki>[Add duration (range in seconds) and comments in free text]</nowiki>
+    * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in Electrocardiogram recordings. (Source: Beniczky ea 2017, Section 13, Table 16.)]</nowiki>
+        ** ECG-QT-period <nowiki> {requireChild}[Value and free text. (Source: Beniczky ea 2013, Table 9; Beniczky ea 2017, Table 16.)] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Apnea-hypopnea-index-respiration <nowiki> {suggestedTag=Frequency} [Events/h.]</nowiki>
+        ** ECG-normal-rhythm <nowiki> {suggestedTag=Frequency} [Normal rhythm. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Periodic-respiration
+        ** ECG-arrhythmia <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Tachypnea-respiration <nowiki> {suggestedTag=Frequency} [Cycles/min.]</nowiki>
+        ** ECG-asystolia <nowiki>[Duration (range in seconds). (Source: Beniczky ea 2013, Table 9.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** ECG-bradycardia <nowiki> {suggestedTag=Frequency}[Numerical value for frequency in beats/minute. (Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)] </nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** ECG-extrasystole <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Other-respiration-feature <nowiki> {requireChild} </nowiki>
+        ** ECG-ventricular-premature-depolarization <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * ECG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [ECG channel findings include observations and characteristics associated with the Electrocardiogram recording.]</nowiki>
-        ** ECG-QT-period <nowiki> {requireChild} </nowiki>
+        ** ECG-tachycardia <nowiki> {suggestedTag=Frequency}[Numerical value for frequency in beats/minute. (Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)] </nowiki>
+            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+        ** Other-ECG-feature {requireChild} <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-sinus-rhythm <nowiki> {suggestedTag=Frequency} [Normal rhythm.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-arrhythmia
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-asystolia <nowiki>[Add duration (range in seconds) and comments in free text.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-bradycardia <nowiki> {suggestedTag=Frequency} </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-extrasystole
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-ventricular-premature-depolarization <nowiki> {suggestedTag=Frequency} </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** ECG-tachycardia <nowiki> {suggestedTag=Frequency} </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Other-ECG-feature {requireChild}
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [EMG channel findings involve distinctive muscular activity patterns and characteristics observed in the Electromyography recording.]</nowiki>
-        ** EMG-muscle-side
+    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in Electromyography recordings. (Source: Beniczky ea 2017, Section 13, Table 16.)]</nowiki>
+        ** EMG-muscle-side <nowiki> [(Source: Beniczky ea 2013, Table 9; Beniczky ea 2017, Table 16.)] </nowiki>
             *** EMG-left-muscle
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** EMG-right-muscle
@@ -263,30 +263,30 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** EMG-muscle-name
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-myoclonus
-            *** Negative-myoclonus
+        ** EMG-myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+            *** Negative-myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-myoclonus-rhythmic
-                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                *** EMG-myoclonus-arrhythmic
-                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                *** EMG-myoclonus-synchronous
-                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                *** EMG-myoclonus-asynchronous
-                    **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-PLMS <nowiki>[Periodic limb movements in sleep.]</nowiki>
-        ** EMG-spasm
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-tonic-contraction
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-asymmetric-activation 
-            *** EMG-asymmetric-activation-left-first
+            *** EMG-myoclonus-rhythmic <nowiki> [Numerical value for frequency. (Source: Beniczky ea 2017, Table 16.)] </nowiki>
+                *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+            *** EMG-myoclonus-arrhythmic <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-asymmetric-activation-right-first
+            *** EMG-myoclonus-synchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Other-EMG-features <nowiki> {requireChild} </nowiki>
+            *** EMG-myoclonus-asynchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** EMG-PLMS <nowiki>[Periodic limb movements in sleep. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
+        ** EMG-spasm <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * Other-polygraphic-channel <nowiki> {requireChild} </nowiki>
+        ** EMG-tonic-contraction <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** EMG-asymmetric-activation <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+            *** EMG-asymmetric-activation-left-first <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** EMG-asymmetric-activation-right-first <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Other-EMG-features <nowiki> {requireChild} [Source: Beniczky ea 2017, Table 16.]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+    * Other-polygraphic-channel <nowiki> {requireChild}[Source: Beniczky ea 2017, Section 13.] </nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
 
