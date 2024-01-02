@@ -335,7 +335,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Polysharp-waves-morphology <nowiki>[A sequence of two or more sharp-waves. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Slow-wave-large-amplitude-morphology <nowiki>[Slow wave of large amplitude. (Source: Beniczky ea 2017, Table 12)]</nowiki>
+        ** Slow-wave-large-amplitude-morphology <nowiki>[Slow wave of large amplitude. (Source: Beniczky ea 2017, Table 12.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Irregular-delta-or-theta-activity-morphology <nowiki>[EEG activity consisting of repetitive waves of inconsistent wave-duration but in delta and/or theta range (greater than 125 ms). (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -355,58 +355,57 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Periodic-discharge-morphology <nowiki>[Periodic discharges not further specified (PDs).]</nowiki>
-            *** Periodic-discharge-superimposed-activity <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Periodic-discharge-fast-superimposed-activity <nowiki> {suggestedTag=Finding-frequency} </nowiki>
+        ** RPP-morphology <nowiki>[Modifier terms for Rhythmic or Periodic Patterns in critically ill patients (RPPs). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+            *** RPP-with-superimposed-activity <nowiki> {suggestedTag=Property-not-possible-to-determine} [Superimposed activity (for PDs and RDA). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
+                **** Superimposed-fast-activity <nowiki> {suggestedTag=Finding-frequency}[Superimposed fast activity. (Source: Beniczky ea 2017, Table 8.)] </nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-rhythmic-superimposed-activity <nowiki> {suggestedTag=Finding-frequency} </nowiki>
+                **** Superimposed-rhythmic-activity <nowiki> {suggestedTag=Finding-frequency}[Superimposed rhythmic activity (for PDs only). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-            *** Periodic-discharge-sharpness <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Spiky-periodic-discharge-sharpness
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Sharp-periodic-discharge-sharpness
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Sharply-contoured-periodic-discharge-sharpness
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Blunt-periodic-discharge-sharpness
+                **** Superimposed-sharp-waves-or-spikes <nowiki> [Superimposed sharp waves or spikes (for RDA only). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Number-of-periodic-discharge-phases <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** 1-periodic-discharge-phase
+            *** RPP-sharpness <nowiki> {suggestedTag=Property-not-possible-to-determine} [Sharpness (for PDs and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** RPP-spiky <nowiki> [Spiky (<70 ms, measured at the baseline). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** 2-periodic-discharge-phases
+                **** RPP-sharp <nowiki> [Sharp (70–200 ms). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** 3-periodic-discharge-phases
+                **** RPP-sharply-contoured <nowiki> [Sharply contoured. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Greater-than-3-periodic-discharge-phases
+                **** RPP-blunt <nowiki> [Blunt. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-triphasic-morphology <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} </nowiki>
+            *** Number-of-RPP-phases <nowiki> {suggestedTag=Property-not-possible-to-determine}[Number of phases (for PDs and SW): 1, 2 or 3. (Source: Beniczky ea 2017, Table 8.)] </nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+            *** Greater-than-3-RPP-phases <nowiki> {suggestedTag=Property-not-possible-to-determine}[More than 3 phases (for PDs and SW). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-absolute-amplitude <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Periodic-discharge-absolute-amplitude-very-low <nowiki>[Lower than 20 microV.]</nowiki>
+            *** RPP-triphasic-morphology <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} [Triphasic morphology (for PDs and SW). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+            *** RPP-absolute-amplitude <nowiki> {suggestedTag=Property-not-possible-to-determine} [Absolute amplitude (for PDs, RDA, SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** RPP-absolute-amplitude-very-low <nowiki>[Lower than 20 microV. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Low-periodic-discharge-absolute-amplitude <nowiki>[20 to 49 microV.]</nowiki>
+                **** Low-RPP-absolute-amplitude <nowiki>[20 to 49 microV. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Medium-periodic-discharge-absolute-amplitude <nowiki>[50 to 199 microV.]</nowiki>
+                **** Medium-RPP-absolute-amplitude <nowiki>[50 to 199 microV. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** High-periodic-discharge-absolute-amplitude <nowiki>[Greater than 200 microV.]</nowiki>
+                **** High-RPP-absolute-amplitude <nowiki>[Greater than 200 microV. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-relative-amplitude <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Periodic-discharge-relative-amplitude-less-than-equal-2
+            *** Periodic-discharge-relative-amplitude <nowiki> {suggestedTag=Property-not-possible-to-determine} [Relative amplitude (for PDs). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** Periodic-discharge-relative-amplitude-less-than-equal-2 <nowiki> [Relative amplitude (for PDs)<=2. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-relative-amplitude-greater-than-2
+                **** Periodic-discharge-relative-amplitude-greater-than-2 <nowiki> [Relative amplitude (for PDs)>2. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Periodic-discharge-polarity
-                **** Periodic-discharge-postitive-polarity
+            *** RPP-polarity <nowiki> [Polarity (for PDs and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** RPP-positive-polarity <nowiki> [Positive polarity. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-negative-polarity
+                **** RPP-negative-polarity <nowiki> [Negative polarity. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Periodic-discharge-unclear-polarity
+                **** RPP-tangential-polarity <nowiki> [Tangential/horizontal dipole. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** RPP-unclear-polarity <nowiki> [Unclear polarity. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Source-analysis-property <nowiki>[How the current in the brain reaches the electrode sensors.]</nowiki>
