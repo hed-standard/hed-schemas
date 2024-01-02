@@ -292,67 +292,67 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Finding-property''' <nowiki>[Descriptive element similar to main HED /Property. Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
 
-    * Signal-morphology-property <nowiki>[Signal morphology pertains to the visual and occasionally structural attributes employed for the description and characterization of findings.]</nowiki>
+    * Signal-morphology-property <nowiki>[Signal morphology contains attributes to describe findings in background, interictal or ictal activity. (Source: Beniczky ea 2017, Table 5, Table 8, Table 12.)]</nowiki>
 
-        ** Rhythmic-activity-morphology <nowiki>[EEG activity consisting of a sequence of waves approximately constant period.]</nowiki>
-            *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the delta (under 4 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythms).]</nowiki>
+        ** Rhythmic-activity-morphology <nowiki>[Rhythmic activity can be observed during background, interictal or ictal activity and HED-SCORE therefore describes this as a property. (Source: Beniczky ea 2017, Table 5, Table 12, Table 14.)]</nowiki>
+            *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the delta frequency range (under 4 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Theta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the theta (4-8 Hz) range that does not belong to the posterior dominant rhythm (scored under other organized rhythm).]</nowiki>
+            *** Theta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the theta frequency range (4-8 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Alpha-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm in the alpha range (8-13 Hz) which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm (alpha rhythm).]</nowiki>
+            *** Alpha-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the alpha frequency range (8-13 Hz), but not a part of the posterior dominant rhythm. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Beta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [EEG rhythm between 14 and 40 Hz, which is considered part of the background (ongoing) activity but does not fulfill the criteria of the posterior dominant rhythm. Most characteristically: a rhythm from 14 to 40 Hz recorded over the fronto-central regions of the head during wakefulness. Amplitude of the beta rhythm varies but is mostly below 30 microV. Other beta rhythms are most prominent in other locations or are diffuse.]</nowiki>
+            *** Beta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the beta frequency range (14-40 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Gamma-activity-morphology <nowiki> {suggestedTag=Finding-frequency,suggestedTag=Finding-amplitude} </nowiki>
+            *** Gamma-activity-morphology <nowiki> {suggestedTag=Finding-frequency,suggestedTag=Finding-amplitude} [Rhythmic activity in the gamma frequency range. (Source: Beniczky ea 2017, Table 5.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies.]</nowiki>
+        ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Spike-and-slow-wave-morphology <nowiki>[A pattern consisting of a spike followed by a slow wave.]</nowiki>
+        ** Spike-and-slow-wave-morphology <nowiki>[A pattern consisting of a spike followed by a slow wave. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Runs-of-rapid-spikes-morphology <nowiki>[Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity.]</nowiki>
+        ** Runs-of-rapid-spikes-morphology <nowiki>[Bursts of spike discharges at a rate from 10 to 25/sec (in most cases somewhat irregular). The bursts last more than 2 seconds (usually 2 to 10 seconds) and it is typically seen in sleep. Synonyms: rhythmic spikes, generalized paroxysmal fast activity, fast paroxysmal rhythms, grand mal discharge, fast beta activity. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Polyspikes-morphology <nowiki>[Two or more consecutive spikes.]</nowiki>
+        ** Polyspikes-morphology <nowiki>[Two or more consecutive spikes. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Polyspike-and-slow-wave-morphology <nowiki>[Two or more consecutive spikes associated with one or more slow waves.]</nowiki>
+        ** Polyspike-and-slow-wave-morphology <nowiki>[Two or more consecutive spikes associated with one or more slow waves. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Sharp-wave-morphology <nowiki>[A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over 1/4-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies.]</nowiki>
+        ** Sharp-wave-morphology <nowiki>[A transient clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale, and duration of 70-200 ms, i.e. over 1/4-1/5 s approximately. Main component is generally negative relative to other areas. Amplitude varies. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Sharp-and-slow-wave-morphology <nowiki>[A sequence of a sharp wave and a slow wave.]</nowiki>
+        ** Sharp-and-slow-wave-morphology <nowiki>[A sequence of a sharp wave and a slow wave. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Slow-sharp-wave-morphology <nowiki>[A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave.]</nowiki>
+        ** Slow-sharp-wave-morphology <nowiki>[A transient that bears all the characteristics of a sharp-wave, but exceeds 200 ms. Synonym: blunted sharp wave. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** High-frequency-oscillation-morphology <nowiki>[HFO.]</nowiki>
+        ** High-frequency-oscillation-morphology <nowiki>[HFO. (Source: Beniczky ea 2017, Table 5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Hypsarrhythmia-classic-morphology <nowiki>[Abnormal interictal high amplitude waves and a background of irregular spikes.]</nowiki>
+        ** Hypsarrhythmia-classic-morphology <nowiki>[Pattern consisting of diffuse chaotic high voltage (>300 μV) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Hypsarrhythmia-modified-morphology
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-        ** Fast-spike-activity-morphology <nowiki>[A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Low-voltage-fast-activity-morphology <nowiki>[Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Polysharp-waves-morphology <nowiki>[A sequence of two or more sharp-waves.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Slow-wave-large-amplitude-morphology
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Irregular-delta-or-theta-activity-morphology <nowiki>[EEG activity consisting of repetitive waves of inconsistent wave-duration but in delta and/or theta rang (greater than 125 ms).]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Electrodecremental-change-morphology <nowiki>[Sudden desynchronization of electrical activity.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** DC-shift-morphology <nowiki>[Shift of negative polarity of the direct current recordings, during seizures.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Disappearance-of-ongoing-activity-morphology <nowiki>[Disappearance of the EEG activity that preceded the ictal event but still remnants of background activity (thus not enough to name it electrodecremental change).]</nowiki>
+        ** Hypsarrhythmia-modified-morphology <nowiki>[Pattern consisting of diffuse chaotic high voltage (>300 μV) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Polymorphic-delta-activity-morphology <nowiki>[EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology.]</nowiki>
+        ** Fast-spike-activity-morphology <nowiki>[A burst consisting of a sequence of spikes. Duration greater than 1 s. Frequency at least in the alpha range. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Frontal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults.]</nowiki>
+        ** Low-voltage-fast-activity-morphology <nowiki>[Refers to the fast, and often recruiting activity which can be recorded at the onset of an ictal discharge, particularly in invasive EEG recording of a seizure. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Occipital-intermittent-rhythmic-delta-activity-morphology <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children.]</nowiki>
+        ** Polysharp-waves-morphology <nowiki>[A sequence of two or more sharp-waves. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy.]</nowiki>
+        ** Slow-wave-large-amplitude-morphology <nowiki>[Slow wave of large amplitude. (Source: Beniczky ea 2017, Table 12)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Irregular-delta-or-theta-activity-morphology <nowiki>[EEG activity consisting of repetitive waves of inconsistent wave-duration but in delta and/or theta range (greater than 125 ms). (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Electrodecremental-change-morphology <nowiki>[Sudden desynchronization of electrical activity. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** DC-shift-morphology <nowiki>[Shift of negative polarity of the direct current recordings, during seizures. (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Disappearance-of-ongoing-activity-morphology <nowiki>[Disappearance of the EEG activity that preceded the ictal event but still remnants of background activity (thus not enough to name it electrodecremental change). (Source: Beniczky ea 2017, Table 12; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+        ** Polymorphic-delta-activity-morphology <nowiki>[EEG activity consisting of waves in the delta range (over 250 ms duration for each wave) but of different morphology. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Frontal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Frontal intermittent rhythmic delta activity (FIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 1.5-2.5 Hz over the frontal areas of one or both sides of the head. Comment: most commonly associated with unspecified encephalopathy, in adults. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Occipital-intermittent-rhythmic-delta-activity-morphology <nowiki>[Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Temporal-intermittent-rhythmic-delta-activity-morphology <nowiki>[Temporal intermittent rhythmic delta activity (TIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at over the temporal areas of one side of the head. Comment: most commonly associated with temporal lobe epilepsy. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Periodic-discharge-morphology <nowiki>[Periodic discharges not further specified (PDs).]</nowiki>
