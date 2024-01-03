@@ -538,81 +538,74 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Modulators-effect-change-of-patterns <nowiki>[Change of patterns during sleep/awakening.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Time-related-property <nowiki>[Important to estimate how often an interictal abnormality is seen in the recording.]</nowiki>
-        ** Appearance-mode <nowiki> {suggestedTag=Property-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording.]</nowiki>
-            *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity.]</nowiki>
+    * Time-related-property <nowiki>[Estimates of how often a graphoelement is seen in the recording. (Source: Beniczky ea 2017, Table 6, Table 8.)]</nowiki>
+        ** Appearance-mode <nowiki> {suggestedTag=Property-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
+            *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds).]</nowiki>
+            *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds). (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Variable-appearance-mode <nowiki>[Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Intermittent-appearance-mode
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Continuous-appearance-mode
+            *** Variable-appearance-mode <nowiki>[Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges)]</nowiki>
-            *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity.]</nowiki>
+        ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges). (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
+            *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence, suggestedTag=Finding-frequency} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period.]</nowiki>
+            *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence, suggestedTag=Finding-frequency} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Arrhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period.]</nowiki>
+            *** Arrhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Fragmented-discharge-pattern
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-        ** Periodic-discharge-time-related-features <nowiki>[Periodic discharges not further specified (PDs) time-relayed features tags.]</nowiki>
-            *** Periodic-discharge-duration <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Very-brief-periodic-discharge-duration <nowiki>[Less than 10 sec.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Brief-periodic-discharge-duration <nowiki>[10 to 59 sec.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Intermediate-periodic-discharge-duration <nowiki>[1 to 4.9 min.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Long-periodic-discharge-duration <nowiki>[5 to 59 min.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Very-long-periodic-discharge-duration <nowiki>[Greater than 1 hour.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-onset <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Sudden-periodic-discharge-onset
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Gradual-periodic-discharge-onset
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-discharge-dynamics <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Evolving-periodic-discharge-dynamics
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Fluctuating-periodic-discharge-dynamics
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Static-periodic-discharge-dynamics
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-        ** Finding-extent <nowiki> {requireChild} [Percentage of occurrence during the recording (background activity and interictal finding).]</nowiki>
-            *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-
-        ** Finding-incidence <nowiki>[How often it occurs/time-epoch.]</nowiki>
-            *** Only-once-finding-incidence
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Rare-finding-incidence <nowiki>[less than 1/h]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Uncommon-finding-incidence <nowiki>[1/5 min to 1/h.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Occasional-finding-incidence <nowiki>[1/min to 1/5min.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Frequent-finding-incidence <nowiki>[1/10 s to 1/min.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s.]</nowiki>
+            *** Fragmented-discharge-pattern <nowiki> [Source: Beniczky ea 2017, Table 6.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-prevalence <nowiki>[The percentage of the recording covered by the train/burst.]</nowiki>
-            *** Rare-finding-prevalence <nowiki>[Less than 1 percent.]</nowiki>
+        ** RPP-time-related-features <nowiki>[Time related features for Rhythmic or Periodic Patterns in critically ill patients (RPPs). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+            *** RPP-duration <nowiki> {suggestedTag=Property-not-possible-to-determine} [Duration (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** Very-brief-RPP-duration <nowiki>[Less than 10 sec. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Brief-RPP-duration <nowiki>[10 to 59 sec. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Intermediate-RPP-duration <nowiki>[1 to 4.9 min. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Long-RPP-duration <nowiki>[5 to 59 min. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Very-long-RPP-duration <nowiki>[Greater than 1 hour. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** RPP-onset <nowiki> {suggestedTag=Property-not-possible-to-determine} [Onset (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                **** Sudden-RPP-onset <nowiki> [Sudden (progressing from absent to well developed within 3 s.). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Gradual-RPP-onset <nowiki> [Gradual onset. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** RPP-dynamics <nowiki> {suggestedTag=Property-not-possible-to-determine} [Dynamics (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
+                **** Evolving-RPP-dynamics <nowiki> [Source: Beniczky ea 2017, Table 8.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Fluctuating-RPP-dynamics <nowiki> [Source: Beniczky ea 2017, Table 8.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+                **** Static-RPP-dynamics <nowiki> [Source: Beniczky ea 2017, Table 8.]</nowiki>
+                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+        ** Finding-incidence <nowiki>[Estimate of how often findings are seen in the recording. This is scored differently, depending on the type of finding. For single discharges, this is scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)]</nowiki>
+            *** Only-once-finding-incidence <nowiki>[Source: Beniczky ea 2017, Table 6.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Occasional-finding-prevalence <nowiki>[1 to 9 percent.]</nowiki>
+            *** Rare-finding-incidence <nowiki>[Less than 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Frequent-finding-prevalence <nowiki>[10 to 49 percent.]</nowiki>
+            *** Uncommon-finding-incidence <nowiki>[1/5 min to 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Abundant-finding-prevalence <nowiki>[50 to 89 percent.]</nowiki>
+            *** Occasional-finding-incidence <nowiki>[1/min to 1/5min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Continuous-finding-prevalence <nowiki>[Greater than 90 percent.]</nowiki>
+            *** Frequent-finding-incidence <nowiki>[1/10 s to 1/min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+
+        ** Finding-prevalence <nowiki>[Estimate of how often findings are seen in the recording. This is scored differently, depending on the type of finding. For trains or bursts this is scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)]</nowiki>
+            *** Rare-finding-prevalence <nowiki>[Less than 1 percent. (Source: Beniczky ea 2017, Table 6, Table 8).]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Occasional-finding-prevalence <nowiki>[1 to 9 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Frequent-finding-prevalence <nowiki>[10 to 49 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Abundant-finding-prevalence <nowiki>[50 to 89 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Continuous-finding-prevalence <nowiki>[Greater than 90 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Posterior-dominant-rhythm-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
