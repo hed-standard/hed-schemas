@@ -58,7 +58,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Background-activity''' <nowiki>[An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished (Source: Beniczky ea 2013, Appendix S1.)]</nowiki>
 
-    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-property}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant. (Source: Beniczky ea 2013, Appendix S2; suggested tags from Beniczky ea 2017, Table 4.)]</nowiki>
+    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency, suggestedTag=Finding-frequency-asymmetry, suggestedTag=Finding-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-property}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant. (Source: Beniczky ea 2013, Appendix S2; suggested tags from Beniczky ea 2017, Table 4.)]</nowiki>
     * Mu-rhythm <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors} [EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation. (Source: Beniczky ea 2013, Appendix S2.)]</nowiki>
     * Other-organized-rhythm <nowiki> {requireChild, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfill the criteria of the posterior dominant rhythm. (Source: Beniczky ea 2013, Appendix S2.)]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -608,61 +608,55 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Continuous-finding-prevalence <nowiki>[Greater than 90 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Posterior-dominant-rhythm-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR.]</nowiki>
+    * Posterior-dominant-rhythm-property <nowiki>[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR. (Source: Beniczky ea 2017, Section 6, Table 4.)]</nowiki>
 
-        ** Posterior-dominant-rhythm-amplitude-range <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-            *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV).]</nowiki>
+        ** Posterior-dominant-rhythm-amplitude-range <nowiki> {suggestedTag=Property-not-possible-to-determine}[Source: Beniczky ea 2017, Table 4.] </nowiki>
+            *** Low-posterior-dominant-rhythm-amplitude-range <nowiki>[Low (less than 20 microV). (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV).]</nowiki>
+            *** Medium-posterior-dominant-rhythm-amplitude-range <nowiki>[Medium (between 20 and 70 microV). (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV).]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-
-        ** Posterior-dominant-rhythm-frequency-asymmetry <nowiki> {suggestedTag=Symmetrical} [When symmetrical could be labeled with suggested tag.]</nowiki>
-            *** Posterior-dominant-rhythm-frequency-asymmetry-lower-left <nowiki>[Hz lower on the left side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-frequency-asymmetry-lower-right <nowiki>[Hz lower on the right side.]</nowiki>
+            *** High-posterior-dominant-rhythm-amplitude-range <nowiki>[High (more than 70 microV). (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {suggestedTag=Property-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect.]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity.]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {suggestedTag=Property-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Table 4.)]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-right <nowiki>[Reduced right side reactivity.]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-right <nowiki>[Reduced right side reactivity. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[free text]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both <nowiki>[Reduced reactivity on both sides.]</nowiki>
+            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both <nowiki>[Reduced reactivity on both sides. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-organization <nowiki> {suggestedTag=Normal} [When normal could be labeled with suggested tag.]</nowiki>
-            *** Posterior-dominant-rhythm-organization-poorly-organized <nowiki>[Poorly organized.]</nowiki>
+        ** Posterior-dominant-rhythm-organization <nowiki> {suggestedTag=Normal} [Posterior dominant rhythm organization. When normal could be labeled with suggested tag. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+            *** Posterior-dominant-rhythm-organization-poorly-organized <nowiki>[Poorly organized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized.]</nowiki>
+            *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized.]</nowiki>
+            *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-caveat <nowiki>[Caveat to the annotation of PDR.]</nowiki>
-            *** No-posterior-dominant-rhythm-caveat
+        ** Posterior-dominant-rhythm-caveat <nowiki>[Caveat to the annotation of PDR. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+            *** No-posterior-dominant-rhythm-caveat <nowiki>[No caveats. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording
+            *** Posterior-dominant-rhythm-caveat-only-open-eyes-during-the-recording <nowiki>[Only open eyes were during the recording. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-caveat-sleep-deprived-caveat
+            *** Posterior-dominant-rhythm-caveat-sleep-deprived-caveat <nowiki>[Sleep deprived. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-caveat-drowsy
+            *** Posterior-dominant-rhythm-caveat-drowsy <nowiki>[Drowsy. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-caveat-only-following-hyperventilation
+            *** Posterior-dominant-rhythm-caveat-only-following-hyperventilation <nowiki>[Only following hyperventilation. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
 
-        ** Absence-of-posterior-dominant-rhythm <nowiki>[Reason for absence of PDR.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-artifacts
+        ** Absence-of-posterior-dominant-rhythm <nowiki>[Reason for absence of PDR. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+            *** Absence-of-posterior-dominant-rhythm-artifacts <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage
+            *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved
+            *** Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-lack-of-awake-period
+            *** Absence-of-posterior-dominant-rhythm-lack-of-awake-period <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-lack-of-compliance
+            *** Absence-of-posterior-dominant-rhythm-lack-of-compliance <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Absence-of-posterior-dominant-rhythm-other-causes <nowiki> {requireChild} </nowiki>
+            *** Absence-of-posterior-dominant-rhythm-other-causes <nowiki> {requireChild}[Source: Beniczky ea 2017, Table 4.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Episode-property <nowiki>[Episode property pertains to the set of characteristics that collectively depict different aspects of an episode, encompassing its manifestations and phases.]</nowiki>
@@ -898,9 +892,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Finding-frequency <nowiki> {requireChild} [Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits} </nowiki>
         
+        ** Finding-frequency-asymmetry <nowiki> {suggestedTag=Symmetrical} [When symmetrical could be labeled with suggested tag.]</nowiki>
+            *** Frequency-asymmetry-lower-left <nowiki>[Number of Hz lower on the left side. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+            *** Frequency-asymmetry-lower-right <nowiki>[Number of Hz lower on the right side. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+
         ** Finding-amplitude <nowiki> {requireChild} [Value in microvolts (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits} </nowiki>
-
 
         ** Finding-amplitude-asymmetry <nowiki> {suggestedTag=Symmetrical} [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with suggested tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
