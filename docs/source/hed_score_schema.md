@@ -8,9 +8,9 @@ We show several examples of annotations using the HED-SCORE library schema in th
 
 ![](_static/Illustration_combined_eeg.png)
 
-## Development
+## Development of HED SCORE
 
-The HED-SCORE library schema maintains the hierarchy as presented in SCORE papers [^1,2]. With the GitHub commit history reflecting the development process of the HED-SCORE library schema.
+The HED-SCORE library schema maintains the hierarchy as presented in SCORE papers [1,2]. With the GitHub commit history reflecting the development process of the HED-SCORE library schema.
 
 In the HED standard schema, top levels identify events of interest. Annotating events includes identifying graphoelements and their morphology, which can be followed by location, features related to time, and the effect of modulators. The top levels of the HED-SCORE library schema correspond to the main types of events described in the SCORE papers.
 
@@ -20,7 +20,8 @@ The SCORE HED schema library is intended to describe all normal and abnormal EEG
 The HED schema library for SCORE was converted and validated using the HED tools. See more [here](https://hedtools.ucsd.edu/hed).
 
 ## Brain imaging data structure (BIDS)
-HED schema library for SCORE is compatible with the BIDS human and machine-readable events annotations .tsv files, see more [here](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html#appendix-iii-hierarchical-event-descriptors).
+HED schema library for SCORE is compatible with the BIDS human and machine-readable events annotations .tsv files. 
+For more information see the [Hierarchical Event Descriptors](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html#appendix-iii-hierarchical-event-descriptors) appendix of the BIDS specification.
 An implementation example using HED schema library for SCORE annotations is available
 [here](https://github.com/bids-standard/bids-examples).
 

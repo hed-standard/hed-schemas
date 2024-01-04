@@ -3805,26 +3805,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Metadata</name>
                <description>Data about data. Information that describes another set of data.</description>
                <node>
-                  <name>CogAtlas</name>
-                  <description>The Cognitive Atlas ID number of something.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>CogPo</name>
-                  <description>The CogPO ID number of something.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
                   <name>Creation-date</name>
                   <description>The date on which data creation of this element began.</description>
                   <attribute>
@@ -3870,17 +3850,72 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
-                  <name>OBO-identifier</name>
-                  <description>The identifier of a term in some Open Biology Ontology (OBO) ontology.</description>
+                  <name>Metadata-identifier</name>
+                  <description>Identifier (usually unique) from another metadata source.</description>
                   <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>nameClass</value>
-                     </attribute>
+                     <name>CogAtlas</name>
+                     <description>The Cognitive Atlas ID number of something.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>CogPo</name>
+                     <description>The CogPO ID number of something.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>OBO-identifier</name>
+                     <description>The identifier of a term in some Open Biology Ontology (OBO) ontology.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>nameClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Subject-identifier</name>
+                     <description>A sequence of characters used to identify, name, or characterize a trial or study subject.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>UUID</name>
+                     <description>A unique universal identifier.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Version-identifier</name>
+                     <description>An alphanumeric character string that identifies a form or variant of a type or original.</description>
+                     <node>
+                        <name>#</name>
+                        <description>Usually is a semantic version.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -3894,21 +3929,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
-                  <name>Subject-identifier</name>
-                  <description>A sequence of characters used to identify, name, or characterize a trial or study subject.</description>
+                  <name>URL</name>
+                  <description>A valid URL.</description>
                   <node>
                      <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Version-identifier</name>
-                  <description>An alphanumeric character string that identifies a form or variant of a type or original.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Usually is a semantic version.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
@@ -6387,6 +6411,10 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>degree Celsius</value>
+         </attribute>
          <unit>
             <name>degree Celsius</name>
             <attribute>
@@ -6461,6 +6489,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>3600</value>
             </attribute>
+         </unit>
+         <unit>
+            <name>year</name>
+            <description>Years do not have a constant conversion factor to seconds.</description>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
@@ -7044,14 +7076,14 @@ Each term in this vocabulary has a human-readable description and may include ad
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
          <name>allowedCharacter</name>
-         <description>A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
+         <description>A schema attribute specifying a special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
          <property>
             <name>valueClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>conversionFactor</name>
-         <description>The multiplicative factor to multiply these units to convert to default units.</description>
+         <description>A schema attribute specifying the factor to multiply these units by to convert to default units.</description>
          <property>
             <name>unitProperty</name>
          </property>
@@ -7068,7 +7100,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>deprecatedFrom</name>
-         <description>This element is deprecated. The value of the attribute is the latest schema version in which the element appeared before it was deprecated.</description>
+         <description>A schema attribute specifying that the schema version number when this element was first deprecated.</description>
          <property>
             <name>elementProperty</name>
          </property>
@@ -7088,14 +7120,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
-         <description>This schema element is from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
+         <description>A schema attribute specifying a named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>recommended</name>
-         <description>Any event-level HED string should include this tag.</description>
+         <description>A schema attribute indicating that any event-level HED string should include this tag. This attribute is deprecated.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7115,7 +7147,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>requireChild</name>
-         <description>One of the node elements descendants must be included when using this tag.</description>
+         <description>A schema attribute indicating that this tag must have a descendent.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7125,7 +7157,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>required</name>
-         <description>Every event-level HED string should include this tag.</description>
+         <description>A schema attribute indicating that every event-level HED string should include this tag. This attribute is deprecated.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7135,7 +7167,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>reserved</name>
-         <description>This tag has special meaning and requires special handling by tools.</description>
+         <description>A schema attribute indicating that this tag has special meaning and requires special handling by tools.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7145,14 +7177,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>rooted</name>
-         <description>A top-level library schema node should appear under indicated node in partnered standard schema.</description>
+         <description>A schema attribute specifying where a top-level library schema node should appear under indicated node in partnered standard schema.</description>
          <property>
             <name>nodeProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnit</name>
-         <description>A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
+         <description>A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7162,7 +7194,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.</description>
+         <description>A schema attribute indicating that this SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7172,7 +7204,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitSymbolModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.</description>
+         <description>A schema attribute indicating that this SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7182,7 +7214,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>suggestedTag</name>
-         <description>A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
+         <description>A schema attribute specifying another tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7222,7 +7254,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unique</name>
-         <description>A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.</description>
+         <description>A schema attribute indicating that only one of this tag or its descendants can be used in the event-level HED string.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7239,7 +7271,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
+         <description>A schema attribute indicating that the unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
          <property>
             <name>boolProperty</name>
          </property>
