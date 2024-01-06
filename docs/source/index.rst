@@ -1,7 +1,7 @@
 HED schemas
 ===================
 
-.. image:: ![](./_static/images/croppedWideLogo.png)
+.. image:: _static/images/croppedWideLogo.png
   :width: 220
   :alt: HedLogo
 
