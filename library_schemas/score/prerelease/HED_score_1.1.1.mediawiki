@@ -625,7 +625,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-caveat <nowiki>{suggestedTag=None, suggestedTag=Eyes-open, suggestedTag=Eyes-open, suggestedTag=Sleep-deprivation, suggestedTag=Drowsy, suggestedTag=Hyperventilation}[Caveats for PDR annotation, use suggestedTags to indicate whether there were: no caveats, only open eyes during the recording, sleep-deprived, drowsy or only following hyperventilation. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
+        ** Posterior-dominant-rhythm-caveat <nowiki>{suggestedTag=None, suggestedTag=Eyes-open, suggestedTag=Sleep-deprivation, suggestedTag=Drowsy, suggestedTag=Hyperventilation}[Caveats for PDR annotation, use suggestedTags to indicate whether there were: no caveats, only open eyes during the recording, sleep-deprived, drowsy or only following hyperventilation. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
 
         ** Absence-of-posterior-dominant-rhythm <nowiki> {suggestedTag=Artifact, suggestedTag=Asleep}[Reason for absence of PDR. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
@@ -668,7 +668,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Episode-phase-subsequent
             *** Episode-phase-postictal
 
-        ** Seizure-semiology-manifestation <nowiki>{suggestedTag=None}[Seizure semiology refers to the clinical signs and sympoms that are observed during a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
+        ** Seizure-semiology <nowiki>{suggestedTag=None}[Seizure semiology refers to the clinical signs and sympoms that are observed during a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
             *** Semiology-motor-behavioral-arrest <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity} [Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue). (Source: Beniczky ea 2017, Table 10; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** Semiology-dyscognitive <nowiki> [The term describes events in which (1) disturbance of cognition is the predominant or most apparent feature, and (2a) two or more of the following components are involved, or (2b) involvement of such components remains undetermined. Otherwise, use the more specific term (e.g., mnemonic experiential seizure  or hallucinatory experiential seizure). Components of cognition: ++ perception: symbolic conception of sensory information ++ attention: appropriate selection of a principal perception or task ++ emotion: appropriate affective significance of a perception ++ memory: ability to store and retrieve percepts or concepts ++ executive function: anticipation, selection, monitoring of consequences, and initiation of motor activity including praxis, speech. (Source: Beniczky ea 2017, Table 10; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** Semiology-elementary-motor <nowiki>[A single type of contraction of a muscle or group of muscles that is usually stereotyped and not decomposable into phases. However, see tonic-clonic, an elementary motor sequence. (Source: Blume ea 2001, 1.1; Beniczky ea 2017, Table 10.)]</nowiki>
@@ -744,22 +744,22 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Semiology-manifestation-other <nowiki> {requireChild} </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Postictal-semiology-manifestation 
-            *** Postictal-semiology-unconscious <nowiki> [] </nowiki>
-            *** Postictal-semiology-quick-recovery-of-consciousness <nowiki> [Quick recovery of awareness and responsiveness.]</nowiki>
-            *** Postictal-semiology-aphasia-or-dysphasia <nowiki> [Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these.]</nowiki>
-            *** Postictal-semiology-behavioral-change <nowiki> [Occurring immediately after a aseizure. Including psychosis, hypomanina, obsessive-compulsive behavior.]</nowiki>
-            *** Postictal-semiology-hemianopia <nowiki>[Postictal visual loss in a a hemi field.]</nowiki>
-            *** Postictal-semiology-impaired-cognition <nowiki> [Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, execution, praxis, speech.]</nowiki>
-            *** Postictal-semiology-dysphoria <nowiki> [Depression, irritability, euphoric mood, fear, anxiety.]</nowiki>
-            *** Postictal-semiology-headache <nowiki> [Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure.]</nowiki>
-            *** Postictal-semiology-nose-wiping <nowiki> {suggestedTag=Brain-laterality} [Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset.]</nowiki>
-            *** Postictal-semiology-anterograde-amnesia <nowiki> [Impaired ability to remember new material.]</nowiki>
-            *** Postictal-semiology-retrograde-amnesia <nowiki> [Impaired ability to recall previously remember material.]</nowiki>
-            *** Postictal-semiology-paresis <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity} [Todds palsy. Any unilateral postictal dysfunction relating to motor, language, sensory and/or integrative functions.]</nowiki>
-            *** Postictal-semiology-sleep <nowiki>[Invincible need to sleep after a seizure.]</nowiki>
-            *** Postictal-semiology-unilateral-myoclonic-jerks <nowiki>[unilateral motor phenomena, other then  specified, occurring in postictal phase.]</nowiki>
-            *** Postictal-semiology-other-unilateral-motor-phenomena <nowiki> {requireChild} </nowiki>
+        ** Postictal-semiology <nowiki> {suggestedTag=None}[A transient clinical abnormality of central nervous system function that appears or becomes accentuated when clinical signs of the ictus have ended. (Source: Blume ea 2001; Beniczky ea 2017, Table 11.)] </nowiki>
+            *** Postictal-unconscious <nowiki> [Unawareness and unresponsiveness. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)] </nowiki>
+            *** Postictal-quick-recovery-of-consciousness <nowiki> [Quick recovery of awareness and responsiveness. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-aphasia-or-dysphasia <nowiki> [Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-behavioral-change <nowiki> [Occurring immediately after a aseizure. Including psychosis, hypomanina, obsessive-compulsive behavior. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-hemianopia <nowiki>[Postictal visual loss in a a hemi field. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-impaired-cognition <nowiki> [Decreased Cognitive performance involving one or more of perception, attention, emotion, memory, execution, praxis, speech. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-dysphoria <nowiki> [Depression, irritability, euphoric mood, fear, anxiety. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-headache <nowiki> [Headache with features of tension-type or migraine headache that develops within 3 h following the seizure and resolves within 72 h after seizure. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-nose-wiping <nowiki> {suggestedTag=Brain-laterality} [Noes-wiping usually within 60 sec of seizure offset, usually with the hand ipsilateral to the seizure onset. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-anterograde-amnesia <nowiki> [Impaired ability to remember new material. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-retrograde-amnesia <nowiki> [Impaired ability to recall previously remember material. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-paresis <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity} [Todds palsy. Any unilateral postictal dysfunction relating to motor, language, sensory and/or integrative functions. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-sleep <nowiki>[Invincible need to sleep after a seizure. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-unilateral-myoclonic-jerks <nowiki>[Unilateral myoclonic jerks. Myoclonus: sudden, brief (<100 ms) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
+            *** Postictal-other-unilateral-motor-phenomena <nowiki> {requireChild} [Unilateral motor phenomena, other then specified above, occurring in the postictal phase. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Polygraphic-channel-relation-to-episode <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
