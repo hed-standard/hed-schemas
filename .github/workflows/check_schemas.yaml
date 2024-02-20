@@ -2,9 +2,9 @@ name: Process Files
 
 on:
   push:
-    branches: [ * ]
+    branches: ["*"]
   pull_request:
-    branches: [ * ]
+    branches: ["*"]
 
 jobs:
   process-changed-files:
