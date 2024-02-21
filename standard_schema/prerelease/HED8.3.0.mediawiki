@@ -494,6 +494,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Ambidextrous <nowiki>[Having no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot.]</nowiki>
 *** Race <nowiki>[Belonging to a group sharing physical or social qualities as defined within a specified society. Use with Label to avoid extension.]</nowiki>
 * Data-property <nowiki>{extensionAllowed}[Something that pertains to data or information.]</nowiki>
+** Data-artifact <nowiki>[An anomalous, interfering, or distorting signal originating from a source other than the item being studied.]</nowiki>
+*** Biological-artifact <nowiki>[An artifact arising from a biological entity being measured.]</nowiki>
 ** Data-marker <nowiki>[An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>[An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker<nowiki>[An indicator placed at a particular time in the data.]</nowiki>
