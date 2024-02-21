@@ -732,7 +732,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Label <nowiki> [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
 ** Metadata <nowiki>[Data about data. Information that describes another set of data.]</nowiki>
-*** Creation-date <nowiki>{valueClass=dateTimeClass}[The date on which the creation of this item began.]</nowiki>
+*** Creation-date <nowiki>[The date on which the creation of this item began.]</nowiki>
 **** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Experimental-note <nowiki>[A brief written record about the experiment.]</nowiki>
 **** <nowiki># {takesValue, valueClass=textClass}</nowiki>
@@ -743,7 +743,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** <nowiki># {takesValue}</nowiki>
 **** CogPo <nowiki>[The CogPO ID number of something.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
-**** DOI <nowiki>[Digital object identifier for an object.]<nowiki>
+**** DOI <nowiki>[Digital object identifier for an object.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
 **** OBO-identifier <nowiki>[The identifier of a term in some Open Biology Ontology (OBO) ontology.]</nowiki>
 ***** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
@@ -755,7 +755,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** <nowiki># {takesValue}</nowiki>
 **** Version-identifier <nowiki>[An alphanumeric character string that identifies a form or variant of a type or original.]</nowiki>
 ***** <nowiki># {takesValue}[Usually is a semantic version.]</nowiki> 
-*** Modified-date <nowiki>{valueClass=dateTimeClass}[The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.]</nowki>
+*** Modified-date <nowiki>[The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.]</nowiki>
+**** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Pathname <nowiki>[The specification of a node (file or directory) in a hierarchical file system, usually specified by listing the nodes top-down.]</nowiki>
 **** <nowiki># {takesValue}</nowiki>
 *** URL <nowiki>[A valid URL.]</nowiki>
@@ -1006,7 +1007,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******* <nowiki># {takesValue, valueClass=numericClass} [G value of RGB between 0 and 1.]</nowiki>
 **** Luminance <nowiki>[A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.]</nowiki>
 **** Luminance-contrast <nowiki>{suggestedTag=Percentage, suggestedTag=Ratio}[The difference in luminance in specific portions of a scene or image.]</nowiki>
-***** <nowiki># {takesValue, ValueClass=numericClass}[A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
+***** <nowiki># {takesValue, valueClass=numericClass}[A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
 **** Opacity <nowiki>[A measure of impenetrability to light.]</nowiki>
 ** Sensory-presentation <nowiki>[The entity has a sensory manifestation.]</nowiki>
 *** Auditory-presentation <nowiki>[The sense of hearing is used in the presentation to the user.]</nowiki>
@@ -1216,7 +1217,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704}</nowiki>
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
-* temperatureUnits <nowiki>{defaultUnits=degree Celsius}</nowiki>
+* temperatureUnits <nowiki>{defaultUnits=degree-Celsius}</nowiki>
 ** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * timeUnits <nowiki>{defaultUnits=s}</nowiki> 
