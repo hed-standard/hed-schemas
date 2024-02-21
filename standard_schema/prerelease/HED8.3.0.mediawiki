@@ -1211,7 +1211,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704}</nowiki>
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
 * temperatureUnits <nowiki>{defaultUnits=degree Celsius}</nowiki>
-** degree Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * timeUnits <nowiki>{defaultUnits=s}</nowiki> 
 ** second <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
