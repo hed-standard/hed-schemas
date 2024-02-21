@@ -487,6 +487,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Female <nowiki>[Biological sex of an individual with female sexual organs such ova.]</nowiki>
 **** Male <nowiki>[Biological sex of an individual with male sexual organs producing sperm.]</nowiki>
 **** Intersex <nowiki>[Having genitalia and/or secondary sexual characteristics of indeterminate sex.]</nowiki>
+**** Other-sex <nowiki>[A non-specific designation of sexual traits.]</nowiki>
 *** Ethnicity <nowiki>[Belong to a social group that has a common national or cultural tradition. Use with Label to avoid extension.]</nowiki>
 *** Handedness <nowiki>[Individual preference for use of a hand, known as the dominant hand.]</nowiki>
 **** Left-handed <nowiki>[Preference for using the left hand or foot for tasks requiring the use of a single hand or foot.]</nowiki>
@@ -731,7 +732,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Label <nowiki> [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
 ** Metadata <nowiki>[Data about data. Information that describes another set of data.]</nowiki>
-*** Creation-date <nowiki>[The date on which data creation of this element began.]</nowiki>
+*** Creation-date <nowiki>{valueClass=dateTimeClass}[The date on which the creation of this item began.]</nowiki>
 **** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Experimental-note <nowiki>[A brief written record about the experiment.]</nowiki>
 **** <nowiki># {takesValue, valueClass=textClass}</nowiki>
@@ -742,14 +743,19 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** <nowiki># {takesValue}</nowiki>
 **** CogPo <nowiki>[The CogPO ID number of something.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
+**** DOI <nowiki>[Digital object identifier for an object.]<nowiki>
+***** <nowiki># {takesValue}</nowiki>
 **** OBO-identifier <nowiki>[The identifier of a term in some Open Biology Ontology (OBO) ontology.]</nowiki>
 ***** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
+**** Species-identifier <nowiki>[A binomial species name from the NCBI Taxonomy, for example, homo sapiens, mus musculus, or rattus norvegicus.]</nowiki>
+***** <nowiki># {takesValue}</nowiki>
 **** Subject-identifier <nowiki>[A sequence of characters used to identify, name, or characterize a trial or study subject.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
 **** UUID <nowiki>[A unique universal identifier.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
 **** Version-identifier <nowiki>[An alphanumeric character string that identifies a form or variant of a type or original.]</nowiki>
 ***** <nowiki># {takesValue}[Usually is a semantic version.]</nowiki> 
+*** Modified-date <nowiki>{valueClass=dateTimeClass}[The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.]</nowki>
 *** Pathname <nowiki>[The specification of a node (file or directory) in a hierarchical file system, usually specified by listing the nodes top-down.]</nowiki>
 **** <nowiki># {takesValue}</nowiki>
 *** URL <nowiki>[A valid URL.]</nowiki>
@@ -1273,7 +1279,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 
 
 '''Value classes''' <nowiki>[Rules for the values provided for placeholders.]</nowiki>
-* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki> 
+* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
 * nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
 * numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
 * posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki> 
