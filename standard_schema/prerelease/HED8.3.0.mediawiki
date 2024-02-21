@@ -247,7 +247,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Sentence <nowiki>[A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb.]</nowiki>
 ** Syllable <nowiki>[A unit of spoken language larger than a phoneme.]</nowiki>
 ** Textblock <nowiki>[A block of text.]</nowiki>
-** Word <nowiki>[A word is the smallest free form (an item that may be expressed in isolation with semantic or pragmatic content) in a language.]</nowiki>
+** Word <nowiki>[A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.]</nowiki>
 * Object <nowiki>{suggestedTag=Sensory-presentation}[Something perceptible by one or more of the senses, especially by vision or touch. A material thing.]</nowiki>
 ** Geometric-object <nowiki>[An object or a representation that has structure and topology in space.]</nowiki>
 *** Pattern <nowiki>[An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.]</nowiki>
