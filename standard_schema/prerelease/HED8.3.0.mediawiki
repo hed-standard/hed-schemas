@@ -724,14 +724,14 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Sloped-terrain <nowiki>[Tracts of land arranged in a sloping  or inclined position.]</nowiki>
 *** Uneven-terrain <nowiki>[Tracts of land that are not level, smooth, or regular.]</nowiki>
 * Informational-property<nowiki>{extensionAllowed}[Something that pertains to a task.]</nowiki>
-** Description <nowiki>{requireChild} [An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki> 
+** Description <nowiki>[An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki>
 *** <nowiki># {takesValue, valueClass=textClass}</nowiki>
-** ID <nowiki>{requireChild} [An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
+** ID <nowiki>[An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
 *** <nowiki># {takesValue, valueClass=textClass}</nowiki>
-** Label <nowiki>{requireChild} [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
+** Label <nowiki> [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
 ** Metadata <nowiki>[Data about data. Information that describes another set of data.]</nowiki>
-*** Creation-date <nowiki>{requireChild}[The date on which data creation of this element began.]</nowiki>
+*** Creation-date <nowiki>[The date on which data creation of this element began.]</nowiki>
 **** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Experimental-note <nowiki>[A brief written record about the experiment.]</nowiki>
 **** <nowiki># {takesValue, valueClass=textClass}</nowiki>
