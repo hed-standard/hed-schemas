@@ -999,6 +999,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** RGB-green <nowiki>[The green component.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass} [G value of RGB between 0 and 1.]</nowiki>
 **** Luminance <nowiki>[A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.]</nowiki>
+**** Luminance-contrast <nowiki>{suggestedTag=Percentage, suggestedTag=Ratio}[The difference in luminance in specific portions of a scene or image.]</nowiki>
+***** <nowiki># {takesValue, ValueClass=numericClass}[A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
 **** Opacity <nowiki>[A measure of impenetrability to light.]</nowiki>
 ** Sensory-presentation <nowiki>[The entity has a sensory manifestation.]</nowiki>
 *** Auditory-presentation <nowiki>[The sense of hearing is used in the presentation to the user.]</nowiki>
