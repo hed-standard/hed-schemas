@@ -245,7 +245,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Phoneme <nowiki>[A speech sound that is distinguished by the speakers of a particular language.]</nowiki>
 ** Phrase <nowiki>[A phrase is a group of words functioning as a single unit in the syntax of a sentence.]</nowiki>
 ** Sentence <nowiki>[A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb.]</nowiki>
-** Syllable <nowiki>[A unit of spoken language larger than a phoneme.]</nowiki>
+** Syllable <nowiki>[A unit of pronunciation having a vowel or consonant sound, with or without surrounding consonants, forming the whole or a part of a word.]</nowiki>
 ** Textblock <nowiki>[A block of text.]</nowiki>
 ** Word <nowiki>[A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.]</nowiki>
 * Object <nowiki>{suggestedTag=Sensory-presentation}[Something perceptible by one or more of the senses, especially by vision or touch. A material thing.]</nowiki>
