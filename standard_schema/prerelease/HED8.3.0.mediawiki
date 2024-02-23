@@ -214,7 +214,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Torso-back <nowiki>[The rear surface of the human body from the shoulders to the hips.]</nowiki>
 ***** Buttocks <nowiki>[The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
 ***** Torso-chest <nowiki>[The anterior side of the thorax from the neck to the abdomen.]</nowiki>
-***** Gentalia <nowiki>{deprecatedFrom=8.1.0}[The external organs of reproduction.]</nowiki>
+***** Gentalia <nowiki>{deprecatedFrom=8.1.0}[The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.]</nowiki>
 ***** Hip <nowiki>[The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
 ***** Waist <nowiki>[The abdominal circumference at the navel.]</nowiki>
 **** Upper-extremity <nowiki>[Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
@@ -240,14 +240,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Character <nowiki>[A mark or symbol used in writing.]</nowiki>
 ** Clause <nowiki>[A  unit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.]</nowiki>
 ** Glyph <nowiki>[A hieroglyphic character, symbol, or pictograph.]</nowiki>
-** Nonword <nowiki>[A group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.]</nowiki>
+** Nonword <nowiki>[An unpronounceable group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.]</nowiki>
 ** Paragraph <nowiki>[A distinct section of a piece of writing, usually dealing with a single theme.]</nowiki>
 ** Phoneme <nowiki>[Any of the minimally distinct units of sound in a specified language that distinguish one word from another.]</nowiki>
 ** Phrase <nowiki>[A phrase is a group of words functioning as a single unit in the syntax of a sentence.]</nowiki>
+** Nonword <nowiki>[An unpronounceable group of letters or speech sounds that is surrounded by white space when written, is not accepted as a word by native speakers.]</nowiki>
+** Pseudoword <nowiki>[A pronounceable group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.]</nowiki>
 ** Sentence <nowiki>[A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb.]</nowiki>
 ** Syllable <nowiki>[A unit of pronunciation having a vowel or consonant sound, with or without surrounding consonants, forming the whole or a part of a word.]</nowiki>
 ** Textblock <nowiki>[A block of text.]</nowiki>
-** Word <nowiki>[A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.]</nowiki>
+** Word <nowiki>[A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically surrounded by white space when written or printed.]</nowiki>
 * Object <nowiki>{suggestedTag=Sensory-presentation}[Something perceptible by one or more of the senses, especially by vision or touch. A material thing.]</nowiki>
 ** Geometric-object <nowiki>[An object or a representation that has structure and topology in space.]</nowiki>
 *** Pattern <nowiki>[An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.]</nowiki>
@@ -327,7 +329,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Machine <nowiki>[A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
 **** Measurement-device <nowiki>[A device in which a measure function inheres.]</nowiki>
 ***** Clock <nowiki>[A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
-****** Clock-face <nowiki>{deprecatedFrom=8.3.0}[A location identifier based on clockface numbering or anatomic subregion.]</nowiki>
+****** Clock-face <nowiki>{deprecatedFrom=8.2.0}[A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 **** Robot <nowiki>[A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
 **** Tool <nowiki>[A component that is not part of a device but is designed to support its assembly or operation.]</nowiki>
 ***	Document <nowiki>[A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.]</nowiki>
@@ -1219,6 +1221,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
 * temperatureUnits <nowiki>{defaultUnits=degree-Celsius}</nowiki>
 ** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0}[Units are not allowed to have spaces. Use degree-Celsius or oC instead.]</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * timeUnits <nowiki>{defaultUnits=s}</nowiki> 
 ** second <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
