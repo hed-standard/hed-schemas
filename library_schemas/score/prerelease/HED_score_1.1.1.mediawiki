@@ -12,7 +12,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Modulator''' <nowiki>[External stimuli / interventions or changes in the alertness level (sleep) that modify: the background activity, or how often a graphoelement is occurring, or change other features of the graphoelement (like intra-burst frequency). For each observed finding, there is an option of specifying how they are influenced by the modulators and procedures that were done during the recording.]</nowiki>
 
-    * Sleep-modulator
+    * Sleep-modulator <nowiki> {suggestedTag=Drowsy} [When sleep/drowsiness features are scored during drowsiness, Drowsy should be listed as a modulator (Source: Beniczky ea 2017, Section 7 and Table 2). ]</nowiki>
         ** Sleep-deprivation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sleep-following-sleep-deprivation <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
@@ -20,8 +20,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Natural-sleep <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Induced-sleep <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Drowsiness <nowiki> [When sleep/drowsiness features are scored during drowsiness, drowsiness should be listed as a modulator (Source: Beniczky ea 2017, Section 7 and Table 2).]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Awakening <nowiki> [Source: Beniczky ea 2017, Table 2.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -94,7 +92,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * K-complex <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [A burst of somewhat variable appearance, consisting most commonly of a high voltage negative slow wave followed by a smaller positive slow wave frequently associated with a sleep spindle. Duration greater than 0.5 s. Amplitude is generally maximal in the frontal vertex. K complexes occur during nonREM sleep, apparently spontaneously, or in response to sudden sensory / auditory stimuli, and are not specific for any individual sensory modality. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
     * Saw-tooth-waves <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Vertex negative 2-5 Hz waves occurring in series during REM sleep. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
     * POSTS <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Positive occipital sharp transients of sleep. Sharp transient maximal over the occipital regions, positive relative to other areas, apparently occurring spontaneously during sleep. May be single or repetitive. Amplitude varies but is generally below 50 microV. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
-    * Hypnagogic-hypersynchrony <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
+    * Hypnagogic-hypersynchrony <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Finding-amplitude-asymmetry} [Hypnagogic/hypnopompic hypersynchrony in children. Bursts of bilateral, synchronous delta or theta activity of large amplitude, occasionally with superimposed faster components, occurring during falling asleep or during awakening, in children. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
     * Non-reactive-sleep <nowiki>[EEG activity consisting of normal sleep graphoelements, but which cannot be interrupted by external stimuli/ the patient cannot be waken. (Source: Beniczky ea 2013, Appendix S3; Beniczky ea 2017, Section 7.)]</nowiki>
 
 
@@ -191,9 +189,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Eye-movement-horizontal-artifact <nowiki>[Example for EEG: There is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Eye-movement-vertical-artifact <nowiki>[Example for EEG: The EEG shows positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections was similar to the time course of the eyeball movement. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Slow-eye-movement-artifact <nowiki>[Slow, rolling eye-movements, seen during drowsiness. (Source: Beniczky ea 2013, Appendix S7.)]</nowiki>
-        ** Nystagmus-artifact
-        ** Chewing-artifact 
-        ** Sucking-artifact 
+        ** Nystagmus-artifact <nowiki>[Source: Beniczky ea 2017, Table 15.]</nowiki>
+        ** Chewing-artifact <nowiki>[Source: Beniczky ea 2017, Table 15.]</nowiki>
+        ** Sucking-artifact <nowiki>[Source: Beniczky ea 2017, Table 15.]</nowiki>
         ** Glossokinetic-artifact <nowiki>[The tongue functions as a dipole, with the tip negative with respect to the base. The artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Rocking-patting-artifact <nowiki>[Quasi-rhythmical artifacts in recordings from infants caused by rocking/patting. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Movement-artifact <nowiki>[Example for EEG: Large amplitude artifact, with irregular morphology (usually resembling a slow-wave or a wave with complex morphology) seen in one or several channels, due to movement. If the causing movement is repetitive, the artifact might resemble a rhythmic EEG activity. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
@@ -206,8 +204,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Non-biological-artifact <nowiki> {suggestedTag=Artifact-significance-to-recording} [Non-biological artifact. (Source: Beniczky ea 2017, Table 15.)]</nowiki>
         ** Power-supply-artifact <nowiki>[50-60 Hz artifact. Monomorphic waveform due to 50 or 60 Hz A/C power supply. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Induction-artifact <nowiki>[Artifacts (usually of high frequency) induced by nearby equipment (like in the intensive care unit). (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
-        ** Dialysis-artifact 
-        ** Artificial-ventilation-artifact 
+        ** Dialysis-artifact <nowiki>[Source: Beniczky ea 2017, Table 15.]</nowiki>
+        ** Artificial-ventilation-artifact <nowiki>[Source: Beniczky ea 2017, Table 15.]</nowiki>
         ** Electrode-pops-artifact <nowiki>[Brief discharges with a very steep upslope and shallow fall that occur in all leads which include that electrode. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
         ** Salt-bridge-artifact <nowiki>[Typically occurs in 1 channel which may appear isoelectric. Only seen in bipolar montage. (Source: Beniczky ea 2013, Appendix S7; Beniczky ea 2017, Table 15.)]</nowiki>
 
@@ -253,37 +251,22 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
         ** Other-ECG-feature {requireChild} <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording} [Findings in Electromyography recordings. (Source: Beniczky ea 2017, Section 13, Table 16.)]</nowiki>
-        ** EMG-muscle-side <nowiki> [(Source: Beniczky ea 2013, Table 9; Beniczky ea 2017, Table 16.)] </nowiki>
-            *** EMG-left-muscle
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-right-muscle
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-bilateral-muscle
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+    * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Left-side-of, suggestedTag=Right-side-of, suggestedTag=Bilateral-to} [Findings in Electromyography recordings, use suggested tags to note the side of the muscle. (Source: Beniczky ea 2017, Section 13, Table 16.)]</nowiki>
         ** EMG-muscle-name
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+        ** Myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** Negative-myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-myoclonus-rhythmic <nowiki> [Numerical value for frequency. (Source: Beniczky ea 2017, Table 16.)] </nowiki>
+            *** Myoclonus-rhythmic <nowiki> [Numerical value for frequency. (Source: Beniczky ea 2017, Table 16.)] </nowiki>
                 *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-            *** EMG-myoclonus-arrhythmic <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-myoclonus-synchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** EMG-myoclonus-asynchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-PLMS <nowiki>[Periodic limb movements in sleep. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
-        ** EMG-spasm <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** EMG-tonic-contraction <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Myoclonus-arrhythmic <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+            *** Myoclonus-synchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+            *** Myoclonus-asynchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+        ** PLMS <nowiki>[Periodic limb movements in sleep. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
+        ** Spasm <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
+        ** Tonic-contraction <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
         ** EMG-asymmetric-activation <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** EMG-asymmetric-activation-left-first <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** EMG-asymmetric-activation-right-first <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Other-EMG-features <nowiki> {requireChild} [Source: Beniczky ea 2017, Table 16.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * Other-polygraphic-channel <nowiki> {requireChild}[Source: Beniczky ea 2017, Section 13.] </nowiki>
@@ -294,16 +277,16 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
     * Signal-morphology-property <nowiki>[Signal morphology contains attributes to describe findings in background, interictal or ictal activity. (Source: Beniczky ea 2017, Table 5, Table 8, Table 12.)]</nowiki>
 
-        ** Rhythmic-activity-morphology <nowiki>[Rhythmic activity can be observed during background, interictal or ictal activity and HED-SCORE therefore describes this as a property. (Source: Beniczky ea 2017, Table 5, Table 12, Table 14.)]</nowiki>
-            *** Delta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the delta frequency range (under 4 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
+        ** Rhythmic-activity-attribute <nowiki>[Rhythmic activity can be observed during background, interictal or ictal activity and HED-SCORE therefore describes this as an property/attribute. (Source: Beniczky ea 2017, Table 5, Table 12, Table 14.)]</nowiki>
+            *** Delta-activity <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the delta frequency range (under 4 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Theta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the theta frequency range (4-8 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
+            *** Theta-activity <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the theta frequency range (4-8 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Alpha-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the alpha frequency range (8-13 Hz), but not a part of the posterior dominant rhythm. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
+            *** Alpha-activity <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the alpha frequency range (8-13 Hz), but not a part of the posterior dominant rhythm. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Beta-activity-morphology <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the beta frequency range (14-40 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
+            *** Beta-activity <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude} [Rhythmic activity in the beta frequency range (14-40 Hz). (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S2, S6.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Gamma-activity-morphology <nowiki> {suggestedTag=Finding-frequency,suggestedTag=Finding-amplitude} [Rhythmic activity in the gamma frequency range. (Source: Beniczky ea 2017, Table 5.)]</nowiki>
+            *** Gamma-activity <nowiki> {suggestedTag=Finding-frequency,suggestedTag=Finding-amplitude} [Rhythmic activity in the gamma frequency range. (Source: Beniczky ea 2017, Table 5.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Spike-morphology <nowiki>[A transient, clearly distinguished from background activity, with pointed peak at a conventional paper speed or time scale and duration from 20 to under 70 ms, i.e. 1/50-1/15 s approximately. Main component is generally negative relative to other areas. Amplitude varies. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)]</nowiki>
@@ -535,13 +518,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Time-related-property <nowiki>[Estimates of how often a graphoelement is seen in the recording. (Source: Beniczky ea 2017, Table 6, Table 8.)]</nowiki>
-        ** Appearance-mode <nowiki> {suggestedTag=Property-not-possible-to-determine} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-            *** Random-appearance-mode <nowiki>[Occurrence of the non-ictal EEG pattern / graphoelement without any rhythmicity / periodicity. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Periodic-appearance-mode <nowiki>[Non-ictal EEG pattern / graphoelement occurring at an approximately regular rate / interval (generally of 1 to several seconds). (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Variable-appearance-mode <nowiki>[Occurrence of non-ictal EEG pattern / graphoelements, that is sometimes rhythmic or periodic, other times random, throughout the recording. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Appearance-mode <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Random, suggestedTag=Repetitive, suggestedTag=Varying} [Describes how the non-ictal EEG pattern/graphoelement is distributed through the recording. Occurrence of the non-ictal EEG pattern / graphoelement can be Random, Repetitive or Varying. Random: occurring without any rhythmicity / periodicity, Repetitive: occurring at an approximately regular rate / interval (generally of 1 to several seconds). Variable: occurring sometimes rhythmic or periodic, other times random, throughout the recording. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
+            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges). (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
             *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
@@ -639,9 +617,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
     * Episode-property <nowiki>[Episode property pertains to the set of characteristics that collectively depict different aspects of an episode, encompassing its manifestations and phases.]</nowiki>
         ** Seizure-classification <nowiki>[Seizure classification refers to the grouping of seizures based on their clinical features, EEG patterns, and other characteristics. Epileptic seizures are named using the current ILAE seizure classification (Fisher et al., 2017, Beniczky et al., 2017).]</nowiki>
-            *** Myoclonic-seizure <nowiki>[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
-            *** Negative-myoclonic-seizure <nowiki>[Source: Beniczky ea 2017, Supplement 1.]</nowiki>
-            *** Motor-seizure <nowiki>[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
+            *** Myoclonic-seizure <nowiki> {suggestedTag=Duration}[Sudden, brief ( lower than 100 msec) involuntary single or multiple contraction(s) of muscles(s) or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2; Duration tag from Beniczky ea Table 13.)]</nowiki>
+            *** Negative-myoclonic-seizure <nowiki> {suggestedTag=Duration}[Source: Beniczky ea 2017, Supplement 1; Duration tag from Beniczky ea Table 13.]</nowiki>
+            *** Motor-seizure <nowiki> {suggestedTag=Duration}[Involves musculature in any form. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2; Duration tag from Beniczky ea Table 13.)]</nowiki>
                 **** Clonic-seizure <nowiki>[Jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Tonic-seizure <nowiki>[A sustained increase in muscle contraction lasting a few seconds to minutes. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Atonic-seizure <nowiki>[Sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting  about 1 to 2 s, involving head, trunk, jaw, or limb musculature. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
@@ -651,13 +629,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Automatism-seizure <nowiki>[A more or less coordinated motor activity usually occurring when cognition is impaired and for which the subject is usually (but not always) amnesic afterward. This often resembles a voluntary movement and may consist of an inappropriate continuation of preictal motor activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Hyperkinetic-seizure <nowiki>[(Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Epileptic-spasm <nowiki>[A sudden flexion, extension, or mixed extension flexion of predominantly proximal and truncal muscles that is usually more sustained than a myoclonic movement but not as sustained as a tonic seizure. Limited forms may occur: Grimacing, head nodding, or subtle eye movements. Epileptic spasms frequently occur in clusters. Infantile spasms are the best known form, but spasms can occur at all ages. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
-            *** Nonmotor-seizure <nowiki>[Focal or generalized seizure types in which motor activity is not prominent. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
+            *** Nonmotor-seizure <nowiki>{suggestedTag=Duration}[Focal or generalized seizure types in which motor activity is not prominent. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2; Duration tag from Beniczky ea Table 13.)]</nowiki>
                 **** Behavior-arrest-seizure <nowiki>[Arrest (pause) of activities, freezing, immobilization, as in behavior arrest seizure. A focal behavior arrest seizure shows arrest of behavior as the prominent feature of the entire seizure. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017.)]</nowiki>
                 **** Sensory-seizure <nowiki>[A perceptual experience not caused by appropriate stimuli in the external world. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Emotional-seizure <nowiki>[Seizures presenting with an emotion or the appearance of having an emotion as an early prominent feature, such as fear, spontaneous joy or euphoria, laughing (gelastic), or crying (dacrystic). Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Cognitive-seizure <nowiki>[Pertaining to thinking and higher cortical functions, such as language, spatial perception, memory, and praxis. The previous term for similar usage as a seizure type was psychic. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Autonomic-seizure <nowiki>[A distinct alteration of autonomic nervous system function involving cardiovascular, pupillary, gastrointestinal, sudomotor, vasomotor, and thermoregulatory functions. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
-            *** Absence-seizure <nowiki>[Absence seizures present with a sudden cessation of activity and awareness. Absence seizures tend to occur in younger age groups, have more sudden start and termination, and they usually display less complex automatisms than do focal seizures with impaired awareness, but the distinctions are not absolute. EEG information may be required for accurate classification. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
+            *** Absence-seizure <nowiki>{suggestedTag=Duration}[Absence seizures present with a sudden cessation of activity and awareness. Absence seizures tend to occur in younger age groups, have more sudden start and termination, and they usually display less complex automatisms than do focal seizures with impaired awareness, but the distinctions are not absolute. EEG information may be required for accurate classification. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2; Duration tag from Beniczky ea Table 13.)]</nowiki>
                 **** Typical-absence-seizure <nowiki>[A sudden onset, interruption of ongoing activities, a blank stare, possibly a brief upward deviation of the eyes. Usually the patient will be unresponsive when spoken to. Duration is a few seconds to half a minute with very rapid recovery. Although not always available, an EEG would show generalized epileptiform discharges during the event. An absence seizure is by definition a seizure of generalized onset. The word is not synonymous with a blank stare, which also can be encountered with focal onset seizures. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Atypical-absence-seizure <nowiki>[An absence seizure with changes in tone that are more pronounced than in typical absence or the onset and/or cessation is not abrupt, often associated with slow, irregular, generalized spike-wave activity. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, Table 2.)]</nowiki>
                 **** Myoclonic-absence-seizure <nowiki>[A myoclonic absence seizure refers to an absence seizure with rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with three-per-second generalized spike-wave discharges. Duration is typically 10 to 60 s. Impairment of consciousness may not be obvious. Definition from ILAE 2017 Classification of Seizure Types Expanded Version. (Source: Fisher ea 2017, page 536.)]</nowiki>
@@ -668,7 +646,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Episode-phase-subsequent
             *** Episode-phase-postictal
 
-        ** Seizure-semiology <nowiki>{suggestedTag=None}[Seizure semiology refers to the clinical signs and sympoms that are observed during a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
+        ** Seizure-semiology <nowiki>{suggestedTag=None,suggestedTag=Duration}[Seizure semiology refers to the clinical signs and sympoms that are observed during a seizure. Semiology is described according to the ILAE Glossary of Descriptive Terminology for Ictal Semiology (Blume et al., 2001). Besides the name, the semiologic finding can also be characterized by the somatotopic modifier, laterality, body part and centricity. Uses Location-property tags. (Source: Beniczky ea 2017, Section 10; Duration tag from Beniczky ea Table 13.)]</nowiki>
             *** Semiology-motor-behavioral-arrest <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity} [Interruption of ongoing motor activity or of ongoing behaviors with fixed gaze, without movement of the head or trunk (oro-alimentary and hand automatisms may continue). (Source: Beniczky ea 2017, Table 10; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** Semiology-dyscognitive <nowiki> [The term describes events in which (1) disturbance of cognition is the predominant or most apparent feature, and (2a) two or more of the following components are involved, or (2b) involvement of such components remains undetermined. Otherwise, use the more specific term (e.g., mnemonic experiential seizure  or hallucinatory experiential seizure). Components of cognition: ++ perception: symbolic conception of sensory information ++ attention: appropriate selection of a principal perception or task ++ emotion: appropriate affective significance of a perception ++ memory: ability to store and retrieve percepts or concepts ++ executive function: anticipation, selection, monitoring of consequences, and initiation of motor activity including praxis, speech. (Source: Beniczky ea 2017, Table 10; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** Semiology-elementary-motor <nowiki>[A single type of contraction of a muscle or group of muscles that is usually stereotyped and not decomposable into phases. However, see tonic-clonic, an elementary motor sequence. (Source: Blume ea 2001, 1.1; Beniczky ea 2017, Table 10.)]</nowiki>
@@ -744,7 +722,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Semiology-manifestation-other <nowiki> {requireChild} </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Postictal-semiology <nowiki> {suggestedTag=None}[A transient clinical abnormality of central nervous system function that appears or becomes accentuated when clinical signs of the ictus have ended. (Source: Blume ea 2001; Beniczky ea 2017, Table 11.)] </nowiki>
+        ** Postictal-semiology <nowiki> {suggestedTag=None, suggestedTag=Duration}[A transient clinical abnormality of central nervous system function that appears or becomes accentuated when clinical signs of the ictus have ended. (Source: Blume ea 2001; Beniczky ea 2017, Table 11; Duration tag from Beniczky ea Table 13.)] </nowiki>
             *** Postictal-unconscious <nowiki> [Unawareness and unresponsiveness. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)] </nowiki>
             *** Postictal-quick-recovery-of-consciousness <nowiki> [Quick recovery of awareness and responsiveness. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
             *** Postictal-aphasia-or-dysphasia <nowiki> [Impaired communication involving language without dysfunction of relevant primary motor or sensory pathways, manifested as impaired comprehension, anomia, parahasic errors or a combination of these. (Source: Beniczky ea 2017, Table 11; Beniczky ea 2013, Appendix S5.)]</nowiki>
@@ -772,8 +750,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Ictal-EEG-activity <nowiki> {suggestedTag=Polyspikes-morphology, suggestedTag=Fast-spike-activity-morphology, suggestedTag=Low-voltage-fast-activity-morphology, suggestedTag=Polysharp-waves-morphology, suggestedTag=Spike-and-slow-wave-morphology, suggestedTag=Polyspike-and-slow-wave-morphology, suggestedTag=Sharp-and-slow-wave-morphology, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Slow-wave-large-amplitude-morphology, suggestedTag=Irregular-delta-or-theta-activity-morphology, suggestedTag=Electrodecremental-change-morphology, suggestedTag=DC-shift-morphology, suggestedTag=Disappearance-of-ongoing-activity-morphology, suggestedTag=Brain-laterality, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Source-analysis-laterality, suggestedTag=Source-analysis-brain-region} </nowiki>
             *** Postictal-EEG-activity <nowiki> {suggestedTag=Brain-laterality, suggestedTag=Body-part-location, suggestedTag=Brain-centricity} </nowiki>
 
-        ** Episode-time-context-property <nowiki> {suggestedTag=Duration} [Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with suggested tag.]</nowiki>
-            *** Episode-consciousness <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
+        ** Episode-time-context-property <nowiki> [Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with suggested tag. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
+            *** Episode-consciousness <nowiki> {suggestedTag=Property-not-possible-to-determine}[Beniczky ea 2017, Table 13.] </nowiki>
                 **** Episode-consciousness-not-tested
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Episode-consciousness-affected
@@ -783,34 +761,25 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** Episode-consciousness-not-affected
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-awareness <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Property-exists,suggestedTag=Property-absence} </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** Episode-awareness <nowiki> {suggestedTag=True,suggestedTag=False} [False: the patient is not aware of the episode. True: the patient is aware of the episode. (Source: Beniczky ea 2017, Table 13.)] </nowiki>
 
-            *** Clinical-EEG-temporal-relationship <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds.]</nowiki>
+            *** Clinical-EEG-temporal-relationship <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Synchronous-with} [For a simultaneous start, use Synchronous-with. (Source: Beniczky ea 2017, Table 13.)] </nowiki>
+                **** Clinical-start-followed-EEG <nowiki>[Clinical start, followed by EEG start by X seconds. (Source: Beniczky ea 2017, Table 13.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-                **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds.]</nowiki>
+                **** EEG-start-followed-clinical <nowiki>[EEG start, followed by clinical start by X seconds. (Source: Beniczky ea 2017, Table 13.)]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
-                **** Simultaneous-start-clinical-EEG
-                **** Clinical-EEG-temporal-relationship-notes <nowiki> {requireChild} [Clinical notes to annotate the clinical-EEG temporal relationship.]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass} </nowiki>
 
-            *** Episode-event-count <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording.]</nowiki>
+            *** Episode-event-count <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording. (Source: Beniczky ea 2017, Table 13.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
 
-            *** State-episode-start <nowiki> {suggestedTag=Property-not-possible-to-determine} [State at the start of the episode.]</nowiki>
-                **** Episode-start-from-sleep
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-                **** Episode-start-from-awake
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+            *** State-episode-start <nowiki> {suggestedTag=Asleep, suggestedTag=Awake} [State at the start of the episode. (Source: Beniczky ea 2017, Table 13.)]</nowiki>
 
-            *** Episode-postictal-phase <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
-                **** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits} </nowiki>
+            *** Status-epilepticus <nowiki> [Episode with duration >30 min but not precisely determined (status epilepticus). (Source: Beniczky ea 2017, Table 13.)] </nowiki>
 
-            *** Episode-prodrome <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume et al., 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon).]</nowiki>
+            *** Episode-prodrome <nowiki> {suggestedTag=True,suggestedTag=False} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume ea 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon). If prodrome present/true + free text. (Source: Blume ea 2001; Beniczky ea 2017, Table 13.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-            *** Episode-tongue-biting <nowiki> {suggestedTag=Property-exists,suggestedTag=Property-absence} </nowiki>
+            *** Episode-tongue-biting <nowiki> {suggestedTag=True,suggestedTag=False} </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
             *** Episode-responsiveness <nowiki> {suggestedTag=Property-not-possible-to-determine} </nowiki>
@@ -845,13 +814,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** Artifact-does-not-interfere-recording
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-significance-to-recording <nowiki> {suggestedTag=Normal, suggestedTag=Abnormal}[Significance of finding. When normal/abnormal could be labeled with with suggested tags.]</nowiki>
+        ** Finding-significance-to-recording <nowiki> {suggestedTag=Normal, suggestedTag=Abnormal, suggestedTag=Property-not-possible-to-determine}[Significance of finding. When normal/abnormal could be labeled with with suggested tags.]</nowiki>
             *** Finding-no-definite-abnormality
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Finding-significance-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Finding-frequency <nowiki> {requireChild} [Value in Hz (number) typed in.]</nowiki>
+        ** Finding-frequency <nowiki> {requireChild, suggestedTag=Symmetrical, suggestedTag=Asymmetrical} [Value in Hz (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits} </nowiki>
         
         ** Finding-frequency-asymmetry <nowiki> {suggestedTag=Symmetrical} [When symmetrical could be labeled with suggested tag.]</nowiki>
@@ -863,12 +830,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Finding-amplitude <nowiki> {requireChild} [Value in microvolts (number) typed in.]</nowiki>
             *** <nowiki># {takesValue, valueClass=numericClass, unitClass=electricPotentialUnits} </nowiki>
 
-        ** Finding-amplitude-asymmetry <nowiki> {suggestedTag=Symmetrical} [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with suggested tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
+        ** Finding-amplitude-asymmetry <nowiki> {suggestedTag=Symmetrical, suggestedTag=Property-not-possible-to-determine} [For posterior dominant rhythm: a difference in amplitude between the homologous area on opposite sides of the head that consistently exceeds 50 percent. When symmetrical could be labeled with suggested tag. For sleep: Absence or consistently marked amplitude asymmetry (greater than 50 percent) of a normal sleep graphoelement.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-left <nowiki>[Amplitude lower on the left side.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Finding-amplitude-asymmetry-lower-right <nowiki>[Amplitude lower on the right side.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Finding-amplitude-asymmetry-not-possible-to-determine <nowiki>[Not possible to determine.]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Finding-stopped-by {requireChild}
