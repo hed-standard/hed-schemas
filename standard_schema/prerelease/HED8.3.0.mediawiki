@@ -677,7 +677,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Height <nowiki>[The vertical measurement or distance from the base to the top of an object.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 ****** Length <nowiki>[The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.]</nowiki> 
-******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki> 
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
+****** Perimeter <nowiki>[The minimum length of paths enclosing a 2D shape.]</nowiki>
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 ****** Radius <nowiki>[The distance of the line from the center of a circle or a sphere to its perimeter or outer surface, respectively.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 ****** Volume <nowiki>[The amount of three dimensional space occupied by an object or the capacity of a space or container.]</nowiki>
