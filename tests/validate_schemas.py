@@ -1,8 +1,10 @@
 import sys
-from hed.schema import load_schema, from_string
+from hed.schema import load_schema, from_string, load_schema_version
 from hed.errors import get_printable_issue_string
 
 def main():
+    # Trigger a local cache hit
+    _ = load_schema_version("8.2.0")
     validation_issues = []
     saving_failures = []
     for file_path in sys.argv[1:]:  # sys.argv[1:] contains all the arguments passed to the script
