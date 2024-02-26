@@ -214,7 +214,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Torso-back <nowiki>[The rear surface of the human body from the shoulders to the hips.]</nowiki>
 ***** Buttocks <nowiki>[The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
 ***** Torso-chest <nowiki>[The anterior side of the thorax from the neck to the abdomen.]</nowiki>
-***** Gentalia <nowiki>{deprecatedFrom=8.1.0}[The external organs of reproduction.]</nowiki>
+***** Gentalia <nowiki>{deprecatedFrom=8.1.0}[The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.]</nowiki>
 ***** Hip <nowiki>[The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
 ***** Waist <nowiki>[The abdominal circumference at the navel.]</nowiki>
 **** Upper-extremity <nowiki>[Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
@@ -240,14 +240,15 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Character <nowiki>[A mark or symbol used in writing.]</nowiki>
 ** Clause <nowiki>[A  unit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.]</nowiki>
 ** Glyph <nowiki>[A hieroglyphic character, symbol, or pictograph.]</nowiki>
-** Nonword <nowiki>[A group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.]</nowiki>
+** Nonword <nowiki>[An unpronounceable group of letters or speech sounds that is surrounded by white space when written, is not accepted as a word by native speakers.]</nowiki>
 ** Paragraph <nowiki>[A distinct section of a piece of writing, usually dealing with a single theme.]</nowiki>
-** Phoneme <nowiki>[A speech sound that is distinguished by the speakers of a particular language.]</nowiki>
+** Phoneme <nowiki>[Any of the minimally distinct units of sound in a specified language that distinguish one word from another.]</nowiki>
 ** Phrase <nowiki>[A phrase is a group of words functioning as a single unit in the syntax of a sentence.]</nowiki>
+** Pseudoword <nowiki>[A pronounceable group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.]</nowiki>
 ** Sentence <nowiki>[A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb.]</nowiki>
-** Syllable <nowiki>[A unit of spoken language larger than a phoneme.]</nowiki>
+** Syllable <nowiki>[A unit of pronunciation having a vowel or consonant sound, with or without surrounding consonants, forming the whole or a part of a word.]</nowiki>
 ** Textblock <nowiki>[A block of text.]</nowiki>
-** Word <nowiki>[A word is the smallest free form (an item that may be expressed in isolation with semantic or pragmatic content) in a language.]</nowiki>
+** Word <nowiki>[A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically surrounded by white space when written or printed.]</nowiki>
 * Object <nowiki>{suggestedTag=Sensory-presentation}[Something perceptible by one or more of the senses, especially by vision or touch. A material thing.]</nowiki>
 ** Geometric-object <nowiki>[An object or a representation that has structure and topology in space.]</nowiki>
 *** Pattern <nowiki>[An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.]</nowiki>
@@ -327,7 +328,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Machine <nowiki>[A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
 **** Measurement-device <nowiki>[A device in which a measure function inheres.]</nowiki>
 ***** Clock <nowiki>[A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
-****** Clock-face <nowiki>{deprecatedFrom=8.3.0}[A location identifier based on clockface numbering or anatomic subregion.]</nowiki>
+****** Clock-face <nowiki>{deprecatedFrom=8.2.0}[A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 **** Robot <nowiki>[A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
 **** Tool <nowiki>[A component that is not part of a device but is designed to support its assembly or operation.]</nowiki>
 ***	Document <nowiki>[A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.]</nowiki>
@@ -487,6 +488,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Female <nowiki>[Biological sex of an individual with female sexual organs such ova.]</nowiki>
 **** Male <nowiki>[Biological sex of an individual with male sexual organs producing sperm.]</nowiki>
 **** Intersex <nowiki>[Having genitalia and/or secondary sexual characteristics of indeterminate sex.]</nowiki>
+**** Other-sex <nowiki>[A non-specific designation of sexual traits.]</nowiki>
 *** Ethnicity <nowiki>[Belong to a social group that has a common national or cultural tradition. Use with Label to avoid extension.]</nowiki>
 *** Handedness <nowiki>[Individual preference for use of a hand, known as the dominant hand.]</nowiki>
 **** Left-handed <nowiki>[Preference for using the left hand or foot for tasks requiring the use of a single hand or foot.]</nowiki>
@@ -494,6 +496,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Ambidextrous <nowiki>[Having no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot.]</nowiki>
 *** Race <nowiki>[Belonging to a group sharing physical or social qualities as defined within a specified society. Use with Label to avoid extension.]</nowiki>
 * Data-property <nowiki>{extensionAllowed}[Something that pertains to data or information.]</nowiki>
+** Data-artifact <nowiki>[An anomalous, interfering, or distorting signal originating from a source other than the item being studied.]</nowiki>
+*** Biological-artifact <nowiki>[A data artifact arising from a biological entity being measured.]</nowiki>
+*** Nonbiological-artifact <nowiki>[A data artifact arising from a non-biological source.]</nowiki>
 ** Data-marker <nowiki>[An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>[An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker<nowiki>[An indicator placed at a particular time in the data.]</nowiki>
@@ -579,6 +584,13 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Supraliminal <nowiki>{relatedTag=Liminal, relatedTag=Subliminal}[Situated above a sensory threshold that is perceptible or capable of eliciting a response.]</nowiki>
 ***** Thick <nowiki>{relatedTag=Thin}[Wide in width, extent or cross-section.]</nowiki>
 ***** Thin <nowiki>{relatedTag=Thick}[Narrow in width, extent or cross-section.]</nowiki>
+**** Categorical-location-value <nowiki>[Value indicating the location of something, primarily as an identifier rather than an expression of where the item is relative to something else.]</nowiki>
+***** Anterior <nowiki>[Relating to an item on the front of an agent body (from the point of view of the agent) or on the front of an object from the point of view of an agent. This pertains to the identity of an agent or a thing.]</nowiki>
+***** Lateral <nowiki>[Identifying the portion of an object away from the midline, particularly applied to the (anterior-posterior, superior-inferior) surface of a brain.]</nowiki>
+***** Left <nowiki>[Relating to an item on the left side of an agent body (from the point of view of the agent) or the left side of an object from the point of view of an agent. This pertains to the identity of an agent or a thing, for example (Left, Hand) as an identifier for the left hand. HED spatial relations should be used for relative positions such as (Hand, (Left-side-of, Keyboard)), which denotes the hand placed on the left side of the keyboard, which could be either the identified left hand or right hand.]</nowiki>
+***** Medial <nowiki>[Identifying the portion of an object towards the center, particularly applied to the (anterior-posterior, superior-inferior) surface of a brain.]</nowiki>
+***** Right <nowiki>[Relating to an item on the right side of an agent body (from the point of view of the agent) or the right side of an object from the point of view of an agent. This pertains to the identity of an agent or a thing, for example (Right, Hand) as an identifier for the right hand. HED spatial relations should be used for relative positions such as (Hand, (Right-side-of, Keyboard)), which denotes the hand placed on the right side of the keyboard, which could be either the identified left hand or right hand.]</nowiki>
+***** Posterior <nowiki>[Relating to an item on the back of an agent body (from the point of view of the agent) or on the back of an object from the point of view of an agent. This pertains to the identity of an agent or a thing.]</nowiki>
 **** Categorical-orientation-value <nowiki>[Value indicating the orientation or direction of something.]</nowiki>
 ***** Backward <nowiki>{relatedTag=Forward}[Directed behind or to the rear.]</nowiki>
 ***** Downward <nowiki>{relatedTag=Leftward,relatedTag=Rightward,relatedTag=Upward}[Moving or leading toward a lower place or level.]</nowiki>
@@ -661,15 +673,19 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Area <nowiki>[The extent of a 2-dimensional surface enclosed within a boundary.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=areaUnits}</nowiki> 
 ****** Depth <nowiki>[The distance from the surface of something especially from the perspective of looking from the front.]</nowiki> 
-******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki> 
-****** Length <nowiki>[The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.]</nowiki> 
-******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki> 
-****** Width <nowiki>[The extent or measurement of something from side to side.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 ****** Height <nowiki>[The vertical measurement or distance from the base to the top of an object.]</nowiki>
-******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki> 
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
+****** Length <nowiki>[The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.]</nowiki> 
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
+****** Perimeter <nowiki>[The minimum length of paths enclosing a 2D shape.]</nowiki>
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
+****** Radius <nowiki>[The distance of the line from the center of a circle or a sphere to its perimeter or outer surface, respectively.]</nowiki>
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 ****** Volume <nowiki>[The amount of three dimensional space occupied by an object or the capacity of a space or container.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass, unitClass=volumeUnits}</nowiki>
+****** Width <nowiki>[The extent or measurement of something from side to side.]</nowiki>
+******* <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki>
 **** Temporal-value <nowiki>[A characteristic of or relating to time or limited by time.]</nowiki>
 ***** Delay <nowiki>{topLevelTagGroup, reserved, relatedTag=Duration}[The time at which an event start time is delayed from the current onset time. This tag defines the start time of an event of temporal extent and may be used with the Duration tag.]</nowiki>
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki> 
@@ -717,14 +733,14 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Sloped-terrain <nowiki>[Tracts of land arranged in a sloping  or inclined position.]</nowiki>
 *** Uneven-terrain <nowiki>[Tracts of land that are not level, smooth, or regular.]</nowiki>
 * Informational-property<nowiki>{extensionAllowed}[Something that pertains to a task.]</nowiki>
-** Description <nowiki>{requireChild} [An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki> 
+** Description <nowiki>[An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki>
 *** <nowiki># {takesValue, valueClass=textClass}</nowiki>
-** ID <nowiki>{requireChild} [An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
+** ID <nowiki>[An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
 *** <nowiki># {takesValue, valueClass=textClass}</nowiki>
-** Label <nowiki>{requireChild} [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
+** Label <nowiki> [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
 ** Metadata <nowiki>[Data about data. Information that describes another set of data.]</nowiki>
-*** Creation-date <nowiki>{requireChild}[The date on which data creation of this element began.]</nowiki>
+*** Creation-date <nowiki>[The date on which the creation of this item began.]</nowiki>
 **** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Experimental-note <nowiki>[A brief written record about the experiment.]</nowiki>
 **** <nowiki># {takesValue, valueClass=textClass}</nowiki>
@@ -735,14 +751,20 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** <nowiki># {takesValue}</nowiki>
 **** CogPo <nowiki>[The CogPO ID number of something.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
+**** DOI <nowiki>[Digital object identifier for an object.]</nowiki>
+***** <nowiki># {takesValue}</nowiki>
 **** OBO-identifier <nowiki>[The identifier of a term in some Open Biology Ontology (OBO) ontology.]</nowiki>
 ***** <nowiki># {takesValue, valueClass=nameClass}</nowiki>
+**** Species-identifier <nowiki>[A binomial species name from the NCBI Taxonomy, for example, homo sapiens, mus musculus, or rattus norvegicus.]</nowiki>
+***** <nowiki># {takesValue}</nowiki>
 **** Subject-identifier <nowiki>[A sequence of characters used to identify, name, or characterize a trial or study subject.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
 **** UUID <nowiki>[A unique universal identifier.]</nowiki>
 ***** <nowiki># {takesValue}</nowiki>
 **** Version-identifier <nowiki>[An alphanumeric character string that identifies a form or variant of a type or original.]</nowiki>
 ***** <nowiki># {takesValue}[Usually is a semantic version.]</nowiki> 
+*** Modified-date <nowiki>[The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.]</nowiki>
+**** <nowiki># {takesValue, valueClass=dateTimeClass}</nowiki>
 *** Pathname <nowiki>[The specification of a node (file or directory) in a hierarchical file system, usually specified by listing the nodes top-down.]</nowiki>
 **** <nowiki># {takesValue}</nowiki>
 *** URL <nowiki>[A valid URL.]</nowiki>
@@ -992,6 +1014,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** RGB-green <nowiki>[The green component.]</nowiki>
 ******* <nowiki># {takesValue, valueClass=numericClass} [G value of RGB between 0 and 1.]</nowiki>
 **** Luminance <nowiki>[A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.]</nowiki>
+**** Luminance-contrast <nowiki>{suggestedTag=Percentage, suggestedTag=Ratio}[The difference in luminance in specific portions of a scene or image.]</nowiki>
+***** <nowiki># {takesValue, valueClass=numericClass}[A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
 **** Opacity <nowiki>[A measure of impenetrability to light.]</nowiki>
 ** Sensory-presentation <nowiki>[The entity has a sensory manifestation.]</nowiki>
 *** Auditory-presentation <nowiki>[The sense of hearing is used in the presentation to the user.]</nowiki>
@@ -1185,8 +1209,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 * jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki> 
 ** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0}</nowiki>
 * magneticFieldUnits <nowiki>{defaultUnits=fT}[Units used to magnetic field intensity.]</nowiki>
-** tesla <nowiki>{SIUnit, conversionFactor=10^-15}</nowiki>
-** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10^-15}</nowiki>
+** tesla <nowiki>{SIUnit, conversionFactor=10e-15}</nowiki>
+** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10e-15}</nowiki>
 * memorySizeUnits <nowiki>{defaultUnits=B}</nowiki> 
 ** byte <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
@@ -1201,8 +1225,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704}</nowiki>
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778}</nowiki>
-* temperatureUnits <nowiki>{defaultUnits=degree Celsius}</nowiki>
-** degree Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+* temperatureUnits <nowiki>{defaultUnits=degree-Celsius}</nowiki>
+** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0}[Units are not allowed to have spaces. Use degree-Celsius or oC instead.]</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * timeUnits <nowiki>{defaultUnits=s}</nowiki> 
 ** second <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
@@ -1221,50 +1246,50 @@ Each term in this vocabulary has a human-readable description and may include ad
 
 
 '''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-* deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
-* da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10^1.]</nowiki>
-* hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
-* h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10^2.]</nowiki>
-* kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
-* k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10^3.]</nowiki>
-* mega <nowiki>{SIUnitModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
-* M <nowiki>{SIUnitSymbolModifier, conversionFactor=10^6} [SI unit multiple representing 10^6.]</nowiki>
-* giga <nowiki>{SIUnitModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
-* G <nowiki>{SIUnitSymbolModifier, conversionFactor=10^9} [SI unit multiple representing 10^9.]</nowiki>
-* tera <nowiki>{SIUnitModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
-* T <nowiki>{SIUnitSymbolModifier, conversionFactor=10^12} [SI unit multiple representing 10^12.]</nowiki>
-* peta <nowiki>{SIUnitModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
-* P <nowiki>{SIUnitSymbolModifier, conversionFactor=10^15} [SI unit multiple representing 10^15.]</nowiki>
-* exa <nowiki>{SIUnitModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
-* E <nowiki>{SIUnitSymbolModifier, conversionFactor=10^18} [SI unit multiple representing 10^18.]</nowiki>
-* zetta <nowiki>{SIUnitModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
-* Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^21} [SI unit multiple representing 10^21.]</nowiki>
-* yotta <nowiki>{SIUnitModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
-* Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^24} [SI unit multiple representing 10^24.]</nowiki>
-* deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10^-1.]</nowiki>
-* d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10^-1.]</nowiki>
-* centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
-* c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10^-2.]</nowiki>
-* milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
-* m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10^-3.]</nowiki>
-* micro <nowiki>{SIUnitModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
-* u <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-6} [SI unit submultiple representing 10^-6.]</nowiki>
-* nano <nowiki>{SIUnitModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
-* n <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-9} [SI unit submultiple representing 10^-9.]</nowiki>
-* pico <nowiki>{SIUnitModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
-* p <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-12} [SI unit submultiple representing 10^-12.]</nowiki>
-* femto <nowiki>{SIUnitModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
-* f <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-15} [SI unit submultiple representing 10^-15.]</nowiki>
-* atto <nowiki>{SIUnitModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
-* a <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-18} [SI unit submultiple representing 10^-18.]</nowiki>
-* zepto <nowiki>{SIUnitModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
-* z <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-21} [SI unit submultiple representing 10^-21.]</nowiki>
-* yocto <nowiki>{SIUnitModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
-* y <nowiki>{SIUnitSymbolModifier, conversionFactor=10^-24} [SI unit submultiple representing 10^-24.]</nowiki>
+* deca <nowiki>{SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10e1.]</nowiki>
+* da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10e1.]</nowiki>
+* hecto <nowiki>{SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10e2.]</nowiki>
+* h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10e2.]</nowiki>
+* kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10e3.]</nowiki>
+* k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10e3.]</nowiki>
+* mega <nowiki>{SIUnitModifier, conversionFactor=10e6} [SI unit multiple representing 10e6.]</nowiki>
+* M <nowiki>{SIUnitSymbolModifier, conversionFactor=10e6} [SI unit multiple representing 10e6.]</nowiki>
+* giga <nowiki>{SIUnitModifier, conversionFactor=10e9} [SI unit multiple representing 10e9.]</nowiki>
+* G <nowiki>{SIUnitSymbolModifier, conversionFactor=10e9} [SI unit multiple representing 10e9.]</nowiki>
+* tera <nowiki>{SIUnitModifier, conversionFactor=10e12} [SI unit multiple representing 10e12.]</nowiki>
+* T <nowiki>{SIUnitSymbolModifier, conversionFactor=10e12} [SI unit multiple representing 10e12.]</nowiki>
+* peta <nowiki>{SIUnitModifier, conversionFactor=10e15} [SI unit multiple representing 10e15.]</nowiki>
+* P <nowiki>{SIUnitSymbolModifier, conversionFactor=10e15} [SI unit multiple representing 10e15.]</nowiki>
+* exa <nowiki>{SIUnitModifier, conversionFactor=10e18} [SI unit multiple representing 10e18.]</nowiki>
+* E <nowiki>{SIUnitSymbolModifier, conversionFactor=10e18} [SI unit multiple representing 10e18.]</nowiki>
+* zetta <nowiki>{SIUnitModifier, conversionFactor=10e21} [SI unit multiple representing 10e21.]</nowiki>
+* Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e21} [SI unit multiple representing 10e21.]</nowiki>
+* yotta <nowiki>{SIUnitModifier, conversionFactor=10e24} [SI unit multiple representing 10e24.]</nowiki>
+* Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e24} [SI unit multiple representing 10e24.]</nowiki>
+* deci <nowiki>{SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10e-1.]</nowiki>
+* d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10e-1.]</nowiki>
+* centi <nowiki>{SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10e-2.]</nowiki>
+* c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10e-2.]</nowiki>
+* milli <nowiki>{SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10e-3.]</nowiki>
+* m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10e-3.]</nowiki>
+* micro <nowiki>{SIUnitModifier, conversionFactor=10e-6} [SI unit submultiple representing 10e-6.]</nowiki>
+* u <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-6} [SI unit submultiple representing 10e-6.]</nowiki>
+* nano <nowiki>{SIUnitModifier, conversionFactor=10e-9} [SI unit submultiple representing 10e-9.]</nowiki>
+* n <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-9} [SI unit submultiple representing 10e-9.]</nowiki>
+* pico <nowiki>{SIUnitModifier, conversionFactor=10e-12} [SI unit submultiple representing 10e-12.]</nowiki>
+* p <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-12} [SI unit submultiple representing 10e-12.]</nowiki>
+* femto <nowiki>{SIUnitModifier, conversionFactor=10e-15} [SI unit submultiple representing 10e-15.]</nowiki>
+* f <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-15} [SI unit submultiple representing 10e-15.]</nowiki>
+* atto <nowiki>{SIUnitModifier, conversionFactor=10e-18} [SI unit submultiple representing 10e-18.]</nowiki>
+* a <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-18} [SI unit submultiple representing 10e-18.]</nowiki>
+* zepto <nowiki>{SIUnitModifier, conversionFactor=10e-21} [SI unit submultiple representing 10e-21.]</nowiki>
+* z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-21} [SI unit submultiple representing 10e-21.]</nowiki>
+* yocto <nowiki>{SIUnitModifier, conversionFactor=10e-24} [SI unit submultiple representing 10e-24.]</nowiki>
+* y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-24} [SI unit submultiple representing 10e-24.]</nowiki>
 
 
 '''Value classes''' <nowiki>[Rules for the values provided for placeholders.]</nowiki>
-* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.]</nowiki> 
+* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
 * nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.]</nowiki>
 * numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
 * posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki> 
