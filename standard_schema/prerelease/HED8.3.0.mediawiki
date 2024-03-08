@@ -622,7 +622,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 *** Statistical-value <nowiki>{extensionAllowed}[A value based on or employing the principles of statistics.]</nowiki>
 **** Data-maximum <nowiki>[The largest possible quantity or degree.]</nowiki>
-***** <nowiki># {takesValue, valueClass=numericClass}[]</nowiki> 
+***** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 **** Data-mean <nowiki>[The sum of a set of values divided by the number of values in the set.]</nowiki>
 ***** <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 **** Data-median <nowiki>[The value which has an equal number of values greater and less than it.]</nowiki>
@@ -658,7 +658,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Temporal-rate <nowiki>[The number of items per unit of time.]</nowiki> 
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>  
 **** Spatial-value <nowiki>[Value of an item involving space.]</nowiki>
-***** Angle<nowiki>[The amount of inclination of one line to another or the plane of one object to another.]</nowiki>
+***** Angle <nowiki>[The amount of inclination of one line to another or the plane of one object to another.]</nowiki>
 ****** <nowiki># {takesValue, unitClass=angleUnits, valueClass=numericClass}</nowiki>
 ***** Distance <nowiki>[A measure of the space separating two objects or points.]</nowiki> 
 ****** <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits}</nowiki> 
@@ -1173,9 +1173,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Underneath <nowiki>[(A, (Underneath, B)) means A is situated directly below and may be concealed by B.]</nowiki>
 ** Within <nowiki>[(A, (Within, B)) means A is on the inside of or contained in B.]</nowiki>
 * Temporal-relation <nowiki>[A relationship that includes a temporal or time-based component.]</nowiki>
-** After <nowiki>[(A, (After B)) means A happens at a time subsequent to a reference time related to B.]</nowiki>
+** After <nowiki>[(A, (After, B)) means A happens at a time subsequent to a reference time related to B.]</nowiki>
 ** Asynchronous-with <nowiki>[(A, (Asynchronous-with, B)) means A happens at times not occurring at the same time or having the same period or phase as B.]</nowiki>
-** Before <nowiki>[(A, (Before B)) means A happens at a time earlier in time or order than B.]</nowiki>
+** Before <nowiki>[(A, (Before, B)) means A happens at a time earlier in time or order than B.]</nowiki>
 ** During <nowiki>[(A, (During, B)) means A happens at some point in a given period of time in which B is ongoing.]</nowiki>
 ** Synchronous-with <nowiki>[(A, (Synchronous-with, B)) means A happens at occurs at the same time or rate as B.]</nowiki>
 ** Waiting-for <nowiki>[(A, (Waiting-for, B)) means A pauses for something to happen in B.]</nowiki>
