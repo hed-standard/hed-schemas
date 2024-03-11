@@ -505,32 +505,32 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Data-property <nowiki>{extensionAllowed}[Something that pertains to data or information.]</nowiki>
 ** Data-artifact <nowiki>[An anomalous, interfering, or distorting signal originating from a source other than the item being studied.]</nowiki>
 *** Biological-artifact <nowiki>[A data artifact arising from a biological entity being measured.]</nowiki>
-    **** Eye-artifact <nowiki>[Artifact from eyes.]</nowiki> 
-        ***** Eye-blink-artifact <nowiki>[Artifact from eye blinking.]</nowiki>
-        ***** Eye-movement-artifact <nowiki>[Artifact from eye movements.]</nowiki>
-            ****** Horizontal-eye-movement-horizontal-artifact <nowiki>[Artifact from horizontal eye movements.]</nowiki>
-            ****** Vertical-eye-movement-artifact <nowiki>[Artifact from vertical eye movements.]</nowiki>
-            ****** Slow-eye-movement-artifact <nowiki>[Artifact from slow eye movements.]</nowiki>
-            ****** Nystagmus-artifact <nowiki>[Artifact from nystagmus.]</nowiki>
-    **** Chewing-artifact <nowiki>[Artifact from chewing.]</nowiki>
-    **** Sucking-artifact <nowiki>[Artifact from sucking.]</nowiki>
-    **** Tongue-movement-artifact <nowiki>[Artifact from tongue movement (Glossokinetic).]</nowiki>
-    **** Rocking-patting-artifact <nowiki>[Artifact from rocking or patting, most commonly seen in infants.]</nowiki>
-    **** Movement-artifact <nowiki>[Artifact from motion.]</nowiki>
-    **** Respiration-artifact <nowiki>[Artifact from breating.]</nowiki>
-    **** Pulse-artifact <nowiki>[Artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.]</nowiki>
-    **** ECG-artifact <nowiki>[Artifact from pulsation of the heart, timelocked to QRS complex.]</nowiki>
-    **** Sweat-artifact <nowiki>[Artifact from sweating, most often seen in EEG.]</nowiki>
-    **** EMG-artifact <nowiki>[Artifact from muscle activity at the measurements site.]</nowiki>
+**** Eye-artifact <nowiki>[Artifact from eyes.]</nowiki> 
+***** Eye-blink-artifact <nowiki>[Artifact from eye blinking.]</nowiki>
+***** Eye-movement-artifact <nowiki>[Artifact from eye movements.]</nowiki>
+****** Horizontal-eye-movement-horizontal-artifact <nowiki>[Artifact from horizontal eye movements.]</nowiki>
+****** Vertical-eye-movement-artifact <nowiki>[Artifact from vertical eye movements.]</nowiki>
+****** Slow-eye-movement-artifact <nowiki>[Artifact from slow eye movements.]</nowiki>
+****** Nystagmus-artifact <nowiki>[Artifact from nystagmus.]</nowiki>
+**** Chewing-artifact <nowiki>[Artifact from chewing.]</nowiki>
+**** Sucking-artifact <nowiki>[Artifact from sucking.]</nowiki>
+**** Tongue-movement-artifact <nowiki>[Artifact from tongue movement (Glossokinetic).]</nowiki>
+**** Rocking-patting-artifact <nowiki>[Artifact from rocking or patting, most commonly seen in infants.]</nowiki>
+**** Movement-artifact <nowiki>[Artifact from motion.]</nowiki>
+**** Respiration-artifact <nowiki>[Artifact from breating.]</nowiki>
+**** Pulse-artifact <nowiki>[Artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.]</nowiki>
+**** ECG-artifact <nowiki>[Artifact from pulsation of the heart, timelocked to QRS complex.]</nowiki>
+**** Sweat-artifact <nowiki>[Artifact from sweating, most often seen in EEG.]</nowiki>
+**** EMG-artifact <nowiki>[Artifact from muscle activity at the measurements site.]</nowiki>
 *** Nonbiological-artifact <nowiki>[A data artifact arising from a non-biological source.]</nowiki>
-    **** Line-noise-artifact <nowiki>[Power line noise at 50 Hz or 60 Hz.]</nowiki>
-        ***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits} </nowiki>
-    **** Induction-artifact <nowiki>[Artifact from nearby equipment.]</nowiki>
-    **** Dialysis-artifact <nowiki>[Artifact from dialysis.]</nowiki>
-    **** Artificial-ventilation-artifact <nowiki>[Artifact from artificial ventilation.]</nowiki>
-    **** Electrode-pops-artifact <nowiki>[Brief artifact with a steep increase and slower decrease, most often caused by a loose electrode.]</nowiki>
-    **** Salt-bridge-artifact <nowiki>[Artifact from salt-bridge between EEG electrodes.]</nowiki>
-    **** Electrode-movement-artifact <nowiki>[Artifact from electrode movement.]</nowiki>
+**** Line-noise-artifact <nowiki>[Power line noise at 50 Hz or 60 Hz.]</nowiki>
+***** <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits} </nowiki>
+**** Induction-artifact <nowiki>[Artifact from nearby equipment.]</nowiki>
+**** Dialysis-artifact <nowiki>[Artifact from dialysis.]</nowiki>
+**** Artificial-ventilation-artifact <nowiki>[Artifact from artificial ventilation.]</nowiki>
+**** Electrode-pops-artifact <nowiki>[Brief artifact with a steep increase and slower decrease, most often caused by a loose electrode.]</nowiki>
+**** Salt-bridge-artifact <nowiki>[Artifact from salt-bridge between EEG electrodes.]</nowiki>
+**** Electrode-movement-artifact <nowiki>[Artifact from electrode movement.]</nowiki>
 ** Data-marker <nowiki>[An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>[An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker<nowiki>[An indicator placed at a particular time in the data.]</nowiki>
