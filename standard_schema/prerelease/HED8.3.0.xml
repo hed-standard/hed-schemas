@@ -822,6 +822,22 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>Head</name>
                      <description>The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.</description>
                      <node>
+                        <name>Brain</name>
+                        <description>Organ inside the head that is made up of nerve cells and controls the body.</description>
+                        <node>
+                           <name>Frontal-lobe</name>
+                        </node>
+                        <node>
+                           <name>Occipital-lobe</name>
+                        </node>
+                        <node>
+                           <name>Parietal-lobe</name>
+                        </node>
+                        <node>
+                           <name>Temporal-lobe</name>
+                        </node>
+                     </node>
+                     <node>
                         <name>Ear</name>
                         <description>A sense organ needed for the detection of sound and for establishing balance.</description>
                      </node>
@@ -843,6 +859,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <node>
                            <name>Eyebrow</name>
                            <description>The arched strip of hair on the bony ridge above each eye socket.</description>
+                        </node>
+                        <node>
+                           <name>Eyelid</name>
+                           <description>The folds of the skin that cover the eye when closed.</description>
                         </node>
                         <node>
                            <name>Forehead</name>
@@ -944,6 +964,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <node>
                         <name>Torso-chest</name>
                         <description>The anterior side of the thorax from the neck to the abdomen.</description>
+                     </node>
+                     <node>
+                        <name>Viscera</name>
+                        <description>Internal organs of the body.</description>
                      </node>
                      <node>
                         <name>Waist</name>
@@ -2147,10 +2171,120 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Biological-artifact</name>
                   <description>A data artifact arising from a biological entity being measured.</description>
+                  <node>
+                     <name>Chewing-artifact</name>
+                     <description>Artifact from moving the jaw in a chewing motion.</description>
+                  </node>
+                  <node>
+                     <name>ECG-artifact</name>
+                     <description>An electrical artifact from the far-field potential from pulsation of the heart, timelocked to QRS complex.</description>
+                  </node>
+                  <node>
+                     <name>EMG-artifact</name>
+                     <description>Artifact from muscle activity and myogenic potentials at the measurements site. In EEG, myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (e.g. clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
+                  </node>
+                  <node>
+                     <name>Eye-artifact</name>
+                     <description>Occular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.</description>
+                     <node>
+                        <name>Eye-blink-artifact</name>
+                        <description>Artifact from eye blinking. In EEG, Fp1/Fp2 electrodes become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye.</description>
+                     </node>
+                     <node>
+                        <name>Eye-movement-artifact</name>
+                        <description>Eye movements can cause artifacts on recordings. The charge of the eye can especially cause artifacts in electrophysiology data.</description>
+                        <node>
+                           <name>Horizontal-eye-movement-artifact</name>
+                           <description>Artifact from moving eyes left-to-right and right-to-left. In EEG, there is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
+                        </node>
+                        <node>
+                           <name>Nystagmus-artifact</name>
+                           <description>Artifact from nystagmus (a vision condition in which the eyes make repetitive, uncontrolled movements).</description>
+                        </node>
+                        <node>
+                           <name>Slow-eye-movement-artifact</name>
+                           <description>Artifacts originating from slow, rolling eye-movements, seen during drowsiness.</description>
+                        </node>
+                        <node>
+                           <name>Vertical-eye-movement-artifact</name>
+                           <description>Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.</description>
+                        </node>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Movement-artifact</name>
+                     <description>Artifact in the measured data generated by motion of the subject.</description>
+                  </node>
+                  <node>
+                     <name>Pulse-artifact</name>
+                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.</description>
+                  </node>
+                  <node>
+                     <name>Respiration-artifact</name>
+                     <description>Artifact from breathing.</description>
+                  </node>
+                  <node>
+                     <name>Rocking-patting-artifact</name>
+                     <description>Quasi-rhythmical artifacts in recordings most commonly seen in infants. Typically caused by a caregiver rocking or patting the infant.</description>
+                  </node>
+                  <node>
+                     <name>Sucking-artifact</name>
+                     <description>Artifact from sucking, typically seen in very young cases.</description>
+                  </node>
+                  <node>
+                     <name>Sweat-artifact</name>
+                     <description>Artifact from sweating. In EEG, this is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
+                  </node>
+                  <node>
+                     <name>Tongue-movement-artifact</name>
+                     <description>Artifact from tongue movement (Glossokinetic). The tongue functions as a dipole, with the tip negative with respect to the base. In EEG, the artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.</description>
+                  </node>
                </node>
                <node>
                   <name>Nonbiological-artifact</name>
                   <description>A data artifact arising from a non-biological source.</description>
+                  <node>
+                     <name>Artificial-ventilation-artifact</name>
+                     <description>Artifact steming from mechanical ventilation. These can occur at the same rate as teh ventilator, but also have other patterns.</description>
+                  </node>
+                  <node>
+                     <name>Dialysis-artifact</name>
+                     <description>Artifacts seen in recordings during continuous renal replacement therapy (dialysis).</description>
+                  </node>
+                  <node>
+                     <name>Electrode-movement-artifact</name>
+                     <description>Artifact from electrode movement.</description>
+                  </node>
+                  <node>
+                     <name>Electrode-pops-artifact</name>
+                     <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
+                  </node>
+                  <node>
+                     <name>Induction-artifact</name>
+                     <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
+                  </node>
+                  <node>
+                     <name>Line-noise-artifact</name>
+                     <description>Power line noise at 50 Hz or 60 Hz.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Salt-bridge-artifact</name>
+                     <description>Artifact from salt-bridge between EEG electrodes.</description>
+                  </node>
                </node>
             </node>
             <node>
@@ -4082,6 +4216,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Collection</name>
                <description>A tag designating a grouping of items such as in a set or list.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the collection.</description>
@@ -4097,6 +4234,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Condition-variable</name>
                <description>An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the condition variable.</description>
@@ -4112,6 +4252,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Control-variable</name>
                <description>An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the control variable.</description>
@@ -4208,6 +4351,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Event-stream</name>
                <description>A special HED tag indicating that this event is a member of an ordered succession of events.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the event stream.</description>
@@ -4223,6 +4369,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Experimental-intertrial</name>
                <description>A tag used to indicate a part of the experiment between trials usually where nothing is happening.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the intertrial block.</description>
@@ -4238,6 +4387,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Experimental-trial</name>
                <description>Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the trial (often a numerical string).</description>
@@ -4253,6 +4405,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Indicator-variable</name>
                <description>An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the indicator variable.</description>
@@ -4268,6 +4423,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Recording</name>
                <description>A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the recording.</description>
@@ -4283,6 +4441,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Task</name>
                <description>An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the task block.</description>
@@ -4298,6 +4459,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Time-block</name>
                <description>A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the task block.</description>
@@ -6122,7 +6286,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             <description>A relationship that includes a temporal or time-based component.</description>
             <node>
                <name>After</name>
-               <description>(A, (After B)) means A happens at a time subsequent to a reference time related to B.</description>
+               <description>(A, (After, B)) means A happens at a time subsequent to a reference time related to B.</description>
             </node>
             <node>
                <name>Asynchronous-with</name>
@@ -6130,7 +6294,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Before</name>
-               <description>(A, (Before B)) means A happens at a time earlier in time or order than B.</description>
+               <description>(A, (Before, B)) means A happens at a time earlier in time or order than B.</description>
             </node>
             <node>
                <name>During</name>
@@ -6373,10 +6537,9 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
-         <description>Units used to magnetic field intensity.</description>
          <attribute>
             <name>defaultUnits</name>
-            <value>fT</value>
+            <value>T</value>
          </attribute>
          <unit>
             <name>tesla</name>
@@ -7155,7 +7318,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </valueClassDefinition>
       <valueClassDefinition>
          <name>nameClass</name>
-         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.</description>
+         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>letters</value>
@@ -7215,14 +7378,14 @@ Each term in this vocabulary has a human-readable description and may include ad
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
          <name>allowedCharacter</name>
-         <description>A schema attribute specifying a special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
+         <description>A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
          <property>
             <name>valueClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>conversionFactor</name>
-         <description>A schema attribute specifying the factor to multiply these units by to convert to default units.</description>
+         <description>The factor to multiply these units by to convert to default units.</description>
          <property>
             <name>unitProperty</name>
          </property>
@@ -7232,21 +7395,21 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>defaultUnits</name>
-         <description>A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.</description>
+         <description>The default units to use if the placeholder has a unit class but the substituted value has no units.</description>
          <property>
             <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>deprecatedFrom</name>
-         <description>A schema attribute specifying that the schema version number when this element was first deprecated.</description>
+         <description>The schema version number when this element was first deprecated.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>extensionAllowed</name>
-         <description>A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
+         <description>Indicates that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7258,25 +7421,22 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>inLibrary</name>
-         <description>A schema attribute specifying a named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
+         <name>hedID</name>
+         <description>The unique identifier of this element in the HED namespace.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>recommended</name>
-         <description>A schema attribute indicating that any event-level HED string should include this tag. This attribute is deprecated.</description>
+         <name>inLibrary</name>
+         <description>The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
-            <name>boolProperty</name>
-         </property>
-         <property>
-            <name>nodeProperty</name>
+            <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>relatedTag</name>
-         <description>A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.</description>
+         <description>A HED tag that is closely related to this tag. This attribute is used by tagging tools.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7286,17 +7446,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>requireChild</name>
-         <description>A schema attribute indicating that this tag must have a descendent.</description>
-         <property>
-            <name>boolProperty</name>
-         </property>
-         <property>
-            <name>nodeProperty</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>required</name>
-         <description>A schema attribute indicating that every event-level HED string should include this tag. This attribute is deprecated.</description>
+         <description>This tag must have a descendent.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7306,7 +7456,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>reserved</name>
-         <description>A schema attribute indicating that this tag has special meaning and requires special handling by tools.</description>
+         <description>This tag has special meaning and requires special handling by tools.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7316,14 +7466,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>rooted</name>
-         <description>A schema attribute specifying where a top-level library schema node should appear under indicated node in partnered standard schema.</description>
+         <description>Specifies where a top-level library schema node should appear under indicated node in partnered standard schema.</description>
          <property>
             <name>nodeProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnit</name>
-         <description>A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
+         <description>This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7333,7 +7483,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.</description>
+         <description>This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7343,7 +7493,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitSymbolModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.</description>
+         <description>This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7353,7 +7503,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>suggestedTag</name>
-         <description>A schema attribute specifying another tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
+         <description>A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7363,7 +7513,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>tagGroup</name>
-         <description>A schema attribute indicating the tag can only appear inside a tag group.</description>
+         <description>This tag can only appear inside a tag group.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7373,7 +7523,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>takesValue</name>
-         <description>A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
+         <description>This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7383,7 +7533,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>topLevelTagGroup</name>
-         <description>A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.</description>
+         <description>This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7393,7 +7543,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unique</name>
-         <description>A schema attribute indicating that only one of this tag or its descendants can be used in the event-level HED string.</description>
+         <description>Only one of this tag or its descendants can be used in the event-level HED string.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7403,14 +7553,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitClass</name>
-         <description>A schema attribute specifying which unit class this value tag belongs to.</description>
+         <description>The unit class this placeholder tag belongs to.</description>
          <property>
             <name>nodeProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>A schema attribute indicating that the unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
+         <description>This unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7420,7 +7570,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitSymbol</name>
-         <description>A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.</description>
+         <description>This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7430,7 +7580,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>valueClass</name>
-         <description>A schema attribute specifying which value class this value tag belongs to.</description>
+         <description>The value class to which this placeholder tag belongs.</description>
          <property>
             <name>nodeProperty</name>
          </property>
