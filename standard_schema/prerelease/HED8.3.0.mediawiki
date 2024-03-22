@@ -1240,7 +1240,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>  
 * jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki> 
 ** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0}</nowiki>
-* magneticFieldUnits <nowiki>{defaultUnits=fT}[Units used to magnetic field intensity.]</nowiki>
+* magneticFieldUnits <nowiki>{defaultUnits=T}</nowiki>
 ** tesla <nowiki>{SIUnit, conversionFactor=10e-15}</nowiki>
 ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10e-15}</nowiki>
 * memorySizeUnits <nowiki>{defaultUnits=B}</nowiki> 
