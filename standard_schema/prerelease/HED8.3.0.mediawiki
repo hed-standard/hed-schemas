@@ -808,11 +808,11 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** <nowiki># {takesValue, valueClass=textClass}</nowiki>
 
 * Organizational-property <nowiki>[Relating to an organization or the action of organizing something.]</nowiki>
-** Collection <nowiki>[A tag designating a grouping of items such as in a set or list.]</nowiki>
+** Collection <nowiki>{reserved}[A tag designating a grouping of items such as in a set or list.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the collection.]</nowiki>
-** Condition-variable <nowiki>[An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.]</nowiki>
+** Condition-variable <nowiki>{reserved}[An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the condition variable.]</nowiki>
-** Control-variable <nowiki>[An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.]</nowiki>
+** Control-variable <nowiki>{reserved}[An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the control variable.]</nowiki>
 ** Def <nowiki>{requireChild,reserved} [A HED-specific utility tag used with a defined name to represent the tags associated with that definition.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the definition.]</nowiki>
@@ -821,19 +821,19 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Definition <nowiki>{requireChild,reserved,topLevelTagGroup}[A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept.]</nowiki> 
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the definition.]</nowiki>
 ** Event-context <nowiki>{reserved,topLevelTagGroup,unique}[A special HED tag inserted as part of a top-level tag group to contain information about the interrelated conditions under which the event occurs. The event context includes information about other events that are ongoing when this event happens.]</nowiki>
-** Event-stream <nowiki>[A special HED tag indicating that this event is a member of an ordered succession of events.]</nowiki> 
+** Event-stream <nowiki>{reserved}[A special HED tag indicating that this event is a member of an ordered succession of events.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the event stream.]</nowiki>
-** Experimental-intertrial <nowiki>[A tag used to indicate a part of the experiment between trials usually where nothing is happening.]</nowiki>
+** Experimental-intertrial <nowiki>{reserved}[A tag used to indicate a part of the experiment between trials usually where nothing is happening.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Optional label for the intertrial block.]</nowiki>
-** Experimental-trial <nowiki>[Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.]</nowiki>
+** Experimental-trial <nowiki>{reserved}[Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Optional label for the trial (often a numerical string).]</nowiki>
-** Indicator-variable <nowiki>[An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.]</nowiki>
+** Indicator-variable <nowiki>{reserved}[An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Name of the indicator variable.]</nowiki>
-** Recording <nowiki>[A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.]</nowiki>
+** Recording <nowiki>{reserved}[A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Optional label for the recording.]</nowiki>
-** Task <nowiki>[An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.]</nowiki>
+** Task <nowiki>{reserved}[An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Optional label for the task block.]</nowiki>
-** Time-block <nowiki>[A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.]</nowiki>
+** Time-block <nowiki>{reserved}[A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.]</nowiki>
 *** <nowiki># {takesValue, valueClass=nameClass}[Optional label for the task block.]</nowiki>
 * Sensory-property <nowiki>[Relating to sensation or the physical senses.]</nowiki>
 ** Sensory-attribute <nowiki>[A sensory characteristic associated with another entity.]</nowiki>
@@ -1336,10 +1336,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 * extensionAllowed <nowiki>{boolProperty, nodeProperty, isInheritedProperty}[Indicates that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
 * hedID <nowiki>{elementProperty}[The unique identifier of this element in the HED namespace.]</nowiki>
 * inLibrary <nowiki>{elementProperty} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
-* recommended  <nowiki>{boolProperty, nodeProperty, deprecatedFrom="8.2.0"}[Indicates that any event-level HED string should include this tag. This attribute is deprecated.]</nowiki>
 * relatedTag <nowiki>{nodeProperty, isInheritedProperty}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
 * requireChild  <nowiki>{boolProperty, nodeProperty}[This tag must have a descendent.]</nowiki>
-* required <nowiki>{boolProperty, nodeProperty, deprecatedFrom="8.2.0"}[Every event-level HED string should include this tag.]</nowiki>
 * reserved <nowiki>{boolProperty, nodeProperty}[This tag has special meaning and requires special handling by tools.]</nowiki>
 * rooted <nowiki>{nodeProperty}[Specifies where a top-level library schema node should appear under indicated node in partnered standard schema.]</nowiki>
 * SIUnit  <nowiki>{boolProperty, unitProperty}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>

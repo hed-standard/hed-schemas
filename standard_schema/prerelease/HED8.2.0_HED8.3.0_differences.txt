@@ -1,0 +1,205 @@
+Differences between HED8.2.0 and HED8.3.0
+Attributes:
+	hedID (Minor): Item hedID added to Attributes
+	allowedCharacter (Patch): Description of allowedCharacter modified
+	conversionFactor (Patch): Description of conversionFactor modified
+	deprecatedFrom (Patch): Description of deprecatedFrom modified
+	defaultUnits (Patch): Description of defaultUnits modified
+	extensionAllowed (Patch): Description of extensionAllowed modified
+	inLibrary (Patch): Description of inLibrary modified
+	relatedTag (Patch): Description of relatedTag modified
+	requireChild (Patch): Description of requireChild modified
+	reserved (Patch): Description of reserved modified
+	rooted (Patch): Description of rooted modified
+	SIUnit (Patch): Description of SIUnit modified
+	SIUnitModifier (Patch): Description of SIUnitModifier modified
+	SIUnitSymbolModifier (Patch): Description of SIUnitSymbolModifier modified
+	suggestedTag (Patch): Description of suggestedTag modified
+	tagGroup (Patch): Description of tagGroup modified
+	takesValue (Patch): Description of takesValue modified
+	topLevelTagGroup (Patch): Description of topLevelTagGroup modified
+	unique (Patch): Description of unique modified
+	unitClass (Patch): Description of unitClass modified
+	unitPrefix (Patch): Description of unitPrefix modified
+	unitSymbol (Patch): Description of unitSymbol modified
+	valueClass (Patch): Description of valueClass modified
+	recommended (Unknown): Item recommended removed from Attributes
+	required (Unknown): Item required removed from Attributes
+Tags:
+	Ride (Minor): Item Ride added to Tags
+	Brain (Minor): Item Brain added to Tags
+	Frontal-lobe (Minor): Item Frontal-lobe added to Tags
+	Occipital-lobe (Minor): Item Occipital-lobe added to Tags
+	Parietal-lobe (Minor): Item Parietal-lobe added to Tags
+	Temporal-lobe (Minor): Item Temporal-lobe added to Tags
+	Eyelid (Minor): Item Eyelid added to Tags
+	Viscera (Minor): Item Viscera added to Tags
+	Pseudoword (Minor): Item Pseudoword added to Tags
+	Other-sex (Minor): Item Other-sex added to Tags
+	Data-artifact (Minor): Item Data-artifact added to Tags
+	Biological-artifact (Minor): Item Biological-artifact added to Tags
+	Chewing-artifact (Minor): Item Chewing-artifact added to Tags
+	ECG-artifact (Minor): Item ECG-artifact added to Tags
+	EMG-artifact (Minor): Item EMG-artifact added to Tags
+	Eye-artifact (Minor): Item Eye-artifact added to Tags
+	Eye-blink-artifact (Minor): Item Eye-blink-artifact added to Tags
+	Eye-movement-artifact (Minor): Item Eye-movement-artifact added to Tags
+	Horizontal-eye-movement-artifact (Minor): Item Horizontal-eye-movement-artifact added to Tags
+	Nystagmus-artifact (Minor): Item Nystagmus-artifact added to Tags
+	Slow-eye-movement-artifact (Minor): Item Slow-eye-movement-artifact added to Tags
+	Vertical-eye-movement-artifact (Minor): Item Vertical-eye-movement-artifact added to Tags
+	Movement-artifact (Minor): Item Movement-artifact added to Tags
+	Pulse-artifact (Minor): Item Pulse-artifact added to Tags
+	Respiration-artifact (Minor): Item Respiration-artifact added to Tags
+	Rocking-patting-artifact (Minor): Item Rocking-patting-artifact added to Tags
+	Sucking-artifact (Minor): Item Sucking-artifact added to Tags
+	Sweat-artifact (Minor): Item Sweat-artifact added to Tags
+	Tongue-movement-artifact (Minor): Item Tongue-movement-artifact added to Tags
+	Nonbiological-artifact (Minor): Item Nonbiological-artifact added to Tags
+	Artificial-ventilation-artifact (Minor): Item Artificial-ventilation-artifact added to Tags
+	Dialysis-artifact (Minor): Item Dialysis-artifact added to Tags
+	Electrode-movement-artifact (Minor): Item Electrode-movement-artifact added to Tags
+	Electrode-pops-artifact (Minor): Item Electrode-pops-artifact added to Tags
+	Induction-artifact (Minor): Item Induction-artifact added to Tags
+	Line-noise-artifact (Minor): Item Line-noise-artifact added to Tags
+	Salt-bridge-artifact (Minor): Item Salt-bridge-artifact added to Tags
+	Categorical-location-value (Minor): Item Categorical-location-value added to Tags
+	Anterior (Minor): Item Anterior added to Tags
+	Lateral (Minor): Item Lateral added to Tags
+	Left (Minor): Item Left added to Tags
+	Medial (Minor): Item Medial added to Tags
+	Posterior (Minor): Item Posterior added to Tags
+	Right (Minor): Item Right added to Tags
+	Perimeter (Minor): Item Perimeter added to Tags
+	Radius (Minor): Item Radius added to Tags
+	Metadata-identifier (Minor): Item Metadata-identifier added to Tags
+	DOI (Minor): Item DOI added to Tags
+	Species-identifier (Minor): Item Species-identifier added to Tags
+	UUID (Minor): Item UUID added to Tags
+	Modified-date (Minor): Item Modified-date added to Tags
+	URL (Minor): Item URL added to Tags
+	Luminance-contrast (Minor): Item Luminance-contrast added to Tags
+	CogAtlas (Minor): Tag CogAtlas moved in schema
+	CogPo (Minor): Tag CogPo moved in schema
+	OBO-identifier (Minor): Tag OBO-identifier moved in schema
+	Subject-identifier (Minor): Tag Subject-identifier moved in schema
+	Version-identifier (Minor): Tag Version-identifier moved in schema
+	Predict (Patch): Description of Predict modified
+	Gentalia (Patch): Description of Gentalia modified
+	Nonword (Patch): Description of Nonword modified
+	Phoneme (Patch): Description of Phoneme modified
+	Syllable (Patch): Description of Syllable modified
+	Word (Patch): Description of Word modified
+	Clock-face (Patch): Attribute 'deprecatedFrom' modified from 'None' to '8.2.0'
+	Clock-face (Patch): Description of Clock-face modified
+	Tool (Patch): Description of Tool modified
+	Media (Patch): Description of Media modified
+	Truck (Patch): Description of Truck modified
+	Environmental-sound (Patch): Description of Environmental-sound modified
+	Composite-terrain (Patch): Description of Composite-terrain modified
+	After (Patch): Description of After modified
+	Before (Patch): Description of Before modified
+Units:
+	degree-Celsius (Minor): Item degree-Celsius added to Units
+	year (Minor): Item year added to Units
+	tesla (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
+	T (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
+	degree Celsius (Patch): Attribute 'deprecatedFrom' modified from 'None' to '8.2.0'
+	degree Celsius (Patch): Description of degree Celsius modified
+Misc Metadata:
+	header_attributes (Patch): header_attributes changed from "{'version': '8.2.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}" to "{'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}"
+	prologue (Patch): prologue changed from "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
+
+Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
+
+" to "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
+
+Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section."
+	epilogue (Patch): epilogue changed from "This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
+" to "This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037."
+Unit Classes:
+	magneticFieldUnits (Patch): Attribute 'defaultUnits' modified from 'fT' to 'T'
+	magneticFieldUnits (Patch): Description of magneticFieldUnits modified
+	temperatureUnits (Patch): Unit degree-Celsius added to temperatureUnits
+	temperatureUnits (Patch): Attribute 'defaultUnits' modified from 'None' to 'degree-Celsius'
+	timeUnits (Patch): Unit year added to timeUnits
+Unit Modifiers:
+	deca (Patch): Description of deca modified
+	da (Patch): Description of da modified
+	hecto (Patch): Description of hecto modified
+	h (Patch): Description of h modified
+	kilo (Patch): Description of kilo modified
+	k (Patch): Description of k modified
+	mega (Patch): Attribute 'conversionFactor' modified from '10^6' to '10e6'
+	mega (Patch): Description of mega modified
+	M (Patch): Attribute 'conversionFactor' modified from '10^6' to '10e6'
+	M (Patch): Description of M modified
+	giga (Patch): Attribute 'conversionFactor' modified from '10^9' to '10e9'
+	giga (Patch): Description of giga modified
+	G (Patch): Attribute 'conversionFactor' modified from '10^9' to '10e9'
+	G (Patch): Description of G modified
+	tera (Patch): Attribute 'conversionFactor' modified from '10^12' to '10e12'
+	tera (Patch): Description of tera modified
+	T (Patch): Attribute 'conversionFactor' modified from '10^12' to '10e12'
+	T (Patch): Description of T modified
+	peta (Patch): Attribute 'conversionFactor' modified from '10^15' to '10e15'
+	peta (Patch): Description of peta modified
+	P (Patch): Attribute 'conversionFactor' modified from '10^15' to '10e15'
+	P (Patch): Description of P modified
+	exa (Patch): Attribute 'conversionFactor' modified from '10^18' to '10e18'
+	exa (Patch): Description of exa modified
+	E (Patch): Attribute 'conversionFactor' modified from '10^18' to '10e18'
+	E (Patch): Description of E modified
+	zetta (Patch): Attribute 'conversionFactor' modified from '10^21' to '10e21'
+	zetta (Patch): Description of zetta modified
+	Z (Patch): Attribute 'conversionFactor' modified from '10^21' to '10e21'
+	Z (Patch): Description of Z modified
+	yotta (Patch): Attribute 'conversionFactor' modified from '10^24' to '10e24'
+	yotta (Patch): Description of yotta modified
+	Y (Patch): Attribute 'conversionFactor' modified from '10^24' to '10e24'
+	Y (Patch): Description of Y modified
+	deci (Patch): Description of deci modified
+	d (Patch): Description of d modified
+	centi (Patch): Description of centi modified
+	c (Patch): Description of c modified
+	milli (Patch): Description of milli modified
+	m (Patch): Description of m modified
+	micro (Patch): Attribute 'conversionFactor' modified from '10^-6' to '10e-6'
+	micro (Patch): Description of micro modified
+	u (Patch): Attribute 'conversionFactor' modified from '10^-6' to '10e-6'
+	u (Patch): Description of u modified
+	nano (Patch): Attribute 'conversionFactor' modified from '10^-9' to '10e-9'
+	nano (Patch): Description of nano modified
+	n (Patch): Attribute 'conversionFactor' modified from '10^-9' to '10e-9'
+	n (Patch): Description of n modified
+	pico (Patch): Attribute 'conversionFactor' modified from '10^-12' to '10e-12'
+	pico (Patch): Description of pico modified
+	p (Patch): Attribute 'conversionFactor' modified from '10^-12' to '10e-12'
+	p (Patch): Description of p modified
+	femto (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
+	femto (Patch): Description of femto modified
+	f (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
+	f (Patch): Description of f modified
+	atto (Patch): Attribute 'conversionFactor' modified from '10^-18' to '10e-18'
+	atto (Patch): Description of atto modified
+	a (Patch): Attribute 'conversionFactor' modified from '10^-18' to '10e-18'
+	a (Patch): Description of a modified
+	zepto (Patch): Attribute 'conversionFactor' modified from '10^-21' to '10e-21'
+	zepto (Patch): Description of zepto modified
+	z (Patch): Attribute 'conversionFactor' modified from '10^-21' to '10e-21'
+	z (Patch): Description of z modified
+	yocto (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
+	yocto (Patch): Description of yocto modified
+	y (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
+	y (Patch): Description of y modified
+Value Classes:
+	dateTimeClass (Patch): Description of dateTimeClass modified
+	nameClass (Patch): Description of nameClass modified
+Properties:
+	elementProperty (Patch): Description of elementProperty modified
+	isInheritedProperty (Patch): Description of isInheritedProperty modified
+	nodeProperty (Patch): Description of nodeProperty modified
+	unitClassProperty (Patch): Description of unitClassProperty modified
+	unitModifierProperty (Patch): Description of unitModifierProperty modified
+	unitProperty (Patch): Description of unitProperty modified
+	valueClassProperty (Patch): Description of valueClassProperty modified
