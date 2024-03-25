@@ -5,25 +5,25 @@ This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0.
 
 !# start schema
 
-'''Violin1-sound''' {rooted=Instrument-sound} [Conflicts with testlib 2.0.0]
+'''Violin1-sound''' <nowiki>{rooted=Instrument-sound}[Conflicts with testlib 2.0.0]</nowiki>
 * Violin1-subsound3
 * Violin-subsound1
 * Violin-subsound2
 
-'''Oboe-sound''' {rooted=Instrument-sound} [These should be sorted.  Oboe should be second]
+'''Oboe-sound''' <nowiki>{rooted=Instrument-sound} [These should be sorted.  Oboe should be second]</nowiki>
 * Oboe-subsound2
 * Oboe-subsound1
 
-'''BA-nonextension''' [Does not conflict with testlib 2.0.0 or 3.0.0]
+'''BA-nonextension''' <nowiki>[Does not conflict with testlib 2.0.0 or 3.0.0]</nowiki>
 * SubnodeB1A
 * SubnodeB2A
 
-'''A-nonextension''' [These should not be sorted.  A should be second]
+'''A-nonextension''' <nowiki>[These should not be sorted.  A should be second]</nowiki>
 * SubnodeA3
 * SubnodeA1
 * SubnodeA2
 
-'''Piano-sound''' {rooted=Instrument-sound} [Conflicts with testlib 3.0.0.]
+'''Piano-sound''' <nowiki>{rooted=Instrument-sound} [Conflicts with testlib 3.0.0.]</nowiki>
 * Piano-subsound2A
 * Piano-subsound1
 

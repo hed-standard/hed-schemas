@@ -14,7 +14,7 @@ This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts wi
 * Base-subsound2
 * Base-subsound1
 
-'''E-extensionallowed'''<nowiki>{extensionAllowed}</nowiki>
+'''E-extensionallowed''' <nowiki>{extensionAllowed}</nowiki>
 * SubnodeE3
 * SubnodeE1
 * SubnodeE2
