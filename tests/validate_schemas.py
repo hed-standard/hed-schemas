@@ -8,7 +8,7 @@ def main():
     validation_issues = []
     saving_failures = []
     for file_path in sys.argv[1:]:  # sys.argv[1:] contains all the arguments passed to the script
-        # print(file_path)
+        print(file_path)
         if file_path.endswith(".xml") or file_path.endswith(".mediawiki"):
             base_schema = load_schema(file_path)
             issues = base_schema.check_compliance()
