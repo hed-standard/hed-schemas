@@ -1226,8 +1226,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki> 
 ** dollar <nowiki>{conversionFactor=1.0}</nowiki>
 ** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0}</nowiki>
-** euro
-** point
+** euro <nowiki>[The official currency of a large subset of member countries of the European Union.]</nowiki>
+** point <nowiki>[An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uv}</nowiki>
 ** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001}</nowiki>
 ** Volt <nowiki>{SIUnit, conversionFactor=0.000001}</nowiki>

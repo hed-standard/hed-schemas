@@ -1,0 +1,42 @@
+HED version="3.0.0" library="testlib" withStandard="8.2.0" unmerged="True"
+
+'''Prologue'''
+This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0.
+
+!# start schema
+
+'''D-nonextension'''
+	* SubnodeD3
+	* SubnodeD1
+	* SubnodeD2
+
+'''Base-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
+	* Base-subsound1
+	* Base-subsound2
+
+'''Piano-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
+	* Piano-subsound1
+	* Piano-subsound2
+	* Piano-subsound3
+
+'''E-extensionallowed''' <nowiki>{extensionAllowed}</nowiki>
+ SubnodeE1
+ SubnodeE2
+ SubnodeE3
+
+
+!# end schema
+
+'''Unit classes'''
+
+'''Unit modifiers'''
+
+'''Value classes'''
+
+'''Schema attributes'''
+
+'''Properties'''
+'''Epilogue'''
+A final section.
+
+!# end hed
