@@ -2,11 +2,13 @@ import sys
 from hed.schema import load_schema, from_string, load_schema_version
 from hed.errors import get_printable_issue_string, HedFileError
 
-def main():
+
+def main(arg_list=None):
     # Trigger a local cache hit
     _ = load_schema_version("8.2.0")
     validation_issues = []
     saving_failures = []
+
     for file_path in sys.argv[1:]:  # sys.argv[1:] contains all the arguments passed to the script
         print(file_path)
         try:
@@ -37,6 +39,7 @@ def main():
             if e.issues:
                 print(get_printable_issue_string(e.issues, title=file_path))
             continue
+
     # if saving_failures:
     #     for issue in saving_failures:
     #         print(issue)
