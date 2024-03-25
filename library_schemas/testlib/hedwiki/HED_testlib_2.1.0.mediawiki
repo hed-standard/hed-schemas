@@ -1,0 +1,45 @@
+HED library="testlib" version="2.1.0" withStandard="8.2.0" unmerged="true"
+
+'''Prologue'''
+This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0.
+
+!# start schema
+
+'''Violin1-sound''' {rooted=Instrument-sound} [Conflicts with testlib 2.0.0]
+* Violin1-subsound3
+* Violin-subsound1
+* Violin-subsound2
+
+'''Oboe-sound''' {rooted=Instrument-sound} [These should be sorted.  Oboe should be second]
+* Oboe-subsound2
+* Oboe-subsound1
+
+'''BA-nonextension''' [Does not conflict with testlib 2.0.0 or 3.0.0]
+* SubnodeB1A
+* SubnodeB2A
+
+'''A-nonextension''' [These should not be sorted.  A should be second]
+* SubnodeA3
+* SubnodeA1
+* SubnodeA2
+
+'''Piano-sound''' {rooted=Instrument-sound} [Conflicts with testlib 3.0.0.]
+* Piano-subsound2A
+* Piano-subsound1
+
+!# end schema
+
+'''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
+
+'''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
+
+'''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
+
+'''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
+
+'''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
+
+
+'''Epilogue'''
+
+!# end hed
