@@ -8,8 +8,10 @@ def main(arg_list=None):
     _ = load_schema_version("8.2.0")
     validation_issues = []
     saving_failures = []
+    if not arg_list:
+        arg_list = sys.argv[1:]
 
-    for file_path in sys.argv[1:]:  # sys.argv[1:] contains all the arguments passed to the script
+    for file_path in arg_list:  # sys.argv[1:] contains all the arguments passed to the script
         print(file_path)
         try:
             if file_path.endswith(".xml") or file_path.endswith(".mediawiki"):
