@@ -6318,6 +6318,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m-per-s^2</name>
             <attribute>
@@ -6378,6 +6382,10 @@ Each term in this vocabulary has a human-readable description and may include ad
          <attribute>
             <name>defaultUnits</name>
             <value>m^2</value>
+         </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
          </attribute>
          <unit>
             <name>m^2</name>
@@ -6537,6 +6545,10 @@ Each term in this vocabulary has a human-readable description and may include ad
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
+         </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
          </attribute>
          <unit>
             <name>m-per-s^3</name>
@@ -6820,6 +6832,10 @@ Each term in this vocabulary has a human-readable description and may include ad
          <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
+         </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
          </attribute>
          <unit>
             <name>m^3</name>
@@ -7406,6 +7422,9 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
          <property>
             <name>unitProperty</name>
+         </property>
+         <property>
+            <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>

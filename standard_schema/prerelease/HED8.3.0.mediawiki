@@ -1215,13 +1215,13 @@ Each term in this vocabulary has a human-readable description and may include ad
 !# end schema 
 
 '''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-* accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki>
+* accelerationUnits <nowiki>{defaultUnits=m-per-s^2, allowedCharacter=caret}</nowiki>
 ** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * angleUnits <nowiki>{defaultUnits=radian}</nowiki> 
 ** radian <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533}</nowiki>
-* areaUnits <nowiki>{defaultUnits=m^2}</nowiki>
+* areaUnits <nowiki>{defaultUnits=m^2, allowedCharacter=caret}</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki> 
 ** dollar <nowiki>{conversionFactor=1.0}</nowiki>
@@ -1238,7 +1238,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** dB <nowiki>{unitSymbol, conversionFactor=1.0}[Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
 ** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki> 
 ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>  
-* jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki>
+* jerkUnits <nowiki>{defaultUnits=m-per-s^3, allowedCharacter=caret}</nowiki>
 ** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * magneticFieldUnits <nowiki>{defaultUnits=T}</nowiki>
 ** tesla <nowiki>{SIUnit, conversionFactor=10e-15}</nowiki>
@@ -1268,7 +1268,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** minute <nowiki>{conversionFactor=60}</nowiki>
 ** hour <nowiki>{conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
 ** year <nowiki>[Years do not have a constant conversion factor to seconds.]</nowiki>
-* volumeUnits <nowiki>{defaultUnits=m^3}</nowiki>
+* volumeUnits <nowiki>{defaultUnits=m^3, allowedCharacter=caret}</nowiki>
 ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * weightUnits <nowiki>{defaultUnits=g}</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
@@ -1329,7 +1329,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 
 
 '''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
-* allowedCharacter <nowiki>{valueClassProperty, unitProperty}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
+* allowedCharacter <nowiki>{valueClassProperty, unitProperty, unitClassProperty}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
 * conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The factor to multiply these units by to convert to default units.]</nowiki>
 * defaultUnits <nowiki>{unitClassProperty}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
 * deprecatedFrom <nowiki>{elementProperty}[The schema version number when this element was first deprecated.]</nowiki>
