@@ -1215,17 +1215,17 @@ Each term in this vocabulary has a human-readable description and may include ad
 !# end schema 
 
 '''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-* accelerationUnits <nowiki>{defaultUnits=m-per-s^2}</nowiki> 
-** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* accelerationUnits <nowiki>{defaultUnits=m-per-s^2, allowedCharacter=caret}</nowiki>
+** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * angleUnits <nowiki>{defaultUnits=radian}</nowiki> 
 ** radian <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533}</nowiki>
-* areaUnits <nowiki>{defaultUnits=m^2}</nowiki> 
-** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* areaUnits <nowiki>{defaultUnits=m^2, allowedCharacter=caret}</nowiki>
+** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * currencyUnits <nowiki>{defaultUnits=$}[Units indicating the worth of something.]</nowiki> 
 ** dollar <nowiki>{conversionFactor=1.0}</nowiki>
-** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0}</nowiki>
+** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar}</nowiki>
 ** euro <nowiki>[The official currency of a large subset of member countries of the European Union.]</nowiki>
 ** point <nowiki>[An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uv}</nowiki>
@@ -1238,8 +1238,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** dB <nowiki>{unitSymbol, conversionFactor=1.0}[Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
 ** candela <nowiki>{SIUnit}[Units used to express light intensity.]</nowiki> 
 ** cd <nowiki>{SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>  
-* jerkUnits <nowiki>{defaultUnits=m-per-s^3}</nowiki> 
-** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0}</nowiki>
+* jerkUnits <nowiki>{defaultUnits=m-per-s^3, allowedCharacter=caret}</nowiki>
+** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * magneticFieldUnits <nowiki>{defaultUnits=T}</nowiki>
 ** tesla <nowiki>{SIUnit, conversionFactor=10e-15}</nowiki>
 ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10e-15}</nowiki>
@@ -1268,8 +1268,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** minute <nowiki>{conversionFactor=60}</nowiki>
 ** hour <nowiki>{conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
 ** year <nowiki>[Years do not have a constant conversion factor to seconds.]</nowiki>
-* volumeUnits <nowiki>{defaultUnits=m^3}</nowiki> 
-** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* volumeUnits <nowiki>{defaultUnits=m^3, allowedCharacter=caret}</nowiki>
+** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
 * weightUnits <nowiki>{defaultUnits=g}</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** gram <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
