@@ -6318,6 +6318,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m-per-s^2</name>
             <attribute>
@@ -6329,6 +6333,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6375,6 +6383,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m^2</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m^2</name>
             <attribute>
@@ -6386,6 +6398,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6415,12 +6431,18 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>dollar</value>
+            </attribute>
          </unit>
          <unit>
             <name>euro</name>
+            <description>The official currency of a large subset of member countries of the European Union.</description>
          </unit>
          <unit>
             <name>point</name>
+            <description>An arbitrary unit of value, usually an integer indicating reward or penalty.</description>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
@@ -6524,6 +6546,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m-per-s^3</name>
             <attribute>
@@ -6532,6 +6558,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6803,6 +6833,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m^3</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m^3</name>
             <attribute>
@@ -6814,6 +6848,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -7381,6 +7419,12 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
          <property>
             <name>valueClassProperty</name>
+         </property>
+         <property>
+            <name>unitProperty</name>
+         </property>
+         <property>
+            <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
