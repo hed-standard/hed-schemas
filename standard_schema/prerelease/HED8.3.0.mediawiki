@@ -1321,25 +1321,24 @@ Each term in this vocabulary has a human-readable description and may include ad
 
 
 '''Value classes''' <nowiki>[Rules for the values provided for placeholders.]</nowiki>
-* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=-,allowedCharacter=:}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
-* nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=_,allowedCharacter=-}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
-* numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=+,allowedCharacter=-,allowedCharacter=.}[Value must be a valid numerical value.]</nowiki>
-* posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=/,allowedCharacter=:}[Posix path specification.]</nowiki> 
-* textClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=blank, allowedCharacter=+, allowedCharacter=-, allowedCharacter=:, allowedCharacter=;, allowedCharacter=., allowedCharacter=/, allowedCharacter=(, allowedCharacter=), allowedCharacter=?, allowedCharacter=*, allowedCharacter=%, allowedCharacter=$, allowedCharacter=@}[Value class designating values that have the characteristics of text such as in descriptions.]</nowiki>
-
+* dateTimeClass <nowiki>{allowedCharacter=digits,allowedCharacter=T,allowedCharacter=hyphen,allowedCharacter=colon}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
+* nameClass <nowiki>{allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=underscore,allowedCharacter=hyphen}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
+* numericClass <nowiki>{allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=plus,allowedCharacter=hyphen,allowedCharacter=period}[Value must be a valid numerical value.]</nowiki>
+* posixPath <nowiki>{allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=slash,allowedCharacter=colon}[Posix path specification.]</nowiki>
+* textClass <nowiki>{allowedCharacter=text}
 
 '''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
-* allowedCharacter <nowiki>{valueClassProperty, unitProperty, unitClassProperty}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
-* conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The factor to multiply these units by to convert to default units.]</nowiki>
+* allowedCharacter <nowiki>{valueClassProperty, unitProperty, unitModifierProperty}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
+* conversionFactor <nowiki>{unitProperty, unitModifierProperty}[The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
 * defaultUnits <nowiki>{unitClassProperty}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-* deprecatedFrom <nowiki>{elementProperty}[The schema version number when this element was first deprecated.]</nowiki>
+* deprecatedFrom <nowiki>{elementProperty}[The schema version number when this element was first deprecated. The value of the attribute is the latest schema version in which the element appeared in undeprecated form.]</nowiki>
 * extensionAllowed <nowiki>{boolProperty, nodeProperty, isInheritedProperty}[Indicates that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
-* hedID <nowiki>{elementProperty}[The unique identifier of this element in the HED namespace.]</nowiki>
+* hedId <nowiki>{elementProperty}[The unique identifier of this element in the HED namespace.]</nowiki>
 * inLibrary <nowiki>{elementProperty} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
 * relatedTag <nowiki>{nodeProperty, isInheritedProperty}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
 * requireChild  <nowiki>{boolProperty, nodeProperty}[This tag must have a descendent.]</nowiki>
 * reserved <nowiki>{boolProperty, nodeProperty}[This tag has special meaning and requires special handling by tools.]</nowiki>
-* rooted <nowiki>{nodeProperty}[Specifies where a top-level library schema node should appear under indicated node in partnered standard schema.]</nowiki>
+* rooted <nowiki>{nodeProperty}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
 * SIUnit  <nowiki>{boolProperty, unitProperty}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
 * SIUnitModifier <nowiki>{boolProperty, unitModifierProperty}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
 * SIUnitSymbolModifier <nowiki>{boolProperty, unitModifierProperty}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
@@ -1349,9 +1348,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 * topLevelTagGroup <nowiki>{boolProperty, nodeProperty}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
 * unique <nowiki>{boolProperty, nodeProperty}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
 * unitClass <nowiki>{nodeProperty}[The unit class this placeholder tag belongs to.]</nowiki>
-* unitPrefix <nowiki>{boolProperty, unitProperty}[This unit indicator is a prefix (e.g., dollar sign in the currency units).]</nowiki>
+* unitPrefix <nowiki>{boolProperty, unitProperty}[This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
 * unitSymbol <nowiki>{boolProperty, unitProperty}[This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-* valueClass <nowiki>{nodeProperty}[The value class to which this placeholder tag belongs.]</nowiki>
+* valueClass <nowiki>{nodeProperty}[The value class this placeholder tag belongs to..]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
 * boolProperty <nowiki>[Indicates that the schema attribute represents something that is either true or false and does not have a value. Attributes without this value are assumed to have string values.]</nowiki>
