@@ -1329,43 +1329,43 @@ Each term in this vocabulary has a human-readable description and may include ad
 * textClass <nowiki>{allowedCharacter=text}[Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII  < 127) excluding comma, square bracket and curly braces as well as nonascii (ASCII codes > 127).]</nowiki>
 
 '''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
-* allowedCharacter <nowiki>{stringRange, valueClassDomain, unitDomain, unitModifierDomain}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.]</nowiki>
-* conversionFactor <nowiki>{numericRange, unitDomain, unitModifierDomain}[The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
-* defaultUnits <nowiki>{stringRange, unitClassDomain}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-* deprecatedFrom <nowiki>{stringRange, elementDomain}[The schema version number when this element was first deprecated. The value of the attribute is the latest schema version in which the element appeared in undeprecated form.]</nowiki>
-* extensionAllowed <nowiki>{boolRange, nodeDomain, isInheritedProperty}[Indicates that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
-* hedId <nowiki>{stringRange, elementDomain}[The unique identifier of this element in the HED namespace.]</nowiki>
-* inLibrary <nowiki>{stringRange, elementDomain} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
-* relatedTag <nowiki>{stringRange, nodeDomain, isInheritedProperty}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
-* requireChild  <nowiki>{boolRange, nodeDomain}[This tag must have a descendent.]</nowiki>
-* reserved <nowiki>{boolRange, nodeDomain}[This tag has special meaning and requires special handling by tools.]</nowiki>
-* rooted <nowiki>{stringRange, nodeDomain}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
-* SIUnit  <nowiki>{boolRange, unitDomain}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
-* SIUnitModifier <nowiki>{boolRange, unitModifierDomain}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
-* SIUnitSymbolModifier <nowiki>{boolRange, unitModifierDomain}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>{stringRange, nodeDomain, isInheritedProperty}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
-* tagGroup <nowiki>{boolRange, nodeDomain}[This tag can only appear inside a tag group.] </nowiki>
-* takesValue <nowiki>{boolRange, nodeDomain}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
-* topLevelTagGroup <nowiki>{boolRange, nodeDomain}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
-* unique <nowiki>{boolRange, nodeDomain}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
-* unitClass <nowiki>{stringRange, nodeDomain}[The name of the unit class this placeholder tag belongs to.]</nowiki>
-* unitPrefix <nowiki>{boolRange, unitDomain}[This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
-* unitSymbol <nowiki>{boolRange, unitDomain}[This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-* valueClass <nowiki>{stringRange, nodeDomain}[The value class this placeholder tag belongs to..]</nowiki>
+* allowedCharacter <nowiki>{unitDomain, unitModifierDomain, valueClassDomain, stringRange}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.]</nowiki>
+* conversionFactor <nowiki>{unitDomain, unitModifierDomain, numericRange}[The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
+* defaultUnits <nowiki>{unitClassDomain, unitRange}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
+* deprecatedFrom <nowiki>{elementDomain, stringRange}[The latest schema version in which the element was not deprecated.]</nowiki>
+* extensionAllowed <nowiki>{tagDomain, boolRange, isInheritedProperty}[Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
+* hedId <nowiki>{elementDomain, stringRange}[The unique identifier of this element in the HED namespace.]</nowiki>
+* inLibrary <nowiki>{elementDomain, stringRange} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
+* relatedTag <nowiki>{tagDomain, tagRange, isInheritedProperty}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
+* requireChild  <nowiki>{tagDomain, boolRange}[This tag must have a descendent.]</nowiki>
+* reserved <nowiki>{tagDomain, boolRange}[This tag has special meaning and requires special handling by tools.]</nowiki>
+* rooted <nowiki>{tagDomain, tagRange}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
+* SIUnit  <nowiki>{unitDomain, boolRange}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
+* SIUnitModifier <nowiki>{unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
+* SIUnitSymbolModifier <nowiki>{unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
+* suggestedTag <nowiki>{tagDomain, stringRange, isInheritedProperty}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+* tagGroup <nowiki>{tagDomain, boolRange}[This tag can only appear inside a tag group.] </nowiki>
+* takesValue <nowiki>{tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
+* topLevelTagGroup <nowiki>{tagDomain, boolRange}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
+* unique <nowiki>{tagDomain,boolRange}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
+* unitClass <nowiki>{tagDomain, stringRange}[The unit class that the value of a placeholder node can belong to.]</nowiki>
+* unitPrefix <nowiki>{unitDomain, boolRange}[This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
+* unitSymbol <nowiki>{unitDomain, boolRange}[This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
+* valueClass <nowiki>{tagDomain, valueClassRange}[Type of value taken on by the value of a placeholder node.]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
 * boolRange <nowiki>[This schema attribute's value can be true or false. This property was formerly named boolProperty.]</nowiki>
 * elementDomain <nowiki>[This schema attribute can apply to any type of element (tag term, unit class, etc). This property was formerly named elementProperty.]</nowiki>
 * isInheritedProperty <nowiki>[This schema attribute is inherited by child nodes. This property only applies to schema attributes for nodes.]</nowiki>
-* nodeDomain <nowiki>[This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
-* nodeRange <nowiki>[This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
+* tagDomain <nowiki>[This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
+* tagRange <nowiki>[This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
 * numericRange <nowiki>[This schema attribute's value can be numeric.]</nowiki>
-* stringRange <nowiki>[This schema attribute's value can be numeric.]</nowiki>
+* stringRange <nowiki>[This schema attribute's value can be a string.]</nowiki>
 * unitClassDomain <nowiki>[This schema attribute can apply to unit classes. This property was formerly named unitClassProperty.]</nowiki>
 * unitClassRange <nowiki>[This schema attribute's value can be a unit class.]</nowiki>
 * unitModifierDomain <nowiki>[This schema attribute can apply to unit modifiers. This property was formerly named unitModifierProperty.]</nowiki>
 * unitDomain <nowiki>[This schema attribute can apply to units. This property was formerly named unitProperty.]</nowiki>
-* unitRange <nowiki>[This schema attribute's can be units.]</nowiki>
+* unitRange <nowiki>[This schema attribute's value can be units.]</nowiki>
 * valueClassDomain <nowiki>[This schema attribute can apply to value classes. This property was formerly named valueClassProperty.]</nowiki>
 * valueClassRange <nowiki>[This schema attribute's value can be a value class.]</nowiki>
 
