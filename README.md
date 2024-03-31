@@ -99,7 +99,7 @@ levels of changes in the semantic version:
 | Unit or unit class removed from node.           | Major          |
 | Node attribute value changed                    | Minor          |
 | Inherited attribute change                      | Minor          |
-| New property added to schema                    | Minor          |
+| New property added to or removed from schema    | Minor          |
 | New value class added to schema                 | Minor          |
 | New unit modifier added to schema               | Minor          |
 | New tag added to the schema.                    | Minor          |
