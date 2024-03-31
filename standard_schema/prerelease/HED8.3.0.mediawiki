@@ -423,7 +423,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Siren <nowiki>[A loud, continuous sound often varying in frequency designed to indicate an emergency.]</nowiki>
 
 '''Property''' <nowiki>{extensionAllowed}[Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
-* Agent-property <nowiki>{extensionAllowed}[Something that pertains to an agent.]</nowiki>
+* Agent-property <nowiki>[Something that pertains to an agent.]</nowiki>
 ** Agent-state <nowiki>[The state of the agent.]</nowiki>
 *** Agent-cognitive-state <nowiki>[The state of the cognitive processes or state of mind of the agent.]</nowiki>
 **** Alert <nowiki>[Condition of heightened watchfulness or preparation for action.]</nowiki>
@@ -1333,19 +1333,19 @@ Each term in this vocabulary has a human-readable description and may include ad
 * conversionFactor <nowiki>{unitDomain, unitModifierDomain, numericRange}[The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
 * defaultUnits <nowiki>{unitClassDomain, unitRange}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
 * deprecatedFrom <nowiki>{elementDomain, stringRange}[The latest schema version in which the element was not deprecated.]</nowiki>
-* extensionAllowed <nowiki>{tagDomain, boolRange, isInheritedProperty}[Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
-* hedId <nowiki>{elementDomain, stringRange}[The unique identifier of this element in the HED namespace.]</nowiki>
+* extensionAllowed <nowiki>{tagDomain, boolRange}[Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.]</nowiki>
+* hedId <nowiki>{annotationProperty, elementDomain, stringRange}[The unique identifier of this element in the HED namespace.]</nowiki>
 * inLibrary <nowiki>{elementDomain, stringRange} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
-* relatedTag <nowiki>{tagDomain, tagRange, isInheritedProperty}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
-* requireChild  <nowiki>{tagDomain, boolRange}[This tag must have a descendent.]</nowiki>
+* relatedTag <nowiki>{tagDomain, tagRange}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
+* requireChild  <nowiki>{annotationProperty, tagDomain, boolRange}[This tag must have a descendent.]</nowiki>
 * reserved <nowiki>{tagDomain, boolRange}[This tag has special meaning and requires special handling by tools.]</nowiki>
-* rooted <nowiki>{tagDomain, tagRange}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
+* rooted <nowiki>{annotationProperty, tagDomain, tagRange}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
 * SIUnit  <nowiki>{unitDomain, boolRange}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
 * SIUnitModifier <nowiki>{unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
 * SIUnitSymbolModifier <nowiki>{unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>{tagDomain, stringRange, isInheritedProperty}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+* suggestedTag <nowiki>{tagDomain, stringRange}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
 * tagGroup <nowiki>{tagDomain, boolRange}[This tag can only appear inside a tag group.] </nowiki>
-* takesValue <nowiki>{tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
+* takesValue <nowiki>{annotationProperty, tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
 * topLevelTagGroup <nowiki>{tagDomain, boolRange}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
 * unique <nowiki>{tagDomain,boolRange}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
 * unitClass <nowiki>{tagDomain, stringRange}[The unit class that the value of a placeholder node can belong to.]</nowiki>
@@ -1354,9 +1354,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 * valueClass <nowiki>{tagDomain, valueClassRange}[Type of value taken on by the value of a placeholder node.]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
+* annotationProperty <nowiki>[This schema attribute is inherited by child nodes. This property only applies to schema attributes for nodes.]</nowiki>
 * boolRange <nowiki>[This schema attribute's value can be true or false. This property was formerly named boolProperty.]</nowiki>
 * elementDomain <nowiki>[This schema attribute can apply to any type of element (tag term, unit class, etc). This property was formerly named elementProperty.]</nowiki>
-* isInheritedProperty <nowiki>[This schema attribute is inherited by child nodes. This property only applies to schema attributes for nodes.]</nowiki>
 * tagDomain <nowiki>[This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
 * tagRange <nowiki>[This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
 * numericRange <nowiki>[This schema attribute's value can be numeric.]</nowiki>
