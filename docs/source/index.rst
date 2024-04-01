@@ -7,9 +7,9 @@ HED schemas
 
 .. sidebar:: **Downloads**
 
-   * `HED schemas (PDF <https://hed-schemas.readthedocs.io/_/downloads/en/latest/pdf/>`_  
+   * `HED schemas PDF <https://hed-schemas.readthedocs.io/_/downloads/en/latest/pdf/>`_  
 
-   * `HED resources (<https://www.hed-resources.org/>`_  
+   * `HED resources <https://www.hed-resources.org/>`_  
 
 Note:  this is a work in progress.
 

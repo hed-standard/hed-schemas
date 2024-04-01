@@ -33,7 +33,7 @@ The following table summarizes the current versions of the HED schemas.
 | Schema | Latest<br/>version| Description | Prerelease<br/>version  | DOI  |
 | ------ | --------------- | ------- | ------------------------- | ---- |
 | [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html.) |1.1.1 | 10.5281/zenodo.7897596  |
+| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) |1.1.1 | 10.5281/zenodo.7897596  |
 |  [**lisa**](library_schemas/lisa) |  | LISA linguistic stimuli annotation vocabulary. | 0.0.1 |  |
 |  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
 
@@ -99,7 +99,7 @@ levels of changes in the semantic version:
 | Unit or unit class removed from node.           | Major          |
 | Node attribute value changed                    | Minor          |
 | Inherited attribute change                      | Minor          |
-| New property added to schema                    | Minor          |
+| New property added to or removed from schema    | Minor          |
 | New value class added to schema                 | Minor          |
 | New unit modifier added to schema               | Minor          |
 | New tag added to the schema.                    | Minor          |

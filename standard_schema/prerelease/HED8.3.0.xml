@@ -2,9 +2,7 @@
 <HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.3.0" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
    <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
-Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
-
-</prologue>
+Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.</prologue>
    <schema>
       <node>
          <name>Event</name>
@@ -824,6 +822,22 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>Head</name>
                      <description>The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.</description>
                      <node>
+                        <name>Brain</name>
+                        <description>Organ inside the head that is made up of nerve cells and controls the body.</description>
+                        <node>
+                           <name>Frontal-lobe</name>
+                        </node>
+                        <node>
+                           <name>Occipital-lobe</name>
+                        </node>
+                        <node>
+                           <name>Parietal-lobe</name>
+                        </node>
+                        <node>
+                           <name>Temporal-lobe</name>
+                        </node>
+                     </node>
+                     <node>
                         <name>Ear</name>
                         <description>A sense organ needed for the detection of sound and for establishing balance.</description>
                      </node>
@@ -845,6 +859,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <node>
                            <name>Eyebrow</name>
                            <description>The arched strip of hair on the bony ridge above each eye socket.</description>
+                        </node>
+                        <node>
+                           <name>Eyelid</name>
+                           <description>The folds of the skin that cover the eye when closed.</description>
                         </node>
                         <node>
                            <name>Forehead</name>
@@ -929,7 +947,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                      <node>
                         <name>Gentalia</name>
-                        <description>The external organs of reproduction.</description>
+                        <description>The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.</description>
                         <attribute>
                            <name>deprecatedFrom</name>
                            <value>8.1.0</value>
@@ -946,6 +964,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <node>
                         <name>Torso-chest</name>
                         <description>The anterior side of the thorax from the neck to the abdomen.</description>
+                     </node>
+                     <node>
+                        <name>Viscera</name>
+                        <description>Internal organs of the body.</description>
                      </node>
                      <node>
                         <name>Waist</name>
@@ -1052,7 +1074,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Nonword</name>
-               <description>A group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.</description>
+               <description>An unpronounceable group of letters or speech sounds that is surrounded by white space when written, is not accepted as a word by native speakers.</description>
             </node>
             <node>
                <name>Paragraph</name>
@@ -1060,11 +1082,15 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Phoneme</name>
-               <description>A speech sound that is distinguished by the speakers of a particular language.</description>
+               <description>Any of the minimally distinct units of sound in a specified language that distinguish one word from another.</description>
             </node>
             <node>
                <name>Phrase</name>
                <description>A phrase is a group of words functioning as a single unit in the syntax of a sentence.</description>
+            </node>
+            <node>
+               <name>Pseudoword</name>
+               <description>A pronounceable group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.</description>
             </node>
             <node>
                <name>Sentence</name>
@@ -1072,7 +1098,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Syllable</name>
-               <description>A unit of spoken language larger than a phoneme.</description>
+               <description>A unit of pronunciation having a vowel or consonant sound, with or without surrounding consonants, forming the whole or a part of a word.</description>
             </node>
             <node>
                <name>Textblock</name>
@@ -1080,7 +1106,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Word</name>
-               <description>A word is the smallest free form (an item that may be expressed in isolation with semantic or pragmatic content) in a language.</description>
+               <description>A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically surrounded by white space when written or printed.</description>
             </node>
          </node>
          <node>
@@ -1406,10 +1432,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A device designed to indicate the time of day or to measure the time duration of an event or action.</description>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clockface numbering or anatomic subregion.</description>
+                           <description>A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
-                              <value>8.3.0</value>
+                              <value>8.2.0</value>
                            </attribute>
                         </node>
                      </node>
@@ -2126,6 +2152,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>Male</name>
                      <description>Biological sex of an individual with male sexual organs producing sperm.</description>
                   </node>
+                  <node>
+                     <name>Other-sex</name>
+                     <description>A non-specific designation of sexual traits.</description>
+                  </node>
                </node>
             </node>
          </node>
@@ -2135,6 +2165,128 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>extensionAllowed</name>
             </attribute>
+            <node>
+               <name>Data-artifact</name>
+               <description>An anomalous, interfering, or distorting signal originating from a source other than the item being studied.</description>
+               <node>
+                  <name>Biological-artifact</name>
+                  <description>A data artifact arising from a biological entity being measured.</description>
+                  <node>
+                     <name>Chewing-artifact</name>
+                     <description>Artifact from moving the jaw in a chewing motion.</description>
+                  </node>
+                  <node>
+                     <name>ECG-artifact</name>
+                     <description>An electrical artifact from the far-field potential from pulsation of the heart, timelocked to QRS complex.</description>
+                  </node>
+                  <node>
+                     <name>EMG-artifact</name>
+                     <description>Artifact from muscle activity and myogenic potentials at the measurements site. In EEG, myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (e.g. clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.</description>
+                  </node>
+                  <node>
+                     <name>Eye-artifact</name>
+                     <description>Occular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.</description>
+                     <node>
+                        <name>Eye-blink-artifact</name>
+                        <description>Artifact from eye blinking. In EEG, Fp1/Fp2 electrodes become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye.</description>
+                     </node>
+                     <node>
+                        <name>Eye-movement-artifact</name>
+                        <description>Eye movements can cause artifacts on recordings. The charge of the eye can especially cause artifacts in electrophysiology data.</description>
+                        <node>
+                           <name>Horizontal-eye-movement-artifact</name>
+                           <description>Artifact from moving eyes left-to-right and right-to-left. In EEG, there is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.</description>
+                        </node>
+                        <node>
+                           <name>Nystagmus-artifact</name>
+                           <description>Artifact from nystagmus (a vision condition in which the eyes make repetitive, uncontrolled movements).</description>
+                        </node>
+                        <node>
+                           <name>Slow-eye-movement-artifact</name>
+                           <description>Artifacts originating from slow, rolling eye-movements, seen during drowsiness.</description>
+                        </node>
+                        <node>
+                           <name>Vertical-eye-movement-artifact</name>
+                           <description>Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.</description>
+                        </node>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Movement-artifact</name>
+                     <description>Artifact in the measured data generated by motion of the subject.</description>
+                  </node>
+                  <node>
+                     <name>Pulse-artifact</name>
+                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.</description>
+                  </node>
+                  <node>
+                     <name>Respiration-artifact</name>
+                     <description>Artifact from breathing.</description>
+                  </node>
+                  <node>
+                     <name>Rocking-patting-artifact</name>
+                     <description>Quasi-rhythmical artifacts in recordings most commonly seen in infants. Typically caused by a caregiver rocking or patting the infant.</description>
+                  </node>
+                  <node>
+                     <name>Sucking-artifact</name>
+                     <description>Artifact from sucking, typically seen in very young cases.</description>
+                  </node>
+                  <node>
+                     <name>Sweat-artifact</name>
+                     <description>Artifact from sweating. In EEG, this is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.</description>
+                  </node>
+                  <node>
+                     <name>Tongue-movement-artifact</name>
+                     <description>Artifact from tongue movement (Glossokinetic). The tongue functions as a dipole, with the tip negative with respect to the base. In EEG, the artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.</description>
+                  </node>
+               </node>
+               <node>
+                  <name>Nonbiological-artifact</name>
+                  <description>A data artifact arising from a non-biological source.</description>
+                  <node>
+                     <name>Artificial-ventilation-artifact</name>
+                     <description>Artifact steming from mechanical ventilation. These can occur at the same rate as teh ventilator, but also have other patterns.</description>
+                  </node>
+                  <node>
+                     <name>Dialysis-artifact</name>
+                     <description>Artifacts seen in recordings during continuous renal replacement therapy (dialysis).</description>
+                  </node>
+                  <node>
+                     <name>Electrode-movement-artifact</name>
+                     <description>Artifact from electrode movement.</description>
+                  </node>
+                  <node>
+                     <name>Electrode-pops-artifact</name>
+                     <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
+                  </node>
+                  <node>
+                     <name>Induction-artifact</name>
+                     <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
+                  </node>
+                  <node>
+                     <name>Line-noise-artifact</name>
+                     <description>Power line noise at 50 Hz or 60 Hz.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>frequencyUnits</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Salt-bridge-artifact</name>
+                     <description>Artifact from salt-bridge between EEG electrodes.</description>
+                  </node>
+               </node>
+            </node>
             <node>
                <name>Data-marker</name>
                <description>An indicator placed to mark something.</description>
@@ -2762,6 +2914,34 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                   </node>
                   <node>
+                     <name>Categorical-location-value</name>
+                     <description>Value indicating the location of something, primarily as an identifier rather than an expression of where the item is relative to something else.</description>
+                     <node>
+                        <name>Anterior</name>
+                        <description>Relating to an item on the front of an agent body (from the point of view of the agent) or on the front of an object from the point of view of an agent. This pertains to the identity of an agent or a thing.</description>
+                     </node>
+                     <node>
+                        <name>Lateral</name>
+                        <description>Identifying the portion of an object away from the midline, particularly applied to the (anterior-posterior, superior-inferior) surface of a brain.</description>
+                     </node>
+                     <node>
+                        <name>Left</name>
+                        <description>Relating to an item on the left side of an agent body (from the point of view of the agent) or the left side of an object from the point of view of an agent. This pertains to the identity of an agent or a thing, for example (Left, Hand) as an identifier for the left hand. HED spatial relations should be used for relative positions such as (Hand, (Left-side-of, Keyboard)), which denotes the hand placed on the left side of the keyboard, which could be either the identified left hand or right hand.</description>
+                     </node>
+                     <node>
+                        <name>Medial</name>
+                        <description>Identifying the portion of an object towards the center, particularly applied to the (anterior-posterior, superior-inferior) surface of a brain.</description>
+                     </node>
+                     <node>
+                        <name>Posterior</name>
+                        <description>Relating to an item on the back of an agent body (from the point of view of the agent) or on the back of an object from the point of view of an agent. This pertains to the identity of an agent or a thing.</description>
+                     </node>
+                     <node>
+                        <name>Right</name>
+                        <description>Relating to an item on the right side of an agent body (from the point of view of the agent) or the right side of an object from the point of view of an agent. This pertains to the identity of an agent or a thing, for example (Right, Hand) as an identifier for the right hand. HED spatial relations should be used for relative positions such as (Hand, (Right-side-of, Keyboard)), which denotes the hand placed on the right side of the keyboard, which could be either the identified left hand or right hand.</description>
+                     </node>
+                  </node>
+                  <node>
                      <name>Categorical-orientation-value</name>
                      <description>Value indicating the orientation or direction of something.</description>
                      <node>
@@ -3276,6 +3456,42 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </node>
                         </node>
                         <node>
+                           <name>Perimeter</name>
+                           <description>The minimum length of paths enclosing a 2D shape.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                              <attribute>
+                                 <name>unitClass</name>
+                                 <value>physicalLengthUnits</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
+                           <name>Radius</name>
+                           <description>The distance of the line from the center of a circle or a sphere to its perimeter or outer surface, respectively.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                              <attribute>
+                                 <name>unitClass</name>
+                                 <value>physicalLengthUnits</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
                            <name>Volume</name>
                            <description>The amount of three dimensional space occupied by an object or the capacity of a space or container.</description>
                            <node>
@@ -3753,9 +3969,6 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Description</name>
                <description>An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <node>
                   <name>#</name>
                   <attribute>
@@ -3770,9 +3983,6 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>ID</name>
                <description>An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <node>
                   <name>#</name>
                   <attribute>
@@ -3787,9 +3997,6 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Label</name>
                <description>A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
                <node>
                   <name>#</name>
                   <attribute>
@@ -3805,31 +4012,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Metadata</name>
                <description>Data about data. Information that describes another set of data.</description>
                <node>
-                  <name>CogAtlas</name>
-                  <description>The Cognitive Atlas ID number of something.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>CogPo</name>
-                  <description>The CogPO ID number of something.</description>
-                  <node>
-                     <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
                   <name>Creation-date</name>
-                  <description>The date on which data creation of this element began.</description>
-                  <attribute>
-                     <name>requireChild</name>
-                  </attribute>
+                  <description>The date on which the creation of this item began.</description>
                   <node>
                      <name>#</name>
                      <attribute>
@@ -3870,8 +4054,97 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
-                  <name>OBO-identifier</name>
-                  <description>The identifier of a term in some Open Biology Ontology (OBO) ontology.</description>
+                  <name>Metadata-identifier</name>
+                  <description>Identifier (usually unique) from another metadata source.</description>
+                  <node>
+                     <name>CogAtlas</name>
+                     <description>The Cognitive Atlas ID number of something.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>CogPo</name>
+                     <description>The CogPO ID number of something.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>DOI</name>
+                     <description>Digital object identifier for an object.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>OBO-identifier</name>
+                     <description>The identifier of a term in some Open Biology Ontology (OBO) ontology.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>nameClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Species-identifier</name>
+                     <description>A binomial species name from the NCBI Taxonomy, for example, homo sapiens, mus musculus, or rattus norvegicus.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Subject-identifier</name>
+                     <description>A sequence of characters used to identify, name, or characterize a trial or study subject.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>UUID</name>
+                     <description>A unique universal identifier.</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Version-identifier</name>
+                     <description>An alphanumeric character string that identifies a form or variant of a type or original.</description>
+                     <node>
+                        <name>#</name>
+                        <description>Usually is a semantic version.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Modified-date</name>
+                  <description>The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.</description>
                   <node>
                      <name>#</name>
                      <attribute>
@@ -3879,7 +4152,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                      <attribute>
                         <name>valueClass</name>
-                        <value>nameClass</value>
+                        <value>dateTimeClass</value>
                      </attribute>
                   </node>
                </node>
@@ -3894,21 +4167,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                </node>
                <node>
-                  <name>Subject-identifier</name>
-                  <description>A sequence of characters used to identify, name, or characterize a trial or study subject.</description>
+                  <name>URL</name>
+                  <description>A valid URL.</description>
                   <node>
                      <name>#</name>
-                     <attribute>
-                        <name>takesValue</name>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Version-identifier</name>
-                  <description>An alphanumeric character string that identifies a form or variant of a type or original.</description>
-                  <node>
-                     <name>#</name>
-                     <description>Usually is a semantic version.</description>
                      <attribute>
                         <name>takesValue</name>
                      </attribute>
@@ -3954,6 +4216,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Collection</name>
                <description>A tag designating a grouping of items such as in a set or list.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the collection.</description>
@@ -3969,6 +4234,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Condition-variable</name>
                <description>An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the condition variable.</description>
@@ -3984,6 +4252,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Control-variable</name>
                <description>An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the control variable.</description>
@@ -4080,6 +4351,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Event-stream</name>
                <description>A special HED tag indicating that this event is a member of an ordered succession of events.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the event stream.</description>
@@ -4095,6 +4369,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Experimental-intertrial</name>
                <description>A tag used to indicate a part of the experiment between trials usually where nothing is happening.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the intertrial block.</description>
@@ -4110,6 +4387,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Experimental-trial</name>
                <description>Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the trial (often a numerical string).</description>
@@ -4125,6 +4405,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Indicator-variable</name>
                <description>An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Name of the indicator variable.</description>
@@ -4140,6 +4423,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Recording</name>
                <description>A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the recording.</description>
@@ -4155,6 +4441,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Task</name>
                <description>An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the task block.</description>
@@ -4170,6 +4459,9 @@ Each term in this vocabulary has a human-readable description and may include ad
             <node>
                <name>Time-block</name>
                <description>A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.</description>
+               <attribute>
+                  <name>reserved</name>
+               </attribute>
                <node>
                   <name>#</name>
                   <description>Optional label for the task block.</description>
@@ -5146,6 +5438,26 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.</description>
                   </node>
                   <node>
+                     <name>Luminance-contrast</name>
+                     <description>The difference in luminance in specific portions of a scene or image.</description>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Percentage</value>
+                        <value>Ratio</value>
+                     </attribute>
+                     <node>
+                        <name>#</name>
+                        <description>A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
                      <name>Opacity</name>
                      <description>A measure of impenetrability to light.</description>
                   </node>
@@ -5974,7 +6286,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             <description>A relationship that includes a temporal or time-based component.</description>
             <node>
                <name>After</name>
-               <description>(A, (After B)) means A happens at a time subsequent to a reference time related to B.</description>
+               <description>(A, (After, B)) means A happens at a time subsequent to a reference time related to B.</description>
             </node>
             <node>
                <name>Asynchronous-with</name>
@@ -5982,7 +6294,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Before</name>
-               <description>(A, (Before B)) means A happens at a time earlier in time or order than B.</description>
+               <description>(A, (Before, B)) means A happens at a time earlier in time or order than B.</description>
             </node>
             <node>
                <name>During</name>
@@ -6006,6 +6318,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m-per-s^2</name>
             <attribute>
@@ -6017,6 +6333,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6063,6 +6383,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m^2</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m^2</name>
             <attribute>
@@ -6074,6 +6398,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6103,12 +6431,18 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>dollar</value>
+            </attribute>
          </unit>
          <unit>
             <name>euro</name>
+            <description>The official currency of a large subset of member countries of the European Union.</description>
          </unit>
          <unit>
             <name>point</name>
+            <description>An arbitrary unit of value, usually an integer indicating reward or penalty.</description>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
@@ -6212,6 +6546,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
          </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
+         </attribute>
          <unit>
             <name>m-per-s^3</name>
             <attribute>
@@ -6221,14 +6559,17 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
+            </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
-         <description>Units used to magnetic field intensity.</description>
          <attribute>
             <name>defaultUnits</name>
-            <value>fT</value>
+            <value>T</value>
          </attribute>
          <unit>
             <name>tesla</name>
@@ -6237,7 +6578,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10^-15</value>
+               <value>10e-15</value>
             </attribute>
          </unit>
          <unit>
@@ -6250,7 +6591,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10^-15</value>
+               <value>10e-15</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6387,8 +6728,27 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>degree-Celsius</value>
+         </attribute>
+         <unit>
+            <name>degree-Celsius</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
          <unit>
             <name>degree Celsius</name>
+            <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
+            <attribute>
+               <name>deprecatedFrom</name>
+               <value>8.2.0</value>
+            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -6462,12 +6822,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                <value>3600</value>
             </attribute>
          </unit>
+         <unit>
+            <name>year</name>
+            <description>Years do not have a constant conversion factor to seconds.</description>
+         </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>volumeUnits</name>
          <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
+         </attribute>
+         <attribute>
+            <name>allowedCharacter</name>
+            <value>caret</value>
          </attribute>
          <unit>
             <name>m^3</name>
@@ -6480,6 +6848,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>allowedCharacter</name>
+               <value>caret</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -6531,7 +6903,7 @@ Each term in this vocabulary has a human-readable description and may include ad
    <unitModifierDefinitions>
       <unitModifierDefinition>
          <name>deca</name>
-         <description>SI unit multiple representing 10^1.</description>
+         <description>SI unit multiple representing 10e1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6542,7 +6914,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
-         <description>SI unit multiple representing 10^1.</description>
+         <description>SI unit multiple representing 10e1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6553,7 +6925,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
-         <description>SI unit multiple representing 10^2.</description>
+         <description>SI unit multiple representing 10e2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6564,7 +6936,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
-         <description>SI unit multiple representing 10^2.</description>
+         <description>SI unit multiple representing 10e2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6575,7 +6947,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
-         <description>SI unit multiple representing 10^3.</description>
+         <description>SI unit multiple representing 10e3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6586,7 +6958,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
-         <description>SI unit multiple representing 10^3.</description>
+         <description>SI unit multiple representing 10e3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6597,161 +6969,161 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
-         <description>SI unit multiple representing 10^6.</description>
+         <description>SI unit multiple representing 10e6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^6</value>
+            <value>10e6</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
-         <description>SI unit multiple representing 10^6.</description>
+         <description>SI unit multiple representing 10e6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^6</value>
+            <value>10e6</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
-         <description>SI unit multiple representing 10^9.</description>
+         <description>SI unit multiple representing 10e9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^9</value>
+            <value>10e9</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
-         <description>SI unit multiple representing 10^9.</description>
+         <description>SI unit multiple representing 10e9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^9</value>
+            <value>10e9</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
-         <description>SI unit multiple representing 10^12.</description>
+         <description>SI unit multiple representing 10e12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^12</value>
+            <value>10e12</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
-         <description>SI unit multiple representing 10^12.</description>
+         <description>SI unit multiple representing 10e12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^12</value>
+            <value>10e12</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
-         <description>SI unit multiple representing 10^15.</description>
+         <description>SI unit multiple representing 10e15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^15</value>
+            <value>10e15</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
-         <description>SI unit multiple representing 10^15.</description>
+         <description>SI unit multiple representing 10e15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^15</value>
+            <value>10e15</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
-         <description>SI unit multiple representing 10^18.</description>
+         <description>SI unit multiple representing 10e18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^18</value>
+            <value>10e18</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
-         <description>SI unit multiple representing 10^18.</description>
+         <description>SI unit multiple representing 10e18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^18</value>
+            <value>10e18</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
-         <description>SI unit multiple representing 10^21.</description>
+         <description>SI unit multiple representing 10e21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^21</value>
+            <value>10e21</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
-         <description>SI unit multiple representing 10^21.</description>
+         <description>SI unit multiple representing 10e21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^21</value>
+            <value>10e21</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
-         <description>SI unit multiple representing 10^24.</description>
+         <description>SI unit multiple representing 10e24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^24</value>
+            <value>10e24</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
-         <description>SI unit multiple representing 10^24.</description>
+         <description>SI unit multiple representing 10e24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^24</value>
+            <value>10e24</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
-         <description>SI unit submultiple representing 10^-1.</description>
+         <description>SI unit submultiple representing 10e-1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6762,7 +7134,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
-         <description>SI unit submultiple representing 10^-1.</description>
+         <description>SI unit submultiple representing 10e-1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6773,7 +7145,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
-         <description>SI unit submultiple representing 10^-2.</description>
+         <description>SI unit submultiple representing 10e-2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6784,7 +7156,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
-         <description>SI unit submultiple representing 10^-2.</description>
+         <description>SI unit submultiple representing 10e-2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6795,7 +7167,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
-         <description>SI unit submultiple representing 10^-3.</description>
+         <description>SI unit submultiple representing 10e-3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -6806,7 +7178,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
-         <description>SI unit submultiple representing 10^-3.</description>
+         <description>SI unit submultiple representing 10e-3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -6817,163 +7189,163 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
-         <description>SI unit submultiple representing 10^-6.</description>
+         <description>SI unit submultiple representing 10e-6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-6</value>
+            <value>10e-6</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
-         <description>SI unit submultiple representing 10^-6.</description>
+         <description>SI unit submultiple representing 10e-6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-6</value>
+            <value>10e-6</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
-         <description>SI unit submultiple representing 10^-9.</description>
+         <description>SI unit submultiple representing 10e-9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-9</value>
+            <value>10e-9</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
-         <description>SI unit submultiple representing 10^-9.</description>
+         <description>SI unit submultiple representing 10e-9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-9</value>
+            <value>10e-9</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
-         <description>SI unit submultiple representing 10^-12.</description>
+         <description>SI unit submultiple representing 10e-12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-12</value>
+            <value>10e-12</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
-         <description>SI unit submultiple representing 10^-12.</description>
+         <description>SI unit submultiple representing 10e-12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-12</value>
+            <value>10e-12</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
-         <description>SI unit submultiple representing 10^-15.</description>
+         <description>SI unit submultiple representing 10e-15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-15</value>
+            <value>10e-15</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
-         <description>SI unit submultiple representing 10^-15.</description>
+         <description>SI unit submultiple representing 10e-15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-15</value>
+            <value>10e-15</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
-         <description>SI unit submultiple representing 10^-18.</description>
+         <description>SI unit submultiple representing 10e-18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-18</value>
+            <value>10e-18</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
-         <description>SI unit submultiple representing 10^-18.</description>
+         <description>SI unit submultiple representing 10e-18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-18</value>
+            <value>10e-18</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
-         <description>SI unit submultiple representing 10^-21.</description>
+         <description>SI unit submultiple representing 10e-21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-21</value>
+            <value>10e-21</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
-         <description>SI unit submultiple representing 10^-21.</description>
+         <description>SI unit submultiple representing 10e-21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-21</value>
+            <value>10e-21</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
-         <description>SI unit submultiple representing 10^-24.</description>
+         <description>SI unit submultiple representing 10e-24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-24</value>
+            <value>10e-24</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
-         <description>SI unit submultiple representing 10^-24.</description>
+         <description>SI unit submultiple representing 10e-24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10^-24</value>
+            <value>10e-24</value>
          </attribute>
       </unitModifierDefinition>
    </unitModifierDefinitions>
    <valueClassDefinitions>
       <valueClassDefinition>
          <name>dateTimeClass</name>
-         <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss. Any variation on the full form is allowed.</description>
+         <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
@@ -6984,7 +7356,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </valueClassDefinition>
       <valueClassDefinition>
          <name>nameClass</name>
-         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underbar.</description>
+         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>letters</value>
@@ -7044,14 +7416,20 @@ Each term in this vocabulary has a human-readable description and may include ad
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
          <name>allowedCharacter</name>
-         <description>A schema attribute of value classes specifying a special character that is allowed in expressing the value of a placeholder. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
+         <description>A special character that is allowed in expressing the value of a placeholder of a specified value class. Normally the allowed characters are listed individually. However, the word letters designates the upper and lower case alphabetic characters and the word digits designates the digits 0-9. The word blank designates the blank character.</description>
          <property>
             <name>valueClassProperty</name>
+         </property>
+         <property>
+            <name>unitProperty</name>
+         </property>
+         <property>
+            <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>conversionFactor</name>
-         <description>The multiplicative factor to multiply these units to convert to default units.</description>
+         <description>The factor to multiply these units by to convert to default units.</description>
          <property>
             <name>unitProperty</name>
          </property>
@@ -7061,21 +7439,21 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>defaultUnits</name>
-         <description>A schema attribute of unit classes specifying the default units to use if the placeholder has a unit class but the substituted value has no units.</description>
+         <description>The default units to use if the placeholder has a unit class but the substituted value has no units.</description>
          <property>
             <name>unitClassProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>deprecatedFrom</name>
-         <description>This element is deprecated. The value of the attribute is the latest schema version in which the element appeared before it was deprecated.</description>
+         <description>The schema version number when this element was first deprecated.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>extensionAllowed</name>
-         <description>A schema attribute indicating that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
+         <description>Indicates that users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7087,25 +7465,22 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>inLibrary</name>
-         <description>This schema element is from the named library schema, not the standard schema. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
+         <name>hedID</name>
+         <description>The unique identifier of this element in the HED namespace.</description>
          <property>
             <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
-         <name>recommended</name>
-         <description>Any event-level HED string should include this tag.</description>
+         <name>inLibrary</name>
+         <description>The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
-            <name>boolProperty</name>
-         </property>
-         <property>
-            <name>nodeProperty</name>
+            <name>elementProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>relatedTag</name>
-         <description>A schema attribute suggesting HED tags that are closely related to this tag. This attribute is used by tagging tools.</description>
+         <description>A HED tag that is closely related to this tag. This attribute is used by tagging tools.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7115,17 +7490,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>requireChild</name>
-         <description>One of the node elements descendants must be included when using this tag.</description>
-         <property>
-            <name>boolProperty</name>
-         </property>
-         <property>
-            <name>nodeProperty</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>required</name>
-         <description>Every event-level HED string should include this tag.</description>
+         <description>This tag must have a descendent.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7145,14 +7510,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>rooted</name>
-         <description>A top-level library schema node should appear under indicated node in partnered standard schema.</description>
+         <description>Specifies where a top-level library schema node should appear under indicated node in partnered standard schema.</description>
          <property>
             <name>nodeProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnit</name>
-         <description>A schema attribute indicating that this unit element is an SI unit and can be modified by multiple and submultiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
+         <description>This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7162,7 +7527,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a base unit rather than a unit symbol.</description>
+         <description>This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7172,7 +7537,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitSymbolModifier</name>
-         <description>A schema attribute indicating that this SI unit modifier represents a multiple or submultiple of a unit symbol rather than a base symbol.</description>
+         <description>This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7182,7 +7547,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>suggestedTag</name>
-         <description>A schema attribute that indicates another tag  that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
+         <description>A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7192,7 +7557,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>tagGroup</name>
-         <description>A schema attribute indicating the tag can only appear inside a tag group.</description>
+         <description>This tag can only appear inside a tag group.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7202,7 +7567,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>takesValue</name>
-         <description>A schema attribute indicating the tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
+         <description>This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7212,7 +7577,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>topLevelTagGroup</name>
-         <description>A schema attribute indicating that this tag (or its descendants) can only appear in a top-level tag group. A tag group can have at most one tag with this attribute.</description>
+         <description>This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7222,7 +7587,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unique</name>
-         <description>A schema attribute indicating that only one of this tag or its descendants can be used  in the event-level HED string.</description>
+         <description>Only one of this tag or its descendants can be used in the event-level HED string.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7232,14 +7597,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitClass</name>
-         <description>A schema attribute specifying which unit class this value tag belongs to.</description>
+         <description>The unit class this placeholder tag belongs to.</description>
          <property>
             <name>nodeProperty</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>A schema attribute applied specifically to unit elements to designate that the unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
+         <description>This unit indicator is a prefix (e.g., dollar sign in the currency units).</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7249,7 +7614,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitSymbol</name>
-         <description>A schema attribute indicating this tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.</description>
+         <description>This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.</description>
          <property>
             <name>boolProperty</name>
          </property>
@@ -7259,7 +7624,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>valueClass</name>
-         <description>A schema attribute specifying which value class this value tag belongs to.</description>
+         <description>The value class to which this placeholder tag belongs.</description>
          <property>
             <name>nodeProperty</name>
          </property>
@@ -7299,6 +7664,5 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>Indicates a schema attribute applies to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
-</epilogue>
+   <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.</epilogue>
 </HED>
