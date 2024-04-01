@@ -25,7 +25,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Software-agent <nowiki>[An agent computer program that interacts with the participant in an active role such as an AI advisor.]</nowiki>
 
 '''Action''' <nowiki>{extensionAllowed}[Do something.]</nowiki>
-* Communicate <nowiki>[Convey knowledge of or information about something.]</nowiki>
+* Communicate <nowiki>[Action conveying knowledge of or information about something.]</nowiki>
 ** Communicate-gesturally <nowiki>{relatedTag=Move-face, relatedTag=Move-upper-extremity}[Communicate nonverbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body.]</nowiki>
 *** Clap-hands <nowiki>[Strike the palms of against one another resoundingly, and usually repeatedly, especially to express approval.]</nowiki>
 *** Clear-throat <nowiki>{relatedTag=Move-face, relatedTag=Move-head}[Cough slightly so as to speak more clearly, attract attention, or to express hesitancy before saying something awkward.]</nowiki>
