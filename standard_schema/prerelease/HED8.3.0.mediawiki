@@ -25,7 +25,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Software-agent <nowiki>[An agent computer program that interacts with the participant in an active role such as an AI advisor.]</nowiki>
 
 '''Action''' <nowiki>{extensionAllowed}[Do something.]</nowiki>
-* Communicate <nowiki>[Action conveying knowledge of or information about something.]</nowiki>
+* Communicate <nowiki>[Action conveying knowledge of or about something.]</nowiki>
 ** Communicate-gesturally <nowiki>{relatedTag=Move-face, relatedTag=Move-upper-extremity}[Communicate nonverbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body.]</nowiki>
 *** Clap-hands <nowiki>[Strike the palms of against one another resoundingly, and usually repeatedly, especially to express approval.]</nowiki>
 *** Clear-throat <nowiki>{relatedTag=Move-face, relatedTag=Move-head}[Cough slightly so as to speak more clearly, attract attention, or to express hesitancy before saying something awkward.]</nowiki>
@@ -1348,7 +1348,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * takesValue <nowiki>{annotationProperty, tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
 * topLevelTagGroup <nowiki>{tagDomain, boolRange}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
 * unique <nowiki>{tagDomain,boolRange}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
-* unitClass <nowiki>{tagDomain, stringRange}[The unit class that the value of a placeholder node can belong to.]</nowiki>
+* unitClass <nowiki>{tagDomain, unitClassRange}[The unit class that the value of a placeholder node can belong to.]</nowiki>
 * unitPrefix <nowiki>{unitDomain, boolRange}[This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
 * unitSymbol <nowiki>{unitDomain, boolRange}[This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
 * valueClass <nowiki>{tagDomain, valueClassRange}[Type of value taken on by the value of a placeholder node.]</nowiki>
