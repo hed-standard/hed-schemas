@@ -64,7 +64,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
 '''Background-activity''' <nowiki>[An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished (Source: Beniczky ea 2013, Appendix S1.)]</nowiki>
 
-    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency, suggestedTag=Finding-frequency-asymmetry, suggestedTag=Finding-amplitude-asymmetry, suggestedTag=Posterior-dominant-rhythm-property}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant. (Source: Beniczky ea 2013, Appendix S2; suggested tags from Beniczky ea 2017, Table 4.)]</nowiki>
+    * Posterior-dominant-rhythm <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Finding-frequency, suggestedTag=Posterior-dominant-rhythm-property}[Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant. (Source: Beniczky ea 2013, Appendix S2; suggested tags from Beniczky ea 2017, Table 4.)]</nowiki>
     * Mu-rhythm <nowiki> {suggestedTag=Finding-frequency, suggestedTag=Finding-significance-to-recording, suggestedTag=Categorical-location-value, suggestedTag=Brain-region, suggestedTag=Sensors} [EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation. (Source: Beniczky ea 2013, Appendix S2.)]</nowiki>
     * Other-organized-rhythm <nowiki> {requireChild, suggestedTag=Rhythmic-activity-morphology, suggestedTag=Finding-significance-to-recording, suggestedTag=Categorical-location-value, suggestedTag=Brain-region, suggestedTag=Sensors, suggestedTag=Appearance-mode, suggestedTag=Discharge-pattern} [EEG activity that consisting of waves of approximately constant period, which is considered as part of the background (ongoing) activity, but does not fulfill the criteria of the posterior dominant rhythm. (Source: Beniczky ea 2013, Appendix S2.)]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -344,23 +344,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
     * Source-analysis-property <nowiki>[In case source-imaging is done, the results are scored at sublobar level: frontal (perisylvian-superior surface; lateral; mesial; polar; orbitofrontal), temporal (polar; basal, lateral-anterior; lateral-posterior; perisylvian-inferior surface), central (lateral convexity; mesial; central sulcus – anterior surface, central sulcus – posterior surface; opercular), parietal (lateral-convexity; mesial; opercular), occipital (lateral; mesial, basal) and insula. (Source: Beniczky ea 2017, Section 8.)]</nowiki>
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Location-property <nowiki>{suggestedTag=Left, suggestedTag=Right}[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, left/right) and centricity (axial (trunk), proximal limb, distal limb). (Source: Beniczky ea 2017, Sections 8 and 10)]</nowiki>
-        ** Brain-region 
-            *** Brain-region-frontal
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-region-temporal
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-region-central
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-region-parietal
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Brain-region-occipital
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Body-part-location <nowiki>[Refers to area involved (i.e., arm, leg, face, trunk, and other).]</nowiki>
-            *** Eyelid-location
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Visceral-location
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+    * Location-property <nowiki>{suggestedTag=Left, suggestedTag=Right, suggestedTag=Body-part}[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, left/right) and centricity (axial (trunk), proximal limb, distal limb). (Source: Beniczky ea 2017, Sections 8 and 10)]</nowiki>
+        ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Finding-propagation <nowiki> {suggestedTag=Brain-region, suggestedTag=Sensors}[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
@@ -394,31 +379,20 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
         ** Discharge-pattern <nowiki>[Describes the organization of the EEG signal within the discharge (distinguish between single and repetitive discharges). (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
             *** Single-discharge-pattern <nowiki> {suggestedTag=Finding-incidence} [Applies to the intra-burst pattern: a graphoelement that is not repetitive; before and after the graphoelement one can distinguish the background activity. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Rhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence, suggestedTag=Finding-frequency} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at approximately constant period. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Arrhythmic-trains-or-bursts-discharge-pattern <nowiki> {suggestedTag=Finding-prevalence} [Applies to the intra-burst pattern: a non-ictal graphoelement that repeats itself without returning to the background activity between them. The graphoelements within this repetition occur at inconstant period. (Source: Beniczky ea 2017, Table 6;  Beniczky ea 2013, Appendix 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Fragmented-discharge-pattern <nowiki> [Source: Beniczky ea 2017, Table 6.] </nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** RPP-time-related-features <nowiki>[Time related features for Rhythmic or Periodic Patterns in critically ill patients (RPPs). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
             *** RPP-duration <nowiki> {suggestedTag=Property-not-possible-to-determine} [Duration (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                 **** Very-brief-RPP-duration <nowiki>[Less than 10 sec. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Brief-RPP-duration <nowiki>[10 to 59 sec. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Intermediate-RPP-duration <nowiki>[1 to 4.9 min. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Long-RPP-duration <nowiki>[5 to 59 min. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Very-long-RPP-duration <nowiki>[Greater than 1 hour. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** RPP-onset <nowiki> {suggestedTag=Property-not-possible-to-determine} [Onset (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
                 **** Sudden-RPP-onset <nowiki> [Sudden (progressing from absent to well developed within 3 s.). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
                 **** Gradual-RPP-onset <nowiki> [Gradual onset. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
-                    ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** RPP-dynamics <nowiki> {suggestedTag=Property-not-possible-to-determine} [Dynamics (for PDs, RDA and SW). (Source: Beniczky ea 2017, Table 8.)] </nowiki>
                 **** Evolving-RPP-dynamics <nowiki> [Source: Beniczky ea 2017, Table 8.]</nowiki>
                     ***** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
@@ -429,60 +403,36 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 
         ** Finding-incidence <nowiki>[Estimate of how often findings are seen in the recording. This is scored differently, depending on the type of finding. For single discharges, this is scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)]</nowiki>
             *** Only-once-finding-incidence <nowiki>[Source: Beniczky ea 2017, Table 6.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Rare-finding-incidence <nowiki>[Less than 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Uncommon-finding-incidence <nowiki>[1/5 min to 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Occasional-finding-incidence <nowiki>[1/min to 1/5min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Frequent-finding-incidence <nowiki>[1/10 s to 1/min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Abundant-finding-incidence <nowiki>[Greater than 1/10 s. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Finding-prevalence <nowiki>[Estimate of how often findings are seen in the recording. This is scored differently, depending on the type of finding. For trains or bursts this is scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)]</nowiki>
             *** Rare-finding-prevalence <nowiki>[Less than 1 percent. (Source: Beniczky ea 2017, Table 6, Table 8).]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Occasional-finding-prevalence <nowiki>[1 to 9 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Frequent-finding-prevalence <nowiki>[10 to 49 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Abundant-finding-prevalence <nowiki>[50 to 89 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Continuous-finding-prevalence <nowiki>[Greater than 90 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-    * Posterior-dominant-rhythm-property <nowiki>{suggestedTag=Finding-frequency}[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR. (Source: Beniczky ea 2017, Section 6, Table 4.)]</nowiki>
+    * Posterior-dominant-rhythm-property <nowiki>{suggestedTag=Finding-frequency, suggestedTag=Finding-amplitude}[Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR. Note that frequency and amplitude can be further described to be symmetrical or assymetrical. (Source: Beniczky ea 2017, Section 6, Table 4.)]</nowiki>
 
         ** Posterior-dominant-rhythm-amplitude-range <nowiki> {suggestedTag=Low, suggestedTag=Medium, suggestedTag=High}[Low: <20 microV, Medium: 20-70 microVSource, High: >70 microV. (Source: Beniczky ea 2017, Table 4.)] </nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
-        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {suggestedTag=Property-not-possible-to-determine} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Table 4.)]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-left <nowiki>[Reduced left side reactivity. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-right <nowiki>[Reduced right side reactivity. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[free text]</nowiki>
-            *** Posterior-dominant-rhythm-eye-opening-reactivity-reduced-both <nowiki>[Reduced reactivity on both sides. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
+        ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki> {suggestedTag=Property-not-possible-to-determine, suggestedTag=Left, suggestedTag=Right} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Table 4.)]</nowiki>
 
         ** Posterior-dominant-rhythm-organization <nowiki> {suggestedTag=Normal} [Posterior dominant rhythm organization. When normal could be labeled with suggested tag. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
             *** Posterior-dominant-rhythm-organization-poorly-organized <nowiki>[Poorly organized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-organization-disorganized <nowiki>[Disorganized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Posterior-dominant-rhythm-organization-markedly-disorganized <nowiki>[Markedly disorganized. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Posterior-dominant-rhythm-caveat <nowiki>{suggestedTag=None, suggestedTag=Eyes-open, suggestedTag=Sleep-deprivation, suggestedTag=Drowsy, suggestedTag=Hyperventilation}[Caveats for PDR annotation, use suggestedTags to indicate whether there were: no caveats, only open eyes during the recording, sleep-deprived, drowsy or only following hyperventilation. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
 
         ** Absence-of-posterior-dominant-rhythm <nowiki> {suggestedTag=Artifact, suggestedTag=Asleep}[Reason for absence of PDR. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-extreme-low-voltage <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-eye-closure-could-not-be-achieved <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-lack-of-compliance <nowiki>[Source: Beniczky ea 2017, Table 4.]</nowiki>
-                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Absence-of-posterior-dominant-rhythm-other-causes <nowiki> {requireChild}[Source: Beniczky ea 2017, Table 4.] </nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
@@ -607,26 +557,21 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
         ** Episode-time-context-property <nowiki> [Additional clinically relevant features related to episodes can be scored under timing and context. If needed, episode duration can be tagged with suggested tag. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
-
             *** Episode-consciousness-affected <nowiki> {suggestedTag=False, suggestedTag=Some, suggestedTag=True, suggestedTag=Property-not-possible-to-determine}[Source: Beniczky ea 2017, Table 13.] </nowiki>
-
             *** Episode-awareness <nowiki> {suggestedTag=True,suggestedTag=False} [False: the patient is not aware of the episode. True: the patient is aware of the episode. (Source: Beniczky ea 2017, Table 13.)] </nowiki>
-
             *** Episode-event-count <nowiki> {requireChild, suggestedTag=Property-not-possible-to-determine} [Number of stereotypical episodes during the recording. (Source: Beniczky ea 2017, Table 13.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
-
             *** Status-epilepticus <nowiki> [Episode with duration >30 min but not precisely determined (status epilepticus). (Source: Beniczky ea 2017, Table 13.)] </nowiki>
             *** Episode-prodrome <nowiki> {suggestedTag=True,suggestedTag=False} [Prodrome is a preictal phenomenon, and it is defined as a subjective or objective clinical alteration (e.g., ill-localized sensation or agitation) that heralds the onset of an epileptic seizure but does not form part of it (Blume ea 2001). Therefore, prodrome should be distinguished from aura (which is an ictal phenomenon). If prodrome present/true + free text. (Source: Blume ea 2001; Beniczky ea 2017, Table 13.)]</nowiki>
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Initial-ictal-phase {suggestedTag=Asleep, suggestedTag=Awake}
             *** Subsequent-ictal-phase
             *** Post-ictal-phase
-
             *** Episode-tongue-biting <nowiki> {suggestedTag=True,suggestedTag=False}[Beniczky ea 2017, Table 13.] </nowiki>
 
     * Other-finding-property {requireChild}
 
-        ** Artifact-significance-to-recording <nowiki>[It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording.]</nowiki>
+        ** Artifact-significance-to-recording <nowiki>[It is important to score the significance of the described artifacts: recording is not interpretable, recording of reduced diagnostic value, does not interfere with the interpretation of the recording. (Source: Beniczky ea 2017, Section 12)]</nowiki>
             *** Recording-not-interpretable-due-to-artifact
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Recording-of-reduced-diagnostic-value-due-to-artifact
