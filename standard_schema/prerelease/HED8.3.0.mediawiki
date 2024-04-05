@@ -1354,9 +1354,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 * valueClass <nowiki>{tagDomain, valueClassRange}[Type of value taken on by the value of a placeholder node.]</nowiki>
 
 '''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
-* annotationProperty <nowiki>[This schema attribute is not inherited by child nodes.]</nowiki>
+* annotationProperty <nowiki>[The value is not inherited by child nodes.]</nowiki>
 * boolRange <nowiki>[This schema attribute's value can be true or false. This property was formerly named boolProperty.]</nowiki>
-* elementDomain <nowiki>[This schema attribute can apply to any type of element (tag term, unit class, etc). This property was formerly named elementProperty.]</nowiki>
+* elementDomain <nowiki>[This schema attribute can apply to any type of element class (i.e., tag, unit, unit class, unit modifier, or value class). This property was formerly named elementProperty.]</nowiki>
 * tagDomain <nowiki>[This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
 * tagRange <nowiki>[This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
 * numericRange <nowiki>[This schema attribute's value can be numeric.]</nowiki>

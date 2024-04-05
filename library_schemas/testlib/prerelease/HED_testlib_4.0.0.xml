@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
-<HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.3.0" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
-   <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
-
-Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.</prologue>
+<HED version="4.0.0" library="testlib" withStandard="8.3.0">
+   <prologue>This schema is designed to be lazy partnered with prerelease 8.3.0.</prologue>
    <schema>
       <node>
          <name>Event</name>
@@ -88,6 +86,34 @@ Each term in this vocabulary has a human-readable description and may include ad
          <node>
             <name>Software-agent</name>
             <description>An agent computer program that interacts with the participant in an active role such as an AI advisor.</description>
+         </node>
+      </node>
+      <node>
+         <name>D-nonextension</name>
+         <attribute>
+            <name>inLibrary</name>
+            <value>testlib</value>
+         </attribute>
+         <node>
+            <name>SubnodeD3</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
+         </node>
+         <node>
+            <name>SubnodeD1</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
+         </node>
+         <node>
+            <name>SubnodeD2</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
          </node>
       </node>
       <node>
@@ -1692,6 +1718,63 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Instrument-sound</name>
                   <description>Sound produced by a musical instrument.</description>
+                  <node>
+                     <name>Base-sound</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Instrument-sound</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>testlib</value>
+                     </attribute>
+                     <node>
+                        <name>Base-subsound1</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>testlib</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Base-subsound2</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>testlib</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Piano-sound</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Instrument-sound</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>testlib</value>
+                     </attribute>
+                     <node>
+                        <name>Piano-subsound1</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>testlib</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Piano-subsound2</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>testlib</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Piano-subsound3</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>testlib</value>
+                        </attribute>
+                     </node>
+                  </node>
                </node>
                <node>
                   <name>Tone</name>
@@ -1782,6 +1865,37 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <description>A loud, continuous sound often varying in frequency designed to indicate an emergency.</description>
                </node>
             </node>
+         </node>
+      </node>
+      <node>
+         <name>E-extensionallowed</name>
+         <attribute>
+            <name>extensionAllowed</name>
+         </attribute>
+         <attribute>
+            <name>inLibrary</name>
+            <value>testlib</value>
+         </attribute>
+         <node>
+            <name>SubnodeE1</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
+         </node>
+         <node>
+            <name>SubnodeE2</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
+         </node>
+         <node>
+            <name>SubnodeE3</name>
+            <attribute>
+               <name>inLibrary</name>
+               <value>testlib</value>
+            </attribute>
          </node>
       </node>
       <node>
@@ -7698,5 +7812,5 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>This schema attribute's value can be a value class.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.</epilogue>
+   <epilogue>A final section.</epilogue>
 </HED>

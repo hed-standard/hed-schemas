@@ -1,0 +1,43 @@
+HED library="testlib" version="4.0.0" withStandard="8.3.0" unmerged="true"
+
+'''Prologue'''
+This schema is designed to be lazy partnered with prerelease 8.3.0.
+
+!# start schema
+
+'''Piano-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
+* Piano-subsound3
+* Piano-subsound1
+* Piano-subsound2
+
+'''Base-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
+* Base-subsound2
+* Base-subsound1
+
+'''E-extensionallowed''' <nowiki>{extensionAllowed}</nowiki>
+* SubnodeE3
+* SubnodeE1
+* SubnodeE2
+
+'''D-nonextension'''
+* SubnodeD3
+* SubnodeD1
+* SubnodeD2
+
+
+!# end schema
+
+'''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
+
+'''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
+
+'''Value classes''' <nowiki>[Specification of the rules for the values provided by users.]</nowiki>
+
+'''Schema attributes''' <nowiki>[Allowed node, unit class or unit modifier attributes.]</nowiki>
+
+'''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
+
+'''Epilogue'''
+A final section.
+
+!# end hed
