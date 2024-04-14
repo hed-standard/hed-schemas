@@ -7439,7 +7439,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>extensionAllowed</name>
-         <description>Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes with the exception of the hashtag placeholders.</description>
+         <description>Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes except for hashtag placeholders.</description>
          <property>
             <name>tagDomain</name>
          </property>

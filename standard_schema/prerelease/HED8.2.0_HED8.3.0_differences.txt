@@ -1,30 +1,141 @@
 Differences between HED8.2.0 and HED8.3.0
 Attributes:
-	hedID (Minor): Item hedID added to Attributes
+	hedId (Minor): Item hedId added to Attributes
+	allowedCharacter (Patch): Attribute 'stringRange' modified from 'None' to 'True'
+	allowedCharacter (Patch): Attribute 'valueClassProperty' modified from 'True' to 'None'
+	allowedCharacter (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	allowedCharacter (Patch): Attribute 'valueClassDomain' modified from 'None' to 'True'
+	allowedCharacter (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	allowedCharacter (Patch): Description of allowedCharacter modified
+	conversionFactor (Patch): Attribute 'numericRange' modified from 'None' to 'True'
+	conversionFactor (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	conversionFactor (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	conversionFactor (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	conversionFactor (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	conversionFactor (Patch): Description of conversionFactor modified
+	deprecatedFrom (Patch): Attribute 'stringRange' modified from 'None' to 'True'
+	deprecatedFrom (Patch): Attribute 'elementDomain' modified from 'None' to 'True'
+	deprecatedFrom (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	deprecatedFrom (Patch): Description of deprecatedFrom modified
+	defaultUnits (Patch): Attribute 'unitRange' modified from 'None' to 'True'
+	defaultUnits (Patch): Attribute 'unitClassDomain' modified from 'None' to 'True'
+	defaultUnits (Patch): Attribute 'unitClassProperty' modified from 'True' to 'None'
 	defaultUnits (Patch): Description of defaultUnits modified
+	extensionAllowed (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	extensionAllowed (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	extensionAllowed (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	extensionAllowed (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
+	extensionAllowed (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	extensionAllowed (Patch): Description of extensionAllowed modified
+	inLibrary (Patch): Attribute 'stringRange' modified from 'None' to 'True'
+	inLibrary (Patch): Attribute 'elementDomain' modified from 'None' to 'True'
+	inLibrary (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	inLibrary (Patch): Description of inLibrary modified
+	relatedTag (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
+	relatedTag (Patch): Attribute 'tagRange' modified from 'None' to 'True'
+	relatedTag (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	relatedTag (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	relatedTag (Patch): Description of relatedTag modified
+	requireChild (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	requireChild (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
+	requireChild (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	requireChild (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	requireChild (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	requireChild (Patch): Description of requireChild modified
+	reserved (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	reserved (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	reserved (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	reserved (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	reserved (Patch): Description of reserved modified
+	rooted (Patch): Attribute 'tagRange' modified from 'None' to 'True'
+	rooted (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
+	rooted (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	rooted (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	rooted (Patch): Description of rooted modified
+	SIUnit (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	SIUnit (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	SIUnit (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	SIUnit (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	SIUnit (Patch): Description of SIUnit modified
+	SIUnitModifier (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	SIUnitModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	SIUnitModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	SIUnitModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	SIUnitModifier (Patch): Description of SIUnitModifier modified
+	SIUnitSymbolModifier (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	SIUnitSymbolModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	SIUnitSymbolModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	SIUnitSymbolModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	SIUnitSymbolModifier (Patch): Description of SIUnitSymbolModifier modified
+	suggestedTag (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
+	suggestedTag (Patch): Attribute 'stringRange' modified from 'None' to 'True'
+	suggestedTag (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	suggestedTag (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	suggestedTag (Patch): Description of suggestedTag modified
+	tagGroup (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	tagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	tagGroup (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	tagGroup (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	tagGroup (Patch): Description of tagGroup modified
+	takesValue (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	takesValue (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
+	takesValue (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	takesValue (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	takesValue (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	takesValue (Patch): Description of takesValue modified
+	topLevelTagGroup (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	topLevelTagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	topLevelTagGroup (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	topLevelTagGroup (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	topLevelTagGroup (Patch): Description of topLevelTagGroup modified
+	unique (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	unique (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	unique (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	unique (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	unique (Patch): Description of unique modified
+	unitClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	unitClass (Patch): Attribute 'unitClassRange' modified from 'None' to 'True'
+	unitClass (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	unitClass (Patch): Description of unitClass modified
+	unitPrefix (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	unitPrefix (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	unitPrefix (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	unitPrefix (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	unitPrefix (Patch): Description of unitPrefix modified
+	unitSymbol (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	unitSymbol (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	unitSymbol (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	unitSymbol (Patch): Attribute 'boolRange' modified from 'None' to 'True'
 	unitSymbol (Patch): Description of unitSymbol modified
+	valueClass (Patch): Attribute 'valueClassRange' modified from 'None' to 'True'
+	valueClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	valueClass (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	valueClass (Patch): Description of valueClass modified
 	recommended (Unknown): Item recommended removed from Attributes
 	required (Unknown): Item required removed from Attributes
+Properties:
+	annotationProperty (Minor): Item annotationProperty added to Properties
+	boolRange (Minor): Item boolRange added to Properties
+	elementDomain (Minor): Item elementDomain added to Properties
+	tagDomain (Minor): Item tagDomain added to Properties
+	tagRange (Minor): Item tagRange added to Properties
+	numericRange (Minor): Item numericRange added to Properties
+	stringRange (Minor): Item stringRange added to Properties
+	unitClassDomain (Minor): Item unitClassDomain added to Properties
+	unitClassRange (Minor): Item unitClassRange added to Properties
+	unitModifierDomain (Minor): Item unitModifierDomain added to Properties
+	unitDomain (Minor): Item unitDomain added to Properties
+	unitRange (Minor): Item unitRange added to Properties
+	valueClassDomain (Minor): Item valueClassDomain added to Properties
+	valueClassRange (Minor): Item valueClassRange added to Properties
+	boolProperty (Unknown): Item boolProperty removed from Properties
+	elementProperty (Unknown): Item elementProperty removed from Properties
+	isInheritedProperty (Unknown): Item isInheritedProperty removed from Properties
+	nodeProperty (Unknown): Item nodeProperty removed from Properties
+	unitClassProperty (Unknown): Item unitClassProperty removed from Properties
+	unitModifierProperty (Unknown): Item unitModifierProperty removed from Properties
+	unitProperty (Unknown): Item unitProperty removed from Properties
+	valueClassProperty (Unknown): Item valueClassProperty removed from Properties
 Tags:
 	Ride (Minor): Item Ride added to Tags
 	Brain (Minor): Item Brain added to Tags
@@ -63,6 +174,7 @@ Tags:
 	Induction-artifact (Minor): Item Induction-artifact added to Tags
 	Line-noise-artifact (Minor): Item Line-noise-artifact added to Tags
 	Salt-bridge-artifact (Minor): Item Salt-bridge-artifact added to Tags
+	Unknown (Minor): Item Unknown added to Tags
 	Categorical-location-value (Minor): Item Categorical-location-value added to Tags
 	Anterior (Minor): Item Anterior added to Tags
 	Lateral (Minor): Item Lateral added to Tags
@@ -84,6 +196,9 @@ Tags:
 	OBO-identifier (Minor): Tag OBO-identifier moved in schema
 	Subject-identifier (Minor): Tag Subject-identifier moved in schema
 	Version-identifier (Minor): Tag Version-identifier moved in schema
+	Controller-agent (Patch): Description of Controller-agent modified
+	Software-agent (Patch): Description of Software-agent modified
+	Communicate (Patch): Description of Communicate modified
 	Predict (Patch): Description of Predict modified
 	Gentalia (Patch): Description of Gentalia modified
 	Nonword (Patch): Description of Nonword modified
@@ -102,10 +217,17 @@ Tags:
 Units:
 	degree-Celsius (Minor): Item degree-Celsius added to Units
 	year (Minor): Item year added to Units
+	m-per-s^2 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
+	m^2 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
+	$ (Patch): Attribute 'allowedCharacter' modified from 'None' to 'dollar'
+	euro (Patch): Description of euro modified
+	point (Patch): Description of point modified
+	m-per-s^3 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
 	tesla (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	T (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	degree Celsius (Patch): Attribute 'deprecatedFrom' modified from 'None' to '8.2.0'
 	degree Celsius (Patch): Description of degree Celsius modified
+	m^3 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
 Misc Metadata:
 	header_attributes (Patch): header_attributes changed from "{'version': '8.2.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}" to "{'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}"
 	prologue (Patch): prologue changed from "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
@@ -193,13 +315,11 @@ Unit Modifiers:
 	y (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
 	y (Patch): Description of y modified
 Value Classes:
+	dateTimeClass (Patch): Attribute 'allowedCharacter' modified from 'digits,T,-,:' to 'digits,T,hyphen,colon'
 	dateTimeClass (Patch): Description of dateTimeClass modified
+	nameClass (Patch): Attribute 'allowedCharacter' modified from 'letters,digits,_,-' to 'letters,digits,underscore,hyphen'
 	nameClass (Patch): Description of nameClass modified
-Properties:
-	elementProperty (Patch): Description of elementProperty modified
-	isInheritedProperty (Patch): Description of isInheritedProperty modified
-	nodeProperty (Patch): Description of nodeProperty modified
-	unitClassProperty (Patch): Description of unitClassProperty modified
-	unitModifierProperty (Patch): Description of unitModifierProperty modified
-	unitProperty (Patch): Description of unitProperty modified
-	valueClassProperty (Patch): Description of valueClassProperty modified
+	numericClass (Patch): Attribute 'allowedCharacter' modified from 'digits,E,e,+,-,.' to 'digits,E,e,plus,hyphen,period'
+	posixPath (Patch): Attribute 'allowedCharacter' modified from 'digits,letters,/,:' to 'digits,letters,slash,colon'
+	textClass (Patch): Attribute 'allowedCharacter' modified from 'letters,digits,blank,+,-,:,;,.,/,(,),?,*,%,$,@' to 'text'
+	textClass (Patch): Description of textClass modified
