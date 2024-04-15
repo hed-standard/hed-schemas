@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="0.0.1" library="lisa" withStandard="8.2.0">
+<HED version="0.0.1" library="lang" withStandard="8.2.0">
    <prologue>LISA is a Hierarchical Event Descriptors Library Schema for Linguistic Stimuli Annotation. The schema allows for detailed annotation of neuroimaging experiments that involve language events, from carefully controlled experiments specifically targeting the neuroscience of language processing, to more complex naturalistic paradigms that involve written or spoken language.
 
 LISA allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics, while the individual words in the sentence can simultaneously be associated with word-level characteristics, and so on. Annotation possibilities are extensive and cover characteristics of multiple language allowing for comparisons between languages.
