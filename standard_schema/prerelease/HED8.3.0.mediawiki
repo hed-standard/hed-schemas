@@ -1248,7 +1248,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** byte <nowiki>{hedId=HED_0011619, SIUnit, conversionFactor=1.0}</nowiki>
 ** B <nowiki>{hedId=HED_0011620, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * physicalLengthUnits <nowiki>{hedId=HED_0011510, defaultUnits=m}</nowiki>
-** foot <nowiki>{hedId=HED_0011621, onversionFactor=0.3048}</nowiki>
+** foot <nowiki>{hedId=HED_0011621, conversionFactor=0.3048}</nowiki>
 ** inch <nowiki>{hedId=HED_0011622, conversionFactor=0.0254}</nowiki>
 ** meter <nowiki>{hedId=HED_0011623, SIUnit, conversionFactor=1.0}</nowiki>
 ** metre <nowiki>{hedId=HED_0011624, SIUnit, conversionFactor=1.0}</nowiki>
