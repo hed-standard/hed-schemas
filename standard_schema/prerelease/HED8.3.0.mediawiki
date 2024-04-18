@@ -1343,7 +1343,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * SIUnit  <nowiki>{hedId=HED_0010311, unitDomain, boolRange}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
 * SIUnitModifier <nowiki>{hedId=HED_0010312, unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
 * SIUnitSymbolModifier <nowiki>{hedId=HED_0010313, unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>{hedId=HED_0010106, tagDomain, stringRange}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+* suggestedTag <nowiki>{hedId=HED_0010106, tagDomain, tagRange}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
 * tagGroup <nowiki>{hedId=HED_0010314, tagDomain, boolRange}[This tag can only appear inside a tag group.] </nowiki>
 * takesValue <nowiki>{hedId=HED_0010503, annotationProperty, tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
 * topLevelTagGroup <nowiki>{hedId=HED_0010315, tagDomain, boolRange}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
