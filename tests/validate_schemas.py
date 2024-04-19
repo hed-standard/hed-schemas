@@ -1,6 +1,6 @@
 import sys
 from hed.schema import load_schema, from_string, load_schema_version
-from hed.errors import get_printable_issue_string, HedFileError
+from hed.errors import get_printable_issue_string, HedFileError, SchemaWarnings
 
 
 def main(arg_list=None):
@@ -17,6 +17,7 @@ def main(arg_list=None):
             if file_path.endswith(".xml") or file_path.endswith(".mediawiki"):
                 base_schema = load_schema(file_path)
                 issues = base_schema.check_compliance()
+                issues = [issue for issue in issues if issue["code"] != SchemaWarnings.SCHEMA_PRERELEASE_VERSION_USED]
                 if issues:
                     validation_issues.extend(issues)
                     print(get_printable_issue_string(issues, title=file_path))
