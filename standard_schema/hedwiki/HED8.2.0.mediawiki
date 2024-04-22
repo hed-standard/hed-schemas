@@ -214,7 +214,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Forearm <nowiki>[Lower part of the arm between the elbow and wrist.]</nowiki>
 ****** Elbow <nowiki>[A type of hinge joint located between the forearm and upper arm.]</nowiki>
 ***** Hand <nowiki>[The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.]</nowiki>
-***** Wrist <nowiki>[A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
+****** Wrist <nowiki>[A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ****** Palm <nowiki>[The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
 ****** Knuckles <nowiki>[A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
 ****** Finger <nowiki>[Any of the digits of the hand.]</nowiki>
