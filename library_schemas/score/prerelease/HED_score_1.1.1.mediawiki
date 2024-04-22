@@ -356,9 +356,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Modulators-reactivity <nowiki> {SuggestedTag=Modulator, suggestedTag=Finding-stopped-by, suggestedTag=Increasing, suggestedTag=Decreasing}[Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions (Source: Beniczky ea 2013, Appendix S2). The type of stimulus can be a modulator or can be specified in free-text.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Facilitating-factor <nowiki> {SuggestedTag=Intoxicated, SuggestedTag=Awake, SuggestedTag=Asleep, SuggestedTag=Sleep-deprivation}[The facilitating factors (if known) can be selected: alcohol (Suggested tag: Intoxicated), awakening, catamenial, fever, sleep, sleep-deprivation, other (free text). Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence). (Source: Beniczky ea 2013.)]</nowiki>
-            *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Facilitating-factor-catamenial
             *** Facilitating-factor-fever
+            *** Other-facilitating-factor
+                **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Provocative-factor <nowiki>{SuggestedTag=Hyperventilation}[Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it. (Source: Beniczky ea 2013.)]</nowiki>
             *** Reflex-provoked
                  **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
