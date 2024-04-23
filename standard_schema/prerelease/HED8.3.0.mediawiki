@@ -1231,6 +1231,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** point <nowiki>{hedId=HED_0011608}[An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
 * electricPotentialUnits <nowiki>{hedId=HED_0011504, defaultUnits=uv}</nowiki>
 ** v <nowiki>{hedId=HED_0011609, SIUnit, unitSymbol, conversionFactor=0.000001}</nowiki>
+** uv <nowiki>{hedId=0011644, conversionFactor=1.0}[Added as a direct unit because it is the default unit.]</nowiki>
 ** Volt <nowiki>{hedId=HED_0011610, SIUnit, conversionFactor=0.000001}</nowiki>
 * frequencyUnits <nowiki>{hedId=HED_0011505, defaultUnits=Hz}</nowiki>
 ** hertz  <nowiki>{hedId=HED_0011611, SIUnit, conversionFactor=1.0}</nowiki>
@@ -1266,6 +1267,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{hedId=HED_0011633, SIUnit, conversionFactor=1.0}</nowiki>
 ** s <nowiki>{hedId=HED_0011634, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 ** day <nowiki>{hedId=HED_0011635, conversionFactor=86400}</nowiki>
+** month <nowiki>{hedId=HED_00645}</nowiki>
 ** minute <nowiki>{hedId=HED_0011636, conversionFactor=60}</nowiki>
 ** hour <nowiki>{hedId=HED_0011637, conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638}[Years do not have a constant conversion factor to seconds.]</nowiki>

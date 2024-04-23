@@ -6522,6 +6522,18 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
          </unit>
          <unit>
+            <name>uv</name>
+            <description>Added as a direct unit because it is the default unit.</description>
+            <attribute>
+               <name>hedId</name>
+               <value>0011644</value>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
             <name>Volt</name>
             <attribute>
                <name>hedId</name>
@@ -6998,6 +7010,13 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>86400</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>month</name>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_00645</value>
             </attribute>
          </unit>
          <unit>
