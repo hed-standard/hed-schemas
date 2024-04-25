@@ -12734,6 +12734,20 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
+         <name>isPartOf</name>
+         <description>This tag is part of the indicated tag -- as in the nose is part of the face.</description>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010109</value>
+         </property>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>tagRange</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
          <name>relatedTag</name>
          <description>A HED tag that is closely related to this tag. This attribute is used by tagging tools.</description>
          <property>

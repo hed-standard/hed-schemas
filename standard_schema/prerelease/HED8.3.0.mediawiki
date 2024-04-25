@@ -1337,6 +1337,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * extensionAllowed <nowiki>{hedId=HED_0010307, tagDomain, boolRange}[Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes except for hashtag placeholders.]</nowiki>
 * hedId <nowiki>{hedId=HED_0010308, annotationProperty, elementDomain, stringRange}[The unique identifier of this element in the HED namespace.]</nowiki>
 * inLibrary <nowiki>{hedId=HED_0010309, elementDomain, stringRange} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
+* isPartOf <nowiki>{hedId=HED_0010109, tagDomain, tagRange}[This tag is part of the indicated tag -- as in the nose is part of the face.]</nowiki>
 * relatedTag <nowiki>{hedId=HED_0010105, tagDomain, tagRange}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
 * requireChild  <nowiki>{hedId=HED_0010501, annotationProperty, tagDomain, boolRange}[This tag must have a descendent.]</nowiki>
 * reserved <nowiki>{hedId=HED_0010310, tagDomain, boolRange}[This tag has special meaning and requires special handling by tools.]</nowiki>
