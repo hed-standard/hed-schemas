@@ -18,7 +18,7 @@ This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0.
 * SubnodeB1A
 * SubnodeB2A
 
-'''A-nonextension''' <nowiki>[These should not be sorted.  A should be second]</nowiki>
+'''A-nonextension''' <nowiki>[These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.]</nowiki>
 * SubnodeA3
 * SubnodeA1
 * SubnodeA2

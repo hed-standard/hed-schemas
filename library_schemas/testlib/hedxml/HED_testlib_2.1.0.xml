@@ -112,7 +112,7 @@
       </node>
       <node>
          <name>A-nonextension</name>
-         <description>These should not be sorted.  A should be second</description>
+         <description>These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.</description>
          <attribute>
             <name>inLibrary</name>
             <value>testlib</value>
