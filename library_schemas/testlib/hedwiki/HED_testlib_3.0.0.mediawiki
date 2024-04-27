@@ -19,10 +19,10 @@ This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts wi
 * SubnodeE1
 * SubnodeE2
 
-'''D-nonextension'''
-* SubnodeD3
-* SubnodeD1
-* SubnodeD2
+'''F-nonextension'''
+* SubnodeF6
+* SubnodeF1
+* SubnodeF2
 
 
 !# end schema

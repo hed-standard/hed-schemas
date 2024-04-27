@@ -27,20 +27,10 @@ This schema tests the ordering effects of various combinations of rooted and ext
 * Flute-subsound2
 * Flute-subsound1
 
-'''C-nonextension''' <nowiki>[These should not be sorted.  C should be last]</nowiki>
-* SubnodeC3
-* SubnodeC1
-* SubnodeC2
-
-'''B-extensionallowed''' <nowiki>{extensionAllowed}[These should be sorted.  This section should be second.]</nowiki>
-* SubnodeE3
-* SubnodeE1
-* SubnodeE2
-
-'''A-extensionallowed''' <nowiki>{extensionAllowed} [These should be sorted.  This section should be first.]</nowiki>
-* SubnodeD3
+'''D-extensionallowed''' <nowiki>{extensionAllowed} [These should be sorted.  This section should be first.]</nowiki>
 * SubnodeD1
 * SubnodeD2
+* SubnodeD3
 
 !# end schema
 
