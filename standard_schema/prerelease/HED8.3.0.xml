@@ -558,7 +558,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Hiccup</name>
-                  <description>Involuntarily spasm  the diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.</description>
+                  <description>Involuntarily spasmthe diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012057</value>
@@ -853,7 +853,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Yawn</name>
-                     <description>Take a deep involuntary  inhalation with the mouth open often as a sign of drowsiness or boredom.</description>
+                     <description>Take a deep involuntaryinhalation with the mouth open often as a sign of drowsiness or boredom.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012094</value>
@@ -933,7 +933,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Kick</name>
-                     <description>Strike out or flail with the foot or feet.  Strike using the leg, in unison usually with an area of the knee or lower using the foot.</description>
+                     <description>Strike out or flail with the foot or feet.Strike using the leg, in unison usually with an area of the knee or lower using the foot.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012104</value>
@@ -1525,12 +1525,28 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012176</value>
                      </attribute>
+                  </node>
+                  <node>
+                     <name>Head-part</name>
+                     <description>A part of the head.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0000000</value>
+                     </attribute>
                      <node>
                         <name>Brain</name>
                         <description>Organ inside the head that is made up of nerve cells and controls the body.</description>
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012177</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Brain-region</name>
+                        <description>A region of the brain.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
                         </attribute>
                         <node>
                            <name>Frontal-lobe</name>
@@ -1575,6 +1591,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012183</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Face-part</name>
+                        <description>A part of the face.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
                         </attribute>
                         <node>
                            <name>Cheek</name>
@@ -1641,19 +1665,27 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </attribute>
                         </node>
                         <node>
+                           <name>Mouth-part</name>
+                           <description>A part of the mouth.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0000000</value>
+                           </attribute>
+                           <node>
+                              <name>Teeth</name>
+                              <description>The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012193</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
                            <name>Nose</name>
                            <description>A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.</description>
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0012192</value>
-                           </attribute>
-                        </node>
-                        <node>
-                           <name>Teeth</name>
-                           <description>The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012193</value>
                            </attribute>
                         </node>
                      </node>
@@ -1673,22 +1705,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012195</value>
                      </attribute>
-                     <node>
-                        <name>Ankle</name>
-                        <description>A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.</description>
-                        <attribute>
-                           <name>hedId</name>
-                           <value>HED_0012196</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Calf</name>
-                        <description>The fleshy part at the back of the leg below the knee.</description>
-                        <attribute>
-                           <name>hedId</name>
-                           <value>HED_0012197</value>
-                        </attribute>
-                     </node>
+                  </node>
+                  <node>
+                     <name>Lower-extremity-part</name>
+                     <description>A part of the lower extremity.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0000000</value>
+                     </attribute>
                      <node>
                         <name>Foot</name>
                         <description>The structure found below the ankle joint required for locomotion.</description>
@@ -1696,12 +1720,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <name>hedId</name>
                            <value>HED_0012198</value>
                         </attribute>
+                     </node>
+                     <node>
+                        <name>Foot-part</name>
+                        <description>A part of the foot.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
+                        </attribute>
                         <node>
-                           <name>Big-toe</name>
-                           <description>The largest toe on the inner side of the foot.</description>
+                           <name>Ankle</name>
+                           <description>A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0012199</value>
+                              <value>HED_0012196</value>
                            </attribute>
                         </node>
                         <node>
@@ -1721,12 +1753,28 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </attribute>
                         </node>
                         <node>
-                           <name>Little-toe</name>
-                           <description>The smallest toe located on the outer side of the foot.</description>
+                           <name>Toe</name>
+                           <description>A digit of the foot.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0012202</value>
+                              <value>HED_0000000</value>
                            </attribute>
+                           <node>
+                              <name>Big-toe</name>
+                              <description>The largest toe on the inner side of the foot.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012199</value>
+                              </attribute>
+                           </node>
+                           <node>
+                              <name>Little-toe</name>
+                              <description>The smallest toe located on the outer side of the foot.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012202</value>
+                              </attribute>
+                           </node>
                         </node>
                         <node>
                            <name>Toes</name>
@@ -1738,29 +1786,77 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                      </node>
                      <node>
-                        <name>Knee</name>
-                        <description>A joint connecting the lower part of the femur with the upper part of the tibia.</description>
+                        <name>Lower-leg</name>
+                        <description>The part of the leg between the knee and the ankle.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012204</value>
+                           <value>HED_0000000</value>
                         </attribute>
                      </node>
                      <node>
-                        <name>Shin</name>
-                        <description>Front part of the leg below the knee.</description>
+                        <name>Lower-leg-part</name>
+                        <description>A part of the lower leg.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012205</value>
+                           <value>HED_0000000</value>
+                        </attribute>
+                        <node>
+                           <name>Calf</name>
+                           <description>The fleshy part at the back of the leg below the knee.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012197</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Knee</name>
+                           <description>A joint connecting the lower part of the femur with the upper part of the tibia.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012204</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Shin</name>
+                           <description>Front part of the leg below the knee.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012205</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
+                        <name>Upper-leg</name>
+                        <description>The part of the leg between the hip and the knee.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
                         </attribute>
                      </node>
                      <node>
-                        <name>Thigh</name>
-                        <description>Upper part of the leg between hip and knee.</description>
+                        <name>Upper-leg-part</name>
+                        <description>A part of the upper leg.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012206</value>
+                           <value>HED_0000000</value>
                         </attribute>
+                        <node>
+                           <name>Thigh</name>
+                           <description>Upper part of the leg between hip and knee.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012206</value>
+                           </attribute>
+                        </node>
                      </node>
+                  </node>
+                  <node>
+                     <name>Neck</name>
+                     <description>The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0000000</value>
+                     </attribute>
                   </node>
                   <node>
                      <name>Torso</name>
@@ -1769,33 +1865,81 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012207</value>
                      </attribute>
+                  </node>
+                  <node>
+                     <name>Torso-part</name>
+                     <description>A part of the torso.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0000000</value>
+                     </attribute>
                      <node>
-                        <name>Buttocks</name>
-                        <description>The round fleshy parts that form the lower rear area of a human trunk.</description>
+                        <name>Abdomen</name>
+                        <description>The part of the body between the thorax and the pelvis.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012208</value>
+                           <value>HED_0000000</value>
                         </attribute>
                      </node>
                      <node>
-                        <name>Gentalia</name>
-                        <description>The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.</description>
-                        <attribute>
-                           <name>deprecatedFrom</name>
-                           <value>8.1.0</value>
-                        </attribute>
+                        <name>Navel</name>
+                        <description>The central mark on the abdomen created by the detachment of the umbilical cord after birth.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012209</value>
+                           <value>HED_0000000</value>
                         </attribute>
                      </node>
                      <node>
-                        <name>Hip</name>
-                        <description>The lateral prominence of the pelvis from the waist to the thigh.</description>
+                        <name>Pelvis</name>
+                        <description>The bony structure at the base of the spine supporting the legs.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012210</value>
+                           <value>HED_0000000</value>
                         </attribute>
+                     </node>
+                     <node>
+                        <name>Pelvis-part</name>
+                        <description>A part of the pelvis.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
+                        </attribute>
+                        <node>
+                           <name>Buttocks</name>
+                           <description>The round fleshy parts that form the lower rear area of a human trunk.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012208</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Genitalia</name>
+                           <description>The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0000000</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Gentalia</name>
+                           <description>The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.</description>
+                           <attribute>
+                              <name>deprecatedFrom</name>
+                              <value>8.1.0</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012209</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Hip</name>
+                           <description>The lateral prominence of the pelvis from the waist to the thigh.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012210</value>
+                           </attribute>
+                        </node>
                      </node>
                      <node>
                         <name>Torso-back</name>
@@ -1837,14 +1981,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012215</value>
                      </attribute>
-                     <node>
-                        <name>Elbow</name>
-                        <description>A type of hinge joint located between the forearm and upper arm.</description>
-                        <attribute>
-                           <name>hedId</name>
-                           <value>HED_0012216</value>
-                        </attribute>
-                     </node>
+                  </node>
+                  <node>
+                     <name>Upper-extremity-part</name>
+                     <description>A part of the upper extremity.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0000000</value>
+                     </attribute>
                      <node>
                         <name>Forearm</name>
                         <description>Lower part of the arm between the elbow and wrist.</description>
@@ -1854,11 +1998,35 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                      </node>
                      <node>
+                        <name>Forearm-part</name>
+                        <description>A part of the forearm.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
+                        </attribute>
+                        <node>
+                           <name>Elbow</name>
+                           <description>A type of hinge joint located between the forearm and upper arm.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012216</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
                         <name>Hand</name>
                         <description>The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.</description>
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012218</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Hand-part</name>
+                        <description>A part of the hand.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0000000</value>
                         </attribute>
                         <node>
                            <name>Finger</name>
@@ -1924,14 +2092,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <value>HED_0012226</value>
                            </attribute>
                         </node>
-                     </node>
-                     <node>
-                        <name>Shoulder</name>
-                        <description>Joint attaching upper arm to trunk.</description>
-                        <attribute>
-                           <name>hedId</name>
-                           <value>HED_0012227</value>
-                        </attribute>
+                        <node>
+                           <name>Wrist</name>
+                           <description>A joint between the distal end of the radius and the proximal row of carpal bones.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012229</value>
+                           </attribute>
+                        </node>
                      </node>
                      <node>
                         <name>Upper-arm</name>
@@ -1942,12 +2110,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                      </node>
                      <node>
-                        <name>Wrist</name>
-                        <description>A joint between the distal end of the radius and the proximal row of carpal bones.</description>
+                        <name>Upper-arm-part</name>
+                        <description>A part of the upper arm.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012229</value>
+                           <value>HED_0000000</value>
                         </attribute>
+                        <node>
+                           <name>Shoulder</name>
+                           <description>Joint attaching upper arm to trunk.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012227</value>
+                           </attribute>
+                        </node>
                      </node>
                   </node>
                </node>
@@ -2006,7 +2182,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Clause</name>
-               <description>A  unit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.</description>
+               <description>Aunit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012236</value>
@@ -3613,7 +3789,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Content</name>
-                     <description>Feeling  satisfaction with things as they are.</description>
+                     <description>Feelingsatisfaction with things as they are.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012435</value>
@@ -3709,7 +3885,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Relieved</name>
-                     <description>No longer feeling pain, distress,  anxiety, or reassured.</description>
+                     <description>No longer feeling pain, distress,anxiety, or reassured.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012447</value>
@@ -4445,7 +4621,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Pause</name>
-                     <description>Indicates the temporary interruption of  the operation a process and subsequently wait for a signal to continue.</description>
+                     <description>Indicates the temporary interruption ofthe operation a process and subsequently wait for a signal to continue.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012527</value>
@@ -4566,7 +4742,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Spectral-resolution</name>
-                  <description>Measures the ability of a sensor to  resolve features in the electromagnetic spectrum.</description>
+                  <description>Measures the ability of a sensor toresolve features in the electromagnetic spectrum.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012539</value>
@@ -4588,7 +4764,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Temporal-resolution</name>
-                  <description>Measures the ability of a sensor to  resolve features in time.</description>
+                  <description>Measures the ability of a sensor toresolve features in time.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012541</value>
@@ -4981,7 +5157,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                      <node>
                         <name>Masked</name>
-                        <description>Information exists but is not provided or is partially obscured due to security,  privacy, or other concerns.</description>
+                        <description>Information exists but is not provided or is partially obscured due to security,privacy, or other concerns.</description>
                         <attribute>
                            <name>relatedTag</name>
                            <value>Unmasked</value>
@@ -6800,7 +6976,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Stochastic</name>
-                  <description>Uses  a random probability distribution or pattern that may be analysed statistically but may not be predicted precisely to determine future states.</description>
+                  <description>Usesa random probability distribution or pattern that may be analysed statistically but may not be predicted precisely to determine future states.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Deterministic</value>
@@ -6933,7 +7109,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Paved-terrain</name>
-                  <description>Tracts of land covered  with concrete, asphalt, stones, or bricks.</description>
+                  <description>Tracts of land coveredwith concrete, asphalt, stones, or bricks.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012749</value>
@@ -6949,7 +7125,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Sloped-terrain</name>
-                  <description>Tracts of land arranged in a sloping  or inclined position.</description>
+                  <description>Tracts of land arranged in a slopingor inclined position.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012751</value>
@@ -8151,7 +8327,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                      <node>
                         <name>CSS-color</name>
-                        <description>One of 140 colors supported by all browsers. For more details such as the color RGB or HEX values,  check:  https://www.w3schools.com/colors/colors_groups.asp.</description>
+                        <description>One of 140 colors supported by all browsers. For more details such as the color RGB or HEX values,check:https://www.w3schools.com/colors/colors_groups.asp.</description>
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012863</value>
@@ -10641,7 +10817,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Unrelated-to</name>
-               <description>(A, (Unrelated-to, B)) indicates that A is not related to B.  For example, A is not related to Task.</description>
+               <description>(A, (Unrelated-to, B)) indicates that A is not related to B.For example, A is not related to Task.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0013152</value>
@@ -12611,7 +12787,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </valueClassDefinition>
       <valueClassDefinition>
          <name>textClass</name>
-         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII  &lt; 127) excluding comma, square bracket and curly braces as well as nonascii (ASCII codes &gt; 127).</description>
+         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as nonascii (ASCII codes &gt; 127).</description>
          <attribute>
             <name>hedId</name>
             <value>HED_0011305</value>
