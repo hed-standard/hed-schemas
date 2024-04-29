@@ -193,6 +193,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Occipital-lobe <nowiki>{hedId=HED_0012179}</nowiki>
 ****** Parietal-lobe <nowiki>{hedId=HED_0012180}</nowiki>
 ****** Temporal-lobe <nowiki>{hedId=HED_0012181}</nowiki>
+****** Cerebellum <nowiki>{hedId=HED_0000000} [A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.]</nowiki>
 ***** Ear <nowiki>{hedId=HED_0012182} [A sense organ needed for the detection of sound and for establishing balance.]</nowiki>
 ***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
 ***** Face <nowiki>{hedId=HED_0012183} [The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.]</nowiki>
