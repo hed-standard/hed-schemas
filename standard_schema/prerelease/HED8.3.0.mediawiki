@@ -233,7 +233,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Elbow <nowiki>{hedId=HED_0012216} [A type of hinge joint located between the forearm and upper arm.]</nowiki>
 ***** Hand <nowiki>{hedId=HED_0012218} [The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.]</nowiki>
 ***** Hand-part <nowiki>{hedId=} [A part of the hand.]</nowiki>
-***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
+****** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
 ****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
 ****** Finger <nowiki>{hedId=HED_0012219} [Any of the digits of the hand.]</nowiki>
@@ -258,6 +258,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
 ****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
 ****** Toes <nowiki>{hedId=HED_0012203} [The terminal digits of the foot.]</nowiki>
+****** Toe <nowiki>{hedId=} [A digit of the foot.]</nowiki>
 ******* Big-toe <nowiki>{hedId=HED_0012199} [The largest toe on the inner side of the foot.]</nowiki>
 ******* Little-toe <nowiki>{hedId=HED_0012202} [The smallest toe located on the outer side of the foot.]</nowiki>
 ** Organism <nowiki>{hedId=HED_0012230} [A living entity, more specifically a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).]</nowiki>
