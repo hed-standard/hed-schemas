@@ -1549,6 +1549,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <value>HED_0000000</value>
                         </attribute>
                         <node>
+                           <name>Cerebellum</name>
+                           <description>A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0000000</value>
+                           </attribute>
+                        </node>
+                        <node>
                            <name>Frontal-lobe</name>
                            <attribute>
                               <name>hedId</name>
