@@ -209,6 +209,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Mouth <nowiki>{hedId=HED_0012191} [The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.]</nowiki>
 ****** Mouth-part <nowiki> [A part of the mouth.]</nowiki>
 ******* Teeth <nowiki>{hedId=HED_0012193} [The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.]</nowiki>
+******* Tongue <nowiki>[A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.]</nowiki>
 **** Neck <nowiki>[The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.]</nowiki>
 **** Torso <nowiki>{hedId=HED_0012207} [The body excluding the head and neck and limbs.]</nowiki>
 **** Torso-part <nowiki> [A part of the torso.]</nowiki>
