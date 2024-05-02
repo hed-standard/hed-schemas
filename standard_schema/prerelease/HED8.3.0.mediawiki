@@ -222,20 +222,20 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Pelvis <nowiki>[The bony structure at the base of the spine supporting the legs.]</nowiki>
 ***** Pelvis-part <nowiki> [A part of the pelvis.]</nowiki>
 ****** Buttocks <nowiki>{hedId=HED_0012208} [The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
-****** Gentalia <nowiki>{deprecatedFrom=8.1.0, hedId=HED_0012209} [The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.]</nowiki>
+****** Gentalia <nowiki>{deprecatedFrom=8.1.0, hedId=HED_0012209} [The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.]</nowiki>
 ****** Genitalia <nowiki> [The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.]</nowiki>
 ****** Hip <nowiki>{hedId=HED_0012210} [The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
 **** Upper-extremity <nowiki>{hedId=HED_0012215} [Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
 **** Upper-extremity-part <nowiki> [A part of the upper extremity.]</nowiki>
+***** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
 ***** Upper-arm <nowiki>{hedId=HED_0012228} [Portion of arm between shoulder and elbow.]</nowiki>
 ***** Upper-arm-part <nowiki> [A part of the upper arm.]</nowiki>
-****** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
+***** Elbow <nowiki>{hedId=HED_0012216} [A type of hinge joint located between the forearm and upper arm.]</nowiki>
 ***** Forearm <nowiki>{hedId=HED_0012217} [Lower part of the arm between the elbow and wrist.]</nowiki>
 ***** Forearm-part <nowiki> [A part of the forearm.]</nowiki>
-****** Elbow <nowiki>{hedId=HED_0012216} [A type of hinge joint located between the forearm and upper arm.]</nowiki>
+***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ***** Hand <nowiki>{hedId=HED_0012218} [The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.]</nowiki>
 ***** Hand-part <nowiki> [A part of the hand.]</nowiki>
-****** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
 ****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
 ****** Finger <nowiki>{hedId=HED_0012219} [Any of the digits of the hand.]</nowiki>
@@ -249,14 +249,14 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Upper-leg <nowiki> [The part of the leg between the hip and the knee.]</nowiki>
 ***** Upper-leg-part <nowiki> [A part of the upper leg.]</nowiki>
 ****** Thigh <nowiki>{hedId=HED_0012206} [Upper part of the leg between hip and knee.]</nowiki>
+***** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
 ***** Lower-leg <nowiki> [The part of the leg between the knee and the ankle.]</nowiki>
 ***** Lower-leg-part <nowiki> [A part of the lower leg.]</nowiki>
-****** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
 ****** Shin <nowiki>{hedId=HED_0012205} [Front part of the leg below the knee.]</nowiki>
 ****** Calf <nowiki>{hedId=HED_0012197} [The fleshy part at the back of the leg below the knee.]</nowiki>
+***** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
 ***** Foot <nowiki>{hedId=HED_0012198} [The structure found below the ankle joint required for locomotion.]</nowiki>
 ***** Foot-part <nowiki> [A part of the foot.]</nowiki>
-****** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
 ****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
 ****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
 ****** Toes <nowiki>{hedId=HED_0012203} [The terminal digits of the foot.]</nowiki>
