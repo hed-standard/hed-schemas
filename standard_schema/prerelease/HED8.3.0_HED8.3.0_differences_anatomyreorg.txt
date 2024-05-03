@@ -1,0 +1,90 @@
+Differences between HED8.3.0 and HED8.3.0
+Tags:
+	Head-part (Minor): Item Head-part added to Tags
+	Brain-region (Minor): Item Brain-region added to Tags
+	Cerebellum (Minor): Item Cerebellum added to Tags
+	Face-part (Minor): Item Face-part added to Tags
+	Mouth-part (Minor): Item Mouth-part added to Tags
+	Lower-extremity-part (Minor): Item Lower-extremity-part added to Tags
+	Foot-part (Minor): Item Foot-part added to Tags
+	Toe (Minor): Item Toe added to Tags
+	Lower-leg (Minor): Item Lower-leg added to Tags
+	Lower-leg-part (Minor): Item Lower-leg-part added to Tags
+	Upper-leg (Minor): Item Upper-leg added to Tags
+	Upper-leg-part (Minor): Item Upper-leg-part added to Tags
+	Neck (Minor): Item Neck added to Tags
+	Torso-part (Minor): Item Torso-part added to Tags
+	Abdomen (Minor): Item Abdomen added to Tags
+	Navel (Minor): Item Navel added to Tags
+	Pelvis (Minor): Item Pelvis added to Tags
+	Pelvis-part (Minor): Item Pelvis-part added to Tags
+	Genitalia (Minor): Item Genitalia added to Tags
+	Upper-extremity-part (Minor): Item Upper-extremity-part added to Tags
+	Forearm-part (Minor): Item Forearm-part added to Tags
+	Hand-part (Minor): Item Hand-part added to Tags
+	Upper-arm-part (Minor): Item Upper-arm-part added to Tags
+	Brain (Minor): Tag Brain moved in schema
+	Frontal-lobe (Minor): Tag Frontal-lobe moved in schema
+	Occipital-lobe (Minor): Tag Occipital-lobe moved in schema
+	Parietal-lobe (Minor): Tag Parietal-lobe moved in schema
+	Temporal-lobe (Minor): Tag Temporal-lobe moved in schema
+	Ear (Minor): Tag Ear moved in schema
+	Face (Minor): Tag Face moved in schema
+	Cheek (Minor): Tag Cheek moved in schema
+	Chin (Minor): Tag Chin moved in schema
+	Eye (Minor): Tag Eye moved in schema
+	Eyebrow (Minor): Tag Eyebrow moved in schema
+	Eyelid (Minor): Tag Eyelid moved in schema
+	Forehead (Minor): Tag Forehead moved in schema
+	Lip (Minor): Tag Lip moved in schema
+	Mouth (Minor): Tag Mouth moved in schema
+	Nose (Minor): Tag Nose moved in schema
+	Teeth (Minor): Tag Teeth moved in schema
+	Hair (Minor): Tag Hair moved in schema
+	Ankle (Minor): Tag Ankle moved in schema
+	Calf (Minor): Tag Calf moved in schema
+	Foot (Minor): Tag Foot moved in schema
+	Big-toe (Minor): Tag Big-toe moved in schema
+	Heel (Minor): Tag Heel moved in schema
+	Instep (Minor): Tag Instep moved in schema
+	Little-toe (Minor): Tag Little-toe moved in schema
+	Toes (Minor): Tag Toes moved in schema
+	Knee (Minor): Tag Knee moved in schema
+	Shin (Minor): Tag Shin moved in schema
+	Thigh (Minor): Tag Thigh moved in schema
+	Buttocks (Minor): Tag Buttocks moved in schema
+	Gentalia (Minor): Tag Gentalia moved in schema
+	Hip (Minor): Tag Hip moved in schema
+	Torso-back (Minor): Tag Torso-back moved in schema
+	Torso-chest (Minor): Tag Torso-chest moved in schema
+	Viscera (Minor): Tag Viscera moved in schema
+	Waist (Minor): Tag Waist moved in schema
+	Elbow (Minor): Tag Elbow moved in schema
+	Forearm (Minor): Tag Forearm moved in schema
+	Hand (Minor): Tag Hand moved in schema
+	Finger (Minor): Tag Finger moved in schema
+	Index-finger (Minor): Tag Index-finger moved in schema
+	Little-finger (Minor): Tag Little-finger moved in schema
+	Middle-finger (Minor): Tag Middle-finger moved in schema
+	Ring-finger (Minor): Tag Ring-finger moved in schema
+	Thumb (Minor): Tag Thumb moved in schema
+	Knuckles (Minor): Tag Knuckles moved in schema
+	Palm (Minor): Tag Palm moved in schema
+	Shoulder (Minor): Tag Shoulder moved in schema
+	Upper-arm (Minor): Tag Upper-arm moved in schema
+	Wrist (Minor): Tag Wrist moved in schema
+	Hiccup (Patch): Description of Hiccup modified
+	Yawn (Patch): Description of Yawn modified
+	Kick (Patch): Description of Kick modified
+	Clause (Patch): Description of Clause modified
+	Content (Patch): Description of Content modified
+	Relieved (Patch): Description of Relieved modified
+	Pause (Patch): Description of Pause modified
+	Masked (Patch): Description of Masked modified
+	Stochastic (Patch): Description of Stochastic modified
+	Paved-terrain (Patch): Description of Paved-terrain modified
+	Sloped-terrain (Patch): Description of Sloped-terrain modified
+	CSS-color (Patch): Description of CSS-color modified
+	Unrelated-to (Patch): Description of Unrelated-to modified
+Value Classes:
+	textClass (Patch): Description of textClass modified

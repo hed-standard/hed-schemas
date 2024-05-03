@@ -186,13 +186,18 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Body <nowiki>{hedId=HED_0012174} [The biological structure representing an organism.]</nowiki>
 *** Body-part <nowiki>{hedId=HED_0012175} [Any part of an organism.]</nowiki>
 **** Head <nowiki>{hedId=HED_0012176} [The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.]</nowiki>
+**** Head-part <nowiki> [A part of the head.]</nowiki>
 ***** Brain <nowiki>{hedId=HED_0012177} [Organ inside the head that is made up of nerve cells and controls the body.]</nowiki>
+***** Brain-region <nowiki> [A region of the brain.]</nowiki>
 ****** Frontal-lobe <nowiki>{hedId=HED_0012178}</nowiki>
 ****** Occipital-lobe <nowiki>{hedId=HED_0012179}</nowiki>
 ****** Parietal-lobe <nowiki>{hedId=HED_0012180}</nowiki>
 ****** Temporal-lobe <nowiki>{hedId=HED_0012181}</nowiki>
+****** Cerebellum <nowiki> [A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.]</nowiki>
 ***** Ear <nowiki>{hedId=HED_0012182} [A sense organ needed for the detection of sound and for establishing balance.]</nowiki>
+***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
 ***** Face <nowiki>{hedId=HED_0012183} [The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.]</nowiki>
+***** Face-part <nowiki> [A part of the face.]</nowiki>
 ****** Cheek <nowiki>{hedId=HED_0012184} [The fleshy part of the face bounded by the eyes, nose, ear, and jaw line.]</nowiki>
 ****** Chin <nowiki>{hedId=HED_0012185} [The part of the face below the lower lip and including the protruding part of the lower jaw.]</nowiki>
 ****** Eye <nowiki>{hedId=HED_0012186} [The organ of sight or vision.]</nowiki>
@@ -200,45 +205,65 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Eyelid <nowiki>{hedId=HED_0012188} [The folds of the skin that cover the eye when closed.]</nowiki>
 ****** Forehead <nowiki>{hedId=HED_0012189} [The part of the face between the eyebrows and the normal hairline.]</nowiki>
 ****** Lip <nowiki>{hedId=HED_0012190} [Fleshy fold which surrounds the opening of the mouth.]</nowiki>
-****** Mouth <nowiki>{hedId=HED_0012191} [The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.]</nowiki>
 ****** Nose <nowiki>{hedId=HED_0012192} [A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.]</nowiki>
-****** Teeth <nowiki>{hedId=HED_0012193} [The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.]</nowiki>
-***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
-**** Lower-extremity <nowiki>{hedId=HED_0012195} [Refers to the whole inferior limb (leg and/or foot).]</nowiki>
-***** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
-***** Calf <nowiki>{hedId=HED_0012197} [The fleshy part at the back of the leg below the knee.]</nowiki>
-***** Foot <nowiki>{hedId=HED_0012198} [The structure found below the ankle joint required for locomotion.]</nowiki>
-****** Big-toe <nowiki>{hedId=HED_0012199} [The largest toe on the inner side of the foot.]</nowiki>
-****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
-****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
-****** Little-toe <nowiki>{hedId=HED_0012202} [The smallest toe located on the outer side of the foot.]</nowiki>
-****** Toes <nowiki>{hedId=HED_0012203} [The terminal digits of the foot.]</nowiki>
-***** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
-***** Shin <nowiki>{hedId=HED_0012205} [Front part of the leg below the knee.]</nowiki>
-***** Thigh <nowiki>{hedId=HED_0012206} [Upper part of the leg between hip and knee.]</nowiki>
+****** Mouth <nowiki>{hedId=HED_0012191} [The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.]</nowiki>
+****** Mouth-part <nowiki> [A part of the mouth.]</nowiki>
+******* Teeth <nowiki>{hedId=HED_0012193} [The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.]</nowiki>
+******* Tongue <nowiki>[A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.]</nowiki>
+**** Neck <nowiki>[The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.]</nowiki>
 **** Torso <nowiki>{hedId=HED_0012207} [The body excluding the head and neck and limbs.]</nowiki>
-***** Buttocks <nowiki>{hedId=HED_0012208} [The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
-***** Gentalia <nowiki>{deprecatedFrom=8.1.0, hedId=HED_0012209} [The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.]</nowiki>
-***** Hip <nowiki>{hedId=HED_0012210} [The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
-***** Torso-back <nowiki>{hedId=HED_0012211} [The rear surface of the human body from the shoulders to the hips.]</nowiki>
+**** Torso-part <nowiki> [A part of the torso.]</nowiki>
 ***** Torso-chest <nowiki>{hedId=HED_0012212} [The anterior side of the thorax from the neck to the abdomen.]</nowiki>
+***** Torso-back <nowiki>{hedId=HED_0012211} [The rear surface of the human body from the shoulders to the hips.]</nowiki>
 ***** Viscera <nowiki>{hedId=HED_0012213} [Internal organs of the body.]</nowiki>
+***** Abdomen <nowiki>[The part of the body between the thorax and the pelvis.]</nowiki>
+***** Navel <nowiki>[The central mark on the abdomen created by the detachment of the umbilical cord after birth.]</nowiki>
 ***** Waist <nowiki>{hedId=HED_0012214} [The abdominal circumference at the navel.]</nowiki>
+***** Pelvis <nowiki>[The bony structure at the base of the spine supporting the legs.]</nowiki>
+***** Pelvis-part <nowiki> [A part of the pelvis.]</nowiki>
+****** Buttocks <nowiki>{hedId=HED_0012208} [The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
+****** Gentalia <nowiki>{deprecatedFrom=8.1.0, hedId=HED_0012209} [The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.]</nowiki>
+****** Genitalia <nowiki> [The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.]</nowiki>
+****** Hip <nowiki>{hedId=HED_0012210} [The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
 **** Upper-extremity <nowiki>{hedId=HED_0012215} [Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
+**** Upper-extremity-part <nowiki> [A part of the upper extremity.]</nowiki>
+***** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
+***** Upper-arm <nowiki>{hedId=HED_0012228} [Portion of arm between shoulder and elbow.]</nowiki>
+***** Upper-arm-part <nowiki> [A part of the upper arm.]</nowiki>
 ***** Elbow <nowiki>{hedId=HED_0012216} [A type of hinge joint located between the forearm and upper arm.]</nowiki>
 ***** Forearm <nowiki>{hedId=HED_0012217} [Lower part of the arm between the elbow and wrist.]</nowiki>
+***** Forearm-part <nowiki> [A part of the forearm.]</nowiki>
+***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ***** Hand <nowiki>{hedId=HED_0012218} [The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.]</nowiki>
+***** Hand-part <nowiki> [A part of the hand.]</nowiki>
+****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
+****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
+****** Fingers <nowiki>{relatedTag=Finger} [The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers]</nowiki>
 ****** Finger <nowiki>{hedId=HED_0012219} [Any of the digits of the hand.]</nowiki>
 ******* Index-finger <nowiki>{hedId=HED_0012220} [The second finger from the radial side of the hand, next to the thumb.]</nowiki>
 ******* Little-finger <nowiki>{hedId=HED_0012221} [The fifth and smallest finger from the radial side of the hand.]</nowiki>
 ******* Middle-finger <nowiki>{hedId=HED_0012222} [The middle or third finger from the radial side of the hand.]</nowiki>
 ******* Ring-finger <nowiki>{hedId=HED_0012223} [The fourth finger from the radial side of the hand.]</nowiki>
 ******* Thumb <nowiki>{hedId=HED_0012224} [The thick and short hand digit which is next to the index finger in humans.]</nowiki>
-****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
-****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
-***** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
-***** Upper-arm <nowiki>{hedId=HED_0012228} [Portion of arm between shoulder and elbow.]</nowiki>
-***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
+**** Lower-extremity <nowiki>{hedId=HED_0012195} [Refers to the whole inferior limb (leg and/or foot).]</nowiki>
+**** Lower-extremity-part <nowiki> [A part of the lower extremity.]</nowiki>
+***** Upper-leg <nowiki> [The part of the leg between the hip and the knee.]</nowiki>
+***** Upper-leg-part <nowiki> [A part of the upper leg.]</nowiki>
+****** Thigh <nowiki>{hedId=HED_0012206} [Upper part of the leg between hip and knee.]</nowiki>
+***** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
+***** Lower-leg <nowiki> [The part of the leg between the knee and the ankle.]</nowiki>
+***** Lower-leg-part <nowiki> [A part of the lower leg.]</nowiki>
+****** Shin <nowiki>{hedId=HED_0012205} [Front part of the leg below the knee.]</nowiki>
+****** Calf <nowiki>{hedId=HED_0012197} [The fleshy part at the back of the leg below the knee.]</nowiki>
+***** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
+***** Foot <nowiki>{hedId=HED_0012198} [The structure found below the ankle joint required for locomotion.]</nowiki>
+***** Foot-part <nowiki> [A part of the foot.]</nowiki>
+****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
+****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
+****** Toes <nowiki>{relatedTag=Toe, hedId=HED_0012203} [The terminal digits of the foot. Used to describe collective attributes of all toes, such as bending all toes]</nowiki>
+****** Toe <nowiki> [A digit of the foot.]</nowiki>
+******* Big-toe <nowiki>{hedId=HED_0012199} [The largest toe on the inner side of the foot.]</nowiki>
+******* Little-toe <nowiki>{hedId=HED_0012202} [The smallest toe located on the outer side of the foot.]</nowiki>
 ** Organism <nowiki>{hedId=HED_0012230} [A living entity, more specifically a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).]</nowiki>
 *** Animal <nowiki>{hedId=HED_0012231} [A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement.]</nowiki>
 *** Human <nowiki>{hedId=HED_0012232} [The bipedal primate mammal Homo sapiens.]</nowiki>
