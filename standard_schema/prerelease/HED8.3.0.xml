@@ -558,7 +558,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Hiccup</name>
-                  <description>Involuntarily spasmthe diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.</description>
+                  <description>Involuntarily spasm the diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012057</value>
@@ -853,7 +853,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Yawn</name>
-                     <description>Take a deep involuntaryinhalation with the mouth open often as a sign of drowsiness or boredom.</description>
+                     <description>Take a deep involuntary inhalation with the mouth open often as a sign of drowsiness or boredom.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012094</value>
@@ -1531,7 +1531,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A part of the head.</description>
                      <attribute>
                         <name>hedId</name>
-                        <value>HED_0000000</value>
+                        <value>HED_0013200</value>
                      </attribute>
                      <node>
                         <name>Brain</name>
@@ -1546,14 +1546,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A region of the brain.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013201</value>
                         </attribute>
                         <node>
                            <name>Cerebellum</name>
                            <description>A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0000000</value>
+                              <value>HED_0013202</value>
                            </attribute>
                         </node>
                         <node>
@@ -1606,11 +1606,11 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the face.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013203</value>
                         </attribute>
                         <node>
                            <name>Cheek</name>
-                           <description>The fleshy part of the face bounded by the eyes, nose, ear, and jaw line.</description>
+                           <description>The fleshy part of the face bounded by the eyes, nose, ear, and jawline.</description>
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0012184</value>
@@ -1677,7 +1677,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <description>A part of the mouth.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0000000</value>
+                              <value>HED_0013204</value>
                            </attribute>
                            <node>
                               <name>Teeth</name>
@@ -1685,6 +1685,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012193</value>
+                              </attribute>
+                           </node>
+                           <node>
+                              <name>Tongue</name>
+                              <description>A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0013205</value>
                               </attribute>
                            </node>
                         </node>
@@ -1719,8 +1727,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A part of the lower extremity.</description>
                      <attribute>
                         <name>hedId</name>
-                        <value>HED_0000000</value>
+                        <value>HED_0013206</value>
                      </attribute>
+                     <node>
+                        <name>Ankle</name>
+                        <description>A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012196</value>
+                        </attribute>
+                     </node>
                      <node>
                         <name>Foot</name>
                         <description>The structure found below the ankle joint required for locomotion.</description>
@@ -1734,16 +1750,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the foot.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013207</value>
                         </attribute>
-                        <node>
-                           <name>Ankle</name>
-                           <description>A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012196</value>
-                           </attribute>
-                        </node>
                         <node>
                            <name>Heel</name>
                            <description>The back of the foot below the ankle.</description>
@@ -1765,7 +1773,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <description>A digit of the foot.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0000000</value>
+                              <value>HED_0013208</value>
                            </attribute>
                            <node>
                               <name>Big-toe</name>
@@ -1786,7 +1794,11 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                         <node>
                            <name>Toes</name>
-                           <description>The terminal digits of the foot.</description>
+                           <description>The terminal digits of the foot. Used to describe collective attributes of all toes, such as bending all toes</description>
+                           <attribute>
+                              <name>relatedTag</name>
+                              <value>Toe</value>
+                           </attribute>
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0012203</value>
@@ -1794,11 +1806,19 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                      </node>
                      <node>
+                        <name>Knee</name>
+                        <description>A joint connecting the lower part of the femur with the upper part of the tibia.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012204</value>
+                        </attribute>
+                     </node>
+                     <node>
                         <name>Lower-leg</name>
                         <description>The part of the leg between the knee and the ankle.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013209</value>
                         </attribute>
                      </node>
                      <node>
@@ -1806,7 +1826,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the lower leg.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013210</value>
                         </attribute>
                         <node>
                            <name>Calf</name>
@@ -1814,14 +1834,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0012197</value>
-                           </attribute>
-                        </node>
-                        <node>
-                           <name>Knee</name>
-                           <description>A joint connecting the lower part of the femur with the upper part of the tibia.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012204</value>
                            </attribute>
                         </node>
                         <node>
@@ -1838,7 +1850,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>The part of the leg between the hip and the knee.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013211</value>
                         </attribute>
                      </node>
                      <node>
@@ -1846,7 +1858,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the upper leg.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013212</value>
                         </attribute>
                         <node>
                            <name>Thigh</name>
@@ -1863,7 +1875,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.</description>
                      <attribute>
                         <name>hedId</name>
-                        <value>HED_0000000</value>
+                        <value>HED_0013213</value>
                      </attribute>
                   </node>
                   <node>
@@ -1879,14 +1891,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A part of the torso.</description>
                      <attribute>
                         <name>hedId</name>
-                        <value>HED_0000000</value>
+                        <value>HED_0013214</value>
                      </attribute>
                      <node>
                         <name>Abdomen</name>
                         <description>The part of the body between the thorax and the pelvis.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013215</value>
                         </attribute>
                      </node>
                      <node>
@@ -1894,7 +1906,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>The central mark on the abdomen created by the detachment of the umbilical cord after birth.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013216</value>
                         </attribute>
                      </node>
                      <node>
@@ -1902,7 +1914,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>The bony structure at the base of the spine supporting the legs.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013217</value>
                         </attribute>
                      </node>
                      <node>
@@ -1910,7 +1922,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the pelvis.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013218</value>
                         </attribute>
                         <node>
                            <name>Buttocks</name>
@@ -1925,12 +1937,12 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <description>The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.</description>
                            <attribute>
                               <name>hedId</name>
-                              <value>HED_0000000</value>
+                              <value>HED_0013219</value>
                            </attribute>
                         </node>
                         <node>
                            <name>Gentalia</name>
-                           <description>The external organs of reproduction. Deprecated due to spelling error. Use Torso/Genitalia.</description>
+                           <description>The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.1.0</value>
@@ -1995,8 +2007,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <description>A part of the upper extremity.</description>
                      <attribute>
                         <name>hedId</name>
-                        <value>HED_0000000</value>
+                        <value>HED_0013220</value>
                      </attribute>
+                     <node>
+                        <name>Elbow</name>
+                        <description>A type of hinge joint located between the forearm and upper arm.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012216</value>
+                        </attribute>
+                     </node>
                      <node>
                         <name>Forearm</name>
                         <description>Lower part of the arm between the elbow and wrist.</description>
@@ -2010,16 +2030,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the forearm.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013221</value>
                         </attribute>
-                        <node>
-                           <name>Elbow</name>
-                           <description>A type of hinge joint located between the forearm and upper arm.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012216</value>
-                           </attribute>
-                        </node>
                      </node>
                      <node>
                         <name>Hand</name>
@@ -2034,7 +2046,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the hand.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013222</value>
                         </attribute>
                         <node>
                            <name>Finger</name>
@@ -2085,6 +2097,18 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </node>
                         </node>
                         <node>
+                           <name>Fingers</name>
+                           <description>The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers</description>
+                           <attribute>
+                              <name>relatedTag</name>
+                              <value>Finger</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0013223</value>
+                           </attribute>
+                        </node>
+                        <node>
                            <name>Knuckles</name>
                            <description>A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.</description>
                            <attribute>
@@ -2100,14 +2124,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <value>HED_0012226</value>
                            </attribute>
                         </node>
-                        <node>
-                           <name>Wrist</name>
-                           <description>A joint between the distal end of the radius and the proximal row of carpal bones.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012229</value>
-                           </attribute>
-                        </node>
+                     </node>
+                     <node>
+                        <name>Shoulder</name>
+                        <description>Joint attaching upper arm to trunk.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012227</value>
+                        </attribute>
                      </node>
                      <node>
                         <name>Upper-arm</name>
@@ -2122,16 +2146,16 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <description>A part of the upper arm.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0000000</value>
+                           <value>HED_0013224</value>
                         </attribute>
-                        <node>
-                           <name>Shoulder</name>
-                           <description>Joint attaching upper arm to trunk.</description>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012227</value>
-                           </attribute>
-                        </node>
+                     </node>
+                     <node>
+                        <name>Wrist</name>
+                        <description>A joint between the distal end of the radius and the proximal row of carpal bones.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012229</value>
+                        </attribute>
                      </node>
                   </node>
                </node>
@@ -2902,7 +2926,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Measurement-device</name>
-                     <description>A device in which a measure function inheres.</description>
+                     <description>A device that measures something.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012324</value>
@@ -3314,7 +3338,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Truck</name>
-                     <description>A motor vehicle which, as its primary function, transports cargo rather than human passangers.</description>
+                     <description>A motor vehicle which, as its primary function, transports cargo rather than human passengers.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012375</value>
@@ -3624,7 +3648,7 @@ Each term in this vocabulary has a human-readable description and may include ad
          </attribute>
          <node>
             <name>Agent-property</name>
-            <description>Something that pertains to an agent.</description>
+            <description>Something that pertains to or describes an agent.</description>
             <attribute>
                <name>hedId</name>
                <value>HED_0012413</value>
@@ -3797,7 +3821,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Content</name>
-                     <description>Feelingsatisfaction with things as they are.</description>
+                     <description>Feeling satisfaction with things as they are.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012435</value>
@@ -4338,7 +4362,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>ECG-artifact</name>
-                     <description>An electrical artifact from the far-field potential from pulsation of the heart, timelocked to QRS complex.</description>
+                     <description>An electrical artifact from the far-field potential from pulsation of the heart, time locked to QRS complex.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012496</value>
@@ -4354,7 +4378,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Eye-artifact</name>
-                     <description>Occular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.</description>
+                     <description>Ocular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012498</value>
@@ -4400,7 +4424,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                         <node>
                            <name>Vertical-eye-movement-artifact</name>
-                           <description>Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.</description>
+                           <description>Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotates upward. The downward rotation of the eyeball is associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.</description>
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0012504</value>
@@ -4418,7 +4442,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Pulse-artifact</name>
-                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.</description>
+                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardioballistic artifact.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012506</value>
@@ -4474,7 +4498,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                   <node>
                      <name>Artificial-ventilation-artifact</name>
-                     <description>Artifact steming from mechanical ventilation. These can occur at the same rate as teh ventilator, but also have other patterns.</description>
+                     <description>Artifact stemming from mechanical ventilation. These can occur at the same rate as the ventilator, but also have other patterns.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012513</value>
@@ -4629,7 +4653,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Pause</name>
-                     <description>Indicates the temporary interruption ofthe operation a process and subsequently wait for a signal to continue.</description>
+                     <description>Indicates the temporary interruption of the operation of a process and subsequently a wait for a signal to continue.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012527</value>
@@ -4645,7 +4669,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Time-sync</name>
-                     <description>A synchronization signal whose purpose to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.</description>
+                     <description>A synchronization signal whose purpose is to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012529</value>
@@ -4750,7 +4774,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Spectral-resolution</name>
-                  <description>Measures the ability of a sensor toresolve features in the electromagnetic spectrum.</description>
+                  <description>Measures the ability of a sensor to resolve features in the electromagnetic spectrum.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012539</value>
@@ -4772,7 +4796,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Temporal-resolution</name>
-                  <description>Measures the ability of a sensor toresolve features in time.</description>
+                  <description>Measures the ability of a sensor to resolve features in time.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012541</value>
@@ -6053,7 +6077,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </node>
                      <node>
                         <name>Speed</name>
-                        <description>A scalar measure of the rate of movement of the object expressed either as the distance travelled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.</description>
+                        <description>A scalar measure of the rate of movement of the object expressed either as the distance traveled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.</description>
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012655</value>
@@ -6984,7 +7008,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Stochastic</name>
-                  <description>Usesa random probability distribution or pattern that may be analysed statistically but may not be predicted precisely to determine future states.</description>
+                  <description>Usesa random probability distribution or pattern that may be analyzed statistically but may not be predicted precisely to determine future states.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Deterministic</value>
@@ -7117,7 +7141,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Paved-terrain</name>
-                  <description>Tracts of land coveredwith concrete, asphalt, stones, or bricks.</description>
+                  <description>Tracts of land covered with concrete, asphalt, stones, or bricks.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012749</value>
@@ -7133,7 +7157,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Sloped-terrain</name>
-                  <description>Tracts of land arranged in a slopingor inclined position.</description>
+                  <description>Tracts of land arranged in a sloping or inclined position.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012751</value>
@@ -10090,7 +10114,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Indeterminate-action</name>
-                  <description>An action that cannot be distinguished between two or more possibibities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.</description>
+                  <description>An action that cannot be distinguished between two or more possibilities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Correct-action</value>
@@ -10405,7 +10429,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Distractor</name>
-                  <description>A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In pyschological studies this is sometimes referred to as a foil.</description>
+                  <description>A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013105</value>
@@ -11300,19 +11324,15 @@ Each term in this vocabulary has a human-readable description and may include ad
       <unitClassDefinition>
          <name>accelerationUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011500</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011500</value>
+         </attribute>
          <unit>
             <name>m-per-s^2</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011600</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11326,25 +11346,25 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>allowedCharacter</name>
                <value>caret</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011600</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>angleUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011501</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>radian</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011501</value>
+         </attribute>
          <unit>
             <name>radian</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011601</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11352,13 +11372,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011601</value>
+            </attribute>
          </unit>
          <unit>
             <name>rad</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011602</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11369,35 +11389,35 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011602</value>
+            </attribute>
          </unit>
          <unit>
             <name>degree</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011603</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>0.0174533</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011603</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>areaUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011502</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m^2</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011502</value>
+         </attribute>
          <unit>
             <name>m^2</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011604</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11411,6 +11431,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>allowedCharacter</name>
                <value>caret</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011604</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -11418,30 +11442,26 @@ Each term in this vocabulary has a human-readable description and may include ad
          <name>currencyUnits</name>
          <description>Units indicating the worth of something.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011503</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>$</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011503</value>
          </attribute>
          <unit>
             <name>dollar</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011605</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011605</value>
             </attribute>
          </unit>
          <unit>
             <name>$</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011606</value>
-            </attribute>
             <attribute>
                <name>unitPrefix</name>
             </attribute>
@@ -11455,6 +11475,10 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>allowedCharacter</name>
                <value>dollar</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011606</value>
             </attribute>
          </unit>
          <unit>
@@ -11477,19 +11501,15 @@ Each term in this vocabulary has a human-readable description and may include ad
       <unitClassDefinition>
          <name>electricPotentialUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011504</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>uv</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011504</value>
+         </attribute>
          <unit>
             <name>v</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011609</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11499,26 +11519,26 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>0.000001</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011609</value>
             </attribute>
          </unit>
          <unit>
             <name>uv</name>
             <description>Added as a direct unit because it is the default unit.</description>
             <attribute>
-               <name>hedId</name>
-               <value>0011644</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>0011644</value>
             </attribute>
          </unit>
          <unit>
             <name>Volt</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011610</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11526,24 +11546,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>0.000001</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011610</value>
+            </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>frequencyUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011505</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>Hz</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011505</value>
+         </attribute>
          <unit>
             <name>hertz</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011611</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11551,13 +11571,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011611</value>
+            </attribute>
          </unit>
          <unit>
             <name>Hz</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011612</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11567,26 +11587,26 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011612</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>intensityUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011506</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>dB</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011506</value>
          </attribute>
          <unit>
             <name>dB</name>
             <description>Intensity expressed as ratio to a threshold. May be used for sound intensity.</description>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011613</value>
-            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -11594,49 +11614,49 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011613</value>
+            </attribute>
          </unit>
          <unit>
             <name>candela</name>
             <description>Units used to express light intensity.</description>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011614</value>
+               <name>SIUnit</name>
             </attribute>
             <attribute>
-               <name>SIUnit</name>
+               <name>hedId</name>
+               <value>HED_0011614</value>
             </attribute>
          </unit>
          <unit>
             <name>cd</name>
             <description>Units used to express light intensity.</description>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011615</value>
-            </attribute>
-            <attribute>
                <name>SIUnit</name>
             </attribute>
             <attribute>
                <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011615</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>jerkUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011507</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011507</value>
+         </attribute>
          <unit>
             <name>m-per-s^3</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011616</value>
-            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -11648,24 +11668,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>allowedCharacter</name>
                <value>caret</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011616</value>
+            </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011508</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>T</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011508</value>
+         </attribute>
          <unit>
             <name>tesla</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011617</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11673,13 +11693,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>10e-15</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011617</value>
+            </attribute>
          </unit>
          <unit>
             <name>T</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011618</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11689,25 +11709,25 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>10e-15</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011618</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>memorySizeUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011509</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>B</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011509</value>
+         </attribute>
          <unit>
             <name>byte</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011619</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11715,13 +11735,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011619</value>
+            </attribute>
          </unit>
          <unit>
             <name>B</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011620</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11731,75 +11751,75 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011620</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>physicalLengthUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011510</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011510</value>
          </attribute>
          <unit>
             <name>foot</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011621</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>0.3048</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011621</value>
             </attribute>
          </unit>
          <unit>
             <name>inch</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011622</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>0.0254</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011622</value>
             </attribute>
          </unit>
          <unit>
             <name>meter</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011623</value>
-            </attribute>
-            <attribute>
                <name>SIUnit</name>
             </attribute>
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011623</value>
             </attribute>
          </unit>
          <unit>
             <name>metre</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011624</value>
-            </attribute>
-            <attribute>
                <name>SIUnit</name>
             </attribute>
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011624</value>
+            </attribute>
          </unit>
          <unit>
             <name>m</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011625</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11810,35 +11830,35 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011625</value>
+            </attribute>
          </unit>
          <unit>
             <name>mile</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011626</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>1609.34</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011626</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>speedUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011511</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m-per-s</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011511</value>
+         </attribute>
          <unit>
             <name>m-per-s</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011627</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11849,13 +11869,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011627</value>
+            </attribute>
          </unit>
          <unit>
             <name>mph</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011628</value>
-            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -11863,13 +11883,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>0.44704</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011628</value>
+            </attribute>
          </unit>
          <unit>
             <name>kph</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011629</value>
-            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -11877,24 +11897,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>0.277778</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011629</value>
+            </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011512</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>degree-Celsius</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011512</value>
+         </attribute>
          <unit>
             <name>degree-Celsius</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011630</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11902,14 +11922,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011630</value>
+            </attribute>
          </unit>
          <unit>
             <name>degree Celsius</name>
             <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011631</value>
-            </attribute>
             <attribute>
                <name>deprecatedFrom</name>
                <value>8.2.0</value>
@@ -11921,13 +11941,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011631</value>
+            </attribute>
          </unit>
          <unit>
             <name>oC</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011632</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11937,25 +11957,25 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>conversionFactor</name>
                <value>1.0</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011632</value>
             </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>timeUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011513</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>s</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011513</value>
+         </attribute>
          <unit>
             <name>second</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011633</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11963,13 +11983,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011633</value>
+            </attribute>
          </unit>
          <unit>
             <name>s</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011634</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11980,16 +12000,20 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011634</value>
+            </attribute>
          </unit>
          <unit>
             <name>day</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011635</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>86400</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011635</value>
             </attribute>
          </unit>
          <unit>
@@ -12002,24 +12026,24 @@ Each term in this vocabulary has a human-readable description and may include ad
          <unit>
             <name>minute</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011636</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>60</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011636</value>
             </attribute>
          </unit>
          <unit>
             <name>hour</name>
             <description>Should be in 24-hour format.</description>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011637</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>3600</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011637</value>
             </attribute>
          </unit>
          <unit>
@@ -12034,19 +12058,15 @@ Each term in this vocabulary has a human-readable description and may include ad
       <unitClassDefinition>
          <name>volumeUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011514</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011514</value>
+         </attribute>
          <unit>
             <name>m^3</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011639</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -12061,24 +12081,24 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>allowedCharacter</name>
                <value>caret</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011639</value>
+            </attribute>
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>weightUnits</name>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011515</value>
-         </attribute>
-         <attribute>
             <name>defaultUnits</name>
             <value>g</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011515</value>
+         </attribute>
          <unit>
             <name>g</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011640</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -12089,13 +12109,13 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011640</value>
+            </attribute>
          </unit>
          <unit>
             <name>gram</name>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011641</value>
-            </attribute>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -12103,27 +12123,31 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>conversionFactor</name>
                <value>1.0</value>
             </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011641</value>
+            </attribute>
          </unit>
          <unit>
             <name>pound</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011642</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>453.592</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011642</value>
             </attribute>
          </unit>
          <unit>
             <name>lb</name>
             <attribute>
-               <name>hedId</name>
-               <value>HED_0011643</value>
-            </attribute>
-            <attribute>
                <name>conversionFactor</name>
                <value>453.592</value>
+            </attribute>
+            <attribute>
+               <name>hedId</name>
+               <value>HED_0011643</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -12133,579 +12157,575 @@ Each term in this vocabulary has a human-readable description and may include ad
          <name>deca</name>
          <description>SI unit multiple representing 10e1.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011400</value>
-         </attribute>
-         <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10.0</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011400</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
          <description>SI unit multiple representing 10e1.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011401</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10.0</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011401</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
          <description>SI unit multiple representing 10e2.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011402</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>100.0</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011402</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
          <description>SI unit multiple representing 10e2.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011403</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>100.0</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011403</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
          <description>SI unit multiple representing 10e3.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011404</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>1000.0</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011404</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
          <description>SI unit multiple representing 10e3.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011405</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>1000.0</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011405</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
          <description>SI unit multiple representing 10e6.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011406</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e6</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011406</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
          <description>SI unit multiple representing 10e6.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011407</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e6</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011407</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
          <description>SI unit multiple representing 10e9.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011408</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e9</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011408</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
          <description>SI unit multiple representing 10e9.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011409</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e9</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011409</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
          <description>SI unit multiple representing 10e12.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011410</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e12</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011410</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
          <description>SI unit multiple representing 10e12.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011411</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e12</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011411</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
          <description>SI unit multiple representing 10e15.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011412</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e15</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011412</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
          <description>SI unit multiple representing 10e15.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011413</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e15</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011413</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
          <description>SI unit multiple representing 10e18.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011414</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e18</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011414</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
          <description>SI unit multiple representing 10e18.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011415</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e18</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011415</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
          <description>SI unit multiple representing 10e21.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011416</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e21</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011416</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
          <description>SI unit multiple representing 10e21.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011417</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e21</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011417</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
          <description>SI unit multiple representing 10e24.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011418</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e24</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011418</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
          <description>SI unit multiple representing 10e24.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011419</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e24</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011419</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
          <description>SI unit submultiple representing 10e-1.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011420</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.1</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011420</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
          <description>SI unit submultiple representing 10e-1.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011421</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.1</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011421</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
          <description>SI unit submultiple representing 10e-2.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011422</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.01</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011422</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
          <description>SI unit submultiple representing 10e-2.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011423</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.01</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011423</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
          <description>SI unit submultiple representing 10e-3.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011424</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.001</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011424</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
          <description>SI unit submultiple representing 10e-3.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011425</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>0.001</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011425</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
          <description>SI unit submultiple representing 10e-6.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011426</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-6</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011426</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
          <description>SI unit submultiple representing 10e-6.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011427</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-6</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011427</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
          <description>SI unit submultiple representing 10e-9.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011428</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-9</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011428</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
          <description>SI unit submultiple representing 10e-9.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011429</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-9</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011429</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
          <description>SI unit submultiple representing 10e-12.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011430</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-12</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011430</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
          <description>SI unit submultiple representing 10e-12.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011431</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-12</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011431</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
          <description>SI unit submultiple representing 10e-15.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011432</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-15</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011432</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
          <description>SI unit submultiple representing 10e-15.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011433</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-15</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011433</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
          <description>SI unit submultiple representing 10e-18.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011434</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-18</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011434</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
          <description>SI unit submultiple representing 10e-18.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011435</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-18</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011435</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
          <description>SI unit submultiple representing 10e-21.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011436</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-21</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011436</value>
          </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
          <description>SI unit submultiple representing 10e-21.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011437</value>
-         </attribute>
-         <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-21</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011437</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
          <description>SI unit submultiple representing 10e-24.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011438</value>
-         </attribute>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12713,20 +12733,24 @@ Each term in this vocabulary has a human-readable description and may include ad
             <name>conversionFactor</name>
             <value>10e-24</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011438</value>
+         </attribute>
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
          <description>SI unit submultiple representing 10e-24.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011439</value>
-         </attribute>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
             <value>10e-24</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011439</value>
          </attribute>
       </unitModifierDefinition>
    </unitModifierDefinitions>
@@ -12735,24 +12759,20 @@ Each term in this vocabulary has a human-readable description and may include ad
          <name>dateTimeClass</name>
          <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.</description>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0011301</value>
-         </attribute>
-         <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
             <value>T</value>
             <value>hyphen</value>
             <value>colon</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011301</value>
+         </attribute>
       </valueClassDefinition>
       <valueClassDefinition>
          <name>nameClass</name>
          <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011302</value>
-         </attribute>
          <attribute>
             <name>allowedCharacter</name>
             <value>letters</value>
@@ -12760,14 +12780,14 @@ Each term in this vocabulary has a human-readable description and may include ad
             <value>underscore</value>
             <value>hyphen</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011302</value>
+         </attribute>
       </valueClassDefinition>
       <valueClassDefinition>
          <name>numericClass</name>
          <description>Value must be a valid numerical value.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011303</value>
-         </attribute>
          <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
@@ -12777,14 +12797,14 @@ Each term in this vocabulary has a human-readable description and may include ad
             <value>hyphen</value>
             <value>period</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011303</value>
+         </attribute>
       </valueClassDefinition>
       <valueClassDefinition>
          <name>posixPath</name>
          <description>Posix path specification.</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011304</value>
-         </attribute>
          <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
@@ -12792,28 +12812,180 @@ Each term in this vocabulary has a human-readable description and may include ad
             <value>slash</value>
             <value>colon</value>
          </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011304</value>
+         </attribute>
       </valueClassDefinition>
       <valueClassDefinition>
          <name>textClass</name>
-         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as nonascii (ASCII codes &gt; 127).</description>
-         <attribute>
-            <name>hedId</name>
-            <value>HED_0011305</value>
-         </attribute>
+         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes &gt; 127).</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>text</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0011305</value>
          </attribute>
       </valueClassDefinition>
    </valueClassDefinitions>
    <schemaAttributeDefinitions>
       <schemaAttributeDefinition>
-         <name>allowedCharacter</name>
-         <description>A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.</description>
+         <name>hedId</name>
+         <description>The unique identifier of this element in the HED namespace.</description>
+         <property>
+            <name>elementDomain</name>
+         </property>
+         <property>
+            <name>stringRange</name>
+         </property>
          <property>
             <name>hedId</name>
-            <value>HED_0010304</value>
+            <value>HED_0010308</value>
          </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>requireChild</name>
+         <description>This tag must have a descendent.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010501</value>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>rooted</name>
+         <description>This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>tagRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010502</value>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>takesValue</name>
+         <description>This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010503</value>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>defaultUnits</name>
+         <description>The default units to use if the placeholder has a unit class but the substituted value has no units.</description>
+         <property>
+            <name>unitClassDomain</name>
+         </property>
+         <property>
+            <name>unitRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010104</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>isPartOf</name>
+         <description>This tag is part of the indicated tag -- as in the nose is part of the face.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>tagRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010109</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>relatedTag</name>
+         <description>A HED tag that is closely related to this tag. This attribute is used by tagging tools.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>tagRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010105</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>suggestedTag</name>
+         <description>A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>tagRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010106</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>unitClass</name>
+         <description>The unit class that the value of a placeholder node can belong to.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>unitClassRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010107</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>valueClass</name>
+         <description>Type of value taken on by the value of a placeholder node.</description>
+         <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>valueClassRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010108</value>
+         </property>
+      </schemaAttributeDefinition>
+      <schemaAttributeDefinition>
+         <name>allowedCharacter</name>
+         <description>A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.</description>
          <property>
             <name>unitDomain</name>
          </property>
@@ -12826,14 +12998,14 @@ Each term in this vocabulary has a human-readable description and may include ad
          <property>
             <name>stringRange</name>
          </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010304</value>
+         </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>conversionFactor</name>
          <description>The factor to multiply these units or unit modifiers by to convert to default units.</description>
-         <property>
-            <name>hedId</name>
-            <value>HED_0010305</value>
-         </property>
          <property>
             <name>unitDomain</name>
          </property>
@@ -12843,325 +13015,177 @@ Each term in this vocabulary has a human-readable description and may include ad
          <property>
             <name>numericRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>defaultUnits</name>
-         <description>The default units to use if the placeholder has a unit class but the substituted value has no units.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010104</value>
-         </property>
-         <property>
-            <name>unitClassDomain</name>
-         </property>
-         <property>
-            <name>unitRange</name>
+            <value>HED_0010305</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>deprecatedFrom</name>
          <description>The latest schema version in which the element was not deprecated.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010306</value>
-         </property>
-         <property>
             <name>elementDomain</name>
          </property>
          <property>
             <name>stringRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010306</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>extensionAllowed</name>
          <description>Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes except for hashtag placeholders.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010307</value>
-         </property>
-         <property>
             <name>tagDomain</name>
          </property>
          <property>
             <name>boolRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>hedId</name>
-         <description>The unique identifier of this element in the HED namespace.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010308</value>
-         </property>
-         <property>
-            <name>annotationProperty</name>
-         </property>
-         <property>
-            <name>elementDomain</name>
-         </property>
-         <property>
-            <name>stringRange</name>
+            <value>HED_0010307</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>inLibrary</name>
          <description>The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010309</value>
-         </property>
-         <property>
             <name>elementDomain</name>
          </property>
          <property>
             <name>stringRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>isPartOf</name>
-         <description>This tag is part of the indicated tag -- as in the nose is part of the face.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010109</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>tagRange</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>relatedTag</name>
-         <description>A HED tag that is closely related to this tag. This attribute is used by tagging tools.</description>
-         <property>
-            <name>hedId</name>
-            <value>HED_0010105</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>tagRange</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>requireChild</name>
-         <description>This tag must have a descendent.</description>
-         <property>
-            <name>hedId</name>
-            <value>HED_0010501</value>
-         </property>
-         <property>
-            <name>annotationProperty</name>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>boolRange</name>
+            <value>HED_0010309</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>reserved</name>
          <description>This tag has special meaning and requires special handling by tools.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010310</value>
-         </property>
-         <property>
             <name>tagDomain</name>
          </property>
          <property>
             <name>boolRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>rooted</name>
-         <description>This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010502</value>
-         </property>
-         <property>
-            <name>annotationProperty</name>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>tagRange</name>
+            <value>HED_0010310</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnit</name>
          <description>This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010311</value>
-         </property>
-         <property>
             <name>unitDomain</name>
          </property>
          <property>
             <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010311</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitModifier</name>
          <description>This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010312</value>
-         </property>
-         <property>
             <name>unitModifierDomain</name>
          </property>
          <property>
             <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010312</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>SIUnitSymbolModifier</name>
          <description>This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010313</value>
-         </property>
-         <property>
             <name>unitModifierDomain</name>
          </property>
          <property>
             <name>boolRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>suggestedTag</name>
-         <description>A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010106</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>tagRange</name>
+            <value>HED_0010313</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>tagGroup</name>
          <description>This tag can only appear inside a tag group.</description>
          <property>
+            <name>tagDomain</name>
+         </property>
+         <property>
+            <name>boolRange</name>
+         </property>
+         <property>
             <name>hedId</name>
             <value>HED_0010314</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>boolRange</name>
-         </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>takesValue</name>
-         <description>This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.</description>
-         <property>
-            <name>hedId</name>
-            <value>HED_0010503</value>
-         </property>
-         <property>
-            <name>annotationProperty</name>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>boolRange</name>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>topLevelTagGroup</name>
          <description>This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010315</value>
-         </property>
-         <property>
             <name>tagDomain</name>
          </property>
          <property>
             <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010315</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unique</name>
          <description>Only one of this tag or its descendants can be used in the event-level HED string.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010316</value>
-         </property>
-         <property>
             <name>tagDomain</name>
          </property>
          <property>
             <name>boolRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>unitClass</name>
-         <description>The unit class that the value of a placeholder node can belong to.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010107</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>unitClassRange</name>
+            <value>HED_0010316</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
          <description>This unit is a prefix unit (e.g., dollar sign in the currency units).</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010317</value>
-         </property>
-         <property>
             <name>unitDomain</name>
          </property>
          <property>
             <name>boolRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010317</value>
          </property>
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitSymbol</name>
          <description>This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.</description>
          <property>
-            <name>hedId</name>
-            <value>HED_0010318</value>
-         </property>
-         <property>
             <name>unitDomain</name>
          </property>
          <property>
             <name>boolRange</name>
          </property>
-      </schemaAttributeDefinition>
-      <schemaAttributeDefinition>
-         <name>valueClass</name>
-         <description>Type of value taken on by the value of a placeholder node.</description>
          <property>
             <name>hedId</name>
-            <value>HED_0010108</value>
-         </property>
-         <property>
-            <name>tagDomain</name>
-         </property>
-         <property>
-            <name>valueClassRange</name>
+            <value>HED_0010318</value>
          </property>
       </schemaAttributeDefinition>
    </schemaAttributeDefinitions>
