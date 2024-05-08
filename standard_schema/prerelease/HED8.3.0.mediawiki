@@ -1,11 +1,11 @@
 HED version="8.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd"
 
-'''Prologue''' <nowiki>{hedId=HED_0010011}[An overview of the schema and its purpose.]</nowiki>
+'''Prologue'''
 The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
 
-!# start schema 
+!# start schema
 
 '''Event''' <nowiki>{suggestedTag=Task-property, hedId=HED_0012001} [Something that happens at a given time and (typically) place. Elements of this tag subtree designate the general category in which an event falls.]</nowiki>
 * Sensory-event <nowiki>{suggestedTag=Task-event-role, suggestedTag=Sensory-presentation, hedId=HED_0012002} [Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.]</nowiki>
@@ -186,18 +186,17 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Body <nowiki>{hedId=HED_0012174} [The biological structure representing an organism.]</nowiki>
 *** Body-part <nowiki>{hedId=HED_0012175} [Any part of an organism.]</nowiki>
 **** Head <nowiki>{hedId=HED_0012176} [The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.]</nowiki>
-**** Head-part <nowiki> [A part of the head.]</nowiki>
+**** Head-part <nowiki>{hedId=HED_0013200} [A part of the head.]</nowiki>
 ***** Brain <nowiki>{hedId=HED_0012177} [Organ inside the head that is made up of nerve cells and controls the body.]</nowiki>
-***** Brain-region <nowiki> [A region of the brain.]</nowiki>
+***** Brain-region <nowiki>{hedId=HED_0013201} [A region of the brain.]</nowiki>
+****** Cerebellum <nowiki>{hedId=HED_0013202} [A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.]</nowiki>
 ****** Frontal-lobe <nowiki>{hedId=HED_0012178}</nowiki>
 ****** Occipital-lobe <nowiki>{hedId=HED_0012179}</nowiki>
 ****** Parietal-lobe <nowiki>{hedId=HED_0012180}</nowiki>
 ****** Temporal-lobe <nowiki>{hedId=HED_0012181}</nowiki>
-****** Cerebellum <nowiki> [A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.]</nowiki>
 ***** Ear <nowiki>{hedId=HED_0012182} [A sense organ needed for the detection of sound and for establishing balance.]</nowiki>
-***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
 ***** Face <nowiki>{hedId=HED_0012183} [The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.]</nowiki>
-***** Face-part <nowiki> [A part of the face.]</nowiki>
+***** Face-part <nowiki>{hedId=HED_0013203} [A part of the face.]</nowiki>
 ****** Cheek <nowiki>{hedId=HED_0012184} [The fleshy part of the face bounded by the eyes, nose, ear, and jawline.]</nowiki>
 ****** Chin <nowiki>{hedId=HED_0012185} [The part of the face below the lower lip and including the protruding part of the lower jaw.]</nowiki>
 ****** Eye <nowiki>{hedId=HED_0012186} [The organ of sight or vision.]</nowiki>
@@ -205,65 +204,66 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Eyelid <nowiki>{hedId=HED_0012188} [The folds of the skin that cover the eye when closed.]</nowiki>
 ****** Forehead <nowiki>{hedId=HED_0012189} [The part of the face between the eyebrows and the normal hairline.]</nowiki>
 ****** Lip <nowiki>{hedId=HED_0012190} [Fleshy fold which surrounds the opening of the mouth.]</nowiki>
-****** Nose <nowiki>{hedId=HED_0012192} [A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.]</nowiki>
 ****** Mouth <nowiki>{hedId=HED_0012191} [The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.]</nowiki>
-****** Mouth-part <nowiki> [A part of the mouth.]</nowiki>
+****** Mouth-part <nowiki>{hedId=HED_0013204} [A part of the mouth.]</nowiki>
 ******* Teeth <nowiki>{hedId=HED_0012193} [The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.]</nowiki>
-******* Tongue <nowiki>[A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.]</nowiki>
-**** Neck <nowiki>[The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.]</nowiki>
+******* Tongue <nowiki>{hedId=HED_0013205} [A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.]</nowiki>
+****** Nose <nowiki>{hedId=HED_0012192} [A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.]</nowiki>
+***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
+**** Lower-extremity <nowiki>{hedId=HED_0012195} [Refers to the whole inferior limb (leg and/or foot).]</nowiki>
+**** Lower-extremity-part <nowiki>{hedId=HED_0013206} [A part of the lower extremity.]</nowiki>
+***** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
+***** Foot <nowiki>{hedId=HED_0012198} [The structure found below the ankle joint required for locomotion.]</nowiki>
+***** Foot-part <nowiki>{hedId=HED_0013207} [A part of the foot.]</nowiki>
+****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
+****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
+****** Toe <nowiki>{hedId=HED_0013208} [A digit of the foot.]</nowiki>
+******* Big-toe <nowiki>{hedId=HED_0012199} [The largest toe on the inner side of the foot.]</nowiki>
+******* Little-toe <nowiki>{hedId=HED_0012202} [The smallest toe located on the outer side of the foot.]</nowiki>
+****** Toes <nowiki>{relatedTag=Toe, hedId=HED_0012203} [The terminal digits of the foot. Used to describe collective attributes of all toes, such as bending all toes]</nowiki>
+***** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
+***** Lower-leg <nowiki>{hedId=HED_0013209} [The part of the leg between the knee and the ankle.]</nowiki>
+***** Lower-leg-part <nowiki>{hedId=HED_0013210} [A part of the lower leg.]</nowiki>
+****** Calf <nowiki>{hedId=HED_0012197} [The fleshy part at the back of the leg below the knee.]</nowiki>
+****** Shin <nowiki>{hedId=HED_0012205} [Front part of the leg below the knee.]</nowiki>
+***** Upper-leg <nowiki>{hedId=HED_0013211} [The part of the leg between the hip and the knee.]</nowiki>
+***** Upper-leg-part <nowiki>{hedId=HED_0013212} [A part of the upper leg.]</nowiki>
+****** Thigh <nowiki>{hedId=HED_0012206} [Upper part of the leg between hip and knee.]</nowiki>
+**** Neck <nowiki>{hedId=HED_0013213} [The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.]</nowiki>
 **** Torso <nowiki>{hedId=HED_0012207} [The body excluding the head and neck and limbs.]</nowiki>
-**** Torso-part <nowiki> [A part of the torso.]</nowiki>
-***** Torso-chest <nowiki>{hedId=HED_0012212} [The anterior side of the thorax from the neck to the abdomen.]</nowiki>
-***** Torso-back <nowiki>{hedId=HED_0012211} [The rear surface of the human body from the shoulders to the hips.]</nowiki>
-***** Viscera <nowiki>{hedId=HED_0012213} [Internal organs of the body.]</nowiki>
-***** Abdomen <nowiki>[The part of the body between the thorax and the pelvis.]</nowiki>
-***** Navel <nowiki>[The central mark on the abdomen created by the detachment of the umbilical cord after birth.]</nowiki>
-***** Waist <nowiki>{hedId=HED_0012214} [The abdominal circumference at the navel.]</nowiki>
-***** Pelvis <nowiki>[The bony structure at the base of the spine supporting the legs.]</nowiki>
-***** Pelvis-part <nowiki> [A part of the pelvis.]</nowiki>
+**** Torso-part <nowiki>{hedId=HED_0013214} [A part of the torso.]</nowiki>
+***** Abdomen <nowiki>{hedId=HED_0013215} [The part of the body between the thorax and the pelvis.]</nowiki>
+***** Navel <nowiki>{hedId=HED_0013216} [The central mark on the abdomen created by the detachment of the umbilical cord after birth.]</nowiki>
+***** Pelvis <nowiki>{hedId=HED_0013217} [The bony structure at the base of the spine supporting the legs.]</nowiki>
+***** Pelvis-part <nowiki>{hedId=HED_0013218} [A part of the pelvis.]</nowiki>
 ****** Buttocks <nowiki>{hedId=HED_0012208} [The round fleshy parts that form the lower rear area of a human trunk.]</nowiki>
+****** Genitalia <nowiki>{hedId=HED_0013219} [The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.]</nowiki>
 ****** Gentalia <nowiki>{deprecatedFrom=8.1.0, hedId=HED_0012209} [The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.]</nowiki>
-****** Genitalia <nowiki> [The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.]</nowiki>
 ****** Hip <nowiki>{hedId=HED_0012210} [The lateral prominence of the pelvis from the waist to the thigh.]</nowiki>
+***** Torso-back <nowiki>{hedId=HED_0012211} [The rear surface of the human body from the shoulders to the hips.]</nowiki>
+***** Torso-chest <nowiki>{hedId=HED_0012212} [The anterior side of the thorax from the neck to the abdomen.]</nowiki>
+***** Viscera <nowiki>{hedId=HED_0012213} [Internal organs of the body.]</nowiki>
+***** Waist <nowiki>{hedId=HED_0012214} [The abdominal circumference at the navel.]</nowiki>
 **** Upper-extremity <nowiki>{hedId=HED_0012215} [Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).]</nowiki>
-**** Upper-extremity-part <nowiki> [A part of the upper extremity.]</nowiki>
-***** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
-***** Upper-arm <nowiki>{hedId=HED_0012228} [Portion of arm between shoulder and elbow.]</nowiki>
-***** Upper-arm-part <nowiki> [A part of the upper arm.]</nowiki>
+**** Upper-extremity-part <nowiki>{hedId=HED_0013220} [A part of the upper extremity.]</nowiki>
 ***** Elbow <nowiki>{hedId=HED_0012216} [A type of hinge joint located between the forearm and upper arm.]</nowiki>
 ***** Forearm <nowiki>{hedId=HED_0012217} [Lower part of the arm between the elbow and wrist.]</nowiki>
-***** Forearm-part <nowiki> [A part of the forearm.]</nowiki>
-***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
+***** Forearm-part <nowiki>{hedId=HED_0013221} [A part of the forearm.]</nowiki>
 ***** Hand <nowiki>{hedId=HED_0012218} [The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.]</nowiki>
-***** Hand-part <nowiki> [A part of the hand.]</nowiki>
-****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
-****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
-****** Fingers <nowiki>{relatedTag=Finger} [The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers]</nowiki>
+***** Hand-part <nowiki>{hedId=HED_0013222} [A part of the hand.]</nowiki>
 ****** Finger <nowiki>{hedId=HED_0012219} [Any of the digits of the hand.]</nowiki>
 ******* Index-finger <nowiki>{hedId=HED_0012220} [The second finger from the radial side of the hand, next to the thumb.]</nowiki>
 ******* Little-finger <nowiki>{hedId=HED_0012221} [The fifth and smallest finger from the radial side of the hand.]</nowiki>
 ******* Middle-finger <nowiki>{hedId=HED_0012222} [The middle or third finger from the radial side of the hand.]</nowiki>
 ******* Ring-finger <nowiki>{hedId=HED_0012223} [The fourth finger from the radial side of the hand.]</nowiki>
 ******* Thumb <nowiki>{hedId=HED_0012224} [The thick and short hand digit which is next to the index finger in humans.]</nowiki>
-**** Lower-extremity <nowiki>{hedId=HED_0012195} [Refers to the whole inferior limb (leg and/or foot).]</nowiki>
-**** Lower-extremity-part <nowiki> [A part of the lower extremity.]</nowiki>
-***** Upper-leg <nowiki> [The part of the leg between the hip and the knee.]</nowiki>
-***** Upper-leg-part <nowiki> [A part of the upper leg.]</nowiki>
-****** Thigh <nowiki>{hedId=HED_0012206} [Upper part of the leg between hip and knee.]</nowiki>
-***** Knee <nowiki>{hedId=HED_0012204} [A joint connecting the lower part of the femur with the upper part of the tibia.]</nowiki>
-***** Lower-leg <nowiki> [The part of the leg between the knee and the ankle.]</nowiki>
-***** Lower-leg-part <nowiki> [A part of the lower leg.]</nowiki>
-****** Shin <nowiki>{hedId=HED_0012205} [Front part of the leg below the knee.]</nowiki>
-****** Calf <nowiki>{hedId=HED_0012197} [The fleshy part at the back of the leg below the knee.]</nowiki>
-***** Ankle <nowiki>{hedId=HED_0012196} [A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.]</nowiki>
-***** Foot <nowiki>{hedId=HED_0012198} [The structure found below the ankle joint required for locomotion.]</nowiki>
-***** Foot-part <nowiki> [A part of the foot.]</nowiki>
-****** Heel <nowiki>{hedId=HED_0012200} [The back of the foot below the ankle.]</nowiki>
-****** Instep <nowiki>{hedId=HED_0012201} [The part of the foot between the ball and the heel on the inner side.]</nowiki>
-****** Toes <nowiki>{relatedTag=Toe, hedId=HED_0012203} [The terminal digits of the foot. Used to describe collective attributes of all toes, such as bending all toes]</nowiki>
-****** Toe <nowiki> [A digit of the foot.]</nowiki>
-******* Big-toe <nowiki>{hedId=HED_0012199} [The largest toe on the inner side of the foot.]</nowiki>
-******* Little-toe <nowiki>{hedId=HED_0012202} [The smallest toe located on the outer side of the foot.]</nowiki>
+****** Fingers <nowiki>{relatedTag=Finger, hedId=HED_0013223} [The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers]</nowiki>
+****** Knuckles <nowiki>{hedId=HED_0012225} [A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.]</nowiki>
+****** Palm <nowiki>{hedId=HED_0012226} [The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.]</nowiki>
+***** Shoulder <nowiki>{hedId=HED_0012227} [Joint attaching upper arm to trunk.]</nowiki>
+***** Upper-arm <nowiki>{hedId=HED_0012228} [Portion of arm between shoulder and elbow.]</nowiki>
+***** Upper-arm-part <nowiki>{hedId=HED_0013224} [A part of the upper arm.]</nowiki>
+***** Wrist <nowiki>{hedId=HED_0012229} [A joint between the distal end of the radius and the proximal row of carpal bones.]</nowiki>
 ** Organism <nowiki>{hedId=HED_0012230} [A living entity, more specifically a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).]</nowiki>
 *** Animal <nowiki>{hedId=HED_0012231} [A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement.]</nowiki>
 *** Human <nowiki>{hedId=HED_0012232} [The bipedal primate mammal Homo sapiens.]</nowiki>
@@ -335,10 +335,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Joystick <nowiki>{hedId=HED_0012298} [A control device that uses a movable handle to create two-axis input for a computer device.]</nowiki>
 ****** Keyboard <nowiki>{hedId=HED_0012299} [A device consisting of mechanical keys that are pressed to create input to a computer.]</nowiki>
 ******* Keyboard-key <nowiki>{hedId=HED_0012300} [A button on a keyboard usually representing letters, numbers, functions, or symbols.]</nowiki>
-********<nowiki># {takesValue, hedId=HED_0012301} [Value of a keyboard key.]</nowiki>
+********  <nowiki># {takesValue, hedId=HED_0012301} [Value of a keyboard key.]</nowiki>
 ****** Keypad <nowiki>{hedId=HED_0012302} [A device consisting of keys, usually in a block arrangement, that provides limited input to a system.]</nowiki>
 ******* Keypad-key <nowiki>{hedId=HED_0012303} [A key on a separate section of a computer keyboard that groups together numeric keys and those for mathematical or other special functions in an arrangement like that of a calculator.]</nowiki>
-********<nowiki># {takesValue, hedId=HED_0012304} [Value of keypad key.]</nowiki>
+********  <nowiki># {takesValue, hedId=HED_0012304} [Value of keypad key.]</nowiki>
 ****** Microphone <nowiki>{hedId=HED_0012305} [A device designed to convert sound to an electrical signal.]</nowiki>
 ****** Push-button <nowiki>{hedId=HED_0012306} [A switch designed to be operated by pressing a button.]</nowiki>
 ***** Output-device <nowiki>{hedId=HED_0012307} [Any piece of computer hardware equipment which converts information into human understandable form.]</nowiki>
@@ -510,7 +510,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Experimenter <nowiki>{hedId=HED_0012472} [Person who is the owner of the experiment and has its responsibility.]</nowiki>
 ** Agent-trait <nowiki>{hedId=HED_0012473} [A genetically, environmentally, or socially determined characteristic of an agent.]</nowiki>
 *** Age <nowiki>{hedId=HED_0012474} [Length of time elapsed time since birth of the agent.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012475}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012475}</nowiki>
 *** Agent-experience-level <nowiki>{hedId=HED_0012476} [Amount of skill or knowledge that the agent has as pertains to the task.]</nowiki>
 **** Expert-level <nowiki>{relatedTag=Intermediate-experience-level, relatedTag=Novice-level, hedId=HED_0012477} [Having comprehensive and authoritative knowledge of or skill in a particular area related to the task.]</nowiki>
 **** Intermediate-experience-level <nowiki>{relatedTag=Expert-level, relatedTag=Novice-level, hedId=HED_0012478} [Having a moderate amount of knowledge or skill related to the task.]</nowiki>
@@ -554,7 +554,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Electrode-pops-artifact <nowiki>{hedId=HED_0012516} [Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.]</nowiki>
 **** Induction-artifact <nowiki>{hedId=HED_0012517} [Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.]</nowiki>
 **** Line-noise-artifact <nowiki>{hedId=HED_0012518} [Power line noise at 50 Hz or 60 Hz.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012519}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012519}</nowiki>
 **** Salt-bridge-artifact <nowiki>{hedId=HED_0012520} [Artifact from salt-bridge between EEG electrodes.]</nowiki>
 ** Data-marker <nowiki>{hedId=HED_0012521} [An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>{hedId=HED_0012522} [An indicator place to indicate a gap in the data.]</nowiki>
@@ -567,17 +567,17 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Time-sync <nowiki>{hedId=HED_0012529} [A synchronization signal whose purpose is to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.]</nowiki>
 ** Data-resolution <nowiki>{hedId=HED_0012530} [Smallest change in a quality being measured by an sensor that causes a perceptible change.]</nowiki>
 *** Printer-resolution <nowiki>{hedId=HED_0012531} [Resolution of a printer, usually expressed as the number of dots-per-inch for a printer.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012532}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012532}</nowiki>
 *** Screen-resolution <nowiki>{hedId=HED_0012533} [Resolution of a screen, usually expressed as the of pixels in a dimension for a digital display device.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012534}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012534}</nowiki>
 *** Sensory-resolution <nowiki>{hedId=HED_0012535} [Resolution of measurements by a sensing device.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012536}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012536}</nowiki>
 *** Spatial-resolution <nowiki>{hedId=HED_0012537} [Linear spacing of a spatial measurement.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012538}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012538}</nowiki>
 *** Spectral-resolution <nowiki>{hedId=HED_0012539} [Measures the ability of a sensor to resolve features in the electromagnetic spectrum.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012540}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012540}</nowiki>
 *** Temporal-resolution <nowiki>{hedId=HED_0012541} [Measures the ability of a sensor to resolve features in time.]</nowiki>
-****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012542}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012542}</nowiki>
 ** Data-source-type <nowiki>{hedId=HED_0012543} [The type of place, person, or thing from which the data comes or can be obtained.]</nowiki>
 *** Computed-feature <nowiki>{hedId=HED_0012544} [A feature computed from the data by a tool. This tag should be grouped with a label of the form Toolname_propertyName.]</nowiki>
 *** Computed-prediction <nowiki>{hedId=HED_0012545} [A computed extrapolation of known data.]</nowiki>
@@ -662,97 +662,97 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Vertically-oriented <nowiki>{relatedTag=Horizontally-oriented, hedId=HED_0012624} [Oriented perpendicular to the plane of the horizon.]</nowiki>
 *** Physical-value <nowiki>{hedId=HED_0012625} [The value of some physical property of something.]</nowiki>
 **** Temperature <nowiki>{hedId=HED_0012626} [A measure of hot or cold based on the average kinetic energy of the atoms or molecules in the system.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, unitClass=temperatureUnits, hedId=HED_0012627}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=temperatureUnits, hedId=HED_0012627}</nowiki>
 **** Weight <nowiki>{hedId=HED_0012628} [The relative mass or the quantity of matter contained by something.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, unitClass=weightUnits, hedId=HED_0012629}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=weightUnits, hedId=HED_0012629}</nowiki>
 *** Quantitative-value <nowiki>{hedId=HED_0012630} [Something capable of being estimated or expressed with numeric values.]</nowiki>
 **** Fraction <nowiki>{hedId=HED_0012631} [A numerical value between 0 and 1.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012632}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012632}</nowiki>
 **** Item-count <nowiki>{hedId=HED_0012633} [The integer count of something which is usually grouped with the entity it is counting. (Item-count/3, A) indicates that 3 of A have occurred up to this point.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012634}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012634}</nowiki>
 **** Item-index <nowiki>{hedId=HED_0012635} [The index of an item in a collection, sequence or other structure. (A (Item-index/3, B)) means that A is item number 3 in B.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012636}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012636}</nowiki>
 **** Item-interval <nowiki>{hedId=HED_0012637} [An integer indicating how many items or entities have passed since the last one of these. An item interval of 0 indicates the current item.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012638}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012638}</nowiki>
 **** Percentage <nowiki>{hedId=HED_0012639} [A fraction or ratio with 100 understood as the denominator.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012640}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012640}</nowiki>
 **** Ratio <nowiki>{hedId=HED_0012641} [A quotient of quantities of the same kind for different components within the same system.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012642}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012642}</nowiki>
 *** Spatiotemporal-value <nowiki>{hedId=HED_0012643} [A property relating to space and/or time.]</nowiki>
 **** Rate-of-change <nowiki>{hedId=HED_0012644} [The amount of change accumulated per unit time.]</nowiki>
 ***** Acceleration <nowiki>{hedId=HED_0012645} [Magnitude of the rate of change in either speed or direction. The direction of change should be given separately.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=accelerationUnits, hedId=HED_0012646}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=accelerationUnits, hedId=HED_0012646}</nowiki>
 ***** Frequency <nowiki>{hedId=HED_0012647} [Frequency is the number of occurrences of a repeating event per unit time.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012648}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012648}</nowiki>
 ***** Jerk-rate <nowiki>{hedId=HED_0012649} [Magnitude of the rate at which the acceleration of an object changes with respect to time. The direction of change should be given separately.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=jerkUnits, hedId=HED_0012650}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=jerkUnits, hedId=HED_0012650}</nowiki>
 ***** Refresh-rate <nowiki>{hedId=HED_0012651} [The frequency with which the image on a computer monitor or similar electronic display screen is refreshed, usually expressed in hertz.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012652}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012652}</nowiki>
 ***** Sampling-rate <nowiki>{hedId=HED_0012653} [The number of digital samples taken or recorded per unit of time.]</nowiki>
-******<nowiki># {takesValue, unitClass=frequencyUnits, hedId=HED_0012654}</nowiki>
+******  <nowiki># {takesValue, unitClass=frequencyUnits, hedId=HED_0012654}</nowiki>
 ***** Speed <nowiki>{hedId=HED_0012655} [A scalar measure of the rate of movement of the object expressed either as the distance traveled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=speedUnits, hedId=HED_0012656}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=speedUnits, hedId=HED_0012656}</nowiki>
 ***** Temporal-rate <nowiki>{hedId=HED_0012657} [The number of items per unit of time.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012658}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012658}</nowiki>
 **** Spatial-value <nowiki>{hedId=HED_0012659} [Value of an item involving space.]</nowiki>
 ***** Angle <nowiki>{hedId=HED_0012660} [The amount of inclination of one line to another or the plane of one object to another.]</nowiki>
-******<nowiki># {takesValue, unitClass=angleUnits, valueClass=numericClass, hedId=HED_0012661}</nowiki>
+******  <nowiki># {takesValue, unitClass=angleUnits, valueClass=numericClass, hedId=HED_0012661}</nowiki>
 ***** Distance <nowiki>{hedId=HED_0012662} [A measure of the space separating two objects or points.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012663}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012663}</nowiki>
 ***** Position <nowiki>{hedId=HED_0012664} [A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.]</nowiki>
 ****** X-position <nowiki>{hedId=HED_0012665} [The position along the x-axis of the frame of reference.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012666}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012666}</nowiki>
 ****** Y-position <nowiki>{hedId=HED_0012667} [The position along the y-axis of the frame of reference.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012668}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012668}</nowiki>
 ****** Z-position <nowiki>{hedId=HED_0012669} [The position along the z-axis of the frame of reference.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012670}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012670}</nowiki>
 ***** Size <nowiki>{hedId=HED_0012671} [The physical magnitude of something.]</nowiki>
 ****** Area <nowiki>{hedId=HED_0012672} [The extent of a 2-dimensional surface enclosed within a boundary.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=areaUnits, hedId=HED_0012673}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=areaUnits, hedId=HED_0012673}</nowiki>
 ****** Depth <nowiki>{hedId=HED_0012674} [The distance from the surface of something especially from the perspective of looking from the front.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012675}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012675}</nowiki>
 ****** Height <nowiki>{hedId=HED_0012676} [The vertical measurement or distance from the base to the top of an object.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012677}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012677}</nowiki>
 ****** Length <nowiki>{hedId=HED_0012678} [The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012679}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012679}</nowiki>
 ****** Perimeter <nowiki>{hedId=HED_0012680} [The minimum length of paths enclosing a 2D shape.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012681}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012681}</nowiki>
 ****** Radius <nowiki>{hedId=HED_0012682} [The distance of the line from the center of a circle or a sphere to its perimeter or outer surface, respectively.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012683}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012683}</nowiki>
 ****** Volume <nowiki>{hedId=HED_0012684} [The amount of three dimensional space occupied by an object or the capacity of a space or container.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=volumeUnits, hedId=HED_0012685}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=volumeUnits, hedId=HED_0012685}</nowiki>
 ****** Width <nowiki>{hedId=HED_0012686} [The extent or measurement of something from side to side.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012687}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012687}</nowiki>
 **** Temporal-value <nowiki>{hedId=HED_0012688} [A characteristic of or relating to time or limited by time.]</nowiki>
 ***** Delay <nowiki>{topLevelTagGroup, reserved, relatedTag=Duration, hedId=HED_0012689} [The time at which an event start time is delayed from the current onset time. This tag defines the start time of an event of temporal extent and may be used with the Duration tag.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012690}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012690}</nowiki>
 ***** Duration <nowiki>{topLevelTagGroup, reserved, relatedTag=Delay, hedId=HED_0012691} [The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012692}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012692}</nowiki>
 ***** Time-interval <nowiki>{hedId=HED_0012693} [The period of time separating two instances, events, or occurrences.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012694}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012694}</nowiki>
 ***** Time-value <nowiki>{hedId=HED_0012695} [A value with units of time. Usually grouped with tags identifying what the value represents.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012696}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012696}</nowiki>
 *** Statistical-value <nowiki>{extensionAllowed, hedId=HED_0012697} [A value based on or employing the principles of statistics.]</nowiki>
 **** Data-maximum <nowiki>{hedId=HED_0012698} [The largest possible quantity or degree.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012699}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012699}</nowiki>
 **** Data-mean <nowiki>{hedId=HED_0012700} [The sum of a set of values divided by the number of values in the set.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012701}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012701}</nowiki>
 **** Data-median <nowiki>{hedId=HED_0012702} [The value which has an equal number of values greater and less than it.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012703}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012703}</nowiki>
 **** Data-minimum <nowiki>{hedId=HED_0012704} [The smallest possible quantity.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012705}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012705}</nowiki>
 **** Probability <nowiki>{hedId=HED_0012706} [A measure of the expectation of the occurrence of a particular event.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012707}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012707}</nowiki>
 **** Standard-deviation <nowiki>{hedId=HED_0012708} [A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012709}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012709}</nowiki>
 **** Statistical-accuracy <nowiki>{hedId=HED_0012710} [A measure of closeness to true value expressed as a number between 0 and 1.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012711}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012711}</nowiki>
 **** Statistical-precision <nowiki>{hedId=HED_0012712} [A quantitative representation of the degree of accuracy necessary for or associated with a particular action.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012713}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012713}</nowiki>
 **** Statistical-recall <nowiki>{hedId=HED_0012714} [Sensitivity is a measurement datum qualifying a binary classification test and is computed by subtracting the false negative rate to the integral numeral 1.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012715}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012715}</nowiki>
 **** Statistical-uncertainty <nowiki>{hedId=HED_0012716} [A measure of the inherent variability of repeated observation measurements of a quantity including quantities evaluated by statistical methods and by other means.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012717}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012717}</nowiki>
 ** Data-variability-attribute <nowiki>{hedId=HED_0012718} [An attribute describing how something changes or varies.]</nowiki>
 *** Abrupt <nowiki>{hedId=HED_0012719} [Marked by sudden change.]</nowiki>
 *** Constant <nowiki>{hedId=HED_0012720} [Continually recurring or continuing without interruption. Not changing in time or space.]</nowiki>
@@ -792,94 +792,94 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Virtual-world <nowiki>{hedId=HED_0012754} [Using technology that creates immersive, computer-generated experiences that a person can interact with and navigate through. The digital content is generally delivered to the user through some type of headset and responds to changes in head position or through interaction with other types of sensors. Existing in a virtual setting such as a simulation or game environment.]</nowiki>
 * Informational-property <nowiki>{extensionAllowed, hedId=HED_0012755} [Something that pertains to a task.]</nowiki>
 ** Description <nowiki>{hedId=HED_0012756} [An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki>
-***<nowiki># {takesValue, valueClass=textClass, hedId=HED_0012757}</nowiki>
+***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012757}</nowiki>
 ** ID <nowiki>{hedId=HED_0012758} [An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
-***<nowiki># {takesValue, valueClass=textClass, hedId=HED_0012759}</nowiki>
+***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012759}</nowiki>
 ** Label <nowiki>{hedId=HED_0012760} [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012761}</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012761}</nowiki>
 ** Metadata <nowiki>{hedId=HED_0012762} [Data about data. Information that describes another set of data.]</nowiki>
 *** Creation-date <nowiki>{hedId=HED_0012763} [The date on which the creation of this item began.]</nowiki>
-****<nowiki># {takesValue, valueClass=dateTimeClass, hedId=HED_0012764}</nowiki>
+****  <nowiki># {takesValue, valueClass=dateTimeClass, hedId=HED_0012764}</nowiki>
 *** Experimental-note <nowiki>{hedId=HED_0012765} [A brief written record about the experiment.]</nowiki>
-****<nowiki># {takesValue, valueClass=textClass, hedId=HED_0012766}</nowiki>
+****  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012766}</nowiki>
 *** Library-name <nowiki>{hedId=HED_0012767} [Official name of a HED library.]</nowiki>
-****<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012768}</nowiki>
+****  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012768}</nowiki>
 *** Metadata-identifier <nowiki>{hedId=HED_0012769} [Identifier (usually unique) from another metadata source.]</nowiki>
 **** CogAtlas <nowiki>{hedId=HED_0012770} [The Cognitive Atlas ID number of something.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012771}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012771}</nowiki>
 **** CogPo <nowiki>{hedId=HED_0012772} [The CogPO ID number of something.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012773}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012773}</nowiki>
 **** DOI <nowiki>{hedId=HED_0012774} [Digital object identifier for an object.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012775}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012775}</nowiki>
 **** OBO-identifier <nowiki>{hedId=HED_0012776} [The identifier of a term in some Open Biology Ontology (OBO) ontology.]</nowiki>
-*****<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012777}</nowiki>
+*****  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012777}</nowiki>
 **** Species-identifier <nowiki>{hedId=HED_0012778} [A binomial species name from the NCBI Taxonomy, for example, homo sapiens, mus musculus, or rattus norvegicus.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012779}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012779}</nowiki>
 **** Subject-identifier <nowiki>{hedId=HED_0012780} [A sequence of characters used to identify, name, or characterize a trial or study subject.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012781}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012781}</nowiki>
 **** UUID <nowiki>{hedId=HED_0012782} [A unique universal identifier.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012783}</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012783}</nowiki>
 **** Version-identifier <nowiki>{hedId=HED_0012784} [An alphanumeric character string that identifies a form or variant of a type or original.]</nowiki>
-*****<nowiki># {takesValue, hedId=HED_0012785} [Usually is a semantic version.]</nowiki>
+*****  <nowiki># {takesValue, hedId=HED_0012785} [Usually is a semantic version.]</nowiki>
 *** Modified-date <nowiki>{hedId=HED_0012786} [The date on which the item was modified (usually the last-modified data unless a complete record of dated modifications is kept.]</nowiki>
-****<nowiki># {takesValue, valueClass=dateTimeClass, hedId=HED_0012787}</nowiki>
+****  <nowiki># {takesValue, valueClass=dateTimeClass, hedId=HED_0012787}</nowiki>
 *** Pathname <nowiki>{hedId=HED_0012788} [The specification of a node (file or directory) in a hierarchical file system, usually specified by listing the nodes top-down.]</nowiki>
-****<nowiki># {takesValue, hedId=HED_0012789}</nowiki>
+****  <nowiki># {takesValue, hedId=HED_0012789}</nowiki>
 *** URL <nowiki>{hedId=HED_0012790} [A valid URL.]</nowiki>
-****<nowiki># {takesValue, hedId=HED_0012791}</nowiki>
+****  <nowiki># {takesValue, hedId=HED_0012791}</nowiki>
 ** Parameter <nowiki>{hedId=HED_0012792} [Something user-defined for this experiment.]</nowiki>
 *** Parameter-label <nowiki>{hedId=HED_0012793} [The name of the parameter.]</nowiki>
-****<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012794}</nowiki>
+****  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012794}</nowiki>
 *** Parameter-value <nowiki>{hedId=HED_0012795} [The value of the parameter.]</nowiki>
-****<nowiki># {takesValue, valueClass=textClass, hedId=HED_0012796}</nowiki>
+****  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012796}</nowiki>
 * Organizational-property <nowiki>{hedId=HED_0012797} [Relating to an organization or the action of organizing something.]</nowiki>
 ** Collection <nowiki>{reserved, hedId=HED_0012798} [A tag designating a grouping of items such as in a set or list.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012799} [Name of the collection.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012799} [Name of the collection.]</nowiki>
 ** Condition-variable <nowiki>{reserved, hedId=HED_0012800} [An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012801} [Name of the condition variable.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012801} [Name of the condition variable.]</nowiki>
 ** Control-variable <nowiki>{reserved, hedId=HED_0012802} [An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012803} [Name of the control variable.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012803} [Name of the control variable.]</nowiki>
 ** Def <nowiki>{requireChild, reserved, hedId=HED_0012804} [A HED-specific utility tag used with a defined name to represent the tags associated with that definition.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012805} [Name of the definition.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012805} [Name of the definition.]</nowiki>
 ** Def-expand <nowiki>{requireChild, reserved, tagGroup, hedId=HED_0012806} [A HED specific utility tag that is grouped with an expanded definition. The child value of the Def-expand is the name of the expanded definition.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012807}</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012807}</nowiki>
 ** Definition <nowiki>{requireChild, reserved, topLevelTagGroup, hedId=HED_0012808} [A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012809} [Name of the definition.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012809} [Name of the definition.]</nowiki>
 ** Event-context <nowiki>{reserved, topLevelTagGroup, unique, hedId=HED_0012810} [A special HED tag inserted as part of a top-level tag group to contain information about the interrelated conditions under which the event occurs. The event context includes information about other events that are ongoing when this event happens.]</nowiki>
 ** Event-stream <nowiki>{reserved, hedId=HED_0012811} [A special HED tag indicating that this event is a member of an ordered succession of events.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012812} [Name of the event stream.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012812} [Name of the event stream.]</nowiki>
 ** Experimental-intertrial <nowiki>{reserved, hedId=HED_0012813} [A tag used to indicate a part of the experiment between trials usually where nothing is happening.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012814} [Optional label for the intertrial block.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012814} [Optional label for the intertrial block.]</nowiki>
 ** Experimental-trial <nowiki>{reserved, hedId=HED_0012815} [Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012816} [Optional label for the trial (often a numerical string).]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012816} [Optional label for the trial (often a numerical string).]</nowiki>
 ** Indicator-variable <nowiki>{reserved, hedId=HED_0012817} [An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012818} [Name of the indicator variable.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012818} [Name of the indicator variable.]</nowiki>
 ** Recording <nowiki>{reserved, hedId=HED_0012819} [A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012820} [Optional label for the recording.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012820} [Optional label for the recording.]</nowiki>
 ** Task <nowiki>{reserved, hedId=HED_0012821} [An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012822} [Optional label for the task block.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012822} [Optional label for the task block.]</nowiki>
 ** Time-block <nowiki>{reserved, hedId=HED_0012823} [A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.]</nowiki>
-***<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012824} [Optional label for the task block.]</nowiki>
+***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012824} [Optional label for the task block.]</nowiki>
 * Sensory-property <nowiki>{hedId=HED_0012825} [Relating to sensation or the physical senses.]</nowiki>
 ** Sensory-attribute <nowiki>{hedId=HED_0012826} [A sensory characteristic associated with another entity.]</nowiki>
 *** Auditory-attribute <nowiki>{hedId=HED_0012827} [Pertaining to the sense of hearing.]</nowiki>
 **** Loudness <nowiki>{hedId=HED_0012828} [Perceived intensity of a sound.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, valueClass=nameClass, hedId=HED_0012829}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, valueClass=nameClass, hedId=HED_0012829}</nowiki>
 **** Pitch <nowiki>{hedId=HED_0012830} [A perceptual property that allows the user to order sounds on a frequency scale.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012831}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012831}</nowiki>
 **** Sound-envelope <nowiki>{hedId=HED_0012832} [Description of how a sound changes over time.]</nowiki>
 ***** Sound-envelope-attack <nowiki>{hedId=HED_0012833} [The time taken for initial run-up of level from nil to peak usually beginning when the key on a musical instrument is pressed.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012834}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012834}</nowiki>
 ***** Sound-envelope-decay <nowiki>{hedId=HED_0012835} [The time taken for the subsequent run down from the attack level to the designated sustain level.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012836}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012836}</nowiki>
 ***** Sound-envelope-release <nowiki>{hedId=HED_0012837} [The time taken for the level to decay from the sustain level to zero after the key is released.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012838}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012838}</nowiki>
 ***** Sound-envelope-sustain <nowiki>{hedId=HED_0012839} [The time taken for the main sequence of the sound duration, until the key is released.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012840}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012840}</nowiki>
 **** Sound-volume <nowiki>{hedId=HED_0012841} [The sound pressure level (SPL) usually the ratio to a reference signal estimated as the lower bound of hearing.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, unitClass=intensityUnits, hedId=HED_0012842}</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=intensityUnits, hedId=HED_0012842}</nowiki>
 **** Timbre <nowiki>{hedId=HED_0012843} [The perceived sound quality of a singing voice or musical instrument.]</nowiki>
-*****<nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012844}</nowiki>
+*****  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012844}</nowiki>
 *** Gustatory-attribute <nowiki>{hedId=HED_0012845} [Pertaining to the sense of taste.]</nowiki>
 **** Bitter <nowiki>{hedId=HED_0012846} [Having a sharp, pungent taste.]</nowiki>
 **** Salty <nowiki>{hedId=HED_0012847} [Tasting of or like salt.]</nowiki>
@@ -1055,24 +1055,24 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Dark-shade <nowiki>{hedId=HED_0013017} [A color tone not reflecting much light.]</nowiki>
 ****** Light-shade <nowiki>{hedId=HED_0013018} [A color tone reflecting more light.]</nowiki>
 ***** Grayscale <nowiki>{hedId=HED_0013019} [Using a color map composed of shades of gray, varying from black at the weakest intensity to white at the strongest.]</nowiki>
-******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013020} [White intensity between 0 and 1.]</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013020} [White intensity between 0 and 1.]</nowiki>
 ***** HSV-color <nowiki>{hedId=HED_0013021} [A color representation that models how colors appear under light.]</nowiki>
 ****** HSV-value <nowiki>{hedId=HED_0013022} [An attribute of a visual sensation according to which an area appears to emit more or less light.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013023}</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013023}</nowiki>
 ****** Hue <nowiki>{hedId=HED_0013024} [Attribute of a visual sensation according to which an area appears to be similar to one of the perceived colors.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013025} [Angular value between 0 and 360.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013025} [Angular value between 0 and 360.]</nowiki>
 ****** Saturation <nowiki>{hedId=HED_0013026} [Colorfulness of a stimulus relative to its own brightness.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013027} [B value of RGB between 0 and 1.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013027} [B value of RGB between 0 and 1.]</nowiki>
 ***** RGB-color <nowiki>{hedId=HED_0013028} [A color from the RGB schema.]</nowiki>
 ****** RGB-blue <nowiki>{hedId=HED_0013029} [The blue component.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013030} [B value of RGB between 0 and 1.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013030} [B value of RGB between 0 and 1.]</nowiki>
 ****** RGB-green <nowiki>{hedId=HED_0013031} [The green component.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013032} [G value of RGB between 0 and 1.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013032} [G value of RGB between 0 and 1.]</nowiki>
 ****** RGB-red <nowiki>{hedId=HED_0013033} [The red component.]</nowiki>
-*******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013034} [R value of RGB between 0 and 1.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013034} [R value of RGB between 0 and 1.]</nowiki>
 **** Luminance <nowiki>{hedId=HED_0013035} [A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.]</nowiki>
 **** Luminance-contrast <nowiki>{suggestedTag=Percentage, suggestedTag=Ratio, hedId=HED_0013036} [The difference in luminance in specific portions of a scene or image.]</nowiki>
-*****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013037} [A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013037} [A non-negative value, usually in the range 0 to 1 or alternative 0 to 100, if representing a percentage.]</nowiki>
 **** Opacity <nowiki>{hedId=HED_0013038} [A measure of impenetrability to light.]</nowiki>
 ** Sensory-presentation <nowiki>{hedId=HED_0013039} [The entity has a sensory manifestation.]</nowiki>
 *** Auditory-presentation <nowiki>{hedId=HED_0013040} [The sense of hearing is used in the presentation to the user.]</nowiki>
@@ -1140,7 +1140,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Primary-subtask <nowiki>{hedId=HED_0013102} [A part of the task which should be the primary focus of the participant.]</nowiki>
 ** Task-stimulus-role <nowiki>{hedId=HED_0013103} [The role the stimulus plays in the task.]</nowiki>
 *** Cue <nowiki>{hedId=HED_0013104} [A signal for an action, a pattern of stimuli indicating a particular response.]</nowiki>
-*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychologica studies this is sometimes referred to as a foil.]</nowiki>
+*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
 *** Feedback <nowiki>{hedId=HED_0013108} [An evaluative response to an inquiry, process, event, or activity.]</nowiki>
@@ -1237,165 +1237,164 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Synchronous-with <nowiki>{hedId=HED_0013198} [(A, (Synchronous-with, B)) means A happens at occurs at the same time or rate as B.]</nowiki>
 ** Waiting-for <nowiki>{hedId=HED_0013199} [(A, (Waiting-for, B)) means A pauses for something to happen in B.]</nowiki>
 
-!# end schema 
 
-'''Unit classes''' <nowiki>[Unit classes and the units for the nodes.]</nowiki>
-* accelerationUnits <nowiki>{hedId=HED_0011500, defaultUnits=m-per-s^2}</nowiki>
-** m-per-s^2 <nowiki>{hedId=HED_0011600, SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
-* angleUnits <nowiki>{hedId=HED_0011501, defaultUnits=radian}</nowiki>
-** radian <nowiki>{hedId=HED_0011601, SIUnit, conversionFactor=1.0}</nowiki>
-** rad <nowiki>{hedId=HED_0011602, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** degree <nowiki>{hedId=HED_0011603, conversionFactor=0.0174533}</nowiki>
-* areaUnits <nowiki>{hedId=HED_0011502, defaultUnits=m^2}</nowiki>
-** m^2 <nowiki>{hedId=HED_0011604, SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
-* currencyUnits <nowiki>{hedId=HED_0011503, defaultUnits=$}[Units indicating the worth of something.]</nowiki>
-** dollar <nowiki>{hedId=HED_0011605, conversionFactor=1.0}</nowiki>
-** $ <nowiki>{hedId=HED_0011606, unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar}</nowiki>
-** euro <nowiki>{hedId=HED_0011607}[The official currency of a large subset of member countries of the European Union.]</nowiki>
-** point <nowiki>{hedId=HED_0011608}[An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
-* electricPotentialUnits <nowiki>{hedId=HED_0011504, defaultUnits=uv}</nowiki>
-** v <nowiki>{hedId=HED_0011609, SIUnit, unitSymbol, conversionFactor=0.000001}</nowiki>
-** uv <nowiki>{hedId=0011644, conversionFactor=1.0}[Added as a direct unit because it is the default unit.]</nowiki>
-** Volt <nowiki>{hedId=HED_0011610, SIUnit, conversionFactor=0.000001}</nowiki>
-* frequencyUnits <nowiki>{hedId=HED_0011505, defaultUnits=Hz}</nowiki>
-** hertz<nowiki>{hedId=HED_0011611, SIUnit, conversionFactor=1.0}</nowiki>
-** Hz <nowiki>{hedId=HED_0011612, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-* intensityUnits <nowiki>{hedId=HED_0011506, defaultUnits=dB}</nowiki>
-** dB <nowiki>{hedId=HED_0011613, unitSymbol, conversionFactor=1.0}[Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
-** candela <nowiki>{hedId=HED_0011614, SIUnit}[Units used to express light intensity.]</nowiki>
-** cd <nowiki>{hedId=HED_0011615, SIUnit, unitSymbol}[Units used to express light intensity.]</nowiki>
-* jerkUnits <nowiki>{hedId=HED_0011507, defaultUnits=m-per-s^3}</nowiki>
-** m-per-s^3 <nowiki>{hedId=HED_0011616, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
-* magneticFieldUnits <nowiki>{hedId=HED_0011508, defaultUnits=T}</nowiki>
-** tesla <nowiki>{hedId=HED_0011617, SIUnit, conversionFactor=10e-15}</nowiki>
-** T <nowiki>{hedId=HED_0011618, SIUnit, unitSymbol, conversionFactor=10e-15}</nowiki>
-* memorySizeUnits <nowiki>{hedId=HED_0011509, defaultUnits=B}</nowiki>
-** byte <nowiki>{hedId=HED_0011619, SIUnit, conversionFactor=1.0}</nowiki>
-** B <nowiki>{hedId=HED_0011620, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-* physicalLengthUnits <nowiki>{hedId=HED_0011510, defaultUnits=m}</nowiki>
-** foot <nowiki>{hedId=HED_0011621, conversionFactor=0.3048}</nowiki>
-** inch <nowiki>{hedId=HED_0011622, conversionFactor=0.0254}</nowiki>
-** meter <nowiki>{hedId=HED_0011623, SIUnit, conversionFactor=1.0}</nowiki>
-** metre <nowiki>{hedId=HED_0011624, SIUnit, conversionFactor=1.0}</nowiki>
-** m <nowiki>{hedId=HED_0011625, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** mile <nowiki>{hedId=HED_0011626, conversionFactor=1609.34}</nowiki>
-* speedUnits <nowiki>{hedId=HED_0011511, defaultUnits=m-per-s}</nowiki>
-** m-per-s <nowiki>{hedId=HED_0011627, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** mph <nowiki>{hedId=HED_0011628, unitSymbol, conversionFactor=0.44704}</nowiki>
-** kph <nowiki>{hedId=HED_0011629, unitSymbol, conversionFactor=0.277778}</nowiki>
-* temperatureUnits <nowiki>{hedId=HED_0011512, defaultUnits=degree-Celsius}</nowiki>
-** degree-Celsius <nowiki>{hedId=HED_0011630, SIUnit, conversionFactor=1.0}</nowiki>
-** degree Celsius <nowiki>{hedId=HED_0011631, deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0}[Units are not allowed to have spaces. Use degree-Celsius or oC instead.]</nowiki>
-** oC <nowiki>{hedId=HED_0011632, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-* timeUnits <nowiki>{hedId=HED_0011513, defaultUnits=s}</nowiki>
-** second <nowiki>{hedId=HED_0011633, SIUnit, conversionFactor=1.0}</nowiki>
-** s <nowiki>{hedId=HED_0011634, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** day <nowiki>{hedId=HED_0011635, conversionFactor=86400}</nowiki>
+!# end schema
+
+'''Unit classes'''
+* accelerationUnits <nowiki>{defaultUnits=m-per-s^2, hedId=HED_0011500}</nowiki>
+** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011600}</nowiki>
+* angleUnits <nowiki>{defaultUnits=radian, hedId=HED_0011501}</nowiki>
+** radian <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011601}</nowiki>
+** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011602}</nowiki>
+** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
+* areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502}</nowiki>
+** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
+* currencyUnits <nowiki>{defaultUnits=$, hedId=HED_0011503} [Units indicating the worth of something.]</nowiki>
+** dollar <nowiki>{conversionFactor=1.0, hedId=HED_0011605}</nowiki>
+** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar, hedId=HED_0011606}</nowiki>
+** euro <nowiki>{hedId=HED_0011607} [The official currency of a large subset of member countries of the European Union.]</nowiki>
+** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
+* electricPotentialUnits <nowiki>{defaultUnits=uv, hedId=HED_0011504}</nowiki>
+** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001, hedId=HED_0011609}</nowiki>
+** uv <nowiki>{conversionFactor=1.0, hedId=0011644} [Added as a direct unit because it is the default unit.]</nowiki>
+** Volt <nowiki>{SIUnit, conversionFactor=0.000001, hedId=HED_0011610}</nowiki>
+* frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
+** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
+** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011612}</nowiki>
+* intensityUnits <nowiki>{defaultUnits=dB, hedId=HED_0011506}</nowiki>
+** dB <nowiki>{unitSymbol, conversionFactor=1.0, hedId=HED_0011613} [Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
+** candela <nowiki>{SIUnit, hedId=HED_0011614} [Units used to express light intensity.]</nowiki>
+** cd <nowiki>{SIUnit, unitSymbol, hedId=HED_0011615} [Units used to express light intensity.]</nowiki>
+* jerkUnits <nowiki>{defaultUnits=m-per-s^3, hedId=HED_0011507}</nowiki>
+** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
+* magneticFieldUnits <nowiki>{defaultUnits=T, hedId=HED_0011508}</nowiki>
+** tesla <nowiki>{SIUnit, conversionFactor=10e-15, hedId=HED_0011617}</nowiki>
+** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10e-15, hedId=HED_0011618}</nowiki>
+* memorySizeUnits <nowiki>{defaultUnits=B, hedId=HED_0011509}</nowiki>
+** byte <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011619}</nowiki>
+** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011620}</nowiki>
+* physicalLengthUnits <nowiki>{defaultUnits=m, hedId=HED_0011510}</nowiki>
+** foot <nowiki>{conversionFactor=0.3048, hedId=HED_0011621}</nowiki>
+** inch <nowiki>{conversionFactor=0.0254, hedId=HED_0011622}</nowiki>
+** meter <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011623}</nowiki>
+** metre <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011624}</nowiki>
+** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011625}</nowiki>
+** mile <nowiki>{conversionFactor=1609.34, hedId=HED_0011626}</nowiki>
+* speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511}</nowiki>
+** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011627}</nowiki>
+** mph <nowiki>{unitSymbol, conversionFactor=0.44704, hedId=HED_0011628}</nowiki>
+** kph <nowiki>{unitSymbol, conversionFactor=0.277778, hedId=HED_0011629}</nowiki>
+* temperatureUnits <nowiki>{defaultUnits=degree-Celsius, hedId=HED_0011512}</nowiki>
+** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011630}</nowiki>
+** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0, hedId=HED_0011631} [Units are not allowed to have spaces. Use degree-Celsius or oC instead.]</nowiki>
+** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011632}</nowiki>
+* timeUnits <nowiki>{defaultUnits=s, hedId=HED_0011513}</nowiki>
+** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
+** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
+** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
 ** month <nowiki>{hedId=HED_00645}</nowiki>
-** minute <nowiki>{hedId=HED_0011636, conversionFactor=60}</nowiki>
-** hour <nowiki>{hedId=HED_0011637, conversionFactor=3600}[Should be in 24-hour format.]</nowiki>
-** year <nowiki>{hedId=HED_0011638}[Years do not have a constant conversion factor to seconds.]</nowiki>
-* volumeUnits <nowiki>{hedId=HED_0011514, defaultUnits=m^3}</nowiki>
-** m^3 <nowiki>{hedId=HED_0011639, SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret}</nowiki>
-* weightUnits <nowiki>{hedId=HED_0011515, defaultUnits=g}</nowiki>
-** g <nowiki>{hedId=HED_0011640, SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** gram <nowiki>{hedId=HED_0011641, SIUnit, conversionFactor=1.0}</nowiki>
-** pound <nowiki>{hedId=HED_0011642, conversionFactor=453.592}</nowiki>
-** lb <nowiki>{hedId=HED_0011643, conversionFactor=453.592}</nowiki>
+** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
+** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
+** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
+* volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514}</nowiki>
+** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011639}</nowiki>
+* weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515}</nowiki>
+** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011640}</nowiki>
+** gram <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011641}</nowiki>
+** pound <nowiki>{conversionFactor=453.592, hedId=HED_0011642}</nowiki>
+** lb <nowiki>{conversionFactor=453.592, hedId=HED_0011643}</nowiki>
 
+'''Unit modifiers'''
+* deca <nowiki>{SIUnitModifier, conversionFactor=10.0, hedId=HED_0011400} [SI unit multiple representing 10e1.]</nowiki>
+* da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0, hedId=HED_0011401} [SI unit multiple representing 10e1.]</nowiki>
+* hecto <nowiki>{SIUnitModifier, conversionFactor=100.0, hedId=HED_0011402} [SI unit multiple representing 10e2.]</nowiki>
+* h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0, hedId=HED_0011403} [SI unit multiple representing 10e2.]</nowiki>
+* kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0, hedId=HED_0011404} [SI unit multiple representing 10e3.]</nowiki>
+* k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0, hedId=HED_0011405} [SI unit multiple representing 10e3.]</nowiki>
+* mega <nowiki>{SIUnitModifier, conversionFactor=10e6, hedId=HED_0011406} [SI unit multiple representing 10e6.]</nowiki>
+* M <nowiki>{SIUnitSymbolModifier, conversionFactor=10e6, hedId=HED_0011407} [SI unit multiple representing 10e6.]</nowiki>
+* giga <nowiki>{SIUnitModifier, conversionFactor=10e9, hedId=HED_0011408} [SI unit multiple representing 10e9.]</nowiki>
+* G <nowiki>{SIUnitSymbolModifier, conversionFactor=10e9, hedId=HED_0011409} [SI unit multiple representing 10e9.]</nowiki>
+* tera <nowiki>{SIUnitModifier, conversionFactor=10e12, hedId=HED_0011410} [SI unit multiple representing 10e12.]</nowiki>
+* T <nowiki>{SIUnitSymbolModifier, conversionFactor=10e12, hedId=HED_0011411} [SI unit multiple representing 10e12.]</nowiki>
+* peta <nowiki>{SIUnitModifier, conversionFactor=10e15, hedId=HED_0011412} [SI unit multiple representing 10e15.]</nowiki>
+* P <nowiki>{SIUnitSymbolModifier, conversionFactor=10e15, hedId=HED_0011413} [SI unit multiple representing 10e15.]</nowiki>
+* exa <nowiki>{SIUnitModifier, conversionFactor=10e18, hedId=HED_0011414} [SI unit multiple representing 10e18.]</nowiki>
+* E <nowiki>{SIUnitSymbolModifier, conversionFactor=10e18, hedId=HED_0011415} [SI unit multiple representing 10e18.]</nowiki>
+* zetta <nowiki>{SIUnitModifier, conversionFactor=10e21, hedId=HED_0011416} [SI unit multiple representing 10e21.]</nowiki>
+* Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e21, hedId=HED_0011417} [SI unit multiple representing 10e21.]</nowiki>
+* yotta <nowiki>{SIUnitModifier, conversionFactor=10e24, hedId=HED_0011418} [SI unit multiple representing 10e24.]</nowiki>
+* Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e24, hedId=HED_0011419} [SI unit multiple representing 10e24.]</nowiki>
+* deci <nowiki>{SIUnitModifier, conversionFactor=0.1, hedId=HED_0011420} [SI unit submultiple representing 10e-1.]</nowiki>
+* d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1, hedId=HED_0011421} [SI unit submultiple representing 10e-1.]</nowiki>
+* centi <nowiki>{SIUnitModifier, conversionFactor=0.01, hedId=HED_0011422} [SI unit submultiple representing 10e-2.]</nowiki>
+* c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01, hedId=HED_0011423} [SI unit submultiple representing 10e-2.]</nowiki>
+* milli <nowiki>{SIUnitModifier, conversionFactor=0.001, hedId=HED_0011424} [SI unit submultiple representing 10e-3.]</nowiki>
+* m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001, hedId=HED_0011425} [SI unit submultiple representing 10e-3.]</nowiki>
+* micro <nowiki>{SIUnitModifier, conversionFactor=10e-6, hedId=HED_0011426} [SI unit submultiple representing 10e-6.]</nowiki>
+* u <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-6, hedId=HED_0011427} [SI unit submultiple representing 10e-6.]</nowiki>
+* nano <nowiki>{SIUnitModifier, conversionFactor=10e-9, hedId=HED_0011428} [SI unit submultiple representing 10e-9.]</nowiki>
+* n <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-9, hedId=HED_0011429} [SI unit submultiple representing 10e-9.]</nowiki>
+* pico <nowiki>{SIUnitModifier, conversionFactor=10e-12, hedId=HED_0011430} [SI unit submultiple representing 10e-12.]</nowiki>
+* p <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-12, hedId=HED_0011431} [SI unit submultiple representing 10e-12.]</nowiki>
+* femto <nowiki>{SIUnitModifier, conversionFactor=10e-15, hedId=HED_0011432} [SI unit submultiple representing 10e-15.]</nowiki>
+* f <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-15, hedId=HED_0011433} [SI unit submultiple representing 10e-15.]</nowiki>
+* atto <nowiki>{SIUnitModifier, conversionFactor=10e-18, hedId=HED_0011434} [SI unit submultiple representing 10e-18.]</nowiki>
+* a <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-18, hedId=HED_0011435} [SI unit submultiple representing 10e-18.]</nowiki>
+* zepto <nowiki>{SIUnitModifier, conversionFactor=10e-21, hedId=HED_0011436} [SI unit submultiple representing 10e-21.]</nowiki>
+* z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-21, hedId=HED_0011437} [SI unit submultiple representing 10e-21.]</nowiki>
+* yocto <nowiki>{SIUnitModifier, conversionFactor=10e-24, hedId=HED_0011438} [SI unit submultiple representing 10e-24.]</nowiki>
+* y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-24, hedId=HED_0011439} [SI unit submultiple representing 10e-24.]</nowiki>
 
-'''Unit modifiers''' <nowiki>[Unit multiples and submultiples.]</nowiki>
-* deca <nowiki>{hedId=HED_0011400, SIUnitModifier, conversionFactor=10.0} [SI unit multiple representing 10e1.]</nowiki>
-* da <nowiki>{hedId=HED_0011401,SIUnitSymbolModifier, conversionFactor=10.0} [SI unit multiple representing 10e1.]</nowiki>
-* hecto <nowiki>{hedId=HED_0011402,SIUnitModifier, conversionFactor=100.0} [SI unit multiple representing 10e2.]</nowiki>
-* h <nowiki>{hedId=HED_0011403,SIUnitSymbolModifier, conversionFactor=100.0} [SI unit multiple representing 10e2.]</nowiki>
-* kilo <nowiki>{hedId=HED_0011404, SIUnitModifier, conversionFactor=1000.0} [SI unit multiple representing 10e3.]</nowiki>
-* k <nowiki>{hedId=HED_0011405, SIUnitSymbolModifier, conversionFactor=1000.0} [SI unit multiple representing 10e3.]</nowiki>
-* mega <nowiki>{hedId=HED_0011406, SIUnitModifier, conversionFactor=10e6} [SI unit multiple representing 10e6.]</nowiki>
-* M <nowiki>{hedId=HED_0011407, SIUnitSymbolModifier, conversionFactor=10e6} [SI unit multiple representing 10e6.]</nowiki>
-* giga <nowiki>{hedId=HED_0011408, SIUnitModifier, conversionFactor=10e9} [SI unit multiple representing 10e9.]</nowiki>
-* G <nowiki>{hedId=HED_0011409, SIUnitSymbolModifier, conversionFactor=10e9} [SI unit multiple representing 10e9.]</nowiki>
-* tera <nowiki>{hedId=HED_0011410, SIUnitModifier, conversionFactor=10e12} [SI unit multiple representing 10e12.]</nowiki>
-* T <nowiki>{hedId=HED_0011411, SIUnitSymbolModifier, conversionFactor=10e12} [SI unit multiple representing 10e12.]</nowiki>
-* peta <nowiki>{hedId=HED_0011412, SIUnitModifier, conversionFactor=10e15} [SI unit multiple representing 10e15.]</nowiki>
-* P <nowiki>{hedId=HED_0011413, SIUnitSymbolModifier, conversionFactor=10e15} [SI unit multiple representing 10e15.]</nowiki>
-* exa <nowiki>{hedId=HED_0011414, SIUnitModifier, conversionFactor=10e18} [SI unit multiple representing 10e18.]</nowiki>
-* E <nowiki>{hedId=HED_0011415, SIUnitSymbolModifier, conversionFactor=10e18} [SI unit multiple representing 10e18.]</nowiki>
-* zetta <nowiki>{hedId=HED_0011416, SIUnitModifier, conversionFactor=10e21} [SI unit multiple representing 10e21.]</nowiki>
-* Z <nowiki>{hedId=HED_0011417, SIUnitSymbolModifier, conversionFactor=10e21} [SI unit multiple representing 10e21.]</nowiki>
-* yotta <nowiki>{hedId=HED_0011418, SIUnitModifier, conversionFactor=10e24} [SI unit multiple representing 10e24.]</nowiki>
-* Y <nowiki>{hedId=HED_0011419, SIUnitSymbolModifier, conversionFactor=10e24} [SI unit multiple representing 10e24.]</nowiki>
-* deci <nowiki>{hedId=HED_0011420, SIUnitModifier, conversionFactor=0.1}[SI unit submultiple representing 10e-1.]</nowiki>
-* d <nowiki>{hedId=HED_0011421, SIUnitSymbolModifier, conversionFactor=0.1} [SI unit submultiple representing 10e-1.]</nowiki>
-* centi <nowiki>{hedId=HED_0011422, SIUnitModifier, conversionFactor=0.01} [SI unit submultiple representing 10e-2.]</nowiki>
-* c <nowiki>{hedId=HED_0011423, SIUnitSymbolModifier, conversionFactor=0.01} [SI unit submultiple representing 10e-2.]</nowiki>
-* milli <nowiki>{hedId=HED_0011424, SIUnitModifier, conversionFactor=0.001} [SI unit submultiple representing 10e-3.]</nowiki>
-* m <nowiki>{hedId=HED_0011425, SIUnitSymbolModifier, conversionFactor=0.001} [SI unit submultiple representing 10e-3.]</nowiki>
-* micro <nowiki>{hedId=HED_0011426, SIUnitModifier, conversionFactor=10e-6} [SI unit submultiple representing 10e-6.]</nowiki>
-* u <nowiki>{hedId=HED_0011427, SIUnitSymbolModifier, conversionFactor=10e-6} [SI unit submultiple representing 10e-6.]</nowiki>
-* nano <nowiki>{hedId=HED_0011428, SIUnitModifier, conversionFactor=10e-9} [SI unit submultiple representing 10e-9.]</nowiki>
-* n <nowiki>{hedId=HED_0011429, SIUnitSymbolModifier, conversionFactor=10e-9} [SI unit submultiple representing 10e-9.]</nowiki>
-* pico <nowiki>{hedId=HED_0011430, SIUnitModifier, conversionFactor=10e-12} [SI unit submultiple representing 10e-12.]</nowiki>
-* p <nowiki>{hedId=HED_0011431, SIUnitSymbolModifier, conversionFactor=10e-12} [SI unit submultiple representing 10e-12.]</nowiki>
-* femto <nowiki>{hedId=HED_0011432, SIUnitModifier, conversionFactor=10e-15} [SI unit submultiple representing 10e-15.]</nowiki>
-* f <nowiki>{hedId=HED_0011433, SIUnitSymbolModifier, conversionFactor=10e-15} [SI unit submultiple representing 10e-15.]</nowiki>
-* atto <nowiki>{hedId=HED_0011434, SIUnitModifier, conversionFactor=10e-18} [SI unit submultiple representing 10e-18.]</nowiki>
-* a <nowiki>{hedId=HED_0011435, SIUnitSymbolModifier, conversionFactor=10e-18} [SI unit submultiple representing 10e-18.]</nowiki>
-* zepto <nowiki>{hedId=HED_0011436, SIUnitModifier, conversionFactor=10e-21} [SI unit submultiple representing 10e-21.]</nowiki>
-* z <nowiki>{hedId=HED_0011437, SIUnitSymbolModifier, conversionFactor=10e-21} [SI unit submultiple representing 10e-21.]</nowiki>
-* yocto <nowiki>{hedId=HED_0011438, SIUnitModifier, conversionFactor=10e-24} [SI unit submultiple representing 10e-24.]</nowiki>
-* y <nowiki>{hedId=HED_0011439, SIUnitSymbolModifier, conversionFactor=10e-24} [SI unit submultiple representing 10e-24.]</nowiki>
+'''Value classes'''
+* dateTimeClass <nowiki>{allowedCharacter=digits, allowedCharacter=T, allowedCharacter=hyphen, allowedCharacter=colon, hedId=HED_0011301} [Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
+* nameClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=underscore, allowedCharacter=hyphen, hedId=HED_0011302} [Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
+* numericClass <nowiki>{allowedCharacter=digits, allowedCharacter=E, allowedCharacter=e, allowedCharacter=plus, allowedCharacter=hyphen, allowedCharacter=period, hedId=HED_0011303} [Value must be a valid numerical value.]</nowiki>
+* posixPath <nowiki>{allowedCharacter=digits, allowedCharacter=letters, allowedCharacter=slash, allowedCharacter=colon, hedId=HED_0011304} [Posix path specification.]</nowiki>
+* textClass <nowiki>{allowedCharacter=text, hedId=HED_0011305} [Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
 
+'''Schema attributes'''
+* hedId <nowiki>{elementDomain, stringRange, hedId=HED_0010308, annotationProperty} [The unique identifier of this element in the HED namespace.]</nowiki>
+* requireChild <nowiki>{tagDomain, boolRange, hedId=HED_0010501, annotationProperty} [This tag must have a descendent.]</nowiki>
+* rooted <nowiki>{tagDomain, tagRange, hedId=HED_0010502, annotationProperty} [This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
+* takesValue <nowiki>{tagDomain, boolRange, hedId=HED_0010503, annotationProperty} [This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.]</nowiki>
+* defaultUnits <nowiki>{unitClassDomain, unitRange, hedId=HED_0010104} [The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
+* isPartOf <nowiki>{tagDomain, tagRange, hedId=HED_0010109} [This tag is part of the indicated tag -- as in the nose is part of the face.]</nowiki>
+* relatedTag <nowiki>{tagDomain, tagRange, hedId=HED_0010105} [A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
+* suggestedTag <nowiki>{tagDomain, tagRange, hedId=HED_0010106} [A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
+* unitClass <nowiki>{tagDomain, unitClassRange, hedId=HED_0010107} [The unit class that the value of a placeholder node can belong to.]</nowiki>
+* valueClass <nowiki>{tagDomain, valueClassRange, hedId=HED_0010108} [Type of value taken on by the value of a placeholder node.]</nowiki>
+* allowedCharacter <nowiki>{unitDomain, unitModifierDomain, valueClassDomain, stringRange, hedId=HED_0010304} [A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.]</nowiki>
+* conversionFactor <nowiki>{unitDomain, unitModifierDomain, numericRange, hedId=HED_0010305} [The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
+* deprecatedFrom <nowiki>{elementDomain, stringRange, hedId=HED_0010306} [The latest schema version in which the element was not deprecated.]</nowiki>
+* extensionAllowed <nowiki>{tagDomain, boolRange, hedId=HED_0010307} [Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes except for hashtag placeholders.]</nowiki>
+* inLibrary <nowiki>{elementDomain, stringRange, hedId=HED_0010309} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
+* reserved <nowiki>{tagDomain, boolRange, hedId=HED_0010310} [This tag has special meaning and requires special handling by tools.]</nowiki>
+* SIUnit <nowiki>{unitDomain, boolRange, hedId=HED_0010311} [This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
+* SIUnitModifier <nowiki>{unitModifierDomain, boolRange, hedId=HED_0010312} [This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
+* SIUnitSymbolModifier <nowiki>{unitModifierDomain, boolRange, hedId=HED_0010313} [This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
+* tagGroup <nowiki>{tagDomain, boolRange, hedId=HED_0010314} [This tag can only appear inside a tag group.]</nowiki>
+* topLevelTagGroup <nowiki>{tagDomain, boolRange, hedId=HED_0010315} [This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.]</nowiki>
+* unique <nowiki>{tagDomain, boolRange, hedId=HED_0010316} [Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
+* unitPrefix <nowiki>{unitDomain, boolRange, hedId=HED_0010317} [This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
+* unitSymbol <nowiki>{unitDomain, boolRange, hedId=HED_0010318} [This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
 
-'''Value classes''' <nowiki>[Rules for the values provided for placeholders.]</nowiki>
-* dateTimeClass <nowiki>{hedId=HED_0011301,allowedCharacter=digits,allowedCharacter=T,allowedCharacter=hyphen,allowedCharacter=colon}[Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
-* nameClass <nowiki>{hedId=HED_0011302,allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=underscore,allowedCharacter=hyphen}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
-* numericClass <nowiki>{hedId=HED_0011303,allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=plus,allowedCharacter=hyphen,allowedCharacter=period}[Value must be a valid numerical value.]</nowiki>
-* posixPath <nowiki>{hedId=HED_0011304,allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=slash,allowedCharacter=colon}[Posix path specification.]</nowiki>
-* textClass <nowiki>{hedId=HED_0011305,allowedCharacter=text}[Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
-
-'''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
-* allowedCharacter <nowiki>{hedId=HED_0010304, unitDomain, unitModifierDomain, valueClassDomain, stringRange}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.]</nowiki>
-* conversionFactor <nowiki>{hedId=HED_0010305, unitDomain, unitModifierDomain, numericRange}[The factor to multiply these units or unit modifiers by to convert to default units.]</nowiki>
-* defaultUnits <nowiki>{hedId=HED_0010104, unitClassDomain, unitRange}[The default units to use if the placeholder has a unit class but the substituted value has no units.]</nowiki>
-* deprecatedFrom <nowiki>{hedId=HED_0010306, elementDomain, stringRange}[The latest schema version in which the element was not deprecated.]</nowiki>
-* extensionAllowed <nowiki>{hedId=HED_0010307, tagDomain, boolRange}[Users can add unlimited levels of child nodes under this tag. This tag is propagated to child nodes except for hashtag placeholders.]</nowiki>
-* hedId <nowiki>{hedId=HED_0010308, annotationProperty, elementDomain, stringRange}[The unique identifier of this element in the HED namespace.]</nowiki>
-* inLibrary <nowiki>{hedId=HED_0010309, elementDomain, stringRange} [The named library schema that this schema element is from. This attribute is added by tools when a library schema is merged into its partnered standard schema.]</nowiki>
-* isPartOf <nowiki>{hedId=HED_0010109, tagDomain, tagRange}[This tag is part of the indicated tag -- as in the nose is part of the face.]</nowiki>
-* relatedTag <nowiki>{hedId=HED_0010105, tagDomain, tagRange}[A HED tag that is closely related to this tag. This attribute is used by tagging tools.]</nowiki>
-* requireChild<nowiki>{hedId=HED_0010501, annotationProperty, tagDomain, boolRange}[This tag must have a descendent.]</nowiki>
-* reserved <nowiki>{hedId=HED_0010310, tagDomain, boolRange}[This tag has special meaning and requires special handling by tools.]</nowiki>
-* rooted <nowiki>{hedId=HED_0010502, annotationProperty, tagDomain, tagRange}[This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
-* SIUnit<nowiki>{hedId=HED_0010311, unitDomain, boolRange}[This unit element is an SI unit and can be modified by multiple and sub-multiple names. Note that some units such as byte are designated as SI units although they are not part of the standard.]</nowiki>
-* SIUnitModifier <nowiki>{hedId=HED_0010312, unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a base unit rather than a unit symbol.]</nowiki>
-* SIUnitSymbolModifier <nowiki>{hedId=HED_0010313, unitModifierDomain, boolRange}[This SI unit modifier represents a multiple or sub-multiple of a unit symbol rather than a base symbol.]</nowiki>
-* suggestedTag <nowiki>{hedId=HED_0010106, tagDomain, tagRange}[A tag that is often associated with this tag. This attribute is used by tagging tools to provide tagging suggestions.]</nowiki>
-* tagGroup <nowiki>{hedId=HED_0010314, tagDomain, boolRange}[This tag can only appear inside a tag group.] </nowiki>
-* takesValue <nowiki>{hedId=HED_0010503, annotationProperty, tagDomain, boolRange}[This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.] </nowiki>
-* topLevelTagGroup <nowiki>{hedId=HED_0010315, tagDomain, boolRange}[This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.] </nowiki>
-* unique <nowiki>{hedId=HED_0010316, tagDomain,boolRange}[Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
-* unitClass <nowiki>{hedId=HED_0010107, tagDomain, unitClassRange}[The unit class that the value of a placeholder node can belong to.]</nowiki>
-* unitPrefix <nowiki>{hedId=HED_0010317, unitDomain, boolRange}[This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
-* unitSymbol <nowiki>{hedId=HED_0010318, unitDomain, boolRange}[This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
-* valueClass <nowiki>{hedId=HED_0010108, tagDomain, valueClassRange}[Type of value taken on by the value of a placeholder node.]</nowiki>
-
-'''Properties''' <nowiki>[Properties of the schema attributes themselves. These are used for schema handling and verification.]</nowiki>
-* annotationProperty <nowiki>{hedId=HED_0010701}[The value is not inherited by child nodes.]</nowiki>
-* boolRange <nowiki>{hedId=HED_0010702}[This schema attribute's value can be true or false. This property was formerly named boolProperty.]</nowiki>
-* elementDomain <nowiki>{hedId=HED_0010703}[This schema attribute can apply to any type of element class (i.e., tag, unit, unit class, unit modifier, or value class). This property was formerly named elementProperty.]</nowiki>
-* tagDomain <nowiki>{hedId=HED_0010704}[This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
-* tagRange <nowiki>{hedId=HED_0010705}[This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
-* numericRange <nowiki>{hedId=HED_0010706}[This schema attribute's value can be numeric.]</nowiki>
-* stringRange <nowiki>{hedId=HED_0010707}[This schema attribute's value can be a string.]</nowiki>
-* unitClassDomain <nowiki>{hedId=HED_0010708}[This schema attribute can apply to unit classes. This property was formerly named unitClassProperty.]</nowiki>
-* unitClassRange <nowiki>{hedId=HED_0010709}[This schema attribute's value can be a unit class.]</nowiki>
-* unitModifierDomain <nowiki>{hedId=HED_0010710}[This schema attribute can apply to unit modifiers. This property was formerly named unitModifierProperty.]</nowiki>
-* unitDomain <nowiki>{hedId=HED_0010711}[This schema attribute can apply to units. This property was formerly named unitProperty.]</nowiki>
-* unitRange <nowiki>{hedId=HED_0010712}[This schema attribute's value can be units.]</nowiki>
-* valueClassDomain <nowiki>{hedId=HED_0010713}[This schema attribute can apply to value classes. This property was formerly named valueClassProperty.]</nowiki>
-* valueClassRange <nowiki>{hedId=HED_0010714}[This schema attribute's value can be a value class.]</nowiki>
-
-'''Epilogue'''<wiki>{hedId=HED_0010012}[This section citation, licensing, and other information.]</nowiki>
+'''Properties'''
+* annotationProperty <nowiki>{hedId=HED_0010701} [The value is not inherited by child nodes.]</nowiki>
+* boolRange <nowiki>{hedId=HED_0010702} [This schema attribute's value can be true or false. This property was formerly named boolProperty.]</nowiki>
+* elementDomain <nowiki>{hedId=HED_0010703} [This schema attribute can apply to any type of element class (i.e., tag, unit, unit class, unit modifier, or value class). This property was formerly named elementProperty.]</nowiki>
+* tagDomain <nowiki>{hedId=HED_0010704} [This schema attribute can apply to node (tag-term) elements. This was added so attributes could apply to multiple types of elements. This property was formerly named nodeProperty.]</nowiki>
+* tagRange <nowiki>{hedId=HED_0010705} [This schema attribute's value can be a node. This property was formerly named nodeProperty.]</nowiki>
+* numericRange <nowiki>{hedId=HED_0010706} [This schema attribute's value can be numeric.]</nowiki>
+* stringRange <nowiki>{hedId=HED_0010707} [This schema attribute's value can be a string.]</nowiki>
+* unitClassDomain <nowiki>{hedId=HED_0010708} [This schema attribute can apply to unit classes. This property was formerly named unitClassProperty.]</nowiki>
+* unitClassRange <nowiki>{hedId=HED_0010709} [This schema attribute's value can be a unit class.]</nowiki>
+* unitModifierDomain <nowiki>{hedId=HED_0010710} [This schema attribute can apply to unit modifiers. This property was formerly named unitModifierProperty.]</nowiki>
+* unitDomain <nowiki>{hedId=HED_0010711} [This schema attribute can apply to units. This property was formerly named unitProperty.]</nowiki>
+* unitRange <nowiki>{hedId=HED_0010712} [This schema attribute's value can be units.]</nowiki>
+* valueClassDomain <nowiki>{hedId=HED_0010713} [This schema attribute can apply to value classes. This property was formerly named valueClassProperty.]</nowiki>
+* valueClassRange <nowiki>{hedId=HED_0010714} [This schema attribute's value can be a value class.]</nowiki>
+'''Epilogue'''
 This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
-!# end hed 
+
+!# end hed

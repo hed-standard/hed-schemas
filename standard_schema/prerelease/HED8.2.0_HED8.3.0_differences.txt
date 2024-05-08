@@ -2,137 +2,137 @@ Differences between HED8.2.0 and HED8.3.0
 Attributes:
 	hedId (Minor): Item hedId added to Attributes
 	isPartOf (Minor): Item isPartOf added to Attributes
-	allowedCharacter (Patch): Attribute 'valueClassDomain' modified from 'None' to 'True'
-	allowedCharacter (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
-	allowedCharacter (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
-	allowedCharacter (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010304'
 	allowedCharacter (Patch): Attribute 'stringRange' modified from 'None' to 'True'
 	allowedCharacter (Patch): Attribute 'valueClassProperty' modified from 'True' to 'None'
+	allowedCharacter (Patch): Attribute 'valueClassDomain' modified from 'None' to 'True'
+	allowedCharacter (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010304'
+	allowedCharacter (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	allowedCharacter (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	allowedCharacter (Patch): Description of allowedCharacter modified
-	conversionFactor (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
-	conversionFactor (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
-	conversionFactor (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010305'
 	conversionFactor (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
-	conversionFactor (Patch): Attribute 'numericRange' modified from 'None' to 'True'
 	conversionFactor (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	conversionFactor (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010305'
+	conversionFactor (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
+	conversionFactor (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
+	conversionFactor (Patch): Attribute 'numericRange' modified from 'None' to 'True'
 	conversionFactor (Patch): Description of conversionFactor modified
 	deprecatedFrom (Patch): Attribute 'stringRange' modified from 'None' to 'True'
 	deprecatedFrom (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010306'
-	deprecatedFrom (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	deprecatedFrom (Patch): Attribute 'elementDomain' modified from 'None' to 'True'
+	deprecatedFrom (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	deprecatedFrom (Patch): Description of deprecatedFrom modified
-	defaultUnits (Patch): Attribute 'unitRange' modified from 'None' to 'True'
-	defaultUnits (Patch): Attribute 'unitClassDomain' modified from 'None' to 'True'
 	defaultUnits (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010104'
 	defaultUnits (Patch): Attribute 'unitClassProperty' modified from 'True' to 'None'
+	defaultUnits (Patch): Attribute 'unitRange' modified from 'None' to 'True'
+	defaultUnits (Patch): Attribute 'unitClassDomain' modified from 'None' to 'True'
 	defaultUnits (Patch): Description of defaultUnits modified
-	extensionAllowed (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
-	extensionAllowed (Patch): Attribute 'boolRange' modified from 'None' to 'True'
-	extensionAllowed (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010307'
-	extensionAllowed (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
 	extensionAllowed (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	extensionAllowed (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	extensionAllowed (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010307'
+	extensionAllowed (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	extensionAllowed (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
 	extensionAllowed (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	extensionAllowed (Patch): Description of extensionAllowed modified
 	inLibrary (Patch): Attribute 'stringRange' modified from 'None' to 'True'
 	inLibrary (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010309'
-	inLibrary (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	inLibrary (Patch): Attribute 'elementDomain' modified from 'None' to 'True'
+	inLibrary (Patch): Attribute 'elementProperty' modified from 'True' to 'None'
 	inLibrary (Patch): Description of inLibrary modified
+	relatedTag (Patch): Attribute 'tagRange' modified from 'None' to 'True'
 	relatedTag (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	relatedTag (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010105'
 	relatedTag (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
 	relatedTag (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	relatedTag (Patch): Attribute 'tagRange' modified from 'None' to 'True'
 	relatedTag (Patch): Description of relatedTag modified
+	requireChild (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	requireChild (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
 	requireChild (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	requireChild (Patch): Attribute 'boolRange' modified from 'None' to 'True'
-	requireChild (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
 	requireChild (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010501'
-	requireChild (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	requireChild (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	requireChild (Patch): Description of requireChild modified
-	reserved (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	reserved (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	reserved (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010310'
+	reserved (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	reserved (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	reserved (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010310'
 	reserved (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	reserved (Patch): Description of reserved modified
-	rooted (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	rooted (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
+	rooted (Patch): Attribute 'tagRange' modified from 'None' to 'True'
+	rooted (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	rooted (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010502'
 	rooted (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	rooted (Patch): Attribute 'tagRange' modified from 'None' to 'True'
 	rooted (Patch): Description of rooted modified
-	SIUnit (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
-	SIUnit (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010311'
 	SIUnit (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	SIUnit (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010311'
 	SIUnit (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	SIUnit (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
 	SIUnit (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	SIUnit (Patch): Description of SIUnit modified
-	SIUnitModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
-	SIUnitModifier (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010312'
-	SIUnitModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
-	SIUnitModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
 	SIUnitModifier (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	SIUnitModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	SIUnitModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	SIUnitModifier (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010312'
+	SIUnitModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	SIUnitModifier (Patch): Description of SIUnitModifier modified
-	SIUnitSymbolModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
-	SIUnitSymbolModifier (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010313'
-	SIUnitSymbolModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
-	SIUnitSymbolModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
 	SIUnitSymbolModifier (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
+	SIUnitSymbolModifier (Patch): Attribute 'unitModifierProperty' modified from 'True' to 'None'
+	SIUnitSymbolModifier (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	SIUnitSymbolModifier (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010313'
+	SIUnitSymbolModifier (Patch): Attribute 'unitModifierDomain' modified from 'None' to 'True'
 	SIUnitSymbolModifier (Patch): Description of SIUnitSymbolModifier modified
+	suggestedTag (Patch): Attribute 'tagRange' modified from 'None' to 'True'
 	suggestedTag (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	suggestedTag (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010106'
 	suggestedTag (Patch): Attribute 'isInheritedProperty' modified from 'True' to 'None'
 	suggestedTag (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	suggestedTag (Patch): Attribute 'tagRange' modified from 'None' to 'True'
 	suggestedTag (Patch): Description of suggestedTag modified
-	tagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	tagGroup (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	tagGroup (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010314'
+	tagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	tagGroup (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	tagGroup (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010314'
 	tagGroup (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	tagGroup (Patch): Description of tagGroup modified
+	takesValue (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	takesValue (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
 	takesValue (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	takesValue (Patch): Attribute 'boolRange' modified from 'None' to 'True'
-	takesValue (Patch): Attribute 'annotationProperty' modified from 'None' to 'True'
 	takesValue (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010503'
-	takesValue (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
 	takesValue (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	takesValue (Patch): Description of takesValue modified
-	topLevelTagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	topLevelTagGroup (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	topLevelTagGroup (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010315'
+	topLevelTagGroup (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	topLevelTagGroup (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	topLevelTagGroup (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010315'
 	topLevelTagGroup (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	topLevelTagGroup (Patch): Description of topLevelTagGroup modified
-	unique (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	unique (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
-	unique (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010316'
+	unique (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	unique (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	unique (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010316'
 	unique (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	unique (Patch): Description of unique modified
-	unitClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
-	unitClass (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010107'
-	unitClass (Patch): Attribute 'unitClassRange' modified from 'None' to 'True'
 	unitClass (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	unitClass (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010107'
+	unitClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
+	unitClass (Patch): Attribute 'unitClassRange' modified from 'None' to 'True'
 	unitClass (Patch): Description of unitClass modified
-	unitPrefix (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
-	unitPrefix (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010317'
 	unitPrefix (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	unitPrefix (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010317'
 	unitPrefix (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	unitPrefix (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
 	unitPrefix (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	unitPrefix (Patch): Description of unitPrefix modified
-	unitSymbol (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
-	unitSymbol (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010318'
 	unitSymbol (Patch): Attribute 'unitProperty' modified from 'True' to 'None'
+	unitSymbol (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010318'
 	unitSymbol (Patch): Attribute 'boolRange' modified from 'None' to 'True'
+	unitSymbol (Patch): Attribute 'unitDomain' modified from 'None' to 'True'
 	unitSymbol (Patch): Attribute 'boolProperty' modified from 'True' to 'None'
 	unitSymbol (Patch): Description of unitSymbol modified
-	valueClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	valueClass (Patch): Attribute 'hedId' modified from 'None' to 'HED_0010108'
-	valueClass (Patch): Attribute 'valueClassRange' modified from 'None' to 'True'
 	valueClass (Patch): Attribute 'tagDomain' modified from 'None' to 'True'
+	valueClass (Patch): Attribute 'valueClassRange' modified from 'None' to 'True'
+	valueClass (Patch): Attribute 'nodeProperty' modified from 'True' to 'None'
 	valueClass (Patch): Description of valueClass modified
 	recommended (Unknown): Item recommended removed from Attributes
 	required (Unknown): Item required removed from Attributes
@@ -161,13 +161,38 @@ Properties:
 	valueClassProperty (Unknown): Item valueClassProperty removed from Properties
 Tags:
 	Ride (Minor): Item Ride added to Tags
+	Head-part (Minor): Item Head-part added to Tags
 	Brain (Minor): Item Brain added to Tags
+	Brain-region (Minor): Item Brain-region added to Tags
+	Cerebellum (Minor): Item Cerebellum added to Tags
 	Frontal-lobe (Minor): Item Frontal-lobe added to Tags
 	Occipital-lobe (Minor): Item Occipital-lobe added to Tags
 	Parietal-lobe (Minor): Item Parietal-lobe added to Tags
 	Temporal-lobe (Minor): Item Temporal-lobe added to Tags
+	Face-part (Minor): Item Face-part added to Tags
 	Eyelid (Minor): Item Eyelid added to Tags
+	Mouth-part (Minor): Item Mouth-part added to Tags
+	Tongue (Minor): Item Tongue added to Tags
+	Lower-extremity-part (Minor): Item Lower-extremity-part added to Tags
+	Foot-part (Minor): Item Foot-part added to Tags
+	Toe (Minor): Item Toe added to Tags
+	Lower-leg (Minor): Item Lower-leg added to Tags
+	Lower-leg-part (Minor): Item Lower-leg-part added to Tags
+	Upper-leg (Minor): Item Upper-leg added to Tags
+	Upper-leg-part (Minor): Item Upper-leg-part added to Tags
+	Neck (Minor): Item Neck added to Tags
+	Torso-part (Minor): Item Torso-part added to Tags
+	Abdomen (Minor): Item Abdomen added to Tags
+	Navel (Minor): Item Navel added to Tags
+	Pelvis (Minor): Item Pelvis added to Tags
+	Pelvis-part (Minor): Item Pelvis-part added to Tags
+	Genitalia (Minor): Item Genitalia added to Tags
 	Viscera (Minor): Item Viscera added to Tags
+	Upper-extremity-part (Minor): Item Upper-extremity-part added to Tags
+	Forearm-part (Minor): Item Forearm-part added to Tags
+	Hand-part (Minor): Item Hand-part added to Tags
+	Fingers (Minor): Item Fingers added to Tags
+	Upper-arm-part (Minor): Item Upper-arm-part added to Tags
 	Pseudoword (Minor): Item Pseudoword added to Tags
 	Other-sex (Minor): Item Other-sex added to Tags
 	Data-artifact (Minor): Item Data-artifact added to Tags
@@ -214,6 +239,49 @@ Tags:
 	Modified-date (Minor): Item Modified-date added to Tags
 	URL (Minor): Item URL added to Tags
 	Luminance-contrast (Minor): Item Luminance-contrast added to Tags
+	Ear (Minor): Tag Ear moved in schema
+	Face (Minor): Tag Face moved in schema
+	Cheek (Minor): Tag Cheek moved in schema
+	Chin (Minor): Tag Chin moved in schema
+	Eye (Minor): Tag Eye moved in schema
+	Eyebrow (Minor): Tag Eyebrow moved in schema
+	Forehead (Minor): Tag Forehead moved in schema
+	Lip (Minor): Tag Lip moved in schema
+	Mouth (Minor): Tag Mouth moved in schema
+	Nose (Minor): Tag Nose moved in schema
+	Teeth (Minor): Tag Teeth moved in schema
+	Hair (Minor): Tag Hair moved in schema
+	Ankle (Minor): Tag Ankle moved in schema
+	Calf (Minor): Tag Calf moved in schema
+	Foot (Minor): Tag Foot moved in schema
+	Big-toe (Minor): Tag Big-toe moved in schema
+	Heel (Minor): Tag Heel moved in schema
+	Instep (Minor): Tag Instep moved in schema
+	Little-toe (Minor): Tag Little-toe moved in schema
+	Toes (Minor): Tag Toes moved in schema
+	Knee (Minor): Tag Knee moved in schema
+	Shin (Minor): Tag Shin moved in schema
+	Thigh (Minor): Tag Thigh moved in schema
+	Buttocks (Minor): Tag Buttocks moved in schema
+	Gentalia (Minor): Tag Gentalia moved in schema
+	Hip (Minor): Tag Hip moved in schema
+	Torso-back (Minor): Tag Torso-back moved in schema
+	Torso-chest (Minor): Tag Torso-chest moved in schema
+	Waist (Minor): Tag Waist moved in schema
+	Elbow (Minor): Tag Elbow moved in schema
+	Forearm (Minor): Tag Forearm moved in schema
+	Hand (Minor): Tag Hand moved in schema
+	Finger (Minor): Tag Finger moved in schema
+	Index-finger (Minor): Tag Index-finger moved in schema
+	Little-finger (Minor): Tag Little-finger moved in schema
+	Middle-finger (Minor): Tag Middle-finger moved in schema
+	Ring-finger (Minor): Tag Ring-finger moved in schema
+	Thumb (Minor): Tag Thumb moved in schema
+	Knuckles (Minor): Tag Knuckles moved in schema
+	Palm (Minor): Tag Palm moved in schema
+	Shoulder (Minor): Tag Shoulder moved in schema
+	Upper-arm (Minor): Tag Upper-arm moved in schema
+	Wrist (Minor): Tag Wrist moved in schema
 	CogAtlas (Minor): Tag CogAtlas moved in schema
 	CogPo (Minor): Tag CogPo moved in schema
 	OBO-identifier (Minor): Tag OBO-identifier moved in schema
@@ -279,6 +347,7 @@ Tags:
 	Cough (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012055'
 	Exhale (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012056'
 	Hiccup (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012057'
+	Hiccup (Patch): Description of Hiccup modified
 	Hold-breath (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012058'
 	Inhale (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012059'
 	Sneeze (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012060'
@@ -316,6 +385,7 @@ Tags:
 	Swallow (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012092'
 	Gulp (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012093'
 	Yawn (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012094'
+	Yawn (Patch): Description of Yawn modified
 	Move-head (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012095'
 	Lift-head (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012096'
 	Lower-head (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012097'
@@ -326,6 +396,7 @@ Tags:
 	Jog (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012102'
 	Jump (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012103'
 	Kick (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012104'
+	Kick (Patch): Description of Kick modified
 	Pedal (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012105'
 	Press-foot (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012106'
 	Run (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012107'
@@ -401,6 +472,7 @@ Tags:
 	Ear (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012182'
 	Face (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012183'
 	Cheek (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012184'
+	Cheek (Patch): Description of Cheek modified
 	Chin (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012185'
 	Eye (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012186'
 	Eyebrow (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012187'
@@ -418,7 +490,9 @@ Tags:
 	Heel (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012200'
 	Instep (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012201'
 	Little-toe (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012202'
+	Toes (Patch): Related tag changed on Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Toes
 	Toes (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012203'
+	Toes (Patch): Description of Toes modified
 	Knee (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012204'
 	Shin (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012205'
 	Thigh (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012206'
@@ -452,6 +526,7 @@ Tags:
 	Language-item (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012234'
 	Character (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012235'
 	Clause (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012236'
+	Clause (Patch): Description of Clause modified
 	Glyph (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012237'
 	Nonword (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012238'
 	Nonword (Patch): Description of Nonword modified
@@ -541,6 +616,7 @@ Tags:
 	Touchscreen (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012322'
 	Machine (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012323'
 	Measurement-device (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012324'
+	Measurement-device (Patch): Description of Measurement-device modified
 	Clock (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012325'
 	Clock-face (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012326'
 	Clock-face (Patch): Attribute 'deprecatedFrom' modified from 'None' to '8.2.0'
@@ -636,6 +712,7 @@ Tags:
 	Siren (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012411'
 	Property (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012412'
 	Agent-property (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012413'
+	Agent-property (Patch): Description of Agent-property modified
 	Agent-state (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012414'
 	Agent-cognitive-state (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012415'
 	Alert (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012416'
@@ -658,6 +735,7 @@ Tags:
 	Awed (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012433'
 	Compassionate (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012434'
 	Content (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012435'
+	Content (Patch): Description of Content modified
 	Disgusted (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012436'
 	Emotionally-neutral (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012437'
 	Empathetic (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012438'
@@ -670,6 +748,7 @@ Tags:
 	Joyful (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012445'
 	Loving (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012446'
 	Relieved (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012447'
+	Relieved (Patch): Description of Relieved modified
 	Sad (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012448'
 	Stressed (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012449'
 	Agent-physiological-state (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012450'
@@ -720,8 +799,10 @@ Tags:
 	Offset (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012525'
 	Onset (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012526'
 	Pause (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012527'
+	Pause (Patch): Description of Pause modified
 	Time-out (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012528'
 	Time-sync (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012529'
+	Time-sync (Patch): Description of Time-sync modified
 	Data-resolution (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012530'
 	Printer-resolution (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012532'
 	Screen-resolution (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012534'
@@ -763,6 +844,7 @@ Tags:
 	Incongruent (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012575'
 	Involuntary (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012576'
 	Masked (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012577'
+	Masked (Patch): Description of Masked modified
 	Normal (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012578'
 	Ordered (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012579'
 	Simple (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012580'
@@ -868,6 +950,7 @@ Tags:
 	Random (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012731'
 	Repetitive (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012732'
 	Stochastic (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012733'
+	Stochastic (Patch): Description of Stochastic modified
 	Varying (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012734'
 	Environmental-property (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012735'
 	Augmented-reality (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012736'
@@ -885,8 +968,10 @@ Tags:
 	Leaf-covered-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012747'
 	Muddy-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012748'
 	Paved-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012749'
+	Paved-terrain (Patch): Description of Paved-terrain modified
 	Rocky-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012750'
 	Sloped-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012751'
+	Sloped-terrain (Patch): Description of Sloped-terrain modified
 	Uneven-terrain (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012752'
 	Urban (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012753'
 	Virtual-world (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012754'
@@ -953,6 +1038,7 @@ Tags:
 	Visual-attribute (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012861'
 	Color (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012862'
 	CSS-color (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012863'
+	CSS-color (Patch): Description of CSS-color modified
 	Blue-color (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012864'
 	Blue (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012865'
 	CadetBlue (Patch): Attribute 'hedId' modified from 'None' to 'HED_0012866'
@@ -1152,6 +1238,7 @@ Tags:
 	Inappropriate-action (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013069'
 	Incorrect-action (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013070'
 	Indeterminate-action (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013071'
+	Indeterminate-action (Patch): Description of Indeterminate-action modified
 	Miss (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013072'
 	Near-miss (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013073'
 	Omitted-action (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013074'
@@ -1186,6 +1273,7 @@ Tags:
 	Task-stimulus-role (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013103'
 	Cue (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013104'
 	Distractor (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013105'
+	Distractor (Patch): Description of Distractor modified
 	Expected (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013106'
 	Extraneous (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013107'
 	Feedback (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013108'
@@ -1233,6 +1321,7 @@ Tags:
 	Performed-using (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013150'
 	Related-to (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013151'
 	Unrelated-to (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013152'
+	Unrelated-to (Patch): Description of Unrelated-to modified
 	Directional-relation (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013153'
 	Away-from (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013154'
 	Towards (Patch): Attribute 'hedId' modified from 'None' to 'HED_0013155'
@@ -1287,16 +1376,16 @@ Units:
 	degree-Celsius (Minor): Item degree-Celsius added to Units
 	month (Minor): Item month added to Units
 	year (Minor): Item year added to Units
-	m-per-s^2 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011600'
 	m-per-s^2 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
+	m-per-s^2 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011600'
 	radian (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011601'
 	rad (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011602'
 	degree (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011603'
-	m^2 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011604'
 	m^2 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
+	m^2 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011604'
 	dollar (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011605'
-	$ (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011606'
 	$ (Patch): Attribute 'allowedCharacter' modified from 'None' to 'dollar'
+	$ (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011606'
 	euro (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011607'
 	euro (Patch): Description of euro modified
 	point (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011608'
@@ -1310,8 +1399,8 @@ Units:
 	cd (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011615'
 	m-per-s^3 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011616'
 	m-per-s^3 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
-	tesla (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	tesla (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011617'
+	tesla (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	T (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	T (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011618'
 	byte (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011619'
@@ -1334,8 +1423,8 @@ Units:
 	day (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011635'
 	minute (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011636'
 	hour (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011637'
-	m^3 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011639'
 	m^3 (Patch): Attribute 'allowedCharacter' modified from 'None' to 'caret'
+	m^3 (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011639'
 	g (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011640'
 	gram (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011641'
 	pound (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011642'
@@ -1368,8 +1457,8 @@ Unit Classes:
 	physicalLengthUnits (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011510'
 	speedUnits (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011511'
 	temperatureUnits (Patch): Unit degree-Celsius added to temperatureUnits
-	temperatureUnits (Patch): Attribute 'defaultUnits' modified from 'None' to 'degree-Celsius'
 	temperatureUnits (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011512'
+	temperatureUnits (Patch): Attribute 'defaultUnits' modified from 'None' to 'degree-Celsius'
 	timeUnits (Patch): Unit month added to timeUnits
 	timeUnits (Patch): Unit year added to timeUnits
 	timeUnits (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011513'
@@ -1388,44 +1477,44 @@ Unit Modifiers:
 	kilo (Patch): Description of kilo modified
 	k (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011405'
 	k (Patch): Description of k modified
-	mega (Patch): Attribute 'conversionFactor' modified from '10^6' to '10e6'
 	mega (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011406'
+	mega (Patch): Attribute 'conversionFactor' modified from '10^6' to '10e6'
 	mega (Patch): Description of mega modified
 	M (Patch): Attribute 'conversionFactor' modified from '10^6' to '10e6'
 	M (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011407'
 	M (Patch): Description of M modified
-	giga (Patch): Attribute 'conversionFactor' modified from '10^9' to '10e9'
 	giga (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011408'
+	giga (Patch): Attribute 'conversionFactor' modified from '10^9' to '10e9'
 	giga (Patch): Description of giga modified
 	G (Patch): Attribute 'conversionFactor' modified from '10^9' to '10e9'
 	G (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011409'
 	G (Patch): Description of G modified
-	tera (Patch): Attribute 'conversionFactor' modified from '10^12' to '10e12'
 	tera (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011410'
+	tera (Patch): Attribute 'conversionFactor' modified from '10^12' to '10e12'
 	tera (Patch): Description of tera modified
 	T (Patch): Attribute 'conversionFactor' modified from '10^12' to '10e12'
 	T (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011411'
 	T (Patch): Description of T modified
-	peta (Patch): Attribute 'conversionFactor' modified from '10^15' to '10e15'
 	peta (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011412'
+	peta (Patch): Attribute 'conversionFactor' modified from '10^15' to '10e15'
 	peta (Patch): Description of peta modified
 	P (Patch): Attribute 'conversionFactor' modified from '10^15' to '10e15'
 	P (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011413'
 	P (Patch): Description of P modified
-	exa (Patch): Attribute 'conversionFactor' modified from '10^18' to '10e18'
 	exa (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011414'
+	exa (Patch): Attribute 'conversionFactor' modified from '10^18' to '10e18'
 	exa (Patch): Description of exa modified
 	E (Patch): Attribute 'conversionFactor' modified from '10^18' to '10e18'
 	E (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011415'
 	E (Patch): Description of E modified
-	zetta (Patch): Attribute 'conversionFactor' modified from '10^21' to '10e21'
 	zetta (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011416'
+	zetta (Patch): Attribute 'conversionFactor' modified from '10^21' to '10e21'
 	zetta (Patch): Description of zetta modified
 	Z (Patch): Attribute 'conversionFactor' modified from '10^21' to '10e21'
 	Z (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011417'
 	Z (Patch): Description of Z modified
-	yotta (Patch): Attribute 'conversionFactor' modified from '10^24' to '10e24'
 	yotta (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011418'
+	yotta (Patch): Attribute 'conversionFactor' modified from '10^24' to '10e24'
 	yotta (Patch): Description of yotta modified
 	Y (Patch): Attribute 'conversionFactor' modified from '10^24' to '10e24'
 	Y (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011419'
@@ -1442,44 +1531,44 @@ Unit Modifiers:
 	milli (Patch): Description of milli modified
 	m (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011425'
 	m (Patch): Description of m modified
-	micro (Patch): Attribute 'conversionFactor' modified from '10^-6' to '10e-6'
 	micro (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011426'
+	micro (Patch): Attribute 'conversionFactor' modified from '10^-6' to '10e-6'
 	micro (Patch): Description of micro modified
 	u (Patch): Attribute 'conversionFactor' modified from '10^-6' to '10e-6'
 	u (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011427'
 	u (Patch): Description of u modified
-	nano (Patch): Attribute 'conversionFactor' modified from '10^-9' to '10e-9'
 	nano (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011428'
+	nano (Patch): Attribute 'conversionFactor' modified from '10^-9' to '10e-9'
 	nano (Patch): Description of nano modified
 	n (Patch): Attribute 'conversionFactor' modified from '10^-9' to '10e-9'
 	n (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011429'
 	n (Patch): Description of n modified
-	pico (Patch): Attribute 'conversionFactor' modified from '10^-12' to '10e-12'
 	pico (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011430'
+	pico (Patch): Attribute 'conversionFactor' modified from '10^-12' to '10e-12'
 	pico (Patch): Description of pico modified
 	p (Patch): Attribute 'conversionFactor' modified from '10^-12' to '10e-12'
 	p (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011431'
 	p (Patch): Description of p modified
-	femto (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	femto (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011432'
+	femto (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	femto (Patch): Description of femto modified
 	f (Patch): Attribute 'conversionFactor' modified from '10^-15' to '10e-15'
 	f (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011433'
 	f (Patch): Description of f modified
-	atto (Patch): Attribute 'conversionFactor' modified from '10^-18' to '10e-18'
 	atto (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011434'
+	atto (Patch): Attribute 'conversionFactor' modified from '10^-18' to '10e-18'
 	atto (Patch): Description of atto modified
 	a (Patch): Attribute 'conversionFactor' modified from '10^-18' to '10e-18'
 	a (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011435'
 	a (Patch): Description of a modified
-	zepto (Patch): Attribute 'conversionFactor' modified from '10^-21' to '10e-21'
 	zepto (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011436'
+	zepto (Patch): Attribute 'conversionFactor' modified from '10^-21' to '10e-21'
 	zepto (Patch): Description of zepto modified
 	z (Patch): Attribute 'conversionFactor' modified from '10^-21' to '10e-21'
 	z (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011437'
 	z (Patch): Description of z modified
-	yocto (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
 	yocto (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011438'
+	yocto (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
 	yocto (Patch): Description of yocto modified
 	y (Patch): Attribute 'conversionFactor' modified from '10^-24' to '10e-24'
 	y (Patch): Attribute 'hedId' modified from 'None' to 'HED_0011439'
