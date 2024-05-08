@@ -358,7 +358,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Tape-recorder <nowiki>{hedId=HED_0012321} [A device for recording and reproduction usually using magnetic tape for storage that can be saved and played back.]</nowiki>
 ***** Touchscreen <nowiki>{hedId=HED_0012322} [A control component that operates an electronic device by pressing the display on the screen.]</nowiki>
 **** Machine <nowiki>{hedId=HED_0012323} [A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
-**** Measurement-device <nowiki>{hedId=HED_0012324} [A device in which a measure function inheres.]</nowiki>
+**** Measurement-device <nowiki>{hedId=HED_0012324} [A device that measures something.]</nowiki>
 ***** Clock <nowiki>{hedId=HED_0012325} [A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
 ****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 **** Robot <nowiki>{hedId=HED_0012327} [A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
@@ -448,7 +448,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Siren <nowiki>{hedId=HED_0012411} [A loud, continuous sound often varying in frequency designed to indicate an emergency.]</nowiki>
 
 '''Property''' <nowiki>{extensionAllowed, hedId=HED_0012412} [Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
-* Agent-property <nowiki>{hedId=HED_0012413} [Something that pertains to an agent.]</nowiki>
+* Agent-property <nowiki>{hedId=HED_0012413} [Something that pertains to or describes an agent.]</nowiki>
 ** Agent-state <nowiki>{hedId=HED_0012414} [The state of the agent.]</nowiki>
 *** Agent-cognitive-state <nowiki>{hedId=HED_0012415} [The state of the cognitive processes or state of mind of the agent.]</nowiki>
 **** Alert <nowiki>{hedId=HED_0012416} [Condition of heightened watchfulness or preparation for action.]</nowiki>
