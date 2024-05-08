@@ -1140,7 +1140,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Primary-subtask <nowiki>{hedId=HED_0013102} [A part of the task which should be the primary focus of the participant.]</nowiki>
 ** Task-stimulus-role <nowiki>{hedId=HED_0013103} [The role the stimulus plays in the task.]</nowiki>
 *** Cue <nowiki>{hedId=HED_0013104} [A signal for an action, a pattern of stimuli indicating a particular response.]</nowiki>
-*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychologica studies this is sometimes referred to as a foil.]</nowiki>
+*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
 *** Feedback <nowiki>{hedId=HED_0013108} [An evaluative response to an inquiry, process, event, or activity.]</nowiki>
