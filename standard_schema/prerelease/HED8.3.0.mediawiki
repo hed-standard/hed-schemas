@@ -1256,7 +1256,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uv, hedId=HED_0011504}</nowiki>
 ** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001, hedId=HED_0011609}</nowiki>
-** uv <nowiki>{conversionFactor=1.0, hedId=0011644} [Added as a direct unit because it is the default unit.]</nowiki>
+** uv <nowiki>{conversionFactor=1.0, hedId=HED_0011644} [Added as a direct unit because it is the default unit.]</nowiki>
 ** Volt <nowiki>{SIUnit, conversionFactor=0.000001, hedId=HED_0011610}</nowiki>
 * frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
@@ -1292,7 +1292,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
-** month <nowiki>{hedId=HED_00645}</nowiki>
+** month <nowiki>{hedId=HED_0011645}</nowiki>
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
@@ -1354,7 +1354,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * textClass <nowiki>{allowedCharacter=text, hedId=HED_0011305} [Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
 
 '''Schema attributes'''
-* hedId <nowiki>{elementDomain, stringRange, hedId=HED_0010308, annotationProperty} [The unique identifier of this element in the HED namespace.]</nowiki>
+* hedId <nowiki>{elementDomain, stringRange, hedId=HED_0010500, annotationProperty} [The unique identifier of this element in the HED namespace.]</nowiki>
 * requireChild <nowiki>{tagDomain, boolRange, hedId=HED_0010501, annotationProperty} [This tag must have a descendent.]</nowiki>
 * rooted <nowiki>{tagDomain, tagRange, hedId=HED_0010502, annotationProperty} [This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
 * takesValue <nowiki>{tagDomain, boolRange, hedId=HED_0010503, annotationProperty} [This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.]</nowiki>
