@@ -65,7 +65,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Blow <nowiki>{hedId=HED_0012054} [Expel air through pursed lips.]</nowiki>
 *** Cough <nowiki>{hedId=HED_0012055} [Suddenly and audibly expel air from the lungs through a partially closed glottis, preceded by inhalation.]</nowiki>
 *** Exhale <nowiki>{hedId=HED_0012056} [Blow out or expel breath.]</nowiki>
-*** Hiccup <nowiki>{hedId=HED_0012057} [Involuntarily spasmthe diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.]</nowiki>
+*** Hiccup <nowiki>{hedId=HED_0012057} [Involuntarily spasm the diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.]</nowiki>
 *** Hold-breath <nowiki>{hedId=HED_0012058} [Interrupt normal breathing by ceasing to inhale or exhale.]</nowiki>
 *** Inhale <nowiki>{hedId=HED_0012059} [Draw in with the breath through the nose or mouth.]</nowiki>
 *** Sneeze <nowiki>{hedId=HED_0012060} [Suddenly and violently expel breath through the nose and mouth.]</nowiki>
@@ -102,7 +102,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Gurgle <nowiki>{hedId=HED_0012091} [Make a hollow bubbling sound like that made by water running out of a bottle.]</nowiki>
 **** Swallow <nowiki>{hedId=HED_0012092} [Cause or allow something, especially food or drink to pass down the throat.]</nowiki>
 ***** Gulp <nowiki>{hedId=HED_0012093} [Swallow quickly or in large mouthfuls, often audibly, sometimes to indicate apprehension.]</nowiki>
-**** Yawn <nowiki>{hedId=HED_0012094} [Take a deep involuntaryinhalation with the mouth open often as a sign of drowsiness or boredom.]</nowiki>
+**** Yawn <nowiki>{hedId=HED_0012094} [Take a deep involuntary inhalation with the mouth open often as a sign of drowsiness or boredom.]</nowiki>
 *** Move-head <nowiki>{hedId=HED_0012095} [Move head.]</nowiki>
 **** Lift-head <nowiki>{hedId=HED_0012096} [Tilt head back lifting chin.]</nowiki>
 **** Lower-head <nowiki>{hedId=HED_0012097} [Move head downward so that eyes are in a lower position.]</nowiki>
@@ -198,7 +198,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Hair <nowiki>{hedId=HED_0012194} [The filamentous outgrowth of the epidermis.]</nowiki>
 ***** Face <nowiki>{hedId=HED_0012183} [The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.]</nowiki>
 ***** Face-part <nowiki> [A part of the face.]</nowiki>
-****** Cheek <nowiki>{hedId=HED_0012184} [The fleshy part of the face bounded by the eyes, nose, ear, and jaw line.]</nowiki>
+****** Cheek <nowiki>{hedId=HED_0012184} [The fleshy part of the face bounded by the eyes, nose, ear, and jawline.]</nowiki>
 ****** Chin <nowiki>{hedId=HED_0012185} [The part of the face below the lower lip and including the protruding part of the lower jaw.]</nowiki>
 ****** Eye <nowiki>{hedId=HED_0012186} [The organ of sight or vision.]</nowiki>
 ****** Eyebrow <nowiki>{hedId=HED_0012187} [The arched strip of hair on the bony ridge above each eye socket.]</nowiki>
@@ -358,7 +358,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Tape-recorder <nowiki>{hedId=HED_0012321} [A device for recording and reproduction usually using magnetic tape for storage that can be saved and played back.]</nowiki>
 ***** Touchscreen <nowiki>{hedId=HED_0012322} [A control component that operates an electronic device by pressing the display on the screen.]</nowiki>
 **** Machine <nowiki>{hedId=HED_0012323} [A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
-**** Measurement-device <nowiki>{hedId=HED_0012324} [A device in which a measure function inheres.]</nowiki>
+**** Measurement-device <nowiki>{hedId=HED_0012324} [A device that measures something.]</nowiki>
 ***** Clock <nowiki>{hedId=HED_0012325} [A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
 ****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 **** Robot <nowiki>{hedId=HED_0012327} [A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
@@ -409,7 +409,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Cart <nowiki>{hedId=HED_0012372} [A cart is a vehicle which has two wheels and is designed to transport human passengers or cargo.]</nowiki>
 **** Tractor <nowiki>{hedId=HED_0012373} [A mobile machine specifically designed to deliver a high tractive effort at slow speeds, and mainly used for the purposes of hauling a trailer or machinery used in agriculture or construction.]</nowiki>
 **** Train <nowiki>{hedId=HED_0012374} [A connected line of railroad cars with or without a locomotive.]</nowiki>
-**** Truck <nowiki>{hedId=HED_0012375} [A motor vehicle which, as its primary function, transports cargo rather than human passangers.]</nowiki>
+**** Truck <nowiki>{hedId=HED_0012375} [A motor vehicle which, as its primary function, transports cargo rather than human passengers.]</nowiki>
 ** Natural-object <nowiki>{hedId=HED_0012376} [Something that exists in or is produced by nature, and is not artificial or man-made.]</nowiki>
 *** Mineral <nowiki>{hedId=HED_0012377} [A solid, homogeneous, inorganic substance occurring in nature and having a definite chemical composition.]</nowiki>
 *** Natural-feature <nowiki>{hedId=HED_0012378} [A feature that occurs in nature. A prominent or identifiable aspect, region, or site of interest.]</nowiki>
@@ -448,7 +448,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Siren <nowiki>{hedId=HED_0012411} [A loud, continuous sound often varying in frequency designed to indicate an emergency.]</nowiki>
 
 '''Property''' <nowiki>{extensionAllowed, hedId=HED_0012412} [Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.]</nowiki>
-* Agent-property <nowiki>{hedId=HED_0012413} [Something that pertains to an agent.]</nowiki>
+* Agent-property <nowiki>{hedId=HED_0012413} [Something that pertains to or describes an agent.]</nowiki>
 ** Agent-state <nowiki>{hedId=HED_0012414} [The state of the agent.]</nowiki>
 *** Agent-cognitive-state <nowiki>{hedId=HED_0012415} [The state of the cognitive processes or state of mind of the agent.]</nowiki>
 **** Alert <nowiki>{hedId=HED_0012416} [Condition of heightened watchfulness or preparation for action.]</nowiki>
@@ -470,7 +470,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Aroused <nowiki>{hedId=HED_0012432} [In a state reactive to stimuli leading to increased heart rate and blood pressure, sensory alertness, mobility and readiness to respond.]</nowiki>
 **** Awed <nowiki>{hedId=HED_0012433} [Filled with wonder. Feeling grand, sublime or powerful emotions characterized by a combination of joy, fear, admiration, reverence, and/or respect.]</nowiki>
 **** Compassionate <nowiki>{hedId=HED_0012434} [Feeling or showing sympathy and concern for others often evoked for a person who is in distress and associated with altruistic motivation.]</nowiki>
-**** Content <nowiki>{hedId=HED_0012435} [Feelingsatisfaction with things as they are.]</nowiki>
+**** Content <nowiki>{hedId=HED_0012435} [Feeling satisfaction with things as they are.]</nowiki>
 **** Disgusted <nowiki>{hedId=HED_0012436} [Feeling revulsion or profound disapproval aroused by something unpleasant or offensive.]</nowiki>
 **** Emotionally-neutral <nowiki>{hedId=HED_0012437} [Feeling neither satisfied nor dissatisfied.]</nowiki>
 **** Empathetic <nowiki>{hedId=HED_0012438} [Understanding and sharing the feelings of another. Being aware of, being sensitive to, and vicariously experiencing the feelings, thoughts, and experience of another.]</nowiki>
@@ -531,24 +531,24 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Data-artifact <nowiki>{hedId=HED_0012493} [An anomalous, interfering, or distorting signal originating from a source other than the item being studied.]</nowiki>
 *** Biological-artifact <nowiki>{hedId=HED_0012494} [A data artifact arising from a biological entity being measured.]</nowiki>
 **** Chewing-artifact <nowiki>{hedId=HED_0012495} [Artifact from moving the jaw in a chewing motion.]</nowiki>
-**** ECG-artifact <nowiki>{hedId=HED_0012496} [An electrical artifact from the far-field potential from pulsation of the heart, timelocked to QRS complex.]</nowiki>
+**** ECG-artifact <nowiki>{hedId=HED_0012496} [An electrical artifact from the far-field potential from pulsation of the heart, time locked to QRS complex.]</nowiki>
 **** EMG-artifact <nowiki>{hedId=HED_0012497} [Artifact from muscle activity and myogenic potentials at the measurements site. In EEG, myogenic potentials are the most common artifacts. Frontalis and temporalis muscles (e.g. clenching of jaw muscles) are common causes. Generally, the potentials generated in the muscles are of shorter duration than those generated in the brain. The frequency components are usually beyond 30-50 Hz, and the bursts are arrhythmic.]</nowiki>
-**** Eye-artifact <nowiki>{hedId=HED_0012498} [Occular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.]</nowiki>
+**** Eye-artifact <nowiki>{hedId=HED_0012498} [Ocular movements and blinks can result in artifacts in different types of data. In electrophysiology data, these can result transients and offsets the signal.]</nowiki>
 ***** Eye-blink-artifact <nowiki>{hedId=HED_0012499} [Artifact from eye blinking. In EEG, Fp1/Fp2 electrodes become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye.]</nowiki>
 ***** Eye-movement-artifact <nowiki>{hedId=HED_0012500} [Eye movements can cause artifacts on recordings. The charge of the eye can especially cause artifacts in electrophysiology data.]</nowiki>
 ****** Horizontal-eye-movement-artifact <nowiki>{hedId=HED_0012501} [Artifact from moving eyes left-to-right and right-to-left. In EEG, there is an upward deflection in the Fp2-F8 derivation, when the eyes move to the right side. In this case F8 becomes more positive and therefore. When the eyes move to the left, F7 becomes more positive and there is an upward deflection in the Fp1-F7 derivation.]</nowiki>
 ****** Nystagmus-artifact <nowiki>{hedId=HED_0012502} [Artifact from nystagmus (a vision condition in which the eyes make repetitive, uncontrolled movements).]</nowiki>
 ****** Slow-eye-movement-artifact <nowiki>{hedId=HED_0012503} [Artifacts originating from slow, rolling eye-movements, seen during drowsiness.]</nowiki>
-****** Vertical-eye-movement-artifact <nowiki>{hedId=HED_0012504} [Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotated upward. The downward rotation of the eyeball was associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.]</nowiki>
+****** Vertical-eye-movement-artifact <nowiki>{hedId=HED_0012504} [Artifact from moving eyes up and down. In EEG, this causes positive potentials (50-100 micro V) with bi-frontal distribution, maximum at Fp1 and Fp2, when the eyeball rotates upward. The downward rotation of the eyeball is associated with the negative deflection. The time course of the deflections is similar to the time course of the eyeball movement.]</nowiki>
 **** Movement-artifact <nowiki>{hedId=HED_0012505} [Artifact in the measured data generated by motion of the subject.]</nowiki>
-**** Pulse-artifact <nowiki>{hedId=HED_0012506} [A mechanical artifact from a pulsating blood vessel near a measurement site, cardiobalistic artfact.]</nowiki>
+**** Pulse-artifact <nowiki>{hedId=HED_0012506} [A mechanical artifact from a pulsating blood vessel near a measurement site, cardioballistic artifact.]</nowiki>
 **** Respiration-artifact <nowiki>{hedId=HED_0012507} [Artifact from breathing.]</nowiki>
 **** Rocking-patting-artifact <nowiki>{hedId=HED_0012508} [Quasi-rhythmical artifacts in recordings most commonly seen in infants. Typically caused by a caregiver rocking or patting the infant.]</nowiki>
 **** Sucking-artifact <nowiki>{hedId=HED_0012509} [Artifact from sucking, typically seen in very young cases.]</nowiki>
 **** Sweat-artifact <nowiki>{hedId=HED_0012510} [Artifact from sweating. In EEG, this is a low amplitude undulating waveform that is usually greater than 2 seconds and may appear to be an unstable baseline.]</nowiki>
 **** Tongue-movement-artifact <nowiki>{hedId=HED_0012511} [Artifact from tongue movement (Glossokinetic). The tongue functions as a dipole, with the tip negative with respect to the base. In EEG, the artifact produced by the tongue has a broad potential field that drops from frontal to occipital areas, although it is less steep than that produced by eye movement artifacts. The amplitude of the potentials is greater inferiorly than in parasagittal regions; the frequency is variable but usually in the delta range. Chewing and sucking can produce similar artifacts.]</nowiki>
 *** Nonbiological-artifact <nowiki>{hedId=HED_0012512} [A data artifact arising from a non-biological source.]</nowiki>
-**** Artificial-ventilation-artifact <nowiki>{hedId=HED_0012513} [Artifact steming from mechanical ventilation. These can occur at the same rate as teh ventilator, but also have other patterns.]</nowiki>
+**** Artificial-ventilation-artifact <nowiki>{hedId=HED_0012513} [Artifact stemming from mechanical ventilation. These can occur at the same rate as the ventilator, but also have other patterns.]</nowiki>
 **** Dialysis-artifact <nowiki>{hedId=HED_0012514} [Artifacts seen in recordings during continuous renal replacement therapy (dialysis).]</nowiki>
 **** Electrode-movement-artifact <nowiki>{hedId=HED_0012515} [Artifact from electrode movement.]</nowiki>
 **** Electrode-pops-artifact <nowiki>{hedId=HED_0012516} [Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.]</nowiki>
@@ -562,9 +562,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Inset <nowiki>{topLevelTagGroup, reserved, relatedTag=Onset, relatedTag=Offset, hedId=HED_0012524} [Marks an intermediate point in an ongoing event of temporal extent.]</nowiki>
 **** Offset <nowiki>{topLevelTagGroup, reserved, relatedTag=Onset, relatedTag=Inset, hedId=HED_0012525} [Marks the end of an event of temporal extent.]</nowiki>
 **** Onset <nowiki>{topLevelTagGroup, reserved, relatedTag=Inset, relatedTag=Offset, hedId=HED_0012526} [Marks the start of an ongoing event of temporal extent.]</nowiki>
-**** Pause <nowiki>{hedId=HED_0012527} [Indicates the temporary interruption ofthe operation a process and subsequently wait for a signal to continue.]</nowiki>
+**** Pause <nowiki>{hedId=HED_0012527} [Indicates the temporary interruption of the operation of a process and subsequently a wait for a signal to continue.]</nowiki>
 **** Time-out <nowiki>{hedId=HED_0012528} [A cancellation or cessation that automatically occurs when a predefined interval of time has passed without a certain event occurring.]</nowiki>
-**** Time-sync <nowiki>{hedId=HED_0012529} [A synchronization signal whose purpose to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.]</nowiki>
+**** Time-sync <nowiki>{hedId=HED_0012529} [A synchronization signal whose purpose is to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.]</nowiki>
 ** Data-resolution <nowiki>{hedId=HED_0012530} [Smallest change in a quality being measured by an sensor that causes a perceptible change.]</nowiki>
 *** Printer-resolution <nowiki>{hedId=HED_0012531} [Resolution of a printer, usually expressed as the number of dots-per-inch for a printer.]</nowiki>
 ****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012532}</nowiki>
@@ -574,9 +574,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012536}</nowiki>
 *** Spatial-resolution <nowiki>{hedId=HED_0012537} [Linear spacing of a spatial measurement.]</nowiki>
 ****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012538}</nowiki>
-*** Spectral-resolution <nowiki>{hedId=HED_0012539} [Measures the ability of a sensor toresolve features in the electromagnetic spectrum.]</nowiki>
+*** Spectral-resolution <nowiki>{hedId=HED_0012539} [Measures the ability of a sensor to resolve features in the electromagnetic spectrum.]</nowiki>
 ****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012540}</nowiki>
-*** Temporal-resolution <nowiki>{hedId=HED_0012541} [Measures the ability of a sensor toresolve features in time.]</nowiki>
+*** Temporal-resolution <nowiki>{hedId=HED_0012541} [Measures the ability of a sensor to resolve features in time.]</nowiki>
 ****<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012542}</nowiki>
 ** Data-source-type <nowiki>{hedId=HED_0012543} [The type of place, person, or thing from which the data comes or can be obtained.]</nowiki>
 *** Computed-feature <nowiki>{hedId=HED_0012544} [A feature computed from the data by a tool. This tag should be grouped with a label of the form Toolname_propertyName.]</nowiki>
@@ -690,7 +690,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******<nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012652}</nowiki>
 ***** Sampling-rate <nowiki>{hedId=HED_0012653} [The number of digital samples taken or recorded per unit of time.]</nowiki>
 ******<nowiki># {takesValue, unitClass=frequencyUnits, hedId=HED_0012654}</nowiki>
-***** Speed <nowiki>{hedId=HED_0012655} [A scalar measure of the rate of movement of the object expressed either as the distance travelled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.]</nowiki>
+***** Speed <nowiki>{hedId=HED_0012655} [A scalar measure of the rate of movement of the object expressed either as the distance traveled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.]</nowiki>
 ******<nowiki># {takesValue, valueClass=numericClass, unitClass=speedUnits, hedId=HED_0012656}</nowiki>
 ***** Temporal-rate <nowiki>{hedId=HED_0012657} [The number of items per unit of time.]</nowiki>
 ******<nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012658}</nowiki>
@@ -768,7 +768,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Increasing <nowiki>{relatedTag=Decreasing, hedId=HED_0012730} [Becoming greater in size, amount, or degree.]</nowiki>
 *** Random <nowiki>{relatedTag=Deterministic, relatedTag=Stochastic, hedId=HED_0012731} [Governed by or depending on chance. Lacking any definite plan or order or purpose.]</nowiki>
 *** Repetitive <nowiki>{hedId=HED_0012732} [A recurring action that is often non-purposeful.]</nowiki>
-*** Stochastic <nowiki>{relatedTag=Deterministic, relatedTag=Random, hedId=HED_0012733} [Usesa random probability distribution or pattern that may be analysed statistically but may not be predicted precisely to determine future states.]</nowiki>
+*** Stochastic <nowiki>{relatedTag=Deterministic, relatedTag=Random, hedId=HED_0012733} [Usesa random probability distribution or pattern that may be analyzed statistically but may not be predicted precisely to determine future states.]</nowiki>
 *** Varying <nowiki>{hedId=HED_0012734} [Differing in size, amount, degree, or nature.]</nowiki>
 * Environmental-property <nowiki>{hedId=HED_0012735} [Relating to or arising from the surroundings of an agent.]</nowiki>
 ** Augmented-reality <nowiki>{hedId=HED_0012736} [Using technology that enhances real-world experiences with computer-derived digital overlays to change some aspects of perception of the natural environment. The digital content is shown to the user through a smart device or glasses and responds to changes in the environment.]</nowiki>
@@ -784,9 +784,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Gravel-terrain <nowiki>{hedId=HED_0012746} [Tracts of land covered by a surface consisting a loose aggregation of small water-worn or pounded stones.]</nowiki>
 *** Leaf-covered-terrain <nowiki>{hedId=HED_0012747} [Tracts of land covered by leaves and composited organic material.]</nowiki>
 *** Muddy-terrain <nowiki>{hedId=HED_0012748} [Tracts of land covered by a liquid or semi-liquid mixture of water and some combination of soil, silt, and clay.]</nowiki>
-*** Paved-terrain <nowiki>{hedId=HED_0012749} [Tracts of land coveredwith concrete, asphalt, stones, or bricks.]</nowiki>
+*** Paved-terrain <nowiki>{hedId=HED_0012749} [Tracts of land covered with concrete, asphalt, stones, or bricks.]</nowiki>
 *** Rocky-terrain <nowiki>{hedId=HED_0012750} [Tracts of land consisting or full of rock or rocks.]</nowiki>
-*** Sloped-terrain <nowiki>{hedId=HED_0012751} [Tracts of land arranged in a slopingor inclined position.]</nowiki>
+*** Sloped-terrain <nowiki>{hedId=HED_0012751} [Tracts of land arranged in a sloping or inclined position.]</nowiki>
 *** Uneven-terrain <nowiki>{hedId=HED_0012752} [Tracts of land that are not level, smooth, or regular.]</nowiki>
 ** Urban <nowiki>{hedId=HED_0012753} [Relating to, located in, or characteristic of a city or densely populated area.]</nowiki>
 ** Virtual-world <nowiki>{hedId=HED_0012754} [Using technology that creates immersive, computer-generated experiences that a person can interact with and navigate through. The digital content is generally delivered to the user through some type of headset and responds to changes in head position or through interaction with other types of sensors. Existing in a virtual setting such as a simulation or game environment.]</nowiki>
@@ -1106,7 +1106,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Imagined-action <nowiki>{hedId=HED_0013068} [Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.]</nowiki>
 *** Inappropriate-action <nowiki>{relatedTag=Appropriate-action, hedId=HED_0013069} [An action not in keeping with what is correct or proper for the task.]</nowiki>
 *** Incorrect-action <nowiki>{relatedTag=Correct-action, relatedTag=Indeterminate-action, hedId=HED_0013070} [An action considered wrong or incorrect in the context of the task.]</nowiki>
-*** Indeterminate-action <nowiki>{relatedTag=Correct-action, relatedTag=Incorrect-action, relatedTag=Miss, relatedTag=Near-miss, hedId=HED_0013071} [An action that cannot be distinguished between two or more possibibities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.]</nowiki>
+*** Indeterminate-action <nowiki>{relatedTag=Correct-action, relatedTag=Incorrect-action, relatedTag=Miss, relatedTag=Near-miss, hedId=HED_0013071} [An action that cannot be distinguished between two or more possibilities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.]</nowiki>
 *** Miss <nowiki>{relatedTag=Near-miss, hedId=HED_0013072} [An action considered to be a failure in the context of the task. For example, if the agent is supposed to try to hit a target and misses.]</nowiki>
 *** Near-miss <nowiki>{relatedTag=Miss, hedId=HED_0013073} [An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.]</nowiki>
 *** Omitted-action <nowiki>{hedId=HED_0013074} [An expected response was skipped.]</nowiki>
@@ -1140,7 +1140,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Primary-subtask <nowiki>{hedId=HED_0013102} [A part of the task which should be the primary focus of the participant.]</nowiki>
 ** Task-stimulus-role <nowiki>{hedId=HED_0013103} [The role the stimulus plays in the task.]</nowiki>
 *** Cue <nowiki>{hedId=HED_0013104} [A signal for an action, a pattern of stimuli indicating a particular response.]</nowiki>
-*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In pyschological studies this is sometimes referred to as a foil.]</nowiki>
+*** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychologica studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
 *** Feedback <nowiki>{hedId=HED_0013108} [An evaluative response to an inquiry, process, event, or activity.]</nowiki>
@@ -1352,7 +1352,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * nameClass <nowiki>{hedId=HED_0011302,allowedCharacter=letters,allowedCharacter=digits,allowedCharacter=underscore,allowedCharacter=hyphen}[Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
 * numericClass <nowiki>{hedId=HED_0011303,allowedCharacter=digits,allowedCharacter=E,allowedCharacter=e,allowedCharacter=plus,allowedCharacter=hyphen,allowedCharacter=period}[Value must be a valid numerical value.]</nowiki>
 * posixPath <nowiki>{hedId=HED_0011304,allowedCharacter=digits,allowedCharacter=letters,allowedCharacter=slash,allowedCharacter=colon}[Posix path specification.]</nowiki>
-* textClass <nowiki>{hedId=HED_0011305,allowedCharacter=text}[Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as nonascii (ASCII codes > 127).]</nowiki>
+* textClass <nowiki>{hedId=HED_0011305,allowedCharacter=text}[Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
 
 '''Schema attributes''' <nowiki>[Allowed attribute modifiers of other sections of the schema.]</nowiki>
 * allowedCharacter <nowiki>{hedId=HED_0010304, unitDomain, unitModifierDomain, valueClassDomain, stringRange}[A special character that is allowed in expressing the value of a placeholder of a specified value class. Allowed characters may be listed individual, named individually, or named as a group as specified in Section 2.2 Character sets and restrictions of the HED specification.]</nowiki>
