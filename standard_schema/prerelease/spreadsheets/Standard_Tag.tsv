@@ -175,17 +175,17 @@ HED_0012173	2	Anatomical-item	Biological-item		A biological structure, system, f
 HED_0012174	3	Body	Anatomical-item		The biological structure representing an organism.	Anatomical-item
 HED_0012175	3	Body-part	Anatomical-item		Any part of an organism.	Anatomical-item
 HED_0012176	4	Head	Body-part		The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.	Body-part
-	4	Head-part	Body-part		A part of the head.	Body-part
+HED_0013200	4	Head-part	Body-part		A part of the head.	Body-part
 HED_0012177	5	Brain	Head-part		Organ inside the head that is made up of nerve cells and controls the body.	Head-part
-	5	Brain-region	Head-part		A region of the brain.	Head-part
-	6	Cerebellum	Brain-region		A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.	Brain-region
+HED_0013201	5	Brain-region	Head-part		A region of the brain.	Head-part
+HED_0013202	6	Cerebellum	Brain-region		A major structure of the brain located near the brainstem. It plays a key role in motor control, coordination, precision, with contributions to different cognitive functions.	Brain-region
 HED_0012178	6	Frontal-lobe	Brain-region			Brain-region
 HED_0012179	6	Occipital-lobe	Brain-region			Brain-region
 HED_0012180	6	Parietal-lobe	Brain-region			Brain-region
 HED_0012181	6	Temporal-lobe	Brain-region			Brain-region
 HED_0012182	5	Ear	Head-part		A sense organ needed for the detection of sound and for establishing balance.	Head-part
 HED_0012183	5	Face	Head-part		The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.	Head-part
-	5	Face-part	Head-part		A part of the face.	Head-part
+HED_0013203	5	Face-part	Head-part		A part of the face.	Head-part
 HED_0012184	6	Cheek	Face-part		The fleshy part of the face bounded by the eyes, nose, ear, and jawline.	Face-part
 HED_0012185	6	Chin	Face-part		The part of the face below the lower lip and including the protruding part of the lower jaw.	Face-part
 HED_0012186	6	Eye	Face-part		The organ of sight or vision.	Face-part
@@ -194,39 +194,39 @@ HED_0012188	6	Eyelid	Face-part		The folds of the skin that cover the eye when cl
 HED_0012189	6	Forehead	Face-part		The part of the face between the eyebrows and the normal hairline.	Face-part
 HED_0012190	6	Lip	Face-part		Fleshy fold which surrounds the opening of the mouth.	Face-part
 HED_0012191	6	Mouth	Face-part		The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.	Face-part
-	6	Mouth-part	Face-part		A part of the mouth.	Face-part
+HED_0013204	6	Mouth-part	Face-part		A part of the mouth.	Face-part
 HED_0012193	7	Teeth	Mouth-part		The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.	Mouth-part
-	7	Tongue	Mouth-part		A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.	Mouth-part
+HED_0013205	7	Tongue	Mouth-part		A muscular organ in the mouth with significant role in mastication, swallowing, speech, and taste.	Mouth-part
 HED_0012192	6	Nose	Face-part		A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.	Face-part
 HED_0012194	5	Hair	Head-part		The filamentous outgrowth of the epidermis.	Head-part
 HED_0012195	4	Lower-extremity	Body-part		Refers to the whole inferior limb (leg and/or foot).	Body-part
-	4	Lower-extremity-part	Body-part		A part of the lower extremity.	Body-part
+HED_0013206	4	Lower-extremity-part	Body-part		A part of the lower extremity.	Body-part
 HED_0012196	5	Ankle	Lower-extremity-part		A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.	Lower-extremity-part
 HED_0012198	5	Foot	Lower-extremity-part		The structure found below the ankle joint required for locomotion.	Lower-extremity-part
-	5	Foot-part	Lower-extremity-part		A part of the foot.	Lower-extremity-part
+HED_0013207	5	Foot-part	Lower-extremity-part		A part of the foot.	Lower-extremity-part
 HED_0012200	6	Heel	Foot-part		The back of the foot below the ankle.	Foot-part
 HED_0012201	6	Instep	Foot-part		The part of the foot between the ball and the heel on the inner side.	Foot-part
-	6	Toe	Foot-part		A digit of the foot.	Foot-part
+HED_0013208	6	Toe	Foot-part		A digit of the foot.	Foot-part
 HED_0012199	7	Big-toe	Toe		The largest toe on the inner side of the foot.	Toe
 HED_0012202	7	Little-toe	Toe		The smallest toe located on the outer side of the foot.	Toe
 HED_0012203	6	Toes	Foot-part	relatedTag=Toe	The terminal digits of the foot. Used to describe collective attributes of all toes, such as bending all toes	Foot-part and (relatedTag some Toe)
 HED_0012204	5	Knee	Lower-extremity-part		A joint connecting the lower part of the femur with the upper part of the tibia.	Lower-extremity-part
-	5	Lower-leg	Lower-extremity-part		The part of the leg between the knee and the ankle.	Lower-extremity-part
-	5	Lower-leg-part	Lower-extremity-part		A part of the lower leg.	Lower-extremity-part
+HED_0013209	5	Lower-leg	Lower-extremity-part		The part of the leg between the knee and the ankle.	Lower-extremity-part
+HED_0013210	5	Lower-leg-part	Lower-extremity-part		A part of the lower leg.	Lower-extremity-part
 HED_0012197	6	Calf	Lower-leg-part		The fleshy part at the back of the leg below the knee.	Lower-leg-part
 HED_0012205	6	Shin	Lower-leg-part		Front part of the leg below the knee.	Lower-leg-part
-	5	Upper-leg	Lower-extremity-part		The part of the leg between the hip and the knee.	Lower-extremity-part
-	5	Upper-leg-part	Lower-extremity-part		A part of the upper leg.	Lower-extremity-part
+HED_0013211	5	Upper-leg	Lower-extremity-part		The part of the leg between the hip and the knee.	Lower-extremity-part
+HED_0013212	5	Upper-leg-part	Lower-extremity-part		A part of the upper leg.	Lower-extremity-part
 HED_0012206	6	Thigh	Upper-leg-part		Upper part of the leg between hip and knee.	Upper-leg-part
-	4	Neck	Body-part		The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.	Body-part
+HED_0013213	4	Neck	Body-part		The part of the body connecting the head to the torso, containing the cervical spine and vital pathways of nerves, blood vessels, and the airway.	Body-part
 HED_0012207	4	Torso	Body-part		The body excluding the head and neck and limbs.	Body-part
-	4	Torso-part	Body-part		A part of the torso.	Body-part
-	5	Abdomen	Torso-part		The part of the body between the thorax and the pelvis.	Torso-part
-	5	Navel	Torso-part		The central mark on the abdomen created by the detachment of the umbilical cord after birth.	Torso-part
-	5	Pelvis	Torso-part		The bony structure at the base of the spine supporting the legs.	Torso-part
-	5	Pelvis-part	Torso-part		A part of the pelvis.	Torso-part
+HED_0013214	4	Torso-part	Body-part		A part of the torso.	Body-part
+HED_0013215	5	Abdomen	Torso-part		The part of the body between the thorax and the pelvis.	Torso-part
+HED_0013216	5	Navel	Torso-part		The central mark on the abdomen created by the detachment of the umbilical cord after birth.	Torso-part
+HED_0013217	5	Pelvis	Torso-part		The bony structure at the base of the spine supporting the legs.	Torso-part
+HED_0013218	5	Pelvis-part	Torso-part		A part of the pelvis.	Torso-part
 HED_0012208	6	Buttocks	Pelvis-part		The round fleshy parts that form the lower rear area of a human trunk.	Pelvis-part
-	6	Genitalia	Pelvis-part		The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.	Pelvis-part
+HED_0013219	6	Genitalia	Pelvis-part		The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.	Pelvis-part
 HED_0012209	6	Gentalia	Pelvis-part	deprecatedFrom=8.1.0	The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.	"Pelvis-part and (deprecatedFrom value ""8.1.0"")"
 HED_0012210	6	Hip	Pelvis-part		The lateral prominence of the pelvis from the waist to the thigh.	Pelvis-part
 HED_0012211	5	Torso-back	Torso-part		The rear surface of the human body from the shoulders to the hips.	Torso-part
@@ -234,24 +234,24 @@ HED_0012212	5	Torso-chest	Torso-part		The anterior side of the thorax from the n
 HED_0012213	5	Viscera	Torso-part		Internal organs of the body.	Torso-part
 HED_0012214	5	Waist	Torso-part		The abdominal circumference at the navel.	Torso-part
 HED_0012215	4	Upper-extremity	Body-part		Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).	Body-part
-	4	Upper-extremity-part	Body-part		A part of the upper extremity.	Body-part
+HED_0013220	4	Upper-extremity-part	Body-part		A part of the upper extremity.	Body-part
 HED_0012216	5	Elbow	Upper-extremity-part		A type of hinge joint located between the forearm and upper arm.	Upper-extremity-part
 HED_0012217	5	Forearm	Upper-extremity-part		Lower part of the arm between the elbow and wrist.	Upper-extremity-part
-	5	Forearm-part	Upper-extremity-part		A part of the forearm.	Upper-extremity-part
+HED_0013221	5	Forearm-part	Upper-extremity-part		A part of the forearm.	Upper-extremity-part
 HED_0012218	5	Hand	Upper-extremity-part		The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.	Upper-extremity-part
-	5	Hand-part	Upper-extremity-part		A part of the hand.	Upper-extremity-part
+HED_0013222	5	Hand-part	Upper-extremity-part		A part of the hand.	Upper-extremity-part
 HED_0012219	6	Finger	Hand-part		Any of the digits of the hand.	Hand-part
 HED_0012220	7	Index-finger	Finger		The second finger from the radial side of the hand, next to the thumb.	Finger
 HED_0012221	7	Little-finger	Finger		The fifth and smallest finger from the radial side of the hand.	Finger
 HED_0012222	7	Middle-finger	Finger		The middle or third finger from the radial side of the hand.	Finger
 HED_0012223	7	Ring-finger	Finger		The fourth finger from the radial side of the hand.	Finger
 HED_0012224	7	Thumb	Finger		The thick and short hand digit which is next to the index finger in humans.	Finger
-	6	Fingers	Hand-part	relatedTag=Finger	The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers	Hand-part and (relatedTag some Finger)
+HED_0013223	6	Fingers	Hand-part	relatedTag=Finger	The terminal digits of the hand. Used to describe collective attributes of all fingers, such as bending all fingers	Hand-part and (relatedTag some Finger)
 HED_0012225	6	Knuckles	Hand-part		A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.	Hand-part
 HED_0012226	6	Palm	Hand-part		The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.	Hand-part
 HED_0012227	5	Shoulder	Upper-extremity-part		Joint attaching upper arm to trunk.	Upper-extremity-part
 HED_0012228	5	Upper-arm	Upper-extremity-part		Portion of arm between shoulder and elbow.	Upper-extremity-part
-	5	Upper-arm-part	Upper-extremity-part		A part of the upper arm.	Upper-extremity-part
+HED_0013224	5	Upper-arm-part	Upper-extremity-part		A part of the upper arm.	Upper-extremity-part
 HED_0012229	5	Wrist	Upper-extremity-part		A joint between the distal end of the radius and the proximal row of carpal bones.	Upper-extremity-part
 HED_0012230	2	Organism	Biological-item		A living entity, more specifically a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).	Biological-item
 HED_0012231	3	Animal	Organism		A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement.	Organism
