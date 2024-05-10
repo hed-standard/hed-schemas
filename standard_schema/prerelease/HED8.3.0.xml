@@ -2875,6 +2875,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </attribute>
                         </node>
                         <node>
+                           <name>EMG-recorder</name>
+                           <description>A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0013225</value>
+                           </attribute>
+                        </node>
+                        <node>
                            <name>File-storage</name>
                            <description>A device for recording digital information to a permanent media.</description>
                            <attribute>
@@ -3947,6 +3955,26 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>hedId</name>
                      <value>HED_0012450</value>
                   </attribute>
+                  <node>
+                     <name>Catamenial</name>
+                     <description>Related to menstruation.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013226</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Fever</name>
+                     <description>Body temperature above the normal range.</description>
+                     <attribute>
+                        <name>relatedTag</name>
+                        <value>Sick</value>
+                     </attribute>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013227</value>
+                     </attribute>
+                  </node>
                   <node>
                      <name>Healthy</name>
                      <description>Having no significant health-related issues.</description>
