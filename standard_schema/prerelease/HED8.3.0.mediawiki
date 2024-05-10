@@ -486,6 +486,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Sad <nowiki>{hedId=HED_0012448} [Feeling grief or unhappiness.]</nowiki>
 **** Stressed <nowiki>{hedId=HED_0012449} [Experiencing mental or emotional strain or tension.]</nowiki>
 *** Agent-physiological-state <nowiki>{hedId=HED_0012450} [Having to do with the mechanical, physical, or biochemical function of an agent.]</nowiki>
+**** Catamenial <nowiki>[Related to menstruation.]</nowiki>
+**** Fever <nowiki>{relatedTag=Sick} [Body temperature above the normal range.]</nowiki>
 **** Healthy <nowiki>{relatedTag=Sick, hedId=HED_0012451} [Having no significant health-related issues.]</nowiki>
 **** Hungry <nowiki>{relatedTag=Sated, relatedTag=Thirsty, hedId=HED_0012452} [Being in a state of craving or desiring food.]</nowiki>
 **** Rested <nowiki>{relatedTag=Tired, hedId=HED_0012453} [Feeling refreshed and relaxed.]</nowiki>
