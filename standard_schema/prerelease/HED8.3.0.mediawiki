@@ -352,7 +352,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******* LED-display <nowiki>{hedId=HED_0012315} [A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.]</nowiki>
 ***** Recording-device <nowiki>{hedId=HED_0012316} [A device that copies information in a signal into a persistent information bearer.]</nowiki>
 ****** EEG-recorder <nowiki>{hedId=HED_0012317} [A device for recording electric currents in the brain using electrodes applied to the scalp, to the surface of the brain, or placed within the substance of the brain.]</nowiki>
-****** EMG-recorder <nowiki> [A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.]</nowiki>
+****** EMG-recorder <nowiki>{hedId=HED_0013225} [A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.]</nowiki>
 ****** File-storage <nowiki>{hedId=HED_0012318} [A device for recording digital information to a permanent media.]</nowiki>
 ****** MEG-recorder <nowiki>{hedId=HED_0012319} [A device for measuring the magnetic fields produced by electrical activity in the brain, usually conducted externally.]</nowiki>
 ****** Motion-capture <nowiki>{hedId=HED_0012320} [A device for recording the movement of objects or people.]</nowiki>
@@ -487,8 +487,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Sad <nowiki>{hedId=HED_0012448} [Feeling grief or unhappiness.]</nowiki>
 **** Stressed <nowiki>{hedId=HED_0012449} [Experiencing mental or emotional strain or tension.]</nowiki>
 *** Agent-physiological-state <nowiki>{hedId=HED_0012450} [Having to do with the mechanical, physical, or biochemical function of an agent.]</nowiki>
-**** Catamenial <nowiki>[Related to menstruation.]</nowiki>
-**** Fever <nowiki>{relatedTag=Sick} [Body temperature above the normal range.]</nowiki>
+**** Catamenial <nowiki>{hedId=HED_0013226} [Related to menstruation.]</nowiki>
+**** Fever <nowiki>{relatedTag=Sick, hedId=HED_0013227} [Body temperature above the normal range.]</nowiki>
 **** Healthy <nowiki>{relatedTag=Sick, hedId=HED_0012451} [Having no significant health-related issues.]</nowiki>
 **** Hungry <nowiki>{relatedTag=Sated, relatedTag=Thirsty, hedId=HED_0012452} [Being in a state of craving or desiring food.]</nowiki>
 **** Rested <nowiki>{relatedTag=Tired, hedId=HED_0012453} [Feeling refreshed and relaxed.]</nowiki>
