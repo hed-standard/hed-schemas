@@ -99,10 +99,10 @@ def main():
         return 1
 
     # todo: update this for storing spreadsheets in a sub folder
-    # If we are here, we have validated the schemas
+    # If we are here, we have validated the schemas(and if there's more than one version changed, that they're the same)
     for basename, extensions in schema_files.items():
         # Skip any with multiple extensions or not in pre-release
-        if len(extensions) > 1 or "prerelease" not in basename:
+        if "prerelease" not in basename:
             continue
         source_filename = basename + list(extensions)[0]
         source_df_filename = basename + ".tsv"
