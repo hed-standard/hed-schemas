@@ -7,10 +7,6 @@ Each term in this vocabulary has a human-readable description and may include ad
       <node>
          <name>Event</name>
          <description>Something that happens at a given time and (typically) place. Elements of this tag subtree designate the general category in which an event falls.</description>
-         <attribute>
-            <name>suggestedTag</name>
-            <value>Task-property</value>
-         </attribute>
          <node>
             <name>Sensory-event</name>
             <description>Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.</description>
