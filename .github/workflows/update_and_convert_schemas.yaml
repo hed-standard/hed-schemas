@@ -80,6 +80,6 @@ jobs:
       run: |
         git add .
         git commit -m "Automatic file updates"
-        git push --force-with-lease origin HEAD:refs/heads/${{ github.head_ref }}
+        git push origin HEAD:refs/heads/${{ github.head_ref }}
 
 
