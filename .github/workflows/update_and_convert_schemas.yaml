@@ -1,0 +1,89 @@
+name: Validate and update schemas
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: ["*"]
+
+jobs:
+  process-changed-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+        ref: ${{ github.head_ref }}
+
+    # This part might need revision.  This avoids the extra merge commit.
+    - name: Fetch updates from the target branch
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git fetch origin ${{ github.event.pull_request.base.ref }}
+        git rebase origin/${{ github.event.pull_request.base.ref }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Determine if branch is main
+      run: |
+        if [ "${{ github.base_ref }}" = "main" ]; then
+          echo "SINCE_LAST_REMOTE_COMMIT=false" >> $GITHUB_ENV
+        else
+          echo "SINCE_LAST_REMOTE_COMMIT=true" >> $GITHUB_ENV
+        fi
+
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v41
+      with:
+        since_last_remote_commit: ${{ env.SINCE_LAST_REMOTE_COMMIT }}
+
+    - name: List all changed files
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        for file in "$ALL_CHANGED_FILES"; do
+          echo "$file was changed"
+        done
+
+    - name: Install dependencies
+      run: pip install git+https://github.com/ianca/hed-python.git@develop
+
+    - name: Update schemas
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        SOURCE_BRANCH="${{ github.head_ref }}"
+        TARGET_BRANCH="${{ github.base_ref }}"
+        echo "Source Branch: $SOURCE_BRANCH"
+        echo "Target Branch: $TARGET_BRANCH"
+        if  [ "$SOURCE_BRANCH" = "develop" ] && [ "$TARGET_BRANCH" = "main" ]; then
+          echo "Error: Source branch 'develop' is not allowed for this operation."
+          exit 1
+        elif [ "$TARGET_BRANCH" = "main" ]; then
+          hed_update_schemas $ALL_CHANGED_FILES --set-ids
+        else
+          hed_update_schemas $ALL_CHANGED_FILES
+        fi
+
+    - name: Check for changes
+      id: check-changes
+      run: |
+        if ! git diff --quiet || ! git diff --cached --quiet || git ls-files --others --exclude-standard | grep -q .; then
+          echo "changes_exist=true" >> $GITHUB_ENV
+        else
+          echo "changes_exist=false" >> $GITHUB_ENV
+        fi
+
+    - name: Commit and push changes
+      if: env.changes_exist == 'true'
+      run: |
+        git add .
+        git commit -m "Automatic file updates"
+        git push --force-with-lease origin HEAD:refs/heads/${{ github.head_ref }}
+
+
