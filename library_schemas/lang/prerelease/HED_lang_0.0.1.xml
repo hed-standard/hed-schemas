@@ -1,6 +1,10 @@
 <?xml version="1.0" ?>
-<HED version="2.0.0" library="testlib" withStandard="8.2.0">
-   <prologue>This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. It is compatible with testlib version 3.0.0 but not testlib 2.0.0.</prologue>
+<HED version="0.0.1" library="lang" withStandard="8.2.0">
+   <prologue>LISA is a Hierarchical Event Descriptors Library Schema for Linguistic Stimuli Annotation. The schema allows for detailed annotation of neuroimaging experiments that involve language events, from carefully controlled experiments specifically targeting the neuroscience of language processing, to more complex naturalistic paradigms that involve written or spoken language.
+
+LISA allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics, while the individual words in the sentence can simultaneously be associated with word-level characteristics, and so on. Annotation possibilities are extensive and cover characteristics of multiple language allowing for comparisons between languages.
+
+</prologue>
    <schema>
       <node>
          <name>Event</name>
@@ -86,57 +90,6 @@
          <node>
             <name>Software-agent</name>
             <description>An agent computer program.</description>
-         </node>
-      </node>
-      <node>
-         <name>B-nonextension</name>
-         <description>These should not be sorted.  B should be first</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>testlib</value>
-         </attribute>
-         <node>
-            <name>SubnodeB1</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeB2</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-      </node>
-      <node>
-         <name>A-nonextension</name>
-         <description>These should not be sorted.  A should be second</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>testlib</value>
-         </attribute>
-         <node>
-            <name>SubnodeA3</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeA1</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeA2</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
          </node>
       </node>
       <node>
@@ -845,38 +798,6 @@
          </node>
       </node>
       <node>
-         <name>D-extensionallowed</name>
-         <description>These should be sorted.  This section should be first.</description>
-         <attribute>
-            <name>extensionAllowed</name>
-         </attribute>
-         <attribute>
-            <name>inLibrary</name>
-            <value>testlib</value>
-         </attribute>
-         <node>
-            <name>SubnodeD1</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeD2</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeD3</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-      </node>
-      <node>
          <name>Item</name>
          <description>An independently existing thing (living or nonliving).</description>
          <attribute>
@@ -1107,6 +1028,513 @@
             </node>
          </node>
          <node>
+            <name>Language</name>
+            <description>A system of communication used by a particular country or community.</description>
+            <attribute>
+               <name>rooted</name>
+               <value>Item</value>
+            </attribute>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lisa</value>
+            </attribute>
+            <node>
+               <name>Afrosiatic-language</name>
+               <description>A system of communication belonging to the family of languages spoken in subregions of Western Asia, North Africa, the Horn of Africa, and parts of the Sahara/Sahel.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Arabic</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Hebrew</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Atlantic-Congo</name>
+               <description>A system of communication belonging to the family of languages spoken in Central and Eastern Africa</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Swahili</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Austroasiatic</name>
+               <description>A system of communication belonging to the family of languages spoken in Mainland Southeast Asia and South Asia.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Vietnamese</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Austronesian-language</name>
+               <description>A system of communication belonging to the family of languages spoken in  Maritime Southeast Asia, Madagascar, the islands of the Pacific Ocean and Taiwan.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Malay</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Dravidian</name>
+               <description>A system of communication belonging to the family of languages spoken in Southern India</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Tamil</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Indo-European-language</name>
+               <description>A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Baltic-language</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Latvian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Lithuanian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Germanic-language</name>
+                  <description>A system of communication belonging to the family of languages spoken in Europe, North America, Oceania and Southern Africa.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Danish</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Dutch</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>English</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>German</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Icelandic</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Norwegian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Swedish</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Romance-language</name>
+                  <description>A system of communication belonging to the family of languages which derive from Latin.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Catalan</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>French</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Galacian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Italian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Portuguese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Rhaeto-Romance</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Romanian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Spanish</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Slavic-language</name>
+                  <description>A system of communication belonging to the family of languages spoken in Central, Eastern and South-Eastern Europe.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Bulgarian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Croatian</name>
+                     <description>A system of communication used in some countries bordering the Baltic sea.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Czech</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Macedonian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Polish</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Russian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Slovak</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Ukrainian</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Japonic</name>
+               <description>A system of communication belonging to the family of languages spoken mostly in Japan.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Japanese</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Koreanic</name>
+               <description>A system of communication</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Korean</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Sino-Tibetan-language</name>
+               <description>A system of communication belonging to the family of languages spoken in parts of Eastern Asia.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Burmo-Qiangic</name>
+                  <description>A system of communication belonging to the family of languages spoken in Southwest China and Myanmar.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Burmese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Sinitic</name>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Gan-Chinese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Mandarin-Chinese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Wu-Chinese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Xiang-Chinese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Yue-Chinese</name>
+                     <description>A system of communication</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Tai-Kadai</name>
+               <description>A system of communication</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Thai</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Turkic</name>
+               <description>A system of communication belonging to the family of languages spoken in subregions of Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia (Siberia), and Western Asia.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Turkish</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Uralic</name>
+               <description>A system of communication belonging to the family of languages spoken in regions of Europe and northern Asia.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Estonian</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Finnish</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Hungarian</name>
+                  <description>A system of communication</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+         </node>
+         <node>
             <name>Language-item</name>
             <description>An entity related to a systematic means of communicating by the use of sounds, symbols, or gestures.</description>
             <attribute>
@@ -1126,6 +1554,54 @@
                <description>A hieroglyphic character, symbol, or pictograph.</description>
             </node>
             <node>
+               <name>Grapheme</name>
+               <description>The smallest meaningful contrastive unit in a writing system</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Logogram</name>
+               <description>A sign or character representing a morpheme,word or phrase, such as those used in shorthand and some writing systems</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Mora</name>
+               <description>A basic timing unit in the phonology of some spoken languages, equal to or shorter than a syllable.</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Morpheme</name>
+               <description>A meaningful unit of a language that cannot be further divided.</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+            </node>
+            <node>
                <name>Nonword</name>
                <description>A group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.</description>
             </node>
@@ -1136,6 +1612,54 @@
             <node>
                <name>Phoneme</name>
                <description>A speech sound that is distinguished by the speakers of a particular language.</description>
+               <node>
+                  <name>Consonant</name>
+                  <description>A basic speech sound in which the breath is at least partly obstructed and which can be combined with a vowel to form a syllable.</description>
+                  <attribute>
+                     <name>rooted</name>
+                     <value>Phoneme</value>
+                  </attribute>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Vowel</name>
+                  <description>A speech sound which is produced by a comparatively open configuration of the vocal tract, with vibration of the vocal cords but without audible friction, and which is a unit of the sound system of a language that forms the nucleus of a syllable.</description>
+                  <attribute>
+                     <name>rooted</name>
+                     <value>Phoneme</value>
+                  </attribute>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Long-vowel</name>
+                     <description>A vowel sound that is pronounced in a long form.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Diphthongs</name>
+                        <description>A sound formed by the combination of two vowels.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Short-vowel</name>
+                     <description>A vowel sound that is pronounced in a short form.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
             </node>
             <node>
                <name>Phrase</name>
@@ -1737,91 +2261,6 @@
                <node>
                   <name>Instrument-sound</name>
                   <description>Sound produced by a musical instrument.</description>
-                  <node>
-                     <name>Flute-sound</name>
-                     <description>These should be sorted.  Flute should be first</description>
-                     <attribute>
-                        <name>rooted</name>
-                        <value>Instrument-sound</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>testlib</value>
-                     </attribute>
-                     <node>
-                        <name>Flute-subsound1</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Flute-subsound2</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Oboe-sound</name>
-                     <description>These should be sorted.  Oboe should be second</description>
-                     <attribute>
-                        <name>rooted</name>
-                        <value>Instrument-sound</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>testlib</value>
-                     </attribute>
-                     <node>
-                        <name>Oboe-subsound1</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Oboe-subsound2</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Violin-sound</name>
-                     <description>These should be sorted.  Violin should be last</description>
-                     <attribute>
-                        <name>rooted</name>
-                        <value>Instrument-sound</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>testlib</value>
-                     </attribute>
-                     <node>
-                        <name>Violin-subsound1</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Violin-subsound2</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Violin-subsound3</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Tone</name>
@@ -3106,6 +3545,66 @@
                      </node>
                   </node>
                   <node>
+                     <name>Language-unit-frequency</name>
+                     <description>The frequency with which a unit occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.</description>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Quantitative-value</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Bigram-frequency</name>
+                        <description>The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Word-frequency</name>
+                        <description>The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, television, etc.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Language-unit-probability</name>
+                     <description>The probability of a specific language unit occurring in a specific context</description>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Quantitative-value</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Cloze-probablity</name>
+                        <description>The proportion of people who fill a gap in given sentence with a given word</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Orthographic-neighborhood-size</name>
+                     <description>The number of closely resembling word-forms.</description>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Quantitative-value</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
                      <name>Percentage</name>
                      <description>A fraction or ratio with 100 understood as the denominator.</description>
                      <node>
@@ -4101,6 +4600,606 @@
                         <value>textClass</value>
                      </attribute>
                   </node>
+               </node>
+            </node>
+         </node>
+         <node>
+            <name>Language-property</name>
+            <description>A property relating to a specific system of communication used by a particular country or group of people.</description>
+            <attribute>
+               <name>rooted</name>
+               <value>Property</value>
+            </attribute>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lisa</value>
+            </attribute>
+            <node>
+               <name>Morphological-language-type</name>
+               <description>Morphological property relating to a specific system of communication used by a particular country or group of people.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Morphological-agglutinating-type</name>
+                  <description>Words are formed by stringing together morphemes which each correspond to a single grammatical feature.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Morphological-fusional-type</name>
+                  <description>Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Morphological-isolating-type</name>
+                  <description>Having a morpheme per word ratio close to one.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Morphological-polysynthetic-type</name>
+                  <description>Can encode the subject and the verb (and sometimes the object) into a single word.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Morphological-syntactic-type</name>
+                  <description>Having a high morpheme per word ratio.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Orthographic-type</name>
+               <description>The type of unit each symbol serves to represent in written language.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Logographic-type</name>
+                  <description>Representing an entire spoken word per grapheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Segmental-or-Alphabetic-type</name>
+                  <description>Representing a phoneme per character.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Deep-orthographic</name>
+                     <description>Not having a one-to-one correspondence between phonemes and graphemes that represent them.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Shallow-orthographic</name>
+                     <description>Having a one-to-one or close to one-on-one correspondence between phonemes and the graphemes that represent them.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Syllabary-type</name>
+                  <description>Representing one syllable per grapheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+         </node>
+         <node>
+            <name>Language-unit-property</name>
+            <description>A property of a linguistic unit within a framework of language analysis.</description>
+            <attribute>
+               <name>rooted</name>
+               <value>Property</value>
+            </attribute>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lisa</value>
+            </attribute>
+            <node>
+               <name>Clause-type</name>
+               <description>The role of a clause.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Dependent-clause</name>
+                  <description>Containing a subject and verb and can be a sentence.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Independent-clause</name>
+                  <description>Containing a subject and verb but cannot be a sentence.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Lexical-role</name>
+               <description>The role of a linguistic unit in a specific vocabulary.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Lexical-content-role</name>
+                  <description>The content role of a linguistic unit in a specific vocabulary</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Adjective</name>
+                     <description>Naming an attribute, added to or grammatically related to a noun to modify or describe it.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Adverb</name>
+                     <description>Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Noun</name>
+                     <description>Pertaining to words or vocabulary</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Verb</name>
+                     <description>Describing an action.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Auxiliary-verb</name>
+                        <description>A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                        <node>
+                           <name>Modal-verb</name>
+                           <description>An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.</description>
+                           <attribute>
+                              <name>inLibrary</name>
+                              <value>lisa</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
+                        <name>Intransative-verb</name>
+                        <description>A verb that does not require an object.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                        <node>
+                           <name>Unaccusative-verb</name>
+                           <description>An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).</description>
+                           <attribute>
+                              <name>inLibrary</name>
+                              <value>lisa</value>
+                           </attribute>
+                        </node>
+                        <node>
+                           <name>Unergative-verb</name>
+                           <description>An intransitive verb whose subject is an agent</description>
+                           <attribute>
+                              <name>inLibrary</name>
+                              <value>lisa</value>
+                           </attribute>
+                        </node>
+                     </node>
+                     <node>
+                        <name>Transitive-verb</name>
+                        <description>A verb that requires an object to receive the action.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Lexical-function-role</name>
+                  <description>The function role of a linguistic unit in a specific vocabulary.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Complementizer</name>
+                     <description>Marking an embedded clause as functioning as a complement, typically a subordinating conjunction or infinitive to</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Conjunction</name>
+                     <description>Connecting clauses or sentences or to coordinate words in the same clause.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Determiner</name>
+                     <description>Determining the kind of reference a noun or noun group has.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Interjection</name>
+                     <description>Made especially as an aside of interruption.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Negation-word</name>
+                     <description>Denying the truth of a clause or sentence.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Numeral</name>
+                     <description>Denoting a number.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Numeral-classifier</name>
+                     <description>Denoting a number.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Particle</name>
+                     <description>Part of the class of words such as in, up, off, over, used, with verbs to make phrasal verbs.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Postposition</name>
+                     <description>Governing and appearing after a noun or pronoun and expressing a relation to another word or element in the clause.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Preposition</name>
+                     <description>Governing, and preceding, a noun or pronoun and expressing a relation to another word or element in the clause.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Pronoun</name>
+                     <description>Referring either to the participants in the discourse (e.g., I, you) or to someone or something mentioned elsewhere in the discourse.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Morphological-role</name>
+               <description>The morphological role of a linguistic unit.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Morphological-function</name>
+                  <description>The function of a morpheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Inflective-morphological-function</name>
+                     <description>Changing the grammatical function of a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Conjugation-morphology</name>
+                        <description>Identifying the voice, mood, tense, number, and person of a verb.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Declinition-morphology</name>
+                        <description>Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Word-formation-function</name>
+                     <description>Creating a new world.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Intensify</name>
+                        <description>To increase the intensity of the free morpheme.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Reverse-meaning</name>
+                        <description>To reverse the meaning of the free morpheme.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>To-adjective</name>
+                        <description>To make into an adjective.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>To-adverb</name>
+                        <description>To make into an adverb</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>To-noun</name>
+                        <description>To make into a noun.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>To-verb</name>
+                        <description>To make into a verb.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Morphological-position</name>
+                  <description>The position a morpheme takes relative to the free morpheme of a word.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Affix</name>
+                     <description>A morpheme that is attached to a word stem to form a new word or word form.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Circumfix</name>
+                        <description>Position of a morpheme split in two parts, one places at the start of a word, and the other at the end.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Infix</name>
+                        <description>Position of a morpheme in the middle of a word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Prefix</name>
+                        <description>Position of a morpheme at the beginning of a word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Suffix</name>
+                        <description>Position of a morpheme at the end of a word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Non-concatenative-morphology</name>
+                     <description>Process of word formation and inflection in which the stem  may be modified (without stringing morphemes together sequentially).</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                     <node>
+                        <name>Apophony</name>
+                        <description>Regular vowel variation.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Conversion</name>
+                        <description>No change</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Reduplication</name>
+                        <description>Duplication of all or part of the root word</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Transfixation</name>
+                        <description>Interdigitation of vowel and consonant morphemes</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Truncation</name>
+                        <description>Removal of phonological material from root.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lisa</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Morpohological-type</name>
+                  <description>The type of a morpheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+                  <node>
+                     <name>Bound-morpohological-type</name>
+                     <description>A morpheme type that cannot stand alone as a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Free-morpohological-type</name>
+                     <description>A morpheme type that can stand alone as a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lisa</value>
+                     </attribute>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Phrase-role</name>
+               <description>The role of phrase.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lisa</value>
+               </attribute>
+               <node>
+                  <name>Adjective-phrase</name>
+                  <description>Headed by an adjective and provides context, clarity, or details that support that</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Adverb-phrase</name>
+                  <description>Functioning as an adverb in a sentence.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Noun-phrase</name>
+                  <description>Functioning in a sentence as subject, object, or prepositional object.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Prepositional-phrase</name>
+                  <description>Consisting of a preposition and its object.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Verb-phrase</name>
+                  <description>Containing the verb and any direct or indirect object, but not the subject.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lisa</value>
+                  </attribute>
                </node>
             </node>
          </node>
@@ -7455,5 +8554,7 @@
          <description>Indicates that the schema attribute is meant to be applied to value classes.</description>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>A final section.</epilogue>
+   <epilogue>The current prerelease of the schema is primarily centered around written language and current development focusses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. 
+
+</epilogue>
 </HED>

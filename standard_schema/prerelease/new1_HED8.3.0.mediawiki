@@ -352,7 +352,6 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******* LED-display <nowiki>{hedId=HED_0012315} [A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.]</nowiki>
 ***** Recording-device <nowiki>{hedId=HED_0012316} [A device that copies information in a signal into a persistent information bearer.]</nowiki>
 ****** EEG-recorder <nowiki>{hedId=HED_0012317} [A device for recording electric currents in the brain using electrodes applied to the scalp, to the surface of the brain, or placed within the substance of the brain.]</nowiki>
-****** EMG-recorder <nowiki>{hedId=HED_0013225} [A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.]</nowiki>
 ****** File-storage <nowiki>{hedId=HED_0012318} [A device for recording digital information to a permanent media.]</nowiki>
 ****** MEG-recorder <nowiki>{hedId=HED_0012319} [A device for measuring the magnetic fields produced by electrical activity in the brain, usually conducted externally.]</nowiki>
 ****** Motion-capture <nowiki>{hedId=HED_0012320} [A device for recording the movement of objects or people.]</nowiki>
@@ -487,8 +486,6 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Sad <nowiki>{hedId=HED_0012448} [Feeling grief or unhappiness.]</nowiki>
 **** Stressed <nowiki>{hedId=HED_0012449} [Experiencing mental or emotional strain or tension.]</nowiki>
 *** Agent-physiological-state <nowiki>{hedId=HED_0012450} [Having to do with the mechanical, physical, or biochemical function of an agent.]</nowiki>
-**** Catamenial <nowiki>{hedId=HED_0013226} [Related to menstruation.]</nowiki>
-**** Fever <nowiki>{relatedTag=Sick, hedId=HED_0013227} [Body temperature above the normal range.]</nowiki>
 **** Healthy <nowiki>{relatedTag=Sick, hedId=HED_0012451} [Having no significant health-related issues.]</nowiki>
 **** Hungry <nowiki>{relatedTag=Sated, relatedTag=Thirsty, hedId=HED_0012452} [Being in a state of craving or desiring food.]</nowiki>
 **** Rested <nowiki>{relatedTag=Tired, hedId=HED_0012453} [Feeling refreshed and relaxed.]</nowiki>
@@ -1259,7 +1256,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uv, hedId=HED_0011504}</nowiki>
 ** v <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001, hedId=HED_0011609}</nowiki>
-** uv <nowiki>{conversionFactor=1.0, hedId=HED_0011644} [Added as a direct unit because it is the default unit.]</nowiki>
+** uv <nowiki>{conversionFactor=1.0, hedId=0011644} [Added as a direct unit because it is the default unit.]</nowiki>
 ** Volt <nowiki>{SIUnit, conversionFactor=0.000001, hedId=HED_0011610}</nowiki>
 * frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
@@ -1295,7 +1292,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
-** month <nowiki>{hedId=HED_0011645}</nowiki>
+** month <nowiki>{hedId=HED_00645}</nowiki>
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
@@ -1357,7 +1354,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * textClass <nowiki>{allowedCharacter=text, hedId=HED_0011305} [Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
 
 '''Schema attributes'''
-* hedId <nowiki>{elementDomain, stringRange, hedId=HED_0010500, annotationProperty} [The unique identifier of this element in the HED namespace.]</nowiki>
+* hedId <nowiki>{elementDomain, stringRange, hedId=HED_0010308, annotationProperty} [The unique identifier of this element in the HED namespace.]</nowiki>
 * requireChild <nowiki>{tagDomain, boolRange, hedId=HED_0010501, annotationProperty} [This tag must have a descendent.]</nowiki>
 * rooted <nowiki>{tagDomain, tagRange, hedId=HED_0010502, annotationProperty} [This top-level library schema node should have a parent which is the indicated node in the partnered standard schema.]</nowiki>
 * takesValue <nowiki>{tagDomain, boolRange, hedId=HED_0010503, annotationProperty} [This tag is a hashtag placeholder that is expected to be replaced with a user-defined value.]</nowiki>

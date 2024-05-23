@@ -42,4 +42,4 @@ jobs:
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
-        python tests/validate_schemas.py $ALL_CHANGED_FILES
+        hed_validate_schemas $ALL_CHANGED_FILES

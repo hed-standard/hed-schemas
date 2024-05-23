@@ -1,7 +1,7 @@
-HED library="testlib" version="3.0.0" withStandard="8.2.0" unmerged="true"
+HED library="testlib" version="4.0.0" withStandard="8.3.0" unmerged="true"
 
 '''Prologue'''
-This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0.
+This schema is designed to be lazy partnered with prerelease 8.3.0.
 
 !# start schema
 
@@ -19,10 +19,10 @@ This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts wi
 * SubnodeE1
 * SubnodeE2
 
-'''F-nonextension'''
-* SubnodeF6
-* SubnodeF1
-* SubnodeF2
+'''D-nonextension'''
+* SubnodeD3
+* SubnodeD1
+* SubnodeD2
 
 
 !# end schema

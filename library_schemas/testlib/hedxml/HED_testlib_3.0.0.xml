@@ -89,27 +89,27 @@
          </node>
       </node>
       <node>
-         <name>D-nonextension</name>
+         <name>F-nonextension</name>
          <attribute>
             <name>inLibrary</name>
             <value>testlib</value>
          </attribute>
          <node>
-            <name>SubnodeD3</name>
+            <name>SubnodeF6</name>
             <attribute>
                <name>inLibrary</name>
                <value>testlib</value>
             </attribute>
          </node>
          <node>
-            <name>SubnodeD1</name>
+            <name>SubnodeF1</name>
             <attribute>
                <name>inLibrary</name>
                <value>testlib</value>
             </attribute>
          </node>
          <node>
-            <name>SubnodeD2</name>
+            <name>SubnodeF2</name>
             <attribute>
                <name>inLibrary</name>
                <value>testlib</value>
