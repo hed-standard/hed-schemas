@@ -1,7 +1,7 @@
 HED library="score" version="2.0.0" withStandard="8.3.0" unmerged="true"
 
 '''Prologue'''
-This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)[1,2] for describing events occurring during neuroimaging time series recordings.
+This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1,2) for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
@@ -353,14 +353,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Modulators-property <nowiki>[For each described graphoelement, the influence of the modulators can be scored. Only modulators present in the recording are scored. (Source: Beniczky ea 2017, Section 10.)]</nowiki>
-        ** Modulators-reactivity <nowiki> {SuggestedTag=Modulator, suggestedTag=Finding-stopped-by, suggestedTag=Increasing, suggestedTag=Decreasing}[Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions (Source: Beniczky ea 2013, Appendix S2). The type of stimulus can be a modulator or can be specified in free-text.]</nowiki>
+        ** Modulators-reactivity <nowiki> {suggestedTag=Modulator, suggestedTag=Finding-stopped-by, suggestedTag=Increasing, suggestedTag=Decreasing}[Susceptibility of individual rhythms or the EEG as a whole to change following sensory stimulation or other physiologic actions (Source: Beniczky ea 2013, Appendix S2). The type of stimulus can be a modulator or can be specified in free-text.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Facilitating-factor <nowiki> {SuggestedTag=Intoxicated, SuggestedTag=Awake, SuggestedTag=Asleep, SuggestedTag=Sleep-deprivation}[The facilitating factors (if known) can be selected: alcohol (Suggested tag: Intoxicated), awakening, catamenial, fever, sleep, sleep-deprivation, other (free text). Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence). (Source: Beniczky ea 2013.)]</nowiki>
-            *** Facilitating-factor-catamenial
-            *** Facilitating-factor-fever
+        ** Facilitating-factor <nowiki> {suggestedTag=Catamenial, suggestedTag=Fever, suggestedTag=Intoxicated, suggestedTag=Awake, suggestedTag=Asleep, suggestedTag=Sleep-deprivation}[The facilitating factors (if known) can be selected: alcohol (Suggested tag: Intoxicated), awakening, catamenial, fever, sleep, sleep-deprivation, other (free text). Facilitating factors are defined as transient and sporadic endogenous or exogenous elements capable of augmenting seizure incidence (increasing the likelihood of seizure occurrence). (Source: Beniczky ea 2013.)]</nowiki>
             *** Other-facilitating-factor
                 **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
-        ** Provocative-factor <nowiki>{SuggestedTag=Hyperventilation}[Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it. (Source: Beniczky ea 2013.)]</nowiki>
+        ** Provocative-factor <nowiki>{suggestedTag=Hyperventilation}[Provocative factors are defined as transient and sporadic endogenous or exogenous elements capable of evoking/triggering seizures immediately following the exposure to it. (Source: Beniczky ea 2013.)]</nowiki>
             *** Reflex-provoked
                  **** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
             *** Other-provocative-factor
@@ -613,13 +611,13 @@ The SCORE standard defines terms for describing phenomena observed in scalp EEG 
 The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
 A second revised and extended version of SCORE achieved international consensus.
 
-[1] Beniczky ea 2013: "Standardized computer based organized reporting of EEG: SCORE." Epilepsia, 54(6), pp.1112-1124.
-[2] Beniczky ea 2017: "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology, 128(11), pp.2334-2346.
-[3] Hirsch ea 2013: "American Clinical Neurophysiology Society’s Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology, 30(1), pp.1-27.
-[4] Fisher ea 2017: "Instruction manual for the ILAE 2017 operational classification of seizure types." Epilepsia, 58(4), pp.531-542.
-[5] Trenité ea 2001: "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology." Epilepsia, 42(5), pp.692-701.
-[6] Blume ea 2001: "Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology." Epilepsia, 42(9), pp.1212-1218.
+1 Beniczky ea 2013: "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54(6) pp.1112-1124.
+2 Beniczky ea 2017: "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128(11) pp.2334-2346.
+3 Hirsch ea 2013: "American Clinical Neurophysiology Society’s Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology 30(1) pp.1-27.
+4 Fisher ea 2017: "Instruction manual for the ILAE 2017 operational classification of seizure types." Epilepsia 58(4) pp.531-542.
+5 Trenité ea 2001: "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology." Epilepsia 42(5) pp.692-701.
+6 Blume ea 2001: "Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology." Epilepsia 42(9) pp.1212-1218.
 
-TPA, July 2023
+TPA July 2023
 
 !# end hed
