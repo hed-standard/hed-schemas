@@ -727,9 +727,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ****** Width <nowiki>{hedId=HED_0012686} [The extent or measurement of something from side to side.]</nowiki>
 *******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012687}</nowiki>
 **** Temporal-value <nowiki>{hedId=HED_0012688} [A characteristic of or relating to time or limited by time.]</nowiki>
-***** Delay <nowiki>{topLevelTagGroup, reserved, relatedTag=Duration, hedId=HED_0012689} [The time at which an event start time is delayed from the current onset time. This tag defines the start time of an event of temporal extent and may be used with the Duration tag.]</nowiki>
+***** Delay <nowiki>{topLevelTagGroup, reserved, requireChild, relatedTag=Duration, hedId=HED_0012689} [The time at which an event start time is delayed from the current onset time. This tag defines the start time of an event of temporal extent and may be used with the Duration tag.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012690}</nowiki>
-***** Duration <nowiki>{topLevelTagGroup, reserved, relatedTag=Delay, hedId=HED_0012691} [The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.]</nowiki>
+***** Duration <nowiki>{topLevelTagGroup, reserved, requireChild, relatedTag=Delay, hedId=HED_0012691} [The period of time during which an event occurs. This tag defines the end time of an event of temporal extent and may be used with the Delay tag.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012692}</nowiki>
 ***** Time-interval <nowiki>{hedId=HED_0012693} [The period of time separating two instances, events, or occurrences.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012694}</nowiki>
