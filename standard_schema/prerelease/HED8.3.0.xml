@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="8.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
+<HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.3.0" xsi:noNamespaceSchemaLocation="https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd">
    <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.</prologue>
@@ -6535,6 +6535,9 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <name>reserved</name>
                         </attribute>
                         <attribute>
+                           <name>requireChild</name>
+                        </attribute>
+                        <attribute>
                            <name>relatedTag</name>
                            <value>Duration</value>
                         </attribute>
@@ -6569,6 +6572,9 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                         <attribute>
                            <name>reserved</name>
+                        </attribute>
+                        <attribute>
+                           <name>requireChild</name>
                         </attribute>
                         <attribute>
                            <name>relatedTag</name>
