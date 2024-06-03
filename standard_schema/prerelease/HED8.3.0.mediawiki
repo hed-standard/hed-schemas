@@ -361,7 +361,6 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** Machine <nowiki>{hedId=HED_0012323} [A human-made device that uses power to apply forces and control movement to perform an action.]</nowiki>
 **** Measurement-device <nowiki>{hedId=HED_0012324} [A device that measures something.]</nowiki>
 ***** Clock <nowiki>{hedId=HED_0012325} [A device designed to indicate the time of day or to measure the time duration of an event or action.]</nowiki>
-****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 **** Robot <nowiki>{hedId=HED_0012327} [A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.]</nowiki>
 **** Tool <nowiki>{hedId=HED_0012328} [A component that is not part of a device but is designed to support its assembly or operation.]</nowiki>
 *** Document <nowiki>{hedId=HED_0012329} [A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.]</nowiki>
@@ -703,6 +702,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Distance <nowiki>{hedId=HED_0012662} [A measure of the space separating two objects or points.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012663}</nowiki>
 ***** Position <nowiki>{hedId=HED_0012664} [A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.]</nowiki>
+****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clockface numbering or anatomic subregion. Replaced by Clock-face-position.]</nowiki>
+*******  <nowiki># {deprecatedFrom=8.2.0, takesValue, valueClass=numericClass}</nowiki>
+****** Clock-face-position <nowiki> [A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 ****** X-position <nowiki>{hedId=HED_0012665} [The position along the x-axis of the frame of reference.]</nowiki>
 *******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012666}</nowiki>
 ****** Y-position <nowiki>{hedId=HED_0012667} [The position along the y-axis of the frame of reference.]</nowiki>
