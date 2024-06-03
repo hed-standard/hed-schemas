@@ -2946,18 +2946,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <name>hedId</name>
                            <value>HED_0012325</value>
                         </attribute>
-                        <node>
-                           <name>Clock-face</name>
-                           <description>A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.</description>
-                           <attribute>
-                              <name>deprecatedFrom</name>
-                              <value>8.2.0</value>
-                           </attribute>
-                           <attribute>
-                              <name>hedId</name>
-                              <value>HED_0012326</value>
-                           </attribute>
-                        </node>
                      </node>
                   </node>
                   <node>
@@ -6222,6 +6210,46 @@ Each term in this vocabulary has a human-readable description and may include ad
                            <name>hedId</name>
                            <value>HED_0012664</value>
                         </attribute>
+                        <node>
+                           <name>Clock-face</name>
+                           <description>A location identifier based on clockface numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <attribute>
+                              <name>deprecatedFrom</name>
+                              <value>8.2.0</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012326</value>
+                           </attribute>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>deprecatedFrom</name>
+                                 <value>8.2.0</value>
+                              </attribute>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                           </node>
+                        </node>
+                        <node>
+                           <name>Clock-face-position</name>
+                           <description>A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.</description>
+                           <node>
+                              <name>#</name>
+                              <attribute>
+                                 <name>takesValue</name>
+                              </attribute>
+                              <attribute>
+                                 <name>valueClass</name>
+                                 <value>numericClass</value>
+                              </attribute>
+                           </node>
+                        </node>
                         <node>
                            <name>X-position</name>
                            <description>The position along the x-axis of the frame of reference.</description>
