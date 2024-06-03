@@ -703,9 +703,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012663}</nowiki>
 ***** Position <nowiki>{hedId=HED_0012664} [A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.]</nowiki>
 ****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clockface numbering or anatomic subregion. Replaced by Clock-face-position.]</nowiki>
-*******  <nowiki># {deprecatedFrom=8.2.0, takesValue, valueClass=numericClass}</nowiki>
-****** Clock-face-position <nowiki>[A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
-*******  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+*******  <nowiki># {deprecatedFrom=8.2.0, takesValue, valueClass=numericClass, hedId=HED_0013228}</nowiki>
+****** Clock-face-position <nowiki>{hedId=HED_0013229} [A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
+*******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013230}</nowiki>
 ****** X-position <nowiki>{hedId=HED_0012665} [The position along the x-axis of the frame of reference.]</nowiki>
 *******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012666}</nowiki>
 ****** Y-position <nowiki>{hedId=HED_0012667} [The position along the y-axis of the frame of reference.]</nowiki>

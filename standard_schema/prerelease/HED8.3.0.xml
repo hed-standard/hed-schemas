@@ -6234,11 +6234,19 @@ Each term in this vocabulary has a human-readable description and may include ad
                                  <name>valueClass</name>
                                  <value>numericClass</value>
                               </attribute>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0013228</value>
+                              </attribute>
                            </node>
                         </node>
                         <node>
                            <name>Clock-face-position</name>
                            <description>A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.</description>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0013229</value>
+                           </attribute>
                            <node>
                               <name>#</name>
                               <attribute>
@@ -6247,6 +6255,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <attribute>
                                  <name>valueClass</name>
                                  <value>numericClass</value>
+                              </attribute>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0013230</value>
                               </attribute>
                            </node>
                         </node>
