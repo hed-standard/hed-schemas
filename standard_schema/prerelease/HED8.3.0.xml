@@ -11536,14 +11536,14 @@ Each term in this vocabulary has a human-readable description and may include ad
          <name>electricPotentialUnits</name>
          <attribute>
             <name>defaultUnits</name>
-            <value>uv</value>
+            <value>uV</value>
          </attribute>
          <attribute>
             <name>hedId</name>
             <value>HED_0011504</value>
          </attribute>
          <unit>
-            <name>v</name>
+            <name>V</name>
             <attribute>
                <name>SIUnit</name>
             </attribute>
@@ -11560,7 +11560,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
          </unit>
          <unit>
-            <name>uv</name>
+            <name>uV</name>
             <description>Added as a direct unit because it is the default unit.</description>
             <attribute>
                <name>conversionFactor</name>
@@ -11572,7 +11572,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
          </unit>
          <unit>
-            <name>Volt</name>
+            <name>volt</name>
             <attribute>
                <name>SIUnit</name>
             </attribute>
