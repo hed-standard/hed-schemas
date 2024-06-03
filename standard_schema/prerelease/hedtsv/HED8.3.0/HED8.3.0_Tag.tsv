@@ -350,7 +350,6 @@ HED_0012322	Touchscreen	5	IO-device		A control component that operates an electr
 HED_0012323	Machine	4	Device		A human-made device that uses power to apply forces and control movement to perform an action.		Device
 HED_0012324	Measurement-device	4	Device		A device that measures something.		Device
 HED_0012325	Clock	5	Measurement-device		A device designed to indicate the time of day or to measure the time duration of an event or action.		Measurement-device
-HED_0012326	Clock-face	6	Clock	deprecatedFrom=8.2.0	A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.	"Clock and (deprecatedFrom value ""8.2.0"")"	"Clock and (deprecatedFrom value ""8.2.0"")"
 HED_0012327	Robot	4	Device		A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.		Device
 HED_0012328	Tool	4	Device		A component that is not part of a device but is designed to support its assembly or operation.		Device
 HED_0012329	Document	3	Man-made-object		A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.		Man-made-object
@@ -691,6 +690,10 @@ HED_0012661	Angle-#	6	Angle	takesValue, unitClass=angleUnits, valueClass=numeric
 HED_0012662	Distance	5	Spatial-value		A measure of the space separating two objects or points.		Spatial-value
 HED_0012663	Distance-#	6	Distance	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits		Distance and (valueClass some numericClass) and (unitClass some physicalLengthUnits)	Distance and (valueClass some numericClass) and (unitClass some physicalLengthUnits)
 HED_0012664	Position	5	Spatial-value		A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.		Spatial-value
+HED_0012326	Clock-face	6	Position	deprecatedFrom=8.2.0	A location identifier based on clockface numbering or anatomic subregion. Replaced by Clock-face-position.	"Position and (deprecatedFrom value ""8.2.0"")"	"Clock and (deprecatedFrom value ""8.2.0"")"
+	Clock-face-#	7	Clock-face	deprecatedFrom=8.2.0, takesValue, valueClass=numericClass		"Clock-face and (deprecatedFrom value ""8.2.0"") and (valueClass some numericClass)"	
+	Clock-face-position	6	Position		A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.		
+	Clock-face-position-#	7	Clock-face-position	takesValue, valueClass=numericClass		Clock-face-position and (valueClass some numericClass)	
 HED_0012665	X-position	6	Position		The position along the x-axis of the frame of reference.		Position
 HED_0012666	X-position-#	7	X-position	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits		X-position and (valueClass some numericClass) and (unitClass some physicalLengthUnits)	X-position and (valueClass some numericClass) and (unitClass some physicalLengthUnits)
 HED_0012667	Y-position	6	Position		The position along the y-axis of the frame of reference.		Position
