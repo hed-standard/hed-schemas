@@ -169,7 +169,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <node>
                <name>Communicate-gesturally</name>
-               <description>Communicate nonverbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body.</description>
+               <description>Communicate non-verbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body.</description>
                <attribute>
                   <name>relatedTag</name>
                   <value>Move-face</value>
@@ -1681,7 +1681,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </attribute>
                            <node>
                               <name>Teeth</name>
-                              <description>The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.</description>
+                              <description>The hard bone-like structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.</description>
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012193</value>
@@ -2214,7 +2214,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Clause</name>
-               <description>Aunit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.</description>
+               <description>A unit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012236</value>
@@ -2336,7 +2336,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Clockface</name>
-                     <description>The dial face of a clock. A location identifier based on clockface numbering or anatomic subregion.</description>
+                     <description>The dial face of a clock. A location identifier based on clock-face-position numbering or anatomic subregion.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012251</value>
@@ -2827,7 +2827,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                            </attribute>
                            <node>
                               <name>Computer-screen</name>
-                              <description>An electronic device designed as a display or a physical device designed to be a protective meshwork.</description>
+                              <description>An electronic device designed as a display or a physical device designed to be a protective mesh work.</description>
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012312</value>
@@ -3054,7 +3054,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Plastic</name>
-                     <description>Various high-molecular-weight thermoplastic or thermosetting polymers that are capable of being molded, extruded, drawn, or otherwise shaped and then hardened into a form.</description>
+                     <description>Various high-molecular-weight thermoplastic or thermo-setting polymers that are capable of being molded, extruded, drawn, or otherwise shaped and then hardened into a form.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012340</value>
@@ -4401,7 +4401,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                      <node>
                         <name>Eye-blink-artifact</name>
-                        <description>Artifact from eye blinking. In EEG, Fp1/Fp2 electrodes become electropositive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye.</description>
+                        <description>Artifact from eye blinking. In EEG, Fp1/Fp2 electrodes become electro-positive with eye closure because the cornea is positively charged causing a negative deflection in Fp1/Fp2. If the eye blink is unilateral, consider prosthetic eye.</description>
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012499</value>
@@ -4458,7 +4458,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </node>
                   <node>
                      <name>Pulse-artifact</name>
-                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardioballistic artifact.</description>
+                     <description>A mechanical artifact from a pulsating blood vessel near a measurement site, cardio-ballistic artifact.</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012506</value>
@@ -6212,7 +6212,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clockface numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.2.0</value>
@@ -6242,7 +6242,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </node>
                         <node>
                            <name>Clock-face-position</name>
-                           <description>A location identifier based on clockface numbering or anatomic subregion. As an object, just use the tag Clock.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. As an object, just use the tag Clock.</description>
                            <attribute>
                               <name>hedId</name>
                               <value>HED_0013229</value>
@@ -7082,7 +7082,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Stochastic</name>
-                  <description>Usesa random probability distribution or pattern that may be analyzed statistically but may not be predicted precisely to determine future states.</description>
+                  <description>Uses a random probability distribution or pattern that may be analyzed statistically but may not be predicted precisely to determine future states.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Deterministic</value>
