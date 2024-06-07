@@ -42,7 +42,7 @@ jobs:
       - name: Get changed files between main and provisional
         id: changed-files
         run: |
-          CHANGED_FILES=$(git diff --name-only main..provisional | tr '\n' ' ')
+          CHANGED_FILES=$(git diff --name-only origin/main..origin/provisional | tr '\n' ' ')
           echo "CHANGED_FILES=${CHANGED_FILES}" >> $GITHUB_ENV
           echo "List of changed files: $CHANGED_FILES"
 
