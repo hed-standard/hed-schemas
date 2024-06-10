@@ -30,25 +30,38 @@ All released and prereleased versions of the HED schemas can be viewed the [**HE
 
 The following table summarizes the current versions of the HED schemas.
 
-| Schema | Latest<br/>version| Description | Prerelease<br/>version  | DOI  |
-| ------ | --------------- | ------- | ------------------------- | ---- |
-| [**standard**](./standard_schema) | 8.2.0 | Basic vocabulary for annotating data. | 8.3.0 | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 1.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) |1.1.1 | 10.5281/zenodo.7897596  |
-|  [**lisa**](library_schemas/lang) |  | LISA linguistic stimuli annotation vocabulary. | 0.0.1 |  |
-|  [**testlib**](library_schemas/testlib) | 2.0.0 | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.) | 2.0.1 |  |
+| Schema                                 | Latest<br/>version | Description                                                                                                                                                         | Prerelease<br/>version | DOI  |
+|----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------| ---- |
+| [**standard**](./standard_schema)      | 8.3.0              | Basic vocabulary for annotating data.                                                                                                                               | 8.4.0                  | 10.5281/zenodo.7876037 |
+| [**score**](library_schemas/score)     | 1.1.0              | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) | 2.0.0                  | 10.5281/zenodo.7897596  |
+| [**lang**](library_schemas/lang)       |                    | LANG linguistic stimuli annotation vocabulary.                                                                                                                      | 0.0.1                  |  |
+| [**testlib**](library_schemas/testlib) | 3.0.0              | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.)                                                                                  | 4.0.0                  |  |
 
 ## HED formats
-HED schemas are stored in two formats: `.mediawiki` and `.xml`.
-The `.mediawiki` Markdown format is used by schema developers to create and
-maintain HED schemas. For each schema, the `.mediawiki` versions are
-stored in the respective `.mediawiki` directory for the schema.
-
-The `.mediawiki` format is converted to an equivalent
-`.xml` format for use with all HED analysis and validation tools. 
-For each schema, the `.xml` versions are
-stored in the respective `.xml` directory for the schema.
+HED schemas are stored in three different formats:
+MediaWiki (`.mediawiki`), XML (`.xml`), and tabular (`.tsv`).
 An online schema conversion tool is available at as part of the
 [**HED online tools**](https://hedtools.org/hed/schemas).
+
+### MediaWiki format
+The `.mediawiki` Markdown format is used by schema developers to create and
+maintain HED schemas. For each schema, the `.mediawiki` versions are
+stored in the respective `hedwiki` directory for the schema.
+
+### XML format
+The XML (`.xml`) format used with all HED analysis and validation tools.
+It is never created directly by schema developers, but rather created from either the
+MediaWiki or the tabular versions of the schema.
+For each schema, the XML versions are
+stored in the respective `hedxml` directory for the schema.
+The XML and MediaWiki contain equivalent information.
+
+### Tabular format
+The `.tsv` format is a tabular  (tab-separated) text format.
+Each type of entity in the HED schema (e.g., tags, unit classes, etc.) has its own tsv file.
+For each schema the tabular versions are stored in the respective `hedtsv` directory for the schema.
+The tabular version may contain additional information such as provenance and links to other ontologies.
+
 
 ## HED revision process
 If you want to suggest a new feature or a change to the standard HED schema or one
@@ -62,7 +75,7 @@ schema that is located in the `prerelease` subdirectory.
 Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
 
-For a more complete view of the process see the [**HED schema developer's guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopmentGuide.htmlhttps://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html).
+For a more complete view of the process see the [**HED schema developer's guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html).
 
 ## Tools to help with HED annotations
 The GUI tool [**CTagger**](https://www.hed-resources.org/en/latest/CTaggerGuiTaggingTool.html) is available to help users with the annotation process. 
