@@ -1,6 +1,1636 @@
 
 # CHANGELOG for HED schema
 
+## Changes for HED 8.3.0 Released 6/10/2024
+
+**Key overall changes:**   
+
+ - Added hedId attributes to all schema elements. 
+ - Provided a .tsv format for schema development.
+ - Incorporated the artifact subtree into the standard schema.  
+ - Revamped the Properties section of the schema, replace the `bool`
+property with `Domain` and `Range` properties. Schema attributes now
+have their domains and ranges fully specified (as required by the ontology mapping).
+ - The `annotationProperty` now replaces the negation of the `isHeritedProperty`.
+
+**Details:**
+
+**Tags:**
+
+ -	Ride (Minor): Item Ride added
+ -	Head-part (Minor): Item Head-part added
+ -	Brain (Minor): Item Brain added
+ -	Brain-region (Minor): Item Brain-region added
+ -	Cerebellum (Minor): Item Cerebellum added
+ -	Frontal-lobe (Minor): Item Frontal-lobe added
+ -	Occipital-lobe (Minor): Item Occipital-lobe added
+ -	Parietal-lobe (Minor): Item Parietal-lobe added
+ -	Temporal-lobe (Minor): Item Temporal-lobe added
+ -	Face-part (Minor): Item Face-part added
+ -	Eyelid (Minor): Item Eyelid added
+ -	Mouth-part (Minor): Item Mouth-part added
+ -	Tongue (Minor): Item Tongue added
+ -	Lower-extremity-part (Minor): Item Lower-extremity-part added
+ -	Foot-part (Minor): Item Foot-part added
+ -	Toe (Minor): Item Toe added
+ -	Lower-leg (Minor): Item Lower-leg added
+ -	Lower-leg-part (Minor): Item Lower-leg-part added
+ -	Upper-leg (Minor): Item Upper-leg added
+ -	Upper-leg-part (Minor): Item Upper-leg-part added
+ -	Neck (Minor): Item Neck added
+ -	Torso-part (Minor): Item Torso-part added
+ -	Abdomen (Minor): Item Abdomen added
+ -	Navel (Minor): Item Navel added
+ -	Pelvis (Minor): Item Pelvis added
+ -	Pelvis-part (Minor): Item Pelvis-part added
+ -	Genitalia (Minor): Item Genitalia added
+ -	Viscera (Minor): Item Viscera added
+ -	Upper-extremity-part (Minor): Item Upper-extremity-part added
+ -	Forearm-part (Minor): Item Forearm-part added
+ -	Hand-part (Minor): Item Hand-part added
+ -	Fingers (Minor): Item Fingers added
+ -	Upper-arm-part (Minor): Item Upper-arm-part added
+ -	Pseudoword (Minor): Item Pseudoword added
+ -	EMG-recorder (Minor): Item EMG-recorder added
+ -	Catamenial (Minor): Item Catamenial added
+ -	Fever (Minor): Item Fever added
+ -	Other-sex (Minor): Item Other-sex added
+ -	Data-artifact (Minor): Item Data-artifact added
+ -	Biological-artifact (Minor): Item Biological-artifact added
+ -	Chewing-artifact (Minor): Item Chewing-artifact added
+ -	ECG-artifact (Minor): Item ECG-artifact added
+ -	EMG-artifact (Minor): Item EMG-artifact added
+ -	Eye-artifact (Minor): Item Eye-artifact added
+ -	Eye-blink-artifact (Minor): Item Eye-blink-artifact added
+ -	Eye-movement-artifact (Minor): Item Eye-movement-artifact added
+ -	Horizontal-eye-movement-artifact (Minor): Item Horizontal-eye-movement-artifact added
+ -	Nystagmus-artifact (Minor): Item Nystagmus-artifact added
+ -	Slow-eye-movement-artifact (Minor): Item Slow-eye-movement-artifact added
+ -	Vertical-eye-movement-artifact (Minor): Item Vertical-eye-movement-artifact added
+ -	Movement-artifact (Minor): Item Movement-artifact added
+ -	Pulse-artifact (Minor): Item Pulse-artifact added
+ -	Respiration-artifact (Minor): Item Respiration-artifact added
+ -	Rocking-patting-artifact (Minor): Item Rocking-patting-artifact added
+ -	Sucking-artifact (Minor): Item Sucking-artifact added
+ -	Sweat-artifact (Minor): Item Sweat-artifact added
+ -	Tongue-movement-artifact (Minor): Item Tongue-movement-artifact added
+ -	Nonbiological-artifact (Minor): Item Nonbiological-artifact added
+ -	Artificial-ventilation-artifact (Minor): Item Artificial-ventilation-artifact added
+ -	Dialysis-artifact (Minor): Item Dialysis-artifact added
+ -	Electrode-movement-artifact (Minor): Item Electrode-movement-artifact added
+ -	Electrode-pops-artifact (Minor): Item Electrode-pops-artifact added
+ -	Induction-artifact (Minor): Item Induction-artifact added
+ -	Line-noise-artifact (Minor): Item Line-noise-artifact added
+ -	Salt-bridge-artifact (Minor): Item Salt-bridge-artifact added
+ -	Unknown (Minor): Item Unknown added
+ -	Categorical-location-value (Minor): Item Categorical-location-value added
+ -	Anterior (Minor): Item Anterior added
+ -	Lateral (Minor): Item Lateral added
+ -	Left (Minor): Item Left added
+ -	Medial (Minor): Item Medial added
+ -	Posterior (Minor): Item Posterior added
+ -	Right (Minor): Item Right added
+ -	Clock-face-position (Minor): Item Clock-face-position added
+ -	Perimeter (Minor): Item Perimeter added
+ -	Radius (Minor): Item Radius added
+ -	Metadata-identifier (Minor): Item Metadata-identifier added
+ -	DOI (Minor): Item DOI added
+ -	Species-identifier (Minor): Item Species-identifier added
+ -	UUID (Minor): Item UUID added
+ -	Modified-date (Minor): Item Modified-date added
+ -	URL (Minor): Item URL added
+ -	Luminance-contrast (Minor): Item Luminance-contrast added
+ -	Ear (Minor): Tag Ear moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Ear to Item/Biological-item/Anatomical-item/Body-part/Head-part/Ear
+ -	Face (Minor): Tag Face moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face
+ -	Cheek (Minor): Tag Cheek moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Cheek to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Cheek
+ -	Chin (Minor): Tag Chin moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Chin to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Chin
+ -	Eye (Minor): Tag Eye moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Eye to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Eye
+ -	Eyebrow (Minor): Tag Eyebrow moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Eyebrow to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Eyebrow
+ -	Forehead (Minor): Tag Forehead moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Forehead to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Forehead
+ -	Lip (Minor): Tag Lip moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Lip to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Lip
+ -	Mouth (Minor): Tag Mouth moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Mouth to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Mouth
+ -	Nose (Minor): Tag Nose moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Nose to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Nose
+ -	Teeth (Minor): Tag Teeth moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Face/Teeth to Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Mouth-part/Teeth
+ -	Hair (Minor): Tag Hair moved in schema from Item/Biological-item/Anatomical-item/Body-part/Head/Hair to Item/Biological-item/Anatomical-item/Body-part/Head-part/Hair
+ -	Ankle (Minor): Tag Ankle moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Ankle to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Ankle
+ -	Calf (Minor): Tag Calf moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Calf to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Lower-leg-part/Calf
+ -	Foot (Minor): Tag Foot moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot
+ -	Big-toe (Minor): Tag Big-toe moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Big-toe to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot-part/Toe/Big-toe
+ -	Heel (Minor): Tag Heel moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Heel to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot-part/Heel
+ -	Instep (Minor): Tag Instep moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Instep to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot-part/Instep
+ -	Little-toe (Minor): Tag Little-toe moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Little-toe to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot-part/Toe/Little-toe
+ -	Toes (Minor): Tag Toes moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Foot/Toes to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Foot-part/Toes
+ -	Knee (Minor): Tag Knee moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Knee to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Knee
+ -	Shin (Minor): Tag Shin moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Shin to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Lower-leg-part/Shin
+ -	Thigh (Minor): Tag Thigh moved in schema from Item/Biological-item/Anatomical-item/Body-part/Lower-extremity/Thigh to Item/Biological-item/Anatomical-item/Body-part/Lower-extremity-part/Upper-leg-part/Thigh
+ -	Buttocks (Minor): Tag Buttocks moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Buttocks to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Pelvis-part/Buttocks
+ -	Gentalia (Minor): Tag Gentalia moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Gentalia to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Pelvis-part/Gentalia
+ -	Hip (Minor): Tag Hip moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Hip to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Pelvis-part/Hip
+ -	Torso-back (Minor): Tag Torso-back moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Torso-back to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Torso-back
+ -	Torso-chest (Minor): Tag Torso-chest moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Torso-chest to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Torso-chest
+ -	Waist (Minor): Tag Waist moved in schema from Item/Biological-item/Anatomical-item/Body-part/Torso/Waist to Item/Biological-item/Anatomical-item/Body-part/Torso-part/Waist
+ -	Elbow (Minor): Tag Elbow moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Elbow to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Elbow
+ -	Forearm (Minor): Tag Forearm moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Forearm to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Forearm
+ -	Hand (Minor): Tag Hand moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand
+ -	Finger (Minor): Tag Finger moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger
+ -	Index-finger (Minor): Tag Index-finger moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger/Index-finger to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger/Index-finger
+ -	Little-finger (Minor): Tag Little-finger moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger/Little-finger to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger/Little-finger
+ -	Middle-finger (Minor): Tag Middle-finger moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger/Middle-finger to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger/Middle-finger
+ -	Ring-finger (Minor): Tag Ring-finger moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger/Ring-finger to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger/Ring-finger
+ -	Thumb (Minor): Tag Thumb moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Finger/Thumb to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Finger/Thumb
+ -	Knuckles (Minor): Tag Knuckles moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Knuckles to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Knuckles
+ -	Palm (Minor): Tag Palm moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Hand/Palm to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Hand-part/Palm
+ -	Shoulder (Minor): Tag Shoulder moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Shoulder to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Shoulder
+ -	Upper-arm (Minor): Tag Upper-arm moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Upper-arm to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Upper-arm
+ -	Wrist (Minor): Tag Wrist moved in schema from Item/Biological-item/Anatomical-item/Body-part/Upper-extremity/Wrist to Item/Biological-item/Anatomical-item/Body-part/Upper-extremity-part/Wrist
+ -	Clock-face (Minor): Value class numericClass added to Clock-face
+ -	Clock-face (Minor): Tag Clock-face moved in schema from Item/Object/Man-made-object/Device/Measurement-device/Clock/Clock-face to Property/Data-property/Data-value/Spatiotemporal-value/Spatial-value/Position/Clock-face
+ -	Clock-face (Minor): Inherited attribute extensionAllowed removed
+ -	CogAtlas (Minor): Tag CogAtlas moved in schema from Property/Informational-property/Metadata/CogAtlas to Property/Informational-property/Metadata/Metadata-identifier/CogAtlas
+ -	CogPo (Minor): Tag CogPo moved in schema from Property/Informational-property/Metadata/CogPo to Property/Informational-property/Metadata/Metadata-identifier/CogPo
+ -	OBO-identifier (Minor): Tag OBO-identifier moved in schema from Property/Informational-property/Metadata/OBO-identifier to Property/Informational-property/Metadata/Metadata-identifier/OBO-identifier
+ -	Subject-identifier (Minor): Tag Subject-identifier moved in schema from Property/Informational-property/Metadata/Subject-identifier to Property/Informational-property/Metadata/Metadata-identifier/Subject-identifier
+ -	Version-identifier (Minor): Tag Version-identifier moved in schema from Property/Informational-property/Metadata/Version-identifier to Property/Informational-property/Metadata/Metadata-identifier/Version-identifier
+ -	Controller-agent (Patch): Description of Controller-agent modified
+ -	Software-agent (Patch): Description of Software-agent modified
+ -	Communicate (Patch): Description of Communicate modified
+ -	Communicate-gesturally (Patch): Description of Communicate-gesturally modified
+ -	Hiccup (Patch): Description of Hiccup modified
+ -	Yawn (Patch): Description of Yawn modified
+ -	Kick (Patch): Description of Kick modified
+ -	Predict (Patch): Description of Predict modified
+ -	Cheek (Patch): Description of Cheek modified
+ -	Teeth (Patch): Description of Teeth modified
+ -	Toes (Patch): Related tag changed on Toes from empty to Toe
+ -	Toes (Patch): Description of Toes modified
+ -	Gentalia (Patch): Description of Gentalia modified
+ -	Clause (Patch): Description of Clause modified
+ -	Nonword (Patch): Description of Nonword modified
+ -	Phoneme (Patch): Description of Phoneme modified
+ -	Syllable (Patch): Description of Syllable modified
+ -	Word (Patch): Description of Word modified
+ -	Clockface (Patch): Description of Clockface modified
+ -	Computer-screen (Patch): Description of Computer-screen modified
+ -	Measurement-device (Patch): Description of Measurement-device modified
+ -	Clock-face (Patch): Suggested tag changed on Clock-face from Sensory-presentation to empty
+ -	Clock-face (Patch): Attribute takesValue added
+ -	Clock-face (Patch): Attribute deprecatedFrom modified from None to 8.2.0
+ -	Clock-face (Patch): Description of Clock-face modified
+ -	Tool (Patch): Description of Tool modified
+ -	Plastic (Patch): Description of Plastic modified
+ -	Media (Patch): Description of Media modified
+ -	Truck (Patch): Description of Truck modified
+ -	Environmental-sound (Patch): Description of Environmental-sound modified
+ -	Agent-property (Patch): Description of Agent-property modified
+ -	Content (Patch): Description of Content modified
+ -	Relieved (Patch): Description of Relieved modified
+ -	Pause (Patch): Description of Pause modified
+ -	Time-sync (Patch): Description of Time-sync modified
+ -	Masked (Patch): Description of Masked modified
+ -	Stochastic (Patch): Description of Stochastic modified
+ -	Composite-terrain (Patch): Description of Composite-terrain modified
+ -	Paved-terrain (Patch): Description of Paved-terrain modified
+ -	Sloped-terrain (Patch): Description of Sloped-terrain modified
+ -	CSS-color (Patch): Description of CSS-color modified
+ -	Indeterminate-action (Patch): Description of Indeterminate-action modified
+ -	Distractor (Patch): Description of Distractor modified
+ -	Unrelated-to (Patch): Description of Unrelated-to modified
+ -	After (Patch): Description of After modified
+ -	Before (Patch): Description of Before modified
+
+**Units:**
+
+ -	V (Minor): Item V added
+ -	uV (Minor): Item uV added
+ -	volt (Minor): Item volt added
+ -	degree-Celsius (Minor): Item degree-Celsius added
+ -	month (Minor): Item month added
+ -	year (Minor): Item year added
+ -	m-per-s^2 (Patch): Attribute allowedCharacter modified from None to caret
+ -	m^2 (Patch): Attribute allowedCharacter modified from None to caret
+ -	$ (Patch): Attribute allowedCharacter modified from None to dollar
+ -	euro (Patch): Description of euro modified
+ -	point (Patch): Description of point modified
+ -	m-per-s^3 (Patch): Attribute allowedCharacter modified from None to caret
+ -	tesla (Patch): Attribute conversionFactor modified from 10^-15 to 10e-15
+ -	T (Patch): Attribute conversionFactor modified from 10^-15 to 10e-15
+ -	degree Celsius (Patch): Attribute deprecatedFrom modified from None to 8.2.0
+ -	degree Celsius (Patch): Description of degree Celsius modified
+ -	m^3 (Patch): Attribute allowedCharacter modified from None to caret
+ -	v (Unknown): Item v removed from Units
+ -	Volt (Unknown): Item Volt removed from Units
+
+**Unit Classes:**
+
+ -	electricPotentialUnits (Major): Unit v removed from electricPotentialUnits
+ -	electricPotentialUnits (Major): Unit Volt removed from electricPotentialUnits
+ -	electricPotentialUnits (Patch): Unit V added to electricPotentialUnits
+ -	electricPotentialUnits (Patch): Unit uV added to electricPotentialUnits
+ -	electricPotentialUnits (Patch): Unit volt added to electricPotentialUnits
+ -	electricPotentialUnits (Patch): Attribute defaultUnits modified from uv to uV
+ -	magneticFieldUnits (Patch): Attribute defaultUnits modified from fT to T
+ -	magneticFieldUnits (Patch): Description of magneticFieldUnits modified
+ -	temperatureUnits (Patch): Unit degree-Celsius added to temperatureUnits
+ -	temperatureUnits (Patch): Attribute defaultUnits modified from None to degree-Celsius
+ -	timeUnits (Patch): Unit month added to timeUnits
+ -	timeUnits (Patch): Unit year added to timeUnits
+
+**Value Classes:**
+
+ -	dateTimeClass (Patch): Attribute allowedCharacter modified from digits,T,-,: to digits,T,hyphen,colon
+ -	dateTimeClass (Patch): Description of dateTimeClass modified
+ -	nameClass (Patch): Attribute allowedCharacter modified from letters,digits,_,- to letters,digits,underscore,hyphen
+ -	nameClass (Patch): Description of nameClass modified
+ -	numericClass (Patch): Attribute allowedCharacter modified from digits,E,e,+,-,. to digits,E,e,plus,hyphen,period
+ -	posixPath (Patch): Attribute allowedCharacter modified from digits,letters,/,: to digits,letters,slash,colon
+ -	textClass (Patch): Attribute allowedCharacter modified from letters,digits,blank,+,-,:,;,.,/,(,),?,*,%,$,@ to text
+ -	textClass (Patch): Description of textClass modified
+
+**Unit Modifiers:**
+ -	deca (Patch): Description of deca modified
+ -	da (Patch): Description of da modified
+ -	hecto (Patch): Description of hecto modified
+ -	h (Patch): Description of h modified
+ -	kilo (Patch): Description of kilo modified
+ -	k (Patch): Description of k modified
+ -	mega (Patch): Attribute conversionFactor modified from 10^6 to 10e6
+ -	mega (Patch): Description of mega modified
+ -	M (Patch): Attribute conversionFactor modified from 10^6 to 10e6
+ -	M (Patch): Description of M modified
+ -	giga (Patch): Attribute conversionFactor modified from 10^9 to 10e9
+ -	giga (Patch): Description of giga modified
+ -	G (Patch): Attribute conversionFactor modified from 10^9 to 10e9
+ -	G (Patch): Description of G modified
+ -	tera (Patch): Attribute conversionFactor modified from 10^12 to 10e12
+ -	tera (Patch): Description of tera modified
+ -	T (Patch): Attribute conversionFactor modified from 10^12 to 10e12
+ -	T (Patch): Description of T modified
+ -	peta (Patch): Attribute conversionFactor modified from 10^15 to 10e15
+ -	peta (Patch): Description of peta modified
+ -	P (Patch): Attribute conversionFactor modified from 10^15 to 10e15
+ -	P (Patch): Description of P modified
+ -	exa (Patch): Attribute conversionFactor modified from 10^18 to 10e18
+ -	exa (Patch): Description of exa modified
+ -	E (Patch): Attribute conversionFactor modified from 10^18 to 10e18
+ -	E (Patch): Description of E modified
+ -	zetta (Patch): Attribute conversionFactor modified from 10^21 to 10e21
+ -	zetta (Patch): Description of zetta modified
+ -	Z (Patch): Attribute conversionFactor modified from 10^21 to 10e21
+ -	Z (Patch): Description of Z modified
+ -	yotta (Patch): Attribute conversionFactor modified from 10^24 to 10e24
+ -	yotta (Patch): Description of yotta modified
+ -	Y (Patch): Attribute conversionFactor modified from 10^24 to 10e24
+ -	Y (Patch): Description of Y modified
+ -	deci (Patch): Description of deci modified
+ -	d (Patch): Description of d modified
+ -	centi (Patch): Description of centi modified
+ -	c (Patch): Description of c modified
+ -	milli (Patch): Description of milli modified
+ -	m (Patch): Description of m modified
+ -	micro (Patch): Attribute conversionFactor modified from 10^-6 to 10e-6
+ -	micro (Patch): Description of micro modified
+ -	u (Patch): Attribute conversionFactor modified from 10^-6 to 10e-6
+ -	u (Patch): Description of u modified
+ -	nano (Patch): Attribute conversionFactor modified from 10^-9 to 10e-9
+ -	nano (Patch): Description of nano modified
+ -	n (Patch): Attribute conversionFactor modified from 10^-9 to 10e-9
+ -	n (Patch): Description of n modified
+ -	pico (Patch): Attribute conversionFactor modified from 10^-12 to 10e-12
+ -	pico (Patch): Description of pico modified
+ -	p (Patch): Attribute conversionFactor modified from 10^-12 to 10e-12
+ -	p (Patch): Description of p modified
+ -	femto (Patch): Attribute conversionFactor modified from 10^-15 to 10e-15
+ -	femto (Patch): Description of femto modified
+ -	f (Patch): Attribute conversionFactor modified from 10^-15 to 10e-15
+ -	f (Patch): Description of f modified
+ -	atto (Patch): Attribute conversionFactor modified from 10^-18 to 10e-18
+ -	atto (Patch): Description of atto modified
+ -	a (Patch): Attribute conversionFactor modified from 10^-18 to 10e-18
+ -	a (Patch): Description of a modified
+ -	zepto (Patch): Attribute conversionFactor modified from 10^-21 to 10e-21
+ -	zepto (Patch): Description of zepto modified
+ -	z (Patch): Attribute conversionFactor modified from 10^-21 to 10e-21
+ -	z (Patch): Description of z modified
+ -	yocto (Patch): Attribute conversionFactor modified from 10^-24 to 10e-24
+ -	yocto (Patch): Description of yocto modified
+ -	y (Patch): Attribute conversionFactor modified from 10^-24 to 10e-24
+ -	y (Patch): Description of y modified
+
+**Properties:**
+ -	annotationProperty (Minor): Item annotationProperty added
+ -	boolRange (Minor): Item boolRange added
+ -	elementDomain (Minor): Item elementDomain added
+ -	tagDomain (Minor): Item tagDomain added
+ -	tagRange (Minor): Item tagRange added
+ -	numericRange (Minor): Item numericRange added
+ -	stringRange (Minor): Item stringRange added
+ -	unitClassDomain (Minor): Item unitClassDomain added
+ -	unitClassRange (Minor): Item unitClassRange added
+ -	unitModifierDomain (Minor): Item unitModifierDomain added
+ -	unitDomain (Minor): Item unitDomain added
+ -	unitRange (Minor): Item unitRange added
+ -	valueClassDomain (Minor): Item valueClassDomain added
+ -	valueClassRange (Minor): Item valueClassRange added
+ -	boolProperty (Unknown): Item boolProperty removed from Properties
+ -	elementProperty (Unknown): Item elementProperty removed from Properties
+ -	isInheritedProperty (Unknown): Item isInheritedProperty removed from Properties
+ -	nodeProperty (Unknown): Item nodeProperty removed from Properties
+ -	unitClassProperty (Unknown): Item unitClassProperty removed from Properties
+ -	unitModifierProperty (Unknown): Item unitModifierProperty removed from Properties
+ -	unitProperty (Unknown): Item unitProperty removed from Properties
+ -	valueClassProperty (Unknown): Item valueClassProperty removed from Properties
+
+**Attributes:**
+ -	hedId (Minor): Item hedId added
+ -	isPartOf (Minor): Item isPartOf added
+ -	allowedCharacter (Patch): Attribute stringRange added
+ -	allowedCharacter (Patch): Attribute unitDomain added
+ -	allowedCharacter (Patch): Attribute valueClassDomain added
+ -	allowedCharacter (Patch): Attribute valueClassProperty removed
+ -	allowedCharacter (Patch): Attribute unitModifierDomain added
+ -	allowedCharacter (Patch): Description of allowedCharacter modified
+ -	conversionFactor (Patch): Attribute numericRange added
+ -	conversionFactor (Patch): Attribute unitDomain added
+ -	conversionFactor (Patch): Attribute unitModifierProperty removed
+ -	conversionFactor (Patch): Attribute unitProperty removed
+ -	conversionFactor (Patch): Attribute unitModifierDomain added
+ -	conversionFactor (Patch): Description of conversionFactor modified
+ -	deprecatedFrom (Patch): Attribute elementDomain added
+ -	deprecatedFrom (Patch): Attribute stringRange added
+ -	deprecatedFrom (Patch): Attribute elementProperty removed
+ -	deprecatedFrom (Patch): Description of deprecatedFrom modified
+ -	defaultUnits (Patch): Attribute unitClassDomain added
+ -	defaultUnits (Patch): Attribute unitClassProperty removed
+ -	defaultUnits (Patch): Attribute unitRange added
+ -	defaultUnits (Patch): Description of defaultUnits modified
+ -	extensionAllowed (Patch): Attribute nodeProperty removed
+ -	extensionAllowed (Patch): Attribute boolRange added
+ -	extensionAllowed (Patch): Attribute isInheritedProperty removed
+ -	extensionAllowed (Patch): Attribute boolProperty removed
+ -	extensionAllowed (Patch): Attribute tagDomain added
+ -	extensionAllowed (Patch): Description of extensionAllowed modified
+ -	inLibrary (Patch): Attribute elementDomain added
+ -	inLibrary (Patch): Attribute stringRange added
+ -	inLibrary (Patch): Attribute elementProperty removed
+ -	inLibrary (Patch): Description of inLibrary modified
+ -	relatedTag (Patch): Attribute nodeProperty removed
+ -	relatedTag (Patch): Attribute tagRange added
+ -	relatedTag (Patch): Attribute isInheritedProperty removed
+ -	relatedTag (Patch): Attribute tagDomain added
+ -	relatedTag (Patch): Description of relatedTag modified
+ -	requireChild (Patch): Attribute nodeProperty removed
+ -	requireChild (Patch): Attribute boolRange added
+ -	requireChild (Patch): Attribute annotationProperty added
+ -	requireChild (Patch): Attribute boolProperty removed
+ -	requireChild (Patch): Attribute tagDomain added
+ -	requireChild (Patch): Description of requireChild modified
+ -	reserved (Patch): Attribute nodeProperty removed
+ -	reserved (Patch): Attribute boolRange added
+ -	reserved (Patch): Attribute boolProperty removed
+ -	reserved (Patch): Attribute tagDomain added
+ -	reserved (Patch): Description of reserved modified
+ -	rooted (Patch): Attribute nodeProperty removed
+ -	rooted (Patch): Attribute tagRange added
+ -	rooted (Patch): Attribute annotationProperty added
+ -	rooted (Patch): Attribute tagDomain added
+ -	rooted (Patch): Description of rooted modified
+ -	SIUnit (Patch): Attribute unitDomain added
+ -	SIUnit (Patch): Attribute boolRange added
+ -	SIUnit (Patch): Attribute unitProperty removed
+ -	SIUnit (Patch): Attribute boolProperty removed
+ -	SIUnit (Patch): Description of SIUnit modified
+ -	SIUnitModifier (Patch): Attribute unitModifierProperty removed
+ -	SIUnitModifier (Patch): Attribute boolRange added
+ -	SIUnitModifier (Patch): Attribute boolProperty removed
+ -	SIUnitModifier (Patch): Attribute unitModifierDomain added
+ -	SIUnitModifier (Patch): Description of SIUnitModifier modified
+ -	SIUnitSymbolModifier (Patch): Attribute unitModifierProperty removed
+ -	SIUnitSymbolModifier (Patch): Attribute boolRange added
+ -	SIUnitSymbolModifier (Patch): Attribute boolProperty removed
+ -	SIUnitSymbolModifier (Patch): Attribute unitModifierDomain added
+ -	SIUnitSymbolModifier (Patch): Description of SIUnitSymbolModifier modified
+ -	suggestedTag (Patch): Attribute nodeProperty removed
+ -	suggestedTag (Patch): Attribute tagRange added
+ -	suggestedTag (Patch): Attribute isInheritedProperty removed
+ -	suggestedTag (Patch): Attribute tagDomain added
+ -	suggestedTag (Patch): Description of suggestedTag modified
+ -	tagGroup (Patch): Attribute nodeProperty removed
+ -	tagGroup (Patch): Attribute boolRange added
+ -	tagGroup (Patch): Attribute boolProperty removed
+ -	tagGroup (Patch): Attribute tagDomain added
+ -	tagGroup (Patch): Description of tagGroup modified
+ -	takesValue (Patch): Attribute nodeProperty removed
+ -	takesValue (Patch): Attribute boolRange added
+ -	takesValue (Patch): Attribute annotationProperty added
+ -	takesValue (Patch): Attribute boolProperty removed
+ -	takesValue (Patch): Attribute tagDomain added
+ -	takesValue (Patch): Description of takesValue modified
+ -	topLevelTagGroup (Patch): Attribute nodeProperty removed
+ -	topLevelTagGroup (Patch): Attribute boolRange added
+ -	topLevelTagGroup (Patch): Attribute boolProperty removed
+ -	topLevelTagGroup (Patch): Attribute tagDomain added
+ -	topLevelTagGroup (Patch): Description of topLevelTagGroup modified
+ -	unique (Patch): Attribute nodeProperty removed
+ -	unique (Patch): Attribute boolRange added
+ -	unique (Patch): Attribute boolProperty removed
+ -	unique (Patch): Attribute tagDomain added
+ -	unique (Patch): Description of unique modified
+ -	unitClass (Patch): Attribute unitClassRange added
+ -	unitClass (Patch): Attribute nodeProperty removed
+ -	unitClass (Patch): Attribute tagDomain added
+ -	unitClass (Patch): Description of unitClass modified
+ -	unitPrefix (Patch): Attribute unitDomain added
+ -	unitPrefix (Patch): Attribute boolRange added
+ -	unitPrefix (Patch): Attribute unitProperty removed
+ -	unitPrefix (Patch): Attribute boolProperty removed
+ -	unitPrefix (Patch): Description of unitPrefix modified
+ -	unitSymbol (Patch): Attribute unitDomain added
+ -	unitSymbol (Patch): Attribute boolRange added
+ -	unitSymbol (Patch): Attribute unitProperty removed
+ -	unitSymbol (Patch): Attribute boolProperty removed
+ -	unitSymbol (Patch): Description of unitSymbol modified
+ -	valueClass (Patch): Attribute valueClassRange added
+ -	valueClass (Patch): Attribute nodeProperty removed
+ -	valueClass (Patch): Attribute tagDomain added
+ -	valueClass (Patch): Description of valueClass modified
+ -	recommended (Unknown): Item recommended removed from Attributes
+ -	required (Unknown): Item required removed from Attributes
+
+**Misc Metadata:** 
+ -	header_attributes (Patch): header_attributes changed from {'version': '8.2.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'} to {'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}
+ -	prologue (Patch): prologue changed
+ -	epilogue (Patch): epilogue changed
+
+**Modified Hed Ids:**
+ -	Event (Patch): Attribute hedId modified from None to HED_0012001
+ -	Sensory-event (Patch): Attribute hedId modified from None to HED_0012002
+ -	Agent-action (Patch): Attribute hedId modified from None to HED_0012003
+ -	Data-feature (Patch): Attribute hedId modified from None to HED_0012004
+ -	Experiment-control (Patch): Attribute hedId modified from None to HED_0012005
+ -	Experiment-procedure (Patch): Attribute hedId modified from None to HED_0012006
+ -	Experiment-structure (Patch): Attribute hedId modified from None to HED_0012007
+ -	Measurement-event (Patch): Attribute hedId modified from None to HED_0012008
+ -	Agent (Patch): Attribute hedId modified from None to HED_0012009
+ -	Animal-agent (Patch): Attribute hedId modified from None to HED_0012010
+ -	Avatar-agent (Patch): Attribute hedId modified from None to HED_0012011
+ -	Controller-agent (Patch): Attribute hedId modified from None to HED_0012012
+ -	Human-agent (Patch): Attribute hedId modified from None to HED_0012013
+ -	Robotic-agent (Patch): Attribute hedId modified from None to HED_0012014
+ -	Software-agent (Patch): Attribute hedId modified from None to HED_0012015
+ -	Action (Patch): Attribute hedId modified from None to HED_0012016
+ -	Communicate (Patch): Attribute hedId modified from None to HED_0012017
+ -	Communicate-gesturally (Patch): Attribute hedId modified from None to HED_0012018
+ -	Clap-hands (Patch): Attribute hedId modified from None to HED_0012019
+ -	Clear-throat (Patch): Attribute hedId modified from None to HED_0012020
+ -	Frown (Patch): Attribute hedId modified from None to HED_0012021
+ -	Grimace (Patch): Attribute hedId modified from None to HED_0012022
+ -	Nod-head (Patch): Attribute hedId modified from None to HED_0012023
+ -	Pump-fist (Patch): Attribute hedId modified from None to HED_0012024
+ -	Raise-eyebrows (Patch): Attribute hedId modified from None to HED_0012025
+ -	Shake-fist (Patch): Attribute hedId modified from None to HED_0012026
+ -	Shake-head (Patch): Attribute hedId modified from None to HED_0012027
+ -	Shhh (Patch): Attribute hedId modified from None to HED_0012028
+ -	Shrug (Patch): Attribute hedId modified from None to HED_0012029
+ -	Smile (Patch): Attribute hedId modified from None to HED_0012030
+ -	Spread-hands (Patch): Attribute hedId modified from None to HED_0012031
+ -	Thumb-up (Patch): Attribute hedId modified from None to HED_0012032
+ -	Thumbs-down (Patch): Attribute hedId modified from None to HED_0012033
+ -	Wave (Patch): Attribute hedId modified from None to HED_0012034
+ -	Widen-eyes (Patch): Attribute hedId modified from None to HED_0012035
+ -	Wink (Patch): Attribute hedId modified from None to HED_0012036
+ -	Communicate-musically (Patch): Attribute hedId modified from None to HED_0012037
+ -	Hum (Patch): Attribute hedId modified from None to HED_0012038
+ -	Play-instrument (Patch): Attribute hedId modified from None to HED_0012039
+ -	Sing (Patch): Attribute hedId modified from None to HED_0012040
+ -	Vocalize (Patch): Attribute hedId modified from None to HED_0012041
+ -	Whistle (Patch): Attribute hedId modified from None to HED_0012042
+ -	Communicate-vocally (Patch): Attribute hedId modified from None to HED_0012043
+ -	Cry (Patch): Attribute hedId modified from None to HED_0012044
+ -	Groan (Patch): Attribute hedId modified from None to HED_0012045
+ -	Laugh (Patch): Attribute hedId modified from None to HED_0012046
+ -	Scream (Patch): Attribute hedId modified from None to HED_0012047
+ -	Shout (Patch): Attribute hedId modified from None to HED_0012048
+ -	Sigh (Patch): Attribute hedId modified from None to HED_0012049
+ -	Speak (Patch): Attribute hedId modified from None to HED_0012050
+ -	Whisper (Patch): Attribute hedId modified from None to HED_0012051
+ -	Move (Patch): Attribute hedId modified from None to HED_0012052
+ -	Breathe (Patch): Attribute hedId modified from None to HED_0012053
+ -	Blow (Patch): Attribute hedId modified from None to HED_0012054
+ -	Cough (Patch): Attribute hedId modified from None to HED_0012055
+ -	Exhale (Patch): Attribute hedId modified from None to HED_0012056
+ -	Hiccup (Patch): Attribute hedId modified from None to HED_0012057
+ -	Hold-breath (Patch): Attribute hedId modified from None to HED_0012058
+ -	Inhale (Patch): Attribute hedId modified from None to HED_0012059
+ -	Sneeze (Patch): Attribute hedId modified from None to HED_0012060
+ -	Sniff (Patch): Attribute hedId modified from None to HED_0012061
+ -	Move-body (Patch): Attribute hedId modified from None to HED_0012062
+ -	Bend (Patch): Attribute hedId modified from None to HED_0012063
+ -	Dance (Patch): Attribute hedId modified from None to HED_0012064
+ -	Fall-down (Patch): Attribute hedId modified from None to HED_0012065
+ -	Flex (Patch): Attribute hedId modified from None to HED_0012066
+ -	Jerk (Patch): Attribute hedId modified from None to HED_0012067
+ -	Lie-down (Patch): Attribute hedId modified from None to HED_0012068
+ -	Recover-balance (Patch): Attribute hedId modified from None to HED_0012069
+ -	Shudder (Patch): Attribute hedId modified from None to HED_0012070
+ -	Sit-down (Patch): Attribute hedId modified from None to HED_0012071
+ -	Sit-up (Patch): Attribute hedId modified from None to HED_0012072
+ -	Stand-up (Patch): Attribute hedId modified from None to HED_0012073
+ -	Stretch (Patch): Attribute hedId modified from None to HED_0012074
+ -	Stumble (Patch): Attribute hedId modified from None to HED_0012075
+ -	Turn (Patch): Attribute hedId modified from None to HED_0012076
+ -	Move-body-part (Patch): Attribute hedId modified from None to HED_0012077
+ -	Move-eyes (Patch): Attribute hedId modified from None to HED_0012078
+ -	Blink (Patch): Attribute hedId modified from None to HED_0012079
+ -	Close-eyes (Patch): Attribute hedId modified from None to HED_0012080
+ -	Fixate (Patch): Attribute hedId modified from None to HED_0012081
+ -	Inhibit-blinks (Patch): Attribute hedId modified from None to HED_0012082
+ -	Open-eyes (Patch): Attribute hedId modified from None to HED_0012083
+ -	Saccade (Patch): Attribute hedId modified from None to HED_0012084
+ -	Squint (Patch): Attribute hedId modified from None to HED_0012085
+ -	Stare (Patch): Attribute hedId modified from None to HED_0012086
+ -	Move-face (Patch): Attribute hedId modified from None to HED_0012087
+ -	Bite (Patch): Attribute hedId modified from None to HED_0012088
+ -	Burp (Patch): Attribute hedId modified from None to HED_0012089
+ -	Chew (Patch): Attribute hedId modified from None to HED_0012090
+ -	Gurgle (Patch): Attribute hedId modified from None to HED_0012091
+ -	Swallow (Patch): Attribute hedId modified from None to HED_0012092
+ -	Gulp (Patch): Attribute hedId modified from None to HED_0012093
+ -	Yawn (Patch): Attribute hedId modified from None to HED_0012094
+ -	Move-head (Patch): Attribute hedId modified from None to HED_0012095
+ -	Lift-head (Patch): Attribute hedId modified from None to HED_0012096
+ -	Lower-head (Patch): Attribute hedId modified from None to HED_0012097
+ -	Turn-head (Patch): Attribute hedId modified from None to HED_0012098
+ -	Move-lower-extremity (Patch): Attribute hedId modified from None to HED_0012099
+ -	Curl-toes (Patch): Attribute hedId modified from None to HED_0012100
+ -	Hop (Patch): Attribute hedId modified from None to HED_0012101
+ -	Jog (Patch): Attribute hedId modified from None to HED_0012102
+ -	Jump (Patch): Attribute hedId modified from None to HED_0012103
+ -	Kick (Patch): Attribute hedId modified from None to HED_0012104
+ -	Pedal (Patch): Attribute hedId modified from None to HED_0012105
+ -	Press-foot (Patch): Attribute hedId modified from None to HED_0012106
+ -	Run (Patch): Attribute hedId modified from None to HED_0012107
+ -	Step (Patch): Attribute hedId modified from None to HED_0012108
+ -	Heel-strike (Patch): Attribute hedId modified from None to HED_0012109
+ -	Toe-off (Patch): Attribute hedId modified from None to HED_0012110
+ -	Trot (Patch): Attribute hedId modified from None to HED_0012111
+ -	Walk (Patch): Attribute hedId modified from None to HED_0012112
+ -	Move-torso (Patch): Attribute hedId modified from None to HED_0012113
+ -	Move-upper-extremity (Patch): Attribute hedId modified from None to HED_0012114
+ -	Drop (Patch): Attribute hedId modified from None to HED_0012115
+ -	Grab (Patch): Attribute hedId modified from None to HED_0012116
+ -	Grasp (Patch): Attribute hedId modified from None to HED_0012117
+ -	Hold-down (Patch): Attribute hedId modified from None to HED_0012118
+ -	Lift (Patch): Attribute hedId modified from None to HED_0012119
+ -	Make-fist (Patch): Attribute hedId modified from None to HED_0012120
+ -	Point (Patch): Attribute hedId modified from None to HED_0012121
+ -	Press (Patch): Attribute hedId modified from None to HED_0012122
+ -	Push (Patch): Attribute hedId modified from None to HED_0012123
+ -	Reach (Patch): Attribute hedId modified from None to HED_0012124
+ -	Release (Patch): Attribute hedId modified from None to HED_0012125
+ -	Retract (Patch): Attribute hedId modified from None to HED_0012126
+ -	Scratch (Patch): Attribute hedId modified from None to HED_0012127
+ -	Snap-fingers (Patch): Attribute hedId modified from None to HED_0012128
+ -	Touch (Patch): Attribute hedId modified from None to HED_0012129
+ -	Perceive (Patch): Attribute hedId modified from None to HED_0012130
+ -	Hear (Patch): Attribute hedId modified from None to HED_0012131
+ -	See (Patch): Attribute hedId modified from None to HED_0012132
+ -	Sense-by-touch (Patch): Attribute hedId modified from None to HED_0012133
+ -	Smell (Patch): Attribute hedId modified from None to HED_0012134
+ -	Taste (Patch): Attribute hedId modified from None to HED_0012135
+ -	Perform (Patch): Attribute hedId modified from None to HED_0012136
+ -	Close (Patch): Attribute hedId modified from None to HED_0012137
+ -	Collide-with (Patch): Attribute hedId modified from None to HED_0012138
+ -	Halt (Patch): Attribute hedId modified from None to HED_0012139
+ -	Modify (Patch): Attribute hedId modified from None to HED_0012140
+ -	Open (Patch): Attribute hedId modified from None to HED_0012141
+ -	Operate (Patch): Attribute hedId modified from None to HED_0012142
+ -	Play (Patch): Attribute hedId modified from None to HED_0012143
+ -	Read (Patch): Attribute hedId modified from None to HED_0012144
+ -	Repeat (Patch): Attribute hedId modified from None to HED_0012145
+ -	Rest (Patch): Attribute hedId modified from None to HED_0012146
+ -	Write (Patch): Attribute hedId modified from None to HED_0012148
+ -	Think (Patch): Attribute hedId modified from None to HED_0012149
+ -	Allow (Patch): Attribute hedId modified from None to HED_0012150
+ -	Attend-to (Patch): Attribute hedId modified from None to HED_0012151
+ -	Count (Patch): Attribute hedId modified from None to HED_0012152
+ -	Deny (Patch): Attribute hedId modified from None to HED_0012153
+ -	Detect (Patch): Attribute hedId modified from None to HED_0012154
+ -	Discriminate (Patch): Attribute hedId modified from None to HED_0012155
+ -	Encode (Patch): Attribute hedId modified from None to HED_0012156
+ -	Evade (Patch): Attribute hedId modified from None to HED_0012157
+ -	Generate (Patch): Attribute hedId modified from None to HED_0012158
+ -	Identify (Patch): Attribute hedId modified from None to HED_0012159
+ -	Imagine (Patch): Attribute hedId modified from None to HED_0012160
+ -	Judge (Patch): Attribute hedId modified from None to HED_0012161
+ -	Learn (Patch): Attribute hedId modified from None to HED_0012162
+ -	Memorize (Patch): Attribute hedId modified from None to HED_0012163
+ -	Plan (Patch): Attribute hedId modified from None to HED_0012164
+ -	Predict (Patch): Attribute hedId modified from None to HED_0012165
+ -	Recall (Patch): Attribute hedId modified from None to HED_0012166
+ -	Recognize (Patch): Attribute hedId modified from None to HED_0012167
+ -	Respond (Patch): Attribute hedId modified from None to HED_0012168
+ -	Switch-attention (Patch): Attribute hedId modified from None to HED_0012169
+ -	Track (Patch): Attribute hedId modified from None to HED_0012170
+ -	Item (Patch): Attribute hedId modified from None to HED_0012171
+ -	Biological-item (Patch): Attribute hedId modified from None to HED_0012172
+ -	Anatomical-item (Patch): Attribute hedId modified from None to HED_0012173
+ -	Body (Patch): Attribute hedId modified from None to HED_0012174
+ -	Body-part (Patch): Attribute hedId modified from None to HED_0012175
+ -	Head (Patch): Attribute hedId modified from None to HED_0012176
+ -	Ear (Patch): Attribute hedId modified from None to HED_0012182
+ -	Face (Patch): Attribute hedId modified from None to HED_0012183
+ -	Cheek (Patch): Attribute hedId modified from None to HED_0012184
+ -	Chin (Patch): Attribute hedId modified from None to HED_0012185
+ -	Eye (Patch): Attribute hedId modified from None to HED_0012186
+ -	Eyebrow (Patch): Attribute hedId modified from None to HED_0012187
+ -	Forehead (Patch): Attribute hedId modified from None to HED_0012189
+ -	Lip (Patch): Attribute hedId modified from None to HED_0012190
+ -	Mouth (Patch): Attribute hedId modified from None to HED_0012191
+ -	Nose (Patch): Attribute hedId modified from None to HED_0012192
+ -	Teeth (Patch): Attribute hedId modified from None to HED_0012193
+ -	Hair (Patch): Attribute hedId modified from None to HED_0012194
+ -	Lower-extremity (Patch): Attribute hedId modified from None to HED_0012195
+ -	Ankle (Patch): Attribute hedId modified from None to HED_0012196
+ -	Calf (Patch): Attribute hedId modified from None to HED_0012197
+ -	Foot (Patch): Attribute hedId modified from None to HED_0012198
+ -	Big-toe (Patch): Attribute hedId modified from None to HED_0012199
+ -	Heel (Patch): Attribute hedId modified from None to HED_0012200
+ -	Instep (Patch): Attribute hedId modified from None to HED_0012201
+ -	Little-toe (Patch): Attribute hedId modified from None to HED_0012202
+ -	Toes (Patch): Attribute hedId modified from None to HED_0012203
+ -	Knee (Patch): Attribute hedId modified from None to HED_0012204
+ -	Shin (Patch): Attribute hedId modified from None to HED_0012205
+ -	Thigh (Patch): Attribute hedId modified from None to HED_0012206
+ -	Torso (Patch): Attribute hedId modified from None to HED_0012207
+ -	Buttocks (Patch): Attribute hedId modified from None to HED_0012208
+ -	Gentalia (Patch): Attribute hedId modified from None to HED_0012209
+ -	Hip (Patch): Attribute hedId modified from None to HED_0012210
+ -	Torso-back (Patch): Attribute hedId modified from None to HED_0012211
+ -	Torso-chest (Patch): Attribute hedId modified from None to HED_0012212
+ -	Waist (Patch): Attribute hedId modified from None to HED_0012214
+ -	Upper-extremity (Patch): Attribute hedId modified from None to HED_0012215
+ -	Elbow (Patch): Attribute hedId modified from None to HED_0012216
+ -	Forearm (Patch): Attribute hedId modified from None to HED_0012217
+ -	Hand (Patch): Attribute hedId modified from None to HED_0012218
+ -	Finger (Patch): Attribute hedId modified from None to HED_0012219
+ -	Index-finger (Patch): Attribute hedId modified from None to HED_0012220
+ -	Little-finger (Patch): Attribute hedId modified from None to HED_0012221
+ -	Middle-finger (Patch): Attribute hedId modified from None to HED_0012222
+ -	Ring-finger (Patch): Attribute hedId modified from None to HED_0012223
+ -	Thumb (Patch): Attribute hedId modified from None to HED_0012224
+ -	Knuckles (Patch): Attribute hedId modified from None to HED_0012225
+ -	Palm (Patch): Attribute hedId modified from None to HED_0012226
+ -	Shoulder (Patch): Attribute hedId modified from None to HED_0012227
+ -	Upper-arm (Patch): Attribute hedId modified from None to HED_0012228
+ -	Wrist (Patch): Attribute hedId modified from None to HED_0012229
+ -	Organism (Patch): Attribute hedId modified from None to HED_0012230
+ -	Animal (Patch): Attribute hedId modified from None to HED_0012231
+ -	Human (Patch): Attribute hedId modified from None to HED_0012232
+ -	Plant (Patch): Attribute hedId modified from None to HED_0012233
+ -	Language-item (Patch): Attribute hedId modified from None to HED_0012234
+ -	Character (Patch): Attribute hedId modified from None to HED_0012235
+ -	Clause (Patch): Attribute hedId modified from None to HED_0012236
+ -	Glyph (Patch): Attribute hedId modified from None to HED_0012237
+ -	Nonword (Patch): Attribute hedId modified from None to HED_0012238
+ -	Paragraph (Patch): Attribute hedId modified from None to HED_0012239
+ -	Phoneme (Patch): Attribute hedId modified from None to HED_0012240
+ -	Phrase (Patch): Attribute hedId modified from None to HED_0012241
+ -	Sentence (Patch): Attribute hedId modified from None to HED_0012243
+ -	Syllable (Patch): Attribute hedId modified from None to HED_0012244
+ -	Textblock (Patch): Attribute hedId modified from None to HED_0012245
+ -	Word (Patch): Attribute hedId modified from None to HED_0012246
+ -	Object (Patch): Attribute hedId modified from None to HED_0012247
+ -	Geometric-object (Patch): Attribute hedId modified from None to HED_0012248
+ -	2D-shape (Patch): Attribute hedId modified from None to HED_0012249
+ -	Arrow (Patch): Attribute hedId modified from None to HED_0012250
+ -	Clockface (Patch): Attribute hedId modified from None to HED_0012251
+ -	Cross (Patch): Attribute hedId modified from None to HED_0012252
+ -	Dash (Patch): Attribute hedId modified from None to HED_0012253
+ -	Ellipse (Patch): Attribute hedId modified from None to HED_0012254
+ -	Circle (Patch): Attribute hedId modified from None to HED_0012255
+ -	Rectangle (Patch): Attribute hedId modified from None to HED_0012256
+ -	Square (Patch): Attribute hedId modified from None to HED_0012257
+ -	Single-point (Patch): Attribute hedId modified from None to HED_0012258
+ -	Star (Patch): Attribute hedId modified from None to HED_0012259
+ -	Triangle (Patch): Attribute hedId modified from None to HED_0012260
+ -	3D-shape (Patch): Attribute hedId modified from None to HED_0012261
+ -	Box (Patch): Attribute hedId modified from None to HED_0012262
+ -	Cube (Patch): Attribute hedId modified from None to HED_0012263
+ -	Cone (Patch): Attribute hedId modified from None to HED_0012264
+ -	Cylinder (Patch): Attribute hedId modified from None to HED_0012265
+ -	Ellipsoid (Patch): Attribute hedId modified from None to HED_0012266
+ -	Sphere (Patch): Attribute hedId modified from None to HED_0012267
+ -	Pyramid (Patch): Attribute hedId modified from None to HED_0012268
+ -	Pattern (Patch): Attribute hedId modified from None to HED_0012269
+ -	Dots (Patch): Attribute hedId modified from None to HED_0012270
+ -	LED-pattern (Patch): Attribute hedId modified from None to HED_0012271
+ -	Ingestible-object (Patch): Attribute hedId modified from None to HED_0012272
+ -	Man-made-object (Patch): Attribute hedId modified from None to HED_0012273
+ -	Building (Patch): Attribute hedId modified from None to HED_0012274
+ -	Attic (Patch): Attribute hedId modified from None to HED_0012275
+ -	Basement (Patch): Attribute hedId modified from None to HED_0012276
+ -	Entrance (Patch): Attribute hedId modified from None to HED_0012277
+ -	Roof (Patch): Attribute hedId modified from None to HED_0012278
+ -	Room (Patch): Attribute hedId modified from None to HED_0012279
+ -	Clothing (Patch): Attribute hedId modified from None to HED_0012280
+ -	Device (Patch): Attribute hedId modified from None to HED_0012281
+ -	Assistive-device (Patch): Attribute hedId modified from None to HED_0012282
+ -	Glasses (Patch): Attribute hedId modified from None to HED_0012283
+ -	Writing-device (Patch): Attribute hedId modified from None to HED_0012284
+ -	Pen (Patch): Attribute hedId modified from None to HED_0012285
+ -	Pencil (Patch): Attribute hedId modified from None to HED_0012286
+ -	Computing-device (Patch): Attribute hedId modified from None to HED_0012287
+ -	Cellphone (Patch): Attribute hedId modified from None to HED_0012288
+ -	Desktop-computer (Patch): Attribute hedId modified from None to HED_0012289
+ -	Laptop-computer (Patch): Attribute hedId modified from None to HED_0012290
+ -	Tablet-computer (Patch): Attribute hedId modified from None to HED_0012291
+ -	Engine (Patch): Attribute hedId modified from None to HED_0012292
+ -	IO-device (Patch): Attribute hedId modified from None to HED_0012293
+ -	Input-device (Patch): Attribute hedId modified from None to HED_0012294
+ -	Computer-mouse (Patch): Attribute hedId modified from None to HED_0012295
+ -	Mouse-button (Patch): Attribute hedId modified from None to HED_0012296
+ -	Scroll-wheel (Patch): Attribute hedId modified from None to HED_0012297
+ -	Joystick (Patch): Attribute hedId modified from None to HED_0012298
+ -	Keyboard (Patch): Attribute hedId modified from None to HED_0012299
+ -	Keyboard-key (Patch): Attribute hedId modified from None to HED_0012301
+ -	Keypad (Patch): Attribute hedId modified from None to HED_0012302
+ -	Keypad-key (Patch): Attribute hedId modified from None to HED_0012304
+ -	Microphone (Patch): Attribute hedId modified from None to HED_0012305
+ -	Push-button (Patch): Attribute hedId modified from None to HED_0012306
+ -	Output-device (Patch): Attribute hedId modified from None to HED_0012307
+ -	Auditory-device (Patch): Attribute hedId modified from None to HED_0012308
+ -	Headphones (Patch): Attribute hedId modified from None to HED_0012309
+ -	Loudspeaker (Patch): Attribute hedId modified from None to HED_0012310
+ -	Display-device (Patch): Attribute hedId modified from None to HED_0012311
+ -	Computer-screen (Patch): Attribute hedId modified from None to HED_0012312
+ -	Screen-window (Patch): Attribute hedId modified from None to HED_0012313
+ -	Head-mounted-display (Patch): Attribute hedId modified from None to HED_0012314
+ -	LED-display (Patch): Attribute hedId modified from None to HED_0012315
+ -	Recording-device (Patch): Attribute hedId modified from None to HED_0012316
+ -	EEG-recorder (Patch): Attribute hedId modified from None to HED_0012317
+ -	File-storage (Patch): Attribute hedId modified from None to HED_0012318
+ -	MEG-recorder (Patch): Attribute hedId modified from None to HED_0012319
+ -	Motion-capture (Patch): Attribute hedId modified from None to HED_0012320
+ -	Tape-recorder (Patch): Attribute hedId modified from None to HED_0012321
+ -	Touchscreen (Patch): Attribute hedId modified from None to HED_0012322
+ -	Machine (Patch): Attribute hedId modified from None to HED_0012323
+ -	Measurement-device (Patch): Attribute hedId modified from None to HED_0012324
+ -	Clock (Patch): Attribute hedId modified from None to HED_0012325
+ -	Clock-face (Patch): Attribute hedId modified from None to HED_0013228
+ -	Robot (Patch): Attribute hedId modified from None to HED_0012327
+ -	Tool (Patch): Attribute hedId modified from None to HED_0012328
+ -	Document (Patch): Attribute hedId modified from None to HED_0012329
+ -	Book (Patch): Attribute hedId modified from None to HED_0012330
+ -	Letter (Patch): Attribute hedId modified from None to HED_0012331
+ -	Note (Patch): Attribute hedId modified from None to HED_0012332
+ -	Notebook (Patch): Attribute hedId modified from None to HED_0012333
+ -	Questionnaire (Patch): Attribute hedId modified from None to HED_0012334
+ -	Furnishing (Patch): Attribute hedId modified from None to HED_0012335
+ -	Manufactured-material (Patch): Attribute hedId modified from None to HED_0012336
+ -	Ceramic (Patch): Attribute hedId modified from None to HED_0012337
+ -	Glass (Patch): Attribute hedId modified from None to HED_0012338
+ -	Paper (Patch): Attribute hedId modified from None to HED_0012339
+ -	Plastic (Patch): Attribute hedId modified from None to HED_0012340
+ -	Steel (Patch): Attribute hedId modified from None to HED_0012341
+ -	Media (Patch): Attribute hedId modified from None to HED_0012342
+ -	Media-clip (Patch): Attribute hedId modified from None to HED_0012343
+ -	Audio-clip (Patch): Attribute hedId modified from None to HED_0012344
+ -	Audiovisual-clip (Patch): Attribute hedId modified from None to HED_0012345
+ -	Video-clip (Patch): Attribute hedId modified from None to HED_0012346
+ -	Visualization (Patch): Attribute hedId modified from None to HED_0012347
+ -	Animation (Patch): Attribute hedId modified from None to HED_0012348
+ -	Art-installation (Patch): Attribute hedId modified from None to HED_0012349
+ -	Braille (Patch): Attribute hedId modified from None to HED_0012350
+ -	Image (Patch): Attribute hedId modified from None to HED_0012351
+ -	Cartoon (Patch): Attribute hedId modified from None to HED_0012352
+ -	Drawing (Patch): Attribute hedId modified from None to HED_0012353
+ -	Icon (Patch): Attribute hedId modified from None to HED_0012354
+ -	Painting (Patch): Attribute hedId modified from None to HED_0012355
+ -	Photograph (Patch): Attribute hedId modified from None to HED_0012356
+ -	Movie (Patch): Attribute hedId modified from None to HED_0012357
+ -	Outline-visualization (Patch): Attribute hedId modified from None to HED_0012358
+ -	Point-light-visualization (Patch): Attribute hedId modified from None to HED_0012359
+ -	Sculpture (Patch): Attribute hedId modified from None to HED_0012360
+ -	Stick-figure-visualization (Patch): Attribute hedId modified from None to HED_0012361
+ -	Navigational-object (Patch): Attribute hedId modified from None to HED_0012362
+ -	Path (Patch): Attribute hedId modified from None to HED_0012363
+ -	Road (Patch): Attribute hedId modified from None to HED_0012364
+ -	Lane (Patch): Attribute hedId modified from None to HED_0012365
+ -	Runway (Patch): Attribute hedId modified from None to HED_0012366
+ -	Vehicle (Patch): Attribute hedId modified from None to HED_0012367
+ -	Aircraft (Patch): Attribute hedId modified from None to HED_0012368
+ -	Bicycle (Patch): Attribute hedId modified from None to HED_0012369
+ -	Boat (Patch): Attribute hedId modified from None to HED_0012370
+ -	Car (Patch): Attribute hedId modified from None to HED_0012371
+ -	Cart (Patch): Attribute hedId modified from None to HED_0012372
+ -	Tractor (Patch): Attribute hedId modified from None to HED_0012373
+ -	Train (Patch): Attribute hedId modified from None to HED_0012374
+ -	Truck (Patch): Attribute hedId modified from None to HED_0012375
+ -	Natural-object (Patch): Attribute hedId modified from None to HED_0012376
+ -	Mineral (Patch): Attribute hedId modified from None to HED_0012377
+ -	Natural-feature (Patch): Attribute hedId modified from None to HED_0012378
+ -	Field (Patch): Attribute hedId modified from None to HED_0012379
+ -	Hill (Patch): Attribute hedId modified from None to HED_0012380
+ -	Mountain (Patch): Attribute hedId modified from None to HED_0012381
+ -	River (Patch): Attribute hedId modified from None to HED_0012382
+ -	Waterfall (Patch): Attribute hedId modified from None to HED_0012383
+ -	Sound (Patch): Attribute hedId modified from None to HED_0012384
+ -	Environmental-sound (Patch): Attribute hedId modified from None to HED_0012385
+ -	Crowd-sound (Patch): Attribute hedId modified from None to HED_0012386
+ -	Signal-noise (Patch): Attribute hedId modified from None to HED_0012387
+ -	Musical-sound (Patch): Attribute hedId modified from None to HED_0012388
+ -	Instrument-sound (Patch): Attribute hedId modified from None to HED_0012389
+ -	Tone (Patch): Attribute hedId modified from None to HED_0012390
+ -	Vocalized-sound (Patch): Attribute hedId modified from None to HED_0012391
+ -	Named-animal-sound (Patch): Attribute hedId modified from None to HED_0012392
+ -	Barking (Patch): Attribute hedId modified from None to HED_0012393
+ -	Bleating (Patch): Attribute hedId modified from None to HED_0012394
+ -	Chirping (Patch): Attribute hedId modified from None to HED_0012395
+ -	Crowing (Patch): Attribute hedId modified from None to HED_0012396
+ -	Growling (Patch): Attribute hedId modified from None to HED_0012397
+ -	Meowing (Patch): Attribute hedId modified from None to HED_0012398
+ -	Mooing (Patch): Attribute hedId modified from None to HED_0012399
+ -	Purring (Patch): Attribute hedId modified from None to HED_0012400
+ -	Roaring (Patch): Attribute hedId modified from None to HED_0012401
+ -	Squawking (Patch): Attribute hedId modified from None to HED_0012402
+ -	Named-object-sound (Patch): Attribute hedId modified from None to HED_0012403
+ -	Alarm-sound (Patch): Attribute hedId modified from None to HED_0012404
+ -	Beep (Patch): Attribute hedId modified from None to HED_0012405
+ -	Buzz (Patch): Attribute hedId modified from None to HED_0012406
+ -	Click (Patch): Attribute hedId modified from None to HED_0012407
+ -	Ding (Patch): Attribute hedId modified from None to HED_0012408
+ -	Horn-blow (Patch): Attribute hedId modified from None to HED_0012409
+ -	Ka-ching (Patch): Attribute hedId modified from None to HED_0012410
+ -	Siren (Patch): Attribute hedId modified from None to HED_0012411
+ -	Property (Patch): Attribute hedId modified from None to HED_0012412
+ -	Agent-property (Patch): Attribute hedId modified from None to HED_0012413
+ -	Agent-state (Patch): Attribute hedId modified from None to HED_0012414
+ -	Agent-cognitive-state (Patch): Attribute hedId modified from None to HED_0012415
+ -	Alert (Patch): Attribute hedId modified from None to HED_0012416
+ -	Anesthetized (Patch): Attribute hedId modified from None to HED_0012417
+ -	Asleep (Patch): Attribute hedId modified from None to HED_0012418
+ -	Attentive (Patch): Attribute hedId modified from None to HED_0012419
+ -	Awake (Patch): Attribute hedId modified from None to HED_0012420
+ -	Brain-dead (Patch): Attribute hedId modified from None to HED_0012421
+ -	Comatose (Patch): Attribute hedId modified from None to HED_0012422
+ -	Distracted (Patch): Attribute hedId modified from None to HED_0012423
+ -	Drowsy (Patch): Attribute hedId modified from None to HED_0012424
+ -	Intoxicated (Patch): Attribute hedId modified from None to HED_0012425
+ -	Locked-in (Patch): Attribute hedId modified from None to HED_0012426
+ -	Passive (Patch): Attribute hedId modified from None to HED_0012427
+ -	Resting (Patch): Attribute hedId modified from None to HED_0012428
+ -	Vegetative (Patch): Attribute hedId modified from None to HED_0012429
+ -	Agent-emotional-state (Patch): Attribute hedId modified from None to HED_0012430
+ -	Angry (Patch): Attribute hedId modified from None to HED_0012431
+ -	Aroused (Patch): Attribute hedId modified from None to HED_0012432
+ -	Awed (Patch): Attribute hedId modified from None to HED_0012433
+ -	Compassionate (Patch): Attribute hedId modified from None to HED_0012434
+ -	Content (Patch): Attribute hedId modified from None to HED_0012435
+ -	Disgusted (Patch): Attribute hedId modified from None to HED_0012436
+ -	Emotionally-neutral (Patch): Attribute hedId modified from None to HED_0012437
+ -	Empathetic (Patch): Attribute hedId modified from None to HED_0012438
+ -	Excited (Patch): Attribute hedId modified from None to HED_0012439
+ -	Fearful (Patch): Attribute hedId modified from None to HED_0012440
+ -	Frustrated (Patch): Attribute hedId modified from None to HED_0012441
+ -	Grieving (Patch): Attribute hedId modified from None to HED_0012442
+ -	Happy (Patch): Attribute hedId modified from None to HED_0012443
+ -	Jealous (Patch): Attribute hedId modified from None to HED_0012444
+ -	Joyful (Patch): Attribute hedId modified from None to HED_0012445
+ -	Loving (Patch): Attribute hedId modified from None to HED_0012446
+ -	Relieved (Patch): Attribute hedId modified from None to HED_0012447
+ -	Sad (Patch): Attribute hedId modified from None to HED_0012448
+ -	Stressed (Patch): Attribute hedId modified from None to HED_0012449
+ -	Agent-physiological-state (Patch): Attribute hedId modified from None to HED_0012450
+ -	Healthy (Patch): Attribute hedId modified from None to HED_0012451
+ -	Hungry (Patch): Attribute hedId modified from None to HED_0012452
+ -	Rested (Patch): Attribute hedId modified from None to HED_0012453
+ -	Sated (Patch): Attribute hedId modified from None to HED_0012454
+ -	Sick (Patch): Attribute hedId modified from None to HED_0012455
+ -	Thirsty (Patch): Attribute hedId modified from None to HED_0012456
+ -	Tired (Patch): Attribute hedId modified from None to HED_0012457
+ -	Agent-postural-state (Patch): Attribute hedId modified from None to HED_0012458
+ -	Crouching (Patch): Attribute hedId modified from None to HED_0012459
+ -	Eyes-closed (Patch): Attribute hedId modified from None to HED_0012460
+ -	Eyes-open (Patch): Attribute hedId modified from None to HED_0012461
+ -	Kneeling (Patch): Attribute hedId modified from None to HED_0012462
+ -	On-treadmill (Patch): Attribute hedId modified from None to HED_0012463
+ -	Prone (Patch): Attribute hedId modified from None to HED_0012464
+ -	Seated-with-chin-rest (Patch): Attribute hedId modified from None to HED_0012465
+ -	Sitting (Patch): Attribute hedId modified from None to HED_0012466
+ -	Standing (Patch): Attribute hedId modified from None to HED_0012467
+ -	Agent-task-role (Patch): Attribute hedId modified from None to HED_0012468
+ -	Experiment-actor (Patch): Attribute hedId modified from None to HED_0012469
+ -	Experiment-controller (Patch): Attribute hedId modified from None to HED_0012470
+ -	Experiment-participant (Patch): Attribute hedId modified from None to HED_0012471
+ -	Experimenter (Patch): Attribute hedId modified from None to HED_0012472
+ -	Agent-trait (Patch): Attribute hedId modified from None to HED_0012473
+ -	Age (Patch): Attribute hedId modified from None to HED_0012475
+ -	Agent-experience-level (Patch): Attribute hedId modified from None to HED_0012476
+ -	Expert-level (Patch): Attribute hedId modified from None to HED_0012477
+ -	Intermediate-experience-level (Patch): Attribute hedId modified from None to HED_0012478
+ -	Novice-level (Patch): Attribute hedId modified from None to HED_0012479
+ -	Ethnicity (Patch): Attribute hedId modified from None to HED_0012480
+ -	Gender (Patch): Attribute hedId modified from None to HED_0012481
+ -	Handedness (Patch): Attribute hedId modified from None to HED_0012482
+ -	Ambidextrous (Patch): Attribute hedId modified from None to HED_0012483
+ -	Left-handed (Patch): Attribute hedId modified from None to HED_0012484
+ -	Right-handed (Patch): Attribute hedId modified from None to HED_0012485
+ -	Race (Patch): Attribute hedId modified from None to HED_0012486
+ -	Sex (Patch): Attribute hedId modified from None to HED_0012487
+ -	Female (Patch): Attribute hedId modified from None to HED_0012488
+ -	Intersex (Patch): Attribute hedId modified from None to HED_0012489
+ -	Male (Patch): Attribute hedId modified from None to HED_0012490
+ -	Data-property (Patch): Attribute hedId modified from None to HED_0012492
+ -	Data-marker (Patch): Attribute hedId modified from None to HED_0012521
+ -	Data-break-marker (Patch): Attribute hedId modified from None to HED_0012522
+ -	Temporal-marker (Patch): Attribute hedId modified from None to HED_0012523
+ -	Inset (Patch): Attribute hedId modified from None to HED_0012524
+ -	Offset (Patch): Attribute hedId modified from None to HED_0012525
+ -	Onset (Patch): Attribute hedId modified from None to HED_0012526
+ -	Pause (Patch): Attribute hedId modified from None to HED_0012527
+ -	Time-out (Patch): Attribute hedId modified from None to HED_0012528
+ -	Time-sync (Patch): Attribute hedId modified from None to HED_0012529
+ -	Data-resolution (Patch): Attribute hedId modified from None to HED_0012530
+ -	Printer-resolution (Patch): Attribute hedId modified from None to HED_0012532
+ -	Screen-resolution (Patch): Attribute hedId modified from None to HED_0012534
+ -	Sensory-resolution (Patch): Attribute hedId modified from None to HED_0012536
+ -	Spatial-resolution (Patch): Attribute hedId modified from None to HED_0012538
+ -	Spectral-resolution (Patch): Attribute hedId modified from None to HED_0012540
+ -	Temporal-resolution (Patch): Attribute hedId modified from None to HED_0012542
+ -	Data-source-type (Patch): Attribute hedId modified from None to HED_0012543
+ -	Computed-feature (Patch): Attribute hedId modified from None to HED_0012544
+ -	Computed-prediction (Patch): Attribute hedId modified from None to HED_0012545
+ -	Expert-annotation (Patch): Attribute hedId modified from None to HED_0012546
+ -	Instrument-measurement (Patch): Attribute hedId modified from None to HED_0012547
+ -	Observation (Patch): Attribute hedId modified from None to HED_0012548
+ -	Data-value (Patch): Attribute hedId modified from None to HED_0012549
+ -	Categorical-value (Patch): Attribute hedId modified from None to HED_0012550
+ -	Categorical-class-value (Patch): Attribute hedId modified from None to HED_0012551
+ -	All (Patch): Attribute hedId modified from None to HED_0012552
+ -	Correct (Patch): Attribute hedId modified from None to HED_0012553
+ -	Explicit (Patch): Attribute hedId modified from None to HED_0012554
+ -	False (Patch): Attribute hedId modified from None to HED_0012555
+ -	Implicit (Patch): Attribute hedId modified from None to HED_0012556
+ -	Invalid (Patch): Attribute hedId modified from None to HED_0012557
+ -	None (Patch): Attribute hedId modified from None to HED_0012558
+ -	Some (Patch): Attribute hedId modified from None to HED_0012559
+ -	True (Patch): Attribute hedId modified from None to HED_0012560
+ -	Valid (Patch): Attribute hedId modified from None to HED_0012562
+ -	Wrong (Patch): Attribute hedId modified from None to HED_0012563
+ -	Categorical-judgment-value (Patch): Attribute hedId modified from None to HED_0012564
+ -	Abnormal (Patch): Attribute hedId modified from None to HED_0012565
+ -	Asymmetrical (Patch): Attribute hedId modified from None to HED_0012566
+ -	Audible (Patch): Attribute hedId modified from None to HED_0012567
+ -	Complex (Patch): Attribute hedId modified from None to HED_0012568
+ -	Congruent (Patch): Attribute hedId modified from None to HED_0012569
+ -	Constrained (Patch): Attribute hedId modified from None to HED_0012570
+ -	Disordered (Patch): Attribute hedId modified from None to HED_0012571
+ -	Familiar (Patch): Attribute hedId modified from None to HED_0012572
+ -	Famous (Patch): Attribute hedId modified from None to HED_0012573
+ -	Inaudible (Patch): Attribute hedId modified from None to HED_0012574
+ -	Incongruent (Patch): Attribute hedId modified from None to HED_0012575
+ -	Involuntary (Patch): Attribute hedId modified from None to HED_0012576
+ -	Masked (Patch): Attribute hedId modified from None to HED_0012577
+ -	Normal (Patch): Attribute hedId modified from None to HED_0012578
+ -	Ordered (Patch): Attribute hedId modified from None to HED_0012579
+ -	Simple (Patch): Attribute hedId modified from None to HED_0012580
+ -	Symmetrical (Patch): Attribute hedId modified from None to HED_0012581
+ -	Unconstrained (Patch): Attribute hedId modified from None to HED_0012582
+ -	Unfamiliar (Patch): Attribute hedId modified from None to HED_0012583
+ -	Unmasked (Patch): Attribute hedId modified from None to HED_0012584
+ -	Voluntary (Patch): Attribute hedId modified from None to HED_0012585
+ -	Categorical-level-value (Patch): Attribute hedId modified from None to HED_0012586
+ -	Cold (Patch): Attribute hedId modified from None to HED_0012587
+ -	Deep (Patch): Attribute hedId modified from None to HED_0012588
+ -	High (Patch): Attribute hedId modified from None to HED_0012589
+ -	Hot (Patch): Attribute hedId modified from None to HED_0012590
+ -	Large (Patch): Attribute hedId modified from None to HED_0012591
+ -	Liminal (Patch): Attribute hedId modified from None to HED_0012592
+ -	Loud (Patch): Attribute hedId modified from None to HED_0012593
+ -	Low (Patch): Attribute hedId modified from None to HED_0012594
+ -	Medium (Patch): Attribute hedId modified from None to HED_0012595
+ -	Negative (Patch): Attribute hedId modified from None to HED_0012596
+ -	Positive (Patch): Attribute hedId modified from None to HED_0012597
+ -	Quiet (Patch): Attribute hedId modified from None to HED_0012598
+ -	Rough (Patch): Attribute hedId modified from None to HED_0012599
+ -	Shallow (Patch): Attribute hedId modified from None to HED_0012600
+ -	Small (Patch): Attribute hedId modified from None to HED_0012601
+ -	Smooth (Patch): Attribute hedId modified from None to HED_0012602
+ -	Subliminal (Patch): Attribute hedId modified from None to HED_0012603
+ -	Supraliminal (Patch): Attribute hedId modified from None to HED_0012604
+ -	Thick (Patch): Attribute hedId modified from None to HED_0012605
+ -	Thin (Patch): Attribute hedId modified from None to HED_0012606
+ -	Categorical-orientation-value (Patch): Attribute hedId modified from None to HED_0012614
+ -	Backward (Patch): Attribute hedId modified from None to HED_0012615
+ -	Downward (Patch): Attribute hedId modified from None to HED_0012616
+ -	Forward (Patch): Attribute hedId modified from None to HED_0012617
+ -	Horizontally-oriented (Patch): Attribute hedId modified from None to HED_0012618
+ -	Leftward (Patch): Attribute hedId modified from None to HED_0012619
+ -	Oblique (Patch): Attribute hedId modified from None to HED_0012620
+ -	Rightward (Patch): Attribute hedId modified from None to HED_0012621
+ -	Rotated (Patch): Attribute hedId modified from None to HED_0012622
+ -	Upward (Patch): Attribute hedId modified from None to HED_0012623
+ -	Vertically-oriented (Patch): Attribute hedId modified from None to HED_0012624
+ -	Physical-value (Patch): Attribute hedId modified from None to HED_0012625
+ -	Temperature (Patch): Attribute hedId modified from None to HED_0012627
+ -	Weight (Patch): Attribute hedId modified from None to HED_0012629
+ -	Quantitative-value (Patch): Attribute hedId modified from None to HED_0012630
+ -	Fraction (Patch): Attribute hedId modified from None to HED_0012632
+ -	Item-count (Patch): Attribute hedId modified from None to HED_0012634
+ -	Item-index (Patch): Attribute hedId modified from None to HED_0012636
+ -	Item-interval (Patch): Attribute hedId modified from None to HED_0012638
+ -	Percentage (Patch): Attribute hedId modified from None to HED_0012640
+ -	Ratio (Patch): Attribute hedId modified from None to HED_0012642
+ -	Spatiotemporal-value (Patch): Attribute hedId modified from None to HED_0012643
+ -	Rate-of-change (Patch): Attribute hedId modified from None to HED_0012644
+ -	Acceleration (Patch): Attribute hedId modified from None to HED_0012646
+ -	Frequency (Patch): Attribute hedId modified from None to HED_0012648
+ -	Jerk-rate (Patch): Attribute hedId modified from None to HED_0012650
+ -	Refresh-rate (Patch): Attribute hedId modified from None to HED_0012652
+ -	Sampling-rate (Patch): Attribute hedId modified from None to HED_0012654
+ -	Speed (Patch): Attribute hedId modified from None to HED_0012656
+ -	Temporal-rate (Patch): Attribute hedId modified from None to HED_0012658
+ -	Spatial-value (Patch): Attribute hedId modified from None to HED_0012659
+ -	Angle (Patch): Attribute hedId modified from None to HED_0012661
+ -	Distance (Patch): Attribute hedId modified from None to HED_0012663
+ -	Position (Patch): Attribute hedId modified from None to HED_0012664
+ -	X-position (Patch): Attribute hedId modified from None to HED_0012666
+ -	Y-position (Patch): Attribute hedId modified from None to HED_0012668
+ -	Z-position (Patch): Attribute hedId modified from None to HED_0012670
+ -	Size (Patch): Attribute hedId modified from None to HED_0012671
+ -	Area (Patch): Attribute hedId modified from None to HED_0012673
+ -	Depth (Patch): Attribute hedId modified from None to HED_0012675
+ -	Height (Patch): Attribute hedId modified from None to HED_0012677
+ -	Length (Patch): Attribute hedId modified from None to HED_0012679
+ -	Volume (Patch): Attribute hedId modified from None to HED_0012685
+ -	Width (Patch): Attribute hedId modified from None to HED_0012687
+ -	Temporal-value (Patch): Attribute hedId modified from None to HED_0012688
+ -	Delay (Patch): Attribute hedId modified from None to HED_0012690
+ -	Duration (Patch): Attribute hedId modified from None to HED_0012692
+ -	Time-interval (Patch): Attribute hedId modified from None to HED_0012694
+ -	Time-value (Patch): Attribute hedId modified from None to HED_0012696
+ -	Statistical-value (Patch): Attribute hedId modified from None to HED_0012697
+ -	Data-maximum (Patch): Attribute hedId modified from None to HED_0012699
+ -	Data-mean (Patch): Attribute hedId modified from None to HED_0012701
+ -	Data-median (Patch): Attribute hedId modified from None to HED_0012703
+ -	Data-minimum (Patch): Attribute hedId modified from None to HED_0012705
+ -	Probability (Patch): Attribute hedId modified from None to HED_0012707
+ -	Standard-deviation (Patch): Attribute hedId modified from None to HED_0012709
+ -	Statistical-accuracy (Patch): Attribute hedId modified from None to HED_0012711
+ -	Statistical-precision (Patch): Attribute hedId modified from None to HED_0012713
+ -	Statistical-recall (Patch): Attribute hedId modified from None to HED_0012715
+ -	Statistical-uncertainty (Patch): Attribute hedId modified from None to HED_0012717
+ -	Data-variability-attribute (Patch): Attribute hedId modified from None to HED_0012718
+ -	Abrupt (Patch): Attribute hedId modified from None to HED_0012719
+ -	Constant (Patch): Attribute hedId modified from None to HED_0012720
+ -	Continuous (Patch): Attribute hedId modified from None to HED_0012721
+ -	Decreasing (Patch): Attribute hedId modified from None to HED_0012722
+ -	Deterministic (Patch): Attribute hedId modified from None to HED_0012723
+ -	Discontinuous (Patch): Attribute hedId modified from None to HED_0012724
+ -	Discrete (Patch): Attribute hedId modified from None to HED_0012725
+ -	Estimated-value (Patch): Attribute hedId modified from None to HED_0012726
+ -	Exact-value (Patch): Attribute hedId modified from None to HED_0012727
+ -	Flickering (Patch): Attribute hedId modified from None to HED_0012728
+ -	Fractal (Patch): Attribute hedId modified from None to HED_0012729
+ -	Increasing (Patch): Attribute hedId modified from None to HED_0012730
+ -	Random (Patch): Attribute hedId modified from None to HED_0012731
+ -	Repetitive (Patch): Attribute hedId modified from None to HED_0012732
+ -	Stochastic (Patch): Attribute hedId modified from None to HED_0012733
+ -	Varying (Patch): Attribute hedId modified from None to HED_0012734
+ -	Environmental-property (Patch): Attribute hedId modified from None to HED_0012735
+ -	Augmented-reality (Patch): Attribute hedId modified from None to HED_0012736
+ -	Indoors (Patch): Attribute hedId modified from None to HED_0012737
+ -	Motion-platform (Patch): Attribute hedId modified from None to HED_0012738
+ -	Outdoors (Patch): Attribute hedId modified from None to HED_0012739
+ -	Real-world (Patch): Attribute hedId modified from None to HED_0012740
+ -	Rural (Patch): Attribute hedId modified from None to HED_0012741
+ -	Terrain (Patch): Attribute hedId modified from None to HED_0012742
+ -	Composite-terrain (Patch): Attribute hedId modified from None to HED_0012743
+ -	Dirt-terrain (Patch): Attribute hedId modified from None to HED_0012744
+ -	Grassy-terrain (Patch): Attribute hedId modified from None to HED_0012745
+ -	Gravel-terrain (Patch): Attribute hedId modified from None to HED_0012746
+ -	Leaf-covered-terrain (Patch): Attribute hedId modified from None to HED_0012747
+ -	Muddy-terrain (Patch): Attribute hedId modified from None to HED_0012748
+ -	Paved-terrain (Patch): Attribute hedId modified from None to HED_0012749
+ -	Rocky-terrain (Patch): Attribute hedId modified from None to HED_0012750
+ -	Sloped-terrain (Patch): Attribute hedId modified from None to HED_0012751
+ -	Uneven-terrain (Patch): Attribute hedId modified from None to HED_0012752
+ -	Urban (Patch): Attribute hedId modified from None to HED_0012753
+ -	Virtual-world (Patch): Attribute hedId modified from None to HED_0012754
+ -	Informational-property (Patch): Attribute hedId modified from None to HED_0012755
+ -	Description (Patch): Attribute hedId modified from None to HED_0012757
+ -	ID (Patch): Attribute hedId modified from None to HED_0012759
+ -	Label (Patch): Attribute hedId modified from None to HED_0012761
+ -	Metadata (Patch): Attribute hedId modified from None to HED_0012762
+ -	CogAtlas (Patch): Attribute hedId modified from None to HED_0012771
+ -	CogPo (Patch): Attribute hedId modified from None to HED_0012773
+ -	Creation-date (Patch): Attribute hedId modified from None to HED_0012764
+ -	Experimental-note (Patch): Attribute hedId modified from None to HED_0012766
+ -	Library-name (Patch): Attribute hedId modified from None to HED_0012768
+ -	OBO-identifier (Patch): Attribute hedId modified from None to HED_0012777
+ -	Pathname (Patch): Attribute hedId modified from None to HED_0012789
+ -	Subject-identifier (Patch): Attribute hedId modified from None to HED_0012781
+ -	Version-identifier (Patch): Attribute hedId modified from None to HED_0012785
+ -	Parameter (Patch): Attribute hedId modified from None to HED_0012792
+ -	Parameter-label (Patch): Attribute hedId modified from None to HED_0012794
+ -	Parameter-value (Patch): Attribute hedId modified from None to HED_0012796
+ -	Organizational-property (Patch): Attribute hedId modified from None to HED_0012797
+ -	Collection (Patch): Attribute hedId modified from None to HED_0012799
+ -	Condition-variable (Patch): Attribute hedId modified from None to HED_0012801
+ -	Control-variable (Patch): Attribute hedId modified from None to HED_0012803
+ -	Def (Patch): Attribute hedId modified from None to HED_0012805
+ -	Def-expand (Patch): Attribute hedId modified from None to HED_0012807
+ -	Definition (Patch): Attribute hedId modified from None to HED_0012809
+ -	Event-context (Patch): Attribute hedId modified from None to HED_0012810
+ -	Event-stream (Patch): Attribute hedId modified from None to HED_0012812
+ -	Experimental-intertrial (Patch): Attribute hedId modified from None to HED_0012814
+ -	Experimental-trial (Patch): Attribute hedId modified from None to HED_0012816
+ -	Indicator-variable (Patch): Attribute hedId modified from None to HED_0012818
+ -	Recording (Patch): Attribute hedId modified from None to HED_0012820
+ -	Task (Patch): Attribute hedId modified from None to HED_0012822
+ -	Time-block (Patch): Attribute hedId modified from None to HED_0012824
+ -	Sensory-property (Patch): Attribute hedId modified from None to HED_0012825
+ -	Sensory-attribute (Patch): Attribute hedId modified from None to HED_0012826
+ -	Auditory-attribute (Patch): Attribute hedId modified from None to HED_0012827
+ -	Loudness (Patch): Attribute hedId modified from None to HED_0012829
+ -	Pitch (Patch): Attribute hedId modified from None to HED_0012831
+ -	Sound-envelope (Patch): Attribute hedId modified from None to HED_0012832
+ -	Sound-envelope-attack (Patch): Attribute hedId modified from None to HED_0012834
+ -	Sound-envelope-decay (Patch): Attribute hedId modified from None to HED_0012836
+ -	Sound-envelope-release (Patch): Attribute hedId modified from None to HED_0012838
+ -	Sound-envelope-sustain (Patch): Attribute hedId modified from None to HED_0012840
+ -	Sound-volume (Patch): Attribute hedId modified from None to HED_0012842
+ -	Timbre (Patch): Attribute hedId modified from None to HED_0012844
+ -	Gustatory-attribute (Patch): Attribute hedId modified from None to HED_0012845
+ -	Bitter (Patch): Attribute hedId modified from None to HED_0012846
+ -	Salty (Patch): Attribute hedId modified from None to HED_0012847
+ -	Savory (Patch): Attribute hedId modified from None to HED_0012848
+ -	Sour (Patch): Attribute hedId modified from None to HED_0012849
+ -	Sweet (Patch): Attribute hedId modified from None to HED_0012850
+ -	Olfactory-attribute (Patch): Attribute hedId modified from None to HED_0012851
+ -	Somatic-attribute (Patch): Attribute hedId modified from None to HED_0012852
+ -	Pain (Patch): Attribute hedId modified from None to HED_0012853
+ -	Stress (Patch): Attribute hedId modified from None to HED_0012854
+ -	Tactile-attribute (Patch): Attribute hedId modified from None to HED_0012855
+ -	Tactile-pressure (Patch): Attribute hedId modified from None to HED_0012856
+ -	Tactile-temperature (Patch): Attribute hedId modified from None to HED_0012857
+ -	Tactile-texture (Patch): Attribute hedId modified from None to HED_0012858
+ -	Tactile-vibration (Patch): Attribute hedId modified from None to HED_0012859
+ -	Vestibular-attribute (Patch): Attribute hedId modified from None to HED_0012860
+ -	Visual-attribute (Patch): Attribute hedId modified from None to HED_0012861
+ -	Color (Patch): Attribute hedId modified from None to HED_0012862
+ -	CSS-color (Patch): Attribute hedId modified from None to HED_0012863
+ -	Blue-color (Patch): Attribute hedId modified from None to HED_0012864
+ -	Blue (Patch): Attribute hedId modified from None to HED_0012865
+ -	CadetBlue (Patch): Attribute hedId modified from None to HED_0012866
+ -	CornflowerBlue (Patch): Attribute hedId modified from None to HED_0012867
+ -	DarkBlue (Patch): Attribute hedId modified from None to HED_0012868
+ -	DeepSkyBlue (Patch): Attribute hedId modified from None to HED_0012869
+ -	DodgerBlue (Patch): Attribute hedId modified from None to HED_0012870
+ -	LightBlue (Patch): Attribute hedId modified from None to HED_0012871
+ -	LightSkyBlue (Patch): Attribute hedId modified from None to HED_0012872
+ -	LightSteelBlue (Patch): Attribute hedId modified from None to HED_0012873
+ -	MediumBlue (Patch): Attribute hedId modified from None to HED_0012874
+ -	MidnightBlue (Patch): Attribute hedId modified from None to HED_0012875
+ -	Navy (Patch): Attribute hedId modified from None to HED_0012876
+ -	PowderBlue (Patch): Attribute hedId modified from None to HED_0012877
+ -	RoyalBlue (Patch): Attribute hedId modified from None to HED_0012878
+ -	SkyBlue (Patch): Attribute hedId modified from None to HED_0012879
+ -	SteelBlue (Patch): Attribute hedId modified from None to HED_0012880
+ -	Brown-color (Patch): Attribute hedId modified from None to HED_0012881
+ -	Bisque (Patch): Attribute hedId modified from None to HED_0012882
+ -	BlanchedAlmond (Patch): Attribute hedId modified from None to HED_0012883
+ -	Brown (Patch): Attribute hedId modified from None to HED_0012884
+ -	BurlyWood (Patch): Attribute hedId modified from None to HED_0012885
+ -	Chocolate (Patch): Attribute hedId modified from None to HED_0012886
+ -	Cornsilk (Patch): Attribute hedId modified from None to HED_0012887
+ -	DarkGoldenRod (Patch): Attribute hedId modified from None to HED_0012888
+ -	GoldenRod (Patch): Attribute hedId modified from None to HED_0012889
+ -	Maroon (Patch): Attribute hedId modified from None to HED_0012890
+ -	NavajoWhite (Patch): Attribute hedId modified from None to HED_0012891
+ -	Olive (Patch): Attribute hedId modified from None to HED_0012892
+ -	Peru (Patch): Attribute hedId modified from None to HED_0012893
+ -	RosyBrown (Patch): Attribute hedId modified from None to HED_0012894
+ -	SaddleBrown (Patch): Attribute hedId modified from None to HED_0012895
+ -	SandyBrown (Patch): Attribute hedId modified from None to HED_0012896
+ -	Sienna (Patch): Attribute hedId modified from None to HED_0012897
+ -	Tan (Patch): Attribute hedId modified from None to HED_0012898
+ -	Wheat (Patch): Attribute hedId modified from None to HED_0012899
+ -	Cyan-color (Patch): Attribute hedId modified from None to HED_0012900
+ -	Aqua (Patch): Attribute hedId modified from None to HED_0012901
+ -	Aquamarine (Patch): Attribute hedId modified from None to HED_0012902
+ -	Cyan (Patch): Attribute hedId modified from None to HED_0012903
+ -	DarkTurquoise (Patch): Attribute hedId modified from None to HED_0012904
+ -	LightCyan (Patch): Attribute hedId modified from None to HED_0012905
+ -	MediumTurquoise (Patch): Attribute hedId modified from None to HED_0012906
+ -	PaleTurquoise (Patch): Attribute hedId modified from None to HED_0012907
+ -	Turquoise (Patch): Attribute hedId modified from None to HED_0012908
+ -	Gray-color (Patch): Attribute hedId modified from None to HED_0012909
+ -	Black (Patch): Attribute hedId modified from None to HED_0012910
+ -	DarkGray (Patch): Attribute hedId modified from None to HED_0012911
+ -	DarkSlateGray (Patch): Attribute hedId modified from None to HED_0012912
+ -	DimGray (Patch): Attribute hedId modified from None to HED_0012913
+ -	Gainsboro (Patch): Attribute hedId modified from None to HED_0012914
+ -	Gray (Patch): Attribute hedId modified from None to HED_0012915
+ -	LightGray (Patch): Attribute hedId modified from None to HED_0012916
+ -	LightSlateGray (Patch): Attribute hedId modified from None to HED_0012917
+ -	Silver (Patch): Attribute hedId modified from None to HED_0012918
+ -	SlateGray (Patch): Attribute hedId modified from None to HED_0012919
+ -	Green-color (Patch): Attribute hedId modified from None to HED_0012920
+ -	Chartreuse (Patch): Attribute hedId modified from None to HED_0012921
+ -	DarkCyan (Patch): Attribute hedId modified from None to HED_0012922
+ -	DarkGreen (Patch): Attribute hedId modified from None to HED_0012923
+ -	DarkOliveGreen (Patch): Attribute hedId modified from None to HED_0012924
+ -	DarkSeaGreen (Patch): Attribute hedId modified from None to HED_0012925
+ -	ForestGreen (Patch): Attribute hedId modified from None to HED_0012926
+ -	Green (Patch): Attribute hedId modified from None to HED_0012927
+ -	GreenYellow (Patch): Attribute hedId modified from None to HED_0012928
+ -	LawnGreen (Patch): Attribute hedId modified from None to HED_0012929
+ -	LightGreen (Patch): Attribute hedId modified from None to HED_0012930
+ -	LightSeaGreen (Patch): Attribute hedId modified from None to HED_0012931
+ -	Lime (Patch): Attribute hedId modified from None to HED_0012932
+ -	LimeGreen (Patch): Attribute hedId modified from None to HED_0012933
+ -	MediumAquaMarine (Patch): Attribute hedId modified from None to HED_0012934
+ -	MediumSeaGreen (Patch): Attribute hedId modified from None to HED_0012935
+ -	MediumSpringGreen (Patch): Attribute hedId modified from None to HED_0012936
+ -	OliveDrab (Patch): Attribute hedId modified from None to HED_0012937
+ -	PaleGreen (Patch): Attribute hedId modified from None to HED_0012938
+ -	SeaGreen (Patch): Attribute hedId modified from None to HED_0012939
+ -	SpringGreen (Patch): Attribute hedId modified from None to HED_0012940
+ -	Teal (Patch): Attribute hedId modified from None to HED_0012941
+ -	YellowGreen (Patch): Attribute hedId modified from None to HED_0012942
+ -	Orange-color (Patch): Attribute hedId modified from None to HED_0012943
+ -	Coral (Patch): Attribute hedId modified from None to HED_0012944
+ -	DarkOrange (Patch): Attribute hedId modified from None to HED_0012945
+ -	Orange (Patch): Attribute hedId modified from None to HED_0012946
+ -	OrangeRed (Patch): Attribute hedId modified from None to HED_0012947
+ -	Tomato (Patch): Attribute hedId modified from None to HED_0012948
+ -	Pink-color (Patch): Attribute hedId modified from None to HED_0012949
+ -	DeepPink (Patch): Attribute hedId modified from None to HED_0012950
+ -	HotPink (Patch): Attribute hedId modified from None to HED_0012951
+ -	LightPink (Patch): Attribute hedId modified from None to HED_0012952
+ -	MediumVioletRed (Patch): Attribute hedId modified from None to HED_0012953
+ -	PaleVioletRed (Patch): Attribute hedId modified from None to HED_0012954
+ -	Pink (Patch): Attribute hedId modified from None to HED_0012955
+ -	Purple-color (Patch): Attribute hedId modified from None to HED_0012956
+ -	BlueViolet (Patch): Attribute hedId modified from None to HED_0012957
+ -	DarkMagenta (Patch): Attribute hedId modified from None to HED_0012958
+ -	DarkOrchid (Patch): Attribute hedId modified from None to HED_0012959
+ -	DarkSlateBlue (Patch): Attribute hedId modified from None to HED_0012960
+ -	DarkViolet (Patch): Attribute hedId modified from None to HED_0012961
+ -	Fuchsia (Patch): Attribute hedId modified from None to HED_0012962
+ -	Indigo (Patch): Attribute hedId modified from None to HED_0012963
+ -	Lavender (Patch): Attribute hedId modified from None to HED_0012964
+ -	Magenta (Patch): Attribute hedId modified from None to HED_0012965
+ -	MediumOrchid (Patch): Attribute hedId modified from None to HED_0012966
+ -	MediumPurple (Patch): Attribute hedId modified from None to HED_0012967
+ -	MediumSlateBlue (Patch): Attribute hedId modified from None to HED_0012968
+ -	Orchid (Patch): Attribute hedId modified from None to HED_0012969
+ -	Plum (Patch): Attribute hedId modified from None to HED_0012970
+ -	Purple (Patch): Attribute hedId modified from None to HED_0012971
+ -	RebeccaPurple (Patch): Attribute hedId modified from None to HED_0012972
+ -	SlateBlue (Patch): Attribute hedId modified from None to HED_0012973
+ -	Thistle (Patch): Attribute hedId modified from None to HED_0012974
+ -	Violet (Patch): Attribute hedId modified from None to HED_0012975
+ -	Red-color (Patch): Attribute hedId modified from None to HED_0012976
+ -	Crimson (Patch): Attribute hedId modified from None to HED_0012977
+ -	DarkRed (Patch): Attribute hedId modified from None to HED_0012978
+ -	DarkSalmon (Patch): Attribute hedId modified from None to HED_0012979
+ -	FireBrick (Patch): Attribute hedId modified from None to HED_0012980
+ -	IndianRed (Patch): Attribute hedId modified from None to HED_0012981
+ -	LightCoral (Patch): Attribute hedId modified from None to HED_0012982
+ -	LightSalmon (Patch): Attribute hedId modified from None to HED_0012983
+ -	Red (Patch): Attribute hedId modified from None to HED_0012984
+ -	Salmon (Patch): Attribute hedId modified from None to HED_0012985
+ -	White-color (Patch): Attribute hedId modified from None to HED_0012986
+ -	AliceBlue (Patch): Attribute hedId modified from None to HED_0012987
+ -	AntiqueWhite (Patch): Attribute hedId modified from None to HED_0012988
+ -	Azure (Patch): Attribute hedId modified from None to HED_0012989
+ -	Beige (Patch): Attribute hedId modified from None to HED_0012990
+ -	FloralWhite (Patch): Attribute hedId modified from None to HED_0012991
+ -	GhostWhite (Patch): Attribute hedId modified from None to HED_0012992
+ -	HoneyDew (Patch): Attribute hedId modified from None to HED_0012993
+ -	Ivory (Patch): Attribute hedId modified from None to HED_0012994
+ -	LavenderBlush (Patch): Attribute hedId modified from None to HED_0012995
+ -	Linen (Patch): Attribute hedId modified from None to HED_0012996
+ -	MintCream (Patch): Attribute hedId modified from None to HED_0012997
+ -	MistyRose (Patch): Attribute hedId modified from None to HED_0012998
+ -	OldLace (Patch): Attribute hedId modified from None to HED_0012999
+ -	SeaShell (Patch): Attribute hedId modified from None to HED_0013000
+ -	Snow (Patch): Attribute hedId modified from None to HED_0013001
+ -	White (Patch): Attribute hedId modified from None to HED_0013002
+ -	WhiteSmoke (Patch): Attribute hedId modified from None to HED_0013003
+ -	Yellow-color (Patch): Attribute hedId modified from None to HED_0013004
+ -	DarkKhaki (Patch): Attribute hedId modified from None to HED_0013005
+ -	Gold (Patch): Attribute hedId modified from None to HED_0013006
+ -	Khaki (Patch): Attribute hedId modified from None to HED_0013007
+ -	LemonChiffon (Patch): Attribute hedId modified from None to HED_0013008
+ -	LightGoldenRodYellow (Patch): Attribute hedId modified from None to HED_0013009
+ -	LightYellow (Patch): Attribute hedId modified from None to HED_0013010
+ -	Moccasin (Patch): Attribute hedId modified from None to HED_0013011
+ -	PaleGoldenRod (Patch): Attribute hedId modified from None to HED_0013012
+ -	PapayaWhip (Patch): Attribute hedId modified from None to HED_0013013
+ -	PeachPuff (Patch): Attribute hedId modified from None to HED_0013014
+ -	Yellow (Patch): Attribute hedId modified from None to HED_0013015
+ -	Color-shade (Patch): Attribute hedId modified from None to HED_0013016
+ -	Dark-shade (Patch): Attribute hedId modified from None to HED_0013017
+ -	Light-shade (Patch): Attribute hedId modified from None to HED_0013018
+ -	Grayscale (Patch): Attribute hedId modified from None to HED_0013020
+ -	HSV-color (Patch): Attribute hedId modified from None to HED_0013021
+ -	HSV-value (Patch): Attribute hedId modified from None to HED_0013023
+ -	Hue (Patch): Attribute hedId modified from None to HED_0013025
+ -	Saturation (Patch): Attribute hedId modified from None to HED_0013027
+ -	RGB-color (Patch): Attribute hedId modified from None to HED_0013028
+ -	RGB-blue (Patch): Attribute hedId modified from None to HED_0013030
+ -	RGB-green (Patch): Attribute hedId modified from None to HED_0013032
+ -	RGB-red (Patch): Attribute hedId modified from None to HED_0013034
+ -	Luminance (Patch): Attribute hedId modified from None to HED_0013035
+ -	Opacity (Patch): Attribute hedId modified from None to HED_0013038
+ -	Sensory-presentation (Patch): Attribute hedId modified from None to HED_0013039
+ -	Auditory-presentation (Patch): Attribute hedId modified from None to HED_0013040
+ -	Loudspeaker-separation (Patch): Attribute hedId modified from None to HED_0013041
+ -	Monophonic (Patch): Attribute hedId modified from None to HED_0013042
+ -	Silent (Patch): Attribute hedId modified from None to HED_0013043
+ -	Stereophonic (Patch): Attribute hedId modified from None to HED_0013044
+ -	Gustatory-presentation (Patch): Attribute hedId modified from None to HED_0013045
+ -	Olfactory-presentation (Patch): Attribute hedId modified from None to HED_0013046
+ -	Somatic-presentation (Patch): Attribute hedId modified from None to HED_0013047
+ -	Tactile-presentation (Patch): Attribute hedId modified from None to HED_0013048
+ -	Vestibular-presentation (Patch): Attribute hedId modified from None to HED_0013049
+ -	Visual-presentation (Patch): Attribute hedId modified from None to HED_0013050
+ -	2D-view (Patch): Attribute hedId modified from None to HED_0013051
+ -	3D-view (Patch): Attribute hedId modified from None to HED_0013052
+ -	Background-view (Patch): Attribute hedId modified from None to HED_0013053
+ -	Bistable-view (Patch): Attribute hedId modified from None to HED_0013054
+ -	Foreground-view (Patch): Attribute hedId modified from None to HED_0013055
+ -	Foveal-view (Patch): Attribute hedId modified from None to HED_0013056
+ -	Map-view (Patch): Attribute hedId modified from None to HED_0013057
+ -	Aerial-view (Patch): Attribute hedId modified from None to HED_0013058
+ -	Satellite-view (Patch): Attribute hedId modified from None to HED_0013059
+ -	Street-view (Patch): Attribute hedId modified from None to HED_0013060
+ -	Peripheral-view (Patch): Attribute hedId modified from None to HED_0013061
+ -	Task-property (Patch): Attribute hedId modified from None to HED_0013062
+ -	Task-action-type (Patch): Attribute hedId modified from None to HED_0013063
+ -	Appropriate-action (Patch): Attribute hedId modified from None to HED_0013064
+ -	Correct-action (Patch): Attribute hedId modified from None to HED_0013065
+ -	Correction (Patch): Attribute hedId modified from None to HED_0013066
+ -	Done-indication (Patch): Attribute hedId modified from None to HED_0013067
+ -	Imagined-action (Patch): Attribute hedId modified from None to HED_0013068
+ -	Inappropriate-action (Patch): Attribute hedId modified from None to HED_0013069
+ -	Incorrect-action (Patch): Attribute hedId modified from None to HED_0013070
+ -	Indeterminate-action (Patch): Attribute hedId modified from None to HED_0013071
+ -	Miss (Patch): Attribute hedId modified from None to HED_0013072
+ -	Near-miss (Patch): Attribute hedId modified from None to HED_0013073
+ -	Omitted-action (Patch): Attribute hedId modified from None to HED_0013074
+ -	Ready-indication (Patch): Attribute hedId modified from None to HED_0013075
+ -	Task-attentional-demand (Patch): Attribute hedId modified from None to HED_0013076
+ -	Bottom-up-attention (Patch): Attribute hedId modified from None to HED_0013077
+ -	Covert-attention (Patch): Attribute hedId modified from None to HED_0013078
+ -	Divided-attention (Patch): Attribute hedId modified from None to HED_0013079
+ -	Focused-attention (Patch): Attribute hedId modified from None to HED_0013080
+ -	Orienting-attention (Patch): Attribute hedId modified from None to HED_0013081
+ -	Overt-attention (Patch): Attribute hedId modified from None to HED_0013082
+ -	Selective-attention (Patch): Attribute hedId modified from None to HED_0013083
+ -	Sustained-attention (Patch): Attribute hedId modified from None to HED_0013084
+ -	Switched-attention (Patch): Attribute hedId modified from None to HED_0013085
+ -	Top-down-attention (Patch): Attribute hedId modified from None to HED_0013086
+ -	Task-effect-evidence (Patch): Attribute hedId modified from None to HED_0013087
+ -	Behavioral-evidence (Patch): Attribute hedId modified from None to HED_0013088
+ -	Computational-evidence (Patch): Attribute hedId modified from None to HED_0013089
+ -	External-evidence (Patch): Attribute hedId modified from None to HED_0013090
+ -	Intended-effect (Patch): Attribute hedId modified from None to HED_0013091
+ -	Task-event-role (Patch): Attribute hedId modified from None to HED_0013092
+ -	Experimental-stimulus (Patch): Attribute hedId modified from None to HED_0013093
+ -	Incidental (Patch): Attribute hedId modified from None to HED_0013094
+ -	Instructional (Patch): Attribute hedId modified from None to HED_0013095
+ -	Mishap (Patch): Attribute hedId modified from None to HED_0013096
+ -	Participant-response (Patch): Attribute hedId modified from None to HED_0013097
+ -	Task-activity (Patch): Attribute hedId modified from None to HED_0013098
+ -	Warning (Patch): Attribute hedId modified from None to HED_0013099
+ -	Task-relationship (Patch): Attribute hedId modified from None to HED_0013100
+ -	Background-subtask (Patch): Attribute hedId modified from None to HED_0013101
+ -	Primary-subtask (Patch): Attribute hedId modified from None to HED_0013102
+ -	Task-stimulus-role (Patch): Attribute hedId modified from None to HED_0013103
+ -	Cue (Patch): Attribute hedId modified from None to HED_0013104
+ -	Distractor (Patch): Attribute hedId modified from None to HED_0013105
+ -	Expected (Patch): Attribute hedId modified from None to HED_0013106
+ -	Extraneous (Patch): Attribute hedId modified from None to HED_0013107
+ -	Feedback (Patch): Attribute hedId modified from None to HED_0013108
+ -	Go-signal (Patch): Attribute hedId modified from None to HED_0013109
+ -	Meaningful (Patch): Attribute hedId modified from None to HED_0013110
+ -	Newly-learned (Patch): Attribute hedId modified from None to HED_0013111
+ -	Non-informative (Patch): Attribute hedId modified from None to HED_0013112
+ -	Non-target (Patch): Attribute hedId modified from None to HED_0013113
+ -	Not-meaningful (Patch): Attribute hedId modified from None to HED_0013114
+ -	Novel (Patch): Attribute hedId modified from None to HED_0013115
+ -	Oddball (Patch): Attribute hedId modified from None to HED_0013116
+ -	Penalty (Patch): Attribute hedId modified from None to HED_0013117
+ -	Planned (Patch): Attribute hedId modified from None to HED_0013118
+ -	Priming (Patch): Attribute hedId modified from None to HED_0013119
+ -	Query (Patch): Attribute hedId modified from None to HED_0013120
+ -	Reward (Patch): Attribute hedId modified from None to HED_0013121
+ -	Stop-signal (Patch): Attribute hedId modified from None to HED_0013122
+ -	Target (Patch): Attribute hedId modified from None to HED_0013123
+ -	Threat (Patch): Attribute hedId modified from None to HED_0013124
+ -	Timed (Patch): Attribute hedId modified from None to HED_0013125
+ -	Unexpected (Patch): Attribute hedId modified from None to HED_0013126
+ -	Unplanned (Patch): Attribute hedId modified from None to HED_0013127
+ -	Relation (Patch): Attribute hedId modified from None to HED_0013128
+ -	Comparative-relation (Patch): Attribute hedId modified from None to HED_0013129
+ -	Approximately-equal-to (Patch): Attribute hedId modified from None to HED_0013130
+ -	Equal-to (Patch): Attribute hedId modified from None to HED_0013131
+ -	Greater-than (Patch): Attribute hedId modified from None to HED_0013132
+ -	Greater-than-or-equal-to (Patch): Attribute hedId modified from None to HED_0013133
+ -	Less-than (Patch): Attribute hedId modified from None to HED_0013134
+ -	Less-than-or-equal-to (Patch): Attribute hedId modified from None to HED_0013135
+ -	Not-equal-to (Patch): Attribute hedId modified from None to HED_0013136
+ -	Connective-relation (Patch): Attribute hedId modified from None to HED_0013137
+ -	Belongs-to (Patch): Attribute hedId modified from None to HED_0013138
+ -	Connected-to (Patch): Attribute hedId modified from None to HED_0013139
+ -	Contained-in (Patch): Attribute hedId modified from None to HED_0013140
+ -	Described-by (Patch): Attribute hedId modified from None to HED_0013141
+ -	From-to (Patch): Attribute hedId modified from None to HED_0013142
+ -	Group-of (Patch): Attribute hedId modified from None to HED_0013143
+ -	Implied-by (Patch): Attribute hedId modified from None to HED_0013144
+ -	Includes (Patch): Attribute hedId modified from None to HED_0013145
+ -	Interacts-with (Patch): Attribute hedId modified from None to HED_0013146
+ -	Member-of (Patch): Attribute hedId modified from None to HED_0013147
+ -	Part-of (Patch): Attribute hedId modified from None to HED_0013148
+ -	Performed-by (Patch): Attribute hedId modified from None to HED_0013149
+ -	Performed-using (Patch): Attribute hedId modified from None to HED_0013150
+ -	Related-to (Patch): Attribute hedId modified from None to HED_0013151
+ -	Unrelated-to (Patch): Attribute hedId modified from None to HED_0013152
+ -	Directional-relation (Patch): Attribute hedId modified from None to HED_0013153
+ -	Away-from (Patch): Attribute hedId modified from None to HED_0013154
+ -	Towards (Patch): Attribute hedId modified from None to HED_0013155
+ -	Logical-relation (Patch): Attribute hedId modified from None to HED_0013156
+ -	And (Patch): Attribute hedId modified from None to HED_0013157
+ -	Or (Patch): Attribute hedId modified from None to HED_0013158
+ -	Spatial-relation (Patch): Attribute hedId modified from None to HED_0013159
+ -	Above (Patch): Attribute hedId modified from None to HED_0013160
+ -	Across-from (Patch): Attribute hedId modified from None to HED_0013161
+ -	Adjacent-to (Patch): Attribute hedId modified from None to HED_0013162
+ -	Ahead-of (Patch): Attribute hedId modified from None to HED_0013163
+ -	Around (Patch): Attribute hedId modified from None to HED_0013164
+ -	Behind (Patch): Attribute hedId modified from None to HED_0013165
+ -	Below (Patch): Attribute hedId modified from None to HED_0013166
+ -	Between (Patch): Attribute hedId modified from None to HED_0013167
+ -	Bilateral-to (Patch): Attribute hedId modified from None to HED_0013168
+ -	Bottom-edge-of (Patch): Attribute hedId modified from None to HED_0013169
+ -	Boundary-of (Patch): Attribute hedId modified from None to HED_0013170
+ -	Center-of (Patch): Attribute hedId modified from None to HED_0013171
+ -	Close-to (Patch): Attribute hedId modified from None to HED_0013172
+ -	Far-from (Patch): Attribute hedId modified from None to HED_0013173
+ -	In-front-of (Patch): Attribute hedId modified from None to HED_0013174
+ -	Left-edge-of (Patch): Attribute hedId modified from None to HED_0013175
+ -	Left-side-of (Patch): Attribute hedId modified from None to HED_0013176
+ -	Lower-center-of (Patch): Attribute hedId modified from None to HED_0013177
+ -	Lower-left-of (Patch): Attribute hedId modified from None to HED_0013178
+ -	Lower-right-of (Patch): Attribute hedId modified from None to HED_0013179
+ -	Outside-of (Patch): Attribute hedId modified from None to HED_0013180
+ -	Over (Patch): Attribute hedId modified from None to HED_0013181
+ -	Right-edge-of (Patch): Attribute hedId modified from None to HED_0013182
+ -	Right-side-of (Patch): Attribute hedId modified from None to HED_0013183
+ -	To-left-of (Patch): Attribute hedId modified from None to HED_0013184
+ -	To-right-of (Patch): Attribute hedId modified from None to HED_0013185
+ -	Top-edge-of (Patch): Attribute hedId modified from None to HED_0013186
+ -	Top-of (Patch): Attribute hedId modified from None to HED_0013187
+ -	Underneath (Patch): Attribute hedId modified from None to HED_0013188
+ -	Upper-center-of (Patch): Attribute hedId modified from None to HED_0013189
+ -	Upper-left-of (Patch): Attribute hedId modified from None to HED_0013190
+ -	Upper-right-of (Patch): Attribute hedId modified from None to HED_0013191
+ -	Within (Patch): Attribute hedId modified from None to HED_0013192
+ -	Temporal-relation (Patch): Attribute hedId modified from None to HED_0013193
+ -	After (Patch): Attribute hedId modified from None to HED_0013194
+ -	Asynchronous-with (Patch): Attribute hedId modified from None to HED_0013195
+ -	Before (Patch): Attribute hedId modified from None to HED_0013196
+ -	During (Patch): Attribute hedId modified from None to HED_0013197
+ -	Synchronous-with (Patch): Attribute hedId modified from None to HED_0013198
+ -	Waiting-for (Patch): Attribute hedId modified from None to HED_0013199
+ -	accelerationUnits (Patch): Attribute hedId modified from None to HED_0011500
+ -	angleUnits (Patch): Attribute hedId modified from None to HED_0011501
+ -	areaUnits (Patch): Attribute hedId modified from None to HED_0011502
+ -	currencyUnits (Patch): Attribute hedId modified from None to HED_0011503
+ -	electricPotentialUnits (Patch): Attribute hedId modified from None to HED_0011504
+ -	frequencyUnits (Patch): Attribute hedId modified from None to HED_0011505
+ -	intensityUnits (Patch): Attribute hedId modified from None to HED_0011506
+ -	jerkUnits (Patch): Attribute hedId modified from None to HED_0011507
+ -	magneticFieldUnits (Patch): Attribute hedId modified from None to HED_0011508
+ -	memorySizeUnits (Patch): Attribute hedId modified from None to HED_0011509
+ -	physicalLengthUnits (Patch): Attribute hedId modified from None to HED_0011510
+ -	speedUnits (Patch): Attribute hedId modified from None to HED_0011511
+ -	temperatureUnits (Patch): Attribute hedId modified from None to HED_0011512
+ -	timeUnits (Patch): Attribute hedId modified from None to HED_0011513
+ -	volumeUnits (Patch): Attribute hedId modified from None to HED_0011514
+ -	weightUnits (Patch): Attribute hedId modified from None to HED_0011515
+ -	m-per-s^2 (Patch): Attribute hedId modified from None to HED_0011600
+ -	radian (Patch): Attribute hedId modified from None to HED_0011601
+ -	rad (Patch): Attribute hedId modified from None to HED_0011602
+ -	degree (Patch): Attribute hedId modified from None to HED_0011603
+ -	m^2 (Patch): Attribute hedId modified from None to HED_0011604
+ -	dollar (Patch): Attribute hedId modified from None to HED_0011605
+ -	$ (Patch): Attribute hedId modified from None to HED_0011606
+ -	euro (Patch): Attribute hedId modified from None to HED_0011607
+ -	point (Patch): Attribute hedId modified from None to HED_0011608
+ -	hertz (Patch): Attribute hedId modified from None to HED_0011611
+ -	Hz (Patch): Attribute hedId modified from None to HED_0011612
+ -	dB (Patch): Attribute hedId modified from None to HED_0011613
+ -	candela (Patch): Attribute hedId modified from None to HED_0011614
+ -	cd (Patch): Attribute hedId modified from None to HED_0011615
+ -	m-per-s^3 (Patch): Attribute hedId modified from None to HED_0011616
+ -	tesla (Patch): Attribute hedId modified from None to HED_0011617
+ -	T (Patch): Attribute hedId modified from None to HED_0011618
+ -	byte (Patch): Attribute hedId modified from None to HED_0011619
+ -	B (Patch): Attribute hedId modified from None to HED_0011620
+ -	foot (Patch): Attribute hedId modified from None to HED_0011621
+ -	inch (Patch): Attribute hedId modified from None to HED_0011622
+ -	meter (Patch): Attribute hedId modified from None to HED_0011623
+ -	metre (Patch): Attribute hedId modified from None to HED_0011624
+ -	m (Patch): Attribute hedId modified from None to HED_0011625
+ -	mile (Patch): Attribute hedId modified from None to HED_0011626
+ -	m-per-s (Patch): Attribute hedId modified from None to HED_0011627
+ -	mph (Patch): Attribute hedId modified from None to HED_0011628
+ -	kph (Patch): Attribute hedId modified from None to HED_0011629
+ -	degree Celsius (Patch): Attribute hedId modified from None to HED_0011631
+ -	oC (Patch): Attribute hedId modified from None to HED_0011632
+ -	second (Patch): Attribute hedId modified from None to HED_0011633
+ -	s (Patch): Attribute hedId modified from None to HED_0011634
+ -	day (Patch): Attribute hedId modified from None to HED_0011635
+ -	minute (Patch): Attribute hedId modified from None to HED_0011636
+ -	hour (Patch): Attribute hedId modified from None to HED_0011637
+ -	m^3 (Patch): Attribute hedId modified from None to HED_0011639
+ -	g (Patch): Attribute hedId modified from None to HED_0011640
+ -	gram (Patch): Attribute hedId modified from None to HED_0011641
+ -	pound (Patch): Attribute hedId modified from None to HED_0011642
+ -	lb (Patch): Attribute hedId modified from None to HED_0011643
+ -	deca (Patch): Attribute hedId modified from None to HED_0011400
+ -	da (Patch): Attribute hedId modified from None to HED_0011401
+ -	hecto (Patch): Attribute hedId modified from None to HED_0011402
+ -	h (Patch): Attribute hedId modified from None to HED_0011403
+ -	kilo (Patch): Attribute hedId modified from None to HED_0011404
+ -	k (Patch): Attribute hedId modified from None to HED_0011405
+ -	mega (Patch): Attribute hedId modified from None to HED_0011406
+ -	M (Patch): Attribute hedId modified from None to HED_0011407
+ -	giga (Patch): Attribute hedId modified from None to HED_0011408
+ -	G (Patch): Attribute hedId modified from None to HED_0011409
+ -	tera (Patch): Attribute hedId modified from None to HED_0011410
+ -	T (Patch): Attribute hedId modified from None to HED_0011411
+ -	peta (Patch): Attribute hedId modified from None to HED_0011412
+ -	P (Patch): Attribute hedId modified from None to HED_0011413
+ -	exa (Patch): Attribute hedId modified from None to HED_0011414
+ -	E (Patch): Attribute hedId modified from None to HED_0011415
+ -	zetta (Patch): Attribute hedId modified from None to HED_0011416
+ -	Z (Patch): Attribute hedId modified from None to HED_0011417
+ -	yotta (Patch): Attribute hedId modified from None to HED_0011418
+ -	Y (Patch): Attribute hedId modified from None to HED_0011419
+ -	deci (Patch): Attribute hedId modified from None to HED_0011420
+ -	d (Patch): Attribute hedId modified from None to HED_0011421
+ -	centi (Patch): Attribute hedId modified from None to HED_0011422
+ -	c (Patch): Attribute hedId modified from None to HED_0011423
+ -	milli (Patch): Attribute hedId modified from None to HED_0011424
+ -	m (Patch): Attribute hedId modified from None to HED_0011425
+ -	micro (Patch): Attribute hedId modified from None to HED_0011426
+ -	u (Patch): Attribute hedId modified from None to HED_0011427
+ -	nano (Patch): Attribute hedId modified from None to HED_0011428
+ -	n (Patch): Attribute hedId modified from None to HED_0011429
+ -	pico (Patch): Attribute hedId modified from None to HED_0011430
+ -	p (Patch): Attribute hedId modified from None to HED_0011431
+ -	femto (Patch): Attribute hedId modified from None to HED_0011432
+ -	f (Patch): Attribute hedId modified from None to HED_0011433
+ -	atto (Patch): Attribute hedId modified from None to HED_0011434
+ -	a (Patch): Attribute hedId modified from None to HED_0011435
+ -	zepto (Patch): Attribute hedId modified from None to HED_0011436
+ -	z (Patch): Attribute hedId modified from None to HED_0011437
+ -	yocto (Patch): Attribute hedId modified from None to HED_0011438
+ -	y (Patch): Attribute hedId modified from None to HED_0011439
+ -	dateTimeClass (Patch): Attribute hedId modified from None to HED_0011301
+ -	nameClass (Patch): Attribute hedId modified from None to HED_0011302
+ -	numericClass (Patch): Attribute hedId modified from None to HED_0011303
+ -	posixPath (Patch): Attribute hedId modified from None to HED_0011304
+ -	textClass (Patch): Attribute hedId modified from None to HED_0011305
+ -	allowedCharacter (Patch): Attribute hedId modified from None to HED_0010304
+ -	conversionFactor (Patch): Attribute hedId modified from None to HED_0010305
+ -	deprecatedFrom (Patch): Attribute hedId modified from None to HED_0010306
+ -	defaultUnits (Patch): Attribute hedId modified from None to HED_0010104
+ -	extensionAllowed (Patch): Attribute hedId modified from None to HED_0010307
+ -	inLibrary (Patch): Attribute hedId modified from None to HED_0010309
+ -	relatedTag (Patch): Attribute hedId modified from None to HED_0010105
+ -	requireChild (Patch): Attribute hedId modified from None to HED_0010501
+ -	reserved (Patch): Attribute hedId modified from None to HED_0010310
+ -	rooted (Patch): Attribute hedId modified from None to HED_0010502
+ -	SIUnit (Patch): Attribute hedId modified from None to HED_0010311
+ -	SIUnitModifier (Patch): Attribute hedId modified from None to HED_0010312
+ -	SIUnitSymbolModifier (Patch): Attribute hedId modified from None to HED_0010313
+ -	suggestedTag (Patch): Attribute hedId modified from None to HED_0010106
+ -	tagGroup (Patch): Attribute hedId modified from None to HED_0010314
+ -	takesValue (Patch): Attribute hedId modified from None to HED_0010503
+ -	topLevelTagGroup (Patch): Attribute hedId modified from None to HED_0010315
+ -	unique (Patch): Attribute hedId modified from None to HED_0010316
+ -	unitClass (Patch): Attribute hedId modified from None to HED_0010107
+ -	unitPrefix (Patch): Attribute hedId modified from None to HED_0010317
+ -	unitSymbol (Patch): Attribute hedId modified from None to HED_0010318
+ -	valueClass (Patch): Attribute hedId modified from None to HED_0010108
+
 ## Changes for HED 8.2.0 Released 4/28/2023
 
 * Added the `withStandard` attribute in library schema header to represent the partnered schema. This is first supported for versions >=8.2.0.
