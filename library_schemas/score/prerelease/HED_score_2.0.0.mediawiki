@@ -1,8 +1,8 @@
 HED library="score" version="2.0.0" withStandard="8.3.0" unmerged="true"
 
 '''Prologue'''
-This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1,2) for describing events occurring during neuroimaging time series recordings.
-The HED-SCORE library schema allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
+This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
+The HED-SCORE library schema allows cliniciand and scientists to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework.
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
@@ -229,12 +229,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** Other-ECG-feature {requireChild} <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
     * EMG-channel-finding <nowiki> {suggestedTag=Finding-significance-to-recording, suggestedTag=Symmetrical, suggestedTag=Left, suggestedTag=Right} [Findings in Electromyography recordings (Source: Beniczky ea 2017, Section 13, Table 16.). Suggested tags can be used to note the side of the muscle (Left or Right). The order of activation may be indicated using Temporal-relation: (Left, (Before,Right)).]</nowiki>
-        ** EMG-muscle-name
+        ** EMG-muscle-name {requireChild} <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** Negative-myoclonus <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** Myoclonus-rhythmic <nowiki> [Numerical value for frequency. (Source: Beniczky ea 2017, Table 16.)] </nowiki>
-                *** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
+                **** <nowiki># {takesValue, valueClass=numericClass} </nowiki>
             *** Myoclonus-arrhythmic <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** Myoclonus-synchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
             *** Myoclonus-asynchronous <nowiki> [Source: Beniczky ea 2017, Table 16.] </nowiki>
@@ -344,7 +344,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
         ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 
     * Location-property <nowiki>{suggestedTag=Left, suggestedTag=Right, suggestedTag=Body-part}[Location can be scored for findings. Semiologic finding can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, left/right) and centricity (axial (trunk), proximal limb, distal limb). (Source: Beniczky ea 2017, Sections 8 and 10)]</nowiki>
-        ** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Sensors <nowiki> {requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
             *** <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
         ** Finding-propagation <nowiki> {suggestedTag=Body-part, suggestedTag=Sensors}[When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
