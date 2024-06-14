@@ -1,9 +1,9 @@
-hedId	rdfs:label	omn:SubClassOf	Attributes	dc:description	owm:EquivalentTo
+hedId	rdfs:label	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 HED_0011500	accelerationUnits	StandardUnitClass	defaultUnits=m-per-s^2		StandardUnitClass and (defaultUnits some m-per-s^2)
 HED_0011501	angleUnits	StandardUnitClass	defaultUnits=radian		StandardUnitClass and (defaultUnits some radian)
 HED_0011502	areaUnits	StandardUnitClass	defaultUnits=m^2		StandardUnitClass and (defaultUnits some m^2)
 HED_0011503	currencyUnits	StandardUnitClass	defaultUnits=$	Units indicating the worth of something.	StandardUnitClass and (defaultUnits some $)
-HED_0011504	electricPotentialUnits	StandardUnitClass	defaultUnits=uv		StandardUnitClass and (defaultUnits some uv)
+HED_0011504	electricPotentialUnits	StandardUnitClass	defaultUnits=uV		StandardUnitClass and (defaultUnits some uV)
 HED_0011505	frequencyUnits	StandardUnitClass	defaultUnits=Hz		StandardUnitClass and (defaultUnits some Hz)
 HED_0011506	intensityUnits	StandardUnitClass	defaultUnits=dB		StandardUnitClass and (defaultUnits some dB)
 HED_0011507	jerkUnits	StandardUnitClass	defaultUnits=m-per-s^3		StandardUnitClass and (defaultUnits some m-per-s^3)

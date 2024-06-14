@@ -1,4 +1,4 @@
-hedId	rdfs:label	omn:SubClassOf	hasUnitClass	Attributes	dc:description	owm:EquivalentTo
+hedId	rdfs:label	omn:SubClassOf	hasUnitClass	Attributes	dc:description	omn:EquivalentTo
 HED_0011600	m-per-s^2	StandardUnit	accelerationUnits	SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret		"StandardUnit and (SIUnit value true) and (unitSymbol value true) and (conversionFactor value 1.0) and (allowedCharacter value ""caret"") and (hasUnitClass some accelerationUnits)"
 HED_0011601	radian	StandardUnit	angleUnits	SIUnit, conversionFactor=1.0		StandardUnit and (SIUnit value true) and (conversionFactor value 1.0) and (hasUnitClass some angleUnits)
 HED_0011602	rad	StandardUnit	angleUnits	SIUnit, unitSymbol, conversionFactor=1.0		StandardUnit and (SIUnit value true) and (unitSymbol value true) and (conversionFactor value 1.0) and (hasUnitClass some angleUnits)
@@ -8,9 +8,9 @@ HED_0011605	dollar	StandardUnit	currencyUnits	conversionFactor=1.0		StandardUnit
 HED_0011606	$	StandardUnit	currencyUnits	unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar		"StandardUnit and (unitPrefix value true) and (unitSymbol value true) and (conversionFactor value 1.0) and (allowedCharacter value ""dollar"") and (hasUnitClass some currencyUnits)"
 HED_0011607	euro	StandardUnit	currencyUnits		The official currency of a large subset of member countries of the European Union.	StandardUnit and (hasUnitClass some currencyUnits)
 HED_0011608	point	StandardUnit	currencyUnits		An arbitrary unit of value, usually an integer indicating reward or penalty.	StandardUnit and (hasUnitClass some currencyUnits)
-HED_0011609	v	StandardUnit	electricPotentialUnits	SIUnit, unitSymbol, conversionFactor=0.000001		StandardUnit and (SIUnit value true) and (unitSymbol value true) and (conversionFactor value 0.000001) and (hasUnitClass some electricPotentialUnits)
-HED_0011644	uv	StandardUnit	electricPotentialUnits	conversionFactor=1.0	Added as a direct unit because it is the default unit.	StandardUnit and (conversionFactor value 1.0) and (hasUnitClass some electricPotentialUnits)
-HED_0011610	Volt	StandardUnit	electricPotentialUnits	SIUnit, conversionFactor=0.000001		StandardUnit and (SIUnit value true) and (conversionFactor value 0.000001) and (hasUnitClass some electricPotentialUnits)
+HED_0011609	V	StandardUnit	electricPotentialUnits	SIUnit, unitSymbol, conversionFactor=0.000001		StandardUnit and (SIUnit value true) and (unitSymbol value true) and (conversionFactor value 0.000001) and (hasUnitClass some electricPotentialUnits)
+HED_0011644	uV	StandardUnit	electricPotentialUnits	conversionFactor=1.0	Added as a direct unit because it is the default unit.	StandardUnit and (conversionFactor value 1.0) and (hasUnitClass some electricPotentialUnits)
+HED_0011610	volt	StandardUnit	electricPotentialUnits	SIUnit, conversionFactor=0.000001		StandardUnit and (SIUnit value true) and (conversionFactor value 0.000001) and (hasUnitClass some electricPotentialUnits)
 HED_0011611	hertz	StandardUnit	frequencyUnits	SIUnit, conversionFactor=1.0		StandardUnit and (SIUnit value true) and (conversionFactor value 1.0) and (hasUnitClass some frequencyUnits)
 HED_0011612	Hz	StandardUnit	frequencyUnits	SIUnit, unitSymbol, conversionFactor=1.0		StandardUnit and (SIUnit value true) and (unitSymbol value true) and (conversionFactor value 1.0) and (hasUnitClass some frequencyUnits)
 HED_0011613	dB	StandardUnit	intensityUnits	unitSymbol, conversionFactor=1.0	Intensity expressed as ratio to a threshold. May be used for sound intensity.	StandardUnit and (unitSymbol value true) and (conversionFactor value 1.0) and (hasUnitClass some intensityUnits)

@@ -1,0 +1,73 @@
+name: Create PR from Develop
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_title:
+        description: 'Pull Request Title'
+        required: true
+        default: 'Update from Develop'
+      pr_description:
+        description: 'Pull Request Description'
+        required: true
+        default: 'Automatically updating the provisional branch with changes from develop.'
+
+jobs:
+  manage-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ensure you have the complete history.
+
+      - name: Delete old provisional branch if needed
+        run: |
+          # Check if the provisional branch exists on the remote
+          EXISTS=$(git ls-remote --heads origin provisional | wc -l)
+          if [ "$EXISTS" -ne 0 ]; then
+            git push origin --delete provisional
+            echo "Provisional branch deleted."
+          else
+            echo "Provisional branch does not exist on remote, skipping delete."
+          fi
+
+      - name: Create new provisional branch from develop
+        run: |
+          git checkout develop
+          git pull
+          git checkout -b provisional
+          git push origin provisional
+
+      - name: Get changed files between main and provisional
+        id: changed-files
+        run: |
+          CHANGED_FILES=$(git diff --name-only origin/main..origin/provisional | tr '\n' ' ')
+          echo "CHANGED_FILES=${CHANGED_FILES}" >> $GITHUB_ENV
+          echo "List of changed files: $CHANGED_FILES"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install git+https://github.com/hed-standard/hed-python.git@develop
+
+      - name: Update schemas
+        run: |
+            hed_update_schemas $CHANGED_FILES --set-ids
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git commit -m "Automatically adding hedIds"
+          git push origin provisional
+
+      - name: Create provisional to main PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create --base main --head provisional --title "${{ github.event.inputs.pr_title }}" --body "${{ github.event.inputs.pr_description }}"
