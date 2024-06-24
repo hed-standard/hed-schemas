@@ -173,7 +173,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Synonymous-to	2	Semantic-relatedness-to		Meaning exactly or nearly the same as			
 	Antonymous-to	2	Semantic-relatedness-to		Meaning the opposite as			
 	Semantic-distance-to	2	Semantic-relatedness-to		Removed in meaning from			
-	Semantic-distance-to-#	3	Semantic-relatedness-to					
+	Semantic-distance-to-#	3	Semantic-distance-to					
 	Orthographic-relatedness-to	1		rooted=Relation	Connected on the basis of writing or spelling			
 	Orthographic-distance-to	2	Orthographic-relatedness-to		Removed in writing from			
 	Levenshtein-distance-to	3	Orthographic-distance-to		The minimum number of single-character edits to change into.			
