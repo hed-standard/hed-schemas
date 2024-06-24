@@ -1,4 +1,4 @@
-hedId	rdfs:label	Level	omn:SubClassOf	Attributes	ds:description	omn:EquivalentTo	ds:source	ds:comment
+hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	dc:source	dc:comment
 	Phone	1		rooted=Language-item, relatedTag=Phoneme	A minimal speech segment that possesses distinct physical or perceptual properties.		https://en.wikipedia.org/wiki/Segment_(linguistics)	
 	Vowel	2	Phone		A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.		Original	
 	Short-vowel	3	Vowel		A vowel sound that is pronounced in a short form.		Original	
