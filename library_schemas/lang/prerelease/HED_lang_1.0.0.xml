@@ -149,16 +149,32 @@
          </node>
       </node>
       <node>
-         <name>Morphene-type</name>
+         <name>Morpheme-type</name>
          <description>The type of a morpheme.</description>
          <attribute>
             <name>inLibrary</name>
             <value>lang</value>
          </attribute>
+         <node>
+            <name>Free-morpheme-type</name>
+            <description>A morpheme type that can function as a word.</description>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lang</value>
+            </attribute>
+         </node>
+         <node>
+            <name>Bound-morpheme-type</name>
+            <description>A morpheme type that cannot be a word itself, such as prefixes and suffixes.</description>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lang</value>
+            </attribute>
+         </node>
       </node>
       <node>
-         <name>Free-morpheme-type</name>
-         <description>A morpheme type that can function as a word.</description>
+         <name>Burmese</name>
+         <description>A Burmo Qiangic language mainly spoken in Myanmar</description>
          <attribute>
             <name>inLibrary</name>
             <value>lang</value>
@@ -1492,22 +1508,6 @@
                </attribute>
             </node>
          </node>
-      </node>
-      <node>
-         <name>Bound-morpheme-type</name>
-         <description>A morpheme type that cannot be a word itself, such as prefixes and suffixes.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-      </node>
-      <node>
-         <name>Burmese</name>
-         <description>A Burmo Qiangic language mainly spoken in Myanmar</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
       </node>
       <node>
          <name>Direct-syntactic-object</name>
@@ -4413,6 +4413,42 @@
             <name>inLibrary</name>
             <value>lang</value>
          </attribute>
+         <node>
+            <name>Word-formation-function</name>
+            <description>Creating a new word.</description>
+            <attribute>
+               <name>inLibrary</name>
+               <value>lang</value>
+            </attribute>
+            <node>
+               <name>Derivation</name>
+               <description>Changing the meaning of a word, usually by adding an affix.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lang</value>
+               </attribute>
+               <node>
+                  <name>Change-word-class</name>
+                  <description>Changing the word class or part of speech a word belongs to.</description>
+                  <attribute>
+                     <name>suggestedTag</name>
+                     <value>Lexical-role</value>
+                  </attribute>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Compound</name>
+               <description>To join with another free morpheme to form a more complex word.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lang</value>
+               </attribute>
+            </node>
+         </node>
       </node>
       <node>
          <name>Morphological-polysynthetic-type</name>
@@ -13489,42 +13525,6 @@
                   <value>HED_0013199</value>
                </attribute>
             </node>
-         </node>
-      </node>
-      <node>
-         <name>Word-formation-function</name>
-         <description>Creating a new word.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Derivation</name>
-            <description>Changing the meaning of a word, usually by adding an affix.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Change-word-class</name>
-               <description>Changing the word class or part of speech a word belongs to.</description>
-               <attribute>
-                  <name>suggestedTag</name>
-                  <value>Lexical-role</value>
-               </attribute>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Compound</name>
-            <description>To join with another free morpheme to form a more complex word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
          </node>
       </node>
    </schema>

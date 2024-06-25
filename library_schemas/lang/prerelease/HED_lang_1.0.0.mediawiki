@@ -5,11 +5,9 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 
 !# start schema
 
-'''Morphene-type''' <nowiki>[The type of a morpheme.]</nowiki>
-
-'''Free-morpheme-type''' <nowiki>[A morpheme type that can function as a word.]</nowiki>
-
-'''Bound-morpheme-type''' <nowiki>[A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
+'''Morpheme-type''' <nowiki>[The type of a morpheme.]</nowiki>
+* Free-morpheme-type <nowiki>[A morpheme type that can function as a word.]</nowiki>
+* Bound-morpheme-type <nowiki>[A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
 
 '''Burmese''' <nowiki>[A Burmo Qiangic language mainly spoken in Myanmar]</nowiki>
 
@@ -114,6 +112,10 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 '''Radical''' <nowiki>{rooted=Language-item} [A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.]</nowiki>
 
 '''Morpheme-function''' <nowiki>[The function of a morpheme.]</nowiki>
+* Word-formation-function <nowiki>[Creating a new word.]</nowiki>
+** Derivation <nowiki>[Changing the meaning of a word, usually by adding an affix.]</nowiki>
+*** Change-word-class <nowiki>{suggestedTag=Lexical-role} [Changing the word class or part of speech a word belongs to.]</nowiki>
+** Compound <nowiki>[To join with another free morpheme to form a more complex word.]</nowiki>
 
 '''Morphological-polysynthetic-type''' <nowiki>[Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
 
@@ -279,11 +281,6 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 * Semantic-distance-to <nowiki>[Removed in meaning from]</nowiki>
 **  <nowiki># </nowiki>
 * Synonymous-to <nowiki>[Meaning exactly or nearly the same as]</nowiki>
-
-'''Word-formation-function''' <nowiki>[Creating a new word.]</nowiki>
-* Derivation <nowiki>[Changing the meaning of a word, usually by adding an affix.]</nowiki>
-** Change-word-class <nowiki>{suggestedTag=Lexical-role} [Changing the word class or part of speech a word belongs to.]</nowiki>
-* Compound <nowiki>[To join with another free morpheme to form a more complex word.]</nowiki>
 
 
 !# end schema

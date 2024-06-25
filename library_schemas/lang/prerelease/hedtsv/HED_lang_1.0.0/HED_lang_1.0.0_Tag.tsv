@@ -1,11 +1,11 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	dc:source	dc:comment
-	Morpheme-type	0	Morpheme-property		The type of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
-	Free-morpheme-type	0	Morpheme-type		A morpheme type that can function as a word.	HedTag and (inHedSchema some LangSchema)	Original	
-	Bound-morpheme-type	0	Morpheme-type		A morpheme type that cannot be a word itself, such as prefixes and suffixes.	HedTag and (inHedSchema some LangSchema)	Original	
-	Burmese	0	Burmo-Qiangic-language		A Burmo Qiangic language mainly spoken in Myanmar	HedTag and (inHedSchema some LangSchema)		Glottocode: nucl1310
-	Direct-syntactic-object	0	Syntactic-object		A word or phrase which receives the action of the verb.	HedTag and (inHedSchema some LangSchema)		
-	Indirect-syntactic-object	0	Syntactic-object		A word of phrase which receives the direct object.	HedTag and (inHedSchema some LangSchema)		
-	Inflective-morphological-function	0	Morpheme-function	suggestedTag=Grammatical-category	Changing the grammatical function.	HedTag and (suggestedTag some Grammatical-category) and (inHedSchema some LangSchema)	Original	
+	Morpheme-type	0	HedTag		The type of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
+	Free-morpheme-type	1	Morpheme-type		A morpheme type that can function as a word.		Original	
+	Bound-morpheme-type	1	Morpheme-type		A morpheme type that cannot be a word itself, such as prefixes and suffixes.		Original	
+	Burmese	0	HedTag		A Burmo Qiangic language mainly spoken in Myanmar	HedTag and (inHedSchema some LangSchema)		Glottocode: nucl1310
+	Direct-syntactic-object	0	HedTag		A word or phrase which receives the action of the verb.	HedTag and (inHedSchema some LangSchema)		
+	Indirect-syntactic-object	0	HedTag		A word of phrase which receives the direct object.	HedTag and (inHedSchema some LangSchema)		
+	Inflective-morphological-function	0	HedTag	suggestedTag=Grammatical-category	Changing the grammatical function.	HedTag and (suggestedTag some Grammatical-category) and (inHedSchema some LangSchema)	Original	
 	Conjugate	1	Inflective-morphological-function		Identifying the voice, mood, tense, number, gender, and person of a verb.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
 	Decline	1	Inflective-morphological-function		Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
 	Language	0	Item	rooted=Item	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.		Original	Langue, has been suggested as a term to refer to a specific language, while the term language in general refers to the high level concept of language and its general properties. However, this has never been widely adopted. In context of the HED Language as a Item works.
@@ -88,9 +88,13 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Long-vowel	2	Vowel		A vowel sound that is pronounced in a long form.		Original	
 	Short-vowel	2	Vowel		A vowel sound that is pronounced in a short form.		Original	
 	Radical	0	Language-item	rooted=Language-item	A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.		https://en.wikipedia.org/wiki/Radical_(Chinese_characters)	
-	Morpheme-function	0	Morpheme-property		The function of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
-	Morphological-polysynthetic-type	0	Morphological-language-type		Can encode multiple constituents such as subject, verb, object, etc. into a single word.	HedTag and (inHedSchema some LangSchema)	Original	
-	Morphological-position	0	Morpheme-property		The position a morpheme takes relative to the free morpheme of a word.	HedTag and (inHedSchema some LangSchema)	Original	
+	Morpheme-function	0	HedTag		The function of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
+	Word-formation-function	1	Morpheme-function		Creating a new word.		Original	
+	Derivation	2	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
+	Change-word-class	3	Derivation	suggestedTag=Lexical-role	Changing the word class or part of speech a word belongs to.	Derivation and (suggestedTag some Lexical-role)	Original	Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD, but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.
+	Compound	2	Word-formation-function		To join with another free morpheme to form a more complex word.		Original	
+	Morphological-polysynthetic-type	0	HedTag		Can encode multiple constituents such as subject, verb, object, etc. into a single word.	HedTag and (inHedSchema some LangSchema)	Original	
+	Morphological-position	0	HedTag		The position a morpheme takes relative to the free morpheme of a word.	HedTag and (inHedSchema some LangSchema)	Original	
 	Affix	1	Morphological-position		A morpheme that is attached to a word stem to form a new word or word form.		Original	Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However, there are other categorizations of morphemes, based on how they change the stem of the word, which are categorized in OLIA as Morphological processes, such as Clitization, reduplication. However, since these all say something about how the morpheme is applied to the word, we believe these fit better together under the position tag.
 	Prefix	1	Morphological-position		Position of a morpheme at the beginning of a word.		Original	
 	Suffix	1	Morphological-position		Position of a morpheme at the end of a word.		Original	
@@ -103,7 +107,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Reduplication	2	Non-concatenative-morphology		Duplication of all or part of the root word.		Original	
 	Truncation	2	Non-concatenative-morphology		Removal of phonological material from root.		Original	
 	Clitic-morphological-position	2	Non-concatenative-morphology		A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.		https://en.wikipedia.org/wiki/Clitic	
-	Pronoun	0	Lexical-role		A word or a group of words that may stand for a noun or noun phrase.	HedTag and (inHedSchema some LangSchema)	Original	
+	Pronoun	0	HedTag		A word or a group of words that may stand for a noun or noun phrase.	HedTag and (inHedSchema some LangSchema)	Original	
 	Personal-pronoun	1	Pronoun		Pronoun associated with a grammatical person.		https://en.wikipedia.org/wiki/Personal_pronoun	
 	Possesive-pronoun	1	Pronoun		Pronoun referring to the possession of a grammatical person.		Original	
 	Relative-pronoun	1	Pronoun		Pronoun that marks a relative clause.		https://en.wikipedia.org/wiki/Relative_pronoun	
@@ -245,7 +249,3 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Semantic-distance-to	1	Semantic-relatedness-to		Removed in meaning from			
 	Semantic-distance-to-#	2	Semantic-distance-to					
 	Synonymous-to	1	Semantic-relatedness-to		Meaning exactly or nearly the same as			
-	Word-formation-function	0	Morpheme-function		Creating a new word.	HedTag and (inHedSchema some LangSchema)	Original	
-	Derivation	1	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
-	Change-word-class	2	Derivation	suggestedTag=Lexical-role	Changing the word class or part of speech a word belongs to.	Derivation and (suggestedTag some Lexical-role)	Original	Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD, but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.
-	Compound	1	Word-formation-function		To join with another free morpheme to form a more complex word.		Original	
