@@ -243,7 +243,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Semantic-relatedness-to	0	Relation	rooted=Relation	Connected on the basis of meaning to			
 	Antonymous-to	1	Semantic-relatedness-to		Meaning the opposite as			
 	Semantic-distance-to	1	Semantic-relatedness-to		Removed in meaning from			
-	Semantic-distance-to	2	Semantic-distance-to					
+	Semantic-distance-to-#	2	Semantic-distance-to					
 	Synonymous-to	1	Semantic-relatedness-to		Meaning exactly or nearly the same as			
 	Word-formation-function	0	HedTag		Creating a new word.	HedTag and (inHedSchema some LangSchema)	Original	
 	Derivation	1	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
