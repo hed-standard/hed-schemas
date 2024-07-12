@@ -250,7 +250,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 *** Frequent-prevalence <nowiki>{hedId=HED_0042234} [10 to 49 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
 *** Abundant-prevalence <nowiki>{hedId=HED_0042235} [50 to 89 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
 *** Continuous-prevalence <nowiki>{hedId=HED_0042236} [Greater than 90 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
-* Posterior-dominant-rhythm-property <nowiki>{suggestedTag=Feature-frequency, suggestedTag=Feature-amplitude, hedId=HED_0042237} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR. Note that frequency and amplitude can be further described to be symmetrical or assymetrical. (Source: Beniczky ea 2017, Section 6, Table 4.)]</nowiki>
+* Posterior-dominant-rhythm-property <nowiki>{suggestedTag=Feature-frequency, suggestedTag=Feature-amplitude, hedId=HED_0042237} [Posterior dominant rhythm is the most often scored EEG feature in clinical practice. Therefore, there are specific terms that can be chosen for characterizing the PDR. Note that frequency and amplitude can be further described to be symmetrical or asymmetrical. (Source: Beniczky ea 2017, Section 6, Table 4.)]</nowiki>
 ** Posterior-dominant-rhythm-amplitude-range <nowiki>{suggestedTag=Low, suggestedTag=Medium, suggestedTag=High, hedId=HED_0042238} [Low: less than 20 microV, Medium: 20 to 70 microVSource, High: more than 70 microV. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
 ** Posterior-dominant-rhythm-eye-opening-reactivity <nowiki>{suggestedTag=Property-not-possible-to-determine, suggestedTag=Left, suggestedTag=Right, hedId=HED_0042239} [Change (disappearance or measurable decrease in amplitude) of a posterior dominant rhythm following eye-opening. Eye closure has the opposite effect. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Table 4.)]</nowiki>
 ** Posterior-dominant-rhythm-organization <nowiki>{suggestedTag=Normal, hedId=HED_0042240} [Posterior dominant rhythm organization. When normal could be labeled with suggested tag. (Source: Beniczky ea 2017, Table 4.)]</nowiki>
@@ -550,11 +550,11 @@ A second revised and extended version of SCORE achieved international consensus.
 
 1 Beniczky ea 2013: "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54(6) pp.1112-1124.
 2 Beniczky ea 2017: "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128(11) pp.2334-2346.
-3 Hirsch ea 2013: "American Clinical Neurophysiology Society’s Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology 30(1) pp.1-27.
+3 Hirsch ea 2013: "American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology 30(1) pp.1-27.
 4 Fisher ea 2017: "Instruction manual for the ILAE 2017 operational classification of seizure types." Epilepsia 58(4) pp.531-542.
 5 Trenité ea 2001: "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology." Epilepsia 42(5) pp.692-701.
 6 Blume ea 2001: "Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology." Epilepsia 42(9) pp.1212-1218.
 
-TPA, KR, DH, SM July 2024
+TPA KR DH SM July 2024
 
 !# end hed
