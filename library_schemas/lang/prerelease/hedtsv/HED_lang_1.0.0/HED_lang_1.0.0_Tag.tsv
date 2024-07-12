@@ -1,13 +1,4 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	dc:source	dc:comment
-	Morpheme-type	0	HedTag		The type of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
-	Free-morpheme-type	1	Morpheme-type		A morpheme type that can function as a word.		Original	
-	Bound-morpheme-type	1	Morpheme-type		A morpheme type that cannot be a word itself, such as prefixes and suffixes.		Original	
-	Burmese	0	HedTag		A Burmo Qiangic language mainly spoken in Myanmar	HedTag and (inHedSchema some LangSchema)		Glottocode: nucl1310
-	Direct-syntactic-object	0	HedTag		A word or phrase which receives the action of the verb.	HedTag and (inHedSchema some LangSchema)		
-	Indirect-syntactic-object	0	HedTag		A word of phrase which receives the direct object.	HedTag and (inHedSchema some LangSchema)		
-	Inflective-morphological-function	0	HedTag	suggestedTag=Grammatical-category	Changing the grammatical function.	HedTag and (suggestedTag some Grammatical-category) and (inHedSchema some LangSchema)	Original	
-	Conjugate	1	Inflective-morphological-function		Identifying the voice, mood, tense, number, gender, and person of a verb.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
-	Decline	1	Inflective-morphological-function		Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
 	Language	0	Item	rooted=Item	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.		Original	Langue, has been suggested as a term to refer to a specific language, while the term language in general refers to the high level concept of language and its general properties. However, this has never been widely adopted. In context of the HED Language as a Item works.
 	Afroasiatic-language	1	Language		A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.			Glottocode: afro1255
 	Arabic	2	Afroasiatic-language		An Afroasiatic language spoken mainly in Northern Africa and Western Asia.			Glottocode: arab1395
@@ -56,6 +47,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Korean	2	Koreanic		A Koreanic language mainly spoken in Korea.			Glottocode: kore1280
 	Sino-Tibetan-language	1	Language		A system of communication belonging to the family of languages spoken in Asia.			Glottocode: sino1245
 	Burmo-Qiangic-language	2	Sino-Tibetan-language		A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.			Glottocode: burm1265
+	Burmese	3	Burmo-Qiangic-language		A Burmo Qiangic language mainly spoken in Myanmar			Glottocode: nucl1310
 	Sinitic	2	Sino-Tibetan-language		A system of communication belonging to the family of languages mainly spoken in China.			Glottocode: sini1245
 	Gan-Chinese	3	Sinitic		A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.			Glottocode: ganc1239
 	Mandarin-Chinese	3	Sinitic		A group of Chinese language dialects that are natively spoken in most of northern and southwestern China		https://en.wikipedia.org/wiki/Mandarin_Chinese	Glottocode: mand1471
@@ -88,33 +80,6 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Long-vowel	2	Vowel		A vowel sound that is pronounced in a long form.		Original	
 	Short-vowel	2	Vowel		A vowel sound that is pronounced in a short form.		Original	
 	Radical	0	Language-item	rooted=Language-item	A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.		https://en.wikipedia.org/wiki/Radical_(Chinese_characters)	
-	Morpheme-function	0	HedTag		The function of a morpheme.	HedTag and (inHedSchema some LangSchema)	Original	
-	Word-formation-function	1	Morpheme-function		Creating a new word.		Original	
-	Derivation	2	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
-	Change-word-class	3	Derivation	suggestedTag=Lexical-role	Changing the word class or part of speech a word belongs to.	Derivation and (suggestedTag some Lexical-role)	Original	Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD, but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.
-	Compound	2	Word-formation-function		To join with another free morpheme to form a more complex word.		Original	
-	Morphological-polysynthetic-type	0	HedTag		Can encode multiple constituents such as subject, verb, object, etc. into a single word.	HedTag and (inHedSchema some LangSchema)	Original	
-	Morphological-position	0	HedTag		The position a morpheme takes relative to the free morpheme of a word.	HedTag and (inHedSchema some LangSchema)	Original	
-	Affix	1	Morphological-position		A morpheme that is attached to a word stem to form a new word or word form.		Original	Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However, there are other categorizations of morphemes, based on how they change the stem of the word, which are categorized in OLIA as Morphological processes, such as Clitization, reduplication. However, since these all say something about how the morpheme is applied to the word, we believe these fit better together under the position tag.
-	Prefix	1	Morphological-position		Position of a morpheme at the beginning of a word.		Original	
-	Suffix	1	Morphological-position		Position of a morpheme at the end of a word.		Original	
-	Infix	1	Morphological-position		Position of a morpheme in the middle of a word.		Original	
-	Circumfix	1	Morphological-position		Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.		Original	
-	Non-concatenative-morphology	1	Morphological-position		Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).		Original	
-	Apophony	2	Non-concatenative-morphology		Regular vowel variation.		Original	
-	Conversion	2	Non-concatenative-morphology		No change (where a morphological change might be expected based on regular grammar).		Original	
-	Transfixation	2	Non-concatenative-morphology		Interdigitation of vowel and consonant morphemes.		Original	
-	Reduplication	2	Non-concatenative-morphology		Duplication of all or part of the root word.		Original	
-	Truncation	2	Non-concatenative-morphology		Removal of phonological material from root.		Original	
-	Clitic-morphological-position	2	Non-concatenative-morphology		A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.		https://en.wikipedia.org/wiki/Clitic	
-	Pronoun	0	HedTag		A word or a group of words that may stand for a noun or noun phrase.	HedTag and (inHedSchema some LangSchema)	Original	
-	Personal-pronoun	1	Pronoun		Pronoun associated with a grammatical person.		https://en.wikipedia.org/wiki/Personal_pronoun	
-	Possesive-pronoun	1	Pronoun		Pronoun referring to the possession of a grammatical person.		Original	
-	Relative-pronoun	1	Pronoun		Pronoun that marks a relative clause.		https://en.wikipedia.org/wiki/Relative_pronoun	
-	Demonstrative-pronoun	1	Pronoun		Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.		https://en.wikipedia.org/wiki/Determiner	
-	Reflexive-pronoun	1	Pronoun		Pronoun that refers to another noun or pronoun within the same sentence.		https://en.wikipedia.org/wiki/Reflexive_pronoun	
-	Indefinite-pronoun	1	Pronoun		Pronoun lacking a specific referent or having generic meaning.		Original	
-	Interrogative-pronoun	1	Pronoun		Pronoun which prompts a question.		Original	
 	Language-item-property	0	Property	rooted=Property, requireChild=True	A property of a linguistic unit within a framework of language analysis.		Original	All these properties should be grouped with a language item
 	Clause-type	1	Language-item-property		The type of a clause		Original	
 	Dependent-clause	2	Clause-type		Containing a subject and verb and cannot be a sentence on its own.		Original	
@@ -191,6 +156,14 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Noun	2	Lexical-role		Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.		https://en.wikipedia.org/wiki/Noun	
 	Numeral	2	Lexical-role		Expressing a number or relation to a number.		Adapted from D. Terence Langendoen, General ontology of Linguistic description, http://purl.org/linguistics/gold	
 	Particle	2	Lexical-role		Must be associated with another word or phrase to impart meaning.		https://en.wikipedia.org/wiki/Grammatical_particle#cite_note-Glossary_Particle-3	In Olia they use the term Unique and recommends not using particle because of differing definitions. Particle has an older use but the modern definition is well defined, and word particle is used in neuroimaging studies (https://pubmed.ncbi.nlm.nih.gov/11347875/, https://pubmed.ncbi.nlm.nih.gov/22341872/)
+	Pronoun	2	Lexical-role		A word or a group of words that may stand for a noun or noun phrase.		Original	
+	Demonstrative-pronoun	3	Pronoun		Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.		https://en.wikipedia.org/wiki/Determiner	
+	Indefinite-pronoun	3	Pronoun		Pronoun lacking a specific referent or having generic meaning.		Original	
+	Interrogative-pronoun	3	Pronoun		Pronoun which prompts a question.		Original	
+	Personal-pronoun	3	Pronoun		Pronoun associated with a grammatical person.		https://en.wikipedia.org/wiki/Personal_pronoun	
+	Possesive-pronoun	3	Pronoun		Pronoun referring to the possession of a grammatical person.		Original	
+	Reflexive-pronoun	3	Pronoun		Pronoun that refers to another noun or pronoun within the same sentence.		https://en.wikipedia.org/wiki/Reflexive_pronoun	
+	Relative-pronoun	3	Pronoun		Pronoun that marks a relative clause.		https://en.wikipedia.org/wiki/Relative_pronoun	
 	Quantifier	2	Lexical-role		Expressing a reference definite or indefinite number or amount.		Adapted from D. Terence Langendoen, General ontology of Linguistic description, http://purl.org/linguistics/gold	
 	Verb	2	Lexical-role	suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect	Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.	Lexical-role and (suggestedTag some Tense) and (suggestedTag some Mood) and (suggestedTag some Aspect)	Extended from https://en.wikipedia.org/wiki/Verb	
 	Auxiliary-verb	3	Verb		A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).		Original	
@@ -201,6 +174,30 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Unaccusative-verb	3	Verb		An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).		Original	
 	Unergative-verb	3	Verb		An intransitive verb whose subject is an agent.		Original	
 	Morpheme-property	1	Language-item-property		A property of a morpheme.		Original	Morphemes can be categorized based on position, function, and type. A morpheme property can be applied to a Morpheme
+	Morpheme-function	2	Morpheme-property		The function of a morpheme.		Original	
+	Inflective-morphological-function	3	Morpheme-function	suggestedTag=Grammatical-category	Changing the grammatical function.	Morpheme-function and (suggestedTag some Grammatical-category)	Original	
+	Conjugate	4	Inflective-morphological-function		Identifying the voice, mood, tense, number, gender, and person of a verb.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
+	Decline	4	Inflective-morphological-function		Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
+	Word-formation-function	3	Morpheme-function		Creating a new word.		Original	
+	Compound	4	Word-formation-function		To join with another free morpheme to form a more complex word.		Original	
+	Derivation	4	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
+	Change-word-class	5	Derivation	suggestedTag=Lexical-role	Changing the word class or part of speech a word belongs to.	Derivation and (suggestedTag some Lexical-role)	Original	Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD, but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.
+	Morpheme-type	2	Morpheme-property		The type of a morpheme.		Original	
+	Bound-morpheme-type	3	Morpheme-type		A morpheme type that cannot be a word itself, such as prefixes and suffixes.		Original	
+	Free-morpheme-type	3	Morpheme-type		A morpheme type that can function as a word.		Original	
+	Morphological-position	2	Morpheme-property		The position a morpheme takes relative to the free morpheme of a word.		Original	
+	Affix	3	Morphological-position		A morpheme that is attached to a word stem to form a new word or word form.		Original	Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However, there are other categorizations of morphemes, based on how they change the stem of the word, which are categorized in OLIA as Morphological processes, such as Clitization, reduplication. However, since these all say something about how the morpheme is applied to the word, we believe these fit better together under the position tag.
+	Circumfix	3	Morphological-position		Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.		Original	
+	Infix	3	Morphological-position		Position of a morpheme in the middle of a word.		Original	
+	Non-concatenative-morphology	3	Morphological-position		Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).		Original	
+	Apophony	4	Non-concatenative-morphology		Regular vowel variation.		Original	
+	Clitic-morphological-position	4	Non-concatenative-morphology		A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.		https://en.wikipedia.org/wiki/Clitic	
+	Conversion	4	Non-concatenative-morphology		No change (where a morphological change might be expected based on regular grammar).		Original	
+	Reduplication	4	Non-concatenative-morphology		Duplication of all or part of the root word.		Original	
+	Transfixation	4	Non-concatenative-morphology		Interdigitation of vowel and consonant morphemes.		Original	
+	Truncation	4	Non-concatenative-morphology		Removal of phonological material from root.		Original	
+	Prefix	3	Morphological-position		Position of a morpheme at the beginning of a word.		Original	
+	Suffix	3	Morphological-position		Position of a morpheme at the end of a word.		Original	
 	Orthographic-neighborhood-size	1	Language-item-property		The number of closely resembling word-forms.		Original	
 	Phrase-role	1	Language-item-property		The role of phrase.		Original	
 	Adjective-phrase	2	Phrase-role		Headed by an adjective.		Original	
@@ -213,6 +210,8 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Syntactic-role	1	Language-item-property		Role a language-item takes in syntax.		Original	
 	Complement	2	Syntactic-role		The constituent selected by a head.		Original	
 	Syntactic-object	3	Complement		Complement of a verbal head.		Original	
+	Direct-syntactic-object	4	Syntactic-object		A word or phrase which receives the action of the verb.			
+	Indirect-syntactic-object	4	Syntactic-object		A word of phrase which receives the direct object.			
 	Modifier	2	Syntactic-role		Optional element in a phrase or a clause that specifies a noun or acts as an adjunct		Original	
 	Adjunct	3	Modifier		Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.		Original	
 	Predicate	2	Syntactic-role		Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.		Original	
@@ -223,6 +222,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Morphological-language-type	1	Language-property		Morphological property relating to a specific system of communication used by a particular group of people.		Original	
 	Analytic-language-type	2	Morphological-language-type		Rarely using affixes, resulting in a low morheme per word ratio.		Original	
 	Morphological-isolating-type	3	Analytic-language-type		Having a morpheme per word ratio close to one.		https://en.wikipedia.org/wiki/Isolating_language	
+	Morphological-polysynthetic-type	2	Morphological-language-type		Can encode multiple constituents such as subject, verb, object, etc. into a single word.		Original	
 	Morphological-synthetic-type	2	Morphological-language-type		Having a higher morpheme per word ratio.		https://en.wikipedia.org/wiki/Synthetic_language	
 	Morphological-agglutinating-type	3	Morphological-synthetic-type		Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.		Adapted from https://en.wikipedia.org/wiki/Agglutination	
 	Morphological-fusional-type	3	Morphological-synthetic-type		Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.		https://en.wikipedia.org/wiki/Fusional_language	

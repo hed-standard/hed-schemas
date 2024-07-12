@@ -149,38 +149,6 @@
          </node>
       </node>
       <node>
-         <name>Morpheme-type</name>
-         <description>The type of a morpheme.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Free-morpheme-type</name>
-            <description>A morpheme type that can function as a word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Bound-morpheme-type</name>
-            <description>A morpheme type that cannot be a word itself, such as prefixes and suffixes.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-      </node>
-      <node>
-         <name>Burmese</name>
-         <description>A Burmo Qiangic language mainly spoken in Myanmar</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-      </node>
-      <node>
          <name>Action</name>
          <description>Do something.</description>
          <attribute>
@@ -1510,50 +1478,6 @@
          </node>
       </node>
       <node>
-         <name>Direct-syntactic-object</name>
-         <description>A word or phrase which receives the action of the verb.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-      </node>
-      <node>
-         <name>Indirect-syntactic-object</name>
-         <description>A word of phrase which receives the direct object.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-      </node>
-      <node>
-         <name>Inflective-morphological-function</name>
-         <description>Changing the grammatical function.</description>
-         <attribute>
-            <name>suggestedTag</name>
-            <value>Grammatical-category</value>
-         </attribute>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Conjugate</name>
-            <description>Identifying the voice, mood, tense, number, gender, and person of a verb.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Decline</name>
-            <description>Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-      </node>
-      <node>
          <name>Item</name>
          <description>An independently existing thing (living or nonliving).</description>
          <attribute>
@@ -2656,6 +2580,14 @@
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
+                  <node>
+                     <name>Burmese</name>
+                     <description>A Burmo Qiangic language mainly spoken in Myanmar</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
                </node>
                <node>
                   <name>Sinitic</name>
@@ -4404,226 +4336,6 @@
                   </attribute>
                </node>
             </node>
-         </node>
-      </node>
-      <node>
-         <name>Morpheme-function</name>
-         <description>The function of a morpheme.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Word-formation-function</name>
-            <description>Creating a new word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Derivation</name>
-               <description>Changing the meaning of a word, usually by adding an affix.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-               <node>
-                  <name>Change-word-class</name>
-                  <description>Changing the word class or part of speech a word belongs to.</description>
-                  <attribute>
-                     <name>suggestedTag</name>
-                     <value>Lexical-role</value>
-                  </attribute>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>lang</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Compound</name>
-               <description>To join with another free morpheme to form a more complex word.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-         </node>
-      </node>
-      <node>
-         <name>Morphological-polysynthetic-type</name>
-         <description>Can encode multiple constituents such as subject, verb, object, etc. into a single word.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-      </node>
-      <node>
-         <name>Morphological-position</name>
-         <description>The position a morpheme takes relative to the free morpheme of a word.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Affix</name>
-            <description>A morpheme that is attached to a word stem to form a new word or word form.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Prefix</name>
-            <description>Position of a morpheme at the beginning of a word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Suffix</name>
-            <description>Position of a morpheme at the end of a word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Infix</name>
-            <description>Position of a morpheme in the middle of a word.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Circumfix</name>
-            <description>Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Non-concatenative-morphology</name>
-            <description>Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Apophony</name>
-               <description>Regular vowel variation.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Conversion</name>
-               <description>No change (where a morphological change might be expected based on regular grammar).</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Transfixation</name>
-               <description>Interdigitation of vowel and consonant morphemes.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Reduplication</name>
-               <description>Duplication of all or part of the root word.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Truncation</name>
-               <description>Removal of phonological material from root.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Clitic-morphological-position</name>
-               <description>A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-         </node>
-      </node>
-      <node>
-         <name>Pronoun</name>
-         <description>A word or a group of words that may stand for a noun or noun phrase.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>lang</value>
-         </attribute>
-         <node>
-            <name>Personal-pronoun</name>
-            <description>Pronoun associated with a grammatical person.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Possesive-pronoun</name>
-            <description>Pronoun referring to the possession of a grammatical person.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Relative-pronoun</name>
-            <description>Pronoun that marks a relative clause.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Demonstrative-pronoun</name>
-            <description>Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Reflexive-pronoun</name>
-            <description>Pronoun that refers to another noun or pronoun within the same sentence.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Indefinite-pronoun</name>
-            <description>Pronoun lacking a specific referent or having generic meaning.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-         </node>
-         <node>
-            <name>Interrogative-pronoun</name>
-            <description>Pronoun which prompts a question.</description>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
          </node>
       </node>
       <node>
@@ -9297,6 +9009,70 @@
                   </attribute>
                </node>
                <node>
+                  <name>Pronoun</name>
+                  <description>A word or a group of words that may stand for a noun or noun phrase.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Demonstrative-pronoun</name>
+                     <description>Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Indefinite-pronoun</name>
+                     <description>Pronoun lacking a specific referent or having generic meaning.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Interrogative-pronoun</name>
+                     <description>Pronoun which prompts a question.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Personal-pronoun</name>
+                     <description>Pronoun associated with a grammatical person.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Possesive-pronoun</name>
+                     <description>Pronoun referring to the possession of a grammatical person.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Reflexive-pronoun</name>
+                     <description>Pronoun that refers to another noun or pronoun within the same sentence.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Relative-pronoun</name>
+                     <description>Pronoun that marks a relative clause.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
                   <name>Quantifier</name>
                   <description>Expressing a reference definite or indefinite number or amount.</description>
                   <attribute>
@@ -9386,6 +9162,206 @@
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
+               <node>
+                  <name>Morpheme-function</name>
+                  <description>The function of a morpheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Inflective-morphological-function</name>
+                     <description>Changing the grammatical function.</description>
+                     <attribute>
+                        <name>suggestedTag</name>
+                        <value>Grammatical-category</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>Conjugate</name>
+                        <description>Identifying the voice, mood, tense, number, gender, and person of a verb.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Decline</name>
+                        <description>Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Word-formation-function</name>
+                     <description>Creating a new word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>Compound</name>
+                        <description>To join with another free morpheme to form a more complex word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Derivation</name>
+                        <description>Changing the meaning of a word, usually by adding an affix.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                        <node>
+                           <name>Change-word-class</name>
+                           <description>Changing the word class or part of speech a word belongs to.</description>
+                           <attribute>
+                              <name>suggestedTag</name>
+                              <value>Lexical-role</value>
+                           </attribute>
+                           <attribute>
+                              <name>inLibrary</name>
+                              <value>lang</value>
+                           </attribute>
+                        </node>
+                     </node>
+                  </node>
+               </node>
+               <node>
+                  <name>Morpheme-type</name>
+                  <description>The type of a morpheme.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Bound-morpheme-type</name>
+                     <description>A morpheme type that cannot be a word itself, such as prefixes and suffixes.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Free-morpheme-type</name>
+                     <description>A morpheme type that can function as a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Morphological-position</name>
+                  <description>The position a morpheme takes relative to the free morpheme of a word.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Affix</name>
+                     <description>A morpheme that is attached to a word stem to form a new word or word form.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Circumfix</name>
+                     <description>Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Infix</name>
+                     <description>Position of a morpheme in the middle of a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Non-concatenative-morphology</name>
+                     <description>Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>Apophony</name>
+                        <description>Regular vowel variation.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Clitic-morphological-position</name>
+                        <description>A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Conversion</name>
+                        <description>No change (where a morphological change might be expected based on regular grammar).</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Reduplication</name>
+                        <description>Duplication of all or part of the root word.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Transfixation</name>
+                        <description>Interdigitation of vowel and consonant morphemes.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Truncation</name>
+                        <description>Removal of phonological material from root.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Prefix</name>
+                     <description>Position of a morpheme at the beginning of a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Suffix</name>
+                     <description>Position of a morpheme at the end of a word.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+               </node>
             </node>
             <node>
                <name>Orthographic-neighborhood-size</name>
@@ -9480,6 +9456,22 @@
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
+                     <node>
+                        <name>Direct-syntactic-object</name>
+                        <description>A word or phrase which receives the action of the verb.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Indirect-syntactic-object</name>
+                        <description>A word of phrase which receives the direct object.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
                <node>
@@ -9565,6 +9557,14 @@
                         <value>lang</value>
                      </attribute>
                   </node>
+               </node>
+               <node>
+                  <name>Morphological-polysynthetic-type</name>
+                  <description>Can encode multiple constituents such as subject, verb, object, etc. into a single word.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
                </node>
                <node>
                   <name>Morphological-synthetic-type</name>

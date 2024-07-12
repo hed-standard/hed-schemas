@@ -5,20 +5,6 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 
 !# start schema
 
-'''Morpheme-type''' <nowiki>[The type of a morpheme.]</nowiki>
-* Free-morpheme-type <nowiki>[A morpheme type that can function as a word.]</nowiki>
-* Bound-morpheme-type <nowiki>[A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
-
-'''Burmese''' <nowiki>[A Burmo Qiangic language mainly spoken in Myanmar]</nowiki>
-
-'''Direct-syntactic-object''' <nowiki>[A word or phrase which receives the action of the verb.]</nowiki>
-
-'''Indirect-syntactic-object''' <nowiki>[A word of phrase which receives the direct object.]</nowiki>
-
-'''Inflective-morphological-function''' <nowiki>{suggestedTag=Grammatical-category} [Changing the grammatical function.]</nowiki>
-* Conjugate <nowiki>[Identifying the voice, mood, tense, number, gender, and person of a verb.]</nowiki>
-* Decline <nowiki>[Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.]</nowiki>
-
 '''Language''' <nowiki>{rooted=Item} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
 * Afroasiatic-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.]</nowiki>
 ** Arabic <nowiki>[An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
@@ -67,6 +53,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Korean <nowiki>[A Koreanic language mainly spoken in Korea.]</nowiki>
 * Sino-Tibetan-language <nowiki>[A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
 ** Burmo-Qiangic-language <nowiki>[A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
+*** Burmese <nowiki>[A Burmo Qiangic language mainly spoken in Myanmar]</nowiki>
 ** Sinitic <nowiki>[A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
 *** Gan-Chinese <nowiki>[A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
 *** Mandarin-Chinese <nowiki>[A group of Chinese language dialects that are natively spoken in most of northern and southwestern China]</nowiki>
@@ -110,37 +97,6 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Short-vowel <nowiki>[A vowel sound that is pronounced in a short form.]</nowiki>
 
 '''Radical''' <nowiki>{rooted=Language-item} [A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.]</nowiki>
-
-'''Morpheme-function''' <nowiki>[The function of a morpheme.]</nowiki>
-* Word-formation-function <nowiki>[Creating a new word.]</nowiki>
-** Derivation <nowiki>[Changing the meaning of a word, usually by adding an affix.]</nowiki>
-*** Change-word-class <nowiki>{suggestedTag=Lexical-role} [Changing the word class or part of speech a word belongs to.]</nowiki>
-** Compound <nowiki>[To join with another free morpheme to form a more complex word.]</nowiki>
-
-'''Morphological-polysynthetic-type''' <nowiki>[Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
-
-'''Morphological-position''' <nowiki>[The position a morpheme takes relative to the free morpheme of a word.]</nowiki>
-* Affix <nowiki>[A morpheme that is attached to a word stem to form a new word or word form.]</nowiki>
-* Prefix <nowiki>[Position of a morpheme at the beginning of a word.]</nowiki>
-* Suffix <nowiki>[Position of a morpheme at the end of a word.]</nowiki>
-* Infix <nowiki>[Position of a morpheme in the middle of a word.]</nowiki>
-* Circumfix <nowiki>[Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.]</nowiki>
-* Non-concatenative-morphology <nowiki>[Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).]</nowiki>
-** Apophony <nowiki>[Regular vowel variation.]</nowiki>
-** Conversion <nowiki>[No change (where a morphological change might be expected based on regular grammar).]</nowiki>
-** Transfixation <nowiki>[Interdigitation of vowel and consonant morphemes.]</nowiki>
-** Reduplication <nowiki>[Duplication of all or part of the root word.]</nowiki>
-** Truncation <nowiki>[Removal of phonological material from root.]</nowiki>
-** Clitic-morphological-position <nowiki>[A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.]</nowiki>
-
-'''Pronoun''' <nowiki>[A word or a group of words that may stand for a noun or noun phrase.]</nowiki>
-* Personal-pronoun <nowiki>[Pronoun associated with a grammatical person.]</nowiki>
-* Possesive-pronoun <nowiki>[Pronoun referring to the possession of a grammatical person.]</nowiki>
-* Relative-pronoun <nowiki>[Pronoun that marks a relative clause.]</nowiki>
-* Demonstrative-pronoun <nowiki>[Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.]</nowiki>
-* Reflexive-pronoun <nowiki>[Pronoun that refers to another noun or pronoun within the same sentence.]</nowiki>
-* Indefinite-pronoun <nowiki>[Pronoun lacking a specific referent or having generic meaning.]</nowiki>
-* Interrogative-pronoun <nowiki>[Pronoun which prompts a question.]</nowiki>
 
 '''Language-item-property''' <nowiki>{rooted=Property, requireChild=True} [A property of a linguistic unit within a framework of language analysis.]</nowiki>
 * Clause-type <nowiki>[The type of a clause]</nowiki>
@@ -218,6 +174,14 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Noun <nowiki>[Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.]</nowiki>
 ** Numeral <nowiki>[Expressing a number or relation to a number.]</nowiki>
 ** Particle <nowiki>[Must be associated with another word or phrase to impart meaning.]</nowiki>
+** Pronoun <nowiki>[A word or a group of words that may stand for a noun or noun phrase.]</nowiki>
+*** Demonstrative-pronoun <nowiki>[Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.]</nowiki>
+*** Indefinite-pronoun <nowiki>[Pronoun lacking a specific referent or having generic meaning.]</nowiki>
+*** Interrogative-pronoun <nowiki>[Pronoun which prompts a question.]</nowiki>
+*** Personal-pronoun <nowiki>[Pronoun associated with a grammatical person.]</nowiki>
+*** Possesive-pronoun <nowiki>[Pronoun referring to the possession of a grammatical person.]</nowiki>
+*** Reflexive-pronoun <nowiki>[Pronoun that refers to another noun or pronoun within the same sentence.]</nowiki>
+*** Relative-pronoun <nowiki>[Pronoun that marks a relative clause.]</nowiki>
 ** Quantifier <nowiki>[Expressing a reference definite or indefinite number or amount.]</nowiki>
 ** Verb <nowiki>{suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect} [Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.]</nowiki>
 *** Auxiliary-verb <nowiki>[A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).]</nowiki>
@@ -228,6 +192,30 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Unaccusative-verb <nowiki>[An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).]</nowiki>
 *** Unergative-verb <nowiki>[An intransitive verb whose subject is an agent.]</nowiki>
 * Morpheme-property <nowiki>[A property of a morpheme.]</nowiki>
+** Morpheme-function <nowiki>[The function of a morpheme.]</nowiki>
+*** Inflective-morphological-function <nowiki>{suggestedTag=Grammatical-category} [Changing the grammatical function.]</nowiki>
+**** Conjugate <nowiki>[Identifying the voice, mood, tense, number, gender, and person of a verb.]</nowiki>
+**** Decline <nowiki>[Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.]</nowiki>
+*** Word-formation-function <nowiki>[Creating a new word.]</nowiki>
+**** Compound <nowiki>[To join with another free morpheme to form a more complex word.]</nowiki>
+**** Derivation <nowiki>[Changing the meaning of a word, usually by adding an affix.]</nowiki>
+***** Change-word-class <nowiki>{suggestedTag=Lexical-role} [Changing the word class or part of speech a word belongs to.]</nowiki>
+** Morpheme-type <nowiki>[The type of a morpheme.]</nowiki>
+*** Bound-morpheme-type <nowiki>[A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
+*** Free-morpheme-type <nowiki>[A morpheme type that can function as a word.]</nowiki>
+** Morphological-position <nowiki>[The position a morpheme takes relative to the free morpheme of a word.]</nowiki>
+*** Affix <nowiki>[A morpheme that is attached to a word stem to form a new word or word form.]</nowiki>
+*** Circumfix <nowiki>[Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.]</nowiki>
+*** Infix <nowiki>[Position of a morpheme in the middle of a word.]</nowiki>
+*** Non-concatenative-morphology <nowiki>[Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).]</nowiki>
+**** Apophony <nowiki>[Regular vowel variation.]</nowiki>
+**** Clitic-morphological-position <nowiki>[A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.]</nowiki>
+**** Conversion <nowiki>[No change (where a morphological change might be expected based on regular grammar).]</nowiki>
+**** Reduplication <nowiki>[Duplication of all or part of the root word.]</nowiki>
+**** Transfixation <nowiki>[Interdigitation of vowel and consonant morphemes.]</nowiki>
+**** Truncation <nowiki>[Removal of phonological material from root.]</nowiki>
+*** Prefix <nowiki>[Position of a morpheme at the beginning of a word.]</nowiki>
+*** Suffix <nowiki>[Position of a morpheme at the end of a word.]</nowiki>
 * Orthographic-neighborhood-size <nowiki>[The number of closely resembling word-forms.]</nowiki>
 * Phrase-role <nowiki>[The role of phrase.]</nowiki>
 ** Adjective-phrase <nowiki>[Headed by an adjective.]</nowiki>
@@ -240,6 +228,8 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 * Syntactic-role <nowiki>[Role a language-item takes in syntax.]</nowiki>
 ** Complement <nowiki>[The constituent selected by a head.]</nowiki>
 *** Syntactic-object <nowiki>[Complement of a verbal head.]</nowiki>
+**** Direct-syntactic-object <nowiki>[A word or phrase which receives the action of the verb.]</nowiki>
+**** Indirect-syntactic-object <nowiki>[A word of phrase which receives the direct object.]</nowiki>
 ** Modifier <nowiki>[Optional element in a phrase or a clause that specifies a noun or acts as an adjunct]</nowiki>
 *** Adjunct <nowiki>[Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.]</nowiki>
 ** Predicate <nowiki>[Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.]</nowiki>
@@ -251,6 +241,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 * Morphological-language-type <nowiki>[Morphological property relating to a specific system of communication used by a particular group of people.]</nowiki>
 ** Analytic-language-type <nowiki>[Rarely using affixes, resulting in a low morheme per word ratio.]</nowiki>
 *** Morphological-isolating-type <nowiki>[Having a morpheme per word ratio close to one.]</nowiki>
+** Morphological-polysynthetic-type <nowiki>[Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
 ** Morphological-synthetic-type <nowiki>[Having a higher morpheme per word ratio.]</nowiki>
 *** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.]</nowiki>
 *** Morphological-fusional-type <nowiki>[Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki>
