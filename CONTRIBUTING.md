@@ -2,7 +2,7 @@
 
 HED (Hierarchical Event Descriptors) is an open community and contributions to all aspects of HED are welcome.
 All HED repositories are housed in the [hed-standard](https://github.com/hed-standard) GitHub organization.
-The HED Working Group meets regular to oversee the development of HED and its ecosystem.
+The HED Working Group meets regularly to oversee the development of HED and its ecosystem.
 If you would like to join the HED Working Group or wish to contact them directly
 please email [mailto:hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com).
 

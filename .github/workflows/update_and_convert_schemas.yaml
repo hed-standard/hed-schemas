@@ -2,7 +2,7 @@ name: Update schemas with changes
 
 on:
   push:
-    branches: ["*"]
+    branches: ["dev*"]
 
 
 jobs:
