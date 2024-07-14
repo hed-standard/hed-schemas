@@ -1,0 +1,251 @@
+hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	dc:source	dc:comment
+	Language	0	Item	rooted=Item	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.		Original	Langue, has been suggested as a term to refer to a specific language, while the term language in general refers to the high level concept of language and its general properties. However, this has never been widely adopted. In context of the HED Language as a Item works.
+	Afroasiatic-language	1	Language		A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.			Glottocode: afro1255
+	Arabic	2	Afroasiatic-language		An Afroasiatic language spoken mainly in Northern Africa and Western Asia.			Glottocode: arab1395
+	Hebrew	2	Afroasiatic-language		An Afroasiatic language mainly spoken in Isreal.			Glottocode: hebr1245
+	Atlantic-Congo-language	1	Language		A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.			Glottocode: atla1278
+	Swahili	2	Atlantic-Congo-language		An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.			Glottocode: swah1253
+	Austroasiatic	1	Language		A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.			Glottocode:aust1305
+	Vietnamese	2	Austroasiatic		An Austroasiatic language mainly spoken in Vietnam.			Glottocode:viet1252
+	Austronesian-language	1	Language		A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.			Glottocode: aust1307
+	Malay	2	Austronesian-language		An Austronesian language manily spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.			Glottocode: nucl1806
+	Dravidian	1	Language		A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.		Adapted from https://en.wikipedia.org/wiki/Dravidian_languages	Glottocode: drav1251
+	Tamil	2	Dravidian		A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.			Glottocode: tami1289
+	Indo-European-language	1	Language	suggestedTag=Language-property	A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.	Language and (suggestedTag some Language-property)	Adapted from https://en.wikipedia.org/wiki/Indo-European_languages	Glottocode: indo1319
+	Baltic-language	2	Indo-European-language		A system of communication belonging to the family of languages originating in Northeastern Europe.			Glottocode: east2280
+	Latvian	3	Baltic-language		A baltic language spoken mainly in Latvia.			Glottocode: latv1249
+	Lithuanian	3	Baltic-language		A baltic language spoken mainly in Lithuania.			Glottocode: lith1251
+	Germanic-language	2	Indo-European-language		A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa			Glottocode: germ1287
+	Danish	3	Germanic-language		A Germanic language, mainly spoken in Denmark			Glottocode: dani1285
+	Dutch	3	Germanic-language		A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.			Glottocode: dutc1256
+	English	3	Germanic-language		A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an adminastrative language.		Adapted from https://en.wikipedia.org/wiki/English_language	Glottocode: stan1293
+	German	3	Germanic-language		A Germanic Language which is mainly spoken in Western and Central Europe.			Glottocode: stan1295
+	Icelandic	3	Germanic-language		A Germanic language mainly spoken in Iceland			Glottocode: icel1247
+	Norwegian	3	Germanic-language		A Germanic language mainly spoken in Norway.			Glottocode: norw1258
+	Swedish	3	Germanic-language		A Germanic language mainly spoken in Sweden and parts of Finland.			Glottocode: swed1254
+	Romance-language	2	Indo-European-language		A system of communication belonging to the family of languages directly descending from Vulgar Latin.		Adapted from https://en.wikipedia.org/wiki/Romance_languages	Glottocode: roma1334
+	Catalan	3	Romance-language		A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.			Glottocode: stan1289
+	French	3	Romance-language		A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an adminatrative or official language in parts of the world.			Glottocode: stan1290
+	Galician	3	Romance-language		A Romance language mainly spoken in Galicia.			Glottocode: gali1258
+	Gallo-Rhaetian-language	3	Romance-language		A group of historically related Romance varieties spoken in Switzerland and Northern Italy.			Glottocode: gall1280
+	Italian	3	Romance-language		A Romance language mainly spoken in Italy and parts of Switzerland.			Glottocode: ital1282
+	Portuguese	3	Romance-language		A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.			Glottocode: port1283
+	Romanian	3	Romance-language		A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.			Glottocode: roma1327
+	Spanish	3	Romance-language		A Romance language spoken in Spain and large parts of the Americas.			Glottocode: stan1288
+	Slavic-language	2	Indo-European-language		A system of communication belonging to the family of languages originating in Eastern Europe.			Glottocode: slav1255
+	Bulgarian	3	Slavic-language		A slavic language spoken mainly in Bulgaria.			Glottocode: bulg1262
+	Croatian	3	Slavic-language		A slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.			Glottocode: croa1245
+	Czech	3	Slavic-language		A Slavic language spoken mainly in the Czech Republic.			Glottocode: czec1258
+	Macedonian	3	Slavic-language		A slavic language spoken mainly in North Macedonia.			Glottocode: mace1250
+	Polish	3	Slavic-language		A slavic language spoken mainly in Poland.			Glottocode: poli1260
+	Russian	3	Slavic-language		A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.			Glottocode: russ1263
+	Slovak	3	Slavic-language		A slavic language spoken mainly in Slovakia.			Glottocode: slov1269
+	Ukrainian	3	Slavic-language		A slavic language spoken mainly in Ukraine.			Glottocode: ukra1253
+	Japonic	1	Language		A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands			Glottocode: japo1237
+	Japanese	2	Japonic		A Japonic language mainly spoken in Japan.			Glottocode: nucl1643
+	Koreanic	1	Language		A system of commication belonging to the family of languages mainly spoken in Korea.			Glottocode: kore1284
+	Korean	2	Koreanic		A Koreanic language mainly spoken in Korea.			Glottocode: kore1280
+	Sino-Tibetan-language	1	Language		A system of communication belonging to the family of languages spoken in Asia.			Glottocode: sino1245
+	Burmo-Qiangic-language	2	Sino-Tibetan-language		A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.			Glottocode: burm1265
+	Burmese	3	Burmo-Qiangic-language		A Burmo Qiangic language mainly spoken in Myanmar			Glottocode: nucl1310
+	Sinitic	2	Sino-Tibetan-language		A system of communication belonging to the family of languages mainly spoken in China.			Glottocode: sini1245
+	Gan-Chinese	3	Sinitic		A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.			Glottocode: ganc1239
+	Mandarin-Chinese	3	Sinitic		A group of Chinese language dialects that are natively spoken in most of northern and southwestern China		https://en.wikipedia.org/wiki/Mandarin_Chinese	Glottocode: mand1471
+	Standard-Chinese	4	Mandarin-Chinese		A modern standard form of Mandarin Chinese which is the official Language of mainland China.			
+	Wu-Chinese	3	Sinitic		A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River			Glottocode: wuch1236
+	Xiang-Chinese	3	Sinitic		A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces			Glottocode: xian1251
+	Yue-Chinese	3	Sinitic		A group of Sinitic languages mainly spoken Southern China			Glottocode: yuec1235
+	Cantonese	4	Yue-Chinese		A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.			Glottocode: cant1236
+	Tai-Kadai	1	Language		A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.			Glottocode: Taik1256
+	Thai	2	Tai-Kadai		A Tai Kadai language mainly spoken in Central Thailand.			Glottocode: thai1261
+	Turkic	1	Language		A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.			Glottocode:turk1311
+	Turkish	2	Turkic		A Turkish language mainly spoken in Turkey and Northern Cyprus.			Glottocode: nucl1301
+	Uralic	1	Language		A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.			Glottocode: ural1272
+	Estonian	2	Uralic		An Uralic Language mainly spoken in Estonia.			Glottocode: esto1258
+	Finnish	2	Uralic		An Uralic language mainly spoken in Finland.			Glottocode: finn1318
+	Hungarian	2	Uralic		An Uralic Language mainly spoken in Hungary.			Glottocode: hung1274
+	Bigram	0	Language-item	rooted=Language-item	A pair of two consecutive written units such as letters, syllables, or words.		Adapted from: https://en.wikipedia.org/wiki/Bigram	Bigrams have been suggested as a unit that is explicitely represented in human visual cortex (citation deheane)
+	Letter-character	0	Character	rooted=Character	A character that is the smallest meaningful or functional unit in an alphabetic writing system.		Original	
+	Logogram	0	Character	rooted=Character	A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.		Original	
+	Noncharacter	0	Character	rooted=Character	A character which does not hold any meaning or contain any regularity in a writing system.		Original	Chen, J., Sun, D., Wang, P., Lv, Y., & Zhang, Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics, 63, 101084. https://doi.org/10.1016/j.jneuroling.2022.101084
+	Pseudocharacter	0	Character	rooted=Character	A logogram-like character that contains components/radicals of existing logograms but which is not a known logogram.		Original	Chen, J., Sun, D., Wang, P., Lv, Y., & Zhang, Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics, 63, 101084. https://doi.org/10.1016/j.jneuroling.2022.101084
+	Grapheme	0	Language-item	rooted=Language-item	The smallest contrastive or meaningful unit in writing which matches either a phoneme, a syllable or a morpheme.		Original	Has different definitions, but this one is used in the domain of neuroimaging and useful as such as it is distinct from a character in an alphabetic language (letter) but useful. See Bouhani paper and https://www.tandfonline.com/doi/full/10.1080/17586801.2019.1697412 (a combined definition and interesting discussion)
+	Lemma	0	Language-item	rooted=Language-item	The canonical form, dictionary form, or citation form of a set of word forms.		https://en.wikipedia.org/wiki/Lemma_(morphology)	
+	Mora	0	Language-item	rooted=Language-item	A basic timing unit in the phonology of some spoken languages, equal to or shorter than a syllable.		https://en.wikipedia.org/wiki/Mora_(linguistics)	
+	Morpheme	0	Language-item	rooted=Language-item, suggestedTag=Morpheme-property	A meaningful unit of a language that cannot be further divided.	Language-item and (suggestedTag some Morpheme-property)	Original	
+	Phone	0	Language-item	rooted=Language-item, relatedTag=Phoneme	A minimal speech segment that possesses distinct physical or perceptual properties.	Language-item and (relatedTag some Phoneme)	https://en.wikipedia.org/wiki/Segment_(linguistics)	
+	Consonant	1	Phone		A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable, or which can form itself or together with another consonant a syllable.		Original	
+	Vowel	1	Phone		A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.		Original	
+	Diphthong	2	Vowel		A sound formed by the combination of two vowels.		Original	
+	Long-vowel	2	Vowel		A vowel sound that is pronounced in a long form.		Original	
+	Short-vowel	2	Vowel		A vowel sound that is pronounced in a short form.		Original	
+	Radical	0	Language-item	rooted=Language-item	A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.		https://en.wikipedia.org/wiki/Radical_(Chinese_characters)	
+	Language-item-property	0	Property	rooted=Property, requireChild=True	A property of a linguistic unit within a framework of language analysis.		Original	All these properties should be grouped with a language item
+	Clause-type	1	Language-item-property		The type of a clause		Original	
+	Dependent-clause	2	Clause-type		Containing a subject and verb and cannot be a sentence on its own.		Original	
+	Independent-clause	2	Clause-type		Containing a subject and verb but can be a sentence on its own.		Original	
+	Grammatical-category	1	Language-item-property		Grammatical category of a word, usually marked through inflection.		Original	Features in Eagles, Olia has no top level features
+	Aspect	2	Grammatical-category		Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.		Original	
+	Imperfective-aspect	3	Aspect		Presenting an ongoing or unfolding or repeated or habitual event.		Original	
+	Perfective-aspect	3	Aspect		Presenting a completed event.		Original	
+	Countability	2	Grammatical-category		A grammatical category that determines how the quantity of a concept is expressed.		Original	Countability feature in olia no definition
+	Countable	3	Countability		Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural)		Original	
+	Uncountable	3	Countability		Syntactic property of nouns that makes their referents undifferentiated units.		Original	
+	Grammatical-number	2	Grammatical-category		Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Collective	3	Grammatical-number		Not representing a specific number.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Dual	3	Grammatical-number		Representing exactly two instances of a concept.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Paucal	3	Grammatical-number		Representing a few, or small number of instances of a concept.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Plural	3	Grammatical-number		Representing multiple instances of a concept.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Singular	3	Grammatical-number		Representing one instance of a concept.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Singulative	3	Grammatical-number		Representing one instance of a concept through modifying the standard collective.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Trial	3	Grammatical-number		Representing exactly three instances of a concept.		https://en.wikipedia.org/wiki/Grammatical_number	
+	Mood	2	Grammatical-category		Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.		Original	
+	Conditional	3	Mood		Used for speaking of an event whose realization is dependent upon another condition.		https://en.wikipedia.org/wiki/Grammatical_mood	
+	Imperative	3	Mood		Expresses direct commands, prohibitions, and requests.		https://en.wikipedia.org/wiki/Grammatical_mood	
+	Progressive	3	Mood					
+	Subjunctive	3	Mood		Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among other uses.		https://en.wikipedia.org/wiki/Grammatical_mood	
+	Noun-class	2	Grammatical-category		Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.		https://en.wikipedia.org/wiki/Noun_class	Eagles only has gender as does olia. In Olia gender feature also encompasses animacy.
+	Case	3	Noun-class		Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.		Original	
+	Ablative	4	Case		Used to express motion away from something, among other uses.		https://en.wikipedia.org/wiki/Ablative_case	
+	Accusative	4	Case		Used to indicate the direct object of a transitive verb.		https://en.wikipedia.org/wiki/Accusative_case	
+	Dative	4	Case		Used to indicate the recipient or beneficiary of an action.		https://en.wikipedia.org/wiki/Dative_case	
+	Genitive	4	Case		Used to indicate attributive relations between nouns among other uses.		https://en.wikipedia.org/wiki/Genitive_case	
+	Nominative	4	Case		Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.		https://en.wikipedia.org/wiki/Nominative_case	
+	Tense	2	Grammatical-category		Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech		Original	
+	Future-tense	3	Tense		Referring to an event posterior to time of speech.		Original	
+	Future-perfect	4	Future-tense		Referring to a future event relative to another reference point (not the time of speech).			
+	Near-future-tense	4	Future-tense		Referring to an event shortly after time of speech.		Original	
+	Remote-future-tense	4	Future-tense		Referring to an event in the remote future.		Original	
+	Non-future-tense	3	Tense		Referring to both a past or present event.		Original	
+	Non-past-tense	3	Tense		Referring to both a present or future event.		Original	
+	Past-tense	3	Tense		Referring to an event anterior to time of speech.		Original	
+	Pluperfect	4	Past-tense		Referring to a past event relative to another reference point (not the time of speech)			
+	Recent-past-tense	4	Past-tense		Referring to an event in the recent past.		Original	
+	Remote-past-tense	4	Past-tense		Referring to an event in the distant past.		Original	
+	Present-tense	3	Tense		Referring to an event that takes place at time of speech.		Original	
+	Language-item-form	1	Language-item-property		The form of a language unit.		Original	Following https://www.w3.org/2016/05/ontolex/ (which is not an ontology for language annotation but an ontology for lexical entries in ontologies) we do not make the form of langauage inherent to language items but instead attach it separately. The word itself is a concept, but it can be expressed in multiple forms. The same is true for a sentence, phrase, clause. For some units it is more complicated, but there is a spoken form of a letter, grapheme, etc. and depending on the writing system there might be a written form of a vowel or consonant. This distinction increases flexibility
+	Spoken-form	2	Language-item-form	relatedTag=Canonical-spoken-form	The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.	Language-item-form and (relatedTag some Canonical-spoken-form)	Original	
+	Canonical-spoken-form	3	Spoken-form		The regular spoken form of a language item.		Original	Should be commonly used, although there is no language without accent, only use regional spoken form when this is relevant in context of the dataset
+	Mispronounced-spoken-form	3	Spoken-form		A mispronunciation of a language item which can still be identified.		Original	
+	Regional-spoken-form	3	Spoken-form		A spoken form of a language item pronounced with a regional accent.		Original	Use when relevant in context of dataset
+	Written-form	2	Language-item-form	relatedTag=Canonical-written-form	The expression of a language unit through a system of writing.	Language-item-form and (relatedTag some Canonical-written-form)	Original	
+	Canonical-written-form	3	Written-form		The accepted spelling of a word in a given language.		Original	
+	Incorrect-written-form	3	Written-form		An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.		Original	
+	Pseudohomophone-form	3	Written-form		A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.		Original	
+	Language-item-frequency	1	Language-item-property		The frequency with which a unit occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.		Original	
+	Bigram-frequency	2	Language-item-frequency		The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.		Original	
+	Word-frequency	2	Language-item-frequency		The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.		Original	
+	Language-unit-probability	1	Language-item-property		The probability of a specific language unit occurring in a specific context.		Original	
+	Cloze-probability	2	Language-unit-probability		The proportion of people who fill a gap in given sentence with a given word.		Original	
+	Lexical-role	1	Language-item-property		The role a language item takes in a vocabulary, like part of speech.			Sometimes applies to a word, or to a phrase that fulfils a lexical role
+	Adjective	2	Lexical-role		A word that describes or defines a noun or noun phrase.		https://en.wikipedia.org/wiki/Adjective	
+	Adposition	2	Lexical-role		Accompanying an noun to express a spatial or temporal relation.		Adapted from: https://en.wikipedia.org/wiki/Adposition	
+	Circumposition	3	Adposition		Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.		Original	
+	Postposition	3	Adposition		Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.		Original	
+	Preposition	3	Adposition		Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.		Original	
+	Adverb	2	Lexical-role		Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.		Adapted from https://en.wikipedia.org/wiki/Adverb	
+	Classifier	2	Lexical-role		An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.		https://en.wikipedia.org/wiki/Classifier_(linguistics)	Classifiers are subdivided by GOLD into Nominal, Noun and Numeral classifiers. OLIA lists classifier under morphosyntactic category unique, a class for categories with unique or small membership. Classifiers can have different functions across languages. In Chinese specifically, count and mass Classifiers are distinguished. Given that these might be language specific and there is no agreement in existing standards we have not added subcategories for now.
+	Conjunction	2	Lexical-role		Connecting clauses or sentences or to coordinate words in the same clause.		Original	
+	Complementizer	3	Conjunction		Marks a finite or non- finite clause as functioning as a complement		Original	
+	Coordinating-conjunction	3	Conjunction		Coordinates elements that are equal to each other.		Original	
+	Negation-word	3	Conjunction		Expressing falsity of a clause or sentence		Original	
+	Determiner	2	Lexical-role		Determining the kind of reference a noun or noun group has.		Original	
+	Article	3	Determiner		A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.		https://en.wikipedia.org/wiki/Article_(grammar)	
+	Possesive-determiner	3	Determiner		Determining the ownership of a noun or noun phrase.		Original	
+	Interjection	2	Lexical-role		A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.		https://en.wikipedia.org/wiki/Interjection#cite_note-1	
+	Noun	2	Lexical-role		Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.		https://en.wikipedia.org/wiki/Noun	
+	Numeral	2	Lexical-role		Expressing a number or relation to a number.		Adapted from D. Terence Langendoen, General ontology of Linguistic description, http://purl.org/linguistics/gold	
+	Particle	2	Lexical-role		Must be associated with another word or phrase to impart meaning.		https://en.wikipedia.org/wiki/Grammatical_particle#cite_note-Glossary_Particle-3	In Olia they use the term Unique and recommends not using particle because of differing definitions. Particle has an older use but the modern definition is well defined, and word particle is used in neuroimaging studies (https://pubmed.ncbi.nlm.nih.gov/11347875/, https://pubmed.ncbi.nlm.nih.gov/22341872/)
+	Pronoun	2	Lexical-role		A word or a group of words that may stand for a noun or noun phrase.		Original	
+	Demonstrative-pronoun	3	Pronoun		Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.		https://en.wikipedia.org/wiki/Determiner	
+	Indefinite-pronoun	3	Pronoun		Pronoun lacking a specific referent or having generic meaning.		Original	
+	Interrogative-pronoun	3	Pronoun		Pronoun which prompts a question.		Original	
+	Personal-pronoun	3	Pronoun		Pronoun associated with a grammatical person.		https://en.wikipedia.org/wiki/Personal_pronoun	
+	Possesive-pronoun	3	Pronoun		Pronoun referring to the possession of a grammatical person.		Original	
+	Reflexive-pronoun	3	Pronoun		Pronoun that refers to another noun or pronoun within the same sentence.		https://en.wikipedia.org/wiki/Reflexive_pronoun	
+	Relative-pronoun	3	Pronoun		Pronoun that marks a relative clause.		https://en.wikipedia.org/wiki/Relative_pronoun	
+	Quantifier	2	Lexical-role		Expressing a reference definite or indefinite number or amount.		Adapted from D. Terence Langendoen, General ontology of Linguistic description, http://purl.org/linguistics/gold	
+	Verb	2	Lexical-role	suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect	Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.	Lexical-role and (suggestedTag some Tense) and (suggestedTag some Mood) and (suggestedTag some Aspect)	Extended from https://en.wikipedia.org/wiki/Verb	
+	Auxiliary-verb	3	Verb		A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).		Original	
+	Modal-verb	4	Auxiliary-verb		An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.		Original	
+	Intransative-verb	3	Verb		A verb that does not require an object.		Original	
+	Psychological-verb	3	Verb		A verb that takes two arguments, an experiencer and a theme.		Original	
+	Transitive-verb	3	Verb	suggestedTag=Object	A verb that requires one or more objects to receive the action.	Verb and (suggestedTag some Object)	Original	
+	Unaccusative-verb	3	Verb		An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).		Original	
+	Unergative-verb	3	Verb		An intransitive verb whose subject is an agent.		Original	
+	Morpheme-property	1	Language-item-property		A property of a morpheme.		Original	Morphemes can be categorized based on position, function, and type. A morpheme property can be applied to a Morpheme
+	Morpheme-function	2	Morpheme-property		The function of a morpheme.		Original	
+	Inflective-morphological-function	3	Morpheme-function	suggestedTag=Grammatical-category	Changing the grammatical function.	Morpheme-function and (suggestedTag some Grammatical-category)	Original	
+	Conjugate	4	Inflective-morphological-function		Identifying the voice, mood, tense, number, gender, and person of a verb.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
+	Decline	4	Inflective-morphological-function		Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.		Original	Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)
+	Word-formation-function	3	Morpheme-function		Creating a new word.		Original	
+	Compound	4	Word-formation-function		To join with another free morpheme to form a more complex word.		Original	
+	Derivation	4	Word-formation-function		Changing the meaning of a word, usually by adding an affix.			Derivation changes the meaning of a word, for instance, reverses the meaning, or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes, but instead give a higher level categorization. Further specification might depend on a more semantic schema.
+	Change-word-class	5	Derivation	suggestedTag=Lexical-role	Changing the word class or part of speech a word belongs to.	Derivation and (suggestedTag some Lexical-role)	Original	Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD, but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.
+	Morpheme-type	2	Morpheme-property		The type of a morpheme.		Original	
+	Bound-morpheme-type	3	Morpheme-type		A morpheme type that cannot be a word itself, such as prefixes and suffixes.		Original	
+	Free-morpheme-type	3	Morpheme-type		A morpheme type that can function as a word.		Original	
+	Morphological-position	2	Morpheme-property		The position a morpheme takes relative to the free morpheme of a word.		Original	
+	Affix	3	Morphological-position		A morpheme that is attached to a word stem to form a new word or word form.		Original	Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However, there are other categorizations of morphemes, based on how they change the stem of the word, which are categorized in OLIA as Morphological processes, such as Clitization, reduplication. However, since these all say something about how the morpheme is applied to the word, we believe these fit better together under the position tag.
+	Circumfix	3	Morphological-position		Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.		Original	
+	Infix	3	Morphological-position		Position of a morpheme in the middle of a word.		Original	
+	Non-concatenative-morphology	3	Morphological-position		Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).		Original	
+	Apophony	4	Non-concatenative-morphology		Regular vowel variation.		Original	
+	Clitic-morphological-position	4	Non-concatenative-morphology		A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.		https://en.wikipedia.org/wiki/Clitic	
+	Conversion	4	Non-concatenative-morphology		No change (where a morphological change might be expected based on regular grammar).		Original	
+	Reduplication	4	Non-concatenative-morphology		Duplication of all or part of the root word.		Original	
+	Transfixation	4	Non-concatenative-morphology		Interdigitation of vowel and consonant morphemes.		Original	
+	Truncation	4	Non-concatenative-morphology		Removal of phonological material from root.		Original	
+	Prefix	3	Morphological-position		Position of a morpheme at the beginning of a word.		Original	
+	Suffix	3	Morphological-position		Position of a morpheme at the end of a word.		Original	
+	Orthographic-neighborhood-size	1	Language-item-property		The number of closely resembling word-forms.		Original	
+	Phrase-role	1	Language-item-property		The role of phrase.		Original	
+	Adjective-phrase	2	Phrase-role		Headed by an adjective.		Original	
+	Adpostional-phrase	2	Phrase-role		Consisting of an adposition and its complement.		Original	
+	Postpositional-phrase	3	Adpostional-phrase		Consisting of a postposition and its complement.		Original	
+	Prepositional-phrase	3	Adpostional-phrase		Consisting of a preposition and its complement.		Original	
+	Adverb-phrase	2	Phrase-role		Functioning as an adverb in a sentence.		Original	
+	Noun-phrase	2	Phrase-role		Functioning in a sentence as subject, object, or prepositional object.		Original	
+	Verb-phrase	2	Phrase-role		Containing the verb and any direct or indirect object, but not the subject.		Original	
+	Syntactic-role	1	Language-item-property		Role a language-item takes in syntax.		Original	
+	Complement	2	Syntactic-role		The constituent selected by a head.		Original	
+	Syntactic-object	3	Complement		Complement of a verbal head.		Original	
+	Direct-syntactic-object	4	Syntactic-object		A word or phrase which receives the action of the verb.			
+	Indirect-syntactic-object	4	Syntactic-object		A word of phrase which receives the direct object.			
+	Modifier	2	Syntactic-role		Optional element in a phrase or a clause that specifies a noun or acts as an adjunct		Original	
+	Adjunct	3	Modifier		Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.		Original	
+	Predicate	2	Syntactic-role		Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.		Original	
+	Secondary-predicate	3	Predicate		Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object)		Original	
+	Subject	2	Syntactic-role		Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).		Original	
+	Syntactic-Head	2	Syntactic-role		Word that determines the syntactic category of a phrase.		https://en.wikipedia.org/wiki/Head_(linguistics)	
+	Language-property	0	Property	rooted=Property	A property relating to a system of communication used by a particular group of people.		Original	
+	Morphological-language-type	1	Language-property		Morphological property relating to a specific system of communication used by a particular group of people.		Original	
+	Analytic-language-type	2	Morphological-language-type		Rarely using affixes, resulting in a low morheme per word ratio.		Original	
+	Morphological-isolating-type	3	Analytic-language-type		Having a morpheme per word ratio close to one.		https://en.wikipedia.org/wiki/Isolating_language	
+	Morphological-polysynthetic-type	2	Morphological-language-type		Can encode multiple constituents such as subject, verb, object, etc. into a single word.		Original	
+	Morphological-synthetic-type	2	Morphological-language-type		Having a higher morpheme per word ratio.		https://en.wikipedia.org/wiki/Synthetic_language	
+	Morphological-agglutinating-type	3	Morphological-synthetic-type		Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.		Adapted from https://en.wikipedia.org/wiki/Agglutination	
+	Morphological-fusional-type	3	Morphological-synthetic-type		Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.		https://en.wikipedia.org/wiki/Fusional_language	
+	Orthographic-type	1	Language-property		The type of unit each symbol serves to represent in written language.		Original	Classification of writing systems is complex, and these categories are not universally accepted, mainly because most writing systems have characteristics of multiple of these categories. However, most writing systems have an overall tendency towards one of these categories, and so the categories can be useful to see how large differences are managed by the individuals who speak them. But it is normal that a writing system does not cleanly fit into any of these categories.
+	Logographic-type	2	Orthographic-type		Representing an entire spoken word per character.			
+	Segmental-or-Alphabetic-type	2	Orthographic-type		Representing approcimately phoneme per character.		Original	These can be further subdivided based on other characteristics but these are most commonly used in cognition research, and relevant in research into dyslexia
+	Deep-orthographical-type	3	Segmental-or-Alphabetic-type		Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.			
+	Shallow-orthographic-type	3	Segmental-or-Alphabetic-type		Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.			
+	Syllabary-type	2	Orthographic-type		Representing one syllable per character.			
+	Grammatical-relationship	0	Relation	rooted=Relation	Grammatical relationship between language items.			
+	Agreement-with	1	Grammatical-relationship		Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.			
+	Orthographic-relatedness-to	0	Relation	rooted=Relation	Connected on the basis of writing or spelling			
+	Orthographic-distance-to	1	Orthographic-relatedness-to		Removed in writing from			
+	Hamming-distance-to	2	Orthographic-distance-to		The minimum number of substitutions required to change one string into another string of equal length.			
+	Hamming-distance-to-#	3	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up	Hamming-distance-to and (valueClass some numericClass)		
+	Levenshtein-distance-to	2	Orthographic-distance-to		The minimum number of single-character edits to change into.			
+	Levenshtein-distance-to-#	3	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up	Levenshtein-distance-to and (valueClass some numericClass)		
+	Phonological-relatedness-to	0	Relation	rooted=Relation	Connected on the basis of sound			
+	Phonological-distance-to	1	Phonological-relatedness-to		Removed in sounding from			
+	Phonological-Levenshtein-distance-to	2	Phonological-distance-to		The minimum number of single-phoneme edits to change into			
+	Phonological-Levenshtein-distance-to-#	3	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Intergers 0 and up	Phonological-Levenshtein-distance-to and (valueClass some numericClass)		
+	Semantic-relatedness-to	0	Relation	rooted=Relation	Connected on the basis of meaning to			
+	Antonymous-to	1	Semantic-relatedness-to		Meaning the opposite as			
+	Semantic-distance-to	1	Semantic-relatedness-to		Removed in meaning from			
+	Semantic-distance-to-#	2	Semantic-distance-to					
+	Synonymous-to	1	Semantic-relatedness-to		Meaning exactly or nearly the same as			
