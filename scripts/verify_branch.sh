@@ -2,10 +2,18 @@
 # Script to verify changes are on the correct branch
 # only applies to branches that start with develop-
 
-# Get the current branch name
-branch_name=$(git rev-parse --abbrev-ref HEAD)
+# Try to use the BRANCH_NAME environment variable first
+if [ -z "$BRANCH_NAME" ]; then
+    # Environment variable is empty or not set, fallback to git command
+    echo "Finding branch name from git"
+    branch_name=$(git rev-parse --abbrev-ref HEAD)
+else
+    # Use the environment variable
+    branch_name=$BRANCH_NAME
+fi
 
-# Echo the branch name
+
+# Echo the branch name and changed files
 echo "branch_name: $branch_name"
 echo "files: $@"
 # Check if the branch name does not start with 'develop-'
@@ -17,11 +25,12 @@ fi
 # Strip 'develop-' from the branch name
 branch_name=${branch_name#develop-}
 
+# Verify the branch name is correct after modification
 echo "Processed branch_name: $branch_name"
 
 # Define base file pattern based on branch name
 if [[ "$branch_name" == "standard" ]]; then
-    base_pattern="standard_schema"
+    base_pattern="standard_schema/"
 else
     base_pattern="library_schemas/${branch_name}/"
 fi
