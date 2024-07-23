@@ -234,19 +234,19 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Syllabary-type	2	Orthographic-type		Representing one syllable or mora per character.		Original	
 	Linguistic-relation	0	Relation	rooted=Relation	Related based on a linguistic property to.		Original	
 	Grammatical-relation	1	Linguistic-relation		Grammatical relationship between language items.		Original	
-	Agreement-with	1	Grammatical-relation		Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.		Original	
-	Orthographic-relatedness-to	0	Linguistic-relation		Connected on the basis of writing or spelling.		Original	
-	Orthographic-distance-to	1	Orthographic-relatedness-to		Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).		Original	
-	Hamming-distance-to	2	Orthographic-distance-to		The minimum number of substitutions required to change one string into another string of equal length.		Original	
-	Hamming-distance-to-#	3	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Hamming-distance-to and (valueClass some numericClass)		
-	Levenshtein-distance-to	2	Orthographic-distance-to		The minimum number of single-character edits to change into.		Original	
-	Levenshtein-distance-to-#	3	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Levenshtein-distance-to and (valueClass some numericClass)		
-	Phonological-relatedness-to	0	Linguistic-relation		Connected on the basis of sound.		Original	
-	Phonological-distance-to	1	Phonological-relatedness-to		Removed in sounding from.		Original	
-	Phonological-Levenshtein-distance-to	2	Phonological-distance-to		The minimum number of single-phoneme edits to change into.		Original	
-	Phonological-Levenshtein-distance-to-#	3	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Phonological-Levenshtein-distance-to and (valueClass some numericClass)	Original	
-	Semantic-relatedness-to	0	Linguistic-relation		Connected on the basis of meaning to.		Original	
-	Antonymous-to	1	Semantic-relatedness-to		Meaning the opposite as.		Original	
-	Semantic-distance-to	1	Semantic-relatedness-to		Removed in meaning from.		Original	
-	Semantic-distance-to-#	2	Semantic-distance-to					
-	Synonymous-to	1	Semantic-relatedness-to		Meaning exactly or nearly the same as.		Original	
+	Agreement-with	2	Grammatical-relation		Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.		Original	
+	Orthographic-relatedness-to	1	Linguistic-relation		Connected on the basis of writing or spelling.		Original	
+	Orthographic-distance-to	2	Orthographic-relatedness-to		Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).		Original	
+	Hamming-distance-to	3	Orthographic-distance-to		The minimum number of substitutions required to change one string into another string of equal length.		Original	
+	Hamming-distance-to-#	4	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Hamming-distance-to and (valueClass some numericClass)		
+	Levenshtein-distance-to	3	Orthographic-distance-to		The minimum number of single-character edits to change into.		Original	
+	Levenshtein-distance-to-#	4	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Levenshtein-distance-to and (valueClass some numericClass)		
+	Phonological-relatedness-to	1	Linguistic-relation		Connected on the basis of sound.		Original	
+	Phonological-distance-to	2	Phonological-relatedness-to		Removed in sounding from.		Original	
+	Phonological-Levenshtein-distance-to	3	Phonological-distance-to		The minimum number of single-phoneme edits to change into.		Original	
+	Phonological-Levenshtein-distance-to-#	4	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Phonological-Levenshtein-distance-to and (valueClass some numericClass)	Original	
+	Semantic-relatedness-to	1	Linguistic-relation		Connected on the basis of meaning to.		Original	
+	Antonymous-to	2	Semantic-relatedness-to		Meaning the opposite as.		Original	
+	Semantic-distance-to	2	Semantic-relatedness-to		Removed in meaning from.		Original	
+	Semantic-distance-to-#	3	Semantic-distance-to					
+	Synonymous-to	2	Semantic-relatedness-to		Meaning exactly or nearly the same as.		Original	

@@ -2327,14 +2327,14 @@
                </node>
                <node>
                   <name>Germanic-language</name>
-                  <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa</description>
+                  <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Danish</name>
-                     <description>A Germanic language, mainly spoken in Denmark</description>
+                     <description>A Germanic language, mainly spoken in Denmark.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2366,7 +2366,7 @@
                   </node>
                   <node>
                      <name>Icelandic</name>
-                     <description>A Germanic language mainly spoken in Iceland</description>
+                     <description>A Germanic language mainly spoken in Iceland.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2536,7 +2536,7 @@
             </node>
             <node>
                <name>Japonic</name>
-               <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands</description>
+               <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -2582,7 +2582,7 @@
                   </attribute>
                   <node>
                      <name>Burmese</name>
-                     <description>A Burmo Qiangic language mainly spoken in Myanmar</description>
+                     <description>A Burmo Qiangic language mainly spoken in Myanmar.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2606,7 +2606,7 @@
                   </node>
                   <node>
                      <name>Mandarin-Chinese</name>
-                     <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China</description>
+                     <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2622,7 +2622,7 @@
                   </node>
                   <node>
                      <name>Wu-Chinese</name>
-                     <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River</description>
+                     <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2630,7 +2630,7 @@
                   </node>
                   <node>
                      <name>Xiang-Chinese</name>
-                     <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces</description>
+                     <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2638,7 +2638,7 @@
                   </node>
                   <node>
                      <name>Yue-Chinese</name>
-                     <description>A group of Sinitic languages mainly spoken Southern China</description>
+                     <description>A group of Sinitic languages mainly spoken Southern China.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8389,7 +8389,7 @@
          </node>
          <node>
             <name>Language-item-property</name>
-            <description>A property of a linguistic unit within a framework of language analysis.</description>
+            <description>A property of a language item within a framework of language analysis.</description>
             <attribute>
                <name>rooted</name>
                <value>Property</value>
@@ -8404,7 +8404,7 @@
             </attribute>
             <node>
                <name>Clause-type</name>
-               <description>The type of a clause</description>
+               <description>The type of a clause.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8466,7 +8466,7 @@
                   </attribute>
                   <node>
                      <name>Countable</name>
-                     <description>Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural)</description>
+                     <description>Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8570,6 +8570,7 @@
                   </node>
                   <node>
                      <name>Progressive</name>
+                     <description>Expresses an incomplete state or action.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8642,7 +8643,7 @@
                </node>
                <node>
                   <name>Tense</name>
-                  <description>Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech</description>
+                  <description>Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8704,7 +8705,7 @@
                      </attribute>
                      <node>
                         <name>Pluperfect</name>
-                        <description>Referring to a past event relative to another reference point (not the time of speech)</description>
+                        <description>Referring to a past event relative to another reference point (not the time of speech).</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -8739,7 +8740,7 @@
             </node>
             <node>
                <name>Language-item-form</name>
-               <description>The form of a language unit.</description>
+               <description>The form of a language item.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8782,7 +8783,7 @@
                </node>
                <node>
                   <name>Written-form</name>
-                  <description>The expression of a language unit through a system of writing.</description>
+                  <description>The expression of a language item through a system of writing.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Canonical-written-form</value>
@@ -8819,7 +8820,7 @@
             </node>
             <node>
                <name>Language-item-frequency</name>
-               <description>The frequency with which a unit occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.</description>
+               <description>The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8842,8 +8843,8 @@
                </node>
             </node>
             <node>
-               <name>Language-unit-probability</name>
-               <description>The probability of a specific language unit occurring in a specific context.</description>
+               <name>Language-item-probability</name>
+               <description>The probability of a specific language item occurring in a specific context.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8929,7 +8930,7 @@
                   </attribute>
                   <node>
                      <name>Complementizer</name>
-                     <description>Marks a finite or non- finite clause as functioning as a complement</description>
+                     <description>Marks a finite or non- finite clause as functioning as a complement.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8945,7 +8946,7 @@
                   </node>
                   <node>
                      <name>Negation-word</name>
-                     <description>Expressing falsity of a clause or sentence</description>
+                     <description>Expressing falsity of a clause or sentence.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9476,7 +9477,7 @@
                </node>
                <node>
                   <name>Modifier</name>
-                  <description>Optional element in a phrase or a clause that specifies a noun or acts as an adjunct</description>
+                  <description>Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9499,7 +9500,7 @@
                   </attribute>
                   <node>
                      <name>Secondary-predicate</name>
-                     <description>Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object)</description>
+                     <description>Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9544,7 +9545,7 @@
                </attribute>
                <node>
                   <name>Analytic-language-type</name>
-                  <description>Rarely using affixes, resulting in a low morheme per word ratio.</description>
+                  <description>Rarely using affixes, resulting in a low morpheme per word ratio.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9593,7 +9594,7 @@
             </node>
             <node>
                <name>Orthographic-type</name>
-               <description>The type of unit each symbol serves to represent in written language.</description>
+               <description>The type of language item each symbol serves to represent in written language.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -9632,7 +9633,7 @@
                </node>
                <node>
                   <name>Syllabary-type</name>
-                  <description>Representing one syllable per character.</description>
+                  <description>Representing one syllable or mora per character.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -12914,8 +12915,8 @@
             </node>
          </node>
          <node>
-            <name>Grammatical-relationship</name>
-            <description>Grammatical relationship between language items.</description>
+            <name>Linguistic-relation</name>
+            <description>Related based on a linguistic property to.</description>
             <attribute>
                <name>rooted</name>
                <value>Relation</value>
@@ -12925,12 +12926,163 @@
                <value>lang</value>
             </attribute>
             <node>
-               <name>Agreement-with</name>
-               <description>Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.</description>
+               <name>Grammatical-relation</name>
+               <description>Grammatical relationship between language items.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
+               <node>
+                  <name>Agreement-with</name>
+                  <description>Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Orthographic-relatedness-to</name>
+               <description>Connected on the basis of writing or spelling.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lang</value>
+               </attribute>
+               <node>
+                  <name>Orthographic-distance-to</name>
+                  <description>Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Hamming-distance-to</name>
+                     <description>The minimum number of substitutions required to change one string into another string of equal length.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>#</name>
+                        <description>Integers 0 and up.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                           <value>true</value>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Levenshtein-distance-to</name>
+                     <description>The minimum number of single-character edits to change into.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>#</name>
+                        <description>Integers 0 and up.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                           <value>true</value>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Phonological-relatedness-to</name>
+               <description>Connected on the basis of sound.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lang</value>
+               </attribute>
+               <node>
+                  <name>Phonological-distance-to</name>
+                  <description>Removed in sounding from.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Phonological-Levenshtein-distance-to</name>
+                     <description>The minimum number of single-phoneme edits to change into.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                     <node>
+                        <name>#</name>
+                        <description>Integers 0 and up.</description>
+                        <attribute>
+                           <name>takesValue</name>
+                           <value>true</value>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>lang</value>
+                        </attribute>
+                     </node>
+                  </node>
+               </node>
+            </node>
+            <node>
+               <name>Semantic-relatedness-to</name>
+               <description>Connected on the basis of meaning to.</description>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>lang</value>
+               </attribute>
+               <node>
+                  <name>Antonymous-to</name>
+                  <description>Meaning the opposite as.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Semantic-distance-to</name>
+                  <description>Removed in meaning from.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>#</name>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
+                  <name>Synonymous-to</name>
+                  <description>Meaning exactly or nearly the same as.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+               </node>
             </node>
          </node>
          <node>
@@ -12954,161 +13106,6 @@
                <attribute>
                   <name>hedId</name>
                   <value>HED_0013158</value>
-               </attribute>
-            </node>
-         </node>
-         <node>
-            <name>Orthographic-relatedness-to</name>
-            <description>Connected on the basis of writing or spelling</description>
-            <attribute>
-               <name>rooted</name>
-               <value>Relation</value>
-            </attribute>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Orthographic-distance-to</name>
-               <description>Removed in writing from</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-               <node>
-                  <name>Hamming-distance-to</name>
-                  <description>The minimum number of substitutions required to change one string into another string of equal length.</description>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>lang</value>
-                  </attribute>
-                  <node>
-                     <name>#</name>
-                     <description>Integers 0 and up</description>
-                     <attribute>
-                        <name>takesValue</name>
-                        <value>true</value>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>lang</value>
-                     </attribute>
-                  </node>
-               </node>
-               <node>
-                  <name>Levenshtein-distance-to</name>
-                  <description>The minimum number of single-character edits to change into.</description>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>lang</value>
-                  </attribute>
-                  <node>
-                     <name>#</name>
-                     <description>Integers 0 and up</description>
-                     <attribute>
-                        <name>takesValue</name>
-                        <value>true</value>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>lang</value>
-                     </attribute>
-                  </node>
-               </node>
-            </node>
-         </node>
-         <node>
-            <name>Phonological-relatedness-to</name>
-            <description>Connected on the basis of sound</description>
-            <attribute>
-               <name>rooted</name>
-               <value>Relation</value>
-            </attribute>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Phonological-distance-to</name>
-               <description>Removed in sounding from</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-               <node>
-                  <name>Phonological-Levenshtein-distance-to</name>
-                  <description>The minimum number of single-phoneme edits to change into</description>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>lang</value>
-                  </attribute>
-                  <node>
-                     <name>#</name>
-                     <description>Intergers 0 and up</description>
-                     <attribute>
-                        <name>takesValue</name>
-                        <value>true</value>
-                     </attribute>
-                     <attribute>
-                        <name>valueClass</name>
-                        <value>numericClass</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>lang</value>
-                     </attribute>
-                  </node>
-               </node>
-            </node>
-         </node>
-         <node>
-            <name>Semantic-relatedness-to</name>
-            <description>Connected on the basis of meaning to</description>
-            <attribute>
-               <name>rooted</name>
-               <value>Relation</value>
-            </attribute>
-            <attribute>
-               <name>inLibrary</name>
-               <value>lang</value>
-            </attribute>
-            <node>
-               <name>Antonymous-to</name>
-               <description>Meaning the opposite as</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Semantic-distance-to</name>
-               <description>Removed in meaning from</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
-               </attribute>
-               <node>
-                  <name>#</name>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>lang</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
-               <name>Synonymous-to</name>
-               <description>Meaning exactly or nearly the same as</description>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>lang</value>
                </attribute>
             </node>
          </node>
