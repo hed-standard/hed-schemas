@@ -1,16 +1,23 @@
-name: Create PR from Develop
+name: Add HedIDs
 
 on:
   workflow_dispatch:
     inputs:
+      schema_name:
+        description: 'The name of the schema("standard" for standard schema)'
+        default: ''
+      schema_version:
+        description: 'The schema version to convert'
+        required: true
       pr_title:
         description: 'Pull Request Title'
         required: true
-        default: 'Update from Develop'
+        default: 'Adding HedIDs to schema on main'
       pr_description:
         description: 'Pull Request Description'
         required: true
-        default: 'Automatically updating the provisional branch with changes from develop.'
+        default: 'Automatically updating the schema from main with HedIDs'
+
 
 jobs:
   manage-branch:
@@ -34,17 +41,10 @@ jobs:
 
       - name: Create new provisional branch from develop
         run: |
-          git checkout develop
+          git checkout main
           git pull
           git checkout -b provisional
-          git push origin provisional
-
-      - name: Get changed files between main and provisional
-        id: changed-files
-        run: |
-          CHANGED_FILES=$(git diff --name-only origin/main..origin/provisional | tr '\n' ' ')
-          echo "CHANGED_FILES=${CHANGED_FILES}" >> $GITHUB_ENV
-          echo "List of changed files: $CHANGED_FILES"
+          git push origin main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -56,7 +56,7 @@ jobs:
 
       - name: Update schemas
         run: |
-            hed_update_schemas $CHANGED_FILES --set-ids
+            hed_add_ids . "${{ github.event.inputs.schema_name }}" "${{ github.event.inputs.schema_version }}"
 
       - name: Commit and push changes
         run: |
