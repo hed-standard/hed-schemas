@@ -1,7 +1,6 @@
 [![Documentation Status](https://readthedocs.org/projects/hed-schemas/badge/?version=latest)](https://hed-schemas.readthedocs.io/en/latest/?badge=latest)
 Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) 
 SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
-[![@HEDstandard](http://img.shields.io/twitter/follow/hedstandard.svg?style=social)](https://twitter.com/HEDstandard)
 
 ## About HED
 HED (Hierarchical Event Descriptors) is an evolving framework for the description and
@@ -33,8 +32,8 @@ The following table summarizes the current versions of the HED schemas.
 | Schema                                 | Latest<br/>version | Description                                                                                                                                                         | Prerelease<br/>version | DOI  |
 |----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------| ---- |
 | [**standard**](./standard_schema)      | 8.3.0              | Basic vocabulary for annotating data.                                                                                                                               | 8.4.0                  | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score)     | 1.1.0              | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) | 2.0.0                  | 10.5281/zenodo.7897596  |
-| [**lang**](library_schemas/lang)       |                    | LANG linguistic stimuli annotation vocabulary.                                                                                                                      | 0.0.1                  |  |
+| [**score**](library_schemas/score)     | 1.2.0              | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) | 2.0.0                  | 10.5281/zenodo.7897596  |
+| [**lang**](library_schemas/lang)       |                    | LANG linguistic stimuli annotation vocabulary.                                                                                                                      | 1.0.0                  |  |
 | [**testlib**](library_schemas/testlib) | 3.0.0              | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.)                                                                                  | 4.0.0                  |  |
 
 ## HED formats

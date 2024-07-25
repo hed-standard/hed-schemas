@@ -1,5 +1,36 @@
 # CHANGELOG for HED score library schema
 
+## Changes for score 1.2.0 released July 16, 2024.
+
+**Tags moved (Minor):**
+ * Myoclonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Myoclonic-motor-seizure
+ * Negative-myoclonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Negative-myoclonic-motor-seizure
+ * Clonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Clonic-motor-seizure
+ * Tonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Tonic-motor-seizure
+ * Atonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Atonic-motor-seizure
+ * Myoclonic-atonic-motor-seizure): from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Myoclonic-atonic-motor-seizure 
+ * Myoclonic-tonic-clonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Myoclonic-tonic-clonic-motor-seizure
+ * Tonic-clonic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Tonic-clonic-motor-seizure
+ * Automatism-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Automatism-motor-seizure
+ * Hyperkinetic-motor-seizure: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Hyperkinetic-motor-seizure
+ * Epileptic-spasm-episode: from Finding-property/Episode-property/Seizure-classification/Motor-onset-seizure/Epileptic-spasm-episode
+
+**Descriptions changed (Patch)
+ * Motor-onset-seizure 
+ * Myoclonic-motor-onset-seizure
+ * Negative-myoclonic-motor-onset-seizure
+ * Clonic-motor-onset-seizure
+ * Tonic-motor-onset-seizure 
+ * Atonic-motor-onset-seizure 
+ * Myoclonic-atonic-motor-onset-seizure
+ * Myoclonic-tonic-clonic-motor-onset-seizure
+ * Tonic-clonic-motor-onset-seizure
+ * Automatism-motor-onset-seizure
+ * Hyperkinetic-motor-onset-seizure
+ * Saw-tooth-waves
+ * POSTS
+
+
 ## Changes for score 1.1.0 released July 12, 2023.
 * Partnered with HED standard schema 8.2.0
 * 'Epileptic-seizure': description update
