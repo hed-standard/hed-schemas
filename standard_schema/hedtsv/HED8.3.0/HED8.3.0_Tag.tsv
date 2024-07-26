@@ -227,7 +227,7 @@ HED_0013217	Pelvis	5	Torso-part		The bony structure at the base of the spine sup
 HED_0013218	Pelvis-part	5	Torso-part		A part of the pelvis.	
 HED_0012208	Buttocks	6	Pelvis-part		The round fleshy parts that form the lower rear area of a human trunk.	
 HED_0013219	Genitalia	6	Pelvis-part		The external organs of reproduction and urination, located in the pelvic region. This includes both male and female genital structures.	
-HED_0012209	Gentalia	6	Pelvis-part	deprecatedFrom="8.1.0"	The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.	Pelvis-part and (deprecatedFrom value "8.1.0")
+HED_0012209	Gentalia	6	Pelvis-part	deprecatedFrom=8.1.0	The external organs of reproduction. Deprecated due to spelling error. Use Genitalia.	Pelvis-part and (deprecatedFrom value "8.1.0")
 HED_0012210	Hip	6	Pelvis-part		The lateral prominence of the pelvis from the waist to the thigh.	
 HED_0012211	Torso-back	5	Torso-part		The rear surface of the human body from the shoulders to the hips.	
 HED_0012212	Torso-chest	5	Torso-part		The anterior side of the thorax from the neck to the abdomen.	
@@ -690,8 +690,8 @@ HED_0012661	Angle-#	6	Angle	takesValue, unitClass=angleUnits, valueClass=numeric
 HED_0012662	Distance	5	Spatial-value		A measure of the space separating two objects or points.	
 HED_0012663	Distance-#	6	Distance	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits		Distance and (valueClass some numericClass) and (unitClass some physicalLengthUnits)
 HED_0012664	Position	5	Spatial-value		A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.	
-HED_0012326	Clock-face	6	Position	deprecatedFrom="8.2.0"	A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.	Position and (deprecatedFrom value "8.2.0")
-HED_0013228	Clock-face-#	7	Clock-face	deprecatedFrom="8.2.0", takesValue, valueClass=numericClass		Clock-face and (deprecatedFrom value "8.2.0") and (valueClass some numericClass)
+HED_0012326	Clock-face	6	Position	deprecatedFrom=8.2.0	A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.	Position and (deprecatedFrom value "8.2.0")
+HED_0013228	Clock-face-#	7	Clock-face	deprecatedFrom=8.2.0, takesValue, valueClass=numericClass		Clock-face and (deprecatedFrom value "8.2.0") and (valueClass some numericClass)
 HED_0013229	Clock-face-position	6	Position		A location identifier based on clock-face numbering or anatomic subregion. As an object, just use the tag Clock.	
 HED_0013230	Clock-face-position-#	7	Clock-face-position	takesValue, valueClass=numericClass		Clock-face-position and (valueClass some numericClass)
 HED_0012665	X-position	6	Position		The position along the x-axis of the frame of reference.	
