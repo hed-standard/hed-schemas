@@ -16,23 +16,23 @@ fi
 # Echo the branch name and changed files
 echo "branch_name: $branch_name"
 echo "files: $@"
-# Check if the branch name does not start with 'develop-'
-if [[ ! "$branch_name" =~ ^develop- ]]; then
-    echo "This script only processes branches starting with 'develop-'. Exiting..."
+
+branch_prefix=${branch_name%%_*}
+
+# Check if the extracted branch prefix is "admin"
+if [[ "$branch_prefix" == "admin" ]]; then
+    echo "Any changes allowed on admin branches."
     exit 0
 fi
 
-# Strip 'develop-' from the branch name
-branch_name=${branch_name#develop-}
-
 # Verify the branch name is correct after modification
-echo "Processed branch_name: $branch_name"
+echo "Processed branch_name: branch_prefix"
 
 # Define base file pattern based on branch name
-if [[ "$branch_name" == "standard" ]]; then
+if [[ "branch_prefix" == "standard" ]]; then
     base_pattern="standard_schema/"
 else
-    base_pattern="library_schemas/${branch_name}/"
+    base_pattern="library_schemas/${branch_prefix}/"
 fi
 
 # Define the second pattern by appending 'prerelease' to the base pattern

@@ -9,12 +9,36 @@ on:
 jobs:
   print_branch_name:
     runs-on: ubuntu-latest
+    env:
+      BRANCH_NAME: ${{ github.head_ref }}  # Set the BRANCH_NAME environment variable
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 #        with:
 #          ref: ${{ github.head_ref }}  # Check out the source branch of the PR
 
       - name: Print source branch name
         run: |
-          echo "The source branch of the PR is: ${{ github.head_ref }}"
+          echo "The source branch of the PR is: $BRANCH_NAME"
+
+      - name: Get latest push changes
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          since_last_remote_commit: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Pre-commit
+        run: pip install pre-commit
+
+      - name: Run pre-commit on changed files
+        run: |
+          if [ -n "${{ steps.changed-files.outputs.all_changed_files }}" ]; then
+            pre-commit run --files ${{ steps.changed-files.outputs.all_changed_files }}
+          else
+            echo "No files have changed, skipping pre-commit."
+          fi
