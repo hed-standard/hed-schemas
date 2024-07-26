@@ -1,0 +1,20 @@
+name: Get Source Branch Name
+
+on:
+  pull_request:
+    # Trigger the workflow on pull request events for any branch
+    branches:
+      - '**'
+
+jobs:
+  print_branch_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+#        with:
+#          ref: ${{ github.head_ref }}  # Check out the source branch of the PR
+
+      - name: Print source branch name
+        run: |
+          echo "The source branch of the PR is: ${{ github.head_ref }}"
