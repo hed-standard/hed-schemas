@@ -6,9 +6,9 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 !# start schema
 
 '''Language''' <nowiki>{rooted=Item} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
-* Afroasiatic-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.]</nowiki>
+* Afroasiatic-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
 ** Arabic <nowiki>[An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
-** Hebrew <nowiki>[An Afroasiatic language mainly spoken in Isreal.]</nowiki>
+** Hebrew <nowiki>[An Afroasiatic language mainly spoken in Israel.]</nowiki>
 * Atlantic-Congo-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
 ** Swahili <nowiki>[An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
 * Austroasiatic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.]</nowiki>
@@ -21,12 +21,12 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Baltic-language <nowiki>[A system of communication belonging to the family of languages originating in Northeastern Europe.]</nowiki>
 *** Latvian <nowiki>[A baltic language spoken mainly in Latvia.]</nowiki>
 *** Lithuanian <nowiki>[A baltic language spoken mainly in Lithuania.]</nowiki>
-** Germanic-language <nowiki>[A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa]</nowiki>
-*** Danish <nowiki>[A Germanic language, mainly spoken in Denmark]</nowiki>
+** Germanic-language <nowiki>[A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.]</nowiki>
+*** Danish <nowiki>[A Germanic language, mainly spoken in Denmark.]</nowiki>
 *** Dutch <nowiki>[A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.]</nowiki>
 *** English <nowiki>[A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an adminastrative language.]</nowiki>
 *** German <nowiki>[A Germanic Language which is mainly spoken in Western and Central Europe.]</nowiki>
-*** Icelandic <nowiki>[A Germanic language mainly spoken in Iceland]</nowiki>
+*** Icelandic <nowiki>[A Germanic language mainly spoken in Iceland.]</nowiki>
 *** Norwegian <nowiki>[A Germanic language mainly spoken in Norway.]</nowiki>
 *** Swedish <nowiki>[A Germanic language mainly spoken in Sweden and parts of Finland.]</nowiki>
 ** Romance-language <nowiki>[A system of communication belonging to the family of languages directly descending from Vulgar Latin.]</nowiki>
@@ -47,20 +47,20 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Russian <nowiki>[A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.]</nowiki>
 *** Slovak <nowiki>[A slavic language spoken mainly in Slovakia.]</nowiki>
 *** Ukrainian <nowiki>[A slavic language spoken mainly in Ukraine.]</nowiki>
-* Japonic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands]</nowiki>
+* Japonic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
 ** Japanese <nowiki>[A Japonic language mainly spoken in Japan.]</nowiki>
-* Koreanic <nowiki>[A system of commication belonging to the family of languages mainly spoken in Korea.]</nowiki>
+* Koreanic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
 ** Korean <nowiki>[A Koreanic language mainly spoken in Korea.]</nowiki>
 * Sino-Tibetan-language <nowiki>[A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
 ** Burmo-Qiangic-language <nowiki>[A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
-*** Burmese <nowiki>[A Burmo Qiangic language mainly spoken in Myanmar]</nowiki>
+*** Burmese <nowiki>[A Burmo Qiangic language mainly spoken in Myanmar.]</nowiki>
 ** Sinitic <nowiki>[A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
 *** Gan-Chinese <nowiki>[A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
-*** Mandarin-Chinese <nowiki>[A group of Chinese language dialects that are natively spoken in most of northern and southwestern China]</nowiki>
+*** Mandarin-Chinese <nowiki>[A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.]</nowiki>
 **** Standard-Chinese <nowiki>[A modern standard form of Mandarin Chinese which is the official Language of mainland China.]</nowiki>
-*** Wu-Chinese <nowiki>[A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River]</nowiki>
-*** Xiang-Chinese <nowiki>[A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces]</nowiki>
-*** Yue-Chinese <nowiki>[A group of Sinitic languages mainly spoken Southern China]</nowiki>
+*** Wu-Chinese <nowiki>[A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.]</nowiki>
+*** Xiang-Chinese <nowiki>[A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.]</nowiki>
+*** Yue-Chinese <nowiki>[A group of Sinitic languages mainly spoken Southern China.]</nowiki>
 **** Cantonese <nowiki>[A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.]</nowiki>
 * Tai-Kadai <nowiki>[A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.]</nowiki>
 ** Thai <nowiki>[A Tai Kadai language mainly spoken in Central Thailand.]</nowiki>
@@ -98,8 +98,8 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 
 '''Radical''' <nowiki>{rooted=Language-item} [A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.]</nowiki>
 
-'''Language-item-property''' <nowiki>{rooted=Property, requireChild=True} [A property of a linguistic unit within a framework of language analysis.]</nowiki>
-* Clause-type <nowiki>[The type of a clause]</nowiki>
+'''Language-item-property''' <nowiki>{rooted=Property, requireChild=True} [A property of a language item within a framework of language analysis.]</nowiki>
+* Clause-type <nowiki>[The type of a clause.]</nowiki>
 ** Dependent-clause <nowiki>[Containing a subject and verb and cannot be a sentence on its own.]</nowiki>
 ** Independent-clause <nowiki>[Containing a subject and verb but can be a sentence on its own.]</nowiki>
 * Grammatical-category <nowiki>[Grammatical category of a word, usually marked through inflection.]</nowiki>
@@ -107,7 +107,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Imperfective-aspect <nowiki>[Presenting an ongoing or unfolding or repeated or habitual event.]</nowiki>
 *** Perfective-aspect <nowiki>[Presenting a completed event.]</nowiki>
 ** Countability <nowiki>[A grammatical category that determines how the quantity of a concept is expressed.]</nowiki>
-*** Countable <nowiki>[Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural)]</nowiki>
+*** Countable <nowiki>[Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).]</nowiki>
 *** Uncountable <nowiki>[Syntactic property of nouns that makes their referents undifferentiated units.]</nowiki>
 ** Grammatical-number <nowiki>[Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.]</nowiki>
 *** Collective <nowiki>[Not representing a specific number.]</nowiki>
@@ -120,7 +120,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Mood <nowiki>[Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.]</nowiki>
 *** Conditional <nowiki>[Used for speaking of an event whose realization is dependent upon another condition.]</nowiki>
 *** Imperative <nowiki>[Expresses direct commands, prohibitions, and requests.]</nowiki>
-*** Progressive
+*** Progressive <nowiki>[Expresses an incomplete state or action.]</nowiki>
 *** Subjunctive <nowiki>[Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among other uses.]</nowiki>
 ** Noun-class <nowiki>[Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.]</nowiki>
 *** Case <nowiki>[Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.]</nowiki>
@@ -129,7 +129,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 **** Dative <nowiki>[Used to indicate the recipient or beneficiary of an action.]</nowiki>
 **** Genitive <nowiki>[Used to indicate attributive relations between nouns among other uses.]</nowiki>
 **** Nominative <nowiki>[Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.]</nowiki>
-** Tense <nowiki>[Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech]</nowiki>
+** Tense <nowiki>[Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.]</nowiki>
 *** Future-tense <nowiki>[Referring to an event posterior to time of speech.]</nowiki>
 **** Future-perfect <nowiki>[Referring to a future event relative to another reference point (not the time of speech).]</nowiki>
 **** Near-future-tense <nowiki>[Referring to an event shortly after time of speech.]</nowiki>
@@ -137,23 +137,23 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Non-future-tense <nowiki>[Referring to both a past or present event.]</nowiki>
 *** Non-past-tense <nowiki>[Referring to both a present or future event.]</nowiki>
 *** Past-tense <nowiki>[Referring to an event anterior to time of speech.]</nowiki>
-**** Pluperfect <nowiki>[Referring to a past event relative to another reference point (not the time of speech)]</nowiki>
+**** Pluperfect <nowiki>[Referring to a past event relative to another reference point (not the time of speech).]</nowiki>
 **** Recent-past-tense <nowiki>[Referring to an event in the recent past.]</nowiki>
 **** Remote-past-tense <nowiki>[Referring to an event in the distant past.]</nowiki>
 *** Present-tense <nowiki>[Referring to an event that takes place at time of speech.]</nowiki>
-* Language-item-form <nowiki>[The form of a language unit.]</nowiki>
+* Language-item-form <nowiki>[The form of a language item.]</nowiki>
 ** Spoken-form <nowiki>{relatedTag=Canonical-spoken-form} [The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.]</nowiki>
 *** Canonical-spoken-form <nowiki>[The regular spoken form of a language item.]</nowiki>
 *** Mispronounced-spoken-form <nowiki>[A mispronunciation of a language item which can still be identified.]</nowiki>
 *** Regional-spoken-form <nowiki>[A spoken form of a language item pronounced with a regional accent.]</nowiki>
-** Written-form <nowiki>{relatedTag=Canonical-written-form} [The expression of a language unit through a system of writing.]</nowiki>
+** Written-form <nowiki>{relatedTag=Canonical-written-form} [The expression of a language item through a system of writing.]</nowiki>
 *** Canonical-written-form <nowiki>[The accepted spelling of a word in a given language.]</nowiki>
 *** Incorrect-written-form <nowiki>[An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.]</nowiki>
 *** Pseudohomophone-form <nowiki>[A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.]</nowiki>
-* Language-item-frequency <nowiki>[The frequency with which a unit occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
+* Language-item-frequency <nowiki>[The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
 ** Bigram-frequency <nowiki>[The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
 ** Word-frequency <nowiki>[The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
-* Language-unit-probability <nowiki>[The probability of a specific language unit occurring in a specific context.]</nowiki>
+* Language-item-probability <nowiki>[The probability of a specific language item occurring in a specific context.]</nowiki>
 ** Cloze-probability <nowiki>[The proportion of people who fill a gap in given sentence with a given word.]</nowiki>
 * Lexical-role <nowiki>[The role a language item takes in a vocabulary, like part of speech.]</nowiki>
 ** Adjective <nowiki>[A word that describes or defines a noun or noun phrase.]</nowiki>
@@ -164,9 +164,9 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 ** Adverb <nowiki>[Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.]</nowiki>
 ** Classifier <nowiki>[An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.]</nowiki>
 ** Conjunction <nowiki>[Connecting clauses or sentences or to coordinate words in the same clause.]</nowiki>
-*** Complementizer <nowiki>[Marks a finite or non- finite clause as functioning as a complement]</nowiki>
+*** Complementizer <nowiki>[Marks a finite or non- finite clause as functioning as a complement.]</nowiki>
 *** Coordinating-conjunction <nowiki>[Coordinates elements that are equal to each other.]</nowiki>
-*** Negation-word <nowiki>[Expressing falsity of a clause or sentence]</nowiki>
+*** Negation-word <nowiki>[Expressing falsity of a clause or sentence.]</nowiki>
 ** Determiner <nowiki>[Determining the kind of reference a noun or noun group has.]</nowiki>
 *** Article <nowiki>[A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.]</nowiki>
 *** Possesive-determiner <nowiki>[Determining the ownership of a noun or noun phrase.]</nowiki>
@@ -230,48 +230,46 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Syntactic-object <nowiki>[Complement of a verbal head.]</nowiki>
 **** Direct-syntactic-object <nowiki>[A word or phrase which receives the action of the verb.]</nowiki>
 **** Indirect-syntactic-object <nowiki>[A word of phrase which receives the direct object.]</nowiki>
-** Modifier <nowiki>[Optional element in a phrase or a clause that specifies a noun or acts as an adjunct]</nowiki>
+** Modifier <nowiki>[Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.]</nowiki>
 *** Adjunct <nowiki>[Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.]</nowiki>
 ** Predicate <nowiki>[Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.]</nowiki>
-*** Secondary-predicate <nowiki>[Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object)]</nowiki>
+*** Secondary-predicate <nowiki>[Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).]</nowiki>
 ** Subject <nowiki>[Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).]</nowiki>
 ** Syntactic-Head <nowiki>[Word that determines the syntactic category of a phrase.]</nowiki>
 
 '''Language-property''' <nowiki>{rooted=Property} [A property relating to a system of communication used by a particular group of people.]</nowiki>
 * Morphological-language-type <nowiki>[Morphological property relating to a specific system of communication used by a particular group of people.]</nowiki>
-** Analytic-language-type <nowiki>[Rarely using affixes, resulting in a low morheme per word ratio.]</nowiki>
+** Analytic-language-type <nowiki>[Rarely using affixes, resulting in a low morpheme per word ratio.]</nowiki>
 *** Morphological-isolating-type <nowiki>[Having a morpheme per word ratio close to one.]</nowiki>
 ** Morphological-polysynthetic-type <nowiki>[Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
 ** Morphological-synthetic-type <nowiki>[Having a higher morpheme per word ratio.]</nowiki>
-*** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.]</nowiki>
+*** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.]</nowiki>
 *** Morphological-fusional-type <nowiki>[Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki>
-* Orthographic-type <nowiki>[The type of unit each symbol serves to represent in written language.]</nowiki>
+* Orthographic-type <nowiki>[The type of language item each symbol serves to represent in written language.]</nowiki>
 ** Logographic-type <nowiki>[Representing an entire spoken word per character.]</nowiki>
-** Segmental-or-Alphabetic-type <nowiki>[Representing approcimately phoneme per character.]</nowiki>
+** Segmental-or-Alphabetic-type <nowiki>[Representing approximately phoneme per character.]</nowiki>
 *** Deep-orthographical-type <nowiki>[Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
 *** Shallow-orthographic-type <nowiki>[Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
-** Syllabary-type <nowiki>[Representing one syllable per character.]</nowiki>
+** Syllabary-type <nowiki>[Representing one syllable or mora per character.]</nowiki>
 
-'''Grammatical-relationship''' <nowiki>{rooted=Relation} [Grammatical relationship between language items.]</nowiki>
-* Agreement-with <nowiki>[Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.]</nowiki>
-
-'''Orthographic-relatedness-to''' <nowiki>{rooted=Relation} [Connected on the basis of writing or spelling]</nowiki>
-* Orthographic-distance-to <nowiki>[Removed in writing from]</nowiki>
-** Hamming-distance-to <nowiki>[The minimum number of substitutions required to change one string into another string of equal length.]</nowiki>
-***  <nowiki># {takesValue=true, valueClass=numericClass} [Integers 0 and up]</nowiki>
-** Levenshtein-distance-to <nowiki>[The minimum number of single-character edits to change into.]</nowiki>
-***  <nowiki># {takesValue=true, valueClass=numericClass} [Integers 0 and up]</nowiki>
-
-'''Phonological-relatedness-to''' <nowiki>{rooted=Relation} [Connected on the basis of sound]</nowiki>
-* Phonological-distance-to <nowiki>[Removed in sounding from]</nowiki>
-** Phonological-Levenshtein-distance-to <nowiki>[The minimum number of single-phoneme edits to change into]</nowiki>
-***  <nowiki># {takesValue=true, valueClass=numericClass} [Intergers 0 and up]</nowiki>
-
-'''Semantic-relatedness-to''' <nowiki>{rooted=Relation} [Connected on the basis of meaning to]</nowiki>
-* Antonymous-to <nowiki>[Meaning the opposite as]</nowiki>
-* Semantic-distance-to <nowiki>[Removed in meaning from]</nowiki>
-**  <nowiki># </nowiki>
-* Synonymous-to <nowiki>[Meaning exactly or nearly the same as]</nowiki>
+'''Linguistic-relation''' <nowiki>{rooted=Relation} [Related based on a linguistic property to.]</nowiki>
+* Grammatical-relation <nowiki>[Grammatical relationship between language items.]</nowiki>
+** Agreement-with <nowiki>[Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.]</nowiki>
+* Orthographic-relatedness-to <nowiki>[Connected on the basis of writing or spelling.]</nowiki>
+** Orthographic-distance-to <nowiki>[Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).]</nowiki>
+*** Hamming-distance-to <nowiki>[The minimum number of substitutions required to change one string into another string of equal length.]</nowiki>
+****  <nowiki># {takesValue=true, valueClass=numericClass} [Integers 0 and up.]</nowiki>
+*** Levenshtein-distance-to <nowiki>[The minimum number of single-character edits to change into.]</nowiki>
+****  <nowiki># {takesValue=true, valueClass=numericClass} [Integers 0 and up.]</nowiki>
+* Phonological-relatedness-to <nowiki>[Connected on the basis of sound.]</nowiki>
+** Phonological-distance-to <nowiki>[Removed in sounding from.]</nowiki>
+*** Phonological-Levenshtein-distance-to <nowiki>[The minimum number of single-phoneme edits to change into.]</nowiki>
+****  <nowiki># {takesValue=true, valueClass=numericClass} [Integers 0 and up.]</nowiki>
+* Semantic-relatedness-to <nowiki>[Connected on the basis of meaning to.]</nowiki>
+** Antonymous-to <nowiki>[Meaning the opposite as.]</nowiki>
+** Semantic-distance-to <nowiki>[Removed in meaning from.]</nowiki>
+***  <nowiki># </nowiki>
+** Synonymous-to <nowiki>[Meaning exactly or nearly the same as.]</nowiki>
 
 
 !# end schema
