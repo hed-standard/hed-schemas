@@ -46,9 +46,15 @@ for file in "$@"; do  # "$@" will contain the list of modified files passed by p
         if [[ "$file" != "$file_pattern"* ]]; then
             error_message+="Error: '$file' with extension .$extension should start with '$file_pattern'\n"
         else
-            # Call the validation function if the file pattern is correct
-            if ! hed_validate_schemas "$file" --add-all-extensions; then
-                error_message+="Error: Validation failed for '$file'.\n"
+            if [ -n "$VALIDATE_ALL" ]; then
+                # Verify all schemas match
+                if ! hed_validate_schemas "$file" --add-all-extensions; then
+                    error_message+="Error: Validation failed for '$file'.\n"
+                fi
+            else
+                if ! hed_validate_schemas "$file"; then
+                    error_message+="Error: Validation failed for '$file'.\n"
+                fi
             fi
         fi
     else
