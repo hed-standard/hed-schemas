@@ -2204,7 +2204,7 @@
             </attribute>
             <node>
                <name>Afroasiatic-language</name>
-               <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.</description>
+               <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -2219,7 +2219,7 @@
                </node>
                <node>
                   <name>Hebrew</name>
-                  <description>An Afroasiatic language mainly spoken in Isreal.</description>
+                  <description>An Afroasiatic language mainly spoken in Israel.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2552,7 +2552,7 @@
             </node>
             <node>
                <name>Koreanic</name>
-               <description>A system of commication belonging to the family of languages mainly spoken in Korea.</description>
+               <description>A system of communication belonging to the family of languages mainly spoken in Korea.</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -9576,7 +9576,7 @@
                   </attribute>
                   <node>
                      <name>Morphological-agglutinating-type</name>
-                     <description>Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.</description>
+                     <description>Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9609,7 +9609,7 @@
                </node>
                <node>
                   <name>Segmental-or-Alphabetic-type</name>
-                  <description>Representing approcimately phoneme per character.</description>
+                  <description>Representing approximately phoneme per character.</description>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
