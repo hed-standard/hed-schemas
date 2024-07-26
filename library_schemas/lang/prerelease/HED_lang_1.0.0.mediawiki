@@ -6,9 +6,9 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 !# start schema
 
 '''Language''' <nowiki>{rooted=Item} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
-* Afroasiatic-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Hord of Africa and parts of the Sahara and Sahel.]</nowiki>
+* Afroasiatic-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
 ** Arabic <nowiki>[An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
-** Hebrew <nowiki>[An Afroasiatic language mainly spoken in Isreal.]</nowiki>
+** Hebrew <nowiki>[An Afroasiatic language mainly spoken in Israel.]</nowiki>
 * Atlantic-Congo-language <nowiki>[A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
 ** Swahili <nowiki>[An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
 * Austroasiatic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.]</nowiki>
@@ -49,7 +49,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Ukrainian <nowiki>[A slavic language spoken mainly in Ukraine.]</nowiki>
 * Japonic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
 ** Japanese <nowiki>[A Japonic language mainly spoken in Japan.]</nowiki>
-* Koreanic <nowiki>[A system of commication belonging to the family of languages mainly spoken in Korea.]</nowiki>
+* Koreanic <nowiki>[A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
 ** Korean <nowiki>[A Koreanic language mainly spoken in Korea.]</nowiki>
 * Sino-Tibetan-language <nowiki>[A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
 ** Burmo-Qiangic-language <nowiki>[A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
@@ -243,11 +243,11 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Morphological-isolating-type <nowiki>[Having a morpheme per word ratio close to one.]</nowiki>
 ** Morphological-polysynthetic-type <nowiki>[Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
 ** Morphological-synthetic-type <nowiki>[Having a higher morpheme per word ratio.]</nowiki>
-*** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes wherby each one corresponds to a single grammatical feature.]</nowiki>
+*** Morphological-agglutinating-type <nowiki>[Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.]</nowiki>
 *** Morphological-fusional-type <nowiki>[Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki>
 * Orthographic-type <nowiki>[The type of language item each symbol serves to represent in written language.]</nowiki>
 ** Logographic-type <nowiki>[Representing an entire spoken word per character.]</nowiki>
-** Segmental-or-Alphabetic-type <nowiki>[Representing approcimately phoneme per character.]</nowiki>
+** Segmental-or-Alphabetic-type <nowiki>[Representing approximately phoneme per character.]</nowiki>
 *** Deep-orthographical-type <nowiki>[Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
 *** Shallow-orthographic-type <nowiki>[Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
 ** Syllabary-type <nowiki>[Representing one syllable or mora per character.]</nowiki>
