@@ -26,7 +26,7 @@ if [[ "$branch_prefix" == "admin" ]]; then
 fi
 
 # Verify the branch name is correct after modification
-echo "Processed branch_name: branch_prefix"
+echo "Processed branch_name: $branch_prefix"
 
 # Define base file pattern based on branch name
 if [[ "branch_prefix" == "standard" ]]; then
@@ -45,12 +45,18 @@ for file in "$@"; do  # "$@" will contain the list of modified files passed by p
     if [[ "$extension" == "xml" || "$extension" == "mediawiki" || "$extension" == "tsv" ]]; then
         if [[ "$file" != "$file_pattern"* ]]; then
             error_message+="Error: '$file' with extension .$extension should start with '$file_pattern'\n"
+        else
+            # Call the validation function if the file pattern is correct
+            if ! hed_validate_schemas "$file" --add-all-extensions; then
+                error_message+="Error: Validation failed for '$file'.\n"
+            fi
         fi
     else
         # Allow other files to be modified anywhere under the base pattern directory
         if [[ "$file" != "$base_pattern"* ]]; then
             error_message+="Error: '$file' should not be modified on this branch.  Only files under '$base_pattern' directory\n"
         fi
+
     fi
 done
 
