@@ -10,7 +10,7 @@ jobs:
   print_branch_name:
     runs-on: ubuntu-latest
     env:
-      BRANCH_NAME: ${{ github.head_ref }}  # Set the BRANCH_NAME environment variable
+      BRANCH_NAME: ${{ github.head_ref }}  # Set the variables used by the verify_branch script
       VALIDATE_ALL: "True"
     steps:
       - name: Checkout code
@@ -35,7 +35,7 @@ jobs:
         run: pip install pre-commit
 
       - name: Install dependencies
-        run: pip install git+https://github.com/ianca/hed-python.git@develop
+        run: pip install git+https://github.com/hed-standard/hed-python.git@develop
 
       - name: Run pre-commit on changed files
         run: |
