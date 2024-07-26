@@ -239,14 +239,14 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Orthographic-distance-to	2	Orthographic-relatedness-to		Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).		dc:source "Original"
 	Hamming-distance-to	3	Orthographic-distance-to		The minimum number of substitutions required to change one string into another string of equal length.		dc:source "Original"
 	Hamming-distance-to-#	4	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Hamming-distance-to and (valueClass some numericClass)	
-	Levenshtein-distance-to	3	Orthographic-distance-to		The minimum number of single-character edits to change into.		"dc:source ""Original"""
+	Levenshtein-distance-to	3	Orthographic-distance-to		The minimum number of single-character edits to change into.		dc:source "Original"
 	Levenshtein-distance-to-#	4	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Levenshtein-distance-to and (valueClass some numericClass)	
-	Phonological-relatedness-to	1	Linguistic-relation		Connected on the basis of sound.		"dc:source ""Original"""
-	Phonological-distance-to	2	Phonological-relatedness-to		Removed in sounding from.		"dc:source ""Original"""
-	Phonological-Levenshtein-distance-to	3	Phonological-distance-to		The minimum number of single-phoneme edits to change into.		"dc:source ""Original"""
-	Phonological-Levenshtein-distance-to-#	4	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Phonological-Levenshtein-distance-to and (valueClass some numericClass)	"dc:source ""Original"""
-	Semantic-relatedness-to	1	Linguistic-relation		Connected on the basis of meaning to.		"dc:source ""Original"""
-	Antonymous-to	2	Semantic-relatedness-to		Meaning the opposite as.		"dc:source ""Original"""
-	Semantic-distance-to	2	Semantic-relatedness-to		Removed in meaning from.		"dc:source ""Original"""
+	Phonological-relatedness-to	1	Linguistic-relation		Connected on the basis of sound.		dc:source "Original"
+	Phonological-distance-to	2	Phonological-relatedness-to		Removed in sounding from.		dc:source "Original"
+	Phonological-Levenshtein-distance-to	3	Phonological-distance-to		The minimum number of single-phoneme edits to change into.		dc:source "Original"
+	Phonological-Levenshtein-distance-to-#	4	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.	Phonological-Levenshtein-distance-to and (valueClass some numericClass)	dc:source "Original"
+	Semantic-relatedness-to	1	Linguistic-relation		Connected on the basis of meaning to.		dc:source "Original"
+	Antonymous-to	2	Semantic-relatedness-to		Meaning the opposite as.		dc:source "Original"
+	Semantic-distance-to	2	Semantic-relatedness-to		Removed in meaning from.		dc:source "Original"
 	Semantic-distance-to-#	3	Semantic-distance-to				
-	Synonymous-to	2	Semantic-relatedness-to		Meaning exactly or nearly the same as.		"dc:source ""Original"""
+	Synonymous-to	2	Semantic-relatedness-to		Meaning exactly or nearly the same as.		dc:source "Original"
