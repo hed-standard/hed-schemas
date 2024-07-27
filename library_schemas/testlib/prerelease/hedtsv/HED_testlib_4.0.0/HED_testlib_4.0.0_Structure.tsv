@@ -1,0 +1,4 @@
+hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description	omn:EquivalentTo
+HED_0000010	TestlibHeader	version="4.0.0", library="testlib", withStandard="8.3.0", unmerged="True"	HedHeader		HedHeader and (inHedSchema some TestlibSchema) and (version value "4.0.0") and (library value "testlib") and (withStandard value "8.3.0") and (unmerged value "True")
+HED_0000011	TestlibPrologue		HedPrologue	This schema is designed to be lazy partnered with prerelease 8.3.0.	HedPrologue and (inHedSchema some TestlibSchema)
+HED_0000012	TestlibEpilogue		HedEpilogue	A final section.	HedEpilogue and (inHedSchema some TestlibSchema)
