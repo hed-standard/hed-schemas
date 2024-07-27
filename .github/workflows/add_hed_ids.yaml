@@ -6,6 +6,7 @@ on:
       schema_name:
         description: 'The name of the schema("standard" for standard schema)'
         default: ''
+        required: true
       schema_version:
         description: 'The schema version to convert'
         required: true

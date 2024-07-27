@@ -16,23 +16,23 @@ fi
 # Echo the branch name and changed files
 echo "branch_name: $branch_name"
 echo "files: $@"
-# Check if the branch name does not start with 'develop-'
-if [[ ! "$branch_name" =~ ^develop- ]]; then
-    echo "This script only processes branches starting with 'develop-'. Exiting..."
+
+branch_prefix=${branch_name%%_*}
+
+# Check if the extracted branch prefix is "admin"
+if [[ "$branch_prefix" == "admin" ]]; then
+    echo "Any changes allowed on admin branches."
     exit 0
 fi
 
-# Strip 'develop-' from the branch name
-branch_name=${branch_name#develop-}
-
 # Verify the branch name is correct after modification
-echo "Processed branch_name: $branch_name"
+echo "Processed branch_name: $branch_prefix"
 
 # Define base file pattern based on branch name
-if [[ "$branch_name" == "standard" ]]; then
+if [[ "branch_prefix" == "standard" ]]; then
     base_pattern="standard_schema/"
 else
-    base_pattern="library_schemas/${branch_name}/"
+    base_pattern="library_schemas/${branch_prefix}/"
 fi
 
 # Define the second pattern by appending 'prerelease' to the base pattern
@@ -45,12 +45,24 @@ for file in "$@"; do  # "$@" will contain the list of modified files passed by p
     if [[ "$extension" == "xml" || "$extension" == "mediawiki" || "$extension" == "tsv" ]]; then
         if [[ "$file" != "$file_pattern"* ]]; then
             error_message+="Error: '$file' with extension .$extension should start with '$file_pattern'\n"
+        else
+            if [ -n "$VALIDATE_ALL" ]; then
+                # Verify all schemas match
+                if ! hed_validate_schemas "$file" --add-all-extensions; then
+                    error_message+="Error: Validation failed for '$file'.\n"
+                fi
+            else
+                if ! hed_validate_schemas "$file"; then
+                    error_message+="Error: Validation failed for '$file'.\n"
+                fi
+            fi
         fi
     else
         # Allow other files to be modified anywhere under the base pattern directory
         if [[ "$file" != "$base_pattern"* ]]; then
             error_message+="Error: '$file' should not be modified on this branch.  Only files under '$base_pattern' directory\n"
         fi
+
     fi
 done
 
