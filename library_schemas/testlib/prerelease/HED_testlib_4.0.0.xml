@@ -149,34 +149,6 @@
          </node>
       </node>
       <node>
-         <name>D-nonextension</name>
-         <attribute>
-            <name>inLibrary</name>
-            <value>testlib</value>
-         </attribute>
-         <node>
-            <name>SubnodeD3</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeD1</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeD2</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-      </node>
-      <node>
          <name>Action</name>
          <description>Do something.</description>
          <attribute>
@@ -3478,63 +3450,6 @@
                      <name>hedId</name>
                      <value>HED_0012389</value>
                   </attribute>
-                  <node>
-                     <name>Base-sound</name>
-                     <attribute>
-                        <name>rooted</name>
-                        <value>Instrument-sound</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>testlib</value>
-                     </attribute>
-                     <node>
-                        <name>Base-subsound1</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Base-subsound2</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Piano-sound</name>
-                     <attribute>
-                        <name>rooted</name>
-                        <value>Instrument-sound</value>
-                     </attribute>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>testlib</value>
-                     </attribute>
-                     <node>
-                        <name>Piano-subsound1</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Piano-subsound2</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Piano-subsound3</name>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>testlib</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Tone</name>
@@ -3713,37 +3628,6 @@
                   </attribute>
                </node>
             </node>
-         </node>
-      </node>
-      <node>
-         <name>E-extensionallowed</name>
-         <attribute>
-            <name>extensionAllowed</name>
-         </attribute>
-         <attribute>
-            <name>inLibrary</name>
-            <value>testlib</value>
-         </attribute>
-         <node>
-            <name>SubnodeE1</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeE2</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
-         </node>
-         <node>
-            <name>SubnodeE3</name>
-            <attribute>
-               <name>inLibrary</name>
-               <value>testlib</value>
-            </attribute>
          </node>
       </node>
       <node>
