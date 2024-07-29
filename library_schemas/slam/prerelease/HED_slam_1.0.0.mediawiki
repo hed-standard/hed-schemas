@@ -1,0 +1,24 @@
+HED version="1.0.0" library="slam" withStandard="8.3.0" unmerged="True"
+
+'''Prologue'''
+The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields. 
+
+!# start schema
+
+'''Anatomical-landmark''' <nowiki>{rooted=Anatomical-item} [A collection of specific points on the human body used for anatomical and sensor placement reference.]</nowiki>
+
+
+!# end schema
+
+'''Unit classes'''
+
+'''Unit modifiers'''
+
+'''Value classes'''
+
+'''Schema attributes'''
+
+'''Properties'''
+'''Epilogue'''
+
+!# end hed
