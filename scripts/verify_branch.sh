@@ -60,7 +60,7 @@ for file in "$@"; do  # "$@" will contain the list of modified files passed by p
     else
         # Allow other files to be modified anywhere under the base pattern directory
         if [[ "$file" != "$base_pattern"* ]]; then
-            error_message+="Error: '$file' should not be modified on this branch.  Only files under '$base_pattern' directory\n"
+            error_message+="Error: '$file' should not be modified on this branch.  Only files under '$base_pattern' directory should be modified.\n"
         fi
 
     fi
