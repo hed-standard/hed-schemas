@@ -1,0 +1,2 @@
+hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
+	Body-landmark	0	Anatomical-item	rooted=Anatomical-item	A place on a body.		dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement."
