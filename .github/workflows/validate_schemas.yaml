@@ -7,7 +7,7 @@ on:
     branches: ["*"]
 
 jobs:
-  process-changed-files:
+  validate-schemas:
     runs-on: ubuntu-latest
 
     steps:
