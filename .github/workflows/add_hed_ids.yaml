@@ -21,7 +21,7 @@ on:
 
 
 jobs:
-  manage-branch:
+  create-hed-ids-pr:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
