@@ -6,7 +6,7 @@ on:
 
 
 jobs:
-  check_changes:
+  update-schemas-with-changes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
