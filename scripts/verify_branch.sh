@@ -35,13 +35,19 @@ else
     base_pattern="library_schemas/${branch_prefix}/"
 fi
 
-# Define the second pattern by appending 'prerelease' to the base pattern
+# Valid location for schemas
 file_pattern="${base_pattern}prerelease/"
 
-# Check if the file paths start with the defined pattern for specified extensions
+# Banned locations for ANY changes
+declare -a banned_patterns=(
+    "${base_pattern}hedxml/"
+    "${base_pattern}hedwiki/"
+    "${base_pattern}hedtsv/"
+)
+
 for file in "$@"; do  # "$@" will contain the list of modified files passed by pre-commit
     extension="${file##*.}"
-    # Check files based on their extension
+    # First check schemas in the correct location, and validate them.
     if [[ "$extension" == "xml" || "$extension" == "mediawiki" || "$extension" == "tsv" ]]; then
         if [[ "$file" != "$file_pattern"* ]]; then
             error_message+="Error: '$file' with extension .$extension should start with '$file_pattern'\n"
@@ -58,11 +64,21 @@ for file in "$@"; do  # "$@" will contain the list of modified files passed by p
             fi
         fi
     else
-        # Allow other files to be modified anywhere under the base pattern directory
-        if [[ "$file" != "$base_pattern"* ]]; then
-            error_message+="Error: '$file' should not be modified on this branch.  Only files under '$base_pattern' directory should be modified.\n"
-        fi
+        is_banned=false
 
+        # Check against each banned pattern
+        for banned_pattern in "${banned_patterns[@]}"; do
+            if [[ "$file" == "$banned_pattern"* ]]; then
+                error_message+="Error: '$file' is in a restricted directory '$banned_pattern'. Modifications are not allowed in this directory.\n"
+                is_banned=true
+                break
+            fi
+        done
+
+        # Check if the file is not under the base pattern and not already banned
+        if [[ "$file" != "$base_pattern"* && "$is_banned" == false ]]; then
+            error_message+="Error: '$file' should not be modified on this branch. Only files under '$base_pattern' directory should be modified.\n"
+        fi
     fi
 done
 
