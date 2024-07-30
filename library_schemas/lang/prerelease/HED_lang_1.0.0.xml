@@ -8969,7 +8969,7 @@
                      </attribute>
                   </node>
                   <node>
-                     <name>Possesive-determiner</name>
+                     <name>Possessive-determiner</name>
                      <description>Determining the ownership of a noun or noun phrase.</description>
                      <attribute>
                         <name>inLibrary</name>
@@ -9049,7 +9049,7 @@
                      </attribute>
                   </node>
                   <node>
-                     <name>Possesive-pronoun</name>
+                     <name>Possessive-pronoun</name>
                      <description>Pronoun referring to the possession of a grammatical person.</description>
                      <attribute>
                         <name>inLibrary</name>
@@ -9111,7 +9111,7 @@
                      </node>
                   </node>
                   <node>
-                     <name>Intransative-verb</name>
+                     <name>Intransitive-verb</name>
                      <description>A verb that does not require an object.</description>
                      <attribute>
                         <name>inLibrary</name>
