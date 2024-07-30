@@ -1,2 +1,13 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
-	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement."
+	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement.
+	Head-landmark	1	Anatomical-landmarks		Points on the head used as reference landmarks.		dc:source "Original"
+	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.		
+	Inion	2	Head-landmark		The most prominent point of the occipital bone at the back of the head.		
+	Left Helix-Tragus Junction (LHJ)	2	Head-landmark		The point where the helix meets the tragus of the left ear.		
+	Right Helix-Tragus Junction (RHJ)	2	Head-landmark		The point where the helix meets the tragus of the right ear.		
+	Vertex	2	Head-landmark		The highest point on the head in the midline.		
+	Mastoid-process	2	Head-landmark				dc:source "Original"
+	Torso-chest-landmark	1	Anatomical-landmarks		Points on the chest used as reference landmarks.		dc:source "Original"
+	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		has_dbxref: "NCIT:C32048" "FMA:12525" "UBERON:0002497"
+	Vertebra-prominens (C7)	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		has_dbxref: "NCIT:C32245" "FMA:23260" "UBERON:0004616"
+	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.		has_dbxref: "NCIT:C33895" "FMA:7488" "UBERON:0002207"
