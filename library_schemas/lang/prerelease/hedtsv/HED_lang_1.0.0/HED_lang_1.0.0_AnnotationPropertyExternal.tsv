@@ -1,5 +1,5 @@
 Prefix	ID
-dc:	contributor
+dc: contributor
 dc:	creator
 dc:	date
 dc:	description
@@ -13,4 +13,5 @@ dc:	subject
 dc:	title
 dc:	type
 foaf:	homepage
+rdfs:   comment
 terms:	license
