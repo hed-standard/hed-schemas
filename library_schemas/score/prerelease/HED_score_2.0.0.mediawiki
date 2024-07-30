@@ -2,7 +2,7 @@ HED version="2.0.0" library="score" withStandard="8.3.0" unmerged="True"
 
 '''Prologue'''
 This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
-The HED-SCORE library schema allows cliniciand and scientists to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
+The HED-SCORE library schema allows clinical and and scientists to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
@@ -185,11 +185,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 *** RPP-polarity <nowiki>{suggestedTag=Positive, suggestedTag=Negative, suggestedTag=Property-not-possible-to-determine} [Polarity (for PDs and SW). (Source: Beniczky ea 2017, Table 8.)]</nowiki>
 **** RPP-tangential-polarity <nowiki>[Tangential/horizontal dipole. (Source: Beniczky ea 2017, Table 8.)]</nowiki>
 *****  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
+* Sensor-list <nowiki>{requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
+**  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 * Source-analysis-property <nowiki>[In case source imaging is done, the results are scored at sublobar level: frontal (perisylvian-superior surface; lateral; mesial; polar; orbitofrontal), temporal (polar; basal, lateral-anterior; lateral-posterior; perisylvian-inferior surface), central (lateral convexity; mesial; central sulcus – anterior surface, central sulcus – posterior surface; opercular), parietal (lateral-convexity; mesial; opercular), occipital (lateral; mesial, basal) and insula. (Source: Beniczky ea 2017, Section 8.)]</nowiki>
 **  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 * Location-property <nowiki>{suggestedTag=Left, suggestedTag=Right, suggestedTag=Body-part} [Location can be scored for features. Semiologic feature can also be characterized by the somatotopic modifier (i.e. the part of the body where it occurs). In this respect, laterality (left, right, symmetric, asymmetric, left greater than right, right greater than left), body part (eyelid, face, arm, leg, trunk, visceral, left/right) and centricity (axial (trunk), proximal limb, distal limb). (Source: Beniczky ea 2017, Sections 8 and 10)]</nowiki>
-** Sensors <nowiki>{requireChild} [Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.]</nowiki>
-***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 ** Feature-propagation <nowiki>{suggestedTag=Body-part, suggestedTag=Sensors} [When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 ** Multifocal-feature <nowiki>{suggestedTag=Property-not-possible-to-determine} [When the same interictal graphoelement is observed bilaterally and at least in three independent locations, can score them using one entry, and choosing multifocal as a descriptor of the locations of the given interictal graphoelements, optionally emphasizing the involved, and the most active sites.]</nowiki>
@@ -237,14 +237,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 *****  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 **** Static-RPP-dynamics <nowiki>[Source: Beniczky ea 2017, Table 8.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
-** Feature-incidence <nowiki>[Estimate of how often features are seen in the recording. This is scored differently, depending on the type of feature. For single discharges, this is scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)]</nowiki>
+** Feature-incidence <nowiki>[For single discharges, estimates of how often features are seen in the recording are scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)]</nowiki>
 *** One-time-incidence <nowiki>[Source: Beniczky ea 2017, Table 6.]</nowiki>
 *** Rare-feature-incidence <nowiki>[Less than 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
 *** Uncommon-feature-incidence <nowiki>[1/5 min to 1/h. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
 *** Occasional-feature-incidence <nowiki>[1/min to 1/5min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
 *** Frequent-feature-incidence <nowiki>[1/10 s to 1/min. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
 *** Abundant-feature-incidence <nowiki>[Greater than 1/10 s. (Source: Beniczky ea 2017, Table 6.)]</nowiki>
-** Feature-prevalence <nowiki>[Estimate of how often features are seen in the recording. This is scored differently, depending on the type of feature. For trains or bursts this is scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)]</nowiki>
+** Feature-prevalence <nowiki>[For trains or bursts, estimates of how often features are seen in the recording are scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)]</nowiki>
 *** Rare-prevalence <nowiki>[Less than 1 percent. (Source: Beniczky ea 2017, Table 6, Table 8).]</nowiki>
 *** Occasional-prevalence <nowiki>[1 to 9 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
 *** Frequent-prevalence <nowiki>[10 to 49 percent. (Source: Beniczky ea 2017, Table 6, Table 8)]</nowiki>
@@ -449,7 +449,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 ***  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
 ** Apnea-hypopnea-index <nowiki>{suggestedTag=Frequency} [Events/hour as calculated by dividing the number of apnoea and hypopnoea events by the number of hours of sleep. (Source: Wikipedia; Beniczky ea 2013, Table 9.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
-** Periodic-respiration <nowiki>[Source: Beniczky ea 2017, Table 16]</nowiki>
+** Periodic-respiration <nowiki>[Three or more episodes of central apnea lasting at least 4 seconds, separated by no more than 30 seconds of normal breathing. (Source:Wikipedia, Source: Beniczky ea 2017, Table 16]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.(Source: Beniczky ea 2017, Table 16.)]</nowiki>
 ** Tachypnea <nowiki>{suggestedTag=Frequency} [Numerical value for cycles / minute. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
@@ -465,13 +465,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 ** ECG-asystolia <nowiki>[Absence of ventricular contractions in the context of a lethal heart arrhythmia. Duration in seconds of the absence. (Source: Wikipedia; Beniczky ea 2013, Table 9.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
 ** ECG-bradycardia <nowiki>{suggestedTag=Frequency} [A resting heart rate under 60 beats per minute. Numerical value for frequency in beats/minute. (Source: Wikipedia; Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)]</nowiki>
-***  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+***  <nowiki># {takesValue, valueClass=textClass}[Free text.]/nowiki>
 ** ECG-extrasystole <nowiki>[A heart rhythm disorder corresponding to a premature contraction of one of the chambers of the heart. (Source: Wikipedia; Beniczky ea 2017, Table 16.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 ** ECG-ventricular-premature-depolarization <nowiki>[A premature ventricular contraction (PVC) is a common event where the heartbeat is initiated by Purkinje fibers in the ventricles rather than by the sinoatrial node. (Source: Wikipedia; Beniczky ea 2017, Table 16.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
-** ECG-tachycardia <nowiki>{suggestedTag=Frequency} [Numerical value for frequency in beats/minute. (Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)]</nowiki>
-***  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+** ECG-tachycardia <nowiki>{suggestedTag=Frequency} [A resting heart rate over 100 beats per minute. Numerical value for frequency in beats/minute. (Source: Wikipedia, Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)]</nowiki>
+***  <nowiki># {takesValue, valueClass=textClass}</nowiki>
 ** Other-ECG-feature <nowiki>{requireChild} [Source: Beniczky ea 2017, Table 16.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 * EMG-channel-feature <nowiki>{suggestedTag=Feature-significance-to-recording, suggestedTag=Symmetrical, suggestedTag=Left, suggestedTag=Right} [Findings in Electromyography recordings (Source: Beniczky ea 2017, Section 13, Table 16.). Suggested tags can be used to note the side of the muscle (Left or Right). The order of activation may be indicated using Temporal-relation: (Left, (Before,Right)).]</nowiki>
@@ -480,7 +480,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 ** Myoclonus <nowiki>[Source: Beniczky ea 2017, Table 16.]</nowiki>
 *** Negative-myoclonus <nowiki>[Source: Beniczky ea 2017, Table 16.]</nowiki>
 *** Myoclonus-rhythmic <nowiki>[Numerical value for frequency. (Source: Beniczky ea 2017, Table 16.)]</nowiki>
-****  <nowiki># {takesValue, valueClass=numericClass}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits}</nowiki>
 *** Myoclonus-arrhythmic <nowiki>[Source: Beniczky ea 2017, Table 16.]</nowiki>
 *** Myoclonus-synchronous <nowiki>[Source: Beniczky ea 2017, Table 16.]</nowiki>
 *** Myoclonus-asynchronous <nowiki>[Source: Beniczky ea 2017, Table 16.]</nowiki>
