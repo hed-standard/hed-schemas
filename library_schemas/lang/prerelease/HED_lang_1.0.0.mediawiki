@@ -169,7 +169,7 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Negation-word <nowiki>[Expressing falsity of a clause or sentence.]</nowiki>
 ** Determiner <nowiki>[Determining the kind of reference a noun or noun group has.]</nowiki>
 *** Article <nowiki>[A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.]</nowiki>
-*** Possesive-determiner <nowiki>[Determining the ownership of a noun or noun phrase.]</nowiki>
+*** Possessive-determiner <nowiki>[Determining the ownership of a noun or noun phrase.]</nowiki>
 ** Interjection <nowiki>[A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.]</nowiki>
 ** Noun <nowiki>[Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.]</nowiki>
 ** Numeral <nowiki>[Expressing a number or relation to a number.]</nowiki>
@@ -179,14 +179,14 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 *** Indefinite-pronoun <nowiki>[Pronoun lacking a specific referent or having generic meaning.]</nowiki>
 *** Interrogative-pronoun <nowiki>[Pronoun which prompts a question.]</nowiki>
 *** Personal-pronoun <nowiki>[Pronoun associated with a grammatical person.]</nowiki>
-*** Possesive-pronoun <nowiki>[Pronoun referring to the possession of a grammatical person.]</nowiki>
+*** Possessive-pronoun <nowiki>[Pronoun referring to the possession of a grammatical person.]</nowiki>
 *** Reflexive-pronoun <nowiki>[Pronoun that refers to another noun or pronoun within the same sentence.]</nowiki>
 *** Relative-pronoun <nowiki>[Pronoun that marks a relative clause.]</nowiki>
 ** Quantifier <nowiki>[Expressing a reference definite or indefinite number or amount.]</nowiki>
 ** Verb <nowiki>{suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect} [Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.]</nowiki>
 *** Auxiliary-verb <nowiki>[A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).]</nowiki>
 **** Modal-verb <nowiki>[An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.]</nowiki>
-*** Intransative-verb <nowiki>[A verb that does not require an object.]</nowiki>
+*** Intransitive-verb <nowiki>[A verb that does not require an object.]</nowiki>
 *** Psychological-verb <nowiki>[A verb that takes two arguments, an experiencer and a theme.]</nowiki>
 *** Transitive-verb <nowiki>{suggestedTag=Object} [A verb that requires one or more objects to receive the action.]</nowiki>
 *** Unaccusative-verb <nowiki>[An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).]</nowiki>
