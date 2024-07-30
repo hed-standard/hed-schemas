@@ -465,7 +465,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 ** ECG-asystolia <nowiki>[Absence of ventricular contractions in the context of a lethal heart arrhythmia. Duration in seconds of the absence. (Source: Wikipedia; Beniczky ea 2013, Table 9.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits}</nowiki>
 ** ECG-bradycardia <nowiki>{suggestedTag=Frequency} [A resting heart rate under 60 beats per minute. Numerical value for frequency in beats/minute. (Source: Wikipedia; Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)]</nowiki>
-***  <nowiki># {takesValue, valueClass=textClass}[Free text.]/nowiki>
+***  <nowiki># {takesValue, valueClass=textClass}[Free text.]</nowiki>
 ** ECG-extrasystole <nowiki>[A heart rhythm disorder corresponding to a premature contraction of one of the chambers of the heart. (Source: Wikipedia; Beniczky ea 2017, Table 16.)]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass} [Free text.]</nowiki>
 ** ECG-ventricular-premature-depolarization <nowiki>[A premature ventricular contraction (PVC) is a common event where the heartbeat is initiated by Purkinje fibers in the ventricles rather than by the sinoatrial node. (Source: Wikipedia; Beniczky ea 2017, Table 16.)]</nowiki>
