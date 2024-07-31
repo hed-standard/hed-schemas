@@ -22,8 +22,3 @@ Dora Hermes (@dorahermes)
 branch called `score_contributor` in your forked repository adding your name to this list in alphabetical order.
 Alternatively, post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) to this repository
 with the tag `[CONTRIBUTOR_SCORE]`.
-
-*Please add your name here in alphabetical order if you are making a contribution.
-
-
-
