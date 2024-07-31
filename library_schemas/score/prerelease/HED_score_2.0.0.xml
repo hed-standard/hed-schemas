@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <HED version="2.0.0" library="score" withStandard="8.3.0">
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
-The HED-SCORE library schema allows cliniciand and scientists to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
+The HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
@@ -674,7 +674,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Feature-frequency</value>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
             </attribute>
             <attribute>
                <name>inLibrary</name>
@@ -692,7 +692,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Rhythmic-property</value>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -730,7 +730,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -744,7 +744,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -758,7 +758,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -771,7 +771,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -784,7 +784,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -797,7 +797,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                   <value>Appearance-mode</value>
                </attribute>
                <attribute>
@@ -2158,7 +2158,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>RPP-morphology</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Feature-frequency</value>
                <value>RPP-time-related-feature</value>
             </attribute>
@@ -2175,7 +2175,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>RPP-with-superimposed-activity</value>
                <value>RPP-absolute-amplitude</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Feature-frequency</value>
                <value>RPP-time-related-feature</value>
             </attribute>
@@ -2196,7 +2196,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>RPP-relative-amplitude</value>
                <value>RPP-polarity</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Multifocal-feature</value>
                <value>Feature-frequency</value>
                <value>RPP-time-related-feature</value>
@@ -3503,6 +3503,32 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
          </node>
          <node>
+            <name>Sensor-list</name>
+            <description>Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.</description>
+            <attribute>
+               <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>inLibrary</name>
+               <value>score</value>
+            </attribute>
+            <node>
+               <name>#</name>
+               <description>Free text.</description>
+               <attribute>
+                  <name>takesValue</name>
+               </attribute>
+               <attribute>
+                  <name>valueClass</name>
+                  <value>textClass</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>score</value>
+               </attribute>
+            </node>
+         </node>
+         <node>
             <name>Source-analysis-property</name>
             <description>In case source imaging is done, the results are scored at sublobar level: frontal (perisylvian-superior surface; lateral; mesial; polar; orbitofrontal), temporal (polar; basal, lateral-anterior; lateral-posterior; perisylvian-inferior surface), central (lateral convexity; mesial; central sulcus – anterior surface, central sulcus – posterior surface; opercular), parietal (lateral-convexity; mesial; opercular), occipital (lateral; mesial, basal) and insula. (Source: Beniczky ea 2017, Section 8.)</description>
             <attribute>
@@ -3539,38 +3565,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>score</value>
             </attribute>
             <node>
-               <name>Sensors</name>
-               <description>Lists all corresponding sensors (electrodes/channels in montage). The sensor-group is selected from a list defined in the site-settings for each EEG-lab.</description>
-               <attribute>
-                  <name>requireChild</name>
-               </attribute>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>score</value>
-               </attribute>
-               <node>
-                  <name>#</name>
-                  <description>Free text.</description>
-                  <attribute>
-                     <name>takesValue</name>
-                  </attribute>
-                  <attribute>
-                     <name>valueClass</name>
-                     <value>textClass</value>
-                  </attribute>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>score</value>
-                  </attribute>
-               </node>
-            </node>
-            <node>
                <name>Feature-propagation</name>
                <description>When propagation within the graphoelement is observed, first the location of the onset region is scored. Then, the location of the propagation can be noted.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Body-part</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -4086,7 +4086,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Feature-incidence</name>
-               <description>Estimate of how often features are seen in the recording. This is scored differently, depending on the type of feature. For single discharges, this is scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)</description>
+               <description>For single discharges, estimates of how often features are seen in the recording are scored as incidence (how often it occurs/time-epoch). (Source: Beniczky ea 2017, Section 8, Table 6.)</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -4142,7 +4142,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Feature-prevalence</name>
-               <description>Estimate of how often features are seen in the recording. This is scored differently, depending on the type of feature. For trains or bursts this is scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)</description>
+               <description>For trains or bursts, estimates of how often features are seen in the recording are scored as prevalence (the percentage of the recording covered by the train/burst). (Source: Beniczky ea 2017, Section 8, Table 6, Table 8.)</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -5921,7 +5921,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Hypsarrhythmia-classic</value>
                <value>Hypsarrhythmia-modified</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Feature-propagation</value>
                <value>Multifocal-feature</value>
                <value>Appearance-mode</value>
@@ -5944,7 +5944,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Occipital-intermittent-rhythmic-delta-activity</value>
                <value>Temporal-intermittent-rhythmic-delta-activity</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
                <value>Feature-incidence</value>
@@ -5968,7 +5968,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>suggestedTag</name>
                   <value>RPP-morphology</value>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                   <value>RPP-time-related-feature</value>
                </attribute>
                <attribute>
@@ -6014,7 +6014,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
-                  <value>Sensors</value>
+                  <value>Sensor-list</value>
                   <value>Appearance-mode</value>
                   <value>Discharge-pattern</value>
                </attribute>
@@ -8192,7 +8192,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Rhythmic-property</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8207,7 +8207,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8235,7 +8235,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8250,7 +8250,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8265,7 +8265,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8280,7 +8280,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8295,7 +8295,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8310,7 +8310,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -8500,7 +8500,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Periodic-respiration</name>
-               <description>Source: Beniczky ea 2017, Table 16</description>
+               <description>Three or more episodes of central apnea lasting at least 4 seconds, separated by no more than 30 seconds of normal breathing. (Source:Wikipedia, Source: Beniczky ea 2017, Table 16</description>
                <attribute>
                   <name>inLibrary</name>
                   <value>score</value>
@@ -8703,12 +8703,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>#</name>
+                  <description>Free text.</description>
                   <attribute>
                      <name>takesValue</name>
                   </attribute>
                   <attribute>
                      <name>valueClass</name>
-                     <value>numericClass</value>
+                     <value>textClass</value>
                   </attribute>
                   <attribute>
                      <name>inLibrary</name>
@@ -8764,7 +8765,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>ECG-tachycardia</name>
-               <description>Numerical value for frequency in beats/minute. (Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)</description>
+               <description>A resting heart rate over 100 beats per minute. Numerical value for frequency in beats/minute. (Source: Wikipedia, Source: Beniczky ea 2017, Table 16; Beniczky ea 2013, Table 9.)</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Frequency</value>
@@ -8780,7 +8781,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </attribute>
                   <attribute>
                      <name>valueClass</name>
-                     <value>numericClass</value>
+                     <value>textClass</value>
                   </attribute>
                   <attribute>
                      <name>inLibrary</name>
@@ -8885,6 +8886,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <attribute>
                         <name>valueClass</name>
                         <value>numericClass</value>
+                     </attribute>
+                     <attribute>
+                        <name>unitClass</name>
+                        <value>frequencyUnits</value>
                      </attribute>
                      <attribute>
                         <name>inLibrary</name>
@@ -16906,7 +16911,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -16922,7 +16927,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -16938,7 +16943,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -16954,7 +16959,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -16970,7 +16975,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -16986,7 +16991,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Asymmetrical</value>
                <value>Symmetrical</value>
             </attribute>
@@ -17017,7 +17022,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17040,7 +17045,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17055,7 +17060,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17070,7 +17075,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17085,7 +17090,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17100,7 +17105,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17115,7 +17120,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17130,7 +17135,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17153,7 +17158,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17168,7 +17173,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
@@ -17183,7 +17188,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>suggestedTag</name>
                <value>Categorical-location-value</value>
-               <value>Sensors</value>
+               <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
             </attribute>
