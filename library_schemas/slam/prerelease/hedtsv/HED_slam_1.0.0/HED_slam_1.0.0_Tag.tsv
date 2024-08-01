@@ -1,12 +1,12 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
 	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement.
 	Head-landmark	1	Anatomical-landmark		Points on the head used as reference landmarks.		dc:source "Original"
-	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.		
 	Inion	2	Head-landmark		The most prominent point of the occipital bone at the back of the head.		
 	Left-helix-tragus-junction-LHJ	2	Head-landmark		The point where the helix meets the tragus of the left ear.		
+	Mastoid-process	2	Head-landmark				dc:source "Original"
+	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.		
 	Right-helix-tragus-junction-RHJ	2	Head-landmark		The point where the helix meets the tragus of the right ear.		
 	Vertex	2	Head-landmark		The highest point on the head in the midline.		
-	Mastoid-process	2	Head-landmark				dc:source "Original"
 	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.		dc:source "Original"
 	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		obo:has_dbxref "NCIT:C32048", obo:has_dbxref "FMA:12525", obo:has_dbxref "UBERON:0002497"
 	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		obo:has_dbxref "NCIT:C32245", obo:has_dbxref "FMA:23260", obo:has_dbxref "UBERON:0004616"
