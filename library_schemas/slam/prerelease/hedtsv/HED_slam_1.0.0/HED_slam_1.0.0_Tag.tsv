@@ -7,7 +7,7 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Right-helix-tragus-junction-RHJ	2	Head-landmark		The point where the helix meets the tragus of the right ear.		
 	Vertex	2	Head-landmark		The highest point on the head in the midline.		
 	Mastoid-process	2	Head-landmark				dc:source "Original"
-	Torso-chest-landmark	1	Anatomical-landmarks		Points on the chest used as reference landmarks.		dc:source "Original"
+	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.		dc:source "Original"
 	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		obo:has_dbxref "NCIT:C32048", obo:has_dbxref "FMA:12525", obo:has_dbxref "UBERON:0002497"
 	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		obo:has_dbxref "NCIT:C32245", obo:has_dbxref "FMA:23260", obo:has_dbxref "UBERON:0004616"
 	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.		obo:has_dbxref "NCIT:C33895", obo:has_dbxref "FMA:7488", obo:has_dbxref "UBERON:0002207"
