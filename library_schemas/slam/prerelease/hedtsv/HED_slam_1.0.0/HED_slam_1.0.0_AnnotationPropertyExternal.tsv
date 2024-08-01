@@ -14,3 +14,4 @@ dc:	title
 dc:	type
 foaf:	homepage
 terms:	license
+obo:	has_dbxref

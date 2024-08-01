@@ -9,4 +9,3 @@ dc:	http://purl.org/dc/elements/1.1/	The Dublin Core elements
 terms:	http://purl.org/dc/terms/	The Dublin Core terms
 foaf:	http://xmlns.com/foaf/0.1/	Friend-of-a-Friend http://xmlns.com/foaf/spec/
 obo:	http://purl.obolibrary.org/obo/	Open Biomedical Ontologies
-has_dbxref:	http://www.geneontology.org/formats/oboInOwl#dbxref	Relates an entity to an external database entry
