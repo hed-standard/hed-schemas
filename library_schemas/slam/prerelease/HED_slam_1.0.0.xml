@@ -1512,6 +1512,93 @@
                      <name>inLibrary</name>
                      <value>slam</value>
                   </attribute>
+                  <node>
+                     <name>Head-landmark</name>
+                     <description>Points on the head used as reference landmarks.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>slam</value>
+                     </attribute>
+                     <node>
+                        <name>Inion</name>
+                        <description>The most prominent point of the occipital bone at the back of the head.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Left-helix-tragus-junction-LHJ</name>
+                        <description>The point where the helix meets the tragus of the left ear.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Mastoid-process</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Nasion</name>
+                        <description>The midpoint between the eyes just above the bridge of the nose.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Right-helix-tragus-junction-RHJ</name>
+                        <description>The point where the helix meets the tragus of the right ear.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Vertex</name>
+                        <description>The highest point on the head in the midline.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Torso-chest-landmark</name>
+                     <description>Points on the chest used as reference landmarks.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>slam</value>
+                     </attribute>
+                     <node>
+                        <name>Acromion-process</name>
+                        <description>The outermost point of the shoulder blade.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Vertebra-prominens-C7</name>
+                        <description>The seventh cervical vertebra at the base of the neck.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Xiphoid-process</name>
+                        <description>The small cartilaginous process at the lower end of the sternum.</description>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>slam</value>
+                        </attribute>
+                     </node>
+                  </node>
                </node>
                <node>
                   <name>Body</name>
