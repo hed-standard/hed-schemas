@@ -1,5 +1,10 @@
 # CHANGELOG for HED score library schema
 
+## Major release score 2.0.0 September 6, 2024.
+
+Many tags were deleted, reorganized or renamed. Spreadsheets containing the work and mappings are available under
+release notes for 2.0.0 on GitHub.
+
 ## Changes for score 1.2.0 released July 16, 2024.
 
 **Tags moved (Minor):**
