@@ -17,6 +17,15 @@ A second revised and extended version of SCORE achieved international consensus.
 ### Viewing the SCORE HED Library Schema
 > The HED SCORE library can be viewed using the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
 
+### Transition from HED SCORE major version 1 to 2
+
+HED SCORE release 2.0.0 represents a major reorganization of HED SCORE so that it more closely aligns with the
+nominal scores standard as specified in Beniczky et al. 2013, 2017. 
+The artifacts were moved to the HED standard schema and HED hierarchy was reorganized to better reflect
+the underlying concepts. The formal GitHub release of 2.0.0 includes a spreadsheet explaining
+how each term in HED SCORE 1.2.0 evolved in HED SCORE 2.0.0.
+
+
 ### References
 
 > [1] Pal Attia, T. et al. (2023 preprint).  
