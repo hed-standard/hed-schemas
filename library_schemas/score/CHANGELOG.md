@@ -3,7 +3,13 @@
 ## Major release score 2.0.0 September 6, 2024.
 
 Many tags were deleted, reorganized or renamed. Spreadsheets containing the work and mappings are available under
-release notes for 2.0.0 on GitHub.
+release notes for 2.0.0 on GitHub. The goals of this release were:
+* Make sure that the tags exactly corresponded to the SCORE standard as delineated by Beniczky et al. 2013.
+* Assign GUID's to every tag to better integrate into the linked data ecosystem.
+* Update tag descriptions to give a description of every tag with source also cited.
+* Move and expand the Artifact subtree from SCORE into the HED standard schema.
+* Reorganize and clarify the Finding and Episode subtrees.
+* Spreadsheets are available on Zenodo and in the release files showing how tags in 1.2.0 map into tags in 2.0.0.
 
 ## Changes for score 1.2.0 released July 16, 2024.
 
