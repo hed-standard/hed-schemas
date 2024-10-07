@@ -6086,6 +6086,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <name>takesValue</name>
                            </attribute>
                            <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
                               <name>unitClass</name>
                               <value>frequencyUnits</value>
                            </attribute>

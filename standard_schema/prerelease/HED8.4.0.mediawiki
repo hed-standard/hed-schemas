@@ -691,7 +691,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Refresh-rate <nowiki>{hedId=HED_0012651} [The frequency with which the image on a computer monitor or similar electronic display screen is refreshed, usually expressed in hertz.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012652}</nowiki>
 ***** Sampling-rate <nowiki>{hedId=HED_0012653} [The number of digital samples taken or recorded per unit of time.]</nowiki>
-******  <nowiki># {takesValue, valueClass=numericClass,unitClass=frequencyUnits, hedId=HED_0012654}</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012654}</nowiki>
 ***** Speed <nowiki>{hedId=HED_0012655} [A scalar measure of the rate of movement of the object expressed either as the distance traveled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=speedUnits, hedId=HED_0012656}</nowiki>
 ***** Temporal-rate <nowiki>{hedId=HED_0012657} [The number of items per unit of time.]</nowiki>
