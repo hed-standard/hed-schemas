@@ -4194,6 +4194,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <value>numericClass</value>
                      </attribute>
                      <attribute>
+                        <name>unitClass</name>
+                        <value>timeUnits</value>
+                     </attribute>
+                     <attribute>
                         <name>hedId</name>
                         <value>HED_0012475</value>
                      </attribute>
