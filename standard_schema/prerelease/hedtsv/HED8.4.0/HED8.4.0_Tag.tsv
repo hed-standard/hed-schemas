@@ -679,7 +679,7 @@ HED_0012650	Jerk-rate-#	6	Jerk-rate	takesValue, valueClass=numericClass, unitCla
 HED_0012651	Refresh-rate	5	Rate-of-change		The frequency with which the image on a computer monitor or similar electronic display screen is refreshed, usually expressed in hertz.	
 HED_0012652	Refresh-rate-#	6	Refresh-rate	takesValue, valueClass=numericClass		Refresh-rate and (valueClass some numericClass)
 HED_0012653	Sampling-rate	5	Rate-of-change		The number of digital samples taken or recorded per unit of time.	
-HED_0012654	Sampling-rate-#	6	Sampling-rate	takesValue, unitClass=frequencyUnits		Sampling-rate and (unitClass some frequencyUnits)
+HED_0012654	Sampling-rate-#	6	Sampling-rate	takesValue, valueClass=numericClass, unitClass=frequencyUnits		Sampling-rate and (valueClass some numericClass) and (unitClass some frequencyUnits)
 HED_0012655	Speed	5	Rate-of-change		A scalar measure of the rate of movement of the object expressed either as the distance traveled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.	
 HED_0012656	Speed-#	6	Speed	takesValue, valueClass=numericClass, unitClass=speedUnits		Speed and (valueClass some numericClass) and (unitClass some speedUnits)
 HED_0012657	Temporal-rate	5	Rate-of-change		The number of items per unit of time.	
