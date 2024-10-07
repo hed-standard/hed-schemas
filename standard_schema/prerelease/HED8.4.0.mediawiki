@@ -512,7 +512,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Experimenter <nowiki>{hedId=HED_0012472} [Person who is the owner of the experiment and has its responsibility.]</nowiki>
 ** Agent-trait <nowiki>{hedId=HED_0012473} [A genetically, environmentally, or socially determined characteristic of an agent.]</nowiki>
 *** Age <nowiki>{hedId=HED_0012474} [Length of time elapsed time since birth of the agent.]</nowiki>
-****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012475}</nowiki>
+****  <nowiki># {takesValue, valueClass=numericClass, unitClass=timeUnits, hedId=HED_0012475}</nowiki>
 *** Agent-experience-level <nowiki>{hedId=HED_0012476} [Amount of skill or knowledge that the agent has as pertains to the task.]</nowiki>
 **** Expert-level <nowiki>{relatedTag=Intermediate-experience-level, relatedTag=Novice-level, hedId=HED_0012477} [Having comprehensive and authoritative knowledge of or skill in a particular area related to the task.]</nowiki>
 **** Intermediate-experience-level <nowiki>{relatedTag=Expert-level, relatedTag=Novice-level, hedId=HED_0012478} [Having a moderate amount of knowledge or skill related to the task.]</nowiki>

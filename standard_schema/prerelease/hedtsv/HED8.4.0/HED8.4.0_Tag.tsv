@@ -500,7 +500,7 @@ HED_0012471	Experiment-participant	3	Agent-task-role		Someone who takes part in 
 HED_0012472	Experimenter	3	Agent-task-role		Person who is the owner of the experiment and has its responsibility.	
 HED_0012473	Agent-trait	2	Agent-property		A genetically, environmentally, or socially determined characteristic of an agent.	
 HED_0012474	Age	3	Agent-trait		Length of time elapsed time since birth of the agent.	
-HED_0012475	Age-#	4	Age	takesValue, valueClass=numericClass		Age and (valueClass some numericClass)
+HED_0012475	Age-#	4	Age	takesValue, valueClass=numericClass, unitClass=timeUnits		Age and (valueClass some numericClass) and (unitClass some timeUnits)
 HED_0012476	Agent-experience-level	3	Agent-trait		Amount of skill or knowledge that the agent has as pertains to the task.	
 HED_0012477	Expert-level	4	Agent-experience-level	relatedTag=Intermediate-experience-level, relatedTag=Novice-level	Having comprehensive and authoritative knowledge of or skill in a particular area related to the task.	Agent-experience-level and (relatedTag some Intermediate-experience-level) and (relatedTag some Novice-level)
 HED_0012478	Intermediate-experience-level	4	Agent-experience-level	relatedTag=Expert-level, relatedTag=Novice-level	Having a moderate amount of knowledge or skill related to the task.	Agent-experience-level and (relatedTag some Expert-level) and (relatedTag some Novice-level)
