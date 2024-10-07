@@ -22,7 +22,7 @@ jobs:
 
       - name: Get latest push changes
         id: changed-files
-        uses: tj-actions/changed-files@v4
+        uses: tj-actions/changed-files@v45
         with:
           since_last_remote_commit: true
 
