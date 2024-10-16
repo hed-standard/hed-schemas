@@ -1513,118 +1513,6 @@
                      <value>slam</value>
                   </attribute>
                   <node>
-                     <name>Abdomen-landmark</name>
-                     <description>Points on the abdomen used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Anterior-Superior-Iliac-Spine-ASIS</name>
-                        <description>The forwardmost point of the iliac crest.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Posterior-Superior-Iliac-Spine-PSIS</name>
-                        <description>The rearmost point of the iliac crest.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Umbilicus</name>
-                        <description>The navel or belly button.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Foot-landmark</name>
-                     <description>Points on the foot used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Calcaneal-Tuberosity-CT</name>
-                        <description>The bony prominence at the heel.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>First-Metatarsal-Head-FMH</name>
-                        <description>The tip of the big toe.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Lateral-Malleolus-LM</name>
-                        <description>The bony prominence on the lateral side of the ankle.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Medial-Malleolus-MM</name>
-                        <description>The bony prominence on the medial side of the ankle.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Forearm-landmark</name>
-                     <description>Points on the forearm used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Radial-Styloid-Process-RSP</name>
-                        <description>The bony prominence on the radius bone at the wrist.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Ulnar-Styloid-Process-USP</name>
-                        <description>The bony prominence on the ulna bone at the wrist.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Hand-landmark</name>
-                     <description>Points on the hand used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Third-Metacarpophalangeal-Joint-MCP</name>
-                        <description>The knuckle of the middle finger.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
                      <name>Head-landmark</name>
                      <description>Points on the head used as reference landmarks.</description>
                      <attribute>
@@ -1649,15 +1537,6 @@
                      </node>
                      <node>
                         <name>Mastoid-process</name>
-                        <description>The process of the temporal bone behind the ear.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Midpoint-between-mastoid-processes-MMP</name>
-                        <description>The midpoint between the mastoid processes.</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>slam</value>
@@ -1689,54 +1568,6 @@
                      </node>
                   </node>
                   <node>
-                     <name>Lower-leg-landmark</name>
-                     <description>Points on the lower leg used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Tibial-Tuberosity</name>
-                        <description>The bony prominence on the tibia at the knee.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Thigh-landmark</name>
-                     <description>Points on the thigh used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Femur-Lateral-Epicondyle-FLE</name>
-                        <description>The lateral epicondyle of the femur.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Femur-Medial-Epicondyle-FME</name>
-                        <description>The medial epicondyle of the femur.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Greater-Trochanter</name>
-                        <description>The large prominence at the proximal end of the femur.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
                      <name>Torso-chest-landmark</name>
                      <description>Points on the chest used as reference landmarks.</description>
                      <attribute>
@@ -1746,14 +1577,6 @@
                      <node>
                         <name>Acromion-process</name>
                         <description>The outermost point of the shoulder blade.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Suprasternal-Notch-Jugular-Notch</name>
-                        <description>The notch at the top of the sternum.</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>slam</value>
@@ -1770,30 +1593,6 @@
                      <node>
                         <name>Xiphoid-process</name>
                         <description>The small cartilaginous process at the lower end of the sternum.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                  </node>
-                  <node>
-                     <name>Upper-arm-landmark</name>
-                     <description>Points on the upper arm used as reference landmarks.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>slam</value>
-                     </attribute>
-                     <node>
-                        <name>Lateral-Humerus-Epicondyle-LHE</name>
-                        <description>The lateral epicondyle of the humerus.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>slam</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Medial-Humerus-Epicondyle-MHE</name>
-                        <description>The medial epicondyle of the humerus.</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>slam</value>
