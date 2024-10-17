@@ -6,17 +6,42 @@ The HED SLAM(Sensor Location and Motion) HED library schema is designed to stand
 !# start schema
 
 '''Anatomical-landmark''' <nowiki>{rooted=Anatomical-item} [A collection of specific points on the human body used for anatomical and sensor placement reference.]</nowiki>
+* Abdomen-landmark <nowiki>[Points on the abdomen used as reference landmarks.]</nowiki>
+** Anterior-Superior-Iliac-Spine-ASIS <nowiki>[The forwardmost point of the iliac crest.]</nowiki>
+** Posterior-Superior-Iliac-Spine-PSIS <nowiki>[The rearmost point of the iliac crest.]</nowiki>
+** Umbilicus <nowiki>[The navel or belly button.]</nowiki>
+* Foot-landmark <nowiki>[Points on the foot used as reference landmarks.]</nowiki>
+** Calcaneal-Tuberosity-CT <nowiki>[The bony prominence at the heel.]</nowiki>
+** First-Metatarsal-Head-FMH <nowiki>[The tip of the big toe.]</nowiki>
+** Lateral-Malleolus-LM <nowiki>[The bony prominence on the lateral side of the ankle.]</nowiki>
+** Medial-Malleolus-MM <nowiki>[The bony prominence on the medial side of the ankle.]</nowiki>
+* Forearm-landmark <nowiki>[Points on the forearm used as reference landmarks.]</nowiki>
+** Radial-Styloid-Process-RSP <nowiki>[The bony prominence on the radius bone at the wrist.]</nowiki>
+** Ulnar-Styloid-Process-USP <nowiki>[The bony prominence on the ulna bone at the wrist.]</nowiki>
+* Hand-landmark <nowiki>[Points on the hand used as reference landmarks.]</nowiki>
+** Third-Metacarpophalangeal-Joint-MCP <nowiki>[The knuckle of the middle finger.]</nowiki>
 * Head-landmark <nowiki>[Points on the head used as reference landmarks.]</nowiki>
 ** Inion <nowiki>[The most prominent point of the occipital bone at the back of the head.]</nowiki>
 ** Left-helix-tragus-junction-LHJ <nowiki>[The point where the helix meets the tragus of the left ear.]</nowiki>
-** Mastoid-process
+** Mastoid-process <nowiki>[The process of the temporal bone behind the ear.]</nowiki>
+** Midpoint-between-mastoid-processes-MMP <nowiki>[The midpoint between the mastoid processes.]</nowiki>
 ** Nasion <nowiki>[The midpoint between the eyes just above the bridge of the nose.]</nowiki>
 ** Right-helix-tragus-junction-RHJ <nowiki>[The point where the helix meets the tragus of the right ear.]</nowiki>
 ** Vertex <nowiki>[The highest point on the head in the midline.]</nowiki>
+* Lower-leg-landmark <nowiki>[Points on the lower leg used as reference landmarks.]</nowiki>
+** Tibial-Tuberosity <nowiki>[The bony prominence on the tibia at the knee.]</nowiki>
+* Thigh-landmark <nowiki>[Points on the thigh used as reference landmarks.]</nowiki>
+** Femur-Lateral-Epicondyle-FLE <nowiki>[The lateral epicondyle of the femur.]</nowiki>
+** Femur-Medial-Epicondyle-FME <nowiki>[The medial epicondyle of the femur.]</nowiki>
+** Greater-Trochanter <nowiki>[The large prominence at the proximal end of the femur.]</nowiki>
 * Torso-chest-landmark <nowiki>[Points on the chest used as reference landmarks.]</nowiki>
 ** Acromion-process <nowiki>[The outermost point of the shoulder blade.]</nowiki>
+** Suprasternal-Notch-Jugular-Notch <nowiki>[The notch at the top of the sternum.]</nowiki>
 ** Vertebra-prominens-C7 <nowiki>[The seventh cervical vertebra at the base of the neck.]</nowiki>
 ** Xiphoid-process <nowiki>[The small cartilaginous process at the lower end of the sternum.]</nowiki>
+* Upper-arm-landmark <nowiki>[Points on the upper arm used as reference landmarks.]</nowiki>
+** Lateral-Humerus-Epicondyle-LHE <nowiki>[The lateral epicondyle of the humerus.]</nowiki>
+** Medial-Humerus-Epicondyle-MHE <nowiki>[The medial epicondyle of the humerus.]</nowiki>
 
 
 !# end schema
