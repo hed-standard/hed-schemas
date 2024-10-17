@@ -1,38 +1,38 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
-	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		
-	Abdomen-landmark	1	Anatomical-landmark		Points on the abdomen used as reference landmarks.		
-	Anterior-Superior-Iliac-Spine-ASIS	2	Abdomen-landmark		The forwardmost point of the iliac crest.		
-	Posterior-Superior-Iliac-Spine-PSIS	2	Abdomen-landmark		The rearmost point of the iliac crest.		
-	Umbilicus	2	Abdomen-landmark		The navel or belly button.		
-	Foot-landmark	1	Anatomical-landmark		Points on the foot used as reference landmarks.		
-	Calcaneal-Tuberosity-CT	2	Foot-landmark		The bony prominence at the heel.		
-	First-Metatarsal-Head-FMH	2	Foot-landmark		The tip of the big toe.		
-	Lateral-Malleolus-LM	2	Foot-landmark		The bony prominence on the lateral side of the ankle.		
-	Medial-Malleolus-MM	2	Foot-landmark		The bony prominence on the medial side of the ankle.		
-	Forearm-landmark	1	Anatomical-landmark		Points on the forearm used as reference landmarks.		
-	Radial-Styloid-Process-RSP	2	Forearm-landmark		The bony prominence on the radius bone at the wrist.		
-	Ulnar-Styloid-Process-USP	2	Forearm-landmark		The bony prominence on the ulna bone at the wrist.		
-	Hand-landmark	1	Anatomical-landmark		Points on the hand used as reference landmarks.		
-	Third-Metacarpophalangeal-Joint-MCP	2	Hand-landmark		The knuckle of the middle finger.		
-	Head-landmark	1	Anatomical-landmark		Points on the head used as reference landmarks.		
-	Inion	2	Head-landmark		The most prominent point of the occipital bone at the back of the head.		
+	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.	dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement."
+	Head-landmark	1	Anatomical-landmark		Points on the head used as reference landmarks.	dc:source "Original"
+	Inion	2	Head-landmark		The most prominent point of the occipital bone at the back of the head.	obo:has_dbxref "NCIT:C32628", obo:has_dbxref "FMA:76624", obo:has_dbxref "UBERON:0013469"
 	Left-helix-tragus-junction-LHJ	2	Head-landmark		The point where the helix meets the tragus of the left ear.		
-	Mastoid-process	2	Head-landmark		The process of the temporal bone behind the ear.		
-	Midpoint-between-mastoid-processes-MMP	2	Head-landmark		The midpoint between the mastoid processes.		
-	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.		
+	Mastoid-process	2	Head-landmark		The process of the temporal bone behind the ear.	obo:has_dbxref "NCIT:C12503", obo:has_dbxref "FMA:52872", obo:has_dbxref "UBERON:0011220"
+	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.	obo:has_dbxref "FMA:264779", obo:has_dbxref "UBERON:0016418"
 	Right-helix-tragus-junction-RHJ	2	Head-landmark		The point where the helix meets the tragus of the right ear.		
-	Vertex	2	Head-landmark		The highest point on the head in the midline.		
-	Lower-leg-landmark	1	Anatomical-landmark		Points on the lower leg used as reference landmarks.		
-	Tibial-Tuberosity	2	Lower-leg-landmark		The bony prominence on the tibia at the knee.		
-	Thigh-landmark	1	Anatomical-landmark		Points on the thigh used as reference landmarks.		
-	Femur-Lateral-Epicondyle-FLE	2	Thigh-landmark		The lateral epicondyle of the femur.		
-	Femur-Medial-Epicondyle-FME	2	Thigh-landmark		The medial epicondyle of the femur.		
-	Greater-Trochanter	2	Thigh-landmark		The large prominence at the proximal end of the femur.		
-	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.		
-	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		
-	Suprasternal-Notch-Jugular-Notch	2	Torso-chest-landmark		The notch at the top of the sternum.		
-	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		
-	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.		
-	Upper-arm-landmark	1	Anatomical-landmark		Points on the upper arm used as reference landmarks.		
-	Lateral-Humerus-Epicondyle-LHE	2	Upper-arm-landmark		The lateral epicondyle of the humerus.		
-	Medial-Humerus-Epicondyle-MHE	2	Upper-arm-landmark		The medial epicondyle of the humerus.		
+	Vertex	2	Head-landmark		The highest point on the head in the midline.	obo:has_dbxref "FMA:46484", obo:has_dbxref "UBERON:1000019"
+	Midpoint-between-mastoid-processes-MMP	2	Head-landmark		The midpoint between the mastoid processes.	dc:source "Original"
+	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.	dc:source "Original"
+	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.	obo:has_dbxref "NCIT:C32048", obo:has_dbxref "FMA:23260", obo:has_dbxref "UBERON:0002497"
+	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.	obo:has_dbxref "NCIT:C32245", obo:has_dbxref "FMA:12525", obo:has_dbxref "UBERON:0004616"
+	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.	obo:has_dbxref "NCIT:C33895", obo:has_dbxref "FMA:7488", obo:has_dbxref "UBERON:0002207"
+	Suprasternal-Notch-Jugular-Notch	2	Torso-chest-landmark		The notch at the top of the sternum.	obo:has_dbxref "FMA:7542"
+	Abdomen-landmark	1	Anatomical-landmark		Points on the abdomen used as reference landmarks.	dc:source "Original"
+	Umbilicus	2	Abdomen-landmark		The navel or belly button.	obo:has_dbxref "NCIT:C77533", obo:has_dbxref "FMA:61584", obo:has_dbxref "UBERON:0007118"
+	Anterior-Superior-Iliac-Spine-ASIS	2	Abdomen-landmark		The forwardmost point of the iliac crest.	obo:has_dbxref "NCIT:C139187", obo:has_dbxref "FMA:49465", obo:has_dbxref "UBERON:0013708"
+	Posterior-Superior-Iliac-Spine-PSIS	2	Abdomen-landmark		The rearmost point of the iliac crest.	obo:has_dbxref "NCIT:C139206", obo:has_dbxref "FMA:49468", obo:has_dbxref "UBERON:0013710"
+	Hand-landmark	1	Anatomical-landmark		Points on the hand used as reference landmarks.	dc:source "Original"
+	Third-Metacarpophalangeal-Joint-MCP	2	Hand-landmark		The knuckle of the middle finger.	obo:has_dbxref "NCIT:C102318", obo:has_dbxref "FMA:35255", obo:has_dbxref "UBERON:0007741"
+	Upper-arm-landmark	1	Anatomical-landmark		Points on the upper arm used as reference landmarks.	dc:source "Original"
+	Medial-Humerus-Epicondyle-MHE	2	Upper-arm-landmark		The medial epicondyle of the humerus.	obo:has_dbxref "FMA:23441", obo:has_dbxref "UBERON:0006806"
+	Lateral-Humerus-Epicondyle-LHE	2	Upper-arm-landmark		The lateral epicondyle of the humerus.	obo:has_dbxref "NCIT:C139202", obo:has_dbxref "FMA:23442", obo:has_dbxref "UBERON:0006807"
+	Forearm-landmark	1	Anatomical-landmark		Points on the forearm used as reference landmarks.	dc:source "Original"
+	Radial-Styloid-Process-RSP	2	Forearm-landmark		The bony prominence on the radius bone at the wrist.	obo:has_dbxref "FMA:23524", obo:has_dbxref "UBERON:7500078"
+	Ulnar-Styloid-Process-USP	2	Forearm-landmark		The bony prominence on the ulna bone at the wrist.	obo:has_dbxref "FMA:23628", obo:has_dbxref "UBERON:0011575"
+	Thigh-landmark	1	Anatomical-landmark		Points on the thigh used as reference landmarks.	dc:source "Original"
+	Greater-Trochanter	2	Thigh-landmark		The large prominence at the proximal end of the femur.	obo:has_dbxref "NCIT:C32698", obo:has_dbxref "FMA:7540", obo:has_dbxref "UBERON:0002503"
+	Femur-Medial-Epicondyle-FME	2	Thigh-landmark		The medial epicondyle of the femur.	obo:has_dbxref "FMA:32864", obo:has_dbxref "UBERON:0009987"
+	Femur-Lateral-Epicondyle-FLE	2	Thigh-landmark		The lateral epicondyle of the femur.	obo:has_dbxref "FMA:32867", obo:has_dbxref "UBERON:0009986"
+	Lower-leg-landmark	1	Anatomical-landmark		Points on the lower leg used as reference landmarks.	dc:source "Original"
+	Tibial-Tuberosity	2	Lower-leg-landmark		The bony prominence on the tibia at the knee.	obo:has_dbxref "FMA:35463", obo:has_dbxref "UBERON:7500062"
+	Foot-landmark	1	Anatomical-landmark		Points on the foot used as reference landmarks.	dc:source "Original"
+	Calcaneal-Tuberosity-CT	2	Foot-landmark		The bony prominence at the heel.	obo:has_dbxref "NCIT:C142295", obo:has_dbxref "FMA:33640", obo:has_dbxref "UBERON:7500094"
+	First-Metatarsal-Head-FMH	2	Foot-landmark		The tip of the big toe.	obo:has_dbxref "FMA:42983"
+	Lateral-Malleolus-LM	2	Foot-landmark		The bony prominence on the lateral side of the ankle.	obo:has_dbxref "FMA:35502", obo:has_dbxref "UBERON:0012291"
+	Medial-Malleolus-MM	2	Foot-landmark		The bony prominence on the medial side of the ankle.	obo:has_dbxref "FMA:35451"
