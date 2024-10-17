@@ -33,6 +33,6 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Tibial-Tuberosity	2	Lower-leg-landmark		The bony prominence on the tibia at the knee.	obo:has_dbxref "FMA:35463", obo:has_dbxref "UBERON:7500062"
 	Foot-landmark	1	Anatomical-landmark		Points on the foot used as reference landmarks.	dc:source "Original"
 	Calcaneal-Tuberosity-CT	2	Foot-landmark		The bony prominence at the heel.	obo:has_dbxref "NCIT:C142295", obo:has_dbxref "FMA:33640", obo:has_dbxref "UBERON:7500094"
-	First-Metatarsal-Head-FMH	2	Foot-landmark		The tip of the big toe.	
+	First-Metatarsal-Head-FMH	2	Foot-landmark		The tip of the big toe.	obo:has_dbxref "FMA:42983"
 	Lateral-Malleolus-LM	2	Foot-landmark		The bony prominence on the lateral side of the ankle.	obo:has_dbxref "FMA:35502", obo:has_dbxref "UBERON:0012291"
 	Medial-Malleolus-MM	2	Foot-landmark		The bony prominence on the medial side of the ankle.	obo:has_dbxref "FMA:35451"
