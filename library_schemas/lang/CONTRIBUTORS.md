@@ -3,7 +3,7 @@
 - Ian Callanan (@IanCa)
 - Monique Denissen (@monique2208)
 - Florian Hutzler
-- Scott Makeig (@smakeig) 
+- Scott Makeig (@smakeig)
 - Bernhard Pöll
 - Kay Robbins (@VisLab)
 - Dung Truong (@dungscout96)
