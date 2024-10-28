@@ -2470,7 +2470,7 @@
                   </attribute>
                   <node>
                      <name>Bulgarian</name>
-                     <description>A slavic language spoken mainly in Bulgaria.</description>
+                     <description>A Slavic language spoken mainly in Bulgaria.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2478,7 +2478,7 @@
                   </node>
                   <node>
                      <name>Croatian</name>
-                     <description>A slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
+                     <description>A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2494,7 +2494,7 @@
                   </node>
                   <node>
                      <name>Macedonian</name>
-                     <description>A slavic language spoken mainly in North Macedonia.</description>
+                     <description>A Slavic language spoken mainly in North Macedonia.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2502,7 +2502,7 @@
                   </node>
                   <node>
                      <name>Polish</name>
-                     <description>A slavic language spoken mainly in Poland.</description>
+                     <description>A Slavic language spoken mainly in Poland.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2518,7 +2518,7 @@
                   </node>
                   <node>
                      <name>Slovak</name>
-                     <description>A slavic language spoken mainly in Slovakia.</description>
+                     <description>A Slavic language spoken mainly in Slovakia.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2526,7 +2526,7 @@
                   </node>
                   <node>
                      <name>Ukrainian</name>
-                     <description>A slavic language spoken mainly in Ukraine.</description>
+                     <description>A Slavic language spoken mainly in Ukraine.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8458,6 +8458,54 @@
                   </node>
                </node>
                <node>
+                  <name>Case</name>
+                  <description>Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.</description>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>lang</value>
+                  </attribute>
+                  <node>
+                     <name>Ablative</name>
+                     <description>Used to express motion away from something, among other uses.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Accusative</name>
+                     <description>Used to indicate the direct object of a transitive verb.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Dative</name>
+                     <description>Used to indicate the recipient or beneficiary of an action.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Genitive</name>
+                     <description>Used to indicate attributive relations between nouns among other uses.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Nominative</name>
+                     <description>Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.</description>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>lang</value>
+                     </attribute>
+                  </node>
+               </node>
+               <node>
                   <name>Countability</name>
                   <description>A grammatical category that determines how the quantity of a concept is expressed.</description>
                   <attribute>
@@ -8578,7 +8626,7 @@
                   </node>
                   <node>
                      <name>Subjunctive</name>
-                     <description>Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among other uses.</description>
+                     <description>Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.</description>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8592,54 +8640,6 @@
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
-                  <node>
-                     <name>Case</name>
-                     <description>Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.</description>
-                     <attribute>
-                        <name>inLibrary</name>
-                        <value>lang</value>
-                     </attribute>
-                     <node>
-                        <name>Ablative</name>
-                        <description>Used to express motion away from something, among other uses.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>lang</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Accusative</name>
-                        <description>Used to indicate the direct object of a transitive verb.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>lang</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Dative</name>
-                        <description>Used to indicate the recipient or beneficiary of an action.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>lang</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Genitive</name>
-                        <description>Used to indicate attributive relations between nouns among other uses.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>lang</value>
-                        </attribute>
-                     </node>
-                     <node>
-                        <name>Nominative</name>
-                        <description>Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.</description>
-                        <attribute>
-                           <name>inLibrary</name>
-                           <value>lang</value>
-                        </attribute>
-                     </node>
-                  </node>
                </node>
                <node>
                   <name>Tense</name>
@@ -9459,7 +9459,7 @@
                      </attribute>
                      <node>
                         <name>Direct-syntactic-object</name>
-                        <description>A word or phrase which receives the action of the verb.</description>
+                        <description>A constituent which receives the action of the verb or comes into existence by this action.</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9467,7 +9467,7 @@
                      </node>
                      <node>
                         <name>Indirect-syntactic-object</name>
-                        <description>A word of phrase which receives the direct object.</description>
+                        <description>A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.</description>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
