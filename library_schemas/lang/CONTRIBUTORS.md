@@ -7,6 +7,7 @@
 - Bernhard Pöll
 - Kay Robbins (@VisLab)
 - Dung Truong (@dungscout96)
+- Ian Callanan (@IanCa)
 
 # Contact person
 Monique Denissen (@monique2208)

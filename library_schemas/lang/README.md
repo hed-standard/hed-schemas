@@ -1,3 +1,5 @@
+LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483)
+
 # HED LANG Library Schema
 
  The HED Language library schema (HED LANG Schema) contains vocabulary for annotating language experiments in cognitive science. The schema allows for detailed annotation of neuroimaging experiments that involve language events. It is suitable for experiments using carefully controlled experiment stimuli to address specific questions in the domain of language processing, and for experiments using complex naturalistic paradigms involving written or spoken language.
