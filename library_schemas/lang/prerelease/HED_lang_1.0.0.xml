@@ -2199,12 +2199,20 @@
                <value>Item</value>
             </attribute>
             <attribute>
+               <name>hedId</name>
+               <value>HED_0062001</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>lang</value>
             </attribute>
             <node>
                <name>Afroasiatic-language</name>
                <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.</description>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062002</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -2213,6 +2221,10 @@
                   <name>Arabic</name>
                   <description>An Afroasiatic language spoken mainly in Northern Africa and Western Asia.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062003</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -2220,6 +2232,10 @@
                <node>
                   <name>Hebrew</name>
                   <description>An Afroasiatic language mainly spoken in Israel.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062004</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2230,12 +2246,20 @@
                <name>Atlantic-Congo-language</name>
                <description>A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062005</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Swahili</name>
                   <description>An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062006</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2246,12 +2270,20 @@
                <name>Austroasiatic</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062007</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Vietnamese</name>
                   <description>An Austroasiatic language mainly spoken in Vietnam.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062008</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2262,12 +2294,20 @@
                <name>Austronesian-language</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062009</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Malay</name>
                   <description>An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062010</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2278,12 +2318,20 @@
                <name>Dravidian</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062011</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Tamil</name>
                   <description>A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062012</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2298,12 +2346,20 @@
                   <value>Language-property</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062013</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Baltic-language</name>
                   <description>A system of communication belonging to the family of languages originating in Northeastern Europe.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062014</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2312,6 +2368,10 @@
                      <name>Latvian</name>
                      <description>A baltic language spoken mainly in Latvia.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062015</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2319,6 +2379,10 @@
                   <node>
                      <name>Lithuanian</name>
                      <description>A baltic language spoken mainly in Lithuania.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062016</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2329,12 +2393,20 @@
                   <name>Germanic-language</name>
                   <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062017</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Danish</name>
                      <description>A Germanic language, mainly spoken in Denmark.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062018</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2344,6 +2416,10 @@
                      <name>Dutch</name>
                      <description>A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062019</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2351,6 +2427,10 @@
                   <node>
                      <name>English</name>
                      <description>A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062020</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2360,6 +2440,10 @@
                      <name>German</name>
                      <description>A Germanic Language which is mainly spoken in Western and Central Europe.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062021</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2367,6 +2451,10 @@
                   <node>
                      <name>Icelandic</name>
                      <description>A Germanic language mainly spoken in Iceland.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062022</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2376,6 +2464,10 @@
                      <name>Norwegian</name>
                      <description>A Germanic language mainly spoken in Norway.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062023</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2383,6 +2475,10 @@
                   <node>
                      <name>Swedish</name>
                      <description>A Germanic language mainly spoken in Sweden and parts of Finland.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062024</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2393,12 +2489,20 @@
                   <name>Romance-language</name>
                   <description>A system of communication belonging to the family of languages directly descending from Vulgar Latin.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062025</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Catalan</name>
                      <description>A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062026</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2408,6 +2512,10 @@
                      <name>French</name>
                      <description>A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062027</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2415,6 +2523,10 @@
                   <node>
                      <name>Galician</name>
                      <description>A Romance language mainly spoken in Galicia.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062028</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2424,6 +2536,10 @@
                      <name>Gallo-Rhaetian-language</name>
                      <description>A group of historically related Romance varieties spoken in Switzerland and Northern Italy.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062029</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2431,6 +2547,10 @@
                   <node>
                      <name>Italian</name>
                      <description>A Romance language mainly spoken in Italy and parts of Switzerland.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062030</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2440,6 +2560,10 @@
                      <name>Portuguese</name>
                      <description>A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062031</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2448,6 +2572,10 @@
                      <name>Romanian</name>
                      <description>A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062032</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2455,6 +2583,10 @@
                   <node>
                      <name>Spanish</name>
                      <description>A Romance language spoken in Spain and large parts of the Americas.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062033</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2465,12 +2597,20 @@
                   <name>Slavic-language</name>
                   <description>A system of communication belonging to the family of languages originating in Eastern Europe.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062034</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Bulgarian</name>
                      <description>A Slavic language spoken mainly in Bulgaria.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062035</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2480,6 +2620,10 @@
                      <name>Croatian</name>
                      <description>A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062036</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2487,6 +2631,10 @@
                   <node>
                      <name>Czech</name>
                      <description>A Slavic language spoken mainly in the Czech Republic.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062037</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2496,6 +2644,10 @@
                      <name>Macedonian</name>
                      <description>A Slavic language spoken mainly in North Macedonia.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062038</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2503,6 +2655,10 @@
                   <node>
                      <name>Polish</name>
                      <description>A Slavic language spoken mainly in Poland.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062039</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2512,6 +2668,10 @@
                      <name>Russian</name>
                      <description>A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062040</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2520,6 +2680,10 @@
                      <name>Slovak</name>
                      <description>A Slavic language spoken mainly in Slovakia.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062041</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2527,6 +2691,10 @@
                   <node>
                      <name>Ukrainian</name>
                      <description>A Slavic language spoken mainly in Ukraine.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062042</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2538,12 +2706,20 @@
                <name>Japonic</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062043</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Japanese</name>
                   <description>A Japonic language mainly spoken in Japan.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062044</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2554,12 +2730,20 @@
                <name>Koreanic</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Korea.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062045</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Korean</name>
                   <description>A Koreanic language mainly spoken in Korea.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062046</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2570,6 +2754,10 @@
                <name>Sino-Tibetan-language</name>
                <description>A system of communication belonging to the family of languages spoken in Asia.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062047</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -2577,12 +2765,20 @@
                   <name>Burmo-Qiangic-language</name>
                   <description>A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062048</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Burmese</name>
                      <description>A Burmo Qiangic language mainly spoken in Myanmar.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062049</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2593,12 +2789,20 @@
                   <name>Sinitic</name>
                   <description>A system of communication belonging to the family of languages mainly spoken in China.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062050</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Gan-Chinese</name>
                      <description>A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062051</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2608,12 +2812,20 @@
                      <name>Mandarin-Chinese</name>
                      <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062052</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Standard-Chinese</name>
                         <description>A modern standard form of Mandarin Chinese which is the official Language of mainland China.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062053</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -2624,6 +2836,10 @@
                      <name>Wu-Chinese</name>
                      <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062054</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2631,6 +2847,10 @@
                   <node>
                      <name>Xiang-Chinese</name>
                      <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062055</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2640,12 +2860,20 @@
                      <name>Yue-Chinese</name>
                      <description>A group of Sinitic languages mainly spoken Southern China.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062056</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Cantonese</name>
                         <description>A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062057</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -2658,12 +2886,20 @@
                <name>Tai-Kadai</name>
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062058</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Thai</name>
                   <description>A Tai Kadai language mainly spoken in Central Thailand.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062059</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2674,12 +2910,20 @@
                <name>Turkic</name>
                <description>A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062060</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Turkish</name>
                   <description>A Turkish language mainly spoken in Turkey and Northern Cyprus.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062061</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2690,12 +2934,20 @@
                <name>Uralic</name>
                <description>A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062062</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Estonian</name>
                   <description>An Uralic Language mainly spoken in Estonia.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062063</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2705,6 +2957,10 @@
                   <name>Finnish</name>
                   <description>An Uralic language mainly spoken in Finland.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062064</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -2712,6 +2968,10 @@
                <node>
                   <name>Hungarian</name>
                   <description>An Uralic Language mainly spoken in Hungary.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062065</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2738,6 +2998,10 @@
                   <value>Language-item</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062066</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -2757,6 +3021,10 @@
                      <value>Character</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062067</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -2767,6 +3035,10 @@
                   <attribute>
                      <name>rooted</name>
                      <value>Character</value>
+                  </attribute>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062068</value>
                   </attribute>
                   <attribute>
                      <name>inLibrary</name>
@@ -2781,6 +3053,10 @@
                      <value>Character</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062069</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -2791,6 +3067,10 @@
                   <attribute>
                      <name>rooted</name>
                      <value>Character</value>
+                  </attribute>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062070</value>
                   </attribute>
                   <attribute>
                      <name>inLibrary</name>
@@ -2822,6 +3102,10 @@
                   <value>Language-item</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062071</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -2834,6 +3118,10 @@
                   <value>Language-item</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062072</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -2844,6 +3132,10 @@
                <attribute>
                   <name>rooted</name>
                   <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062073</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -2860,6 +3152,10 @@
                <attribute>
                   <name>suggestedTag</name>
                   <value>Morpheme-property</value>
+               </attribute>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062074</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -2894,12 +3190,20 @@
                   <value>Phoneme</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062075</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Consonant</name>
                   <description>A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable, or which can form itself or together with another consonant a syllable.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062076</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -2909,12 +3213,20 @@
                   <name>Vowel</name>
                   <description>A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062077</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Diphthong</name>
                      <description>A sound formed by the combination of two vowels.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062078</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2924,6 +3236,10 @@
                      <name>Long-vowel</name>
                      <description>A vowel sound that is pronounced in a long form.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062079</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -2931,6 +3247,10 @@
                   <node>
                      <name>Short-vowel</name>
                      <description>A vowel sound that is pronounced in a short form.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062080</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -2968,6 +3288,10 @@
                <attribute>
                   <name>rooted</name>
                   <value>Language-item</value>
+               </attribute>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062081</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -8399,12 +8723,20 @@
                <value>True</value>
             </attribute>
             <attribute>
+               <name>hedId</name>
+               <value>HED_0062082</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>lang</value>
             </attribute>
             <node>
                <name>Clause-type</name>
                <description>The type of a clause.</description>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062083</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8413,6 +8745,10 @@
                   <name>Dependent-clause</name>
                   <description>Containing a subject and verb and cannot be a sentence on its own.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062084</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -8420,6 +8756,10 @@
                <node>
                   <name>Independent-clause</name>
                   <description>Containing a subject and verb but can be a sentence on its own.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062085</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8430,12 +8770,20 @@
                <name>Grammatical-category</name>
                <description>Grammatical category of a word, usually marked through inflection.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062086</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Aspect</name>
                   <description>Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062087</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8444,6 +8792,10 @@
                      <name>Imperfective-aspect</name>
                      <description>Presenting an ongoing or unfolding or repeated or habitual event.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062088</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8451,6 +8803,10 @@
                   <node>
                      <name>Perfective-aspect</name>
                      <description>Presenting a completed event.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062089</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8461,12 +8817,20 @@
                   <name>Case</name>
                   <description>Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062090</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Ablative</name>
                      <description>Used to express motion away from something, among other uses.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062091</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8476,6 +8840,10 @@
                      <name>Accusative</name>
                      <description>Used to indicate the direct object of a transitive verb.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062092</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8483,6 +8851,10 @@
                   <node>
                      <name>Dative</name>
                      <description>Used to indicate the recipient or beneficiary of an action.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062093</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8492,6 +8864,10 @@
                      <name>Genitive</name>
                      <description>Used to indicate attributive relations between nouns among other uses.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062094</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8499,6 +8875,10 @@
                   <node>
                      <name>Nominative</name>
                      <description>Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062095</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8509,12 +8889,20 @@
                   <name>Countability</name>
                   <description>A grammatical category that determines how the quantity of a concept is expressed.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062096</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Countable</name>
                      <description>Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062097</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8523,6 +8911,10 @@
                   <node>
                      <name>Uncountable</name>
                      <description>Syntactic property of nouns that makes their referents undifferentiated units.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062098</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8533,12 +8925,20 @@
                   <name>Grammatical-number</name>
                   <description>Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062099</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Collective</name>
                      <description>Not representing a specific number.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062100</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8548,6 +8948,10 @@
                      <name>Dual</name>
                      <description>Representing exactly two instances of a concept.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062101</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8555,6 +8959,10 @@
                   <node>
                      <name>Paucal</name>
                      <description>Representing a few, or small number of instances of a concept.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062102</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8564,6 +8972,10 @@
                      <name>Plural</name>
                      <description>Representing multiple instances of a concept.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062103</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8571,6 +8983,10 @@
                   <node>
                      <name>Singular</name>
                      <description>Representing one instance of a concept.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062104</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8580,6 +8996,10 @@
                      <name>Singulative</name>
                      <description>Representing one instance of a concept through modifying the standard collective.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062105</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8587,6 +9007,10 @@
                   <node>
                      <name>Trial</name>
                      <description>Representing exactly three instances of a concept.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062106</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8597,12 +9021,20 @@
                   <name>Mood</name>
                   <description>Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062107</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Conditional</name>
                      <description>Used for speaking of an event whose realization is dependent upon another condition.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062108</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8612,6 +9044,10 @@
                      <name>Imperative</name>
                      <description>Expresses direct commands, prohibitions, and requests.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062109</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8620,6 +9056,10 @@
                      <name>Progressive</name>
                      <description>Expresses an incomplete state or action.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062110</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8627,6 +9067,10 @@
                   <node>
                      <name>Subjunctive</name>
                      <description>Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062111</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8637,6 +9081,10 @@
                   <name>Noun-class</name>
                   <description>Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062112</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -8645,6 +9093,10 @@
                   <name>Tense</name>
                   <description>Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062113</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -8652,12 +9104,20 @@
                      <name>Future-tense</name>
                      <description>Referring to an event posterior to time of speech.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062114</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Future-perfect</name>
                         <description>Referring to a future event relative to another reference point (not the time of speech).</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062115</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -8667,6 +9127,10 @@
                         <name>Near-future-tense</name>
                         <description>Referring to an event shortly after time of speech.</description>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062116</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -8674,6 +9138,10 @@
                      <node>
                         <name>Remote-future-tense</name>
                         <description>Referring to an event in the remote future.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062117</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -8684,6 +9152,10 @@
                      <name>Non-future-tense</name>
                      <description>Referring to both a past or present event.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062118</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8691,6 +9163,10 @@
                   <node>
                      <name>Non-past-tense</name>
                      <description>Referring to both a present or future event.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062119</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8700,12 +9176,20 @@
                      <name>Past-tense</name>
                      <description>Referring to an event anterior to time of speech.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062120</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Pluperfect</name>
                         <description>Referring to a past event relative to another reference point (not the time of speech).</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062121</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -8715,6 +9199,10 @@
                         <name>Recent-past-tense</name>
                         <description>Referring to an event in the recent past.</description>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062122</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -8722,6 +9210,10 @@
                      <node>
                         <name>Remote-past-tense</name>
                         <description>Referring to an event in the distant past.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062123</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -8732,6 +9224,10 @@
                      <name>Present-tense</name>
                      <description>Referring to an event that takes place at time of speech.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062124</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8741,6 +9237,10 @@
             <node>
                <name>Language-item-form</name>
                <description>The form of a language item.</description>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062125</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -8753,12 +9253,20 @@
                      <value>Canonical-spoken-form</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062126</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Canonical-spoken-form</name>
                      <description>The regular spoken form of a language item.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062127</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8768,6 +9276,10 @@
                      <name>Mispronounced-spoken-form</name>
                      <description>A mispronunciation of a language item which can still be identified.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062128</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8775,6 +9287,10 @@
                   <node>
                      <name>Regional-spoken-form</name>
                      <description>A spoken form of a language item pronounced with a regional accent.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062129</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8789,12 +9305,20 @@
                      <value>Canonical-written-form</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062130</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Canonical-written-form</name>
                      <description>The accepted spelling of a word in a given language.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062131</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8804,6 +9328,10 @@
                      <name>Incorrect-written-form</name>
                      <description>An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062132</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8811,6 +9339,10 @@
                   <node>
                      <name>Pseudohomophone-form</name>
                      <description>A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062133</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8822,12 +9354,20 @@
                <name>Language-item-frequency</name>
                <description>The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062134</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Bigram-frequency</name>
                   <description>The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062135</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8836,6 +9376,10 @@
                <node>
                   <name>Word-frequency</name>
                   <description>The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062136</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8846,12 +9390,20 @@
                <name>Language-item-probability</name>
                <description>The probability of a specific language item occurring in a specific context.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062137</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Cloze-probability</name>
                   <description>The proportion of people who fill a gap in given sentence with a given word.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062138</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8862,12 +9414,20 @@
                <name>Lexical-role</name>
                <description>The role a language item takes in a vocabulary, like part of speech.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062139</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Adjective</name>
                   <description>A word that describes or defines a noun or noun phrase.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062140</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8877,12 +9437,20 @@
                   <name>Adposition</name>
                   <description>Accompanying an noun to express a spatial or temporal relation.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062141</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Circumposition</name>
                      <description>Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062142</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8892,6 +9460,10 @@
                      <name>Postposition</name>
                      <description>Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062143</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8899,6 +9471,10 @@
                   <node>
                      <name>Preposition</name>
                      <description>Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062144</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8909,6 +9485,10 @@
                   <name>Adverb</name>
                   <description>Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062145</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -8916,6 +9496,10 @@
                <node>
                   <name>Classifier</name>
                   <description>An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062146</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8925,12 +9509,20 @@
                   <name>Conjunction</name>
                   <description>Connecting clauses or sentences or to coordinate words in the same clause.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062147</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Complementizer</name>
                      <description>Marks a finite or non- finite clause as functioning as a complement.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062148</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8940,6 +9532,10 @@
                      <name>Coordinating-conjunction</name>
                      <description>Coordinates elements that are equal to each other.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062149</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -8947,6 +9543,10 @@
                   <node>
                      <name>Negation-word</name>
                      <description>Expressing falsity of a clause or sentence.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062150</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8957,12 +9557,20 @@
                   <name>Determiner</name>
                   <description>Determining the kind of reference a noun or noun group has.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062151</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Article</name>
                      <description>A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062152</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8971,6 +9579,10 @@
                   <node>
                      <name>Possessive-determiner</name>
                      <description>Determining the ownership of a noun or noun phrase.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062153</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -8981,6 +9593,10 @@
                   <name>Interjection</name>
                   <description>A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062154</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -8988,6 +9604,10 @@
                <node>
                   <name>Noun</name>
                   <description>Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062155</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -8997,6 +9617,10 @@
                   <name>Numeral</name>
                   <description>Expressing a number or relation to a number.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062156</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9004,6 +9628,10 @@
                <node>
                   <name>Particle</name>
                   <description>Must be associated with another word or phrase to impart meaning.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062157</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9013,12 +9641,20 @@
                   <name>Pronoun</name>
                   <description>A word or a group of words that may stand for a noun or noun phrase.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062158</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Demonstrative-pronoun</name>
                      <description>Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062159</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9028,6 +9664,10 @@
                      <name>Indefinite-pronoun</name>
                      <description>Pronoun lacking a specific referent or having generic meaning.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062160</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9035,6 +9675,10 @@
                   <node>
                      <name>Interrogative-pronoun</name>
                      <description>Pronoun which prompts a question.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062161</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9044,6 +9688,10 @@
                      <name>Personal-pronoun</name>
                      <description>Pronoun associated with a grammatical person.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062162</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9051,6 +9699,10 @@
                   <node>
                      <name>Possessive-pronoun</name>
                      <description>Pronoun referring to the possession of a grammatical person.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062163</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9060,6 +9712,10 @@
                      <name>Reflexive-pronoun</name>
                      <description>Pronoun that refers to another noun or pronoun within the same sentence.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062164</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9067,6 +9723,10 @@
                   <node>
                      <name>Relative-pronoun</name>
                      <description>Pronoun that marks a relative clause.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062165</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9076,6 +9736,10 @@
                <node>
                   <name>Quantifier</name>
                   <description>Expressing a reference definite or indefinite number or amount.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062166</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9091,6 +9755,10 @@
                      <value>Aspect</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062167</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9098,12 +9766,20 @@
                      <name>Auxiliary-verb</name>
                      <description>A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062168</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Modal-verb</name>
                         <description>An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062169</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9114,6 +9790,10 @@
                      <name>Intransitive-verb</name>
                      <description>A verb that does not require an object.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062170</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9121,6 +9801,10 @@
                   <node>
                      <name>Psychological-verb</name>
                      <description>A verb that takes two arguments, an experiencer and a theme.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062171</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9134,6 +9818,10 @@
                         <value>Object</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062172</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9142,6 +9830,10 @@
                      <name>Unaccusative-verb</name>
                      <description>An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062173</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9149,6 +9841,10 @@
                   <node>
                      <name>Unergative-verb</name>
                      <description>An intransitive verb whose subject is an agent.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062174</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9160,12 +9856,20 @@
                <name>Morpheme-property</name>
                <description>A property of a morpheme.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062175</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Morpheme-function</name>
                   <description>The function of a morpheme.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062176</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9178,12 +9882,20 @@
                         <value>Grammatical-category</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062177</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Conjugate</name>
                         <description>Identifying the voice, mood, tense, number, gender, and person of a verb.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062178</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9192,6 +9904,10 @@
                      <node>
                         <name>Decline</name>
                         <description>Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062179</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9202,12 +9918,20 @@
                      <name>Word-formation-function</name>
                      <description>Creating a new word.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062180</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Compound</name>
                         <description>To join with another free morpheme to form a more complex word.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062181</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9216,6 +9940,10 @@
                      <node>
                         <name>Derivation</name>
                         <description>Changing the meaning of a word, usually by adding an affix.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062182</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9226,6 +9954,10 @@
                            <attribute>
                               <name>suggestedTag</name>
                               <value>Lexical-role</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0062183</value>
                            </attribute>
                            <attribute>
                               <name>inLibrary</name>
@@ -9239,12 +9971,20 @@
                   <name>Morpheme-type</name>
                   <description>The type of a morpheme.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062184</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Bound-morpheme-type</name>
                      <description>A morpheme type that cannot be a word itself, such as prefixes and suffixes.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062185</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9253,6 +9993,10 @@
                   <node>
                      <name>Free-morpheme-type</name>
                      <description>A morpheme type that can function as a word.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062186</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9263,12 +10007,20 @@
                   <name>Morphological-position</name>
                   <description>The position a morpheme takes relative to the free morpheme of a word.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062187</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Affix</name>
                      <description>A morpheme that is attached to a word stem to form a new word or word form.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062188</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9278,6 +10030,10 @@
                      <name>Circumfix</name>
                      <description>Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062189</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9285,6 +10041,10 @@
                   <node>
                      <name>Infix</name>
                      <description>Position of a morpheme in the middle of a word.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062190</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9294,12 +10054,20 @@
                      <name>Non-concatenative-morphology</name>
                      <description>Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062191</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Apophony</name>
                         <description>Regular vowel variation.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062192</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9309,6 +10077,10 @@
                         <name>Clitic-morphological-position</name>
                         <description>A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.</description>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062193</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -9316,6 +10088,10 @@
                      <node>
                         <name>Conversion</name>
                         <description>No change (where a morphological change might be expected based on regular grammar).</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062194</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9325,6 +10101,10 @@
                         <name>Reduplication</name>
                         <description>Duplication of all or part of the root word.</description>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062195</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -9333,6 +10113,10 @@
                         <name>Transfixation</name>
                         <description>Interdigitation of vowel and consonant morphemes.</description>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062196</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -9340,6 +10124,10 @@
                      <node>
                         <name>Truncation</name>
                         <description>Removal of phonological material from root.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062197</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9350,6 +10138,10 @@
                      <name>Prefix</name>
                      <description>Position of a morpheme at the beginning of a word.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062198</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9357,6 +10149,10 @@
                   <node>
                      <name>Suffix</name>
                      <description>Position of a morpheme at the end of a word.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062199</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9368,6 +10164,10 @@
                <name>Orthographic-neighborhood-size</name>
                <description>The number of closely resembling word-forms.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062200</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -9376,12 +10176,20 @@
                <name>Phrase-role</name>
                <description>The role of phrase.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062201</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Adjective-phrase</name>
                   <description>Headed by an adjective.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062202</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9391,12 +10199,20 @@
                   <name>Adpostional-phrase</name>
                   <description>Consisting of an adposition and its complement.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062203</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Postpositional-phrase</name>
                      <description>Consisting of a postposition and its complement.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062204</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9405,6 +10221,10 @@
                   <node>
                      <name>Prepositional-phrase</name>
                      <description>Consisting of a preposition and its complement.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062205</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9415,6 +10235,10 @@
                   <name>Adverb-phrase</name>
                   <description>Functioning as an adverb in a sentence.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062206</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9423,6 +10247,10 @@
                   <name>Noun-phrase</name>
                   <description>Functioning in a sentence as subject, object, or prepositional object.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062207</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9430,6 +10258,10 @@
                <node>
                   <name>Verb-phrase</name>
                   <description>Containing the verb and any direct or indirect object, but not the subject.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062208</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9440,12 +10272,20 @@
                <name>Syntactic-role</name>
                <description>Role a language-item takes in syntax.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062209</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Complement</name>
                   <description>The constituent selected by a head.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062210</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9454,12 +10294,20 @@
                      <name>Syntactic-object</name>
                      <description>Complement of a verbal head.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062211</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
                      <node>
                         <name>Direct-syntactic-object</name>
                         <description>A constituent which receives the action of the verb or comes into existence by this action.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062212</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9468,6 +10316,10 @@
                      <node>
                         <name>Indirect-syntactic-object</name>
                         <description>A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062213</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
@@ -9479,12 +10331,20 @@
                   <name>Modifier</name>
                   <description>Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062214</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Adjunct</name>
                      <description>Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062215</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9495,12 +10355,20 @@
                   <name>Predicate</name>
                   <description>Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062216</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Secondary-predicate</name>
                      <description>Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062217</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9511,6 +10379,10 @@
                   <name>Subject</name>
                   <description>Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062218</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9518,6 +10390,10 @@
                <node>
                   <name>Syntactic-Head</name>
                   <description>Word that determines the syntactic category of a phrase.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062219</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9533,12 +10409,20 @@
                <value>Property</value>
             </attribute>
             <attribute>
+               <name>hedId</name>
+               <value>HED_0062220</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>lang</value>
             </attribute>
             <node>
                <name>Morphological-language-type</name>
                <description>Morphological property relating to a specific system of communication used by a particular group of people.</description>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062221</value>
+               </attribute>
                <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
@@ -9547,12 +10431,20 @@
                   <name>Analytic-language-type</name>
                   <description>Rarely using affixes, resulting in a low morpheme per word ratio.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062222</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Morphological-isolating-type</name>
                      <description>Having a morpheme per word ratio close to one.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062223</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9563,6 +10455,10 @@
                   <name>Morphological-polysynthetic-type</name>
                   <description>Can encode multiple constituents such as subject, verb, object, etc. into a single word.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062224</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
@@ -9571,12 +10467,20 @@
                   <name>Morphological-synthetic-type</name>
                   <description>Having a higher morpheme per word ratio.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062225</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Morphological-agglutinating-type</name>
                      <description>Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062226</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9585,6 +10489,10 @@
                   <node>
                      <name>Morphological-fusional-type</name>
                      <description>Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062227</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9596,12 +10504,20 @@
                <name>Orthographic-type</name>
                <description>The type of language item each symbol serves to represent in written language.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062228</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Logographic-type</name>
                   <description>Representing an entire spoken word per character.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062229</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -9611,12 +10527,20 @@
                   <name>Segmental-or-Alphabetic-type</name>
                   <description>Representing approximately phoneme per character.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062230</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Deep-orthographical-type</name>
                      <description>Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062231</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -9626,6 +10550,10 @@
                      <name>Shallow-orthographic-type</name>
                      <description>Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062232</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -9634,6 +10562,10 @@
                <node>
                   <name>Syllabary-type</name>
                   <description>Representing one syllable or mora per character.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062233</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -12922,6 +13854,10 @@
                <value>Relation</value>
             </attribute>
             <attribute>
+               <name>hedId</name>
+               <value>HED_0062234</value>
+            </attribute>
+            <attribute>
                <name>inLibrary</name>
                <value>lang</value>
             </attribute>
@@ -12929,12 +13865,20 @@
                <name>Grammatical-relation</name>
                <description>Grammatical relationship between language items.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062235</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Agreement-with</name>
                   <description>Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062236</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -12945,6 +13889,10 @@
                <name>Orthographic-relatedness-to</name>
                <description>Connected on the basis of writing or spelling.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062237</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -12952,12 +13900,20 @@
                   <name>Orthographic-distance-to</name>
                   <description>Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062238</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Hamming-distance-to</name>
                      <description>The minimum number of substitutions required to change one string into another string of equal length.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062239</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -12972,6 +13928,10 @@
                         <attribute>
                            <name>valueClass</name>
                            <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062240</value>
                         </attribute>
                         <attribute>
                            <name>inLibrary</name>
@@ -12983,6 +13943,10 @@
                      <name>Levenshtein-distance-to</name>
                      <description>The minimum number of single-character edits to change into.</description>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062241</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
                      </attribute>
@@ -12996,6 +13960,10 @@
                         <attribute>
                            <name>valueClass</name>
                            <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062242</value>
                         </attribute>
                         <attribute>
                            <name>inLibrary</name>
@@ -13009,6 +13977,10 @@
                <name>Phonological-relatedness-to</name>
                <description>Connected on the basis of sound.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062243</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
@@ -13016,12 +13988,20 @@
                   <name>Phonological-distance-to</name>
                   <description>Removed in sounding from.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062244</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>Phonological-Levenshtein-distance-to</name>
                      <description>The minimum number of single-phoneme edits to change into.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062245</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -13038,6 +14018,10 @@
                            <value>numericClass</value>
                         </attribute>
                         <attribute>
+                           <name>hedId</name>
+                           <value>HED_0062246</value>
+                        </attribute>
+                        <attribute>
                            <name>inLibrary</name>
                            <value>lang</value>
                         </attribute>
@@ -13049,12 +14033,20 @@
                <name>Semantic-relatedness-to</name>
                <description>Connected on the basis of meaning to.</description>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0062247</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>lang</value>
                </attribute>
                <node>
                   <name>Antonymous-to</name>
                   <description>Meaning the opposite as.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062248</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
@@ -13064,11 +14056,19 @@
                   <name>Semantic-distance-to</name>
                   <description>Removed in meaning from.</description>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062249</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
                   </attribute>
                   <node>
                      <name>#</name>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0062250</value>
+                     </attribute>
                      <attribute>
                         <name>inLibrary</name>
                         <value>lang</value>
@@ -13078,6 +14078,10 @@
                <node>
                   <name>Synonymous-to</name>
                   <description>Meaning exactly or nearly the same as.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0062251</value>
+                  </attribute>
                   <attribute>
                      <name>inLibrary</name>
                      <value>lang</value>
