@@ -1,13 +1,38 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
-	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		dc:source "Original", rdfs:comment "Body landmarks are used to standardize sensor placement.
-	Head-landmark	1	Anatomical-landmark		Points on the head used as reference landmarks.		dc:source "Original"
+	Anatomical-landmark	0	Anatomical-item	rooted=Anatomical-item	A collection of specific points on the human body used for anatomical and sensor placement reference.		
+	Abdomen-landmark	1	Anatomical-landmark		Points on the abdomen used as reference landmarks.		
+	Anterior-Superior-Iliac-Spine-ASIS	2	Abdomen-landmark		The forwardmost point of the iliac crest.		
+	Posterior-Superior-Iliac-Spine-PSIS	2	Abdomen-landmark		The rearmost point of the iliac crest.		
+	Umbilicus	2	Abdomen-landmark		The navel or belly button.		
+	Foot-landmark	1	Anatomical-landmark		Points on the foot used as reference landmarks.		
+	Calcaneal-Tuberosity-CT	2	Foot-landmark		The bony prominence at the heel.		
+	First-Metatarsal-Head-FMH	2	Foot-landmark		The tip of the big toe.		
+	Lateral-Malleolus-LM	2	Foot-landmark		The bony prominence on the lateral side of the ankle.		
+	Medial-Malleolus-MM	2	Foot-landmark		The bony prominence on the medial side of the ankle.		
+	Forearm-landmark	1	Anatomical-landmark		Points on the forearm used as reference landmarks.		
+	Radial-Styloid-Process-RSP	2	Forearm-landmark		The bony prominence on the radius bone at the wrist.		
+	Ulnar-Styloid-Process-USP	2	Forearm-landmark		The bony prominence on the ulna bone at the wrist.		
+	Hand-landmark	1	Anatomical-landmark		Points on the hand used as reference landmarks.		
+	Third-Metacarpophalangeal-Joint-MCP	2	Hand-landmark		The knuckle of the middle finger.		
+	Head-landmark	1	Anatomical-landmark		Points on the head used as reference landmarks.		
 	Inion	2	Head-landmark		The most prominent point of the occipital bone at the back of the head.		
 	Left-helix-tragus-junction-LHJ	2	Head-landmark		The point where the helix meets the tragus of the left ear.		
-	Mastoid-process	2	Head-landmark				dc:source "Original"
+	Mastoid-process	2	Head-landmark		The process of the temporal bone behind the ear.		
+	Midpoint-between-mastoid-processes-MMP	2	Head-landmark		The midpoint between the mastoid processes.		
 	Nasion	2	Head-landmark		The midpoint between the eyes just above the bridge of the nose.		
 	Right-helix-tragus-junction-RHJ	2	Head-landmark		The point where the helix meets the tragus of the right ear.		
 	Vertex	2	Head-landmark		The highest point on the head in the midline.		
-	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.		dc:source "Original"
-	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		obo:has_dbxref "NCIT:C32048", obo:has_dbxref "FMA:12525", obo:has_dbxref "UBERON:0002497"
-	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		obo:has_dbxref "NCIT:C32245", obo:has_dbxref "FMA:23260", obo:has_dbxref "UBERON:0004616"
-	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.		obo:has_dbxref "NCIT:C33895", obo:has_dbxref "FMA:7488", obo:has_dbxref "UBERON:0002207"
+	Lower-leg-landmark	1	Anatomical-landmark		Points on the lower leg used as reference landmarks.		
+	Tibial-Tuberosity	2	Lower-leg-landmark		The bony prominence on the tibia at the knee.		
+	Thigh-landmark	1	Anatomical-landmark		Points on the thigh used as reference landmarks.		
+	Femur-Lateral-Epicondyle-FLE	2	Thigh-landmark		The lateral epicondyle of the femur.		
+	Femur-Medial-Epicondyle-FME	2	Thigh-landmark		The medial epicondyle of the femur.		
+	Greater-Trochanter	2	Thigh-landmark		The large prominence at the proximal end of the femur.		
+	Torso-chest-landmark	1	Anatomical-landmark		Points on the chest used as reference landmarks.		
+	Acromion-process	2	Torso-chest-landmark		The outermost point of the shoulder blade.		
+	Suprasternal-Notch-Jugular-Notch	2	Torso-chest-landmark		The notch at the top of the sternum.		
+	Vertebra-prominens-C7	2	Torso-chest-landmark		The seventh cervical vertebra at the base of the neck.		
+	Xiphoid-process	2	Torso-chest-landmark		The small cartilaginous process at the lower end of the sternum.		
+	Upper-arm-landmark	1	Anatomical-landmark		Points on the upper arm used as reference landmarks.		
+	Lateral-Humerus-Epicondyle-LHE	2	Upper-arm-landmark		The lateral epicondyle of the humerus.		
+	Medial-Humerus-Epicondyle-MHE	2	Upper-arm-landmark		The medial epicondyle of the humerus.		
