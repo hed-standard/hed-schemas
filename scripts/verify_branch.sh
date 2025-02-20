@@ -29,7 +29,7 @@ fi
 echo "Processed branch_name: $branch_prefix"
 
 # Define base file pattern based on branch name
-if [[ "branch_prefix" == "standard" ]]; then
+if [[ "$branch_prefix" == "standard" ]]; then
     base_pattern="standard_schema/"
 else
     base_pattern="library_schemas/${branch_prefix}/"
