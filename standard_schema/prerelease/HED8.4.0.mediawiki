@@ -702,7 +702,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ***** Distance <nowiki>{hedId=HED_0012662} [A measure of the space separating two objects or points.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=physicalLengthUnits, hedId=HED_0012663}</nowiki>
 ***** Position <nowiki>{hedId=HED_0012664} [A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.]</nowiki>
-****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.]</nowiki>
+****** Clock-face <nowiki>{deprecatedFrom=8.2.0, hedId=HED_0012326} [A location identifier based on clock-face numbering or anatomic subregion. Use Clock-face-position.]</nowiki>
 *******  <nowiki># {deprecatedFrom=8.2.0, takesValue, valueClass=numericClass, hedId=HED_0013228}</nowiki>
 ****** Clock-face-position <nowiki>{hedId=HED_0013229} [A location identifier based on clock-face numbering or anatomic subregion. As an object, just use the tag Clock.]</nowiki>
 *******  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0013230}</nowiki>
@@ -1292,7 +1292,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778, hedId=HED_0011629}</nowiki>
 * temperatureUnits <nowiki>{defaultUnits=degree-Celsius, hedId=HED_0011512}</nowiki>
 ** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011630}</nowiki>
-** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0, hedId=HED_0011631} [Units are not allowed to have spaces. Use degree-Celsius or oC instead.]</nowiki>
+** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0, hedId=HED_0011631} [Units are not allowed to have spaces. Use degree-Celsius or oC.]</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011632}</nowiki>
 * timeUnits <nowiki>{defaultUnits=s, hedId=HED_0011513}</nowiki>
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
