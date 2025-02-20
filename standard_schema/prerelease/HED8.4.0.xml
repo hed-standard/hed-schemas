@@ -6220,7 +6220,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                         </attribute>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. Use Clock-face-position.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.2.0</value>
@@ -12011,7 +12011,7 @@ Each term in this vocabulary has a human-readable description and may include ad
          </unit>
          <unit>
             <name>degree Celsius</name>
-            <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
+            <description>Units are not allowed to have spaces. Use degree-Celsius or oC.</description>
             <attribute>
                <name>deprecatedFrom</name>
                <value>8.2.0</value>
