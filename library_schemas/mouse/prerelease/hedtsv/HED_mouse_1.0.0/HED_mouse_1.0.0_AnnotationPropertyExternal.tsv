@@ -1,0 +1,17 @@
+Prefix	ID
+dc:	contributor
+dc:	creator
+dc:	date
+dc:	description
+dc:	format
+dc:	identifier
+dc:	language
+dc:	publisher
+dc:	relation
+dc:	source
+dc:	subject
+dc:	title
+dc:	type
+foaf:	homepage
+terms:	license
+obo:	has_dbxref
