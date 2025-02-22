@@ -16,7 +16,7 @@
 Saskia de Vries (@saskiad )
 
 **If you have contributed** to the HED MOUSE schema effort please submit PR from a
-branch called `mouse_XXX` in your forked repository adding your name to this list in alphabetical order.
+branch called `mouse_XXX` (here `XXX` can be anything) in your forked repository adding your name to this list in alphabetical order.
 Alternatively, post an issue to this repository with the tag `[MOUSE]`.
 
 
