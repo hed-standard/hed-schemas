@@ -1,18 +1,18 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
-	Lick		Move-face		Touch tongue to an object		
-	Report		Perform		Touch object to report choice		
-	Consume		Perform		Consume reward through drinking or eating		
-	Move-whiskers		Move-face				
-	Nose-poke		Perform				
-	Groom		Perform				
-	Tail		Body-part				
-	Fore-limb		Body-part				
-	Fore-limb-part		Body-part				
-	Hind-limb		Body-part				
-	Hind-limb-part		Body-part				
-	Manus		Fore-limb-part				
-	Pes		Hind-limb-part				
-	Whiskers		Face-part				
-	Correct-reject		Task-action-type				
-	Aborted-trial		Task-action-type				
-	Lick-spout		Measurement-device				
+	Lick		Move-face	rooted=Move-face	Touch tongue to an object		
+	Report		Perform	rooted=Perform	Touch object to report choice		
+	Consume		Perform	rooted=Perform	Consume reward through drinking or eating		
+	Move-whiskers		Move-face	rooted=Move-face			
+	Nose-poke		Perform	rooted=Perform			
+	Groom		Perform	rooted=Perform			
+	Tail		Body-part	rooted=Body-part			
+	Fore-limb		Body-part	rooted=Body-part			
+	Fore-limb-part		Body-part	rooted=Body-part			
+	Hind-limb		Body-part	rooted=Body-part			
+	Hind-limb-part		Body-part	rooted=Body-part			
+	Manus		Fore-limb-part	rooted=Fore-limb-part			
+	Pes		Hind-limb-part	rooted=Hind-limb-part			
+	Whiskers		Face-part	rooted=Face-part			
+	Correct-reject		Task-action-type	rooted=Task-action-type			
+	Aborted-trial		Task-action-type	rooted=Task-action-type			
+	Lick-spout		Measurement-device	rooted=Measurement-device			
