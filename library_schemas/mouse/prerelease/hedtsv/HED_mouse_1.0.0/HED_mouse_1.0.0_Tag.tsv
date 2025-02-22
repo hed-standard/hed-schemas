@@ -10,8 +10,8 @@ hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo
 	Fore-limb-part		Body-part	rooted=Body-part			
 	Hind-limb		Body-part	rooted=Body-part			
 	Hind-limb-part		Body-part	rooted=Body-part			
-	Manus		Fore-limb-part	rooted=Fore-limb-part			
-	Pes		Hind-limb-part	rooted=Hind-limb-part			
+	Manus		Fore-limb-part				
+	Pes		Hind-limb-part				
 	Whiskers		Face-part	rooted=Face-part			
 	Correct-reject		Task-action-type	rooted=Task-action-type			
 	Aborted-trial		Task-action-type	rooted=Task-action-type			
