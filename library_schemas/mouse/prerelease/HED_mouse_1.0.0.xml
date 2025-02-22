@@ -834,6 +834,29 @@
                      </attribute>
                   </node>
                   <node>
+                     <name>Lick</name>
+                     <description>Touch tongue to an object</description>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Move-face</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Move-whiskers</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Move-face</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                  </node>
+                  <node>
                      <name>Swallow</name>
                      <description>Cause or allow something, especially food or drink to pass down the throat.</description>
                      <attribute>
@@ -1220,6 +1243,29 @@
                </attribute>
             </node>
             <node>
+               <name>Consume</name>
+               <description>Consume reward through drinking or eating</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Perform</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>mouse</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Groom</name>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Perform</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>mouse</value>
+               </attribute>
+            </node>
+            <node>
                <name>Halt</name>
                <description>Bring or come to an abrupt stop.</description>
                <attribute>
@@ -1233,6 +1279,17 @@
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012140</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Nose-poke</name>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Perform</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>mouse</value>
                </attribute>
             </node>
             <node>
@@ -1273,6 +1330,18 @@
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012145</value>
+               </attribute>
+            </node>
+            <node>
+               <name>Report</name>
+               <description>Touch object to report choice</description>
+               <attribute>
+                  <name>rooted</name>
+                  <value>Perform</value>
+               </attribute>
+               <attribute>
+                  <name>inLibrary</name>
+                  <value>mouse</value>
                </attribute>
             </node>
             <node>
@@ -1517,6 +1586,35 @@
                      <value>HED_0012175</value>
                   </attribute>
                   <node>
+                     <name>Fore-limb</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Fore-limb-part</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                     <node>
+                        <name>Manus</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>mouse</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
                      <name>Head</name>
                      <description>The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.</description>
                      <attribute>
@@ -1702,6 +1800,17 @@
                               <value>HED_0012192</value>
                            </attribute>
                         </node>
+                        <node>
+                           <name>Whiskers</name>
+                           <attribute>
+                              <name>rooted</name>
+                              <value>Face-part</value>
+                           </attribute>
+                           <attribute>
+                              <name>inLibrary</name>
+                              <value>mouse</value>
+                           </attribute>
+                        </node>
                      </node>
                      <node>
                         <name>Hair</name>
@@ -1709,6 +1818,35 @@
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012194</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Hind-limb</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Hind-limb-part</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
+                     </attribute>
+                     <node>
+                        <name>Pes</name>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>mouse</value>
                         </attribute>
                      </node>
                   </node>
@@ -1874,6 +2012,17 @@
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0013213</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Tail</name>
+                     <attribute>
+                        <name>rooted</name>
+                        <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>inLibrary</name>
+                        <value>mouse</value>
                      </attribute>
                   </node>
                   <node>
@@ -2943,6 +3092,17 @@
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012325</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Lick-spout</name>
+                        <attribute>
+                           <name>rooted</name>
+                           <value>Measurement-device</value>
+                        </attribute>
+                        <attribute>
+                           <name>inLibrary</name>
+                           <value>mouse</value>
                         </attribute>
                      </node>
                   </node>
@@ -10107,6 +10267,17 @@
                   <value>HED_0013063</value>
                </attribute>
                <node>
+                  <name>Aborted-trial</name>
+                  <attribute>
+                     <name>rooted</name>
+                     <value>Task-action-type</value>
+                  </attribute>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>mouse</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Appropriate-action</name>
                   <description>An action suitable or proper in the circumstances.</description>
                   <attribute>
@@ -10129,6 +10300,17 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013065</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Correct-reject</name>
+                  <attribute>
+                     <name>rooted</name>
+                     <value>Task-action-type</value>
+                  </attribute>
+                  <attribute>
+                     <name>inLibrary</name>
+                     <value>mouse</value>
                   </attribute>
                </node>
                <node>

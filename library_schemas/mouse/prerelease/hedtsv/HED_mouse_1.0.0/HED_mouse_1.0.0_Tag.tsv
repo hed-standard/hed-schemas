@@ -1,18 +1,18 @@
 hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description	omn:EquivalentTo	Annotations
-	Lick		Move-face	rooted=Move-face	Touch tongue to an object		
-	Report		Perform	rooted=Perform	Touch object to report choice		
-	Consume		Perform	rooted=Perform	Consume reward through drinking or eating		
-	Move-whiskers		Move-face	rooted=Move-face			
-	Nose-poke		Perform	rooted=Perform			
-	Groom		Perform	rooted=Perform			
-	Tail		Body-part	rooted=Body-part			
-	Fore-limb		Body-part	rooted=Body-part			
-	Fore-limb-part		Body-part	rooted=Body-part			
-	Hind-limb		Body-part	rooted=Body-part			
-	Hind-limb-part		Body-part	rooted=Body-part			
-	Manus		Fore-limb-part				
-	Pes		Hind-limb-part				
-	Whiskers		Face-part	rooted=Face-part			
-	Correct-reject		Task-action-type	rooted=Task-action-type			
-	Aborted-trial		Task-action-type	rooted=Task-action-type			
-	Lick-spout		Measurement-device	rooted=Measurement-device			
+	Lick	0	Move-face	rooted=Move-face	Touch tongue to an object		
+	Move-whiskers	0	Move-face	rooted=Move-face			
+	Consume	0	Perform	rooted=Perform	Consume reward through drinking or eating		
+	Groom	0	Perform	rooted=Perform			
+	Nose-poke	0	Perform	rooted=Perform			
+	Report	0	Perform	rooted=Perform	Touch object to report choice		
+	Fore-limb	0	Body-part	rooted=Body-part			
+	Fore-limb-part	0	Body-part	rooted=Body-part			
+	Manus	1	Fore-limb-part				
+	Whiskers	0	Face-part	rooted=Face-part			
+	Hind-limb	0	Body-part	rooted=Body-part			
+	Hind-limb-part	0	Body-part	rooted=Body-part			
+	Pes	1	Hind-limb-part				
+	Tail	0	Body-part	rooted=Body-part			
+	Lick-spout	0	Measurement-device	rooted=Measurement-device			
+	Aborted-trial	0	Task-action-type	rooted=Task-action-type			
+	Correct-reject	0	Task-action-type	rooted=Task-action-type			

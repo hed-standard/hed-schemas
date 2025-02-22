@@ -5,6 +5,38 @@ The HED MOUSE HED library schema is designed to standardize the annotation of ro
 
 !# start schema
 
+'''Lick''' <nowiki>{rooted=Move-face} [Touch tongue to an object]</nowiki>
+
+'''Move-whiskers''' <nowiki>{rooted=Move-face}</nowiki>
+
+'''Consume''' <nowiki>{rooted=Perform} [Consume reward through drinking or eating]</nowiki>
+
+'''Groom''' <nowiki>{rooted=Perform}</nowiki>
+
+'''Nose-poke''' <nowiki>{rooted=Perform}</nowiki>
+
+'''Report''' <nowiki>{rooted=Perform} [Touch object to report choice]</nowiki>
+
+'''Fore-limb''' <nowiki>{rooted=Body-part}</nowiki>
+
+'''Fore-limb-part''' <nowiki>{rooted=Body-part}</nowiki>
+* Manus
+
+'''Whiskers''' <nowiki>{rooted=Face-part}</nowiki>
+
+'''Hind-limb''' <nowiki>{rooted=Body-part}</nowiki>
+
+'''Hind-limb-part''' <nowiki>{rooted=Body-part}</nowiki>
+* Pes
+
+'''Tail''' <nowiki>{rooted=Body-part}</nowiki>
+
+'''Lick-spout''' <nowiki>{rooted=Measurement-device}</nowiki>
+
+'''Aborted-trial''' <nowiki>{rooted=Task-action-type}</nowiki>
+
+'''Correct-reject''' <nowiki>{rooted=Task-action-type}</nowiki>
+
 
 !# end schema
 
