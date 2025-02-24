@@ -3,7 +3,7 @@
 | Name                  | GitHub ID       | Orcid ID             |
 |-----------------------|-----------------|----------------------| 
 | Saskia de Vries       | @saskiad        |  0000-0002-3704-3499 | 
-| Andrea Gaede          |                 |  0000-0002-1909-7004 | 
+| Andrea Gaede          | @andreagaede    |  0000-0002-1909-7004 | 
 | Yaroslav Halchenko    | @yarikoptic     |  0000-0003-3456-2493 |
 | Scott Makeig          | @smakieg        | 0000-0002-9048-8438 |  
 | Kay Robbins           | @VisLab         | 0000-0002-7147-5797 |  
