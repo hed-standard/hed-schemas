@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="1.0.0" library="slam" withStandard="8.3.0">
+<HED version="1.0.0" library="slam" withStandard="8.4.0">
    <prologue>The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields. </prologue>
    <schema>
       <node>
@@ -12,6 +12,11 @@
          <attribute>
             <name>hedId</name>
             <value>HED_0012001</value>
+         </attribute>
+         <attribute>
+            <name>annotation</name>
+            <value>ncit:C25499</value>
+            <value>rdfs:comment Should have this tag in every event process.</value>
          </attribute>
          <node>
             <name>Sensory-event</name>
@@ -4492,6 +4497,10 @@
                         <value>numericClass</value>
                      </attribute>
                      <attribute>
+                        <name>unitClass</name>
+                        <value>timeUnits</value>
+                     </attribute>
+                     <attribute>
                         <name>hedId</name>
                         <value>HED_0012475</value>
                      </attribute>
@@ -6380,6 +6389,10 @@
                               <name>takesValue</name>
                            </attribute>
                            <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
                               <name>unitClass</name>
                               <value>frequencyUnits</value>
                            </attribute>
@@ -6510,7 +6523,7 @@
                         </attribute>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. Use Clock-face-position.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.2.0</value>
@@ -12301,7 +12314,7 @@
          </unit>
          <unit>
             <name>degree Celsius</name>
-            <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
+            <description>Units are not allowed to have spaces. Use degree-Celsius or oC.</description>
             <attribute>
                <name>deprecatedFrom</name>
                <value>8.2.0</value>
@@ -13203,6 +13216,19 @@
       </valueClassDefinition>
    </valueClassDefinitions>
    <schemaAttributeDefinitions>
+      <schemaAttributeDefinition>
+         <name>annotation</name>
+         <description>A annotation link to an item in another ontology or item.</description>
+         <property>
+            <name>elementDomain</name>
+         </property>
+         <property>
+            <name>stringRange</name>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>hedId</name>
          <description>The unique identifier of this element in the HED namespace.</description>
