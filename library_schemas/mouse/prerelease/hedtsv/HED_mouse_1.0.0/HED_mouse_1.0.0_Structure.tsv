@@ -1,4 +1,4 @@
-hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description	omn:EquivalentTo
-HED_0000010	MouseHeader	version="1.0.0", library="mouse", withStandard="8.3.0", unmerged="True"	HedHeader		HedHeader and (inHedSchema some MouseSchema) and (version value "1.0.0") and (library value "mouse") and (withStandard value "8.3.0") and (unmerged value "True")
-HED_0000011	MousePrologue		HedPrologue	The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments. 	HedPrologue and (inHedSchema some MouseSchema)
-HED_0000012	MouseEpilogue		HedEpilogue		HedEpilogue and (inHedSchema some MouseSchema)
+hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description
+HED_0100010	MouseHeader	version="1.0.0", library="mouse", withStandard="8.4.0", unmerged="True"	HedHeader	
+HED_0100011	MousePrologue		HedPrologue	The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments. 
+HED_0100012	MouseEpilogue		HedEpilogue	

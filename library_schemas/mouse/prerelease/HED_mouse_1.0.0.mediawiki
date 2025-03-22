@@ -1,4 +1,4 @@
-HED version="1.0.0" library="mouse" withStandard="8.3.0" unmerged="True"
+HED version="1.0.0" library="mouse" withStandard="8.4.0" unmerged="True"
 
 '''Prologue'''
 The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments. 
