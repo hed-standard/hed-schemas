@@ -1,4 +1,4 @@
-HED version="1.0.0" library="slam" withStandard="8.3.0" unmerged="True"
+HED version="1.0.0" library="slam" withStandard="8.4.0" unmerged="True"
 
 '''Prologue'''
 The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields. 
