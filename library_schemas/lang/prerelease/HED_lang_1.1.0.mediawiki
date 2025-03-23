@@ -1,275 +1,275 @@
-HED version="1.1.0" library="lang" withStandard="8.3.0" unmerged="True"
+HED version="1.1.0" library="lang" withStandard="8.4.0" unmerged="True"
 
 '''Prologue'''
 The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The schema allows for detailed annotation of neuroimaging experiments that involve language events from carefully controlled experiments specifically targeting the neuroscience of language processing to more complex naturalistic paradigms that involve written or spoken language. HED Language schema allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics while the individual words in the sentence can simultaneously be associated with word-level characteristics. Annotation possibilities are extensive and cover characteristics of multiple languages allowing for comparisons between languages. 
 
 !# start schema
 
-'''Language''' <nowiki>{rooted=Item, hedId=HED_0062001} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
-* Afroasiatic-language <nowiki>{hedId=HED_0062002} [A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
-** Arabic <nowiki>{hedId=HED_0062003} [An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
-** Hebrew <nowiki>{hedId=HED_0062004} [An Afroasiatic language mainly spoken in Israel.]</nowiki>
-* Atlantic-Congo-language <nowiki>{hedId=HED_0062005} [A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
-** Swahili <nowiki>{hedId=HED_0062006} [An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
-* Austroasiatic <nowiki>{hedId=HED_0062007} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.]</nowiki>
-** Vietnamese <nowiki>{hedId=HED_0062008} [An Austroasiatic language mainly spoken in Vietnam.]</nowiki>
-* Austronesian-language <nowiki>{hedId=HED_0062009} [A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.]</nowiki>
-** Malay <nowiki>{hedId=HED_0062010} [An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.]</nowiki>
-* Dravidian <nowiki>{hedId=HED_0062011} [A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.]</nowiki>
-** Tamil <nowiki>{hedId=HED_0062012} [A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.]</nowiki>
-* Indo-European-language <nowiki>{suggestedTag=Language-property, hedId=HED_0062013} [A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.]</nowiki>
-** Baltic-language <nowiki>{hedId=HED_0062014} [A system of communication belonging to the family of languages originating in Northeastern Europe.]</nowiki>
-*** Latvian <nowiki>{hedId=HED_0062015} [A baltic language spoken mainly in Latvia.]</nowiki>
-*** Lithuanian <nowiki>{hedId=HED_0062016} [A baltic language spoken mainly in Lithuania.]</nowiki>
-** Germanic-language <nowiki>{hedId=HED_0062017} [A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.]</nowiki>
-*** Danish <nowiki>{hedId=HED_0062018} [A Germanic language, mainly spoken in Denmark.]</nowiki>
-*** Dutch <nowiki>{hedId=HED_0062019} [A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.]</nowiki>
-*** English <nowiki>{hedId=HED_0062020} [A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.]</nowiki>
-*** German <nowiki>{hedId=HED_0062021} [A Germanic Language which is mainly spoken in Western and Central Europe.]</nowiki>
-*** Icelandic <nowiki>{hedId=HED_0062022} [A Germanic language mainly spoken in Iceland.]</nowiki>
-*** Norwegian <nowiki>{hedId=HED_0062023} [A Germanic language mainly spoken in Norway.]</nowiki>
-*** Swedish <nowiki>{hedId=HED_0062024} [A Germanic language mainly spoken in Sweden and parts of Finland.]</nowiki>
-** Romance-language <nowiki>{hedId=HED_0062025} [A system of communication belonging to the family of languages directly descending from Vulgar Latin.]</nowiki>
-*** Catalan <nowiki>{hedId=HED_0062026} [A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.]</nowiki>
-*** French <nowiki>{hedId=HED_0062027} [A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.]</nowiki>
-*** Galician <nowiki>{hedId=HED_0062028} [A Romance language mainly spoken in Galicia.]</nowiki>
-*** Gallo-Rhaetian-language <nowiki>{hedId=HED_0062029} [A group of historically related Romance varieties spoken in Switzerland and Northern Italy.]</nowiki>
-*** Italian <nowiki>{hedId=HED_0062030} [A Romance language mainly spoken in Italy and parts of Switzerland.]</nowiki>
-*** Portuguese <nowiki>{hedId=HED_0062031} [A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.]</nowiki>
-*** Romanian <nowiki>{hedId=HED_0062032} [A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.]</nowiki>
-*** Spanish <nowiki>{hedId=HED_0062033} [A Romance language spoken in Spain and large parts of the Americas.]</nowiki>
-** Slavic-language <nowiki>{hedId=HED_0062034} [A system of communication belonging to the family of languages originating in Eastern Europe.]</nowiki>
-*** Bulgarian <nowiki>{hedId=HED_0062035} [A Slavic language spoken mainly in Bulgaria.]</nowiki>
-*** Croatian <nowiki>{hedId=HED_0062036} [A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.]</nowiki>
-*** Czech <nowiki>{hedId=HED_0062037} [A Slavic language spoken mainly in the Czech Republic.]</nowiki>
-*** Macedonian <nowiki>{hedId=HED_0062038} [A Slavic language spoken mainly in North Macedonia.]</nowiki>
-*** Polish <nowiki>{hedId=HED_0062039} [A Slavic language spoken mainly in Poland.]</nowiki>
-*** Russian <nowiki>{hedId=HED_0062040} [A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.]</nowiki>
-*** Slovak <nowiki>{hedId=HED_0062041} [A Slavic language spoken mainly in Slovakia.]</nowiki>
-*** Ukrainian <nowiki>{hedId=HED_0062042} [A Slavic language spoken mainly in Ukraine.]</nowiki>
-* Japonic <nowiki>{hedId=HED_0062043} [A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
-** Japanese <nowiki>{hedId=HED_0062044} [A Japonic language mainly spoken in Japan.]</nowiki>
-* Koreanic <nowiki>{hedId=HED_0062045} [A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
-** Korean <nowiki>{hedId=HED_0062046} [A Koreanic language mainly spoken in Korea.]</nowiki>
-* Sino-Tibetan-language <nowiki>{hedId=HED_0062047} [A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
-** Burmo-Qiangic-language <nowiki>{hedId=HED_0062048} [A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
-*** Burmese <nowiki>{hedId=HED_0062049} [A Burmo Qiangic language mainly spoken in Myanmar.]</nowiki>
-** Sinitic <nowiki>{hedId=HED_0062050} [A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
-*** Gan-Chinese <nowiki>{hedId=HED_0062051} [A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
-*** Mandarin-Chinese <nowiki>{hedId=HED_0062052} [A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.]</nowiki>
+'''Language''' <nowiki>{rooted=Item, annotation=dc:source Original, annotation=rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works., hedId=HED_0062001} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
+* Afroasiatic-language <nowiki>{annotation=rdfs:comment Glottocode: afro1255, hedId=HED_0062002} [A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
+** Arabic <nowiki>{annotation=rdfs:comment Glottocode: arab1395, hedId=HED_0062003} [An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
+** Hebrew <nowiki>{annotation=rdfs:comment Glottocode: hebr1245, hedId=HED_0062004} [An Afroasiatic language mainly spoken in Israel.]</nowiki>
+* Atlantic-Congo-language <nowiki>{annotation=rdfs:comment Glottocode: atla1278, hedId=HED_0062005} [A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
+** Swahili <nowiki>{annotation=rdfs:comment Glottocode: swah1253, hedId=HED_0062006} [An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
+* Austroasiatic <nowiki>{annotation=rdfs:comment Glottocode:aust1305, hedId=HED_0062007} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.]</nowiki>
+** Vietnamese <nowiki>{annotation=rdfs:comment Glottocode:viet1252, hedId=HED_0062008} [An Austroasiatic language mainly spoken in Vietnam.]</nowiki>
+* Austronesian-language <nowiki>{annotation=rdfs:comment Glottocode: aust1307, hedId=HED_0062009} [A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.]</nowiki>
+** Malay <nowiki>{annotation=rdfs:comment Glottocode: nucl1806, hedId=HED_0062010} [An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.]</nowiki>
+* Dravidian <nowiki>{annotation=rdfs:comment Glottocode: drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages, hedId=HED_0062011} [A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.]</nowiki>
+** Tamil <nowiki>{annotation=rdfs:comment Glottocode: tami1289, hedId=HED_0062012} [A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.]</nowiki>
+* Indo-European-language <nowiki>{suggestedTag=Language-property, annotation=rdfs:comment Glottocode: indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages, hedId=HED_0062013} [A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.]</nowiki>
+** Baltic-language <nowiki>{annotation=rdfs:comment Glottocode: east2280, hedId=HED_0062014} [A system of communication belonging to the family of languages originating in Northeastern Europe.]</nowiki>
+*** Latvian <nowiki>{annotation=rdfs:comment Glottocode: latv1249, hedId=HED_0062015} [A baltic language spoken mainly in Latvia.]</nowiki>
+*** Lithuanian <nowiki>{annotation=rdfs:comment Glottocode: lith1251, hedId=HED_0062016} [A baltic language spoken mainly in Lithuania.]</nowiki>
+** Germanic-language <nowiki>{annotation=rdfs:comment Glottocode: germ1287, hedId=HED_0062017} [A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.]</nowiki>
+*** Danish <nowiki>{annotation=rdfs:comment Glottocode: dani1285, hedId=HED_0062018} [A Germanic language, mainly spoken in Denmark.]</nowiki>
+*** Dutch <nowiki>{annotation=rdfs:comment Glottocode: dutc1256, hedId=HED_0062019} [A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.]</nowiki>
+*** English <nowiki>{annotation=rdfs:comment Glottocode: stan1293, hedId=HED_0062020} [A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.]</nowiki>
+*** German <nowiki>{annotation=rdfs:comment Glottocode: stan1295, hedId=HED_0062021} [A Germanic Language which is mainly spoken in Western and Central Europe.]</nowiki>
+*** Icelandic <nowiki>{annotation=rdfs:comment Glottocode: icel1247, hedId=HED_0062022} [A Germanic language mainly spoken in Iceland.]</nowiki>
+*** Norwegian <nowiki>{annotation=rdfs:comment Glottocode: norw1258, hedId=HED_0062023} [A Germanic language mainly spoken in Norway.]</nowiki>
+*** Swedish <nowiki>{annotation=rdfs:comment Glottocode: swed1254, hedId=HED_0062024} [A Germanic language mainly spoken in Sweden and parts of Finland.]</nowiki>
+** Romance-language <nowiki>{annotation=rdfs:comment Glottocode: roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages, hedId=HED_0062025} [A system of communication belonging to the family of languages directly descending from Vulgar Latin.]</nowiki>
+*** Catalan <nowiki>{annotation=rdfs:comment Glottocode: stan1289, hedId=HED_0062026} [A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.]</nowiki>
+*** French <nowiki>{annotation=rdfs:comment Glottocode: stan1290, hedId=HED_0062027} [A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.]</nowiki>
+*** Galician <nowiki>{annotation=rdfs:comment Glottocode: gali1258, hedId=HED_0062028} [A Romance language mainly spoken in Galicia.]</nowiki>
+*** Gallo-Rhaetian-language <nowiki>{annotation=rdfs:comment Glottocode: gall1280, hedId=HED_0062029} [A group of historically related Romance varieties spoken in Switzerland and Northern Italy.]</nowiki>
+*** Italian <nowiki>{annotation=rdfs:comment Glottocode: ital1282, hedId=HED_0062030} [A Romance language mainly spoken in Italy and parts of Switzerland.]</nowiki>
+*** Portuguese <nowiki>{annotation=rdfs:comment Glottocode: port1283, hedId=HED_0062031} [A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.]</nowiki>
+*** Romanian <nowiki>{annotation=rdfs:comment Glottocode: roma1327, hedId=HED_0062032} [A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.]</nowiki>
+*** Spanish <nowiki>{annotation=rdfs:comment Glottocode: stan1288, hedId=HED_0062033} [A Romance language spoken in Spain and large parts of the Americas.]</nowiki>
+** Slavic-language <nowiki>{annotation=rdfs:comment Glottocode: slav1255, hedId=HED_0062034} [A system of communication belonging to the family of languages originating in Eastern Europe.]</nowiki>
+*** Bulgarian <nowiki>{annotation=rdfs:comment Glottocode: bulg1262, hedId=HED_0062035} [A Slavic language spoken mainly in Bulgaria.]</nowiki>
+*** Croatian <nowiki>{annotation=rdfs:comment Glottocode: croa1245, hedId=HED_0062036} [A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.]</nowiki>
+*** Czech <nowiki>{annotation=rdfs:comment Glottocode: czec1258, hedId=HED_0062037} [A Slavic language spoken mainly in the Czech Republic.]</nowiki>
+*** Macedonian <nowiki>{annotation=rdfs:comment Glottocode: mace1250, hedId=HED_0062038} [A Slavic language spoken mainly in North Macedonia.]</nowiki>
+*** Polish <nowiki>{annotation=rdfs:comment Glottocode: poli1260, hedId=HED_0062039} [A Slavic language spoken mainly in Poland.]</nowiki>
+*** Russian <nowiki>{annotation=rdfs:comment Glottocode: russ1263, hedId=HED_0062040} [A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.]</nowiki>
+*** Slovak <nowiki>{annotation=rdfs:comment Glottocode: slov126, hedId=HED_0062041} [A Slavic language spoken mainly in Slovakia.]</nowiki>
+*** Ukrainian <nowiki>{annotation=rdfs:comment Glottocode: ukra1253, hedId=HED_0062042} [A Slavic language spoken mainly in Ukraine.]</nowiki>
+* Japonic <nowiki>{annotation=rdfs:comment Glottocode: japo1237, hedId=HED_0062043} [A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
+** Japanese <nowiki>{annotation=rdfs:comment Glottocode: nucl1643, hedId=HED_0062044} [A Japonic language mainly spoken in Japan.]</nowiki>
+* Koreanic <nowiki>{annotation=rdfs:comment Glottocode: kore1284, hedId=HED_0062045} [A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
+** Korean <nowiki>{annotation=rdfs:comment Glottocode: kore1280, hedId=HED_0062046} [A Koreanic language mainly spoken in Korea.]</nowiki>
+* Sino-Tibetan-language <nowiki>{annotation=rdfs:comment Glottocode: sino1245, hedId=HED_0062047} [A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
+** Burmo-Qiangic-language <nowiki>{annotation=rdfs:comment Glottocode: burm1265, hedId=HED_0062048} [A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
+*** Burmese <nowiki>{annotation=rdfs:comment Glottocode: nucl1310, hedId=HED_0062049} [A Burmo Qiangic language mainly spoken in Myanmar.]</nowiki>
+** Sinitic <nowiki>{annotation=rdfs:comment Glottocode: sini1245, hedId=HED_0062050} [A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
+*** Gan-Chinese <nowiki>{annotation=rdfs:comment Glottocode: ganc1239, hedId=HED_0062051} [A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
+*** Mandarin-Chinese <nowiki>{annotation=rdfs:comment Glottocode: mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=rdfs:comment Glottocode: mand1471, hedId=HED_0062052} [A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.]</nowiki>
 **** Standard-Chinese <nowiki>{hedId=HED_0062053} [A modern standard form of Mandarin Chinese which is the official Language of mainland China.]</nowiki>
-*** Wu-Chinese <nowiki>{hedId=HED_0062054} [A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.]</nowiki>
-*** Xiang-Chinese <nowiki>{hedId=HED_0062055} [A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.]</nowiki>
-*** Yue-Chinese <nowiki>{hedId=HED_0062056} [A group of Sinitic languages mainly spoken Southern China.]</nowiki>
-**** Cantonese <nowiki>{hedId=HED_0062057} [A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.]</nowiki>
-* Tai-Kadai <nowiki>{hedId=HED_0062058} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.]</nowiki>
-** Thai <nowiki>{hedId=HED_0062059} [A Tai Kadai language mainly spoken in Central Thailand.]</nowiki>
-* Turkic <nowiki>{hedId=HED_0062060} [A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.]</nowiki>
-** Turkish <nowiki>{hedId=HED_0062061} [A Turkish language mainly spoken in Turkey and Northern Cyprus.]</nowiki>
-* Uralic <nowiki>{hedId=HED_0062062} [A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.]</nowiki>
-** Estonian <nowiki>{hedId=HED_0062063} [An Uralic Language mainly spoken in Estonia.]</nowiki>
-** Finnish <nowiki>{hedId=HED_0062064} [An Uralic language mainly spoken in Finland.]</nowiki>
-** Hungarian <nowiki>{hedId=HED_0062065} [An Uralic Language mainly spoken in Hungary.]</nowiki>
+*** Wu-Chinese <nowiki>{annotation=rdfs:comment Glottocode: wuch1236, hedId=HED_0062054} [A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.]</nowiki>
+*** Xiang-Chinese <nowiki>{annotation=rdfs:comment Glottocode: xian1251, hedId=HED_0062055} [A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.]</nowiki>
+*** Yue-Chinese <nowiki>{annotation=rdfs:comment Glottocode: yuec1235, hedId=HED_0062056} [A group of Sinitic languages mainly spoken Southern China.]</nowiki>
+**** Cantonese <nowiki>{annotation=rdfs:comment Glottocode: cant1236, hedId=HED_0062057} [A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.]</nowiki>
+* Tai-Kadai <nowiki>{annotation=rdfs:comment Glottocode: taik1256, hedId=HED_0062058} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.]</nowiki>
+** Thai <nowiki>{annotation=rdfs:comment Glottocode: thai1261, hedId=HED_0062059} [A Tai Kadai language mainly spoken in Central Thailand.]</nowiki>
+* Turkic <nowiki>{annotation=rdfs:comment Glottocode:turk1311, hedId=HED_0062060} [A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.]</nowiki>
+** Turkish <nowiki>{annotation=rdfs:comment Glottocode: nucl1301, hedId=HED_0062061} [A Turkish language mainly spoken in Turkey and Northern Cyprus.]</nowiki>
+* Uralic <nowiki>{annotation=rdfs:comment Glottocode: ural1272, hedId=HED_0062062} [A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.]</nowiki>
+** Estonian <nowiki>{annotation=rdfs:comment Glottocode: esto1258, hedId=HED_0062063} [An Uralic Language mainly spoken in Estonia.]</nowiki>
+** Finnish <nowiki>{annotation=rdfs:comment Glottocode: finn1318, hedId=HED_0062064} [An Uralic language mainly spoken in Finland.]</nowiki>
+** Hungarian <nowiki>{annotation=rdfs:comment Glottocode: hung1274, hedId=HED_0062065} [An Uralic Language mainly spoken in Hungary.]</nowiki>
 
-'''Bigram''' <nowiki>{rooted=Language-item, hedId=HED_0062066} [A pair of two consecutive written units such as letters, syllables, or words.]</nowiki>
+'''Bigram''' <nowiki>{rooted=Language-item, annotation=rdfs:comment Glottocode: hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram, hedId=HED_0062066} [A pair of two consecutive written units such as letters, syllables, or words.]</nowiki>
 
-'''Letter-character''' <nowiki>{rooted=Character, hedId=HED_0062067} [A character that is the smallest meaningful or functional unit in an alphabetic writing system.]</nowiki>
+'''Letter-character''' <nowiki>{rooted=Character, annotation=dc:source Original, hedId=HED_0062067} [A character that is the smallest meaningful or functional unit in an alphabetic writing system.]</nowiki>
 
-'''Logogram''' <nowiki>{rooted=Character, hedId=HED_0062068} [A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.]</nowiki>
+'''Logogram''' <nowiki>{rooted=Character, annotation=dc:source Original, hedId=HED_0062068} [A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.]</nowiki>
 
-'''Noncharacter''' <nowiki>{rooted=Character, hedId=HED_0062069} [A character which does not hold any meaning or contain any regularity in a writing system.]</nowiki>
+'''Noncharacter''' <nowiki>{rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Chen J. Sun D. Wang P. Lv Y. and Zhang Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics 63 101084. https://doi.org/10.1016/j.jneuroling.2022.101084, hedId=HED_0062069} [A character which does not hold any meaning or contain any regularity in a writing system.]</nowiki>
 
-'''Pseudocharacter''' <nowiki>{rooted=Character, hedId=HED_0062070} [A logogram-like character that contains components/radicals of existing logograms but which is not a known logogram.]</nowiki>
+'''Pseudocharacter''' <nowiki>{rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word for instance reverses the meaning or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema., hedId=HED_0062070} [A logogram-like character that contains components/radicals of existing logograms but which is not a known logogram.]</nowiki>
 
-'''Grapheme''' <nowiki>{rooted=Language-item, hedId=HED_0062071} [The smallest contrastive or meaningful unit in writing which matches either a phoneme, a syllable or a morpheme.]</nowiki>
+'''Grapheme''' <nowiki>{rooted=Language-item, annotation=dc:source Original, annotation=rdfs:comment Has different definition but this one is used in the domain of neuroimaging and useful as such as it is distinct from a character in an alphabetic language (letter) but useful. See Bouhani paper and https://www.tandfonline.com/doi/full/10.1080/17586801.2019.1697412 (a combined definition and interesting discussion)., hedId=HED_0062071} [The smallest contrastive or meaningful unit in writing which matches either a phoneme a syllable or a morpheme.]</nowiki>
 
-'''Lemma''' <nowiki>{rooted=Language-item, hedId=HED_0062072} [The canonical form, dictionary form, or citation form of a set of word forms.]</nowiki>
+'''Lemma''' <nowiki>{rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Lemma_(morphology), hedId=HED_0062072} [The canonical form, dictionary form, or citation form of a set of word forms.]</nowiki>
 
-'''Mora''' <nowiki>{rooted=Language-item, hedId=HED_0062073} [A basic timing unit in the phonology of some spoken languages, equal to or shorter than a syllable.]</nowiki>
+'''Mora''' <nowiki>{rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Mora_(linguistics), hedId=HED_0062073} [A basic timing unit in the phonology of some spoken languages equal to or shorter than a syllable.]</nowiki>
 
-'''Morpheme''' <nowiki>{rooted=Language-item, suggestedTag=Morpheme-property, hedId=HED_0062074} [A meaningful unit of a language that cannot be further divided.]</nowiki>
+'''Morpheme''' <nowiki>{rooted=Language-item, suggestedTag=Morpheme-property, annotation=dc:source Original, hedId=HED_0062074} [A meaningful unit of a language that cannot be further divided.]</nowiki>
 
-'''Phone''' <nowiki>{rooted=Language-item, relatedTag=Phoneme, hedId=HED_0062075} [A minimal speech segment that possesses distinct physical or perceptual properties.]</nowiki>
-* Consonant <nowiki>{hedId=HED_0062076} [A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable, or which can form itself or together with another consonant a syllable.]</nowiki>
-* Vowel <nowiki>{hedId=HED_0062077} [A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.]</nowiki>
-** Diphthong <nowiki>{hedId=HED_0062078} [A sound formed by the combination of two vowels.]</nowiki>
-** Long-vowel <nowiki>{hedId=HED_0062079} [A vowel sound that is pronounced in a long form.]</nowiki>
-** Short-vowel <nowiki>{hedId=HED_0062080} [A vowel sound that is pronounced in a short form.]</nowiki>
+'''Phone''' <nowiki>{rooted=Language-item, relatedTag=Phoneme, annotation=dc:source https://en.wikipedia.org/wiki/Segment_(linguistics), hedId=HED_0062075} [A minimal speech segment that possesses distinct physical or perceptual properties.]</nowiki>
+* Consonant <nowiki>{annotation=dc:source Original, hedId=HED_0062076} [A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable or which can form itself or together with another consonant a syllable.]</nowiki>
+* Vowel <nowiki>{annotation=dc:source Original, hedId=HED_0062077} [A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.]</nowiki>
+** Diphthong <nowiki>{annotation=dc:source Original, hedId=HED_0062078} [A sound formed by the combination of two vowels.]</nowiki>
+** Long-vowel <nowiki>{annotation=dc:source Original, hedId=HED_0062079} [A vowel sound that is pronounced in a long form.]</nowiki>
+** Short-vowel <nowiki>{annotation=dc:source Original, hedId=HED_0062080} [A vowel sound that is pronounced in a short form.]</nowiki>
 
-'''Radical''' <nowiki>{rooted=Language-item, hedId=HED_0062081} [A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.]</nowiki>
+'''Radical''' <nowiki>{rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Radical_(Chinese_characters), hedId=HED_0062081} [A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.]</nowiki>
 
-'''Language-item-property''' <nowiki>{rooted=Property, requireChild=True, hedId=HED_0062082} [A property of a language item within a framework of language analysis.]</nowiki>
-* Clause-type <nowiki>{hedId=HED_0062083} [The type of a clause.]</nowiki>
-** Dependent-clause <nowiki>{hedId=HED_0062084} [Containing a subject and verb and cannot be a sentence on its own.]</nowiki>
-** Independent-clause <nowiki>{hedId=HED_0062085} [Containing a subject and verb but can be a sentence on its own.]</nowiki>
-* Grammatical-category <nowiki>{hedId=HED_0062086} [Grammatical category of a word, usually marked through inflection.]</nowiki>
-** Aspect <nowiki>{hedId=HED_0062087} [Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.]</nowiki>
-*** Imperfective-aspect <nowiki>{hedId=HED_0062088} [Presenting an ongoing or unfolding or repeated or habitual event.]</nowiki>
-*** Perfective-aspect <nowiki>{hedId=HED_0062089} [Presenting a completed event.]</nowiki>
-** Case <nowiki>{hedId=HED_0062090} [Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.]</nowiki>
-*** Ablative <nowiki>{hedId=HED_0062091} [Used to express motion away from something, among other uses.]</nowiki>
-*** Accusative <nowiki>{hedId=HED_0062092} [Used to indicate the direct object of a transitive verb.]</nowiki>
-*** Dative <nowiki>{hedId=HED_0062093} [Used to indicate the recipient or beneficiary of an action.]</nowiki>
-*** Genitive <nowiki>{hedId=HED_0062094} [Used to indicate attributive relations between nouns among other uses.]</nowiki>
-*** Nominative <nowiki>{hedId=HED_0062095} [Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.]</nowiki>
-** Countability <nowiki>{hedId=HED_0062096} [A grammatical category that determines how the quantity of a concept is expressed.]</nowiki>
-*** Countable <nowiki>{hedId=HED_0062097} [Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).]</nowiki>
-*** Uncountable <nowiki>{hedId=HED_0062098} [Syntactic property of nouns that makes their referents undifferentiated units.]</nowiki>
-** Grammatical-number <nowiki>{hedId=HED_0062099} [Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.]</nowiki>
-*** Collective <nowiki>{hedId=HED_0062100} [Not representing a specific number.]</nowiki>
-*** Dual <nowiki>{hedId=HED_0062101} [Representing exactly two instances of a concept.]</nowiki>
-*** Paucal <nowiki>{hedId=HED_0062102} [Representing a few, or small number of instances of a concept.]</nowiki>
-*** Plural <nowiki>{hedId=HED_0062103} [Representing multiple instances of a concept.]</nowiki>
-*** Singular <nowiki>{hedId=HED_0062104} [Representing one instance of a concept.]</nowiki>
-*** Singulative <nowiki>{hedId=HED_0062105} [Representing one instance of a concept through modifying the standard collective.]</nowiki>
-*** Trial <nowiki>{hedId=HED_0062106} [Representing exactly three instances of a concept.]</nowiki>
-** Mood <nowiki>{hedId=HED_0062107} [Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.]</nowiki>
-*** Conditional <nowiki>{hedId=HED_0062108} [Used for speaking of an event whose realization is dependent upon another condition.]</nowiki>
-*** Imperative <nowiki>{hedId=HED_0062109} [Expresses direct commands, prohibitions, and requests.]</nowiki>
-*** Progressive <nowiki>{hedId=HED_0062110} [Expresses an incomplete state or action.]</nowiki>
-*** Subjunctive <nowiki>{hedId=HED_0062111} [Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.]</nowiki>
-** Noun-class <nowiki>{hedId=HED_0062112} [Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.]</nowiki>
-** Tense <nowiki>{hedId=HED_0062113} [Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.]</nowiki>
-*** Future-tense <nowiki>{hedId=HED_0062114} [Referring to an event posterior to time of speech.]</nowiki>
-**** Future-perfect <nowiki>{hedId=HED_0062115} [Referring to a future event relative to another reference point (not the time of speech).]</nowiki>
-**** Near-future-tense <nowiki>{hedId=HED_0062116} [Referring to an event shortly after time of speech.]</nowiki>
-**** Remote-future-tense <nowiki>{hedId=HED_0062117} [Referring to an event in the remote future.]</nowiki>
-*** Non-future-tense <nowiki>{hedId=HED_0062118} [Referring to both a past or present event.]</nowiki>
-*** Non-past-tense <nowiki>{hedId=HED_0062119} [Referring to both a present or future event.]</nowiki>
-*** Past-tense <nowiki>{hedId=HED_0062120} [Referring to an event anterior to time of speech.]</nowiki>
-**** Pluperfect <nowiki>{hedId=HED_0062121} [Referring to a past event relative to another reference point (not the time of speech).]</nowiki>
-**** Recent-past-tense <nowiki>{hedId=HED_0062122} [Referring to an event in the recent past.]</nowiki>
-**** Remote-past-tense <nowiki>{hedId=HED_0062123} [Referring to an event in the distant past.]</nowiki>
-*** Present-tense <nowiki>{hedId=HED_0062124} [Referring to an event that takes place at time of speech.]</nowiki>
-* Language-item-form <nowiki>{hedId=HED_0062125} [The form of a language item.]</nowiki>
-** Spoken-form <nowiki>{relatedTag=Canonical-spoken-form, hedId=HED_0062126} [The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.]</nowiki>
-*** Canonical-spoken-form <nowiki>{hedId=HED_0062127} [The regular spoken form of a language item.]</nowiki>
-*** Mispronounced-spoken-form <nowiki>{hedId=HED_0062128} [A mispronunciation of a language item which can still be identified.]</nowiki>
-*** Regional-spoken-form <nowiki>{hedId=HED_0062129} [A spoken form of a language item pronounced with a regional accent.]</nowiki>
-** Written-form <nowiki>{relatedTag=Canonical-written-form, hedId=HED_0062130} [The expression of a language item through a system of writing.]</nowiki>
-*** Canonical-written-form <nowiki>{hedId=HED_0062131} [The accepted spelling of a word in a given language.]</nowiki>
-*** Incorrect-written-form <nowiki>{hedId=HED_0062132} [An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.]</nowiki>
-*** Pseudohomophone-form <nowiki>{hedId=HED_0062133} [A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.]</nowiki>
-* Language-item-frequency <nowiki>{hedId=HED_0062134} [The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
-** Bigram-frequency <nowiki>{hedId=HED_0062135} [The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
-** Word-frequency <nowiki>{hedId=HED_0062136} [The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
-* Language-item-probability <nowiki>{hedId=HED_0062137} [The probability of a specific language item occurring in a specific context.]</nowiki>
-** Cloze-probability <nowiki>{hedId=HED_0062138} [The proportion of people who fill a gap in given sentence with a given word.]</nowiki>
-* Lexical-role <nowiki>{hedId=HED_0062139} [The role a language item takes in a vocabulary, like part of speech.]</nowiki>
-** Adjective <nowiki>{hedId=HED_0062140} [A word that describes or defines a noun or noun phrase.]</nowiki>
-** Adposition <nowiki>{hedId=HED_0062141} [Accompanying an noun to express a spatial or temporal relation.]</nowiki>
-*** Circumposition <nowiki>{hedId=HED_0062142} [Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.]</nowiki>
-*** Postposition <nowiki>{hedId=HED_0062143} [Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.]</nowiki>
-*** Preposition <nowiki>{hedId=HED_0062144} [Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.]</nowiki>
-** Adverb <nowiki>{hedId=HED_0062145} [Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.]</nowiki>
-** Classifier <nowiki>{hedId=HED_0062146} [An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.]</nowiki>
-** Conjunction <nowiki>{hedId=HED_0062147} [Connecting clauses or sentences or to coordinate words in the same clause.]</nowiki>
-*** Complementizer <nowiki>{hedId=HED_0062148} [Marks a finite or non- finite clause as functioning as a complement.]</nowiki>
-*** Coordinating-conjunction <nowiki>{hedId=HED_0062149} [Coordinates elements that are equal to each other.]</nowiki>
-*** Negation-word <nowiki>{hedId=HED_0062150} [Expressing falsity of a clause or sentence.]</nowiki>
-** Determiner <nowiki>{hedId=HED_0062151} [Determining the kind of reference a noun or noun group has.]</nowiki>
-*** Article <nowiki>{hedId=HED_0062152} [A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.]</nowiki>
-*** Possessive-determiner <nowiki>{hedId=HED_0062153} [Determining the ownership of a noun or noun phrase.]</nowiki>
-** Interjection <nowiki>{hedId=HED_0062154} [A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.]</nowiki>
-** Noun <nowiki>{hedId=HED_0062155} [Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.]</nowiki>
-** Numeral <nowiki>{hedId=HED_0062156} [Expressing a number or relation to a number.]</nowiki>
-** Particle <nowiki>{hedId=HED_0062157} [Must be associated with another word or phrase to impart meaning.]</nowiki>
-** Pronoun <nowiki>{hedId=HED_0062158} [A word or a group of words that may stand for a noun or noun phrase.]</nowiki>
-*** Demonstrative-pronoun <nowiki>{hedId=HED_0062159} [Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.]</nowiki>
-*** Indefinite-pronoun <nowiki>{hedId=HED_0062160} [Pronoun lacking a specific referent or having generic meaning.]</nowiki>
-*** Interrogative-pronoun <nowiki>{hedId=HED_0062161} [Pronoun which prompts a question.]</nowiki>
-*** Personal-pronoun <nowiki>{hedId=HED_0062162} [Pronoun associated with a grammatical person.]</nowiki>
-*** Possessive-pronoun <nowiki>{hedId=HED_0062163} [Pronoun referring to the possession of a grammatical person.]</nowiki>
-*** Reflexive-pronoun <nowiki>{hedId=HED_0062164} [Pronoun that refers to another noun or pronoun within the same sentence.]</nowiki>
-*** Relative-pronoun <nowiki>{hedId=HED_0062165} [Pronoun that marks a relative clause.]</nowiki>
-** Quantifier <nowiki>{hedId=HED_0062166} [Expressing a reference definite or indefinite number or amount.]</nowiki>
-** Verb <nowiki>{suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect, hedId=HED_0062167} [Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.]</nowiki>
-*** Auxiliary-verb <nowiki>{hedId=HED_0062168} [A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).]</nowiki>
-**** Modal-verb <nowiki>{hedId=HED_0062169} [An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.]</nowiki>
-*** Intransitive-verb <nowiki>{hedId=HED_0062170} [A verb that does not require an object.]</nowiki>
-*** Psychological-verb <nowiki>{hedId=HED_0062171} [A verb that takes two arguments, an experiencer and a theme.]</nowiki>
-*** Transitive-verb <nowiki>{suggestedTag=Object, hedId=HED_0062172} [A verb that requires one or more objects to receive the action.]</nowiki>
-*** Unaccusative-verb <nowiki>{hedId=HED_0062173} [An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).]</nowiki>
-*** Unergative-verb <nowiki>{hedId=HED_0062174} [An intransitive verb whose subject is an agent.]</nowiki>
-* Morpheme-property <nowiki>{hedId=HED_0062175} [A property of a morpheme.]</nowiki>
-** Morpheme-function <nowiki>{hedId=HED_0062176} [The function of a morpheme.]</nowiki>
-*** Inflective-morphological-function <nowiki>{suggestedTag=Grammatical-category, hedId=HED_0062177} [Changing the grammatical function.]</nowiki>
-**** Conjugate <nowiki>{hedId=HED_0062178} [Identifying the voice, mood, tense, number, gender, and person of a verb.]</nowiki>
-**** Decline <nowiki>{hedId=HED_0062179} [Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.]</nowiki>
-*** Word-formation-function <nowiki>{hedId=HED_0062180} [Creating a new word.]</nowiki>
-**** Compound <nowiki>{hedId=HED_0062181} [To join with another free morpheme to form a more complex word.]</nowiki>
-**** Derivation <nowiki>{hedId=HED_0062182} [Changing the meaning of a word, usually by adding an affix.]</nowiki>
-***** Change-word-class <nowiki>{suggestedTag=Lexical-role, hedId=HED_0062183} [Changing the word class or part of speech a word belongs to.]</nowiki>
-** Morpheme-type <nowiki>{hedId=HED_0062184} [The type of a morpheme.]</nowiki>
-*** Bound-morpheme-type <nowiki>{hedId=HED_0062185} [A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
-*** Free-morpheme-type <nowiki>{hedId=HED_0062186} [A morpheme type that can function as a word.]</nowiki>
-** Morphological-position <nowiki>{hedId=HED_0062187} [The position a morpheme takes relative to the free morpheme of a word.]</nowiki>
-*** Affix <nowiki>{hedId=HED_0062188} [A morpheme that is attached to a word stem to form a new word or word form.]</nowiki>
-*** Circumfix <nowiki>{hedId=HED_0062189} [Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.]</nowiki>
-*** Infix <nowiki>{hedId=HED_0062190} [Position of a morpheme in the middle of a word.]</nowiki>
-*** Non-concatenative-morphology <nowiki>{hedId=HED_0062191} [Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).]</nowiki>
-**** Apophony <nowiki>{hedId=HED_0062192} [Regular vowel variation.]</nowiki>
-**** Clitic-morphological-position <nowiki>{hedId=HED_0062193} [A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.]</nowiki>
-**** Conversion <nowiki>{hedId=HED_0062194} [No change (where a morphological change might be expected based on regular grammar).]</nowiki>
-**** Reduplication <nowiki>{hedId=HED_0062195} [Duplication of all or part of the root word.]</nowiki>
-**** Transfixation <nowiki>{hedId=HED_0062196} [Interdigitation of vowel and consonant morphemes.]</nowiki>
-**** Truncation <nowiki>{hedId=HED_0062197} [Removal of phonological material from root.]</nowiki>
-*** Prefix <nowiki>{hedId=HED_0062198} [Position of a morpheme at the beginning of a word.]</nowiki>
-*** Suffix <nowiki>{hedId=HED_0062199} [Position of a morpheme at the end of a word.]</nowiki>
-* Orthographic-neighborhood-size <nowiki>{hedId=HED_0062200} [The number of closely resembling word-forms.]</nowiki>
-* Phrase-role <nowiki>{hedId=HED_0062201} [The role of phrase.]</nowiki>
-** Adjective-phrase <nowiki>{hedId=HED_0062202} [Headed by an adjective.]</nowiki>
-** Adpostional-phrase <nowiki>{hedId=HED_0062203} [Consisting of an adposition and its complement.]</nowiki>
-*** Postpositional-phrase <nowiki>{hedId=HED_0062204} [Consisting of a postposition and its complement.]</nowiki>
-*** Prepositional-phrase <nowiki>{hedId=HED_0062205} [Consisting of a preposition and its complement.]</nowiki>
-** Adverb-phrase <nowiki>{hedId=HED_0062206} [Functioning as an adverb in a sentence.]</nowiki>
-** Noun-phrase <nowiki>{hedId=HED_0062207} [Functioning in a sentence as subject, object, or prepositional object.]</nowiki>
-** Verb-phrase <nowiki>{hedId=HED_0062208} [Containing the verb and any direct or indirect object, but not the subject.]</nowiki>
-* Syntactic-role <nowiki>{hedId=HED_0062209} [Role a language-item takes in syntax.]</nowiki>
-** Complement <nowiki>{hedId=HED_0062210} [The constituent selected by a head.]</nowiki>
-*** Syntactic-object <nowiki>{hedId=HED_0062211} [Complement of a verbal head.]</nowiki>
-**** Direct-syntactic-object <nowiki>{hedId=HED_0062212} [A constituent which receives the action of the verb or comes into existence by this action.]</nowiki>
-**** Indirect-syntactic-object <nowiki>{hedId=HED_0062213} [A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.]</nowiki>
-** Modifier <nowiki>{hedId=HED_0062214} [Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.]</nowiki>
-*** Adjunct <nowiki>{hedId=HED_0062215} [Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.]</nowiki>
-** Predicate <nowiki>{hedId=HED_0062216} [Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.]</nowiki>
-*** Secondary-predicate <nowiki>{hedId=HED_0062217} [Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).]</nowiki>
-** Subject <nowiki>{hedId=HED_0062218} [Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).]</nowiki>
-** Syntactic-Head <nowiki>{hedId=HED_0062219} [Word that determines the syntactic category of a phrase.]</nowiki>
+'''Language-item-property''' <nowiki>{rooted=Property, requireChild=True, annotation=dc:source Original, annotation=rdfs:comment All these properties should be grouped with a language item., hedId=HED_0062082} [A property of a language item within a framework of language analysis.]</nowiki>
+* Clause-type <nowiki>{annotation=dc:source Original, hedId=HED_0062083} [The type of a clause.]</nowiki>
+** Dependent-clause <nowiki>{annotation=dc:source Original, hedId=HED_0062084} [Containing a subject and verb and cannot be a sentence on its own.]</nowiki>
+** Independent-clause <nowiki>{annotation=dc:source Original, hedId=HED_0062085} [Containing a subject and verb but can be a sentence on its own.]</nowiki>
+* Grammatical-category <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Features in Eagles Olia has no top level features., hedId=HED_0062086} [Grammatical category of a word, usually marked through inflection.]</nowiki>
+** Aspect <nowiki>{annotation=dc:source Original, hedId=HED_0062087} [Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.]</nowiki>
+*** Imperfective-aspect <nowiki>{annotation=dc:source Original, hedId=HED_0062088} [Presenting an ongoing or unfolding or repeated or habitual event.]</nowiki>
+*** Perfective-aspect <nowiki>{annotation=dc:source Original, hedId=HED_0062089} [Presenting a completed event.]</nowiki>
+** Case <nowiki>{annotation=dc:source Original, hedId=HED_0062090} [Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.]</nowiki>
+*** Ablative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Ablative_case, hedId=HED_0062091} [Used to express motion away from something, among other uses.]</nowiki>
+*** Accusative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Accusative_case, hedId=HED_0062092} [Used to indicate the direct object of a transitive verb.]</nowiki>
+*** Dative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Dative_case, hedId=HED_0062093} [Used to indicate the recipient or beneficiary of an action.]</nowiki>
+*** Genitive <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Genitive_case, hedId=HED_0062094} [Used to indicate attributive relations between nouns among other uses.]</nowiki>
+*** Nominative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Nominative_case, hedId=HED_0062095} [Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.]</nowiki>
+** Countability <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Countability feature in olia no definition, hedId=HED_0062096} [A grammatical category that determines how the quantity of a concept is expressed.]</nowiki>
+*** Countable <nowiki>{annotation=dc:source Original, hedId=HED_0062097} [Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).]</nowiki>
+*** Uncountable <nowiki>{annotation=dc:source Original, hedId=HED_0062098} [Syntactic property of nouns that makes their referents undifferentiated units.]</nowiki>
+** Grammatical-number <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062099} [Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.]</nowiki>
+*** Collective <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062100} [Not representing a specific number.]</nowiki>
+*** Dual <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062101} [Representing exactly two instances of a concept.]</nowiki>
+*** Paucal <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062102} [Representing a few, or small number of instances of a concept.]</nowiki>
+*** Plural <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062103} [Representing multiple instances of a concept.]</nowiki>
+*** Singular <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062104} [Representing one instance of a concept.]</nowiki>
+*** Singulative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062105} [Representing one instance of a concept through modifying the standard collective.]</nowiki>
+*** Trial <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number, hedId=HED_0062106} [Representing exactly three instances of a concept.]</nowiki>
+** Mood <nowiki>{annotation=dc:source Original, hedId=HED_0062107} [Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.]</nowiki>
+*** Conditional <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood, hedId=HED_0062108} [Used for speaking of an event whose realization is dependent upon another condition.]</nowiki>
+*** Imperative <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood, hedId=HED_0062109} [Expresses direct commands, prohibitions, and requests.]</nowiki>
+*** Progressive <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Continuous_and_progressive_aspects, hedId=HED_0062110} [Expresses an incomplete state or action.]</nowiki>
+*** Subjunctive <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood, hedId=HED_0062111} [Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.]</nowiki>
+** Noun-class <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Noun_class, annotation=rdfs:comment Eagles only has gender as does olia. In Olia gender feature also encompasses animacy., hedId=HED_0062112} [Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.]</nowiki>
+** Tense <nowiki>{annotation=dc:source Original, hedId=HED_0062113} [Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.]</nowiki>
+*** Future-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062114} [Referring to an event posterior to time of speech.]</nowiki>
+**** Future-perfect <nowiki>{annotation=dc:source Original, hedId=HED_0062115} [Referring to a future event relative to another reference point (not the time of speech).]</nowiki>
+**** Near-future-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062116} [Referring to an event shortly after time of speech.]</nowiki>
+**** Remote-future-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062117} [Referring to an event in the remote future.]</nowiki>
+*** Non-future-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062118} [Referring to both a past or present event.]</nowiki>
+*** Non-past-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062119} [Referring to both a present or future event.]</nowiki>
+*** Past-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062120} [Referring to an event anterior to time of speech.]</nowiki>
+**** Pluperfect <nowiki>{annotation=dc:source Original, hedId=HED_0062121} [Referring to a past event relative to another reference point (not the time of speech).]</nowiki>
+**** Recent-past-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062122} [Referring to an event in the recent past.]</nowiki>
+**** Remote-past-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062123} [Referring to an event in the distant past.]</nowiki>
+*** Present-tense <nowiki>{annotation=dc:source Original, hedId=HED_0062124} [Referring to an event that takes place at time of speech.]</nowiki>
+* Language-item-form <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Following https://www.w3.org/2016/05/ontolex/ (which is not an ontology for language annotation but an ontology for lexical entries in ontologies) we do not make the form of language inherent to language items but instead attach it separately. The word itself is a concept but it can be expressed in multiple forms. The same is true for a sentence phrase or clause. For some units it is more complicated but there is a spoken form of a letter or grapheme etc. and depending on the writing system there might be a written form of a vowel or consonant. This distinction increases flexibility., hedId=HED_0062125} [The form of a language item.]</nowiki>
+** Spoken-form <nowiki>{relatedTag=Canonical-spoken-form, annotation=dc:source Original, hedId=HED_0062126} [The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.]</nowiki>
+*** Canonical-spoken-form <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Should be commonly used (although there is no language without accent) only use regional spoken form when this is relevant in context of the dataset., hedId=HED_0062127} [The regular spoken form of a language item.]</nowiki>
+*** Mispronounced-spoken-form <nowiki>{annotation=dc:source Original, hedId=HED_0062128} [A mispronunciation of a language item which can still be identified.]</nowiki>
+*** Regional-spoken-form <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Use when relevant in context of dataset., hedId=HED_0062129} [A spoken form of a language item pronounced with a regional accent.]</nowiki>
+** Written-form <nowiki>{relatedTag=Canonical-written-form, annotation=dc:source Original, hedId=HED_0062130} [The expression of a language item through a system of writing.]</nowiki>
+*** Canonical-written-form <nowiki>{annotation=dc:source Original, hedId=HED_0062131} [The accepted spelling of a word in a given language.]</nowiki>
+*** Incorrect-written-form <nowiki>{annotation=dc:source Original, hedId=HED_0062132} [An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.]</nowiki>
+*** Pseudohomophone-form <nowiki>{annotation=dc:source Original, hedId=HED_0062133} [A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.]</nowiki>
+* Language-item-frequency <nowiki>{annotation=dc:source Original, hedId=HED_0062134} [The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
+** Bigram-frequency <nowiki>{annotation=dc:source Original, hedId=HED_0062135} [The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
+** Word-frequency <nowiki>{annotation=dc:source Original, hedId=HED_0062136} [The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.]</nowiki>
+* Language-item-probability <nowiki>{annotation=dc:source Original, hedId=HED_0062137} [The probability of a specific language item occurring in a specific context.]</nowiki>
+** Cloze-probability <nowiki>{annotation=dc:source Original, hedId=HED_0062138} [The proportion of people who fill a gap in given sentence with a given word.]</nowiki>
+* Lexical-role <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Sometimes applies to a word or to a phrase that fulfills a lexical role., hedId=HED_0062139} [The role a language item takes in a vocabulary, like part of speech.]</nowiki>
+** Adjective <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Adjective, hedId=HED_0062140} [A word that describes or defines a noun or noun phrase.]</nowiki>
+** Adposition <nowiki>{annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Adposition, hedId=HED_0062141} [Accompanying an noun to express a spatial or temporal relation.]</nowiki>
+*** Circumposition <nowiki>{annotation=dc:source Original, hedId=HED_0062142} [Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.]</nowiki>
+*** Postposition <nowiki>{annotation=dc:source Original, hedId=HED_0062143} [Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.]</nowiki>
+*** Preposition <nowiki>{annotation=dc:source Original, hedId=HED_0062144} [Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.]</nowiki>
+** Adverb <nowiki>{annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Adverb, hedId=HED_0062145} [Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.]</nowiki>
+** Classifier <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Classifier_(linguistics), annotation=rdfs:comment Classifiers are subdivided by GOLD into Nominal Noun and Numeral classifiers. OLIA lists classifier under morphosyntactic category unique (a class for categories with unique or small membership). Classifiers can have different functions across languages. In Chinese count and mass Classifiers are distinguished. Given that these might be language specific and there is no agreement in existing standards we have not added subcategories for now., hedId=HED_0062146} [An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.]</nowiki>
+** Conjunction <nowiki>{annotation=dc:source Original, hedId=HED_0062147} [Connecting clauses or sentences or to coordinate words in the same clause.]</nowiki>
+*** Complementizer <nowiki>{annotation=dc:source Original, hedId=HED_0062148} [Marks a finite or non- finite clause as functioning as a complement.]</nowiki>
+*** Coordinating-conjunction <nowiki>{annotation=dc:source Original, hedId=HED_0062149} [Coordinates elements that are equal to each other.]</nowiki>
+*** Negation-word <nowiki>{annotation=dc:source Original, hedId=HED_0062150} [Expressing falsity of a clause or sentence.]</nowiki>
+** Determiner <nowiki>{annotation=dc:source Original, hedId=HED_0062151} [Determining the kind of reference a noun or noun group has.]</nowiki>
+*** Article <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Article_(grammar), hedId=HED_0062152} [A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.]</nowiki>
+*** Possessive-determiner <nowiki>{annotation=dc:source Original, hedId=HED_0062153} [Determining the ownership of a noun or noun phrase.]</nowiki>
+** Interjection <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Interjection#cite_note-1, hedId=HED_0062154} [A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.]</nowiki>
+** Noun <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Noun, hedId=HED_0062155} [Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.]</nowiki>
+** Numeral <nowiki>{annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description http://purl.org/linguistics/gold., hedId=HED_0062156} [Expressing a number or relation to a number.]</nowiki>
+** Particle <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_particle#cite_note-Glossary_Particle-3, annotation=rdfs:comment In Olia they use the term Unique and recommends not using particle because of differing definitions. Particle has an older use but the modern definition is well defined and word particle is used in neuroimaging studies (https://pubmed.ncbi.nlm.nih.gov/11347875/; https://pubmed.ncbi.nlm.nih.gov/22341872/)., hedId=HED_0062157} [Must be associated with another word or phrase to impart meaning.]</nowiki>
+** Pronoun <nowiki>{annotation=dc:source Original, hedId=HED_0062158} [A word or a group of words that may stand for a noun or noun phrase.]</nowiki>
+*** Demonstrative-pronoun <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Determiner, hedId=HED_0062159} [Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.]</nowiki>
+*** Indefinite-pronoun <nowiki>{annotation=dc:source Original, hedId=HED_0062160} [Pronoun lacking a specific referent or having generic meaning.]</nowiki>
+*** Interrogative-pronoun <nowiki>{annotation=dc:source Original, hedId=HED_0062161} [Pronoun which prompts a question.]</nowiki>
+*** Personal-pronoun <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Personal_pronoun, hedId=HED_0062162} [Pronoun associated with a grammatical person.]</nowiki>
+*** Possessive-pronoun <nowiki>{annotation=dc:source Original, hedId=HED_0062163} [Pronoun referring to the possession of a grammatical person.]</nowiki>
+*** Reflexive-pronoun <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Reflexive_pronoun, hedId=HED_0062164} [Pronoun that refers to another noun or pronoun within the same sentence.]</nowiki>
+*** Relative-pronoun <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Relative_pronoun, hedId=HED_0062165} [Pronoun that marks a relative clause.]</nowiki>
+** Quantifier <nowiki>{annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description (http://purl.org/linguistics/gold)., hedId=HED_0062166} [Expressing a reference definite or indefinite number or amount.]</nowiki>
+** Verb <nowiki>{suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect, annotation=dc:source Extended from https://en.wikipedia.org/wiki/Verb, hedId=HED_0062167} [Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.]</nowiki>
+*** Auxiliary-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062168} [A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).]</nowiki>
+**** Modal-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062169} [An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.]</nowiki>
+*** Intransitive-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062170} [A verb that does not require an object.]</nowiki>
+*** Psychological-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062171} [A verb that takes two arguments, an experiencer and a theme.]</nowiki>
+*** Transitive-verb <nowiki>{suggestedTag=Object, annotation=dc:source Original, hedId=HED_0062172} [A verb that requires one or more objects to receive the action.]</nowiki>
+*** Unaccusative-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062173} [An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).]</nowiki>
+*** Unergative-verb <nowiki>{annotation=dc:source Original, hedId=HED_0062174} [An intransitive verb whose subject is an agent.]</nowiki>
+* Morpheme-property <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Morphemes can be categorized based on position function and type. A morpheme property can be applied to a Morpheme., hedId=HED_0062175} [A property of a morpheme.]</nowiki>
+** Morpheme-function <nowiki>{annotation=dc:source Original, hedId=HED_0062176} [The function of a morpheme.]</nowiki>
+*** Inflective-morphological-function <nowiki>{suggestedTag=Grammatical-category, annotation=dc:source Original, hedId=HED_0062177} [Changing the grammatical function.]</nowiki>
+**** Conjugate <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages), hedId=HED_0062178} [Identifying the voice, mood, tense, number, gender, and person of a verb.]</nowiki>
+**** Decline <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages), hedId=HED_0062179} [Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.]</nowiki>
+*** Word-formation-function <nowiki>{annotation=dc:source Original, hedId=HED_0062180} [Creating a new word.]</nowiki>
+**** Compound <nowiki>{annotation=dc:source Original, hedId=HED_0062181} [To join with another free morpheme to form a more complex word.]</nowiki>
+**** Derivation <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word (for instance reverses the meaning or changes intensity). We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema., hedId=HED_0062182} [Changing the meaning of a word, usually by adding an affix.]</nowiki>
+***** Change-word-class <nowiki>{suggestedTag=Lexical-role, annotation=dc:source Original, annotation=rdfs:comment Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD but instead of extending further HED can fulfil the same function by tagging it together with a lexical role., hedId=HED_0062183} [Changing the word class or part of speech a word belongs to.]</nowiki>
+** Morpheme-type <nowiki>{annotation=dc:source Original, hedId=HED_0062184} [The type of a morpheme.]</nowiki>
+*** Bound-morpheme-type <nowiki>{annotation=dc:source Original, hedId=HED_0062185} [A morpheme type that cannot be a word itself, such as prefixes and suffixes.]</nowiki>
+*** Free-morpheme-type <nowiki>{annotation=dc:source Original, hedId=HED_0062186} [A morpheme type that can function as a word.]</nowiki>
+** Morphological-position <nowiki>{annotation=dc:source Original, hedId=HED_0062187} [The position a morpheme takes relative to the free morpheme of a word.]</nowiki>
+*** Affix <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However there are other categorizations of morphemes based on how they change the stem of the word (categorized in OLIA as Morphological processes such as Clitization or reduplication). However since these all say something about how the morpheme is applied to the word we believe these fit better together under the position tag., hedId=HED_0062188} [A morpheme that is attached to a word stem to form a new word or word form.]</nowiki>
+*** Circumfix <nowiki>{annotation=dc:source Original, hedId=HED_0062189} [Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.]</nowiki>
+*** Infix <nowiki>{annotation=dc:source Original, hedId=HED_0062190} [Position of a morpheme in the middle of a word.]</nowiki>
+*** Non-concatenative-morphology <nowiki>{annotation=dc:source Original, hedId=HED_0062191} [Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).]</nowiki>
+**** Apophony <nowiki>{annotation=dc:source Original, hedId=HED_0062192} [Regular vowel variation.]</nowiki>
+**** Clitic-morphological-position <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Clitic, hedId=HED_0062193} [A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.]</nowiki>
+**** Conversion <nowiki>{annotation=dc:source Original, hedId=HED_0062194} [No change (where a morphological change might be expected based on regular grammar).]</nowiki>
+**** Reduplication <nowiki>{annotation=dc:source Original, hedId=HED_0062195} [Duplication of all or part of the root word.]</nowiki>
+**** Transfixation <nowiki>{annotation=dc:source Original, hedId=HED_0062196} [Interdigitation of vowel and consonant morphemes.]</nowiki>
+**** Truncation <nowiki>{annotation=dc:source Original, hedId=HED_0062197} [Removal of phonological material from root.]</nowiki>
+*** Prefix <nowiki>{annotation=dc:source Original, hedId=HED_0062198} [Position of a morpheme at the beginning of a word.]</nowiki>
+*** Suffix <nowiki>{annotation=dc:source Original, hedId=HED_0062199} [Position of a morpheme at the end of a word.]</nowiki>
+* Orthographic-neighborhood-size <nowiki>{annotation=dc:source Original, hedId=HED_0062200} [The number of closely resembling word-forms.]</nowiki>
+* Phrase-role <nowiki>{annotation=dc:source Original, hedId=HED_0062201} [The role of phrase.]</nowiki>
+** Adjective-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062202} [Headed by an adjective.]</nowiki>
+** Adpostional-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062203} [Consisting of an adposition and its complement.]</nowiki>
+*** Postpositional-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062204} [Consisting of a postposition and its complement.]</nowiki>
+*** Prepositional-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062205} [Consisting of a preposition and its complement.]</nowiki>
+** Adverb-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062206} [Functioning as an adverb in a sentence.]</nowiki>
+** Noun-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062207} [Functioning in a sentence as subject, object, or prepositional object.]</nowiki>
+** Verb-phrase <nowiki>{annotation=dc:source Original, hedId=HED_0062208} [Containing the verb and any direct or indirect object, but not the subject.]</nowiki>
+* Syntactic-role <nowiki>{annotation=dc:source Original, hedId=HED_0062209} [Role a language-item takes in syntax.]</nowiki>
+** Complement <nowiki>{annotation=dc:source Original, hedId=HED_0062210} [The constituent selected by a head.]</nowiki>
+*** Syntactic-object <nowiki>{annotation=dc:source Original, hedId=HED_0062211} [Complement of a verbal head.]</nowiki>
+**** Direct-syntactic-object <nowiki>{annotation=dc:source Original, hedId=HED_0062212} [A constituent which receives the action of the verb or comes into existence by this action.]</nowiki>
+**** Indirect-syntactic-object <nowiki>{annotation=dc:source Original, hedId=HED_0062213} [A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.]</nowiki>
+** Modifier <nowiki>{annotation=dc:source Original, hedId=HED_0062214} [Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.]</nowiki>
+*** Adjunct <nowiki>{annotation=dc:source Original, hedId=HED_0062215} [Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.]</nowiki>
+** Predicate <nowiki>{annotation=dc:source Original, hedId=HED_0062216} [Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.]</nowiki>
+*** Secondary-predicate <nowiki>{annotation=dc:source Original, hedId=HED_0062217} [Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).]</nowiki>
+** Subject <nowiki>{annotation=dc:source Original, hedId=HED_0062218} [Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).]</nowiki>
+** Syntactic-Head <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Head_(linguistics), hedId=HED_0062219} [Word that determines the syntactic category of a phrase.]</nowiki>
 
-'''Language-property''' <nowiki>{rooted=Property, hedId=HED_0062220} [A property relating to a system of communication used by a particular group of people.]</nowiki>
-* Morphological-language-type <nowiki>{hedId=HED_0062221} [Morphological property relating to a specific system of communication used by a particular group of people.]</nowiki>
-** Analytic-language-type <nowiki>{hedId=HED_0062222} [Rarely using affixes, resulting in a low morpheme per word ratio.]</nowiki>
-*** Morphological-isolating-type <nowiki>{hedId=HED_0062223} [Having a morpheme per word ratio close to one.]</nowiki>
-** Morphological-polysynthetic-type <nowiki>{hedId=HED_0062224} [Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
-** Morphological-synthetic-type <nowiki>{hedId=HED_0062225} [Having a higher morpheme per word ratio.]</nowiki>
-*** Morphological-agglutinating-type <nowiki>{hedId=HED_0062226} [Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.]</nowiki>
-*** Morphological-fusional-type <nowiki>{hedId=HED_0062227} [Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki>
-* Orthographic-type <nowiki>{hedId=HED_0062228} [The type of language item each symbol serves to represent in written language.]</nowiki>
-** Logographic-type <nowiki>{hedId=HED_0062229} [Representing an entire spoken word per character.]</nowiki>
-** Segmental-or-Alphabetic-type <nowiki>{hedId=HED_0062230} [Representing approximately phoneme per character.]</nowiki>
-*** Deep-orthographical-type <nowiki>{hedId=HED_0062231} [Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
-*** Shallow-orthographic-type <nowiki>{hedId=HED_0062232} [Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
-** Syllabary-type <nowiki>{hedId=HED_0062233} [Representing one syllable or mora per character.]</nowiki>
+'''Language-property''' <nowiki>{rooted=Property, annotation=dc:source Original, hedId=HED_0062220} [A property relating to a system of communication used by a particular group of people.]</nowiki>
+* Morphological-language-type <nowiki>{annotation=dc:source Original, hedId=HED_0062221} [Morphological property relating to a specific system of communication used by a particular group of people.]</nowiki>
+** Analytic-language-type <nowiki>{annotation=dc:source Original, hedId=HED_0062222} [Rarely using affixes, resulting in a low morpheme per word ratio.]</nowiki>
+*** Morphological-isolating-type <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Isolating_language, hedId=HED_0062223} [Having a morpheme per word ratio close to one.]</nowiki>
+** Morphological-polysynthetic-type <nowiki>{annotation=dc:source Original, hedId=HED_0062224} [Can encode multiple constituents such as subject, verb, object, etc. into a single word.]</nowiki>
+** Morphological-synthetic-type <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Synthetic_language, hedId=HED_0062225} [Having a higher morpheme per word ratio.]</nowiki>
+*** Morphological-agglutinating-type <nowiki>{annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Agglutination, hedId=HED_0062226} [Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.]</nowiki>
+*** Morphological-fusional-type <nowiki>{annotation=dc:source https://en.wikipedia.org/wiki/Fusional_language, hedId=HED_0062227} [Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.]</nowiki>
+* Orthographic-type <nowiki>{annotation=dc:source Original, annotation=rdfs:comment Classification of writing systems is complex and these categories are not universally accepted (mainly because most writing systems have characteristics of multiple of these categories). However most writing systems have an overall tendency towards one of these categories and so the categories can be useful to see how large differences are managed by the individuals who speak them. But it is normal that a writing system does not cleanly fit into any of these categories., hedId=HED_0062228} [The type of language item each symbol serves to represent in written language.]</nowiki>
+** Logographic-type <nowiki>{annotation=dc:source Original, hedId=HED_0062229} [Representing an entire spoken word per character.]</nowiki>
+** Segmental-or-Alphabetic-type <nowiki>{annotation=dc:source Original, annotation=rdfs:comment These can be further subdivided based on other characteristics but these are most commonly used in cognition research and relevant in research into dyslexia, hedId=HED_0062230} [Representing approximately phoneme per character.]</nowiki>
+*** Deep-orthographical-type <nowiki>{annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth, hedId=HED_0062231} [Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
+*** Shallow-orthographic-type <nowiki>{annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth, hedId=HED_0062232} [Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.]</nowiki>
+** Syllabary-type <nowiki>{annotation=dc:source Original, hedId=HED_0062233} [Representing one syllable or mora per character.]</nowiki>
 
-'''Linguistic-relation''' <nowiki>{rooted=Relation, hedId=HED_0062234} [Related based on a linguistic property to.]</nowiki>
-* Grammatical-relation <nowiki>{hedId=HED_0062235} [Grammatical relationship between language items.]</nowiki>
-** Agreement-with <nowiki>{hedId=HED_0062236} [Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.]</nowiki>
-* Orthographic-relatedness-to <nowiki>{hedId=HED_0062237} [Connected on the basis of writing or spelling.]</nowiki>
-** Orthographic-distance-to <nowiki>{hedId=HED_0062238} [Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).]</nowiki>
-*** Hamming-distance-to <nowiki>{hedId=HED_0062239} [The minimum number of substitutions required to change one string into another string of equal length.]</nowiki>
+'''Linguistic-relation''' <nowiki>{rooted=Relation, annotation=dc:source Original, hedId=HED_0062234} [Related based on a linguistic property to.]</nowiki>
+* Grammatical-relation <nowiki>{annotation=dc:source Original, hedId=HED_0062235} [Grammatical relationship between language items.]</nowiki>
+** Agreement-with <nowiki>{annotation=dc:source Original, hedId=HED_0062236} [Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.]</nowiki>
+* Orthographic-relatedness-to <nowiki>{annotation=dc:source Original, hedId=HED_0062237} [Connected on the basis of writing or spelling.]</nowiki>
+** Orthographic-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062238} [Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).]</nowiki>
+*** Hamming-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062239} [The minimum number of substitutions required to change one string into another string of equal length.]</nowiki>
 ****  <nowiki># {takesValue=true, valueClass=numericClass, hedId=HED_0062240} [Integers 0 and up.]</nowiki>
-*** Levenshtein-distance-to <nowiki>{hedId=HED_0062241} [The minimum number of single-character edits to change into.]</nowiki>
+*** Levenshtein-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062241} [The minimum number of single-character edits to change into.]</nowiki>
 ****  <nowiki># {takesValue=true, valueClass=numericClass, hedId=HED_0062242} [Integers 0 and up.]</nowiki>
-* Phonological-relatedness-to <nowiki>{hedId=HED_0062243} [Connected on the basis of sound.]</nowiki>
-** Phonological-distance-to <nowiki>{hedId=HED_0062244} [Removed in sounding from.]</nowiki>
-*** Phonological-Levenshtein-distance-to <nowiki>{hedId=HED_0062245} [The minimum number of single-phoneme edits to change into.]</nowiki>
-****  <nowiki># {takesValue=true, valueClass=numericClass, hedId=HED_0062246} [Integers 0 and up.]</nowiki>
-* Semantic-relatedness-to <nowiki>{hedId=HED_0062247} [Connected on the basis of meaning to.]</nowiki>
-** Antonymous-to <nowiki>{hedId=HED_0062248} [Meaning the opposite as.]</nowiki>
-** Semantic-distance-to <nowiki>{hedId=HED_0062249} [Removed in meaning from.]</nowiki>
+* Phonological-relatedness-to <nowiki>{annotation=dc:source Original, hedId=HED_0062243} [Connected on the basis of sound.]</nowiki>
+** Phonological-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062244} [Removed in sounding from.]</nowiki>
+*** Phonological-Levenshtein-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062245} [The minimum number of single-phoneme edits to change into.]</nowiki>
+****  <nowiki># {takesValue=true, valueClass=numericClass, annotation=dc:source Original, hedId=HED_0062246} [Integers 0 and up.]</nowiki>
+* Semantic-relatedness-to <nowiki>{annotation=dc:source Original, hedId=HED_0062247} [Connected on the basis of meaning to.]</nowiki>
+** Antonymous-to <nowiki>{annotation=dc:source Original, hedId=HED_0062248} [Meaning the opposite as.]</nowiki>
+** Semantic-distance-to <nowiki>{annotation=dc:source Original, hedId=HED_0062249} [Removed in meaning from.]</nowiki>
 ***  <nowiki># {hedId=HED_0062250}</nowiki>
-** Synonymous-to <nowiki>{hedId=HED_0062251} [Meaning exactly or nearly the same as.]</nowiki>
+** Synonymous-to <nowiki>{annotation=dc:source Original, hedId=HED_0062251} [Meaning exactly or nearly the same as.]</nowiki>
 
 
 !# end schema
