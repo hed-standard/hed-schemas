@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="2.1.0" library="score" withStandard="8.3.0">
+<HED version="2.1.0" library="score" withStandard="8.4.0">
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
@@ -7885,6 +7885,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>hedId</name>
             <value>HED_0012001</value>
          </attribute>
+         <attribute>
+            <name>annotation</name>
+            <value>ncit:C25499</value>
+            <value>rdfs:comment Should have this tag in every event process.</value>
+         </attribute>
          <node>
             <name>Sensory-event</name>
             <description>Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.</description>
@@ -12064,6 +12069,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <value>numericClass</value>
                      </attribute>
                      <attribute>
+                        <name>unitClass</name>
+                        <value>timeUnits</value>
+                     </attribute>
+                     <attribute>
                         <name>hedId</name>
                         <value>HED_0012475</value>
                      </attribute>
@@ -13952,6 +13961,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                               <name>takesValue</name>
                            </attribute>
                            <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
                               <name>unitClass</name>
                               <value>frequencyUnits</value>
                            </attribute>
@@ -14082,7 +14095,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         </attribute>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. Use Clock-face-position.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.2.0</value>
@@ -19873,7 +19886,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
          <unit>
             <name>degree Celsius</name>
-            <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
+            <description>Units are not allowed to have spaces. Use degree-Celsius or oC.</description>
             <attribute>
                <name>deprecatedFrom</name>
                <value>8.2.0</value>
@@ -20775,6 +20788,19 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </valueClassDefinition>
    </valueClassDefinitions>
    <schemaAttributeDefinitions>
+      <schemaAttributeDefinition>
+         <name>annotation</name>
+         <description>A annotation link to an item in another ontology or item.</description>
+         <property>
+            <name>elementDomain</name>
+         </property>
+         <property>
+            <name>stringRange</name>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>hedId</name>
          <description>The unique identifier of this element in the HED namespace.</description>
