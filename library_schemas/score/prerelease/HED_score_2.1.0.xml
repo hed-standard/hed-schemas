@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="2.1.0" library="score" withStandard="8.3.0">
+<HED version="2.1.0" library="score" withStandard="8.4.0">
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
@@ -20,10 +20,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Sleep-modulator</name>
-            <description>When sleep/drowsiness features are scored during drowsiness, Drowsy should be listed as a modulator (Source: Beniczky ea 2017, Section 7 and Table 2).</description>
+            <description>When sleep/drowsiness features are scored during drowsiness, Drowsy should be listed as a modulator</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Drowsy</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Section 7 and Table 2</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -35,7 +39,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Sleep-deprivation</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042003</value>
@@ -66,7 +73,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Sleep-following-sleep-deprivation</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042005</value>
@@ -97,7 +107,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Natural-sleep</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042007</value>
@@ -128,7 +141,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Induced-sleep</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042009</value>
@@ -159,7 +175,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Awakening</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042011</value>
@@ -201,7 +220,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Medication-administered-during-recording</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042014</value>
@@ -232,7 +254,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Medication-withdrawal-or-reduction-during-recording</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042016</value>
@@ -274,7 +299,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Manual-eye-closure</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042019</value>
@@ -305,7 +333,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Manual-eye-opening</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042021</value>
@@ -347,10 +378,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Intermittent-photic-stimulation</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Intermittent-photic-stimulation-effect</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -385,7 +419,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Auditory-stimulation</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042026</value>
@@ -416,7 +453,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Nociceptive-stimulation</name>
-               <description>Source: Beniczky ea 2017, Table 2.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 2.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042028</value>
@@ -448,7 +488,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Hyperventilation</name>
-            <description>When selecting hyperventilation from the list, the user is prompted to score the quality of the hyperventilation (excellent effort, good effort, poor effort, refused the procedure, unable to do the procedure). (Source: Beniczky ea 2017, Section 4, Table 2.)</description>
+            <description>When selecting hyperventilation from the list, the user is prompted to score the quality of the hyperventilation (excellent effort, good effort, poor effort, refused the procedure, unable to do the procedure).</description>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 2.</value>
+            </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0042030</value>
@@ -580,7 +624,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Physical-effort</name>
-            <description>Source: Beniczky ea 2017, Table 2.</description>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 2.</value>
+            </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0042039</value>
@@ -611,7 +658,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Cognitive-task</name>
-            <description>Source: Beniczky ea 2017, Table 2.</description>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 2.</value>
+            </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0042041</value>
@@ -642,9 +692,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Other-modulator-or-procedure</name>
-            <description>Free text describing other modulators or procedures. (Source: Beniczky ea 2017, Table 2.)</description>
+            <description>Free text describing other modulators or procedures.</description>
             <attribute>
                <name>requireChild</name>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 2.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -677,7 +731,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </node>
       <node>
          <name>Background-activity</name>
-         <description>An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished (Source: Beniczky ea 2013, Appendix S1.)</description>
+         <description>An EEG activity representing the setting in which a given normal or abnormal pattern appears and from which such pattern is distinguished.</description>
+         <attribute>
+            <name>annotation</name>
+            <value>dc:source Beniczky ea 2017 Table 2.</value>
+         </attribute>
          <attribute>
             <name>hedId</name>
             <value>HED_0042045</value>
@@ -688,12 +746,17 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Posterior-dominant-rhythm</name>
-            <description>Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant. (Source: Beniczky ea 2013, Appendix S2; suggested tags from Beniczky ea 2017, Table 4.)</description>
+            <description>Rhythmic activity occurring during wakefulness over the posterior regions of the head, generally with maximum amplitudes over the occipital areas. Amplitude varies. Best seen with eyes closed and during physical relaxation and relative mental inactivity. Blocked or attenuated by attention, especially visual, and mental effort. In adults this is the alpha rhythm, and the frequency is 8 to 13 Hz. However the frequency can be higher or lower than this range (often a supra or sub harmonic of alpha frequency) and is called alpha variant rhythm (fast and slow alpha variant rhythm). In children, the normal range of the frequency of the posterior dominant rhythm is age-dependant.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
                <value>Feature-frequency</value>
                <value>Posterior-dominant-rhythm-property</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2013 Appendix S2</value>
+               <value>dc:source suggested tags from Beniczky ea 2017 Table 4.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -706,13 +769,17 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Mu-rhythm</name>
-            <description>EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation. (Source: Beniczky ea 2013, Appendix S2.)</description>
+            <description>EEG rhythm at 7-11 Hz composed of arch-shaped waves occurring over the central or centro-parietal regions of the scalp during wakefulness. Amplitudes varies but is mostly below 50 microV. Blocked or attenuated most clearly by contralateral movement, thought of movement, readiness to move or tactile stimulation.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Feature-frequency</value>
                <value>Feature-significance-to-recording</value>
                <value>Categorical-location-value</value>
                <value>Sensor-list</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2013 Appendix S2.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -725,7 +792,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Other-organized-rhythm</name>
-            <description>EEG activity consisting of waves of approximately constant period that are considered part of the background (ongoing) activity, but do not fulfill the criteria of the posterior dominant rhythm. (Source: Beniczky ea 2013, Appendix S2.)</description>
+            <description>EEG activity consisting of waves of approximately constant period that are considered part of the background (ongoing) activity, but do not fulfill the criteria of the posterior dominant rhythm.</description>
             <attribute>
                <name>requireChild</name>
             </attribute>
@@ -737,6 +804,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Sensor-list</value>
                <value>Appearance-mode</value>
                <value>Discharge-pattern</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2013 Appendix S2.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -768,7 +839,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Background-activity-special-feature</name>
-            <description>Special features provide scoring options for the background activity of critically ill patients. (Source: Beniczky ea 2017, Section 6.)</description>
+            <description>Special features provide scoring options for the background activity of critically ill patients.</description>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Section 6</value>
+            </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0042050</value>
@@ -779,12 +854,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Continuous-background-activity</name>
-               <description>Source: Beniczky ea 2017, Section 6.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -797,12 +875,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Nearly-continuous-background-activity</name>
-               <description>Source: Beniczky ea 2017, Section 6.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -815,12 +896,15 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Discontinuous-background-activity</name>
-               <description>Source: Beniczky ea 2017, Section 6.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Rhythmic-property</value>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -833,11 +917,16 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Background-burst-suppression</name>
-               <description>EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV). This pattern occurs simultaneously over all head regions. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Section 6.)</description>
+               <description>EEG pattern consisting of bursts (activity appearing and disappearing abruptly) interrupted by periods of low amplitude (below 20 microV). This pattern occurs simultaneously over all head regions.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2013 Appendix S2</value>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -850,11 +939,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Background-burst-attenuation</name>
-               <description>Source: Beniczky ea 2017, Section 6.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -867,12 +959,17 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Background-activity-suppression</name>
-               <description>Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Section 6.)</description>
+               <description>Periods showing activity under 10 microV (referential montage) and interrupting the background (ongoing) activity.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Categorical-location-value</value>
                   <value>Sensor-list</value>
                   <value>Appearance-mode</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2013 Appendix S2</value>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -885,7 +982,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Electrocerebral-inactivity</name>
-               <description>Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artifacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes. (Source: Beniczky ea 2013, Appendix S2; Beniczky ea 2017, Section 6.)</description>
+               <description>Absence of any ongoing cortical electric activities; in all leads EEG is isoelectric or only contains artifacts. Sensitivity has to be increased up to 2 microV/mm; recording time: at least 30 minutes.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2013 Appendix S2</value>
+                  <value>dc:source Beniczky ea 2017 Section 6.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042057</value>
@@ -899,7 +1001,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </node>
       <node>
          <name>Critically-ill-patient-patterns</name>
-         <description>Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology (Source: Hirsch ea 2013; Beniczky ea 2017, Section 9).</description>
+         <description>Rhythmic or periodic patterns in critically ill patients (RPPs) are scored according to the 2012 version of the American Clinical Neurophysiology Society Standardized Critical Care EEG Terminology.</description>
+         <attribute>
+            <name>annotation</name>
+            <value>dc:source Hirsch ea 2013</value>
+            <value>dc:source Beniczky ea 2017 Section 9.</value>
+         </attribute>
          <attribute>
             <name>hedId</name>
             <value>HED_0042058</value>
@@ -910,7 +1017,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Critically-ill-patient-periodic-discharges</name>
-            <description>Periodic discharges (PDs): Periodic - repetition of a waveform with relatively uniform morphology and duration with a quantifiable inter-discharge interval between consecutive waveforms and recurrence of the waveform at nearly regular intervals. (Source: Hirsch ea 2013; Suggested tags from Beniczky ea 2017, Table 8.)</description>
+            <description>Periodic discharges (PDs): Periodic - repetition of a waveform with relatively uniform morphology and duration with a quantifiable inter-discharge interval between consecutive waveforms and recurrence of the waveform at nearly regular intervals.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>RPP-morphology</value>
@@ -918,6 +1025,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Sensor-list</value>
                <value>Feature-frequency</value>
                <value>RPP-time-related-feature</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Hirsch ea 2013</value>
+               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -930,7 +1042,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Rhythmic-delta-activity</name>
-            <description>Rhythmic Delta Activity (RDA): Rhythmic - repetition of a waveform with relatively uniform morphology and duration, and without an interval between consecutive waveforms. RDA - rhythmic activity less than or equal to 4 Hz. The duration of one cycle (i.e., the period) of the rhythmic pattern should vary by less than 50 percent from the duration of the subsequent cycle for the majority (greater than 50 percent) of cycle pairs to qualify as rhythmic. (Source: Hirsch ea 2013; Suggested tags from Beniczky ea 2017, Table 8.)</description>
+            <description>Rhythmic Delta Activity (RDA): Rhythmic - repetition of a waveform with relatively uniform morphology and duration, and without an interval between consecutive waveforms. RDA - rhythmic activity less than or equal to 4 Hz. The duration of one cycle (i.e., the period) of the rhythmic pattern should vary by less than 50 percent from the duration of the subsequent cycle for the majority (greater than 50 percent) of cycle pairs to qualify as rhythmic.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>RPP-with-superimposed-activity</value>
@@ -939,6 +1051,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Sensor-list</value>
                <value>Feature-frequency</value>
                <value>RPP-time-related-feature</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Hirsch ea 2013</value>
+               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -951,7 +1068,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Spike-or-sharp-and-wave</name>
-            <description>Spike-and-wave or Sharp-and-wave (SW) - polyspike, spike or sharp wave consistently followed by a slow wave in a regularly repeating and alternating pattern (spike-wave-spike-wave-spike-wave), with a consistent relationship between the spike (or polyspike or sharp wave) component and the slow wave; and with no interval between one spike-wave complex and the next (if there is an interval, this would qualify as PDs, where each discharge is a spike-and- wave). (Source: Hirsch ea 2013; Suggested tags from Beniczky ea 2017, Table 8.)</description>
+            <description>Spike-and-wave or Sharp-and-wave (SW) - polyspike, spike or sharp wave consistently followed by a slow wave in a regularly repeating and alternating pattern (spike-wave-spike-wave-spike-wave), with a consistent relationship between the spike (or polyspike or sharp wave) component and the slow wave; and with no interval between one spike-wave complex and the next (if there is an interval, this would qualify as PDs, where each discharge is a spike-and- wave).</description>
             <attribute>
                <name>suggestedTag</name>
                <value>RPP-sharpness</value>
@@ -967,6 +1084,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>RPP-time-related-feature</value>
             </attribute>
             <attribute>
+               <name>annotation</name>
+               <value>dc:source Hirsch ea 2013</value>
+               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
+            </attribute>
+            <attribute>
                <name>hedId</name>
                <value>HED_0042061</value>
             </attribute>
@@ -978,7 +1100,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </node>
       <node>
          <name>Episode</name>
-         <description>Clinical episode or electrographic seizure. (Source: Beniczky ea 2013, Appendix S1.)</description>
+         <description>Clinical episode or electrographic seizure.</description>
+         <attribute>
+            <name>annotation</name>
+            <value>dc:source Beniczky ea 2013 Appendix S1.</value>
+         </attribute>
          <attribute>
             <name>hedId</name>
             <value>HED_0042062</value>
@@ -989,13 +1115,18 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <node>
             <name>Epileptic-seizure</name>
-            <description>The ILAE seizure classification divides seizures into focal, generalized onset, or unknown onset. (Source: Beniczky ea 2017, Table 9, Supplement 1; Selection-tree and list of seizure-types, according to the current ILAE seizure classification, Fisher ea 2017.)</description>
+            <description>The ILAE seizure classification divides seizures into focal, generalized onset, or unknown onset.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Episode-consciousness-affected</value>
                <value>Episode-awareness</value>
                <value>Episode-prodrome</value>
                <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 9 Supplement 1</value>
+               <value>dc:source Selection-tree and list of seizure-types according to the current ILAE seizure classification Fisher ea 2017.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1007,7 +1138,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Focal-onset-epileptic-seizure</name>
-               <description>A focal seizure originates within networks limited to one hemisphere. They may be discretely localized or more widely distributed. Focal seizures may originate in subcortical structures. Focal seizures are optionally subdivided into focal aware and focal impaired awareness seizures. Specific motor and nonmotor classifiers may be added. (Source: Fisher ea 2017, Table 2 and Key Points; Suggested tags from Fisher ea 2017, Figure 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code I.)</description>
+               <description>A focal seizure originates within networks limited to one hemisphere. They may be discretely localized or more widely distributed. Focal seizures may originate in subcortical structures. Focal seizures are optionally subdivided into focal aware and focal impaired awareness seizures. Specific motor and nonmotor classifiers may be added.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Automatism-seizure</value>
@@ -1024,6 +1155,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>Sensory-seizure</value>
                </attribute>
                <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
+                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                  <value>dc:source ILAE seizure classification code I.</value>
+               </attribute>
+               <attribute>
                   <name>hedId</name>
                   <value>HED_0042064</value>
                </attribute>
@@ -1033,7 +1171,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Aware-focal-onset-epileptic-seizure</name>
-                  <description>Focal onset and maintained awareness (knowledge of self or environment). (Source: Fisher ea 2017, Table 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code  I.A.)</description>
+                  <description>Focal onset and maintained awareness (knowledge of self or environment).</description>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
+                     <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source ILAE seizure classification code I.</value>
+                  </attribute>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0042065</value>
@@ -1045,7 +1190,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Impaired-awareness-focal-onset-epileptic-seizure</name>
-                  <description>Focal onset and impaired or lost awareness (knowledge of self or environment) is a feature of focal impaired awareness seizures, previously called complex partial seizures. (Source: Fisher ea 2017, Table 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code I.B.)</description>
+                  <description>Focal onset and impaired or lost awareness (knowledge of self or environment) is a feature of focal impaired awareness seizures, previously called complex partial seizures.</description>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Fisher ea 2017 Table 2</value>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source ILAE seizure classification code I.B.</value>
+                  </attribute>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0042066</value>
@@ -1057,7 +1208,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Awareness-unknown-focal-onset-epileptic-seizure</name>
-                  <description>Focal onset and awareness (knowledge of self or environment) unknown or not specified. (Source: Fisher ea 2017, Table 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code I.C.)</description>
+                  <description>Focal onset and awareness (knowledge of self or environment) unknown or not specified.</description>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Fisher ea 2017 Table 2</value>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source ILAE seizure classification code I.C.</value>
+                  </attribute>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0042067</value>
@@ -1069,7 +1226,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Focal-to-bilateral-tonic-clonic-focal-onset-epileptic-seizure</name>
-                  <description>A seizure type with focal onset, with awareness or impaired awareness, either motor or non-motor, progressing to bilateral tonic clonic activity. The prior term was seizure with partial onset with secondary generalization. (Source: Fisher ea 2017, Table 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code  I.D.01.)</description>
+                  <description>A seizure type with focal onset, with awareness or impaired awareness, either motor or non-motor, progressing to bilateral tonic clonic activity. The prior term was seizure with partial onset with secondary generalization.</description>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Fisher ea 2017 Table 2</value>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source ILAE seizure classification code I.D.01.</value>
+                  </attribute>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0042068</value>
@@ -1082,7 +1245,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Generalized-onset-epileptic-seizure</name>
-               <description>Generalized seizures originate at some point within, and rapidly engaging, bilaterally distributed networks. Generalized onset seizures can be motor: tonic clonic, clonic, tonic, myoclonic, myoclonic tonic clonic, myoclonic atonic, atonic, and epileptic spasms. Generalized onset seizures can also be nonmotor (absence): typical absence, atypical absence, myoclonic absence, or absence with eyelid myoclonia. (Source: Fisher ea 2017, Table 2 and Key Points; Suggested tags from Fisher ea 2017, Figure 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code II.)</description>
+               <description>Generalized seizures originate at some point within, and rapidly engaging, bilaterally distributed networks. Generalized onset seizures can be motor: tonic clonic, clonic, tonic, myoclonic, myoclonic tonic clonic, myoclonic atonic, atonic, and epileptic spasms. Generalized onset seizures can also be nonmotor (absence): typical absence, atypical absence, myoclonic absence, or absence with eyelid myoclonia.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Tonic-clonic-seizure</value>
@@ -1099,6 +1262,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>Eyelid-myoclonia-seizure</value>
                </attribute>
                <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
+                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                  <value>dc:source ILAE seizure classification code II.</value>
+               </attribute>
+               <attribute>
                   <name>hedId</name>
                   <value>HED_0042069</value>
                </attribute>
@@ -1109,12 +1279,19 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Unknown-onset-epileptic-seizure</name>
-               <description>A seizure of unknown onset may still evidence certain defining motor (e.g., tonic clonic) or nonmotor (e.g., behavior arrest) characteristics. With further information or future observed seizures, a reclassification of unknown-onset seizures into focal or generalized-onset categories may become possible. Therefore, “unknown-onset” is not a characteristic of the seizure, but a convenient placeholder for our ignorance. (Source: Fisher ea 2017, page 532; Suggested tags from Fisher ea 2017, Figure 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code III.)</description>
+               <description>A seizure of unknown onset may still evidence certain defining motor (e.g., tonic clonic) or nonmotor (e.g., behavior arrest) characteristics. With further information or future observed seizures, a reclassification of unknown-onset seizures into focal or generalized-onset categories may become possible. Therefore, unknown onset is not a characteristic of the seizure, but a convenient placeholder for our ignorance.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Tonic-clonic-seizure</value>
                   <value>Epileptic-spasm</value>
                   <value>Behavior-arrest-seizure</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Fisher ea 2017 page 532</value>
+                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                  <value>dc:source ILAE seizure classification code III.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -1126,7 +1303,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Unclassified-epileptic-seizure</name>
-                  <description>Referring to a seizure type that cannot be described by the ILAE 2017 classification either because of inadequate information or unusual clinical features. (Source: Fisher ea 2017, Table 2; Beniczky ea 2017, Supplement 1, ILAE seizure classification code  III.C.01)</description>
+                  <description>Referring to a seizure type that cannot be described by the ILAE 2017 classification either because of inadequate information or unusual clinical features.</description>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Fisher ea 2017 Table 2</value>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source ILAE seizure classification code III.C.01.</value>
+                  </attribute>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0042071</value>
@@ -1140,13 +1323,18 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Electroencephalographic-seizure</name>
-            <description>Refers usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify. (Source: Beniczky ea 2013, Appendix S5; Beniczky ea 2017, Table 9.)</description>
+            <description>Refers usually to non convulsive status. Ictal EEG: rhythmic discharge or spike and wave pattern with definite evolution in frequency, location, or morphology lasting at least 10 s; evolution in amplitude alone did not qualify.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Episode-consciousness-affected</value>
                <value>Episode-awareness</value>
                <value>Episode-prodrome</value>
                <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2013 Appendix S5</value>
+               <value>dc:source Beniczky ea 2017 Table 9.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1159,7 +1347,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Seizure-PNES</name>
-            <description>Psychogenic non-epileptic seizure. Paroxysmal events that mimic (or are confused with) epileptic seizures, but which do not result from epileptic activity; they lack the EEG ictal features during the ictus. (Source: Beniczky ea 2013, Appendix S5; Beniczky ea 2017, Table 9.)</description>
+            <description>Psychogenic non-epileptic seizure. Paroxysmal events that mimic (or are confused with) epileptic seizures, but which do not result from epileptic activity; they lack the EEG ictal features during the ictus.</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
@@ -1167,6 +1355,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Episode-awareness</value>
                <value>Episode-prodrome</value>
                <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2013 Appendix S5</value>
+               <value>dc:source Beniczky ea 2017 Table 9.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1179,7 +1372,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Sleep-related-episode</name>
-            <description>(Source: Beniczky ea 2017, Table 9.)</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
@@ -1187,6 +1379,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Episode-awareness</value>
                <value>Episode-prodrome</value>
                <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 9.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1198,7 +1394,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Sleep-related-arousal</name>
-               <description>Normal arousal. (Source: Beniczky ea 2017, Table 9.)</description>
+               <description>Normal arousal.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042075</value>
@@ -1210,7 +1410,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Benign-sleep-myoclonus</name>
-               <description>A distinctive disorder of sleep characterized by a) neonatal onset, b) rhythmic myoclonic jerks only during sleep and c) abrupt and consistent cessation with arousal, d) absence of concomitant electrographic changes suggestive of seizures, and e) good outcome. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>A distinctive disorder of sleep characterized by a) neonatal onset, b) rhythmic myoclonic jerks only during sleep and c) abrupt and consistent cessation with arousal, d) absence of concomitant electrographic changes suggestive of seizures, and e) good outcome.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042076</value>
@@ -1222,7 +1427,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Confusional-arousal</name>
-               <description>Episode of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>Episode of non epileptic nature included in NREM parasomnias, characterized by sudden arousal and complex behavior but without full alertness, usually lasting a few minutes and occurring almost in all children at least occasionally. Amnesia of the episode is the rule.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042077</value>
@@ -1234,7 +1444,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Cataplexy</name>
-               <description>A sudden decrement in muscle tone and loss of deep tendon reflexes, leading to muscle weakness, paralysis, or postural collapse. Cataplexy usually is precipitated by an outburst of emotional expression-notably laughter, anger, or startle. It is one of the tetrad of symptoms of narcolepsy. During cataplexy, respiration and voluntary eye movements are not compromised. Consciousness is preserved. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>A sudden decrement in muscle tone and loss of deep tendon reflexes, leading to muscle weakness, paralysis, or postural collapse. Cataplexy usually is precipitated by an outburst of emotional expression-notably laughter, anger, or startle. It is one of the tetrad of symptoms of narcolepsy. During cataplexy, respiration and voluntary eye movements are not compromised. Consciousness is preserved.</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Feature-significance-to-recording</value>
@@ -1242,6 +1452,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <value>Episode-awareness</value>
                   <value>Episode-prodrome</value>
                   <value>Episode-tongue-biting</value>
+               </attribute>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -1254,7 +1469,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Sleep-periodic-limb-movement</name>
-               <description>PLMS. Periodic limb movement in sleep. Episodes are characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>PLMS (Periodic limb movement in sleep). Episodes are characterized by brief (0.5- to 5.0-second) lower-extremity movements during sleep, which typically occur at 20- to 40-second intervals, most commonly during the first 3 hours of sleep. The affected individual is usually not aware of the movements or of the transient partial arousals.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042079</value>
@@ -1266,7 +1486,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>REM-sleep-behavioral-disorder</name>
-               <description>REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>REM sleep behavioral disorder. Episodes characterized by: a) presence of REM sleep without atonia (RSWA) on polysomnography (PSG); b) presence of at least 1 of the following conditions - (1) Sleep-related behaviors, by history, that have been injurious, potentially injurious, or disruptive (example: dream enactment behavior); (2) abnormal REM sleep behavior documented during PSG monitoring; (3) absence of epileptiform activity on electroencephalogram (EEG) during REM sleep (unless RBD can be clearly distinguished from any concurrent REM sleep-related seizure disorder); (4) sleep disorder not better explained by another sleep disorder, a medical or neurologic disorder, a mental disorder, medication use, or a substance use disorder.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042080</value>
@@ -1278,7 +1503,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Sleep-walking</name>
-               <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>Episodes characterized by ambulation during sleep; the patient is difficult to arouse during an episode, and is usually amnesic following the episode. Episodes usually occur in the first third of the night during slow wave sleep. Polysomnographic recordings demonstrate 2 abnormalities during the first sleep cycle: frequent, brief, non-behavioral EEG-defined arousals prior to the somnambulistic episode and abnormally low gamma (0.75-2.0 Hz) EEG power on spectral analysis, correlating with high-voltage (hyper-synchronic gamma) waves lasting 10 to 15 s occurring just prior to the movement. This is followed by stage I NREM sleep, and there is no evidence of complete awakening.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042081</value>
@@ -1291,7 +1521,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Pediatric-episode</name>
-            <description>(Source: Beniczky ea 2017, Table 9.)</description>
             <attribute>
                <name>suggestedTag</name>
                <value>Feature-significance-to-recording</value>
@@ -1299,6 +1528,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>Episode-awareness</value>
                <value>Episode-prodrome</value>
                <value>Episode-tongue-biting</value>
+            </attribute>
+            <attribute>
+               <name>annotation</name>
+               <value>dc:source Beniczky ea 2017 Table 9.</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1310,7 +1543,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <node>
                <name>Hyperekplexia</name>
-               <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells. (Source: Beniczky ea 2017, Table 9; Beniczky ea 2013, Appendix S5.)</description>
+               <description>Disorder characterized by exaggerated startle response and hypertonicity that may occur during the first year of life and in severe cases during the neonatal period. Children usually present with marked irritability and recurrent startles in response to handling and sounds. Severely affected infants can have severe jerks and stiffening, sometimes with breath-holding spells.</description>
+               <attribute>
+                  <name>annotation</name>
+                  <value>dc:source Beniczky ea 2017 Table 9</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S5.</value>
+               </attribute>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042083</value>
@@ -2050,7 +2288,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Hypsarrhythmia-classic</name>
-               <description>Pattern consisting of diffuse chaotic high voltage (more than 300 μV) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)</description>
+               <description>Pattern consisting of diffuse chaotic high voltage (more than 300 ??V) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042130</value>
@@ -2081,7 +2319,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Hypsarrhythmia-modified</name>
-               <description>Pattern consisting of diffuse chaotic high voltage (more than 300 μV) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)</description>
+               <description>Pattern consisting of diffuse chaotic high voltage (more than 300 ??V) irregular slow waves interspersed with multiregional spikes and sharp waves over both hemispheres. (Source: Beniczky ea 2017, Table 5; Beniczky ea 2013, Appendix S4.)</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0042132</value>
@@ -2519,7 +2757,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </node>
                   <node>
                      <name>RPP-sharp</name>
-                     <description>Sharp (70–200 ms). (Source: Beniczky ea 2017, Table 8.)</description>
+                     <description>Sharp (70-200 ms). (Source: Beniczky ea 2017, Table 8.)</description>
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0042160</value>
@@ -2747,7 +2985,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </node>
          <node>
             <name>Source-analysis-property</name>
-            <description>In case source imaging is done, the results are scored at sublobar level: frontal (perisylvian-superior surface; lateral; mesial; polar; orbitofrontal), temporal (polar; basal, lateral-anterior; lateral-posterior; perisylvian-inferior surface), central (lateral convexity; mesial; central sulcus – anterior surface, central sulcus – posterior surface; opercular), parietal (lateral-convexity; mesial; opercular), occipital (lateral; mesial, basal) and insula. (Source: Beniczky ea 2017, Section 8.)</description>
+            <description>In case source imaging is done, the results are scored at sublobar level: frontal (perisylvian-superior surface; lateral; mesial; polar; orbitofrontal), temporal (polar; basal, lateral-anterior; lateral-posterior; perisylvian-inferior surface), central (lateral convexity; mesial; central sulcus-anterior surface, central sulcus-posterior surface; opercular), parietal (lateral-convexity; mesial; opercular), occipital (lateral; mesial, basal) and insula. (Source: Beniczky ea 2017, Section 8.)</description>
             <attribute>
                <name>hedId</name>
                <value>HED_0042174</value>
@@ -3043,7 +3281,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>Intermittent-photic-stimulation-effect</name>
-               <description>The effect of Intermittent Photic Stimulation (IPS) is scored according to the terminology proposed by Kasteleijn-Nolst Trenité ea (2001). (Source: Beniczky ea 2017.)</description>
+               <description>The effect of Intermittent Photic Stimulation (IPS) is scored according to the terminology proposed by Kasteleijn-Nolst Trenit?? ea (2001). (Source: Beniczky ea 2017.)</description>
                <attribute>
                   <name>suggestedTag</name>
                   <value>Normal</value>
@@ -3058,7 +3296,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </attribute>
                <node>
                   <name>Posterior-stimulus-dependent-response</name>
-                  <description>Anomalous steady-state VEPs, of unusually sharp waveform or high amplitude. Some types have clinical correlates, for instance, occipital spikes after suppression of generalized PPR by medication and high-amplitude VEPs in neuronal ceroid lipofuscinosis. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Anomalous steady-state VEPs, of unusually sharp waveform or high amplitude. Some types have clinical correlates, for instance, occipital spikes after suppression of generalized PPR by medication and high-amplitude VEPs in neuronal ceroid lipofuscinosis. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -3074,7 +3312,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Posterior-stimulus-independent-response-limited</name>
-                  <description>Limited to the stimulus train: Activity confined to or maximal at the back of the head and not at the flash frequency or at a harmonic thereof. The term includes delta and theta activity and frank epileptiform patterns. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Limited to the stimulus train: Activity confined to or maximal at the back of the head and not at the flash frequency or at a harmonic thereof. The term includes delta and theta activity and frank epileptiform patterns. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -3090,7 +3328,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Posterior-stimulus-independent-response-self-sustained</name>
-                  <description>Self-sustaining: Self-sustaining posterior stimulus-independent responses that outlast the stimulus train. These often last many seconds and may evolve to an overt seizure. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Self-sustaining: Self-sustaining posterior stimulus-independent responses that outlast the stimulus train. These often last many seconds and may evolve to an overt seizure. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -3106,7 +3344,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-response-limited</name>
-                  <description>Limited to the stimulus train: Comprises multiple spikes or spike-and-wave activity, which are apparently generalized, but may be of greater amplitude at the front or back of the head. It is termed a photoconvulsive response (PCR) by Bickford et al., and corresponds to type 4 response of Waltz et al. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Limited to the stimulus train: Comprises multiple spikes or spike-and-wave activity, which are apparently generalized, but may be of greater amplitude at the front or back of the head. It is termed a photoconvulsive response (PCR) by Bickford et al., and corresponds to type 4 response of Waltz et al. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -3122,7 +3360,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Generalized-photoparoxysmal-response-self-sustained</name>
-                  <description>Self-sustaining: Generalized PPR continuing after stimulation. This may not be demonstrated unless the stimulus train is terminated as soon as a generalized PPR is identified. It was termed prolonged photoconvulsive response by Reilly and Peters, and has a strong association with epilepsy and visually induced seizures in patients referred for clinical EEG examination. Its prevalence in asymptomatic general populations is unknown, but was found in five of 13,658 apparently healthy aircrew by Gregory et al. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Self-sustaining: Generalized PPR continuing after stimulation. This may not be demonstrated unless the stimulus train is terminated as soon as a generalized PPR is identified. It was termed prolonged photoconvulsive response by Reilly and Peters, and has a strong association with epilepsy and visually induced seizures in patients referred for clinical EEG examination. Its prevalence in asymptomatic general populations is unknown, but was found in five of 13,658 apparently healthy aircrew by Gregory et al. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -3138,7 +3376,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Activation-of-pre-existing-epileptogenic-area</name>
-                  <description>Rarely, photic stimulation may activate an epileptogenic cortex, which is also spontaneously active; IPS could then also elicit a seizure by stimulating this, usually posterior located, area. It is questionable whether this should be considered a photoparoxysmal response (PPR), and it does not figure in established classifications. (Source: Trenité ea 2001; Beniczky ea 2017, Table 7.)</description>
+                  <description>Rarely, photic stimulation may activate an epileptogenic cortex, which is also spontaneously active; IPS could then also elicit a seizure by stimulating this, usually posterior located, area. It is questionable whether this should be considered a photoparoxysmal response (PPR), and it does not figure in established classifications. (Source: Trenit?? ea 2001; Beniczky ea 2017, Table 7.)</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Feature-frequency</value>
@@ -7885,6 +8123,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <name>hedId</name>
             <value>HED_0012001</value>
          </attribute>
+         <attribute>
+            <name>annotation</name>
+            <value>ncit:C25499</value>
+            <value>rdfs:comment Should have this tag in every event process.</value>
+         </attribute>
          <node>
             <name>Sensory-event</name>
             <description>Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.</description>
@@ -12064,6 +12307,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <value>numericClass</value>
                      </attribute>
                      <attribute>
+                        <name>unitClass</name>
+                        <value>timeUnits</value>
+                     </attribute>
+                     <attribute>
                         <name>hedId</name>
                         <value>HED_0012475</value>
                      </attribute>
@@ -13952,6 +14199,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                               <name>takesValue</name>
                            </attribute>
                            <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
                               <name>unitClass</name>
                               <value>frequencyUnits</value>
                            </attribute>
@@ -14082,7 +14333,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         </attribute>
                         <node>
                            <name>Clock-face</name>
-                           <description>A location identifier based on clock-face numbering or anatomic subregion. Replaced by Clock-face-position.</description>
+                           <description>A location identifier based on clock-face numbering or anatomic subregion. Use Clock-face-position.</description>
                            <attribute>
                               <name>deprecatedFrom</name>
                               <value>8.2.0</value>
@@ -19873,7 +20124,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
          <unit>
             <name>degree Celsius</name>
-            <description>Units are not allowed to have spaces. Use degree-Celsius or oC instead.</description>
+            <description>Units are not allowed to have spaces. Use degree-Celsius or oC.</description>
             <attribute>
                <name>deprecatedFrom</name>
                <value>8.2.0</value>
@@ -20775,6 +21026,19 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </valueClassDefinition>
    </valueClassDefinitions>
    <schemaAttributeDefinitions>
+      <schemaAttributeDefinition>
+         <name>annotation</name>
+         <description>A annotation link to an item in another ontology or item.</description>
+         <property>
+            <name>elementDomain</name>
+         </property>
+         <property>
+            <name>stringRange</name>
+         </property>
+         <property>
+            <name>annotationProperty</name>
+         </property>
+      </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>hedId</name>
          <description>The unique identifier of this element in the HED namespace.</description>
