@@ -480,7 +480,7 @@ HED_0042478	Abnormal-sleep-architecture	2	Sleep-architecture	annotation=dc:sourc
 HED_0042479	Sleep-stage-reached	1	Sleep-and-drowsiness	requireChild, suggestedTag=Property-not-possible-to-determine, suggestedTag=Feature-significance-to-recording, annotation=dc:source Beniczky ea 2017 Section 7	For normal sleep patterns the sleep stages reached during the recording can be specified.
 HED_0042480	Sleep-stage-N1	2	Sleep-stage-reached	annotation=dc:source Beniczky ea 2017 Section 7	Sleep stage 1.
 HED_0042481	Sleep-stage-N1-#	3	Sleep-stage-N1	takesValue, valueClass=textClass, annotation=dc:source Beniczky ea 2017 Section 7	Free text.
-HED_0042482	Sleep-stage-N2	2	Sleep-stage-reached		Sleep stage 2.
+HED_0042482	Sleep-stage-N2	2	Sleep-stage-reached	annotation=dc:source Beniczky ea 2017 Section 7	Sleep stage 2.
 HED_0042483	Sleep-stage-N2-#	3	Sleep-stage-N2	takesValue, valueClass=textClass	Free text.
 HED_0042484	Sleep-stage-N3	2	Sleep-stage-reached	annotation=dc:source Beniczky ea 2017 Section 7	Sleep stage 3.
 HED_0042485	Sleep-stage-N3-#	3	Sleep-stage-N3	takesValue, valueClass=textClass	Free text.

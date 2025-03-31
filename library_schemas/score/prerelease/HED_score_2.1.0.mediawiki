@@ -499,7 +499,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
 * Sleep-stage-reached <nowiki>{requireChild, suggestedTag=Property-not-possible-to-determine, suggestedTag=Feature-significance-to-recording, annotation=dc:source Beniczky ea 2017 Section 7, hedId=HED_0042479} [For normal sleep patterns the sleep stages reached during the recording can be specified.]</nowiki>
 ** Sleep-stage-N1 <nowiki>{annotation=dc:source Beniczky ea 2017 Section 7, hedId=HED_0042480} [Sleep stage 1.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, annotation=dc:source Beniczky ea 2017 Section 7, hedId=HED_0042481} [Free text.]</nowiki>
-** Sleep-stage-N2 <nowiki>{hedId=HED_0042482} [Sleep stage 2.]</nowiki>
+** Sleep-stage-N2 <nowiki>{annotation=dc:source Beniczky ea 2017 Section 7, hedId=HED_0042482} [Sleep stage 2.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0042483} [Free text.]</nowiki>
 ** Sleep-stage-N3 <nowiki>{annotation=dc:source Beniczky ea 2017 Section 7, hedId=HED_0042484} [Sleep stage 3.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0042485} [Free text.]</nowiki>
@@ -548,12 +548,13 @@ The SCORE standard defines terms for describing phenomena observed in scalp EEG 
 The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
 A second revised and extended version of SCORE achieved international consensus.
 
-1 Beniczky ea 2013: "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54(6) pp.1112-1124.
-2 Beniczky ea 2017: "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128(11) pp.2334-2346.
-3 Hirsch ea 2013: "American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology 30(1) pp.1-27.
-4 Fisher ea 2017: "Instruction manual for the ILAE 2017 operational classification of seizure types." Epilepsia 58(4) pp.531-542.
-5 Trenité ea 2001: "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology." Epilepsia 42(5) pp.692-701.
-6 Blume ea 2001: "Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology." Epilepsia 42(9) pp.1212-1218.
+1 [Beniczky ea 2013](https://doi.org/10.1111/epi.12270): "Standardized computer based organized reporting of EEG: SCORE." Epilepsia 54(6) pp.1112-1124.
+2 [Beniczky ea 2017](https://doi.org/10.1016/j.clinph.2017.07.418): "Standardized computer based organized reporting of EEG: SCORE second version." Clinical Neurophysiology 128(11) pp.2334-2346.
+3 [Hirsch ea 2013](https://doi.org/10.1097/WNP.0b013e3182784729): "American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version." Journal of clinical neurophysiology 30(1) pp.1-27.
+4 [Fisher ea 2017](https://doi.org/10.1111/epi.13670): "Instruction manual for the ILAE 2017 operational classification of seizure types." Epilepsia 58(4) pp.531-542.
+5 [Trenite ea 2001](https://doi.org/10.1046/j.1528-1157.2001.30600.x): "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology." Epilepsia 42(5) pp.692-701.
+6 [Blume ea 2001](https://doi.org/10.1046/j.1528-1157.2001.22001.x): "Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology." Epilepsia 42(9) pp.1212-1218.
+7 [Wikipedia](https://en.wikipedia.org).
 
 TPA KR DH SM July 2024
 
