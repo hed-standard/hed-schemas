@@ -12,13 +12,13 @@ Each term in this vocabulary has a human-readable description and may include ad
             <value>Task-property</value>
          </attribute>
          <attribute>
-            <name>hedId</name>
-            <value>HED_0012001</value>
-         </attribute>
-         <attribute>
             <name>annotation</name>
             <value>ncit:C25499</value>
             <value>rdfs:comment Should have this tag in every event process.</value>
+         </attribute>
+         <attribute>
+            <name>hedId</name>
+            <value>HED_0012001</value>
          </attribute>
          <node>
             <name>Sensory-event</name>
@@ -12926,6 +12926,10 @@ Each term in this vocabulary has a human-readable description and may include ad
          </property>
          <property>
             <name>stringRange</name>
+         </property>
+         <property>
+            <name>hedId</name>
+            <value>HED_0010504</value>
          </property>
          <property>
             <name>annotationProperty</name>
