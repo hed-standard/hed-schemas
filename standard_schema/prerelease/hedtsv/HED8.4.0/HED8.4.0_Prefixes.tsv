@@ -11,3 +11,4 @@ foaf:	http://xmlns.com/foaf/0.1/	Friend-of-a-Friend http://xmlns.com/foaf/spec/
 ncit:	http://purl.obolibrary.org/obo/ncit.owl	NCI Thesaurus OBO Edition
 ia0:	http://purl.obolibrary.org/obo/iao.owl	Information Artifact Ontology (IAO)
 skos:	http://www.w3.org/2004/02/skos/core	SKOS (Simple Knowledge Organization System) Vocabulary
+obogo:	http://www.geneontology.org/formats/oboInOwl	The OBO Format Namespace
