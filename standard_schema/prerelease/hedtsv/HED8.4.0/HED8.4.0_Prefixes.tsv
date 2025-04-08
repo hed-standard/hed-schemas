@@ -1,4 +1,4 @@
-prefix	namespace IRI	definition
+prefix	namespace	description
 rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#	The RDF namespace [RDF-CONCEPTS]
 rdfs:	http://www.w3.org/2000/01/rdf-schema#	The RDF Schema namespace [RDFS]
 xsd:	http://www.w3.org/2000/10/XMLSchema#	XML Schema Namespace [XMLSCHEMA11-2]
