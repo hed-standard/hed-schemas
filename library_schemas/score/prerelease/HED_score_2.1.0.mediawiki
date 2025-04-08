@@ -560,21 +560,28 @@ A second revised and extended version of SCORE achieved international consensus.
 TPA KR DH SM July 2024
 
 '''Sources'''
+* <nowiki>source=Beniczky ea 2013,link=https://doi.org/10.1111/epi.12270,description=Standardized computer based organized reporting of EEG: SCORE. Epilepsia 54(6) pp.1112-1124.</nowiki>
+* <nowiki>source=Beniczky ea 2017    https://doi.org/10.1016/j.clinph.2017.07.418    Standardized computer based organized reporting of EEG: SCORE second version. Clinical Neurophysiology 128(11) pp.2334-2346.,link=,description=</nowiki>
+* <nowiki>source=Blume ea 2001   https://doi.org/10.1046/j.1528-1157.2001.22001.X    Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology. Epilepsia 42(9) pp.1212-1218.,link=,description=</nowiki>
+* <nowiki>source=Fisher ea 2017  https://doi.org/10.1111/epi.1367    Instruction manual for the ILAE 2017 operational classification of seizure types. Epilepsia 58(4) pp.531-542.,link=,description=</nowiki>
+* <nowiki>source=Hirsch ea 2013  https://doi.org/10.1097/WNP.0b013e3182784729    American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version. Journal of clinical neurophysiology 30(1) pp.1-27.,link=,description=</nowiki>
+* <nowiki>source=Trenite ea 2001 https://doi.org/10.1046/j.1528-1157.2001.30600.X    Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology. Epilepsia 42(5) pp.692-701.,link=,description=</nowiki>
+* <nowiki>source=Wikipedia   https://en.wikipedia.org    General definitions of concepts.,link=,description=</nowiki>
 
 '''Prefixes'''
-* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns#,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
-* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema#,description=The RDF Schema namespace [RDFS]</nowiki>
-* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2000/10/XMLSchema#,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
-* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
+* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/,description=The Dublin Core elements</nowiki>
+* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
+* <nowiki>prefix=iao:,namespace=http://purl.obolibrary.org/obo/iao.owl,description=Information Artifact Ontology (IAO)</nowiki>
+* <nowiki>prefix=ncit:,namespace=http://purl.obolibrary.org/obo/ncit.owl,description=NCI Thesaurus OBO Edition</nowiki>
+* <nowiki>prefix=obogo:,namespace=http://www.geneontology.org/formats/oboInOwl,description=The OBO Format Namespace</nowiki>
 * <nowiki>prefix=owl:,namespace=http://www.w3.org/2002/07/owl#,description=The OWL namespace [OWL2-OVERVIEW]</nowiki>
 * <nowiki>prefix=prov:,namespace=http://www.w3.org/ns/prov#,description=The PROV namespace [PROV-DM]</nowiki>
-* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/,description=The Dublin Core elements</nowiki>
-* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/,description=The Dublin Core terms</nowiki>
-* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
-* <nowiki>prefix=ncit:,namespace=http://purl.obolibrary.org/obo/ncit.owl,description=NCI Thesaurus OBO Edition</nowiki>
-* <nowiki>prefix=iao:,namespace=http://purl.obolibrary.org/obo/iao.owl,description=Information Artifact Ontology (IAO)</nowiki>
+* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns#,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
+* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema#,description=The RDF Schema namespace [RDFS]</nowiki>
 * <nowiki>prefix=skos:,namespace=http://www.w3.org/2004/02/skos/core,description=SKOS (Simple Knowledge Organization System) Vocabulary</nowiki>
-* <nowiki>prefix=obogo:,namespace=http://www.geneontology.org/formats/oboInOwl,description=The OBO Format Namespace</nowiki>
+* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/,description=The Dublin Core terms</nowiki>
+* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
+* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2000/10/XMLSchema#,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
 
 '''External annotations'''
 * <nowiki>prefix=dc:,id=contributor,iri=http://purl.org/dc/elements/1.1/contributor,description=An entity responsible for making contributions to the resource.</nowiki>
@@ -591,7 +598,7 @@ TPA KR DH SM July 2024
 * <nowiki>prefix=dc:,id=title,iri=http://purl.org/dc/elements/1.1/title,description=A name given to the resource.</nowiki>
 * <nowiki>prefix=dc:,id=type,iri=http://purl.org/dc/elements/1.1/type,description=The nature or genre of the resource.</nowiki>
 * <nowiki>prefix=foaf:,id=homepage,iri=http://xmlns.com/foaf/0.1/homepage,description=A homepage for some thing.</nowiki>
-* <nowiki>prefix=terms:,id=license,iri=http://purl.org/dc/terms/license,description=A legal document giving official permission to do something with the resource.</nowiki>
 * <nowiki>prefix=obogo:,id=has_dbxref,iri=http://www.geneontology.org/formats/oboInOwl#hasDbXref,description=Property indicating that an ontology term has a cross-reference to a database.</nowiki>
+* <nowiki>prefix=terms:,id=license,iri=http://purl.org/dc/terms/license,description=A legal document giving official permission to do something with the resource.</nowiki>
 
 !# end hed
