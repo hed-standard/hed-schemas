@@ -1,4 +1,4 @@
-prefix	namespace IRI	definition
+prefix	namespace	description
 rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#	The RDF namespace [RDF-CONCEPTS]
 rdfs:	http://www.w3.org/2000/01/rdf-schema#	The RDF Schema namespace [RDFS]
 xsd:	http://www.w3.org/2000/10/XMLSchema#	XML Schema Namespace [XMLSCHEMA11-2]
@@ -9,6 +9,6 @@ dc:	http://purl.org/dc/elements/1.1/	The Dublin Core elements
 terms:	http://purl.org/dc/terms/	The Dublin Core terms
 foaf:	http://xmlns.com/foaf/0.1/	Friend-of-a-Friend http://xmlns.com/foaf/spec/
 ncit:	http://purl.obolibrary.org/obo/ncit.owl	NCI Thesaurus OBO Edition
-ia0:	http://purl.obolibrary.org/obo/iao.owl	Information Artifact Ontology (IAO)
+iao:	http://purl.obolibrary.org/obo/iao.owl	Information Artifact Ontology (IAO)
 skos:	http://www.w3.org/2004/02/skos/core	SKOS (Simple Knowledge Organization System) Vocabulary
 obogo:	http://www.geneontology.org/formats/oboInOwl	The OBO Format Namespace

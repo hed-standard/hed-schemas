@@ -1,4 +1,4 @@
-Prefix	ID	IRI	Description
+prefix	id	iri	description
 dc:	contributor	http://purl.org/dc/elements/1.1/contributor	An entity responsible for making contributions to the resource.
 dc:	creator	http://purl.org/dc/elements/1.1/creator	An entity primarily responsible for making the resource.
 dc:	date	http://purl.org/dc/elements/1.1/date	A point or period of time associated with an event in the lifecycle of the resource.
