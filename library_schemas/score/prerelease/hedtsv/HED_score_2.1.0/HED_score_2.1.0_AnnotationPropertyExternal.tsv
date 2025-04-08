@@ -1,4 +1,4 @@
-Prefix	ID	IRI	Description
+prefix	id	iri	description
 dc:	contributor	http://purl.org/dc/elements/1.1/contributor	An entity responsible for making contributions to the resource.
 dc:	creator	http://purl.org/dc/elements/1.1/creator	An entity primarily responsible for making the resource.
 dc:	date	http://purl.org/dc/elements/1.1/date	A point or period of time associated with an event in the lifecycle of the resource.
@@ -14,4 +14,4 @@ dc:	title	http://purl.org/dc/elements/1.1/title	A name given to the resource.
 dc:	type	http://purl.org/dc/elements/1.1/type	The nature or genre of the resource.
 foaf:	homepage	http://xmlns.com/foaf/0.1/homepage	A homepage for some thing.
 terms:	license	http://purl.org/dc/terms/license	A legal document giving official permission to do something with the resource.
-obo:	has_dbxref	http://www.geneontology.org/formats/oboInOwl#hasDbXref	Property indicating that an ontology term has a cross-reference to a database.
+obogo:	has_dbxref	http://www.geneontology.org/formats/oboInOwl#hasDbXref	Property indicating that an ontology term has a cross-reference to a database.
