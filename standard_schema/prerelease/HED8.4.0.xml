@@ -13412,28 +13412,34 @@ Each term in this vocabulary has a human-readable description and may include ad
       <schemaSource>
          <name>wikipedia</name>
          <link>https://wikipedia.org</link>
+         <description/>
       </schemaSource>
    </schemaSources>
    <schemaPrefixes>
       <schemaPrefix>
-         <name>rdf:</name>
-         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
-         <description>The RDF namespace [RDF-CONCEPTS]</description>
+         <name>dc:</name>
+         <namespace>http://purl.org/dc/elements/1.1/</namespace>
+         <description>The Dublin Core elements</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>rdfs:</name>
-         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
-         <description>The RDF Schema namespace [RDFS]</description>
+         <name>foaf:</name>
+         <namespace>http://xmlns.com/foaf/0.1/</namespace>
+         <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>xsd:</name>
-         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
-         <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
+         <name>iao:</name>
+         <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
+         <description>Information Artifact Ontology (IAO)</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>xml:</name>
-         <namespace>http://www.w3.org/XML/1998/namespace</namespace>
-         <description>XLM Namespace [XML]</description>
+         <name>ncit:</name>
+         <namespace>http://purl.obolibrary.org/obo/ncit.owl</namespace>
+         <description>NCI Thesaurus OBO Edition</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>obogo:</name>
+         <namespace>http://www.geneontology.org/formats/oboInOwl</namespace>
+         <description>The OBO Format Namespace</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
@@ -13446,29 +13452,14 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>The PROV namespace [PROV-DM]</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>dc:</name>
-         <namespace>http://purl.org/dc/elements/1.1/</namespace>
-         <description>The Dublin Core elements</description>
+         <name>rdf:</name>
+         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+         <description>The RDF namespace [RDF-CONCEPTS]</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>terms:</name>
-         <namespace>http://purl.org/dc/terms/</namespace>
-         <description>The Dublin Core terms</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>foaf:</name>
-         <namespace>http://xmlns.com/foaf/0.1/</namespace>
-         <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>ncit:</name>
-         <namespace>http://purl.obolibrary.org/obo/ncit.owl</namespace>
-         <description>NCI Thesaurus OBO Edition</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>iao:</name>
-         <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
-         <description>Information Artifact Ontology (IAO)</description>
+         <name>rdfs:</name>
+         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+         <description>The RDF Schema namespace [RDFS]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>skos:</name>
@@ -13476,9 +13467,19 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>SKOS (Simple Knowledge Organization System) Vocabulary</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>obogo:</name>
-         <namespace>http://www.geneontology.org/formats/oboInOwl</namespace>
-         <description>The OBO Format Namespace</description>
+         <name>terms:</name>
+         <namespace>http://purl.org/dc/terms/</namespace>
+         <description>The Dublin Core terms</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>xml:</name>
+         <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+         <description>XLM Namespace [XML]</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>xsd:</name>
+         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
+         <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
       </schemaPrefix>
    </schemaPrefixes>
    <externalAnnotations>
@@ -13567,16 +13568,16 @@ Each term in this vocabulary has a human-readable description and may include ad
          <description>A homepage for some thing.</description>
       </externalAnnotation>
       <externalAnnotation>
-         <name>terms:</name>
-         <id>license</id>
-         <iri>http://purl.org/dc/terms/license</iri>
-         <description>A legal document giving official permission to do something with the resource.</description>
-      </externalAnnotation>
-      <externalAnnotation>
          <name>obogo:</name>
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>terms:</name>
+         <id>license</id>
+         <iri>http://purl.org/dc/terms/license</iri>
+         <description>A legal document giving official permission to do something with the resource.</description>
       </externalAnnotation>
    </externalAnnotations>
 </HED>
