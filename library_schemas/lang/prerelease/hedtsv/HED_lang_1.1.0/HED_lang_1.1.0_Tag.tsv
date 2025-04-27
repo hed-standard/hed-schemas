@@ -1,252 +1,252 @@
-hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description
-HED_0062001	Language	0	Item	rooted=Item, annotation=dc:source Original, annotation=rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works.	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.
-HED_0062002	Afroasiatic-language	1	Language	annotation=rdfs:comment Glottocode: afro1255	A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.
-HED_0062003	Arabic	2	Afroasiatic-language	annotation=rdfs:comment Glottocode: arab1395	An Afroasiatic language spoken mainly in Northern Africa and Western Asia.
-HED_0062004	Hebrew	2	Afroasiatic-language	annotation=rdfs:comment Glottocode: hebr1245	An Afroasiatic language mainly spoken in Israel.
-HED_0062005	Atlantic-Congo-language	1	Language	annotation=rdfs:comment Glottocode: atla1278	A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.
-HED_0062006	Swahili	2	Atlantic-Congo-language	annotation=rdfs:comment Glottocode: swah1253	An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.
-HED_0062007	Austroasiatic	1	Language	annotation=rdfs:comment Glottocode:aust1305	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.
-HED_0062008	Vietnamese	2	Austroasiatic	annotation=rdfs:comment Glottocode:viet1252	An Austroasiatic language mainly spoken in Vietnam.
-HED_0062009	Austronesian-language	1	Language	annotation=rdfs:comment Glottocode: aust1307	A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.
-HED_0062010	Malay	2	Austronesian-language	annotation=rdfs:comment Glottocode: nucl1806	An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.
-HED_0062011	Dravidian	1	Language	annotation=rdfs:comment Glottocode: drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages	A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.
-HED_0062012	Tamil	2	Dravidian	annotation=rdfs:comment Glottocode: tami1289	A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.
-HED_0062013	Indo-European-language	1	Language	suggestedTag=Language-property, annotation=rdfs:comment Glottocode: indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages	A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.
-HED_0062014	Baltic-language	2	Indo-European-language	annotation=rdfs:comment Glottocode: east2280	A system of communication belonging to the family of languages originating in Northeastern Europe.
-HED_0062015	Latvian	3	Baltic-language	annotation=rdfs:comment Glottocode: latv1249	A baltic language spoken mainly in Latvia.
-HED_0062016	Lithuanian	3	Baltic-language	annotation=rdfs:comment Glottocode: lith1251	A baltic language spoken mainly in Lithuania.
-HED_0062017	Germanic-language	2	Indo-European-language	annotation=rdfs:comment Glottocode: germ1287	A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.
-HED_0062018	Danish	3	Germanic-language	annotation=rdfs:comment Glottocode: dani1285	A Germanic language, mainly spoken in Denmark.
-HED_0062019	Dutch	3	Germanic-language	annotation=rdfs:comment Glottocode: dutc1256	A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.
-HED_0062020	English	3	Germanic-language	annotation=rdfs:comment Glottocode: stan1293	A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.
-HED_0062021	German	3	Germanic-language	annotation=rdfs:comment Glottocode: stan1295	A Germanic Language which is mainly spoken in Western and Central Europe.
-HED_0062022	Icelandic	3	Germanic-language	annotation=rdfs:comment Glottocode: icel1247	A Germanic language mainly spoken in Iceland.
-HED_0062023	Norwegian	3	Germanic-language	annotation=rdfs:comment Glottocode: norw1258	A Germanic language mainly spoken in Norway.
-HED_0062024	Swedish	3	Germanic-language	annotation=rdfs:comment Glottocode: swed1254	A Germanic language mainly spoken in Sweden and parts of Finland.
-HED_0062025	Romance-language	2	Indo-European-language	annotation=rdfs:comment Glottocode: roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages	A system of communication belonging to the family of languages directly descending from Vulgar Latin.
-HED_0062026	Catalan	3	Romance-language	annotation=rdfs:comment Glottocode: stan1289	A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.
-HED_0062027	French	3	Romance-language	annotation=rdfs:comment Glottocode: stan1290	A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.
-HED_0062028	Galician	3	Romance-language	annotation=rdfs:comment Glottocode: gali1258	A Romance language mainly spoken in Galicia.
-HED_0062029	Gallo-Rhaetian-language	3	Romance-language	annotation=rdfs:comment Glottocode: gall1280	A group of historically related Romance varieties spoken in Switzerland and Northern Italy.
-HED_0062030	Italian	3	Romance-language	annotation=rdfs:comment Glottocode: ital1282	A Romance language mainly spoken in Italy and parts of Switzerland.
-HED_0062031	Portuguese	3	Romance-language	annotation=rdfs:comment Glottocode: port1283	A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.
-HED_0062032	Romanian	3	Romance-language	annotation=rdfs:comment Glottocode: roma1327	A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.
-HED_0062033	Spanish	3	Romance-language	annotation=rdfs:comment Glottocode: stan1288	A Romance language spoken in Spain and large parts of the Americas.
-HED_0062034	Slavic-language	2	Indo-European-language	annotation=rdfs:comment Glottocode: slav1255	A system of communication belonging to the family of languages originating in Eastern Europe.
-HED_0062035	Bulgarian	3	Slavic-language	annotation=rdfs:comment Glottocode: bulg1262	A Slavic language spoken mainly in Bulgaria.
-HED_0062036	Croatian	3	Slavic-language	annotation=rdfs:comment Glottocode: croa1245	A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.
-HED_0062037	Czech	3	Slavic-language	annotation=rdfs:comment Glottocode: czec1258	A Slavic language spoken mainly in the Czech Republic.
-HED_0062038	Macedonian	3	Slavic-language	annotation=rdfs:comment Glottocode: mace1250	A Slavic language spoken mainly in North Macedonia.
-HED_0062039	Polish	3	Slavic-language	annotation=rdfs:comment Glottocode: poli1260	A Slavic language spoken mainly in Poland.
-HED_0062040	Russian	3	Slavic-language	annotation=rdfs:comment Glottocode: russ1263	A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.
-HED_0062041	Slovak	3	Slavic-language	annotation=rdfs:comment Glottocode: slov126	A Slavic language spoken mainly in Slovakia.
-HED_0062042	Ukrainian	3	Slavic-language	annotation=rdfs:comment Glottocode: ukra1253	A Slavic language spoken mainly in Ukraine.
-HED_0062043	Japonic	1	Language	annotation=rdfs:comment Glottocode: japo1237	A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.
-HED_0062044	Japanese	2	Japonic	annotation=rdfs:comment Glottocode: nucl1643	A Japonic language mainly spoken in Japan.
-HED_0062045	Koreanic	1	Language	annotation=rdfs:comment Glottocode: kore1284	A system of communication belonging to the family of languages mainly spoken in Korea.
-HED_0062046	Korean	2	Koreanic	annotation=rdfs:comment Glottocode: kore1280	A Koreanic language mainly spoken in Korea.
-HED_0062047	Sino-Tibetan-language	1	Language	annotation=rdfs:comment Glottocode: sino1245	A system of communication belonging to the family of languages spoken in Asia.
-HED_0062048	Burmo-Qiangic-language	2	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: burm1265	A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.
-HED_0062049	Burmese	3	Burmo-Qiangic-language	annotation=rdfs:comment Glottocode: nucl1310	A Burmo Qiangic language mainly spoken in Myanmar.
-HED_0062050	Sinitic	2	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: sini1245	A system of communication belonging to the family of languages mainly spoken in China.
-HED_0062051	Gan-Chinese	3	Sinitic	annotation=rdfs:comment Glottocode: ganc1239	A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.
-HED_0062052	Mandarin-Chinese	3	Sinitic	annotation=rdfs:comment Glottocode: mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=rdfs:comment Glottocode: mand1471	A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.
-HED_0062053	Standard-Chinese	4	Mandarin-Chinese		A modern standard form of Mandarin Chinese which is the official Language of mainland China.
-HED_0062054	Wu-Chinese	3	Sinitic	annotation=rdfs:comment Glottocode: wuch1236	A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.
-HED_0062055	Xiang-Chinese	3	Sinitic	annotation=rdfs:comment Glottocode: xian1251	A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.
-HED_0062056	Yue-Chinese	3	Sinitic	annotation=rdfs:comment Glottocode: yuec1235	A group of Sinitic languages mainly spoken Southern China.
-HED_0062057	Cantonese	4	Yue-Chinese	annotation=rdfs:comment Glottocode: cant1236	A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.
-HED_0062058	Tai-Kadai	1	Language	annotation=rdfs:comment Glottocode: taik1256	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.
-HED_0062059	Thai	2	Tai-Kadai	annotation=rdfs:comment Glottocode: thai1261	A Tai Kadai language mainly spoken in Central Thailand.
-HED_0062060	Turkic	1	Language	annotation=rdfs:comment Glottocode:turk1311	A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.
-HED_0062061	Turkish	2	Turkic	annotation=rdfs:comment Glottocode: nucl1301	A Turkish language mainly spoken in Turkey and Northern Cyprus.
-HED_0062062	Uralic	1	Language	annotation=rdfs:comment Glottocode: ural1272	A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.
-HED_0062063	Estonian	2	Uralic	annotation=rdfs:comment Glottocode: esto1258	An Uralic Language mainly spoken in Estonia.
-HED_0062064	Finnish	2	Uralic	annotation=rdfs:comment Glottocode: finn1318	An Uralic language mainly spoken in Finland.
-HED_0062065	Hungarian	2	Uralic	annotation=rdfs:comment Glottocode: hung1274	An Uralic Language mainly spoken in Hungary.
-HED_0062066	Bigram	0	Language-item	rooted=Language-item, annotation=rdfs:comment Glottocode: hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram	A pair of two consecutive written units such as letters, syllables, or words.
-HED_0062067	Letter-character	0	Character	rooted=Character, annotation=dc:source Original	A character that is the smallest meaningful or functional unit in an alphabetic writing system.
-HED_0062068	Logogram	0	Character	rooted=Character, annotation=dc:source Original	A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.
-HED_0062069	Noncharacter	0	Character	rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Chen J. Sun D. Wang P. Lv Y. and Zhang Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics 63 101084. https://doi.org/10.1016/j.jneuroling.2022.101084	A character which does not hold any meaning or contain any regularity in a writing system.
-HED_0062070	Pseudocharacter	0	Character	rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word for instance reverses the meaning or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema.	A logogram-like character that contains components/radicals of existing logograms but which is not a known logogram.
-HED_0062071	Grapheme	0	Language-item	rooted=Language-item, annotation=dc:source Original, annotation=rdfs:comment Has different definition but this one is used in the domain of neuroimaging and useful as such as it is distinct from a character in an alphabetic language (letter) but useful. See Bouhani paper and https://www.tandfonline.com/doi/full/10.1080/17586801.2019.1697412 (a combined definition and interesting discussion).	The smallest contrastive or meaningful unit in writing which matches either a phoneme a syllable or a morpheme.
-HED_0062072	Lemma	0	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Lemma_(morphology)	The canonical form, dictionary form, or citation form of a set of word forms.
-HED_0062073	Mora	0	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Mora_(linguistics)	A basic timing unit in the phonology of some spoken languages equal to or shorter than a syllable.
-HED_0062074	Morpheme	0	Language-item	rooted=Language-item, suggestedTag=Morpheme-property, annotation=dc:source Original	A meaningful unit of a language that cannot be further divided.
-HED_0062075	Phone	0	Language-item	rooted=Language-item, relatedTag=Phoneme, annotation=dc:source https://en.wikipedia.org/wiki/Segment_(linguistics)	A minimal speech segment that possesses distinct physical or perceptual properties.
-HED_0062076	Consonant	1	Phone	annotation=dc:source Original	A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable or which can form itself or together with another consonant a syllable.
-HED_0062077	Vowel	1	Phone	annotation=dc:source Original	A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.
-HED_0062078	Diphthong	2	Vowel	annotation=dc:source Original	A sound formed by the combination of two vowels.
-HED_0062079	Long-vowel	2	Vowel	annotation=dc:source Original	A vowel sound that is pronounced in a long form.
-HED_0062080	Short-vowel	2	Vowel	annotation=dc:source Original	A vowel sound that is pronounced in a short form.
-HED_0062081	Radical	0	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Radical_(Chinese_characters)	A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.
-HED_0062082	Language-item-property	0	Property	rooted=Property, requireChild=True, annotation=dc:source Original, annotation=rdfs:comment All these properties should be grouped with a language item.	A property of a language item within a framework of language analysis.
-HED_0062083	Clause-type	1	Language-item-property	annotation=dc:source Original	The type of a clause.
-HED_0062084	Dependent-clause	2	Clause-type	annotation=dc:source Original	Containing a subject and verb and cannot be a sentence on its own.
-HED_0062085	Independent-clause	2	Clause-type	annotation=dc:source Original	Containing a subject and verb but can be a sentence on its own.
-HED_0062086	Grammatical-category	1	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Features in Eagles Olia has no top level features.	Grammatical category of a word, usually marked through inflection.
-HED_0062087	Aspect	2	Grammatical-category	annotation=dc:source Original	Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.
-HED_0062088	Imperfective-aspect	3	Aspect	annotation=dc:source Original	Presenting an ongoing or unfolding or repeated or habitual event.
-HED_0062089	Perfective-aspect	3	Aspect	annotation=dc:source Original	Presenting a completed event.
-HED_0062090	Case	2	Grammatical-category	annotation=dc:source Original	Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.
-HED_0062091	Ablative	3	Case	annotation=dc:source https://en.wikipedia.org/wiki/Ablative_case	Used to express motion away from something, among other uses.
-HED_0062092	Accusative	3	Case	annotation=dc:source https://en.wikipedia.org/wiki/Accusative_case	Used to indicate the direct object of a transitive verb.
-HED_0062093	Dative	3	Case	annotation=dc:source https://en.wikipedia.org/wiki/Dative_case	Used to indicate the recipient or beneficiary of an action.
-HED_0062094	Genitive	3	Case	annotation=dc:source https://en.wikipedia.org/wiki/Genitive_case	Used to indicate attributive relations between nouns among other uses.
-HED_0062095	Nominative	3	Case	annotation=dc:source https://en.wikipedia.org/wiki/Nominative_case	Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.
-HED_0062096	Countability	2	Grammatical-category	annotation=dc:source Original, annotation=rdfs:comment Countability feature in olia no definition	A grammatical category that determines how the quantity of a concept is expressed.
-HED_0062097	Countable	3	Countability	annotation=dc:source Original	Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).
-HED_0062098	Uncountable	3	Countability	annotation=dc:source Original	Syntactic property of nouns that makes their referents undifferentiated units.
-HED_0062099	Grammatical-number	2	Grammatical-category	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.
-HED_0062100	Collective	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Not representing a specific number.
-HED_0062101	Dual	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing exactly two instances of a concept.
-HED_0062102	Paucal	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing a few, or small number of instances of a concept.
-HED_0062103	Plural	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing multiple instances of a concept.
-HED_0062104	Singular	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing one instance of a concept.
-HED_0062105	Singulative	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing one instance of a concept through modifying the standard collective.
-HED_0062106	Trial	3	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing exactly three instances of a concept.
-HED_0062107	Mood	2	Grammatical-category	annotation=dc:source Original	Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.
-HED_0062108	Conditional	3	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Used for speaking of an event whose realization is dependent upon another condition.
-HED_0062109	Imperative	3	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Expresses direct commands, prohibitions, and requests.
-HED_0062110	Progressive	3	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Continuous_and_progressive_aspects	Expresses an incomplete state or action.
-HED_0062111	Subjunctive	3	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.
-HED_0062112	Noun-class	2	Grammatical-category	annotation=dc:source https://en.wikipedia.org/wiki/Noun_class, annotation=rdfs:comment Eagles only has gender as does olia. In Olia gender feature also encompasses animacy.	Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.
-HED_0062113	Tense	2	Grammatical-category	annotation=dc:source Original	Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.
-HED_0062114	Future-tense	3	Tense	annotation=dc:source Original	Referring to an event posterior to time of speech.
-HED_0062115	Future-perfect	4	Future-tense	annotation=dc:source Original	Referring to a future event relative to another reference point (not the time of speech).
-HED_0062116	Near-future-tense	4	Future-tense	annotation=dc:source Original	Referring to an event shortly after time of speech.
-HED_0062117	Remote-future-tense	4	Future-tense	annotation=dc:source Original	Referring to an event in the remote future.
-HED_0062118	Non-future-tense	3	Tense	annotation=dc:source Original	Referring to both a past or present event.
-HED_0062119	Non-past-tense	3	Tense	annotation=dc:source Original	Referring to both a present or future event.
-HED_0062120	Past-tense	3	Tense	annotation=dc:source Original	Referring to an event anterior to time of speech.
-HED_0062121	Pluperfect	4	Past-tense	annotation=dc:source Original	Referring to a past event relative to another reference point (not the time of speech).
-HED_0062122	Recent-past-tense	4	Past-tense	annotation=dc:source Original	Referring to an event in the recent past.
-HED_0062123	Remote-past-tense	4	Past-tense	annotation=dc:source Original	Referring to an event in the distant past.
-HED_0062124	Present-tense	3	Tense	annotation=dc:source Original	Referring to an event that takes place at time of speech.
-HED_0062125	Language-item-form	1	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Following https://www.w3.org/2016/05/ontolex/ (which is not an ontology for language annotation but an ontology for lexical entries in ontologies) we do not make the form of language inherent to language items but instead attach it separately. The word itself is a concept but it can be expressed in multiple forms. The same is true for a sentence phrase or clause. For some units it is more complicated but there is a spoken form of a letter or grapheme etc. and depending on the writing system there might be a written form of a vowel or consonant. This distinction increases flexibility.	The form of a language item.
-HED_0062126	Spoken-form	2	Language-item-form	relatedTag=Canonical-spoken-form, annotation=dc:source Original	The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.
-HED_0062127	Canonical-spoken-form	3	Spoken-form	annotation=dc:source Original, annotation=rdfs:comment Should be commonly used (although there is no language without accent) only use regional spoken form when this is relevant in context of the dataset.	The regular spoken form of a language item.
-HED_0062128	Mispronounced-spoken-form	3	Spoken-form	annotation=dc:source Original	A mispronunciation of a language item which can still be identified.
-HED_0062129	Regional-spoken-form	3	Spoken-form	annotation=dc:source Original, annotation=rdfs:comment Use when relevant in context of dataset.	A spoken form of a language item pronounced with a regional accent.
-HED_0062130	Written-form	2	Language-item-form	relatedTag=Canonical-written-form, annotation=dc:source Original	The expression of a language item through a system of writing.
-HED_0062131	Canonical-written-form	3	Written-form	annotation=dc:source Original	The accepted spelling of a word in a given language.
-HED_0062132	Incorrect-written-form	3	Written-form	annotation=dc:source Original	An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.
-HED_0062133	Pseudohomophone-form	3	Written-form	annotation=dc:source Original	A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.
-HED_0062134	Language-item-frequency	1	Language-item-property	annotation=dc:source Original	The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
-HED_0062135	Bigram-frequency	2	Language-item-frequency	annotation=dc:source Original	The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
-HED_0062136	Word-frequency	2	Language-item-frequency	annotation=dc:source Original	The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
-HED_0062137	Language-item-probability	1	Language-item-property	annotation=dc:source Original	The probability of a specific language item occurring in a specific context.
-HED_0062138	Cloze-probability	2	Language-item-probability	annotation=dc:source Original	The proportion of people who fill a gap in given sentence with a given word.
-HED_0062139	Lexical-role	1	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Sometimes applies to a word or to a phrase that fulfills a lexical role.	The role a language item takes in a vocabulary, like part of speech.
-HED_0062140	Adjective	2	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Adjective	A word that describes or defines a noun or noun phrase.
-HED_0062141	Adposition	2	Lexical-role	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Adposition	Accompanying an noun to express a spatial or temporal relation.
-HED_0062142	Circumposition	3	Adposition	annotation=dc:source Original	Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.
-HED_0062143	Postposition	3	Adposition	annotation=dc:source Original	Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.
-HED_0062144	Preposition	3	Adposition	annotation=dc:source Original	Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.
-HED_0062145	Adverb	2	Lexical-role	annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Adverb	Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.
-HED_0062146	Classifier	2	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Classifier_(linguistics), annotation=rdfs:comment Classifiers are subdivided by GOLD into Nominal Noun and Numeral classifiers. OLIA lists classifier under morphosyntactic category unique (a class for categories with unique or small membership). Classifiers can have different functions across languages. In Chinese count and mass Classifiers are distinguished. Given that these might be language specific and there is no agreement in existing standards we have not added subcategories for now.	An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.
-HED_0062147	Conjunction	2	Lexical-role	annotation=dc:source Original	Connecting clauses or sentences or to coordinate words in the same clause.
-HED_0062148	Complementizer	3	Conjunction	annotation=dc:source Original	Marks a finite or non- finite clause as functioning as a complement.
-HED_0062149	Coordinating-conjunction	3	Conjunction	annotation=dc:source Original	Coordinates elements that are equal to each other.
-HED_0062150	Negation-word	3	Conjunction	annotation=dc:source Original	Expressing falsity of a clause or sentence.
-HED_0062151	Determiner	2	Lexical-role	annotation=dc:source Original	Determining the kind of reference a noun or noun group has.
-HED_0062152	Article	3	Determiner	annotation=dc:source https://en.wikipedia.org/wiki/Article_(grammar)	A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.
-HED_0062153	Possessive-determiner	3	Determiner	annotation=dc:source Original	Determining the ownership of a noun or noun phrase.
-HED_0062154	Interjection	2	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Interjection#cite_note-1	A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.
-HED_0062155	Noun	2	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Noun	Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.
-HED_0062156	Numeral	2	Lexical-role	annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description http://purl.org/linguistics/gold.	Expressing a number or relation to a number.
-HED_0062157	Particle	2	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_particle#cite_note-Glossary_Particle-3, annotation=rdfs:comment In Olia they use the term Unique and recommends not using particle because of differing definitions. Particle has an older use but the modern definition is well defined and word particle is used in neuroimaging studies (https://pubmed.ncbi.nlm.nih.gov/11347875/; https://pubmed.ncbi.nlm.nih.gov/22341872/).	Must be associated with another word or phrase to impart meaning.
-HED_0062158	Pronoun	2	Lexical-role	annotation=dc:source Original	A word or a group of words that may stand for a noun or noun phrase.
-HED_0062159	Demonstrative-pronoun	3	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Determiner	Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.
-HED_0062160	Indefinite-pronoun	3	Pronoun	annotation=dc:source Original	Pronoun lacking a specific referent or having generic meaning.
-HED_0062161	Interrogative-pronoun	3	Pronoun	annotation=dc:source Original	Pronoun which prompts a question.
-HED_0062162	Personal-pronoun	3	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Personal_pronoun	Pronoun associated with a grammatical person.
-HED_0062163	Possessive-pronoun	3	Pronoun	annotation=dc:source Original	Pronoun referring to the possession of a grammatical person.
-HED_0062164	Reflexive-pronoun	3	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Reflexive_pronoun	Pronoun that refers to another noun or pronoun within the same sentence.
-HED_0062165	Relative-pronoun	3	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Relative_pronoun	Pronoun that marks a relative clause.
-HED_0062166	Quantifier	2	Lexical-role	annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description (http://purl.org/linguistics/gold).	Expressing a reference definite or indefinite number or amount.
-HED_0062167	Verb	2	Lexical-role	suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect, annotation=dc:source Extended from https://en.wikipedia.org/wiki/Verb	Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.
-HED_0062168	Auxiliary-verb	3	Verb	annotation=dc:source Original	A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).
-HED_0062169	Modal-verb	4	Auxiliary-verb	annotation=dc:source Original	An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.
-HED_0062170	Intransitive-verb	3	Verb	annotation=dc:source Original	A verb that does not require an object.
-HED_0062171	Psychological-verb	3	Verb	annotation=dc:source Original	A verb that takes two arguments, an experiencer and a theme.
-HED_0062172	Transitive-verb	3	Verb	suggestedTag=Object, annotation=dc:source Original	A verb that requires one or more objects to receive the action.
-HED_0062173	Unaccusative-verb	3	Verb	annotation=dc:source Original	An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).
-HED_0062174	Unergative-verb	3	Verb	annotation=dc:source Original	An intransitive verb whose subject is an agent.
-HED_0062175	Morpheme-property	1	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Morphemes can be categorized based on position function and type. A morpheme property can be applied to a Morpheme.	A property of a morpheme.
-HED_0062176	Morpheme-function	2	Morpheme-property	annotation=dc:source Original	The function of a morpheme.
-HED_0062177	Inflective-morphological-function	3	Morpheme-function	suggestedTag=Grammatical-category, annotation=dc:source Original	Changing the grammatical function.
-HED_0062178	Conjugate	4	Inflective-morphological-function	annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)	Identifying the voice, mood, tense, number, gender, and person of a verb.
-HED_0062179	Decline	4	Inflective-morphological-function	annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)	Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.
-HED_0062180	Word-formation-function	3	Morpheme-function	annotation=dc:source Original	Creating a new word.
-HED_0062181	Compound	4	Word-formation-function	annotation=dc:source Original	To join with another free morpheme to form a more complex word.
-HED_0062182	Derivation	4	Word-formation-function	annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word (for instance reverses the meaning or changes intensity). We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema.	Changing the meaning of a word, usually by adding an affix.
-HED_0062183	Change-word-class	5	Derivation	suggestedTag=Lexical-role, annotation=dc:source Original, annotation=rdfs:comment Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.	Changing the word class or part of speech a word belongs to.
-HED_0062184	Morpheme-type	2	Morpheme-property	annotation=dc:source Original	The type of a morpheme.
-HED_0062185	Bound-morpheme-type	3	Morpheme-type	annotation=dc:source Original	A morpheme type that cannot be a word itself, such as prefixes and suffixes.
-HED_0062186	Free-morpheme-type	3	Morpheme-type	annotation=dc:source Original	A morpheme type that can function as a word.
-HED_0062187	Morphological-position	2	Morpheme-property	annotation=dc:source Original	The position a morpheme takes relative to the free morpheme of a word.
-HED_0062188	Affix	3	Morphological-position	annotation=dc:source Original, annotation=rdfs:comment Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However there are other categorizations of morphemes based on how they change the stem of the word (categorized in OLIA as Morphological processes such as Clitization or reduplication). However since these all say something about how the morpheme is applied to the word we believe these fit better together under the position tag.	A morpheme that is attached to a word stem to form a new word or word form.
-HED_0062189	Circumfix	3	Morphological-position	annotation=dc:source Original	Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.
-HED_0062190	Infix	3	Morphological-position	annotation=dc:source Original	Position of a morpheme in the middle of a word.
-HED_0062191	Non-concatenative-morphology	3	Morphological-position	annotation=dc:source Original	Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).
-HED_0062192	Apophony	4	Non-concatenative-morphology	annotation=dc:source Original	Regular vowel variation.
-HED_0062193	Clitic-morphological-position	4	Non-concatenative-morphology	annotation=dc:source https://en.wikipedia.org/wiki/Clitic	A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.
-HED_0062194	Conversion	4	Non-concatenative-morphology	annotation=dc:source Original	No change (where a morphological change might be expected based on regular grammar).
-HED_0062195	Reduplication	4	Non-concatenative-morphology	annotation=dc:source Original	Duplication of all or part of the root word.
-HED_0062196	Transfixation	4	Non-concatenative-morphology	annotation=dc:source Original	Interdigitation of vowel and consonant morphemes.
-HED_0062197	Truncation	4	Non-concatenative-morphology	annotation=dc:source Original	Removal of phonological material from root.
-HED_0062198	Prefix	3	Morphological-position	annotation=dc:source Original	Position of a morpheme at the beginning of a word.
-HED_0062199	Suffix	3	Morphological-position	annotation=dc:source Original	Position of a morpheme at the end of a word.
-HED_0062200	Orthographic-neighborhood-size	1	Language-item-property	annotation=dc:source Original	The number of closely resembling word-forms.
-HED_0062201	Phrase-role	1	Language-item-property	annotation=dc:source Original	The role of phrase.
-HED_0062202	Adjective-phrase	2	Phrase-role	annotation=dc:source Original	Headed by an adjective.
-HED_0062203	Adpostional-phrase	2	Phrase-role	annotation=dc:source Original	Consisting of an adposition and its complement.
-HED_0062204	Postpositional-phrase	3	Adpostional-phrase	annotation=dc:source Original	Consisting of a postposition and its complement.
-HED_0062205	Prepositional-phrase	3	Adpostional-phrase	annotation=dc:source Original	Consisting of a preposition and its complement.
-HED_0062206	Adverb-phrase	2	Phrase-role	annotation=dc:source Original	Functioning as an adverb in a sentence.
-HED_0062207	Noun-phrase	2	Phrase-role	annotation=dc:source Original	Functioning in a sentence as subject, object, or prepositional object.
-HED_0062208	Verb-phrase	2	Phrase-role	annotation=dc:source Original	Containing the verb and any direct or indirect object, but not the subject.
-HED_0062209	Syntactic-role	1	Language-item-property	annotation=dc:source Original	Role a language-item takes in syntax.
-HED_0062210	Complement	2	Syntactic-role	annotation=dc:source Original	The constituent selected by a head.
-HED_0062211	Syntactic-object	3	Complement	annotation=dc:source Original	Complement of a verbal head.
-HED_0062212	Direct-syntactic-object	4	Syntactic-object	annotation=dc:source Original	A constituent which receives the action of the verb or comes into existence by this action.
-HED_0062213	Indirect-syntactic-object	4	Syntactic-object	annotation=dc:source Original	A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.
-HED_0062214	Modifier	2	Syntactic-role	annotation=dc:source Original	Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.
-HED_0062215	Adjunct	3	Modifier	annotation=dc:source Original	Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.
-HED_0062216	Predicate	2	Syntactic-role	annotation=dc:source Original	Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.
-HED_0062217	Secondary-predicate	3	Predicate	annotation=dc:source Original	Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).
-HED_0062218	Subject	2	Syntactic-role	annotation=dc:source Original	Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).
-HED_0062219	Syntactic-Head	2	Syntactic-role	annotation=dc:source https://en.wikipedia.org/wiki/Head_(linguistics)	Word that determines the syntactic category of a phrase.
-HED_0062220	Language-property	0	Property	rooted=Property, annotation=dc:source Original	A property relating to a system of communication used by a particular group of people.
-HED_0062221	Morphological-language-type	1	Language-property	annotation=dc:source Original	Morphological property relating to a specific system of communication used by a particular group of people.
-HED_0062222	Analytic-language-type	2	Morphological-language-type	annotation=dc:source Original	Rarely using affixes, resulting in a low morpheme per word ratio.
-HED_0062223	Morphological-isolating-type	3	Analytic-language-type	annotation=dc:source https://en.wikipedia.org/wiki/Isolating_language	Having a morpheme per word ratio close to one.
-HED_0062224	Morphological-polysynthetic-type	2	Morphological-language-type	annotation=dc:source Original	Can encode multiple constituents such as subject, verb, object, etc. into a single word.
-HED_0062225	Morphological-synthetic-type	2	Morphological-language-type	annotation=dc:source https://en.wikipedia.org/wiki/Synthetic_language	Having a higher morpheme per word ratio.
-HED_0062226	Morphological-agglutinating-type	3	Morphological-synthetic-type	annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Agglutination	Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.
-HED_0062227	Morphological-fusional-type	3	Morphological-synthetic-type	annotation=dc:source https://en.wikipedia.org/wiki/Fusional_language	Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.
-HED_0062228	Orthographic-type	1	Language-property	annotation=dc:source Original, annotation=rdfs:comment Classification of writing systems is complex and these categories are not universally accepted (mainly because most writing systems have characteristics of multiple of these categories). However most writing systems have an overall tendency towards one of these categories and so the categories can be useful to see how large differences are managed by the individuals who speak them. But it is normal that a writing system does not cleanly fit into any of these categories.	The type of language item each symbol serves to represent in written language.
-HED_0062229	Logographic-type	2	Orthographic-type	annotation=dc:source Original	Representing an entire spoken word per character.
-HED_0062230	Segmental-or-Alphabetic-type	2	Orthographic-type	annotation=dc:source Original, annotation=rdfs:comment These can be further subdivided based on other characteristics but these are most commonly used in cognition research and relevant in research into dyslexia	Representing approximately phoneme per character.
-HED_0062231	Deep-orthographical-type	3	Segmental-or-Alphabetic-type	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth	Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.
-HED_0062232	Shallow-orthographic-type	3	Segmental-or-Alphabetic-type	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth	Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.
-HED_0062233	Syllabary-type	2	Orthographic-type	annotation=dc:source Original	Representing one syllable or mora per character.
-HED_0062234	Linguistic-relation	0	Relation	rooted=Relation, annotation=dc:source Original	Related based on a linguistic property to.
-HED_0062235	Grammatical-relation	1	Linguistic-relation	annotation=dc:source Original	Grammatical relationship between language items.
-HED_0062236	Agreement-with	2	Grammatical-relation	annotation=dc:source Original	Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.
-HED_0062237	Orthographic-relatedness-to	1	Linguistic-relation	annotation=dc:source Original	Connected on the basis of writing or spelling.
-HED_0062238	Orthographic-distance-to	2	Orthographic-relatedness-to	annotation=dc:source Original	Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).
-HED_0062239	Hamming-distance-to	3	Orthographic-distance-to	annotation=dc:source Original	The minimum number of substitutions required to change one string into another string of equal length.
-HED_0062240	Hamming-distance-to-#	4	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.
-HED_0062241	Levenshtein-distance-to	3	Orthographic-distance-to	annotation=dc:source Original	The minimum number of single-character edits to change into.
-HED_0062242	Levenshtein-distance-to-#	4	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.
-HED_0062243	Phonological-relatedness-to	1	Linguistic-relation	annotation=dc:source Original	Connected on the basis of sound.
-HED_0062244	Phonological-distance-to	2	Phonological-relatedness-to	annotation=dc:source Original	Removed in sounding from.
-HED_0062245	Phonological-Levenshtein-distance-to	3	Phonological-distance-to	annotation=dc:source Original	The minimum number of single-phoneme edits to change into.
-HED_0062246	Phonological-Levenshtein-distance-to-#	4	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass, annotation=dc:source Original	Integers 0 and up.
-HED_0062247	Semantic-relatedness-to	1	Linguistic-relation	annotation=dc:source Original	Connected on the basis of meaning to.
-HED_0062248	Antonymous-to	2	Semantic-relatedness-to	annotation=dc:source Original	Meaning the opposite as.
-HED_0062249	Semantic-distance-to	2	Semantic-relatedness-to	annotation=dc:source Original	Removed in meaning from.
-HED_0062250	Semantic-distance-to-#	3	Semantic-distance-to		
-HED_0062251	Synonymous-to	2	Semantic-relatedness-to	annotation=dc:source Original	Meaning exactly or nearly the same as.
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+HED_0062001	0	Language	Item	rooted=Item, annotation=dc:source Original, annotation=rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works.	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.
+HED_0062002	1	Afroasiatic-language	Language	annotation=rdfs:comment Glottocode: afro1255	A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.
+HED_0062003	2	Arabic	Afroasiatic-language	annotation=rdfs:comment Glottocode: arab1395	An Afroasiatic language spoken mainly in Northern Africa and Western Asia.
+HED_0062004	2	Hebrew	Afroasiatic-language	annotation=rdfs:comment Glottocode: hebr1245	An Afroasiatic language mainly spoken in Israel.
+HED_0062005	1	Atlantic-Congo-language	Language	annotation=rdfs:comment Glottocode: atla1278	A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.
+HED_0062006	2	Swahili	Atlantic-Congo-language	annotation=rdfs:comment Glottocode: swah1253	An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.
+HED_0062007	1	Austroasiatic	Language	annotation=rdfs:comment Glottocode:aust1305	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.
+HED_0062008	2	Vietnamese	Austroasiatic	annotation=rdfs:comment Glottocode:viet1252	An Austroasiatic language mainly spoken in Vietnam.
+HED_0062009	1	Austronesian-language	Language	annotation=rdfs:comment Glottocode: aust1307	A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.
+HED_0062010	2	Malay	Austronesian-language	annotation=rdfs:comment Glottocode: nucl1806	An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.
+HED_0062011	1	Dravidian	Language	annotation=rdfs:comment Glottocode: drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages	A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.
+HED_0062012	2	Tamil	Dravidian	annotation=rdfs:comment Glottocode: tami1289	A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.
+HED_0062013	1	Indo-European-language	Language	suggestedTag=Language-property, annotation=rdfs:comment Glottocode: indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages	A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.
+HED_0062014	2	Baltic-language	Indo-European-language	annotation=rdfs:comment Glottocode: east2280	A system of communication belonging to the family of languages originating in Northeastern Europe.
+HED_0062015	3	Latvian	Baltic-language	annotation=rdfs:comment Glottocode: latv1249	A baltic language spoken mainly in Latvia.
+HED_0062016	3	Lithuanian	Baltic-language	annotation=rdfs:comment Glottocode: lith1251	A baltic language spoken mainly in Lithuania.
+HED_0062017	2	Germanic-language	Indo-European-language	annotation=rdfs:comment Glottocode: germ1287	A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.
+HED_0062018	3	Danish	Germanic-language	annotation=rdfs:comment Glottocode: dani1285	A Germanic language, mainly spoken in Denmark.
+HED_0062019	3	Dutch	Germanic-language	annotation=rdfs:comment Glottocode: dutc1256	A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.
+HED_0062020	3	English	Germanic-language	annotation=rdfs:comment Glottocode: stan1293	A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.
+HED_0062021	3	German	Germanic-language	annotation=rdfs:comment Glottocode: stan1295	A Germanic Language which is mainly spoken in Western and Central Europe.
+HED_0062022	3	Icelandic	Germanic-language	annotation=rdfs:comment Glottocode: icel1247	A Germanic language mainly spoken in Iceland.
+HED_0062023	3	Norwegian	Germanic-language	annotation=rdfs:comment Glottocode: norw1258	A Germanic language mainly spoken in Norway.
+HED_0062024	3	Swedish	Germanic-language	annotation=rdfs:comment Glottocode: swed1254	A Germanic language mainly spoken in Sweden and parts of Finland.
+HED_0062025	2	Romance-language	Indo-European-language	annotation=rdfs:comment Glottocode: roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages	A system of communication belonging to the family of languages directly descending from Vulgar Latin.
+HED_0062026	3	Catalan	Romance-language	annotation=rdfs:comment Glottocode: stan1289	A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.
+HED_0062027	3	French	Romance-language	annotation=rdfs:comment Glottocode: stan1290	A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.
+HED_0062028	3	Galician	Romance-language	annotation=rdfs:comment Glottocode: gali1258	A Romance language mainly spoken in Galicia.
+HED_0062029	3	Gallo-Rhaetian-language	Romance-language	annotation=rdfs:comment Glottocode: gall1280	A group of historically related Romance varieties spoken in Switzerland and Northern Italy.
+HED_0062030	3	Italian	Romance-language	annotation=rdfs:comment Glottocode: ital1282	A Romance language mainly spoken in Italy and parts of Switzerland.
+HED_0062031	3	Portuguese	Romance-language	annotation=rdfs:comment Glottocode: port1283	A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.
+HED_0062032	3	Romanian	Romance-language	annotation=rdfs:comment Glottocode: roma1327	A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.
+HED_0062033	3	Spanish	Romance-language	annotation=rdfs:comment Glottocode: stan1288	A Romance language spoken in Spain and large parts of the Americas.
+HED_0062034	2	Slavic-language	Indo-European-language	annotation=rdfs:comment Glottocode: slav1255	A system of communication belonging to the family of languages originating in Eastern Europe.
+HED_0062035	3	Bulgarian	Slavic-language	annotation=rdfs:comment Glottocode: bulg1262	A Slavic language spoken mainly in Bulgaria.
+HED_0062036	3	Croatian	Slavic-language	annotation=rdfs:comment Glottocode: croa1245	A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.
+HED_0062037	3	Czech	Slavic-language	annotation=rdfs:comment Glottocode: czec1258	A Slavic language spoken mainly in the Czech Republic.
+HED_0062038	3	Macedonian	Slavic-language	annotation=rdfs:comment Glottocode: mace1250	A Slavic language spoken mainly in North Macedonia.
+HED_0062039	3	Polish	Slavic-language	annotation=rdfs:comment Glottocode: poli1260	A Slavic language spoken mainly in Poland.
+HED_0062040	3	Russian	Slavic-language	annotation=rdfs:comment Glottocode: russ1263	A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.
+HED_0062041	3	Slovak	Slavic-language	annotation=rdfs:comment Glottocode: slov126	A Slavic language spoken mainly in Slovakia.
+HED_0062042	3	Ukrainian	Slavic-language	annotation=rdfs:comment Glottocode: ukra1253	A Slavic language spoken mainly in Ukraine.
+HED_0062043	1	Japonic	Language	annotation=rdfs:comment Glottocode: japo1237	A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.
+HED_0062044	2	Japanese	Japonic	annotation=rdfs:comment Glottocode: nucl1643	A Japonic language mainly spoken in Japan.
+HED_0062045	1	Koreanic	Language	annotation=rdfs:comment Glottocode: kore1284	A system of communication belonging to the family of languages mainly spoken in Korea.
+HED_0062046	2	Korean	Koreanic	annotation=rdfs:comment Glottocode: kore1280	A Koreanic language mainly spoken in Korea.
+HED_0062047	1	Sino-Tibetan-language	Language	annotation=rdfs:comment Glottocode: sino1245	A system of communication belonging to the family of languages spoken in Asia.
+HED_0062048	2	Burmo-Qiangic-language	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: burm1265	A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.
+HED_0062049	3	Burmese	Burmo-Qiangic-language	annotation=rdfs:comment Glottocode: nucl1310	A Burmo Qiangic language mainly spoken in Myanmar.
+HED_0062050	2	Sinitic	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: sini1245	A system of communication belonging to the family of languages mainly spoken in China.
+HED_0062051	3	Gan-Chinese	Sinitic	annotation=rdfs:comment Glottocode: ganc1239	A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.
+HED_0062052	3	Mandarin-Chinese	Sinitic	annotation=rdfs:comment Glottocode: mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=rdfs:comment Glottocode: mand1471	A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.
+HED_0062053	4	Standard-Chinese	Mandarin-Chinese		A modern standard form of Mandarin Chinese which is the official Language of mainland China.
+HED_0062054	3	Wu-Chinese	Sinitic	annotation=rdfs:comment Glottocode: wuch1236	A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.
+HED_0062055	3	Xiang-Chinese	Sinitic	annotation=rdfs:comment Glottocode: xian1251	A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.
+HED_0062056	3	Yue-Chinese	Sinitic	annotation=rdfs:comment Glottocode: yuec1235	A group of Sinitic languages mainly spoken Southern China.
+HED_0062057	4	Cantonese	Yue-Chinese	annotation=rdfs:comment Glottocode: cant1236	A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.
+HED_0062058	1	Tai-Kadai	Language	annotation=rdfs:comment Glottocode: taik1256	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.
+HED_0062059	2	Thai	Tai-Kadai	annotation=rdfs:comment Glottocode: thai1261	A Tai Kadai language mainly spoken in Central Thailand.
+HED_0062060	1	Turkic	Language	annotation=rdfs:comment Glottocode:turk1311	A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.
+HED_0062061	2	Turkish	Turkic	annotation=rdfs:comment Glottocode: nucl1301	A Turkish language mainly spoken in Turkey and Northern Cyprus.
+HED_0062062	1	Uralic	Language	annotation=rdfs:comment Glottocode: ural1272	A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.
+HED_0062063	2	Estonian	Uralic	annotation=rdfs:comment Glottocode: esto1258	An Uralic Language mainly spoken in Estonia.
+HED_0062064	2	Finnish	Uralic	annotation=rdfs:comment Glottocode: finn1318	An Uralic language mainly spoken in Finland.
+HED_0062065	2	Hungarian	Uralic	annotation=rdfs:comment Glottocode: hung1274	An Uralic Language mainly spoken in Hungary.
+HED_0062066	0	Bigram	Language-item	rooted=Language-item, annotation=rdfs:comment Glottocode: hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram	A pair of two consecutive written units such as letters, syllables, or words.
+HED_0062067	0	Letter-character	Character	rooted=Character, annotation=dc:source Original	A character that is the smallest meaningful or functional unit in an alphabetic writing system.
+HED_0062068	0	Logogram	Character	rooted=Character, annotation=dc:source Original	A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.
+HED_0062069	0	Noncharacter	Character	rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Chen J. Sun D. Wang P. Lv Y. and Zhang Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics 63 101084. https://doi.org/10.1016/j.jneuroling.2022.101084	A character which does not hold any meaning or contain any regularity in a writing system.
+HED_0062070	0	Pseudocharacter	Character	rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word for instance reverses the meaning or changes intensity. We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema.	A logogram-like character that contains components/radicals of existing logograms but which is not a known logogram.
+HED_0062071	0	Grapheme	Language-item	rooted=Language-item, annotation=dc:source Original, annotation=rdfs:comment Has different definition but this one is used in the domain of neuroimaging and useful as such as it is distinct from a character in an alphabetic language (letter) but useful. See Bouhani paper and https://www.tandfonline.com/doi/full/10.1080/17586801.2019.1697412 (a combined definition and interesting discussion).	The smallest contrastive or meaningful unit in writing which matches either a phoneme a syllable or a morpheme.
+HED_0062072	0	Lemma	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Lemma_(morphology)	The canonical form, dictionary form, or citation form of a set of word forms.
+HED_0062073	0	Mora	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Mora_(linguistics)	A basic timing unit in the phonology of some spoken languages equal to or shorter than a syllable.
+HED_0062074	0	Morpheme	Language-item	rooted=Language-item, suggestedTag=Morpheme-property, annotation=dc:source Original	A meaningful unit of a language that cannot be further divided.
+HED_0062075	0	Phone	Language-item	rooted=Language-item, relatedTag=Phoneme, annotation=dc:source https://en.wikipedia.org/wiki/Segment_(linguistics)	A minimal speech segment that possesses distinct physical or perceptual properties.
+HED_0062076	1	Consonant	Phone	annotation=dc:source Original	A basic speech sound which is produced with an obstructed vocal tract and which can be combined with a vowel to form a syllable or which can form itself or together with another consonant a syllable.
+HED_0062077	1	Vowel	Phone	annotation=dc:source Original	A speech sound which is produced with a relatively open vocal tract and vibration of the vocal cords.
+HED_0062078	2	Diphthong	Vowel	annotation=dc:source Original	A sound formed by the combination of two vowels.
+HED_0062079	2	Long-vowel	Vowel	annotation=dc:source Original	A vowel sound that is pronounced in a long form.
+HED_0062080	2	Short-vowel	Vowel	annotation=dc:source Original	A vowel sound that is pronounced in a short form.
+HED_0062081	0	Radical	Language-item	rooted=Language-item, annotation=dc:source https://en.wikipedia.org/wiki/Radical_(Chinese_characters)	A graphical component of a Chinese character under which the character is traditionally listed in a Chinese dictionary.
+HED_0062082	0	Language-item-property	Property	rooted=Property, requireChild=True, annotation=dc:source Original, annotation=rdfs:comment All these properties should be grouped with a language item.	A property of a language item within a framework of language analysis.
+HED_0062083	1	Clause-type	Language-item-property	annotation=dc:source Original	The type of a clause.
+HED_0062084	2	Dependent-clause	Clause-type	annotation=dc:source Original	Containing a subject and verb and cannot be a sentence on its own.
+HED_0062085	2	Independent-clause	Clause-type	annotation=dc:source Original	Containing a subject and verb but can be a sentence on its own.
+HED_0062086	1	Grammatical-category	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Features in Eagles Olia has no top level features.	Grammatical category of a word, usually marked through inflection.
+HED_0062087	2	Aspect	Grammatical-category	annotation=dc:source Original	Non-deictic category of verbal morphology that describes the internal temporal contour of an event and presents it for instance as ongoing or completed.
+HED_0062088	3	Imperfective-aspect	Aspect	annotation=dc:source Original	Presenting an ongoing or unfolding or repeated or habitual event.
+HED_0062089	3	Perfective-aspect	Aspect	annotation=dc:source Original	Presenting a completed event.
+HED_0062090	2	Case	Grammatical-category	annotation=dc:source Original	Formal feature of several word classes (e.g., nouns, pronouns, adjectives, determiners) that identifies their syntactic function.
+HED_0062091	3	Ablative	Case	annotation=dc:source https://en.wikipedia.org/wiki/Ablative_case	Used to express motion away from something, among other uses.
+HED_0062092	3	Accusative	Case	annotation=dc:source https://en.wikipedia.org/wiki/Accusative_case	Used to indicate the direct object of a transitive verb.
+HED_0062093	3	Dative	Case	annotation=dc:source https://en.wikipedia.org/wiki/Dative_case	Used to indicate the recipient or beneficiary of an action.
+HED_0062094	3	Genitive	Case	annotation=dc:source https://en.wikipedia.org/wiki/Genitive_case	Used to indicate attributive relations between nouns among other uses.
+HED_0062095	3	Nominative	Case	annotation=dc:source https://en.wikipedia.org/wiki/Nominative_case	Generally marks the subject of a verb, or a predicate nominal or adjective, as opposed to its object, or other verb arguments.
+HED_0062096	2	Countability	Grammatical-category	annotation=dc:source Original, annotation=rdfs:comment Countability feature in olia no definition	A grammatical category that determines how the quantity of a concept is expressed.
+HED_0062097	3	Countable	Countability	annotation=dc:source Original	Syntactic property of nouns that can be modified by quantities (expressed by grammatical number, e.g. singular, plural).
+HED_0062098	3	Uncountable	Countability	annotation=dc:source Original	Syntactic property of nouns that makes their referents undifferentiated units.
+HED_0062099	2	Grammatical-number	Grammatical-category	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Formal feature of several word classes (e.g., nouns, pronouns, adjectives, verbs) that expresses or marks count distinctions, such as one vs. two vs. three or more.
+HED_0062100	3	Collective	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Not representing a specific number.
+HED_0062101	3	Dual	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing exactly two instances of a concept.
+HED_0062102	3	Paucal	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing a few, or small number of instances of a concept.
+HED_0062103	3	Plural	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing multiple instances of a concept.
+HED_0062104	3	Singular	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing one instance of a concept.
+HED_0062105	3	Singulative	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing one instance of a concept through modifying the standard collective.
+HED_0062106	3	Trial	Grammatical-number	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_number	Representing exactly three instances of a concept.
+HED_0062107	2	Mood	Grammatical-category	annotation=dc:source Original	Non-deictic category of verbal morphology that expresses speakers attitudes as regards the possibility, probability/likelihood, desirability, necessity, factuality etc. of the event.
+HED_0062108	3	Conditional	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Used for speaking of an event whose realization is dependent upon another condition.
+HED_0062109	3	Imperative	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Expresses direct commands, prohibitions, and requests.
+HED_0062110	3	Progressive	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Continuous_and_progressive_aspects	Expresses an incomplete state or action.
+HED_0062111	3	Subjunctive	Mood	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_mood	Used in dependent clauses to discussing imaginary or hypothetical events and situations, expressing opinions or emotions, or making polite requests, among a broad range of other uses across languages.
+HED_0062112	2	Noun-class	Grammatical-category	annotation=dc:source https://en.wikipedia.org/wiki/Noun_class, annotation=rdfs:comment Eagles only has gender as does olia. In Olia gender feature also encompasses animacy.	Formal category of nouns based on characteristic features of their referents, such as gender, animacy, shape, location or directionality.
+HED_0062113	2	Tense	Grammatical-category	annotation=dc:source Original	Deictic category of verbal morphology that situates an event (on an imaginary timeline) as either anterior, posterior or simultaneous to a reference point, prototypically time of speech.
+HED_0062114	3	Future-tense	Tense	annotation=dc:source Original	Referring to an event posterior to time of speech.
+HED_0062115	4	Future-perfect	Future-tense	annotation=dc:source Original	Referring to a future event relative to another reference point (not the time of speech).
+HED_0062116	4	Near-future-tense	Future-tense	annotation=dc:source Original	Referring to an event shortly after time of speech.
+HED_0062117	4	Remote-future-tense	Future-tense	annotation=dc:source Original	Referring to an event in the remote future.
+HED_0062118	3	Non-future-tense	Tense	annotation=dc:source Original	Referring to both a past or present event.
+HED_0062119	3	Non-past-tense	Tense	annotation=dc:source Original	Referring to both a present or future event.
+HED_0062120	3	Past-tense	Tense	annotation=dc:source Original	Referring to an event anterior to time of speech.
+HED_0062121	4	Pluperfect	Past-tense	annotation=dc:source Original	Referring to a past event relative to another reference point (not the time of speech).
+HED_0062122	4	Recent-past-tense	Past-tense	annotation=dc:source Original	Referring to an event in the recent past.
+HED_0062123	4	Remote-past-tense	Past-tense	annotation=dc:source Original	Referring to an event in the distant past.
+HED_0062124	3	Present-tense	Tense	annotation=dc:source Original	Referring to an event that takes place at time of speech.
+HED_0062125	1	Language-item-form	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Following https://www.w3.org/2016/05/ontolex/ (which is not an ontology for language annotation but an ontology for lexical entries in ontologies) we do not make the form of language inherent to language items but instead attach it separately. The word itself is a concept but it can be expressed in multiple forms. The same is true for a sentence phrase or clause. For some units it is more complicated but there is a spoken form of a letter or grapheme etc. and depending on the writing system there might be a written form of a vowel or consonant. This distinction increases flexibility.	The form of a language item.
+HED_0062126	2	Spoken-form	Language-item-form	relatedTag=Canonical-spoken-form, annotation=dc:source Original	The expression of a language item as a sound produced by a human or artificially made to sound as if produced by a human.
+HED_0062127	3	Canonical-spoken-form	Spoken-form	annotation=dc:source Original, annotation=rdfs:comment Should be commonly used (although there is no language without accent) only use regional spoken form when this is relevant in context of the dataset.	The regular spoken form of a language item.
+HED_0062128	3	Mispronounced-spoken-form	Spoken-form	annotation=dc:source Original	A mispronunciation of a language item which can still be identified.
+HED_0062129	3	Regional-spoken-form	Spoken-form	annotation=dc:source Original, annotation=rdfs:comment Use when relevant in context of dataset.	A spoken form of a language item pronounced with a regional accent.
+HED_0062130	2	Written-form	Language-item-form	relatedTag=Canonical-written-form, annotation=dc:source Original	The expression of a language item through a system of writing.
+HED_0062131	3	Canonical-written-form	Written-form	annotation=dc:source Original	The accepted spelling of a word in a given language.
+HED_0062132	3	Incorrect-written-form	Written-form	annotation=dc:source Original	An incorrect written form that does not correspond to the canonical or the pronounced form of a word, but from which the word can still be identified as such.
+HED_0062133	3	Pseudohomophone-form	Written-form	annotation=dc:source Original	A deliberate generated written-form of a word that is not in accordance with an orthographic system but is pronounced as the word based on direct grapheme to phoneme conversion.
+HED_0062134	1	Language-item-frequency	Language-item-property	annotation=dc:source Original	The frequency with which a language item occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
+HED_0062135	2	Bigram-frequency	Language-item-frequency	annotation=dc:source Original	The frequency with which a bigram occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
+HED_0062136	2	Word-frequency	Language-item-frequency	annotation=dc:source Original	The frequency with which a word occurs in a language, or a particular context for that language e.g. formal, news articles, children's television, etc.
+HED_0062137	1	Language-item-probability	Language-item-property	annotation=dc:source Original	The probability of a specific language item occurring in a specific context.
+HED_0062138	2	Cloze-probability	Language-item-probability	annotation=dc:source Original	The proportion of people who fill a gap in given sentence with a given word.
+HED_0062139	1	Lexical-role	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Sometimes applies to a word or to a phrase that fulfills a lexical role.	The role a language item takes in a vocabulary, like part of speech.
+HED_0062140	2	Adjective	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Adjective	A word that describes or defines a noun or noun phrase.
+HED_0062141	2	Adposition	Lexical-role	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Adposition	Accompanying an noun to express a spatial or temporal relation.
+HED_0062142	3	Circumposition	Adposition	annotation=dc:source Original	Appearing before and after a noun or noun phrase expressing spatial or temporal relation to another word or element in the clause.
+HED_0062143	3	Postposition	Adposition	annotation=dc:source Original	Appearing after a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.
+HED_0062144	3	Preposition	Adposition	annotation=dc:source Original	Preceding a noun or noun phrase expressing a spatial or temporal relation to another word or element in the clause.
+HED_0062145	2	Adverb	Lexical-role	annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Adverb	Modifying or qualifying an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc.
+HED_0062146	2	Classifier	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Classifier_(linguistics), annotation=rdfs:comment Classifiers are subdivided by GOLD into Nominal Noun and Numeral classifiers. OLIA lists classifier under morphosyntactic category unique (a class for categories with unique or small membership). Classifiers can have different functions across languages. In Chinese count and mass Classifiers are distinguished. Given that these might be language specific and there is no agreement in existing standards we have not added subcategories for now.	An item that accompanies nouns and can be considered to classify a noun depending on the type of its referent.
+HED_0062147	2	Conjunction	Lexical-role	annotation=dc:source Original	Connecting clauses or sentences or to coordinate words in the same clause.
+HED_0062148	3	Complementizer	Conjunction	annotation=dc:source Original	Marks a finite or non- finite clause as functioning as a complement.
+HED_0062149	3	Coordinating-conjunction	Conjunction	annotation=dc:source Original	Coordinates elements that are equal to each other.
+HED_0062150	3	Negation-word	Conjunction	annotation=dc:source Original	Expressing falsity of a clause or sentence.
+HED_0062151	2	Determiner	Lexical-role	annotation=dc:source Original	Determining the kind of reference a noun or noun group has.
+HED_0062152	3	Article	Determiner	annotation=dc:source https://en.wikipedia.org/wiki/Article_(grammar)	A class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.
+HED_0062153	3	Possessive-determiner	Determiner	annotation=dc:source Original	Determining the ownership of a noun or noun phrase.
+HED_0062154	2	Interjection	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Interjection#cite_note-1	A word or expression that occurs as an utterance on its own and expresses a spontaneous feeling or reaction.
+HED_0062155	2	Noun	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Noun	Referring to a specific object or set of objects (living creatures, places, actions, qualities, states of existence, ideas etc.
+HED_0062156	2	Numeral	Lexical-role	annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description http://purl.org/linguistics/gold.	Expressing a number or relation to a number.
+HED_0062157	2	Particle	Lexical-role	annotation=dc:source https://en.wikipedia.org/wiki/Grammatical_particle#cite_note-Glossary_Particle-3, annotation=rdfs:comment In Olia they use the term Unique and recommends not using particle because of differing definitions. Particle has an older use but the modern definition is well defined and word particle is used in neuroimaging studies (https://pubmed.ncbi.nlm.nih.gov/11347875/; https://pubmed.ncbi.nlm.nih.gov/22341872/).	Must be associated with another word or phrase to impart meaning.
+HED_0062158	2	Pronoun	Lexical-role	annotation=dc:source Original	A word or a group of words that may stand for a noun or noun phrase.
+HED_0062159	3	Demonstrative-pronoun	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Determiner	Pronoun used to indicate which entities are being referred to and to distinguish those entities from others.
+HED_0062160	3	Indefinite-pronoun	Pronoun	annotation=dc:source Original	Pronoun lacking a specific referent or having generic meaning.
+HED_0062161	3	Interrogative-pronoun	Pronoun	annotation=dc:source Original	Pronoun which prompts a question.
+HED_0062162	3	Personal-pronoun	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Personal_pronoun	Pronoun associated with a grammatical person.
+HED_0062163	3	Possessive-pronoun	Pronoun	annotation=dc:source Original	Pronoun referring to the possession of a grammatical person.
+HED_0062164	3	Reflexive-pronoun	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Reflexive_pronoun	Pronoun that refers to another noun or pronoun within the same sentence.
+HED_0062165	3	Relative-pronoun	Pronoun	annotation=dc:source https://en.wikipedia.org/wiki/Relative_pronoun	Pronoun that marks a relative clause.
+HED_0062166	2	Quantifier	Lexical-role	annotation=dc:source Adapted from D. Terence Langendoen General ontology of Linguistic description (http://purl.org/linguistics/gold).	Expressing a reference definite or indefinite number or amount.
+HED_0062167	2	Verb	Lexical-role	suggestedTag=Tense, suggestedTag=Mood, suggestedTag=Aspect, annotation=dc:source Extended from https://en.wikipedia.org/wiki/Verb	Generally conveying an action, occurrence, or state of being and makes up the main part of the predicate of a sentence.
+HED_0062168	3	Auxiliary-verb	Verb	annotation=dc:source Original	A verb devoid of lexical content that combines with another verb to realize certain grammatical functions (e.g. expression of tense, passive voice, negation, interrogation).
+HED_0062169	4	Modal-verb	Auxiliary-verb	annotation=dc:source Original	An auxiliary verb that combines with another verb and expresses necessity, wish or possibility.
+HED_0062170	3	Intransitive-verb	Verb	annotation=dc:source Original	A verb that does not require an object.
+HED_0062171	3	Psychological-verb	Verb	annotation=dc:source Original	A verb that takes two arguments, an experiencer and a theme.
+HED_0062172	3	Transitive-verb	Verb	suggestedTag=Object, annotation=dc:source Original	A verb that requires one or more objects to receive the action.
+HED_0062173	3	Unaccusative-verb	Verb	annotation=dc:source Original	An intransitive verb whose subject is a theme (i.e. affected by the process the verb expresses).
+HED_0062174	3	Unergative-verb	Verb	annotation=dc:source Original	An intransitive verb whose subject is an agent.
+HED_0062175	1	Morpheme-property	Language-item-property	annotation=dc:source Original, annotation=rdfs:comment Morphemes can be categorized based on position function and type. A morpheme property can be applied to a Morpheme.	A property of a morpheme.
+HED_0062176	2	Morpheme-function	Morpheme-property	annotation=dc:source Original	The function of a morpheme.
+HED_0062177	3	Inflective-morphological-function	Morpheme-function	suggestedTag=Grammatical-category, annotation=dc:source Original	Changing the grammatical function.
+HED_0062178	4	Conjugate	Inflective-morphological-function	annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)	Identifying the voice, mood, tense, number, gender, and person of a verb.
+HED_0062179	4	Decline	Inflective-morphological-function	annotation=dc:source Original, annotation=rdfs:comment Combine with grammatical category what the morpheme adjusted (can be multiple in aggulating languages)	Marking the number, case, gender, or class of nouns, pronouns, adjectives, and articles.
+HED_0062180	3	Word-formation-function	Morpheme-function	annotation=dc:source Original	Creating a new word.
+HED_0062181	4	Compound	Word-formation-function	annotation=dc:source Original	To join with another free morpheme to form a more complex word.
+HED_0062182	4	Derivation	Word-formation-function	annotation=dc:source Original, annotation=rdfs:comment Derivation changes the meaning of a word (for instance reverses the meaning or changes intensity). We do not cover all the semantic types of changes that can be the result of morphological changes but instead give a higher level categorization. Further specification might depend on a more semantic schema.	Changing the meaning of a word, usually by adding an affix.
+HED_0062183	5	Change-word-class	Derivation	suggestedTag=Lexical-role, annotation=dc:source Original, annotation=rdfs:comment Combine with Lexical-role to express what the process has resulted in. Follows Category-changer concept in GOLD but instead of extending further HED can fulfil the same function by tagging it together with a lexical role.	Changing the word class or part of speech a word belongs to.
+HED_0062184	2	Morpheme-type	Morpheme-property	annotation=dc:source Original	The type of a morpheme.
+HED_0062185	3	Bound-morpheme-type	Morpheme-type	annotation=dc:source Original	A morpheme type that cannot be a word itself, such as prefixes and suffixes.
+HED_0062186	3	Free-morpheme-type	Morpheme-type	annotation=dc:source Original	A morpheme type that can function as a word.
+HED_0062187	2	Morphological-position	Morpheme-property	annotation=dc:source Original	The position a morpheme takes relative to the free morpheme of a word.
+HED_0062188	3	Affix	Morphological-position	annotation=dc:source Original, annotation=rdfs:comment Affix is a categorization of morpheme based on its position. In OLIA this is a subclass of Morpheme. However there are other categorizations of morphemes based on how they change the stem of the word (categorized in OLIA as Morphological processes such as Clitization or reduplication). However since these all say something about how the morpheme is applied to the word we believe these fit better together under the position tag.	A morpheme that is attached to a word stem to form a new word or word form.
+HED_0062189	3	Circumfix	Morphological-position	annotation=dc:source Original	Position of a morpheme split in two parts, one placed at the start of a word, the other at the end.
+HED_0062190	3	Infix	Morphological-position	annotation=dc:source Original	Position of a morpheme in the middle of a word.
+HED_0062191	3	Non-concatenative-morphology	Morphological-position	annotation=dc:source Original	Process of word formation and inflection in which the stem may be modified (without stringing morphemes together sequentially).
+HED_0062192	4	Apophony	Non-concatenative-morphology	annotation=dc:source Original	Regular vowel variation.
+HED_0062193	4	Clitic-morphological-position	Non-concatenative-morphology	annotation=dc:source https://en.wikipedia.org/wiki/Clitic	A morpheme that has syntactic characteristics of a word, but which is phonologically dependent on another word.
+HED_0062194	4	Conversion	Non-concatenative-morphology	annotation=dc:source Original	No change (where a morphological change might be expected based on regular grammar).
+HED_0062195	4	Reduplication	Non-concatenative-morphology	annotation=dc:source Original	Duplication of all or part of the root word.
+HED_0062196	4	Transfixation	Non-concatenative-morphology	annotation=dc:source Original	Interdigitation of vowel and consonant morphemes.
+HED_0062197	4	Truncation	Non-concatenative-morphology	annotation=dc:source Original	Removal of phonological material from root.
+HED_0062198	3	Prefix	Morphological-position	annotation=dc:source Original	Position of a morpheme at the beginning of a word.
+HED_0062199	3	Suffix	Morphological-position	annotation=dc:source Original	Position of a morpheme at the end of a word.
+HED_0062200	1	Orthographic-neighborhood-size	Language-item-property	annotation=dc:source Original	The number of closely resembling word-forms.
+HED_0062201	1	Phrase-role	Language-item-property	annotation=dc:source Original	The role of phrase.
+HED_0062202	2	Adjective-phrase	Phrase-role	annotation=dc:source Original	Headed by an adjective.
+HED_0062203	2	Adpostional-phrase	Phrase-role	annotation=dc:source Original	Consisting of an adposition and its complement.
+HED_0062204	3	Postpositional-phrase	Adpostional-phrase	annotation=dc:source Original	Consisting of a postposition and its complement.
+HED_0062205	3	Prepositional-phrase	Adpostional-phrase	annotation=dc:source Original	Consisting of a preposition and its complement.
+HED_0062206	2	Adverb-phrase	Phrase-role	annotation=dc:source Original	Functioning as an adverb in a sentence.
+HED_0062207	2	Noun-phrase	Phrase-role	annotation=dc:source Original	Functioning in a sentence as subject, object, or prepositional object.
+HED_0062208	2	Verb-phrase	Phrase-role	annotation=dc:source Original	Containing the verb and any direct or indirect object, but not the subject.
+HED_0062209	1	Syntactic-role	Language-item-property	annotation=dc:source Original	Role a language-item takes in syntax.
+HED_0062210	2	Complement	Syntactic-role	annotation=dc:source Original	The constituent selected by a head.
+HED_0062211	3	Syntactic-object	Complement	annotation=dc:source Original	Complement of a verbal head.
+HED_0062212	4	Direct-syntactic-object	Syntactic-object	annotation=dc:source Original	A constituent which receives the action of the verb or comes into existence by this action.
+HED_0062213	4	Indirect-syntactic-object	Syntactic-object	annotation=dc:source Original	A constituent representing a secondary or passive participant, often a goal, a beneficiary or an experiencer.
+HED_0062214	2	Modifier	Syntactic-role	annotation=dc:source Original	Optional element in a phrase or a clause that specifies a noun or acts as an adjunct.
+HED_0062215	3	Adjunct	Modifier	annotation=dc:source Original	Optional element in a clause or sentence that provides information about the temporal, local (etc.) circumstances under which an event occurred.
+HED_0062216	2	Predicate	Syntactic-role	annotation=dc:source Original	Basic constituent of a clause that expresses a property or condition of the subject or an action performed by it.
+HED_0062217	3	Secondary-predicate	Predicate	annotation=dc:source Original	Adjectival or prepositional predicate that is not the main (verbal) predicate of the clause and refers to the subject or the object, as either depictive (indicating a state) or resultative (indicating the event's result on the object).
+HED_0062218	2	Subject	Syntactic-role	annotation=dc:source Original	Basic constituent of a clause about which something is said; typically, but not necessarily, associated with a specific case (most often nominative).
+HED_0062219	2	Syntactic-Head	Syntactic-role	annotation=dc:source https://en.wikipedia.org/wiki/Head_(linguistics)	Word that determines the syntactic category of a phrase.
+HED_0062220	0	Language-property	Property	rooted=Property, annotation=dc:source Original	A property relating to a system of communication used by a particular group of people.
+HED_0062221	1	Morphological-language-type	Language-property	annotation=dc:source Original	Morphological property relating to a specific system of communication used by a particular group of people.
+HED_0062222	2	Analytic-language-type	Morphological-language-type	annotation=dc:source Original	Rarely using affixes, resulting in a low morpheme per word ratio.
+HED_0062223	3	Morphological-isolating-type	Analytic-language-type	annotation=dc:source https://en.wikipedia.org/wiki/Isolating_language	Having a morpheme per word ratio close to one.
+HED_0062224	2	Morphological-polysynthetic-type	Morphological-language-type	annotation=dc:source Original	Can encode multiple constituents such as subject, verb, object, etc. into a single word.
+HED_0062225	2	Morphological-synthetic-type	Morphological-language-type	annotation=dc:source https://en.wikipedia.org/wiki/Synthetic_language	Having a higher morpheme per word ratio.
+HED_0062226	3	Morphological-agglutinating-type	Morphological-synthetic-type	annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Agglutination	Words are formed by stringing together morphemes whereby each one corresponds to a single grammatical feature.
+HED_0062227	3	Morphological-fusional-type	Morphological-synthetic-type	annotation=dc:source https://en.wikipedia.org/wiki/Fusional_language	Have a tendency to use a single inflectional morpheme to denote multiple grammatical, syntactic, or semantic features.
+HED_0062228	1	Orthographic-type	Language-property	annotation=dc:source Original, annotation=rdfs:comment Classification of writing systems is complex and these categories are not universally accepted (mainly because most writing systems have characteristics of multiple of these categories). However most writing systems have an overall tendency towards one of these categories and so the categories can be useful to see how large differences are managed by the individuals who speak them. But it is normal that a writing system does not cleanly fit into any of these categories.	The type of language item each symbol serves to represent in written language.
+HED_0062229	2	Logographic-type	Orthographic-type	annotation=dc:source Original	Representing an entire spoken word per character.
+HED_0062230	2	Segmental-or-Alphabetic-type	Orthographic-type	annotation=dc:source Original, annotation=rdfs:comment These can be further subdivided based on other characteristics but these are most commonly used in cognition research and relevant in research into dyslexia	Representing approximately phoneme per character.
+HED_0062231	3	Deep-orthographical-type	Segmental-or-Alphabetic-type	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth	Not having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.
+HED_0062232	3	Shallow-orthographic-type	Segmental-or-Alphabetic-type	annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Orthographic_depth	Having a one-to-one correspondence between sounds (phonemes) and the letters (graphemes) that represent them.
+HED_0062233	2	Syllabary-type	Orthographic-type	annotation=dc:source Original	Representing one syllable or mora per character.
+HED_0062234	0	Linguistic-relation	Relation	rooted=Relation, annotation=dc:source Original	Related based on a linguistic property to.
+HED_0062235	1	Grammatical-relation	Linguistic-relation	annotation=dc:source Original	Grammatical relationship between language items.
+HED_0062236	2	Agreement-with	Grammatical-relation	annotation=dc:source Original	Inflectional adjustment to match grammatical category (e.g. case, number, gender) of.
+HED_0062237	1	Orthographic-relatedness-to	Linguistic-relation	annotation=dc:source Original	Connected on the basis of writing or spelling.
+HED_0062238	2	Orthographic-distance-to	Orthographic-relatedness-to	annotation=dc:source Original	Removed in orthographic or written form (e.g. a measure of how far cat is removed from rat in orthography).
+HED_0062239	3	Hamming-distance-to	Orthographic-distance-to	annotation=dc:source Original	The minimum number of substitutions required to change one string into another string of equal length.
+HED_0062240	4	Hamming-distance-to-#	Hamming-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.
+HED_0062241	3	Levenshtein-distance-to	Orthographic-distance-to	annotation=dc:source Original	The minimum number of single-character edits to change into.
+HED_0062242	4	Levenshtein-distance-to-#	Levenshtein-distance-to	takesValue=true, valueClass=numericClass	Integers 0 and up.
+HED_0062243	1	Phonological-relatedness-to	Linguistic-relation	annotation=dc:source Original	Connected on the basis of sound.
+HED_0062244	2	Phonological-distance-to	Phonological-relatedness-to	annotation=dc:source Original	Removed in sounding from.
+HED_0062245	3	Phonological-Levenshtein-distance-to	Phonological-distance-to	annotation=dc:source Original	The minimum number of single-phoneme edits to change into.
+HED_0062246	4	Phonological-Levenshtein-distance-to-#	Phonological-Levenshtein-distance-to	takesValue=true, valueClass=numericClass, annotation=dc:source Original	Integers 0 and up.
+HED_0062247	1	Semantic-relatedness-to	Linguistic-relation	annotation=dc:source Original	Connected on the basis of meaning to.
+HED_0062248	2	Antonymous-to	Semantic-relatedness-to	annotation=dc:source Original	Meaning the opposite as.
+HED_0062249	2	Semantic-distance-to	Semantic-relatedness-to	annotation=dc:source Original	Removed in meaning from.
+HED_0062250	3	Semantic-distance-to-#	Semantic-distance-to		
+HED_0062251	2	Synonymous-to	Semantic-relatedness-to	annotation=dc:source Original	Meaning exactly or nearly the same as.
