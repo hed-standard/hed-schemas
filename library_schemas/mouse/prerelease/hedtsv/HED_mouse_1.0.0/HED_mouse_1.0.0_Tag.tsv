@@ -1,18 +1,18 @@
-hedId	rdfs:label	Level	omn:SubClassOf	Attributes	dc:description
-	Lick	0	Move-face	rooted=Move-face	Touch tongue to an object
-	Move-whiskers	0	Move-face	rooted=Move-face	
-	Consume	0	Perform	rooted=Perform	Consume reward through drinking or eating
-	Groom	0	Perform	rooted=Perform	
-	Nose-poke	0	Perform	rooted=Perform	
-	Report	0	Perform	rooted=Perform	Touch object to report choice
-	Fore-limb	0	Body-part	rooted=Body-part	
-	Fore-limb-part	0	Body-part	rooted=Body-part	
-	Manus	1	Fore-limb-part		
-	Whiskers	0	Face-part	rooted=Face-part	
-	Hind-limb	0	Body-part	rooted=Body-part	
-	Hind-limb-part	0	Body-part	rooted=Body-part	
-	Pes	1	Hind-limb-part		
-	Tail	0	Body-part	rooted=Body-part	
-	Lick-spout	0	Measurement-device	rooted=Measurement-device	
-	Aborted-trial	0	Task-action-type	rooted=Task-action-type	
-	Correct-reject	0	Task-action-type	rooted=Task-action-type	
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	0	Lick	Move-face	rooted=Move-face	Touch tongue to an object
+	0	Move-whiskers	Move-face	rooted=Move-face	
+	0	Consume	Perform	rooted=Perform	Consume reward through drinking or eating
+	0	Groom	Perform	rooted=Perform	
+	0	Nose-poke	Perform	rooted=Perform	
+	0	Report	Perform	rooted=Perform	Touch object to report choice
+	0	Fore-limb	Body-part	rooted=Body-part	
+	0	Fore-limb-part	Body-part	rooted=Body-part	
+	1	Manus	Fore-limb-part		
+	0	Whiskers	Face-part	rooted=Face-part	
+	0	Hind-limb	Body-part	rooted=Body-part	
+	0	Hind-limb-part	Body-part	rooted=Body-part	
+	1	Pes	Hind-limb-part		
+	0	Tail	Body-part	rooted=Body-part	
+	0	Lick-spout	Measurement-device	rooted=Measurement-device	
+	0	Aborted-trial	Task-action-type	rooted=Task-action-type	
+	0	Correct-reject	Task-action-type	rooted=Task-action-type	
