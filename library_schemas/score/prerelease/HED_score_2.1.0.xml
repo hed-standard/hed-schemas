@@ -22880,36 +22880,69 @@ The SCORE standard defines terms for describing phenomena observed in scalp EEG 
 The SCORE standard received European consensus and has been endorsed by the European Chapter of the International Federation of Clinical Neurophysiology (IFCN) and the International League Against Epilepsy (ILAE) Commission on European Affairs.
 A second revised and extended version of SCORE achieved international consensus.
 
-1 (Beniczky ea 2013)(https://doi.org/10.1111/epi.12270): &quot;Standardized computer based organized reporting of EEG: SCORE.&quot; Epilepsia 54(6) pp.1112-1124.
-2 (Beniczky ea 2017)(https://doi.org/10.1016/j.clinph.2017.07.418): &quot;Standardized computer based organized reporting of EEG: SCORE second version.&quot; Clinical Neurophysiology 128(11) pp.2334-2346.
-3 (Hirsch ea 2013)(https://doi.org/10.1097/WNP.0b013e3182784729): &quot;American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version.&quot; Journal of clinical neurophysiology 30(1) pp.1-27.
-4 (Fisher ea 2017)(https://doi.org/10.1111/epi.13670): &quot;Instruction manual for the ILAE 2017 operational classification of seizure types.&quot; Epilepsia 58(4) pp.531-542.
-5 (Trenite ea 2001)(https://doi.org/10.1046/j.1528-1157.2001.30600.x): &quot;Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology.&quot; Epilepsia 42(5) pp.692-701.
-6 (Blume ea 2001)(https://doi.org/10.1046/j.1528-1157.2001.22001.x): &quot;Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology.&quot; Epilepsia 42(9) pp.1212-1218.
-7 (Wikipedia)(https://en.wikipedia.org).
-
 TPA KR DH SM July 2024</epilogue>
-   <schemaSources/>
+   <schemaSources>
+      <schemaSource>
+         <name>Beniczky ea 2013</name>
+         <link>https://doi.org/10.1111/epi.12270</link>
+         <description>Standardized computer based organized reporting of EEG: SCORE. Epilepsia 54(6) pp.1112-1124.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Beniczky ea 2017</name>
+         <link>https://doi.org/10.1016/j.clinph.2017.07.418</link>
+         <description>Standardized computer based organized reporting of EEG: SCORE second version. Clinical Neurophysiology 128(11) pp.2334-2346.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Blume ea 2001</name>
+         <link>https://doi.org/10.1046/j.1528-1157.2001.22001.X</link>
+         <description>Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology. Epilepsia 42(9) pp.1212-1218.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Fisher ea 2017</name>
+         <link>https://doi.org/10.1111/epi.1367</link>
+         <description>Instruction manual for the ILAE 2017 operational classification of seizure types. Epilepsia 58(4) pp.531-542.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Hirsch ea 2013</name>
+         <link>https://doi.org/10.1097/WNP.0b013e3182784729</link>
+         <description>American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version. Journal of clinical neurophysiology 30(1) pp.1-27.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Trenite ea 2001</name>
+         <link>https://doi.org/10.1046/j.1528-1157.2001.30600.X</link>
+         <description>Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology. Epilepsia 42(5) pp.692-701.</description>
+      </schemaSource>
+      <schemaSource>
+         <name>Wikipedia</name>
+         <link>https://en.wikipedia.org</link>
+         <description>General definitions of concepts.</description>
+      </schemaSource>
+   </schemaSources>
    <schemaPrefixes>
       <schemaPrefix>
-         <name>rdf:</name>
-         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
-         <description>The RDF namespace [RDF-CONCEPTS]</description>
+         <name>dc:</name>
+         <namespace>http://purl.org/dc/elements/1.1/</namespace>
+         <description>The Dublin Core elements</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>rdfs:</name>
-         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
-         <description>The RDF Schema namespace [RDFS]</description>
+         <name>foaf:</name>
+         <namespace>http://xmlns.com/foaf/0.1/</namespace>
+         <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>xsd:</name>
-         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
-         <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
+         <name>iao:</name>
+         <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
+         <description>Information Artifact Ontology (IAO)</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>xml:</name>
-         <namespace>http://www.w3.org/XML/1998/namespace</namespace>
-         <description>XLM Namespace [XML]</description>
+         <name>ncit:</name>
+         <namespace>http://purl.obolibrary.org/obo/ncit.owl</namespace>
+         <description>NCI Thesaurus OBO Edition</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>obogo:</name>
+         <namespace>http://www.geneontology.org/formats/oboInOwl</namespace>
+         <description>The OBO Format Namespace</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
@@ -22922,29 +22955,14 @@ TPA KR DH SM July 2024</epilogue>
          <description>The PROV namespace [PROV-DM]</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>dc:</name>
-         <namespace>http://purl.org/dc/elements/1.1/</namespace>
-         <description>The Dublin Core elements</description>
+         <name>rdf:</name>
+         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+         <description>The RDF namespace [RDF-CONCEPTS]</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>terms:</name>
-         <namespace>http://purl.org/dc/terms/</namespace>
-         <description>The Dublin Core terms</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>foaf:</name>
-         <namespace>http://xmlns.com/foaf/0.1/</namespace>
-         <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>ncit:</name>
-         <namespace>http://purl.obolibrary.org/obo/ncit.owl</namespace>
-         <description>NCI Thesaurus OBO Edition</description>
-      </schemaPrefix>
-      <schemaPrefix>
-         <name>iao:</name>
-         <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
-         <description>Information Artifact Ontology (IAO)</description>
+         <name>rdfs:</name>
+         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+         <description>The RDF Schema namespace [RDFS]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>skos:</name>
@@ -22952,9 +22970,19 @@ TPA KR DH SM July 2024</epilogue>
          <description>SKOS (Simple Knowledge Organization System) Vocabulary</description>
       </schemaPrefix>
       <schemaPrefix>
-         <name>obogo:</name>
-         <namespace>http://www.geneontology.org/formats/oboInOwl</namespace>
-         <description>The OBO Format Namespace</description>
+         <name>terms:</name>
+         <namespace>http://purl.org/dc/terms/</namespace>
+         <description>The Dublin Core terms</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>xml:</name>
+         <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+         <description>XLM Namespace [XML]</description>
+      </schemaPrefix>
+      <schemaPrefix>
+         <name>xsd:</name>
+         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
+         <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
       </schemaPrefix>
    </schemaPrefixes>
    <externalAnnotations>
@@ -22986,7 +23014,7 @@ TPA KR DH SM July 2024</epilogue>
          <name>dc:</name>
          <id>format</id>
          <iri>http://purl.org/dc/elements/1.1/format</iri>
-         <description>The file format, physical medium, or dimensions of the resource.</description>
+         <description>The file format</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
@@ -23043,16 +23071,16 @@ TPA KR DH SM July 2024</epilogue>
          <description>A homepage for some thing.</description>
       </externalAnnotation>
       <externalAnnotation>
-         <name>terms:</name>
-         <id>license</id>
-         <iri>http://purl.org/dc/terms/license</iri>
-         <description>A legal document giving official permission to do something with the resource.</description>
-      </externalAnnotation>
-      <externalAnnotation>
          <name>obogo:</name>
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>terms:</name>
+         <id>license</id>
+         <iri>http://purl.org/dc/terms/license</iri>
+         <description>A legal document giving official permission to do something with the resource.</description>
       </externalAnnotation>
    </externalAnnotations>
 </HED>
