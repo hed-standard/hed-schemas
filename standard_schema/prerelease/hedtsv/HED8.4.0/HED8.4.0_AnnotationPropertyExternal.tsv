@@ -3,7 +3,7 @@ dc:	contributor	http://purl.org/dc/elements/1.1/contributor	An entity responsibl
 dc:	creator	http://purl.org/dc/elements/1.1/creator	An entity primarily responsible for making the resource.
 dc:	date	http://purl.org/dc/elements/1.1/date	A point or period of time associated with an event in the lifecycle of the resource.
 dc:	description	http://purl.org/dc/elements/1.1/description	An account of the resource.
-dc:	format	http://purl.org/dc/elements/1.1/format	The file format, physical medium, or dimensions of the resource.
+dc:	format	http://purl.org/dc/elements/1.1/format	The file format
 dc:	identifier	http://purl.org/dc/elements/1.1/identifier	An unambiguous reference to the resource within a given context.
 dc:	language	http://purl.org/dc/elements/1.1/language	A language of the resource.
 dc:	publisher	http://purl.org/dc/elements/1.1/publisher	An entity responsible for making the resource available.

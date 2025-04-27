@@ -13410,9 +13410,9 @@ Each term in this vocabulary has a human-readable description and may include ad
    <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.</epilogue>
    <schemaSources>
       <schemaSource>
-         <name>wikipedia</name>
-         <link>https://wikipedia.org</link>
-         <description/>
+         <name>Wikipedia</name>
+         <link>https://en.wikipedia.org</link>
+         <description>General definitions of concepts.</description>
       </schemaSource>
    </schemaSources>
    <schemaPrefixes>
@@ -13511,7 +13511,7 @@ Each term in this vocabulary has a human-readable description and may include ad
          <name>dc:</name>
          <id>format</id>
          <iri>http://purl.org/dc/elements/1.1/format</iri>
-         <description>The file format, physical medium, or dimensions of the resource.</description>
+         <description>The file format</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
