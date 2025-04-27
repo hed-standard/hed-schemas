@@ -1,70 +1,70 @@
 hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
 HED_0062001	0	Language	Item	rooted=Item, annotation=dc:source Original, annotation=rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works.	A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.
-HED_0062002	1	Afroasiatic-language	Language	annotation=rdfs:comment Glottocode: afro1255	A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.
-HED_0062003	2	Arabic	Afroasiatic-language	annotation=rdfs:comment Glottocode: arab1395	An Afroasiatic language spoken mainly in Northern Africa and Western Asia.
-HED_0062004	2	Hebrew	Afroasiatic-language	annotation=rdfs:comment Glottocode: hebr1245	An Afroasiatic language mainly spoken in Israel.
-HED_0062005	1	Atlantic-Congo-language	Language	annotation=rdfs:comment Glottocode: atla1278	A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.
-HED_0062006	2	Swahili	Atlantic-Congo-language	annotation=rdfs:comment Glottocode: swah1253	An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.
-HED_0062007	1	Austroasiatic	Language	annotation=rdfs:comment Glottocode:aust1305	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.
-HED_0062008	2	Vietnamese	Austroasiatic	annotation=rdfs:comment Glottocode:viet1252	An Austroasiatic language mainly spoken in Vietnam.
-HED_0062009	1	Austronesian-language	Language	annotation=rdfs:comment Glottocode: aust1307	A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.
-HED_0062010	2	Malay	Austronesian-language	annotation=rdfs:comment Glottocode: nucl1806	An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.
-HED_0062011	1	Dravidian	Language	annotation=rdfs:comment Glottocode: drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages	A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.
-HED_0062012	2	Tamil	Dravidian	annotation=rdfs:comment Glottocode: tami1289	A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.
-HED_0062013	1	Indo-European-language	Language	suggestedTag=Language-property, annotation=rdfs:comment Glottocode: indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages	A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.
-HED_0062014	2	Baltic-language	Indo-European-language	annotation=rdfs:comment Glottocode: east2280	A system of communication belonging to the family of languages originating in Northeastern Europe.
-HED_0062015	3	Latvian	Baltic-language	annotation=rdfs:comment Glottocode: latv1249	A baltic language spoken mainly in Latvia.
-HED_0062016	3	Lithuanian	Baltic-language	annotation=rdfs:comment Glottocode: lith1251	A baltic language spoken mainly in Lithuania.
-HED_0062017	2	Germanic-language	Indo-European-language	annotation=rdfs:comment Glottocode: germ1287	A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.
-HED_0062018	3	Danish	Germanic-language	annotation=rdfs:comment Glottocode: dani1285	A Germanic language, mainly spoken in Denmark.
-HED_0062019	3	Dutch	Germanic-language	annotation=rdfs:comment Glottocode: dutc1256	A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.
-HED_0062020	3	English	Germanic-language	annotation=rdfs:comment Glottocode: stan1293	A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.
-HED_0062021	3	German	Germanic-language	annotation=rdfs:comment Glottocode: stan1295	A Germanic Language which is mainly spoken in Western and Central Europe.
-HED_0062022	3	Icelandic	Germanic-language	annotation=rdfs:comment Glottocode: icel1247	A Germanic language mainly spoken in Iceland.
-HED_0062023	3	Norwegian	Germanic-language	annotation=rdfs:comment Glottocode: norw1258	A Germanic language mainly spoken in Norway.
-HED_0062024	3	Swedish	Germanic-language	annotation=rdfs:comment Glottocode: swed1254	A Germanic language mainly spoken in Sweden and parts of Finland.
-HED_0062025	2	Romance-language	Indo-European-language	annotation=rdfs:comment Glottocode: roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages	A system of communication belonging to the family of languages directly descending from Vulgar Latin.
-HED_0062026	3	Catalan	Romance-language	annotation=rdfs:comment Glottocode: stan1289	A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.
-HED_0062027	3	French	Romance-language	annotation=rdfs:comment Glottocode: stan1290	A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.
-HED_0062028	3	Galician	Romance-language	annotation=rdfs:comment Glottocode: gali1258	A Romance language mainly spoken in Galicia.
-HED_0062029	3	Gallo-Rhaetian-language	Romance-language	annotation=rdfs:comment Glottocode: gall1280	A group of historically related Romance varieties spoken in Switzerland and Northern Italy.
-HED_0062030	3	Italian	Romance-language	annotation=rdfs:comment Glottocode: ital1282	A Romance language mainly spoken in Italy and parts of Switzerland.
-HED_0062031	3	Portuguese	Romance-language	annotation=rdfs:comment Glottocode: port1283	A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.
-HED_0062032	3	Romanian	Romance-language	annotation=rdfs:comment Glottocode: roma1327	A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.
-HED_0062033	3	Spanish	Romance-language	annotation=rdfs:comment Glottocode: stan1288	A Romance language spoken in Spain and large parts of the Americas.
-HED_0062034	2	Slavic-language	Indo-European-language	annotation=rdfs:comment Glottocode: slav1255	A system of communication belonging to the family of languages originating in Eastern Europe.
-HED_0062035	3	Bulgarian	Slavic-language	annotation=rdfs:comment Glottocode: bulg1262	A Slavic language spoken mainly in Bulgaria.
-HED_0062036	3	Croatian	Slavic-language	annotation=rdfs:comment Glottocode: croa1245	A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.
-HED_0062037	3	Czech	Slavic-language	annotation=rdfs:comment Glottocode: czec1258	A Slavic language spoken mainly in the Czech Republic.
-HED_0062038	3	Macedonian	Slavic-language	annotation=rdfs:comment Glottocode: mace1250	A Slavic language spoken mainly in North Macedonia.
-HED_0062039	3	Polish	Slavic-language	annotation=rdfs:comment Glottocode: poli1260	A Slavic language spoken mainly in Poland.
-HED_0062040	3	Russian	Slavic-language	annotation=rdfs:comment Glottocode: russ1263	A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.
-HED_0062041	3	Slovak	Slavic-language	annotation=rdfs:comment Glottocode: slov126	A Slavic language spoken mainly in Slovakia.
-HED_0062042	3	Ukrainian	Slavic-language	annotation=rdfs:comment Glottocode: ukra1253	A Slavic language spoken mainly in Ukraine.
-HED_0062043	1	Japonic	Language	annotation=rdfs:comment Glottocode: japo1237	A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.
-HED_0062044	2	Japanese	Japonic	annotation=rdfs:comment Glottocode: nucl1643	A Japonic language mainly spoken in Japan.
-HED_0062045	1	Koreanic	Language	annotation=rdfs:comment Glottocode: kore1284	A system of communication belonging to the family of languages mainly spoken in Korea.
-HED_0062046	2	Korean	Koreanic	annotation=rdfs:comment Glottocode: kore1280	A Koreanic language mainly spoken in Korea.
-HED_0062047	1	Sino-Tibetan-language	Language	annotation=rdfs:comment Glottocode: sino1245	A system of communication belonging to the family of languages spoken in Asia.
-HED_0062048	2	Burmo-Qiangic-language	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: burm1265	A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.
-HED_0062049	3	Burmese	Burmo-Qiangic-language	annotation=rdfs:comment Glottocode: nucl1310	A Burmo Qiangic language mainly spoken in Myanmar.
-HED_0062050	2	Sinitic	Sino-Tibetan-language	annotation=rdfs:comment Glottocode: sini1245	A system of communication belonging to the family of languages mainly spoken in China.
-HED_0062051	3	Gan-Chinese	Sinitic	annotation=rdfs:comment Glottocode: ganc1239	A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.
-HED_0062052	3	Mandarin-Chinese	Sinitic	annotation=rdfs:comment Glottocode: mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=rdfs:comment Glottocode: mand1471	A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.
+HED_0062002	1	Afroasiatic-language	Language	annotation=glotto:Glottocode afro1255	A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.
+HED_0062003	2	Arabic	Afroasiatic-language	annotation=glotto:Glottocode arab1395	An Afroasiatic language spoken mainly in Northern Africa and Western Asia.
+HED_0062004	2	Hebrew	Afroasiatic-language	annotation=glotto:Glottocode hebr1245	An Afroasiatic language mainly spoken in Israel.
+HED_0062005	1	Atlantic-Congo-language	Language	annotation=glotto:Glottocode atla1278	A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.
+HED_0062006	2	Swahili	Atlantic-Congo-language	annotation=glotto:Glottocode swah1253	An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.
+HED_0062007	1	Austroasiatic	Language	annotation=glotto:aust1305	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.
+HED_0062008	2	Vietnamese	Austroasiatic	annotation=glotto:viet1252	An Austroasiatic language mainly spoken in Vietnam.
+HED_0062009	1	Austronesian-language	Language	annotation=glotto:Glottocode aust1307	A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.
+HED_0062010	2	Malay	Austronesian-language	annotation=glotto:Glottocode nucl1806	An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.
+HED_0062011	1	Dravidian	Language	annotation=glotto:Glottocode drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages	A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.
+HED_0062012	2	Tamil	Dravidian	annotation=glotto:Glottocode tami1289	A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.
+HED_0062013	1	Indo-European-language	Language	suggestedTag=Language-property, annotation=glotto:Glottocode indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages	A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.
+HED_0062014	2	Baltic-language	Indo-European-language	annotation=glotto:Glottocode east2280	A system of communication belonging to the family of languages originating in Northeastern Europe.
+HED_0062015	3	Latvian	Baltic-language	annotation=glotto:Glottocode latv1249	A baltic language spoken mainly in Latvia.
+HED_0062016	3	Lithuanian	Baltic-language	annotation=glotto:Glottocode lith1251	A baltic language spoken mainly in Lithuania.
+HED_0062017	2	Germanic-language	Indo-European-language	annotation=glotto:Glottocode germ1287	A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.
+HED_0062018	3	Danish	Germanic-language	annotation=glotto:Glottocode dani1285	A Germanic language, mainly spoken in Denmark.
+HED_0062019	3	Dutch	Germanic-language	annotation=glotto:Glottocode dutc1256	A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.
+HED_0062020	3	English	Germanic-language	annotation=glotto:Glottocode stan1293	A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.
+HED_0062021	3	German	Germanic-language	annotation=glotto:Glottocode stan1295	A Germanic Language which is mainly spoken in Western and Central Europe.
+HED_0062022	3	Icelandic	Germanic-language	annotation=glotto:Glottocode icel1247	A Germanic language mainly spoken in Iceland.
+HED_0062023	3	Norwegian	Germanic-language	annotation=glotto:Glottocode norw1258	A Germanic language mainly spoken in Norway.
+HED_0062024	3	Swedish	Germanic-language	annotation=glotto:Glottocode swed1254	A Germanic language mainly spoken in Sweden and parts of Finland.
+HED_0062025	2	Romance-language	Indo-European-language	annotation=glotto:Glottocode roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages	A system of communication belonging to the family of languages directly descending from Vulgar Latin.
+HED_0062026	3	Catalan	Romance-language	annotation=glotto:Glottocode stan1289	A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.
+HED_0062027	3	French	Romance-language	annotation=glotto:Glottocode stan1290	A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.
+HED_0062028	3	Galician	Romance-language	annotation=glotto:Glottocode gali1258	A Romance language mainly spoken in Galicia.
+HED_0062029	3	Gallo-Rhaetian-language	Romance-language	annotation=glotto:Glottocode gall1280	A group of historically related Romance varieties spoken in Switzerland and Northern Italy.
+HED_0062030	3	Italian	Romance-language	annotation=glotto:Glottocode ital1282	A Romance language mainly spoken in Italy and parts of Switzerland.
+HED_0062031	3	Portuguese	Romance-language	annotation=glotto:Glottocode port1283	A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.
+HED_0062032	3	Romanian	Romance-language	annotation=glotto:Glottocode roma1327	A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.
+HED_0062033	3	Spanish	Romance-language	annotation=glotto:Glottocode stan1288	A Romance language spoken in Spain and large parts of the Americas.
+HED_0062034	2	Slavic-language	Indo-European-language	annotation=glotto:Glottocode slav1255	A system of communication belonging to the family of languages originating in Eastern Europe.
+HED_0062035	3	Bulgarian	Slavic-language	annotation=glotto:Glottocode bulg1262	A Slavic language spoken mainly in Bulgaria.
+HED_0062036	3	Croatian	Slavic-language	annotation=glotto:Glottocode croa1245	A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.
+HED_0062037	3	Czech	Slavic-language	annotation=glotto:Glottocode czec1258	A Slavic language spoken mainly in the Czech Republic.
+HED_0062038	3	Macedonian	Slavic-language	annotation=glotto:Glottocode mace1250	A Slavic language spoken mainly in North Macedonia.
+HED_0062039	3	Polish	Slavic-language	annotation=glotto:Glottocode poli1260	A Slavic language spoken mainly in Poland.
+HED_0062040	3	Russian	Slavic-language	annotation=glotto:Glottocode russ1263	A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.
+HED_0062041	3	Slovak	Slavic-language	annotation=glotto:Glottocode slov126	A Slavic language spoken mainly in Slovakia.
+HED_0062042	3	Ukrainian	Slavic-language	annotation=glotto:Glottocode ukra1253	A Slavic language spoken mainly in Ukraine.
+HED_0062043	1	Japonic	Language	annotation=glotto:Glottocode japo1237	A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.
+HED_0062044	2	Japanese	Japonic	annotation=glotto:Glottocode nucl1643	A Japonic language mainly spoken in Japan.
+HED_0062045	1	Koreanic	Language	annotation=glotto:Glottocode kore1284	A system of communication belonging to the family of languages mainly spoken in Korea.
+HED_0062046	2	Korean	Koreanic	annotation=glotto:Glottocode kore1280	A Koreanic language mainly spoken in Korea.
+HED_0062047	1	Sino-Tibetan-language	Language	annotation=glotto:Glottocode sino1245	A system of communication belonging to the family of languages spoken in Asia.
+HED_0062048	2	Burmo-Qiangic-language	Sino-Tibetan-language	annotation=glotto:Glottocode burm1265	A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.
+HED_0062049	3	Burmese	Burmo-Qiangic-language	annotation=glotto:Glottocode nucl1310	A Burmo Qiangic language mainly spoken in Myanmar.
+HED_0062050	2	Sinitic	Sino-Tibetan-language	annotation=glotto:Glottocode sini1245	A system of communication belonging to the family of languages mainly spoken in China.
+HED_0062051	3	Gan-Chinese	Sinitic	annotation=glotto:Glottocode ganc1239	A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.
+HED_0062052	3	Mandarin-Chinese	Sinitic	annotation=glotto:Glottocode mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=glotto:Glottocode mand1471	A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.
 HED_0062053	4	Standard-Chinese	Mandarin-Chinese		A modern standard form of Mandarin Chinese which is the official Language of mainland China.
-HED_0062054	3	Wu-Chinese	Sinitic	annotation=rdfs:comment Glottocode: wuch1236	A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.
-HED_0062055	3	Xiang-Chinese	Sinitic	annotation=rdfs:comment Glottocode: xian1251	A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.
-HED_0062056	3	Yue-Chinese	Sinitic	annotation=rdfs:comment Glottocode: yuec1235	A group of Sinitic languages mainly spoken Southern China.
-HED_0062057	4	Cantonese	Yue-Chinese	annotation=rdfs:comment Glottocode: cant1236	A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.
-HED_0062058	1	Tai-Kadai	Language	annotation=rdfs:comment Glottocode: taik1256	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.
-HED_0062059	2	Thai	Tai-Kadai	annotation=rdfs:comment Glottocode: thai1261	A Tai Kadai language mainly spoken in Central Thailand.
-HED_0062060	1	Turkic	Language	annotation=rdfs:comment Glottocode:turk1311	A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.
-HED_0062061	2	Turkish	Turkic	annotation=rdfs:comment Glottocode: nucl1301	A Turkish language mainly spoken in Turkey and Northern Cyprus.
-HED_0062062	1	Uralic	Language	annotation=rdfs:comment Glottocode: ural1272	A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.
-HED_0062063	2	Estonian	Uralic	annotation=rdfs:comment Glottocode: esto1258	An Uralic Language mainly spoken in Estonia.
-HED_0062064	2	Finnish	Uralic	annotation=rdfs:comment Glottocode: finn1318	An Uralic language mainly spoken in Finland.
-HED_0062065	2	Hungarian	Uralic	annotation=rdfs:comment Glottocode: hung1274	An Uralic Language mainly spoken in Hungary.
-HED_0062066	0	Bigram	Language-item	rooted=Language-item, annotation=rdfs:comment Glottocode: hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram	A pair of two consecutive written units such as letters, syllables, or words.
+HED_0062054	3	Wu-Chinese	Sinitic	annotation=glotto:Glottocode wuch1236	A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.
+HED_0062055	3	Xiang-Chinese	Sinitic	annotation=glotto:Glottocode xian1251	A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.
+HED_0062056	3	Yue-Chinese	Sinitic	annotation=glotto:Glottocode yuec1235	A group of Sinitic languages mainly spoken Southern China.
+HED_0062057	4	Cantonese	Yue-Chinese	annotation=glotto:Glottocode cant1236	A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.
+HED_0062058	1	Tai-Kadai	Language	annotation=glotto:Glottocode taik1256	A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.
+HED_0062059	2	Thai	Tai-Kadai	annotation=glotto:Glottocode thai1261	A Tai Kadai language mainly spoken in Central Thailand.
+HED_0062060	1	Turkic	Language	annotation=glotto:turk1311	A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.
+HED_0062061	2	Turkish	Turkic	annotation=glotto:Glottocode nucl1301	A Turkish language mainly spoken in Turkey and Northern Cyprus.
+HED_0062062	1	Uralic	Language	annotation=glotto:Glottocode ural1272	A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.
+HED_0062063	2	Estonian	Uralic	annotation=glotto:Glottocode esto1258	An Uralic Language mainly spoken in Estonia.
+HED_0062064	2	Finnish	Uralic	annotation=glotto:Glottocode finn1318	An Uralic language mainly spoken in Finland.
+HED_0062065	2	Hungarian	Uralic	annotation=glotto:Glottocode hung1274	An Uralic Language mainly spoken in Hungary.
+HED_0062066	0	Bigram	Language-item	rooted=Language-item, annotation=glotto:Glottocode hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram	A pair of two consecutive written units such as letters, syllables, or words.
 HED_0062067	0	Letter-character	Character	rooted=Character, annotation=dc:source Original	A character that is the smallest meaningful or functional unit in an alphabetic writing system.
 HED_0062068	0	Logogram	Character	rooted=Character, annotation=dc:source Original	A character representing a morpheme, word or phrase, such as those used in shorthand and some writing systems.
 HED_0062069	0	Noncharacter	Character	rooted=Character, annotation=dc:source Original, annotation=rdfs:comment Chen J. Sun D. Wang P. Lv Y. and Zhang Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics 63 101084. https://doi.org/10.1016/j.jneuroling.2022.101084	A character which does not hold any meaning or contain any regularity in a writing system.

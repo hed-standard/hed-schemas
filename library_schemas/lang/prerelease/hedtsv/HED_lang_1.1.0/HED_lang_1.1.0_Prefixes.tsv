@@ -1,6 +1,7 @@
 prefix	namespace	description
 dc:	http://purl.org/dc/elements/1.1/	The Dublin Core elements
 foaf:	http://xmlns.com/foaf/0.1/	Friend-of-a-Friend http://xmlns.com/foaf/spec/
+glotto:	https://glottolog.org	Glottolog 5.1 Comprehensive language reference database
 iao:	http://purl.obolibrary.org/obo/iao.owl	Information Artifact Ontology (IAO)
 ncit:	http://purl.obolibrary.org/obo/ncit.owl	NCI Thesaurus OBO Edition
 obogo:	http://www.geneontology.org/formats/oboInOwl	The OBO Format Namespace
