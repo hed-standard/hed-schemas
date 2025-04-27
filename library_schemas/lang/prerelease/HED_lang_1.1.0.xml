@@ -2221,7 +2221,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: afro1255</value>
+                  <value>glotto:Glottocode afro1255</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2236,7 +2236,7 @@
                   <description>An Afroasiatic language spoken mainly in Northern Africa and Western Asia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: arab1395</value>
+                     <value>glotto:Glottocode arab1395</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2252,7 +2252,7 @@
                   <description>An Afroasiatic language mainly spoken in Israel.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: hebr1245</value>
+                     <value>glotto:Glottocode hebr1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2269,7 +2269,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: atla1278</value>
+                  <value>glotto:Glottocode atla1278</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2284,7 +2284,7 @@
                   <description>An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: swah1253</value>
+                     <value>glotto:Glottocode swah1253</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2301,7 +2301,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode:aust1305</value>
+                  <value>glotto:aust1305</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2316,7 +2316,7 @@
                   <description>An Austroasiatic language mainly spoken in Vietnam.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode:viet1252</value>
+                     <value>glotto:viet1252</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2333,7 +2333,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: aust1307</value>
+                  <value>glotto:Glottocode aust1307</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2348,7 +2348,7 @@
                   <description>An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: nucl1806</value>
+                     <value>glotto:Glottocode nucl1806</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2365,7 +2365,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: drav1251</value>
+                  <value>glotto:Glottocode drav1251</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages</value>
                </attribute>
                <attribute>
@@ -2381,7 +2381,7 @@
                   <description>A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: tami1289</value>
+                     <value>glotto:Glottocode tami1289</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2402,7 +2402,7 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: indo1319</value>
+                  <value>glotto:Glottocode indo1319</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages</value>
                </attribute>
                <attribute>
@@ -2418,7 +2418,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northeastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: east2280</value>
+                     <value>glotto:Glottocode east2280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2433,7 +2433,7 @@
                      <description>A baltic language spoken mainly in Latvia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: latv1249</value>
+                        <value>glotto:Glottocode latv1249</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2449,7 +2449,7 @@
                      <description>A baltic language spoken mainly in Lithuania.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: lith1251</value>
+                        <value>glotto:Glottocode lith1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2466,7 +2466,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: germ1287</value>
+                     <value>glotto:Glottocode germ1287</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2481,7 +2481,7 @@
                      <description>A Germanic language, mainly spoken in Denmark.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: dani1285</value>
+                        <value>glotto:Glottocode dani1285</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2497,7 +2497,7 @@
                      <description>A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: dutc1256</value>
+                        <value>glotto:Glottocode dutc1256</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2513,7 +2513,7 @@
                      <description>A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: stan1293</value>
+                        <value>glotto:Glottocode stan1293</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2529,7 +2529,7 @@
                      <description>A Germanic Language which is mainly spoken in Western and Central Europe.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: stan1295</value>
+                        <value>glotto:Glottocode stan1295</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2545,7 +2545,7 @@
                      <description>A Germanic language mainly spoken in Iceland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: icel1247</value>
+                        <value>glotto:Glottocode icel1247</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2561,7 +2561,7 @@
                      <description>A Germanic language mainly spoken in Norway.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: norw1258</value>
+                        <value>glotto:Glottocode norw1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2577,7 +2577,7 @@
                      <description>A Germanic language mainly spoken in Sweden and parts of Finland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: swed1254</value>
+                        <value>glotto:Glottocode swed1254</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2594,7 +2594,7 @@
                   <description>A system of communication belonging to the family of languages directly descending from Vulgar Latin.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: roma1334</value>
+                     <value>glotto:Glottocode roma1334</value>
                      <value>dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages</value>
                   </attribute>
                   <attribute>
@@ -2610,7 +2610,7 @@
                      <description>A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: stan1289</value>
+                        <value>glotto:Glottocode stan1289</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2626,7 +2626,7 @@
                      <description>A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: stan1290</value>
+                        <value>glotto:Glottocode stan1290</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2642,7 +2642,7 @@
                      <description>A Romance language mainly spoken in Galicia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: gali1258</value>
+                        <value>glotto:Glottocode gali1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2658,7 +2658,7 @@
                      <description>A group of historically related Romance varieties spoken in Switzerland and Northern Italy.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: gall1280</value>
+                        <value>glotto:Glottocode gall1280</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2674,7 +2674,7 @@
                      <description>A Romance language mainly spoken in Italy and parts of Switzerland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: ital1282</value>
+                        <value>glotto:Glottocode ital1282</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2690,7 +2690,7 @@
                      <description>A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: port1283</value>
+                        <value>glotto:Glottocode port1283</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2706,7 +2706,7 @@
                      <description>A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: roma1327</value>
+                        <value>glotto:Glottocode roma1327</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2722,7 +2722,7 @@
                      <description>A Romance language spoken in Spain and large parts of the Americas.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: stan1288</value>
+                        <value>glotto:Glottocode stan1288</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2739,7 +2739,7 @@
                   <description>A system of communication belonging to the family of languages originating in Eastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: slav1255</value>
+                     <value>glotto:Glottocode slav1255</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2754,7 +2754,7 @@
                      <description>A Slavic language spoken mainly in Bulgaria.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: bulg1262</value>
+                        <value>glotto:Glottocode bulg1262</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2770,7 +2770,7 @@
                      <description>A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: croa1245</value>
+                        <value>glotto:Glottocode croa1245</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2786,7 +2786,7 @@
                      <description>A Slavic language spoken mainly in the Czech Republic.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: czec1258</value>
+                        <value>glotto:Glottocode czec1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2802,7 +2802,7 @@
                      <description>A Slavic language spoken mainly in North Macedonia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: mace1250</value>
+                        <value>glotto:Glottocode mace1250</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2818,7 +2818,7 @@
                      <description>A Slavic language spoken mainly in Poland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: poli1260</value>
+                        <value>glotto:Glottocode poli1260</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2834,7 +2834,7 @@
                      <description>A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: russ1263</value>
+                        <value>glotto:Glottocode russ1263</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2850,7 +2850,7 @@
                      <description>A Slavic language spoken mainly in Slovakia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: slov126</value>
+                        <value>glotto:Glottocode slov126</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2866,7 +2866,7 @@
                      <description>A Slavic language spoken mainly in Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: ukra1253</value>
+                        <value>glotto:Glottocode ukra1253</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2884,7 +2884,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: japo1237</value>
+                  <value>glotto:Glottocode japo1237</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2899,7 +2899,7 @@
                   <description>A Japonic language mainly spoken in Japan.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: nucl1643</value>
+                     <value>glotto:Glottocode nucl1643</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2916,7 +2916,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Korea.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: kore1284</value>
+                  <value>glotto:Glottocode kore1284</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2931,7 +2931,7 @@
                   <description>A Koreanic language mainly spoken in Korea.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: kore1280</value>
+                     <value>glotto:Glottocode kore1280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2948,7 +2948,7 @@
                <description>A system of communication belonging to the family of languages spoken in Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: sino1245</value>
+                  <value>glotto:Glottocode sino1245</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2963,7 +2963,7 @@
                   <description>A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: burm1265</value>
+                     <value>glotto:Glottocode burm1265</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2978,7 +2978,7 @@
                      <description>A Burmo Qiangic language mainly spoken in Myanmar.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: nucl1310</value>
+                        <value>glotto:Glottocode nucl1310</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2995,7 +2995,7 @@
                   <description>A system of communication belonging to the family of languages mainly spoken in China.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: sini1245</value>
+                     <value>glotto:Glottocode sini1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3010,7 +3010,7 @@
                      <description>A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: ganc1239</value>
+                        <value>glotto:Glottocode ganc1239</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3026,9 +3026,9 @@
                      <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: mand1471</value>
+                        <value>glotto:Glottocode mand1471</value>
                         <value>dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese</value>
-                        <value>rdfs:comment Glottocode: mand1471</value>
+                        <value>glotto:Glottocode mand1471</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3056,7 +3056,7 @@
                      <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: wuch1236</value>
+                        <value>glotto:Glottocode wuch1236</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3072,7 +3072,7 @@
                      <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: xian1251</value>
+                        <value>glotto:Glottocode xian1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3088,7 +3088,7 @@
                      <description>A group of Sinitic languages mainly spoken Southern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>rdfs:comment Glottocode: yuec1235</value>
+                        <value>glotto:Glottocode yuec1235</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3103,7 +3103,7 @@
                         <description>A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.</description>
                         <attribute>
                            <name>annotation</name>
-                           <value>rdfs:comment Glottocode: cant1236</value>
+                           <value>glotto:Glottocode cant1236</value>
                         </attribute>
                         <attribute>
                            <name>hedId</name>
@@ -3122,7 +3122,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: taik1256</value>
+                  <value>glotto:Glottocode taik1256</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3137,7 +3137,7 @@
                   <description>A Tai Kadai language mainly spoken in Central Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: thai1261</value>
+                     <value>glotto:Glottocode thai1261</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3154,7 +3154,7 @@
                <description>A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode:turk1311</value>
+                  <value>glotto:turk1311</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3169,7 +3169,7 @@
                   <description>A Turkish language mainly spoken in Turkey and Northern Cyprus.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: nucl1301</value>
+                     <value>glotto:Glottocode nucl1301</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3186,7 +3186,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: ural1272</value>
+                  <value>glotto:Glottocode ural1272</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3201,7 +3201,7 @@
                   <description>An Uralic Language mainly spoken in Estonia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: esto1258</value>
+                     <value>glotto:Glottocode esto1258</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3217,7 +3217,7 @@
                   <description>An Uralic language mainly spoken in Finland.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: finn1318</value>
+                     <value>glotto:Glottocode finn1318</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3233,7 +3233,7 @@
                   <description>An Uralic Language mainly spoken in Hungary.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>rdfs:comment Glottocode: hung1274</value>
+                     <value>glotto:Glottocode hung1274</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3266,7 +3266,7 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>rdfs:comment Glottocode: hung1274</value>
+                  <value>glotto:Glottocode hung1274</value>
                   <value>dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram</value>
                </attribute>
                <attribute>
@@ -17578,6 +17578,11 @@
          <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
+         <name>glotto:</name>
+         <namespace>https://glottolog.org</namespace>
+         <description>Glottolog 5.1 Comprehensive language reference database</description>
+      </schemaPrefix>
+      <schemaPrefix>
          <name>iao:</name>
          <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
          <description>Information Artifact Ontology (IAO)</description>
@@ -17717,6 +17722,12 @@
          <id>homepage</id>
          <iri>http://xmlns.com/foaf/0.1/homepage</iri>
          <description>A homepage for some thing.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>glotto:</name>
+         <id>Glottocode</id>
+         <iri>https://glottolog.org/resource/languoid/id/#</iri>
+         <description>The ID for the language.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>obogo:</name>
