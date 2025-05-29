@@ -2526,11 +2526,15 @@ Each term in this vocabulary has a human-readable description and may include ad
                </attribute>
                <node>
                   <name>Building</name>
-                  <description>A structure that has a roof and walls and stands more or less permanently in one place.</description>
+                  <description>A structure that usually has a roof and walls and stands more or less permanently in one place.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012274</value>
                   </attribute>
+               </node>
+               <node>
+                  <name>Building-part</name>
+                  <description>A part of a building.</description>
                   <node>
                      <name>Attic</name>
                      <description>A room or a space immediately below the roof of a building.</description>
@@ -2546,6 +2550,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012276</value>
                      </attribute>
+                  </node>
+                  <node>
+                     <name>Door</name>
+                     <description>A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.</description>
                   </node>
                   <node>
                      <name>Entrance</name>
@@ -2570,6 +2578,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                         <name>hedId</name>
                         <value>HED_0012279</value>
                      </attribute>
+                  </node>
+                  <node>
+                     <name>Window</name>
+                     <description>An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.</description>
                   </node>
                </node>
                <node>
@@ -2837,14 +2849,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                                  <name>hedId</name>
                                  <value>HED_0012312</value>
                               </attribute>
-                              <node>
-                                 <name>Screen-window</name>
-                                 <description>A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.</description>
-                                 <attribute>
-                                    <name>hedId</name>
-                                    <value>HED_0012313</value>
-                                 </attribute>
-                              </node>
                            </node>
                            <node>
                               <name>Head-mounted-display</name>
@@ -2860,6 +2864,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012315</value>
+                              </attribute>
+                           </node>
+                           <node>
+                              <name>Screen-window</name>
+                              <description>A part of a computer screen that contains a display different from the rest of the screen.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012313</value>
                               </attribute>
                            </node>
                         </node>
@@ -10419,11 +10431,27 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <value>HED_0013092</value>
                </attribute>
                <node>
+                  <name>Cue</name>
+                  <description>A signal for an action usually indicating a particular response.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013104</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Experimental-stimulus</name>
                   <description>Part of something designed to elicit a response in the experiment.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013093</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Feedback</name>
+                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>
@@ -10501,19 +10529,11 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>Task-stimulus-role</name>
-               <description>The role the stimulus plays in the task.</description>
+               <description>The role the stimulus or other type of sensory event, such as feedback, plays in the task.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0013103</value>
                </attribute>
-               <node>
-                  <name>Cue</name>
-                  <description>A signal for an action, a pattern of stimuli indicating a particular response.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013104</value>
-                  </attribute>
-               </node>
                <node>
                   <name>Distractor</name>
                   <description>A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.</description>
@@ -10544,14 +10564,6 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013107</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Feedback</name>
-                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>

@@ -297,12 +297,15 @@ HED_0012270	4	Dots	Pattern		A small round mark or spot.
 HED_0012271	4	LED-pattern	Pattern		A pattern created by lighting selected members of a fixed light emitting diode array.
 HED_0012272	2	Ingestible-object	Object		Something that can be taken into the body by the mouth for digestion or absorption.
 HED_0012273	2	Man-made-object	Object		Something constructed by human means.
-HED_0012274	3	Building	Man-made-object		A structure that has a roof and walls and stands more or less permanently in one place.
-HED_0012275	4	Attic	Building		A room or a space immediately below the roof of a building.
-HED_0012276	4	Basement	Building		The part of a building that is wholly or partly below ground level.
-HED_0012277	4	Entrance	Building		The means or place of entry.
-HED_0012278	4	Roof	Building		A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.
-HED_0012279	4	Room	Building		An area within a building enclosed by walls and floor and ceiling.
+HED_0012274	3	Building	Man-made-object		A structure that usually has a roof and walls and stands more or less permanently in one place.
+	3	Building-part	Man-made-object		A part of a building.
+HED_0012275	4	Attic	Building-part		A room or a space immediately below the roof of a building.
+HED_0012276	4	Basement	Building-part		The part of a building that is wholly or partly below ground level.
+	4	Door	Building-part		A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.
+HED_0012277	4	Entrance	Building-part		The means or place of entry.
+HED_0012278	4	Roof	Building-part		A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.
+HED_0012279	4	Room	Building-part		An area within a building enclosed by walls and floor and ceiling.
+	4	Window	Building-part		An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.
 HED_0012280	3	Clothing	Man-made-object		A covering designed to be worn on the body.
 HED_0012281	3	Device	Man-made-object		An object contrived for a specific purpose.
 HED_0012282	4	Assistive-device	Device		A device that help an individual accomplish a task.
@@ -336,9 +339,9 @@ HED_0012309	7	Headphones	Auditory-device		An instrument that consists of a pair 
 HED_0012310	7	Loudspeaker	Auditory-device		A device designed to convert electrical signals to sounds that can be heard.
 HED_0012311	6	Display-device	Output-device		An output device for presentation of information in visual or tactile form the latter used for example in tactile electronic displays for blind people.
 HED_0012312	7	Computer-screen	Display-device		An electronic device designed as a display or a physical device designed to be a protective mesh work.
-HED_0012313	8	Screen-window	Computer-screen		A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.
 HED_0012314	7	Head-mounted-display	Display-device		An instrument that functions as a display device, worn on the head or as part of a helmet, that has a small display optic in front of one (monocular HMD) or each eye (binocular HMD).
 HED_0012315	7	LED-display	Display-device		A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.
+HED_0012313	7	Screen-window	Display-device		A part of a computer screen that contains a display different from the rest of the screen.
 HED_0012316	5	Recording-device	IO-device		A device that copies information in a signal into a persistent information bearer.
 HED_0012317	6	EEG-recorder	Recording-device		A device for recording electric currents in the brain using electrodes applied to the scalp, to the surface of the brain, or placed within the substance of the brain.
 HED_0013225	6	EMG-recorder	Recording-device		A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.
@@ -1122,7 +1125,9 @@ HED_0013089	3	Computational-evidence	Task-effect-evidence		A type of evidence in
 HED_0013090	3	External-evidence	Task-effect-evidence		A phenomenon that follows and is caused by some previous phenomenon.
 HED_0013091	3	Intended-effect	Task-effect-evidence		A phenomenon that is intended to follow and be caused by some previous phenomenon.
 HED_0013092	2	Task-event-role	Task-property		The purpose of an event with respect to the task.
+HED_0013104	3	Cue	Task-event-role		A signal for an action usually indicating a particular response.
 HED_0013093	3	Experimental-stimulus	Task-event-role		Part of something designed to elicit a response in the experiment.
+HED_0013108	3	Feedback	Task-event-role		An evaluative response to an inquiry, process, event, or activity.
 HED_0013094	3	Incidental	Task-event-role		A sensory or other type of event that is unrelated to the task or experiment.
 HED_0013095	3	Instructional	Task-event-role		Usually associated with a sensory event intended to give instructions to the participant about the task or behavior.
 HED_0013096	3	Mishap	Task-event-role		Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.
@@ -1132,12 +1137,10 @@ HED_0013099	3	Warning	Task-event-role		Something that should warn the participan
 HED_0013100	2	Task-relationship	Task-property		Specifying organizational importance of sub-tasks.
 HED_0013101	3	Background-subtask	Task-relationship		A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.
 HED_0013102	3	Primary-subtask	Task-relationship		A part of the task which should be the primary focus of the participant.
-HED_0013103	2	Task-stimulus-role	Task-property		The role the stimulus plays in the task.
-HED_0013104	3	Cue	Task-stimulus-role		A signal for an action, a pattern of stimuli indicating a particular response.
+HED_0013103	2	Task-stimulus-role	Task-property		The role the stimulus or other type of sensory event, such as feedback, plays in the task.
 HED_0013105	3	Distractor	Task-stimulus-role		A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.
 HED_0013106	3	Expected	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.
 HED_0013107	3	Extraneous	Task-stimulus-role		Irrelevant or unrelated to the subject being dealt with.
-HED_0013108	3	Feedback	Task-stimulus-role		An evaluative response to an inquiry, process, event, or activity.
 HED_0013109	3	Go-signal	Task-stimulus-role	relatedTag=Stop-signal	An indicator to proceed with a planned action.
 HED_0013110	3	Meaningful	Task-stimulus-role		Conveying significant or relevant information.
 HED_0013111	3	Newly-learned	Task-stimulus-role		Representing recently acquired information or understanding.
