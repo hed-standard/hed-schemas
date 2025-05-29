@@ -308,12 +308,15 @@ Each term in this vocabulary has a human-readable description and may include ad
 **** LED-pattern <nowiki>{hedId=HED_0012271} [A pattern created by lighting selected members of a fixed light emitting diode array.]</nowiki>
 ** Ingestible-object <nowiki>{hedId=HED_0012272} [Something that can be taken into the body by the mouth for digestion or absorption.]</nowiki>
 ** Man-made-object <nowiki>{hedId=HED_0012273} [Something constructed by human means.]</nowiki>
-*** Building <nowiki>{hedId=HED_0012274} [A structure that has a roof and walls and stands more or less permanently in one place.]</nowiki>
+*** Building <nowiki>{hedId=HED_0012274} [A structure that usually has a roof and walls and stands more or less permanently in one place.]</nowiki>
+*** Building-part <nowiki>[A part of a building.]</nowiki>
 **** Attic <nowiki>{hedId=HED_0012275} [A room or a space immediately below the roof of a building.]</nowiki>
 **** Basement <nowiki>{hedId=HED_0012276} [The part of a building that is wholly or partly below ground level.]</nowiki>
+**** Door <nowiki>[A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.]</nowiki>
 **** Entrance <nowiki>{hedId=HED_0012277} [The means or place of entry.]</nowiki>
 **** Roof <nowiki>{hedId=HED_0012278} [A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.]</nowiki>
 **** Room <nowiki>{hedId=HED_0012279} [An area within a building enclosed by walls and floor and ceiling.]</nowiki>
+**** Window <nowiki>[An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.]</nowiki>
 *** Clothing <nowiki>{hedId=HED_0012280} [A covering designed to be worn on the body.]</nowiki>
 *** Device <nowiki>{hedId=HED_0012281} [An object contrived for a specific purpose.]</nowiki>
 **** Assistive-device <nowiki>{hedId=HED_0012282} [A device that help an individual accomplish a task.]</nowiki>
@@ -347,9 +350,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ******* Loudspeaker <nowiki>{hedId=HED_0012310} [A device designed to convert electrical signals to sounds that can be heard.]</nowiki>
 ****** Display-device <nowiki>{hedId=HED_0012311} [An output device for presentation of information in visual or tactile form the latter used for example in tactile electronic displays for blind people.]</nowiki>
 ******* Computer-screen <nowiki>{hedId=HED_0012312} [An electronic device designed as a display or a physical device designed to be a protective mesh work.]</nowiki>
-******** Screen-window <nowiki>{hedId=HED_0012313} [A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.]</nowiki>
 ******* Head-mounted-display <nowiki>{hedId=HED_0012314} [An instrument that functions as a display device, worn on the head or as part of a helmet, that has a small display optic in front of one (monocular HMD) or each eye (binocular HMD).]</nowiki>
 ******* LED-display <nowiki>{hedId=HED_0012315} [A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.]</nowiki>
+******* Screen-window <nowiki>{hedId=HED_0012313} [A part of a computer screen that contains a display different from the rest of the screen.]</nowiki>
 ***** Recording-device <nowiki>{hedId=HED_0012316} [A device that copies information in a signal into a persistent information bearer.]</nowiki>
 ****** EEG-recorder <nowiki>{hedId=HED_0012317} [A device for recording electric currents in the brain using electrodes applied to the scalp, to the surface of the brain, or placed within the substance of the brain.]</nowiki>
 ****** EMG-recorder <nowiki>{hedId=HED_0013225} [A device for recording electrical activity of muscles using electrodes on the body surface or within the muscular mass.]</nowiki>
@@ -1134,7 +1137,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** External-evidence <nowiki>{hedId=HED_0013090} [A phenomenon that follows and is caused by some previous phenomenon.]</nowiki>
 *** Intended-effect <nowiki>{hedId=HED_0013091} [A phenomenon that is intended to follow and be caused by some previous phenomenon.]</nowiki>
 ** Task-event-role <nowiki>{hedId=HED_0013092} [The purpose of an event with respect to the task.]</nowiki>
+*** Cue <nowiki>{hedId=HED_0013104} [A signal for an action usually indicating a particular response.]</nowiki>
 *** Experimental-stimulus <nowiki>{hedId=HED_0013093} [Part of something designed to elicit a response in the experiment.]</nowiki>
+*** Feedback <nowiki>{hedId=HED_0013108} [An evaluative response to an inquiry, process, event, or activity.]</nowiki>
 *** Incidental <nowiki>{hedId=HED_0013094} [A sensory or other type of event that is unrelated to the task or experiment.]</nowiki>
 *** Instructional <nowiki>{hedId=HED_0013095} [Usually associated with a sensory event intended to give instructions to the participant about the task or behavior.]</nowiki>
 *** Mishap <nowiki>{hedId=HED_0013096} [Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.]</nowiki>
@@ -1144,12 +1149,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Task-relationship <nowiki>{hedId=HED_0013100} [Specifying organizational importance of sub-tasks.]</nowiki>
 *** Background-subtask <nowiki>{hedId=HED_0013101} [A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.]</nowiki>
 *** Primary-subtask <nowiki>{hedId=HED_0013102} [A part of the task which should be the primary focus of the participant.]</nowiki>
-** Task-stimulus-role <nowiki>{hedId=HED_0013103} [The role the stimulus plays in the task.]</nowiki>
-*** Cue <nowiki>{hedId=HED_0013104} [A signal for an action, a pattern of stimuli indicating a particular response.]</nowiki>
+** Task-stimulus-role <nowiki>{hedId=HED_0013103} [The role the stimulus or other type of sensory event, such as feedback, plays in the task.]</nowiki>
 *** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
-*** Feedback <nowiki>{hedId=HED_0013108} [An evaluative response to an inquiry, process, event, or activity.]</nowiki>
 *** Go-signal <nowiki>{relatedTag=Stop-signal, hedId=HED_0013109} [An indicator to proceed with a planned action.]</nowiki>
 *** Meaningful <nowiki>{hedId=HED_0013110} [Conveying significant or relevant information.]</nowiki>
 *** Newly-learned <nowiki>{hedId=HED_0013111} [Representing recently acquired information or understanding.]</nowiki>
