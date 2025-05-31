@@ -298,14 +298,14 @@ HED_0012271	4	LED-pattern	Pattern		A pattern created by lighting selected member
 HED_0012272	2	Ingestible-object	Object		Something that can be taken into the body by the mouth for digestion or absorption.
 HED_0012273	2	Man-made-object	Object		Something constructed by human means.
 HED_0012274	3	Building	Man-made-object		A structure that usually has a roof and walls and stands more or less permanently in one place.
-	3	Building-part	Man-made-object		A part of a building.
+HED_0013231	3	Building-part	Man-made-object		A part of a building.
 HED_0012275	4	Attic	Building-part		A room or a space immediately below the roof of a building.
 HED_0012276	4	Basement	Building-part		The part of a building that is wholly or partly below ground level.
-	4	Door	Building-part		A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.
+HED_0013232	4	Door	Building-part		A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.
 HED_0012277	4	Entrance	Building-part		The means or place of entry.
 HED_0012278	4	Roof	Building-part		A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.
 HED_0012279	4	Room	Building-part		An area within a building enclosed by walls and floor and ceiling.
-	4	Window	Building-part		An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.
+HED_0013233	4	Window	Building-part		An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.
 HED_0012280	3	Clothing	Man-made-object		A covering designed to be worn on the body.
 HED_0012281	3	Device	Man-made-object		An object contrived for a specific purpose.
 HED_0012282	4	Assistive-device	Device		A device that help an individual accomplish a task.

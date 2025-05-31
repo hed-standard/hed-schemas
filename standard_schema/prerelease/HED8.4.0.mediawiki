@@ -309,14 +309,14 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Ingestible-object <nowiki>{hedId=HED_0012272} [Something that can be taken into the body by the mouth for digestion or absorption.]</nowiki>
 ** Man-made-object <nowiki>{hedId=HED_0012273} [Something constructed by human means.]</nowiki>
 *** Building <nowiki>{hedId=HED_0012274} [A structure that usually has a roof and walls and stands more or less permanently in one place.]</nowiki>
-*** Building-part <nowiki>[A part of a building.]</nowiki>
+*** Building-part <nowiki>{hedId=HED_0013231} [A part of a building.]</nowiki>
 **** Attic <nowiki>{hedId=HED_0012275} [A room or a space immediately below the roof of a building.]</nowiki>
 **** Basement <nowiki>{hedId=HED_0012276} [The part of a building that is wholly or partly below ground level.]</nowiki>
-**** Door <nowiki>[A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.]</nowiki>
+**** Door <nowiki>{hedId=HED_0013232} [A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.]</nowiki>
 **** Entrance <nowiki>{hedId=HED_0012277} [The means or place of entry.]</nowiki>
 **** Roof <nowiki>{hedId=HED_0012278} [A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.]</nowiki>
 **** Room <nowiki>{hedId=HED_0012279} [An area within a building enclosed by walls and floor and ceiling.]</nowiki>
-**** Window <nowiki>[An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.]</nowiki>
+**** Window <nowiki>{hedId=HED_0013233} [An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.]</nowiki>
 *** Clothing <nowiki>{hedId=HED_0012280} [A covering designed to be worn on the body.]</nowiki>
 *** Device <nowiki>{hedId=HED_0012281} [An object contrived for a specific purpose.]</nowiki>
 **** Assistive-device <nowiki>{hedId=HED_0012282} [A device that help an individual accomplish a task.]</nowiki>
@@ -1412,19 +1412,19 @@ This schema is released under the Creative Commons Attribution 4.0 International
 * <nowiki>source=Wikipedia,link=https://en.wikipedia.org,description=General definitions of concepts.</nowiki>
 
 '''Prefixes'''
-* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/,description=The Dublin Core elements</nowiki>
-* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
+* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/#,description=The Dublin Core elements</nowiki>
+* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/#,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
 * <nowiki>prefix=iao:,namespace=http://purl.obolibrary.org/obo/iao.owl,description=Information Artifact Ontology (IAO)</nowiki>
 * <nowiki>prefix=ncit:,namespace=http://purl.obolibrary.org/obo/ncit.owl,description=NCI Thesaurus OBO Edition</nowiki>
 * <nowiki>prefix=obogo:,namespace=http://www.geneontology.org/formats/oboInOwl,description=The OBO Format Namespace</nowiki>
-* <nowiki>prefix=owl:,namespace=http://www.w3.org/2002/07/owl#,description=The OWL namespace [OWL2-OVERVIEW]</nowiki>
-* <nowiki>prefix=prov:,namespace=http://www.w3.org/ns/prov#,description=The PROV namespace [PROV-DM]</nowiki>
-* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns#,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
-* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema#,description=The RDF Schema namespace [RDFS]</nowiki>
+* <nowiki>prefix=owl:,namespace=http://www.w3.org/2002/07/owl,description=The OWL namespace [OWL2-OVERVIEW]</nowiki>
+* <nowiki>prefix=prov:,namespace=http://www.w3.org/ns/prov,description=The PROV namespace [PROV-DM]</nowiki>
+* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
+* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema,description=The RDF Schema namespace [RDFS]</nowiki>
 * <nowiki>prefix=skos:,namespace=http://www.w3.org/2004/02/skos/core,description=SKOS (Simple Knowledge Organization System) Vocabulary</nowiki>
-* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/,description=The Dublin Core terms</nowiki>
+* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/#,description=The Dublin Core terms</nowiki>
 * <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
-* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2000/10/XMLSchema#,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
+* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2001/XMLSchema,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
 
 '''External annotations'''
 * <nowiki>prefix=dc:,id=contributor,iri=http://purl.org/dc/elements/1.1/contributor,description=An entity responsible for making contributions to the resource.</nowiki>

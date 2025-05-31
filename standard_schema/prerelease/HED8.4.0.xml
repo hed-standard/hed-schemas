@@ -2535,6 +2535,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                <node>
                   <name>Building-part</name>
                   <description>A part of a building.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013231</value>
+                  </attribute>
                   <node>
                      <name>Attic</name>
                      <description>A room or a space immediately below the roof of a building.</description>
@@ -2554,6 +2558,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <node>
                      <name>Door</name>
                      <description>A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013232</value>
+                     </attribute>
                   </node>
                   <node>
                      <name>Entrance</name>
@@ -2582,6 +2590,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <node>
                      <name>Window</name>
                      <description>An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013233</value>
+                     </attribute>
                   </node>
                </node>
                <node>
@@ -13430,12 +13442,12 @@ Each term in this vocabulary has a human-readable description and may include ad
    <schemaPrefixes>
       <schemaPrefix>
          <name>dc:</name>
-         <namespace>http://purl.org/dc/elements/1.1/</namespace>
+         <namespace>http://purl.org/dc/elements/1.1/#</namespace>
          <description>The Dublin Core elements</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>foaf:</name>
-         <namespace>http://xmlns.com/foaf/0.1/</namespace>
+         <namespace>http://xmlns.com/foaf/0.1/#</namespace>
          <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13455,22 +13467,22 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
-         <namespace>http://www.w3.org/2002/07/owl#</namespace>
+         <namespace>http://www.w3.org/2002/07/owl</namespace>
          <description>The OWL namespace [OWL2-OVERVIEW]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>prov:</name>
-         <namespace>http://www.w3.org/ns/prov#</namespace>
+         <namespace>http://www.w3.org/ns/prov</namespace>
          <description>The PROV namespace [PROV-DM]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdf:</name>
-         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns</namespace>
          <description>The RDF namespace [RDF-CONCEPTS]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdfs:</name>
-         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+         <namespace>http://www.w3.org/2000/01/rdf-schema</namespace>
          <description>The RDF Schema namespace [RDFS]</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13480,7 +13492,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaPrefix>
       <schemaPrefix>
          <name>terms:</name>
-         <namespace>http://purl.org/dc/terms/</namespace>
+         <namespace>http://purl.org/dc/terms/#</namespace>
          <description>The Dublin Core terms</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13490,7 +13502,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
-         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
+         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
          <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
       </schemaPrefix>
    </schemaPrefixes>
