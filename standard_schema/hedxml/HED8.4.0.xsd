@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Declare global property element -->
+  <xs:element name="property" type="propertyType"/>
+
+  <!-- Top level HED element -->
+  <xs:element name="HED" type="HEDType"/>
+
+  <!-- Property type with name, description, and value -->
+  <xs:complexType name="propertyType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="value" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Attribute type -->
+  <xs:complexType name="attributeType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Node type -->
+  <xs:complexType name="nodeType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="attribute" type="attributeType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="node" type="nodeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema type -->
+  <xs:complexType name="schemaType">
+    <xs:sequence>
+      <xs:element name="node" type="nodeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Unit type -->
+  <xs:complexType name="unitType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="attribute" type="attributeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Unit class definition -->
+  <xs:complexType name="unitClassDefinitionType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="attribute" type="attributeType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="unit" type="unitType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Unit class definitions -->
+  <xs:complexType name="unitClassDefinitionsType">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="unitClassDefinition" type="unitClassDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Unit modifier definition -->
+  <xs:complexType name="unitModifierDefinitionType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="attribute" type="attributeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Unit modifier definitions -->
+  <xs:complexType name="unitModifierDefinitionsType">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="unitModifierDefinition" type="unitModifierDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Value class definition -->
+  <xs:complexType name="valueClassDefinitionType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="attribute" type="attributeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Value class definitions -->
+  <xs:complexType name="valueClassDefinitionsType">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="valueClassDefinition" type="valueClassDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema attribute definition -->
+  <xs:complexType name="schemaAttributeDefinitionType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element ref="property" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema attribute definitions -->
+  <xs:complexType name="schemaAttributeDefinitionsType">
+    <xs:sequence>
+      <xs:element name="schemaAttributeDefinition" type="schemaAttributeDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Property definition (updated to allow nested property elements) -->
+  <xs:complexType name="propertyDefinitionType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element ref="property" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Property definitions -->
+  <xs:complexType name="propertyDefinitionsType">
+    <xs:sequence>
+      <xs:element name="propertyDefinition" type="propertyDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema source type -->
+  <xs:complexType name="schemaSourceType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="link" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema sources -->
+  <xs:complexType name="schemaSourcesType">
+    <xs:sequence>
+      <xs:element name="schemaSource" type="schemaSourceType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema prefix type -->
+  <xs:complexType name="schemaPrefixType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="namespace" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schema prefixes -->
+  <xs:complexType name="schemaPrefixesType">
+    <xs:sequence>
+      <xs:element name="schemaPrefix" type="schemaPrefixType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- External annotation type -->
+  <xs:complexType name="externalAnnotationType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="iri" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- External annotations -->
+  <xs:complexType name="externalAnnotationsType">
+    <xs:sequence>
+      <xs:element name="externalAnnotation" type="externalAnnotationType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Main HEDType -->
+  <xs:complexType name="HEDType">
+    <xs:sequence>
+      <xs:element name="prologue" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="schema" type="schemaType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="unitClassDefinitions" type="unitClassDefinitionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="unitModifierDefinitions" type="unitModifierDefinitionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="valueClassDefinitions" type="valueClassDefinitionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="schemaAttributeDefinitions" type="schemaAttributeDefinitionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="propertyDefinitions" type="propertyDefinitionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="epilogue" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="schemaSources" type="schemaSourcesType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="schemaPrefixes" type="schemaPrefixesType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="externalAnnotations" type="externalAnnotationsType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string"/>
+  </xs:complexType>
+
+</xs:schema>
