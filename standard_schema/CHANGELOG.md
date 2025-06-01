@@ -1,8 +1,7 @@
 
-# CHANGELOG for HED schema
-## Changes for HED 8.4.0 Release 6/1/2025
+# CHANGELOG for HED standard schema
 
-HED8.3.0 vs HED8.4.0
+## Changes for HED 8.4.0 Release 6/1/2025
 
 **Key overall changes:**   
   - Added extra sections to the schema object and to the .mediawiki and .xml representations so that all formats have equivalent information.
@@ -36,43 +35,41 @@ HED8.3.0 vs HED8.4.0
  - annotation (Minor): Item annotation added
 
 **Misc Metadata:**
- - header_attributes (Patch): header_attributes changed from {'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'} to {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'}
-
-**Sources:**
- - Wikipedia (Major): Row Wikipedia missing in first schema
+ - header_attributes (Patch): header_attributes changed from {'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'} to {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd**Sources:**
+ - Wikipedia (Minor): Row Wikipedia missing in first schema
 
 **Prefixes:**
- - ncit: (Major): Row ncit: missing in first schema
- - xsd: (Major): Row xsd: missing in first schema
- - owl: (Major): Row owl: missing in first schema
- - iao: (Major): Row iao: missing in first schema
- - prov: (Major): Row prov: missing in first schema
- - skos: (Major): Row skos: missing in first schema
- - xml: (Major): Row xml: missing in first schema
- - foaf: (Major): Row foaf: missing in first schema
- - dc: (Major): Row dc: missing in first schema
- - obogo: (Major): Row obogo: missing in first schema
- - terms: (Major): Row terms: missing in first schema
- - rdf: (Major): Row rdf: missing in first schema
- - rdfs: (Major): Row rdfs: missing in first schema
+ - rdfs: (Minor): Row rdfs: missing in first schema
+ - skos: (Minor): Row skos: missing in first schema
+ - obogo: (Minor): Row obogo: missing in first schema
+ - iao: (Minor): Row iao: missing in first schema
+ - prov: (Minor): Row prov: missing in first schema
+ - dc: (Minor): Row dc: missing in first schema
+ - ncit: (Minor): Row ncit: missing in first schema
+ - xml: (Minor): Row xml: missing in first schema
+ - xsd: (Minor): Row xsd: missing in first schema
+ - rdf: (Minor): Row rdf: missing in first schema
+ - foaf: (Minor): Row foaf: missing in first schema
+ - terms: (Minor): Row terms: missing in first schema
+ - owl: (Minor): Row owl: missing in first schema
 
 **AnnotationPropertyExternal:**
- - ('dc:', 'description') (Major): Row ('dc:', 'description') missing in first schema
- - ('dc:', 'contributor') (Major): Row ('dc:', 'contributor') missing in first schema
- - ('dc:', 'creator') (Major): Row ('dc:', 'creator') missing in first schema
- - ('dc:', 'publisher') (Major): Row ('dc:', 'publisher') missing in first schema
- - ('dc:', 'relation') (Major): Row ('dc:', 'relation') missing in first schema
- - ('dc:', 'date') (Major): Row ('dc:', 'date') missing in first schema
- - ('dc:', 'identifier') (Major): Row ('dc:', 'identifier') missing in first schema
- - ('dc:', 'source') (Major): Row ('dc:', 'source') missing in first schema
- - ('dc:', 'language') (Major): Row ('dc:', 'language') missing in first schema
- - ('foaf:', 'homepage') (Major): Row ('foaf:', 'homepage') missing in first schema
- - ('obogo:', 'has_dbxref') (Major): Row ('obogo:', 'has_dbxref') missing in first schema
- - ('dc:', 'type') (Major): Row ('dc:', 'type') missing in first schema
- - ('terms:', 'license') (Major): Row ('terms:', 'license') missing in first schema
- - ('dc:', 'subject') (Major): Row ('dc:', 'subject') missing in first schema
- - ('dc:', 'title') (Major): Row ('dc:', 'title') missing in first schema
- - ('dc:', 'format') (Major): Row ('dc:', 'format') missing in first schema
+ - ('obogo:', 'has_dbxref') (Minor): Row ('obogo:', 'has_dbxref') missing in first schema
+ - ('dc:', 'language') (Minor): Row ('dc:', 'language') missing in first schema
+ - ('dc:', 'title') (Minor): Row ('dc:', 'title') missing in first schema
+ - ('dc:', 'publisher') (Minor): Row ('dc:', 'publisher') missing in first schema
+ - ('dc:', 'relation') (Minor): Row ('dc:', 'relation') missing in first schema
+ - ('foaf:', 'homepage') (Minor): Row ('foaf:', 'homepage') missing in first schema
+ - ('dc:', 'date') (Minor): Row ('dc:', 'date') missing in first schema
+ - ('dc:', 'contributor') (Minor): Row ('dc:', 'contributor') missing in first schema
+ - ('dc:', 'source') (Minor): Row ('dc:', 'source') missing in first schema
+ - ('dc:', 'description') (Minor): Row ('dc:', 'description') missing in first schema
+ - ('terms:', 'license') (Minor): Row ('terms:', 'license') missing in first schema
+ - ('dc:', 'subject') (Minor): Row ('dc:', 'subject') missing in first schema
+ - ('dc:', 'type') (Minor): Row ('dc:', 'type') missing in first schema
+ - ('dc:', 'creator') (Minor): Row ('dc:', 'creator') missing in first schema
+ - ('dc:', 'format') (Minor): Row ('dc:', 'format') missing in first schema
+ - ('dc:', 'identifier') (Minor): Row ('dc:', 'identifier') missing in first schema
 
 ## Changes for HED 8.3.0 Released 6/10/2024
 
