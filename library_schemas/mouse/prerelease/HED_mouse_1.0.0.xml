@@ -2673,10 +2673,18 @@
                </attribute>
                <node>
                   <name>Building</name>
-                  <description>A structure that has a roof and walls and stands more or less permanently in one place.</description>
+                  <description>A structure that usually has a roof and walls and stands more or less permanently in one place.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012274</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Building-part</name>
+                  <description>A part of a building.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013231</value>
                   </attribute>
                   <node>
                      <name>Attic</name>
@@ -2692,6 +2700,14 @@
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012276</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Door</name>
+                     <description>A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013232</value>
                      </attribute>
                   </node>
                   <node>
@@ -2716,6 +2732,14 @@
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012279</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Window</name>
+                     <description>An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013233</value>
                      </attribute>
                   </node>
                </node>
@@ -2984,14 +3008,6 @@
                                  <name>hedId</name>
                                  <value>HED_0012312</value>
                               </attribute>
-                              <node>
-                                 <name>Screen-window</name>
-                                 <description>A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.</description>
-                                 <attribute>
-                                    <name>hedId</name>
-                                    <value>HED_0012313</value>
-                                 </attribute>
-                              </node>
                            </node>
                            <node>
                               <name>Head-mounted-display</name>
@@ -3007,6 +3023,14 @@
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012315</value>
+                              </attribute>
+                           </node>
+                           <node>
+                              <name>Screen-window</name>
+                              <description>A part of a computer screen that contains a display different from the rest of the screen.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012313</value>
                               </attribute>
                            </node>
                         </node>
@@ -10599,11 +10623,27 @@
                   <value>HED_0013092</value>
                </attribute>
                <node>
+                  <name>Cue</name>
+                  <description>A signal for an action usually indicating a particular response.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013104</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Experimental-stimulus</name>
                   <description>Part of something designed to elicit a response in the experiment.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013093</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Feedback</name>
+                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>
@@ -10681,19 +10721,11 @@
             </node>
             <node>
                <name>Task-stimulus-role</name>
-               <description>The role the stimulus plays in the task.</description>
+               <description>The role the stimulus or other type of sensory event, such as feedback, plays in the task.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0013103</value>
                </attribute>
-               <node>
-                  <name>Cue</name>
-                  <description>A signal for an action, a pattern of stimuli indicating a particular response.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013104</value>
-                  </attribute>
-               </node>
                <node>
                   <name>Distractor</name>
                   <description>A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.</description>
@@ -10724,14 +10756,6 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013107</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Feedback</name>
-                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>
@@ -13597,12 +13621,12 @@
    <schemaPrefixes>
       <schemaPrefix>
          <name>dc:</name>
-         <namespace>http://purl.org/dc/elements/1.1/</namespace>
+         <namespace>http://purl.org/dc/elements/1.1/#</namespace>
          <description>The Dublin Core elements</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>foaf:</name>
-         <namespace>http://xmlns.com/foaf/0.1/</namespace>
+         <namespace>http://xmlns.com/foaf/0.1/#</namespace>
          <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13622,22 +13646,22 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
-         <namespace>http://www.w3.org/2002/07/owl#</namespace>
+         <namespace>http://www.w3.org/2002/07/owl</namespace>
          <description>The OWL namespace [OWL2-OVERVIEW]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>prov:</name>
-         <namespace>http://www.w3.org/ns/prov#</namespace>
+         <namespace>http://www.w3.org/ns/prov</namespace>
          <description>The PROV namespace [PROV-DM]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdf:</name>
-         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns</namespace>
          <description>The RDF namespace [RDF-CONCEPTS]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdfs:</name>
-         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+         <namespace>http://www.w3.org/2000/01/rdf-schema</namespace>
          <description>The RDF Schema namespace [RDFS]</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13647,7 +13671,7 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>terms:</name>
-         <namespace>http://purl.org/dc/terms/</namespace>
+         <namespace>http://purl.org/dc/terms/#</namespace>
          <description>The Dublin Core terms</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -13657,7 +13681,7 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
-         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
+         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
          <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
       </schemaPrefix>
    </schemaPrefixes>
