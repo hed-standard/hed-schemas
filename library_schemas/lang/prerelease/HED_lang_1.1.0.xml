@@ -2221,7 +2221,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode afro1255</value>
+                  <value>glotto:afro1255</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2236,7 +2236,7 @@
                   <description>An Afroasiatic language spoken mainly in Northern Africa and Western Asia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode arab1395</value>
+                     <value>glotto:arab1395</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2252,7 +2252,7 @@
                   <description>An Afroasiatic language mainly spoken in Israel.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode hebr1245</value>
+                     <value>glotto:hebr1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2269,7 +2269,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode atla1278</value>
+                  <value>glotto:atla1278</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2284,7 +2284,7 @@
                   <description>An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode swah1253</value>
+                     <value>glotto:swah1253</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2333,7 +2333,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode aust1307</value>
+                  <value>glotto:aust1307</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2348,7 +2348,7 @@
                   <description>An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode nucl1806</value>
+                     <value>glotto:nucl1806</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2365,7 +2365,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode drav1251</value>
+                  <value>glotto:drav1251</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages</value>
                </attribute>
                <attribute>
@@ -2381,7 +2381,7 @@
                   <description>A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode tami1289</value>
+                     <value>glotto:tami1289</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2402,7 +2402,7 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode indo1319</value>
+                  <value>glotto:indo1319</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages</value>
                </attribute>
                <attribute>
@@ -2418,7 +2418,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northeastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode east2280</value>
+                     <value>glotto:east2280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2433,7 +2433,7 @@
                      <description>A baltic language spoken mainly in Latvia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode latv1249</value>
+                        <value>glotto:latv1249</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2449,7 +2449,7 @@
                      <description>A baltic language spoken mainly in Lithuania.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode lith1251</value>
+                        <value>glotto:lith1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2466,7 +2466,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode germ1287</value>
+                     <value>glotto:germ1287</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2481,7 +2481,7 @@
                      <description>A Germanic language, mainly spoken in Denmark.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode dani1285</value>
+                        <value>glotto:dani1285</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2497,7 +2497,7 @@
                      <description>A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode dutc1256</value>
+                        <value>glotto:dutc1256</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2513,7 +2513,7 @@
                      <description>A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode stan1293</value>
+                        <value>glotto:stan1293</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2529,7 +2529,7 @@
                      <description>A Germanic Language which is mainly spoken in Western and Central Europe.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode stan1295</value>
+                        <value>glotto:stan1295</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2545,7 +2545,7 @@
                      <description>A Germanic language mainly spoken in Iceland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode icel1247</value>
+                        <value>glotto:icel1247</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2561,7 +2561,7 @@
                      <description>A Germanic language mainly spoken in Norway.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode norw1258</value>
+                        <value>glotto:norw1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2577,7 +2577,7 @@
                      <description>A Germanic language mainly spoken in Sweden and parts of Finland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode swed1254</value>
+                        <value>glotto:swed1254</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2594,7 +2594,7 @@
                   <description>A system of communication belonging to the family of languages directly descending from Vulgar Latin.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode roma1334</value>
+                     <value>glotto:roma1334</value>
                      <value>dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages</value>
                   </attribute>
                   <attribute>
@@ -2610,7 +2610,7 @@
                      <description>A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode stan1289</value>
+                        <value>glotto:stan1289</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2626,7 +2626,7 @@
                      <description>A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode stan1290</value>
+                        <value>glotto:stan1290</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2642,7 +2642,7 @@
                      <description>A Romance language mainly spoken in Galicia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode gali1258</value>
+                        <value>glotto:gali1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2658,7 +2658,7 @@
                      <description>A group of historically related Romance varieties spoken in Switzerland and Northern Italy.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode gall1280</value>
+                        <value>glotto:gall1280</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2674,7 +2674,7 @@
                      <description>A Romance language mainly spoken in Italy and parts of Switzerland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode ital1282</value>
+                        <value>glotto:ital1282</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2690,7 +2690,7 @@
                      <description>A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode port1283</value>
+                        <value>glotto:port1283</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2706,7 +2706,7 @@
                      <description>A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode roma1327</value>
+                        <value>glotto:roma1327</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2722,7 +2722,7 @@
                      <description>A Romance language spoken in Spain and large parts of the Americas.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode stan1288</value>
+                        <value>glotto:stan1288</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2739,7 +2739,7 @@
                   <description>A system of communication belonging to the family of languages originating in Eastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode slav1255</value>
+                     <value>glotto:slav1255</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2754,7 +2754,7 @@
                      <description>A Slavic language spoken mainly in Bulgaria.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode bulg1262</value>
+                        <value>glotto:bulg1262</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2770,7 +2770,7 @@
                      <description>A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode croa1245</value>
+                        <value>glotto:croa1245</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2786,7 +2786,7 @@
                      <description>A Slavic language spoken mainly in the Czech Republic.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode czec1258</value>
+                        <value>glotto:czec1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2802,7 +2802,7 @@
                      <description>A Slavic language spoken mainly in North Macedonia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode mace1250</value>
+                        <value>glotto:mace1250</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2818,7 +2818,7 @@
                      <description>A Slavic language spoken mainly in Poland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode poli1260</value>
+                        <value>glotto:poli1260</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2834,7 +2834,7 @@
                      <description>A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode russ1263</value>
+                        <value>glotto:russ1263</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2850,7 +2850,7 @@
                      <description>A Slavic language spoken mainly in Slovakia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode slov126</value>
+                        <value>glotto:slov126</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2866,7 +2866,7 @@
                      <description>A Slavic language spoken mainly in Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode ukra1253</value>
+                        <value>glotto:ukra1253</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2884,7 +2884,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode japo1237</value>
+                  <value>glotto:japo1237</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2899,7 +2899,7 @@
                   <description>A Japonic language mainly spoken in Japan.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode nucl1643</value>
+                     <value>glotto:nucl1643</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2916,7 +2916,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Korea.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode kore1284</value>
+                  <value>glotto:kore1284</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2931,7 +2931,7 @@
                   <description>A Koreanic language mainly spoken in Korea.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode kore1280</value>
+                     <value>glotto:kore1280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2948,7 +2948,7 @@
                <description>A system of communication belonging to the family of languages spoken in Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode sino1245</value>
+                  <value>glotto:sino1245</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2963,7 +2963,7 @@
                   <description>A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode burm1265</value>
+                     <value>glotto:burm1265</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2978,7 +2978,7 @@
                      <description>A Burmo Qiangic language mainly spoken in Myanmar.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode nucl1310</value>
+                        <value>glotto:nucl1310</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2995,7 +2995,7 @@
                   <description>A system of communication belonging to the family of languages mainly spoken in China.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode sini1245</value>
+                     <value>glotto:sini1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3010,7 +3010,7 @@
                      <description>A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode ganc1239</value>
+                        <value>glotto:ganc1239</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3026,9 +3026,9 @@
                      <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode mand1471</value>
+                        <value>glotto:mand1471</value>
                         <value>dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese</value>
-                        <value>glotto:Glottocode mand1471</value>
+                        <value>glotto:mand1471</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3056,7 +3056,7 @@
                      <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode wuch1236</value>
+                        <value>glotto:wuch1236</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3072,7 +3072,7 @@
                      <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode xian1251</value>
+                        <value>glotto:xian1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3088,7 +3088,7 @@
                      <description>A group of Sinitic languages mainly spoken Southern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:Glottocode yuec1235</value>
+                        <value>glotto:yuec1235</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3103,7 +3103,7 @@
                         <description>A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.</description>
                         <attribute>
                            <name>annotation</name>
-                           <value>glotto:Glottocode cant1236</value>
+                           <value>glotto:cant1236</value>
                         </attribute>
                         <attribute>
                            <name>hedId</name>
@@ -3122,7 +3122,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode taik1256</value>
+                  <value>glotto:taik1256</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3137,7 +3137,7 @@
                   <description>A Tai Kadai language mainly spoken in Central Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode thai1261</value>
+                     <value>glotto:thai1261</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3169,7 +3169,7 @@
                   <description>A Turkish language mainly spoken in Turkey and Northern Cyprus.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode nucl1301</value>
+                     <value>glotto:nucl1301</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3186,7 +3186,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode ural1272</value>
+                  <value>glotto:ural1272</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3201,7 +3201,7 @@
                   <description>An Uralic Language mainly spoken in Estonia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode esto1258</value>
+                     <value>glotto:esto1258</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3217,7 +3217,7 @@
                   <description>An Uralic language mainly spoken in Finland.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode finn1318</value>
+                     <value>glotto:finn1318</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3233,7 +3233,7 @@
                   <description>An Uralic Language mainly spoken in Hungary.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:Glottocode hung1274</value>
+                     <value>glotto:hung1274</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3266,7 +3266,7 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:Glottocode hung1274</value>
+                  <value>glotto:hung1274</value>
                   <value>dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram</value>
                </attribute>
                <attribute>
@@ -3886,10 +3886,18 @@
                </attribute>
                <node>
                   <name>Building</name>
-                  <description>A structure that has a roof and walls and stands more or less permanently in one place.</description>
+                  <description>A structure that usually has a roof and walls and stands more or less permanently in one place.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0012274</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Building-part</name>
+                  <description>A part of a building.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013231</value>
                   </attribute>
                   <node>
                      <name>Attic</name>
@@ -3905,6 +3913,14 @@
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012276</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Door</name>
+                     <description>A door is a hinged or otherwise movable barrier that allows entry into and exit from an enclosed structure.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013232</value>
                      </attribute>
                   </node>
                   <node>
@@ -3929,6 +3945,14 @@
                      <attribute>
                         <name>hedId</name>
                         <value>HED_0012279</value>
+                     </attribute>
+                  </node>
+                  <node>
+                     <name>Window</name>
+                     <description>An opening in a wall, roof, or vehicle that allows light and air to enter, typically covered by glass or other transparent material.</description>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0013233</value>
                      </attribute>
                   </node>
                </node>
@@ -4197,14 +4221,6 @@
                                  <name>hedId</name>
                                  <value>HED_0012312</value>
                               </attribute>
-                              <node>
-                                 <name>Screen-window</name>
-                                 <description>A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.</description>
-                                 <attribute>
-                                    <name>hedId</name>
-                                    <value>HED_0012313</value>
-                                 </attribute>
-                              </node>
                            </node>
                            <node>
                               <name>Head-mounted-display</name>
@@ -4220,6 +4236,14 @@
                               <attribute>
                                  <name>hedId</name>
                                  <value>HED_0012315</value>
+                              </attribute>
+                           </node>
+                           <node>
+                              <name>Screen-window</name>
+                              <description>A part of a computer screen that contains a display different from the rest of the screen.</description>
+                              <attribute>
+                                 <name>hedId</name>
+                                 <value>HED_0012313</value>
                               </attribute>
                            </node>
                         </node>
@@ -14267,11 +14291,27 @@
                   <value>HED_0013092</value>
                </attribute>
                <node>
+                  <name>Cue</name>
+                  <description>A signal for an action usually indicating a particular response.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013104</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Experimental-stimulus</name>
                   <description>Part of something designed to elicit a response in the experiment.</description>
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013093</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Feedback</name>
+                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
+                  <attribute>
+                     <name>hedId</name>
+                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>
@@ -14349,19 +14389,11 @@
             </node>
             <node>
                <name>Task-stimulus-role</name>
-               <description>The role the stimulus plays in the task.</description>
+               <description>The role the stimulus or other type of sensory event, such as feedback, plays in the task.</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0013103</value>
                </attribute>
-               <node>
-                  <name>Cue</name>
-                  <description>A signal for an action, a pattern of stimuli indicating a particular response.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013104</value>
-                  </attribute>
-               </node>
                <node>
                   <name>Distractor</name>
                   <description>A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.</description>
@@ -14392,14 +14424,6 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013107</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Feedback</name>
-                  <description>An evaluative response to an inquiry, process, event, or activity.</description>
-                  <attribute>
-                     <name>hedId</name>
-                     <value>HED_0013108</value>
                   </attribute>
                </node>
                <node>
@@ -17569,17 +17593,17 @@
    <schemaPrefixes>
       <schemaPrefix>
          <name>dc:</name>
-         <namespace>http://purl.org/dc/elements/1.1/</namespace>
+         <namespace>http://purl.org/dc/elements/1.1/#</namespace>
          <description>The Dublin Core elements</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>foaf:</name>
-         <namespace>http://xmlns.com/foaf/0.1/</namespace>
+         <namespace>http://xmlns.com/foaf/0.1/#</namespace>
          <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>glotto:</name>
-         <namespace>https://glottolog.org</namespace>
+         <namespace>https://glottolog.org/resource/languoid/id/#</namespace>
          <description>Glottolog 5.1 Comprehensive language reference database</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -17599,22 +17623,22 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
-         <namespace>http://www.w3.org/2002/07/owl#</namespace>
+         <namespace>http://www.w3.org/2002/07/owl</namespace>
          <description>The OWL namespace [OWL2-OVERVIEW]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>prov:</name>
-         <namespace>http://www.w3.org/ns/prov#</namespace>
+         <namespace>http://www.w3.org/ns/prov</namespace>
          <description>The PROV namespace [PROV-DM]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdf:</name>
-         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+         <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns</namespace>
          <description>The RDF namespace [RDF-CONCEPTS]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdfs:</name>
-         <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+         <namespace>http://www.w3.org/2000/01/rdf-schema</namespace>
          <description>The RDF Schema namespace [RDFS]</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -17624,7 +17648,7 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>terms:</name>
-         <namespace>http://purl.org/dc/terms/</namespace>
+         <namespace>http://purl.org/dc/terms/#</namespace>
          <description>The Dublin Core terms</description>
       </schemaPrefix>
       <schemaPrefix>
@@ -17634,7 +17658,7 @@
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
-         <namespace>http://www.w3.org/2000/10/XMLSchema#</namespace>
+         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
          <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
       </schemaPrefix>
    </schemaPrefixes>
