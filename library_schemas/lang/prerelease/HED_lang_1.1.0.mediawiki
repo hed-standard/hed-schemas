@@ -6,72 +6,72 @@ The HED Language schema is a Hierarchical Event Descriptors Library Schema Langu
 !# start schema
 
 '''Language''' <nowiki>{rooted=Item, annotation=dc:source Original, annotation=rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works., hedId=HED_0062001} [A specific system of communication, with a vocabulary and grammar, which is used by a particular community or in a country.]</nowiki>
-* Afroasiatic-language <nowiki>{annotation=glotto:Glottocode afro1255, hedId=HED_0062002} [A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
-** Arabic <nowiki>{annotation=glotto:Glottocode arab1395, hedId=HED_0062003} [An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
-** Hebrew <nowiki>{annotation=glotto:Glottocode hebr1245, hedId=HED_0062004} [An Afroasiatic language mainly spoken in Israel.]</nowiki>
-* Atlantic-Congo-language <nowiki>{annotation=glotto:Glottocode atla1278, hedId=HED_0062005} [A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
-** Swahili <nowiki>{annotation=glotto:Glottocode swah1253, hedId=HED_0062006} [An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
+* Afroasiatic-language <nowiki>{annotation=glotto:afro1255, hedId=HED_0062002} [A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.]</nowiki>
+** Arabic <nowiki>{annotation=glotto:arab1395, hedId=HED_0062003} [An Afroasiatic language spoken mainly in Northern Africa and Western Asia.]</nowiki>
+** Hebrew <nowiki>{annotation=glotto:hebr1245, hedId=HED_0062004} [An Afroasiatic language mainly spoken in Israel.]</nowiki>
+* Atlantic-Congo-language <nowiki>{annotation=glotto:atla1278, hedId=HED_0062005} [A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.]</nowiki>
+** Swahili <nowiki>{annotation=glotto:swah1253, hedId=HED_0062006} [An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.]</nowiki>
 * Austroasiatic <nowiki>{annotation=glotto:aust1305, hedId=HED_0062007} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.]</nowiki>
 ** Vietnamese <nowiki>{annotation=glotto:viet1252, hedId=HED_0062008} [An Austroasiatic language mainly spoken in Vietnam.]</nowiki>
-* Austronesian-language <nowiki>{annotation=glotto:Glottocode aust1307, hedId=HED_0062009} [A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.]</nowiki>
-** Malay <nowiki>{annotation=glotto:Glottocode nucl1806, hedId=HED_0062010} [An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.]</nowiki>
-* Dravidian <nowiki>{annotation=glotto:Glottocode drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages, hedId=HED_0062011} [A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.]</nowiki>
-** Tamil <nowiki>{annotation=glotto:Glottocode tami1289, hedId=HED_0062012} [A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.]</nowiki>
-* Indo-European-language <nowiki>{suggestedTag=Language-property, annotation=glotto:Glottocode indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages, hedId=HED_0062013} [A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.]</nowiki>
-** Baltic-language <nowiki>{annotation=glotto:Glottocode east2280, hedId=HED_0062014} [A system of communication belonging to the family of languages originating in Northeastern Europe.]</nowiki>
-*** Latvian <nowiki>{annotation=glotto:Glottocode latv1249, hedId=HED_0062015} [A baltic language spoken mainly in Latvia.]</nowiki>
-*** Lithuanian <nowiki>{annotation=glotto:Glottocode lith1251, hedId=HED_0062016} [A baltic language spoken mainly in Lithuania.]</nowiki>
-** Germanic-language <nowiki>{annotation=glotto:Glottocode germ1287, hedId=HED_0062017} [A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.]</nowiki>
-*** Danish <nowiki>{annotation=glotto:Glottocode dani1285, hedId=HED_0062018} [A Germanic language, mainly spoken in Denmark.]</nowiki>
-*** Dutch <nowiki>{annotation=glotto:Glottocode dutc1256, hedId=HED_0062019} [A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.]</nowiki>
-*** English <nowiki>{annotation=glotto:Glottocode stan1293, hedId=HED_0062020} [A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.]</nowiki>
-*** German <nowiki>{annotation=glotto:Glottocode stan1295, hedId=HED_0062021} [A Germanic Language which is mainly spoken in Western and Central Europe.]</nowiki>
-*** Icelandic <nowiki>{annotation=glotto:Glottocode icel1247, hedId=HED_0062022} [A Germanic language mainly spoken in Iceland.]</nowiki>
-*** Norwegian <nowiki>{annotation=glotto:Glottocode norw1258, hedId=HED_0062023} [A Germanic language mainly spoken in Norway.]</nowiki>
-*** Swedish <nowiki>{annotation=glotto:Glottocode swed1254, hedId=HED_0062024} [A Germanic language mainly spoken in Sweden and parts of Finland.]</nowiki>
-** Romance-language <nowiki>{annotation=glotto:Glottocode roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages, hedId=HED_0062025} [A system of communication belonging to the family of languages directly descending from Vulgar Latin.]</nowiki>
-*** Catalan <nowiki>{annotation=glotto:Glottocode stan1289, hedId=HED_0062026} [A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.]</nowiki>
-*** French <nowiki>{annotation=glotto:Glottocode stan1290, hedId=HED_0062027} [A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.]</nowiki>
-*** Galician <nowiki>{annotation=glotto:Glottocode gali1258, hedId=HED_0062028} [A Romance language mainly spoken in Galicia.]</nowiki>
-*** Gallo-Rhaetian-language <nowiki>{annotation=glotto:Glottocode gall1280, hedId=HED_0062029} [A group of historically related Romance varieties spoken in Switzerland and Northern Italy.]</nowiki>
-*** Italian <nowiki>{annotation=glotto:Glottocode ital1282, hedId=HED_0062030} [A Romance language mainly spoken in Italy and parts of Switzerland.]</nowiki>
-*** Portuguese <nowiki>{annotation=glotto:Glottocode port1283, hedId=HED_0062031} [A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.]</nowiki>
-*** Romanian <nowiki>{annotation=glotto:Glottocode roma1327, hedId=HED_0062032} [A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.]</nowiki>
-*** Spanish <nowiki>{annotation=glotto:Glottocode stan1288, hedId=HED_0062033} [A Romance language spoken in Spain and large parts of the Americas.]</nowiki>
-** Slavic-language <nowiki>{annotation=glotto:Glottocode slav1255, hedId=HED_0062034} [A system of communication belonging to the family of languages originating in Eastern Europe.]</nowiki>
-*** Bulgarian <nowiki>{annotation=glotto:Glottocode bulg1262, hedId=HED_0062035} [A Slavic language spoken mainly in Bulgaria.]</nowiki>
-*** Croatian <nowiki>{annotation=glotto:Glottocode croa1245, hedId=HED_0062036} [A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.]</nowiki>
-*** Czech <nowiki>{annotation=glotto:Glottocode czec1258, hedId=HED_0062037} [A Slavic language spoken mainly in the Czech Republic.]</nowiki>
-*** Macedonian <nowiki>{annotation=glotto:Glottocode mace1250, hedId=HED_0062038} [A Slavic language spoken mainly in North Macedonia.]</nowiki>
-*** Polish <nowiki>{annotation=glotto:Glottocode poli1260, hedId=HED_0062039} [A Slavic language spoken mainly in Poland.]</nowiki>
-*** Russian <nowiki>{annotation=glotto:Glottocode russ1263, hedId=HED_0062040} [A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.]</nowiki>
-*** Slovak <nowiki>{annotation=glotto:Glottocode slov126, hedId=HED_0062041} [A Slavic language spoken mainly in Slovakia.]</nowiki>
-*** Ukrainian <nowiki>{annotation=glotto:Glottocode ukra1253, hedId=HED_0062042} [A Slavic language spoken mainly in Ukraine.]</nowiki>
-* Japonic <nowiki>{annotation=glotto:Glottocode japo1237, hedId=HED_0062043} [A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
-** Japanese <nowiki>{annotation=glotto:Glottocode nucl1643, hedId=HED_0062044} [A Japonic language mainly spoken in Japan.]</nowiki>
-* Koreanic <nowiki>{annotation=glotto:Glottocode kore1284, hedId=HED_0062045} [A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
-** Korean <nowiki>{annotation=glotto:Glottocode kore1280, hedId=HED_0062046} [A Koreanic language mainly spoken in Korea.]</nowiki>
-* Sino-Tibetan-language <nowiki>{annotation=glotto:Glottocode sino1245, hedId=HED_0062047} [A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
-** Burmo-Qiangic-language <nowiki>{annotation=glotto:Glottocode burm1265, hedId=HED_0062048} [A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
-*** Burmese <nowiki>{annotation=glotto:Glottocode nucl1310, hedId=HED_0062049} [A Burmo Qiangic language mainly spoken in Myanmar.]</nowiki>
-** Sinitic <nowiki>{annotation=glotto:Glottocode sini1245, hedId=HED_0062050} [A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
-*** Gan-Chinese <nowiki>{annotation=glotto:Glottocode ganc1239, hedId=HED_0062051} [A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
-*** Mandarin-Chinese <nowiki>{annotation=glotto:Glottocode mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=glotto:Glottocode mand1471, hedId=HED_0062052} [A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.]</nowiki>
+* Austronesian-language <nowiki>{annotation=glotto:aust1307, hedId=HED_0062009} [A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.]</nowiki>
+** Malay <nowiki>{annotation=glotto:nucl1806, hedId=HED_0062010} [An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.]</nowiki>
+* Dravidian <nowiki>{annotation=glotto:drav1251, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages, hedId=HED_0062011} [A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.]</nowiki>
+** Tamil <nowiki>{annotation=glotto:tami1289, hedId=HED_0062012} [A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.]</nowiki>
+* Indo-European-language <nowiki>{suggestedTag=Language-property, annotation=glotto:indo1319, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages, hedId=HED_0062013} [A system of communication belonging to the family of languages native to the majority of Europe, the Iranian plateau, and the northern Indian subcontinent.]</nowiki>
+** Baltic-language <nowiki>{annotation=glotto:east2280, hedId=HED_0062014} [A system of communication belonging to the family of languages originating in Northeastern Europe.]</nowiki>
+*** Latvian <nowiki>{annotation=glotto:latv1249, hedId=HED_0062015} [A baltic language spoken mainly in Latvia.]</nowiki>
+*** Lithuanian <nowiki>{annotation=glotto:lith1251, hedId=HED_0062016} [A baltic language spoken mainly in Lithuania.]</nowiki>
+** Germanic-language <nowiki>{annotation=glotto:germ1287, hedId=HED_0062017} [A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.]</nowiki>
+*** Danish <nowiki>{annotation=glotto:dani1285, hedId=HED_0062018} [A Germanic language, mainly spoken in Denmark.]</nowiki>
+*** Dutch <nowiki>{annotation=glotto:dutc1256, hedId=HED_0062019} [A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.]</nowiki>
+*** English <nowiki>{annotation=glotto:stan1293, hedId=HED_0062020} [A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.]</nowiki>
+*** German <nowiki>{annotation=glotto:stan1295, hedId=HED_0062021} [A Germanic Language which is mainly spoken in Western and Central Europe.]</nowiki>
+*** Icelandic <nowiki>{annotation=glotto:icel1247, hedId=HED_0062022} [A Germanic language mainly spoken in Iceland.]</nowiki>
+*** Norwegian <nowiki>{annotation=glotto:norw1258, hedId=HED_0062023} [A Germanic language mainly spoken in Norway.]</nowiki>
+*** Swedish <nowiki>{annotation=glotto:swed1254, hedId=HED_0062024} [A Germanic language mainly spoken in Sweden and parts of Finland.]</nowiki>
+** Romance-language <nowiki>{annotation=glotto:roma1334, annotation=dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages, hedId=HED_0062025} [A system of communication belonging to the family of languages directly descending from Vulgar Latin.]</nowiki>
+*** Catalan <nowiki>{annotation=glotto:stan1289, hedId=HED_0062026} [A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.]</nowiki>
+*** French <nowiki>{annotation=glotto:stan1290, hedId=HED_0062027} [A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.]</nowiki>
+*** Galician <nowiki>{annotation=glotto:gali1258, hedId=HED_0062028} [A Romance language mainly spoken in Galicia.]</nowiki>
+*** Gallo-Rhaetian-language <nowiki>{annotation=glotto:gall1280, hedId=HED_0062029} [A group of historically related Romance varieties spoken in Switzerland and Northern Italy.]</nowiki>
+*** Italian <nowiki>{annotation=glotto:ital1282, hedId=HED_0062030} [A Romance language mainly spoken in Italy and parts of Switzerland.]</nowiki>
+*** Portuguese <nowiki>{annotation=glotto:port1283, hedId=HED_0062031} [A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.]</nowiki>
+*** Romanian <nowiki>{annotation=glotto:roma1327, hedId=HED_0062032} [A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.]</nowiki>
+*** Spanish <nowiki>{annotation=glotto:stan1288, hedId=HED_0062033} [A Romance language spoken in Spain and large parts of the Americas.]</nowiki>
+** Slavic-language <nowiki>{annotation=glotto:slav1255, hedId=HED_0062034} [A system of communication belonging to the family of languages originating in Eastern Europe.]</nowiki>
+*** Bulgarian <nowiki>{annotation=glotto:bulg1262, hedId=HED_0062035} [A Slavic language spoken mainly in Bulgaria.]</nowiki>
+*** Croatian <nowiki>{annotation=glotto:croa1245, hedId=HED_0062036} [A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.]</nowiki>
+*** Czech <nowiki>{annotation=glotto:czec1258, hedId=HED_0062037} [A Slavic language spoken mainly in the Czech Republic.]</nowiki>
+*** Macedonian <nowiki>{annotation=glotto:mace1250, hedId=HED_0062038} [A Slavic language spoken mainly in North Macedonia.]</nowiki>
+*** Polish <nowiki>{annotation=glotto:poli1260, hedId=HED_0062039} [A Slavic language spoken mainly in Poland.]</nowiki>
+*** Russian <nowiki>{annotation=glotto:russ1263, hedId=HED_0062040} [A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.]</nowiki>
+*** Slovak <nowiki>{annotation=glotto:slov126, hedId=HED_0062041} [A Slavic language spoken mainly in Slovakia.]</nowiki>
+*** Ukrainian <nowiki>{annotation=glotto:ukra1253, hedId=HED_0062042} [A Slavic language spoken mainly in Ukraine.]</nowiki>
+* Japonic <nowiki>{annotation=glotto:japo1237, hedId=HED_0062043} [A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.]</nowiki>
+** Japanese <nowiki>{annotation=glotto:nucl1643, hedId=HED_0062044} [A Japonic language mainly spoken in Japan.]</nowiki>
+* Koreanic <nowiki>{annotation=glotto:kore1284, hedId=HED_0062045} [A system of communication belonging to the family of languages mainly spoken in Korea.]</nowiki>
+** Korean <nowiki>{annotation=glotto:kore1280, hedId=HED_0062046} [A Koreanic language mainly spoken in Korea.]</nowiki>
+* Sino-Tibetan-language <nowiki>{annotation=glotto:sino1245, hedId=HED_0062047} [A system of communication belonging to the family of languages spoken in Asia.]</nowiki>
+** Burmo-Qiangic-language <nowiki>{annotation=glotto:burm1265, hedId=HED_0062048} [A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.]</nowiki>
+*** Burmese <nowiki>{annotation=glotto:nucl1310, hedId=HED_0062049} [A Burmo Qiangic language mainly spoken in Myanmar.]</nowiki>
+** Sinitic <nowiki>{annotation=glotto:sini1245, hedId=HED_0062050} [A system of communication belonging to the family of languages mainly spoken in China.]</nowiki>
+*** Gan-Chinese <nowiki>{annotation=glotto:ganc1239, hedId=HED_0062051} [A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.]</nowiki>
+*** Mandarin-Chinese <nowiki>{annotation=glotto:mand1471, annotation=dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese, annotation=glotto:mand1471, hedId=HED_0062052} [A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.]</nowiki>
 **** Standard-Chinese <nowiki>{hedId=HED_0062053} [A modern standard form of Mandarin Chinese which is the official Language of mainland China.]</nowiki>
-*** Wu-Chinese <nowiki>{annotation=glotto:Glottocode wuch1236, hedId=HED_0062054} [A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.]</nowiki>
-*** Xiang-Chinese <nowiki>{annotation=glotto:Glottocode xian1251, hedId=HED_0062055} [A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.]</nowiki>
-*** Yue-Chinese <nowiki>{annotation=glotto:Glottocode yuec1235, hedId=HED_0062056} [A group of Sinitic languages mainly spoken Southern China.]</nowiki>
-**** Cantonese <nowiki>{annotation=glotto:Glottocode cant1236, hedId=HED_0062057} [A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.]</nowiki>
-* Tai-Kadai <nowiki>{annotation=glotto:Glottocode taik1256, hedId=HED_0062058} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.]</nowiki>
-** Thai <nowiki>{annotation=glotto:Glottocode thai1261, hedId=HED_0062059} [A Tai Kadai language mainly spoken in Central Thailand.]</nowiki>
+*** Wu-Chinese <nowiki>{annotation=glotto:wuch1236, hedId=HED_0062054} [A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.]</nowiki>
+*** Xiang-Chinese <nowiki>{annotation=glotto:xian1251, hedId=HED_0062055} [A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.]</nowiki>
+*** Yue-Chinese <nowiki>{annotation=glotto:yuec1235, hedId=HED_0062056} [A group of Sinitic languages mainly spoken Southern China.]</nowiki>
+**** Cantonese <nowiki>{annotation=glotto:cant1236, hedId=HED_0062057} [A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.]</nowiki>
+* Tai-Kadai <nowiki>{annotation=glotto:taik1256, hedId=HED_0062058} [A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.]</nowiki>
+** Thai <nowiki>{annotation=glotto:thai1261, hedId=HED_0062059} [A Tai Kadai language mainly spoken in Central Thailand.]</nowiki>
 * Turkic <nowiki>{annotation=glotto:turk1311, hedId=HED_0062060} [A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.]</nowiki>
-** Turkish <nowiki>{annotation=glotto:Glottocode nucl1301, hedId=HED_0062061} [A Turkish language mainly spoken in Turkey and Northern Cyprus.]</nowiki>
-* Uralic <nowiki>{annotation=glotto:Glottocode ural1272, hedId=HED_0062062} [A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.]</nowiki>
-** Estonian <nowiki>{annotation=glotto:Glottocode esto1258, hedId=HED_0062063} [An Uralic Language mainly spoken in Estonia.]</nowiki>
-** Finnish <nowiki>{annotation=glotto:Glottocode finn1318, hedId=HED_0062064} [An Uralic language mainly spoken in Finland.]</nowiki>
-** Hungarian <nowiki>{annotation=glotto:Glottocode hung1274, hedId=HED_0062065} [An Uralic Language mainly spoken in Hungary.]</nowiki>
+** Turkish <nowiki>{annotation=glotto:nucl1301, hedId=HED_0062061} [A Turkish language mainly spoken in Turkey and Northern Cyprus.]</nowiki>
+* Uralic <nowiki>{annotation=glotto:ural1272, hedId=HED_0062062} [A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.]</nowiki>
+** Estonian <nowiki>{annotation=glotto:esto1258, hedId=HED_0062063} [An Uralic Language mainly spoken in Estonia.]</nowiki>
+** Finnish <nowiki>{annotation=glotto:finn1318, hedId=HED_0062064} [An Uralic language mainly spoken in Finland.]</nowiki>
+** Hungarian <nowiki>{annotation=glotto:hung1274, hedId=HED_0062065} [An Uralic Language mainly spoken in Hungary.]</nowiki>
 
-'''Bigram''' <nowiki>{rooted=Language-item, annotation=glotto:Glottocode hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram, hedId=HED_0062066} [A pair of two consecutive written units such as letters, syllables, or words.]</nowiki>
+'''Bigram''' <nowiki>{rooted=Language-item, annotation=glotto:hung1274, annotation=dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram, hedId=HED_0062066} [A pair of two consecutive written units such as letters, syllables, or words.]</nowiki>
 
 '''Letter-character''' <nowiki>{rooted=Character, annotation=dc:source Original, hedId=HED_0062067} [A character that is the smallest meaningful or functional unit in an alphabetic writing system.]</nowiki>
 
@@ -291,20 +291,20 @@ The current prerelease of the schema is primarily centered around written langua
 * <nowiki>source=Wikipedia,link=https://en.wikipedia.org,description=General definitions of concepts.</nowiki>
 
 '''Prefixes'''
-* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/,description=The Dublin Core elements</nowiki>
-* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
-* <nowiki>prefix=glotto:,namespace=https://glottolog.org,description=Glottolog 5.1 Comprehensive language reference database</nowiki>
+* <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/#,description=The Dublin Core elements</nowiki>
+* <nowiki>prefix=foaf:,namespace=http://xmlns.com/foaf/0.1/#,description=Friend-of-a-Friend http://xmlns.com/foaf/spec/</nowiki>
+* <nowiki>prefix=glotto:,namespace=https://glottolog.org/resource/languoid/id/#,description=Glottolog 5.1 Comprehensive language reference database</nowiki>
 * <nowiki>prefix=iao:,namespace=http://purl.obolibrary.org/obo/iao.owl,description=Information Artifact Ontology (IAO)</nowiki>
 * <nowiki>prefix=ncit:,namespace=http://purl.obolibrary.org/obo/ncit.owl,description=NCI Thesaurus OBO Edition</nowiki>
 * <nowiki>prefix=obogo:,namespace=http://www.geneontology.org/formats/oboInOwl,description=The OBO Format Namespace</nowiki>
-* <nowiki>prefix=owl:,namespace=http://www.w3.org/2002/07/owl#,description=The OWL namespace [OWL2-OVERVIEW]</nowiki>
-* <nowiki>prefix=prov:,namespace=http://www.w3.org/ns/prov#,description=The PROV namespace [PROV-DM]</nowiki>
-* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns#,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
-* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema#,description=The RDF Schema namespace [RDFS]</nowiki>
+* <nowiki>prefix=owl:,namespace=http://www.w3.org/2002/07/owl,description=The OWL namespace [OWL2-OVERVIEW]</nowiki>
+* <nowiki>prefix=prov:,namespace=http://www.w3.org/ns/prov,description=The PROV namespace [PROV-DM]</nowiki>
+* <nowiki>prefix=rdf:,namespace=http://www.w3.org/1999/02/22-rdf-syntax-ns,description=The RDF namespace [RDF-CONCEPTS]</nowiki>
+* <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema,description=The RDF Schema namespace [RDFS]</nowiki>
 * <nowiki>prefix=skos:,namespace=http://www.w3.org/2004/02/skos/core,description=SKOS (Simple Knowledge Organization System) Vocabulary</nowiki>
-* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/,description=The Dublin Core terms</nowiki>
+* <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/#,description=The Dublin Core terms</nowiki>
 * <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
-* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2000/10/XMLSchema#,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
+* <nowiki>prefix=xsd:,namespace=http://www.w3.org/2001/XMLSchema,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
 
 '''External annotations'''
 * <nowiki>prefix=dc:,id=contributor,iri=http://purl.org/dc/elements/1.1/contributor,description=An entity responsible for making contributions to the resource.</nowiki>

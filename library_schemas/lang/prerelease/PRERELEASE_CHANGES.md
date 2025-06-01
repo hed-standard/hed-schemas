@@ -17,70 +17,70 @@ HED_lang_1.0.0.xml vs HED_lang_1.1.0.tsv
  - Feedback (Minor): Tag Feedback moved in schema from Property/Task-property/Task-stimulus-role/Feedback to Property/Task-property/Task-event-role/Feedback
  - Event (Patch): Attribute annotation modified from None to ncit:C25499,rdfs:comment Should have this tag in every event process.
  - Language (Patch): Attribute annotation modified from None to dc:source Original,rdfs:comment Langue has been suggested as a term to refer to a specific language while the term language in general refers to the high level concept of language and its general properties. However this has never been widely adopted. In context of HED Language as an Item works.
- - Afroasiatic-language (Patch): Attribute annotation modified from None to glotto:Glottocode afro1255
- - Arabic (Patch): Attribute annotation modified from None to glotto:Glottocode arab1395
- - Hebrew (Patch): Attribute annotation modified from None to glotto:Glottocode hebr1245
- - Atlantic-Congo-language (Patch): Attribute annotation modified from None to glotto:Glottocode atla1278
- - Swahili (Patch): Attribute annotation modified from None to glotto:Glottocode swah1253
+ - Afroasiatic-language (Patch): Attribute annotation modified from None to glotto:afro1255
+ - Arabic (Patch): Attribute annotation modified from None to glotto:arab1395
+ - Hebrew (Patch): Attribute annotation modified from None to glotto:hebr1245
+ - Atlantic-Congo-language (Patch): Attribute annotation modified from None to glotto:atla1278
+ - Swahili (Patch): Attribute annotation modified from None to glotto:swah1253
  - Austroasiatic (Patch): Attribute annotation modified from None to glotto:aust1305
  - Vietnamese (Patch): Attribute annotation modified from None to glotto:viet1252
- - Austronesian-language (Patch): Attribute annotation modified from None to glotto:Glottocode aust1307
- - Malay (Patch): Attribute annotation modified from None to glotto:Glottocode nucl1806
- - Dravidian (Patch): Attribute annotation modified from None to glotto:Glottocode drav1251,dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages
- - Tamil (Patch): Attribute annotation modified from None to glotto:Glottocode tami1289
- - Indo-European-language (Patch): Attribute annotation modified from None to glotto:Glottocode indo1319,dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages
- - Baltic-language (Patch): Attribute annotation modified from None to glotto:Glottocode east2280
- - Latvian (Patch): Attribute annotation modified from None to glotto:Glottocode latv1249
- - Lithuanian (Patch): Attribute annotation modified from None to glotto:Glottocode lith1251
- - Germanic-language (Patch): Attribute annotation modified from None to glotto:Glottocode germ1287
- - Danish (Patch): Attribute annotation modified from None to glotto:Glottocode dani1285
- - Dutch (Patch): Attribute annotation modified from None to glotto:Glottocode dutc1256
- - English (Patch): Attribute annotation modified from None to glotto:Glottocode stan1293
- - German (Patch): Attribute annotation modified from None to glotto:Glottocode stan1295
- - Icelandic (Patch): Attribute annotation modified from None to glotto:Glottocode icel1247
- - Norwegian (Patch): Attribute annotation modified from None to glotto:Glottocode norw1258
- - Swedish (Patch): Attribute annotation modified from None to glotto:Glottocode swed1254
- - Romance-language (Patch): Attribute annotation modified from None to glotto:Glottocode roma1334,dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages
- - Catalan (Patch): Attribute annotation modified from None to glotto:Glottocode stan1289
- - French (Patch): Attribute annotation modified from None to glotto:Glottocode stan1290
- - Galician (Patch): Attribute annotation modified from None to glotto:Glottocode gali1258
- - Gallo-Rhaetian-language (Patch): Attribute annotation modified from None to glotto:Glottocode gall1280
- - Italian (Patch): Attribute annotation modified from None to glotto:Glottocode ital1282
- - Portuguese (Patch): Attribute annotation modified from None to glotto:Glottocode port1283
- - Romanian (Patch): Attribute annotation modified from None to glotto:Glottocode roma1327
- - Spanish (Patch): Attribute annotation modified from None to glotto:Glottocode stan1288
- - Slavic-language (Patch): Attribute annotation modified from None to glotto:Glottocode slav1255
- - Bulgarian (Patch): Attribute annotation modified from None to glotto:Glottocode bulg1262
- - Croatian (Patch): Attribute annotation modified from None to glotto:Glottocode croa1245
- - Czech (Patch): Attribute annotation modified from None to glotto:Glottocode czec1258
- - Macedonian (Patch): Attribute annotation modified from None to glotto:Glottocode mace1250
- - Polish (Patch): Attribute annotation modified from None to glotto:Glottocode poli1260
- - Russian (Patch): Attribute annotation modified from None to glotto:Glottocode russ1263
- - Slovak (Patch): Attribute annotation modified from None to glotto:Glottocode slov126
- - Ukrainian (Patch): Attribute annotation modified from None to glotto:Glottocode ukra1253
- - Japonic (Patch): Attribute annotation modified from None to glotto:Glottocode japo1237
- - Japanese (Patch): Attribute annotation modified from None to glotto:Glottocode nucl1643
- - Koreanic (Patch): Attribute annotation modified from None to glotto:Glottocode kore1284
- - Korean (Patch): Attribute annotation modified from None to glotto:Glottocode kore1280
- - Sino-Tibetan-language (Patch): Attribute annotation modified from None to glotto:Glottocode sino1245
- - Burmo-Qiangic-language (Patch): Attribute annotation modified from None to glotto:Glottocode burm1265
- - Burmese (Patch): Attribute annotation modified from None to glotto:Glottocode nucl1310
- - Sinitic (Patch): Attribute annotation modified from None to glotto:Glottocode sini1245
- - Gan-Chinese (Patch): Attribute annotation modified from None to glotto:Glottocode ganc1239
- - Mandarin-Chinese (Patch): Attribute annotation modified from None to glotto:Glottocode mand1471,dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese,glotto:Glottocode mand1471
- - Wu-Chinese (Patch): Attribute annotation modified from None to glotto:Glottocode wuch1236
- - Xiang-Chinese (Patch): Attribute annotation modified from None to glotto:Glottocode xian1251
- - Yue-Chinese (Patch): Attribute annotation modified from None to glotto:Glottocode yuec1235
- - Cantonese (Patch): Attribute annotation modified from None to glotto:Glottocode cant1236
- - Tai-Kadai (Patch): Attribute annotation modified from None to glotto:Glottocode taik1256
- - Thai (Patch): Attribute annotation modified from None to glotto:Glottocode thai1261
+ - Austronesian-language (Patch): Attribute annotation modified from None to glotto:aust1307
+ - Malay (Patch): Attribute annotation modified from None to glotto:nucl1806
+ - Dravidian (Patch): Attribute annotation modified from None to glotto:drav1251,dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages
+ - Tamil (Patch): Attribute annotation modified from None to glotto:tami1289
+ - Indo-European-language (Patch): Attribute annotation modified from None to glotto:indo1319,dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages
+ - Baltic-language (Patch): Attribute annotation modified from None to glotto:east2280
+ - Latvian (Patch): Attribute annotation modified from None to glotto:latv1249
+ - Lithuanian (Patch): Attribute annotation modified from None to glotto:lith1251
+ - Germanic-language (Patch): Attribute annotation modified from None to glotto:germ1287
+ - Danish (Patch): Attribute annotation modified from None to glotto:dani1285
+ - Dutch (Patch): Attribute annotation modified from None to glotto:dutc1256
+ - English (Patch): Attribute annotation modified from None to glotto:stan1293
+ - German (Patch): Attribute annotation modified from None to glotto:stan1295
+ - Icelandic (Patch): Attribute annotation modified from None to glotto:icel1247
+ - Norwegian (Patch): Attribute annotation modified from None to glotto:norw1258
+ - Swedish (Patch): Attribute annotation modified from None to glotto:swed1254
+ - Romance-language (Patch): Attribute annotation modified from None to glotto:roma1334,dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages
+ - Catalan (Patch): Attribute annotation modified from None to glotto:stan1289
+ - French (Patch): Attribute annotation modified from None to glotto:stan1290
+ - Galician (Patch): Attribute annotation modified from None to glotto:gali1258
+ - Gallo-Rhaetian-language (Patch): Attribute annotation modified from None to glotto:gall1280
+ - Italian (Patch): Attribute annotation modified from None to glotto:ital1282
+ - Portuguese (Patch): Attribute annotation modified from None to glotto:port1283
+ - Romanian (Patch): Attribute annotation modified from None to glotto:roma1327
+ - Spanish (Patch): Attribute annotation modified from None to glotto:stan1288
+ - Slavic-language (Patch): Attribute annotation modified from None to glotto:slav1255
+ - Bulgarian (Patch): Attribute annotation modified from None to glotto:bulg1262
+ - Croatian (Patch): Attribute annotation modified from None to glotto:croa1245
+ - Czech (Patch): Attribute annotation modified from None to glotto:czec1258
+ - Macedonian (Patch): Attribute annotation modified from None to glotto:mace1250
+ - Polish (Patch): Attribute annotation modified from None to glotto:poli1260
+ - Russian (Patch): Attribute annotation modified from None to glotto:russ1263
+ - Slovak (Patch): Attribute annotation modified from None to glotto:slov126
+ - Ukrainian (Patch): Attribute annotation modified from None to glotto:ukra1253
+ - Japonic (Patch): Attribute annotation modified from None to glotto:japo1237
+ - Japanese (Patch): Attribute annotation modified from None to glotto:nucl1643
+ - Koreanic (Patch): Attribute annotation modified from None to glotto:kore1284
+ - Korean (Patch): Attribute annotation modified from None to glotto:kore1280
+ - Sino-Tibetan-language (Patch): Attribute annotation modified from None to glotto:sino1245
+ - Burmo-Qiangic-language (Patch): Attribute annotation modified from None to glotto:burm1265
+ - Burmese (Patch): Attribute annotation modified from None to glotto:nucl1310
+ - Sinitic (Patch): Attribute annotation modified from None to glotto:sini1245
+ - Gan-Chinese (Patch): Attribute annotation modified from None to glotto:ganc1239
+ - Mandarin-Chinese (Patch): Attribute annotation modified from None to glotto:mand1471,dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese,glotto:mand1471
+ - Wu-Chinese (Patch): Attribute annotation modified from None to glotto:wuch1236
+ - Xiang-Chinese (Patch): Attribute annotation modified from None to glotto:xian1251
+ - Yue-Chinese (Patch): Attribute annotation modified from None to glotto:yuec1235
+ - Cantonese (Patch): Attribute annotation modified from None to glotto:cant1236
+ - Tai-Kadai (Patch): Attribute annotation modified from None to glotto:taik1256
+ - Thai (Patch): Attribute annotation modified from None to glotto:thai1261
  - Turkic (Patch): Attribute annotation modified from None to glotto:turk1311
- - Turkish (Patch): Attribute annotation modified from None to glotto:Glottocode nucl1301
- - Uralic (Patch): Attribute annotation modified from None to glotto:Glottocode ural1272
- - Estonian (Patch): Attribute annotation modified from None to glotto:Glottocode esto1258
- - Finnish (Patch): Attribute annotation modified from None to glotto:Glottocode finn1318
- - Hungarian (Patch): Attribute annotation modified from None to glotto:Glottocode hung1274
- - Bigram (Patch): Attribute annotation modified from None to glotto:Glottocode hung1274,dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram
+ - Turkish (Patch): Attribute annotation modified from None to glotto:nucl1301
+ - Uralic (Patch): Attribute annotation modified from None to glotto:ural1272
+ - Estonian (Patch): Attribute annotation modified from None to glotto:esto1258
+ - Finnish (Patch): Attribute annotation modified from None to glotto:finn1318
+ - Hungarian (Patch): Attribute annotation modified from None to glotto:hung1274
+ - Bigram (Patch): Attribute annotation modified from None to glotto:hung1274,dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram
  - Letter-character (Patch): Attribute annotation modified from None to dc:source Original
  - Logogram (Patch): Attribute annotation modified from None to dc:source Original
  - Noncharacter (Patch): Attribute annotation modified from None to dc:source Original,rdfs:comment Chen J. Sun D. Wang P. Lv Y. and Zhang Y. (2022). Brain mechanism of Chinese character processing in rapid stream stimulation. Journal of Neurolinguistics 63 101084. https://doi.org/10.1016/j.jneuroling.2022.101084
@@ -278,39 +278,39 @@ HED_lang_1.0.0.xml vs HED_lang_1.1.0.tsv
  - header_attributes (Patch): header_attributes changed from {'version': '1.0.0', 'library': 'lang', 'withStandard': '8.3.0', 'unmerged': 'True'} to {'version': '1.1.0', 'library': 'lang', 'withStandard': '8.4.0', 'unmerged': 'True'}
 
 **Sources:**
- - Wikipedia (Major): Row Wikipedia missing in first schema
+ - Wikipedia (Minor): Row Wikipedia missing in first schema
 
 **Prefixes:**
- - glotto: (Major): Row glotto: missing in first schema
- - terms: (Major): Row terms: missing in first schema
- - ncit: (Major): Row ncit: missing in first schema
- - skos: (Major): Row skos: missing in first schema
- - obogo: (Major): Row obogo: missing in first schema
- - rdf: (Major): Row rdf: missing in first schema
- - owl: (Major): Row owl: missing in first schema
- - xml: (Major): Row xml: missing in first schema
- - dc: (Major): Row dc: missing in first schema
- - foaf: (Major): Row foaf: missing in first schema
- - rdfs: (Major): Row rdfs: missing in first schema
- - xsd: (Major): Row xsd: missing in first schema
- - iao: (Major): Row iao: missing in first schema
- - prov: (Major): Row prov: missing in first schema
+ - iao: (Minor): Row iao: missing in first schema
+ - prov: (Minor): Row prov: missing in first schema
+ - owl: (Minor): Row owl: missing in first schema
+ - rdfs: (Minor): Row rdfs: missing in first schema
+ - ncit: (Minor): Row ncit: missing in first schema
+ - xsd: (Minor): Row xsd: missing in first schema
+ - rdf: (Minor): Row rdf: missing in first schema
+ - terms: (Minor): Row terms: missing in first schema
+ - obogo: (Minor): Row obogo: missing in first schema
+ - foaf: (Minor): Row foaf: missing in first schema
+ - dc: (Minor): Row dc: missing in first schema
+ - skos: (Minor): Row skos: missing in first schema
+ - xml: (Minor): Row xml: missing in first schema
+ - glotto: (Minor): Row glotto: missing in first schema
 
 **AnnotationPropertyExternal:**
- - ('dc:', 'description') (Major): Row ('dc:', 'description') missing in first schema
- - ('dc:', 'format') (Major): Row ('dc:', 'format') missing in first schema
- - ('dc:', 'publisher') (Major): Row ('dc:', 'publisher') missing in first schema
- - ('dc:', 'title') (Major): Row ('dc:', 'title') missing in first schema
- - ('glotto:', 'Glottocode') (Major): Row ('glotto:', 'Glottocode') missing in first schema
- - ('dc:', 'type') (Major): Row ('dc:', 'type') missing in first schema
- - ('dc:', 'contributor') (Major): Row ('dc:', 'contributor') missing in first schema
- - ('dc:', 'source') (Major): Row ('dc:', 'source') missing in first schema
- - ('dc:', 'subject') (Major): Row ('dc:', 'subject') missing in first schema
- - ('dc:', 'language') (Major): Row ('dc:', 'language') missing in first schema
- - ('dc:', 'date') (Major): Row ('dc:', 'date') missing in first schema
- - ('obogo:', 'has_dbxref') (Major): Row ('obogo:', 'has_dbxref') missing in first schema
- - ('terms:', 'license') (Major): Row ('terms:', 'license') missing in first schema
- - ('foaf:', 'homepage') (Major): Row ('foaf:', 'homepage') missing in first schema
- - ('dc:', 'identifier') (Major): Row ('dc:', 'identifier') missing in first schema
- - ('dc:', 'relation') (Major): Row ('dc:', 'relation') missing in first schema
- - ('dc:', 'creator') (Major): Row ('dc:', 'creator') missing in first schema
+ - ('dc:', 'subject') (Minor): Row ('dc:', 'subject') missing in first schema
+ - ('dc:', 'format') (Minor): Row ('dc:', 'format') missing in first schema
+ - ('dc:', 'source') (Minor): Row ('dc:', 'source') missing in first schema
+ - ('dc:', 'date') (Minor): Row ('dc:', 'date') missing in first schema
+ - ('terms:', 'license') (Minor): Row ('terms:', 'license') missing in first schema
+ - ('obogo:', 'has_dbxref') (Minor): Row ('obogo:', 'has_dbxref') missing in first schema
+ - ('foaf:', 'homepage') (Minor): Row ('foaf:', 'homepage') missing in first schema
+ - ('dc:', 'title') (Minor): Row ('dc:', 'title') missing in first schema
+ - ('dc:', 'publisher') (Minor): Row ('dc:', 'publisher') missing in first schema
+ - ('glotto:', 'Glottocode') (Minor): Row ('glotto:', 'Glottocode') missing in first schema
+ - ('dc:', 'type') (Minor): Row ('dc:', 'type') missing in first schema
+ - ('dc:', 'relation') (Minor): Row ('dc:', 'relation') missing in first schema
+ - ('dc:', 'contributor') (Minor): Row ('dc:', 'contributor') missing in first schema
+ - ('dc:', 'identifier') (Minor): Row ('dc:', 'identifier') missing in first schema
+ - ('dc:', 'language') (Minor): Row ('dc:', 'language') missing in first schema
+ - ('dc:', 'creator') (Minor): Row ('dc:', 'creator') missing in first schema
+ - ('dc:', 'description') (Minor): Row ('dc:', 'description') missing in first schema
