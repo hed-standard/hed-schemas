@@ -1,12 +1,13 @@
 
 # CHANGELOG for HED schema
-## Changes for HED 8.3.0 --> HED 8.4.0
+## Changes for HED 8.4.0 Release 6/1/2025
 
 HED8.3.0 vs HED8.4.0
 
 **Key overall changes:**   
   - Added extra sections to the schema object and to the .mediawiki and .xml representations so that all formats have equivalent information.
-  - 
+  - Added annotation attribute to tag elements.
+  - Updated the associated XML schema to HED8.4.0.xsd.
 
 **Tags:**
  - Building-part (Minor): Item Building-part added
@@ -35,7 +36,7 @@ HED8.3.0 vs HED8.4.0
  - annotation (Minor): Item annotation added
 
 **Misc Metadata:**
- - header_attributes (Patch): header_attributes changed from {'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'} to {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'}
+ - header_attributes (Patch): header_attributes changed from {'version': '8.3.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://github.com/hed-standard/hed-specification/raw/master/hedxml/HED8.0.0.xsd', 'unmerged': 'True'} to {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'}
 
 **Sources:**
  - Wikipedia (Major): Row Wikipedia missing in first schema

@@ -2,7 +2,7 @@
 
 # HED standard schema
 
-### HED schema version 8.2.0 was released 4/28/2023.
+### HED schema version 8.4.0 was released 6/1/2025.
 
 **Note** This repository is primarily for managing the HED vocabulary. If you just 
 want to annotate your data, please visit the [**HED resources**](https://www.hed-resources.org) documentation website. 
