@@ -3,7 +3,7 @@
 
 ## Release 1.1.0 - June 10, 2025
 
-HThis is a minor release of the HED lang library schema. It includes changes to the schema and tags, as well as updates to the documentation. 
+This is a minor release of the HED lang library schema. It includes changes to the schema and tags, as well as updates to the documentation. 
 The changes are backward compatible with previous version of the schema.
 
 - The annotations have been moved to a schema attribute to allow programmatic linking to other ontologies.
