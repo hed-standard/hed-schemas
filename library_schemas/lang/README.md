@@ -10,7 +10,7 @@ The current release of the schema is primarily centered around written language,
 
 ## Example annotations
 
-You can find several example annotations of recent work in psycholinguistics in our [preprint](https://doi.org/10.31234/osf.io/bjz9q).
+You can find several example annotations of recent work in psycholinguistics in the [HED Lang ref](https://www.nature.com/articles/s41597-024-04282-0#:~:text=The%20HED%20LANG%20extension%20will,readily%20reused%20for%20further%20analysis).
 
 Additionally, we have added annotations to several datasets which are publicly available on OpenNeuro. Their annotated versions (and links to the original) can be found here:
 
