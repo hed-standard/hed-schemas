@@ -37,7 +37,7 @@ jobs:
         run: pip install pre-commit
 
       - name: Install dependencies
-        run: pip install git+https://github.com/hed-standard/hed-python.git@develop
+        run: pip install git+https://github.com/hed-standard/hed-python.git@main
 
       - name: Run pre-commit on changed files
         run: |

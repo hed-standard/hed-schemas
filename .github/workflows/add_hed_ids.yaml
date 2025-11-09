@@ -40,7 +40,7 @@ jobs:
             echo "Provisional branch does not exist on remote, skipping delete."
           fi
 
-      - name: Create new provisional branch from develop
+      - name: Create new provisional branch from main
         run: |
           git checkout main
           git pull
@@ -53,7 +53,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install git+https://github.com/hed-standard/hed-python.git@develop
+        run: pip install git+https://github.com/hed-standard/hed-python.git@main
 
       - name: Update schemas
         run: |
