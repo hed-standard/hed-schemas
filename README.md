@@ -76,13 +76,8 @@ schema that is located in the `prerelease` subdirectory.
 Upon final review, the new HED schema is released and moved to the
 `hedxml` directory of the respective library schema.
 
-For a more complete view of the process see the [**HED schema developer's guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html).
+For a more complete view of the process see the [**HED schema developer's guide**](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 
-## Tools to help with HED annotations
-The GUI tool [**CTagger**](https://www.hed-resources.org/en/latest/CTaggerGuiTaggingTool.html) is available to help users with the annotation process. 
-CTagger can be used as a standalone application or can be called from EEGLAB via the
-[**hedtools plug-in**](https://www.hed-resources.org/en/latest/HedMatlabTools.html) to annotate an EEGLAB dataset/STUDY directly. 
-Please refer to the linked repositories for more documentation on how to start HED-tagging using CTagger.
 
 ## Web-based HED tools
 The current online HED tools include an online validator of spreadsheets (Excel or tsv)
@@ -164,7 +159,7 @@ and events with temporal extent.
 > [**Stable link for the latest version of the HED standard schema**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml).
 
 The full HED specification is available at the
-[**HED specification**](https://hed-specification.readthedocs.io/en/latest/index.html) website. 
+[**HED specification**](https://www.hedtags.org/hed-specification) website. 
 
 ### HED ontologies
 Efforts are underway to map HED to a formal ontology in order to leverage links to 
