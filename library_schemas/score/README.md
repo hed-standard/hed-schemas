@@ -7,7 +7,7 @@ The HED-SCORE library schema allows neurologists, neurophysiologists, and brain 
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
-For more information see the [**hed-schemas docs**](https://hed-schemas.readthedocs.io/en/latest/).
+For more information see the [**hed-schemas docs**](https://www.hedtags.org/hed-schemas/).
 
 The Standardized Computer-based Organized Reporting of EEG (SCORE) is a standard terminology for scalp EEG data assessment designed for use in clinical practice that may also be used for research purposes.
 The SCORE standard defines terms for describing phenomena observed in scalp EEG data. It is also potentially applicable (with some suitable extensions) to EEG recorded in critical care and neonatal settings.

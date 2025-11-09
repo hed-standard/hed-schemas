@@ -1,4 +1,4 @@
-[![Documentation Status](https://readthedocs.org/projects/hed-schemas/badge/?version=latest)](https://hed-schemas.readthedocs.io/en/latest/?badge=latest)
+[![Documentation](https://img.shields.io/badge/docs-hedtags.org-blue.svg)](https://www.hedtags.org/hed-schemas)
 Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) 
 SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
 LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483)
@@ -16,8 +16,8 @@ neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking,
 motion-capture, EKG, and audiovisual recording. 
 
 See the [**HED project homepage**](https://www.hedtags.org) and
-[**HED resources**](https://www.hed-resources.org),
-particularly the [**How do you use HED?**](https://www.hed-resources.org/en/latest/HowCanYouUseHed.html)
+[**HED resources**](https://www.hedtags.org/hed-resources),
+particularly the [**How do you use HED?**](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html)
 for information about how to get started or how to get involved in the HED community.
 
 ## Viewing HED schemas
@@ -26,14 +26,14 @@ The HED ecosystem includes a **standard schema** containing the basic vocabulary
 needed for annotation of experimental data as well as specialized **library schemas** for
 the additional field-specific terms needed to complete an annotation.
 
-All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/display_hed.html).
+All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/hed-schema-browser).
 
 The following table summarizes the current versions of the HED schemas.
 
 | Schema  | Latest | Description                                                                                                                                                                                          | Prerelease | DOI  | 
 | ------- |--------|-------------------------------------------------------------------------------|------------| ---- |
 | [**standard**](./standard_schema)  | 8.4.0  | Basic vocabulary for annotating data.<br/> HED_0010000 - HED_0039999   | 8.5.0      | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 2.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://hed-schemas.readthedocs.io/en/latest/hed_score_schema.html).) <br/> HED_0040000 - HED_0059999  | 2.2.0      | 10.5281/zenodo.7897596  |
+| [**score**](library_schemas/score) | 2.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://www.hedtags.org/hed-schemas/hed_score_schema.html).) <br/> HED_0040000 - HED_0059999  | 2.2.0      | 10.5281/zenodo.7897596  |
 | [**lang**](library_schemas/lang)   | 1.1.0  | LANG linguistic stimuli annotation vocabulary.<br/> HED_0060000 - HED_0079999   | 1.2.0      | 10.5281/zenodo.13987483 |
 | [**slam**](library_schemas/slam) |        | SLAM (Sensor Location and Motion).<br/> HED_0080000 - HED_0099999    | 1.0.0      | |  
 | [**mouse**](library_schemas/mouse)  |        | EEG-specific vocabulary.<br/> HED_0100000 - HED_0119999        | 1.0.0      |  |
