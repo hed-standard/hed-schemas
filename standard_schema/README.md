@@ -5,10 +5,10 @@
 ### HED schema version 8.4.0 was released 6/1/2025.
 
 **Note** This repository is primarily for managing the HED vocabulary. If you just 
-want to annotate your data, please visit the [**HED resources**](https://www.hed-resources.org) documentation website. 
+want to annotate your data, please visit the [**HED resources**](https://www.hedtags.org/hed-resources) documentation website. 
 
 The full HED specification is available at the
-[**HED specification**](https://hed-specification.readthedocs.io/en/latest/index.html) website. 
+[**HED specification**](https://www.hedtags.org/hed-specification/) website. 
 
 ## What is HED?
 HED is an evolving framework for the description and formal annotation of events 

@@ -96,7 +96,7 @@ The specification indicates that annotations using HED tags from this library
 have the `la:` prefix (e.g., `la:XXX`).
 
 
-Starting with HED schema version 8.2.0, HED supports [partnered schemas](https://www.hed-resources.org/en/latest/HedSchemas.html#types-of-schemas), which are library schemas that are merged with a standard schema.
+Starting with HED schema version 8.2.0, HED supports [partnered schemas](https://www.hedtags.org/hed-resources/HedSchemas.html#types-of-schemas), which are library schemas that are merged with a standard schema.
 
 The following example specifies that the annotations in this dataset use HED standard schema
 version 8.2.0, along with library schema `score` version 1.1.0.

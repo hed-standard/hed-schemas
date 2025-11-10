@@ -42,7 +42,7 @@ indicating your interest. List:
 - email [mailto:hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com) with contact information.
 
 You should also read over the 
-[**HED schema developer's guide**](https://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html).
+[**HED schema developer's guide**](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 The HED Working Group will arrange a meeting to discuss the development of the library schema.
 
 ### Corrections to documentation and bug reports
