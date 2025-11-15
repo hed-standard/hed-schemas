@@ -29,7 +29,7 @@ Additionally, we have added annotations to several datasets which are publicly a
 
 ## Viewing HED LANG
 
-The HED LANG library schema can be viewed using the [**HED Schema Browser**](https://www.hedtags.org/hed_schema_browser).
+The HED LANG library schema can be viewed using the [**HED Schema Browser**](https://www.hedtags.org/hed-schema-browser).
 
 
 ## Stable links to HED LANG
