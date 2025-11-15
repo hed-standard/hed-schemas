@@ -33,7 +33,7 @@ terms from more specialized vocabularies.
 ## Viewing the HED schema
 The HED schema vocabulary (all versions and the prerelease) can be viewed at:
 
-> [**Expandable html view of the HED schema**](http://www.hedtags.org/display_hed.html) 
+> [**Expandable html view of the HED schema**](http://www.hedtags.org/hed-schema-browser) 
 
 ## HED papers
 

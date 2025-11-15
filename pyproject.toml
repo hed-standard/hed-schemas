@@ -38,16 +38,6 @@ requires-python = ">=3.10"
 "Bug Tracker" = "https://github.com/hed-standard/hed-schemas/issues"
 "HED Resources" = "https://www.hedtags.org/hed-resources"
 
-[project.optional-dependencies]
-docs = [
-    "sphinx>=7.0.0",
-    "furo>=2023.9.10",
-    "sphinx-copybutton>=0.5.2",
-    "myst-parser>=2.0.0",
-    "sphinx-autodoc-typehints>=1.24.0",
-    "linkify-it-py>=2.0.0",
-]
-
 [tool.codespell]
-skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv'
-ignore-words-list = 'te,parms'
+skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
+ignore-words-list = 'te,parms,trough'

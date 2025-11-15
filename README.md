@@ -17,7 +17,7 @@ motion-capture, EKG, and audiovisual recording.
 
 See the [**HED project homepage**](https://www.hedtags.org) and
 [**HED resources**](https://www.hedtags.org/hed-resources),
-particularly the [**How do you use HED?**](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html)
+particularly the [**How can you use HED?**](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html)
 for information about how to get started or how to get involved in the HED community.
 
 ## Viewing HED schemas
@@ -41,28 +41,34 @@ The following table summarizes the current versions of the HED schemas.
 
 ## HED formats
 HED schemas are stored in three different formats:
-MediaWiki (`.mediawiki`), XML (`.xml`), and tabular (`.tsv`).
+MediaWiki (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`).
+All formats contain the same information and conversion among formats is lossless.
 An online schema conversion tool is available at as part of the
 [**HED online tools**](https://hedtools.org/hed/schemas).
 
 ### MediaWiki format
-The `.mediawiki` Markdown format is used by schema developers to create and
-maintain HED schemas. For each schema, the `.mediawiki` versions are
-stored in the respective `hedwiki` directory for the schema.
+The `.mediawiki` versions are stored in the respective `hedwiki` directory for the schema.
+This text format is easy to view in GitHub and easy to edit.
+For this reason, the `.mediawiki` markdown format is often used by schema developers to create and
+maintain HED schemas. 
 
 ### XML format
+The XML versions are
+stored in the respective `hedxml` directory for the schema.
 The XML (`.xml`) format used with all HED analysis and validation tools.
 It is never created directly by schema developers, but rather created from either the
 MediaWiki or the tabular versions of the schema.
-For each schema, the XML versions are
-stored in the respective `hedxml` directory for the schema.
-The XML and MediaWiki contain equivalent information.
+
+### JSON format
+The `.json` versions are stored in the respective `hedjson` directory for the schema.
+The JSON (`.json`) format is organized in a flat dictionary for easy lookup by AI tools.
 
 ### Tabular format
-The `.tsv` format is a tabular  (tab-separated) text format.
+The `.tsv` format is a tabular (tab-separated) text format.
 Each type of entity in the HED schema (e.g., tags, unit classes, etc.) has its own tsv file.
 For each schema the tabular versions are stored in the respective `hedtsv` directory for the schema.
-The tabular version may contain additional structural information.
+The tabular version may contain additional structural information in additional files that
+are relevant to the representation of HED as a formal ontology.
 
 ## HED revision process
 If you want to suggest a new feature or a change to the standard HED schema or one
@@ -82,9 +88,10 @@ For a more complete view of the process see the [**HED schema developer's guide*
 ## Web-based HED tools
 The current online HED tools include an online validator of spreadsheets (Excel or tsv)
 containing HED tags. 
-Schema tools are available for validating and converting HED schema specifications between `.mediawiki` and `.xml` formats. 
+Schema tools are available for validating and converting HED schemas between the four
+supported formats (`.mediawiki`, `.xml`, `.json`, and `.tsv`). 
 
-The released version of the web-based HED tools is located at [**https://hedtools.org**](https://hedtools.org).
+The released version of the web-based HED tools is located at [**https://hedtools.org/hed**](https://hedtools.org/hed).
 The development version of the tools, used to test features before release,
 is located at [**https://hedtools.org/hed_dev**](https://hedtools.org/hed_dev).
 
@@ -140,13 +147,13 @@ HED schema version number and the design generation.
 
 
 HED-1G introduced the basic ideas of annotation using path strings and is
-still in use in the [HEADIT archive](https://headit.ucsd.edu). 
+still in use in the HEADIT archive. 
 
 A major redesign of HED, HED-2G released in 2016 (4.0.0 <= schema version < 8.0.0), 
 orthogonalized the vocabulary terms and introduced parentheses for grouping modifiers
 with the terms they modify, resulting in much improved annotation. 
 
-The second majoring restructuring, HED-3G (7.x.x < schema version), 
+The second majoring restructuring, HED-3G (8.0.0 <= schema version), 
 has resulted in a dramatic improvement in capabilities, including the 
 introduction of annotations of condition variables and experimental 
 design within the data as well as the ability to handle event context 
