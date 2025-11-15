@@ -14,7 +14,7 @@ please post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) t
 ## How to cite
 > Denissen, M., Pöll, B., Robbins, K., Makeig, S. & Hutzler, F.  
 > HED LANG – A Hierarchical Event Descriptors library extension for annotation of language cognition experiments  
-> Sci Data 11, 1428 (2024). https://doi.org/10.1038/s41597-024-04282-0
+> Sci Data 11, 1428 (2024). https://doi.org/10.1038/s41597-024-04282-0.
 
 ## Example annotations
 
