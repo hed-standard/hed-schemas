@@ -38,8 +38,6 @@ requires-python = ">=3.10"
 "Bug Tracker" = "https://github.com/hed-standard/hed-schemas/issues"
 "HED Resources" = "https://www.hedtags.org/hed-resources"
 
-[project.optional-dependencies]
-
 [tool.codespell]
 skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
 ignore-words-list = 'te,parms,trough'
