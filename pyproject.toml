@@ -28,6 +28,7 @@ keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "n
 [tool.codespell]
 skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
 ignore-words-list = 'te,parms,trough'
+uri-ignore-words-list = '*'
 
 [tool.black]
 line-length = 88

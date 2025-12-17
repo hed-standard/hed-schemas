@@ -26,8 +26,10 @@ jobs:
       uses: codespell-project/actions-codespell@v2
       with:
         check_filenames: false
+        check_hidden: false
         skip: '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
         ignore_words_list: 'te,parms,trough'
+        uri_ignore_words_list: '*'
         path: |
           docs/*
           ${{ env.DIRS_TO_CHECK }}

@@ -4,54 +4,41 @@
 
 ### HED schema version 8.4.0 was released 6/1/2025.
 
-**Note** This repository is primarily for managing the HED vocabulary. If you just 
-want to annotate your data, please visit the [**HED resources**](https://www.hedtags.org/hed-resources) documentation website. 
+**Note** This repository is primarily for managing the HED vocabulary. If you just want to annotate your data, please visit the [**HED resources**](https://www.hedtags.org/hed-resources) documentation website.
 
-The full HED specification is available at the
-[**HED specification**](https://www.hedtags.org/hed-specification/) website. 
+The full HED specification is available at the [**HED specification**](https://www.hedtags.org/hed-specification/) website.
 
 ## What is HED?
-HED is an evolving framework for the description and formal annotation of events 
-identified in time series data. The HED ecosystem includes a structured vocabulary (HED schema)
-together with tools for validation and for using HED annotations in data search, 
-extraction, and analysis. While HED can be used to annotate any type of event, 
-the current HED community focuses on annotation of events in human 
-electrophysiological and behavioral data such as EEG, MEG, iEEG, eye-tracking, 
-motion-capture, EKG, and audiovisual recording.
-See [**HED resources**](https://www.hed-resources.org/en/latest/) for
-additional information, tutorials, and links to resources.
-See the [**hed-schemas README**](https://github.com/hed-standard/hed-schemas/blob/main/README.md) for more detailed information
-about versioning, availability, and other information.
+
+HED is an evolving framework for the description and formal annotation of events identified in time series data. The HED ecosystem includes a structured vocabulary (HED schema) together with tools for validation and for using HED annotations in data search, extraction, and analysis. While HED can be used to annotate any type of event, the current HED community focuses on annotation of events in human electrophysiological and behavioral data such as EEG, MEG, iEEG, eye-tracking, motion-capture, EKG, and audiovisual recording. See [**HED resources**](https://www.hed-resources.org/en/latest/) for additional information, tutorials, and links to resources. See the [**hed-schemas README**](https://github.com/hed-standard/hed-schemas/blob/main/README.md) for more detailed information about versioning, availability, and other information.
 
 ## Role of the standard schema
-The purpose of the HED standard schema is to provide a standardized 
-annotation vocabulary that is generally applicable for most neuroimaging
-and behavioral experiments. More specialized terms can be available by
-extending tag paths in the standard schema or, if available, by using
-terms from more specialized vocabularies.
+
+The purpose of the HED standard schema is to provide a standardized annotation vocabulary that is generally applicable for most neuroimaging and behavioral experiments. More specialized terms can be available by extending tag paths in the standard schema or, if available, by using terms from more specialized vocabularies.
 
 ## Viewing the HED schema
+
 The HED schema vocabulary (all versions and the prerelease) can be viewed at:
 
-> [**Expandable html view of the HED schema**](http://www.hedtags.org/hed-schema-browser) 
+> [**Expandable html view of the HED schema**](http://www.hedtags.org/hed-schema-browser)
 
 ## HED papers
 
 The following papers give an overview of HED and how it is used.
 
-> Makeig, S. and K. Robbins (2024).      
-> Events in context—The HED framework for the study of brain, experience and behavior.    
-> Front. Neuroinform. Vol. 18 Research Topic 15 Years of impact, open neuroscience.  
-> [https://doi.org/10.3389/fninf.2024.1292667]( https://doi.org/10.3389/fninf.2024.1292667).  
+> Makeig, S. and K. Robbins (2024).\
+> Events in context—The HED framework for the study of brain, experience and behavior.\
+> Front. Neuroinform. Vol. 18 Research Topic 15 Years of impact, open neuroscience.\
+> [https://doi.org/10.3389/fninf.2024.1292667](https://doi.org/10.3389/fninf.2024.1292667).
 
-> Robbins, K., Truong, D., Jones, A., Callanan, I., & Makeig, S. (2021).  
-> Building FAIR functionality: Annotating event-related imaging data using Hierarchical Event Descriptors (HED).   
-> Neuroinformatics Special Issue Building the NeuroCommons. Neuroinformatics https://doi.org/10.1007/s12021-021-09537-4.  
+> Robbins, K., Truong, D., Jones, A., Callanan, I., & Makeig, S. (2021).\
+> Building FAIR functionality: Annotating event-related imaging data using Hierarchical Event Descriptors (HED).\
+> Neuroinformatics Special Issue Building the NeuroCommons. Neuroinformatics https://doi.org/10.1007/s12021-021-09537-4.\
 > [https://link.springer.com/article/10.1007/s12021-021-09537-4](https://link.springer.com/article/10.1007/s12021-021-09537-4).
 
-> Robbins, K., Truong, D., Appelhoff, S., Delorme, A., & Makeig, S. (2021).  
-> Capturing the nature of events and event context using Hierarchical Event Descriptors (HED).  
-> NeuroImage Special Issue Practice in MEEG. NeuroImage 245 (2021) 118766.  
+> Robbins, K., Truong, D., Appelhoff, S., Delorme, A., & Makeig, S. (2021).\
+> Capturing the nature of events and event context using Hierarchical Event Descriptors (HED).\
+> NeuroImage Special Issue Practice in MEEG. NeuroImage 245 (2021) 118766.\
 > [https://www.sciencedirect.com/science/article/pii/S1053811921010387](https://www.sciencedirect.com/science/article/pii/S1053811921010387).
 
 ## Stable links for HED validation
@@ -59,4 +46,3 @@ The following papers give an overview of HED and how it is used.
 > [**Stable directory link for schema lookup**](https://github.com/hed-standard/hed-schemas/tree/main/standard_schema/hedxml)
 
 > [**Stable link for latest version**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml)
-

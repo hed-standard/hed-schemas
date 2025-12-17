@@ -7,21 +7,25 @@ This directory contains utility scripts for the hed-schemas repository.
 ### Building Documentation Locally
 
 **Python (cross-platform):**
+
 ```bash
 python scripts/build_docs.py
 ```
 
 **Windows:**
+
 ```cmd
 scripts\build-docs.bat
 ```
 
 **Unix/Mac:**
+
 ```bash
 ./scripts/build-docs.sh
 ```
 
 This will:
+
 1. Install documentation dependencies from `docs/requirements.txt`
 2. Build the Sphinx documentation to `docs/_build/html/`
 3. Show you where to find the built HTML files
@@ -31,21 +35,25 @@ This will:
 After building, you can serve the documentation locally:
 
 **Python (cross-platform):**
+
 ```bash
 python scripts/serve_docs.py
 ```
 
 **Windows:**
+
 ```cmd
 scripts\serve-sphinx.bat
 ```
 
 **Unix/Mac:**
+
 ```bash
 ./scripts/serve-sphinx.sh
 ```
 
 This will:
+
 1. Start a local HTTP server on port 8000
 2. Open your browser to view the documentation
 3. Allow you to view the documentation as it would appear online
@@ -67,7 +75,8 @@ python scripts/serve_docs.py --no-browser
 ### verify_branch.sh
 
 Pre-commit hook that verifies:
-- Branch naming conventions (standard_*, score_*, lang_*, etc.)
+
+- Branch naming conventions (standard\_*, score\_*, lang\_\*, etc.)
 - Changes are only in appropriate schema directories
 - Changes are in prerelease/ subdirectories
 
