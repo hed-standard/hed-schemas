@@ -1,11 +1,11 @@
-[build-system]
-requires = ["setuptools>=42"]
-build-backend = "setuptools.build_meta"
+# This is NOT a Python package - it's a schema repository
+# The pyproject.toml file is used only for tool configuration (codespell, etc.)
+# HED schemas are accessed via URLs, not pip install
+# Each schema (standard, score, lang, etc.) has its own independent semantic version
 
 [project]
 name = "hed-schemas"
-version = "1.0.0"
-description = "Hierarchical Event Descriptor (HED) schemas for annotating events and experimental metadata."
+description = "Official HED (Hierarchical Event Descriptors) vocabulary schemas in MediaWiki, XML, JSON, and TSV formats."
 readme = "README.md"
 authors = [
     { name = "HED Working Group" },
@@ -14,30 +14,68 @@ maintainers = [
     { name = "Kay Robbins", email = "Kay.Robbins@utsa.edu" },
 ]
 license = {text = "MIT"}
-keywords = ["HED", "hierarchical event descriptors", "schemas", "neuroscience", "BIDS", "events", "metadata", "annotation"]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Operating System :: OS Independent",
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Science/Research",
-    "Topic :: Scientific/Engineering",
-    "License :: OSI Approved :: MIT License",
-]
-
-requires-python = ">=3.10"
+keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "neuroscience", "BIDS", "events", "metadata", "annotation"]
 
 [project.urls]
 "Homepage" = "https://www.hedtags.org/"
 "Documentation" = "https://www.hedtags.org/hed-schemas/"
+"Schema Browser" = "https://www.hedtags.org/hed-schema-browser/"
 "Repository" = "https://github.com/hed-standard/hed-schemas/"
 "Bug Tracker" = "https://github.com/hed-standard/hed-schemas/issues"
 "HED Resources" = "https://www.hedtags.org/hed-resources"
+"HED Specification" = "https://www.hedtags.org/hed-specification/"
 
 [tool.codespell]
 skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
 ignore-words-list = 'te,parms,trough'
+uri-ignore-words-list = '*'
+
+[tool.black]
+line-length = 88
+target-version = ['py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | _build
+  | build
+  | dist
+  | docs/_build
+  | standard_schema
+  | library_schemas
+  | schemas_latest_json
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+exclude = [
+    ".git",
+    ".venv",
+    "_build",
+    "build",
+    "dist",
+    "docs/_build",
+    "standard_schema",
+    "library_schemas",
+    "schemas_latest_json",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]  # unused imports in __init__.py

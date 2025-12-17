@@ -1,0 +1,46 @@
+# Lychee link checker configuration for hed-schemas
+
+# Exclude patterns
+exclude = [
+    # Exclude localhost and local file links
+    'http://localhost*',
+    'file:///*',
+    
+    # Exclude common false positives
+    'https://github.com/.*/settings/*',
+    'https://github.com/.*/edit/*',
+    
+    # Exclude dynamic URLs that may not work in CI
+    'https://www.hedtags.org/hed-schema-browser*',
+]
+
+# Accept status codes
+accept = [
+    200,    # OK
+    204,    # No Content
+    206,    # Partial Content (for range requests)
+    429,    # Too Many Requests (rate limiting)
+    999,    # Some sites use this instead of 429
+]
+
+# Retry settings
+max_retries = 3
+retry_wait_time = 2
+
+# Timeout settings
+timeout = 20
+
+# Headers to send with requests
+headers = [
+    "Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "User-Agent=Mozilla/5.0 (compatible; Lychee/1.0)"
+]
+
+# Follow redirects
+max_redirects = 10
+
+# Check links in markdown files
+include_verbatim = false
+
+# Cache results for better performance
+cache = true

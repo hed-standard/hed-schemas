@@ -162,3 +162,4 @@ Desktop.ini
 
 # Status and temporary files
 status/
+.status/

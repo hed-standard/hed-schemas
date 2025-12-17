@@ -1729,7 +1729,7 @@ and updated the `relatedTags` of other spatial relationship tags.
 
 * `{suggestedTag=Attribute/Sensory}` changed to `{suggestedTag=Sensory-presentation}` (correction).
 * `{suggestedTag=Attribute/Sensory}` changed to `{suggestedTag=Sensory-presentation}` (correction).
-* `Fraction`: betwee spelling error corrected in description (correction). 
+* `Fraction`: between spelling error corrected in description (correction). 
 * `Parameter-label`: the `valueClass` changed from `labelClass` to `nameClass` (correction).
 * `Timbre`: the `valueClass` changed from `labelClass` to `nameClass` (correction).
 * `HSV-value`: the AAttribute spelling error corrected in description (correction).
