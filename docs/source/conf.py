@@ -72,7 +72,7 @@ pygments_style = "sphinx"
 pygments_dark_style = "monokai"
 
 html_theme = "furo"
-html_title = "HED MATLAB Tools"
+html_title = "HED Schemas"
 
 # Add logo
 html_logo = "_static/images/croppedWideLogo.png"
@@ -88,7 +88,7 @@ html_theme_options = {
         "color-brand-primary": "#58a6ff",
         "color-brand-content": "#58a6ff",
     },
-    "source_repository": "https://github.com/hed-standard/hed-matlab/",
+    "source_repository": "https://github.com/hed-standard/hed-schemas/",
     "source_branch": "main",
     "source_directory": "docs/source/",
 }

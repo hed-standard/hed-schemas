@@ -23,7 +23,7 @@ This guide provides information for users who want to view, use, or understand H
 
 ## Viewing HED schemas
 
-### HED Schema Browser
+### HED schema browser
 
 The easiest way to explore HED schemas is through the [**HED Schema Browser**](https://www.hedtags.org/hed-schema-browser):
 
@@ -701,7 +701,7 @@ ______________________________________________________________________
 
 If you encounter issues not covered here:
 
-1. Check the [GitHub Issues](https://github.com/hed-standard/hed-matlab/issues) page
+1. Check the [GitHub Issues](https://github.com/hed-standard/hed-schemas/issues) page
 2. Review the [HED Resources](https://www.hedtags.org/hed-resources) documentation
 3. Ask questions on the [HED forum](https://github.com/hed-standard/hed-specification/discussions)
 4. Open a new issue with a minimal reproducible example

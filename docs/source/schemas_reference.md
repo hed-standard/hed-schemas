@@ -1,8 +1,8 @@
-# HED Schemas Reference
+# HED schemas reference
 
 This page provides detailed information about each available HED schema, including links to different formats, versions, and documentation.
 
-## Standard Schema
+## Standard schema
 
 The HED standard schema contains the basic vocabulary for annotating experiments across all domains.
 
@@ -56,7 +56,7 @@ The HED standard schema provides fundamental terms for describing:
 
 ______________________________________________________________________
 
-## SCORE Library Schema
+## SCORE library schema
 
 HED-SCORE implements the Standardized Computer-based Organized Reporting of EEG (SCORE) standard for clinical neurological annotation.
 
@@ -112,7 +112,7 @@ The SCORE library allows neurologists, neurophysiologists, and brain researchers
 
 ______________________________________________________________________
 
-## LANG Library Schema
+## LANG library schema
 
 The HED Language library schema (HED LANG) contains vocabulary for annotating language experiments in cognitive science.
 
@@ -156,7 +156,7 @@ The schema supports both carefully controlled experiments addressing specific ps
 - [CHANGELOG](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/lang/CHANGELOG.md)
 - [View in Schema Browser](https://www.hedtags.org/hed-schema-browser)
 
-### Example Datasets
+### Example datasets
 
 Annotated datasets using HED LANG are available:
 
@@ -173,7 +173,7 @@ Annotated datasets using HED LANG are available:
 
 ______________________________________________________________________
 
-## SLAM Library Schema
+## SLAM library schema
 
 The HED SLAM library schema provides vocabulary for Sensor Location and Motion annotation.
 
@@ -210,7 +210,7 @@ HED SLAM is currently in prerelease development. This library will provide vocab
 
 ______________________________________________________________________
 
-## MOUSE Library Schema
+## MOUSE library schema
 
 The HED MOUSE library schema provides vocabulary for mouse/rodent experiment annotation.
 
@@ -247,7 +247,7 @@ HED MOUSE is currently in prerelease development. This library will provide voca
 
 ______________________________________________________________________
 
-## TESTLIB Library Schema
+## TESTLIB library schema
 
 The TESTLIB schema is a copy of the standard schema used for testing purposes only.
 
@@ -263,7 +263,7 @@ The TESTLIB schema is a copy of the standard schema used for testing purposes on
 
 ______________________________________________________________________
 
-## Schema Format Comparison
+## Schema format comparison
 
 All schemas are available in four equivalent formats:
 
