@@ -1,4 +1,0 @@
-# This workflow is not needed for hed-schemas repository
-# The hed-schemas repository contains schema definitions, not MATLAB code
-# MATLAB CI is only relevant for hed-matlab repository
-# This file is kept as a placeholder to avoid confusion

@@ -1,4 +1,4 @@
-# Introduction to HED Schemas
+# Introduction to HED schemas
 
 ## What is HED?
 
@@ -155,60 +155,47 @@ Each schema directory contains:
 - `prerelease/` - Working versions under development
 - `README.md` - Schema-specific documentation
 - `CHANGELOG.md` - Version history
-- `CONTRIBUTORS.md` - List of contributors | `hedmat/utilities` | General purpose utilities. | | `hedmat/web_services_demos` | Demos of directly using the HED web services (without hedtools). | | `tests` | Unit tests for MATLAB. (Execute `run_tests.m` to run all unit tests.) |
+- `CONTRIBUTORS.md` - List of contributors
 
-### Using web services (no installation required)
+## Using HED schemas
 
-The simplest way to use HED MATLAB tools is through web services. This approach:
+HED schemas can be accessed and used through various tools and interfaces.
 
-- **Requires no installation** beyond downloading the HED MATLAB package
-- **Requires Internet access** to connect to HED web services
-- Works immediately without any Python setup
+### Web-based tools
 
-See the [User Guide](user_guide.md) for examples of using web services.
+For users who prefer not to program, HED provides web-based tools at:
 
-### Using direct Python calls (optional)
+- **[hedtools.org](https://hedtools.org)** - Production version
+- **[hedtools.org/hed_dev](https://hedtools.org/hed_dev)** - Development version
 
-For more efficient operation and additional functionality, you can configure MATLAB to call the Python HEDTools directly. This approach:
+These tools support:
 
-- **Requires one-time Python setup** (Python 3.8+, HEDTools package)
-- **Provides better performance** than web services
-- **Works offline** once configured
-- **Provides access to additional features** not available through web services
+- Schema validation and conversion
+- Event file validation
+- Sidecar validation
+- HED string validation
 
-For Python installation instructions, see the [Python Installation Guide](user_guide.md#matlab-python-install) in the User Guide.
+### Programmatic access
+
+Schemas can be accessed programmatically through:
+
+- **Python**: [HED Python Tools](https://github.com/hed-standard/hed-python)
+- **MATLAB**: [HED MATLAB Tools](https://github.com/hed-standard/hed-matlab)
+- **JavaScript**: [HED JavaScript Tools](https://github.com/hed-standard/hed-javascript)
 
 ## Getting help
 
 ### Documentation resources
 
-- **[User Guide](user_guide.md)**: Step-by-step instructions and examples
-- **[API reference](api2.rst)**: Detailed MATLAB function documentation
-- **[HED specification](https://hed-specification.readthedocs.io/)**: Formal annotation rules
-- **[HED resources](https://www.hedtags.org/hed-resources)**: HED tutorials and guides
+- **[User Guide](user_guide.md)**: Guide for using and accessing schemas
+- **[Developer Guide](developer_guide.md)**: Guide for contributing to schemas
+- **[Schemas Reference](schemas_reference.md)**: Detailed schema information
+- **[Repository Structure](api2.rst)**: Repository organization
+- **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification
+- **[HED resources](https://www.hedtags.org/hed-resources)**: Tutorials and guides
 
 ### Support
 
-- **Issues**: Report bugs or request features on [GitHub Issues](https://github.com/hed-standard/hed-matlab/issues)
+- **Issues**: Report bugs or request features on [GitHub Issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Questions**: Ask on the [HED forum](https://github.com/hed-standard/hed-specification/discussions)
-- **EEGLAB integration**: See the [EEGLAB HEDTools plug-in](https://www.hedtags.org/hed-resources/HedAndEEGLAB.html) documentation
-
-## Quick example
-
-Here's a simple example to get you started with HED validation in MATLAB:
-
-```matlab
-% Get HED tools using web services
-hed = getHedTools('8.2.0', 'https://hedtools.org/hed');
-
-% Validate a string containing HED tags
-issues = hed.validateTags('Sensory-event,Red,(Image,Face)');
-
-if isempty(issues)
-    disp('✓ HED string is valid!');
-else
-    disp(issues);
-end
-```
-
-For more examples and detailed usage, see the [User Guide](user_guide.md).
+- **Email**: Contact [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)

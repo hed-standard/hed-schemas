@@ -1,4 +1,4 @@
-# Contributing to Documentation
+# Contributing to documentation
 
 This guide explains how to build and contribute to the HED Schemas documentation.
 
@@ -7,7 +7,7 @@ This guide explains how to build and contribute to the HED Schemas documentation
 - Python 3.10 or higher
 - Git
 
-## Setting Up Your Environment
+## Setting up your environment
 
 1. **Clone the repository**:
 
@@ -34,9 +34,9 @@ This guide explains how to build and contribute to the HED Schemas documentation
    pip install -r docs/requirements.txt
    ```
 
-## Building Documentation Locally
+## Building documentation locally
 
-### Method 1: Using the Build Script (Recommended)
+### Method 1: Using the build script (recommended)
 
 The easiest way to build the documentation is using the provided Python script:
 
@@ -50,7 +50,7 @@ This script will:
 2. Build the Sphinx documentation
 3. Show you where to find the built HTML files
 
-### Method 2: Using Sphinx Directly
+### Method 2: Using Sphinx directly
 
 Navigate to the docs directory and use the make command:
 
@@ -84,9 +84,9 @@ scripts\build-docs.bat
 ./scripts/build-docs.sh
 ```
 
-## Viewing Documentation Locally
+## Viewing documentation locally
 
-### Method 1: Using the Serve Script (Recommended)
+### Method 1: Using the serve script (recommended)
 
 After building, you can serve the documentation locally:
 
@@ -112,7 +112,7 @@ python scripts/serve_docs.py --port 8080
 python scripts/serve_docs.py --no-browser
 ```
 
-### Method 2: Open HTML File Directly
+### Method 2: Open HTML file directly
 
 Open `docs/_build/html/index.html` in your web browser.
 
@@ -130,9 +130,9 @@ scripts\serve-sphinx.bat
 ./scripts/serve-sphinx.sh
 ```
 
-## Making Changes to Documentation
+## Making changes to documentation
 
-### Documentation Structure
+### Documentation structure
 
 The documentation source files are in `docs/source/`:
 
@@ -146,7 +146,7 @@ The documentation source files are in `docs/source/`:
 | `api2.rst`             | Repository structure reference |
 | `conf.py`              | Sphinx configuration           |
 
-### Workflow for Documentation Changes
+### Workflow for documentation changes
 
 1. **Create a branch**:
 
@@ -180,9 +180,9 @@ The documentation source files are in `docs/source/`:
 
 7. **Create a pull request** on GitHub
 
-## Documentation Style Guide
+## Documentation style guide
 
-### Markdown Guidelines
+### Markdown guidelines
 
 - Use `#` for top-level headings, `##` for sections, `###` for subsections
 - Use code blocks with language specification: `` python`,  ``bash\`, etc.
@@ -191,7 +191,7 @@ The documentation source files are in `docs/source/`:
 - Use bullet lists for unordered items
 - Use numbered lists for sequential steps
 
-### Code Examples
+### Code examples
 
 Always specify the language for code blocks:
 
@@ -230,9 +230,9 @@ Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
 [Repository Structure](../../README.md)
 ```
 
-## Common Tasks
+## Common tasks
 
-### Adding a New Page
+### Adding a new page
 
 1. Create a new `.md` file in `docs/source/`
 2. Add it to the `toctree` in `index.rst`:
@@ -247,7 +247,7 @@ Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
    ```
 3. Build and verify it appears in the navigation
 
-### Updating Schema Information
+### Updating schema information
 
 When a new schema version is released:
 
@@ -256,7 +256,7 @@ When a new schema version is released:
 3. Update the version table in `introduction.md`
 4. Check that all DOI links are correct
 
-### Adding Images
+### Adding images
 
 1. Place images in `docs/source/_static/images/`
 2. Reference in Markdown:
@@ -266,7 +266,7 @@ When a new schema version is released:
 
 ## Troubleshooting
 
-### Build Errors
+### Build errors
 
 **Problem**: Module not found errors
 
@@ -290,7 +290,7 @@ Sphinx may show warnings about:
 
 Fix these warnings before committing - they indicate potential broken links or incorrect formatting.
 
-### Port Already in Use
+### Port already in use
 
 **Problem**: `Address already in use` when running serve_docs.py
 
@@ -302,7 +302,7 @@ python scripts/serve_docs.py --port 8001
 
 Or find and stop the process using port 8000.
 
-## CI/CD Integration
+## CI/CD integration
 
 Documentation is automatically built and deployed:
 
@@ -311,7 +311,7 @@ Documentation is automatically built and deployed:
 
 The deployed documentation is available at the GitHub Pages URL for the repository.
 
-## Getting Help
+## Getting help
 
 - **Documentation issues**: Post on [GitHub Issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Questions**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
