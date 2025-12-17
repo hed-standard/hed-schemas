@@ -1,115 +1,72 @@
-[![Documentation](https://img.shields.io/badge/docs-hedtags.org-blue.svg)](https://www.hedtags.org/hed-schemas)
-Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) 
-SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
-LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483)
+[![Documentation](https://img.shields.io/badge/docs-hedtags.org-blue.svg)](https://www.hedtags.org/hed-schemas) Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596) LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483)
 
 ## About HED
-HED (Hierarchical Event Descriptors) is an evolving framework for the description and
-formal annotation of events and other information in data.
-The HED ecosystem includes a structured vocabulary (specified by a HED schema)
-together with tools for validation and for using HED annotations in data search, 
-extraction, and analysis. 
 
-While HED can be used to annotate any type of data, 
-the current HED community focuses on annotation of events in human 
-neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking, 
-motion-capture, EKG, and audiovisual recording. 
+HED (Hierarchical Event Descriptors) is an evolving framework for the description and formal annotation of events and other information in data. The HED ecosystem includes a structured vocabulary (specified by a HED schema) together with tools for validation and for using HED annotations in data search, extraction, and analysis.
 
-See the [**HED project homepage**](https://www.hedtags.org) and
-[**HED resources**](https://www.hedtags.org/hed-resources),
-particularly the [**How can you use HED?**](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html)
-for information about how to get started or how to get involved in the HED community.
+While HED can be used to annotate any type of data, the current HED community focuses on annotation of events in human neuroimaging and behavioral data such as EEG, MEG, iEEG, fMRI, eye-tracking, motion-capture, EKG, and audiovisual recording.
+
+See the [**HED project homepage**](https://www.hedtags.org) and [**HED resources**](https://www.hedtags.org/hed-resources), particularly the [**How can you use HED?**](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html) for information about how to get started or how to get involved in the HED community.
 
 ## Viewing HED schemas
-The **HED schemas** are hierarchically-structured vocabularies for annotating data.
-The HED ecosystem includes a **standard schema** containing the basic vocabulary
-needed for annotation of experimental data as well as specialized **library schemas** for
-the additional field-specific terms needed to complete an annotation.
+
+The **HED schemas** are hierarchically-structured vocabularies for annotating data. The HED ecosystem includes a **standard schema** containing the basic vocabulary needed for annotation of experimental data as well as specialized **library schemas** for the additional field-specific terms needed to complete an annotation.
 
 All released and prereleased versions of the HED schemas can be viewed the [**HED Schema Browser**](https://www.hedtags.org/hed-schema-browser).
 
 The following table summarizes the current versions of the HED schemas.
 
-| Schema  | Latest | Description                                                                                                                                                                                          | Prerelease | DOI  | 
-| ------- |--------|-------------------------------------------------------------------------------|------------| ---- |
-| [**standard**](./standard_schema)  | 8.4.0  | Basic vocabulary for annotating data.<br/> HED_0010000 - HED_0039999   | 8.5.0      | 10.5281/zenodo.7876037 |
-| [**score**](library_schemas/score) | 2.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://www.hedtags.org/hed-schemas/hed_score_schema.html).) <br/> HED_0040000 - HED_0059999  | 2.2.0      | 10.5281/zenodo.7897596  |
-| [**lang**](library_schemas/lang)   | 1.1.0  | LANG linguistic stimuli annotation vocabulary.<br/> HED_0060000 - HED_0079999   | 1.2.0      | 10.5281/zenodo.13987483 |
-| [**slam**](library_schemas/slam) |        | SLAM (Sensor Location and Motion).<br/> HED_0080000 - HED_0099999    | 1.0.0      | |  
-| [**mouse**](library_schemas/mouse)  |        | EEG-specific vocabulary.<br/> HED_0100000 - HED_0119999        | 1.0.0      |  |
-| [**testlib**](library_schemas/testlib) | 3.0.0  | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.)       | 4.0.0      |  |
+| Schema                                 | Latest | Description                                                                                                                                                                                | Prerelease | DOI                     |
+| -------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ----------------------- |
+| [**standard**](./standard_schema)      | 8.4.0  | Basic vocabulary for annotating data.<br/> HED_0010000 - HED_0039999                                                                                                                       | 8.5.0      | 10.5281/zenodo.7876037  |
+| [**score**](library_schemas/score)     | 2.1.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>(See [**Score docs**](https://www.hedtags.org/hed-schemas/hed_score_schema.html).) <br/> HED_0040000 - HED_0059999 | 2.2.0      | 10.5281/zenodo.7897596  |
+| [**lang**](library_schemas/lang)       | 1.1.0  | LANG linguistic stimuli annotation vocabulary.<br/> HED_0060000 - HED_0079999                                                                                                              | 1.2.0      | 10.5281/zenodo.13987483 |
+| [**slam**](library_schemas/slam)       |        | SLAM (Sensor Location and Motion).<br/> HED_0080000 - HED_0099999                                                                                                                          | 1.0.0      |                         |
+| [**mouse**](library_schemas/mouse)     |        | EEG-specific vocabulary.<br/> HED_0100000 - HED_0119999                                                                                                                                    | 1.0.0      |                         |
+| [**testlib**](library_schemas/testlib) | 3.0.0  | A copy of the HED standard vocabulary<br/> for testing. <br/> (May not be stable.)                                                                                                         | 4.0.0      |                         |
 
 ## HED formats
-HED schemas are stored in three different formats:
-MediaWiki (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`).
-All formats contain the same information and conversion among formats is lossless.
-An online schema conversion tool is available at as part of the
-[**HED online tools**](https://hedtools.org/hed/schemas).
+
+HED schemas are stored in three different formats: MediaWiki (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [**HED online tools**](https://hedtools.org/hed/schemas).
 
 ### MediaWiki format
-The `.mediawiki` versions are stored in the respective `hedwiki` directory for the schema.
-This text format is easy to view in GitHub and easy to edit.
-For this reason, the `.mediawiki` markdown format is often used by schema developers to create and
-maintain HED schemas. 
+
+The `.mediawiki` versions are stored in the respective `hedwiki` directory for the schema. This text format is easy to view in GitHub and easy to edit. For this reason, the `.mediawiki` markdown format is often used by schema developers to create and maintain HED schemas.
 
 ### XML format
-The XML versions are
-stored in the respective `hedxml` directory for the schema.
-The XML (`.xml`) format used with all HED analysis and validation tools.
-It is never created directly by schema developers, but rather created from either the
-MediaWiki or the tabular versions of the schema.
+
+The XML versions are stored in the respective `hedxml` directory for the schema. The XML (`.xml`) format used with all HED analysis and validation tools. It is never created directly by schema developers, but rather created from either the MediaWiki or the tabular versions of the schema.
 
 ### JSON format
-The `.json` versions are stored in the respective `hedjson` directory for the schema.
-The JSON (`.json`) format is organized in a flat dictionary for easy lookup by AI tools.
+
+The `.json` versions are stored in the respective `hedjson` directory for the schema. The JSON (`.json`) format is organized in a flat dictionary for easy lookup by AI tools.
 
 ### Tabular format
-The `.tsv` format is a tabular (tab-separated) text format.
-Each type of entity in the HED schema (e.g., tags, unit classes, etc.) has its own tsv file.
-For each schema the tabular versions are stored in the respective `hedtsv` directory for the schema.
-The tabular version may contain additional structural information in additional files that
-are relevant to the representation of HED as a formal ontology.
+
+The `.tsv` format is a tabular (tab-separated) text format. Each type of entity in the HED schema (e.g., tags, unit classes, etc.) has its own tsv file. For each schema the tabular versions are stored in the respective `hedtsv` directory for the schema. The tabular version may contain additional structural information in additional files that are relevant to the representation of HED as a formal ontology.
 
 ## HED revision process
-If you want to suggest a new feature or a change to the standard HED schema or one
-of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues)
-to this repository, and it will find its way to the right place.
 
-As modifications to a HED schema are proposed, they are entered into the
-`PROPOSED.md` document in the schema's respective directory for discussion.
-Approved changes and corrections are first made in a working version of the
-schema that is located in the `prerelease` subdirectory. 
-Upon final review, the new HED schema is released and moved to the
-`hedxml` directory of the respective library schema.
+If you want to suggest a new feature or a change to the standard HED schema or one of the HED library schemas, just post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) to this repository, and it will find its way to the right place.
+
+As modifications to a HED schema are proposed, they are entered into the `PROPOSED.md` document in the schema's respective directory for discussion. Approved changes and corrections are first made in a working version of the schema that is located in the `prerelease` subdirectory. Upon final review, the new HED schema is released and moved to the `hedxml` directory of the respective library schema.
 
 For a more complete view of the process see the [**HED schema developer's guide**](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 
-
 ## Web-based HED tools
-The current online HED tools include an online validator of spreadsheets (Excel or tsv)
-containing HED tags. 
-Schema tools are available for validating and converting HED schemas between the four
-supported formats (`.mediawiki`, `.xml`, `.json`, and `.tsv`). 
 
-The released version of the web-based HED tools is located at [**https://hedtools.org/hed**](https://hedtools.org/hed).
-The development version of the tools, used to test features before release,
-is located at [**https://hedtools.org/hed_dev**](https://hedtools.org/hed_dev).
+The current online HED tools include an online validator of spreadsheets (Excel or tsv) containing HED tags. Schema tools are available for validating and converting HED schemas between the four supported formats (`.mediawiki`, `.xml`, `.json`, and `.tsv`).
+
+The released version of the web-based HED tools is located at [**https://hedtools.org/hed**](https://hedtools.org/hed). The development version of the tools, used to test features before release, is located at [**https://hedtools.org/hed_dev**](https://hedtools.org/hed_dev).
 
 ## HED semantic versioning
-HED schemas use the following rules for
-changing the  *major.minor.patch* semantic version.
-These rules are based on the assumption that annotators using the [**HED tag**](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) 
-short form will not have to retag their data for patch-level or minor-version changes of the schema.
-That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*.
-In addition, validation errors might occur
-during for patch-level or minor-version changes for changes or
-corrections in tag values or units. 
 
-Here is a summary of the types of changes that correspond to different
-levels of changes in the semantic version:
+HED schemas use the following rules for changing the *major.minor.patch* semantic version. These rules are based on the assumption that annotators using the [**HED tag**](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) short form will not have to retag their data for patch-level or minor-version changes of the schema. That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. In addition, validation errors might occur during for patch-level or minor-version changes for changes or corrections in tag values or units.
+
+Here is a summary of the types of changes that correspond to different levels of changes in the semantic version:
 
 | Change                                          | Semantic-level |
-|-------------------------------------------------|----------------|
+| ----------------------------------------------- | -------------- |
 | Major addition to HED functionality             | Major          |
 | Tag deleted from schema.                        | Major          |
 | Unit or unit class removed from node.           | Major          |
@@ -127,37 +84,23 @@ levels of changes in the semantic version:
 | Revision of description field in schema.        | Patch          |
 | Correction of suggestedTag or relatedTag.       | Patch          |
 
+**Note:** It is an official policy that once in a schema, a node will not be removed without a major schema version change. If a node becomes out-of-date, a `deprecated` attribute will be added to the tag in the schema. Suggested replacement tags should be included in the node description. A suggested replacement should be added to the tag patch table.
 
-**Note:** It is an official policy that once in a schema, a node will not be removed without
-a major schema version change.
-If a node becomes out-of-date, a `deprecated` attribute will be added to the tag in the schema.
-Suggested replacement tags should be included in the node description.
-A suggested replacement should be added to the tag patch table.
+## HED generations and schema versions
 
-## HED generations and schema versions 
-The HED system has gone through two major restructurings since the original system
-(HED-1G) was introduced. The following table shows the correspondence between 
-HED schema version number and the design generation.
+The HED system has gone through two major restructurings since the original system (HED-1G) was introduced. The following table shows the correspondence between HED schema version number and the design generation.
 
 | schema version | release date | HED generation |
-| --- | --- | --- |
-| 1.0 | 2011-01-01 | HED-1G |
-| 4.0.0 | 2016-02-25 | HED-2G |
-| 8.0.0 | 2021-08-07 | HED-3G |
+| -------------- | ------------ | -------------- |
+| 1.0            | 2011-01-01   | HED-1G         |
+| 4.0.0          | 2016-02-25   | HED-2G         |
+| 8.0.0          | 2021-08-07   | HED-3G         |
 
+HED-1G introduced the basic ideas of annotation using path strings and is still in use in the HEADIT archive.
 
-HED-1G introduced the basic ideas of annotation using path strings and is
-still in use in the HEADIT archive. 
+A major redesign of HED, HED-2G released in 2016 (4.0.0 \<= schema version < 8.0.0), orthogonalized the vocabulary terms and introduced parentheses for grouping modifiers with the terms they modify, resulting in much improved annotation.
 
-A major redesign of HED, HED-2G released in 2016 (4.0.0 <= schema version < 8.0.0), 
-orthogonalized the vocabulary terms and introduced parentheses for grouping modifiers
-with the terms they modify, resulting in much improved annotation. 
-
-The second majoring restructuring, HED-3G (8.0.0 <= schema version), 
-has resulted in a dramatic improvement in capabilities, including the 
-introduction of annotations of condition variables and experimental 
-design within the data as well as the ability to handle event context 
-and events with temporal extent.
+The second majoring restructuring, HED-3G (8.0.0 \<= schema version), has resulted in a dramatic improvement in capabilities, including the introduction of annotations of condition variables and experimental design within the data as well as the ability to handle event context and events with temporal extent.
 
 ## Stable links for HED validation
 
@@ -165,10 +108,8 @@ and events with temporal extent.
 
 > [**Stable link for the latest version of the HED standard schema**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/standard_schema/hedxml/HEDLatest.xml).
 
-The full HED specification is available at the
-[**HED specification**](https://www.hedtags.org/hed-specification) website. 
+The full HED specification is available at the [**HED specification**](https://www.hedtags.org/hed-specification) website.
 
 ### HED ontologies
-Efforts are underway to map HED to a formal ontology in order to leverage links to 
-other terminologies and vocabularies. The development effort is housed on the
-[**hed-ontology**](https://github.com/hed-standard/hed-ontology) GitHub repository.
+
+Efforts are underway to map HED to a formal ontology in order to leverage links to other terminologies and vocabularies. The development effort is housed on the [**hed-ontology**](https://github.com/hed-standard/hed-ontology) GitHub repository.
