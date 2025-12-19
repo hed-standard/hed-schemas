@@ -13,13 +13,15 @@ runs:
       run: |
         # Logic for pull_request events
         if [ "${{ github.event_name }}" = "pull_request" ]; then
-          # Compare HEAD with the base branch HEAD
-          CHANGED_FILES=$(git diff --name-only HEAD^1 HEAD)
+          # Fetch base branch to ensure we can compare
+          git fetch origin ${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}
+          # Compare HEAD with the base branch
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')
         # Logic for push events
         else
           # Compare the commit before the push with the commit after
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | tr '\n' ' ')
         fi
         
-        # Output the list of changed files for use in subsequent steps
-        echo "all_changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+        # Output the list of changed files for use in subsequent steps (trim trailing space)
+        echo "all_changed_files=${CHANGED_FILES% }" >> $GITHUB_OUTPUT

@@ -1,6 +1,6 @@
 # Schema developer's guide
 
-This guide describes how to develop your own library schema or contribute to existing HED vocabularies. For complete details, see the full [**HED Schema Developer's Guide**](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
+This guide describes how to develop your own library schema or contribute to existing HED vocabularies.
 
 ## Quick links
 
@@ -82,10 +82,10 @@ All library schemas should be partnered with the standard schema.
 
 ### 7. Development format
 
-All four HED schema formats (`.xml`, `.mediawiki`, `.tsv`, `.json`) are equivalent and any one format can be generated from another other format. However, schema developers should ONLY develop either in `.mediawiki` or `.tsv` format:
+The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file types: `.xml`, `.mediawiki`, `.tsv`, and `.json`, respectively. The formats are completely equivalent, and any one format can be generated from another other format. However, schema developers should ONLY develop either in MEDIAWIKI or TSV format:
 
-- **MediaWiki format** (`.mediawiki`) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
-- **TSV format** (`.tsv`) - Spreadsheet-compatible format with separate files for tags, units, etc. Users usually only edit the `_Tag.tsv` file -- easiest format for including lots of attributes and links to other resources
+- **MediaWiki format** (`.mediawiki` files) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
+- **TSV format** (`.tsv` files) - Spreadsheet-compatible format with separate files for tags, units, etc. Users usually only edit the `_Tag.tsv` file -- easiest format for including lots of attributes and links to other resources
 - **XML/JSON formats** - Generated automatically by CI/CD, never edit directly
 
 **When to use MediaWiki format**:
@@ -296,7 +296,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 09. **CI/CD pipeline automatically runs** on your PR:
 
-    - Converts the format you have changed to other formats (e.g., `.mediawiki` → `.xml`, `.json`, `.tsv`)
+    - Converts the format you have changed to other formats (e.g., MEDIAWIKI → XML, JSON, TSV)
     - Validates all schema files
     - Commits generated files back to your PR branch
     - **Note**: HED IDs are NOT assigned during prerelease development -- they are only assigned when the schema is officially released (handled by maintainers during the release process)
@@ -330,7 +330,7 @@ Detailed information about the various HED schema formats is available [Appendix
 
 ### MEDIAWIKI schema structure
 
-The MEDIAWIKI format is a single file that contains many sections needed to completely reconstruct the schema. However, schema developeres will mainly be concerned with the specification of the HED tags, whic is the portion of the file between `!# start schema` and `!# end schema`. Each tag specification must be on a single line.
+The MEDIAWIKI format is a single file that contains many sections needed to completely reconstruct the schema. However, schema developeres will mainly be concerned with the specification of the HED tags, which is the portion of the file between `!# start schema` and `!# end schema`. Each tag specification must be on a single line.
 
 ````{admonition} An excerpt from HED8.4.0.mediawiki
 ---
@@ -495,7 +495,7 @@ class: tip
 
 Note, the `Posterior-dominant-rhythm` is a tag from the SCORE library schema as is `Feature-frequency`. The `Occipital-lobe` is a tag from the HED standard schema that this version of the SCORE library is partnered with.
 
-All schema attributes must be defined in the `Schema attributes` section (for `.mediawiki`) or split among the `_AnnotationProperty.tsv`, `_DataProperty.tsv`, and `_ObjectProperty.tsv` files (for `.tsv`). For library schema developers, these files should usually only have headers, since these are defined in the standard schema that this schema is partnered with. The attributes are in separate `.tsv` files for easier mapping with ontologies using the OWL format. See the [HED ontology](https://www.hedtags.org/hed-specification/08_HED_ontology.html) chapter of the HED specification for more information on HED's equivalence to a formal ontology.
+All schema attributes must be defined in the `Schema attributes` section (for MEDIAWIKI) or split among the `_AnnotationProperty.tsv`, `_DataProperty.tsv`, and `_ObjectProperty.tsv` files (for TSV). For library schema developers, these files should usually only have headers, since these are defined in the standard schema that this schema is partnered with. The attributes are in separate `.tsv` files for easier mapping with ontologies using the OWL format. See the [HED ontology](https://www.hedtags.org/hed-specification/08_HED_ontology.html) chapter of the HED specification for more information on HED's equivalence to a formal ontology.
 
 ### External links
 
@@ -651,33 +651,6 @@ This places the entire `Linguistic-item` subtree under the standard schema's `It
 
 - Your library defines completely new top-level categories
 - Your domain is orthogonal to standard schema organization
-
-## Local validation and testing
-
-### Install HED Python tools
-
-```powershell
-pip install hedtools
-```
-
-### Validate a schema
-
-```powershell
-hed_validate_schemas standard_schema/prerelease/HED8.5.0.mediawiki
-```
-
-### Convert between formats
-
-```powershell
-# Auto-generates .xml, .json, .tsv from .mediawiki
-hed_update_schemas standard_schema/prerelease/HED8.5.0.mediawiki
-```
-
-### Clear cached schemas
-
-```powershell
-hed_cache_schemas --clear
-```
 
 ## Common pitfalls
 

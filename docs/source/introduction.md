@@ -51,7 +51,7 @@ For example, the tag `Square` has a full schema path:
 
 This means `Square` is-a type of `Rectangle`, which is-a type of `2D-shape`, etc. This strict hierarchy enables powerful search generalization: when downstream tools search for `2D-shape`, the search will return tag strings containing `Square`, `Rectangle`, and `2D-shape`.
 
-Although you can express a tag by any partial path in the hierarchy, when posible you SHOULD ONLY USE JUST the tag node name (e.g., `Square`) rather than the full path or a partial path itself when annotating data. There is no ambiguity, because tag names in a schema must be unique. HED-compliant tools can convert between this **"short-form"** and the complete path or **"long-form"** when needed for search, summarization, or other processing. Short form makes annotations simpler. In addition, a node sometimes changes position when a new version is release if additional intermediate nodes are added.
+Although you can express a tag by any partial path in the hierarchy, when possible you SHOULD ONLY USE JUST the tag node name (e.g., `Square`) rather than the full path or a partial path itself when annotating data. There is no ambiguity, because tag names in a schema must be unique. HED-compliant tools can convert between this **"short-form"** and the complete path or **"long-form"** when needed for search, summarization, or other processing. Short form makes annotations simpler. In addition, a node sometimes changes position when a new version is release if additional intermediate nodes are added.
 
 ## Available schemas
 
