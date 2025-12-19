@@ -30,7 +30,7 @@ When ready to release a new version:
 3. **Move files** from `prerelease/` to release directories:
 
    ```powershell
-   # Move MediaWiki
+   # Move MEDIAWIKI
    mv standard_schema/prerelease/HED8.5.0.mediawiki standard_schema/hedwiki/
 
    # Move other formats

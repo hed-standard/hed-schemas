@@ -41,7 +41,7 @@ All schemas are available in the [hed-schemas GitHub repository](https://github.
 
 Each schema is available in four formats within each directory:
 
-- `hedwiki/` - MediaWiki format (human-readable)
+- `hedwiki/` - MEDIAWIKI format (human-readable)
 - `hedxml/` - XML format (used by tools)
 - `hedjson/` - JSON format (for AI and lookups)
 - `hedtsv/` - TSV format (spreadsheet-compatible)

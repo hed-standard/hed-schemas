@@ -96,7 +96,7 @@ Although you can express a tag by any partial path in the hierarchy, when possib
 
 Each schema is stored in **four equivalent formats**. Each format holds
 
-1. **MediaWiki** (`.mediawiki`) - in `hedwiki/` directory
+1. **MEDIAWIKI** (`.mediawiki`) - in `hedwiki/` directory
 
    - Human-readable text format
    - Primary editing format for schema developers
@@ -106,13 +106,13 @@ Each schema is stored in **four equivalent formats**. Each format holds
 
    - Format used by all HED tools for validation and analysis
    - Includes XSD schema definition files
-   - Never edited directly - generated from MediaWiki or TSV
+   - Never edited directly - generated from MEDIAWIKI or TSV
 
 3. **JSON** (`.json`) - in `hedjson/` directory
 
    - Flat dictionary structure for easy lookups
    - Optimized for AI tools and programmatic access
-   - Generated from XML/MediaWiki
+   - Generated from XML/MEDIAWIKI
 
 4. **Tabular TSV** (`.tsv`) - in `hedtsv/` directory
 

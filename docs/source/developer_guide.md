@@ -12,14 +12,16 @@ This guide describes how to develop your own library schema or contribute to exi
 
 ## Table of contents
 
-1. [Getting started](#getting-started)
-2. [Schema design principles](#schema-design-principles)
-3. [Development workflow](#development-workflow)
-4. [Branch naming conventions](#branch-naming-conventions)
-5. [Developing a schema](#developing-a-schema)
-6. [Local validation and testing](#local-validation-and-testing)
-7. [Release process](#release-process)
-8. [Common pitfalls](#common-pitfalls)
+01. [Getting started](#getting-started)
+02. [Schema design principles](#schema-design-principles)
+03. [Proposing a new library schema](#proposing-a-new-library-schema)
+04. [Development workflow](#development-workflow)
+05. [Developing a schema](#developing-a-schema)
+06. [Release process](#release-process)
+07. [Common pitfalls](#common-pitfalls)
+08. [CI/CD pipeline](#cicd-pipeline)
+09. [Quick reference](#quick-reference)
+10. [Getting help](#getting-help)
 
 ## Getting started
 
@@ -84,11 +86,11 @@ All library schemas should be partnered with the standard schema.
 
 The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file types: `.xml`, `.mediawiki`, `.tsv`, and `.json`, respectively. The formats are completely equivalent, and any one format can be generated from another other format. However, schema developers should ONLY develop either in MEDIAWIKI or TSV format:
 
-- **MediaWiki format** (`.mediawiki` files) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
+- **MEDIAWIKI format** (`.mediawiki` files) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
 - **TSV format** (`.tsv` files) - Spreadsheet-compatible format with separate files for tags, units, etc. Users usually only edit the `_Tag.tsv` file -- easiest format for including lots of attributes and links to other resources
 - **XML/JSON formats** - Generated automatically by CI/CD, never edit directly
 
-**When to use MediaWiki format**:
+**When to use MEDIAWIKI format**:
 
 - Creating new schemas with simple hierarchy
 - Visualizing and understanding tag relationships
@@ -110,7 +112,7 @@ The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file ty
 - Only alphanumeric, hyphens, and underscores allowed
 - No blanks
 
-For examples of these conventions in practice, see [MediaWiki schema structure](#mediawiki-schema-structure) and [TSV schema structure](#tsv-schema-structure). Note: All of the formats are available on GitHub.
+For examples of these conventions in practice, see [MEDIAWIKI schema structure](#mediawiki-schema-structure) and [TSV schema structure](#tsv-schema-structure). Note: All of the formats are available on GitHub.
 
 ## Proposing a new library schema
 
@@ -255,7 +257,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 
     where `xxx` is `standard` or the library name depending on which schema you want to change. The `xxx` value `admin` is reserved mainly for maintainers and should not be used by individual schema developers.
 
-04. **Edit the prerelease MediaWiki file** (alternatively the `xxx_Tag.tsv` file):
+04. **Edit the prerelease MEDIAWIKI file** (alternatively the `xxx_Tag.tsv` file):
 
     - For standard schema: `standard_schema/prerelease/HEDX.Y.Z.mediawiki`
     - For library schema: `library_schemas/<name>/prerelease/HED_<name>_X.Y.Z.mediawiki`
@@ -320,8 +322,8 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 11. **Check your release**:
 
-- View your schema in the [HED schema browser](https://www.hedtags.org/hed-schema-browser) using the *View prelease schema* button on the viewer
-- Check both with and without showing the partnered schema by toggling the \**Show/hide merged library* button the viewer
+- View your schema in the [HED schema browser](https://www.hedtags.org/hed-schema-browser) using the *View prerelease schema* button on the viewer
+- Check both with and without showing the partnered schema by toggling the \**Show/hide merged library* button in the viewer
 - If any problems, correct and repeat from Step 4
 
 ## Developing a schema
@@ -330,7 +332,7 @@ Detailed information about the various HED schema formats is available [Appendix
 
 ### MEDIAWIKI schema structure
 
-The MEDIAWIKI format is a single file that contains many sections needed to completely reconstruct the schema. However, schema developeres will mainly be concerned with the specification of the HED tags, which is the portion of the file between `!# start schema` and `!# end schema`. Each tag specification must be on a single line.
+The MEDIAWIKI format is a single file that contains many sections needed to completely reconstruct the schema. However, schema developers will mainly be concerned with the specification of the HED tags, which is the portion of the file between `!# start schema` and `!# end schema`. Each tag specification must be on a single line.
 
 ````{admonition} An excerpt from HED8.4.0.mediawiki
 ---
@@ -353,7 +355,7 @@ Key elements:
   - Tags with `***` (3 asterisks) are children of the nearest preceding tag with `**` (2 asterisks)
   - Tags with `**` are children of the nearest preceding tag with `*` (1 asterisk)
   - Tags with `*` are children of the nearest preceding root tag (`'''TagName'''`)
-- The `<nowiki>...</nowiki>` is MediaWiki markup that preserves the content literally -- this markup should enclose everything after the tag name
+- The `<nowiki>...</nowiki>` is MEDIAWIKI markup that preserves the content literally -- this markup should enclose everything after the tag name
 - The description appears in square brackets: `[...description...]`
 - Attributes appear in `{}` if needed: `{relatedTag=Move-face}`
 
@@ -438,7 +440,7 @@ In this example:
 - The row is at the end of the file (for convenience) -- the hierarchy is determined by `omn:SubClassOf
 - Attributes column is empty (or contains comma-separated attributes if needed)
 
-The TSV format is easier than MediaWiki format for adding large numbers of attributes and checking descriptions, but it is more difficult to check the hierarchy (you must trace parent-child relationships through the `omn:SubClassOf` column instead of visually seeing indentation levels).  
+The TSV format is easier than MEDIAWIKI format for adding large numbers of attributes and checking descriptions, but it is more difficult to check the hierarchy (you must trace parent-child relationships through the `omn:SubClassOf` column instead of visually seeing indentation levels).  
 
 ### Adding attributes
 
@@ -453,7 +455,7 @@ HED schema attributes modify tag behavior and provide additional metadata (see [
 class: tip
 ---
 
-**MediaWiki format**:
+**MEDIAWIKI format**:
 ```text
 ** Definition <nowiki>{requireChild, reserved, topLevelTagGroup, hedId=HED_0012808} [A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept.]</nowiki>
 ```
@@ -469,7 +471,7 @@ The `Definition` tag has the boolean attributes `requireChild`, `reserved`, `top
 
 **Important notes about hedId**:
 
-- In **MediaWiki format**: `hedId` appears in the attributes list within `{}`
+- In **MEDIAWIKI format**: `hedId` appears in the attributes list within `{}`
 - In **TSV format**: `hedId` has its own dedicated column and does NOT appear in the Attributes column
 - During prerelease development, leave `hedId` empty for new tags - it is assigned automatically during official release
 - Once assigned, `hedId` values become permanent identifiers and must never be changed or reused
@@ -481,7 +483,7 @@ Some attributes have special requirements. For example the `suggestedTag` and th
 class: tip
 ---
 
-**MediaWiki format**:
+**MEDIAWIKI format**:
 ```text
 '''Posterior-dominant-rhythm''' <nowiki>{suggestedTag=Feature-frequency,suggestedTag=Occipital-lobe} [Rhythmic activity occurring during wakefulness.]</nowiki>
 ```
@@ -512,7 +514,7 @@ The most common use case for external links is to cite a reference. This is done
 class: tip
 ---
 
-**MediaWiki format**:
+**MEDIAWIKI format**:
 
 ```text
 '''Mu-rhythm''' <nowiki>{annotation=dc:source Beniczky ea 2013 Appendix S2} [EEG rhythm at 7-11 Hz composed of arch-shaped waves.]</nowiki>
@@ -543,7 +545,7 @@ Sources define bibliographic references that can be cited in schema tags. Each s
 class: tip
 ---
 
-**MediaWiki format** (in `Sources` section):
+**MEDIAWIKI format** (in `Sources` section):
 ```text
 '''Sources'''
 * <nowiki>source=Beniczky ea 2017,link=https://doi.org/10.1016/j.clinph.2017.07.418,description=Standardized computer based organized reporting of EEG: SCORE second version.</nowiki>
@@ -567,7 +569,7 @@ Prefixes map short abbreviations to full namespace URIs for external ontologies 
 class: tip
 ---
 
-**MediaWiki format** (in `Prefixes` section):
+**MEDIAWIKI format** (in `Prefixes` section):
 ```text
 '''Prefixes'''
 * <nowiki>prefix=dc:,namespace=http://purl.org/dc/elements/1.1/#,description=The Dublin Core elements</nowiki>
@@ -591,7 +593,7 @@ External annotation properties define which ontology terms can be used as annota
 class: tip
 ---
 
-**MediaWiki format** (in `External annotations` section):
+**MEDIAWIKI format** (in `External annotations` section):
 ```text
 '''External annotations'''
 * <nowiki>prefix=dc:,id=source,iri=http://purl.org/dc/elements/1.1/source,description=A related resource from which the described resource is derived.</nowiki>
@@ -652,6 +654,17 @@ This places the entire `Linguistic-item` subtree under the standard schema's `It
 - Your library defines completely new top-level categories
 - Your domain is orthogonal to standard schema organization
 
+## Release process
+
+The official release of a new schema version is performed by HED maintainers. This process involves:
+
+1. Final review and approval by the HED Working Group
+2. Moving files from `prerelease/` to release directories
+3. Assigning permanent `hedId` values
+4. Tagging the release in GitHub and publishing to Zenodo
+
+Developers do not need to perform these steps. Once your changes are merged into the `prerelease` directory and approved for release, the maintainers will handle the rest.
+
 ## Common pitfalls
 
 ### ❌ Don't do this
@@ -711,7 +724,7 @@ GitHub Actions automatically:
 | Workflow                          | Purpose                                                |
 | --------------------------------- | ------------------------------------------------------ |
 | `validate_schemas.yaml`           | Validates all changed schema files                     |
-| `update_and_convert_schemas.yaml` | Converts MediaWiki to other formats                    |
+| `update_and_convert_schemas.yaml` | Converts MEDIAWIKI to other formats                    |
 | `add_hed_ids.yaml`                | Assigns HedIds to new terms                            |
 | `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/` |
 | `codespell.yaml`                  | Spell checking                                         |
@@ -720,7 +733,7 @@ GitHub Actions automatically:
 
 ## Quick reference
 
-### MediaWiki syntax
+### MEDIAWIKI syntax
 
 | Element          | Syntax                 | Example                                |
 | ---------------- | ---------------------- | -------------------------------------- |
@@ -760,7 +773,7 @@ GitHub Actions automatically:
 
 ### Key file locations
 
-| Schema Component     | MediaWiki Location                   | TSV Location                                                          |
+| Schema Component     | MEDIAWIKI Location                   | TSV Location                                                          |
 | -------------------- | ------------------------------------ | --------------------------------------------------------------------- |
 | Tags                 | In main `.mediawiki` file            | `_Tag.tsv`                                                            |
 | Prefixes             | `'''Prefixes'''` section             | `_Prefixes.tsv`                                                       |

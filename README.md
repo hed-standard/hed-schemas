@@ -27,15 +27,15 @@ The following table summarizes the current versions of the HED schemas.
 
 ## HED formats
 
-HED schemas are stored in three different formats: MediaWiki (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [**HED online tools**](https://hedtools.org/hed/schemas).
+HED schemas are stored in three different formats: MEDIAWIKI (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [**HED online tools**](https://hedtools.org/hed/schemas).
 
-### MediaWiki format
+### MEDIAWIKI format
 
 The `.mediawiki` versions are stored in the respective `hedwiki` directory for the schema. This text format is easy to view in GitHub and easy to edit. For this reason, the `.mediawiki` markdown format is often used by schema developers to create and maintain HED schemas.
 
 ### XML format
 
-The XML versions are stored in the respective `hedxml` directory for the schema. The XML (`.xml`) format used with all HED analysis and validation tools. It is never created directly by schema developers, but rather created from either the MediaWiki or the tabular versions of the schema.
+The XML versions are stored in the respective `hedxml` directory for the schema. The XML (`.xml`) format used with all HED analysis and validation tools. It is never created directly by schema developers, but rather created from either the MEDIAWIKI or the tabular versions of the schema.
 
 ### JSON format
 

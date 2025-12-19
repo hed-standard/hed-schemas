@@ -6,7 +6,7 @@ This is a minor release of the HED score library schema. It includes changes to 
 The changes are backward compatible with previous version of the schema.
 
 - The annotations have been moved to a schema attribute to allow programmatic linking to other ontologies.
-- The mediawiki and XML formats are now completely equivalent to the tsv version.
+- The MEDIAWIKI and XML formats are now completely equivalent to the tsv version.
 - The schema is partnered with HED schema version 8.4.0.
 
 **Tags:**
