@@ -1,0 +1,25 @@
+name: 'Get Changed Files'
+description: 'Get list of changed files using native git diff commands'
+outputs:
+  all_changed_files:
+    description: 'Space-separated list of all changed files'
+    value: ${{ steps.get-files.outputs.all_changed_files }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Get changed files
+      id: get-files
+      shell: bash
+      run: |
+        # Logic for pull_request events
+        if [ "${{ github.event_name }}" = "pull_request" ]; then
+          # Compare HEAD with the base branch HEAD
+          CHANGED_FILES=$(git diff --name-only HEAD^1 HEAD)
+        # Logic for push events
+        else
+          # Compare the commit before the push with the commit after
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+        fi
+        
+        # Output the list of changed files for use in subsequent steps
+        echo "all_changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT

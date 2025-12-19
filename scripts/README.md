@@ -1,8 +1,8 @@
-# HED Schemas Scripts
+# HED schemas scripts
 
 This directory contains utility scripts for the hed-schemas repository.
 
-## Documentation Build Scripts
+## Documentation build scripts
 
 ### Building Documentation Locally
 

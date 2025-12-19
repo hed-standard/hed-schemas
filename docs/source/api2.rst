@@ -1,12 +1,12 @@
-Repository Structure
+Repository structure
 ====================
 
 This page describes the structure and organization of the hed-schemas repository.
 
-Directory Organization
+Directory organization
 ----------------------
 
-Root Directories
+Root directories
 ~~~~~~~~~~~~~~~~
 
 The repository is organized into the following main directories:
@@ -58,7 +58,7 @@ The repository is organized into the following main directories:
   * ``links.yaml`` - Link validation
   * ``deploy-docs.yaml`` - Documentation deployment
 
-Configuration Files
+Configuration files
 ~~~~~~~~~~~~~~~~~~~
 
 **library_data.json**
@@ -78,10 +78,10 @@ Configuration Files
 **CONTRIBUTING.md**
   Guidelines for contributing to HED schemas
 
-Schema Version Structure
+Schema version vtructure
 ------------------------
 
-Released Versions
+Released versions
 ~~~~~~~~~~~~~~~~~
 
 Released schema versions are stored in format-specific directories:
@@ -91,7 +91,7 @@ Released schema versions are stored in format-specific directories:
 * ``hedjson/HED8.4.0.json`` - Released JSON schema
 * ``hedtsv/HED8.4.0/`` - Released TSV schema files
 
-Prerelease Versions
+Prerelease versions
 ~~~~~~~~~~~~~~~~~~~
 
 All schema development happens in the ``prerelease/`` subdirectory:
@@ -103,10 +103,10 @@ All schema development happens in the ``prerelease/`` subdirectory:
 * ``prerelease/PRERELEASE_CHANGES.md`` - Documented changes
 * ``prerelease/PROPOSED.md`` - Proposed future changes
 
-Workflow Summary
+Workflow summary
 ----------------
 
-Schema Development Workflow
+Schema development workflow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create branch with appropriate prefix (``standard_*``, ``score_*``, etc.)
@@ -117,7 +117,7 @@ Schema Development Workflow
 6. Create pull request
 7. Merge after review
 
-Release Workflow
+Release workflow
 ~~~~~~~~~~~~~~~~
 
 1. Update version in schema header
@@ -127,84 +127,26 @@ Release Workflow
 5. Create GitHub release
 6. DOI automatically updated via Zenodo
 
-File Naming Conventions
+File naming conventions
 -----------------------
 
-Standard Schema
+Standard schema
 ~~~~~~~~~~~~~~~
 
 * ``HED8.4.0.xml`` - Version number only
 * ``HED8.4.0.mediawiki`` - Version number only
 * ``HEDLatest.xml`` - Symlink/copy to latest version
 
-Library Schemas
+Library schemas
 ~~~~~~~~~~~~~~~
 
 * ``HED_score_2.1.0.xml`` - Library name and version
 * ``HED_lang_1.1.0.mediawiki`` - Library name and version
 * ``HED_score_Latest.xml`` - Symlink/copy to latest version
 
-See Also
+See also
 --------
 
 * :doc:`developer_guide` - Complete schema development guide
 * :doc:`user_guide` - Using HED schemas
 * :doc:`schemas_reference` - Detailed schema information
-
-
-Web Services Demos
-------------------
-
-Examples demonstrating HED web service usage.
-
-.. mat:autofunction:: web_services_demos.demoEventRemodelingServices
-
-.. mat:autofunction:: web_services_demos.demoEventSearchServices
-
-.. mat:autofunction:: web_services_demos.demoEventServices
-
-.. mat:autofunction:: web_services_demos.demoGetServices
-
-.. mat:autofunction:: web_services_demos.demoLibraryServices
-
-.. mat:autofunction:: web_services_demos.demoSidecarServices
-
-.. mat:autofunction:: web_services_demos.demoSpreadsheetServices
-
-.. mat:autofunction:: web_services_demos.demoStringServices
-
-.. mat:autofunction:: web_services_demos.exampleGenerateSidecar
-
-.. mat:autofunction:: web_services_demos.getDemoData
-
-.. mat:autofunction:: web_services_demos.getHostOptions
-
-.. mat:autofunction:: web_services_demos.getRequestTemplate
-
-.. mat:autofunction:: web_services_demos.getSessionInfo
-
-.. mat:autofunction:: web_services_demos.outputReport
-
-.. mat:autofunction:: web_services_demos.runAllDemos
-
-.. mat:autofunction:: web_services_demos.runDemo
-
-
-Utilities
----------
-
-Helper functions for common operations.
-
-.. mat:autofunction:: utilities.events2string
-
-.. mat:autofunction:: utilities.filterDirectories
-
-.. mat:autofunction:: utilities.filterFiles
-
-.. mat:autofunction:: utilities.getFileList
-
-.. mat:autofunction:: utilities.rectify_events
-
-.. mat:autofunction:: utilities.separateFiles
-
-.. mat:autofunction:: utilities.str2lines

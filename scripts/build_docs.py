@@ -23,7 +23,7 @@ def main():
     repo_root = Path(__file__).parent.parent
 
     print("=" * 70)
-    print("HED Schemas Documentation Builder")
+    print("HED schemas documentation builder")
     print("=" * 70)
     print()
 

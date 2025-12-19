@@ -49,7 +49,7 @@ def main():
         return 1
 
     print("=" * 70)
-    print("HED Schemas Documentation Server")
+    print("HED schemas documentation server")
     print("=" * 70)
     print(f"\n📁 Serving from: {html_dir}")
     print(f"🌐 Open your browser to: http://localhost:{args.port}")

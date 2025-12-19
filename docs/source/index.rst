@@ -1,7 +1,7 @@
-HED Schemas Documentation
-==========================
+HED schemas
+===========
 
-Welcome to the HED Schemas documentation. This repository contains the official HED (Hierarchical Event Descriptors) vocabulary schemas in multiple formats.
+Welcome to the HED schemas documentation. This repository contains the official HED (Hierarchical Event Descriptors) vocabulary schemas in multiple formats.
 
 .. toctree::
    :maxdepth: 2

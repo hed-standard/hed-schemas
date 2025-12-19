@@ -1,6 +1,6 @@
 # Contributing to documentation
 
-This guide explains how to build and contribute to the HED Schemas documentation.
+This guide explains how to build and contribute to the HED schemas documentation.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ Navigate to the docs directory and use the make command:
 
 **Windows**:
 
-```cmd
+```powershell
 cd docs
 make.bat html
 ```
@@ -74,7 +74,7 @@ The built documentation will be in `docs/_build/html/`.
 
 **Windows**:
 
-```cmd
+```powershell
 scripts\build-docs.bat
 ```
 
@@ -120,7 +120,7 @@ Open `docs/_build/html/index.html` in your web browser.
 
 **Windows**:
 
-```cmd
+```powershell
 scripts\serve-sphinx.bat
 ```
 

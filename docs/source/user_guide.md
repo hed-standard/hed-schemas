@@ -1,4 +1,4 @@
-# User guide for HED Schemas
+# User guide
 
 This guide provides information for users who want to view, use, or understand HED schemas for annotating their data.
 
