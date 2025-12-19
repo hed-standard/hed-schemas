@@ -17,9 +17,7 @@ jobs:
       - name: Get latest push changes
         id: changed-files
         # if: github.base_ref != 'main' && github.event.action == 'synchronize'
-        uses: tj-actions/changed-files@v45
-        with:
-          since_last_remote_commit: true
+        uses: ./.github/actions/get-changed-files
 
       - name: Set up Python
         uses: actions/setup-python@v6

@@ -14,13 +14,13 @@ from datetime import date
 
 # -- Project information -----------------------------------------------------
 
-project = "HED Schemas"
+project = "HED schemas"
 copyright = f"2017-{date.today().year}, HED Working Group"
 author = "HED Working Group"
 
-# The full version, including alpha/beta/rc tags
-version = "8.5.0"
-release = "8.5.0"
+# No single version for this repository - contains multiple schemas with different versions
+version = ""
+release = ""
 
 # -- General configuration ---------------------------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
@@ -72,14 +72,14 @@ pygments_style = "sphinx"
 pygments_dark_style = "monokai"
 
 html_theme = "furo"
-html_title = "HED Schemas"
+html_title = "HED schemas"
 
 # Add logo
 html_logo = "_static/images/croppedWideLogo.png"
 
 # Furo theme options
 html_theme_options = {
-    "sidebar_hide_name": True,
+    "sidebar_hide_name": False,
     "light_css_variables": {
         "color-brand-primary": "#0969da",
         "color-brand-content": "#0969da",

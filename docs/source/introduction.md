@@ -39,7 +39,9 @@ While HED can be used to annotate any type of data, the current HED community fo
 - EKG
 - Audiovisual recording
 
-## Schema hierarchy and structure
+HED is also useful for participant metadata annotation as well as for media (images and video) and environmental annotation, since this information is important for understanding brain interaction with the outside world.
+
+## Schema hierarchal structure
 
 HED schemas are structured as a set of trees, each corresponding to a major term category for the vocabulary. Each child tag in a HED schema is considered to be a special type of its ancestors, following an **is-a** relationship.
 
@@ -49,9 +51,7 @@ For example, the tag `Square` has a full schema path:
 
 This means `Square` is-a type of `Rectangle`, which is-a type of `2D-shape`, etc. This strict hierarchy enables powerful search generalization: when downstream tools search for `2D-shape`, the search will return tag strings containing `Square`, `Rectangle`, and `2D-shape`.
 
-### Tag forms
-
-When annotating data, you need only use the tag node name (e.g., `Square`). HED-compliant tools can convert between this "short-form" and the complete path or "long-form" when needed for search, summarization, or other processing.
+Although you can express a tag by any partial path in the hierarchy, when possible you SHOULD ONLY USE JUST the tag node name (e.g., `Square`) rather than the full path or a partial path itself when annotating data. There is no ambiguity, because tag names in a schema must be unique. HED-compliant tools can convert between this **"short-form"** and the complete path or **"long-form"** when needed for search, summarization, or other processing. Short form makes annotations simpler. In addition, a node sometimes changes position when a new version is release if additional intermediate nodes are added.
 
 ## Available schemas
 
@@ -89,12 +89,12 @@ When annotating data, you need only use the tag node name (e.g., `Square`). HED-
 
 5. **TESTLIB** (HedId: auto-assigned)
 
-   - Testing vocabulary (copy of standard schema)
+   - Testing vocabulary (not stable)
    - For development/testing purposes only
 
 ## Schema formats
 
-Each schema is stored in **four equivalent formats**:
+Each schema is stored in **four equivalent formats**. Each format holds
 
 1. **MediaWiki** (`.mediawiki`) - in `hedwiki/` directory
 
@@ -187,10 +187,10 @@ Schemas can be accessed programmatically through:
 
 ### Documentation resources
 
-- **[User Guide](user_guide.md)**: Guide for using and accessing schemas
-- **[Developer Guide](developer_guide.md)**: Guide for contributing to schemas
-- **[Schemas Reference](schemas_reference.md)**: Detailed schema information
-- **[Repository Structure](api2.rst)**: Repository organization
+- **[User guide](user_guide.md)**: Guide for using and accessing schemas
+- **[Developer guide](developer_guide.md)**: Guide for contributing to schemas
+- **[Schemas reference](schemas_reference.md)**: Detailed schema information
+- **[Repository structure](api2.rst)**: Repository organization
 - **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification
 - **[HED resources](https://www.hedtags.org/hed-resources)**: Tutorials and guides
 

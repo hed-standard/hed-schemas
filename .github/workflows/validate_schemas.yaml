@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v6
       with:
-        fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+        fetch-depth: 0  # Fetch entire history for reliable git diff
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -22,21 +22,18 @@ jobs:
 
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v45
-      # To compare changes between the current commit and the last pushed remote commit set `since_last_remote_commit: true`. e.g
-      # with:
-      #   since_last_remote_commit: true
+      uses: ./.github/actions/get-changed-files
 
     - name: List all changed files
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
-        for file in "$ALL_CHANGED_FILES"; do
+        for file in $ALL_CHANGED_FILES; do
           echo "$file was changed"
         done
 
     - name: Install dependencies
-      run: pip install git+https://github.com/hed-standard/hed-python.git@main
+      run: pip install hedtools
 
     - name: Run command on file list
       env:
