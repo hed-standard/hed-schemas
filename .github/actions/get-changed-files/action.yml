@@ -15,8 +15,8 @@ runs:
         if [ "${{ github.event_name }}" = "pull_request" ]; then
           # Fetch base branch to ensure we can compare
           git fetch origin ${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}
-          # Compare HEAD with the base branch
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')
+          # Compare HEAD with the base branch (using two-dot diff)
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}..HEAD | tr '\n' ' ')
         # Logic for push events
         else
           # Compare the commit before the push with the commit after
