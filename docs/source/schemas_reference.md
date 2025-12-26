@@ -272,28 +272,33 @@ All schemas are available in four equivalent formats:
 | **XML**       | `.xml`       | Tool validation and analysis          | ❌ Never edit directly          |
 | **MEDIAWIKI** | `.mediawiki` | Human-readable, schema development    | ✅ Primary editing format       |
 | **JSON**      | `.json`      | AI tools, easy lookup                 | ❌ Generated from XML/MEDIAWIKI |
-| **TSV**       | `.tsv`       | Spreadsheet editing, ontology mapping | ⚠️ Advanced use only            |
+| **TSV**       | `.tsv`       | Spreadsheet editing, ontology mapping | ⚠️ Good for adding references   |
 
 ### Conversion between formats
 
-Use the [HED Online Tools](https://hedtools.org) or command-line tools:
+Use the [HED online tools](https://www.hedtools.org/hed) or command-line tools:
 
 ```powershell
-# Install HED Python tools
-pip install git+https://github.com/hed-standard/hed-python.git@main
-
+# Install HED Python tools 
+pip install hedtools
 # Convert schema
-hed_update_schemas path/to/schema.mediawiki
+hedpy schema convert path/to/schema.mediawiki
 ```
 
 ______________________________________________________________________
 
 ## Using schemas in your data
 
+HED requires that you specify a HED version for most operations.
+
 ### BIDS datasets
 
-In your `dataset_description.json`:
+In BIDS, the `dataset_description.json` located at the top level of the directory containing a dataset has the version.
 
+````{admonition} BIDS dataset using the standard schema
+---
+class: tip
+---
 ```json
 {
   "Name": "My Dataset",
@@ -301,44 +306,72 @@ In your `dataset_description.json`:
   "HEDVersion": "8.4.0"
 }
 ```
+````
 
-For library schemas:
-
+````{admonition} BIDS dataset using two non-conflicting library schemas
+---
+class: tip
+---
 ```json
 {
-  "HEDVersion": ["8.3.0", "sc:score_2.1.0"]
+  "Name": "My Dataset",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": ["score_2.1.0", "lang_1.1.0"]
 }
 ```
+````
+
+In this example the specified SCORE and LANG versions do not conflict and partner with the same HED standard schema (8.4.0), so they can be used together without namespace prefixes.
 
 ### Programmatic access
 
-**Python:**
+````{admonition} Accessing the schema in Python
+---
+class: tip
+---
 
 ```python
-from hed import schema as hedschema
-schema = hedschema.load_schema('8.4.0')
-score_schema = hedschema.load_schema('score_2.1.0')
-```
+from hed import load_schema_version
+schema = load_schema_version('8.4.0')
 
-**MATLAB:**
+```
+````
+
+The HED schemas are cached in the Python HEDTools. Pass the `schema` object as needed.
+
+The MATLAB HEDTools provide two ways of analyzing HED, both of which rely on an underlying Python HEDTools for their implementation: calls to web services and direct installation. Both approaches use MATLAB wrappers, so no knowledge of Python is required. The web services method requires no installation except for adding the tools to the MAtLAB path. The services are hosted at [HED online tools](https://www.hedtags.org/hed). The other method involves direct calls to the Python HEDTools within MATLAB.
+
+````{admonition} Direct calls to Python in MATLAB
+---
+class: tip
+---
+
+**MATLAB:** Direct Python calls in MATLAB
 
 ```matlab
-hedTools = getHedTools();
-schema = hedTools.getSchema('8.4.0');
+hedTools = HedToolsPython('8.4.0');
 ```
+````
 
-**JavaScript:**
+The `hedTools` object, which provides wrappers to the main Python HEDTools operations, loads the schema internally. This usage requires that the Python HEDTools be installed in the MATLAB Python environment, which is probablematic for older versions of MATLAB. See [MATLAB HEDTools](https://www.hedtags.org/hed-matlab) for more information.
+
+````{admonition} Direct calls to Python in MATLAB
+---
+class: tip
+---
 
 ```javascript
-import { buildSchema } from '@hed-standard/hed-validator';
-const schema = await buildSchema({ schemas: [['8.4.0', '']] });
-```
+import { buildSchema, SchemaSpec, SchemaSpecs } from '@hed-standard/hed-validator';
+const spec1 = new SchemaSpec('', '8.4.0', '', '')
+const specs = new SchemasSpec().addSchemaSpec(spec1)
+const hedSchemas = await buildSchemas(specs)
 
 ______________________________________________________________________
 
 ## Getting help
 
-- **Schema questions**: [GitHub Issues](https://github.com/hed-standard/hed-schemas/issues)
+- **Schema questions**: [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Technical support**: [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 - **Documentation**: [hedtags.org](https://www.hedtags.org)
 - **Community**: [HED Working Group](https://www.hedtags.org)
+````

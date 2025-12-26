@@ -26,7 +26,7 @@ keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "n
 "HED Specification" = "https://www.hedtags.org/hed-specification/"
 
 [tool.codespell]
-skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.yaml,*.yml,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,*.toml,.venv,datasets*'
+skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,.venv,datasets*,_build,_static,*.js,*.inv'
 ignore-words-list = 'te,parms,trough'
 uri-ignore-words-list = '*'
 

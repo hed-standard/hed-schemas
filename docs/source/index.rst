@@ -6,7 +6,9 @@ HED schemas
    
    * `HED homepage <https://www.hedtags.org/>`_ 
 
-   * `HED vocabularies <https://www.hedtags.org/hed-schema-browser>`_
+   * `HED resources <https://www.hedtags.org/hed-resources>`_ 
+
+   * `HED schema browser <https://www.hedtags.org/hed-schema-browser>`_
 
    * `HED online tools <https://hedtools.org/hed/>`_
 

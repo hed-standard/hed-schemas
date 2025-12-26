@@ -28,7 +28,7 @@ This guide describes how to develop your own library schema or contribute to exi
 Before developing a schema:
 
 1. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser)
-2. **Post an issue** describing your proposed changes or new schema
+2. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-schemas/issues)
 3. **Discuss with the HED Working Group** at [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 4. **Choose a schema name** (short, informative, alphabetic string)
 5. **Understand the structure** by reading this guide
@@ -41,7 +41,7 @@ All HED schemas must conform to these design principles:
 
 - Top-level tags represent major categories
 - Ideally each subtree should have no more than 7 direct children (for human readability)
-- The hierarchy should be intuitive and browsable
+- The hierarchy should be easily understood
 
 ### 2. Is-a relationship
 
@@ -58,7 +58,7 @@ This enables search generalization: searching for `Communicate` returns all desc
 Independent concepts should be in different subtrees. For example:
 
 - `Left-handed` is NOT a type of `Human`
-- `Left-handed` IS a type of `Property`
+- `Left-handed` IS a type of `Property` (it doesn't define humans)
 
 Properties and categories must not be conflated.
 
@@ -76,15 +76,16 @@ Properties and categories must not be conflated.
 
 ### 6. Standard schema partnership
 
-All library schemas should be partnered with the standard schema.
+All library schemas should be partnered with the latest standard schema.
 
 - Specify the `withStandard` version in the library schema header
 - Use `{rooted=ParentTag}` attribute to integrate library terms under standard schema nodes
 - Add top-level tags (corresponding to separate subtrees) only when required
+- Do not use the `inLibrary` attribute -- this is attribute is only added by tools when schema is merged with standard
 
 ### 7. Development format
 
-The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file types: `.xml`, `.mediawiki`, `.tsv`, and `.json`, respectively. The formats are completely equivalent, and any one format can be generated from another other format. However, schema developers should ONLY develop either in MEDIAWIKI or TSV format:
+The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file types: `.xml`, `.mediawiki`, `.tsv`, and `.json`, respectively. The formats are completely equivalent, and any one format can be generated from another other format. However, schema developers should ONLY develop in the MEDIAWIKI or TSV formats:
 
 - **MEDIAWIKI format** (`.mediawiki` files) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
 - **TSV format** (`.tsv` files) - Spreadsheet-compatible format with separate files for tags, units, etc. Users usually only edit the `_Tag.tsv` file -- easiest format for including lots of attributes and links to other resources
@@ -104,21 +105,29 @@ The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file ty
 - Working with spreadsheet tools for batch updates
 - When collaborating with non-technical domain experts who prefer spreadsheets
 
+```{admonition} Only edit in one format at a time
+---
+class: warning
+---
+
+In a given Pull Request, you should only edit the schema in a single format (either MEDIAWIKI or TSV, not both). Editing in multiple formats simultaneously can lead to merge conflicts and inconsistencies during the automated conversion process.
+```
+
 ### Naming conventions
 
 - First character capitalized (if letter)
 - Remaining characters lowercase (except SI units)
 - Multiple words hyphenated (e.g., `Clap-hands`)
-- Only alphanumeric, hyphens, and underscores allowed
+- Only alphanumeric, hyphens, and underscores allowed for tag names
 - No blanks
 
-For examples of these conventions in practice, see [MEDIAWIKI schema structure](#mediawiki-schema-structure) and [TSV schema structure](#tsv-schema-structure). Note: All of the formats are available on GitHub.
+For examples of these conventions in practice, see [MEDIAWIKI schema structure](#mediawiki-schema-structure) and [TSV schema structure](#tsv-schema-structure). All of the formats are available on GitHub.
 
 ## Proposing a new library schema
 
 To propose a new library schema:
 
-1. **Post an issue** on the [hed-schemas repository](https://github.com/hed-standard/hed-schemas/issues):
+1. **Post an issue** on the [hed-schemas](https://github.com/hed-standard/hed-schemas/issues) GitHub repository:
 
    - Describe the domain your schema will cover
    - Explain the need for this specialized vocabulary
@@ -163,14 +172,14 @@ To propose a new library schema:
 
 Branch names determine which schema can be modified:
 
-| Branch prefix | Allowed modifications                               |
-| ------------- | --------------------------------------------------- |
-| `standard_*`  | Only `standard_schema/`: (docs, `/prerelease`)      |
-| `score_*`     | Only `library_schemas/score/`: (docs, `prerelease`) |
-| `lang_*`      | Only `library_schemas/lang/`: (docs, `prerelease`)  |
-| `slam_*`      | Only `library_schemas/slam/`: (docs, `prerelease`)  |
-| `mouse_*`     | Only `library_schemas/mouse/`: (docs, `prerelease`) |
-| `admin_*`     | Any files: (docs, scripts, CI/CD)                   |
+| Branch prefix | Allowed modifications                                |
+| ------------- | ---------------------------------------------------- |
+| `standard_*`  | Only `standard_schema/`: (docs, `/prerelease`)       |
+| `score_*`     | Only `library_schemas/score/`: (docs, `prerelease`)  |
+| `lang_*`      | Only `library_schemas/lang/`: (docs, `prerelease`)   |
+| `slam_*`      | Only `library_schemas/slam/`: (docs, `prerelease`)   |
+| `mouse_*`     | Only `library_schemas/mouse/`: (docs, `prerelease`)  |
+| `admin_*`     | Any files: (docs, scripts, CI/CD) - maintainers only |
 
 CI/CD will reject pushes that violate these conventions. These rules are in place to allow schemas to be housed in a single repository, while keeping development efforts for individual schemas separate. ONLY MAINTAINERS can do releases and move schemas from `prerelease` to the other directories.
 
@@ -231,7 +240,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 │  • Working Group approves release                        │
 │  • Maintainer moves files from prerelease                │
 │  • Maintainer tags version in git                        │
-│  • Maintainer publishes DOI via Zen                      │
+│  • Maintainer publishes DOI via Zenodo                   │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -239,7 +248,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 01. **Fork the repository** on GitHub:
 
-    - Go to [github.com/hed-standard/hed-schemas](https://github.com/hed-standard/hed-schemas)
+    - Go to the [hed-schemas](https://github.com/hed-standard/hed-schemas) GitHub repository
     - Click the "Fork" button to create your own copy
 
 02. **Clone your fork** locally:
@@ -285,10 +294,13 @@ The actual official release of a new version of a HED schema is a multistage pro
 07. **Commit and push to your fork**:
 
     ```powershell
+    git pull origin main
     git add .
     git commit -m "Add Wave-hand action tag"
     git push origin standard_add_new_term
     ```
+
+    Be sure the main branch of your fork is up-to-date with the current version to avoid conflicts.
 
 08. **Create pull request** to the main repository:
 
@@ -306,7 +318,7 @@ The actual official release of a new version of a HED schema is a multistage pro
     **If CI/CD pipeline validation fails**:
 
     - Review the error messages in the GitHub Actions log
-    - Common errors:
+    - Common errors (should be found before PR using the online tools):
       - Schema syntax errors (missing brackets, mismatched tags)
       - Invalid attribute values
       - Undefined parent tags in TSV `omn:SubClassOf`
@@ -563,7 +575,7 @@ class: tip
 
 #### Prefixes
 
-Prefixes map short abbreviations to full namespace URIs for external ontologies and vocabularies. All prefixes used in External annotations must be defined here. Common prefixes include `dc:` (Dublin Core), `ncit:` (NCI Thesaurus), `rdfs:` (RDF Schema), and `skos:` (SKOS vocabulary).
+Prefixes map short abbreviations to full namespace URIs for external ontologies and vocabularies. All prefixes used in the `External annotations` section must be defined here. Common prefixes include `dc:` (Dublin Core), `ncit:` (NCI Thesaurus), `rdfs:` (RDF Schema), and `skos:` (SKOS vocabulary).
 
 ````{admonition} Defining namespace prefixes
 ---
@@ -611,7 +623,7 @@ class: tip
 
 ### Partnering with standard schema
 
-Library schemas are usually partnered with a standard schema. When you specify a library schema (e.g. `score_2.2.0`), the information from that schema is automatically merged with its standard schema partner to form a single schema.A given version of a library schema is partnered with a specific version of the schema, as specified in the schema header.
+Library schemas are usually partnered with a standard schema. When you specify a library schema (e.g., `score_2.2.0`), the information from that schema is automatically merged with its standard schema partner to form a single schema. A given version of a library schema is partnered with a specific version of the schema, as specified in the schema header.
 
 #### Specifying the partner
 
@@ -718,6 +730,15 @@ Developers do not need to perform these steps. Once your changes are merged into
 8. ✅ Search existing schemas thoroughly
 9. ✅ Follow semantic versioning strictly
 
+```{admonition} Each generation of change log
+---
+class: tip
+---
+
+You can easily generate your CHANGELOG.md entry using the *Schema compare* action of the HED [online schema tools](https://hedtools.org/hed/schemas). You can compare your current version with the previously released version or if this is the first release, with the initial setup. The tool produces a nice CHANGELOG in Markdown for you to use.
+
+```
+
 ## CI/CD pipeline
 
 GitHub Actions automatically:
@@ -725,12 +746,12 @@ GitHub Actions automatically:
 | Workflow                          | Purpose                                                |
 | --------------------------------- | ------------------------------------------------------ |
 | `validate_schemas.yaml`           | Validates all changed schema files                     |
-| `update_and_convert_schemas.yaml` | Converts MEDIAWIKI to other formats                    |
-| `add_hed_ids.yaml`                | Assigns HedIds to new terms                            |
+| `update_and_convert_schemas.yaml` | Converts changed file(s) to other format               |
+| `add_hed_ids.yaml`                | Assigns HedIds to new terms (if during release)        |
 | `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/` |
-| `codespell.yaml`                  | Spell checking                                         |
-| `mdformat.yaml`                   | Markdown formatting                                    |
-| `links.yaml`                      | Check for broken links                                 |
+| `codespell.yaml`                  | Checks spelling                                        |
+| `mdformat.yaml`                   | Checks Markdown formatting                             |
+| `links.yaml`                      | Checks for broken links                                |
 
 ## Quick reference
 
@@ -786,5 +807,5 @@ GitHub Actions automatically:
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
-- **Homepage**: [hedtags.org](https://www.hedtags.org)
-- **Resources**: [hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
+- **Homepage**: [www.hedtags.org](https://www.hedtags.org)
+- **Resources**: [www.hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
