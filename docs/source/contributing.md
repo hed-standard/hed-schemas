@@ -16,119 +16,75 @@ This guide explains how to build and contribute to the HED schemas documentation
    cd hed-schemas
    ```
 
-2. **Create a virtual environment** (recommended):
+## Building documentation locally
+
+### Initial setup (one-time)
+
+1. **Create a virtual environment** (if not already done):
+
+   **Windows**:
+
+   ```powershell
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+   ```
+
+   **Unix/Mac**:
 
    ```bash
    python -m venv .venv
-
-   # Windows
-   .venv\Scripts\Activate.ps1
-
-   # Unix/Mac
    source .venv/bin/activate
    ```
 
-3. **Install documentation dependencies**:
+2. **Install documentation dependencies**:
 
    ```bash
    pip install -r docs/requirements.txt
    ```
 
-## Building documentation locally
+### Building with Sphinx
 
-### Method 1: Using the build script (recommended)
-
-The easiest way to build the documentation is using the provided Python script:
-
-```bash
-python scripts/build_docs.py
-```
-
-This script will:
-
-1. Install/update required dependencies
-2. Build the Sphinx documentation
-3. Show you where to find the built HTML files
-
-### Method 2: Using Sphinx directly
-
-Navigate to the docs directory and use the make command:
+Navigate to the docs directory and build the documentation:
 
 **Windows**:
 
 ```powershell
 cd docs
-make.bat html
+python -m sphinx -b html source _build/html
 ```
 
 **Unix/Mac**:
 
 ```bash
 cd docs
-make html
+python -m sphinx -b html source _build/html
 ```
 
 The built documentation will be in `docs/_build/html/`.
 
-### Method 3: Using Platform-Specific Scripts
+### Viewing documentation locally
+
+After building, you can serve the documentation with Python's built-in HTTP server:
 
 **Windows**:
 
 ```powershell
-scripts\build-docs.bat
+cd docs/_build/html
+python -m http.server 8000
 ```
 
 **Unix/Mac**:
 
 ```bash
-./scripts/build-docs.sh
+cd docs/_build/html
+python -m http.server 8000
 ```
 
-## Viewing documentation locally
-
-### Method 1: Using the serve script (recommended)
-
-After building, you can serve the documentation locally:
-
-```bash
-python scripts/serve_docs.py
-```
-
-This will:
-
-- Start a local HTTP server on port 8000
-- Automatically open your browser to http://localhost:8000
-- Allow you to view the documentation as it would appear online
+Then open your browser to [http://localhost:8000](http://localhost:8000).
 
 Press `Ctrl+C` to stop the server.
 
-**Options**:
-
-```bash
-# Use a different port
-python scripts/serve_docs.py --port 8080
-
-# Don't automatically open browser
-python scripts/serve_docs.py --no-browser
-```
-
-### Method 2: Open HTML file directly
-
-Open `docs/_build/html/index.html` in your web browser.
-
-### Method 3: Using Platform-Specific Scripts
-
-**Windows**:
-
-```powershell
-scripts\serve-sphinx.bat
-```
-
-**Unix/Mac**:
-
-```bash
-./scripts/serve-sphinx.sh
-```
+**Alternative**: You can also open `docs/_build/html/index.html` directly in your web browser.
 
 ## Making changes to documentation
 
@@ -161,12 +117,17 @@ The documentation source files are in `docs/source/`:
 
 3. **Build and preview**:
 
-   ```bash
-   python scripts/build_docs.py
-   python scripts/serve_docs.py
+   ```powershell
+   # Build
+   cd docs
+   python -m sphinx -b html source _build/html
+
+   # Serve
+   cd _build/html
+   python -m http.server 8000
    ```
 
-4. **Review your changes** in the browser
+4. **Review your changes** in the browser at http://localhost:8000
 
 5. **Rebuild as needed** - The build is fast, so rebuild frequently to check your changes
 
@@ -292,12 +253,12 @@ Fix these warnings before committing - they indicate potential broken links or i
 
 ### Port already in use
 
-**Problem**: `Address already in use` when running serve_docs.py
+**Problem**: `Address already in use` when running http.server
 
 **Solution**: Use a different port
 
 ```bash
-python scripts/serve_docs.py --port 8001
+python -m http.server 8001
 ```
 
 Or find and stop the process using port 8000.

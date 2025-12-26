@@ -14,6 +14,54 @@ body[data-theme="dark"] .sidebar-brand-text {
     color: #58a6ff !important;
 }
 
+/* Make all heading levels match sidebar title blue color */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #0969da !important;
+}
+
+body[data-theme="dark"] .content h1,
+body[data-theme="dark"] .content h2,
+body[data-theme="dark"] .content h3,
+body[data-theme="dark"] .content h4,
+body[data-theme="dark"] .content h5,
+body[data-theme="dark"] .content h6,
+body[data-theme="dark"] article h1,
+body[data-theme="dark"] article h2,
+body[data-theme="dark"] article h3,
+body[data-theme="dark"] article h4,
+body[data-theme="dark"] article h5,
+body[data-theme="dark"] article h6 {
+    color: #58a6ff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) .content h1,
+    body:not([data-theme="light"]) .content h2,
+    body:not([data-theme="light"]) .content h3,
+    body:not([data-theme="light"]) .content h4,
+    body:not([data-theme="light"]) .content h5,
+    body:not([data-theme="light"]) .content h6,
+    body:not([data-theme="light"]) article h1,
+    body:not([data-theme="light"]) article h2,
+    body:not([data-theme="light"]) article h3,
+    body:not([data-theme="light"]) article h4,
+    body:not([data-theme="light"]) article h5,
+    body:not([data-theme="light"]) article h6 {
+        color: #58a6ff !important;
+    }
+}
+
 /* Quick Links sidebar styling - darker gray box with proper padding */
 .sidebar-quicklinks {
     margin: 1rem 0.75rem 1rem 0.75rem;
@@ -23,11 +71,47 @@ body[data-theme="dark"] .sidebar-brand-text {
     border: 1px solid #d0d0d0;
 }
 
+/* Style RST sidebar directive boxes to match left sidebar styling */
+.sidebar,
+aside.sidebar {
+    background-color: #e8e8e8 !important;
+    border: 1px solid #d0d0d0 !important;
+    border-radius: 0.25rem !important;
+    padding: 0.75rem 1rem !important;
+}
+
+body[data-theme="dark"] .sidebar,
+body[data-theme="dark"] aside.sidebar {
+    background-color: #0d0d0d !important;
+    border-color: #1a1a1a !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) .sidebar,
+    body:not([data-theme="light"]) aside.sidebar {
+        background-color: #0d0d0d !important;
+        border-color: #1a1a1a !important;
+    }
+}
+
+.sidebar p.sidebar-title,
+aside.sidebar p.sidebar-title {
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
 /* Dark mode styling for quick links - much darker background */
-html[data-theme="dark"] .sidebar-quicklinks,
 body[data-theme="dark"] .sidebar-quicklinks {
     background-color: #0d0d0d;
     border-color: #1a1a1a;
+}
+
+/* Auto mode with dark system preference */
+@media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) .sidebar-quicklinks {
+        background-color: #0d0d0d;
+        border-color: #1a1a1a;
+    }
 }
 
 .sidebar-quicklinks h3 {
@@ -85,7 +169,6 @@ body[data-theme="dark"] .sidebar-quicklinks {
     padding-right: 2.5rem !important;
 }
 
-html[data-theme="dark"] .sidebar-search-container input,
 body[data-theme="dark"] .sidebar-search-container input {
     background-color: #0d0d0d !important;
     border: 1px solid #1a1a1a !important;
@@ -93,13 +176,21 @@ body[data-theme="dark"] .sidebar-search-container input {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23cccccc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
 }
 
+/* Auto mode with dark system preference */
+@media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) .sidebar-search-container input {
+        background-color: #0d0d0d !important;
+        border: 1px solid #1a1a1a !important;
+        color: #e8e8e8 !important;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23cccccc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
+    }
+}
+
 /* Make search icon visible */
 .sidebar-search-container input::placeholder {
     color: var(--color-foreground-muted) !important;
     opacity: 1 !important;
 }
-html[data-theme="dark"] .sidebar-search-container input::placeholder,
-
 body[data-theme="dark"] .sidebar-search-container input::placeholder {
     color: #999999 !important;
 }
@@ -108,7 +199,6 @@ body[data-theme="dark"] .sidebar-search-container input::placeholder {
 .sidebar-search .icon {
     color: var(--color-foreground-muted) !important;
 }
-html[data-theme="dark"] .sidebar-search .icon,
 
 body[data-theme="dark"] .sidebar-search .icon {
     color: #999999 !important;
@@ -148,9 +238,6 @@ a.muted-link[title*="View page source"],
 .content-icon-container a[href*="github.com"] svg {
     display: none !important;
 }
-html[data-theme="dark"] .content-icon-container a.github-repo-link,
-html[data-theme="dark"] .content-icon-container a[href*="github.com"]:not([href*="/edit/"]),
-
 /* Dark mode icon color */
 body[data-theme="dark"] .content-icon-container a.github-repo-link,
 body[data-theme="dark"] .content-icon-container a[href*="github.com"]:not([href*="/edit/"]) {

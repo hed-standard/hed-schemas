@@ -420,7 +420,7 @@ Key elements:
 
 Adding a tag to the TSV format involves adding a line to the `_Tag.tsv` spreadsheet.
 
-`````{admonition} Adding the tag
+```{admonition} Adding the tag
 ---
 class: tip
 ---
@@ -432,23 +432,24 @@ class: tip
 | HED_0012018 | 2 | Communicate-gesturally | Communicate | relatedTag=Move-face, relatedTag=Move-upper-extremity | Communicate non-verbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body. |
 | HED_0012019 | 3 | Clap-hands | Communicate-gesturally | | Strike the palms of against one another resoundingly, and usually repeatedly, especially to express approval. |
 | | 3 | **Beckon** | Communicate-gesturally | | Signal or summon someone with a gesture, typically by moving the hand or head. |
+```
 
 In this example:
+
 - `Beckon` is added with `Level=3` (same as `Clap-hands`)
 - `omn:SubClassOf=Communicate-gesturally` specifies the parent
 - `hedId` is empty (left blank) for prerelease terms - HedIds are assigned only at release time
-- The row is at the end of the file (for convenience) -- the hierarchy is determined by `omn:SubClassOf
+- The row is at the end of the file (for convenience) -- the hierarchy is determined by \`omn:SubClassOf
 - Attributes column is empty (or contains comma-separated attributes if needed)
 
-The TSV format is easier than MEDIAWIKI format for adding large numbers of attributes and checking descriptions, but it is more difficult to check the hierarchy (you must trace parent-child relationships through the `omn:SubClassOf` column instead of visually seeing indentation levels).  
+The TSV format is easier than MEDIAWIKI format for adding large numbers of attributes and checking descriptions, but it is more difficult to check the hierarchy (you must trace parent-child relationships through the `omn:SubClassOf` column instead of visually seeing indentation levels).
 
 ### Adding attributes
 
 HED schema attributes modify tag behavior and provide additional metadata (see [Schema design principles](#schema-design-principles) for design guidance). Attributes can be:
+
 - **Boolean**: Set by name only to indicate presence or absence (e.g., `requireChild`, `topLevelTagGroup`)
 - **Value attributes**: Require a string or numeric value (e.g., `suggestedTag=Task-property`, `hedId=HED_0012808`). When multiple values of the same attribute are needed, repeat the attribute name with each value as comma-separated name-value pairs (e.g., `suggestedTag=Tag1,suggestedTag=Tag2`).
-
-
 
 ````{admonition} The Definition tag has both boolean and value attributes
 ---
@@ -465,7 +466,7 @@ class: tip
 | hedId | Level | rdfs:label | omn:SubClassOf | Attributes | dc:description |
 |-------|-------|------------|----------------|------------|----------------|
 | HED_0012808 | 2 | Definition | Organizational-property | requireChild, reserved, topLevelTagGroup | A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept. |
-`````
+````
 
 The `Definition` tag has the boolean attributes `requireChild`, `reserved`, `topLevelTagGroup` and the value attribute `hedId`
 
@@ -785,5 +786,5 @@ GitHub Actions automatically:
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
-- **Homepage**\*: [hedtags.org](https://www.hedtags.org)
+- **Homepage**: [hedtags.org](https://www.hedtags.org)
 - **Resources**: [hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
