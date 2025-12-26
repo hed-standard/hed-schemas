@@ -96,7 +96,7 @@ The SCORE library allows neurologists, neurophysiologists, and brain researchers
 - [README](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/README.md)
 - [CHANGELOG](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/CHANGELOG.md)
 - [View in Schema Browser](https://www.hedtags.org/hed-schema-browser)
-- [SCORE Documentation](https://www.hedtags.org/hed-schemas/hed_score_schema.html)
+- [SCORE Documentation](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/README.md)
 
 ### References
 
