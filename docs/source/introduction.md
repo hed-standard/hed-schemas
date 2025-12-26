@@ -41,7 +41,7 @@ While HED can be used to annotate any type of data, the current HED community fo
 
 HED is also useful for participant metadata annotation as well as for media (images and video) and environmental annotation, since this information is important for understanding brain interaction with the outside world.
 
-## Schema hierarchal structure
+## Schema hierarchical structure
 
 HED schemas are structured as a set of trees, each corresponding to a major term category for the vocabulary. Each child tag in a HED schema is considered to be a special type of its ancestors, following an **is-a** relationship.
 
@@ -51,7 +51,7 @@ For example, the tag `Square` has a full schema path:
 
 This means `Square` is-a type of `Rectangle`, which is-a type of `2D-shape`, etc. This strict hierarchy enables powerful search generalization: when downstream tools search for `2D-shape`, the search will return tag strings containing `Square`, `Rectangle`, and `2D-shape`.
 
-Although you can express a tag by any partial path in the hierarchy, when possible you SHOULD ONLY USE JUST the tag node name (e.g., `Square`) rather than the full path or a partial path itself when annotating data. There is no ambiguity, because tag names in a schema must be unique. HED-compliant tools can convert between this **"short-form"** and the complete path or **"long-form"** when needed for search, summarization, or other processing. Short form makes annotations simpler. In addition, a node sometimes changes position when a new version is release if additional intermediate nodes are added.
+Although you can express a tag by any partial path in the hierarchy, when possible you SHOULD ONLY USE JUST the tag node name (e.g., `Square`) rather than the full path or a partial path when annotating data. There is no ambiguity, because tag names in a schema must be unique. HED-compliant tools can convert between this **"short-form"** and the complete path or **"long-form"** when needed for search, summarization, or other processing. Short form makes annotations simpler. In addition, a node sometimes changes position when a new version is released if additional intermediate nodes are added.
 
 ## Available schemas
 
@@ -94,7 +94,7 @@ Although you can express a tag by any partial path in the hierarchy, when possib
 
 ## Schema formats
 
-Each schema is stored in **four equivalent formats**. Each format holds
+Each schema is stored in **four equivalent formats**:
 
 1. **MEDIAWIKI** (`.mediawiki`) - in `hedwiki/` directory
 
@@ -112,12 +112,12 @@ Each schema is stored in **four equivalent formats**. Each format holds
 
    - Flat dictionary structure for easy lookups
    - Optimized for AI tools and programmatic access
-   - Generated from XML/MEDIAWIKI
+   - Never edited directly - generated other formats
 
 4. **Tabular TSV** (`.tsv`) - in `hedtsv/` directory
 
-   - Spreadsheet-compatible format
-   - Each schema entity type (tags, units, etc.) in separate TSV file
+   - Spreadsheet-compatible format - good for adding attributes
+   - Each schema entity type (tags, units, etc.) in separate TSV files
    - May contain additional ontology mapping information
 
 **CRITICAL**: All four formats contain the same semantic information. Conversion between formats is lossless.
@@ -125,26 +125,27 @@ Each schema is stored in **four equivalent formats**. Each format holds
 ## Related tools and resources
 
 - **[HED homepage](https://www.hedtags.org)**: Overview and links for HED
-- **[HED Schema Browser](https://www.hedtags.org/hed-schema-browser)**: Interactive schema exploration
-- **[HED Specification](https://www.hedtags.org/hed-specification/)**: Formal specification defining HED annotation rules
-- **[HED Online Tools](https://hedtools.org)**: Web-based schema validation, conversion, and annotation tools
-- **[HED Python Tools](https://github.com/hed-standard/hed-python)**: Python tools for HED validation, analysis, and transformation
-- **[HED MATLAB Tools](https://github.com/hed-standard/hed-matlab)**: MATLAB tools for HED processing
-- **[HED JavaScript Tools](https://github.com/hed-standard/hed-javascript)**: JavaScript validation tools
-- **[HED Examples](https://github.com/hed-standard/hed-examples)**: Example datasets annotated with HED
-- **[HED Resources](https://www.hedtags.org/hed-resources)**: Comprehensive tutorials and documentation
+- **[HED resources](https://www.hedtags.org/hed-resources)**: Comprehensive tutorials and documentation
+- **[HED schema browser](https://www.hedtags.org/hed-schema-browser)**: Interactive schema exploration
+- **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification defining HED annotation rules
+- **[HED online tools](https://hedtools.org)**: Web-based schema validation, conversion, and annotation tools
+- **[Python HEDTools](https://github.com/hed-standard/hed-python)**: Python tools for HED validation, analysis, and transformation
+- **[MATLAB HEDTools](https://github.com/hed-standard/hed-matlab)**: MATLAB tools for HED processing
+- **[JavaScript HEDTools](https://github.com/hed-standard/hed-javascript)**: JavaScript validation tools
+- **[HED examples](https://github.com/hed-standard/hed-examples)**: Example datasets annotated with HED
 
 ## Repository structure
 
 This repository is organized as follows:
 
-| Directory            | Description                                            |
-| -------------------- | ------------------------------------------------------ |
-| `standard_schema/`   | Base HED vocabulary for all domains                    |
-| `library_schemas/`   | Specialized vocabularies for specific domains          |
-| `scripts/`           | Utility scripts for schema validation and verification |
-| `docs/`              | Documentation source files                             |
-| `.github/workflows/` | CI/CD pipelines for validation and conversion          |
+| Directory             | Description                                            |
+| --------------------- | ------------------------------------------------------ |
+| `standard_schema/`    | Base HED vocabulary for all domains                    |
+| `library_schemas/`    | Specialized vocabularies for specific domains          |
+| `schemas_latest_json` | Easy access for AIs                                    |
+| `scripts/`            | Utility scripts for schema validation and verification |
+| `docs/`               | Documentation source files                             |
+| `.github/workflows/`  | CI/CD pipelines for validation and conversion          |
 
 Each schema directory contains:
 
@@ -163,9 +164,9 @@ HED schemas can be accessed and used through various tools and interfaces.
 
 ### Web-based tools
 
-For users who prefer not to program, HED provides web-based tools at:
+For users who prefer not to program, HED provides online tools and REstful services at:
 
-- **[hedtools.org](https://hedtools.org)** - Production version
+- **[hedtools.org/hed](https://hedtools.org/hed)** - Production version
 - **[hedtools.org/hed_dev](https://hedtools.org/hed_dev)** - Development version
 
 These tools support:
@@ -179,9 +180,9 @@ These tools support:
 
 Schemas can be accessed programmatically through:
 
-- **Python**: [HED Python Tools](https://github.com/hed-standard/hed-python)
-- **MATLAB**: [HED MATLAB Tools](https://github.com/hed-standard/hed-matlab)
-- **JavaScript**: [HED JavaScript Tools](https://github.com/hed-standard/hed-javascript)
+- **Python**: [Python HEDTools](https://github.com/hed-standard/hed-python)
+- **MATLAB**: [MATLAB HEDTools](https://github.com/hed-standard/hed-matlab)
+- **JavaScript**: [JavaScript HEDTools](https://github.com/hed-standard/hed-javascript)
 
 ## Getting help
 
@@ -196,6 +197,5 @@ Schemas can be accessed programmatically through:
 
 ### Support
 
-- **Issues**: Report bugs or request features on [GitHub Issues](https://github.com/hed-standard/hed-schemas/issues)
-- **Questions**: Ask on the [HED forum](https://github.com/hed-standard/hed-specification/discussions)
+- **Issues**: Report bugs, ask questions, or request features on [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Email**: Contact [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
