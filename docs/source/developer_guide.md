@@ -28,7 +28,7 @@ This guide describes how to develop your own library schema or contribute to exi
 Before developing a schema:
 
 1. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser)
-2. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-schemas/issues)
+2. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
 3. **Discuss with the HED Working Group** at [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 4. **Choose a schema name** (short, informative, alphabetic string)
 5. **Understand the structure** by reading this guide
