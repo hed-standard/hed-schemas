@@ -52,7 +52,7 @@ uri-ignore-words-list = '*'
 line-length = 88
 target-version = ['py310', 'py311', 'py312']
 include = '\.pyi?$'
-exclude = '''
+extend-exclude = '''
 /(
     \.git
   | \.venv
@@ -60,6 +60,8 @@ exclude = '''
   | build
   | dist
   | docs/_build
+  | docs/_static
+  | docs/_templates
   | standard_schema
   | library_schemas
   | schemas_latest_json
@@ -76,6 +78,8 @@ exclude = [
     "build",
     "dist",
     "docs/_build",
+    "docs/_static",
+    "docs/_templates",
     "standard_schema",
     "library_schemas",
     "schemas_latest_json",
