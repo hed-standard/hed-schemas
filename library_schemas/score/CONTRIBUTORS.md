@@ -20,5 +20,5 @@ Dora Hermes (@dorahermes)
 
 **If you have contributed** to the HED SCORE schema effort please submit PR from a
 branch called `score_contributor` in your forked repository adding your name to this list in alphabetical order.
-Alternatively, post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) to this repository
+Alternatively, post an [issue](https://github.com/hed-standard/hed-schemas/issues) to this repository
 with the tag `[CONTRIBUTOR_SCORE]`.

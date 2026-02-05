@@ -6,7 +6,7 @@ Most contributions to HED are initiated through the GitHub issue mechanism. Here
 
 ### New term to existing schema
 
-To propose a new term for a HED schema, post issue to [**hed-schemas**](https://github.com/hed-standard/hed-schemas/issues) listing (as much as possible):
+To propose a new term for a HED schema, post [issue](https://github.com/hed-standard/hed-schemas/issues) listing (as much as possible):
 
 - the schema,
 - term
@@ -17,7 +17,7 @@ To propose a new term for a HED schema, post issue to [**hed-schemas**](https://
 
 ### Corrections to existing term
 
-To propose corrections/changes to description, attributes, units allowed, value classes for an existing term post an issue to [**hed-schemas**](https://github.com/hed-standard/hed-schemas/issues). List:
+To propose corrections/changes to description, attributes, units allowed, value classes for an existing term post an [issue](https://github.com/hed-standard/hed-schemas/issues). List:
 
 - the schema,
 - term
@@ -28,7 +28,7 @@ Deprecation of a term is a more major change and requires much additional consid
 
 ### Propose a new HED library schema
 
-To propose a new HED vocabulary for a subfield, post an issue to [**hed-schemas**](https://github.com/hed-standard/hed-schemas/issues) indicating your interest. List:
+To propose a new HED vocabulary for a subfield, post an [issue](https://github.com/hed-standard/hed-schemas/issues) indicating your interest. List:
 
 - the proposed name of the schema
 - the subfield
@@ -37,17 +37,17 @@ To propose a new HED vocabulary for a subfield, post an issue to [**hed-schemas*
 - proposer group members
 - email [mailto:hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com) with contact information.
 
-You should also read over the [**HED schema developer's guide**](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html). The HED Working Group will arrange a meeting to discuss the development of the library schema.
+You should also read over the [HED schema developer's guide](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html). The HED Working Group will arrange a meeting to discuss the development of the library schema.
 
 ### Corrections to documentation and bug reports
 
-Corrections and documentation can be posted to [**hed-schemas**](https://github.com/hed-standard/hed-schemas/issues), and they will be forwarded to the correct repository.
+Corrections and documentation can be posted to [issues](https://github.com/hed-standard/hed-schemas/issues), and they will be forwarded to the correct repository.
 
 However, here is a list of the issue trackers for various items:
 
 | Problem source     | Issue tracker                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| General            | [**hed-schemas**](https://github.com/hed-standard/hed-schemas/issues)                                                          |
+| General            | [hed-schemas](https://github.com/hed-standard/hed-schemas/issues)                                                              |
 | Homepage           | [https://github.com/hed-standard/hed-standard.github.io/issues](https://github.com/hed-standard/hed-standard.github.io/issues) |
 | Python tools       | [https://github.com/hed-standard/hed-python/issues](https://github.com/hed-standard/hed-python/issues)                         |
 | Documentation      | [https://github.com/hed-standard/hed-examples/issues](https://github.com/hed-standard/hed-examples/issues)                     |

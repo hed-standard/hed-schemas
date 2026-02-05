@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install black
+          pip install .[dev]
 
       - name: Check Python scripts with Black
         run: |
-          black --check --diff scripts/ docs/source/conf.py
+          black --check --diff scripts/ docs/conf.py

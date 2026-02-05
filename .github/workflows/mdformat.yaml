@@ -26,10 +26,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements-dev.txt
+          pip install .[dev]
           
       - name: Run mdformat (check only)
         run: |
-          mdformat --check --wrap no --number docs/source
+          mdformat --check --wrap no --number docs/
           mdformat --check --wrap no --number *.md
           find . -name "README.md" -exec mdformat --check --wrap no --number {} +

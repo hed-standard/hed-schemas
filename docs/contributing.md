@@ -1,3 +1,15 @@
+```{index} contributing; documentation; Sphinx; building docs
+```
+
+```{meta}
+---
+description: Guide for contributing to HED schemas documentation - building, 
+  editing, and submitting documentation improvements
+keywords: documentation contribution, Sphinx, building docs, contributing guide,
+  documentation workflow
+---
+```
+
 # Contributing to documentation
 
 This guide explains how to build and contribute to the HED schemas documentation.
@@ -44,20 +56,18 @@ This guide explains how to build and contribute to the HED schemas documentation
 
 ### Building with Sphinx
 
-Navigate to the docs directory and build the documentation:
+From the repository root, use `sphinx-build` to build the documentation:
 
 **Windows**:
 
 ```powershell
-cd docs
-python -m sphinx -b html source _build/html
+sphinx-build -b html docs/ docs/_build/html
 ```
 
 **Unix/Mac**:
 
 ```bash
-cd docs
-python -m sphinx -b html source _build/html
+sphinx-build -b html docs/ docs/_build/html
 ```
 
 The built documentation will be in `docs/_build/html/`.
@@ -69,7 +79,7 @@ After building, you can serve the documentation with Python's built-in HTTP serv
 **Windows**:
 
 ```powershell
-cd docs/_build/html
+cd docs\_build\html
 python -m http.server 8000
 ```
 
@@ -119,11 +129,10 @@ The documentation source files are in `docs/source/`:
 
    ```powershell
    # Build
-   cd docs
-   python -m sphinx -b html source _build/html
+   sphinx-build -b html docs/ docs/_build/html
 
    # Serve
-   cd _build/html
+   cd docs\_build\html
    python -m http.server 8000
    ```
 

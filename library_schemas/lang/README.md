@@ -8,7 +8,7 @@ HED LANG allows for annotation of language stimuli on different levels through t
 
 The current release of the schema is primarily centered around written language, and morphosyntactic word properties. The schema is open to extension.
 
-If you are interested in participating in this effort or have any comments or suggestions, please post an [**issue**](https://github.com/hed-standard/hed-schemas/issues) to this repository.
+If you are interested in participating in this effort or have any comments or suggestions, please post an [issue](https://github.com/hed-standard/hed-schemas/issues) to this repository.
 
 ## How to cite
 
@@ -29,9 +29,9 @@ Additionally, we have added annotations to several datasets which are publicly a
 
 ## Viewing HED LANG
 
-The HED LANG library schema can be viewed using the [**HED Schema Browser**](https://www.hedtags.org/hed-schema-browser).
+The HED LANG library schema can be viewed using the [HED schema browser](https://www.hedtags.org/hed-schema-browser).
 
 ## Stable links to HED LANG
 
-- [**Stable directory link for schema lookup**](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/hedxml)
-- [**Stable link for latest version**](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedxml/HED_lang_Latest.xml)
+- [Stable directory link for schema lookup](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/hedxml)
+- [Stable link for latest version](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedxml/HED_lang_Latest.xml)

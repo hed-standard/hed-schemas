@@ -1,3 +1,15 @@
+```{index} developer guide; schema development; library schemas; HED workflow
+```
+
+```{meta}
+---
+description: Developer guide for creating library schemas and contributing to 
+  HED vocabularies
+keywords: HED development, library schemas, schema development, HED workflow, 
+  version control
+---
+```
+
 # Schema developer's guide
 
 This guide describes how to develop your own library schema or contribute to existing HED vocabularies.
@@ -109,7 +121,6 @@ The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file ty
 ---
 class: warning
 ---
-
 In a given Pull Request, you should only edit the schema in a single format (either MEDIAWIKI or TSV, not both). Editing in multiple formats simultaneously can lead to merge conflicts and inconsistencies during the automated conversion process.
 ```
 
@@ -350,7 +361,6 @@ The MEDIAWIKI format is a single file that contains many sections needed to comp
 ---
 class: tip
 ---
-
 ```text
 '''Action''' <nowiki>{extensionAllowed, hedId=HED_0012016} [Do something.]</nowiki>
 * Communicate <nowiki>{hedId=HED_0012017} [Action conveying knowledge of or about something.]</nowiki>
@@ -386,7 +396,6 @@ Adding a tag to a MEDIAWIKI file involves added an additional line in the file.
 ---
 class: tip
 ---
-
 ```text
 '''Action''' <nowiki>{extensionAllowed, hedId=HED_0012016} [Do something.]</nowiki>
 * Communicate <nowiki>{hedId=HED_0012017} [Action conveying knowledge of or about something.]</nowiki>
@@ -412,7 +421,6 @@ Each version of a schema in TSV format is stored in its own directory, and infor
 ---
 class: tip
 ---
-
 | hedId | Level | rdfs:label | omn:SubClassOf | Attributes | dc:description |
 |-------|-------|------------|----------------|------------|----------------|
 | HED_0012016 | 0 | Action | HedTag | extensionAllowed | Do something. |
@@ -436,7 +444,6 @@ Adding a tag to the TSV format involves adding a line to the `_Tag.tsv` spreadsh
 ---
 class: tip
 ---
-
 | hedId | Level | rdfs:label | omn:SubClassOf | Attributes | dc:description |
 |-------|-------|------------|----------------|------------|----------------|
 | HED_0012016 | 0 | Action | HedTag | extensionAllowed | Do something. |
@@ -467,7 +474,6 @@ HED schema attributes modify tag behavior and provide additional metadata (see [
 ---
 class: tip
 ---
-
 **MEDIAWIKI format**:
 ```text
 ** Definition <nowiki>{requireChild, reserved, topLevelTagGroup, hedId=HED_0012808} [A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept.]</nowiki>
@@ -495,7 +501,6 @@ Some attributes have special requirements. For example the `suggestedTag` and th
 ---
 class: tip
 ---
-
 **MEDIAWIKI format**:
 ```text
 '''Posterior-dominant-rhythm''' <nowiki>{suggestedTag=Feature-frequency,suggestedTag=Occipital-lobe} [Rhythmic activity occurring during wakefulness.]</nowiki>
@@ -526,7 +531,6 @@ The most common use case for external links is to cite a reference. This is done
 ---
 class: tip
 ---
-
 **MEDIAWIKI format**:
 
 ```text
@@ -557,7 +561,6 @@ Sources define bibliographic references that can be cited in schema tags. Each s
 ---
 class: tip
 ---
-
 **MEDIAWIKI format** (in `Sources` section):
 ```text
 '''Sources'''
@@ -581,7 +584,6 @@ Prefixes map short abbreviations to full namespace URIs for external ontologies 
 ---
 class: tip
 ---
-
 **MEDIAWIKI format** (in `Prefixes` section):
 ```text
 '''Prefixes'''
@@ -605,7 +607,6 @@ External annotation properties define which ontology terms can be used as annota
 ---
 class: tip
 ---
-
 **MEDIAWIKI format** (in `External annotations` section):
 ```text
 '''External annotations'''
@@ -631,7 +632,6 @@ Library schemas are usually partnered with a standard schema. When you specify a
 ---
 class: tip
 ---
-
 **MEDIAWIKI format**:
 ```text
 !# Version="1.1.0" withStandard="8.4.0" library="lang"
@@ -648,7 +648,6 @@ To root a library subtree under a standard schema node, use the `rooted` attribu
 ---
 class: tip
 ---
-
 ```text
 '''Linguistic-item''' <nowiki>[Language-related entity.] {rooted=Item}</nowiki>
 ```
@@ -734,7 +733,6 @@ Developers do not need to perform these steps. Once your changes are merged into
 ---
 class: tip
 ---
-
 You can easily generate your CHANGELOG.md entry using the *Schema compare* action of the HED [online schema tools](https://hedtools.org/hed/schemas). You can compare your current version with the previously released version or if this is the first release, with the initial setup. The tool produces a nice CHANGELOG in Markdown for you to use.
 
 ```

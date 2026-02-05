@@ -5,15 +5,16 @@
 
 [project]
 name = "hed-schemas"
+version = "1.0.0"  # Placeholder version - not a distributable package; schemas have independent versions
 description = "Official HED (Hierarchical Event Descriptors) vocabulary schemas in MediaWiki, XML, JSON, and TSV formats."
 readme = "README.md"
 authors = [
     { name = "HED Working Group" },
 ]
 maintainers = [
-    { name = "Kay Robbins", email = "Kay.Robbins@utsa.edu" },
+    { name = "HED maintainers", email = "hed.maintainers@gmail.com" },
 ]
-license = {text = "MIT"}
+license = "MIT"
 keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "neuroscience", "BIDS", "events", "metadata", "annotation"]
 
 [project.urls]
@@ -25,6 +26,28 @@ keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "n
 "HED Resources" = "https://www.hedtags.org/hed-resources"
 "HED Specification" = "https://www.hedtags.org/hed-specification/"
 
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.8.0",
+    "codespell>=2.2.0",
+    "black[jupyter]>=26.1.0",
+    "mdformat>=0.7.0",
+    "mdformat-myst>=0.1.5",
+]
+docs = [
+    "sphinx>=7.1.0,<10.0",
+    "furo>=2024.1.29",
+    "sphinx-copybutton>=0.5.2",
+    "myst-parser>=3.0.0",
+    "pygments>=2.10.0",
+    "sphinx-autodoc-typehints>=1.24.0",
+    "linkify-it-py>=2.0.3",
+]
+
+[tool.setuptools]
+# Explicitly disable package discovery - this is a schema repository, not a Python package
+packages = []
+
 [tool.codespell]
 skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,.venv,datasets*,_build,_static,*.js,*.inv'
 ignore-words-list = 'te,parms,trough'
@@ -34,7 +57,7 @@ uri-ignore-words-list = '*'
 line-length = 88
 target-version = ['py310', 'py311', 'py312']
 include = '\.pyi?$'
-exclude = '''
+extend-exclude = '''
 /(
     \.git
   | \.venv
@@ -42,6 +65,8 @@ exclude = '''
   | build
   | dist
   | docs/_build
+  | docs/_static
+  | docs/_templates
   | standard_schema
   | library_schemas
   | schemas_latest_json
@@ -58,6 +83,8 @@ exclude = [
     "build",
     "dist",
     "docs/_build",
+    "docs/_static",
+    "docs/_templates",
     "standard_schema",
     "library_schemas",
     "schemas_latest_json",

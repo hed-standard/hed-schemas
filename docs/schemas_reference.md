@@ -1,3 +1,15 @@
+```{index} schema reference; standard schema; library schemas; versions; formats
+```
+
+```{meta}
+---
+description: Complete reference for HED schemas including standard and library 
+  schemas with version information and download links
+keywords: HED schemas, standard schema, library schemas, score, lang, slam, 
+  mouse, schema versions
+---
+```
+
 # HED schemas reference
 
 This page provides detailed information about each available HED schema, including links to different formats, versions, and documentation.
@@ -329,7 +341,6 @@ In this example the specified SCORE and LANG versions do not conflict and partne
 ---
 class: tip
 ---
-
 ```python
 from hed import load_schema_version
 schema = load_schema_version('8.4.0')
@@ -345,7 +356,6 @@ The MATLAB HEDTools provide two ways of analyzing HED, both of which rely on an 
 ---
 class: tip
 ---
-
 **MATLAB:** Direct Python calls in MATLAB
 
 ```matlab
@@ -359,7 +369,6 @@ The `hedTools` object, which provides wrappers to the main Python HEDTools opera
 ---
 class: tip
 ---
-
 ```javascript
 import { buildSchema, SchemaSpec, SchemaSpecs } from '@hed-standard/hed-validator';
 const spec1 = new SchemaSpec('', '8.4.0', '', '')
