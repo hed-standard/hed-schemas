@@ -14,7 +14,7 @@ authors = [
 maintainers = [
     { name = "HED maintainers", email = "hed.maintainers@gmail.com" },
 ]
-license = {text = "MIT"}
+license = "MIT"
 keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "neuroscience", "BIDS", "events", "metadata", "annotation"]
 
 [project.urls]
@@ -43,6 +43,10 @@ docs = [
     "sphinx-autodoc-typehints>=1.24.0",
     "linkify-it-py>=2.0.3",
 ]
+
+[tool.setuptools]
+# Explicitly disable package discovery - this is a schema repository, not a Python package
+packages = []
 
 [tool.codespell]
 skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,.venv,datasets*,_build,_static,*.js,*.inv'
