@@ -5,6 +5,7 @@
 
 [project]
 name = "hed-schemas"
+version = "1.0.0"  # Placeholder version - not a distributable package; schemas have independent versions
 description = "Official HED (Hierarchical Event Descriptors) vocabulary schemas in MediaWiki, XML, JSON, and TSV formats."
 readme = "README.md"
 authors = [

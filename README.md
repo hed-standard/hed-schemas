@@ -12,7 +12,7 @@ See the [HED project homepage](https://www.hedtags.org) and [HED resources](http
 
 The **HED schemas** are hierarchically-structured vocabularies for annotating data. The HED ecosystem includes a **standard schema** containing the basic vocabulary needed for annotation of experimental data as well as specialized **library schemas** for the additional field-specific terms needed to complete an annotation.
 
-All released and prereleased versions of the HED schemas can be viewed the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser).
+All released and prereleased versions of the HED schemas can be viewed in the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser).
 
 The following table summarizes the current versions of the HED schemas.
 
