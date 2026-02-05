@@ -1,15 +1,14 @@
+```{index} user guide; HED usage; schema viewing; annotation
+```
+
+```{meta}
+:description: User guide for viewing, using, and understanding HED schemas for data annotation
+:keywords: HED user guide, schema browser, annotation, HED tools, data tagging
+```
+
 # User guide
 
 This guide provides information for users who want to view, use, or understand HED schemas for annotating their data.
-
-## Quick links
-
-- 🌐 [HED schema browser](https://www.hedtags.org/hed-schema-browser) - Interactive schema viewer
-- 🔧 [HED online tools](https://hedtools.org/hed) - Web-based validation and conversion
-- 📖 [HED specification](https://www.hedtags.org/hed-specification) - Complete technical specification
-- 📚 [HED resources](https://www.hedtags.org/hed-resources) - Tutorials and guides
-- 💬 [GitHub issues](https://github.com/hed-standard/hed-schemas/issues) - Report issues or suggest features
-- 🐍 [Python HEDTools](https://github.com/hed-standard/hed-python) - Python tools
 
 ## Table of contents
 
@@ -24,7 +23,7 @@ This guide provides information for users who want to view, use, or understand H
 
 ### HED schema browser
 
-The easiest way to explore HED schemas is through the [**HED schema browser**](https://www.hedtags.org/hed-schema-browser):
+The easiest way to explore HED schemas is through the [HED schema browser](https://www.hedtags.org/hed-schema-browser):
 
 1. Select a schema (standard or library) from the dropdown
 2. Choose a version

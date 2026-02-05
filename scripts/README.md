@@ -2,74 +2,6 @@
 
 This directory contains utility scripts for the hed-schemas repository.
 
-## Documentation build scripts
-
-### Building Documentation Locally
-
-**Python (cross-platform):**
-
-```bash
-python scripts/build_docs.py
-```
-
-**Windows:**
-
-```cmd
-scripts\build-docs.bat
-```
-
-**Unix/Mac:**
-
-```bash
-./scripts/build-docs.sh
-```
-
-This will:
-
-1. Install documentation dependencies from `docs/requirements.txt`
-2. Build the Sphinx documentation to `docs/_build/html/`
-3. Show you where to find the built HTML files
-
-### Serving Documentation Locally
-
-After building, you can serve the documentation locally:
-
-**Python (cross-platform):**
-
-```bash
-python scripts/serve_docs.py
-```
-
-**Windows:**
-
-```cmd
-scripts\serve-sphinx.bat
-```
-
-**Unix/Mac:**
-
-```bash
-./scripts/serve-sphinx.sh
-```
-
-This will:
-
-1. Start a local HTTP server on port 8000
-2. Open your browser to view the documentation
-3. Allow you to view the documentation as it would appear online
-
-Press Ctrl+C to stop the server.
-
-### Options for serve_docs.py
-
-```bash
-# Use a different port
-python scripts/serve_docs.py --port 8080
-
-# Don't automatically open browser
-python scripts/serve_docs.py --no-browser
-```
-
 ## Schema Validation Scripts
 
 ### verify_branch.sh
@@ -82,6 +14,57 @@ Pre-commit hook that verifies:
 
 Used by `.pre-commit-config.yaml` and the `verify_source_branch.yaml` workflow.
 
+## Documentation Build
+
+### Building Documentation Locally
+
+Navigate to the repository root and use `sphinx-build`:
+
+**Windows:**
+
+```powershell
+sphinx-build -b html docs/ docs/_build/html
+```
+
+**Unix/Mac:**
+
+```bash
+sphinx-build -b html docs/ docs/_build/html
+```
+
+This will build the Sphinx documentation to `docs/_build/html/`.
+
+### Serving Documentation Locally
+
+After building, you can serve the documentation with Python's built-in HTTP server:
+
+**Windows:**
+
+```powershell
+cd docs\_build\html
+python -m http.server 8000
+```
+
+**Unix/Mac:**
+
+```bash
+cd docs/_build/html
+python -m http.server 8000
+```
+
+Then open your browser to [http://localhost:8000](http://localhost:8000).
+
+Press Ctrl+C to stop the server.
+
+**Alternative**: You can also open `docs/_build/html/index.html` directly in your web browser.
+
+### Options for HTTP server
+
+```bash
+# Use a different port
+python -m http.server 8080
+```
+
 ## Quick Start
 
 To set up your development environment:
@@ -91,8 +74,9 @@ To set up your development environment:
 pip install -r requirements-dev.txt
 
 # Build documentation
-python scripts/build_docs.py
+sphinx-build -b html docs/ docs/_build/html
 
 # Serve documentation
-python scripts/serve_docs.py
+cd docs/_build/html
+python -m http.server 8000
 ```

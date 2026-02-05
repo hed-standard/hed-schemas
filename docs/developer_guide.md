@@ -1,3 +1,11 @@
+```{index} developer guide; schema development; library schemas; HED workflow
+```
+
+```{meta}
+:description: Developer guide for creating library schemas and contributing to HED vocabularies
+:keywords: HED development, library schemas, schema development, HED workflow, version control
+```
+
 # Schema developer's guide
 
 This guide describes how to develop your own library schema or contribute to existing HED vocabularies.

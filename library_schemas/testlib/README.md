@@ -4,4 +4,4 @@ The `testlib` HED library schema is a test version of the schema. The versions m
 
 ### Viewing the testlib HED Library Schema
 
-> [**Expandable html view of testlib HED Library Schema**](https://www.hedtags.org/display_hed.html)
+> [Expandable html view of testlib HED Library Schema](https://www.hedtags.org/display_hed.html)
