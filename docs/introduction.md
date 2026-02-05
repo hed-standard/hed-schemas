@@ -2,8 +2,12 @@
 ```
 
 ```{meta}
-:description: Introduction to HED (Hierarchical Event Descriptors) schemas - a framework for describing and annotating experimental events and data
-:keywords: HED, schemas, hierarchical event descriptors, annotation, neuroimaging, event description
+---
+description: Introduction to HED (Hierarchical Event Descriptors) schemas - a 
+  framework for describing and annotating experimental events and data
+keywords: HED, schemas, hierarchical event descriptors, annotation, 
+  neuroimaging, event description
+---
 ```
 
 # Introduction to HED schemas

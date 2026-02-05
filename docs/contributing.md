@@ -2,8 +2,12 @@
 ```
 
 ```{meta}
-:description: Guide for contributing to HED schemas documentation - building, editing, and submitting documentation improvements
-:keywords: documentation contribution, Sphinx, building docs, contributing guide, documentation workflow
+---
+description: Guide for contributing to HED schemas documentation - building, 
+  editing, and submitting documentation improvements
+keywords: documentation contribution, Sphinx, building docs, contributing guide,
+  documentation workflow
+---
 ```
 
 # Contributing to documentation

@@ -2,8 +2,11 @@
 ```
 
 ```{meta}
-:description: User guide for viewing, using, and understanding HED schemas for data annotation
-:keywords: HED user guide, schema browser, annotation, HED tools, data tagging
+---
+description: User guide for viewing, using, and understanding HED schemas for 
+  data annotation
+keywords: HED user guide, schema browser, annotation, HED tools, data tagging
+---
 ```
 
 # User guide
