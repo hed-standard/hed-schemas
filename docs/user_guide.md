@@ -39,7 +39,7 @@ This guide provides information for users who want to view, use, or understand H
 
 ## What is a HED schema?
 
-A **HED schema** is a hierarchically-structured specification of a vocabulary. The **standard schema** contains the basic vocabulary and organizational tags needed for annotation of experimental data. Additional **ibrary schemas** contain specialized field-specific vocabularies for domain-specific annotations. The HED schemas form the core of the HED ecosystem, which includes:
+A **HED schema** is a hierarchically-structured specification of a vocabulary. The **standard schema** contains the basic vocabulary and organizational tags needed for annotation of experimental data. Additional **library schemas** contain specialized field-specific vocabularies for domain-specific annotations. The HED schemas form the core of the HED ecosystem, which includes:
 
 - **Controlled vocabularies** specified by HED schemas for annotating experimental data
 - **Standardized infrastructure** enabling automated analysis and interpretation
