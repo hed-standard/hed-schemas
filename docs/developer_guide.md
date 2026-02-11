@@ -842,7 +842,7 @@ The documentation source files are in `docs/`:
 | `user_guide.md`        | Guide for using schemas        |
 | `developer_guide.md`   | Guide for schema development   |
 | `schemas_reference.md` | Detailed schema information    |
-| `api.rst`             | Repository structure reference |
+| `api.rst`              | Repository structure reference |
 | `conf.py`              | Sphinx configuration           |
 
 #### Workflow for documentation changes
@@ -944,9 +944,9 @@ Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
       :maxdepth: 2
       :caption: Contents:
 
-      introduction
-      user_guide
+      User guide <user_guide>
       your_new_page
+      ...
    ```
 3. Build and verify it appears in the navigation
 

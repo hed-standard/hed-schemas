@@ -47,7 +47,4 @@ Working with HED schemas
    Schemas reference <schemas_reference>
    API reference <api>
 
-Indices and tables
-==================
-
 * :ref:`genindex`
