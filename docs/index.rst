@@ -18,12 +18,11 @@ HED schemas
 
    * `HED specification <https://www.hedtags.org/hed-specification>`_ 
 
-Welcome to the HED schemas documentation! This repository contains the **official HED (Hierarchical Event Descriptors) vocabulary schemas** in multiple formats - providing the standardized vocabulary used across neuroscience research.
-
-What is HED?
-------------
-
-HED is a standardized vocabulary and annotation framework designed to systematically describe events in experimental data, particularly neuroimaging and behavioral data. It's integrated into major neuroimaging standards:
+Welcome to the HED (HIerarchical Event Descriptors) schemas documentation!
+This repository contains the **official HED vocabulary schemas** in multiple formats.
+HED is a standardized vocabulary and annotation framework designed 
+to systematically describe events in experimental data, 
+particularly neuroimaging and behavioral data. HED is integrated into major neuroimaging standards:
 
 * `BIDS <https://bids.neuroimaging.io/>`_ (Brain Imaging Data Structure)
 * `NWB <https://www.nwb.org/>`_ (Neurodata Without Borders)
@@ -37,57 +36,18 @@ Key features
 * **Version control**: Comprehensive versioning with DOIs for reproducibility
 * **Open development**: Community-driven schema evolution
 
-Getting started
----------------
-
-.. toctree::
-   :maxdepth: 2
-
-   Introduction <introduction>
-
-Using HED schemas
------------------
+Working with HED schemas
+------------------------
 
 .. toctree::
    :maxdepth: 2
 
    User guide <user_guide>
-
-Developing HED schemas
-----------------------
-
-.. toctree::
-   :maxdepth: 2
-
    Developer guide <developer_guide>
-
-Schema reference
-----------------
-
-.. toctree::
-   :maxdepth: 2
-
    Schemas reference <schemas_reference>
-
-API documentation
------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   API reference <api2>
-
-Contributing
-------------
-
-.. toctree::
-   :maxdepth: 2
-
-   Contributing <contributing>
-
+   API reference <api>
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`search`
