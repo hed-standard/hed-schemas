@@ -839,11 +839,10 @@ The documentation source files are in `docs/`:
 | File                   | Purpose                        |
 | ---------------------- | ------------------------------ |
 | `index.rst`            | Main documentation index       |
-| `introduction.md`      | Overview of HED schemas        |
 | `user_guide.md`        | Guide for using schemas        |
 | `developer_guide.md`   | Guide for schema development   |
 | `schemas_reference.md` | Detailed schema information    |
-| `api2.rst`             | Repository structure reference |
+| `api.rst`             | Repository structure reference |
 | `conf.py`              | Sphinx configuration           |
 
 #### Workflow for documentation changes

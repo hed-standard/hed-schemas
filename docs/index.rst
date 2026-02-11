@@ -18,7 +18,7 @@ HED schemas
 
    * `HED specification <https://www.hedtags.org/hed-specification>`_ 
 
-Welcome to the HED (HIerarchical Event Descriptors) schemas documentation!
+Welcome to the HED (Hierarchical Event Descriptors) schemas documentation!
 This repository contains the **official HED vocabulary schemas** in multiple formats.
 HED is a standardized vocabulary and annotation framework designed 
 to systematically describe events in experimental data, 

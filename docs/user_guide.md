@@ -11,7 +11,7 @@ keywords: HED user guide, schema browser, annotation, HED tools, data tagging
 
 # User guide
 
-HED (Hierarchical Event Descriptors) allow researchers to annotate what happened during an experiment including:
+HED (Hierarchical Event Descriptors) allows researchers to annotate what happened during an experiment including:
 
 - Experimental stimuli and other sensory events
 - Participant responses and actions
