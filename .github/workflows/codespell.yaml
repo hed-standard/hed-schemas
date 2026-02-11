@@ -27,10 +27,7 @@ jobs:
       with:
         check_filenames: false
         check_hidden: false
-        skip: '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,.venv,datasets*,_build,_static,*.js,*.inv'
-        ignore_words_list: 'te,parms,trough'
-        uri_ignore_words_list: '*'
         path: |
-          docs/source
+          docs
           *.md
           ${{ env.DIRS_TO_CHECK }}

@@ -14,14 +14,6 @@ keywords: HED development, library schemas, schema development, HED workflow,
 
 This guide describes how to develop your own library schema or contribute to existing HED vocabularies.
 
-## Quick links
-
-- 💬 [GitHub issues](https://github.com/hed-standard/hed-schemas/issues) - Propose changes or ask questions
-- 📧 [HED maintainers](mailto:hed.maintainers@gmail.com) - Technical guidance
-- 📖 [HED specification](https://www.hedtags.org/hed-specification/) - Complete specification
-- 🌐 [Schema browser](https://www.hedtags.org/hed-schema-browser) - Explore existing schemas
-- 🔧 [HED online tools](https://hedtools.org/hed) - Validate and convert schemas
-
 ## Table of contents
 
 01. [Getting started](#getting-started)
@@ -32,8 +24,9 @@ This guide describes how to develop your own library schema or contribute to exi
 06. [Release process](#release-process)
 07. [Common pitfalls](#common-pitfalls)
 08. [CI/CD pipeline](#cicd-pipeline)
-09. [Quick reference](#quick-reference)
-10. [Getting help](#getting-help)
+09. [Contributing to documentation](#contributing-to-documentation)
+10. [Quick syntax reference](#quick-reference)
+11. [Getting help](#getting-help)
 
 ## Getting started
 
@@ -751,7 +744,277 @@ GitHub Actions automatically:
 | `mdformat.yaml`                   | Checks Markdown formatting                             |
 | `links.yaml`                      | Checks for broken links                                |
 
-## Quick reference
+## Contributing to documentation
+
+This section explains how to build and contribute to the HED schemas documentation.
+
+### Prerequisites
+
+- Python 3.10 or higher
+- Git
+
+### Setting up documentation environment
+
+1. **Clone the repository** (if not already done):
+
+   ```bash
+   git clone https://github.com/hed-standard/hed-schemas.git
+   cd hed-schemas
+   ```
+
+### Building documentation locally
+
+#### Initial setup (one-time)
+
+1. **Create a virtual environment** (if not already done):
+
+   **Windows**:
+
+   ```powershell
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+   ```
+
+   **Unix/Mac**:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+2. **Install documentation dependencies**:
+
+   ```bash
+   pip install -r docs/requirements.txt
+   ```
+
+#### Building with Sphinx
+
+From the repository root, use `sphinx-build` to build the documentation:
+
+**Windows**:
+
+```powershell
+sphinx-build -b html docs/ docs/_build/html
+```
+
+**Unix/Mac**:
+
+```bash
+sphinx-build -b html docs/ docs/_build/html
+```
+
+The built documentation will be in `docs/_build/html/`.
+
+#### Viewing documentation locally
+
+After building, you can serve the documentation with Python's built-in HTTP server:
+
+**Windows**:
+
+```powershell
+cd docs\_build\html
+python -m http.server 8000
+```
+
+**Unix/Mac**:
+
+```bash
+cd docs/_build/html
+python -m http.server 8000
+```
+
+Then open your browser to [http://localhost:8000](http://localhost:8000).
+
+Press `Ctrl+C` to stop the server.
+
+**Alternative**: You can also open `docs/_build/html/index.html` directly in your web browser.
+
+### Making changes to documentation
+
+#### Documentation structure
+
+The documentation source files are in `docs/`:
+
+| File                   | Purpose                        |
+| ---------------------- | ------------------------------ |
+| `index.rst`            | Main documentation index       |
+| `user_guide.md`        | Guide for using schemas        |
+| `developer_guide.md`   | Guide for schema development   |
+| `schemas_reference.md` | Detailed schema information    |
+| `api.rst`              | Repository structure reference |
+| `conf.py`              | Sphinx configuration           |
+
+#### Workflow for documentation changes
+
+1. **Create a branch**:
+
+   ```bash
+   git checkout -b admin_update_docs
+   ```
+
+2. **Edit documentation files** in `docs/`
+
+   - Use Markdown (`.md`) for content pages
+   - Use reStructuredText (`.rst`) for structural files
+
+3. **Build and preview**:
+
+   ```powershell
+   # Build
+   sphinx-build -b html docs/ docs/_build/html
+
+   # Serve
+   cd docs\_build\html
+   python -m http.server 8000
+   ```
+
+4. **Review your changes** in the browser at http://localhost:8000
+
+5. **Rebuild as needed** - The build is fast, so rebuild frequently to check your changes
+
+6. **Commit and push**:
+
+   ```bash
+   git add docs/
+   git commit -m "Update documentation"
+   git push origin admin_update_docs
+   ```
+
+7. **Create a pull request** on GitHub
+
+### Documentation style guide
+
+#### Markdown guidelines
+
+- Use `#` for top-level headings, `##` for sections, `###` for subsections
+- Use code blocks with language specification: ```` python```,  ````bash\`\`\`, etc.
+- Use **bold** for emphasis on key terms
+- Use `inline code` for commands, file names, and code snippets
+- Use bullet lists for unordered items
+- Use numbered lists for sequential steps
+
+#### Code examples
+
+Always specify the language for code blocks:
+
+`````markdown
+````python
+from hed import schema
+schema = schema.load_schema('8.4.0')
+````
+`````
+
+For PowerShell commands:
+
+`````markdown
+````powershell
+pip install -r requirements-dev.txt
+````
+`````
+
+#### Links
+
+**Internal links** (to other documentation pages):
+
+```markdown
+See the [Developer Guide](developer_guide.md) for more information.
+```
+
+**External links**:
+
+```markdown
+Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
+```
+
+**File links** (use relative paths from docs root):
+
+```markdown
+[Repository Structure](../../README.md)
+```
+
+### Common documentation tasks
+
+#### Adding a new page
+
+1. Create a new `.md` file in `docs/`
+2. Add it to the `toctree` in `index.rst`:
+   ```rst
+   .. toctree::
+      :maxdepth: 2
+      :caption: Contents:
+
+      User guide <user_guide>
+      your_new_page
+      ...
+   ```
+3. Build and verify it appears in the navigation
+
+#### Updating schema information
+
+When a new schema version is released:
+
+1. Update version numbers in `schemas_reference.md`
+2. Add new links for the new version
+3. Update the version table in `user_guide.md`
+4. Check that all DOI links are correct
+
+#### Adding images
+
+1. Place images in `docs/_static/images/`
+2. Reference in Markdown:
+   ```markdown
+   ![Alt text](_static/images/your-image.png)
+   ```
+
+### Troubleshooting documentation builds
+
+#### Build errors
+
+**Problem**: Module not found errors
+
+```
+ModuleNotFoundError: No module named 'myst_parser'
+```
+
+**Solution**: Reinstall dependencies
+
+```bash
+pip install -r docs/requirements.txt
+```
+
+#### Warnings
+
+Sphinx may show warnings about:
+
+- Missing references
+- Duplicate labels
+- Malformed links
+
+Fix these warnings before committing - they indicate potential broken links or incorrect formatting.
+
+#### Port already in use
+
+**Problem**: `Address already in use` when running http.server
+
+**Solution**: Use a different port
+
+```bash
+python -m http.server 8001
+```
+
+Or find and stop the process using port 8000.
+
+### CI/CD for documentation
+
+Documentation is automatically built and deployed:
+
+- **On every push to main**: Documentation is built and deployed to GitHub Pages
+- **On pull requests**: Documentation is built (but not deployed) to verify no errors
+
+The deployed documentation is available at the GitHub Pages URL for the repository.
+
+## Quick syntax reference
 
 ### MEDIAWIKI syntax
 
