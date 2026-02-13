@@ -71,7 +71,7 @@ To set up your development environment:
 
 ```bash
 # Install all development dependencies
-pip install -r requirements-dev.txt
+pip install .[dev]
 
 # Build documentation
 sphinx-build -b html docs/ docs/_build/html

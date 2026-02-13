@@ -257,14 +257,14 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 02. **Clone your fork** locally:
 
-    ```powershell
+    ```bash
     git clone https://github.com/YOUR-USERNAME/hed-schemas.git
     cd hed-schemas
     ```
 
 03. **Create a branch** with appropriate prefix:
 
-    ```powershell
+    ```bash
     git checkout -b xxx_add_new_term
     ```
 
@@ -297,7 +297,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 07. **Commit and push to your fork**:
 
-    ```powershell
+    ```bash
     git pull origin main
     git add .
     git commit -m "Add Wave-hand action tag"
@@ -785,7 +785,7 @@ This section explains how to build and contribute to the HED schemas documentati
 2. **Install documentation dependencies**:
 
    ```bash
-   pip install -r docs/requirements.txt
+   pip install .[docs]
    ```
 
 #### Building with Sphinx
@@ -860,12 +860,12 @@ The documentation source files are in `docs/`:
 
 3. **Build and preview**:
 
-   ```powershell
+   ```bash
    # Build
    sphinx-build -b html docs/ docs/_build/html
 
    # Serve
-   cd docs\_build\html
+   cd docs/_build/html
    python -m http.server 8000
    ```
 
@@ -905,11 +905,11 @@ schema = schema.load_schema('8.4.0')
 ````
 `````
 
-For PowerShell commands:
+For bash/shell commands:
 
 `````markdown
-````powershell
-pip install -r requirements-dev.txt
+````bash
+pip install .[dev]
 ````
 `````
 
@@ -980,7 +980,7 @@ ModuleNotFoundError: No module named 'myst_parser'
 **Solution**: Reinstall dependencies
 
 ```bash
-pip install -r docs/requirements.txt
+pip install .[docs]
 ```
 
 #### Warnings

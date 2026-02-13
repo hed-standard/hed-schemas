@@ -21,9 +21,7 @@ HED (Hierarchical Event Descriptors) allows researchers to annotate what happene
 - Participant metadata
 - Environmental setup
 
-This guide provides information for users who want to view, use, or understand HED schemas for annotating their data.
-
-## Table of contents
+This guide provides information for users who want to view, use, or understand HED schemas for annotating their data:
 
 01. [What is a HED schema?](#what-is-a-hed-schema)
 02. [Available schemas](#available-schemas)
