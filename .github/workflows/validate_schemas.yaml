@@ -33,7 +33,7 @@ jobs:
         done
 
     - name: Install dependencies
-      run: pip install hedtools
+      run: pip install git+https://github.com/hed-standard/hed-python.git@main
 
     - name: Run command on file list
       env:
