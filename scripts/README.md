@@ -4,15 +4,29 @@ This directory contains utility scripts for the hed-schemas repository.
 
 ## Schema Validation Scripts
 
-### verify_branch.sh
+### verify_branch.py
 
-Pre-commit hook that verifies:
+Python script that verifies:
 
 - Branch naming conventions (standard\_*, score\_*, lang\_\*, etc.)
 - Changes are only in appropriate schema directories
 - Changes are in prerelease/ subdirectories
+- Schema files pass validation using hed-python tools
 
-Used by `.pre-commit-config.yaml` and the `verify_source_branch.yaml` workflow.
+**Usage:**
+
+```bash
+# Basic usage
+python scripts/verify_branch.py file1.xml file2.mediawiki
+
+# Validate all schema extensions
+python scripts/verify_branch.py file1.mediawiki --validate-all
+
+# Override branch name
+python scripts/verify_branch.py file1.xml --branch standard_new_feature
+```
+
+Used by the `verify_source_branch.yaml` workflow to ensure PRs follow repository conventions.
 
 ## Documentation Build
 
@@ -71,7 +85,7 @@ To set up your development environment:
 
 ```bash
 # Install all development dependencies
-pip install .[dev]
+pip install ".[dev]"
 
 # Build documentation
 sphinx-build -b html docs/ docs/_build/html

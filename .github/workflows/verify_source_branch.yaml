@@ -39,12 +39,10 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
-          echo "Verifying branch name: $BRANCH_NAME"
+          echo "Running branch verification..."
           if [ -n "$ALL_CHANGED_FILES" ]; then
-            echo "Changed files detected:"
-            for file in $ALL_CHANGED_FILES; do
-              echo "  - $file"
-            done
+            python scripts/verify_branch.py $ALL_CHANGED_FILES --validate-all
           else
             echo "No files have changed."
+            exit 0
           fi

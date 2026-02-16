@@ -1,1 +1,2 @@
 prefix	id	iri	description
+foodonto:	has_botanical_name	http://purl.obolibrary.org/obo/FOODON_00001234	The botanical or scientific name of a food item.
