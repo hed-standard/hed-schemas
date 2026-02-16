@@ -29,7 +29,7 @@ The following table summarizes the current versions of the HED schemas.
 
 HED schemas are stored in three different formats: MEDIAWIKI (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [HED online tools](https://hedtools.org/hed/schemas).
 
-### MEDIAWIKI format
+### MediaWiki format
 
 The `.mediawiki` versions are stored in the respective `hedwiki` directory for the schema. This text format is easy to view in GitHub and easy to edit. For this reason, the `.mediawiki` markdown format is often used by schema developers to create and maintain HED schemas.
 
@@ -52,6 +52,115 @@ If you want to suggest a new feature or a change to the standard HED schema or o
 As modifications to a HED schema are proposed, they are entered into the `PROPOSED.md` document in the schema's respective directory for discussion. Approved changes and corrections are first made in a working version of the schema that is located in the `prerelease` subdirectory. Upon final review, the new HED schema is released and moved to the `hedxml` directory of the respective library schema.
 
 For a more complete view of the process see the [HED schema developer's guide](https://www.hedtags.org/hed-schemas/HedSchemaDevelopersGuide.html).
+
+## Installation and local development
+
+### Prerequisites
+
+This repository requires Python 3.10 or higher (up through Python 3.14). The HED schemas themselves are not a Python package - they are accessed via URLs. However, Python dependencies are used for development tools, documentation building, and schema validation.
+
+### Installing development dependencies
+
+To install all development dependencies (code formatting, linting, spell checking):
+
+```powershell
+# Windows PowerShell
+pip install ".[dev]"
+```
+
+```bash
+# Unix/Mac
+pip install ".[dev]"
+```
+
+This installs:
+
+- `ruff` - Fast Python linter
+- `codespell` - Spell checker
+- `black` - Code formatter
+- `mdformat` - Markdown formatter
+
+### Installing documentation dependencies
+
+To build the documentation locally, install the docs dependencies:
+
+```powershell
+# Windows PowerShell
+pip install ".[docs]"
+```
+
+```bash
+# Unix/Mac
+pip install ".[docs]"
+```
+
+This installs Sphinx and related documentation tools.
+
+### Installing all dependencies
+
+To install both development and documentation dependencies:
+
+```powershell
+# Windows PowerShell
+pip install ".[dev,docs]"
+```
+
+```bash
+# Unix/Mac
+pip install ".[dev,docs]"
+```
+
+### Building documentation locally
+
+Navigate to the repository root and build the documentation:
+
+```powershell
+# Windows PowerShell
+sphinx-build -b html docs/ docs/_build/html
+```
+
+```bash
+# Unix/Mac
+sphinx-build -b html docs/ docs/_build/html
+```
+
+The built documentation will be in `docs/_build/html/`.
+
+### Viewing documentation locally
+
+After building, serve the documentation with Python's built-in HTTP server:
+
+```powershell
+# Windows PowerShell
+cd docs\_build\html
+python -m http.server 8000
+```
+
+```bash
+# Unix/Mac
+cd docs/_build/html
+python -m http.server 8000
+```
+
+Then open your browser to [http://localhost:8000](http://localhost:8000). Press Ctrl+C to stop the server.
+
+**Alternative**: Open `docs/_build/html/index.html` directly in your web browser.
+
+### Schema validation and conversion
+
+For schema validation and conversion, install the HED Python tools:
+
+```bash
+pip install git+https://github.com/hed-standard/hed-python.git@main
+```
+
+Key commands:
+
+- `hed_validate_schemas <files>` - Validate schema files
+- `hed_update_schemas <files>` - Convert between formats (MediaWiki ↔ XML ↔ JSON ↔ TSV)
+- `hed_cache_schemas --clear` - Clear cached schemas
+
+See the [hed-python repository](https://github.com/hed-standard/hed-python) for more information.
 
 ## Web-based HED tools
 

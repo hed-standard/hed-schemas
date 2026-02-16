@@ -1,9 +1,19 @@
-HED version="4.0.0" library="testlib" withStandard="8.3.0" unmerged="True"
+HED version="4.0.0" library="testlib" withStandard="8.4.0" unmerged="True"
 
 '''Prologue'''
-This schema is designed to be lazy partnered with prerelease 8.3.0.
+This schema is designed to be lazy partnered with prerelease 8.4.0.
 
 !# start schema
+
+'''Test-some''' <nowiki>[Unknown stuff.]</nowiki>
+* Unknown1 <nowiki>[Unknown1 stuff]</nowiki>
+
+'''Fruit''' <nowiki>{rooted=Plant} [Fruit stuff.]</nowiki>
+* Apple <nowiki>{annotation=foodonto:has_botanical_name} [Apple stuff]</nowiki>
+** Honey-crisp <nowiki>[Type of apple]</nowiki>
+
+'''Vegetable''' <nowiki>{rooted=Plant} [Vegetable stuff.]</nowiki>
+* Carrot <nowiki>{annotation=foodonto:has_botanical_name} [Carrot stuff]</nowiki>
 
 
 !# end schema
@@ -20,5 +30,14 @@ This schema is designed to be lazy partnered with prerelease 8.3.0.
 
 '''Epilogue'''
 A final section.
+
+'''Sources'''
+* <nowiki>source=FoodDB,link=https://fooddb.example.org,description=Botanical and nutritional database for fruits and vegetables.</nowiki>
+
+'''Prefixes'''
+* <nowiki>prefix=foodonto:,namespace=http://purl.obolibrary.org/obo/foodon.owl,description=Food Ontology (FOODON)</nowiki>
+
+'''External annotations'''
+* <nowiki>prefix=foodonto:,id=has_botanical_name,iri=http://purl.obolibrary.org/obo/FOODON_00001234,description=The botanical or scientific name of a food item.</nowiki>
 
 !# end hed
