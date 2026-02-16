@@ -39,7 +39,9 @@ def get_branch_name() -> str:
             )
             branch_name = result.stdout.strip()
         except subprocess.CalledProcessError as e:
-            raise BranchVerificationError(f"Failed to get branch name from git: {e}") from e
+            raise BranchVerificationError(
+                f"Failed to get branch name from git: {e}"
+            ) from e
 
     return branch_name
 
