@@ -29,7 +29,7 @@ When ready to release a new version:
 
 3. **Move files** from `prerelease/` to release directories:
 
-   ```powershell
+   ```bash
    # Move MEDIAWIKI
    mv standard_schema/prerelease/HED8.5.0.mediawiki standard_schema/hedwiki/
 
@@ -39,16 +39,31 @@ When ready to release a new version:
    # etc.
    ```
 
-4. **Update Latest links**:
+4. **Update Latest files**:
 
-   ```powershell
-   # Create/update symlink or copy
+   For **standard schema**:
+
+   ```bash
+   # Copy XML to HEDLatest.xml
    cp standard_schema/hedxml/HED8.5.0.xml standard_schema/hedxml/HEDLatest.xml
+
+   # Copy JSON to schemas_latest_json/
+   cp standard_schema/hedjson/HED8.5.0.json schemas_latest_json/HEDLatest.json
+   ```
+
+   For **library schemas** (e.g., score):
+
+   ```bash
+   # Copy XML to HED_<library>_Latest.xml
+   cp library_schemas/score/hedxml/HED_score_2.2.0.xml library_schemas/score/hedxml/HED_score_Latest.xml
+
+   # Copy JSON to schemas_latest_json/
+   cp library_schemas/score/hedjson/HED_score_2.2.0.json schemas_latest_json/HED_score_Latest.json
    ```
 
 5. **Create git tag**:
 
-   ```powershell
+   ```bash
    git tag -a v8.5.0 -m "Release HED standard schema 8.5.0"
    git push origin v8.5.0
    ```

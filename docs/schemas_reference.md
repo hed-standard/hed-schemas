@@ -290,7 +290,7 @@ All schemas are available in four equivalent formats:
 
 Use the [HED online tools](https://www.hedtools.org/hed) or command-line tools:
 
-```powershell
+```bash
 # Install HED Python tools 
 pip install hedtools
 # Convert schema
