@@ -96,19 +96,7 @@ ______________________________________________________________________
 
 ### SCORE library schema
 
-HED-SCORE implements the Standardized Computer-based Organized Reporting of EEG (SCORE) standard for clinical neurological annotation.
-
-#### Overview
-
-| Property               | Value                                                            |
-| ---------------------- | ---------------------------------------------------------------- |
-| **Current Version**    | 2.1.0                                                            |
-| **Prerelease Version** | 2.2.0                                                            |
-| **HedId Range**        | 40000-59999                                                      |
-| **DOI**                | [10.5281/zenodo.7897596](https://doi.org/10.5281/zenodo.7897596) |
-| **Partnered With**     | Standard 8.3.0                                                   |
-
-#### Description
+HED-SCORE implements the Standardized Computer-based Organized Reporting of EEG (SCORE) standard for clinical neurological annotation. The SCORE library schema DOI is [10.5281/zenodo.7897596](https://doi.org/10.5281/zenodo.7897596) and has HED IDs in the range HED_40000-HED_59999.
 
 The SCORE library allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms compatible with the HED framework. The vocabulary covers:
 
@@ -118,14 +106,10 @@ The SCORE library allows neurologists, neurophysiologists, and brain researchers
 - **Background-activity**: Characteristics of ongoing EEG
 - **Episode**: Specific event types (seizures, epileptic episodes)
 
-### Access Links
-
-| Format        | Current Release (2.1.0)                                                                                                                                                                                                                                 | Prerelease (2.2.0)                                                                                                                                                                                                                                            |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **XML**       | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_2.1.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/hedxml/HED_score_2.1.0.xml)               | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/prerelease/HED_score_2.2.0.xml)             |
-| **MEDIAWIKI** | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedwiki/HED_score_2.1.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/hedwiki/HED_score_2.1.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/score/prerelease/HED_score_2.2.0.mediawiki) |
-| **JSON**      | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedjson/HED_score_2.1.0.json)                                                                                                                               | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.json)                                                                                                                                  |
-| **TSV**       | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/hedtsv/HED_score_2.1.0)                                                                                                                                         | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/prerelease/hedtsv)                                                                                                                                                    |
+| Version  | Status     | Release date | Partnered with | XML | MEDIAWIKI | JSON  | TSV |
+| -------- | ---------- | ------------ | -------------- | --- | --------- | ----- | --- |
+| 2.1.0    | Latest     | June 9, 2025 | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_2.1.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedwiki/HED_score_2.1.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedjson/HED_score_2.1.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/hedtsv/HED_score_2.1.0) |
+| 2.2.0    | Prerelease |              | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.2.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/prerelease/hedtsv) |
 
 **Latest version (stable link):** [HED_score_Latest.xml](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_Latest.xml)
 
@@ -152,19 +136,7 @@ ______________________________________________________________________
 
 ### LANG library schema
 
-The HED Language library schema (HED LANG) contains vocabulary for annotating language experiments in cognitive science.
-
-#### Overview
-
-| Property               | Value                                                              |
-| ---------------------- | ------------------------------------------------------------------ |
-| **Current Version**    | 1.1.0                                                              |
-| **Prerelease Version** | 1.2.0                                                              |
-| **HedId Range**        | 60000-79999                                                        |
-| **DOI**                | [10.5281/zenodo.13987483](https://doi.org/10.5281/zenodo.13987483) |
-| **Partnered With**     | Standard 8.3.0                                                     |
-
-#### Description
+The HED Language library schema (HED LANG) contains vocabulary for annotating language experiments in cognitive science. The LANG library schema DOI is [10.5281/zenodo.13987483](https://doi.org/10.5281/zenodo.13987483) and has HED IDs in the range HED_60000-HED_79999.
 
 HED LANG allows for detailed annotation of language stimuli at multiple levels through orthogonal definition of:
 
@@ -177,14 +149,10 @@ HED LANG allows for detailed annotation of language stimuli at multiple levels t
 
 The schema supports both carefully controlled experiments addressing specific psycholinguistic questions and complex naturalistic paradigms.
 
-#### Access links
-
-| Format        | Current Release (1.1.0)                                                                                                                                                                                                                             | Prerelease (1.2.0)                                                                                                                                                                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **XML**       | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedxml/HED_lang_1.1.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/lang/hedxml/HED_lang_1.1.0.xml)               | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/lang/prerelease/HED_lang_1.2.0.xml)             |
-| **MEDIAWIKI** | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedwiki/HED_lang_1.1.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/lang/hedwiki/HED_lang_1.1.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/lang/prerelease/HED_lang_1.2.0.mediawiki) |
-| **JSON**      | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedjson/HED_lang_1.1.0.json)                                                                                                                             | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.json)                                                                                                                                |
-| **TSV**       | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/hedtsv/HED_lang_1.1.0)                                                                                                                                       | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/prerelease/hedtsv)                                                                                                                                                 |
+| Version  | Status     | Release date  | Partnered with | XML | MEDIAWIKI | JSON  | TSV |
+| -------- | ---------- | ------------- | -------------- | --- | --------- | ----- | --- |
+| 1.1.0    | Latest     | June 10, 2025 | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedxml/HED_lang_1.1.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedwiki/HED_lang_1.1.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedjson/HED_lang_1.1.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/hedtsv/HED_lang_1.1.0) |
+| 1.2.0    | Prerelease |               | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/prerelease/HED_lang_1.2.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang/prerelease/hedtsv) |
 
 **Latest version (stable link):** [HED_lang_Latest.xml](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/lang/hedxml/HED_lang_Latest.xml)
 
@@ -213,19 +181,7 @@ ______________________________________________________________________
 
 ### SLAM library schema
 
-The HED SLAM library schema provides vocabulary for Sensor Location and Motion annotation.
-
-#### Overview
-
-| Property               | Value               |
-| ---------------------- | ------------------- |
-| **Current Version**    | - (prerelease only) |
-| **Prerelease Version** | 1.0.0               |
-| **HedId Range**        | 80000-99999         |
-| **DOI**                | Not yet assigned    |
-| **Partnered With**     | Standard 8.3.0      |
-
-#### Description
+The HED SLAM library schema provides vocabulary for Sensor Location and Motion annotation. The SLAM library schema has HED IDs in the range HED_80000-HED_99999. The DOI has not yet been assigned.
 
 HED SLAM is currently in prerelease development. This library will provide vocabulary for describing:
 
@@ -234,13 +190,9 @@ HED SLAM is currently in prerelease development. This library will provide vocab
 - Spatial relationships
 - Movement characteristics
 
-#### Access links
-
-| Format        | Prerelease (1.0.0)                                                                                                                                                                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **XML**       | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml)             |
-| **MEDIAWIKI** | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) |
-| **JSON**      | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.json)                                                                                                                                |
+| Version  | Status     | Release date | Partnered with | XML | MEDIAWIKI | JSON  |
+| -------- | ---------- | ------------ | -------------- | --- | --------- | ----- |
+| 1.0.0    | Prerelease |              | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.json) |
 
 #### Documentation
 
@@ -250,19 +202,7 @@ ______________________________________________________________________
 
 ### MOUSE library schema
 
-The HED MOUSE library schema provides vocabulary for mouse/rodent experiment annotation.
-
-#### Overview
-
-| Property               | Value               |
-| ---------------------- | ------------------- |
-| **Current Version**    | - (prerelease only) |
-| **Prerelease Version** | 1.0.0               |
-| **HedId Range**        | 100000-119999       |
-| **DOI**                | Not yet assigned    |
-| **Partnered With**     | Standard 8.3.0      |
-
-#### Description
+The HED MOUSE library schema provides vocabulary for mouse/rodent experiment annotation. The MOUSE library schema has HED IDs in the range HED_100000-HED_119999. The DOI has not yet been assigned.
 
 HED MOUSE is currently in prerelease development. This library will provide vocabulary specific to mouse and rodent experiments, including:
 
@@ -271,13 +211,9 @@ HED MOUSE is currently in prerelease development. This library will provide voca
 - Sensory stimuli relevant to rodent research
 - Recording techniques specific to animal models
 
-#### Access links
-
-| Format        | Prerelease (1.0.0)                                                                                                                                                                                                                                            |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **XML**       | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml)             |
-| **MEDIAWIKI** | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) \| [View](https://github.com/hed-standard/hed-schemas/blob/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) |
-| **JSON**      | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.json)                                                                                                                                  |
+| Version  | Status     | Release date | Partnered with | XML | MEDIAWIKI | JSON  |
+| -------- | ---------- | ------------ | -------------- | --- | --------- | ----- |
+| 1.0.0    | Prerelease |              | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.json) |
 
 #### Documentation
 
