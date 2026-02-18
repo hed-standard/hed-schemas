@@ -14,6 +14,12 @@ keywords: HED development, library schemas, schema development, HED workflow,
 
 This guide describes how to develop your own library schema or contribute to existing HED vocabularies.
 
+## What is HED?
+
+HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation framework that allows researchers to systematically describe what happened during an experiment. A **HED schema** is a hierarchically-structured vocabulary specification. The **standard schema** contains basic vocabulary for annotation across all domains, while **library schemas** provide specialized vocabularies for specific research areas.
+
+For information on viewing and using HED schemas in your data, see the [HED schemas reference](schemas_reference.md).
+
 ## Table of contents
 
 01. [Getting started](#getting-started)
@@ -836,14 +842,13 @@ Press `Ctrl+C` to stop the server.
 
 The documentation source files are in `docs/`:
 
-| File                   | Purpose                        |
-| ---------------------- | ------------------------------ |
-| `index.rst`            | Main documentation index       |
-| `user_guide.md`        | Guide for using schemas        |
-| `developer_guide.md`   | Guide for schema development   |
-| `schemas_reference.md` | Detailed schema information    |
-| `api.rst`              | Repository structure reference |
-| `conf.py`              | Sphinx configuration           |
+| File                   | Purpose                             |
+| ---------------------- | ----------------------------------- |
+| `index.rst`            | Main documentation index            |
+| `schemas_reference.md` | Guide for viewing and using schemas |
+| `developer_guide.md`   | Guide for schema development        |
+| `api.rst`              | Repository structure reference      |
+| `conf.py`              | Sphinx configuration                |
 
 #### Workflow for documentation changes
 
@@ -956,7 +961,7 @@ When a new schema version is released:
 
 1. Update version numbers in `schemas_reference.md`
 2. Add new links for the new version
-3. Update the version table in `user_guide.md`
+3. Update the version table in `schemas_reference.md`
 4. Check that all DOI links are correct
 
 #### Adding images
@@ -1065,6 +1070,15 @@ The deployed documentation is available at the GitHub Pages URL for the reposito
 | Schema attributes    | `'''Schema attributes'''` section    | `_AnnotationProperty.tsv`, `_DataProperty.tsv`, `_ObjectProperty.tsv` |
 
 ## Getting help
+
+### Documentation resources
+
+- **[HED schemas reference](schemas_reference.md)**: Guide for viewing and using schemas
+- **[Developer guide](developer_guide.md)**: This guide for contributing to schemas
+- **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification
+- **[HED resources](https://www.hedtags.org/hed-resources)**: Tutorials and guides
+
+### Support
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
 - **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
