@@ -51,7 +51,7 @@ If you want to suggest a new feature or a change to the standard HED schema or o
 
 As modifications to a HED schema are proposed, they are entered into the `PROPOSED.md` document in the schema's respective directory for discussion. Approved changes and corrections are first made in a working version of the schema that is located in the `prerelease` subdirectory. Upon final review, the new HED schema is released and moved to the `hedxml` directory of the respective library schema.
 
-For a more complete view of the process see the [HED schema developer's guide](https://www.hedtags.org/hed-schemas/HedSchemaDevelopersGuide.html).
+For a more complete view of the process see the [HED schema developer's guide](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 
 ## Installation and local development
 

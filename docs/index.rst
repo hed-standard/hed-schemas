@@ -42,9 +42,8 @@ Working with HED schemas
 .. toctree::
    :maxdepth: 2
 
-   User guide <user_guide>
-   Developer guide <developer_guide>
-   Schemas reference <schemas_reference>
+   HED schemas overview <schemas_overview>
+   Schema developer guide <developer_guide>
    API reference <api>
 
 * :ref:`genindex`
