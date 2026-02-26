@@ -12,37 +12,17 @@ keywords: HED development, library schemas, schema development, HED workflow,
 
 # Schema developer's guide
 
-This guide describes how to develop your own library schema or contribute to existing HED vocabularies.
-
-## What is HED?
-
-HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation framework that allows researchers to systematically describe what happened during an experiment. A **HED schema** is a hierarchically-structured vocabulary specification. The **standard schema** contains basic vocabulary for annotation across all domains, while **library schemas** provide specialized vocabularies for specific research areas.
-
-For information on viewing and using HED schemas in your data, see the [HED schemas reference](schemas_reference.md).
-
-## Table of contents
-
-01. [Getting started](#getting-started)
-02. [Schema design principles](#schema-design-principles)
-03. [Proposing a new library schema](#proposing-a-new-library-schema)
-04. [Development workflow](#development-workflow)
-05. [Developing a schema](#developing-a-schema)
-06. [Release process](#release-process)
-07. [Common pitfalls](#common-pitfalls)
-08. [CI/CD pipeline](#cicd-pipeline)
-09. [Contributing to documentation](#contributing-to-documentation)
-10. [Quick syntax reference](#quick-reference)
-11. [Getting help](#getting-help)
+HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation framework that allows researchers to systematically describe what happened during an experiment. A **HED schema** is a hierarchically-structured vocabulary specification. The **standard schema** contains basic vocabulary for annotation across all domains, while **library schemas** provide specialized vocabularies for specific research areas. This guide describes how to develop your own HED library schema or contribute to existing HED vocabularies.
 
 ## Getting started
 
-Before developing a schema:
-
-1. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser)
-2. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
-3. **Discuss with the HED Working Group** at [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
-4. **Choose a schema name** (short, informative, alphabetic string)
-5. **Understand the structure** by reading this guide
+1. **Get a basic understanding of HED** by reading [Introduction to HED](https://www.hedtags.org/hed-resources/IntroductionToHed.html). This 5-minute introduction gives you an overview.
+2. **Explore schema building workflow** by reading [As a schema builder](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html#as-a-schema-builder-anchor) from [How can you use HED?](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html#).
+3. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser) or see a summary by looking at the [HED schemas overview](schemas.overview.md)
+4. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
+5. **Discuss with the HED Working Group** at [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
+6. **Choose a schema name** (short, informative, alphabetic string)
+7. **Understand the structure** by reading this guide
 
 ## Schema design principles
 
