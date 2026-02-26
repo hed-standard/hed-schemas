@@ -37,14 +37,14 @@ The repository is organized into the following main directories:
 **scripts/**
   Utility scripts for schema validation and verification
   
-  * ``verify_branch.sh`` - Pre-commit hook for branch validation
+  * ``verify_branch.py`` - Pre-commit hook for branch validation
 
 **docs/**
   Documentation source files (this documentation)
   
-  * ``source/`` - Sphinx documentation source
-  * ``make.bat`` - Windows documentation build script
-  * ``Makefile`` - Unix documentation build script
+  * ``*.md`` - Markdown documentation files
+  * ``*.rst`` - reStructuredText documentation files
+  * ``_build/`` - Built documentation output
 
 **.github/workflows/**
   CI/CD pipeline definitions
@@ -78,7 +78,7 @@ Configuration files
 **CONTRIBUTING.md**
   Guidelines for contributing to HED schemas
 
-Schema version vtructure
+Schema version structure
 ------------------------
 
 Released versions
@@ -148,5 +148,4 @@ See also
 --------
 
 * :doc:`developer_guide` - Complete schema development guide
-* :doc:`user_guide` - Using HED schemas
-* :doc:`schemas_reference` - Detailed schema information
+* :doc:`schemas_overview` - Overview and reference for all HED schemas

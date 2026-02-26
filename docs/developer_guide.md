@@ -10,7 +10,7 @@ keywords: HED development, library schemas, schema development, HED workflow,
 ---
 ```
 
-# Schema developer's guide
+# Schema developer guide
 
 HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation framework that allows researchers to systematically describe what happened during an experiment. A **HED schema** is a hierarchically-structured vocabulary specification. The **standard schema** contains basic vocabulary for annotation across all domains, while **library schemas** provide specialized vocabularies for specific research areas. This guide describes how to develop your own HED library schema or contribute to existing HED vocabularies.
 
@@ -18,7 +18,7 @@ HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation
 
 1. **Get a basic understanding of HED** by reading [Introduction to HED](https://www.hedtags.org/hed-resources/IntroductionToHed.html). This 5-minute introduction gives you an overview.
 2. **Explore schema building workflow** by reading [As a schema builder](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html#as-a-schema-builder-anchor) from [How can you use HED?](https://www.hedtags.org/hed-resources/HowCanYouUseHed.html#).
-3. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser) or see a summary by looking at the [HED schemas overview](schemas.overview.md)
+3. **Explore existing schemas** using the [HED schema browser](https://www.hedtags.org/hed-schema-browser) or see a summary by looking at the [HED schemas overview](schemas_overview.md)
 4. **Post an issue** describing your proposed changes or new schema on [GitHub issues](https://github.com/hed-standard/hed-schemas/issues)
 5. **Discuss with the HED Working Group** at [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 6. **Choose a schema name** (short, informative, alphabetic string)
@@ -822,13 +822,13 @@ Press `Ctrl+C` to stop the server.
 
 The documentation source files are in `docs/`:
 
-| File                   | Purpose                             |
-| ---------------------- | ----------------------------------- |
-| `index.rst`            | Main documentation index            |
-| `schemas_reference.md` | Guide for viewing and using schemas |
-| `developer_guide.md`   | Guide for schema development        |
-| `api.rst`              | Repository structure reference      |
-| `conf.py`              | Sphinx configuration                |
+| File                   | Purpose                        |
+| ---------------------- | ------------------------------ |
+| `index.rst`            | Main documentation index       |
+| `schemas_overview .md` | Overview of HED schemas        |
+| `developer_guide.md`   | Guide for schema development   |
+| `api.rst`              | Repository structure reference |
+| `conf.py`              | Sphinx configuration           |
 
 #### Workflow for documentation changes
 
@@ -929,7 +929,8 @@ Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
       :maxdepth: 2
       :caption: Contents:
 
-      User guide <user_guide>
+      HED schemas overview <schemas_overview>
+      Schema developer guide <developer_guide>
       your_new_page
       ...
    ```
@@ -939,10 +940,9 @@ Visit the [HED Schema Browser](https://www.hedtags.org/hed-schema-browser)
 
 When a new schema version is released:
 
-1. Update version numbers in `schemas_reference.md`
+1. Update version numbers in `schemas_overview.md`
 2. Add new links for the new version
-3. Update the version table in `schemas_reference.md`
-4. Check that all DOI links are correct
+3. Check that all DOI links are correct
 
 #### Adding images
 
@@ -1053,7 +1053,7 @@ The deployed documentation is available at the GitHub Pages URL for the reposito
 
 ### Documentation resources
 
-- **[HED schemas reference](schemas_reference.md)**: Guide for viewing and using schemas
+- **[HED schemas overview](schemas_overview.md)**: Guide for viewing and using schemas
 - **[Developer guide](developer_guide.md)**: This guide for contributing to schemas
 - **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification
 - **[HED resources](https://www.hedtags.org/hed-resources)**: Tutorials and guides
@@ -1061,6 +1061,7 @@ The deployed documentation is available at the GitHub Pages URL for the reposito
 ### Support
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
+- **Ideas and questions?**: [github.com/orgs/hed-standard/discussions](https://github.com/orgs/hed-standard/discussions)
 - **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 - **Homepage**: [www.hedtags.org](https://www.hedtags.org)
 - **Resources**: [www.hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
