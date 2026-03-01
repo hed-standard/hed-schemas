@@ -1,5 +1,5 @@
 hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
-HED_0012001	0	Event	HedTag	suggestedTag=Task-property, annotation=ncit:C25499, annotation=rdfs:comment Should have this tag in every event process.	Something that happens at a given time and (typically) place. Elements of this tag subtree designate the general category in which an event falls.
+HED_0012001	0	Event	HedTag	suggestedTag=Task-property	Something that happens at a given time and (typically) place. Elements of this tag subtree designate the general category in which an event falls.
 HED_0012002	1	Sensory-event	Event	suggestedTag=Task-event-role, suggestedTag=Sensory-presentation	Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.
 HED_0012003	1	Agent-action	Event	suggestedTag=Task-event-role, suggestedTag=Agent	Any action engaged in by an agent (see the Agent subtree for agent categories). A participant response to an experiment stimulus should include the tag Agent-property/Agent-task-role/Experiment-participant.
 HED_0012004	1	Data-feature	Event	suggestedTag=Data-property	An event marking the occurrence of a data feature such as an interictal spike or alpha burst that is often added post hoc to the data record.
