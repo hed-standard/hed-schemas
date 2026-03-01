@@ -22,21 +22,13 @@
         "suggestedTag": [
           "Task-property"
         ],
-        "hedId": "HED_0012001",
-        "annotation": [
-          "ncit:C25499",
-          "rdfs:comment Should have this tag in every event process."
-        ]
+        "hedId": "HED_0012001"
       },
       "explicitAttributes": {
         "suggestedTag": [
           "Task-property"
         ],
-        "hedId": "HED_0012001",
-        "annotation": [
-          "ncit:C25499",
-          "rdfs:comment Should have this tag in every event process."
-        ]
+        "hedId": "HED_0012001"
       }
     },
     "Sensory-event": {
@@ -20627,6 +20619,12 @@
       "id": "has_dbxref",
       "iri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "description": "Property indicating that an ontology term has a cross-reference to a database."
+    },
+    {
+      "name": "rdfs:",
+      "id": "comment",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "description": "Standard way to provide a human-readable description."
     },
     {
       "name": "terms:",

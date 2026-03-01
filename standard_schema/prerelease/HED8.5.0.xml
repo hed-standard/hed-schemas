@@ -12,11 +12,6 @@ Each term in this vocabulary has a human-readable description and may include ad
             <value>Task-property</value>
          </attribute>
          <attribute>
-            <name>annotation</name>
-            <value>ncit:C25499</value>
-            <value>rdfs:comment Should have this tag in every event process.</value>
-         </attribute>
-         <attribute>
             <name>hedId</name>
             <value>HED_0012001</value>
          </attribute>
@@ -13596,6 +13591,12 @@ Each term in this vocabulary has a human-readable description and may include ad
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>rdfs:</name>
+         <id>comment</id>
+         <iri>http://www.w3.org/2000/01/rdf-schema#comment</iri>
+         <description>Standard way to provide a human-readable description.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>terms:</name>
