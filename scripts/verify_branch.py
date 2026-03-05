@@ -39,9 +39,7 @@ def get_branch_name() -> str:
             )
             branch_name = result.stdout.strip()
         except subprocess.CalledProcessError as e:
-            raise BranchVerificationError(
-                f"Failed to get branch name from git: {e}"
-            ) from e
+            raise BranchVerificationError(f"Failed to get branch name from git: {e}") from e
 
     return branch_name
 
@@ -107,9 +105,7 @@ def validate_schema_file(filepath: str, validate_all: bool = False) -> tuple[boo
         return False, f"Error validating '{filepath}': {e}"
 
 
-def verify_files(
-    files: list[str], branch_name: str, validate_all: bool = False
-) -> list[str]:
+def verify_files(files: list[str], branch_name: str, validate_all: bool = False) -> list[str]:
     """
     Verify that changed files comply with branch naming and location rules.
 
@@ -149,9 +145,7 @@ def verify_files(
         # Schema files must be in prerelease directory
         if is_schema_file(filepath):
             if not filepath.startswith(prerelease_pattern):
-                errors.append(
-                    f"Error: '{filepath}' is a schema file and must be in '{prerelease_pattern}'"
-                )
+                errors.append(f"Error: '{filepath}' is a schema file and must be in '{prerelease_pattern}'")
             else:
                 # Validate the schema file
                 success, error_msg = validate_schema_file(filepath, validate_all)
@@ -181,9 +175,7 @@ def verify_files(
 
 def main():
     """Main entry point for branch verification."""
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("files", nargs="*", help="List of changed files to verify")
     parser.add_argument(
         "--validate-all",
