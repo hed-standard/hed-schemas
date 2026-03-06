@@ -31,7 +31,6 @@ requires-python = ">=3.10,<3.15"
 dev = [
     "ruff>=0.8.0",
     "codespell>=2.2.0",
-    "black>=26.1.0",
     "mdformat>=0.7.0",
     "mdformat-myst>=0.1.5",
 ]
@@ -54,28 +53,8 @@ skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.
 ignore-words-list = 'te,parms,trough'
 uri-ignore-words-list = '*'
 
-[tool.black]
-line-length = 88
-target-version = ['py310', 'py311', 'py312', 'py313', 'py314']
-include = '\.pyi?$'
-extend-exclude = '''
-/(
-    \.git
-  | \.venv
-  | _build
-  | build
-  | dist
-  | docs/_build
-  | docs/_static
-  | docs/_templates
-  | standard_schema
-  | library_schemas
-  | schemas_latest_json
-)/
-'''
-
 [tool.ruff]
-line-length = 88
+line-length = 120
 target-version = "py310"
 exclude = [
     ".git",
@@ -102,8 +81,14 @@ select = [
     "UP",  # pyupgrade
 ]
 ignore = [
-    "E501",  # line too long, handled by black
+    "E501",  # line too long, handled by ruff format
 ]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]  # unused imports in __init__.py
