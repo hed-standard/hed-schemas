@@ -1,6 +1,7 @@
 ---
-description: Complete reference for HED schemas including how to view, use, and access HED schemas for data annotation
-keywords: HED schemas, standard schema, library schemas, score, lang, slam, mouse, schema versions, HED annotation, schema browser
+html_meta:
+  description: Complete reference for HED schemas including how to view, use, and access HED schemas for data annotation
+  keywords: HED schemas, standard schema, library schemas, score, lang, slam, mouse, schema versions, HED annotation, schema browser
 ---
 
 ```{index} schema reference; standard schema; library schemas; versions; formats; HED usage
