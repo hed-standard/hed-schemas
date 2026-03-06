@@ -31,9 +31,9 @@ retry_wait_time = 2
 timeout = 20
 
 # Headers to send with requests
-headers = [
-    "Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "User-Agent=Mozilla/5.0 (compatible; Lychee/1.0)"
+header = [
+    "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "User-Agent: Mozilla/5.0 (compatible; Lychee/1.0)"
 ]
 
 # Follow redirects

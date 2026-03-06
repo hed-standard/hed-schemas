@@ -1,15 +1,6 @@
 ```{index} developer guide; schema development; library schemas; HED workflow
 ```
 
-```{meta}
----
-description: Developer guide for creating library schemas and contributing to 
-  HED vocabularies
-keywords: HED development, library schemas, schema development, HED workflow, 
-  version control
----
-```
-
 # Schema developer guide
 
 HED (Hierarchical Event Descriptors) is a standardized vocabulary and annotation framework that allows researchers to systematically describe what happened during an experiment. A **HED schema** is a hierarchically-structured vocabulary specification. The **standard schema** contains basic vocabulary for annotation across all domains, while **library schemas** provide specialized vocabularies for specific research areas. This guide describes how to develop your own HED library schema or contribute to existing HED vocabularies.
