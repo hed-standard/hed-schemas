@@ -1,3 +1,9 @@
+---
+html_meta:
+  "description": "Developer guide for creating library schemas and contributing to HED vocabularies"
+  "keywords": "HED development, library schemas, schema development, HED workflow, version control"
+---
+
 ```{index} developer guide; schema development; library schemas; HED workflow
 ```
 
