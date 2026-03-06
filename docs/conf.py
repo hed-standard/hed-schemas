@@ -89,7 +89,7 @@ html_theme_options = {
     },
     "source_repository": "https://github.com/hed-standard/hed-schemas/",
     "source_branch": "main",
-    "source_directory": "docs/source/",
+    "source_directory": "docs/",
 }
 
 # Configure sidebar to show logo, search, navigation, and quick links
