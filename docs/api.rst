@@ -147,5 +147,5 @@ Library schemas
 See also
 --------
 
-* :doc:`developer_guide` - Complete schema development guide
-* :doc:`schemas_overview` - Overview and reference for all HED schemas
+* [Schema developers guide](./developer_guide.md) Complete schema development guide
+* [Schema overview](./schemas_overview.md) - Overview and reference for all HED schemas

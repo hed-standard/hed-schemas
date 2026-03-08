@@ -3,8 +3,9 @@
 # Exclude patterns
 exclude = [
     # Exclude localhost and local file links
-    'http://localhost*',
-    'file:///*',
+    '^http://127\.0\.0\.',
+    '^http://localhost',
+    '^file://',
     
     # Exclude common false positives
     'https://github.com/.*/settings/*',
@@ -12,6 +13,15 @@ exclude = [
     
     # Exclude dynamic URLs that may not work in CI
     'https://www.hedtags.org/hed-schema-browser*',
+
+    # Exclude Furo "View source" links (GitHub blob URLs with ?plain=true)
+    # These break when source_branch is "main" but files only exist in a feature branch
+    'https://github\.com/hed-standard/hed-schemas/blob/.*\?plain=true',
+
+    # Exclude DOI links that frequently timeout
+    'https://doi\.org/10\.5281/zenodo\.7876037',
+    'https://doi\.org/10\.5281/zenodo\.7897596',
+    'https://doi\.org/10\.5281/zenodo\.13987483',
 ]
 
 # Accept status codes
