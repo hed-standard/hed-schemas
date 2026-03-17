@@ -75,9 +75,8 @@ pip install ".[dev]"
 
 This installs:
 
-- `ruff` - Fast Python linter
-- `codespell` - Spell checker
-- `black` - Code formatter
+- `ruff` - Fast Python linter and formatter
+- `typos` - Spell checker
 - `mdformat` - Markdown formatter
 
 ### Installing documentation dependencies

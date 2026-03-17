@@ -1,5 +1,5 @@
 # This is NOT a Python package - it's a schema repository
-# The pyproject.toml file is used only for tool configuration (codespell, etc.)
+# The pyproject.toml file is used only for tool configuration (ruff, etc.)
 # HED schemas are accessed via URLs, not pip install
 # Each schema (standard, score, lang, etc.) has its own independent semantic version
 
@@ -30,7 +30,7 @@ requires-python = ">=3.10,<3.15"
 [project.optional-dependencies]
 dev = [
     "ruff>=0.8.0",
-    "codespell>=2.2.0",
+    "typos>=1.29.0",
     "mdformat>=0.7.0",
     "mdformat-myst>=0.1.5",
 ]
@@ -48,10 +48,14 @@ docs = [
 # Explicitly disable package discovery - this is a schema repository, not a Python package
 packages = []
 
-[tool.codespell]
-skip = '*.git,*.pdf,*.svg,venv*,*.tsv,*.json,*.rdf,*.jsonld,*.xml,*.mediawiki,*.omn,.venv,datasets*,_build,_static,*.js,*.inv'
-ignore-words-list = 'te,parms,trough'
-uri-ignore-words-list = '*'
+[tool.typos.files]
+extend-exclude = ["*.pdf", "*.svg", "venv*", "*.tsv", "*.json", "*.rdf", "*.jsonld", "*.xml", "*.mediawiki", "*.omn", ".venv", "datasets*", "_build", "_static", "*.js", "*.inv"]
+
+[tool.typos.default.extend-words]
+# Words that are not typos
+te = "te"
+parms = "parms"
+trough = "trough"
 
 [tool.ruff]
 line-length = 120
