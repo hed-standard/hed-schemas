@@ -723,7 +723,7 @@ GitHub Actions automatically:
 | `update_and_convert_schemas.yaml` | Converts changed file(s) to other format               |
 | `add_hed_ids.yaml`                | Assigns HedIds to new terms (if during release)        |
 | `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/` |
-| `codespell.yaml`                  | Checks spelling                                        |
+| `typos.yaml`                      | Checks spelling                                        |
 | `mdformat.yaml`                   | Checks Markdown formatting                             |
 | `links.yaml`                      | Checks for broken links                                |
 

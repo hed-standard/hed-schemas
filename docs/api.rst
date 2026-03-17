@@ -53,7 +53,7 @@ The repository is organized into the following main directories:
   * ``update_and_convert_schemas.yaml`` - Format conversion
   * ``add_hed_ids.yaml`` - HedId assignment
   * ``verify_source_branch.yaml`` - Branch verification
-  * ``codespell.yaml`` - Spell checking
+  * ``typos.yaml`` - Spell checking
   * ``mdformat.yaml`` - Markdown formatting
   * ``links.yaml`` - Link validation
   * ``deploy-docs.yaml`` - Documentation deployment
