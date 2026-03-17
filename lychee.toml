@@ -5,6 +5,7 @@ exclude = [
     # Exclude localhost and local file links
     '^http://127\.0\.0\.',
     '^http://localhost',
+    '^https://localhost',
     '^file://',
     
     # Exclude common false positives

@@ -160,9 +160,6 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 
-# GitHub Copilot instructions
-.github/copilot-instructions.md
-
 # Status and temporary files
 status/
 .status/
