@@ -56,6 +56,9 @@ extend-exclude = ["*.pdf", "*.svg", "venv*", "*.tsv", "*.json", "*.rdf", "*.json
 te = "te"
 parms = "parms"
 trough = "trough"
+HED = "HED"
+hed = "hed"
+Hed = "Hed"
 
 [tool.ruff]
 line-length = 120
