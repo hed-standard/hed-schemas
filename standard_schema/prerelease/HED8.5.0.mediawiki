@@ -555,12 +555,14 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Nonbiological-artifact <nowiki>{hedId=HED_0012512} [A data artifact arising from a non-biological source.]</nowiki>
 **** Artificial-ventilation-artifact <nowiki>{hedId=HED_0012513} [Artifact stemming from mechanical ventilation. These can occur at the same rate as the ventilator, but also have other patterns.]</nowiki>
 **** Dialysis-artifact <nowiki>{hedId=HED_0012514} [Artifacts seen in recordings during continuous renal replacement therapy (dialysis).]</nowiki>
+**** Electrical-artifact <nowiki>[Signal Contamination due to extraneous or unwanted electrical signals.]</nowiki>
+***** Induction-artifact <nowiki>{hedId=HED_0012517} [Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.]</nowiki>
+***** Line-noise-artifact <nowiki>{hedId=HED_0012518} [Power line noise at 50 Hz or 60 Hz.]</nowiki>
+******  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012519}</nowiki>
 **** Electrode-movement-artifact <nowiki>{hedId=HED_0012515} [Artifact from electrode movement.]</nowiki>
-**** Electrode-pops-artifact <nowiki>{hedId=HED_0012516} [Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.]</nowiki>
-**** Induction-artifact <nowiki>{hedId=HED_0012517} [Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.]</nowiki>
-**** Line-noise-artifact <nowiki>{hedId=HED_0012518} [Power line noise at 50 Hz or 60 Hz.]</nowiki>
-*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012519}</nowiki>
-**** Salt-bridge-artifact <nowiki>{hedId=HED_0012520} [Artifact from salt-bridge between EEG electrodes.]</nowiki>
+**** Localized-channel-artifact <nowiki>{suggestedTag=ID} [Transient artifact usually involving a single channel or a small subset of channels.]</nowiki>
+***** Electrode-pops-artifact <nowiki>{hedId=HED_0012516} [Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.]</nowiki>
+***** Salt-bridge-artifact <nowiki>{hedId=HED_0012520} [Artifact from salt-bridge between EEG electrodes.]</nowiki>
 ** Data-marker <nowiki>{hedId=HED_0012521} [An indicator placed to mark something.]</nowiki>
 *** Data-break-marker <nowiki>{hedId=HED_0012522} [An indicator place to indicate a gap in the data.]</nowiki>
 *** Temporal-marker <nowiki>{hedId=HED_0012523} [An indicator placed at a particular time in the data.]</nowiki>
@@ -1161,6 +1163,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Not-meaningful <nowiki>{hedId=HED_0013114} [Not having a serious, important, or useful quality or purpose.]</nowiki>
 *** Novel <nowiki>{hedId=HED_0013115} [Having no previous example or precedent or parallel.]</nowiki>
 *** Oddball <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013116} [Something unusual, or infrequent.]</nowiki>
+*** Omitted-stimulus <nowiki>[Something that is expected to happen or usually happens but doesn't.]</nowiki>
 *** Penalty <nowiki>{hedId=HED_0013117} [A disadvantage, loss, or hardship due to some action.]</nowiki>
 *** Planned <nowiki>{relatedTag=Unplanned, hedId=HED_0013118} [Something that was decided on or arranged in advance.]</nowiki>
 *** Priming <nowiki>{hedId=HED_0013119} [An implicit memory effect in which exposure to a stimulus influences response to a later stimulus.]</nowiki>

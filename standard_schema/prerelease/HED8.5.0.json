@@ -8975,11 +8975,9 @@
       "children": [
         "Artificial-ventilation-artifact",
         "Dialysis-artifact",
+        "Electrical-artifact",
         "Electrode-movement-artifact",
-        "Electrode-pops-artifact",
-        "Induction-artifact",
-        "Line-noise-artifact",
-        "Salt-bridge-artifact"
+        "Localized-channel-artifact"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -9017,39 +9015,25 @@
         "hedId": "HED_0012514"
       }
     },
-    "Electrode-movement-artifact": {
-      "short_form": "Electrode-movement-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-movement-artifact",
-      "description": "Artifact from electrode movement.",
+    "Electrical-artifact": {
+      "short_form": "Electrical-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact",
+      "description": "Signal Contamination due to extraneous or unwanted electrical signals.",
       "parent": "Nonbiological-artifact",
-      "children": [],
+      "children": [
+        "Induction-artifact",
+        "Line-noise-artifact"
+      ],
       "attributes": {
-        "extensionAllowed": true,
-        "hedId": "HED_0012515"
+        "extensionAllowed": true
       },
-      "explicitAttributes": {
-        "hedId": "HED_0012515"
-      }
-    },
-    "Electrode-pops-artifact": {
-      "short_form": "Electrode-pops-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact",
-      "description": "Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.",
-      "parent": "Nonbiological-artifact",
-      "children": [],
-      "attributes": {
-        "extensionAllowed": true,
-        "hedId": "HED_0012516"
-      },
-      "explicitAttributes": {
-        "hedId": "HED_0012516"
-      }
+      "explicitAttributes": {}
     },
     "Induction-artifact": {
       "short_form": "Induction-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact",
       "description": "Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.",
-      "parent": "Nonbiological-artifact",
+      "parent": "Electrical-artifact",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
@@ -9061,9 +9045,9 @@
     },
     "Line-noise-artifact": {
       "short_form": "Line-noise-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact",
       "description": "Power line noise at 50 Hz or 60 Hz.",
-      "parent": "Nonbiological-artifact",
+      "parent": "Electrical-artifact",
       "children": [],
       "attributes": {
         "hedId": "HED_0012518"
@@ -9082,14 +9066,69 @@
         "hedId": "HED_0012519"
       }
     },
-    "Salt-bridge-artifact": {
-      "short_form": "Salt-bridge-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact",
-      "description": "Artifact from salt-bridge between EEG electrodes.",
+    "Electrode-movement-artifact": {
+      "short_form": "Electrode-movement-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-movement-artifact",
+      "description": "Artifact from electrode movement.",
       "parent": "Nonbiological-artifact",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0012515"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0012515"
+      }
+    },
+    "Localized-channel-artifact": {
+      "short_form": "Localized-channel-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact",
+      "description": "Transient artifact usually involving a single channel or a small subset of channels.",
+      "parent": "Nonbiological-artifact",
+      "children": [
+        "Electrode-pops-artifact",
+        "Salt-bridge-artifact"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ]
+      },
+      "explicitAttributes": {
+        "suggestedTag": [
+          "ID"
+        ]
+      }
+    },
+    "Electrode-pops-artifact": {
+      "short_form": "Electrode-pops-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact",
+      "description": "Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.",
+      "parent": "Localized-channel-artifact",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ],
+        "hedId": "HED_0012516"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0012516"
+      }
+    },
+    "Salt-bridge-artifact": {
+      "short_form": "Salt-bridge-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact",
+      "description": "Artifact from salt-bridge between EEG electrodes.",
+      "parent": "Localized-channel-artifact",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ],
         "hedId": "HED_0012520"
       },
       "explicitAttributes": {
@@ -17881,6 +17920,7 @@
         "Not-meaningful",
         "Novel",
         "Oddball",
+        "Omitted-stimulus",
         "Penalty",
         "Planned",
         "Priming",
@@ -18090,6 +18130,17 @@
         ],
         "hedId": "HED_0013116"
       }
+    },
+    "Omitted-stimulus": {
+      "short_form": "Omitted-stimulus",
+      "long_form": "Property/Task-property/Task-stimulus-role/Omitted-stimulus",
+      "description": "Something that is expected to happen or usually happens but doesn't.",
+      "parent": "Task-stimulus-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Penalty": {
       "short_form": "Penalty",
