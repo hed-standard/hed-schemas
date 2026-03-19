@@ -4557,6 +4557,44 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                   </node>
                   <node>
+                     <name>Electrical-artifact</name>
+                     <description>Signal Contamination due to extraneous or unwanted electrical signals.</description>
+                     <node>
+                        <name>Induction-artifact</name>
+                        <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012517</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Line-noise-artifact</name>
+                        <description>Power line noise at 50 Hz or 60 Hz.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012518</value>
+                        </attribute>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012519</value>
+                           </attribute>
+                        </node>
+                     </node>
+                  </node>
+                  <node>
                      <name>Electrode-movement-artifact</name>
                      <description>Artifact from electrode movement.</description>
                      <attribute>
@@ -4565,54 +4603,28 @@ Each term in this vocabulary has a human-readable description and may include ad
                      </attribute>
                   </node>
                   <node>
-                     <name>Electrode-pops-artifact</name>
-                     <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
+                     <name>Localized-channel-artifact</name>
+                     <description>Transient artifact usually involving a single channel or a small subset of channels.</description>
                      <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012516</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Induction-artifact</name>
-                     <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012517</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Line-noise-artifact</name>
-                     <description>Power line noise at 50 Hz or 60 Hz.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012518</value>
+                        <name>suggestedTag</name>
+                        <value>ID</value>
                      </attribute>
                      <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
+                        <name>Electrode-pops-artifact</name>
+                        <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012519</value>
+                           <value>HED_0012516</value>
                         </attribute>
                      </node>
-                  </node>
-                  <node>
-                     <name>Salt-bridge-artifact</name>
-                     <description>Artifact from salt-bridge between EEG electrodes.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012520</value>
-                     </attribute>
+                     <node>
+                        <name>Salt-bridge-artifact</name>
+                        <description>Artifact from salt-bridge between EEG electrodes.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012520</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -10652,6 +10664,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>hedId</name>
                      <value>HED_0013116</value>
                   </attribute>
+               </node>
+               <node>
+                  <name>Omitted-stimulus</name>
+                  <description>Something that is expected to happen or usually happens but doesn't.</description>
                </node>
                <node>
                   <name>Penalty</name>
