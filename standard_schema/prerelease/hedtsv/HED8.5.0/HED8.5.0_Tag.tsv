@@ -1151,7 +1151,7 @@ HED_0013113	3	Non-target	Task-stimulus-role	relatedTag=Target	Something other th
 HED_0013114	3	Not-meaningful	Task-stimulus-role		Not having a serious, important, or useful quality or purpose.
 HED_0013115	3	Novel	Task-stimulus-role		Having no previous example or precedent or parallel.
 HED_0013116	3	Oddball	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Something unusual, or infrequent.
-	3	Omitted-stimulus	Task-stimulus-role		Something that is expected to happen or usually happens but doesn't.
+	3	Omitted-presentation	Task-stimulus-role		Something that is expected to happen or usually happens but doesn't.
 HED_0013117	3	Penalty	Task-stimulus-role		A disadvantage, loss, or hardship due to some action.
 HED_0013118	3	Planned	Task-stimulus-role	relatedTag=Unplanned	Something that was decided on or arranged in advance.
 HED_0013119	3	Priming	Task-stimulus-role		An implicit memory effect in which exposure to a stimulus influences response to a later stimulus.
