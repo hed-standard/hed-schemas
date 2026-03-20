@@ -17920,7 +17920,7 @@
         "Not-meaningful",
         "Novel",
         "Oddball",
-        "Omitted-stimulus",
+        "Omitted-presentation",
         "Penalty",
         "Planned",
         "Priming",
@@ -18131,9 +18131,9 @@
         "hedId": "HED_0013116"
       }
     },
-    "Omitted-stimulus": {
-      "short_form": "Omitted-stimulus",
-      "long_form": "Property/Task-property/Task-stimulus-role/Omitted-stimulus",
+    "Omitted-presentation": {
+      "short_form": "Omitted-presentation",
+      "long_form": "Property/Task-property/Task-stimulus-role/Omitted-presentation",
       "description": "Something that is expected to happen or usually happens but doesn't.",
       "parent": "Task-stimulus-role",
       "children": [],
