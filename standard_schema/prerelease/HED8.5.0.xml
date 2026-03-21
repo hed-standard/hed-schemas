@@ -10666,7 +10666,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
-                  <name>Omitted-stimulus</name>
+                  <name>Omitted-presentation</name>
                   <description>Something that is expected to happen or usually happens but doesn't.</description>
                </node>
                <node>
