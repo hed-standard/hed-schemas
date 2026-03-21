@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "library": "mouse",
-  "withStandard": "8.4.0",
+  "withStandard": "8.5.0",
   "unmerged": "True",
   "prologue": "The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments. ",
   "tags": {
@@ -12,20 +12,10 @@
       "parent": "Move-face",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Move-face"
+      },
+      "explicitAttributes": {
         "rooted": "Move-face"
       }
     },
@@ -36,20 +26,10 @@
       "parent": "Move-face",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Move-face"
+      },
+      "explicitAttributes": {
         "rooted": "Move-face"
       }
     },
@@ -60,20 +40,10 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Perform"
+      },
+      "explicitAttributes": {
         "rooted": "Perform"
       }
     },
@@ -84,20 +54,10 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Perform"
+      },
+      "explicitAttributes": {
         "rooted": "Perform"
       }
     },
@@ -108,20 +68,10 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Perform"
+      },
+      "explicitAttributes": {
         "rooted": "Perform"
       }
     },
@@ -132,20 +82,10 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Perform"
+      },
+      "explicitAttributes": {
         "rooted": "Perform"
       }
     },
@@ -156,20 +96,10 @@
       "parent": "Body-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Body-part"
+      },
+      "explicitAttributes": {
         "rooted": "Body-part"
       }
     },
@@ -182,20 +112,10 @@
         "Manus"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Body-part"
+      },
+      "explicitAttributes": {
         "rooted": "Body-part"
       }
     },
@@ -206,21 +126,9 @@
       "parent": "Fore-limb-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Whiskers": {
       "short_form": "Whiskers",
@@ -229,20 +137,10 @@
       "parent": "Face-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Face-part"
+      },
+      "explicitAttributes": {
         "rooted": "Face-part"
       }
     },
@@ -253,20 +151,10 @@
       "parent": "Body-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Body-part"
+      },
+      "explicitAttributes": {
         "rooted": "Body-part"
       }
     },
@@ -279,20 +167,10 @@
         "Pes"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Body-part"
+      },
+      "explicitAttributes": {
         "rooted": "Body-part"
       }
     },
@@ -303,21 +181,9 @@
       "parent": "Hind-limb-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Tail": {
       "short_form": "Tail",
@@ -326,20 +192,10 @@
       "parent": "Body-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Body-part"
+      },
+      "explicitAttributes": {
         "rooted": "Body-part"
       }
     },
@@ -350,20 +206,13 @@
       "parent": "Measurement-device",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "Sensory-presentation"
+        ],
+        "rooted": "Measurement-device"
+      },
+      "explicitAttributes": {
         "rooted": "Measurement-device"
       }
     },
@@ -374,20 +223,10 @@
       "parent": "Task-action-type",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Task-action-type"
+      },
+      "explicitAttributes": {
         "rooted": "Task-action-type"
       }
     },
@@ -398,20 +237,10 @@
       "parent": "Task-action-type",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Task-action-type"
+      },
+      "explicitAttributes": {
         "rooted": "Task-action-type"
       }
     }
