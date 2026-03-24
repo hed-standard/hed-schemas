@@ -199,6 +199,38 @@
         "rooted": "Body-part"
       }
     },
+    "Cell": {
+      "short_form": "Cell",
+      "long_form": "Item/Biological-item/Anatomical-item/Cell",
+      "description": "The smallest basic structural and functional unit of all living organisms, capable of independent existence and self-replication.",
+      "parent": "Anatomical-item",
+      "children": [
+        "Neuron"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Anatomical-item",
+        "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)"
+      },
+      "explicitAttributes": {
+        "rooted": "Anatomical-item",
+        "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)"
+      }
+    },
+    "Neuron": {
+      "short_form": "Neuron",
+      "long_form": "Item/Biological-item/Anatomical-item/Cell/Neuron",
+      "description": "An electrically excitable cell specialized for the initiation, conduction, and transmission of information throughout the body.",
+      "parent": "Cell",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron"
+      },
+      "explicitAttributes": {
+        "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron"
+      }
+    },
     "Lick-spout": {
       "short_form": "Lick-spout",
       "long_form": "Item/Object/Man-made-object/Device/Measurement-device/Lick-spout",

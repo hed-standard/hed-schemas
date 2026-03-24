@@ -13,6 +13,8 @@ hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
 	0	Hind-limb-part	Body-part	rooted=Body-part	
 	1	Pes	Hind-limb-part		
 	0	Tail	Body-part	rooted=Body-part	
+	0	Cell	Anatomical-item	rooted=Anatomical-item, annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)	The smallest basic structural and functional unit of all living organisms, capable of independent existence and self-replication.
+	1	Neuron	Cell	annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron	An electrically excitable cell specialized for the initiation, conduction, and transmission of information throughout the body.
 	0	Lick-spout	Measurement-device	rooted=Measurement-device	
 	0	Aborted-trial	Task-action-type	rooted=Task-action-type	
 	0	Correct-reject	Task-action-type	rooted=Task-action-type	
