@@ -31,6 +31,9 @@ The HED MOUSE HED library schema is designed to standardize the annotation of ro
 
 '''Tail''' <nowiki>{rooted=Body-part}</nowiki>
 
+'''Cell''' <nowiki>{rooted=Anatomical-item, annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)} [The smallest basic structural and functional unit of all living organisms, capable of independent existence and self-replication.]</nowiki>
+* Neuron <nowiki>{annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron} [An electrically excitable cell specialized for the initiation, conduction, and transmission of information throughout the body.]</nowiki>
+
 '''Lick-spout''' <nowiki>{rooted=Measurement-device}</nowiki>
 
 '''Aborted-trial''' <nowiki>{rooted=Task-action-type}</nowiki>
