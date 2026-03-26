@@ -124,9 +124,9 @@ def verify_files(files: list[str], branch_name: str, validate_all: bool = False)
 
     branch_prefix = get_branch_prefix(branch_name)
 
-    # Admin branches can modify anything
-    if branch_prefix == "admin":
-        print("Any changes allowed on admin branches.")
+    # Admin and dependabot branches can modify anything
+    if branch_prefix == "admin" or branch_name.startswith("dependabot/"):
+        print("Any changes allowed on admin/dependabot branches.")
         return []
 
     print(f"Branch prefix: {branch_prefix}")
