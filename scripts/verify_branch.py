@@ -124,10 +124,12 @@ def verify_files(files: list[str], branch_name: str, validate_all: bool = False)
 
     branch_prefix = get_branch_prefix(branch_name)
 
-    # Admin and dependabot branches can modify anything
-    if branch_prefix == "admin" or branch_name.startswith("dependabot/"):
-        print("Any changes allowed on admin/dependabot branches.")
+    # Admin branches can modify anything
+    if branch_prefix == "admin":
+        print("Any changes allowed on admin branches.")
         return []
+
+    is_dependabot = branch_name.startswith("dependabot/")
 
     print(f"Branch prefix: {branch_prefix}")
 
@@ -141,6 +143,15 @@ def verify_files(files: list[str], branch_name: str, validate_all: bool = False)
     for filepath in files:
         # Normalize path separators
         filepath = filepath.replace("\\", "/")
+
+        # Dependabot branches may only update .github/ files (e.g. workflow updates)
+        if is_dependabot:
+            if not filepath.startswith(".github/"):
+                errors.append(
+                    f"Error: '{filepath}' should not be modified on a dependabot branch. "
+                    f"Only files under '.github/' directory should be modified."
+                )
+            continue
 
         # Schema files must be in prerelease directory
         if is_schema_file(filepath):
