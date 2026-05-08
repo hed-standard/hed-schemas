@@ -304,10 +304,11 @@ ______________________________________________________________________
 
 ## Tools and resources
 
-### Online tools
+### Online and browser-based tools
 
 - **[HED schema browser](https://www.hedtags.org/hed-schema-browser)**: Interactive schema exploration
 - **[HED online tools](https://hedtools.org/hed)**: Web-based validation, conversion, and annotation tools
+- **[HED browser-based validation](https://www.hedtags.org/hed-web)**: Includes dataset validation
 - **[HED homepage](https://www.hedtags.org)**: Overview and links for HED
 - **[HED specification](https://www.hedtags.org/hed-specification/)**: Formal specification
 
