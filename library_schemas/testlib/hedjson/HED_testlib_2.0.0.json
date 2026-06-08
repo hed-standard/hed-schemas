@@ -1,0 +1,265 @@
+{
+  "version": "2.0.0",
+  "library": "testlib",
+  "withStandard": "8.2.0",
+  "unmerged": "True",
+  "prologue": "This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. It is compatible with testlib version 3.0.0 but not 2.1.0. Violin-subsound1 has different parents.",
+  "tags": {
+    "B-nonextension": {
+      "short_form": "B-nonextension",
+      "long_form": "B-nonextension",
+      "description": "These should not be sorted.  B should be first",
+      "parent": null,
+      "children": [
+        "SubnodeB1",
+        "SubnodeB2"
+      ],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeB1": {
+      "short_form": "SubnodeB1",
+      "long_form": "B-nonextension/SubnodeB1",
+      "description": null,
+      "parent": "B-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeB2": {
+      "short_form": "SubnodeB2",
+      "long_form": "B-nonextension/SubnodeB2",
+      "description": null,
+      "parent": "B-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "A-nonextension": {
+      "short_form": "A-nonextension",
+      "long_form": "A-nonextension",
+      "description": "These should not be sorted.  A should be second",
+      "parent": null,
+      "children": [
+        "SubnodeA3",
+        "SubnodeA1",
+        "SubnodeA2"
+      ],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA3": {
+      "short_form": "SubnodeA3",
+      "long_form": "A-nonextension/SubnodeA3",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA1": {
+      "short_form": "SubnodeA1",
+      "long_form": "A-nonextension/SubnodeA1",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA2": {
+      "short_form": "SubnodeA2",
+      "long_form": "A-nonextension/SubnodeA2",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "D-extensionallowed": {
+      "short_form": "D-extensionallowed",
+      "long_form": "D-extensionallowed",
+      "description": "These should be sorted.  This section should be first.",
+      "parent": null,
+      "children": [
+        "SubnodeD1",
+        "SubnodeD2",
+        "SubnodeD3"
+      ],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {
+        "extensionAllowed": true
+      }
+    },
+    "SubnodeD1": {
+      "short_form": "SubnodeD1",
+      "long_form": "D-extensionallowed/SubnodeD1",
+      "description": null,
+      "parent": "D-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "SubnodeD2": {
+      "short_form": "SubnodeD2",
+      "long_form": "D-extensionallowed/SubnodeD2",
+      "description": null,
+      "parent": "D-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "SubnodeD3": {
+      "short_form": "SubnodeD3",
+      "long_form": "D-extensionallowed/SubnodeD3",
+      "description": null,
+      "parent": "D-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Flute-sound": {
+      "short_form": "Flute-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Flute-sound",
+      "description": "These should be sorted.  Flute should be first",
+      "parent": "Instrument-sound",
+      "children": [
+        "Flute-subsound1",
+        "Flute-subsound2"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Flute-subsound1": {
+      "short_form": "Flute-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Flute-sound/Flute-subsound1",
+      "description": null,
+      "parent": "Flute-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Flute-subsound2": {
+      "short_form": "Flute-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Flute-sound/Flute-subsound2",
+      "description": null,
+      "parent": "Flute-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Oboe-sound": {
+      "short_form": "Oboe-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound",
+      "description": "These should be sorted.  Oboe should be second",
+      "parent": "Instrument-sound",
+      "children": [
+        "Oboe-subsound1",
+        "Oboe-subsound2"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Oboe-subsound1": {
+      "short_form": "Oboe-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound/Oboe-subsound1",
+      "description": null,
+      "parent": "Oboe-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Oboe-subsound2": {
+      "short_form": "Oboe-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound/Oboe-subsound2",
+      "description": null,
+      "parent": "Oboe-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin-sound": {
+      "short_form": "Violin-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin-sound",
+      "description": "These should be sorted.  Violin should be last",
+      "parent": "Instrument-sound",
+      "children": [
+        "Violin-subsound1",
+        "Violin-subsound2",
+        "Violin-subsound3"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Violin-subsound1": {
+      "short_form": "Violin-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin-sound/Violin-subsound1",
+      "description": null,
+      "parent": "Violin-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin-subsound2": {
+      "short_form": "Violin-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin-sound/Violin-subsound2",
+      "description": null,
+      "parent": "Violin-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin-subsound3": {
+      "short_form": "Violin-subsound3",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin-sound/Violin-subsound3",
+      "description": null,
+      "parent": "Violin-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    }
+  },
+  "units": {},
+  "unit_classes": {},
+  "unit_modifiers": {},
+  "value_classes": {},
+  "schema_attributes": {},
+  "properties": {},
+  "epilogue": "A final section."
+}

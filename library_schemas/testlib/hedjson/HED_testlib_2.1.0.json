@@ -1,0 +1,225 @@
+{
+  "version": "2.1.0",
+  "library": "testlib",
+  "withStandard": "8.2.0",
+  "unmerged": "True",
+  "prologue": "This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0. For version 2.0.0, the conflict is that Violin-subsound2 has different parents in the two schemas. For 3.0.0, Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.",
+  "tags": {
+    "BA-nonextension": {
+      "short_form": "BA-nonextension",
+      "long_form": "BA-nonextension",
+      "description": "Does not conflict with testlib 2.0.0 or 3.0.0",
+      "parent": null,
+      "children": [
+        "SubnodeB1A",
+        "SubnodeB2A"
+      ],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeB1A": {
+      "short_form": "SubnodeB1A",
+      "long_form": "BA-nonextension/SubnodeB1A",
+      "description": null,
+      "parent": "BA-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeB2A": {
+      "short_form": "SubnodeB2A",
+      "long_form": "BA-nonextension/SubnodeB2A",
+      "description": null,
+      "parent": "BA-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "A-nonextension": {
+      "short_form": "A-nonextension",
+      "long_form": "A-nonextension",
+      "description": "These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.",
+      "parent": null,
+      "children": [
+        "SubnodeA3",
+        "SubnodeA1",
+        "SubnodeA2"
+      ],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA3": {
+      "short_form": "SubnodeA3",
+      "long_form": "A-nonextension/SubnodeA3",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA1": {
+      "short_form": "SubnodeA1",
+      "long_form": "A-nonextension/SubnodeA1",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeA2": {
+      "short_form": "SubnodeA2",
+      "long_form": "A-nonextension/SubnodeA2",
+      "description": null,
+      "parent": "A-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "Oboe-sound": {
+      "short_form": "Oboe-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound",
+      "description": "These should be sorted.  Oboe should be second",
+      "parent": "Instrument-sound",
+      "children": [
+        "Oboe-subsound1",
+        "Oboe-subsound2"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Oboe-subsound1": {
+      "short_form": "Oboe-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound/Oboe-subsound1",
+      "description": null,
+      "parent": "Oboe-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Oboe-subsound2": {
+      "short_form": "Oboe-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Oboe-sound/Oboe-subsound2",
+      "description": null,
+      "parent": "Oboe-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-sound": {
+      "short_form": "Piano-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound",
+      "description": "Conflicts with testlib 3.0.0.",
+      "parent": "Instrument-sound",
+      "children": [
+        "Piano-subsound1",
+        "Piano-subsound2",
+        "Piano-subsound2A"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Piano-subsound1": {
+      "short_form": "Piano-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound1",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-subsound2": {
+      "short_form": "Piano-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound2",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {},
+      "placeholder": {}
+    },
+    "Piano-subsound2A": {
+      "short_form": "Piano-subsound2A",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound2A",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin1-sound": {
+      "short_form": "Violin1-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin1-sound",
+      "description": "Conflicts with testlib 2.0.0.",
+      "parent": "Instrument-sound",
+      "children": [
+        "Violin-subsound1",
+        "Violin-subsound2",
+        "Violin1-subsound3"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Violin-subsound1": {
+      "short_form": "Violin-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin1-sound/Violin-subsound1",
+      "description": null,
+      "parent": "Violin1-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin-subsound2": {
+      "short_form": "Violin-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin1-sound/Violin-subsound2",
+      "description": null,
+      "parent": "Violin1-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Violin1-subsound3": {
+      "short_form": "Violin1-subsound3",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin1-sound/Violin1-subsound3",
+      "description": null,
+      "parent": "Violin1-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    }
+  },
+  "units": {},
+  "unit_classes": {},
+  "unit_modifiers": {},
+  "value_classes": {},
+  "schema_attributes": {},
+  "properties": {}
+}

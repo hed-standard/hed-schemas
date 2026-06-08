@@ -1,0 +1,35 @@
+hedId	rdfs:label	omn:SubClassOf	Attributes	dc:description	hasUnitClass
+	m-per-s^2	TestlibUnit	SIUnit, unitSymbol		accelerationUnits
+	radian	TestlibUnit	SIUnit		angleUnits
+	rad	TestlibUnit	SIUnit, unitSymbol		angleUnits
+	degree	TestlibUnit			angleUnits
+	m^2	TestlibUnit	SIUnit, unitSymbol		areaUnits
+	dollar	TestlibUnit			currencyUnits
+	$	TestlibUnit	unitPrefix, unitSymbol		currencyUnits
+	point	TestlibUnit			currencyUnits
+	hertz	TestlibUnit	SIUnit		frequencyUnits
+	Hz	TestlibUnit	SIUnit, unitSymbol		frequencyUnits
+	dB	TestlibUnit	unitSymbol	Intensity expressed as ratio to a threshold. Often used for sound intensity.	intensityUnits
+	candela	TestlibUnit	SIUnit	Units used to express light intensity.	intensityUnits
+	cd	TestlibUnit	SIUnit, unitSymbol	Units used to express light intensity.	intensityUnits
+	m-per-s^3	TestlibUnit	unitSymbol		jerkUnits
+	byte	TestlibUnit	SIUnit		memorySizeUnits
+	B	TestlibUnit	SIUnit, unitSymbol		memorySizeUnits
+	foot	TestlibUnit			physicalLengthUnits
+	inch	TestlibUnit			physicalLengthUnits
+	metre	TestlibUnit	SIUnit		physicalLengthUnits
+	m	TestlibUnit	SIUnit, unitSymbol		physicalLengthUnits
+	mile	TestlibUnit			physicalLengthUnits
+	m-per-s	TestlibUnit	SIUnit, unitSymbol		speedUnits
+	mph	TestlibUnit	unitSymbol		speedUnits
+	kph	TestlibUnit	unitSymbol		speedUnits
+	second	TestlibUnit	SIUnit		timeUnits
+	s	TestlibUnit	SIUnit, unitSymbol		timeUnits
+	day	TestlibUnit			timeUnits
+	minute	TestlibUnit			timeUnits
+	hour	TestlibUnit		Should be in 24-hour format.	timeUnits
+	m^3	TestlibUnit	SIUnit, unitSymbol		volumeUnits
+	g	TestlibUnit	SIUnit, unitSymbol		weightUnits
+	gram	TestlibUnit	SIUnit		weightUnits
+	pound	TestlibUnit			weightUnits
+	lb	TestlibUnit			weightUnits

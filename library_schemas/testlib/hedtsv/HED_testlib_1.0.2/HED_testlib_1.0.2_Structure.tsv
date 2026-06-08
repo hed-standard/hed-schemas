@@ -1,0 +1,4 @@
+hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description
+HED_0000010	TestlibHeader	version="1.0.2", library="testlib"	HedHeader	
+HED_0000011	TestlibPrologue		HedPrologue	This schema is the first official release that includes an xsd and requires unit class, unit modifier, value class, schema attribute and property sections.
+HED_0000012	TestlibEpilogue		HedEpilogue	This is an updated version of the schema format. The properties are now part of the schema. The schema attributes are designed to be checked in software rather than hard-coded. The schema attributes, themselves have properties.

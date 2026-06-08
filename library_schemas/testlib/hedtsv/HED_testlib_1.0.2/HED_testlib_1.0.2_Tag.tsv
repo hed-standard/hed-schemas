@@ -1,0 +1,1111 @@
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	0	Event	HedTag	suggestedTag=Task-property	Something that happens at a given time and (typically) place. Elements of this tag subtree designate the general category in which an event falls.
+	1	Sensory-event	Event	suggestedTag=Task-event-role, suggestedTag=Sensory-presentation	Something perceivable by the participant. An event meant to be an experimental stimulus should include the tag Task-property/Task-event-role/Experimental-stimulus.
+	1	Agent-action	Event	suggestedTag=Task-event-role, suggestedTag=Agent	Any action engaged in by an agent (see the Agent subtree for agent categories). A participant response to an experiment stimulus should include the tag Agent-property/Agent-task-role/Experiment-participant.
+	1	Data-feature	Event	suggestedTag=Data-property	An event marking the occurrence of a data feature such as an interictal spike or alpha burst that is often added post hoc to the data record.
+	1	Experiment-control	Event		An event pertaining to the physical control of the experiment during its operation.
+	1	Experiment-procedure	Event		An event indicating an experimental procedure, as in performing a saliva swab during the experiment or administering a survey.
+	1	Experiment-structure	Event		An event specifying a change-point of the structure of experiment. This event is typically used to indicate a change in experimental conditions or tasks.
+	1	Measurement-event	Event	suggestedTag=Data-property	A discrete measure returned by an instrument.
+	0	Agent	HedTag	suggestedTag=Agent-property	Someone or something that takes an active role or produces a specified effect.The role or effect may be implicit. Being alive or performing an activity such as a computation may qualify something to be an agent. An agent may also be something that simulates something else.
+	1	Animal-agent	Agent		An agent that is an animal.
+	1	Avatar-agent	Agent		An agent associated with an icon or avatar representing another agent.
+	1	Controller-agent	Agent		An agent experiment control software or hardware.
+	1	Human-agent	Agent		A person who takes an active role or produces a specified effect.
+	1	Robotic-agent	Agent		An agent mechanical device capable of performing a variety of often complex tasks on command or by being programmed in advance.
+	1	Software-agent	Agent		An agent computer program.
+	0	Action	HedTag	extensionAllowed	Do something.
+	1	Communicate	Action		Convey knowledge of or information about something.
+	2	Communicate-gesturally	Communicate	relatedTag=Move-face, relatedTag=Move-upper-extremity	Communicate nonverbally using visible bodily actions, either in place of speech or together and in parallel with spoken words. Gestures include movement of the hands, face, or other parts of the body.
+	3	Clap-hands	Communicate-gesturally		Strike the palms of against one another resoundingly, and usually repeatedly, especially to express approval.
+	3	Clear-throat	Communicate-gesturally	relatedTag=Move-face, relatedTag=Move-head	Cough slightly so as to speak more clearly, attract attention, or to express hesitancy before saying something awkward.
+	3	Frown	Communicate-gesturally	relatedTag=Move-face	Express disapproval, displeasure, or concentration, typically by turning down the corners of the mouth.
+	3	Grimace	Communicate-gesturally	relatedTag=Move-face	Make a twisted expression, typically expressing disgust, pain, or wry amusement.
+	3	Nod-head	Communicate-gesturally	relatedTag=Move-head	Tilt head in alternating up and down arcs along the sagittal plane. It is most commonly, but not universally, used to indicate agreement, acceptance, or acknowledgement.
+	3	Pump-fist	Communicate-gesturally	relatedTag=Move-upper-extremity	Raise with fist clenched in triumph or affirmation.
+	3	Raise-eyebrows	Communicate-gesturally	relatedTag=Move-face, relatedTag=Move-eyes	Move eyebrows upward.
+	3	Shake-fist	Communicate-gesturally	relatedTag=Move-upper-extremity	Clench hand into a fist and shake to demonstrate anger.
+	3	Shake-head	Communicate-gesturally	relatedTag=Move-head	Turn head from side to side as a way of showing disagreement or refusal.
+	3	Shhh	Communicate-gesturally	relatedTag=Move-upper-extremity	Place finger over lips and possibly uttering the syllable shhh to indicate the need to be quiet.
+	3	Shrug	Communicate-gesturally	relatedTag=Move-upper-extremity, relatedTag=Move-torso	Lift shoulders up towards head to indicate a lack of knowledge about a particular topic.
+	3	Smile	Communicate-gesturally	relatedTag=Move-face	Form facial features into a pleased, kind, or amused expression, typically with the corners of the mouth turned up and the front teeth exposed.
+	3	Spread-hands	Communicate-gesturally	relatedTag=Move-upper-extremity	Spread hands apart to indicate ignorance.
+	3	Thumb-up	Communicate-gesturally	relatedTag=Move-upper-extremity	Extend the thumb upward to indicate approval.
+	3	Thumbs-down	Communicate-gesturally	relatedTag=Move-upper-extremity	Extend the thumb downward to indicate disapproval.
+	3	Wave	Communicate-gesturally	relatedTag=Move-upper-extremity	Raise hand and move left and right, as a greeting or sign of departure.
+	3	Widen-eyes	Communicate-gesturally	relatedTag=Move-face, relatedTag=Move-eyes	Open eyes and possibly with eyebrows lifted especially to express surprise or fear.
+	3	Wink	Communicate-gesturally	relatedTag=Move-face, relatedTag=Move-eyes	Close and open one eye quickly, typically to indicate that something is a joke or a secret or as a signal of affection or greeting.
+	2	Communicate-musically	Communicate		Communicate using music.
+	3	Hum	Communicate-musically		Make a low, steady continuous sound like that of a bee. Sing with the lips closed and without uttering speech.
+	3	Play-instrument	Communicate-musically		Make musical sounds using an instrument.
+	3	Sing	Communicate-musically		Produce musical tones by means of the voice.
+	3	Vocalize	Communicate-musically		Utter vocal sounds.
+	3	Whistle	Communicate-musically		Produce a shrill clear sound by forcing breath out or air in through the puckered lips.
+	2	Communicate-vocally	Communicate		Communicate using mouth or vocal cords.
+	3	Cry	Communicate-vocally		Shed tears associated with emotions, usually sadness but also joy or frustration.
+	3	Groan	Communicate-vocally		Make a deep inarticulate sound in response to pain or despair.
+	3	Laugh	Communicate-vocally		Make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of contempt or derision.
+	3	Scream	Communicate-vocally		Make loud, vociferous cries or yells to express pain, excitement, or fear.
+	3	Shout	Communicate-vocally		Say something very loudly.
+	3	Sigh	Communicate-vocally		Emit a long, deep, audible breath expressing sadness, relief, tiredness, or a similar feeling.
+	3	Speak	Communicate-vocally		Communicate using spoken language.
+	3	Whisper	Communicate-vocally		Speak very softly using breath without vocal cords.
+	1	Move	Action		Move in a specified direction or manner. Change position or posture.
+	2	Breathe	Move		Inhale or exhale during respiration.
+	3	Blow	Breathe		Expel air through pursed lips.
+	3	Cough	Breathe		Suddenly and audibly expel air from the lungs through a partially closed glottis, preceded by inhalation.
+	3	Exhale	Breathe		Blow out or expel breath.
+	3	Hiccup	Breathe		Involuntarily spasm  the diaphragm and respiratory organs, with a sudden closure of the glottis and a characteristic sound like that of a cough.
+	3	Hold-breath	Breathe		Interrupt normal breathing by ceasing to inhale or exhale.
+	3	Inhale	Breathe		Draw in with the breath through the nose or mouth.
+	3	Sneeze	Breathe		Suddenly and violently expel breath through the nose and mouth.
+	3	Sniff	Breathe		Draw in air audibly through the nose to detect a smell, to stop it from running, or to express contempt.
+	2	Move-body	Move		Move entire body.
+	3	Bend	Move-body		Move body in a bowed or curved manner.
+	3	Dance	Move-body		Perform a purposefully selected sequences of human movement often with aesthetic or symbolic value. Move rhythmically to music, typically following a set sequence of steps.
+	3	Fall-down	Move-body		Lose balance and collapse.
+	3	Flex	Move-body		Cause a muscle to stand out by contracting or tensing it. Bend a limb or joint.
+	3	Jerk	Move-body		Make a quick, sharp, sudden movement.
+	3	Lie-down	Move-body		Move to a horizontal or resting position.
+	3	Recover-balance	Move-body		Return to a stable, upright body position.
+	3	Shudder	Move-body		Tremble convulsively, sometimes as a result of fear or revulsion.
+	3	Sit-down	Move-body		Move from a standing to a sitting position.
+	3	Sit-up	Move-body		Move from lying down to a sitting position.
+	3	Stand-up	Move-body		Move from a sitting to a standing position.
+	3	Stretch	Move-body		Straighten or extend body or a part of body to its full length, typically so as to tighten muscles or in order to reach something.
+	3	Stumble	Move-body		Trip or momentarily lose balance and almost fall.
+	3	Turn	Move-body		Change or cause to change direction.
+	2	Move-body-part	Move		Move one part of a body.
+	3	Move-eyes	Move-body-part		Move eyes.
+	4	Blink	Move-eyes		Shut and open the eyes quickly.
+	4	Close-eyes	Move-eyes		Lower and keep eyelids in a closed position.
+	4	Fixate	Move-eyes		Direct eyes to a specific point or target.
+	4	Inhibit-blinks	Move-eyes		Purposely prevent blinking.
+	4	Open-eyes	Move-eyes		Raise eyelids to expose pupil.
+	4	Saccade	Move-eyes		Move eyes rapidly between fixation points.
+	4	Squint	Move-eyes		Squeeze one or both eyes partly closed in an attempt to see more clearly or as a reaction to strong light.
+	4	Stare	Move-eyes		Look fixedly or vacantly at someone or something with eyes wide open.
+	3	Move-face	Move-body-part		Move the face or jaw.
+	4	Bite	Move-face		Seize with teeth or jaws an object or organism so as to grip or break the surface covering.
+	4	Burp	Move-face		Noisily release air from the stomach through the mouth. Belch.
+	4	Chew	Move-face		Repeatedly grinding, tearing, and or crushing with teeth or jaws.
+	4	Gurgle	Move-face		Make a hollow bubbling sound like that made by water running out of a bottle.
+	4	Swallow	Move-face		Cause or allow something, especially food or drink to pass down the throat.
+	5	Gulp	Swallow		Swallow quickly or in large mouthfuls, often audibly, sometimes to indicate apprehension.
+	4	Yawn	Move-face		Take a deep involuntary  inhalation with the mouth open often as a sign of drowsiness or boredom.
+	3	Move-head	Move-body-part		Move head.
+	4	Lift-head	Move-head		Tilt head back lifting chin.
+	4	Lower-head	Move-head		Move head downward so that eyes are in a lower position.
+	4	Turn-head	Move-head		Rotate head horizontally to look in a different direction.
+	3	Move-lower-extremity	Move-body-part		Move leg and/or foot.
+	4	Curl-toes	Move-lower-extremity		Bend toes sometimes to grip.
+	4	Hop	Move-lower-extremity		Jump on one foot.
+	4	Jog	Move-lower-extremity		Run at a trot to exercise.
+	4	Jump	Move-lower-extremity		Move off the ground or other surface through sudden muscular effort in the legs.
+	4	Kick	Move-lower-extremity		Strike out or flail with the foot or feet.  Strike using the leg, in unison usually with an area of the knee or lower using the foot.
+	4	Pedal	Move-lower-extremity		Move by working the pedals of a bicycle or other machine.
+	4	Press-foot	Move-lower-extremity		Move by pressing foot.
+	4	Run	Move-lower-extremity		Travel on foot at a fast pace.
+	4	Step	Move-lower-extremity		Put one leg in front of the other and shift weight onto it.
+	5	Heel-strike	Step		Strike the ground with the heel during a step.
+	5	Toe-off	Step		Push with toe as part of a stride.
+	4	Trot	Move-lower-extremity		Run at a moderate pace, typically with short steps.
+	4	Walk	Move-lower-extremity		Move at a regular pace by lifting and setting down each foot in turn never having both feet off the ground at once.
+	3	Move-torso	Move-body-part		Move body trunk.
+	3	Move-upper-extremity	Move-body-part		Move arm, shoulder, and/or hand.
+	4	Drop	Move-upper-extremity		Let or cause to fall vertically.
+	4	Grab	Move-upper-extremity		Seize suddenly or quickly. Snatch or clutch.
+	4	Grasp	Move-upper-extremity		Seize and hold firmly.
+	4	Hold-down	Move-upper-extremity		Prevent someone or something from moving by holding them firmly.
+	4	Lift	Move-upper-extremity		Raising something to higher position.
+	4	Make-fist	Move-upper-extremity		Close hand tightly with the fingers bent against the palm.
+	4	Point	Move-upper-extremity		Draw attention to something by extending a finger or arm.
+	4	Press	Move-upper-extremity	relatedTag=Push	Apply pressure to something to flatten, shape, smooth or depress it. This action tag should be used to indicate key presses and mouse clicks.
+	4	Push	Move-upper-extremity	relatedTag=Press	Apply force in order to move something away. Use Press to indicate a key press or mouse click.
+	4	Reach	Move-upper-extremity		Stretch out your arm in order to get or touch something.
+	4	Release	Move-upper-extremity		Make available or set free.
+	4	Retract	Move-upper-extremity		Draw or pull back.
+	4	Scratch	Move-upper-extremity		Drag claws or nails over a surface or on skin.
+	4	Snap-fingers	Move-upper-extremity		Make a noise by pushing second finger hard against thumb and then releasing it suddenly so that it hits the base of the thumb.
+	4	Touch	Move-upper-extremity		Come into or be in contact with.
+	1	Perceive	Action		Produce an internal, conscious image through stimulating a sensory system.
+	2	Hear	Perceive		Give attention to a sound.
+	2	See	Perceive		Direct gaze toward someone or something or in a specified direction.
+	2	Sense-by-touch	Perceive		Sense something through receptors in the skin.
+	2	Smell	Perceive		Inhale in order to ascertain an odor or scent.
+	2	Taste	Perceive		Sense a flavor in the mouth and throat on contact with a substance.
+	1	Perform	Action		Carry out or accomplish an action, task, or function.
+	2	Close	Perform		Act as to blocked against entry or passage.
+	2	Collide-with	Perform		Hit with force when moving.
+	2	Halt	Perform		Bring or come to an abrupt stop.
+	2	Modify	Perform		Change something.
+	2	Open	Perform		Widen an aperture, door, or gap, especially one allowing access to something.
+	2	Operate	Perform		Control the functioning of a machine, process, or system.
+	2	Play	Perform		Engage in activity for enjoyment and recreation rather than a serious or practical purpose.
+	2	Read	Perform		Interpret something that is written or printed.
+	2	Repeat	Perform		Make do or perform again.
+	2	Rest	Perform		Be inactive in order to regain strength, health, or energy.
+	2	Write	Perform		Communicate or express by means of letters or symbols written or imprinted on a surface.
+	1	Think	Action		Direct the mind toward someone or something or use the mind actively to form connected ideas.
+	2	Allow	Think		Allow access to something such as allowing a car to pass.
+	2	Attend-to	Think		Focus mental experience on specific targets.
+	2	Count	Think		Tally items either silently or aloud.
+	2	Deny	Think		Refuse to give or grant something requested or desired by someone.
+	2	Detect	Think		Discover or identify the presence or existence of something.
+	2	Discriminate	Think		Recognize a distinction.
+	2	Encode	Think		Convert information or an instruction into a particular form.
+	2	Evade	Think		Escape or avoid, especially by cleverness or trickery.
+	2	Generate	Think		Cause something, especially an emotion or situation to arise or come about.
+	2	Identify	Think		Establish or indicate who or what someone or something is.
+	2	Imagine	Think		Form a mental image or concept of something.
+	2	Judge	Think		Evaluate evidence to make a decision or form a belief.
+	2	Learn	Think		Adaptively change behavior as the result of experience.
+	2	Memorize	Think		Adaptively change behavior as the result of experience.
+	2	Plan	Think		Think about the activities required to achieve a desired goal.
+	2	Predict	Think		Say or estimate that something will happen or will be a consequence of something without having exact informaton.
+	2	Recall	Think		Remember information by mental effort.
+	2	Recognize	Think		Identify someone or something from having encountered them before.
+	2	Respond	Think		React to something such as a treatment or a stimulus.
+	2	Switch-attention	Think		Transfer attention from one focus to another.
+	2	Track	Think		Follow a person, animal, or object through space or time.
+	0	Item	HedTag	extensionAllowed	An independently existing thing (living or nonliving).
+	1	Biological-item	Item		An entity that is biological, that is related to living organisms.
+	2	Anatomical-item	Biological-item		A biological structure, system, fluid or other substance excluding single molecular entities.
+	3	Body-part	Anatomical-item		Any part of an organism.
+	4	Head	Body-part		The upper part of the human body, or the front or upper part of the body of an animal, typically separated from the rest of the body by a neck, and containing the brain, mouth, and sense organs.
+	5	Ear	Head		A sense organ needed for the detection of sound and for establishing balance.
+	5	Face	Head		The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.
+	6	Cheek	Face		The fleshy part of the face bounded by the eyes, nose, ear, and jaw line.
+	6	Chin	Face		The part of the face below the lower lip and including the protruding part of the lower jaw.
+	6	Eye	Face		The organ of sight or vision.
+	6	Eyebrow	Face		The arched strip of hair on the bony ridge above each eye socket.
+	6	Forehead	Face		The part of the face between the eyebrows and the normal hairline.
+	6	Lip	Face		Fleshy fold which surrounds the opening of the mouth.
+	6	Mouth	Face		The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening.
+	6	Nose	Face		A structure of special sense serving as an organ of the sense of smell and as an entrance to the respiratory tract.
+	6	Teeth	Face		The hard bonelike structures in the jaws. A collection of teeth arranged in some pattern in the mouth or other part of the body.
+	5	Hair	Head		The filamentous outgrowth of the epidermis.
+	4	Lower-extremity	Body-part		Refers to the whole inferior limb (leg and/or foot).
+	5	Ankle	Lower-extremity		A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.
+	5	Calf	Lower-extremity		The fleshy part at the back of the leg below the knee.
+	5	Foot	Lower-extremity		The structure found below the ankle joint required for locomotion.
+	6	Big-toe	Foot		The largest toe on the inner side of the foot.
+	6	Heel	Foot		The back of the foot below the ankle.
+	6	Instep	Foot		The part of the foot between the ball and the heel on the inner side.
+	6	Little-toe	Foot		The smallest toe located on the outer side of the foot.
+	6	Toes	Foot		The terminal digits of the foot.
+	5	Knee	Lower-extremity		A joint connecting the lower part of the femur with the upper part of the tibia.
+	5	Shin	Lower-extremity		Front part of the leg below the knee.
+	5	Thigh	Lower-extremity		Upper part of the leg between hip and knee.
+	4	Torso	Body-part		The body excluding the head and neck and limbs.
+	5	Buttocks	Torso		The round fleshy parts that form the lower rear area of a human trunk.
+	5	Gentalia	Torso		The external organs of reproduction.
+	5	Hip	Torso		The lateral prominence of the pelvis from the waist to the thigh.
+	5	Torso-back	Torso		The rear surface of the human body from the shoulders to the hips.
+	5	Torso-chest	Torso		The anterior side of the thorax from the neck to the abdomen.
+	5	Waist	Torso		The abdominal circumference at the navel.
+	4	Upper-extremity	Body-part		Refers to the whole superior limb (shoulder, arm, elbow, wrist, hand).
+	5	Elbow	Upper-extremity		A type of hinge joint located between the forearm and upper arm.
+	5	Forearm	Upper-extremity		Lower part of the arm between the elbow and wrist.
+	5	Hand	Upper-extremity		The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.
+	6	Finger	Hand		Any of the digits of the hand.
+	7	Index-finger	Finger		The second finger from the radial side of the hand, next to the thumb.
+	7	Little-finger	Finger		The fifth and smallest finger from the radial side of the hand.
+	7	Middle-finger	Finger		The middle or third finger from the radial side of the hand.
+	7	Ring-finger	Finger		The fourth finger from the radial side of the hand.
+	7	Thumb	Finger		The thick and short hand digit which is next to the index finger in humans.
+	6	Knuckles	Hand		A part of a finger at a joint where the bone is near the surface, especially where the finger joins the hand.
+	6	Palm	Hand		The part of the inner surface of the hand that extends from the wrist to the bases of the fingers.
+	5	Shoulder	Upper-extremity		Joint attaching upper arm to trunk.
+	5	Upper-arm	Upper-extremity		Portion of arm between shoulder and elbow.
+	5	Wrist	Upper-extremity		A joint between the distal end of the radius and the proximal row of carpal bones.
+	2	Organism	Biological-item		A living entity, more specifically a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).
+	3	Animal	Organism		A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement.
+	3	Human	Organism		The bipedal primate mammal Homo sapiens.
+	3	Plant	Organism		Any living organism that typically synthesizes its food from inorganic substances and possesses cellulose cell walls.
+	1	Language-item	Item	suggestedTag=Sensory-presentation	An entity related to a systematic means of communicating by the use of sounds, symbols, or gestures.
+	2	Character	Language-item		A mark or symbol used in writing.
+	2	Clause	Language-item		A  unit of grammatical organization next below the sentence in rank, usually consisting of a subject and predicate.
+	2	Glyph	Language-item		A hieroglyphic character, symbol, or pictograph.
+	2	Nonword	Language-item		A group of letters or speech sounds that looks or sounds like a word but that is not accepted as such by native speakers.
+	2	Paragraph	Language-item		A distinct section of a piece of writing, usually dealing with a single theme.
+	2	Phoneme	Language-item		A speech sound that is distinguished by the speakers of a particular language.
+	2	Phrase	Language-item		A phrase is a group of words functioning as a single unit in the syntax of a sentence.
+	2	Sentence	Language-item		A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb.
+	2	Syllable	Language-item		A unit of spoken language larger than a phoneme.
+	2	Textblock	Language-item		A block of text.
+	2	Word	Language-item		A word is the smallest free form (an item that may be expressed in isolation with semantic or pragmatic content) in a language.
+	1	Object	Item	suggestedTag=Sensory-presentation	Something perceptible by one or more of the senses, especially by vision or touch. A material thing.
+	2	Geometric-object	Object		An object or a representation that has structure and topology in space.
+	3	2D-shape	Geometric-object		A planar, two-dimensional shape.
+	4	Clockface	2D-shape		The dial face of a clock. A location identifier based on clockface numbering or anatomic subregion.
+	4	Cross	2D-shape		A figure or mark formed by two intersecting lines crossing at their midpoints.
+	4	Dash	2D-shape		A horizontal stroke in writing or printing to mark a pause or break in sense or to represent omitted letters or words.
+	4	Ellipse	2D-shape		A closed plane curve resulting from the intersection of a circular cone and a plane cutting completely through it, especially a plane not parallel to the base.
+	5	Circle	Ellipse		A ring-shaped structure with every point equidistant from the center.
+	4	Rectangle	2D-shape		A parallelogram with four right angles.
+	5	Square	Rectangle		A square is a special rectangle with four equal sides.
+	4	Single-point	2D-shape		A point is a geometric entity that is located in a zero-dimensional spatial region and whose position is defined by its coordinates in some coordinate system.
+	4	Star	2D-shape		A conventional or stylized representation of a star, typically one having five or more points.
+	4	Triangle	2D-shape		A three-sided polygon.
+	3	3D-shape	Geometric-object		A geometric three-dimensional shape.
+	4	Box	3D-shape		A square or rectangular vessel, usually made of cardboard or plastic.
+	5	Cube	Box		A solid or semi-solid in the shape of a three dimensional square.
+	4	Cone	3D-shape		A shape whose base is a circle and whose sides taper up to a point.
+	4	Cylinder	3D-shape		A surface formed by circles of a given radius that are contained in a plane perpendicular to a given axis, whose centers align on the axis.
+	4	Ellipsoid	3D-shape		A closed plane curve resulting from the intersection of a circular cone and a plane cutting completely through it, especially a plane not parallel to the base.
+	5	Sphere	Ellipsoid		A solid or hollow three-dimensional object bounded by a closed surface such that every point on the surface is equidistant from the center.
+	4	Pyramid	3D-shape		A polyhedron of which one face is a polygon of any number of sides, and the other faces are triangles with a common vertex.
+	3	Pattern	Geometric-object		An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.
+	4	Dots	Pattern		A small round mark or spot.
+	4	LED-pattern	Pattern		A pattern created by lighting selected members of a fixed light emitting diode array.
+	2	Ingestible-object	Object		Something that can be taken into the body by the mouth for digestion or absorption.
+	2	Man-made-object	Object		Something constructed by human means.
+	3	Building	Man-made-object		A structure that has a roof and walls and stands more or less permanently in one place.
+	4	Attic	Building		A room or a space immediately below the roof of a building.
+	4	Basement	Building		The part of a building that is wholly or partly below ground level.
+	4	Entrance	Building		The means or place of entry.
+	4	Roof	Building		A roof is the covering on the uppermost part of a building which provides protection from animals and weather, notably rain, but also heat, wind and sunlight.
+	4	Room	Building		An area within a building enclosed by walls and floor and ceiling.
+	3	Clothing	Man-made-object		A covering designed to be worn on the body.
+	3	Device	Man-made-object		An object contrived for a specific purpose.
+	4	Assistive-device	Device		A device that help an individual accomplish a task.
+	5	Glasses	Assistive-device		Frames with lenses worn in front of the eye for vision correction, eye protection, or protection from UV rays.
+	5	Writing-device	Assistive-device		A device used for writing.
+	6	Pen	Writing-device		A common writing instrument used to apply ink to a surface for writing or drawing.
+	6	Pencil	Writing-device		An implement for writing or drawing that is constructed of a narrow solid pigment core in a protective casing that prevents the core from being broken or marking the hand.
+	4	Computing-device	Device		An electronic device which take inputs and processes results from the inputs.
+	5	Cellphone	Computing-device		A telephone with access to a cellular radio system so it can be used over a wide area, without a physical connection to a network.
+	5	Desktop-computer	Computing-device		A computer suitable for use at an ordinary desk.
+	5	Laptop-computer	Computing-device		A computer that is portable and suitable for use while traveling.
+	5	Tablet-computer	Computing-device		A small portable computer that accepts input directly on to its screen rather than via a keyboard or mouse.
+	4	Engine	Device		A motor is a machine designed to convert one or more forms of energy into mechanical energy.
+	4	IO-device	Device		Hardware used by a human (or other system) to communicate with a computer.
+	5	Input-device	IO-device		A piece of equipment used to provide data and control signals to an information processing system such as a computer or information appliance.
+	6	Computer-mouse	Input-device		A hand-held pointing device that detects two-dimensional motion relative to a surface.
+	7	Mouse-button	Computer-mouse		An electric switch on a computer mouse which can be pressed or clicked to select or interact with an element of a graphical user interface.
+	7	Scroll-wheel	Computer-mouse		A scroll wheel or mouse wheel is a wheel used for scrolling made of hard plastic with a rubbery surface usually located between the left and right mouse buttons and is positioned perpendicular to the mouse surface.
+	6	Joystick	Input-device		A control device that uses a movable handle to create two-axis input for a computer device.
+	6	Keyboard	Input-device		A device consisting of mechanical keys that are pressed to create input to a computer.
+	7	Keyboard-key	Keyboard		A button on a keyboard usually representing letters, numbers, functions, or symbols.
+	8	Keyboard-key-#	Keyboard-key	takesValue	Value of a keyboard key.
+	6	Keypad	Input-device		A device consisting of keys, usually in a block arrangement, that provides limited input to a system.
+	7	Keypad-key	Keypad		A key on a separate section of a computer keyboard that groups together numeric keys and those for mathematical or other special functions in an arrangement like that of a calculator.
+	8	Keypad-key-#	Keypad-key	takesValue	Value of keypad key.
+	6	Microphone	Input-device		A device designed to convert sound to an electrical signal.
+	6	Push-button	Input-device		A switch designed to be operated by pressing a button.
+	5	Output-device	IO-device		Any piece of computer hardware equipment which converts information into human understandable form.
+	6	Auditory-device	Output-device		A device designed to produce sound.
+	7	Headphones	Auditory-device		An instrument that consists of a pair of small loudspeakers, or less commonly a single speaker, held close to ears and connected to a signal source such as an audio amplifier, radio, CD player or portable media player.
+	7	Loudspeaker	Auditory-device		A device designed to convert electrical signals to sounds that can be heard.
+	6	Display-device	Output-device		An output device for presentation of information in visual or tactile form the latter used for example in tactile electronic displays for blind people.
+	7	Computer-screen	Display-device		An electronic device designed as a display or a physical device designed to be a protective meshwork.
+	8	Screen-window	Computer-screen		A part of a computer screen that contains a display different from the rest of the screen. A window is a graphical control element consisting of a visual area containing some of the graphical user interface of the program it belongs to and is framed by a window decoration.
+	7	Head-mounted-display	Display-device		An instrument that functions as a display device, worn on the head or as part of a helmet, that has a small display optic in front of one (monocular HMD) or each eye (binocular HMD).
+	7	LED-display	Display-device		A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display.
+	5	Recording-device	IO-device		A device that copies information in a signal into a persistent information bearer.
+	6	EEG-recorder	Recording-device		A device for recording electric currents in the brain using electrodes applied to the scalp, to the surface of the brain, or placed within the substance of the brain.
+	6	File-storage	Recording-device		A device for recording digital information to a permanent media.
+	6	MEG-recorder	Recording-device		A device for measuring the magnetic fields produced by electrical activity in the brain, usually conducted externally.
+	6	Motion-capture	Recording-device		A device for recording the movement of objects or people.
+	6	Tape-recorder	Recording-device		A device for recording and reproduction usually using magnetic tape for storage that can be saved and played back.
+	5	Touchscreen	IO-device		A control component that operates an electronic device by pressing the display on the screen.
+	4	Machine	Device		A human-made device that uses power to apply forces and control movement to perform an action.
+	4	Measurement-device	Device		A device in which a measure function inheres.
+	5	Clock	Measurement-device		A device designed to indicate the time of day or to measure the time duration of an event or action.
+	6	Clock-face	Clock		A location identifier based on clockface numbering or anatomic subregion.
+	4	Robot	Device		A mechanical device that sometimes resembles a living animal and is capable of performing a variety of often complex human tasks on command or by being programmed in advance.
+	4	Tool	Device		A component that is not part of a device but is designed to support its assemby or operation.
+	3	Document	Man-made-object		A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.
+	4	Book	Document		A volume made up of pages fastened along one edge and enclosed between protective covers.
+	4	Letter	Document		A written message addressed to a person or organization.
+	4	Note	Document		A brief written record.
+	4	Notebook	Document		A book for notes or memoranda.
+	3	Furnishing	Man-made-object		Furniture, fittings, and other decorative accessories, such as curtains and carpets, for a house or room.
+	3	Manufactured-material	Man-made-object		Substances created or extracted from raw materials.
+	4	Ceramic	Manufactured-material		A hard, brittle, heat-resistant and corrosion-resistant material made by shaping and then firing a nonmetallic mineral, such as clay, at a high temperature.
+	4	Glass	Manufactured-material		A brittle transparent solid with irregular atomic structure.
+	4	Paper	Manufactured-material		A thin sheet material produced by mechanically or chemically processing cellulose fibres derived from wood, rags, grasses or other vegetable sources in water.
+	4	Plastic	Manufactured-material		Various high-molecular-weight thermoplastic or thermosetting polymers that are capable of being molded, extruded, drawn, or otherwise shaped and then hardened into a form.
+	4	Steel	Manufactured-material		An alloy made up of iron with typically a few tenths of a percent of carbon to improve its strength and fracture resistance compared to iron.
+	3	Media	Man-made-object		Media are audo/visual/audiovisual modes of communicating information for mass consumption.
+	4	Media-clip	Media		A short segment of media.
+	5	Audio-clip	Media-clip		A short segment of audio.
+	5	Audiovisual-clip	Media-clip		A short media segment containing both audio and video.
+	5	Video-clip	Media-clip		A short segment of video.
+	4	Visualization	Media		An planned process that creates images, diagrams or animations from the input data.
+	5	Animation	Visualization		A form of graphical illustration that changes with time to give a sense of motion or represent dynamic changes in the portrayal.
+	5	Art-installation	Visualization		A large-scale, mixed-media constructions, often designed for a specific place or for a temporary period of time.
+	5	Braille	Visualization		A display using a system of raised dots that can be read with the fingers by people who are blind.
+	5	Image	Visualization		Any record of an imaging event whether physical or electronic.
+	6	Cartoon	Image		A type of illustration, sometimes animated, typically in a non-realistic or semi-realistic style. The specific meaning has evolved over time, but the modern usage usually refers to either an image or series of images intended for satire, caricature, or humor. A motion picture that relies on a sequence of illustrations for its animation.
+	6	Drawing	Image		A representation of an object or outlining a figure, plan, or sketch by means of lines.
+	6	Icon	Image		A sign (such as a word or graphic symbol) whose form suggests its meaning.
+	6	Painting	Image		A work produced through the art of painting.
+	6	Photograph	Image		An image recorded by a camera.
+	5	Movie	Visualization		A sequence of images displayed in succession giving the illusion of continuous movement.
+	5	Outline-visualization	Visualization		A visualization consisting of a line or set of lines enclosing or indicating the shape of an object in a sketch or diagram.
+	5	Point-light-visualization	Visualization		A display in which action is depicted using a few points of light, often generated from discrete sensors in motion capture.
+	5	Sculpture	Visualization		A two- or three-dimensional representative or abstract forms, especially by carving stone or wood or by casting metal or plaster.
+	5	Stick-figure-visualization	Visualization		A drawing showing the head of a human being or animal as a circle and all other parts as straight lines.
+	3	Navigational-object	Man-made-object		An object whose purpose is to assist directed movement from one location to another.
+	4	Path	Navigational-object		A trodden way. A way or track laid down for walking or made by continual treading.
+	4	Road	Navigational-object		An open way for the passage of vehicles, persons, or animals on land.
+	5	Lane	Road		A defined path with physical dimensions through which an object or substance may traverse.
+	4	Runway	Navigational-object		A paved strip of ground on a landing field for the landing and takeoff of aircraft.
+	3	Vehicle	Man-made-object		A mobile machine which transports people or cargo.
+	4	Aircraft	Vehicle		A vehicle which is able to travel through air in an atmosphere.
+	4	Bicycle	Vehicle		A human-powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other.
+	4	Boat	Vehicle		A watercraft of any size which is able to float or plane on water.
+	4	Car	Vehicle		A wheeled motor vehicle used primarily for the transportation of human passengers.
+	4	Cart	Vehicle		A cart is a vehicle which has two wheels and is designed to transport human passengers or cargo.
+	4	Tractor	Vehicle		A mobile machine specifically designed to deliver a high tractive effort at slow speeds, and mainly used for the purposes of hauling a trailer or machinery used in agriculture or construction.
+	4	Train	Vehicle		A connected line of railroad cars with or without a locomotive.
+	4	Truck	Vehicle		A motor vehicle which, as its primary funcion, transports cargo rather than human passangers.
+	2	Natural-object	Object		Something that exists in or is produced by nature, and is not artificial or man-made.
+	3	Mineral	Natural-object		A solid, homogeneous, inorganic substance occurring in nature and having a definite chemical composition.
+	3	Natural-feature	Natural-object		A feature that occurs in nature. A prominent or identifiable aspect, region, or site of interest.
+	4	Field	Natural-feature		An unbroken expanse as of ice or grassland.
+	4	Hill	Natural-feature		A rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m.
+	4	Mountain	Natural-feature		A landform that extends above the surrounding terrain in a limited area.
+	4	River	Natural-feature		A natural freshwater surface stream of considerable volume and a permanent or seasonal flow, moving in a definite channel toward a sea, lake, or another river.
+	4	Waterfall	Natural-feature		A sudden descent of water over a step or ledge in the bed of a river.
+	1	Sound	Item		Mechanical vibrations transmitted by an elastic medium. Something that can be heard.
+	2	Environmental-sound	Sound		Sounds occuring in the environment. An accumulation of noise pollution that occurs outside. This noise can be caused by transport, industrial, and recreational activities.
+	3	Crowd-sound	Environmental-sound		Noise produced by a mixture of sounds from a large group of people.
+	3	Signal-noise	Environmental-sound		Any part of a signal that is not the true or original signal but is introduced by the communication mechanism.
+	2	Musical-sound	Sound		Sound produced by continuous and regular vibrations, as opposed to noise.
+	3	Instrument-sound	Musical-sound		Sound produced by a musical instrument.
+	3	Tone	Musical-sound		A musical note, warble, or other sound used as a particular signal on a telephone or answering machine.
+	3	Vocalized-sound	Musical-sound		Musical sound produced by vocal cords in a biological agent.
+	2	Named-animal-sound	Sound		A sound recognizable as being associated with particular animals.
+	3	Barking	Named-animal-sound		Sharp explosive cries like sounds made by certain animals, especially a dog, fox, or seal.
+	3	Bleating	Named-animal-sound		Wavering cries like sounds made by a sheep, goat, or calf.
+	3	Chirping	Named-animal-sound		Short, sharp, high-pitched noises like sounds made by small birds or an insects.
+	3	Crowing	Named-animal-sound		Loud shrill sounds characteristic of roosters.
+	3	Growling	Named-animal-sound		Low guttural sounds like those that made in the throat by a hostile dog or other animal.
+	3	Meowing	Named-animal-sound		Vocalizations like those made by as those cats. These sounds have diverse tones and are sometimes chattered, murmured or whispered. The purpose can be assertive.
+	3	Mooing	Named-animal-sound		Deep vocal sounds like those made by a cow.
+	3	Purring	Named-animal-sound		Low continuous vibratory sound such as those made by cats. The sound expresses contentment.
+	3	Roaring	Named-animal-sound		Loud, deep, or harsh prolonged sounds such as those made by big cats and bears for long-distance communication and intimidation.
+	3	Squawking	Named-animal-sound		Loud, harsh noises such as those made by geese.
+	2	Named-object-sound	Sound		A sound identifiable as coming from a particular type of object.
+	3	Alarm-sound	Named-object-sound		A loud signal often loud continuous ringing to alert people to a problem or condition that requires urgent attention.
+	3	Beep	Named-object-sound		A short, single tone, that is typically high-pitched and generally made by a computer or other machine.
+	3	Buzz	Named-object-sound		A persistent vibratory sound often made by a buzzer device and used to indicate something incorrect.
+	3	Click	Named-object-sound		The sound made by a mechanical cash register, often to designate a reward.
+	3	Ding	Named-object-sound		A short ringing sound such as that made by a bell, often to indicate a correct response or the expiration of time.
+	3	Horn-blow	Named-object-sound		A loud sound made by forcing air through a sound device that funnels air to create the sound, often used to sound an alert.
+	3	Ka-ching	Named-object-sound		The sound made by a mechanical cash register, often to designate a reward.
+	3	Siren	Named-object-sound		A loud, continuous sound often varying in frequency designed to indicate an emergency.
+	0	Property	HedTag	extensionAllowed	Something that pertains to a thing. A characteristic of some entity. A quality or feature regarded as a characteristic or inherent part of someone or something. HED attributes are adjectives or adverbs.
+	1	Agent-property	Property	extensionAllowed	Something that pertains to an agent.
+	2	Agent-state	Agent-property		The state of the agent.
+	3	Agent-cognitive-state	Agent-state		The state of the cognitive processes or state of mind of the agent.
+	4	Alert	Agent-cognitive-state		Condition of heightened watchfulness or preparation for action.
+	4	Anesthetized	Agent-cognitive-state		Having lost sensation to pain or having senses dulled due to the effects of an anesthetic.
+	4	Asleep	Agent-cognitive-state		Having entered a periodic, readily reversible state of reduced awareness and metabolic activity, usually accompanied by physical relaxation and brain activity.
+	4	Attentive	Agent-cognitive-state		Concentrating and focusing mental energy on the task or surroundings.
+	4	Awake	Agent-cognitive-state		In a non sleeping state.
+	4	Brain-dead	Agent-cognitive-state		Characterized by the irreversible absence of cortical and brain stem functioning.
+	4	Comatose	Agent-cognitive-state		In a state of profound unconsciousness associated with markedly depressed cerebral activity.
+	4	Drowsy	Agent-cognitive-state		In a state of near-sleep, a strong desire for sleep, or sleeping for unusually long periods.
+	4	Intoxicated	Agent-cognitive-state		In a state with disturbed psychophysiological functions and responses as a result of administration or ingestion of a psychoactive substance.
+	4	Locked-in	Agent-cognitive-state		In a state of complete paralysis of all voluntary muscles except for the ones that control the movements of the eyes.
+	4	Passive	Agent-cognitive-state		Not responding or initiating an action in response to a stimulus.
+	4	Resting	Agent-cognitive-state		A state in which the agent is not exhibiting any physical exertion.
+	4	Vegetative	Agent-cognitive-state		A state of wakefulness and conscience, but (in contrast to coma) with involuntary opening of the eyes and movements (such as teeth grinding, yawning, or thrashing of the extremities).
+	3	Agent-emotional-state	Agent-state		The status of the general temperament and outlook of an agent.
+	4	Angry	Agent-emotional-state		Experiencing emotions characterized by marked annoyance or hostility.
+	4	Aroused	Agent-emotional-state		In a state reactive to stimuli leading to increased heart rate and blood pressure, sensory alertness, mobility and readiness to respond.
+	4	Awed	Agent-emotional-state		Filled with wonder. Feeling grand, sublime or powerful emotions characterized by a combination of joy, fear, admiration, reverence, and/or respect.
+	4	Compassionate	Agent-emotional-state		Feeling or showing sympathy and concern for others often evoked for a person who is in distress and associated with altruistic motivation.
+	4	Content	Agent-emotional-state		Feeling  satisfaction with things as they are.
+	4	Disgusted	Agent-emotional-state		Feeling revulsion or profound disapproval aroused by something unpleasant or offensive.
+	4	Emotionally-neutral	Agent-emotional-state		Feeling neither satisfied nor dissatisfied.
+	4	Empathetic	Agent-emotional-state		Understanding and sharing the feelings of another. Being aware of, being sensitive to, and vicariously experiencing the feelings, thoughts, and experience of another.
+	4	Excited	Agent-emotional-state		Feeling great enthusiasm and eagerness.
+	4	Fearful	Agent-emotional-state		Feeling apprehension that one may be in danger.
+	4	Frustrated	Agent-emotional-state		Feeling annoyed as a result of being blocked, thwarted, disappointed or defeated.
+	4	Grieving	Agent-emotional-state		Feeling sorrow in response to loss, whether physical or abstract.
+	4	Happy	Agent-emotional-state		Feeling pleased and content.
+	4	Jealous	Agent-emotional-state		Feeling threatened by a rival in a relationship with another individual, in particular an intimate partner, usually involves feelings of threat, fear, suspicion, distrust, anxiety, anger, betrayal, and rejection.
+	4	Joyful	Agent-emotional-state		Feeling delight or intense happiness.
+	4	Loving	Agent-emotional-state		Feeling a strong positive emotion of affection and attraction.
+	4	Relieved	Agent-emotional-state		No longer feeling pain, distress,  anxiety, or reassured.
+	4	Sad	Agent-emotional-state		Feeling grief or unhappiness.
+	4	Stressed	Agent-emotional-state		Experiencing mental or emotional strain or tension.
+	3	Agent-physiological-state	Agent-state		Having to do with the mechanical, physical, or biochemical function of an agent.
+	4	Healthy	Agent-physiological-state	relatedTag=Sick	Having no significant health-related issues.
+	4	Hungry	Agent-physiological-state	relatedTag=Sated, relatedTag=Thirsty	Being in a state of craving or desiring food.
+	4	Rested	Agent-physiological-state	relatedTag=Tired	Feeling refreshed and relaxed.
+	4	Sated	Agent-physiological-state	relatedTag=Hungry	Feeling full.
+	4	Sick	Agent-physiological-state	relatedTag=Healthy	Being in a state of ill health, bodily malfunction, or discomfort.
+	4	Thirsty	Agent-physiological-state	relatedTag=Hungry	Feeling a need to drink.
+	4	Tired	Agent-physiological-state	relatedTag=Rested	Feeling in need of sleep or rest.
+	3	Agent-postural-state	Agent-state		Pertaining to the position in which agent holds their body.
+	4	Crouching	Agent-postural-state		Adopting a position where the knees are bent and the upper body is brought forward and down, sometimes to avoid detection or to defend oneself.
+	4	Eyes-closed	Agent-postural-state		Keeping eyes closed with no blinking.
+	4	Eyes-open	Agent-postural-state		Keeping eyes open with occasional blinking.
+	4	Kneeling	Agent-postural-state		Positioned where one or both knees are on the ground.
+	4	On-treadmill	Agent-postural-state		Ambulation on an exercise apparatus with an endless moving belt to support moving in place.
+	4	Prone	Agent-postural-state		Positioned in a recumbent body position whereby the person lies on its stomach and faces downward.
+	4	Seated-with-chin-rest	Agent-postural-state		Using a device that supports the chin and head.
+	4	Sitting	Agent-postural-state		In a seated position.
+	4	Standing	Agent-postural-state		Assuming or maintaining an erect upright position.
+	2	Agent-task-role	Agent-property		The function or part that is ascribed to an agent in performing the task.
+	3	Experiment-actor	Agent-task-role		An agent who plays a predetermined role to create the experiment scenario.
+	3	Experiment-controller	Agent-task-role		An agent exerting control over some aspect of the experiment.
+	3	Experiment-participant	Agent-task-role		Someone who takes part in an activity related to an experiment.
+	3	Experimenter	Agent-task-role		Person who is the owner of the experiment and has its responsibility.
+	2	Agent-trait	Agent-property		A genetically, environmentally, or socially determined characteristic of an agent.
+	3	Age	Agent-trait		Length of time elapsed time since birth of the agent.
+	4	Age-#	Age	takesValue	
+	3	Agent-experience-level	Agent-trait		Amount of skill or knowledge that the agent has as pertains to the task.
+	4	Expert-level	Agent-experience-level	relatedTag=Intermediate-experience-level, relatedTag=Novice-level	Having comprehensive and authoritative knowledge of or skill in a particular area related to the task.
+	4	Intermediate-experience-level	Agent-experience-level	relatedTag=Expert-level, relatedTag=Novice-level	Having a moderate amount of knowledge or skill related to the task.
+	4	Novice-level	Agent-experience-level	relatedTag=Expert-level, relatedTag=Intermediate-experience-level	Being inexperienced in a field or situation related to the task.
+	3	Gender	Agent-trait		Characteristics that are socially constructed, including norms, behaviors, and roles based on sex.
+	3	Handedness	Agent-trait		Individual preference for use of a hand, known as the dominant hand.
+	4	Ambidextrous	Handedness		Having no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot.
+	4	Left-handed	Handedness		Preference for using the left hand or foot for tasks requiring the use of a single hand or foot.
+	4	Right-handed	Handedness		Preference for using the right hand or foot for tasks requiring the use of a single hand or foot.
+	3	Sex	Agent-trait		Physical properties or qualities by which male is distinguished from female.
+	4	Female	Sex		Biological sex of an individual with female sexual organs such ova.
+	4	Intersex	Sex		Having genitalia and/or secondary sexual characteristics of indeterminate sex.
+	4	Male	Sex		Biological sex of an individual with male sexual organs producing sperm.
+	1	Data-property	Property	extensionAllowed	Something that pertains to data or information.
+	2	Data-marker	Data-property		An indicator placed to mark something.
+	3	Temporal-marker	Data-marker		An indicator placed at a particular time in the data.
+	4	Offset	Temporal-marker	topLevelTagGroup	Labels the time at which something stops.
+	4	Onset	Temporal-marker	topLevelTagGroup	Labels the start or beginning of something, usually an event.
+	4	Pause	Temporal-marker		Indicates the temporary interruption of  the operation a process and subsequently wait for a signal to continue.
+	4	Time-out	Temporal-marker		A cancellation or cessation that automatically occurs when a predefined interval of time has passed without a certain event occurring.
+	4	Time-sync	Temporal-marker		A synchronization signal whose purpose to help synchronize different signals or processes. Often used to indicate a marker inserted into the recorded data to allow post hoc synchronization of concurrently recorded data streams.
+	2	Data-resolution	Data-property		Smallest change in a quality being measured by an sensor that causes a perceptible change.
+	3	Printer-resolution	Data-resolution		Resolution of a printer, usually expressed as the number of dots-per-inch for a printer.
+	4	Printer-resolution-#	Printer-resolution	takesValue	
+	3	Screen-resolution	Data-resolution		Resolution of a screen, usually expressed as the of pixels in a dimension for a digital display device.
+	4	Screen-resolution-#	Screen-resolution	takesValue	
+	3	Sensory-resolution	Data-resolution		Resolution of measurements by a sensing device.
+	4	Sensory-resolution-#	Sensory-resolution	takesValue	
+	3	Spatial-resolution	Data-resolution		Linear spacing of a spatial measurement.
+	4	Spatial-resolution-#	Spatial-resolution	takesValue	
+	3	Spectral-resolution	Data-resolution		Measures the ability of a sensor to  resolve features in the electromagnetic spectrum.
+	4	Spectral-resolution-#	Spectral-resolution	takesValue	
+	3	Temporal-resolution	Data-resolution		Measures the ability of a sensor to  resolve features in time.
+	4	Temporal-resolution-#	Temporal-resolution	takesValue	
+	2	Data-source-type	Data-property		The type of place, person, or thing from which the data comes or can be obtained.
+	3	Computed-feature	Data-source-type		A feature computed from the data by a tool. This tag should be grouped with a label of the form Toolname_propertyName.
+	3	Computed-prediction	Data-source-type		A computed extrapolation of known data.
+	3	Expert-annotation	Data-source-type		An explanatory or critical comment or other in-context information provided by an authority.
+	3	Instrument-measurement	Data-source-type		Information obtained from a device that is used to measure material properties or make other observations.
+	3	Observation	Data-source-type		Active acquisition of information from a primary source. Should be grouped with a label of the form AgentID_featureName.
+	2	Data-value	Data-property		Designation of the type of a data item.
+	3	Categorical-value	Data-value		Indicates that something can take on a limited and usually fixed number of possible values.
+	4	Categorical-class-value	Categorical-value		Categorical values that fall into discrete classes such as true or false. The grouping is absolute in the sense that it is the same for all participants.
+	5	All	Categorical-class-value	relatedTag=Some, relatedTag=None	To a complete degree or to the full or entire extent.
+	5	Correct	Categorical-class-value	relatedTag=Wrong	Free from error. Especially conforming to fact or truth.
+	5	Explicit	Categorical-class-value	relatedTag=Implicit	Stated clearly and in detail, leaving no room for confusion or doubt.
+	5	False	Categorical-class-value	relatedTag=True	Not in accordance with facts, reality or definitive criteria.
+	5	Implicit	Categorical-class-value	relatedTag=Explicit	Implied though not plainly expressed.
+	5	Invalid	Categorical-class-value	relatedTag=Valid	Not allowed or not conforming to the correct format or specifications.
+	5	None	Categorical-class-value	relatedTag=All, relatedTag=Some	No person or thing, nobody, not any.
+	5	Some	Categorical-class-value	relatedTag=All, relatedTag=None	At least a small amount or number of, but not a large amount of, or often.
+	5	True	Categorical-class-value	relatedTag=False	Conforming to facts, reality or definitive criteria.
+	5	Valid	Categorical-class-value	relatedTag=Invalid	Allowable, usable, or acceptable.
+	5	Wrong	Categorical-class-value	relatedTag=Correct	Inaccurate or not correct.
+	4	Categorical-judgment-value	Categorical-value		Categorical values that are based on the judgment or perception of the participant such familiar and famous.
+	5	Abnormal	Categorical-judgment-value	relatedTag=Normal	Deviating in any way from the state, position, structure, condition, behavior, or rule which is considered a norm.
+	5	Asymmetrical	Categorical-judgment-value	relatedTag=Symmetrical	Lacking symmetry or having parts that fail to correspond to one another in shape, size, or arrangement.
+	5	Audible	Categorical-judgment-value	relatedTag=Inaudible	A sound that can be perceived by the participant.
+	5	Complex	Categorical-judgment-value	relatedTag=Simple	Hard, involved or complicated, elaborate, having many parts.
+	5	Congruent	Categorical-judgment-value	relatedTag=Incongruent	Concordance of multiple evidence lines. In agreement or harmony.
+	5	Constrained	Categorical-judgment-value	relatedTag=Unconstrained	Keeping something within particular limits or bounds.
+	5	Disordered	Categorical-judgment-value	relatedTag=Ordered	Not neatly arranged. Confused and untidy. A structural quality in which the parts of an object are non-rigid.
+	5	Familiar	Categorical-judgment-value	relatedTag=Unfamiliar, relatedTag=Famous	Recognized, familiar, or within the scope of knowledge.
+	5	Famous	Categorical-judgment-value	relatedTag=Familiar, relatedTag=Unfamiliar	A person who has a high degree of recognition by the general population for his or her success or accomplishments. A famous person.
+	5	Inaudible	Categorical-judgment-value	relatedTag=Audible	A sound below the threshold of perception of the participant.
+	5	Incongruent	Categorical-judgment-value	relatedTag=Congruent	Not in agreement or harmony.
+	5	Involuntary	Categorical-judgment-value	relatedTag=Voluntary	An action that is not made by choice. In the body, involuntary actions (such as blushing) occur automatically, and cannot be controlled by choice.
+	5	Masked	Categorical-judgment-value	relatedTag=Unmasked	Information exists but is not provided or is partially obscured due to security,  privacy, or other concerns.
+	5	Normal	Categorical-judgment-value	relatedTag=Abnormal	Being approximately average or within certain limits. Conforming with or constituting a norm or standard or level or type or social norm.
+	5	Ordered	Categorical-judgment-value	relatedTag=Disordered	Conforming to a logical or comprehensible arrangement of separate elements.
+	5	Simple	Categorical-judgment-value	relatedTag=Complex	Easily understood or presenting no difficulties.
+	5	Symmetrical	Categorical-judgment-value	relatedTag=Asymmetrical	Made up of exactly similar parts facing each other or around an axis. Showing aspects of symmetry.
+	5	Unconstrained	Categorical-judgment-value	relatedTag=Constrained	Moving without restriction.
+	5	Unfamiliar	Categorical-judgment-value	relatedTag=Familiar, relatedTag=Famous	Not having knowledge or experience of.
+	5	Unmasked	Categorical-judgment-value	relatedTag=Masked	Information is revealed.
+	5	Voluntary	Categorical-judgment-value	relatedTag=Involuntary	Using free will or design; not forced or compelled; controlled by individual volition.
+	4	Categorical-level-value	Categorical-value		Categorical values based on dividing a continuous variable into levels such as high and low.
+	5	Cold	Categorical-level-value	relatedTag=Hot	Characterized by an absence of heat.
+	5	Deep	Categorical-level-value	relatedTag=Shallow	Extending relatively far inward or downward.
+	5	High	Categorical-level-value	relatedTag=Low, relatedTag=Medium	Having a greater than normal degree, intensity, or amount.
+	5	Hot	Categorical-level-value	relatedTag=Cold	Characterized by an excess of heat.
+	5	Liminal	Categorical-level-value	relatedTag=Subliminal, relatedTag=Supraliminal	Situated at a sensory threshold that is barely perceptible or capable of eliciting a response.
+	5	Loud	Categorical-level-value	relatedTag=Quiet	Characterizing a perceived high intensity of sound.
+	5	Low	Categorical-level-value	relatedTag=High	Less than normal in degree, intensity or amount.
+	5	Medium	Categorical-level-value	relatedTag=Low, relatedTag=High	Mid-way between small and large in number, quantity, magnitude or extent.
+	5	Negative	Categorical-level-value	relatedTag=Positive	Involving disadvantage or harm.
+	5	Positive	Categorical-level-value	relatedTag=Negative	Involving advantage or good.
+	5	Quiet	Categorical-level-value	relatedTag=Loud	Characterizing a perceived low intensity of sound.
+	5	Rough	Categorical-level-value	relatedTag=Smooth	Having a surface with perceptible bumps, ridges, or irregularities.
+	5	Shallow	Categorical-level-value	relatedTag=Deep	Having a depth which is relatively low.
+	5	Smooth	Categorical-level-value	relatedTag=Rough	Having a surface free from bumps, ridges, or irregularities.
+	5	Subliminal	Categorical-level-value	relatedTag=Liminal, relatedTag=Supraliminal	Situated below a sensory threshold that is imperceptible or not capable of eliciting a response.
+	5	Supraliminal	Categorical-level-value	relatedTag=Liminal, relatedTag=Subliminal	Situated above a sensory threshold that is perceptible or capable of eliciting a response.
+	5	Thick	Categorical-level-value	relatedTag=Thin	Wide in width, extent or cross-section.
+	5	Thin	Categorical-level-value	relatedTag=Thick	Narrow in width, extent or cross-section.
+	4	Categorical-orientation-value	Categorical-value		Value indicating the orientation or direction of something.
+	5	Backward	Categorical-orientation-value	relatedTag=Forward	Directed behind or to the rear.
+	5	Downward	Categorical-orientation-value	relatedTag=Leftward, relatedTag=Rightward, relatedTag=Upward	Moving or leading toward a lower place or level.
+	5	Forward	Categorical-orientation-value	relatedTag=Backward	At or near or directed toward the front.
+	5	Horizontally-oriented	Categorical-orientation-value	relatedTag=Vertically-oriented	Oriented parallel to or in the plane of the horizon.
+	5	Leftward	Categorical-orientation-value	relatedTag=Downward, relatedTag=Rightward, relatedTag=Upward	Going toward or facing the left.
+	5	Oblique	Categorical-orientation-value	relatedTag=Rotated	Slanting or inclined in direction, course, or position that is neither parallel nor perpendicular nor right-angular.
+	5	Rightward	Categorical-orientation-value	relatedTag=Downward, relatedTag=Leftward, relatedTag=Upward	Going toward or situated on the right.
+	5	Rotated	Categorical-orientation-value		Positioned offset around an axis or center.
+	5	Upward	Categorical-orientation-value	relatedTag=Downward, relatedTag=Leftward, relatedTag=Rightward	Moving, pointing, or leading to a higher place, point, or level.
+	5	Vertically-oriented	Categorical-orientation-value	relatedTag=Horizontally-oriented	Oriented perpendicular to the plane of the horizon.
+	3	Physical-value	Data-value		The value of some physical property of something.
+	4	Weight	Physical-value		The relative mass or the quantity of matter contained by something.
+	5	Weight-#	Weight	takesValue, valueClass=numericClass, unitClass=weightUnits	
+	3	Quantitative-value	Data-value		Something capable of being estimated or expressed with numeric values.
+	4	Fraction	Quantitative-value		A numerical value between 0 and 1.
+	5	Fraction-#	Fraction	takesValue, valueClass=numericClass	
+	4	Item-count	Quantitative-value		The integer count of something which is usually grouped with the entity it is counting. (Item-count/3, A) indicates that 3 of A have occurred up to this point.
+	5	Item-count-#	Item-count	takesValue, valueClass=numericClass	
+	4	Item-interval	Quantitative-value		An integer indicating how many items or entities have passed since the last one of these. An item interval of 0 indicates the current item.
+	5	Item-interval-#	Item-interval	takesValue, valueClass=numericClass	
+	4	Percentage	Quantitative-value		A fraction or ratio with 100 understood as the denominator.
+	5	Percentage-#	Percentage	takesValue, valueClass=numericClass	
+	4	Ratio	Quantitative-value		A quotient of quantities of the same kind for different components within the same system.
+	5	Ratio-#	Ratio	takesValue, valueClass=numericClass	
+	3	Spatiotemporal-value	Data-value		A property relating to space and/or time.
+	4	Rate-of-change	Spatiotemporal-value		The amount of change accumulated per unit time.
+	5	Acceleration	Rate-of-change		Magnitude of the rate of change in either speed or direction. The direction of change should be given separately.
+	6	Acceleration-#	Acceleration	takesValue, valueClass=numericClass, unitClass=accelerationUnits	
+	5	Frequency	Rate-of-change		Frequency is the number of occurrences of a repeating event per unit time.
+	6	Frequency-#	Frequency	takesValue, valueClass=numericClass, unitClass=frequencyUnits	
+	5	Jerk-rate	Rate-of-change		Magnitude of the rate at which the acceleration of an object changes with respect to time. The direction of change should be given separately.
+	6	Jerk-rate-#	Jerk-rate	takesValue, valueClass=numericClass, unitClass=jerkUnits	
+	5	Refresh-rate	Rate-of-change		The frequency with which the image on a computer monitor or similar electronic display screen is refreshed, usually expressed in hertz.
+	6	Refresh-rate-#	Refresh-rate	takesValue, valueClass=numericClass	
+	5	Sampling-rate	Rate-of-change		The number of digital samples taken or recorded per unit of time.
+	6	Sampling-rate-#	Sampling-rate	takesValue, unitClass=frequencyUnits	
+	5	Speed	Rate-of-change		A scalar measure of the rate of movement of the object expressed either as the distance travelled divided by the time taken (average speed) or the rate of change of position with respect to time at a particular point (instantaneous speed). The direction of change should be given separately.
+	6	Speed-#	Speed	takesValue, valueClass=numericClass, unitClass=speedUnits	
+	5	Temporal-rate	Rate-of-change		The number of items per unit of time.
+	6	Temporal-rate-#	Temporal-rate	takesValue, valueClass=numericClass, unitClass=frequencyUnits	
+	4	Spatial-value	Spatiotemporal-value		Value of an item involving space.
+	5	Angle	Spatial-value		The amount of inclination of one line to another or the plane of one object to another.
+	6	Angle-#	Angle	takesValue, unitClass=angleUnits, valueClass=numericClass	
+	5	Distance	Spatial-value		A measure of the space separating two objects or points.
+	6	Distance-#	Distance	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	5	Position	Spatial-value		A reference to the alignment of an object, a particular situation or view of a situation, or the location of an object. Coordinates with respect a specified frame of reference or the default Screen-frame if no frame is given.
+	6	X-position	Position		The position along the x-axis of the frame of reference.
+	7	X-position-#	X-position	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	6	Y-position	Position		The position along the y-axis of the frame of reference.
+	7	Y-position-#	Y-position	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	6	Z-position	Position		The position along the z-axis of the frame of reference.
+	7	Z-position-#	Z-position	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	5	Size	Spatial-value		The physical magnitude of something.
+	6	Area	Size		The extent of a 2-dimensional surface enclosed within a boundary.
+	7	Area-#	Area	takesValue, valueClass=numericClass, unitClass=areaUnits	
+	6	Depth	Size		The distance from the surface of something especially from the perspective of looking from the front.
+	7	Depth-#	Depth	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	6	Height	Size		The vertical measurement or distance from the base to the top of an object.
+	7	Height-#	Height	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	6	Length	Size		The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.
+	7	Length-#	Length	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	6	Volume	Size		The amount of three dimensional space occupied by an object or the capacity of a space or container.
+	7	Volume-#	Volume	takesValue, valueClass=numericClass, unitClass=volumeUnits	
+	6	Width	Size		The extent or measurement of something from side to side.
+	7	Width-#	Width	takesValue, valueClass=numericClass, unitClass=physicalLengthUnits	
+	4	Temporal-value	Spatiotemporal-value		A characteristic of or relating to time or limited by time.
+	5	Delay	Temporal-value		Time during which some action is awaited.
+	6	Delay-#	Delay	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Duration	Temporal-value		The period of time during which something occurs or continues.
+	6	Duration-#	Duration	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Time-interval	Temporal-value		The period of time separating two instances, events, or occurrences.
+	6	Time-interval-#	Time-interval	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Time-value	Temporal-value		A value with units of time. Usually grouped with tags identifying what the value represents.
+	6	Time-value-#	Time-value	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	3	Statistical-value	Data-value	extensionAllowed	A value based on or employing the principles of statistics.
+	4	Data-maximum	Statistical-value		The largest possible quantity or degree.
+	5	Data-maximum-#	Data-maximum	takesValue, valueClass=numericClass	
+	4	Data-mean	Statistical-value		The sum of a set of values divided by the number of values in the set.
+	5	Data-mean-#	Data-mean	takesValue, valueClass=numericClass	
+	4	Data-median	Statistical-value		The value which has an equal number of values greater and less than it.
+	5	Data-median-#	Data-median	takesValue, valueClass=numericClass	
+	4	Data-minimum	Statistical-value		The smallest possible quantity.
+	5	Data-minimum-#	Data-minimum	takesValue, valueClass=numericClass	
+	4	Probability	Statistical-value		A measure of the expectation of the occurrence of a particular event.
+	5	Probability-#	Probability	takesValue, valueClass=numericClass	
+	4	Standard-deviation	Statistical-value		A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean.
+	5	Standard-deviation-#	Standard-deviation	takesValue, valueClass=numericClass	
+	4	Statistical-accuracy	Statistical-value		A measure of closeness to true value expressed as a number between 0 and 1.
+	5	Statistical-accuracy-#	Statistical-accuracy	takesValue, valueClass=numericClass	
+	4	Statistical-precision	Statistical-value		A quantitative representation of the degree of accuracy necessary for or associated with a particular action.
+	5	Statistical-precision-#	Statistical-precision	takesValue, valueClass=numericClass	
+	4	Statistical-recall	Statistical-value		Sensitivity is a measurement datum qualifying a binary classification test and is computed by substracting the false negative rate to the integral numeral 1.
+	5	Statistical-recall-#	Statistical-recall	takesValue, valueClass=numericClass	
+	4	Statistical-uncertainty	Statistical-value		A measure of the inherent variability of repeated observation measurements of a quantity including quantities evaluated by statistical methods and by other means.
+	5	Statistical-uncertainty-#	Statistical-uncertainty	takesValue, valueClass=numericClass	
+	2	Data-variability-attribute	Data-property		An attribute describing how something changes or varies.
+	3	Abrupt	Data-variability-attribute		Marked by sudden change.
+	3	Constant	Data-variability-attribute		Continually recurring or continuing without interruption. Not changing in time or space.
+	3	Continuous	Data-variability-attribute	relatedTag=Discrete, relatedTag=Discontinuous	Uninterrupted in time, sequence, substance, or extent.
+	3	Decreasing	Data-variability-attribute	relatedTag=Increasing	Becoming smaller or fewer in size, amount, intensity, or degree.
+	3	Deterministic	Data-variability-attribute	relatedTag=Random, relatedTag=Stochastic	No randomness is involved in the development of the future states of the element.
+	3	Discontinuous	Data-variability-attribute	relatedTag=Continuous	Having a gap in time, sequence, substance, or extent.
+	3	Discrete	Data-variability-attribute	relatedTag=Continuous, relatedTag=Discontinuous	Constituting a separate entities or parts.
+	3	Estimated-value	Data-variability-attribute		Something that has been calculated or measured approximately.
+	3	Exact-value	Data-variability-attribute		A value that is viewed to the true value according to some standard.
+	3	Flickering	Data-variability-attribute		Moving irregularly or unsteadily or burning or shining fitfully or with a fluctuating light.
+	3	Fractal	Data-variability-attribute		Having extremely irregular curves or shapes for which any suitably chosen part is similar in shape to a given larger or smaller part when magnified or reduced to the same size.
+	3	Increasing	Data-variability-attribute	relatedTag=Decreasing	Becoming greater in size, amount, or degree.
+	3	Random	Data-variability-attribute	relatedTag=Deterministic, relatedTag=Stochastic	Governed by or depending on chance. Lacking any definite plan or order or purpose.
+	3	Repetitive	Data-variability-attribute		A recurring action that is often non-purposeful.
+	3	Stochastic	Data-variability-attribute	relatedTag=Deterministic, relatedTag=Random	Uses  a random probability distribution or pattern that may be analysed statistically but may not be predicted precisely to determine future states.
+	3	Varying	Data-variability-attribute		Differing in size, amount, degree, or nature.
+	1	Environmental-property	Property		Relating to or arising from the surroundings of an agent.
+	2	Augmented-reality	Environmental-property		Using technology that enhances real-world experiences with computer-derived digital overlays to change some aspects of perception of the natural environment. The digital content is shown to the user through a smart device or glasses and responds to changes in the environment.
+	2	Indoors	Environmental-property		Located inside a building or enclosure.
+	2	Motion-platform	Environmental-property		A mechanism that creates the feelings of being in a real motion environment.
+	2	Outdoors	Environmental-property		Any area outside a building or shelter.
+	2	Real-world	Environmental-property		Located in a place that exists in real space and time under realistic conditions.
+	2	Rural	Environmental-property		Of or pertaining to the country as opposed to the city.
+	2	Terrain	Environmental-property		Characterization of the physical features of a tract of land.
+	3	Composite-terrain	Terrain		Tracts of land characterized by a mixure of physical features.
+	3	Dirt-terrain	Terrain		Tracts of land characterized by a soil surface and lack of vegetation.
+	3	Grassy-terrain	Terrain		Tracts of land covered by grass.
+	3	Gravel-terrain	Terrain		Tracts of land covered by a surface consisting a loose aggregation of small water-worn or pounded stones.
+	3	Leaf-covered-terrain	Terrain		Tracts of land covered by leaves and composited organic material.
+	3	Muddy-terrain	Terrain		Tracts of land covered by a liquid or semi-liquid mixture of water and some combination of soil, silt, and clay.
+	3	Paved-terrain	Terrain		Tracts of land covered  with concrete, asphalt, stones, or bricks.
+	3	Rocky-terrain	Terrain		Tracts of land consisting or full of rock or rocks.
+	3	Sloped-terrain	Terrain		Tracts of land arranged in a sloping  or inclined position.
+	3	Uneven-terrain	Terrain		Tracts of land that are not level, smooth, or regular.
+	2	Urban	Environmental-property		Relating to, located in, or characteristic of a city or densely populated area.
+	2	Virtual-world	Environmental-property		Using technology that creates immersive, computer-generated experiences that a person can interact with and navigate through. The digital content is generally delivered to the user through some type of headset and responds to changes in head position or through interaction with other types of sensors. Existing in a virtual setting such as a simulation or game environment.
+	1	Informational-property	Property	extensionAllowed	Something that pertains to a task.
+	2	Description	Informational-property	requireChild	An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.
+	3	Description-#	Description	takesValue, valueClass=textClass	
+	2	ID	Informational-property	requireChild	An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).
+	3	ID-#	ID	takesValue, valueClass=textClass	
+	2	Label	Informational-property	requireChild	A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.
+	3	Label-#	Label	takesValue, valueClass=nameClass	
+	2	Metadata	Informational-property		Data about data. Information that describes another set of data.
+	3	CogAtlas	Metadata		The Cognitive Atlas ID number of something.
+	4	CogAtlas-#	CogAtlas	takesValue	
+	3	CogPo	Metadata		The CogPO ID number of something.
+	4	CogPo-#	CogPo	takesValue	
+	3	Creation-date	Metadata	requireChild	The date on which data creation of this element began.
+	4	Creation-date-#	Creation-date	takesValue, valueClass=dateTimeClass	
+	3	Experimental-note	Metadata		A brief written record about the experiment.
+	4	Experimental-note-#	Experimental-note	takesValue, valueClass=textClass	
+	3	Library-name	Metadata		Official name of a HED library.
+	4	Library-name-#	Library-name	takesValue, valueClass=nameClass	
+	3	OBO-identifier	Metadata		The identifier of a term in some Open Biology Ontology (OBO) ontology.
+	4	OBO-identifier-#	OBO-identifier	takesValue, valueClass=nameClass	
+	3	Pathname	Metadata		The specification of a node (file or directory) in a hierarchical file system, usually specified by listing the nodes top-down.
+	4	Pathname-#	Pathname	takesValue	
+	3	Subject-identifier	Metadata		A sequence of characters used to identify, name, or characterize a trial or study subject.
+	4	Subject-identifier-#	Subject-identifier	takesValue	
+	3	Version-identifier	Metadata		An alphanumeric character string that identifies a form or variant of a type or original.
+	4	Version-identifier-#	Version-identifier	takesValue	Usually is a semantic version.
+	2	Parameter	Informational-property		Something user-defined for this experiment.
+	3	Parameter-label	Parameter		The name of the parameter.
+	4	Parameter-label-#	Parameter-label	takesValue, valueClass=nameClass	
+	3	Parameter-value	Parameter		The value of the parameter.
+	4	Parameter-value-#	Parameter-value	takesValue, valueClass=textClass	
+	1	Organizational-property	Property		Relating to an organization or the action of organizing something.
+	2	Collection	Organizational-property		A tag designating a grouping of items such as in a set or list.
+	3	Collection-#	Collection	takesValue, valueClass=nameClass	Name of the collection.
+	2	Condition-variable	Organizational-property		An aspect of the experiment or task that is to be varied during the experiment. Task-conditions are sometimes called independent variables or contrasts.
+	3	Condition-variable-#	Condition-variable	takesValue, valueClass=nameClass	Name of the condition variable.
+	2	Control-variable	Organizational-property		An aspect of the experiment that is fixed throughout the study and usually is explicitly controlled.
+	3	Control-variable-#	Control-variable	takesValue, valueClass=nameClass	Name of the control variable.
+	2	Def	Organizational-property	requireChild	A HED-specific utility tag used with a defined name to represent the tags associated with that definition.
+	3	Def-#	Def	takesValue, valueClass=nameClass	Name of the definition.
+	2	Def-expand	Organizational-property	requireChild, tagGroup	A HED specific utility tag that is grouped with an expanded definition. The child value of the Def-expand is the name of the expanded definition.
+	3	Def-expand-#	Def-expand	takesValue, valueClass=nameClass	
+	2	Definition	Organizational-property	requireChild, topLevelTagGroup	A HED-specific utility tag whose child value is the name of the concept and the tag group associated with the tag is an English language explanation of a concept.
+	3	Definition-#	Definition	takesValue, valueClass=nameClass	Name of the definition.
+	2	Event-context	Organizational-property	topLevelTagGroup, unique	A special HED tag inserted as part of a top-level tag group to contain information about the interrelated conditions under which the event occurs. The event context includes information about other events that are ongoing when this event happens.
+	2	Event-stream	Organizational-property		A special HED tag indicating that this event is a member of an ordered succession of events.
+	3	Event-stream-#	Event-stream	takesValue, valueClass=nameClass	Name of the event stream.
+	2	Experimental-intertrial	Organizational-property		A tag used to indicate a part of the experiment between trials usually where nothing is happening.
+	3	Experimental-intertrial-#	Experimental-intertrial	takesValue, valueClass=nameClass	Optional label for the intertrial block.
+	2	Experimental-trial	Organizational-property		Designates a run or execution of an activity, for example, one execution of a script. A tag used to indicate a particular organizational part in the experimental design often containing a stimulus-response pair or stimulus-response-feedback triad.
+	3	Experimental-trial-#	Experimental-trial	takesValue, valueClass=nameClass	Optional label for the trial (often a numerical string).
+	2	Indicator-variable	Organizational-property		An aspect of the experiment or task that is measured as task conditions are varied during the experiment. Experiment indicators are sometimes called dependent variables.
+	3	Indicator-variable-#	Indicator-variable	takesValue, valueClass=nameClass	Name of the indicator variable.
+	2	Recording	Organizational-property		A tag designating the data recording. Recording tags are usually have temporal scope which is the entire recording.
+	3	Recording-#	Recording	takesValue, valueClass=nameClass	Optional label for the recording.
+	2	Task	Organizational-property		An assigned piece of work, usually with a time allotment. A tag used to indicate a linkage the structured activities performed as part of the experiment.
+	3	Task-#	Task	takesValue, valueClass=nameClass	Optional label for the task block.
+	2	Time-block	Organizational-property		A tag used to indicate a contiguous time block in the experiment during which something is fixed or noted.
+	3	Time-block-#	Time-block	takesValue, valueClass=nameClass	Optional label for the task block.
+	1	Sensory-property	Property		Relating to sensation or the physical senses.
+	2	Sensory-attribute	Sensory-property		A sensory characteristic associated with another entity.
+	3	Auditory-attribute	Sensory-attribute		Pertaining to the sense of hearing.
+	4	Loudness	Auditory-attribute		Perceived intensity of a sound.
+	5	Loudness-#	Loudness	takesValue, valueClass=numericClass	
+	4	Pitch	Auditory-attribute		A perceptual property that allows the user to order sounds on a frequency scale.
+	5	Pitch-#	Pitch	takesValue, valueClass=numericClass, unitClass=frequencyUnits	
+	4	Sound-envelope	Auditory-attribute		Description of how a sound changes over time.
+	5	Sound-envelope-attack	Sound-envelope		The time taken for initial run-up of level from nil to peak usually beginning when the key on a musical instrument is pressed.
+	6	Sound-envelope-attack-#	Sound-envelope-attack	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Sound-envelope-decay	Sound-envelope		The time taken for the subsequent run down from the attack level to the designated sustain level.
+	6	Sound-envelope-decay-#	Sound-envelope-decay	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Sound-envelope-release	Sound-envelope		The time taken for the level to decay from the sustain level to zero after the key is released
+	6	Sound-envelope-release-#	Sound-envelope-release	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	5	Sound-envelope-sustain	Sound-envelope		The time taken for the main sequence of the sound duration, until the key is released.
+	6	Sound-envelope-sustain-#	Sound-envelope-sustain	takesValue, valueClass=numericClass, unitClass=timeUnits	
+	4	Timbre	Auditory-attribute		The perceived sound quality of a singing voice or musical instrument.
+	5	Timbre-#	Timbre	takesValue, valueClass=labelClass	
+	3	Gustatory-attribute	Sensory-attribute		Pertaining to the sense of taste.
+	4	Bitter	Gustatory-attribute		Having a sharp, pungent taste.
+	4	Salty	Gustatory-attribute		Tasting of or like salt.
+	4	Savory	Gustatory-attribute		Belonging to a taste that is salty or spicy rather than sweet.
+	4	Sour	Gustatory-attribute		Having a sharp, acidic taste.
+	4	Sweet	Gustatory-attribute		Having or resembling the taste of sugar.
+	3	Olfactory-attribute	Sensory-attribute		Having a smell.
+	3	Somatic-attribute	Sensory-attribute		Pertaining to the feelings in the body or of the nervous system.
+	4	Pain	Somatic-attribute		The sensation of discomfort, distress, or agony, resulting from the stimulation of specialized nerve endings.
+	4	Stress	Somatic-attribute		The negative mental, emotional, and physical reactions that occur when environmental stressors are perceived as exceeding the adaptive capacities of the individual.
+	3	Tactile-attribute	Sensory-attribute		Pertaining to the sense of touch.
+	4	Tactile-pressure	Tactile-attribute		Having a feeling of heaviness.
+	4	Tactile-temperature	Tactile-attribute		Having a feeling of hotness or coldness.
+	4	Tactile-texture	Tactile-attribute		Having a feeling of roughness.
+	4	Tactile-vibration	Tactile-attribute		Having a feeling of mechanical oscillation.
+	3	Vestibular-attribute	Sensory-attribute		Pertaining to the sense of balance or body position.
+	3	Visual-attribute	Sensory-attribute		Pertaining to the sense of sight.
+	4	Color	Visual-attribute		The appearance of objects (or light sources) described in terms of perception of their hue and lightness (or brightness) and saturation.
+	5	CSS-color	Color		One of 140 colors supported by all browsers. For more details such as the color RGB or HEX values,  check:  https://www.w3schools.com/colors/colors_groups.asp
+	6	Blue-color	CSS-color		CSS color group
+	7	Blue	Blue-color		CSS-color 0x0000FF
+	7	CadetBlue	Blue-color		CSS-color 0x5F9EA0
+	7	CornflowerBlue	Blue-color		CSS-color 0x6495ED
+	7	DarkBlue	Blue-color		CSS-color 0x00008B
+	7	DeepSkyBlue	Blue-color		CSS-color 0x00BFFF
+	7	DodgerBlue	Blue-color		CSS-color 0x1E90FF
+	7	LightBlue	Blue-color		CSS-color 0xADD8E6
+	7	LightSkyBlue	Blue-color		CSS-color 0x87CEFA
+	7	LightSteelBlue	Blue-color		CSS-color 0xB0C4DE
+	7	MediumBlue	Blue-color		CSS-color 0x0000CD
+	7	MidnightBlue	Blue-color		CSS-color 0x191970
+	7	Navy	Blue-color		CSS-color 0x000080
+	7	PowderBlue	Blue-color		CSS-color 0xB0E0E6
+	7	RoyalBlue	Blue-color		CSS-color 0x4169E1
+	7	SkyBlue	Blue-color		CSS-color 0x87CEEB
+	7	SteelBlue	Blue-color		CSS-color 0x4682B4
+	6	Brown-color	CSS-color		CSS color group
+	7	Bisque	Brown-color		CSS-color 0xFFE4C4
+	7	BlanchedAlmond	Brown-color		CSS-color 0xFFEBCD
+	7	Brown	Brown-color		CSS-color 0xA52A2A
+	7	BurlyWood	Brown-color		CSS-color 0xDEB887
+	7	Chocolate	Brown-color		CSS-color 0xD2691E
+	7	Cornsilk	Brown-color		CSS-color 0xFFF8DC
+	7	DarkGoldenRod	Brown-color		CSS-color 0xB8860B
+	7	GoldenRod	Brown-color		CSS-color 0xDAA520
+	7	Maroon	Brown-color		CSS-color 0x800000
+	7	NavajoWhite	Brown-color		CSS-color 0xFFDEAD
+	7	Olive	Brown-color		CSS-color 0x808000
+	7	Peru	Brown-color		CSS-color 0xCD853F
+	7	RosyBrown	Brown-color		CSS-color 0xBC8F8F
+	7	SaddleBrown	Brown-color		CSS-color 0x8B4513
+	7	SandyBrown	Brown-color		CSS-color 0xF4A460
+	7	Sienna	Brown-color		CSS-color 0xA0522D
+	7	Tan	Brown-color		CSS-color 0xD2B48C
+	7	Wheat	Brown-color		CSS-color 0xF5DEB3
+	6	Cyan-color	CSS-color		CSS color group
+	7	Aqua	Cyan-color		CSS-color 0x00FFFF
+	7	Aquamarine	Cyan-color		CSS-color 0x7FFFD4
+	7	Cyan	Cyan-color		CSS-color 0x00FFFF
+	7	DarkTurquoise	Cyan-color		CSS-color 0x00CED1
+	7	LightCyan	Cyan-color		CSS-color 0xE0FFFF
+	7	MediumTurquoise	Cyan-color		CSS-color 0x48D1CC
+	7	PaleTurquoise	Cyan-color		CSS-color 0xAFEEEE
+	7	Turquoise	Cyan-color		CSS-color 0x40E0D0
+	6	Gray-color	CSS-color		CSS color group
+	7	Black	Gray-color		CSS-color 0x000000
+	7	DarkGray	Gray-color		CSS-color 0xA9A9A9
+	7	DarkSlateGray	Gray-color		CSS-color 0x2F4F4F
+	7	DimGray	Gray-color		CSS-color 0x696969
+	7	Gainsboro	Gray-color		CSS-color 0xDCDCDC
+	7	Gray	Gray-color		CSS-color 0x808080
+	7	LightGray	Gray-color		CSS-color 0xD3D3D3
+	7	LightSlateGray	Gray-color		CSS-color 0x778899
+	7	Silver	Gray-color		CSS-color 0xC0C0C0
+	7	SlateGray	Gray-color		CSS-color 0x708090
+	6	Green-color	CSS-color		CSS color group
+	7	Chartreuse	Green-color		CSS-color 0x7FFF00
+	7	DarkCyan	Green-color		CSS-color 0x008B8B
+	7	DarkGreen	Green-color		CSS-color 0x006400
+	7	DarkOliveGreen	Green-color		CSS-color 0x556B2F
+	7	DarkSeaGreen	Green-color		CSS-color 0x8FBC8F
+	7	ForestGreen	Green-color		CSS-color 0x228B22
+	7	Green	Green-color		CSS-color 0x008000
+	7	GreenYellow	Green-color		CSS-color 0xADFF2F
+	7	LawnGreen	Green-color		CSS-color 0x7CFC00
+	7	LightGreen	Green-color		CSS-color 0x90EE90
+	7	LightSeaGreen	Green-color		CSS-color 0x20B2AA
+	7	Lime	Green-color		CSS-color 0x00FF00
+	7	LimeGreen	Green-color		CSS-color 0x32CD32
+	7	MediumAquaMarine	Green-color		CSS-color 0x66CDAA
+	7	MediumSeaGreen	Green-color		CSS-color 0x3CB371
+	7	MediumSpringGreen	Green-color		CSS-color 0x00FA9A
+	7	OliveDrab	Green-color		CSS-color 0x6B8E23
+	7	PaleGreen	Green-color		CSS-color 0x98FB98
+	7	SeaGreen	Green-color		CSS-color 0x2E8B57
+	7	SpringGreen	Green-color		CSS-color 0x00FF7F
+	7	Teal	Green-color		CSS-color 0x008080
+	7	YellowGreen	Green-color		CSS-color 0x9ACD32
+	6	Orange-color	CSS-color		CSS color group
+	7	Coral	Orange-color		CSS-color 0xFF7F50
+	7	DarkOrange	Orange-color		CSS-color 0xFF8C00
+	7	Orange	Orange-color		CSS-color 0xFFA500
+	7	OrangeRed	Orange-color		CSS-color 0xFF4500
+	7	Tomato	Orange-color		CSS-color 0xFF6347
+	6	Pink-color	CSS-color		CSS color group
+	7	DeepPink	Pink-color		CSS-color 0xFF1493
+	7	HotPink	Pink-color		CSS-color 0xFF69B4
+	7	LightPink	Pink-color		CSS-color 0xFFB6C1
+	7	MediumVioletRed	Pink-color		CSS-color 0xC71585
+	7	PaleVioletRed	Pink-color		CSS-color 0xDB7093
+	7	Pink	Pink-color		CSS-color 0xFFC0CB
+	6	Purple-color	CSS-color		CSS color group
+	7	BlueViolet	Purple-color		CSS-color 0x8A2BE2
+	7	DarkMagenta	Purple-color		CSS-color 0x8B008B
+	7	DarkOrchid	Purple-color		CSS-color 0x9932CC
+	7	DarkSlateBlue	Purple-color		CSS-color 0x483D8B
+	7	DarkViolet	Purple-color		CSS-color 0x9400D3
+	7	Fuchsia	Purple-color		CSS-color 0xFF00FF
+	7	Indigo	Purple-color		CSS-color 0x4B0082
+	7	Lavender	Purple-color		CSS-color 0xE6E6FA
+	7	Magenta	Purple-color		CSS-color 0xFF00FF
+	7	MediumOrchid	Purple-color		CSS-color 0xBA55D3
+	7	MediumPurple	Purple-color		CSS-color 0x9370DB
+	7	MediumSlateBlue	Purple-color		CSS-color 0x7B68EE
+	7	Orchid	Purple-color		CSS-color 0xDA70D6
+	7	Plum	Purple-color		CSS-color 0xDDA0DD
+	7	Purple	Purple-color		CSS-color 0x800080
+	7	RebeccaPurple	Purple-color		CSS-color 0x663399
+	7	SlateBlue	Purple-color		CSS-color 0x6A5ACD
+	7	Thistle	Purple-color		CSS-color 0xD8BFD8
+	7	Violet	Purple-color		CSS-color 0xEE82EE
+	6	Red-color	CSS-color		CSS color group
+	7	Crimson	Red-color		CSS-color 0xDC143C
+	7	DarkRed	Red-color		CSS-color 0x8B0000
+	7	DarkSalmon	Red-color		CSS-color 0xE9967A
+	7	FireBrick	Red-color		CSS-color 0xB22222
+	7	IndianRed	Red-color		CSS-color 0xCD5C5C
+	7	LightCoral	Red-color		CSS-color 0xF08080
+	7	LightSalmon	Red-color		CSS-color 0xFFA07A
+	7	Red	Red-color		CSS-color 0xFF0000
+	7	Salmon	Red-color		CSS-color 0xFA8072
+	6	White-color	CSS-color		CSS color group
+	7	AliceBlue	White-color		CSS-color 0xF0F8FF
+	7	AntiqueWhite	White-color		CSS-color 0xFAEBD7
+	7	Azure	White-color		CSS-color 0xF0FFFF
+	7	Beige	White-color		CSS-color 0xF5F5DC
+	7	FloralWhite	White-color		CSS-color 0xFFFAF0
+	7	GhostWhite	White-color		CSS-color 0xF8F8FF
+	7	HoneyDew	White-color		CSS-color 0xF0FFF0
+	7	Ivory	White-color		CSS-color 0xFFFFF0
+	7	LavenderBlush	White-color		CSS-color 0xFFF0F5
+	7	Linen	White-color		CSS-color 0xFAF0E6
+	7	MintCream	White-color		CSS-color 0xF5FFFA
+	7	MistyRose	White-color		CSS-color 0xFFE4E1
+	7	OldLace	White-color		CSS-color 0xFDF5E6
+	7	SeaShell	White-color		CSS-color 0xFFF5EE
+	7	Snow	White-color		CSS-color 0xFFFAFA
+	7	White	White-color		CSS-color 0xFFFFFF
+	7	WhiteSmoke	White-color		CSS-color 0xF5F5F5
+	6	Yellow-color	CSS-color		CSS color group
+	7	DarkKhaki	Yellow-color		CSS-color 0xBDB76B
+	7	Gold	Yellow-color		CSS-color 0xFFD700
+	7	Khaki	Yellow-color		CSS-color 0xF0E68C
+	7	LemonChiffon	Yellow-color		CSS-color 0xFFFACD
+	7	LightGoldenRodYellow	Yellow-color		CSS-color 0xFAFAD2
+	7	LightYellow	Yellow-color		CSS-color 0xFFFFE0
+	7	Moccasin	Yellow-color		CSS-color 0xFFE4B5
+	7	PaleGoldenRod	Yellow-color		CSS-color 0xEEE8AA
+	7	PapayaWhip	Yellow-color		CSS-color 0xFFEFD5
+	7	PeachPuff	Yellow-color		CSS-color 0xFFDAB9
+	7	Yellow	Yellow-color		CSS-color 0xFFFF00
+	5	Color-shade	Color		A slight degree of difference between colors, especially with regard to how light or dark it is or as distinguished from one nearly like it.
+	6	Dark-shade	Color-shade		A color tone not reflecting much light.
+	6	Light-shade	Color-shade		A color tone reflecting more light.
+	5	Grayscale	Color		Using a color map composed of shades of gray, varying from black at the weakest intensity to white at the strongest.
+	6	Grayscale-#	Grayscale	takesValue, valueClass=numericClass	White intensity between 0 and 1
+	5	HSV-color	Color		A color representation that models how colors appear under light.
+	6	HSV-value	HSV-color		An attribute of a visual sensation according to which an area appears to emit more or less light.
+	7	HSV-value-#	HSV-value	takesValue, valueClass=numericClass	
+	6	Hue	HSV-color		Attribute of a visual sensation according to which an area appears to be similar to one of the perceived colors.
+	7	Hue-#	Hue	takesValue, valueClass=numericClass	Angular value between 0 and 360
+	6	Saturation	HSV-color		Colorfulness of a stimulus relative to its own brightness.
+	7	Saturation-#	Saturation	takesValue, valueClass=numericClass	B value of RGB between 0 and 1
+	5	RGB-color	Color		A color from the RGB schema.
+	6	RGB-blue	RGB-color		The blue component.
+	7	RGB-blue-#	RGB-blue	takesValue, valueClass=numericClass	B value of RGB between 0 and 1
+	6	RGB-green	RGB-color		The green component.
+	7	RGB-green-#	RGB-green	takesValue, valueClass=numericClass	G value of RGB between 0 and 1
+	6	RGB-red	RGB-color		The red component.
+	7	RGB-red-#	RGB-red	takesValue, valueClass=numericClass	R value of RGB between 0 and 1
+	4	Luminance	Visual-attribute		A quality that exists by virtue of the luminous intensity per unit area projected in a given direction.
+	4	Opacity	Visual-attribute		A measure of impenetrability to light.
+	2	Sensory-presentation	Sensory-property		The entity has a sensory manifestation.
+	3	Auditory-presentation	Sensory-presentation		The sense of hearing is used in the presentation to the user.
+	4	Loudspeaker-separation	Auditory-presentation	suggestedTag=Distance	The distance between two loudspeakers. Grouped with the Distance tag.
+	4	Monophonic	Auditory-presentation		Relating to sound transmission, recording, or reproduction involving a single transmission path.
+	4	Silent	Auditory-presentation		The absence of ambient audible sound or the state of having ceased to produce sounds.
+	4	Stereophonic	Auditory-presentation		Relating to, or constituting sound reproduction involving the use of separated microphones and two transmission channels to achieve the sound separation of a live hearing.
+	3	Gustatory-presentation	Sensory-presentation		The sense of taste used in the presentation to the user.
+	3	Olfactory-presentation	Sensory-presentation		The sense of smell used in the presentation to the user.
+	3	Somatic-presentation	Sensory-presentation		The nervous system is used in the presentation to the user.
+	3	Tactile-presentation	Sensory-presentation		The sense of touch used in the presentation to the user.
+	3	Vestibular-presentation	Sensory-presentation		The sense balance used in the presentation to the user.
+	3	Visual-presentation	Sensory-presentation		The sense of sight used in the presentation to the user.
+	4	2D-view	Visual-presentation		A view showing only two dimensions.
+	4	3D-view	Visual-presentation		A view showing three dimensions.
+	4	Background-view	Visual-presentation		Parts of the view that are farthest from the viewer and usually the not part of the visual focus.
+	4	Bistable-view	Visual-presentation		Something having two stable visual forms that have two distinguishable stable forms as in optical illusions.
+	4	Foreground-view	Visual-presentation		Parts of the view that are closest to the viewer and usually the most important part of the visual focus.
+	4	Foveal-view	Visual-presentation		Visual presentation directly on the fovea. A view projected on the small depression in the retina containing only cones and where vision is most acute.
+	4	Map-view	Visual-presentation		A diagrammatic representation of an area of land or sea showing physical features, cities, roads.
+	5	Aerial-view	Map-view		Elevated view of an object from above, with a perspective as though the observer were a bird.
+	5	Satellite-view	Map-view		A representation as captured by technology such as a satellite.
+	5	Street-view	Map-view		A 360-degrees panoramic view from a position on the ground.
+	4	Peripheral-view	Visual-presentation		Indirect vision as it occurs outside the point of fixation.
+	1	Task-property	Property	extensionAllowed	Something that pertains to a task.
+	2	Task-action-type	Task-property		How an agent action should be interpreted in terms of the task specification.
+	3	Appropriate-action	Task-action-type	relatedTag=Inappropriate-action	An action suitable or proper in the circumstances.
+	3	Correct-action	Task-action-type	relatedTag=Incorrect-action, relatedTag=Indeterminate-action	An action that was a correct response in the context of the task.
+	3	Correction	Task-action-type		An action offering an improvement to replace a mistake or error.
+	3	Imagined-action	Task-action-type		Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.
+	3	Inappropriate-action	Task-action-type	relatedTag=Appropriate-action	An action not in keeping with what is correct or proper for the task.
+	3	Incorrect-action	Task-action-type	relatedTag=Correct-action, relatedTag=Indeterminate-action	An action considered wrong or incorrect in the context of the task.
+	3	Indeterminate-action	Task-action-type	relatedTag=Correct-action, relatedTag=Incorrect-action, relatedTag=Miss, relatedTag=Near-miss	An action that cannot be distinguished between two or more possibibities in the current context. This tag might be applied when an outside evaluator or a classification algorithm cannot determine a definitive result.
+	3	Miss	Task-action-type	relatedTag=Near-miss	An action considered to be a failure in the context of the task. For example, if the agent is supposed to try to hit a target and misses.
+	3	Near-miss	Task-action-type	relatedTag=Miss	An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.
+	3	Omitted-action	Task-action-type		An expected response was skipped.
+	2	Task-attentional-demand	Task-property		Strategy for allocating attention toward goal-relevant information.
+	3	Bottom-up-attention	Task-attentional-demand	relatedTag=Top-down-attention	Attentional guidance purely by externally driven factors to stimuli that are salient because of their inherent properties relative to the background. Sometimes this is referred to as stimulus driven.
+	3	Covert-attention	Task-attentional-demand	relatedTag=Overt-attention	Paying attention without moving the eyes.
+	3	Divided-attention	Task-attentional-demand	relatedTag=Focused-attention	Integrating parallel multiple stimuli. Behavior involving responding simultaneously to multiple tasks or multiple task demands.
+	3	Focused-attention	Task-attentional-demand	relatedTag=Divided-attention	Responding discretely to specific visual, auditory, or tactile stimuli.
+	3	Orienting-attention	Task-attentional-demand		Directing attention to a target stimulus.
+	3	Overt-attention	Task-attentional-demand	relatedTag=Covert-attention	Selectively processing one location over others by moving the eyes to point at that location.
+	3	Selective-attention	Task-attentional-demand		Maintaining a behavioral or cognitive set in the face of distracting or competing stimuli. Ability to pay attention to a limited array of all available sensory information.
+	3	Sustained-attention	Task-attentional-demand		Maintaining a consistent behavioral response during continuous and repetitive activity.
+	3	Switched-attention	Task-attentional-demand		Having to switch attention between two or more modalities of presentation.
+	3	Top-down-attention	Task-attentional-demand	relatedTag=Bottom-up-attention	Voluntary allocation of attention to certain features. Sometimes this is referred to goal-oriented attention.
+	2	Task-effect-evidence	Task-property		The evidence supporting the conclusion that the event had the specified effect.
+	3	Behavioral-evidence	Task-effect-evidence		An indication or conclusion based on the behavior of an agent.
+	3	Computational-evidence	Task-effect-evidence		A type of evidence in which data are produced, and/or generated, and/or analyzed on a computer.
+	3	External-evidence	Task-effect-evidence		A phenomenon that follows and is caused by some previous phenomenon.
+	3	Intended-effect	Task-effect-evidence		A phenomenon that is intended to follow and be caused by some previous phenomenon.
+	2	Task-event-role	Task-property		The purpose of an event with respect to the task.
+	3	Experimental-stimulus	Task-event-role		Part of something designed to elicit a response in the experiment.
+	3	Incidental	Task-event-role		A sensory or other type of event that is unrelated to the task or experiment.
+	3	Instructional	Task-event-role		Usually associated with a sensory event intended to give instructions to the participant about the task or behavior.
+	3	Mishap	Task-event-role		Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.
+	3	Participant-response	Task-event-role		Something related to a participant actions in performing the task.
+	3	Task-activity	Task-event-role		Something that is part of the overall task or is necessary to the overall experiment but is not directly part of a stimulus-response cycle. Examples would be taking a survey or provided providing a silva sample.
+	3	Warning	Task-event-role		Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.
+	2	Task-relationship	Task-property		Specifying organizational importance of sub-tasks.
+	3	Background-subtask	Task-relationship		A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.
+	3	Primary-subtask	Task-relationship		A part of the task which should be the primary focus of the participant.
+	2	Task-stimulus-role	Task-property		The role the stimulus plays in the task.
+	3	Cue	Task-stimulus-role		A signal for an action, a pattern of stimuli indicating a particular response.
+	3	Distractor	Task-stimulus-role		A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In pyschological studies this is sometimes referred to as a foil.
+	3	Expected	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.
+	3	Extraneous	Task-stimulus-role		Irrelevant or unrelated to the subject being dealt with.
+	3	Feedback	Task-stimulus-role		An evaluative response to an inquiry, process, event, or activity.
+	3	Go-signal	Task-stimulus-role	relatedTag=Stop-signal	An indicator to proceed with a planned action.
+	3	Meaningful	Task-stimulus-role		Conveying significant or relevant information.
+	3	Newly-learned	Task-stimulus-role		Representing recently acquired information or understanding.
+	3	Non-informative	Task-stimulus-role		Something that is not useful in forming an opinion or judging an outcome.
+	3	Non-target	Task-stimulus-role	relatedTag=Target	Something other than that done or looked for. Also tag Expected if the Non-target is frequent.
+	3	Not-meaningful	Task-stimulus-role		Not having a serious, important, or useful quality or purpose.
+	3	Novel	Task-stimulus-role		Having no previous example or precedent or parallel.
+	3	Oddball	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Something unusual, or infrequent.
+	3	Penalty	Task-stimulus-role		A disadvantage, loss, or hardship due to some action.
+	3	Planned	Task-stimulus-role	relatedTag=Unplanned	Something that was decided on or arranged in advance.
+	3	Priming	Task-stimulus-role		An implicit memory effect in which exposure to a stimulus influences response to a later stimulus.
+	3	Query	Task-stimulus-role		A sentence of inquiry that asks for a reply.
+	3	Reward	Task-stimulus-role		A positive reinforcement for a desired action, behavior or response.
+	3	Stop-signal	Task-stimulus-role	relatedTag=Go-signal	An indicator that the agent should stop the current activity.
+	3	Target	Task-stimulus-role		Something fixed as a goal, destination, or point of examination.
+	3	Threat	Task-stimulus-role		An indicator that signifies hostility and predicts an increased probability of attack.
+	3	Timed	Task-stimulus-role		Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.
+	3	Unexpected	Task-stimulus-role	relatedTag=Expected	Something that is not anticipated.
+	3	Unplanned	Task-stimulus-role	relatedTag=Planned	Something that has not been planned as part of the task.
+	0	Relation	HedTag		Concerns the way in which two or more people or things are connected.
+	1	Comparative-relation	Relation		Something considered in comparison to something else.
+	2	Approximately-equal-to	Comparative-relation		(A (Approximately-equal-to B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.
+	2	Less-than	Comparative-relation		(A (Less-than B)) indicates that A is smaller than B. Here A and B could refer to sizes, orders, positions or other quantities.
+	2	Less-than-or-equal-to	Comparative-relation		(A (Less-than-or-equal-to B)) indicates that the relative size or order of A is smaller than or equal to B.
+	2	Greater-than	Comparative-relation		(A (Greater-than B)) indicates that the relative size or order of A is bigger than that of B.
+	2	Greater-than-or-equal-to	Comparative-relation		(A (Greater-than-or-equal-to B)) indicates that the relative size or order of A is bigger than or the same as that of B.
+	2	Equal-to	Comparative-relation		(A (Equal-to B)) indicates that the size or order of A is the same as that of B.
+	2	Not-equal-to	Comparative-relation		(A (Not-equal-to B)) indicates that the size or order of A is not the same as that of B.
+	1	Connective-relation	Relation		Indicates two items are related in some way.
+	2	Belongs-to	Connective-relation		(A (Belongs-to B)) indicates that A is a member of B.
+	2	Connected-to	Connective-relation		(A (Connected-to) B) indicates that A is related to B in some respect, usually through a direct link.
+	2	Contained-in	Connective-relation		(A (Contained-in B)) indicates that A is completely inside of B.
+	2	Described-by	Connective-relation		(A (Described-by B)) indicates that B provides information about A.
+	2	From-to	Connective-relation		(A (From-to B)) indicates a directional relation from A to B. A is considered the source.
+	2	Group-of	Connective-relation		(A (Group-of B)) indicates A is a group of items of type B.
+	2	Implied-by	Connective-relation		(A (Implied-by B)) indicates B is suggested by A.
+	2	Interacts-with	Connective-relation		(A (Interacts-with B)) indicates A and B interact, possibly reciprocally.
+	2	Member-of	Connective-relation		(A (Member-of B)) indicates A is a member of group B.
+	2	Part-of	Connective-relation		(A (Part-of B)) indicates A is a part of the whole B.
+	2	Performed-by	Connective-relation		(A (Performed-by B)) Indicates that ction or procedure A was carried out by agent B.
+	2	Related-to	Connective-relation		(A (Relative-to B)) indicates A is a part of the whole B.
+	1	Directional-relation	Relation		A relationship indicating direction of change.
+	2	Away-from	Directional-relation		Go away from a place or object.
+	2	Towards	Directional-relation		Moving in the direction of. A relation binding a relational quality or disposition to the relevant type of entity
+	1	Spatial-relation	Relation		Indicating information about position.
+	2	Above	Spatial-relation		(A (Adjacent-to B)) means A is in a place or position that is higher than B.
+	2	Across-from	Spatial-relation		(A (Across-from B)) means A is on the opposite side of something from B.
+	2	Adjacent-to	Spatial-relation		(A (Adjacent-to B)) indicates that A is next to B in time or space.
+	2	Ahead-of	Spatial-relation		(A (Ahead-of B)) indicates that A is further forward in time or space in B.
+	2	Around	Spatial-relation		(A (Around B)) means A is in or near the present place or situation of B.
+	2	Behind	Spatial-relation		(A (Behind B)) means A is at or to the far side of B, typically so as to be hidden by it.
+	2	Below	Spatial-relation		(A (Below B)) means A is in a place or position that is lower than the position of B.
+	2	Between	Spatial-relation		(A (Between, (B, C))) means A is in the space or interval separating B and C.
+	2	Bilateral-to	Spatial-relation		(A (Bilateral B)) means A is on both sides of B or affects both sides of B.
+	2	Bottom-edge-of	Spatial-relation	relatedTag=Left-edge-of, relatedTag=Right-edge-of, relatedTag=Top-edge-of	(A (Bottom-edge-of B)) means A is on the bottom most part or or near the boundary of B.
+	2	Boundary-of	Spatial-relation		(A (Boundary-of B)) means A is on or part of the edge or boundary of B.
+	2	Center-of	Spatial-relation		(A (Center-of B)) means A is at a point or or in an area that is approximately central within B.
+	2	Close-to	Spatial-relation		(A (Close-to B)) means A is at a small distance from or is located near in space to B.
+	2	Far-from	Spatial-relation		(A (Far-from B)) means A is at a large distance from or is not located near in space to B.
+	2	In-front-of	Spatial-relation		(A (In-front-of B)) means A is in a position just ahead or at the front part of B, potentially partially blocking B from view.
+	2	Left-edge-of	Spatial-relation	relatedTag=Bottom-edge-of, relatedTag=Right-edge-of, relatedTag=Top-edge-of	(A (Left-edge-of B)) means A is located on the left side of B on or near the boundary of B.
+	2	Left-side-of	Spatial-relation	relatedTag=Right-side-of	(A (Left-side-of B)) means A is located on the left side of B usually as part of B.
+	2	Lower-left-of	Spatial-relation	relatedTag=Lower-right-of, relatedTag=Upper-left-of, relatedTag=Upper-right-of	(A (Lower-left-of B)) means A is situated on the lower left part of B. This relation is often used to specify qualitative information about screen position.
+	2	Lower-right-of	Spatial-relation	relatedTag=Upper-left-of, relatedTag=Upper-left-of, relatedTag=Lower-right-of	(A (Lower-right-of B)) means A is situated on the lower right part of B. This relation is often used to specify qualitative information about screen position.
+	2	Outside-of	Spatial-relation		(A (Outside-of B)) means A is located in the space around but not including B.
+	2	Over	Spatial-relation		(A (over B)) means A above is above B so as to cover or protect or A extends over the a general area as from a from a vantage point.
+	2	Right-edge-of	Spatial-relation	relatedTag=Bottom-edge-of, relatedTag=Left-edge-of, relatedTag=Top-edge-of	(A (Right-edge-of B)) means A is located on the right side of B on or near the boundary of B.
+	2	Right-side-of	Spatial-relation	relatedTag=Left-side-of	(A (Right-side-of B)) means A is located on the right side of B usually as part of B.
+	2	To-left-of	Spatial-relation		(A (To-left-of B)) means A is located on or directed toward the side to the west of B when B is facing north. This term is used when A is not part of B.
+	2	To-right-of	Spatial-relation		(A (To-right-of B)) means A is located on or directed toward the side to the east of B when B is facing north. This term is used when A is not part of B.
+	2	Top-edge-of	Spatial-relation	relatedTag=Left-edge-of, relatedTag=Right-edge-of, relatedTag=Bottom-edge-of	(A (Top-edge-of B)) means A is on the uppermost part or or near the boundary of B.
+	2	Top-of	Spatial-relation		(A (Top-of B)) means A is on the uppermost part, side, or surface of B.
+	2	Upper-left-of	Spatial-relation	relatedTag=Lower-left-of, relatedTag=Lower-right-of, relatedTag=Upper-right-of	(A (Upper-left-of B)) means A is situated on the upper left part of B. This relation is often used to specify qualitative information about screen position.
+	2	Upper-right-of	Spatial-relation	relatedTag=Lower-left-of, relatedTag=Upper-left-of, relatedTag=Lower-right-of	(A (Upper-right-of B)) means A is situated on the upper right part of B. This relation is often used to specify qualitative information about screen position.
+	2	Underneath	Spatial-relation		(A (Underneath B)) means A is situated directly below and may be concealed by B.
+	2	Within	Spatial-relation		(A (Within B)) means A is on the inside of or contained in B.
+	1	Temporal-relation	Relation		Any relationship which includes a temporal or time-based component.
+	2	After	Temporal-relation		(A After B) means A happens at a time subsequent to a reference time related to B.
+	2	Asynchronous-with	Temporal-relation		(A Asynchronous-with B) means A happens at times not occurring at the same time or having the same period or phase as B.
+	2	Before	Temporal-relation		(A Before B) means A happens at a time earlier in time or order than B.
+	2	During	Temporal-relation		(A During B) means A happens at some point in a given period of time in which B is ongoing.
+	2	Synchronous-with	Temporal-relation		(A Synchronous-with B) means A happens at occurs at the same time or rate as B.
+	2	Waiting-for	Temporal-relation		(A Waiting-for B) means A pauses for something to happen in B.

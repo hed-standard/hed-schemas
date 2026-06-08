@@ -1,0 +1,20 @@
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	0	BA-nonextension	HedTag		Does not conflict with testlib 2.0.0 or 3.0.0
+	1	SubnodeB1A	BA-nonextension		
+	1	SubnodeB2A	BA-nonextension		
+	0	A-nonextension	HedTag		These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.
+	1	SubnodeA3	A-nonextension		
+	1	SubnodeA1	A-nonextension		
+	1	SubnodeA2	A-nonextension		
+	0	Oboe-sound	Instrument-sound	rooted=Instrument-sound	These should be sorted.  Oboe should be second
+	1	Oboe-subsound1	Oboe-sound		
+	1	Oboe-subsound2	Oboe-sound		
+	0	Piano-sound	Instrument-sound	rooted=Instrument-sound	Conflicts with testlib 3.0.0.
+	1	Piano-subsound1	Piano-sound		
+	1	Piano-subsound2	Piano-sound		
+	2	Piano-subsound2-#	Piano-subsound2		
+	1	Piano-subsound2A	Piano-sound		
+	0	Violin1-sound	Instrument-sound	rooted=Instrument-sound	Conflicts with testlib 2.0.0.
+	1	Violin-subsound1	Violin1-sound		
+	1	Violin-subsound2	Violin1-sound		
+	1	Violin1-subsound3	Violin1-sound		

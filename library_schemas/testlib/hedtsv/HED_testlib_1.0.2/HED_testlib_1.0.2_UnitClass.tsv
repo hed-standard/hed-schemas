@@ -1,0 +1,14 @@
+hedId	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	accelerationUnits	TestlibUnitClass	defaultUnits=m-per-s^2	
+	angleUnits	TestlibUnitClass	defaultUnits=radian	
+	areaUnits	TestlibUnitClass	defaultUnits=m^2	
+	currencyUnits	TestlibUnitClass	defaultUnits=$	Units indicating the worth of something.
+	frequencyUnits	TestlibUnitClass	defaultUnits=Hz	
+	intensityUnits	TestlibUnitClass	defaultUnits=dB	
+	jerkUnits	TestlibUnitClass	defaultUnits=m-per-s^3	
+	memorySizeUnits	TestlibUnitClass	defaultUnits=B	
+	physicalLengthUnits	TestlibUnitClass	defaultUnits=m	
+	speedUnits	TestlibUnitClass	defaultUnits=m-per-s	
+	timeUnits	TestlibUnitClass	defaultUnits=s	
+	volumeUnits	TestlibUnitClass	defaultUnits=m^3	
+	weightUnits	TestlibUnitClass	defaultUnits=g	
