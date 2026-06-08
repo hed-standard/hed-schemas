@@ -1,0 +1,4 @@
+hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description
+HED_0000010	TestlibHeader	version="2.0.0", library="testlib", withStandard="8.2.0", unmerged="True"	HedHeader	
+HED_0000011	TestlibPrologue		HedPrologue	This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. It is compatible with testlib version 3.0.0 but not 2.1.0. Violin-subsound1 has different parents.
+HED_0000012	TestlibEpilogue		HedEpilogue	A final section.

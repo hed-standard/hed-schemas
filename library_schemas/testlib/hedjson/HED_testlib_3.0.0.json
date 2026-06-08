@@ -1,0 +1,196 @@
+{
+  "version": "3.0.0",
+  "library": "testlib",
+  "withStandard": "8.2.0",
+  "unmerged": "True",
+  "prologue": "This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0. Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.",
+  "tags": {
+    "E-extensionallowed": {
+      "short_form": "E-extensionallowed",
+      "long_form": "E-extensionallowed",
+      "description": null,
+      "parent": null,
+      "children": [
+        "SubnodeE1",
+        "SubnodeE2",
+        "SubnodeE3"
+      ],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {
+        "extensionAllowed": true
+      }
+    },
+    "SubnodeE1": {
+      "short_form": "SubnodeE1",
+      "long_form": "E-extensionallowed/SubnodeE1",
+      "description": null,
+      "parent": "E-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "SubnodeE2": {
+      "short_form": "SubnodeE2",
+      "long_form": "E-extensionallowed/SubnodeE2",
+      "description": null,
+      "parent": "E-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "SubnodeE3": {
+      "short_form": "SubnodeE3",
+      "long_form": "E-extensionallowed/SubnodeE3",
+      "description": null,
+      "parent": "E-extensionallowed",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "F-nonextension": {
+      "short_form": "F-nonextension",
+      "long_form": "F-nonextension",
+      "description": null,
+      "parent": null,
+      "children": [
+        "SubnodeF6",
+        "SubnodeF1",
+        "SubnodeF2"
+      ],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeF6": {
+      "short_form": "SubnodeF6",
+      "long_form": "F-nonextension/SubnodeF6",
+      "description": null,
+      "parent": "F-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeF1": {
+      "short_form": "SubnodeF1",
+      "long_form": "F-nonextension/SubnodeF1",
+      "description": null,
+      "parent": "F-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "SubnodeF2": {
+      "short_form": "SubnodeF2",
+      "long_form": "F-nonextension/SubnodeF2",
+      "description": null,
+      "parent": "F-nonextension",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {}
+    },
+    "Base-sound": {
+      "short_form": "Base-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Base-sound",
+      "description": null,
+      "parent": "Instrument-sound",
+      "children": [
+        "Base-subsound1",
+        "Base-subsound2"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Base-subsound1": {
+      "short_form": "Base-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Base-sound/Base-subsound1",
+      "description": null,
+      "parent": "Base-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Base-subsound2": {
+      "short_form": "Base-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Base-sound/Base-subsound2",
+      "description": null,
+      "parent": "Base-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-sound": {
+      "short_form": "Piano-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound",
+      "description": null,
+      "parent": "Instrument-sound",
+      "children": [
+        "Piano-subsound1",
+        "Piano-subsound2",
+        "Piano-subsound3"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Piano-subsound1": {
+      "short_form": "Piano-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound1",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-subsound2": {
+      "short_form": "Piano-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound2",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-subsound3": {
+      "short_form": "Piano-subsound3",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound3",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    }
+  },
+  "units": {},
+  "unit_classes": {},
+  "unit_modifiers": {},
+  "value_classes": {},
+  "schema_attributes": {},
+  "properties": {},
+  "epilogue": "A final section."
+}

@@ -1,0 +1,22 @@
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	0	B-nonextension	HedTag		These should not be sorted.  B should be first
+	1	SubnodeB1	B-nonextension		
+	1	SubnodeB2	B-nonextension		
+	0	A-nonextension	HedTag		These should not be sorted.  A should be second
+	1	SubnodeA3	A-nonextension		
+	1	SubnodeA1	A-nonextension		
+	1	SubnodeA2	A-nonextension		
+	0	D-extensionallowed	HedTag	extensionAllowed	These should be sorted.  This section should be first.
+	1	SubnodeD1	D-extensionallowed		
+	1	SubnodeD2	D-extensionallowed		
+	1	SubnodeD3	D-extensionallowed		
+	0	Flute-sound	Instrument-sound	rooted=Instrument-sound	These should be sorted.  Flute should be first
+	1	Flute-subsound1	Flute-sound		
+	1	Flute-subsound2	Flute-sound		
+	0	Oboe-sound	Instrument-sound	rooted=Instrument-sound	These should be sorted.  Oboe should be second
+	1	Oboe-subsound1	Oboe-sound		
+	1	Oboe-subsound2	Oboe-sound		
+	0	Violin-sound	Instrument-sound	rooted=Instrument-sound	These should be sorted.  Violin should be last
+	1	Violin-subsound1	Violin-sound		
+	1	Violin-subsound2	Violin-sound		
+	1	Violin-subsound3	Violin-sound		
