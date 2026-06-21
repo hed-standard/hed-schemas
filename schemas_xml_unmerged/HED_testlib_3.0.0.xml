@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <HED version="3.0.0" library="testlib" withStandard="8.2.0" unmerged="True">
-   <prologue>This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0. Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.</prologue>
+   <prologue>This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0. Piano_subsound2 takes value in 2.1.0 but not in 3.0.0.</prologue>
    <schema>
       <node>
          <name>E-extensionallowed</name>

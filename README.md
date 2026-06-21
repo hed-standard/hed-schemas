@@ -27,7 +27,18 @@ The following table summarizes the current versions of the HED schemas.
 
 ## HED formats
 
-HED schemas are stored in three different formats: MEDIAWIKI (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [HED online tools](https://hedtools.org/hed/schemas).
+HED schemas are stored in four different formats: MEDIAWIKI (`.mediawiki`), XML (`.xml`), JSON (`.json`), and tabular (`.tsv`). All formats contain the same information and conversion among formats is lossless. An online schema conversion tool is available at as part of the [HED online tools](https://hedtools.org/hed/schemas).
+
+Each HED partnered library schema is designed to be used in conjunction with a designated HED standard version. Files in each format can be stored in **merged** or **unmerged** format. Standard schema are self contained and do not distinguish between merged and unmerged formats. Most of the formats store in unmerged form to make the
+
+| Location                | Format       | Merge status | Reason                       |
+| ----------------------- | ------------ | ------------ | ---------------------------- |
+| `/hedwiki`              | `.mediawiki` | unmerged     | uncluttered source           |
+| `/hedtsv`               | `.tsv`       | unmerged     | uncluttered source           |
+| `/hedjson`              | `.json`      | unmerged     | self-contained source        |
+| `/hedxml`               | `.xml`       | merged       | for tools that cannot merge  |
+| `/schemas_latest_json`  | `.json`      | merged       | for easy access for AIs      |
+| `/schemas_xml_unmerged` | `.xml`       | unmerged     | for compact caching in tools |
 
 ### MediaWiki format
 
@@ -44,6 +55,11 @@ The `.json` versions are stored in the respective `hedjson` directory for the sc
 ### Tabular format
 
 The `.tsv` format is a tabular (tab-separated) text format. Each type of entity in the HED schema (e.g., tags, unit classes, etc.) has its own tsv file. For each schema the tabular versions are stored in the respective `hedtsv` directory for the schema. The tabular version may contain additional structural information in additional files that are relevant to the representation of HED as a formal ontology.
+
+### Formats this repository
+
+| Format | Location | Merge status |
+| ------ | -------- | ------------ |
 
 ## HED revision process
 
