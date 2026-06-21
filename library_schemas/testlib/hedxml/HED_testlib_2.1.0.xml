@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <HED version="2.1.0" library="testlib" withStandard="8.2.0">
-   <prologue>This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0. For version 2.0.0, the conflict is that Violin-subsound2 has different parents in the two schemas. For 3.0.0, Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.</prologue>
+   <prologue>This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0. For version 2.0.0, the conflict is that Piano-subsound2 has different parents in the two schemas. For 3.0.0, Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.</prologue>
    <schema>
       <node>
          <name>BA-nonextension</name>

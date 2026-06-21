@@ -35,9 +35,9 @@ Each HED partnered library schema is designed to be used in conjunction with a d
 | ----------------------- | ------------ | ------------ | ---------------------------- |
 | `/hedwiki`              | `.mediawiki` | unmerged     | uncluttered source           |
 | `/hedtsv`               | `.tsv`       | unmerged     | uncluttered source           |
-| `/hedjson`              | `.json`      | unmerged     | uncluttered source           |
+| `/hedjson`              | `.json`      | unmerged     | self-contained source        |
 | `/hedxml`               | `.xml`       | merged       | for tools that cannot merge  |
-| `/schemas_latest_json`  | `.json`      | unmerged     | for easy access for AIs      |
+| `/schemas_latest_json`  | `.json`      | merged       | for easy access for AIs      |
 | `/schemas_xml_unmerged` | `.xml`       | unmerged     | for compact caching in tools |
 
 ### MediaWiki format
