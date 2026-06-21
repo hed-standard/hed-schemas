@@ -1,14 +1,14 @@
 {
   "version": "2.1.0",
   "library": "testlib",
-  "withStandard": "8.2.0",
+  "withStandard": "8.4.0",
   "unmerged": "True",
-  "prologue": "This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0. For version 2.0.0, the conflict is that Piano-subsound2 has different parents in the two schemas. For 3.0.0, Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.",
+  "prologue": "Conflicts: testlib_2.0.0 Violin-subsound1, Violin-subsound2, Violin-subsound3 have different parents; testlib_2.0.0 piano-subsound2 does not take value; testlib_2.2.0 Piano-subsound2 takes a value with a unit class.",
   "tags": {
     "BA-nonextension": {
       "short_form": "BA-nonextension",
       "long_form": "BA-nonextension",
-      "description": "Does not conflict with testlib 2.0.0 or 3.0.0",
+      "description": null,
       "parent": null,
       "children": [
         "SubnodeB1A",
@@ -38,7 +38,7 @@
     "A-nonextension": {
       "short_form": "A-nonextension",
       "long_form": "A-nonextension",
-      "description": "These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.",
+      "description": "These should not be sorted.  A should be second.",
       "parent": null,
       "children": [
         "SubnodeA3",
@@ -117,7 +117,7 @@
     "Piano-sound": {
       "short_form": "Piano-sound",
       "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound",
-      "description": "Conflicts with testlib 3.0.0.",
+      "description": null,
       "parent": "Instrument-sound",
       "children": [
         "Piano-subsound1",
@@ -167,7 +167,7 @@
     "Violin1-sound": {
       "short_form": "Violin1-sound",
       "long_form": "Item/Sound/Musical-sound/Instrument-sound/Violin1-sound",
-      "description": "Conflicts with testlib 2.0.0.",
+      "description": null,
       "parent": "Instrument-sound",
       "children": [
         "Violin-subsound1",

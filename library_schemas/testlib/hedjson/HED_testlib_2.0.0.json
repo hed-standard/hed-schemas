@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
   "library": "testlib",
-  "withStandard": "8.2.0",
+  "withStandard": "8.4.0",
   "unmerged": "True",
-  "prologue": "This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. It is compatible with testlib version 3.0.0 but not 2.1.0. Violin-subsound1 has different parents.",
+  "prologue": "This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. Conflicts: testlib_2.1.0 Piano-subsound1, Piano-subsound2, Piano-subsound3 have different parents.",
   "tags": {
     "B-nonextension": {
       "short_form": "B-nonextension",
