@@ -1,7 +1,7 @@
-HED version="3.0.0" library="testlib" withStandard="8.2.0" unmerged="True"
+HED version="3.0.0" library="testlib" withStandard="8.4.0" unmerged="True"
 
 '''Prologue'''
-This schema is designed to be lazy partnered with testlib_2.0.0 but conflicts with testlib_2.1.0. Piano_subsound2 takes value in 2.1.0 but not in 3.0.0.
+This schema is designed to be lazy partnered. No conflict with testlib_2.0.0. The testlib_2.1.0 and 2.2.0 conflict: Piano_subsound2 takes value in 2.1.0 and 2.2.0 but not in 3.0.0.
 
 !# start schema
 

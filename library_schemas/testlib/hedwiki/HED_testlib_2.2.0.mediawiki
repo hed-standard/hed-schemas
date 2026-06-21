@@ -1,0 +1,30 @@
+HED version="2.2.0" library="testlib" withStandard="8.4.0" unmerged="True"
+
+'''Prologue'''
+Conflicts: testlib_3.0.0 Piano_subsound2 does not take value; testlib 2.1.0 takes value but no unit class.
+
+!# start schema
+
+
+'''Piano-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
+* Piano-subsound1
+* Piano-subsound2
+**  <nowiki># {unitClass=frequencyUnits}</nowiki>
+* Piano-subsound2A
+
+
+!# end schema
+
+'''Unit classes'''
+
+'''Unit modifiers'''
+
+'''Value classes'''
+
+'''Schema attributes'''
+
+'''Properties'''
+
+'''Epilogue'''
+
+!# end hed
