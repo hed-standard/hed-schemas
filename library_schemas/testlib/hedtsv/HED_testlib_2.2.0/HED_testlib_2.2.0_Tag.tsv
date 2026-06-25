@@ -1,0 +1,6 @@
+hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
+	0	Piano-sound	Instrument-sound	rooted=Instrument-sound	
+	1	Piano-subsound1	Piano-sound		
+	1	Piano-subsound2	Piano-sound		
+	2	Piano-subsound2-#	Piano-subsound2	unitClass=frequencyUnits	
+	1	Piano-subsound2A	Piano-sound		
