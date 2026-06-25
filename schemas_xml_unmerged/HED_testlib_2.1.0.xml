@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
-<HED version="2.1.0" library="testlib" withStandard="8.4.0" unmerged="True">
-   <prologue>Conflicts: testlib_2.0.0 Violin-subsound1, Violin-subsound2, Violin-subsound3 have different parents; testlib_2.0.0 piano-subsound2 does not take value; testlib_2.2.0 Piano-subsound2 takes a value with a unit class.</prologue>
+<HED version="2.1.0" library="testlib" withStandard="8.2.0" unmerged="True">
+   <prologue>This schema is designed to conflict with testlib 2.0.0 and testlib 3.0.0. For version 2.0.0, the conflict is that Piano-subsound2 has different parents in the two schemas. For 3.0.0, Violin_subsound2 takes value in 2.1.0 but not in 3.0.0.</prologue>
    <schema>
       <node>
          <name>BA-nonextension</name>
+         <description>Does not conflict with testlib 2.0.0 or 3.0.0</description>
          <node>
             <name>SubnodeB1A</name>
          </node>
@@ -13,7 +14,7 @@
       </node>
       <node>
          <name>A-nonextension</name>
-         <description>These should not be sorted.  A should be second.</description>
+         <description>These should not be sorted.  A should be second. Conflicts with testlib 2.0.0.</description>
          <node>
             <name>SubnodeA3</name>
          </node>
@@ -40,6 +41,7 @@
       </node>
       <node>
          <name>Piano-sound</name>
+         <description>Conflicts with testlib 3.0.0.</description>
          <attribute>
             <name>rooted</name>
             <value>Instrument-sound</value>
@@ -59,6 +61,7 @@
       </node>
       <node>
          <name>Violin1-sound</name>
+         <description>Conflicts with testlib 2.0.0.</description>
          <attribute>
             <name>rooted</name>
             <value>Instrument-sound</value>
