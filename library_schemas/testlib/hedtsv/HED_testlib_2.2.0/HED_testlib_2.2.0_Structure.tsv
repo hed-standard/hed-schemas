@@ -1,0 +1,4 @@
+hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description
+HED_0000010	TestlibHeader	version="2.2.0", library="testlib", withStandard="8.4.0", unmerged="True"	HedHeader	
+HED_0000011	TestlibPrologue		HedPrologue	Conflicts: testlib_3.0.0 Piano_subsound2 does not take value; testlib 2.1.0 takes value but no unit class.
+HED_0000012	TestlibEpilogue		HedEpilogue	
