@@ -1,9 +1,9 @@
 {
   "version": "4.0.0",
   "library": "testlib",
-  "withStandard": "8.4.0",
+  "withStandard": "8.5.0",
   "unmerged": "True",
-  "prologue": "This schema is designed to be lazy partnered with prerelease 8.4.0.",
+  "prologue": "This schema is designed to be lazy partnered with prerelease 8.5.0.",
   "tags": {
     "Test-some": {
       "short_form": "Test-some",

@@ -1,2 +1,2 @@
-prefix	namespace	description
-foodonto:	http://purl.obolibrary.org/obo/foodon.owl	Food Ontology (FOODON)
+prefix	namespace	Attributes	description
+foodonto:	http://purl.obolibrary.org/obo/foodon.owl		Food Ontology (FOODON)
