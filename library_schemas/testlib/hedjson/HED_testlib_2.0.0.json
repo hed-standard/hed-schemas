@@ -3,7 +3,7 @@
   "library": "testlib",
   "withStandard": "8.4.0",
   "unmerged": "True",
-  "prologue": "This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. Conflicts: testlib_2.1.0 Piano-subsound1, Piano-subsound2, Piano-subsound3 have different parents.",
+  "prologue": "This schema tests the ordering effects of various combinations of rooted and extension allowed for rooted schemas. Conflicts: testlib_2.1.0 Piano-subsound1 and Piano-subsound2 and Piano-subsound3 have different parents.",
   "tags": {
     "B-nonextension": {
       "short_form": "B-nonextension",

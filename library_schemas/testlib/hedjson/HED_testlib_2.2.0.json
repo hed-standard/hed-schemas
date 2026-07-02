@@ -1,0 +1,69 @@
+{
+  "version": "2.2.0",
+  "library": "testlib",
+  "withStandard": "8.4.0",
+  "unmerged": "True",
+  "prologue": "Conflicts: testlib_3.0.0 Piano_subsound2 does not take value; testlib 2.1.0 takes value but no unit class.",
+  "tags": {
+    "Piano-sound": {
+      "short_form": "Piano-sound",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound",
+      "description": null,
+      "parent": "Instrument-sound",
+      "children": [
+        "Piano-subsound1",
+        "Piano-subsound2",
+        "Piano-subsound2A"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "rooted": "Instrument-sound"
+      },
+      "explicitAttributes": {
+        "rooted": "Instrument-sound"
+      }
+    },
+    "Piano-subsound1": {
+      "short_form": "Piano-subsound1",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound1",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Piano-subsound2": {
+      "short_form": "Piano-subsound2",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound2",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {},
+      "placeholder": {
+        "unitClass": [
+          "frequencyUnits"
+        ]
+      }
+    },
+    "Piano-subsound2A": {
+      "short_form": "Piano-subsound2A",
+      "long_form": "Item/Sound/Musical-sound/Instrument-sound/Piano-sound/Piano-subsound2A",
+      "description": null,
+      "parent": "Piano-sound",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    }
+  },
+  "units": {},
+  "unit_classes": {},
+  "unit_modifiers": {},
+  "value_classes": {},
+  "schema_attributes": {},
+  "properties": {}
+}
