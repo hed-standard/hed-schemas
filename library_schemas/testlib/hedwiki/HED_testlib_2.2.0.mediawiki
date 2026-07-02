@@ -5,7 +5,6 @@ Conflicts: testlib_3.0.0 Piano_subsound2 does not take value; testlib 2.1.0 take
 
 !# start schema
 
-
 '''Piano-sound''' <nowiki>{rooted=Instrument-sound}</nowiki>
 * Piano-subsound1
 * Piano-subsound2
