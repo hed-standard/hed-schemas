@@ -1,0 +1,91 @@
+# Regenerate the version manifest (schema_versions.json) and refresh the latest-JSON copies
+# (schemas_latest_json/) whenever the schema files change.
+#
+# DRAFT for review. Two things to confirm before enabling:
+#   1. Action versions below use tags (@v4/@v5). This repo's convention is to pin actions to a
+#      full commit SHA (dependabot then bumps them). Pin these to match the other workflows.
+#   2. The `update` job pushes a commit back to `main`. If `main` is a protected branch, either
+#      allow this workflow (or a bot/app token) to bypass the protection, or switch the job to
+#      open a pull request instead of pushing directly (see the commented peter-evans step).
+#
+# No loop risk: the push trigger only watches standard_schema/** and library_schemas/**, while the
+# bot commit only touches schema_versions.json (repo root) and schemas_latest_json/**, so a
+# regeneration commit does not re-trigger this workflow.
+
+name: Update schema manifests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "standard_schema/**"
+      - "library_schemas/**"
+  pull_request:
+    paths:
+      - "standard_schema/**"
+      - "library_schemas/**"
+      - "schema_versions.json"
+      - "schemas_latest_json/**"
+      - "scripts/generate_schema_versions.py"
+      - "scripts/update_latest_json.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # On pull requests: verify (read-only) that the committed manifest and latest-JSON copies are
+  # already up to date, so a schema change and its manifest update land in the same PR.
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so last-commit dates resolve
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Check schema_versions.json is current
+        run: python scripts/generate_schema_versions.py --check
+      - name: Check schemas_latest_json/ is in sync
+        run: python scripts/update_latest_json.py --check
+
+  # On push to main (or manual dispatch): regenerate both and commit any changes back.
+  update:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Regenerate manifest
+        run: python scripts/generate_schema_versions.py
+      - name: Refresh latest-JSON copies
+        run: python scripts/update_latest_json.py --update
+      - name: Commit changes if any
+        run: |
+          if [ -n "$(git status --porcelain schema_versions.json schemas_latest_json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add schema_versions.json schemas_latest_json
+            git commit -m "Regenerate schema manifests [skip ci]"
+            git push
+          else
+            echo "Manifests already up to date."
+          fi
+      # Alternative to the direct push above, for a protected main branch: open a PR instead.
+      # - name: Open PR with regenerated manifests
+      #   uses: peter-evans/create-pull-request@v6
+      #   with:
+      #     commit-message: "Regenerate schema manifests"
+      #     branch: admin_regenerate_manifests
+      #     title: "Regenerate schema manifests"
+      #     add-paths: |
+      #       schema_versions.json
+      #       schemas_latest_json/**

@@ -653,6 +653,70 @@ The official release of a new schema version is performed by HED maintainers. Th
 
 Developers do not need to perform these steps. Once your changes are merged into the `prerelease` directory and approved for release, the maintainers will handle the rest.
 
+## Generated version files
+
+Two generated files summarize the repository's schema versions so that downstream tools (notably the `hedtools` Python package) can discover versions cheaply, without crawling the GitHub REST API. Both are produced by scripts in `scripts/` and are normally kept up to date automatically by the `update_manifests.yaml` workflow — but you can also regenerate them locally, which is what you do when preparing a release PR.
+
+### The files
+
+| File                                | Location               | What it is                                                                                                                                                                                                        |
+| ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `schema_versions.json`              | Repo root              | A manifest listing every schema version (released / prerelease / deprecated) for the standard schema and each library, with each XML file's git blob SHA and last-commit date. Listings only — no schema content. |
+| `schemas_latest_json/*_Latest.json` | `schemas_latest_json/` | One convenience copy of the newest **released** JSON schema per library (`HEDLatest.json`, `HED_score_Latest.json`, `HED_lang_Latest.json`, …).                                                                   |
+
+Why the manifest exists: `hedtools` otherwise discovers versions by making many GitHub REST API directory-listing calls, which are metered (60/hour when unauthenticated). A consumer can instead fetch this one file from the raw/CDN host (`https://raw.githubusercontent.com/hed-standard/hed-schemas/main/schema_versions.json`), which is not subject to that API rate limit, and get the whole catalog in a single request. The blob SHAs it records are computed exactly as git and the GitHub API compute them, so a consumer can compare a manifest SHA directly against a cached file to decide whether a re-download is needed.
+
+### `scripts/generate_schema_versions.py` — build the manifest
+
+Scans `standard_schema/` and every folder under `library_schemas/`:
+
+- `released` — the `.xml` files directly in `<area>/hedxml/`
+- `prerelease` — the `.xml` files in `<area>/prerelease/`
+- `deprecated` — the `.xml` files in `<area>/hedxml/deprecated/` (best effort; a few very old non-semver names such as `HED1.3.xml` are omitted)
+
+```bash
+# Write schema_versions.json at the repo root
+python scripts/generate_schema_versions.py
+
+# Read-only: exit 1 if the committed manifest is out of date (used by CI on PRs)
+python scripts/generate_schema_versions.py --check
+```
+
+Output is sorted and stably ordered, so regenerating at the same commit produces a byte-identical file (only the human-readable `generated` timestamp varies, and `--check` ignores it). The manifest includes `testlib` — it is a real, listable library; the `testlib` exclusion applies only to the latest-JSON copies below.
+
+Format (top level): `manifest_format_version` (int), `generated` (ISO-8601 timestamp), `repo_commit` (HEAD SHA), and `libraries`, keyed by library name with `""` for the standard schema (matching `library_data.json`). Each library has `released` / `prerelease` / `deprecated` arrays sorted newest-first, and each entry is `{version, file, sha, date}`.
+
+### `scripts/update_latest_json.py` — keep the latest-JSON copies honest
+
+Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is a byte-for-byte copy of the current latest **released** JSON, by comparing git blob SHAs. "Latest released" is taken from the canonical released set in `<area>/hedxml/`, and the matching JSON from `<area>/hedjson/`. `testlib` is deliberately excluded and must never appear in `schemas_latest_json/`.
+
+```bash
+# Read-only: exit 1 if any *_Latest.json is out of sync (used by CI on PRs)
+python scripts/update_latest_json.py --check
+
+# Copy the latest released JSON into schemas_latest_json/ where needed
+python scripts/update_latest_json.py --update
+```
+
+If a library's latest released XML has no matching `hedjson/` file, the script reports it as a problem rather than guessing (export the JSON first).
+
+### Regenerating locally for a release PR
+
+These files live outside the schema areas (repo root and `schemas_latest_json/`), so per the branch rules in [Development workflow](#development-workflow) you must use an `admin_*` branch to change them.
+
+```bash
+git checkout -b admin_regenerate_manifests
+
+python scripts/generate_schema_versions.py
+python scripts/update_latest_json.py --update
+
+git add schema_versions.json schemas_latest_json
+git commit -m "Regenerate schema manifests"
+git push -u origin admin_regenerate_manifests
+```
+
+Then open a PR. On pull requests, `update_manifests.yaml` runs both scripts in `--check` mode, so the PR will fail if anything is still out of date — regenerate and commit again if so. For accurate `date` fields the scripts read git history, so run them in a full clone (not a shallow one).
+
 ## Common pitfalls
 
 ### ❌ Don't do this
@@ -717,15 +781,16 @@ You can easily generate your CHANGELOG.md entry using the *Schema compare* actio
 
 GitHub Actions automatically:
 
-| Workflow                          | Purpose                                                |
-| --------------------------------- | ------------------------------------------------------ |
-| `validate_schemas.yaml`           | Validates all changed schema files                     |
-| `update_and_convert_schemas.yaml` | Converts changed file(s) to other format               |
-| `add_hed_ids.yaml`                | Assigns HedIds to new terms (if during release)        |
-| `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/` |
-| `typos.yaml`                      | Checks spelling                                        |
-| `mdformat.yaml`                   | Checks Markdown formatting                             |
-| `links.yaml`                      | Checks for broken links                                |
+| Workflow                          | Purpose                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------- |
+| `validate_schemas.yaml`           | Validates all changed schema files                                            |
+| `update_and_convert_schemas.yaml` | Converts changed file(s) to other format                                      |
+| `add_hed_ids.yaml`                | Assigns HedIds to new terms (if during release)                               |
+| `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/`                        |
+| `update_manifests.yaml`           | Regenerates `schema_versions.json` and `schemas_latest_json/` (checks on PRs) |
+| `typos.yaml`                      | Checks spelling                                                               |
+| `mdformat.yaml`                   | Checks Markdown formatting                                                    |
+| `links.yaml`                      | Checks for broken links                                                       |
 
 ## Contributing to documentation
 
