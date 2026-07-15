@@ -32,11 +32,7 @@ Used by the `verify_source_branch.yaml` workflow to ensure PRs follow repository
 
 ### generate_schema_versions.py
 
-Generates `schema_versions.json` at the repository root: a single manifest listing every schema
-version (released / prerelease / deprecated) for the standard schema and each library, with each
-XML file's git blob SHA and last-commit date. It records version *listings* only, never schema
-content. Consumers (e.g. hedtools' `get_available_hed_versions()`) can fetch this one file from
-`raw.githubusercontent.com` instead of making dozens of GitHub REST API directory-listing calls.
+Generates `schema_versions.json` at the repository root: a single manifest listing every schema version (released / prerelease / deprecated) for the standard schema and each library, with each XML file's git blob SHA and last-commit date. It records version *listings* only, never schema content. Consumers (e.g. hedtools' `get_available_hed_versions()`) can fetch this one file from `raw.githubusercontent.com` instead of making dozens of GitHub REST API directory-listing calls.
 
 **Usage:**
 
@@ -47,9 +43,7 @@ python scripts/generate_schema_versions.py --check     # exit 1 if the committed
 
 ### update_latest_json.py
 
-Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is a byte-for-byte copy of the
-current latest *released* JSON schema, by comparing git blob SHAs. `testlib` is excluded and must
-never appear in `schemas_latest_json/`.
+Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is a byte-for-byte copy of the current latest *released* JSON schema, by comparing git blob SHAs. `testlib` is excluded and must never appear in `schemas_latest_json/`.
 
 **Usage:**
 
@@ -58,8 +52,7 @@ python scripts/update_latest_json.py --check     # read-only; exit 1 if anything
 python scripts/update_latest_json.py --update     # copy the latest released JSON into place
 ```
 
-Both scripts are run by the `update_manifests.yaml` workflow: `--check` on pull requests, and
-regenerate-and-commit on push to `main`.
+Both scripts are run by the `update_manifests.yaml` workflow: `--check` on pull requests, and regenerate-and-commit on push to `main`.
 
 ## Documentation Build
 

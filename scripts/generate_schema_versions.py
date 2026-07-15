@@ -31,11 +31,15 @@ files and the un-versioned ``HEDLatest.xml`` / ``HED_<lib>_Latest.xml`` pointers
 that a few very old deprecated files use non-semver names (e.g. ``HED1.3.xml``); those do not match
 the pattern and are intentionally omitted from the deprecated listing.
 
-Determinism
------------
-Output is sorted and stably ordered so re-running at the same commit produces a byte-identical file
-(the human-readable ``generated`` timestamp is the only volatile field, and ``--check`` ignores it).
-This makes it safe to commit the manifest and to gate PRs on ``--check``.
+Determinism and ``--check``
+---------------------------
+Output is sorted and stably ordered. ``--check`` compares only schema *content* - which versions
+exist and each file's blob SHA - and ignores volatile git metadata (``generated``, ``repo_commit``,
+and each entry's ``date``), so it never fails just because CI checked out a different commit (e.g. a
+PR merge commit) than the one the file was generated on. When it does fail, it prints exactly which
+entries were added, removed, or changed. Writing is likewise content-aware: if the committed manifest
+already matches the current schema files, a normal run leaves it untouched instead of rewriting the
+timestamp.
 
 Usage::
 
@@ -124,7 +128,7 @@ def _version_sort_key(version: str) -> tuple:
     """Sort key for HED versions, newest first when used with reverse=True.
 
     Released versions (no prerelease suffix) sort above prereleases of the same x.y.z, matching
-    semantic-versioning precedence. Anything unparseable sorts last.
+    semantic-versioning precedence. Anything unparsable sorts last.
     """
     match = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$", version)
     if not match:
@@ -210,11 +214,69 @@ def build_manifest(repo_root: Path) -> dict:
     }
 
 
-def _comparable(manifest: dict) -> str:
-    """Serialize a manifest for equality checks, ignoring the volatile ``generated`` timestamp."""
-    clone = dict(manifest)
-    clone.pop("generated", None)
-    return json.dumps(clone, sort_keys=True, indent=2)
+def _label(library_key: str) -> str:
+    """Human-readable name for a library key ('' -> 'standard')."""
+    return "standard" if library_key == "" else library_key
+
+
+def _content_index(manifest: dict) -> dict:
+    """Flatten a manifest to ``{(library, category, version): {"file", "sha"}}`` for diffing.
+
+    Deliberately excludes the volatile / history-derived fields (``generated``, ``repo_commit``, and
+    each entry's ``date``) so that a change in git metadata alone never counts as the manifest being
+    "out of date" - only a real change to which schema files exist, or their content (SHA), does.
+    This is what keeps the ``--check`` gate stable across different checkouts: a pull request's
+    merge-commit checkout in CI has a different HEAD SHA (and can have different commit dates) than
+    the commit the file was generated on, but the same schema content.
+    """
+    index: dict[tuple, dict] = {}
+    for library_key, categories in manifest.get("libraries", {}).items():
+        for category, entries in categories.items():
+            for entry in entries:
+                index[(library_key, category, entry.get("version"))] = {
+                    "file": entry.get("file"),
+                    "sha": entry.get("sha"),
+                }
+    return index
+
+
+def _diff_manifests(existing: dict, fresh: dict) -> list[str]:
+    """Return a human-readable list of the content differences between two manifests.
+
+    An empty list means the two are equivalent for ``--check``/rewrite purposes.
+    """
+    diffs: list[str] = []
+
+    old_fmt = existing.get("manifest_format_version")
+    new_fmt = fresh.get("manifest_format_version")
+    if old_fmt != new_fmt:
+        diffs.append(f"manifest_format_version: {old_fmt} -> {new_fmt}")
+
+    old_index = _content_index(existing)
+    new_index = _content_index(fresh)
+
+    def where(key: tuple) -> str:
+        library_key, category, version = key
+        return f"{_label(library_key)} / {category} / {version}"
+
+    for key in sorted(new_index.keys() - old_index.keys()):
+        entry = new_index[key]
+        diffs.append(f"added:   {where(key)}  ({entry['file']}, sha {(entry['sha'] or '')[:10]})")
+    for key in sorted(old_index.keys() - new_index.keys()):
+        entry = old_index[key]
+        diffs.append(f"removed: {where(key)}  (was {entry['file']}, sha {(entry['sha'] or '')[:10]})")
+    for key in sorted(old_index.keys() & new_index.keys()):
+        old_entry = old_index[key]
+        new_entry = new_index[key]
+        changed = []
+        if old_entry["sha"] != new_entry["sha"]:
+            changed.append(f"sha {(old_entry['sha'] or '')[:10]} -> {(new_entry['sha'] or '')[:10]}")
+        if old_entry["file"] != new_entry["file"]:
+            changed.append(f"file {old_entry['file']} -> {new_entry['file']}")
+        if changed:
+            diffs.append(f"changed: {where(key)}  ({'; '.join(changed)})")
+
+    return diffs
 
 
 def _serialize(manifest: dict) -> bytes:
@@ -239,8 +301,9 @@ def main() -> int:
     parser.add_argument(
         "--check",
         action="store_true",
-        help="Do not write. Exit 0 if the committed manifest is already up to date, 1 if it is stale "
-        "(the 'generated' timestamp is ignored in this comparison).",
+        help="Do not write. Compare the committed manifest against the current schema files and, if "
+        "they differ, exit 1 after listing exactly which entries were added/removed/changed. Only "
+        "schema content is compared; volatile git metadata (generated/repo_commit/date) is ignored.",
     )
     args = parser.parse_args()
 
@@ -258,11 +321,26 @@ def main() -> int:
         except ValueError as exc:
             print(f"CHECK FAILED: {output_path} is not valid JSON: {exc}", file=sys.stderr)
             return 1
-        if _comparable(existing) != _comparable(manifest):
-            print(f"CHECK FAILED: {output_path} is out of date. Run generate_schema_versions.py.", file=sys.stderr)
+        diffs = _diff_manifests(existing, manifest)
+        if diffs:
+            print(f"CHECK FAILED: {output_path} is out of date ({len(diffs)} difference(s)):", file=sys.stderr)
+            for line in diffs:
+                print(f"  {line}", file=sys.stderr)
+            print("Run: python scripts/generate_schema_versions.py", file=sys.stderr)
             return 1
-        print(f"CHECK OK: {output_path} is up to date.")
+        print(f"CHECK OK: {output_path} matches the current schema files.")
         return 0
+
+    # Write mode. Skip rewriting when the committed file already reflects the current schema content,
+    # so repeated runs don't churn the generated/repo_commit/date fields (or the git history).
+    if output_path.exists():
+        try:
+            existing = json.loads(output_path.read_text(encoding="utf-8"))
+        except ValueError:
+            existing = None
+        if existing is not None and not _diff_manifests(existing, manifest):
+            print(f"{output_path} already reflects the current schema files; not rewriting.")
+            return 0
 
     output_path.write_bytes(_serialize(manifest))
     total = sum(
