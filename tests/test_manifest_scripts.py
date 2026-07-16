@@ -44,9 +44,14 @@ ulj = _load("update_latest_json")
 
 
 def _write(path: Path, text: str) -> None:
-    """Write ``text`` to ``path`` (creating parents), always with LF newlines."""
+    """Write ``text`` to ``path`` (creating parents), always with LF newlines.
+
+    Any CR/CRLF in ``text`` is normalized to LF so the on-disk bytes are deterministic across
+    platforms - the hashing tests depend on exact byte content.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(text.encode("utf-8"))
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    path.write_bytes(normalized.encode("utf-8"))
 
 
 def _run_main(module, argv: list[str]):
