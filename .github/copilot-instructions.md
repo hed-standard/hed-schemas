@@ -4,10 +4,19 @@
 
 When you create summaries of what you did, always put them in a `.status/` directory at the root of the repository.
 
+When responding to code review comments:
+
+- **Always indicate agreement or disagreement** with the suggestion
+- Provide a **one or two clear sentences** explaining why you agree or disagree
+- If you made changes, provide a **detailed and clear explanation** of how you fixed the issue
+- If you disagree, explain your reasoning clearly so reviewers understand your perspective
+
 ## Project overview
+
 HED (Hierarchical Event Descriptors) is a framework for systematically describing events and experimental metadata. This repository (`hed-schemas`) contains the **official HED vocabulary schemas** in multiple formats (MediaWiki, XML, JSON, TSV). These schemas define the standardized terms used by researchers to annotate their datasets.
 
 ### Related repositories
+
 - **[hed-python](https://github.com/hed-standard/hed-python)**: Python tools for HED validation, analysis, and transformation (`hedtools` package)
 - **[hed-specification](https://github.com/hed-standard/hed-specification)**: Formal specification defining HED annotation rules and schema structure
 - **[hed-examples](https://github.com/hed-standard/hed-examples)**: Example datasets and use cases
@@ -16,6 +25,7 @@ HED (Hierarchical Event Descriptors) is a framework for systematically describin
 - **[hedtags.org](https://www.hedtags.org)**: Main documentation and resources site
 
 ### Online resources
+
 - **Schema Browser**: [hedtags.org/hed-schema-browser](https://www.hedtags.org/hed-schema-browser) - Interactive schema exploration
 - **Online Tools**: [hedtools.org](https://hedtools.org) - Web-based schema validation, conversion, and annotation tools
 - **Documentation**: [hedtags.org/hed-schemas](https://www.hedtags.org/hed-schemas) - Full schema documentation
@@ -23,57 +33,70 @@ HED (Hierarchical Event Descriptors) is a framework for systematically describin
 ## Repository structure
 
 ### Standard schema (`standard_schema/`)
+
 The base HED vocabulary used across all domains:
+
 - **Current Version**: 8.4.0 (prerelease: 8.5.0)
 - **HedId Range**: 10000-39999
 - **DOI**: 10.5281/zenodo.7876037
 - Contains fundamental terms for describing events, properties, agents, actions, and experimental structures
 
 ### Library schemas (`library_schemas/`)
+
 Specialized vocabularies for specific domains:
 
 1. **score** (HedId: 40000-59999)
+
    - Clinical neurological annotation vocabulary
    - Based on SCORE standard for EEG/clinical event description
    - Current: 2.1.0, Prerelease: 2.2.0
    - DOI: 10.5281/zenodo.7897596
 
 2. **lang** (HedId: 60000-79999)
+
    - Linguistic stimuli annotation vocabulary
    - Current: 1.1.0, Prerelease: 1.2.0
    - DOI: 10.5281/zenodo.13987483
 
 3. **slam** (HedId: 80000-99999)
+
    - Sensor Location and Motion vocabulary
    - Prerelease: 1.0.0
 
 4. **mouse** (HedId: 100000-119999)
+
    - Mouse/rodent experiment vocabulary
    - Prerelease: 1.0.0
 
 5. **testlib** (HedId: auto-assigned)
+
    - Testing vocabulary (copy of standard schema)
    - For development/testing purposes only
 
 ### Schema formats and directories
 
 Each schema is stored in **four equivalent formats**:
+
 1. **MediaWiki** (`.mediawiki`) - in `hedwiki/` directory
+
    - Human-readable text format
    - Primary editing format for schema developers
    - Easy to review in GitHub and text editors
-   
+
 2. **XML** (`.xml`) - in `hedxml/` directory
+
    - Format used by all HED tools for validation and analysis
    - Includes XSD schema definition files
    - Never edited directly - generated from MediaWiki or TSV
-   
+
 3. **JSON** (`.json`) - in `hedjson/` directory
+
    - Flat dictionary structure for easy lookups
    - Optimized for AI tools and programmatic access
    - Generated from XML/MediaWiki
-   
+
 4. **Tabular TSV** (`.tsv`) - in `hedtsv/` directory
+
    - Spreadsheet-compatible format
    - Each schema entity type (tags, units, etc.) in separate TSV file
    - May contain additional ontology mapping information
@@ -83,7 +106,9 @@ Each schema is stored in **four equivalent formats**:
 ## Schema development workflow
 
 ### Branch naming convention
+
 Branch names determine which schema can be modified:
+
 - `standard_*`: Only `standard_schema/` can be modified
 - `score_*`, `lang_*`, `slam_*`, `mouse_*`: Only corresponding library schema can be modified
 - `admin_*`: Any files can be modified (for docs, scripts, CI/CD)
@@ -91,35 +116,43 @@ Branch names determine which schema can be modified:
 ### Development process
 
 1. **Propose Changes**:
+
    - Post an [issue](https://github.com/hed-standard/hed-schemas/issues) describing proposed changes
    - Discuss with HED Working Group
    - Changes documented in schema's `PROPOSED.md` file
 
 2. **Make Changes in Prerelease**:
+
    - Create branch with appropriate prefix (e.g., `standard_add_new_term`)
    - **ALL changes go to `prerelease/` subdirectory first**
    - Edit the `.mediawiki` file in `prerelease/` (primary editing format)
    - Document changes in `prerelease/PRERELEASE_CHANGES.md`
 
 3. **Automated Conversion & Validation**:
+
    - GitHub Actions automatically convert `.mediawiki` → `.xml`, `.json`, `.tsv`
    - Schemas validated on every push
    - Changed files only are processed for efficiency
 
 4. **Release Process**:
+
    - Update version number following semantic versioning
    - Update `CHANGELOG.md` with comprehensive change documentation
    - Move schema from `prerelease/` to release directories (`hedxml/`, `hedwiki/`, etc.)
    - Tag release and publish DOI via Zenodo
 
 ### Semantic versioning rules
+
 HED schemas follow **semantic versioning** (major.minor.patch):
+
 - **Major**: Breaking changes (removed terms, changed meaning)
 - **Minor**: Backward-compatible additions (new terms, new attributes)
 - **Patch**: Non-functional changes (description improvements, typos)
 
 ### Schema metadata
+
 Key schema attributes in header:
+
 - `version`: Current version number
 - `withStandard`: Version of standard schema (for library schemas)
 - `library`: Library schema name
@@ -128,12 +161,15 @@ Key schema attributes in header:
 ## Development tools & commands
 
 ### Python tools from hed-python
+
 Install tools for schema validation and conversion:
+
 ```powershell
 pip install git+https://github.com/hed-standard/hed-python.git@main
 ```
 
 Key commands:
+
 - `hed_validate_schemas <files>`: Validate schema files
 - `hed_update_schemas <files>`: Convert between formats
 - `hed_cache_schemas --clear`: Clear cached schemas
@@ -186,7 +222,9 @@ sphinx-build -b html docs/ docs/_build/html
 - `pyproject.toml` `requires-python`: `>=3.10,<3.15`
 
 ### Pre-commit hooks
+
 Use `scripts/verify_branch.py` to enforce:
+
 - Changes only in appropriate schema directories
 - Changes only in `prerelease/` directories
 - No modifications to released schemas
@@ -194,29 +232,37 @@ Use `scripts/verify_branch.py` to enforce:
 ## Schema structure & ontology
 
 ### Core schema elements
+
 1. **Tags** (Hierarchical vocabulary):
+
    - Organized in tree structure (e.g., `Event/Action/Move/Reach`)
    - Each tag has: name, description, attributes, HedId
    - Can have value classes (e.g., `Age/#`) or unit classes
 
 2. **Unit Classes & Units**:
+
    - Define measurement units (time, angle, frequency, etc.)
    - Units have: name, symbol, conversion factors
    - Unit classes define which units are compatible
 
 3. **Value Classes**:
+
    - Define types of values allowed (text, numeric, dateTime, etc.)
 
 4. **Schema Attributes**:
+
    - Modify tag behavior (required, unique, topLevelTagGroup, etc.)
    - Define relationships (property domains/ranges for ontology)
 
 5. **Properties**:
+
    - Define relationships between tags and attributes
    - Used for ontology mapping (OWL/RDF export)
 
 ### Ontology integration
+
 Schemas include prefixes and annotations for mapping to external ontologies:
+
 - **Prefixes**: `rdfs:`, `skos:`, `dc:`, `ncit:`, `owl:`, etc.
 - **Annotations**: Map HED terms to ontology URIs (e.g., `ncit:C25499`)
 - **Properties**: Define relationships (Domain, Range, etc.)
@@ -225,7 +271,9 @@ Schemas include prefixes and annotations for mapping to external ontologies:
 ## Key configuration files
 
 ### library_data.json
+
 Defines HedId ranges for each library schema:
+
 ```json
 {
     "": {"id_range": [10000, 39999]},  // standard schema
@@ -237,7 +285,9 @@ Defines HedId ranges for each library schema:
 ```
 
 ### pyproject.toml
+
 Build configuration (this is NOT a Python package repository):
+
 - Defines project metadata
 - `[tool.typos]` spell-check configuration (excluded file patterns and allowed words)
 - `[tool.ruff]` linting configuration
@@ -246,18 +296,20 @@ Build configuration (this is NOT a Python package repository):
 ## Documentation
 
 ### Sphinx documentation
-Source: `docs/`
-Build: `docs/make.bat` (Windows) or `docs/Makefile` (Unix)
-Output: `docs/_build/html/`
+
+Source: `docs/` Build: `docs/make.bat` (Windows) or `docs/Makefile` (Unix) Output: `docs/_build/html/`
 
 Key documentation files:
+
 - `developer_guide.md`: Guide for schema developers
 - `schemas_overview.md`: Overview of all HED schemas
 - `api.rst`: Repository structure reference
 - `index.rst`: Main documentation landing page
 
 ### Schema-specific documentation
+
 Each schema directory contains:
+
 - `README.md`: Schema overview and usage
 - `CHANGELOG.md`: Detailed version history
 - `CONTRIBUTORS.md`: List of contributors
@@ -268,6 +320,7 @@ Each schema directory contains:
 ## Common workflows
 
 ### Adding a new term
+
 1. Create branch: `standard_new_term` (or appropriate library prefix)
 2. Edit `standard_schema/prerelease/HED8.5.0.mediawiki` (or library prerelease)
 3. Add term in hierarchical position with description and attributes
@@ -276,6 +329,7 @@ Each schema directory contains:
 6. Create PR, get reviews, merge
 
 ### Modifying existing term
+
 1. Create branch with appropriate prefix
 2. Edit prerelease `.mediawiki` file
 3. Update description, attributes, or position
@@ -283,6 +337,7 @@ Each schema directory contains:
 5. Push and create PR
 
 ### Creating new schema version
+
 1. Update version number in prerelease schema
 2. Consolidate `PRERELEASE_CHANGES.md` into `CHANGELOG.md`
 3. Move files from `prerelease/` to release directories
@@ -306,21 +361,21 @@ See "Local Validation Commands" under CI/CD Pipeline for the full set of checks 
 
 ## Common pitfalls to avoid
 
-1. **Don't edit released schemas**: Only edit files in `prerelease/` directories
-2. **Don't edit XML/JSON/TSV directly**: Always edit `.mediawiki` and let CI convert
-3. **Branch naming matters**: Use correct prefix or CI will reject your changes
-4. **HedId uniqueness**: Never reuse HedIds - they are permanent identifiers
-5. **Semantic versioning**: Understand major/minor/patch implications before changing version
-6. **Breaking changes**: Removing or significantly changing terms requires major version bump
-7. **Library schema coordination**: Library schemas must specify compatible standard schema version
-8. **Format equivalence**: All formats contain same information - choose editing format wisely
-9. **Case sensitivity**: HED is case-insensitive but maintain consistent capitalization
+01. **Don't edit released schemas**: Only edit files in `prerelease/` directories
+02. **Don't edit XML/JSON/TSV directly**: Always edit `.mediawiki` and let CI convert
+03. **Branch naming matters**: Use correct prefix or CI will reject your changes
+04. **HedId uniqueness**: Never reuse HedIds - they are permanent identifiers
+05. **Semantic versioning**: Understand major/minor/patch implications before changing version
+06. **Breaking changes**: Removing or significantly changing terms requires major version bump
+07. **Library schema coordination**: Library schemas must specify compatible standard schema version
+08. **Format equivalence**: All formats contain same information - choose editing format wisely
+09. **Case sensitivity**: HED is case-insensitive but maintain consistent capitalization
 10. **Markdown heading style**: Use sentence case — capitalize only the first word and proper nouns/acronyms (e.g., `## Schema development workflow`, not `## Schema Development Workflow`)
 
 ## Getting Help
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
-- **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
+- **HED Working Group**: [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 - **Documentation**: [hedtags.org](https://www.hedtags.org)
 - **Resources**: [hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
 - **Schema Developer Guide**: [hedtags.org/hed-resources/HedSchemaDevelopersGuide.html](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html)

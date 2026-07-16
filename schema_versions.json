@@ -1,0 +1,276 @@
+{
+  "generated": "2026-07-16T14:52:08.589231+00:00",
+  "libraries": {
+    "": {
+      "deprecated": [
+        {
+          "date": "2022-12-02T17:19:40-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED8.0.0-beta.1.xml",
+          "sha": "836155d132f25ffccd9b27d2c8f4a0c4cb030f50",
+          "version": "8.0.0-beta.1"
+        },
+        {
+          "date": "2022-12-02T17:19:40-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED8.0.0-alpha.2.xml",
+          "sha": "c5595ebe35aa91145ea9e7eaa421683de3a6cd27",
+          "version": "8.0.0-alpha.2"
+        },
+        {
+          "date": "2022-12-02T17:19:40-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED8.0.0-alpha.1.xml",
+          "sha": "5616154ab4ec3687502abe3e6d786cd6ca28172f",
+          "version": "8.0.0-alpha.1"
+        },
+        {
+          "date": "2023-06-13T14:25:34-05:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.2.0.xml",
+          "sha": "d62c07afd37e5b47f5e0daeac484f223945869bf",
+          "version": "7.2.0"
+        },
+        {
+          "date": "2022-12-02T17:19:40-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.1.2.xml",
+          "sha": "ab2b7bc8c036cc050050a9224cdd0be80135f634",
+          "version": "7.1.2"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.1.1.xml",
+          "sha": "f166b8b2cef3374d7f40fdc5ccdfef004519db31",
+          "version": "7.1.1"
+        },
+        {
+          "date": "2022-12-02T17:19:40-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.1.0.xml",
+          "sha": "54c94ce964884518645f0dbb94bd839b3ff9dae3",
+          "version": "7.1.0"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.0.5.xml",
+          "sha": "98e072151b2b59d9546d11b5544a163f004d0c7e",
+          "version": "7.0.5"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.0.4.xml",
+          "sha": "891a677bfe07eca6b42d07e3d7da4bc6d5ebad3b",
+          "version": "7.0.4"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.0.3.xml",
+          "sha": "62828c477270e59a856acea6fa3eb8ba22a82876",
+          "version": "7.0.3"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.0.2.xml",
+          "sha": "c161c0e8550104dff71c728e15e7aaf0f703cd0d",
+          "version": "7.0.2"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED7.0.1.xml",
+          "sha": "d3605957a3110c17ae5830242cdd5d5f44acf68f",
+          "version": "7.0.1"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED6.0.5.xml",
+          "sha": "2897add8d000aa483e887dd07d0a0a44f8486f94",
+          "version": "6.0.5"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED5.2.3.xml",
+          "sha": "2dc590843babc2b9ab2426a7b71b7e70a5c54245",
+          "version": "5.2.3"
+        },
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/deprecated/HED4.0.5.xml",
+          "sha": "cf102f3d1fe042ef17d70a3f8188f56f8a9a8151",
+          "version": "4.0.5"
+        }
+      ],
+      "prerelease": [
+        {
+          "date": "2026-03-20T11:27:18-05:00",
+          "file": "standard_schema/prerelease/HED8.5.0.xml",
+          "sha": "d0e3895270666c30164d79c4f743369631460c06",
+          "version": "8.5.0"
+        }
+      ],
+      "released": [
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "standard_schema/hedxml/HED8.4.0.xml",
+          "sha": "789183885c41134ae1b0a90532d17c1aaebe52de",
+          "version": "8.4.0"
+        },
+        {
+          "date": "2024-06-10T06:22:13-05:00",
+          "file": "standard_schema/hedxml/HED8.3.0.xml",
+          "sha": "e9c9723066f91a682cab74e6a9d341482e6f4bb5",
+          "version": "8.3.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "standard_schema/hedxml/HED8.2.0.xml",
+          "sha": "1f55c7ae8db9045418ab5735ac151edd8481ed6e",
+          "version": "8.2.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "standard_schema/hedxml/HED8.1.0.xml",
+          "sha": "f5b7cfc439165dc8d0067a175945e1cc0e107a58",
+          "version": "8.1.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "standard_schema/hedxml/HED8.0.0.xml",
+          "sha": "24a5241a239c84b0c71921fc41cbf016cdb2e94b",
+          "version": "8.0.0"
+        }
+      ]
+    },
+    "lang": {
+      "deprecated": [],
+      "prerelease": [
+        {
+          "date": "2025-06-10T09:12:40-05:00",
+          "file": "library_schemas/lang/prerelease/HED_lang_1.2.0.xml",
+          "sha": "525db30e207348ad6326e9a3cdc02619f364d1d7",
+          "version": "1.2.0"
+        }
+      ],
+      "released": [
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "library_schemas/lang/hedxml/HED_lang_1.1.0.xml",
+          "sha": "8c50764b8ccbf382225751e91955be49d66e8d56",
+          "version": "1.1.0"
+        },
+        {
+          "date": "2024-10-30T13:39:09-05:00",
+          "file": "library_schemas/lang/hedxml/HED_lang_1.0.0.xml",
+          "sha": "d371255f0ddaa3e18f8ec0acff67b3a41ab0cc80",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "mouse": {
+      "deprecated": [],
+      "prerelease": [
+        {
+          "date": "2026-06-21T12:20:42-05:00",
+          "file": "library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml",
+          "sha": "9988161295e5c86eadad31b2c665f3c3cfe7af93",
+          "version": "1.0.0"
+        }
+      ],
+      "released": []
+    },
+    "score": {
+      "deprecated": [],
+      "prerelease": [
+        {
+          "date": "2025-06-09T11:19:31-05:00",
+          "file": "library_schemas/score/prerelease/HED_score_2.2.0.xml",
+          "sha": "b02ca09070e16de00fa9dc34c21ad3aba18e9fb7",
+          "version": "2.2.0"
+        }
+      ],
+      "released": [
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "library_schemas/score/hedxml/HED_score_2.1.0.xml",
+          "sha": "86836214311aac57e7d12d8d167d8c68f4cf6b89",
+          "version": "2.1.0"
+        },
+        {
+          "date": "2024-09-06T10:32:42-05:00",
+          "file": "library_schemas/score/hedxml/HED_score_2.0.0.xml",
+          "sha": "3e9d47b5b12d7c1c7598513016c9d32539cb2511",
+          "version": "2.0.0"
+        },
+        {
+          "date": "2024-07-16T13:51:47-05:00",
+          "file": "library_schemas/score/hedxml/HED_score_1.2.0.xml",
+          "sha": "2d9e73e9f21100342af09df03e691d22f142ee2e",
+          "version": "1.2.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "library_schemas/score/hedxml/HED_score_1.1.0.xml",
+          "sha": "52731f8ee6eb5f316222ce9dcd97ae852d094372",
+          "version": "1.1.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "library_schemas/score/hedxml/HED_score_1.0.0.xml",
+          "sha": "9b4b02a60554b2f312d413b71186615d524bd697",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "slam": {
+      "deprecated": [],
+      "prerelease": [
+        {
+          "date": "2025-11-16T13:50:47-06:00",
+          "file": "library_schemas/slam/prerelease/HED_slam_1.0.0.xml",
+          "sha": "77ce7e95402d3d256ced8ff729d5cfc6e5b1143f",
+          "version": "1.0.0"
+        }
+      ],
+      "released": []
+    },
+    "testlib": {
+      "deprecated": [],
+      "prerelease": [
+        {
+          "date": "2026-07-01T12:30:36-05:00",
+          "file": "library_schemas/testlib/prerelease/HED_testlib_4.0.0.xml",
+          "sha": "10924e6c82aa238a13b8e4e19999d082c1ba8acd",
+          "version": "4.0.0"
+        }
+      ],
+      "released": [
+        {
+          "date": "2026-07-02T11:27:59-05:00",
+          "file": "library_schemas/testlib/hedxml/HED_testlib_3.0.0.xml",
+          "sha": "eaff0c28d5c5008e7215e85d95ab4c7a38921af6",
+          "version": "3.0.0"
+        },
+        {
+          "date": "2026-07-02T11:27:59-05:00",
+          "file": "library_schemas/testlib/hedxml/HED_testlib_2.2.0.xml",
+          "sha": "0cf12cfdecd653180510fd36666efc5e06f8d63d",
+          "version": "2.2.0"
+        },
+        {
+          "date": "2026-07-02T11:27:59-05:00",
+          "file": "library_schemas/testlib/hedxml/HED_testlib_2.1.0.xml",
+          "sha": "82ec01e1851ca6e4e6a83018ef3f35e1c4da05fa",
+          "version": "2.1.0"
+        },
+        {
+          "date": "2026-07-02T11:27:59-05:00",
+          "file": "library_schemas/testlib/hedxml/HED_testlib_2.0.0.xml",
+          "sha": "5f4d8b8a931921bee68744c0ace5f2b608afa98b",
+          "version": "2.0.0"
+        },
+        {
+          "date": "2023-10-02T11:19:27-05:00",
+          "file": "library_schemas/testlib/hedxml/HED_testlib_1.0.2.xml",
+          "sha": "72dcd78e9fd5296763247ecb2b0f8b0a15755873",
+          "version": "1.0.2"
+        }
+      ]
+    }
+  },
+  "manifest_format_version": 1,
+  "repo_commit": "ec40f29cfd8c1c1a8f6713a9dbf9d58700cc8afd"
+}
