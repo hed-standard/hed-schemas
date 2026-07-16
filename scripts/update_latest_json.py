@@ -240,8 +240,7 @@ def main() -> int:
         print(
             f"\nCHECK FAILED: {len(problems)} item(s) out of sync. "
             f"Run: python scripts/update_latest_json.py --update to copy the latest released JSON "
-            f"into place (then manually remove any stray files it reports and export any missing "
-            f"source JSON).",
+            f"into place (then remove any stray files it reports and export any missing source JSON).",
             file=sys.stderr,
         )
         return 1

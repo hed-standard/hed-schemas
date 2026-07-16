@@ -338,7 +338,11 @@ def main() -> int:
             print(f"CHECK FAILED: {output_path} is out of date ({len(diffs)} difference(s)):", file=sys.stderr)
             for line in diffs:
                 print(f"  {line}", file=sys.stderr)
-            print("Run: python scripts/generate_schema_versions.py", file=sys.stderr)
+            print(
+                "To fix: regenerate the manifest and commit the updated file - run "
+                "`python scripts/generate_schema_versions.py`, then commit schema_versions.json.",
+                file=sys.stderr,
+            )
             return 1
         print(f"CHECK OK: {output_path} matches the current schema files.")
         return 0
