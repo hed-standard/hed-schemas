@@ -16,7 +16,9 @@ whole catalog in a single request, falling back to the API crawl only if the man
 
 The blob SHAs recorded here are computed exactly the way git (and therefore the GitHub "contents"
 API ``sha`` field, and hedtools' ``_calculate_sha1``) computes them, so a consumer can compare a
-manifest SHA directly against a cached file's SHA to decide whether a re-download is needed.
+manifest SHA directly against a cached file's SHA to decide whether a re-download is needed. Line
+endings are normalized to LF before hashing (matching the repo's ``.gitattributes`` ``eol=lf``), so
+the manifest is identical whether generated on a Windows (CRLF) or Linux (LF) checkout.
 
 What counts as what
 -------------------
@@ -80,8 +82,16 @@ MANIFEST_FORMAT_VERSION = 1
 
 
 def git_blob_sha(path: Path) -> str:
-    """Return the git blob SHA-1 of a file (identical to GitHub's contents-API ``sha``)."""
-    data = path.read_bytes()
+    """Return the git blob SHA-1 of a file's text, matching GitHub's contents-API ``sha``.
+
+    CRLF line endings are normalized to LF before hashing, mirroring the repository's
+    ``.gitattributes`` (``*.xml text eol=lf``). Git stores these files with LF, so its blob SHA -
+    and therefore the value the GitHub API and raw host report - is the LF SHA regardless of a
+    checkout's working-tree line endings. Hashing the raw bytes instead would make the manifest
+    depend on whether it was generated on a CRLF (e.g. Windows) or LF (e.g. Linux CI) checkout,
+    which would spuriously fail ``--check`` even though the committed content is identical.
+    """
+    data = path.read_bytes().replace(b"\r\n", b"\n")
     hasher = sha1()
     hasher.update(f"blob {len(data)}\0".encode())
     hasher.update(data)
@@ -128,9 +138,11 @@ def _version_sort_key(version: str) -> tuple:
     """Sort key for HED versions, newest first when used with reverse=True.
 
     Released versions (no prerelease suffix) sort above prereleases of the same x.y.z, matching
-    semantic-versioning precedence. Anything unparsable sorts last.
+    semantic-versioning precedence. SemVer build metadata (the ``+...`` suffix) is stripped and
+    ignored for ordering. Anything unparsable sorts last.
     """
-    match = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$", version)
+    core = version.split("+", 1)[0]  # drop SemVer build metadata; it does not affect precedence
+    match = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$", core)
     if not match:
         return (-1, -1, -1, 1, version)
     major, minor, patch, pre = match.groups()

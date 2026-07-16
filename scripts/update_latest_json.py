@@ -55,8 +55,13 @@ _XML_RE = re.compile(r"^[hH][eE][dD](_([a-z0-9]+)_)?(" + _HED_VERSION_CORE + r")
 
 
 def git_blob_sha(path: Path) -> str:
-    """Return the git blob SHA-1 of a file (identical to GitHub's contents-API ``sha``)."""
-    data = path.read_bytes()
+    """Return the git blob SHA-1 of a file's text, matching GitHub's contents-API ``sha``.
+
+    CRLF line endings are normalized to LF before hashing, mirroring the repository's
+    ``.gitattributes`` (``*.json text eol=lf``), so the comparison is stable regardless of a
+    checkout's working-tree line endings (e.g. Windows CRLF vs Linux LF).
+    """
+    data = path.read_bytes().replace(b"\r\n", b"\n")
     hasher = sha1()
     hasher.update(f"blob {len(data)}\0".encode())
     hasher.update(data)
@@ -64,8 +69,15 @@ def git_blob_sha(path: Path) -> str:
 
 
 def _version_key(version: str) -> tuple:
-    """Ascending sort key; a final release outranks its own prereleases."""
-    match = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$", version)
+    """Ascending sort key; a final release outranks its own prereleases.
+
+    SemVer build metadata (the ``+...`` suffix) is stripped before parsing and ignored for
+    ordering, per SemVer precedence rules. This is required because latest_released_version()
+    extracts versions with a grammar (``_HED_VERSION_CORE``) that permits ``+...``; without this,
+    such a version would fail to parse and sort as ``(-1, -1, -1, ...)``, wrongly ranking it lowest.
+    """
+    core = version.split("+", 1)[0]  # drop build metadata; it does not affect precedence
+    match = re.match(r"^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$", core)
     if not match:
         return (-1, -1, -1, 1, version)
     major, minor, patch, pre = match.groups()
@@ -125,6 +137,7 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
     updated: list[str] = []
     in_sync: list[str] = []
     problems: list[str] = []
+    expected_targets: set[str] = set()  # *_Latest.json filenames that are legitimately expected
 
     if do_update:
         latest_dir.mkdir(parents=True, exist_ok=True)
@@ -136,8 +149,12 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
         version = latest_released_version(area / "hedxml")
         if version is None:
             # No released XML for this library (e.g. slam/mouse only have prereleases) -> it has
-            # no "latest released JSON" to publish, so it correctly gets no *_Latest.json.
+            # no "latest released JSON" to publish, so it correctly gets no *_Latest.json. Its name
+            # is deliberately left out of expected_targets so a stray copy is caught by the scan below.
             continue
+        # This library legitimately owns a *_Latest.json slot (even if its source JSON turns out to
+        # be missing below); record it so the stray-file scan doesn't misreport it.
+        expected_targets.add(latest_json_name(library))
 
         source = area / "hedjson" / released_json_name(library, version)
         target = latest_dir / latest_json_name(library)
@@ -167,16 +184,23 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
                 f"{label}: {target.name} is out of date ({detail}; expected {source_sha[:10]} from {source.name})."
             )
 
-    # Flag any stray *_Latest.json that belongs to an excluded library (e.g. a testlib copy that
-    # should not exist here).
+    # Flag any *_Latest.json in the directory that we do not expect to be there. Something is
+    # expected only if a library legitimately owns that slot (standard, or a library with a
+    # released version). Everything else is a stray: an excluded library (testlib), a
+    # prerelease-only library (mouse, slam), or a leftover from a removed/renamed library.
     if latest_dir.is_dir():
         for name in sorted(os.listdir(latest_dir)):
-            match = re.match(r"^HED_([a-z0-9]+)_Latest\.json$", name)
-            if match and match.group(1) in EXCLUDED_LIBRARIES:
-                problems.append(
-                    f"{match.group(1)}: {name} should not be in {LATEST_JSON_DIR}/ "
-                    f"({match.group(1)} is excluded); remove it."
-                )
+            match = re.match(r"^HED(?:_([a-z0-9]+)_)?Latest\.json$", name)
+            if not match or name in expected_targets:
+                continue
+            lib = match.group(1)
+            if lib is None:
+                reason = "the standard schema has no released version"
+            elif lib in EXCLUDED_LIBRARIES:
+                reason = f"the '{lib}' library is excluded from {LATEST_JSON_DIR}/"
+            else:
+                reason = f"'{lib}' has no released schema version (only prereleases, or it was removed)"
+            problems.append(f"{name} should not be in {LATEST_JSON_DIR}/ ({reason}); remove it.")
 
     return updated, in_sync, problems
 
@@ -214,7 +238,11 @@ def main() -> int:
     # Check mode: any drift or problem is a failure.
     if problems:
         print(
-            f"\nCHECK FAILED: {len(problems)} item(s) out of sync. Run update_latest_json.py --update.", file=sys.stderr
+            f"\nCHECK FAILED: {len(problems)} item(s) out of sync. "
+            f"Run: python scripts/update_latest_json.py --update to copy the latest released JSON "
+            f"into place (then manually remove any stray files it reports and export any missing "
+            f"source JSON).",
+            file=sys.stderr,
         )
         return 1
     print(f"\nCHECK OK: all {len(in_sync)} latest-JSON copies are in sync.")
