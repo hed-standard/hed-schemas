@@ -375,7 +375,7 @@ See "Local Validation Commands" under CI/CD Pipeline for the full set of checks 
 ## Getting Help
 
 - **Issues**: [github.com/hed-standard/hed-schemas/issues](https://github.com/hed-standard/hed-schemas/issues)
-- **Working Group**: Email [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
+- **HED Working Group**: [hed.maintainers@gmail.com](mailto:hed.maintainers@gmail.com)
 - **Documentation**: [hedtags.org](https://www.hedtags.org)
 - **Resources**: [hedtags.org/hed-resources](https://www.hedtags.org/hed-resources)
 - **Schema Developer Guide**: [hedtags.org/hed-resources/HedSchemaDevelopersGuide.html](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html)

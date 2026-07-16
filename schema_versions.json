@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T18:06:41.773059+00:00",
+  "generated": "2026-07-16T14:52:08.589231+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -141,7 +141,7 @@
         {
           "date": "2025-06-10T09:12:40-05:00",
           "file": "library_schemas/lang/prerelease/HED_lang_1.2.0.xml",
-          "sha": "5049c17fb2ce37fd8e0ee54d0f2d45b87bcc8c69",
+          "sha": "525db30e207348ad6326e9a3cdc02619f364d1d7",
           "version": "1.2.0"
         }
       ],
@@ -178,7 +178,7 @@
         {
           "date": "2025-06-09T11:19:31-05:00",
           "file": "library_schemas/score/prerelease/HED_score_2.2.0.xml",
-          "sha": "3b50ca4b2234acd75578735144cb67cf06b7c9ad",
+          "sha": "b02ca09070e16de00fa9dc34c21ad3aba18e9fb7",
           "version": "2.2.0"
         }
       ],
@@ -272,5 +272,5 @@
     }
   },
   "manifest_format_version": 1,
-  "repo_commit": "42e3d55ce00d55b103c8d93a4517fe0af6dd7af3"
+  "repo_commit": "ec40f29cfd8c1c1a8f6713a9dbf9d58700cc8afd"
 }
