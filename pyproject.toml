@@ -29,7 +29,7 @@ requires-python = ">=3.10,<3.15"
 
 [project.optional-dependencies]
 dev = [
-    "ruff>=0.8.0",
+    "ruff>=0.16.0",
     "typos>=1.29.0",
     "mdformat>=0.7.0",
     "mdformat-myst>=0.1.5",
@@ -40,7 +40,7 @@ docs = [
     "sphinx-copybutton>=0.5.2",
     "myst-parser>=3.0.0",
     "pygments>=2.10.0",
-    "sphinx-autodoc-typehints>=1.24.0",
+    "sphinx-autodoc-typehints>=3.0.0,<3.12.1",
     "linkify-it-py>=2.0.3",
 ]
 
