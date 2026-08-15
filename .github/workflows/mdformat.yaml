@@ -29,5 +29,5 @@ jobs:
       - name: Run mdformat (check only)
         run: |
           uvx --with mdformat-myst mdformat --check --wrap no --number docs/ *.md
-          find . -name "README.md" -not -path "./.git/*" -not -path "./.venv/*" -not -path "./.status/*" | \
+          find . -name "README.md" -not -path "./.git/*" -not -path "./.venv/*" | \
             xargs uvx --with mdformat-myst mdformat --check --wrap no --number

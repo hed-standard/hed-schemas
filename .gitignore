@@ -163,3 +163,9 @@ Desktop.ini
 # Status and temporary files
 status/
 .status/
+
+# Personal per-repo Claude Code notes (imports .status/local-environment.md)
+CLAUDE.local.md
+
+# Personal per-repo settings (absolute paths, claudeMdExcludes)
+.claude/settings.local.json
