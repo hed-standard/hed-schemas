@@ -6,14 +6,16 @@ Purpose: the official HED (Hierarchical Event Descriptors) vocabulary schemas, p
 
 Test framework: unittest. Never convert the suite from one style to the other as a side effect of other work.
 
+Run from the activated project venv, which has ruff, mdformat (with the myst plugin), typos, and the hedtools commands installed:
+
 - Run tests: `python -m unittest discover -s tests -p "test_*.py" -v`
-- Lint: `uvx ruff check .` and `uvx ruff format --check .`
-- Spell check: `uvx typos`
-- Markdown format check: `uvx --with mdformat-myst mdformat --check --wrap no --number docs/ *.md`
+- Lint: `python -m ruff check .` and `python -m ruff format --check .`
+- Spell check: `typos`
+- Markdown format check: `python -m mdformat --check --wrap no --number docs/ *.md`
 - Validate a schema: `hed_validate_schemas <path/to/schema.mediawiki>` (installed with `pip install git+https://github.com/hed-standard/hed-python.git@main`)
 - Build docs: `sphinx-build -b html docs/ docs/_build/html` (requires `pip install ".[docs]"`)
 
-CI runs the same checks: see `.github/workflows/` (schema validation, branch verification, ruff, typos, mdformat, docs build, link check).
+CI runs the same checks through uvx instead of a venv: see `.github/workflows/` (schema validation, branch verification, ruff, typos, mdformat, docs build, link check).
 
 ## Layout
 
