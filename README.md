@@ -185,7 +185,7 @@ The released version of the web-based HED tools is located at [https://hedtools.
 
 ## HED semantic versioning
 
-HED schemas use the following rules for changing the *major.minor.patch* semantic version. These rules are based on the assumption that annotators using the [HED tag](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) short form will not have to retag their data for patch-level or minor-version changes of the schema. That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. In addition, validation errors might occur during for patch-level or minor-version changes for changes or corrections in tag values or units.
+HED schemas use the following rules for changing the *major.minor.patch* semantic version. These rules are based on the assumption that annotators using the [HED tag](https://hed-specification.readthedocs.io/en/latest/02_Terminology.html#hed-tag) short form will not have to retag their data for patch-level or minor-version changes of the schema. That is, a dataset tagged using schema version *X.Y.Z* will also validate for *X.Y+.Z+*. In addition, validation errors might occur for patch-level or minor-version changes for changes or corrections in tag values or units.
 
 Here is a summary of the types of changes that correspond to different levels of changes in the semantic version:
 
