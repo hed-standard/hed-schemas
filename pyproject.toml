@@ -101,5 +101,7 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
 
+# __init__.py files: unused imports are re-exports, and their import order is
+# curated by hand to avoid circular imports - isort must not reorder them.
 [tool.ruff.lint.per-file-ignores]
-"__init__.py" = ["F401"]  # unused imports in __init__.py
+"__init__.py" = ["F401", "I001"]
