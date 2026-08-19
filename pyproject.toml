@@ -83,12 +83,16 @@ select = [
     "W",   # pycodestyle warnings
     "F",   # pyflakes
     "I",   # isort
+    "N",   # pep8-naming
     "B",   # flake8-bugbear
     "C4",  # flake8-comprehensions
     "UP",  # pyupgrade
 ]
 ignore = [
     "E501",  # line too long, handled by ruff format
+    "N802",  # camelCase test methods (legacy convention)
+    "N803",  # non-lowercase argument names (scientific code)
+    "N806",  # non-lowercase variables in functions (scientific code)
 ]
 
 [tool.ruff.format]
