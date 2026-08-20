@@ -9,6 +9,10 @@ Branch naming conventions:
 
 Schema files (.xml, .mediawiki, .tsv) must be in prerelease/ subdirectories.
 Released schema directories (hedxml/, hedwiki/, hedtsv/, hedjson/) cannot be modified.
+
+The generated manifest schema_versions.json is exempt from branch scoping: any schema change
+makes it stale, so every branch may commit a regenerated copy. Its correctness is enforced
+separately by the update_manifests.yaml workflow (generate_schema_versions.py --check).
 """
 
 import argparse
@@ -16,6 +20,10 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+
+# Generated manifest files that any branch may update. Their correctness is enforced by
+# update_manifests.yaml (--check), which is a stronger guarantee than branch scoping.
+EXEMPT_FILES = {"schema_versions.json"}
 
 
 class BranchVerificationError(Exception):
@@ -143,6 +151,11 @@ def verify_files(files: list[str], branch_name: str, validate_all: bool = False)
     for filepath in files:
         # Normalize path separators
         filepath = filepath.replace("\\", "/")
+
+        # Generated manifests may be updated from any branch (see EXEMPT_FILES)
+        if filepath in EXEMPT_FILES:
+            print(f"'{filepath}' is a generated manifest; allowed on any branch.")
+            continue
 
         # Dependabot branches may only update .github/ files (e.g. workflow updates)
         if is_dependabot:

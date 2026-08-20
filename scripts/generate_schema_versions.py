@@ -340,7 +340,9 @@ def main() -> int:
                 print(f"  {line}", file=sys.stderr)
             print(
                 "To fix: regenerate the manifest and commit the updated file - run "
-                "`python scripts/generate_schema_versions.py`, then commit schema_versions.json.",
+                "`python scripts/generate_schema_versions.py`, then commit schema_versions.json. "
+                "Committing schema_versions.json is allowed from any branch, including schema "
+                "branches (it is exempt from the branch-scoping rules).",
                 file=sys.stderr,
             )
             return 1
