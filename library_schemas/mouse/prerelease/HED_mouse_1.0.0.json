@@ -8,7 +8,7 @@
     "Lick": {
       "short_form": "Lick",
       "long_form": "Action/Move/Move-body-part/Move-face/Lick",
-      "description": "Touch tongue to an object",
+      "description": "Touch tongue to an object.",
       "parent": "Move-face",
       "children": [],
       "attributes": {
@@ -22,7 +22,7 @@
     "Move-whiskers": {
       "short_form": "Move-whiskers",
       "long_form": "Action/Move/Move-body-part/Move-face/Move-whiskers",
-      "description": null,
+      "description": "Move the whiskers.",
       "parent": "Move-face",
       "children": [],
       "attributes": {
@@ -36,7 +36,7 @@
     "Consume": {
       "short_form": "Consume",
       "long_form": "Action/Perform/Consume",
-      "description": "Consume reward through drinking or eating",
+      "description": "Ingest reward through drinking or eating",
       "parent": "Perform",
       "children": [],
       "attributes": {
@@ -50,7 +50,7 @@
     "Groom": {
       "short_form": "Groom",
       "long_form": "Action/Perform/Groom",
-      "description": null,
+      "description": "Engage in self-hygiene.",
       "parent": "Perform",
       "children": [],
       "attributes": {
@@ -64,7 +64,7 @@
     "Nose-poke": {
       "short_form": "Nose-poke",
       "long_form": "Action/Perform/Nose-poke",
-      "description": null,
+      "description": "Nose enters or occupies a defined port/aperture location.",
       "parent": "Perform",
       "children": [],
       "attributes": {
@@ -78,7 +78,7 @@
     "Report": {
       "short_form": "Report",
       "long_form": "Action/Perform/Report",
-      "description": "Touch object to report choice",
+      "description": "Register a response",
       "parent": "Perform",
       "children": [],
       "attributes": {
@@ -92,7 +92,7 @@
     "Fore-limb": {
       "short_form": "Fore-limb",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Fore-limb",
-      "description": null,
+      "description": "Either of the front pair of limbs in a quadruped.",
       "parent": "Body-part",
       "children": [],
       "attributes": {
@@ -106,7 +106,7 @@
     "Fore-limb-part": {
       "short_form": "Fore-limb-part",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Fore-limb-part",
-      "description": null,
+      "description": "A part of the fore-limb.",
       "parent": "Body-part",
       "children": [
         "Manus"
@@ -122,7 +122,7 @@
     "Manus": {
       "short_form": "Manus",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Fore-limb-part/Manus",
-      "description": null,
+      "description": "The distal segment of the fore-limb, homologous to the hand.",
       "parent": "Fore-limb-part",
       "children": [],
       "attributes": {
@@ -133,7 +133,7 @@
     "Whiskers": {
       "short_form": "Whiskers",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Head-part/Face-part/Whiskers",
-      "description": null,
+      "description": "Long, stiff, specialized hairs on the face used for tactile sensing.",
       "parent": "Face-part",
       "children": [],
       "attributes": {
@@ -147,7 +147,7 @@
     "Hind-limb": {
       "short_form": "Hind-limb",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Hind-limb",
-      "description": null,
+      "description": "Either of the rear pair of limbs in a quadruped.",
       "parent": "Body-part",
       "children": [],
       "attributes": {
@@ -161,7 +161,7 @@
     "Hind-limb-part": {
       "short_form": "Hind-limb-part",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Hind-limb-part",
-      "description": null,
+      "description": "A part of the hind-limb.",
       "parent": "Body-part",
       "children": [
         "Pes"
@@ -177,7 +177,7 @@
     "Pes": {
       "short_form": "Pes",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Hind-limb-part/Pes",
-      "description": null,
+      "description": "The distal segment of the hind-limb, homologous to the foot.",
       "parent": "Hind-limb-part",
       "children": [],
       "attributes": {
@@ -188,7 +188,7 @@
     "Tail": {
       "short_form": "Tail",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Tail",
-      "description": null,
+      "description": "The posterior appendage extending from the base of the spine.",
       "parent": "Body-part",
       "children": [],
       "attributes": {
@@ -234,7 +234,7 @@
     "Lick-spout": {
       "short_form": "Lick-spout",
       "long_form": "Item/Object/Man-made-object/Device/Measurement-device/Lick-spout",
-      "description": null,
+      "description": "Device that delivers reward",
       "parent": "Measurement-device",
       "children": [],
       "attributes": {
@@ -251,7 +251,7 @@
     "Aborted-trial": {
       "short_form": "Aborted-trial",
       "long_form": "Property/Task-property/Task-action-type/Aborted-trial",
-      "description": null,
+      "description": "A trial outcome in which the trial is terminated early based on conditions set in the task logic.",
       "parent": "Task-action-type",
       "children": [],
       "attributes": {
@@ -265,7 +265,7 @@
     "Correct-reject": {
       "short_form": "Correct-reject",
       "long_form": "Property/Task-property/Task-action-type/Correct-reject",
-      "description": null,
+      "description": "A trial outcome in which the lack of response matches the task's expected behavior.",
       "parent": "Task-action-type",
       "children": [],
       "attributes": {
