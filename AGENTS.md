@@ -43,6 +43,10 @@ CI runs the same checks through uvx instead of a venv: see `.github/workflows/` 
 - Markdown headings in sentence case: capitalize the first word, proper nouns, and acronyms only.
 - HED tags are case-insensitive, but keep the schema's capitalization consistent.
 
+## Git flow
+
+Hosted at hed-standard; `origin` is the VisLab fork and `upstream` is hed-standard. Local `main` is a clean mirror of `upstream/main` - never commit or merge to it locally. All work goes on a branch based on `upstream/main`, pushed to the fork, and merged via a PR to hed-standard. Branch names are gated by `scripts/verify_branch.py` (see the rules above) - anything that is not schema content goes on an `admin_*` branch.
+
 ## Related repositories
 
 - `hed-python` - validation and conversion tools (`hedtools` package); the source of the `hed_*` commands above.
