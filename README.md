@@ -205,6 +205,7 @@ Here is a summary of the types of changes that correspond to different levels of
 | New unit class added to node.                   | Minor          |
 | New value class added to node.                  | Minor          |
 | Node moved in schema without change in meaning. | Minor          |
+| Standard schema partner version changed.        | Minor          |
 | Revision of description field in schema.        | Patch          |
 | Correction of suggestedTag or relatedTag.       | Patch          |
 
