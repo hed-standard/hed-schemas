@@ -1261,15 +1261,32 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
 * areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502}</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
+* chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
+** coulomb <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** C <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* concentrationUnits <nowiki>{defaultUnits=mol-per-L} [Units of molar concentration (amount of substance per unit volume).]</nowiki>
+** molar <nowiki>{SIUnit, conversionFactor=1.0} [One mole per liter.]</nowiki>
+** mol-per-L <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * currencyUnits <nowiki>{defaultUnits=$, hedId=HED_0011503} [Units indicating the worth of something.]</nowiki>
 ** dollar <nowiki>{conversionFactor=1.0, hedId=HED_0011605}</nowiki>
 ** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar, hedId=HED_0011606}</nowiki>
 ** euro <nowiki>{hedId=HED_0011607} [The official currency of a large subset of member countries of the European Union.]</nowiki>
 ** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
+* currentUnits <nowiki>{defaultUnits=mA} [Units of electric current, for example the current delivered by electrical stimulation.]</nowiki>
+** ampere <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
+** A <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
+** mA <nowiki>{conversionFactor=1.0} [Added as a direct unit because it is the default unit.]</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uV, hedId=HED_0011504}</nowiki>
 ** V <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001, hedId=HED_0011609}</nowiki>
 ** uV <nowiki>{conversionFactor=1.0, hedId=HED_0011644} [Added as a direct unit because it is the default unit.]</nowiki>
 ** volt <nowiki>{SIUnit, conversionFactor=0.000001, hedId=HED_0011610}</nowiki>
+* energyUnits <nowiki>{defaultUnits=J} [Units of energy, for example the energy of a stimulation pulse or metabolic energy.]</nowiki>
+** joule <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** J <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+** calorie <nowiki>{SIUnit, conversionFactor=4.184} [Thermochemical calorie. Use the kilo modifier for dietary kilocalories.]</nowiki>
+* forceUnits <nowiki>{defaultUnits=N} [Units of force, for example grip force or the reading of a force plate.]</nowiki>
+** newton <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** N <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
 ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011612}</nowiki>
@@ -1292,6 +1309,18 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** metre <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011624}</nowiki>
 ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011625}</nowiki>
 ** mile <nowiki>{conversionFactor=1609.34, hedId=HED_0011626}</nowiki>
+* powerUnits <nowiki>{defaultUnits=mW} [Units of power, for example the output of an optogenetic light source or ultrasound transducer.]</nowiki>
+** watt <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
+** W <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
+** mW <nowiki>{conversionFactor=1.0} [Added as a direct unit because it is the default unit.]</nowiki>
+* pressureUnits <nowiki>{defaultUnits=Pa} [Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.]</nowiki>
+** pascal <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** Pa <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+** mmHg <nowiki>{unitSymbol, conversionFactor=133.322} [Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.]</nowiki>
+* resistanceUnits <nowiki>{defaultUnits=kOhm} [Units of electrical resistance or impedance, for example electrode impedance.]</nowiki>
+** ohm <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** Ohm <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001} [ASCII spelling of the ohm symbol.]</nowiki>
+** kOhm <nowiki>{conversionFactor=1.0} [Added as a direct unit because it is the default unit.]</nowiki>
 * speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511}</nowiki>
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011627}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704, hedId=HED_0011628}</nowiki>
@@ -1304,12 +1333,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
+** week <nowiki>{conversionFactor=604800}</nowiki>
 ** month <nowiki>{hedId=HED_0011645}</nowiki>
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
 * volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514}</nowiki>
 ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011639}</nowiki>
+** liter <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** litre <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** L <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001}</nowiki>
 * weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515}</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011640}</nowiki>
 ** gram <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011641}</nowiki>
