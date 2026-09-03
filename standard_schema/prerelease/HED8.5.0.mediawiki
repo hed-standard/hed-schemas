@@ -1,7 +1,7 @@
 HED version="8.5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd"
 
 '''Prologue'''
-The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
+The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema.
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.
 
@@ -804,7 +804,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Informational-property <nowiki>{extensionAllowed, hedId=HED_0012755} [Something that pertains to a task.]</nowiki>
 ** Description <nowiki>{hedId=HED_0012756} [An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012757}</nowiki>
-** ID <nowiki>{hedId=HED_0012758} [An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
+** ID <nowiki>{hedId=HED_0012758} [A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012759}</nowiki>
 ** Label <nowiki>{hedId=HED_0012760} [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012761}</nowiki>
@@ -1261,15 +1261,30 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
 * areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502}</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
-* currencyUnits <nowiki>{defaultUnits=$, hedId=HED_0011503} [Units indicating the worth of something.]</nowiki>
+* chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
+** coulomb <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** C <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* concentrationUnits <nowiki>{defaultUnits=mol-per-L} [Units of molar concentration (amount of substance per unit volume).]</nowiki>
+** molar <nowiki>{SIUnit, conversionFactor=1.0} [One mole per liter.]</nowiki>
+** mol-per-L <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* currencyUnits <nowiki>{defaultUnits=dollar, hedId=HED_0011503} [Units indicating the worth of something.]</nowiki>
 ** dollar <nowiki>{conversionFactor=1.0, hedId=HED_0011605}</nowiki>
-** $ <nowiki>{unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar, hedId=HED_0011606}</nowiki>
+** $ <nowiki>{deprecatedFrom=8.4.0, unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar, hedId=HED_0011606} [Prefix units are no longer supported. Use dollar.]</nowiki>
 ** euro <nowiki>{hedId=HED_0011607} [The official currency of a large subset of member countries of the European Union.]</nowiki>
 ** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
+* currentUnits <nowiki>{defaultUnits=mA} [Units of electric current, for example the current delivered by electrical stimulation.]</nowiki>
+** ampere <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
+** A <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uV, hedId=HED_0011504}</nowiki>
-** V <nowiki>{SIUnit, unitSymbol, conversionFactor=0.000001, hedId=HED_0011609}</nowiki>
-** uV <nowiki>{conversionFactor=1.0, hedId=HED_0011644} [Added as a direct unit because it is the default unit.]</nowiki>
-** volt <nowiki>{SIUnit, conversionFactor=0.000001, hedId=HED_0011610}</nowiki>
+** V <nowiki>{SIUnit, unitSymbol, conversionFactor=1000000, hedId=HED_0011609}</nowiki>
+** volt <nowiki>{SIUnit, conversionFactor=1000000, hedId=HED_0011610}</nowiki>
+* energyUnits <nowiki>{defaultUnits=J} [Units of energy, for example the energy of a stimulation pulse or metabolic energy.]</nowiki>
+** joule <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** J <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+** calorie <nowiki>{SIUnit, conversionFactor=4.184} [Thermochemical calorie. Use the kilo modifier for dietary kilocalories.]</nowiki>
+* forceUnits <nowiki>{defaultUnits=N} [Units of force, for example grip force or the reading of a force plate.]</nowiki>
+** newton <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** N <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
 * frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
 ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011612}</nowiki>
@@ -1278,10 +1293,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** candela <nowiki>{SIUnit, hedId=HED_0011614} [Units used to express light intensity.]</nowiki>
 ** cd <nowiki>{SIUnit, unitSymbol, hedId=HED_0011615} [Units used to express light intensity.]</nowiki>
 * jerkUnits <nowiki>{defaultUnits=m-per-s^3, hedId=HED_0011507}</nowiki>
-** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
+** m-per-s^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
 * magneticFieldUnits <nowiki>{defaultUnits=T, hedId=HED_0011508}</nowiki>
-** tesla <nowiki>{SIUnit, conversionFactor=10e-15, hedId=HED_0011617}</nowiki>
-** T <nowiki>{SIUnit, unitSymbol, conversionFactor=10e-15, hedId=HED_0011618}</nowiki>
+** tesla <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011617}</nowiki>
+** T <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011618}</nowiki>
 * memorySizeUnits <nowiki>{defaultUnits=B, hedId=HED_0011509}</nowiki>
 ** byte <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011619}</nowiki>
 ** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011620}</nowiki>
@@ -1292,6 +1307,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** metre <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011624}</nowiki>
 ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011625}</nowiki>
 ** mile <nowiki>{conversionFactor=1609.34, hedId=HED_0011626}</nowiki>
+* powerUnits <nowiki>{defaultUnits=mW} [Units of power, for example the output of an optogenetic light source or ultrasound transducer.]</nowiki>
+** watt <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
+** W <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
+* pressureUnits <nowiki>{defaultUnits=Pa} [Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.]</nowiki>
+** pascal <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
+** Pa <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+** mmHg <nowiki>{unitSymbol, conversionFactor=133.322} [Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.]</nowiki>
+* resistanceUnits <nowiki>{defaultUnits=kOhm} [Units of electrical resistance or impedance, for example electrode impedance.]</nowiki>
+** ohm <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** Ohm <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001} [ASCII spelling of the ohm symbol.]</nowiki>
 * speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511}</nowiki>
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011627}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704, hedId=HED_0011628}</nowiki>
@@ -1304,12 +1329,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
+** week <nowiki>{conversionFactor=604800}</nowiki>
 ** month <nowiki>{hedId=HED_0011645}</nowiki>
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
 * volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514}</nowiki>
 ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011639}</nowiki>
+** liter <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** litre <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
+** L <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001}</nowiki>
 * weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515}</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011640}</nowiki>
 ** gram <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011641}</nowiki>
@@ -1317,46 +1346,46 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** lb <nowiki>{conversionFactor=453.592, hedId=HED_0011643}</nowiki>
 
 '''Unit modifiers'''
-* deca <nowiki>{SIUnitModifier, conversionFactor=10.0, hedId=HED_0011400} [SI unit multiple representing 10e1.]</nowiki>
-* da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0, hedId=HED_0011401} [SI unit multiple representing 10e1.]</nowiki>
-* hecto <nowiki>{SIUnitModifier, conversionFactor=100.0, hedId=HED_0011402} [SI unit multiple representing 10e2.]</nowiki>
-* h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0, hedId=HED_0011403} [SI unit multiple representing 10e2.]</nowiki>
-* kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0, hedId=HED_0011404} [SI unit multiple representing 10e3.]</nowiki>
-* k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0, hedId=HED_0011405} [SI unit multiple representing 10e3.]</nowiki>
-* mega <nowiki>{SIUnitModifier, conversionFactor=10e6, hedId=HED_0011406} [SI unit multiple representing 10e6.]</nowiki>
-* M <nowiki>{SIUnitSymbolModifier, conversionFactor=10e6, hedId=HED_0011407} [SI unit multiple representing 10e6.]</nowiki>
-* giga <nowiki>{SIUnitModifier, conversionFactor=10e9, hedId=HED_0011408} [SI unit multiple representing 10e9.]</nowiki>
-* G <nowiki>{SIUnitSymbolModifier, conversionFactor=10e9, hedId=HED_0011409} [SI unit multiple representing 10e9.]</nowiki>
-* tera <nowiki>{SIUnitModifier, conversionFactor=10e12, hedId=HED_0011410} [SI unit multiple representing 10e12.]</nowiki>
-* T <nowiki>{SIUnitSymbolModifier, conversionFactor=10e12, hedId=HED_0011411} [SI unit multiple representing 10e12.]</nowiki>
-* peta <nowiki>{SIUnitModifier, conversionFactor=10e15, hedId=HED_0011412} [SI unit multiple representing 10e15.]</nowiki>
-* P <nowiki>{SIUnitSymbolModifier, conversionFactor=10e15, hedId=HED_0011413} [SI unit multiple representing 10e15.]</nowiki>
-* exa <nowiki>{SIUnitModifier, conversionFactor=10e18, hedId=HED_0011414} [SI unit multiple representing 10e18.]</nowiki>
-* E <nowiki>{SIUnitSymbolModifier, conversionFactor=10e18, hedId=HED_0011415} [SI unit multiple representing 10e18.]</nowiki>
-* zetta <nowiki>{SIUnitModifier, conversionFactor=10e21, hedId=HED_0011416} [SI unit multiple representing 10e21.]</nowiki>
-* Z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e21, hedId=HED_0011417} [SI unit multiple representing 10e21.]</nowiki>
-* yotta <nowiki>{SIUnitModifier, conversionFactor=10e24, hedId=HED_0011418} [SI unit multiple representing 10e24.]</nowiki>
-* Y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e24, hedId=HED_0011419} [SI unit multiple representing 10e24.]</nowiki>
-* deci <nowiki>{SIUnitModifier, conversionFactor=0.1, hedId=HED_0011420} [SI unit submultiple representing 10e-1.]</nowiki>
-* d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1, hedId=HED_0011421} [SI unit submultiple representing 10e-1.]</nowiki>
-* centi <nowiki>{SIUnitModifier, conversionFactor=0.01, hedId=HED_0011422} [SI unit submultiple representing 10e-2.]</nowiki>
-* c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01, hedId=HED_0011423} [SI unit submultiple representing 10e-2.]</nowiki>
-* milli <nowiki>{SIUnitModifier, conversionFactor=0.001, hedId=HED_0011424} [SI unit submultiple representing 10e-3.]</nowiki>
-* m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001, hedId=HED_0011425} [SI unit submultiple representing 10e-3.]</nowiki>
-* micro <nowiki>{SIUnitModifier, conversionFactor=10e-6, hedId=HED_0011426} [SI unit submultiple representing 10e-6.]</nowiki>
-* u <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-6, hedId=HED_0011427} [SI unit submultiple representing 10e-6.]</nowiki>
-* nano <nowiki>{SIUnitModifier, conversionFactor=10e-9, hedId=HED_0011428} [SI unit submultiple representing 10e-9.]</nowiki>
-* n <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-9, hedId=HED_0011429} [SI unit submultiple representing 10e-9.]</nowiki>
-* pico <nowiki>{SIUnitModifier, conversionFactor=10e-12, hedId=HED_0011430} [SI unit submultiple representing 10e-12.]</nowiki>
-* p <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-12, hedId=HED_0011431} [SI unit submultiple representing 10e-12.]</nowiki>
-* femto <nowiki>{SIUnitModifier, conversionFactor=10e-15, hedId=HED_0011432} [SI unit submultiple representing 10e-15.]</nowiki>
-* f <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-15, hedId=HED_0011433} [SI unit submultiple representing 10e-15.]</nowiki>
-* atto <nowiki>{SIUnitModifier, conversionFactor=10e-18, hedId=HED_0011434} [SI unit submultiple representing 10e-18.]</nowiki>
-* a <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-18, hedId=HED_0011435} [SI unit submultiple representing 10e-18.]</nowiki>
-* zepto <nowiki>{SIUnitModifier, conversionFactor=10e-21, hedId=HED_0011436} [SI unit submultiple representing 10e-21.]</nowiki>
-* z <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-21, hedId=HED_0011437} [SI unit submultiple representing 10e-21.]</nowiki>
-* yocto <nowiki>{SIUnitModifier, conversionFactor=10e-24, hedId=HED_0011438} [SI unit submultiple representing 10e-24.]</nowiki>
-* y <nowiki>{SIUnitSymbolModifier, conversionFactor=10e-24, hedId=HED_0011439} [SI unit submultiple representing 10e-24.]</nowiki>
+* deca <nowiki>{SIUnitModifier, conversionFactor=10.0, hedId=HED_0011400} [SI unit multiple representing 10^1.]</nowiki>
+* da <nowiki>{SIUnitSymbolModifier, conversionFactor=10.0, hedId=HED_0011401} [SI unit multiple representing 10^1.]</nowiki>
+* hecto <nowiki>{SIUnitModifier, conversionFactor=100.0, hedId=HED_0011402} [SI unit multiple representing 10^2.]</nowiki>
+* h <nowiki>{SIUnitSymbolModifier, conversionFactor=100.0, hedId=HED_0011403} [SI unit multiple representing 10^2.]</nowiki>
+* kilo <nowiki>{SIUnitModifier, conversionFactor=1000.0, hedId=HED_0011404} [SI unit multiple representing 10^3.]</nowiki>
+* k <nowiki>{SIUnitSymbolModifier, conversionFactor=1000.0, hedId=HED_0011405} [SI unit multiple representing 10^3.]</nowiki>
+* mega <nowiki>{SIUnitModifier, conversionFactor=1e6, hedId=HED_0011406} [SI unit multiple representing 10^6.]</nowiki>
+* M <nowiki>{SIUnitSymbolModifier, conversionFactor=1e6, hedId=HED_0011407} [SI unit multiple representing 10^6.]</nowiki>
+* giga <nowiki>{SIUnitModifier, conversionFactor=1e9, hedId=HED_0011408} [SI unit multiple representing 10^9.]</nowiki>
+* G <nowiki>{SIUnitSymbolModifier, conversionFactor=1e9, hedId=HED_0011409} [SI unit multiple representing 10^9.]</nowiki>
+* tera <nowiki>{SIUnitModifier, conversionFactor=1e12, hedId=HED_0011410} [SI unit multiple representing 10^12.]</nowiki>
+* T <nowiki>{SIUnitSymbolModifier, conversionFactor=1e12, hedId=HED_0011411} [SI unit multiple representing 10^12.]</nowiki>
+* peta <nowiki>{SIUnitModifier, conversionFactor=1e15, hedId=HED_0011412} [SI unit multiple representing 10^15.]</nowiki>
+* P <nowiki>{SIUnitSymbolModifier, conversionFactor=1e15, hedId=HED_0011413} [SI unit multiple representing 10^15.]</nowiki>
+* exa <nowiki>{SIUnitModifier, conversionFactor=1e18, hedId=HED_0011414} [SI unit multiple representing 10^18.]</nowiki>
+* E <nowiki>{SIUnitSymbolModifier, conversionFactor=1e18, hedId=HED_0011415} [SI unit multiple representing 10^18.]</nowiki>
+* zetta <nowiki>{SIUnitModifier, conversionFactor=1e21, hedId=HED_0011416} [SI unit multiple representing 10^21.]</nowiki>
+* Z <nowiki>{SIUnitSymbolModifier, conversionFactor=1e21, hedId=HED_0011417} [SI unit multiple representing 10^21.]</nowiki>
+* yotta <nowiki>{SIUnitModifier, conversionFactor=1e24, hedId=HED_0011418} [SI unit multiple representing 10^24.]</nowiki>
+* Y <nowiki>{SIUnitSymbolModifier, conversionFactor=1e24, hedId=HED_0011419} [SI unit multiple representing 10^24.]</nowiki>
+* deci <nowiki>{SIUnitModifier, conversionFactor=0.1, hedId=HED_0011420} [SI unit submultiple representing 10^-1.]</nowiki>
+* d <nowiki>{SIUnitSymbolModifier, conversionFactor=0.1, hedId=HED_0011421} [SI unit submultiple representing 10^-1.]</nowiki>
+* centi <nowiki>{SIUnitModifier, conversionFactor=0.01, hedId=HED_0011422} [SI unit submultiple representing 10^-2.]</nowiki>
+* c <nowiki>{SIUnitSymbolModifier, conversionFactor=0.01, hedId=HED_0011423} [SI unit submultiple representing 10^-2.]</nowiki>
+* milli <nowiki>{SIUnitModifier, conversionFactor=0.001, hedId=HED_0011424} [SI unit submultiple representing 10^-3.]</nowiki>
+* m <nowiki>{SIUnitSymbolModifier, conversionFactor=0.001, hedId=HED_0011425} [SI unit submultiple representing 10^-3.]</nowiki>
+* micro <nowiki>{SIUnitModifier, conversionFactor=1e-6, hedId=HED_0011426} [SI unit submultiple representing 10^-6.]</nowiki>
+* u <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-6, hedId=HED_0011427} [SI unit submultiple representing 10^-6.]</nowiki>
+* nano <nowiki>{SIUnitModifier, conversionFactor=1e-9, hedId=HED_0011428} [SI unit submultiple representing 10^-9.]</nowiki>
+* n <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-9, hedId=HED_0011429} [SI unit submultiple representing 10^-9.]</nowiki>
+* pico <nowiki>{SIUnitModifier, conversionFactor=1e-12, hedId=HED_0011430} [SI unit submultiple representing 10^-12.]</nowiki>
+* p <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-12, hedId=HED_0011431} [SI unit submultiple representing 10^-12.]</nowiki>
+* femto <nowiki>{SIUnitModifier, conversionFactor=1e-15, hedId=HED_0011432} [SI unit submultiple representing 10^-15.]</nowiki>
+* f <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-15, hedId=HED_0011433} [SI unit submultiple representing 10^-15.]</nowiki>
+* atto <nowiki>{SIUnitModifier, conversionFactor=1e-18, hedId=HED_0011434} [SI unit submultiple representing 10^-18.]</nowiki>
+* a <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-18, hedId=HED_0011435} [SI unit submultiple representing 10^-18.]</nowiki>
+* zepto <nowiki>{SIUnitModifier, conversionFactor=1e-21, hedId=HED_0011436} [SI unit submultiple representing 10^-21.]</nowiki>
+* z <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-21, hedId=HED_0011437} [SI unit submultiple representing 10^-21.]</nowiki>
+* yocto <nowiki>{SIUnitModifier, conversionFactor=1e-24, hedId=HED_0011438} [SI unit submultiple representing 10^-24.]</nowiki>
+* y <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-24, hedId=HED_0011439} [SI unit submultiple representing 10^-24.]</nowiki>
 
 '''Value classes'''
 * dateTimeClass <nowiki>{allowedCharacter=digits, allowedCharacter=T, allowedCharacter=hyphen, allowedCharacter=colon, hedId=HED_0011301} [Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
@@ -1389,7 +1418,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * tagGroup <nowiki>{tagDomain, boolRange, hedId=HED_0010314} [This tag can only appear inside a tag group.]</nowiki>
 * topLevelTagGroup <nowiki>{tagDomain, boolRange, hedId=HED_0010315} [This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.]</nowiki>
 * unique <nowiki>{tagDomain, boolRange, hedId=HED_0010316} [Only one of this tag or its descendants can be used in the event-level HED string.]</nowiki>
-* unitPrefix <nowiki>{unitDomain, boolRange, hedId=HED_0010317} [This unit is a prefix unit (e.g., dollar sign in the currency units).]</nowiki>
+* unitPrefix <nowiki>{deprecatedFrom=8.4.0, unitDomain, boolRange, hedId=HED_0010317} [This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.]</nowiki>
 * unitSymbol <nowiki>{unitDomain, boolRange, hedId=HED_0010318} [This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.]</nowiki>
 
 '''Properties'''
@@ -1426,7 +1455,7 @@ This schema is released under the Creative Commons Attribution 4.0 International
 * <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema,description=The RDF Schema namespace [RDFS]</nowiki>
 * <nowiki>prefix=skos:,namespace=http://www.w3.org/2004/02/skos/core,description=SKOS (Simple Knowledge Organization System) Vocabulary</nowiki>
 * <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/#,description=The Dublin Core terms</nowiki>
-* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
+* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XML Namespace [XML]</nowiki>
 * <nowiki>prefix=xsd:,namespace=http://www.w3.org/2001/XMLSchema,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
 
 '''External annotations'''

@@ -792,7 +792,7 @@ HED_0012754	2	Virtual-world	Environmental-property		Using technology that create
 HED_0012755	1	Informational-property	Property	extensionAllowed	Something that pertains to a task.
 HED_0012756	2	Description	Informational-property		An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.
 HED_0012757	3	Description-#	Description	takesValue, valueClass=textClass	
-HED_0012758	2	ID	Informational-property		An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).
+HED_0012758	2	ID	Informational-property		A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).
 HED_0012759	3	ID-#	ID	takesValue, valueClass=textClass	
 HED_0012760	2	Label	Informational-property		A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.
 HED_0012761	3	Label-#	Label	takesValue, valueClass=nameClass	

@@ -11,5 +11,5 @@ HED_0010313	SIUnitSymbolModifier	DataProperty	unitModifierDomain, boolRange	This
 HED_0010314	tagGroup	DataProperty	tagDomain, boolRange	This tag can only appear inside a tag group.
 HED_0010315	topLevelTagGroup	DataProperty	tagDomain, boolRange	This tag (or its descendants) can only appear in a top-level tag group. There are additional tag-specific restrictions on what other tags can appear in the group with this tag.
 HED_0010316	unique	DataProperty	tagDomain, boolRange	Only one of this tag or its descendants can be used in the event-level HED string.
-HED_0010317	unitPrefix	DataProperty	unitDomain, boolRange	This unit is a prefix unit (e.g., dollar sign in the currency units).
+HED_0010317	unitPrefix	DataProperty	deprecatedFrom=8.4.0, unitDomain, boolRange	This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.
 HED_0010318	unitSymbol	DataProperty	unitDomain, boolRange	This tag is an abbreviation or symbol representing a type of unit. Unit symbols represent both the singular and the plural and thus cannot be pluralized.
