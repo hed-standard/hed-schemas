@@ -1,6 +1,26 @@
 {
     "": {
-      "id_range":[10000, 39999]
+      "id_range":[10000, 39999],
+      "retired_ids": {
+        "HED_0011644": {
+          "label": "uV",
+          "section": "units",
+          "last_version": "8.4.0",
+          "removed_in": "8.5.0",
+          "reason": "SI-variant unit identical to u + V. Unit classes no longer list SI variants.",
+          "replacement": "V",
+          "reference": "https://github.com/hed-standard/hed-schemas/issues/390"
+        },
+        "HED_0010308": {
+          "label": "hedId",
+          "section": "attributes",
+          "last_version": null,
+          "removed_in": "8.3.0",
+          "reason": "Assigned in the 8.3.0 prerelease and moved to HED_0010500 before release.",
+          "replacement": "HED_0010500",
+          "reference": "https://github.com/hed-standard/hed-schemas/commit/4db21c5"
+        }
+      }
     },
     "score": {
       "id_range":[40000, 59999]
