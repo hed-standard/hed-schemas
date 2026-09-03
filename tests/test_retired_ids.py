@@ -85,7 +85,9 @@ class TestRetiredIds(unittest.TestCase):
             low, high = self.library_data[library]["id_range"]
             for hed_id in entries:
                 with self.subTest(library=library, hed_id=hed_id):
-                    number = int(HED_ID_PATTERN.match(hed_id).group(1))
+                    match = HED_ID_PATTERN.match(hed_id)
+                    self.assertIsNotNone(match, f"{hed_id} is not a well-formed hedId (HED_ + 7 digits)")
+                    number = int(match.group(1))
                     self.assertTrue(low <= number <= high, f"{hed_id} outside [{low}, {high}]")
 
     def test_ids_unique_across_registry(self):
