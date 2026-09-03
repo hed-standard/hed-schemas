@@ -2,7 +2,7 @@
   "version": "8.5.0",
   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
   "xsi:noNamespaceSchemaLocation": "https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd",
-  "prologue": "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. \n\nEach term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.",
+  "prologue": "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema.\n\nEach term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.",
   "tags": {
     "Event": {
       "short_form": "Event",
@@ -12923,7 +12923,7 @@
     "ID": {
       "short_form": "ID",
       "long_form": "Property/Informational-property/ID",
-      "description": "An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).",
+      "description": "A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).",
       "parent": "Informational-property",
       "children": [],
       "attributes": {
@@ -19591,13 +19591,36 @@
       "allowedCharacter": "caret",
       "hedId": "HED_0011604"
     },
+    "coulomb": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0"
+    },
+    "C": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0"
+    },
+    "molar": {
+      "description": "One mole per liter.",
+      "SIUnit": true,
+      "conversionFactor": "1.0"
+    },
+    "mol-per-L": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0"
+    },
     "dollar": {
       "description": null,
       "conversionFactor": "1.0",
       "hedId": "HED_0011605"
     },
     "$": {
-      "description": null,
+      "description": "Prefix units are no longer supported. Use dollar.",
+      "deprecatedFrom": "8.4.0",
       "unitPrefix": true,
       "unitSymbol": true,
       "conversionFactor": "1.0",
@@ -19612,23 +19635,56 @@
       "description": "An arbitrary unit of value, usually an integer indicating reward or penalty.",
       "hedId": "HED_0011608"
     },
+    "ampere": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1000"
+    },
+    "A": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1000"
+    },
     "V": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "0.000001",
+      "conversionFactor": "1000000",
       "hedId": "HED_0011609"
-    },
-    "uV": {
-      "description": "Added as a direct unit because it is the default unit.",
-      "conversionFactor": "1.0",
-      "hedId": "HED_0011644"
     },
     "volt": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "0.000001",
+      "conversionFactor": "1000000",
       "hedId": "HED_0011610"
+    },
+    "joule": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0"
+    },
+    "J": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0"
+    },
+    "calorie": {
+      "description": "Thermochemical calorie. Use the kilo modifier for dietary kilocalories.",
+      "SIUnit": true,
+      "conversionFactor": "4.184"
+    },
+    "newton": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0"
+    },
+    "N": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0"
     },
     "hertz": {
       "description": null,
@@ -19662,6 +19718,7 @@
     },
     "m-per-s^3": {
       "description": null,
+      "SIUnit": true,
       "unitSymbol": true,
       "conversionFactor": "1.0",
       "allowedCharacter": "caret",
@@ -19670,14 +19727,14 @@
     "tesla": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1.0",
       "hedId": "HED_0011617"
     },
     "T": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1.0",
       "hedId": "HED_0011618"
     },
     "byte": {
@@ -19726,6 +19783,44 @@
       "description": null,
       "conversionFactor": "1609.34",
       "hedId": "HED_0011626"
+    },
+    "watt": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1000"
+    },
+    "W": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1000"
+    },
+    "pascal": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0"
+    },
+    "Pa": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0"
+    },
+    "mmHg": {
+      "description": "Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.",
+      "unitSymbol": true,
+      "conversionFactor": "133.322"
+    },
+    "ohm": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001"
+    },
+    "Ohm": {
+      "description": "ASCII spelling of the ohm symbol.",
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "0.001"
     },
     "m-per-s": {
       "description": null,
@@ -19784,6 +19879,10 @@
       "conversionFactor": "86400",
       "hedId": "HED_0011635"
     },
+    "week": {
+      "description": null,
+      "conversionFactor": "604800"
+    },
     "month": {
       "description": null,
       "hedId": "HED_0011645"
@@ -19809,6 +19908,22 @@
       "conversionFactor": "1.0",
       "allowedCharacter": "caret",
       "hedId": "HED_0011639"
+    },
+    "liter": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001"
+    },
+    "litre": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001"
+    },
+    "L": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "0.001"
     },
     "g": {
       "description": null,
@@ -19861,6 +19976,22 @@
       ],
       "default_units": "m^2"
     },
+    "chargeUnits": {
+      "description": "Units of electric charge, for example the charge per phase delivered by electrical stimulation.",
+      "units": [
+        "coulomb",
+        "C"
+      ],
+      "default_units": "C"
+    },
+    "concentrationUnits": {
+      "description": "Units of molar concentration (amount of substance per unit volume).",
+      "units": [
+        "molar",
+        "mol-per-L"
+      ],
+      "default_units": "mol-per-L"
+    },
     "currencyUnits": {
       "description": "Units indicating the worth of something.",
       "hedId": "HED_0011503",
@@ -19870,17 +20001,41 @@
         "euro",
         "point"
       ],
-      "default_units": "$"
+      "default_units": "dollar"
+    },
+    "currentUnits": {
+      "description": "Units of electric current, for example the current delivered by electrical stimulation.",
+      "units": [
+        "ampere",
+        "A"
+      ],
+      "default_units": "mA"
     },
     "electricPotentialUnits": {
       "description": null,
       "hedId": "HED_0011504",
       "units": [
         "V",
-        "uV",
         "volt"
       ],
       "default_units": "uV"
+    },
+    "energyUnits": {
+      "description": "Units of energy, for example the energy of a stimulation pulse or metabolic energy.",
+      "units": [
+        "joule",
+        "J",
+        "calorie"
+      ],
+      "default_units": "J"
+    },
+    "forceUnits": {
+      "description": "Units of force, for example grip force or the reading of a force plate.",
+      "units": [
+        "newton",
+        "N"
+      ],
+      "default_units": "N"
     },
     "frequencyUnits": {
       "description": null,
@@ -19940,6 +20095,31 @@
       ],
       "default_units": "m"
     },
+    "powerUnits": {
+      "description": "Units of power, for example the output of an optogenetic light source or ultrasound transducer.",
+      "units": [
+        "watt",
+        "W"
+      ],
+      "default_units": "mW"
+    },
+    "pressureUnits": {
+      "description": "Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.",
+      "units": [
+        "pascal",
+        "Pa",
+        "mmHg"
+      ],
+      "default_units": "Pa"
+    },
+    "resistanceUnits": {
+      "description": "Units of electrical resistance or impedance, for example electrode impedance.",
+      "units": [
+        "ohm",
+        "Ohm"
+      ],
+      "default_units": "kOhm"
+    },
     "speedUnits": {
       "description": null,
       "hedId": "HED_0011511",
@@ -19967,6 +20147,7 @@
         "second",
         "s",
         "day",
+        "week",
         "month",
         "minute",
         "hour",
@@ -19978,7 +20159,10 @@
       "description": null,
       "hedId": "HED_0011514",
       "units": [
-        "m^3"
+        "m^3",
+        "liter",
+        "litre",
+        "L"
       ],
       "default_units": "m^3"
     },
@@ -19996,243 +20180,243 @@
   },
   "unit_modifiers": {
     "deca": {
-      "description": "SI unit multiple representing 10e1.",
+      "description": "SI unit multiple representing 10^1.",
       "hedId": "HED_0011400",
       "conversionFactor": "10.0",
       "SIUnitModifier": true
     },
     "da": {
-      "description": "SI unit multiple representing 10e1.",
+      "description": "SI unit multiple representing 10^1.",
       "hedId": "HED_0011401",
       "conversionFactor": "10.0",
       "SIUnitSymbolModifier": true
     },
     "hecto": {
-      "description": "SI unit multiple representing 10e2.",
+      "description": "SI unit multiple representing 10^2.",
       "hedId": "HED_0011402",
       "conversionFactor": "100.0",
       "SIUnitModifier": true
     },
     "h": {
-      "description": "SI unit multiple representing 10e2.",
+      "description": "SI unit multiple representing 10^2.",
       "hedId": "HED_0011403",
       "conversionFactor": "100.0",
       "SIUnitSymbolModifier": true
     },
     "kilo": {
-      "description": "SI unit multiple representing 10e3.",
+      "description": "SI unit multiple representing 10^3.",
       "hedId": "HED_0011404",
       "conversionFactor": "1000.0",
       "SIUnitModifier": true
     },
     "k": {
-      "description": "SI unit multiple representing 10e3.",
+      "description": "SI unit multiple representing 10^3.",
       "hedId": "HED_0011405",
       "conversionFactor": "1000.0",
       "SIUnitSymbolModifier": true
     },
     "mega": {
-      "description": "SI unit multiple representing 10e6.",
+      "description": "SI unit multiple representing 10^6.",
       "hedId": "HED_0011406",
-      "conversionFactor": "10e6",
+      "conversionFactor": "1e6",
       "SIUnitModifier": true
     },
     "M": {
-      "description": "SI unit multiple representing 10e6.",
+      "description": "SI unit multiple representing 10^6.",
       "hedId": "HED_0011407",
-      "conversionFactor": "10e6",
+      "conversionFactor": "1e6",
       "SIUnitSymbolModifier": true
     },
     "giga": {
-      "description": "SI unit multiple representing 10e9.",
+      "description": "SI unit multiple representing 10^9.",
       "hedId": "HED_0011408",
-      "conversionFactor": "10e9",
+      "conversionFactor": "1e9",
       "SIUnitModifier": true
     },
     "G": {
-      "description": "SI unit multiple representing 10e9.",
+      "description": "SI unit multiple representing 10^9.",
       "hedId": "HED_0011409",
-      "conversionFactor": "10e9",
+      "conversionFactor": "1e9",
       "SIUnitSymbolModifier": true
     },
     "tera": {
-      "description": "SI unit multiple representing 10e12.",
+      "description": "SI unit multiple representing 10^12.",
       "hedId": "HED_0011410",
-      "conversionFactor": "10e12",
+      "conversionFactor": "1e12",
       "SIUnitModifier": true
     },
     "T": {
-      "description": "SI unit multiple representing 10e12.",
+      "description": "SI unit multiple representing 10^12.",
       "hedId": "HED_0011411",
-      "conversionFactor": "10e12",
+      "conversionFactor": "1e12",
       "SIUnitSymbolModifier": true
     },
     "peta": {
-      "description": "SI unit multiple representing 10e15.",
+      "description": "SI unit multiple representing 10^15.",
       "hedId": "HED_0011412",
-      "conversionFactor": "10e15",
+      "conversionFactor": "1e15",
       "SIUnitModifier": true
     },
     "P": {
-      "description": "SI unit multiple representing 10e15.",
+      "description": "SI unit multiple representing 10^15.",
       "hedId": "HED_0011413",
-      "conversionFactor": "10e15",
+      "conversionFactor": "1e15",
       "SIUnitSymbolModifier": true
     },
     "exa": {
-      "description": "SI unit multiple representing 10e18.",
+      "description": "SI unit multiple representing 10^18.",
       "hedId": "HED_0011414",
-      "conversionFactor": "10e18",
+      "conversionFactor": "1e18",
       "SIUnitModifier": true
     },
     "E": {
-      "description": "SI unit multiple representing 10e18.",
+      "description": "SI unit multiple representing 10^18.",
       "hedId": "HED_0011415",
-      "conversionFactor": "10e18",
+      "conversionFactor": "1e18",
       "SIUnitSymbolModifier": true
     },
     "zetta": {
-      "description": "SI unit multiple representing 10e21.",
+      "description": "SI unit multiple representing 10^21.",
       "hedId": "HED_0011416",
-      "conversionFactor": "10e21",
+      "conversionFactor": "1e21",
       "SIUnitModifier": true
     },
     "Z": {
-      "description": "SI unit multiple representing 10e21.",
+      "description": "SI unit multiple representing 10^21.",
       "hedId": "HED_0011417",
-      "conversionFactor": "10e21",
+      "conversionFactor": "1e21",
       "SIUnitSymbolModifier": true
     },
     "yotta": {
-      "description": "SI unit multiple representing 10e24.",
+      "description": "SI unit multiple representing 10^24.",
       "hedId": "HED_0011418",
-      "conversionFactor": "10e24",
+      "conversionFactor": "1e24",
       "SIUnitModifier": true
     },
     "Y": {
-      "description": "SI unit multiple representing 10e24.",
+      "description": "SI unit multiple representing 10^24.",
       "hedId": "HED_0011419",
-      "conversionFactor": "10e24",
+      "conversionFactor": "1e24",
       "SIUnitSymbolModifier": true
     },
     "deci": {
-      "description": "SI unit submultiple representing 10e-1.",
+      "description": "SI unit submultiple representing 10^-1.",
       "hedId": "HED_0011420",
       "conversionFactor": "0.1",
       "SIUnitModifier": true
     },
     "d": {
-      "description": "SI unit submultiple representing 10e-1.",
+      "description": "SI unit submultiple representing 10^-1.",
       "hedId": "HED_0011421",
       "conversionFactor": "0.1",
       "SIUnitSymbolModifier": true
     },
     "centi": {
-      "description": "SI unit submultiple representing 10e-2.",
+      "description": "SI unit submultiple representing 10^-2.",
       "hedId": "HED_0011422",
       "conversionFactor": "0.01",
       "SIUnitModifier": true
     },
     "c": {
-      "description": "SI unit submultiple representing 10e-2.",
+      "description": "SI unit submultiple representing 10^-2.",
       "hedId": "HED_0011423",
       "conversionFactor": "0.01",
       "SIUnitSymbolModifier": true
     },
     "milli": {
-      "description": "SI unit submultiple representing 10e-3.",
+      "description": "SI unit submultiple representing 10^-3.",
       "hedId": "HED_0011424",
       "conversionFactor": "0.001",
       "SIUnitModifier": true
     },
     "m": {
-      "description": "SI unit submultiple representing 10e-3.",
+      "description": "SI unit submultiple representing 10^-3.",
       "hedId": "HED_0011425",
       "conversionFactor": "0.001",
       "SIUnitSymbolModifier": true
     },
     "micro": {
-      "description": "SI unit submultiple representing 10e-6.",
+      "description": "SI unit submultiple representing 10^-6.",
       "hedId": "HED_0011426",
-      "conversionFactor": "10e-6",
+      "conversionFactor": "1e-6",
       "SIUnitModifier": true
     },
     "u": {
-      "description": "SI unit submultiple representing 10e-6.",
+      "description": "SI unit submultiple representing 10^-6.",
       "hedId": "HED_0011427",
-      "conversionFactor": "10e-6",
+      "conversionFactor": "1e-6",
       "SIUnitSymbolModifier": true
     },
     "nano": {
-      "description": "SI unit submultiple representing 10e-9.",
+      "description": "SI unit submultiple representing 10^-9.",
       "hedId": "HED_0011428",
-      "conversionFactor": "10e-9",
+      "conversionFactor": "1e-9",
       "SIUnitModifier": true
     },
     "n": {
-      "description": "SI unit submultiple representing 10e-9.",
+      "description": "SI unit submultiple representing 10^-9.",
       "hedId": "HED_0011429",
-      "conversionFactor": "10e-9",
+      "conversionFactor": "1e-9",
       "SIUnitSymbolModifier": true
     },
     "pico": {
-      "description": "SI unit submultiple representing 10e-12.",
+      "description": "SI unit submultiple representing 10^-12.",
       "hedId": "HED_0011430",
-      "conversionFactor": "10e-12",
+      "conversionFactor": "1e-12",
       "SIUnitModifier": true
     },
     "p": {
-      "description": "SI unit submultiple representing 10e-12.",
+      "description": "SI unit submultiple representing 10^-12.",
       "hedId": "HED_0011431",
-      "conversionFactor": "10e-12",
+      "conversionFactor": "1e-12",
       "SIUnitSymbolModifier": true
     },
     "femto": {
-      "description": "SI unit submultiple representing 10e-15.",
+      "description": "SI unit submultiple representing 10^-15.",
       "hedId": "HED_0011432",
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1e-15",
       "SIUnitModifier": true
     },
     "f": {
-      "description": "SI unit submultiple representing 10e-15.",
+      "description": "SI unit submultiple representing 10^-15.",
       "hedId": "HED_0011433",
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1e-15",
       "SIUnitSymbolModifier": true
     },
     "atto": {
-      "description": "SI unit submultiple representing 10e-18.",
+      "description": "SI unit submultiple representing 10^-18.",
       "hedId": "HED_0011434",
-      "conversionFactor": "10e-18",
+      "conversionFactor": "1e-18",
       "SIUnitModifier": true
     },
     "a": {
-      "description": "SI unit submultiple representing 10e-18.",
+      "description": "SI unit submultiple representing 10^-18.",
       "hedId": "HED_0011435",
-      "conversionFactor": "10e-18",
+      "conversionFactor": "1e-18",
       "SIUnitSymbolModifier": true
     },
     "zepto": {
-      "description": "SI unit submultiple representing 10e-21.",
+      "description": "SI unit submultiple representing 10^-21.",
       "hedId": "HED_0011436",
-      "conversionFactor": "10e-21",
+      "conversionFactor": "1e-21",
       "SIUnitModifier": true
     },
     "z": {
-      "description": "SI unit submultiple representing 10e-21.",
+      "description": "SI unit submultiple representing 10^-21.",
       "hedId": "HED_0011437",
-      "conversionFactor": "10e-21",
+      "conversionFactor": "1e-21",
       "SIUnitSymbolModifier": true
     },
     "yocto": {
-      "description": "SI unit submultiple representing 10e-24.",
+      "description": "SI unit submultiple representing 10^-24.",
       "hedId": "HED_0011438",
-      "conversionFactor": "10e-24",
+      "conversionFactor": "1e-24",
       "SIUnitModifier": true
     },
     "y": {
-      "description": "SI unit submultiple representing 10e-24.",
+      "description": "SI unit submultiple representing 10^-24.",
       "hedId": "HED_0011439",
-      "conversionFactor": "10e-24",
+      "conversionFactor": "1e-24",
       "SIUnitSymbolModifier": true
     }
   },
@@ -20435,8 +20619,9 @@
       "boolRange": true
     },
     "unitPrefix": {
-      "description": "This unit is a prefix unit (e.g., dollar sign in the currency units).",
+      "description": "This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.",
       "hedId": "HED_0010317",
+      "deprecatedFrom": "8.4.0",
       "unitDomain": true,
       "boolRange": true
     },
@@ -20572,7 +20757,7 @@
     {
       "name": "xml:",
       "namespace": "http://www.w3.org/XML/1998/namespace",
-      "description": "XLM Namespace [XML]"
+      "description": "XML Namespace [XML]"
     },
     {
       "name": "xsd:",

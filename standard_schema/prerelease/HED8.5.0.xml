@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <HED xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8.5.0" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd">
-   <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema. 
+   <prologue>The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema.
 
 Each term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.</prologue>
    <schema>
@@ -7341,7 +7341,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </node>
             <node>
                <name>ID</name>
-               <description>An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
+               <description>A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012758</value>
@@ -11561,11 +11561,74 @@ Each term in this vocabulary has a human-readable description and may include ad
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>chargeUnits</name>
+         <description>Units of electric charge, for example the charge per phase delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>C</value>
+         </attribute>
+         <unit>
+            <name>coulomb</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>C</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>concentrationUnits</name>
+         <description>Units of molar concentration (amount of substance per unit volume).</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mol-per-L</value>
+         </attribute>
+         <unit>
+            <name>molar</name>
+            <description>One mole per liter.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mol-per-L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>currencyUnits</name>
          <description>Units indicating the worth of something.</description>
          <attribute>
             <name>defaultUnits</name>
-            <value>$</value>
+            <value>dollar</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -11584,6 +11647,11 @@ Each term in this vocabulary has a human-readable description and may include ad
          </unit>
          <unit>
             <name>$</name>
+            <description>Prefix units are no longer supported. Use dollar.</description>
+            <attribute>
+               <name>deprecatedFrom</name>
+               <value>8.4.0</value>
+            </attribute>
             <attribute>
                <name>unitPrefix</name>
             </attribute>
@@ -11621,6 +11689,37 @@ Each term in this vocabulary has a human-readable description and may include ad
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>currentUnits</name>
+         <description>Units of electric current, for example the current delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mA</value>
+         </attribute>
+         <unit>
+            <name>ampere</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>A</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>electricPotentialUnits</name>
          <attribute>
             <name>defaultUnits</name>
@@ -11640,23 +11739,11 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0011609</value>
-            </attribute>
-         </unit>
-         <unit>
-            <name>uV</name>
-            <description>Added as a direct unit because it is the default unit.</description>
-            <attribute>
-               <name>conversionFactor</name>
-               <value>1.0</value>
-            </attribute>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011644</value>
             </attribute>
          </unit>
          <unit>
@@ -11666,11 +11753,84 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0011610</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>energyUnits</name>
+         <description>Units of energy, for example the energy of a stimulation pulse or metabolic energy.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>J</value>
+         </attribute>
+         <unit>
+            <name>joule</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>J</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>calorie</name>
+            <description>Thermochemical calorie. Use the kilo modifier for dietary kilocalories.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>4.184</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>forceUnits</name>
+         <description>Units of force, for example grip force or the reading of a force plate.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>N</value>
+         </attribute>
+         <unit>
+            <name>newton</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>N</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -11780,6 +11940,9 @@ Each term in this vocabulary has a human-readable description and may include ad
          <unit>
             <name>m-per-s^3</name>
             <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
                <name>unitSymbol</name>
             </attribute>
             <attribute>
@@ -11813,7 +11976,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -11830,7 +11993,7 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -11966,6 +12129,111 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>hedId</name>
                <value>HED_0011626</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>powerUnits</name>
+         <description>Units of power, for example the output of an optogenetic light source or ultrasound transducer.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mW</value>
+         </attribute>
+         <unit>
+            <name>watt</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>W</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>pressureUnits</name>
+         <description>Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>Pa</value>
+         </attribute>
+         <unit>
+            <name>pascal</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Pa</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mmHg</name>
+            <description>Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.</description>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>133.322</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>resistanceUnits</name>
+         <description>Units of electrical resistance or impedance, for example electrode impedance.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>kOhm</value>
+         </attribute>
+         <unit>
+            <name>ohm</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Ohm</name>
+            <description>ASCII spelling of the ohm symbol.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -12139,6 +12407,13 @@ Each term in this vocabulary has a human-readable description and may include ad
             </attribute>
          </unit>
          <unit>
+            <name>week</name>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>604800</value>
+            </attribute>
+         </unit>
+         <unit>
             <name>month</name>
             <attribute>
                <name>hedId</name>
@@ -12206,6 +12481,39 @@ Each term in this vocabulary has a human-readable description and may include ad
             <attribute>
                <name>hedId</name>
                <value>HED_0011639</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>liter</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>litre</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
             </attribute>
          </unit>
       </unitClassDefinition>
@@ -12277,7 +12585,7 @@ Each term in this vocabulary has a human-readable description and may include ad
    <unitModifierDefinitions>
       <unitModifierDefinition>
          <name>deca</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12292,7 +12600,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12307,7 +12615,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12322,7 +12630,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12337,7 +12645,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12352,7 +12660,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12367,13 +12675,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12382,13 +12690,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12397,13 +12705,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12412,13 +12720,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12427,13 +12735,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12442,13 +12750,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12457,13 +12765,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12472,13 +12780,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12487,13 +12795,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12502,13 +12810,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12517,13 +12825,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12532,13 +12840,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12547,13 +12855,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12562,13 +12870,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12577,7 +12885,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12592,7 +12900,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12607,7 +12915,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12622,7 +12930,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12637,7 +12945,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -12652,7 +12960,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -12667,13 +12975,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12682,13 +12990,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12697,13 +13005,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12712,13 +13020,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12727,13 +13035,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12742,13 +13050,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12757,13 +13065,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12772,13 +13080,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12787,13 +13095,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12802,13 +13110,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12817,13 +13125,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12832,13 +13140,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12847,13 +13155,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -12862,13 +13170,13 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -13301,7 +13609,11 @@ Each term in this vocabulary has a human-readable description and may include ad
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>This unit is a prefix unit (e.g., dollar sign in the currency units).</description>
+         <description>This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.</description>
+         <property>
+            <name>deprecatedFrom</name>
+            <value>8.4.0</value>
+         </property>
          <property>
             <name>unitDomain</name>
          </property>
@@ -13509,7 +13821,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       <schemaPrefix>
          <name>xml:</name>
          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
-         <description>XLM Namespace [XML]</description>
+         <description>XML Namespace [XML]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>

@@ -804,7 +804,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Informational-property <nowiki>{extensionAllowed, hedId=HED_0012755} [Something that pertains to a task.]</nowiki>
 ** Description <nowiki>{hedId=HED_0012756} [An explanation of what the tag group it is in means. If the description is at the top-level of an event string, the description applies to the event.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012757}</nowiki>
-** ID <nowiki>{hedId=HED_0012758} [An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
+** ID <nowiki>{hedId=HED_0012758} [A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).]</nowiki>
 ***  <nowiki># {takesValue, valueClass=textClass, hedId=HED_0012759}</nowiki>
 ** Label <nowiki>{hedId=HED_0012760} [A string of 20 or fewer characters identifying something. Labels usually refer to general classes of things while IDs refer to specific instances. A term that is associated with some entity. A brief description given for purposes of identification. An identifying or descriptive marker that is attached to an object.]</nowiki>
 ***  <nowiki># {takesValue, valueClass=nameClass, hedId=HED_0012761}</nowiki>
@@ -1293,7 +1293,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** candela <nowiki>{SIUnit, hedId=HED_0011614} [Units used to express light intensity.]</nowiki>
 ** cd <nowiki>{SIUnit, unitSymbol, hedId=HED_0011615} [Units used to express light intensity.]</nowiki>
 * jerkUnits <nowiki>{defaultUnits=m-per-s^3, hedId=HED_0011507}</nowiki>
-** m-per-s^3 <nowiki>{unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
+** m-per-s^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
 * magneticFieldUnits <nowiki>{defaultUnits=T, hedId=HED_0011508}</nowiki>
 ** tesla <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011617}</nowiki>
 ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011618}</nowiki>
@@ -1455,7 +1455,7 @@ This schema is released under the Creative Commons Attribution 4.0 International
 * <nowiki>prefix=rdfs:,namespace=http://www.w3.org/2000/01/rdf-schema,description=The RDF Schema namespace [RDFS]</nowiki>
 * <nowiki>prefix=skos:,namespace=http://www.w3.org/2004/02/skos/core,description=SKOS (Simple Knowledge Organization System) Vocabulary</nowiki>
 * <nowiki>prefix=terms:,namespace=http://purl.org/dc/terms/#,description=The Dublin Core terms</nowiki>
-* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XLM Namespace [XML]</nowiki>
+* <nowiki>prefix=xml:,namespace=http://www.w3.org/XML/1998/namespace,description=XML Namespace [XML]</nowiki>
 * <nowiki>prefix=xsd:,namespace=http://www.w3.org/2001/XMLSchema,description=XML Schema Namespace [XMLSCHEMA11-2]</nowiki>
 
 '''External annotations'''
