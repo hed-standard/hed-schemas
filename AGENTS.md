@@ -13,6 +13,7 @@ Run from the activated project venv, which has ruff, mdformat (with the myst plu
 - Spell check: `typos`
 - Markdown format check: `python -m mdformat --check --wrap no --number docs/ *.md`
 - Validate a schema: `hed_validate_schemas <path/to/schema.mediawiki>` (installed with `pip install git+https://github.com/hed-standard/hed-python.git@main`)
+- Regenerate the other formats after editing a prerelease schema: `hed_update_schemas <path/to/prerelease/schema.mediawiki>` (or the edited `.tsv`); it rewrites the XML, JSON, TSV, and mediawiki in that prerelease folder. Never pass `--set-ids`: hedIds are assigned at release. Then run `python scripts/generate_schema_versions.py`, since the manifest records each file's sha.
 - Build docs: `sphinx-build -b html docs/ docs/_build/html` (requires `pip install ".[docs]"`)
 
 CI runs the same checks through uvx instead of a venv: see `.github/workflows/` (schema validation, branch verification, ruff, typos, mdformat, docs build, link check).
@@ -31,10 +32,10 @@ CI runs the same checks through uvx instead of a venv: see `.github/workflows/` 
 ## Rules that are easy to get wrong
 
 - ALL schema changes go in a `prerelease/` subdirectory. Never edit a released schema file.
-- Edit only the `.mediawiki` file; CI generates the XML, JSON, and TSV formats. Never edit generated formats directly.
+- Edit a schema in either its `.mediawiki` file or its `.tsv` files (the TSV set carries the hedIds and extra columns), then regenerate all four formats with `hed_update_schemas` and commit them together. Never hand-edit the `.xml` or `.json`, and never let the four formats diverge: CI validates that they agree but does not regenerate them.
 - Branch names gate what may change: `standard_*` for the standard schema, `score_*`/`lang_*`/`slam_*`/`mouse_*` for the matching library schema, `admin_*` for everything else. `scripts/verify_branch.py` enforces this on every PR.
-- HedIds are permanent identifiers - never reuse one. Ranges per schema are assigned in `library_data.json`.
-- Schema versions follow semantic versioning: major for breaking changes (removed or re-meant terms), minor for additions, patch for description fixes. Document changes in the schema's `prerelease/PRERELEASE_CHANGES.md`.
+- HedIds are permanent identifiers - never reuse one. Ranges per schema are assigned in `library_data.json`. New elements in a prerelease carry no hedId; ids are assigned at release after Working Group review. An id removed from a released schema, or assigned in a prerelease and withdrawn, is recorded under `retired_ids` in `library_data.json` and is never reassigned (`tests/test_retired_ids.py` enforces this).
+- Schema versions follow semantic versioning: major for breaking changes (removed or re-meant terms), minor for additions, patch for description fixes. `prerelease/PRERELEASE_CHANGES.md` is generated with hedtools `SchemaComparer` against the last release; regenerate it, do not hand-edit it.
 - Library schemas declare a compatible standard schema via `withStandard`.
 
 ## Conventions that differ from defaults
