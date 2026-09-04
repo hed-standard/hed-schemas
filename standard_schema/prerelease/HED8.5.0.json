@@ -19951,7 +19951,7 @@
   },
   "unit_classes": {
     "accelerationUnits": {
-      "description": null,
+      "description": "Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.",
       "hedId": "HED_0011500",
       "units": [
         "m-per-s^2"
@@ -19959,7 +19959,7 @@
       "default_units": "m-per-s^2"
     },
     "angleUnits": {
-      "description": null,
+      "description": "Units of plane angle, for example visual angle or joint rotation.",
       "hedId": "HED_0011501",
       "units": [
         "radian",
@@ -19969,7 +19969,7 @@
       "default_units": "radian"
     },
     "areaUnits": {
-      "description": null,
+      "description": "Units of area, for example the size of a stimulus region or a surface on a display.",
       "hedId": "HED_0011502",
       "units": [
         "m^2"
@@ -20012,7 +20012,7 @@
       "default_units": "mA"
     },
     "electricPotentialUnits": {
-      "description": null,
+      "description": "Units of electric potential, for example EEG and other electrophysiological signal amplitudes.",
       "hedId": "HED_0011504",
       "units": [
         "V",
@@ -20038,7 +20038,7 @@
       "default_units": "N"
     },
     "frequencyUnits": {
-      "description": null,
+      "description": "Units of frequency, for example sampling rates, flicker rates, and tone frequencies.",
       "hedId": "HED_0011505",
       "units": [
         "hertz",
@@ -20047,7 +20047,7 @@
       "default_units": "Hz"
     },
     "intensityUnits": {
-      "description": null,
+      "description": "Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.",
       "hedId": "HED_0011506",
       "units": [
         "dB",
@@ -20057,7 +20057,7 @@
       "default_units": "dB"
     },
     "jerkUnits": {
-      "description": null,
+      "description": "Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.",
       "hedId": "HED_0011507",
       "units": [
         "m-per-s^3"
@@ -20065,7 +20065,7 @@
       "default_units": "m-per-s^3"
     },
     "magneticFieldUnits": {
-      "description": null,
+      "description": "Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.",
       "hedId": "HED_0011508",
       "units": [
         "tesla",
@@ -20074,7 +20074,7 @@
       "default_units": "T"
     },
     "memorySizeUnits": {
-      "description": null,
+      "description": "Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.",
       "hedId": "HED_0011509",
       "units": [
         "byte",
@@ -20083,7 +20083,7 @@
       "default_units": "B"
     },
     "physicalLengthUnits": {
-      "description": null,
+      "description": "Units of length, for example distances, positions, and sizes of objects or stimuli.",
       "hedId": "HED_0011510",
       "units": [
         "foot",
@@ -20121,7 +20121,7 @@
       "default_units": "kOhm"
     },
     "speedUnits": {
-      "description": null,
+      "description": "Units of speed, for example the speed of a moving stimulus or of a participant.",
       "hedId": "HED_0011511",
       "units": [
         "m-per-s",
@@ -20131,7 +20131,7 @@
       "default_units": "m-per-s"
     },
     "temperatureUnits": {
-      "description": null,
+      "description": "Units of temperature, for example ambient or skin temperature.",
       "hedId": "HED_0011512",
       "units": [
         "degree-Celsius",
@@ -20141,7 +20141,7 @@
       "default_units": "degree-Celsius"
     },
     "timeUnits": {
-      "description": null,
+      "description": "Units of time, for example durations, delays, and intervals between events.",
       "hedId": "HED_0011513",
       "units": [
         "second",
@@ -20156,7 +20156,7 @@
       "default_units": "s"
     },
     "volumeUnits": {
-      "description": null,
+      "description": "Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.",
       "hedId": "HED_0011514",
       "units": [
         "m^3",
@@ -20167,7 +20167,7 @@
       "default_units": "m^3"
     },
     "weightUnits": {
-      "description": null,
+      "description": "Units of mass, for example body weight or the mass of a delivered substance.",
       "hedId": "HED_0011515",
       "units": [
         "g",

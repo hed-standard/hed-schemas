@@ -11445,6 +11445,7 @@ Each term in this vocabulary has a human-readable description and may include ad
    <unitClassDefinitions>
       <unitClassDefinition>
          <name>accelerationUnits</name>
+         <description>Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
@@ -11477,6 +11478,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>angleUnits</name>
+         <description>Units of plane angle, for example visual angle or joint rotation.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>radian</value>
@@ -11530,6 +11532,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>areaUnits</name>
+         <description>Units of area, for example the size of a stimulus region or a surface on a display.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^2</value>
@@ -11721,6 +11724,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>electricPotentialUnits</name>
+         <description>Units of electric potential, for example EEG and other electrophysiological signal amplitudes.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>uV</value>
@@ -11836,6 +11840,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>frequencyUnits</name>
+         <description>Units of frequency, for example sampling rates, flicker rates, and tone frequencies.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>Hz</value>
@@ -11878,6 +11883,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>intensityUnits</name>
+         <description>Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>dB</value>
@@ -11929,6 +11935,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>jerkUnits</name>
+         <description>Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
@@ -11961,6 +11968,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
+         <description>Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>T</value>
@@ -12003,6 +12011,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>memorySizeUnits</name>
+         <description>Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>B</value>
@@ -12045,6 +12054,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>physicalLengthUnits</name>
+         <description>Units of length, for example distances, positions, and sizes of objects or stimuli.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m</value>
@@ -12239,6 +12249,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>speedUnits</name>
+         <description>Units of speed, for example the speed of a moving stimulus or of a participant.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s</value>
@@ -12295,6 +12306,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
+         <description>Units of temperature, for example ambient or skin temperature.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>degree-Celsius</value>
@@ -12356,6 +12368,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>timeUnits</name>
+         <description>Units of time, for example durations, delays, and intervals between events.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>s</value>
@@ -12454,6 +12467,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>volumeUnits</name>
+         <description>Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
@@ -12519,6 +12533,7 @@ Each term in this vocabulary has a human-readable description and may include ad
       </unitClassDefinition>
       <unitClassDefinition>
          <name>weightUnits</name>
+         <description>Units of mass, for example body weight or the mass of a delivered substance.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>g</value>

@@ -57,11 +57,26 @@
 - powerUnits (Minor): Item powerUnits added
 - pressureUnits (Minor): Item pressureUnits added
 - resistanceUnits (Minor): Item resistanceUnits added
+- accelerationUnits (Patch): Description of accelerationUnits modified
+- angleUnits (Patch): Description of angleUnits modified
+- areaUnits (Patch): Description of areaUnits modified
 - currencyUnits (Patch): Attribute defaultUnits modified from $ to dollar
+- electricPotentialUnits (Patch): Description of electricPotentialUnits modified
+- frequencyUnits (Patch): Description of frequencyUnits modified
+- intensityUnits (Patch): Description of intensityUnits modified
+- jerkUnits (Patch): Description of jerkUnits modified
+- magneticFieldUnits (Patch): Description of magneticFieldUnits modified
+- memorySizeUnits (Patch): Description of memorySizeUnits modified
+- physicalLengthUnits (Patch): Description of physicalLengthUnits modified
+- speedUnits (Patch): Description of speedUnits modified
+- temperatureUnits (Patch): Description of temperatureUnits modified
 - timeUnits (Patch): Unit week added to timeUnits
+- timeUnits (Patch): Description of timeUnits modified
 - volumeUnits (Patch): Unit liter added to volumeUnits
 - volumeUnits (Patch): Unit litre added to volumeUnits
 - volumeUnits (Patch): Unit L added to volumeUnits
+- volumeUnits (Patch): Description of volumeUnits modified
+- weightUnits (Patch): Description of weightUnits modified
 
 **Unit Modifiers:**
 

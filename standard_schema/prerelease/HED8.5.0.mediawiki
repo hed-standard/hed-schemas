@@ -1253,13 +1253,13 @@ Each term in this vocabulary has a human-readable description and may include ad
 !# end schema
 
 '''Unit classes'''
-* accelerationUnits <nowiki>{defaultUnits=m-per-s^2, hedId=HED_0011500}</nowiki>
+* accelerationUnits <nowiki>{defaultUnits=m-per-s^2, hedId=HED_0011500} [Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.]</nowiki>
 ** m-per-s^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011600}</nowiki>
-* angleUnits <nowiki>{defaultUnits=radian, hedId=HED_0011501}</nowiki>
+* angleUnits <nowiki>{defaultUnits=radian, hedId=HED_0011501} [Units of plane angle, for example visual angle or joint rotation.]</nowiki>
 ** radian <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011601}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011602}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
-* areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502}</nowiki>
+* areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502} [Units of area, for example the size of a stimulus region or a surface on a display.]</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
 * chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
 ** coulomb <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
@@ -1275,7 +1275,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * currentUnits <nowiki>{defaultUnits=mA} [Units of electric current, for example the current delivered by electrical stimulation.]</nowiki>
 ** ampere <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
 ** A <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
-* electricPotentialUnits <nowiki>{defaultUnits=uV, hedId=HED_0011504}</nowiki>
+* electricPotentialUnits <nowiki>{defaultUnits=uV, hedId=HED_0011504} [Units of electric potential, for example EEG and other electrophysiological signal amplitudes.]</nowiki>
 ** V <nowiki>{SIUnit, unitSymbol, conversionFactor=1000000, hedId=HED_0011609}</nowiki>
 ** volt <nowiki>{SIUnit, conversionFactor=1000000, hedId=HED_0011610}</nowiki>
 * energyUnits <nowiki>{defaultUnits=J} [Units of energy, for example the energy of a stimulation pulse or metabolic energy.]</nowiki>
@@ -1285,22 +1285,22 @@ Each term in this vocabulary has a human-readable description and may include ad
 * forceUnits <nowiki>{defaultUnits=N} [Units of force, for example grip force or the reading of a force plate.]</nowiki>
 ** newton <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
 ** N <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-* frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505}</nowiki>
+* frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505} [Units of frequency, for example sampling rates, flicker rates, and tone frequencies.]</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
 ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011612}</nowiki>
-* intensityUnits <nowiki>{defaultUnits=dB, hedId=HED_0011506}</nowiki>
+* intensityUnits <nowiki>{defaultUnits=dB, hedId=HED_0011506} [Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.]</nowiki>
 ** dB <nowiki>{unitSymbol, conversionFactor=1.0, hedId=HED_0011613} [Intensity expressed as ratio to a threshold. May be used for sound intensity.]</nowiki>
 ** candela <nowiki>{SIUnit, hedId=HED_0011614} [Units used to express light intensity.]</nowiki>
 ** cd <nowiki>{SIUnit, unitSymbol, hedId=HED_0011615} [Units used to express light intensity.]</nowiki>
-* jerkUnits <nowiki>{defaultUnits=m-per-s^3, hedId=HED_0011507}</nowiki>
+* jerkUnits <nowiki>{defaultUnits=m-per-s^3, hedId=HED_0011507} [Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.]</nowiki>
 ** m-per-s^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011616}</nowiki>
-* magneticFieldUnits <nowiki>{defaultUnits=T, hedId=HED_0011508}</nowiki>
+* magneticFieldUnits <nowiki>{defaultUnits=T, hedId=HED_0011508} [Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.]</nowiki>
 ** tesla <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011617}</nowiki>
 ** T <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011618}</nowiki>
-* memorySizeUnits <nowiki>{defaultUnits=B, hedId=HED_0011509}</nowiki>
+* memorySizeUnits <nowiki>{defaultUnits=B, hedId=HED_0011509} [Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.]</nowiki>
 ** byte <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011619}</nowiki>
 ** B <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011620}</nowiki>
-* physicalLengthUnits <nowiki>{defaultUnits=m, hedId=HED_0011510}</nowiki>
+* physicalLengthUnits <nowiki>{defaultUnits=m, hedId=HED_0011510} [Units of length, for example distances, positions, and sizes of objects or stimuli.]</nowiki>
 ** foot <nowiki>{conversionFactor=0.3048, hedId=HED_0011621}</nowiki>
 ** inch <nowiki>{conversionFactor=0.0254, hedId=HED_0011622}</nowiki>
 ** meter <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011623}</nowiki>
@@ -1317,15 +1317,15 @@ Each term in this vocabulary has a human-readable description and may include ad
 * resistanceUnits <nowiki>{defaultUnits=kOhm} [Units of electrical resistance or impedance, for example electrode impedance.]</nowiki>
 ** ohm <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
 ** Ohm <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001} [ASCII spelling of the ohm symbol.]</nowiki>
-* speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511}</nowiki>
+* speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511} [Units of speed, for example the speed of a moving stimulus or of a participant.]</nowiki>
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011627}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704, hedId=HED_0011628}</nowiki>
 ** kph <nowiki>{unitSymbol, conversionFactor=0.277778, hedId=HED_0011629}</nowiki>
-* temperatureUnits <nowiki>{defaultUnits=degree-Celsius, hedId=HED_0011512}</nowiki>
+* temperatureUnits <nowiki>{defaultUnits=degree-Celsius, hedId=HED_0011512} [Units of temperature, for example ambient or skin temperature.]</nowiki>
 ** degree-Celsius <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011630}</nowiki>
 ** degree Celsius <nowiki>{deprecatedFrom=8.2.0, SIUnit, conversionFactor=1.0, hedId=HED_0011631} [Units are not allowed to have spaces. Use degree-Celsius or oC.]</nowiki>
 ** oC <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011632}</nowiki>
-* timeUnits <nowiki>{defaultUnits=s, hedId=HED_0011513}</nowiki>
+* timeUnits <nowiki>{defaultUnits=s, hedId=HED_0011513} [Units of time, for example durations, delays, and intervals between events.]</nowiki>
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
@@ -1334,12 +1334,12 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
-* volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514}</nowiki>
+* volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514} [Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.]</nowiki>
 ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011639}</nowiki>
 ** liter <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
 ** litre <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
 ** L <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001}</nowiki>
-* weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515}</nowiki>
+* weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515} [Units of mass, for example body weight or the mass of a delivered substance.]</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011640}</nowiki>
 ** gram <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011641}</nowiki>
 ** pound <nowiki>{conversionFactor=453.592, hedId=HED_0011642}</nowiki>
