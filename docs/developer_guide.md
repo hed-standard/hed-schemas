@@ -77,7 +77,7 @@ The four HED schema formats: XML, MEDIAWIKI, TSV, and JSON correspond to file ty
 
 - **MEDIAWIKI format** (`.mediawiki` files) - Human-readable text format in a single file -- easiest format for visualizing the hierarchical structure
 - **TSV format** (`.tsv` files) - Spreadsheet-compatible format with separate files for tags, units, etc. Users usually only edit the `_Tag.tsv` file -- easiest format for including lots of attributes and links to other resources
-- **XML/JSON formats** - Generated automatically by CI/CD, never edit directly
+- **XML/JSON formats** - Generated from the MEDIAWIKI or TSV source with `hed_update_schemas`, never edit directly
 
 **When to use MEDIAWIKI format**:
 
@@ -178,7 +178,7 @@ class: warning
 ---
 1. **ALL changes go to `prerelease/` subdirectory**
 2. **Edit ONLY the `.mediawiki` file** OR ONLY the `.tsv` files during one PR (GitHub pull request)
-3. **Let CI/CD pipeline convert to other formats**
+3. **Regenerate all four formats locally with `hed_update_schemas` and commit them together.** CI validates that the formats agree; it does not convert them.
 4. **Never edit released schemas**
 5. **NEVER assign or change `hedId` values. These are assigned system-wide programmatically.**
 ```
@@ -270,13 +270,20 @@ The actual official release of a new version of a HED schema is a multistage pro
     - Updated description of `Clap-hands` for clarity
     ```
 
-06. **Validate and test conversion** using [HED online tools](https://hedtools.org/hed):
+06. **Regenerate the other formats and validate**:
 
-    - Go to [hedtools.org/hed/schemas](https://hedtools.org/hed/schemas)
-    - Use the **Validate** tool to check your modified schema file for errors
-    - Use the **Convert** tool to ensure your schema can be converted to other formats without errors
-    - If validation or conversion errors occur, fix them in your schema file and repeat until successful
-    - This step helps catch issues before creating a pull request
+    Run the schema tools from a Python environment with `hedtools` installed (`pip install git+https://github.com/hed-standard/hed-python.git@main`):
+
+    ```bash
+    hed_update_schemas standard_schema/prerelease/HED8.5.0.mediawiki
+    hed_validate_schemas standard_schema/prerelease/HED8.5.0.mediawiki --add-all-extensions
+    python scripts/generate_schema_versions.py
+    ```
+
+    - `hed_update_schemas` rewrites the XML, JSON, TSV, and MEDIAWIKI files in the prerelease folder from the file you edited. Never pass `--set-ids`; HED IDs are assigned at release.
+    - `hed_validate_schemas --add-all-extensions` checks that all four formats agree, which is the same check CI runs.
+    - `generate_schema_versions.py` refreshes `schema_versions.json`, which records the sha of each schema file; CI rejects a PR whose manifest is stale.
+    - Alternatively, the [HED online tools](https://hedtools.org/hed/schemas) can validate and convert a single file, but the regenerated files still have to be committed with your change.
 
 07. **Commit and push to your fork**:
 
@@ -297,20 +304,22 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 09. **CI/CD pipeline automatically runs** on your PR:
 
-    - Converts the format you have changed to other formats (e.g., MEDIAWIKI → XML, JSON, TSV)
-    - Validates all schema files
-    - Commits generated files back to your PR branch
-    - **Note**: HED IDs are NOT assigned during prerelease development -- they are only assigned when the schema is officially released (handled by maintainers during the release process)
+    - Validates every changed schema file and checks that the four formats agree
+    - Verifies that the branch name matches the schema being changed and that only `prerelease/` files changed
+    - Checks that `schema_versions.json` is up to date
+    - Runs spelling, Markdown formatting, and link checks
+    - Does **not** convert formats, commit files, or assign HED IDs. HED IDs are assigned only when the schema is officially released (handled by maintainers during the release process).
 
     **If CI/CD pipeline validation fails**:
 
     - Review the error messages in the GitHub Actions log
-    - Common errors (should be found before PR using the online tools):
+    - Common errors (should be found before PR using the local tools):
       - Schema syntax errors (missing brackets, mismatched tags)
       - Invalid attribute values
       - Undefined parent tags in TSV `omn:SubClassOf`
       - Duplicate term names
-    - Fix errors in your prerelease file and push again
+      - Formats out of step because `hed_update_schemas` was not run after an edit
+    - Fix errors in your prerelease file, regenerate, and push again
     - CI/CD will re-run automatically on each push
 
 10. **Review and merge**:
@@ -727,7 +736,7 @@ Then open a PR. On pull requests, `update_manifests.yaml` runs both scripts in `
 
 2. **Don't edit XML/JSON directly**
 
-   - Always edit EITHER MEDIAWIKI OR TSV and let CI convert
+   - Edit EITHER MEDIAWIKI OR TSV, then regenerate all four formats with `hed_update_schemas` and commit them together
 
 3. **Don't use wrong branch prefix**
 
@@ -760,10 +769,10 @@ Then open a PR. On pull requests, `update_manifests.yaml` runs both scripts in `
 ### ✅ Do this instead
 
 1. ✅ Edit in `prerelease/` subdirectories
-2. ✅ Edit only `.mediawiki` files or `.tsv` files
+2. ✅ Edit only `.mediawiki` files or `.tsv` files, then regenerate all four formats with `hed_update_schemas`
 3. ✅ Use correct branch prefix (`standard_*`, `score_*`, etc.)
-4. ✅ Let CI auto-assign HedIds
-5. ✅ Document all changes in `PRERELEASE_CHANGES.md`
+4. ✅ Leave HedIds unassigned; maintainers assign them at release
+5. ✅ Regenerate `PRERELEASE_CHANGES.md` with the hedtools `SchemaComparer` (do not hand-edit it)
 6. ✅ Maintain strict is-a hierarchy
 7. ✅ Keep properties orthogonal to categories
 8. ✅ Search existing schemas thoroughly
@@ -781,16 +790,17 @@ You can easily generate your CHANGELOG.md entry using the *Schema compare* actio
 
 GitHub Actions automatically:
 
-| Workflow                          | Purpose                                                                       |
-| --------------------------------- | ----------------------------------------------------------------------------- |
-| `validate_schemas.yaml`           | Validates all changed schema files                                            |
-| `update_and_convert_schemas.yaml` | Converts changed file(s) to other format                                      |
-| `add_hed_ids.yaml`                | Assigns HedIds to new terms (if during release)                               |
-| `verify_source_branch.yaml`       | Ensures changes on correct branch and in `prerelease/`                        |
-| `update_manifests.yaml`           | Regenerates `schema_versions.json` and `schemas_latest_json/` (checks on PRs) |
-| `typos.yaml`                      | Checks spelling                                                               |
-| `mdformat.yaml`                   | Checks Markdown formatting                                                    |
-| `links.yaml`                      | Checks for broken links                                                       |
+| Workflow                    | Purpose                                                                       |
+| --------------------------- | ----------------------------------------------------------------------------- |
+| `validate_schemas.yaml`     | Validates all changed schema files and checks that the formats agree          |
+| `verify_source_branch.yaml` | Ensures changes on correct branch and in `prerelease/`                        |
+| `update_manifests.yaml`     | Regenerates `schema_versions.json` and `schemas_latest_json/` (checks on PRs) |
+| `typos.yaml`                | Checks spelling                                                               |
+| `mdformat.yaml`             | Checks Markdown formatting                                                    |
+| `links.yaml`                | Checks for broken links                                                       |
+| `ruff.yaml`                 | Lints and format-checks the Python scripts                                    |
+| `ci.yaml`                   | Runs the unittest suite for `scripts/` and `tests/`                           |
+| `docs.yaml`                 | Builds and deploys the documentation                                          |
 
 ## Contributing to documentation
 
