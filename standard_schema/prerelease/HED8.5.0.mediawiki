@@ -147,6 +147,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Perform <nowiki>{hedId=HED_0012136} [Carry out or accomplish an action, task, or function.]</nowiki>
 ** Close <nowiki>{hedId=HED_0012137} [Act as to blocked against entry or passage.]</nowiki>
 ** Collide-with <nowiki>{hedId=HED_0012138} [Hit with force when moving.]</nowiki>
+** Consume <nowiki>[Take a substance into the body by eating or drinking.]</nowiki>
 ** Halt <nowiki>{hedId=HED_0012139} [Bring or come to an abrupt stop.]</nowiki>
 ** Modify <nowiki>{hedId=HED_0012140} [Change something.]</nowiki>
 ** Open <nowiki>{hedId=HED_0012141} [Widen an aperture, door, or gap, especially one allowing access to something.]</nowiki>
@@ -1113,6 +1114,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Appropriate-action <nowiki>{relatedTag=Inappropriate-action, hedId=HED_0013064} [An action suitable or proper in the circumstances.]</nowiki>
 *** Correct-action <nowiki>{relatedTag=Incorrect-action, relatedTag=Indeterminate-action, hedId=HED_0013065} [An action that was a correct response in the context of the task.]</nowiki>
 *** Correction <nowiki>{hedId=HED_0013066} [An action offering an improvement to replace a mistake or error.]</nowiki>
+*** Cued <nowiki>{relatedTag=Uncued} [An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 *** Done-indication <nowiki>{relatedTag=Ready-indication, hedId=HED_0013067} [An action that indicates that the participant has completed this step in the task.]</nowiki>
 *** Imagined-action <nowiki>{hedId=HED_0013068} [Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.]</nowiki>
 *** Inappropriate-action <nowiki>{relatedTag=Appropriate-action, hedId=HED_0013069} [An action not in keeping with what is correct or proper for the task.]</nowiki>
@@ -1122,6 +1124,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Near-miss <nowiki>{relatedTag=Miss, hedId=HED_0013073} [An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.]</nowiki>
 *** Omitted-action <nowiki>{hedId=HED_0013074} [An expected response was skipped.]</nowiki>
 *** Ready-indication <nowiki>{relatedTag=Done-indication, hedId=HED_0013075} [An action that indicates that the participant is ready to perform the next step in the task.]</nowiki>
+*** Uncued <nowiki>{relatedTag=Cued} [An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 ** Task-attentional-demand <nowiki>{hedId=HED_0013076} [Strategy for allocating attention toward goal-relevant information.]</nowiki>
 *** Bottom-up-attention <nowiki>{relatedTag=Top-down-attention, hedId=HED_0013077} [Attentional guidance purely by externally driven factors to stimuli that are salient because of their inherent properties relative to the background. Sometimes this is referred to as stimulus driven.]</nowiki>
 *** Covert-attention <nowiki>{relatedTag=Overt-attention, hedId=HED_0013078} [Paying attention without moving the eyes.]</nowiki>

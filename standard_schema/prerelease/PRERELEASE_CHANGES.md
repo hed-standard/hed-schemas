@@ -2,8 +2,11 @@
 
 **Tags:**
 
+- Consume (Minor): Item Consume added
 - Electrical-artifact (Minor): Item Electrical-artifact added
 - Localized-channel-artifact (Minor): Item Localized-channel-artifact added
+- Cued (Minor): Item Cued added
+- Uncued (Minor): Item Uncued added
 - Omitted-presentation (Minor): Item Omitted-presentation added
 - Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
 - Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
