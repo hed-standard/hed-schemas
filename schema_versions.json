@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T15:48:48.848129+00:00",
+  "generated": "2026-09-05T17:22:30.436939+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -96,7 +96,7 @@
       ],
       "prerelease": [
         {
-          "date": "2026-09-04T10:16:29-05:00",
+          "date": "2026-09-05T10:49:47-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
           "sha": "12c16f3abc55af944fe2d3a96a826daa41ddaa4a",
           "version": "8.5.0"
@@ -166,7 +166,7 @@
         {
           "date": "2026-08-20T10:29:18-05:00",
           "file": "library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml",
-          "sha": "fd826b2f91fadf374bb8c792e35029aab29f06a2",
+          "sha": "715aadaf6f187710906eefd5749da80403175a48",
           "version": "1.0.0"
         }
       ],
@@ -272,5 +272,5 @@
     }
   },
   "manifest_format_version": 1,
-  "repo_commit": "2565197ec44abf4dd9dfedb1c971612a618f9d9a"
+  "repo_commit": "3e9f90dce6aa93198e909bf380ed33d6aa8b48ef"
 }
