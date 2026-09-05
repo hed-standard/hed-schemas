@@ -2282,6 +2282,7 @@
       "children": [
         "Close",
         "Collide-with",
+        "Consume",
         "Halt",
         "Modify",
         "Open",
@@ -2328,6 +2329,17 @@
       "explicitAttributes": {
         "hedId": "HED_0012138"
       }
+    },
+    "Consume": {
+      "short_form": "Consume",
+      "long_form": "Action/Perform/Consume",
+      "description": "Take a substance into the body by eating or drinking.",
+      "parent": "Perform",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Halt": {
       "short_form": "Halt",
@@ -17182,6 +17194,7 @@
         "Appropriate-action",
         "Correct-action",
         "Correction",
+        "Cued",
         "Done-indication",
         "Imagined-action",
         "Inappropriate-action",
@@ -17190,7 +17203,8 @@
         "Miss",
         "Near-miss",
         "Omitted-action",
-        "Ready-indication"
+        "Ready-indication",
+        "Uncued"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -17254,6 +17268,24 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0013066"
+      }
+    },
+    "Cued": {
+      "short_form": "Cued",
+      "long_form": "Property/Task-property/Task-action-type/Cued",
+      "description": "An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.",
+      "parent": "Task-action-type",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Uncued"
+        ]
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Uncued"
+        ]
       }
     },
     "Done-indication": {
@@ -17430,6 +17462,24 @@
           "Done-indication"
         ],
         "hedId": "HED_0013075"
+      }
+    },
+    "Uncued": {
+      "short_form": "Uncued",
+      "long_form": "Property/Task-property/Task-action-type/Uncued",
+      "description": "An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.",
+      "parent": "Task-action-type",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Cued"
+        ]
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Cued"
+        ]
       }
     },
     "Task-attentional-demand": {
