@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <HED version="1.0.0" library="mouse" withStandard="8.5.0">
-   <prologue>The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments. </prologue>
+   <prologue>The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments.</prologue>
    <schema>
       <node>
          <name>Event</name>
@@ -1241,18 +1241,6 @@
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012138</value>
-               </attribute>
-            </node>
-            <node>
-               <name>Consume</name>
-               <description>Ingest reward through drinking or eating</description>
-               <attribute>
-                  <name>rooted</name>
-                  <value>Perform</value>
-               </attribute>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>mouse</value>
                </attribute>
             </node>
             <node>
@@ -13669,10 +13657,6 @@
          <name>Wikipedia</name>
          <link>https://en.wikipedia.org</link>
          <description>General definitions of concepts.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaSource>
    </schemaSources>
    <schemaPrefixes>
@@ -13680,118 +13664,66 @@
          <name>dc:</name>
          <namespace>http://purl.org/dc/elements/1.1/#</namespace>
          <description>The Dublin Core elements</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>foaf:</name>
          <namespace>http://xmlns.com/foaf/0.1/#</namespace>
          <description>Friend-of-a-Friend http://xmlns.com/foaf/spec/</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>iao:</name>
          <namespace>http://purl.obolibrary.org/obo/iao.owl</namespace>
          <description>Information Artifact Ontology (IAO)</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>ncit:</name>
          <namespace>http://purl.obolibrary.org/obo/ncit.owl</namespace>
          <description>NCI Thesaurus OBO Edition</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>obogo:</name>
          <namespace>http://www.geneontology.org/formats/oboInOwl</namespace>
          <description>The OBO Format Namespace</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>owl:</name>
          <namespace>http://www.w3.org/2002/07/owl</namespace>
          <description>The OWL namespace [OWL2-OVERVIEW]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>prov:</name>
          <namespace>http://www.w3.org/ns/prov</namespace>
          <description>The PROV namespace [PROV-DM]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdf:</name>
          <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns</namespace>
          <description>The RDF namespace [RDF-CONCEPTS]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>rdfs:</name>
          <namespace>http://www.w3.org/2000/01/rdf-schema</namespace>
          <description>The RDF Schema namespace [RDFS]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>skos:</name>
          <namespace>http://www.w3.org/2004/02/skos/core</namespace>
          <description>SKOS (Simple Knowledge Organization System) Vocabulary</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>terms:</name>
          <namespace>http://purl.org/dc/terms/#</namespace>
          <description>The Dublin Core terms</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>xml:</name>
          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
          <description>XLM Namespace [XML]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
          <namespace>http://www.w3.org/2001/XMLSchema</namespace>
          <description>XML Schema Namespace [XMLSCHEMA11-2]</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </schemaPrefix>
    </schemaPrefixes>
    <externalAnnotations>
@@ -13800,150 +13732,90 @@
          <id>contributor</id>
          <iri>http://purl.org/dc/elements/1.1/contributor</iri>
          <description>An entity responsible for making contributions to the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>creator</id>
          <iri>http://purl.org/dc/elements/1.1/creator</iri>
          <description>An entity primarily responsible for making the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>date</id>
          <iri>http://purl.org/dc/elements/1.1/date</iri>
          <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>description</id>
          <iri>http://purl.org/dc/elements/1.1/description</iri>
          <description>An account of the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>format</id>
          <iri>http://purl.org/dc/elements/1.1/format</iri>
          <description>The file format</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>identifier</id>
          <iri>http://purl.org/dc/elements/1.1/identifier</iri>
          <description>An unambiguous reference to the resource within a given context.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>language</id>
          <iri>http://purl.org/dc/elements/1.1/language</iri>
          <description>A language of the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>publisher</id>
          <iri>http://purl.org/dc/elements/1.1/publisher</iri>
          <description>An entity responsible for making the resource available.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>relation</id>
          <iri>http://purl.org/dc/elements/1.1/relation</iri>
          <description>A related resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>source</id>
          <iri>http://purl.org/dc/elements/1.1/source</iri>
          <description>A related resource from which the described resource is derived.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>subject</id>
          <iri>http://purl.org/dc/elements/1.1/subject</iri>
          <description>The topic of the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>title</id>
          <iri>http://purl.org/dc/elements/1.1/title</iri>
          <description>A name given to the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>dc:</name>
          <id>type</id>
          <iri>http://purl.org/dc/elements/1.1/type</iri>
          <description>The nature or genre of the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>foaf:</name>
          <id>homepage</id>
          <iri>http://xmlns.com/foaf/0.1/homepage</iri>
          <description>A homepage for some thing.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>obogo:</name>
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
       <externalAnnotation>
          <name>rdfs:</name>
@@ -13956,10 +13828,6 @@
          <id>license</id>
          <iri>http://purl.org/dc/terms/license</iri>
          <description>A legal document giving official permission to do something with the resource.</description>
-         <attribute>
-            <name>inLibrary</name>
-            <value>mouse</value>
-         </attribute>
       </externalAnnotation>
    </externalAnnotations>
 </HED>

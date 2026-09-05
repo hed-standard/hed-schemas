@@ -1,7 +1,6 @@
 hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
 	0	Lick	Move-face	rooted=Move-face	Touch tongue to an object.
 	0	Move-whiskers	Move-face	rooted=Move-face	Move the whiskers.
-	0	Consume	Perform	rooted=Perform	Ingest reward through drinking or eating
 	0	Groom	Perform	rooted=Perform	Engage in self-hygiene.
 	0	Nose-poke	Perform	rooted=Perform	Nose enters or occupies a defined port/aperture location.
 	0	Report	Perform	rooted=Perform	Register a response
