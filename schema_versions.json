@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T15:15:30.774253+00:00",
+  "generated": "2026-09-05T15:48:48.848129+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -96,9 +96,9 @@
       ],
       "prerelease": [
         {
-          "date": "2026-09-03T15:06:11-05:00",
+          "date": "2026-09-04T10:16:29-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
-          "sha": "8d5e6585e759870328e886ec6afea2d1bfc6e18d",
+          "sha": "12c16f3abc55af944fe2d3a96a826daa41ddaa4a",
           "version": "8.5.0"
         }
       ],
@@ -272,5 +272,5 @@
     }
   },
   "manifest_format_version": 1,
-  "repo_commit": "490c8a0f210c5587a15d0ba74de892cc0a0dec7b"
+  "repo_commit": "2565197ec44abf4dd9dfedb1c971612a618f9d9a"
 }

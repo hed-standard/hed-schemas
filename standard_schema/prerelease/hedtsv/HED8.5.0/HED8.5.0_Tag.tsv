@@ -137,6 +137,7 @@ HED_0012135	2	Taste	Perceive		Sense a flavor in the mouth and throat on contact 
 HED_0012136	1	Perform	Action		Carry out or accomplish an action, task, or function.
 HED_0012137	2	Close	Perform		Act as to blocked against entry or passage.
 HED_0012138	2	Collide-with	Perform		Hit with force when moving.
+	2	Consume	Perform		Take a substance into the body by eating or drinking.
 HED_0012139	2	Halt	Perform		Bring or come to an abrupt stop.
 HED_0012140	2	Modify	Perform		Change something.
 HED_0012141	2	Open	Perform		Widen an aperture, door, or gap, especially one allowing access to something.
@@ -1101,6 +1102,7 @@ HED_0013063	2	Task-action-type	Task-property		How an agent action should be inte
 HED_0013064	3	Appropriate-action	Task-action-type	relatedTag=Inappropriate-action	An action suitable or proper in the circumstances.
 HED_0013065	3	Correct-action	Task-action-type	relatedTag=Incorrect-action, relatedTag=Indeterminate-action	An action that was a correct response in the context of the task.
 HED_0013066	3	Correction	Task-action-type		An action offering an improvement to replace a mistake or error.
+	3	Cued	Task-action-type	relatedTag=Uncued	An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.
 HED_0013067	3	Done-indication	Task-action-type	relatedTag=Ready-indication	An action that indicates that the participant has completed this step in the task.
 HED_0013068	3	Imagined-action	Task-action-type		Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.
 HED_0013069	3	Inappropriate-action	Task-action-type	relatedTag=Appropriate-action	An action not in keeping with what is correct or proper for the task.
@@ -1110,6 +1112,7 @@ HED_0013072	3	Miss	Task-action-type	relatedTag=Near-miss	An action considered to
 HED_0013073	3	Near-miss	Task-action-type	relatedTag=Miss	An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.
 HED_0013074	3	Omitted-action	Task-action-type		An expected response was skipped.
 HED_0013075	3	Ready-indication	Task-action-type	relatedTag=Done-indication	An action that indicates that the participant is ready to perform the next step in the task.
+	3	Uncued	Task-action-type	relatedTag=Cued	An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.
 HED_0013076	2	Task-attentional-demand	Task-property		Strategy for allocating attention toward goal-relevant information.
 HED_0013077	3	Bottom-up-attention	Task-attentional-demand	relatedTag=Top-down-attention	Attentional guidance purely by externally driven factors to stimuli that are salient because of their inherent properties relative to the background. Sometimes this is referred to as stimulus driven.
 HED_0013078	3	Covert-attention	Task-attentional-demand	relatedTag=Overt-attention	Paying attention without moving the eyes.

@@ -1222,6 +1222,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                </attribute>
             </node>
             <node>
+               <name>Consume</name>
+               <description>Take a substance into the body by eating or drinking.</description>
+            </node>
+            <node>
                <name>Halt</name>
                <description>Bring or come to an abrupt stop.</description>
                <attribute>
@@ -10186,6 +10190,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
+                  <name>Cued</name>
+                  <description>An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Uncued</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Done-indication</name>
                   <description>An action that indicates that the participant has completed this step in the task.</description>
                   <attribute>
@@ -10287,6 +10299,14 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013075</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Uncued</name>
+                  <description>An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Cued</value>
                   </attribute>
                </node>
             </node>
