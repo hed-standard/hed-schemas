@@ -166,6 +166,7 @@ Branch names determine which schema can be modified:
 | `lang_*`      | Only `library_schemas/lang/`: (docs, `prerelease`)   |
 | `slam_*`      | Only `library_schemas/slam/`: (docs, `prerelease`)   |
 | `mouse_*`     | Only `library_schemas/mouse/`: (docs, `prerelease`)  |
+| `testlib_*`   | Only `library_schemas/testlib/`: docs, `prerelease`  |
 | `admin_*`     | Any files: (docs, scripts, CI/CD) - maintainers only |
 
 CI/CD will reject pushes that violate these conventions. These rules are in place to allow schemas to be housed in a single repository, while keeping development efforts for individual schemas separate. ONLY MAINTAINERS can do releases and move schemas from `prerelease` to the other directories.
