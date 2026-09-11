@@ -69,6 +69,8 @@ As modifications to a HED schema are proposed, they are entered into the `PROPOS
 
 For a more complete view of the process see the [HED schema developer's guide](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 
+Changes arrive as pull requests from a fork, and the branch name decides which schema the pull request may touch: `standard_*` for the standard schema, `score_*`, `lang_*`, `slam_*`, or `mouse_*` for the matching library schema, and `admin_*` (maintainers) for everything else such as documentation, scripts, and CI. A pull request whose branch prefix does not match the files it changes is rejected by CI. Only files under the schema's `prerelease/` directory may change; released schemas are never edited. The [schema developer guide](https://www.hedtags.org/hed-schemas/developer_guide.html) in this repository has the full table and the step-by-step workflow.
+
 ## Installation and local development
 
 ### Prerequisites
