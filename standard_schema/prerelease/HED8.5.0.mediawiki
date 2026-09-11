@@ -684,6 +684,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012638}</nowiki>
 **** Percentage <nowiki>{hedId=HED_0012639} [A fraction or ratio with 100 understood as the denominator.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012640}</nowiki>
+**** Quantity <nowiki>[A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).]</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=anyUnits}</nowiki>
 **** Ratio <nowiki>{hedId=HED_0012641} [A quotient of quantities of the same kind for different components within the same system.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012642}</nowiki>
 *** Spatiotemporal-value <nowiki>{hedId=HED_0012643} [A property relating to space and/or time.]</nowiki>
@@ -1262,6 +1264,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** radian <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011601}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011602}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
+* anyUnits <nowiki>[Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.]</nowiki>
 * areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502} [Units of area, for example the size of a stimulus region or a surface on a display.]</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
 * chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>

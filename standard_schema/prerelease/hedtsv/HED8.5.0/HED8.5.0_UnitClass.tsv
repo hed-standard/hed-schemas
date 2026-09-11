@@ -1,6 +1,7 @@
 hedId	rdfs:label	omn:SubClassOf	Attributes	dc:description
 HED_0011500	accelerationUnits	StandardUnitClass	defaultUnits=m-per-s^2	Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.
 HED_0011501	angleUnits	StandardUnitClass	defaultUnits=radian	Units of plane angle, for example visual angle or joint rotation.
+	anyUnits	StandardUnitClass		Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.
 HED_0011502	areaUnits	StandardUnitClass	defaultUnits=m^2	Units of area, for example the size of a stimulus region or a surface on a display.
 	chargeUnits	StandardUnitClass	defaultUnits=C	Units of electric charge, for example the charge per phase delivered by electrical stimulation.
 	concentrationUnits	StandardUnitClass	defaultUnits=mol-per-L	Units of molar concentration (amount of substance per unit volume).

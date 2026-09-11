@@ -11184,6 +11184,7 @@
         "Item-index",
         "Item-interval",
         "Percentage",
+        "Quantity",
         "Ratio"
       ],
       "attributes": {
@@ -11292,6 +11293,24 @@
           "numericClass"
         ],
         "hedId": "HED_0012640"
+      }
+    },
+    "Quantity": {
+      "short_form": "Quantity",
+      "long_form": "Property/Data-property/Data-value/Quantitative-value/Quantity",
+      "description": "A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).",
+      "parent": "Quantitative-value",
+      "children": [],
+      "attributes": {},
+      "explicitAttributes": {},
+      "placeholder": {
+        "takesValue": true,
+        "unitClass": [
+          "anyUnits"
+        ],
+        "valueClass": [
+          "numericClass"
+        ]
       }
     },
     "Ratio": {
@@ -20017,6 +20036,10 @@
         "degree"
       ],
       "default_units": "radian"
+    },
+    "anyUnits": {
+      "description": "Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.",
+      "units": []
     },
     "areaUnits": {
       "description": "Units of area, for example the size of a stimulus region or a surface on a display.",
