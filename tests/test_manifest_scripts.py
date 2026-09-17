@@ -250,7 +250,10 @@ class GenerateMainTests(unittest.TestCase):
             root = Path(d)
             self._make_repo(root)
             manifest = gsv.build_manifest(root)
-            self.assertEqual(manifest["repo_commit"], gsv.REPO_REF)
+            # The literal, not gsv.REPO_REF: consumers fetch from this ref, so it is a published
+            # contract and a change to it must break this test rather than ride along.
+            self.assertEqual(manifest["repo_commit"], "main")
+            self.assertEqual(gsv.REPO_REF, "main")
             self.assertIsNone(
                 re.fullmatch(r"[0-9a-f]{40}", manifest["repo_commit"]),
                 "repo_commit pins a commit sha again; consumers would fetch the previous commit",

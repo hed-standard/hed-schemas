@@ -73,7 +73,8 @@ from pathlib import Path
 # sha. Pinning it there made consumers download the schema as it was one commit ago: after
 # hed-schemas PR #446 every ``load_schema_version("8.5.0")`` returned the pre-PR file, with the
 # recorded per-entry ``sha`` correctly naming a blob the pinned ref did not contain. A branch ref has
-# no such window. See .status/notes/2026-09-17_stale_manifest_repo_commit.md.
+# no such window. The manifest format, including this field, is documented in
+# docs/developer_guide.md ("scripts/generate_schema_versions.py").
 REPO_REF = "main"
 
 # Mirrors hed.schema.hed_cache.HED_VERSION_FINAL so this script and hedtools agree on exactly
