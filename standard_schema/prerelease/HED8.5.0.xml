@@ -13814,6 +13814,11 @@ Each term in this vocabulary has a human-readable description and may include ad
    <epilogue>This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.</epilogue>
    <schemaSources>
       <schemaSource>
+         <name>Original</name>
+         <link>https://www.hedtags.org</link>
+         <description>The definition was written by the schema authors and has no external source.</description>
+      </schemaSource>
+      <schemaSource>
          <name>Wikipedia</name>
          <link>https://en.wikipedia.org</link>
          <description>General definitions of concepts.</description>
@@ -13982,6 +13987,18 @@ Each term in this vocabulary has a human-readable description and may include ad
          <id>comment</id>
          <iri>http://www.w3.org/2000/01/rdf-schema#comment</iri>
          <description>Standard way to provide a human-readable description.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>closeMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#closeMatch</iri>
+         <description>The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>exactMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#exactMatch</iri>
+         <description>The element denotes the same concept as the external term given as the value.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>terms:</name>

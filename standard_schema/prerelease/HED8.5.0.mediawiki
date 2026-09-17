@@ -1447,6 +1447,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
 
 '''Sources'''
+* <nowiki>source=Original,link=https://www.hedtags.org,description=The definition was written by the schema authors and has no external source.</nowiki>
 * <nowiki>source=Wikipedia,link=https://en.wikipedia.org,description=General definitions of concepts.</nowiki>
 
 '''Prefixes'''
@@ -1481,6 +1482,8 @@ This schema is released under the Creative Commons Attribution 4.0 International
 * <nowiki>prefix=foaf:,id=homepage,iri=http://xmlns.com/foaf/0.1/homepage,description=A homepage for some thing.</nowiki>
 * <nowiki>prefix=obogo:,id=has_dbxref,iri=http://www.geneontology.org/formats/oboInOwl#hasDbXref,description=Property indicating that an ontology term has a cross-reference to a database.</nowiki>
 * <nowiki>prefix=rdfs:,id=comment,iri=http://www.w3.org/2000/01/rdf-schema#comment,description=Standard way to provide a human-readable description.</nowiki>
+* <nowiki>prefix=skos:,id=closeMatch,iri=http://www.w3.org/2004/02/skos/core#closeMatch,description=The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</nowiki>
+* <nowiki>prefix=skos:,id=exactMatch,iri=http://www.w3.org/2004/02/skos/core#exactMatch,description=The element denotes the same concept as the external term given as the value.</nowiki>
 * <nowiki>prefix=terms:,id=license,iri=http://purl.org/dc/terms/license,description=A legal document giving official permission to do something with the resource.</nowiki>
 
 !# end hed

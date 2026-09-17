@@ -164,6 +164,10 @@
 - header_attributes (Patch): header_attributes changed from {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'} to {'version': '8.5.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'}
 - prologue (Patch): prologue changed
 
+**Sources:**
+
+- Original (Minor): Row Original missing in first schema
+
 **Prefixes:**
 
 - xml: (Patch): Row xml: columns differ: description
@@ -171,3 +175,5 @@
 **AnnotationPropertyExternal:**
 
 - ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
+- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
+- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
