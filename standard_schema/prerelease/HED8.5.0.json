@@ -20766,6 +20766,11 @@
   "epilogue": "This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.",
   "sources": [
     {
+      "name": "Original",
+      "link": "https://www.hedtags.org",
+      "description": "The definition was written by the schema authors and has no external source."
+    },
+    {
       "name": "Wikipedia",
       "link": "https://en.wikipedia.org",
       "description": "General definitions of concepts."
@@ -20934,6 +20939,18 @@
       "id": "comment",
       "iri": "http://www.w3.org/2000/01/rdf-schema#comment",
       "description": "Standard way to provide a human-readable description."
+    },
+    {
+      "name": "skos:",
+      "id": "closeMatch",
+      "iri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "description": "The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications."
+    },
+    {
+      "name": "skos:",
+      "id": "exactMatch",
+      "iri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "description": "The element denotes the same concept as the external term given as the value."
     },
     {
       "name": "terms:",
