@@ -36,12 +36,14 @@ the pattern and are intentionally omitted from the deprecated listing.
 Determinism and ``--check``
 ---------------------------
 Output is sorted and stably ordered. ``--check`` compares only schema *content* - which versions
-exist and each file's blob SHA - and ignores volatile git metadata (``generated``, ``repo_commit``,
+exist and each file's blob SHA - and ignores the remaining metadata (``generated``, ``repo_commit``,
 and each entry's ``date``), so it never fails just because CI checked out a different commit (e.g. a
-PR merge commit) than the one the file was generated on. When it does fail, it prints exactly which
-entries were added, removed, or changed. Writing is likewise content-aware: if the committed manifest
-already matches the current schema files, a normal run leaves it untouched instead of rewriting the
-timestamp.
+PR merge commit) than the one the file was generated on. ``repo_commit`` is the fixed ref
+``REPO_REF``, not a HEAD sha; see the comment on that constant for why. When it does fail, it
+prints exactly which entries were added, removed, or changed. Writing is likewise content-aware:
+if the committed manifest already matches the current schema files, a normal run leaves it
+untouched instead of rewriting the timestamp - except when ``repo_commit`` itself is stale, which
+is always rewritten.
 
 Usage::
 
@@ -61,6 +63,19 @@ import sys
 from datetime import datetime, timezone
 from hashlib import sha1
 from pathlib import Path
+
+# The git ref consumers fetch schema files from. hedtools reads this as ``repo_commit`` and builds
+# raw.githubusercontent.com/<repo>/<ref>/<file> from it (hed-python
+# hed/schema/schema_version_manifest.py, _raw_url and find_version_info).
+#
+# It must NOT be the HEAD sha. This manifest is generated before the commit that carries the schema
+# files it describes, so HEAD is always the *previous* commit - a commit can never contain its own
+# sha. Pinning it there made consumers download the schema as it was one commit ago: after
+# hed-schemas PR #446 every ``load_schema_version("8.5.0")`` returned the pre-PR file, with the
+# recorded per-entry ``sha`` correctly naming a blob the pinned ref did not contain. A branch ref has
+# no such window. The manifest format, including this field, is documented in
+# docs/developer_guide.md ("scripts/generate_schema_versions.py").
+REPO_REF = "main"
 
 # Mirrors hed.schema.hed_cache.HED_VERSION_FINAL so this script and hedtools agree on exactly
 # which filenames are versioned schemas and how the (library, version) split is made.
@@ -120,18 +135,6 @@ def git_iso_date(path: Path, repo_root: Path) -> str:
     # Fallback: filesystem mtime as UTC ISO-8601.
     mtime = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc)
     return mtime.isoformat()
-
-
-def repo_head_sha(repo_root: Path) -> str | None:
-    """Return the current HEAD commit SHA, or None if not in a git checkout."""
-    result = subprocess.run(
-        ["git", "-C", str(repo_root), "rev-parse", "HEAD"],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    sha = result.stdout.strip()
-    return sha or None
 
 
 def _version_sort_key(version: str) -> tuple:
@@ -221,7 +224,7 @@ def build_manifest(repo_root: Path) -> dict:
     return {
         "manifest_format_version": MANIFEST_FORMAT_VERSION,
         "generated": datetime.now(tz=timezone.utc).isoformat(),
-        "repo_commit": repo_head_sha(repo_root),
+        "repo_commit": REPO_REF,
         "libraries": libraries,
     }
 
@@ -234,8 +237,8 @@ def _label(library_key: str) -> str:
 def _content_index(manifest: dict) -> dict:
     """Flatten a manifest to ``{(library, category, version): {"file", "sha"}}`` for diffing.
 
-    Deliberately excludes the volatile / history-derived fields (``generated``, ``repo_commit``, and
-    each entry's ``date``) so that a change in git metadata alone never counts as the manifest being
+    Deliberately excludes the non-content fields (``generated``, ``repo_commit``, and each entry's
+    ``date``) so that a change in git metadata alone never counts as the manifest being
     "out of date" - only a real change to which schema files exist, or their content (SHA), does.
     This is what keeps the ``--check`` gate stable across different checkouts: a pull request's
     merge-commit checkout in CI has a different HEAD SHA (and can have different commit dates) than
@@ -356,7 +359,11 @@ def main() -> int:
             existing = json.loads(output_path.read_text(encoding="utf-8"))
         except ValueError:
             existing = None
-        if existing is not None and not _diff_manifests(existing, manifest):
+        # A stale repo_commit is rewritten even when the schema content is unchanged. _diff_manifests
+        # ignores repo_commit on purpose (see _content_index), so without this a manifest still
+        # pinning an old HEAD sha would never be corrected until some schema file happened to change.
+        ref_is_stale = existing is not None and existing.get("repo_commit") != manifest.get("repo_commit")
+        if existing is not None and not ref_is_stale and not _diff_manifests(existing, manifest):
             print(f"{output_path} already reflects the current schema files; not rewriting.")
             return 0
 

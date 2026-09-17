@@ -694,7 +694,9 @@ python scripts/generate_schema_versions.py --check
 
 Output is sorted and stably ordered, so regenerating at the same commit produces a byte-identical file (only the human-readable `generated` timestamp varies, and `--check` ignores it). The manifest includes `testlib` — it is a real, listable library; the `testlib` exclusion applies only to the latest-JSON copies below.
 
-Format (top level): `manifest_format_version` (int), `generated` (ISO-8601 timestamp), `repo_commit` (HEAD SHA), and `libraries`, keyed by library name with `""` for the standard schema (matching `library_data.json`). Each library has `released` / `prerelease` / `deprecated` arrays sorted newest-first, and each entry is `{version, file, sha, date}`.
+Format (top level): `manifest_format_version` (int), `generated` (ISO-8601 timestamp), `repo_commit` (a git ref, not a commit SHA - see below), and `libraries`, keyed by library name with `""` for the standard schema (matching `library_data.json`). Each library has `released` / `prerelease` / `deprecated` arrays sorted newest-first, and each entry is `{version, file, sha, date}`.
+
+`repo_commit` is the git ref a consumer fetches schema files from: `hedtools` builds `https://raw.githubusercontent.com/hed-standard/hed-schemas/<repo_commit>/<file>` from it. The script writes the fixed branch ref `main` (the `REPO_REF` constant), and it must not be changed back to a commit SHA. The manifest is generated *before* the commit that carries the schema files it describes, so `HEAD` at generation time is always the previous commit - a commit cannot contain its own SHA. While it held a HEAD SHA, consumers downloaded every schema as it was one commit earlier: after PR #446 each `load_schema_version("8.5.0")` returned the pre-PR file, even though the manifest's own per-entry `sha` correctly named the new blob. A branch ref has no such window. Because `--check` compares schema content only, a stale `repo_commit` is also rewritten by a normal run even when no schema file changed.
 
 ### `scripts/update_latest_json.py` — keep the latest-JSON copies honest
 
