@@ -14,6 +14,8 @@ from __future__ import annotations
 
 import contextlib
 import io
+import json
+import re
 import shutil
 import sys
 import tempfile
@@ -241,6 +243,51 @@ class GenerateMainTests(unittest.TestCase):
             self.assertEqual(rc, 1)
             self.assertIn("changed: score / released / 2.1.0", err)
             self.assertIn("commit schema_versions.json", err)
+
+    def test_repo_commit_is_a_fixed_ref_not_a_head_sha(self):
+        """repo_commit must be a branch ref: it is written before the commit carrying the files."""
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            manifest = gsv.build_manifest(root)
+            self.assertEqual(manifest["repo_commit"], gsv.REPO_REF)
+            self.assertIsNone(
+                re.fullmatch(r"[0-9a-f]{40}", manifest["repo_commit"]),
+                "repo_commit pins a commit sha again; consumers would fetch the previous commit",
+            )
+
+    def test_stale_repo_commit_is_rewritten_even_when_content_matches(self):
+        """A manifest still pinning an old HEAD sha migrates on the next run."""
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            out = root / "schema_versions.json"
+
+            rc, _, _ = _run_main(gsv, ["--repo-root", str(root), "-o", str(out)])
+            self.assertEqual(rc, 0)
+
+            stale = json.loads(out.read_text(encoding="utf-8"))
+            stale["repo_commit"] = "0" * 40
+            out.write_text(json.dumps(stale, indent=2, sort_keys=True), encoding="utf-8")
+
+            # Schema content is untouched, so only the stale ref can trigger the rewrite.
+            rc, _, _ = _run_main(gsv, ["--repo-root", str(root), "-o", str(out)])
+            self.assertEqual(rc, 0)
+            self.assertEqual(json.loads(out.read_text(encoding="utf-8"))["repo_commit"], gsv.REPO_REF)
+
+    def test_unchanged_manifest_is_not_rewritten(self):
+        """The rewrite-on-stale-ref check must not make every run churn the file."""
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            out = root / "schema_versions.json"
+
+            _run_main(gsv, ["--repo-root", str(root), "-o", str(out)])
+            first = out.read_bytes()
+            rc, msg, _ = _run_main(gsv, ["--repo-root", str(root), "-o", str(out)])
+            self.assertEqual(rc, 0)
+            self.assertIn("not rewriting", msg)
+            self.assertEqual(out.read_bytes(), first)
 
     def test_check_missing_file_fails(self):
         with tempfile.TemporaryDirectory() as d:
