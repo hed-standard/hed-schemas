@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T15:08:04.347411+00:00",
+  "generated": "2026-09-18T15:52:37.232179+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -176,9 +176,9 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2025-06-09T11:19:31-05:00",
+          "date": "2026-09-18T10:50:33-05:00",
           "file": "library_schemas/score/prerelease/HED_score_2.2.0.xml",
-          "sha": "e68d2732d9d953fd21c88fa627d9f5cc28082c6e",
+          "sha": "eb029c2e93a0f6452fa84c6cd0268b419ce78a3b",
           "version": "2.2.0"
         }
       ],
