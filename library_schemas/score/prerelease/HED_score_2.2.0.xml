@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="2.2.0" library="score" withStandard="8.4.0">
+<HED version="2.2.0" library="score" withStandard="8.5.0">
    <prologue>This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.
 The HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
@@ -756,7 +756,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Beniczky ea 2013 Appendix S2</value>
-               <value>dc:source suggested tags from Beniczky ea 2017 Table 4.</value>
+               <value>dc:source Beniczky ea 2017 Table 4 (suggested tags)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1029,7 +1029,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Hirsch ea 2013</value>
-               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
+               <value>dc:source Beniczky ea 2017 Table 8 (suggested tags)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1055,7 +1055,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Hirsch ea 2013</value>
-               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
+               <value>dc:source Beniczky ea 2017 Table 8 (suggested tags)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1086,7 +1086,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Hirsch ea 2013</value>
-               <value>dc:source Suggested tags from Beniczky ea 2017 Table 8.</value>
+               <value>dc:source Beniczky ea 2017 Table 8 (suggested tags)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1126,7 +1126,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Beniczky ea 2017 Table 9 Supplement 1</value>
-               <value>dc:source Selection-tree and list of seizure-types according to the current ILAE seizure classification Fisher ea 2017.</value>
+               <value>dc:source Fisher ea 2017 (selection-tree and list of seizure-types according to the current ILAE seizure classification)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -1157,9 +1157,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>annotation</name>
                   <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
-                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Fisher ea 2017 Figure 2 (suggested tags)</value>
                   <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                  <value>dc:source ILAE seizure classification code I.</value>
+                  <value>dc:source Fisher ea 2017 ILAE seizure classification code I.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -1175,9 +1175,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
-                     <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                     <value>dc:source Fisher ea 2017 Figure 2 (suggested tags)</value>
                      <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                     <value>dc:source ILAE seizure classification code I.</value>
+                     <value>dc:source Fisher ea 2017 ILAE seizure classification code I.</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -1195,7 +1195,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
                      <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                     <value>dc:source ILAE seizure classification code I.B.</value>
+                     <value>dc:source Fisher ea 2017 ILAE seizure classification code I.B.</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -1213,7 +1213,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
                      <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                     <value>dc:source ILAE seizure classification code I.C.</value>
+                     <value>dc:source Fisher ea 2017 ILAE seizure classification code I.C.</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -1231,7 +1231,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
                      <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                     <value>dc:source ILAE seizure classification code I.D.01.</value>
+                     <value>dc:source Fisher ea 2017 ILAE seizure classification code I.D.01.</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -1264,9 +1264,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>annotation</name>
                   <value>dc:source Fisher ea 2017 Table 2 and Key Points</value>
-                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Fisher ea 2017 Figure 2 (suggested tags)</value>
                   <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                  <value>dc:source ILAE seizure classification code II.</value>
+                  <value>dc:source Fisher ea 2017 ILAE seizure classification code II.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -1289,9 +1289,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>annotation</name>
                   <value>dc:source Fisher ea 2017 page 532</value>
-                  <value>dc:source Suggested tags from Fisher ea 2017 Figure 2</value>
+                  <value>dc:source Fisher ea 2017 Figure 2 (suggested tags)</value>
                   <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                  <value>dc:source ILAE seizure classification code III.</value>
+                  <value>dc:source Fisher ea 2017 ILAE seizure classification code III.</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -1308,7 +1308,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
                      <value>dc:source Beniczky ea 2017 Supplement 1</value>
-                     <value>dc:source ILAE seizure classification code III.C.01.</value>
+                     <value>dc:source Fisher ea 2017 ILAE seizure classification code III.C.01.</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2011,7 +2011,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <description>Occipital intermittent rhythmic delta activity (OIRDA). Fairly regular or approximately sinusoidal waves, mostly occurring in bursts at 2-3 Hz over the occipital or posterior head regions of one or both sides of the head. Frequently blocked or attenuated by opening the eyes. Comment: most commonly associated with unspecified encephalopathy, in children.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>dc:sourceBeniczky ea 2017 Table 5</value>
+                     <value>dc:source Beniczky ea 2017 Table 5</value>
                      <value>dc:source Beniczky ea 2013 Appendix S4</value>
                   </attribute>
                   <attribute>
@@ -4615,7 +4615,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
-                     <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                     <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -4628,10 +4628,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                </node>
                <node>
                   <name>Negative-myoclonic-seizure</name>
-                  <description>annotation=dc:source Beniczky ea 2017 Supplement 1, annotation=dc:source Duration tag from Beniczky ea Table 13</description>
                   <attribute>
                      <name>suggestedTag</name>
                      <value>Duration</value>
+                  </attribute>
+                  <attribute>
+                     <name>annotation</name>
+                     <value>dc:source Beniczky ea 2017 Supplement 1</value>
+                     <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -4652,7 +4656,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
-                     <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                     <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -4816,7 +4820,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
-                     <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                     <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -4917,7 +4921,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>annotation</name>
                      <value>dc:source Fisher ea 2017 Table 2</value>
-                     <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                     <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -5004,7 +5008,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <attribute>
                   <name>annotation</name>
                   <value>dc:source Beniczky ea 2017 Section 10</value>
-                  <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                  <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -6407,7 +6411,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>annotation</name>
                   <value>dc:source Blume ea 2001</value>
                   <value>dc:source Beniczky ea 2017 Table 11</value>
-                  <value>dc:source Duration tag from Beniczky ea Table 13</value>
+                  <value>dc:source Beniczky ea 2017 Table 13 (duration tag)</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -7269,7 +7273,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Beniczky ea 2013 Appendix S4</value>
-               <value>dc:source Morphologies from Beniczky ea 2017 Table 5. annotation</value>
+               <value>dc:source Beniczky ea 2017 Table 5 (morphologies)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -7299,8 +7303,8 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             <attribute>
                <name>annotation</name>
                <value>dc:source Beniczky ea 2013 Appendix S4</value>
-               <value>dc:source Morphologies from Beniczky ea 2017 Table 5</value>
-               <value>dc:source Suggested tags from Beniczky ea 2017 Section 8</value>
+               <value>dc:source Beniczky ea 2017 Table 5 (morphologies)</value>
+               <value>dc:source Beniczky ea 2017 Section 8 (suggested tags)</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -8762,7 +8766,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <description>Recording containing sleep-patterns that are considered normal for the attained sleep stages and for the age.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>dc:source Benizcky ea 2013 Appendix S3</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S3</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -8778,7 +8782,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <description>Absence or consistently marked amplitude asymmetry (&gt;50%) of a normal sleep graphoelement.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>dc:source Benizcky ea 2013 Appendix S3</value>
+                  <value>dc:source Beniczky ea 2013 Appendix S3</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -9478,11 +9482,6 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          <attribute>
             <name>suggestedTag</name>
             <value>Task-property</value>
-         </attribute>
-         <attribute>
-            <name>annotation</name>
-            <value>ncit:C25499</value>
-            <value>rdfs:comment Should have this tag in every event process.</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -10693,6 +10692,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <name>hedId</name>
                   <value>HED_0012138</value>
                </attribute>
+            </node>
+            <node>
+               <name>Consume</name>
+               <description>Take a substance into the body by eating or drinking.</description>
             </node>
             <node>
                <name>Halt</name>
@@ -14030,6 +14033,44 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
+                     <name>Electrical-artifact</name>
+                     <description>Signal Contamination due to extraneous or unwanted electrical signals.</description>
+                     <node>
+                        <name>Induction-artifact</name>
+                        <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012517</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Line-noise-artifact</name>
+                        <description>Power line noise at 50 Hz or 60 Hz.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012518</value>
+                        </attribute>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012519</value>
+                           </attribute>
+                        </node>
+                     </node>
+                  </node>
+                  <node>
                      <name>Electrode-movement-artifact</name>
                      <description>Artifact from electrode movement.</description>
                      <attribute>
@@ -14038,54 +14079,28 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      </attribute>
                   </node>
                   <node>
-                     <name>Electrode-pops-artifact</name>
-                     <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
+                     <name>Localized-channel-artifact</name>
+                     <description>Transient artifact usually involving a single channel or a small subset of channels.</description>
                      <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012516</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Induction-artifact</name>
-                     <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012517</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Line-noise-artifact</name>
-                     <description>Power line noise at 50 Hz or 60 Hz.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012518</value>
+                        <name>suggestedTag</name>
+                        <value>ID</value>
                      </attribute>
                      <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
+                        <name>Electrode-pops-artifact</name>
+                        <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012519</value>
+                           <value>HED_0012516</value>
                         </attribute>
                      </node>
-                  </node>
-                  <node>
-                     <name>Salt-bridge-artifact</name>
-                     <description>Artifact from salt-bridge between EEG electrodes.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012520</value>
-                     </attribute>
+                     <node>
+                        <name>Salt-bridge-artifact</name>
+                        <description>Artifact from salt-bridge between EEG electrodes.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012520</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -15430,6 +15445,24 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012640</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Quantity</name>
+                     <description>A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>anyUnits</value>
                         </attribute>
                      </node>
                   </node>
@@ -16802,7 +16835,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </node>
             <node>
                <name>ID</name>
-               <description>An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
+               <description>A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012758</value>
@@ -19647,6 +19680,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   </attribute>
                </node>
                <node>
+                  <name>Cued</name>
+                  <description>An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Uncued</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Done-indication</name>
                   <description>An action that indicates that the participant has completed this step in the task.</description>
                   <attribute>
@@ -19748,6 +19789,14 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013075</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Uncued</name>
+                  <description>An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Cued</value>
                   </attribute>
                </node>
             </node>
@@ -20125,6 +20174,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                      <name>hedId</name>
                      <value>HED_0013116</value>
                   </attribute>
+               </node>
+               <node>
+                  <name>Omitted-presentation</name>
+                  <description>Something that is expected to happen or usually happens but doesn't.</description>
                </node>
                <node>
                   <name>Penalty</name>
@@ -20902,6 +20955,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
    <unitClassDefinitions>
       <unitClassDefinition>
          <name>accelerationUnits</name>
+         <description>Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
@@ -20934,6 +20988,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>angleUnits</name>
+         <description>Units of plane angle, for example visual angle or joint rotation.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>radian</value>
@@ -20986,7 +21041,12 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>anyUnits</name>
+         <description>Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.</description>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>areaUnits</name>
+         <description>Units of area, for example the size of a stimulus region or a surface on a display.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^2</value>
@@ -21018,11 +21078,74 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>chargeUnits</name>
+         <description>Units of electric charge, for example the charge per phase delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>C</value>
+         </attribute>
+         <unit>
+            <name>coulomb</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>C</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>concentrationUnits</name>
+         <description>Units of molar concentration (amount of substance per unit volume).</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mol-per-L</value>
+         </attribute>
+         <unit>
+            <name>molar</name>
+            <description>One mole per liter.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mol-per-L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>currencyUnits</name>
          <description>Units indicating the worth of something.</description>
          <attribute>
             <name>defaultUnits</name>
-            <value>$</value>
+            <value>dollar</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21041,6 +21164,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
          <unit>
             <name>$</name>
+            <description>Prefix units are no longer supported. Use dollar.</description>
+            <attribute>
+               <name>deprecatedFrom</name>
+               <value>8.4.0</value>
+            </attribute>
             <attribute>
                <name>unitPrefix</name>
             </attribute>
@@ -21078,7 +21206,39 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>currentUnits</name>
+         <description>Units of electric current, for example the current delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mA</value>
+         </attribute>
+         <unit>
+            <name>ampere</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>A</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>electricPotentialUnits</name>
+         <description>Units of electric potential, for example EEG and other electrophysiological signal amplitudes.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>uV</value>
@@ -21097,23 +21257,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0011609</value>
-            </attribute>
-         </unit>
-         <unit>
-            <name>uV</name>
-            <description>Added as a direct unit because it is the default unit.</description>
-            <attribute>
-               <name>conversionFactor</name>
-               <value>1.0</value>
-            </attribute>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011644</value>
             </attribute>
          </unit>
          <unit>
@@ -21123,7 +21271,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -21132,7 +21280,81 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>energyUnits</name>
+         <description>Units of energy, for example the energy of a stimulation pulse or metabolic energy.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>J</value>
+         </attribute>
+         <unit>
+            <name>joule</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>J</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>calorie</name>
+            <description>Thermochemical calorie. Use the kilo modifier for dietary kilocalories.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>4.184</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>forceUnits</name>
+         <description>Units of force, for example grip force or the reading of a force plate.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>N</value>
+         </attribute>
+         <unit>
+            <name>newton</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>N</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>frequencyUnits</name>
+         <description>Units of frequency, for example sampling rates, flicker rates, and tone frequencies.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>Hz</value>
@@ -21175,6 +21397,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>intensityUnits</name>
+         <description>Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>dB</value>
@@ -21226,6 +21449,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>jerkUnits</name>
+         <description>Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
@@ -21236,6 +21460,9 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </attribute>
          <unit>
             <name>m-per-s^3</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -21255,6 +21482,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
+         <description>Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>T</value>
@@ -21270,7 +21498,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -21287,7 +21515,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -21297,6 +21525,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>memorySizeUnits</name>
+         <description>Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>B</value>
@@ -21339,6 +21568,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>physicalLengthUnits</name>
+         <description>Units of length, for example distances, positions, and sizes of objects or stimuli.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m</value>
@@ -21427,7 +21657,113 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>powerUnits</name>
+         <description>Units of power, for example the output of an optogenetic light source or ultrasound transducer.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mW</value>
+         </attribute>
+         <unit>
+            <name>watt</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>W</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>pressureUnits</name>
+         <description>Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>Pa</value>
+         </attribute>
+         <unit>
+            <name>pascal</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Pa</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mmHg</name>
+            <description>Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.</description>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>133.322</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>resistanceUnits</name>
+         <description>Units of electrical resistance or impedance, for example electrode impedance.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>kOhm</value>
+         </attribute>
+         <unit>
+            <name>ohm</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Ohm</name>
+            <description>ASCII spelling of the ohm symbol.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>speedUnits</name>
+         <description>Units of speed, for example the speed of a moving stimulus or of a participant.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s</value>
@@ -21484,6 +21820,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
+         <description>Units of temperature, for example ambient or skin temperature.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>degree-Celsius</value>
@@ -21545,6 +21882,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>timeUnits</name>
+         <description>Units of time, for example durations, delays, and intervals between events.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>s</value>
@@ -21596,6 +21934,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
             </attribute>
          </unit>
          <unit>
+            <name>week</name>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>604800</value>
+            </attribute>
+         </unit>
+         <unit>
             <name>month</name>
             <attribute>
                <name>hedId</name>
@@ -21636,6 +21981,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitClassDefinition>
       <unitClassDefinition>
          <name>volumeUnits</name>
+         <description>Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
@@ -21665,9 +22011,43 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
                <value>HED_0011639</value>
             </attribute>
          </unit>
+         <unit>
+            <name>liter</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>litre</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>weightUnits</name>
+         <description>Units of mass, for example body weight or the mass of a delivered substance.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>g</value>
@@ -21734,7 +22114,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
    <unitModifierDefinitions>
       <unitModifierDefinition>
          <name>deca</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -21749,7 +22129,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -21764,7 +22144,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -21779,7 +22159,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -21794,7 +22174,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -21809,7 +22189,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -21824,13 +22204,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21839,13 +22219,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21854,13 +22234,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21869,13 +22249,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21884,13 +22264,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21899,13 +22279,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21914,13 +22294,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21929,13 +22309,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21944,13 +22324,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21959,13 +22339,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21974,13 +22354,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -21989,13 +22369,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22004,13 +22384,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22019,13 +22399,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22034,7 +22414,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -22049,7 +22429,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -22064,7 +22444,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -22079,7 +22459,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -22094,7 +22474,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -22109,7 +22489,7 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -22124,13 +22504,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22139,13 +22519,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22154,13 +22534,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22169,13 +22549,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22184,13 +22564,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22199,13 +22579,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22214,13 +22594,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22229,13 +22609,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22244,13 +22624,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22259,13 +22639,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22274,13 +22654,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22289,13 +22669,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22304,13 +22684,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22319,13 +22699,13 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -22758,7 +23138,11 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>This unit is a prefix unit (e.g., dollar sign in the currency units).</description>
+         <description>This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.</description>
+         <property>
+            <name>deprecatedFrom</name>
+            <value>8.4.0</value>
+         </property>
          <property>
             <name>unitDomain</name>
          </property>
@@ -22910,31 +23294,60 @@ TPA KR DH SM July 2024</epilogue>
          <name>Beniczky ea 2013</name>
          <link>https://doi.org/10.1111/epi.12270</link>
          <description>Standardized computer based organized reporting of EEG: SCORE. Epilepsia 54(6) pp.1112-1124.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
       </schemaSource>
       <schemaSource>
          <name>Beniczky ea 2017</name>
          <link>https://doi.org/10.1016/j.clinph.2017.07.418</link>
          <description>Standardized computer based organized reporting of EEG: SCORE second version. Clinical Neurophysiology 128(11) pp.2334-2346.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
       </schemaSource>
       <schemaSource>
          <name>Blume ea 2001</name>
          <link>https://doi.org/10.1046/j.1528-1157.2001.22001.X</link>
          <description>Glossary of descriptive terminology for ictal semiology: report of the ILAE task force on classification and terminology. Epilepsia 42(9) pp.1212-1218.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
       </schemaSource>
       <schemaSource>
          <name>Fisher ea 2017</name>
          <link>https://doi.org/10.1111/epi.1367</link>
          <description>Instruction manual for the ILAE 2017 operational classification of seizure types. Epilepsia 58(4) pp.531-542.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
       </schemaSource>
       <schemaSource>
          <name>Hirsch ea 2013</name>
          <link>https://doi.org/10.1097/WNP.0b013e3182784729</link>
          <description>American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2012 version. Journal of clinical neurophysiology 30(1) pp.1-27.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
+      </schemaSource>
+      <schemaSource>
+         <name>Original</name>
+         <link>https://www.hedtags.org</link>
+         <description>The definition was written by the schema authors and has no external source.</description>
       </schemaSource>
       <schemaSource>
          <name>Trenite ea 2001</name>
          <link>https://doi.org/10.1046/j.1528-1157.2001.30600.X</link>
          <description>Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology. Epilepsia 42(5) pp.692-701.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>score</value>
+         </attribute>
       </schemaSource>
       <schemaSource>
          <name>Wikipedia</name>
@@ -23001,7 +23414,7 @@ TPA KR DH SM July 2024</epilogue>
       <schemaPrefix>
          <name>xml:</name>
          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
-         <description>XLM Namespace [XML]</description>
+         <description>XML Namespace [XML]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
@@ -23099,6 +23512,24 @@ TPA KR DH SM July 2024</epilogue>
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>rdfs:</name>
+         <id>comment</id>
+         <iri>http://www.w3.org/2000/01/rdf-schema#comment</iri>
+         <description>Standard way to provide a human-readable description.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>closeMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#closeMatch</iri>
+         <description>The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>exactMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#exactMatch</iri>
+         <description>The element denotes the same concept as the external term given as the value.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>terms:</name>
