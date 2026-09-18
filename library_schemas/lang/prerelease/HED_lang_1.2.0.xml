@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
-<HED version="1.2.0" library="lang" withStandard="8.4.0">
-   <prologue>The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The schema allows for detailed annotation of neuroimaging experiments that involve language events from carefully controlled experiments specifically targeting the neuroscience of language processing to more complex naturalistic paradigms that involve written or spoken language. HED Language schema allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics while the individual words in the sentence can simultaneously be associated with word-level characteristics. Annotation possibilities are extensive and cover characteristics of multiple languages allowing for comparisons between languages. </prologue>
+<HED version="1.2.0" library="lang" withStandard="8.5.0">
+   <prologue>The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The schema allows for detailed annotation of neuroimaging experiments that involve language events from carefully controlled experiments specifically targeting the neuroscience of language processing to more complex naturalistic paradigms that involve written or spoken language. HED Language schema allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics while the individual words in the sentence can simultaneously be associated with word-level characteristics. Annotation possibilities are extensive and cover characteristics of multiple languages allowing for comparisons between languages.</prologue>
    <schema>
       <node>
          <name>Event</name>
@@ -8,11 +8,6 @@
          <attribute>
             <name>suggestedTag</name>
             <value>Task-property</value>
-         </attribute>
-         <attribute>
-            <name>annotation</name>
-            <value>ncit:C25499</value>
-            <value>rdfs:comment Should have this tag in every event process.</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -1225,6 +1220,10 @@
                </attribute>
             </node>
             <node>
+               <name>Consume</name>
+               <description>Take a substance into the body by eating or drinking.</description>
+            </node>
+            <node>
                <name>Halt</name>
                <description>Bring or come to an abrupt stop.</description>
                <attribute>
@@ -2221,7 +2220,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in West Asia, North Africa, the Horn of Africa and parts of the Sahara and Sahel.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:afro1255</value>
+                  <value>skos:exactMatch glotto:afro1255</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2236,7 +2235,7 @@
                   <description>An Afroasiatic language spoken mainly in Northern Africa and Western Asia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:arab1395</value>
+                     <value>skos:exactMatch glotto:arab1395</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2252,7 +2251,7 @@
                   <description>An Afroasiatic language mainly spoken in Israel.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:hebr1245</value>
+                     <value>skos:exactMatch glotto:hebr1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2269,7 +2268,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in South, and parts of Central and West Africa.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:atla1278</value>
+                  <value>skos:exactMatch glotto:atla1278</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2284,7 +2283,7 @@
                   <description>An atlantic congo language mainly spoken in Tanzania, Kenya and Mozambique.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:swah1253</value>
+                     <value>skos:exactMatch glotto:swah1253</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2301,7 +2300,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, South Asia and East Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:aust1305</value>
+                  <value>skos:exactMatch glotto:aust1305</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2316,7 +2315,7 @@
                   <description>An Austroasiatic language mainly spoken in Vietnam.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:viet1252</value>
+                     <value>skos:exactMatch glotto:viet1252</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2333,7 +2332,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asi, Madagascar, the islands of the Pacific Ocean and Taiwan.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:aust1307</value>
+                  <value>skos:exactMatch glotto:aust1307</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2348,7 +2347,7 @@
                   <description>An Austronesian language mainly spoken in Brunei, Indonesia, Malaysia, Singapore, East Timor and parts of Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:nucl1806</value>
+                     <value>skos:exactMatch glotto:nucl1806</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2365,7 +2364,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southern India, Northeast Sri Lanka Southwest Pakistan and some regions of Nepal.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:drav1251</value>
+                  <value>skos:exactMatch glotto:drav1251</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages</value>
                </attribute>
                <attribute>
@@ -2381,7 +2380,7 @@
                   <description>A Dravidian Language spoken the Indian state Tamil Nadu, Puducherry and Sri Lanka and Singapore.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:tami1289</value>
+                     <value>skos:exactMatch glotto:tami1289</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2402,7 +2401,7 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:indo1319</value>
+                  <value>skos:exactMatch glotto:indo1319</value>
                   <value>dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages</value>
                </attribute>
                <attribute>
@@ -2418,7 +2417,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northeastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:east2280</value>
+                     <value>skos:exactMatch glotto:east2280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2433,7 +2432,7 @@
                      <description>A baltic language spoken mainly in Latvia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:latv1249</value>
+                        <value>skos:exactMatch glotto:latv1249</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2449,7 +2448,7 @@
                      <description>A baltic language spoken mainly in Lithuania.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:lith1251</value>
+                        <value>skos:exactMatch glotto:lith1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2466,7 +2465,7 @@
                   <description>A system of communication belonging to the family of languages originating in Northwestern and Central Europe and Scandinavia, currently spoken mainly in Europe, North America, Oceania and Southern Africa.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:germ1287</value>
+                     <value>skos:exactMatch glotto:germ1287</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2481,7 +2480,7 @@
                      <description>A Germanic language, mainly spoken in Denmark.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:dani1285</value>
+                        <value>skos:exactMatch glotto:dani1285</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2497,7 +2496,7 @@
                      <description>A Germanic Language which is spoken in parts of Western Europe, South America and the Caribbean islands.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:dutc1256</value>
+                        <value>skos:exactMatch glotto:dutc1256</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2513,7 +2512,7 @@
                      <description>A Germanic Language which is spoken in the United Kingdom, parts of North America, and Oceania and is used in parts of Africa, Asia and Oceania as an administrative language.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:stan1293</value>
+                        <value>skos:exactMatch glotto:stan1293</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2529,7 +2528,7 @@
                      <description>A Germanic Language which is mainly spoken in Western and Central Europe.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:stan1295</value>
+                        <value>skos:exactMatch glotto:stan1295</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2545,7 +2544,7 @@
                      <description>A Germanic language mainly spoken in Iceland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:icel1247</value>
+                        <value>skos:exactMatch glotto:icel1247</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2561,7 +2560,7 @@
                      <description>A Germanic language mainly spoken in Norway.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:norw1258</value>
+                        <value>skos:exactMatch glotto:norw1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2577,7 +2576,7 @@
                      <description>A Germanic language mainly spoken in Sweden and parts of Finland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:swed1254</value>
+                        <value>skos:exactMatch glotto:swed1254</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2594,7 +2593,7 @@
                   <description>A system of communication belonging to the family of languages directly descending from Vulgar Latin.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:roma1334</value>
+                     <value>skos:exactMatch glotto:roma1334</value>
                      <value>dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages</value>
                   </attribute>
                   <attribute>
@@ -2610,7 +2609,7 @@
                      <description>A Romance language spoken in Andorra, and several autonomous communities in Eastern Spain as well as a department in Southern France.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:stan1289</value>
+                        <value>skos:exactMatch glotto:stan1289</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2626,7 +2625,7 @@
                      <description>A Romance language spoken in parts of Western Europe, North America and Africa, and is used as an administrative or official language in parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:stan1290</value>
+                        <value>skos:exactMatch glotto:stan1290</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2642,7 +2641,7 @@
                      <description>A Romance language mainly spoken in Galicia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:gali1258</value>
+                        <value>skos:exactMatch glotto:gali1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2658,7 +2657,7 @@
                      <description>A group of historically related Romance varieties spoken in Switzerland and Northern Italy.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:gall1280</value>
+                        <value>skos:exactMatch glotto:gall1280</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2674,7 +2673,7 @@
                      <description>A Romance language mainly spoken in Italy and parts of Switzerland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:ital1282</value>
+                        <value>skos:exactMatch glotto:ital1282</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2690,7 +2689,7 @@
                      <description>A Romance language spoken in Portugal and part of South America (Brazil) and is used as administrative language in other parts of the world.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:port1283</value>
+                        <value>skos:exactMatch glotto:port1283</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2706,7 +2705,7 @@
                      <description>A Romance language spoken in Romania and Moldova as well as small communities in Bulgaria, Hungary, Serbia and Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:roma1327</value>
+                        <value>skos:exactMatch glotto:roma1327</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2722,7 +2721,7 @@
                      <description>A Romance language spoken in Spain and large parts of the Americas.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:stan1288</value>
+                        <value>skos:exactMatch glotto:stan1288</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2739,7 +2738,7 @@
                   <description>A system of communication belonging to the family of languages originating in Eastern Europe.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:slav1255</value>
+                     <value>skos:exactMatch glotto:slav1255</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2754,7 +2753,7 @@
                      <description>A Slavic language spoken mainly in Bulgaria.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:bulg1262</value>
+                        <value>skos:exactMatch glotto:bulg1262</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2770,7 +2769,7 @@
                      <description>A Slavic language spoken mainly in Croatia, Bosnia and Herzegovina, Montenegro and parts of Serbia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:croa1245</value>
+                        <value>skos:exactMatch glotto:croa1245</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2786,7 +2785,7 @@
                      <description>A Slavic language spoken mainly in the Czech Republic.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:czec1258</value>
+                        <value>skos:exactMatch glotto:czec1258</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2802,7 +2801,7 @@
                      <description>A Slavic language spoken mainly in North Macedonia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:mace1250</value>
+                        <value>skos:exactMatch glotto:mace1250</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2818,7 +2817,7 @@
                      <description>A Slavic language spoken mainly in Poland.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:poli1260</value>
+                        <value>skos:exactMatch glotto:poli1260</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2834,7 +2833,7 @@
                      <description>A Slavic language spoken mainly in Europe and used in parts of Eastern Europe, West and Central Asia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:russ1263</value>
+                        <value>skos:exactMatch glotto:russ1263</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2850,7 +2849,7 @@
                      <description>A Slavic language spoken mainly in Slovakia.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:slov126</value>
+                        <value>skos:exactMatch glotto:slov1269</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2866,7 +2865,7 @@
                      <description>A Slavic language spoken mainly in Ukraine.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:ukra1253</value>
+                        <value>skos:exactMatch glotto:ukra1253</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2884,7 +2883,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Japan and the Ryukyu Islands.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:japo1237</value>
+                  <value>skos:exactMatch glotto:japo1237</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2899,7 +2898,7 @@
                   <description>A Japonic language mainly spoken in Japan.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:nucl1643</value>
+                     <value>skos:exactMatch glotto:nucl1643</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2916,7 +2915,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Korea.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:kore1284</value>
+                  <value>skos:exactMatch glotto:kore1284</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2931,7 +2930,7 @@
                   <description>A Koreanic language mainly spoken in Korea.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:kore1280</value>
+                     <value>skos:exactMatch glotto:kore1280</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2948,7 +2947,7 @@
                <description>A system of communication belonging to the family of languages spoken in Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:sino1245</value>
+                  <value>skos:exactMatch glotto:sino1245</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -2963,7 +2962,7 @@
                   <description>A system of communication belonging to the family of language mainly spoken in Southwest China and Myanmar.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:burm1265</value>
+                     <value>skos:exactMatch glotto:burm1265</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -2978,7 +2977,7 @@
                      <description>A Burmo Qiangic language mainly spoken in Myanmar.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:nucl1310</value>
+                        <value>skos:exactMatch glotto:nucl1310</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -2995,7 +2994,7 @@
                   <description>A system of communication belonging to the family of languages mainly spoken in China.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:sini1245</value>
+                     <value>skos:exactMatch glotto:sini1245</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3010,7 +3009,7 @@
                      <description>A Sinitic language mainly spoken in Jiangxi province , and parts of Hunan, Hubei, Anhui, and Fujian.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:ganc1239</value>
+                        <value>skos:exactMatch glotto:ganc1239</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3026,9 +3025,8 @@
                      <description>A group of Chinese language dialects that are natively spoken in most of northern and southwestern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:mand1471</value>
+                        <value>skos:exactMatch glotto:mand1471</value>
                         <value>dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese</value>
-                        <value>glotto:mand1471</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3056,7 +3054,7 @@
                      <description>A Sinitic language mainly spoken in Shanghai, Zhejiang Province, and the part of Jiangsu Province south of the Yangtze River.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:wuch1236</value>
+                        <value>skos:exactMatch glotto:wuch1236</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3072,7 +3070,7 @@
                      <description>A Sinitic language mainly spoken in Hunan province, northern Guangxi and parts of Guizhou, Guangdong, Sichuan, Jiangxi and Hubei provinces.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:xian1251</value>
+                        <value>skos:exactMatch glotto:xian1251</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3088,7 +3086,7 @@
                      <description>A group of Sinitic languages mainly spoken Southern China.</description>
                      <attribute>
                         <name>annotation</name>
-                        <value>glotto:yuec1235</value>
+                        <value>skos:exactMatch glotto:yuec1235</value>
                      </attribute>
                      <attribute>
                         <name>hedId</name>
@@ -3103,7 +3101,7 @@
                         <description>A Sinitic Language mainly spoken southeastern China, Hong Kong and Macau.</description>
                         <attribute>
                            <name>annotation</name>
-                           <value>glotto:cant1236</value>
+                           <value>skos:exactMatch glotto:cant1236</value>
                         </attribute>
                         <attribute>
                            <name>hedId</name>
@@ -3122,7 +3120,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in Southeast Asia, Southern China, and Northeastern India.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:taik1256</value>
+                  <value>skos:exactMatch glotto:taik1256</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3137,7 +3135,7 @@
                   <description>A Tai Kadai language mainly spoken in Central Thailand.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:thai1261</value>
+                     <value>skos:exactMatch glotto:thai1261</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3154,7 +3152,7 @@
                <description>A system of communication belonging to the family of languages spoken in parts of Eurasia such as Eastern Europe, Southern Europe, Central Asia, East Asia, North Asia and West Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:turk1311</value>
+                  <value>skos:exactMatch glotto:turk1311</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3169,7 +3167,7 @@
                   <description>A Turkish language mainly spoken in Turkey and Northern Cyprus.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:nucl1301</value>
+                     <value>skos:exactMatch glotto:nucl1301</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3186,7 +3184,7 @@
                <description>A system of communication belonging to the family of languages mainly spoken in part of Europe and North Asia.</description>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:ural1272</value>
+                  <value>skos:exactMatch glotto:ural1272</value>
                </attribute>
                <attribute>
                   <name>hedId</name>
@@ -3201,7 +3199,7 @@
                   <description>An Uralic Language mainly spoken in Estonia.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:esto1258</value>
+                     <value>skos:exactMatch glotto:esto1258</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3217,7 +3215,7 @@
                   <description>An Uralic language mainly spoken in Finland.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:finn1318</value>
+                     <value>skos:exactMatch glotto:finn1318</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3233,7 +3231,7 @@
                   <description>An Uralic Language mainly spoken in Hungary.</description>
                   <attribute>
                      <name>annotation</name>
-                     <value>glotto:hung1274</value>
+                     <value>skos:exactMatch glotto:hung1274</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
@@ -3266,7 +3264,6 @@
                </attribute>
                <attribute>
                   <name>annotation</name>
-                  <value>glotto:hung1274</value>
                   <value>dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram</value>
                </attribute>
                <attribute>
@@ -5922,6 +5919,44 @@
                      </attribute>
                   </node>
                   <node>
+                     <name>Electrical-artifact</name>
+                     <description>Signal Contamination due to extraneous or unwanted electrical signals.</description>
+                     <node>
+                        <name>Induction-artifact</name>
+                        <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012517</value>
+                        </attribute>
+                     </node>
+                     <node>
+                        <name>Line-noise-artifact</name>
+                        <description>Power line noise at 50 Hz or 60 Hz.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012518</value>
+                        </attribute>
+                        <node>
+                           <name>#</name>
+                           <attribute>
+                              <name>takesValue</name>
+                           </attribute>
+                           <attribute>
+                              <name>valueClass</name>
+                              <value>numericClass</value>
+                           </attribute>
+                           <attribute>
+                              <name>unitClass</name>
+                              <value>frequencyUnits</value>
+                           </attribute>
+                           <attribute>
+                              <name>hedId</name>
+                              <value>HED_0012519</value>
+                           </attribute>
+                        </node>
+                     </node>
+                  </node>
+                  <node>
                      <name>Electrode-movement-artifact</name>
                      <description>Artifact from electrode movement.</description>
                      <attribute>
@@ -5930,54 +5965,28 @@
                      </attribute>
                   </node>
                   <node>
-                     <name>Electrode-pops-artifact</name>
-                     <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
+                     <name>Localized-channel-artifact</name>
+                     <description>Transient artifact usually involving a single channel or a small subset of channels.</description>
                      <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012516</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Induction-artifact</name>
-                     <description>Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012517</value>
-                     </attribute>
-                  </node>
-                  <node>
-                     <name>Line-noise-artifact</name>
-                     <description>Power line noise at 50 Hz or 60 Hz.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012518</value>
+                        <name>suggestedTag</name>
+                        <value>ID</value>
                      </attribute>
                      <node>
-                        <name>#</name>
-                        <attribute>
-                           <name>takesValue</name>
-                        </attribute>
-                        <attribute>
-                           <name>valueClass</name>
-                           <value>numericClass</value>
-                        </attribute>
-                        <attribute>
-                           <name>unitClass</name>
-                           <value>frequencyUnits</value>
-                        </attribute>
+                        <name>Electrode-pops-artifact</name>
+                        <description>Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.</description>
                         <attribute>
                            <name>hedId</name>
-                           <value>HED_0012519</value>
+                           <value>HED_0012516</value>
                         </attribute>
                      </node>
-                  </node>
-                  <node>
-                     <name>Salt-bridge-artifact</name>
-                     <description>Artifact from salt-bridge between EEG electrodes.</description>
-                     <attribute>
-                        <name>hedId</name>
-                        <value>HED_0012520</value>
-                     </attribute>
+                     <node>
+                        <name>Salt-bridge-artifact</name>
+                        <description>Artifact from salt-bridge between EEG electrodes.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0012520</value>
+                        </attribute>
+                     </node>
                   </node>
                </node>
             </node>
@@ -7322,6 +7331,24 @@
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012640</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Quantity</name>
+                     <description>A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>anyUnits</value>
                         </attribute>
                      </node>
                   </node>
@@ -8694,7 +8721,7 @@
             </node>
             <node>
                <name>ID</name>
-               <description>An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
+               <description>A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).</description>
                <attribute>
                   <name>hedId</name>
                   <value>HED_0012758</value>
@@ -14027,6 +14054,14 @@
                   </attribute>
                </node>
                <node>
+                  <name>Cued</name>
+                  <description>An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Uncued</value>
+                  </attribute>
+               </node>
+               <node>
                   <name>Done-indication</name>
                   <description>An action that indicates that the participant has completed this step in the task.</description>
                   <attribute>
@@ -14128,6 +14163,14 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013075</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>Uncued</name>
+                  <description>An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Cued</value>
                   </attribute>
                </node>
             </node>
@@ -14505,6 +14548,10 @@
                      <name>hedId</name>
                      <value>HED_0013116</value>
                   </attribute>
+               </node>
+               <node>
+                  <name>Omitted-presentation</name>
+                  <description>Something that is expected to happen or usually happens but doesn't.</description>
                </node>
                <node>
                   <name>Penalty</name>
@@ -15585,6 +15632,7 @@
    <unitClassDefinitions>
       <unitClassDefinition>
          <name>accelerationUnits</name>
+         <description>Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^2</value>
@@ -15617,6 +15665,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>angleUnits</name>
+         <description>Units of plane angle, for example visual angle or joint rotation.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>radian</value>
@@ -15669,7 +15718,12 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>anyUnits</name>
+         <description>Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.</description>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>areaUnits</name>
+         <description>Units of area, for example the size of a stimulus region or a surface on a display.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^2</value>
@@ -15701,11 +15755,74 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>chargeUnits</name>
+         <description>Units of electric charge, for example the charge per phase delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>C</value>
+         </attribute>
+         <unit>
+            <name>coulomb</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>C</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>concentrationUnits</name>
+         <description>Units of molar concentration (amount of substance per unit volume).</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mol-per-L</value>
+         </attribute>
+         <unit>
+            <name>molar</name>
+            <description>One mole per liter.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mol-per-L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>currencyUnits</name>
          <description>Units indicating the worth of something.</description>
          <attribute>
             <name>defaultUnits</name>
-            <value>$</value>
+            <value>dollar</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -15724,6 +15841,11 @@
          </unit>
          <unit>
             <name>$</name>
+            <description>Prefix units are no longer supported. Use dollar.</description>
+            <attribute>
+               <name>deprecatedFrom</name>
+               <value>8.4.0</value>
+            </attribute>
             <attribute>
                <name>unitPrefix</name>
             </attribute>
@@ -15761,7 +15883,39 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>currentUnits</name>
+         <description>Units of electric current, for example the current delivered by electrical stimulation.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mA</value>
+         </attribute>
+         <unit>
+            <name>ampere</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>A</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>electricPotentialUnits</name>
+         <description>Units of electric potential, for example EEG and other electrophysiological signal amplitudes.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>uV</value>
@@ -15780,23 +15934,11 @@
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
                <value>HED_0011609</value>
-            </attribute>
-         </unit>
-         <unit>
-            <name>uV</name>
-            <description>Added as a direct unit because it is the default unit.</description>
-            <attribute>
-               <name>conversionFactor</name>
-               <value>1.0</value>
-            </attribute>
-            <attribute>
-               <name>hedId</name>
-               <value>HED_0011644</value>
             </attribute>
          </unit>
          <unit>
@@ -15806,7 +15948,7 @@
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>0.000001</value>
+               <value>1000000</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -15815,7 +15957,81 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>energyUnits</name>
+         <description>Units of energy, for example the energy of a stimulation pulse or metabolic energy.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>J</value>
+         </attribute>
+         <unit>
+            <name>joule</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>J</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>calorie</name>
+            <description>Thermochemical calorie. Use the kilo modifier for dietary kilocalories.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>4.184</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>forceUnits</name>
+         <description>Units of force, for example grip force or the reading of a force plate.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>N</value>
+         </attribute>
+         <unit>
+            <name>newton</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>N</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>frequencyUnits</name>
+         <description>Units of frequency, for example sampling rates, flicker rates, and tone frequencies.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>Hz</value>
@@ -15858,6 +16074,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>intensityUnits</name>
+         <description>Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>dB</value>
@@ -15909,6 +16126,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>jerkUnits</name>
+         <description>Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s^3</value>
@@ -15919,6 +16137,9 @@
          </attribute>
          <unit>
             <name>m-per-s^3</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
             <attribute>
                <name>unitSymbol</name>
             </attribute>
@@ -15938,6 +16159,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>magneticFieldUnits</name>
+         <description>Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>T</value>
@@ -15953,7 +16175,7 @@
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -15970,7 +16192,7 @@
             </attribute>
             <attribute>
                <name>conversionFactor</name>
-               <value>10e-15</value>
+               <value>1.0</value>
             </attribute>
             <attribute>
                <name>hedId</name>
@@ -15980,6 +16202,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>memorySizeUnits</name>
+         <description>Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>B</value>
@@ -16022,6 +16245,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>physicalLengthUnits</name>
+         <description>Units of length, for example distances, positions, and sizes of objects or stimuli.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m</value>
@@ -16110,7 +16334,113 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>powerUnits</name>
+         <description>Units of power, for example the output of an optogenetic light source or ultrasound transducer.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>mW</value>
+         </attribute>
+         <unit>
+            <name>watt</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>W</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1000</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>pressureUnits</name>
+         <description>Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>Pa</value>
+         </attribute>
+         <unit>
+            <name>pascal</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Pa</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>1.0</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>mmHg</name>
+            <description>Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.</description>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>133.322</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
+         <name>resistanceUnits</name>
+         <description>Units of electrical resistance or impedance, for example electrode impedance.</description>
+         <attribute>
+            <name>defaultUnits</name>
+            <value>kOhm</value>
+         </attribute>
+         <unit>
+            <name>ohm</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>Ohm</name>
+            <description>ASCII spelling of the ohm symbol.</description>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>speedUnits</name>
+         <description>Units of speed, for example the speed of a moving stimulus or of a participant.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m-per-s</value>
@@ -16167,6 +16497,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>temperatureUnits</name>
+         <description>Units of temperature, for example ambient or skin temperature.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>degree-Celsius</value>
@@ -16228,6 +16559,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>timeUnits</name>
+         <description>Units of time, for example durations, delays, and intervals between events.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>s</value>
@@ -16279,6 +16611,13 @@
             </attribute>
          </unit>
          <unit>
+            <name>week</name>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>604800</value>
+            </attribute>
+         </unit>
+         <unit>
             <name>month</name>
             <attribute>
                <name>hedId</name>
@@ -16319,6 +16658,7 @@
       </unitClassDefinition>
       <unitClassDefinition>
          <name>volumeUnits</name>
+         <description>Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>m^3</value>
@@ -16348,9 +16688,43 @@
                <value>HED_0011639</value>
             </attribute>
          </unit>
+         <unit>
+            <name>liter</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>litre</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
+         <unit>
+            <name>L</name>
+            <attribute>
+               <name>SIUnit</name>
+            </attribute>
+            <attribute>
+               <name>unitSymbol</name>
+            </attribute>
+            <attribute>
+               <name>conversionFactor</name>
+               <value>0.001</value>
+            </attribute>
+         </unit>
       </unitClassDefinition>
       <unitClassDefinition>
          <name>weightUnits</name>
+         <description>Units of mass, for example body weight or the mass of a delivered substance.</description>
          <attribute>
             <name>defaultUnits</name>
             <value>g</value>
@@ -16417,7 +16791,7 @@
    <unitModifierDefinitions>
       <unitModifierDefinition>
          <name>deca</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16432,7 +16806,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>da</name>
-         <description>SI unit multiple representing 10e1.</description>
+         <description>SI unit multiple representing 10^1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16447,7 +16821,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>hecto</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16462,7 +16836,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>h</name>
-         <description>SI unit multiple representing 10e2.</description>
+         <description>SI unit multiple representing 10^2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16477,7 +16851,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>kilo</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16492,7 +16866,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>k</name>
-         <description>SI unit multiple representing 10e3.</description>
+         <description>SI unit multiple representing 10^3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16507,13 +16881,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>mega</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16522,13 +16896,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>M</name>
-         <description>SI unit multiple representing 10e6.</description>
+         <description>SI unit multiple representing 10^6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e6</value>
+            <value>1e6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16537,13 +16911,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>giga</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16552,13 +16926,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>G</name>
-         <description>SI unit multiple representing 10e9.</description>
+         <description>SI unit multiple representing 10^9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e9</value>
+            <value>1e9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16567,13 +16941,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>tera</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16582,13 +16956,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>T</name>
-         <description>SI unit multiple representing 10e12.</description>
+         <description>SI unit multiple representing 10^12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e12</value>
+            <value>1e12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16597,13 +16971,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>peta</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16612,13 +16986,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>P</name>
-         <description>SI unit multiple representing 10e15.</description>
+         <description>SI unit multiple representing 10^15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e15</value>
+            <value>1e15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16627,13 +17001,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>exa</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16642,13 +17016,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>E</name>
-         <description>SI unit multiple representing 10e18.</description>
+         <description>SI unit multiple representing 10^18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e18</value>
+            <value>1e18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16657,13 +17031,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zetta</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16672,13 +17046,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Z</name>
-         <description>SI unit multiple representing 10e21.</description>
+         <description>SI unit multiple representing 10^21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e21</value>
+            <value>1e21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16687,13 +17061,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yotta</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16702,13 +17076,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>Y</name>
-         <description>SI unit multiple representing 10e24.</description>
+         <description>SI unit multiple representing 10^24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e24</value>
+            <value>1e24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16717,7 +17091,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>deci</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16732,7 +17106,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>d</name>
-         <description>SI unit submultiple representing 10e-1.</description>
+         <description>SI unit submultiple representing 10^-1.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16747,7 +17121,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>centi</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16762,7 +17136,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>c</name>
-         <description>SI unit submultiple representing 10e-2.</description>
+         <description>SI unit submultiple representing 10^-2.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16777,7 +17151,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>milli</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
@@ -16792,7 +17166,7 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>m</name>
-         <description>SI unit submultiple representing 10e-3.</description>
+         <description>SI unit submultiple representing 10^-3.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
@@ -16807,13 +17181,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>micro</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16822,13 +17196,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>u</name>
-         <description>SI unit submultiple representing 10e-6.</description>
+         <description>SI unit submultiple representing 10^-6.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-6</value>
+            <value>1e-6</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16837,13 +17211,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>nano</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16852,13 +17226,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>n</name>
-         <description>SI unit submultiple representing 10e-9.</description>
+         <description>SI unit submultiple representing 10^-9.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-9</value>
+            <value>1e-9</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16867,13 +17241,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>pico</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16882,13 +17256,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>p</name>
-         <description>SI unit submultiple representing 10e-12.</description>
+         <description>SI unit submultiple representing 10^-12.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-12</value>
+            <value>1e-12</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16897,13 +17271,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>femto</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16912,13 +17286,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>f</name>
-         <description>SI unit submultiple representing 10e-15.</description>
+         <description>SI unit submultiple representing 10^-15.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-15</value>
+            <value>1e-15</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16927,13 +17301,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>atto</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16942,13 +17316,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>a</name>
-         <description>SI unit submultiple representing 10e-18.</description>
+         <description>SI unit submultiple representing 10^-18.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-18</value>
+            <value>1e-18</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16957,13 +17331,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>zepto</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16972,13 +17346,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>z</name>
-         <description>SI unit submultiple representing 10e-21.</description>
+         <description>SI unit submultiple representing 10^-21.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-21</value>
+            <value>1e-21</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -16987,13 +17361,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>yocto</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -17002,13 +17376,13 @@
       </unitModifierDefinition>
       <unitModifierDefinition>
          <name>y</name>
-         <description>SI unit submultiple representing 10e-24.</description>
+         <description>SI unit submultiple representing 10^-24.</description>
          <attribute>
             <name>SIUnitSymbolModifier</name>
          </attribute>
          <attribute>
             <name>conversionFactor</name>
-            <value>10e-24</value>
+            <value>1e-24</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -17441,7 +17815,11 @@
       </schemaAttributeDefinition>
       <schemaAttributeDefinition>
          <name>unitPrefix</name>
-         <description>This unit is a prefix unit (e.g., dollar sign in the currency units).</description>
+         <description>This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.</description>
+         <property>
+            <name>deprecatedFrom</name>
+            <value>8.4.0</value>
+         </property>
          <property>
             <name>unitDomain</name>
          </property>
@@ -17582,8 +17960,22 @@
          </property>
       </propertyDefinition>
    </propertyDefinitions>
-   <epilogue>The current prerelease of the schema is primarily centered around written language and current development focuses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. </epilogue>
+   <epilogue>The current prerelease of the schema is primarily centered around written language and current development focuses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary.</epilogue>
    <schemaSources>
+      <schemaSource>
+         <name>GOLD</name>
+         <link>http://purl.org/linguistics/gold</link>
+         <description>General Ontology for Linguistic Description.</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>lang</value>
+         </attribute>
+      </schemaSource>
+      <schemaSource>
+         <name>Original</name>
+         <link>https://www.hedtags.org</link>
+         <description>The definition was written by the schema authors and has no external source.</description>
+      </schemaSource>
       <schemaSource>
          <name>Wikipedia</name>
          <link>https://en.wikipedia.org</link>
@@ -17605,6 +17997,10 @@
          <name>glotto:</name>
          <namespace>https://glottolog.org/resource/languoid/id/#</namespace>
          <description>Glottolog 5.1 Comprehensive language reference database</description>
+         <attribute>
+            <name>inLibrary</name>
+            <value>lang</value>
+         </attribute>
       </schemaPrefix>
       <schemaPrefix>
          <name>iao:</name>
@@ -17654,7 +18050,7 @@
       <schemaPrefix>
          <name>xml:</name>
          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
-         <description>XLM Namespace [XML]</description>
+         <description>XML Namespace [XML]</description>
       </schemaPrefix>
       <schemaPrefix>
          <name>xsd:</name>
@@ -17748,16 +18144,28 @@
          <description>A homepage for some thing.</description>
       </externalAnnotation>
       <externalAnnotation>
-         <name>glotto:</name>
-         <id>Glottocode</id>
-         <iri>https://glottolog.org/resource/languoid/id/#</iri>
-         <description>The ID for the language.</description>
-      </externalAnnotation>
-      <externalAnnotation>
          <name>obogo:</name>
          <id>has_dbxref</id>
          <iri>http://www.geneontology.org/formats/oboInOwl#hasDbXref</iri>
          <description>Property indicating that an ontology term has a cross-reference to a database.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>rdfs:</name>
+         <id>comment</id>
+         <iri>http://www.w3.org/2000/01/rdf-schema#comment</iri>
+         <description>Standard way to provide a human-readable description.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>closeMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#closeMatch</iri>
+         <description>The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>exactMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#exactMatch</iri>
+         <description>The element denotes the same concept as the external term given as the value.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>terms:</name>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T21:28:46.705667+00:00",
+  "generated": "2026-09-18T14:13:29.655107+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -141,7 +141,7 @@
         {
           "date": "2025-06-10T09:12:40-05:00",
           "file": "library_schemas/lang/prerelease/HED_lang_1.2.0.xml",
-          "sha": "525db30e207348ad6326e9a3cdc02619f364d1d7",
+          "sha": "bac43da03b522f6df1af637d85e86a11f6475e05",
           "version": "1.2.0"
         }
       ],
