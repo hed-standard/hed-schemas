@@ -194,7 +194,7 @@
 
 **Prefixes:**
 
-- xml: (Unknown): Duplicate key xml: found in one or both schemas
+- xml: (Patch): Row xml: columns differ: description
 
 **AnnotationPropertyExternal:**
 
