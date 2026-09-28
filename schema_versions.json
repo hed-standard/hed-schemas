@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T15:52:37.232179+00:00",
+  "generated": "2026-09-28T10:13:30.913088+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -98,7 +98,7 @@
         {
           "date": "2026-09-17T13:49:27-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
-          "sha": "39b1f74b1c73ff13f5419f4a929ea8f7accc0ca7",
+          "sha": "4d669df775a3929f4e91bc34a740f65e74106efa",
           "version": "8.5.0"
         }
       ],

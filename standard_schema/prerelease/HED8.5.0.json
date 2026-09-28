@@ -20537,10 +20537,10 @@
       ]
     },
     "textClass": {
-      "description": "Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).",
+      "description": "Values that have the characteristics of text. The allowed characters are the printable characters (32 <= ASCII < 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.",
       "hedId": "HED_0011305",
       "allowed_characters": [
-        "text"
+        "value-text"
       ]
     }
   },
