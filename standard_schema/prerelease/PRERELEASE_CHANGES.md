@@ -83,6 +83,11 @@
 - volumeUnits (Patch): Description of volumeUnits modified
 - weightUnits (Patch): Description of weightUnits modified
 
+**Value Classes:**
+
+- textClass (Patch): Attribute allowedCharacter modified from text to value-text
+- textClass (Patch): Description of textClass modified
+
 **Unit Modifiers:**
 
 - deca (Patch): Description of deca modified
@@ -175,5 +180,5 @@
 **AnnotationPropertyExternal:**
 
 - ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
-- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
 - ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
+- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema

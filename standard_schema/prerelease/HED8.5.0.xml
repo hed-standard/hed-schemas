@@ -13306,10 +13306,10 @@ Each term in this vocabulary has a human-readable description and may include ad
       </valueClassDefinition>
       <valueClassDefinition>
          <name>textClass</name>
-         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes &gt; 127).</description>
+         <description>Values that have the characteristics of text. The allowed characters are the printable characters (32 &lt;= ASCII &lt; 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.</description>
          <attribute>
             <name>allowedCharacter</name>
-            <value>text</value>
+            <value>value-text</value>
          </attribute>
          <attribute>
             <name>hedId</name>
