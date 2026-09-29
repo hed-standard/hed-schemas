@@ -1,9 +1,9 @@
 {
   "version": "1.2.0",
   "library": "lang",
-  "withStandard": "8.4.0",
+  "withStandard": "8.5.0",
   "unmerged": "True",
-  "prologue": "The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The schema allows for detailed annotation of neuroimaging experiments that involve language events from carefully controlled experiments specifically targeting the neuroscience of language processing to more complex naturalistic paradigms that involve written or spoken language. HED Language schema allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics while the individual words in the sentence can simultaneously be associated with word-level characteristics. Annotation possibilities are extensive and cover characteristics of multiple languages allowing for comparisons between languages. ",
+  "prologue": "The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The schema allows for detailed annotation of neuroimaging experiments that involve language events from carefully controlled experiments specifically targeting the neuroscience of language processing to more complex naturalistic paradigms that involve written or spoken language. HED Language schema allows for annotation of language stimuli on different levels through the orthogonal definition of Language-units and Language-unit-properties. Full sentences can be annotated with sentence-level characteristics while the individual words in the sentence can simultaneously be associated with word-level characteristics. Annotation possibilities are extensive and cover characteristics of multiple languages allowing for comparisons between languages.",
   "tags": {
     "Language": {
       "short_form": "Language",
@@ -54,11 +54,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062002",
-        "annotation": "glotto:afro1255"
+        "annotation": "skos:exactMatch glotto:afro1255"
       },
       "explicitAttributes": {
         "hedId": "HED_0062002",
-        "annotation": "glotto:afro1255"
+        "annotation": "skos:exactMatch glotto:afro1255"
       }
     },
     "Arabic": {
@@ -70,11 +70,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062003",
-        "annotation": "glotto:arab1395"
+        "annotation": "skos:exactMatch glotto:arab1395"
       },
       "explicitAttributes": {
         "hedId": "HED_0062003",
-        "annotation": "glotto:arab1395"
+        "annotation": "skos:exactMatch glotto:arab1395"
       }
     },
     "Hebrew": {
@@ -86,11 +86,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062004",
-        "annotation": "glotto:hebr1245"
+        "annotation": "skos:exactMatch glotto:hebr1245"
       },
       "explicitAttributes": {
         "hedId": "HED_0062004",
-        "annotation": "glotto:hebr1245"
+        "annotation": "skos:exactMatch glotto:hebr1245"
       }
     },
     "Atlantic-Congo-language": {
@@ -104,11 +104,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062005",
-        "annotation": "glotto:atla1278"
+        "annotation": "skos:exactMatch glotto:atla1278"
       },
       "explicitAttributes": {
         "hedId": "HED_0062005",
-        "annotation": "glotto:atla1278"
+        "annotation": "skos:exactMatch glotto:atla1278"
       }
     },
     "Swahili": {
@@ -120,11 +120,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062006",
-        "annotation": "glotto:swah1253"
+        "annotation": "skos:exactMatch glotto:swah1253"
       },
       "explicitAttributes": {
         "hedId": "HED_0062006",
-        "annotation": "glotto:swah1253"
+        "annotation": "skos:exactMatch glotto:swah1253"
       }
     },
     "Austroasiatic": {
@@ -138,11 +138,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062007",
-        "annotation": "glotto:aust1305"
+        "annotation": "skos:exactMatch glotto:aust1305"
       },
       "explicitAttributes": {
         "hedId": "HED_0062007",
-        "annotation": "glotto:aust1305"
+        "annotation": "skos:exactMatch glotto:aust1305"
       }
     },
     "Vietnamese": {
@@ -154,11 +154,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062008",
-        "annotation": "glotto:viet1252"
+        "annotation": "skos:exactMatch glotto:viet1252"
       },
       "explicitAttributes": {
         "hedId": "HED_0062008",
-        "annotation": "glotto:viet1252"
+        "annotation": "skos:exactMatch glotto:viet1252"
       }
     },
     "Austronesian-language": {
@@ -172,11 +172,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062009",
-        "annotation": "glotto:aust1307"
+        "annotation": "skos:exactMatch glotto:aust1307"
       },
       "explicitAttributes": {
         "hedId": "HED_0062009",
-        "annotation": "glotto:aust1307"
+        "annotation": "skos:exactMatch glotto:aust1307"
       }
     },
     "Malay": {
@@ -188,11 +188,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062010",
-        "annotation": "glotto:nucl1806"
+        "annotation": "skos:exactMatch glotto:nucl1806"
       },
       "explicitAttributes": {
         "hedId": "HED_0062010",
-        "annotation": "glotto:nucl1806"
+        "annotation": "skos:exactMatch glotto:nucl1806"
       }
     },
     "Dravidian": {
@@ -207,14 +207,14 @@
         "extensionAllowed": true,
         "hedId": "HED_0062011",
         "annotation": [
-          "glotto:drav1251",
+          "skos:exactMatch glotto:drav1251",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages"
         ]
       },
       "explicitAttributes": {
         "hedId": "HED_0062011",
         "annotation": [
-          "glotto:drav1251",
+          "skos:exactMatch glotto:drav1251",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Dravidian_languages"
         ]
       }
@@ -228,11 +228,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062012",
-        "annotation": "glotto:tami1289"
+        "annotation": "skos:exactMatch glotto:tami1289"
       },
       "explicitAttributes": {
         "hedId": "HED_0062012",
-        "annotation": "glotto:tami1289"
+        "annotation": "skos:exactMatch glotto:tami1289"
       }
     },
     "Indo-European-language": {
@@ -253,7 +253,7 @@
         ],
         "hedId": "HED_0062013",
         "annotation": [
-          "glotto:indo1319",
+          "skos:exactMatch glotto:indo1319",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages"
         ]
       },
@@ -263,7 +263,7 @@
         ],
         "hedId": "HED_0062013",
         "annotation": [
-          "glotto:indo1319",
+          "skos:exactMatch glotto:indo1319",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Indo-European_languages"
         ]
       }
@@ -283,11 +283,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062014",
-        "annotation": "glotto:east2280"
+        "annotation": "skos:exactMatch glotto:east2280"
       },
       "explicitAttributes": {
         "hedId": "HED_0062014",
-        "annotation": "glotto:east2280"
+        "annotation": "skos:exactMatch glotto:east2280"
       }
     },
     "Latvian": {
@@ -302,11 +302,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062015",
-        "annotation": "glotto:latv1249"
+        "annotation": "skos:exactMatch glotto:latv1249"
       },
       "explicitAttributes": {
         "hedId": "HED_0062015",
-        "annotation": "glotto:latv1249"
+        "annotation": "skos:exactMatch glotto:latv1249"
       }
     },
     "Lithuanian": {
@@ -321,11 +321,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062016",
-        "annotation": "glotto:lith1251"
+        "annotation": "skos:exactMatch glotto:lith1251"
       },
       "explicitAttributes": {
         "hedId": "HED_0062016",
-        "annotation": "glotto:lith1251"
+        "annotation": "skos:exactMatch glotto:lith1251"
       }
     },
     "Germanic-language": {
@@ -348,11 +348,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062017",
-        "annotation": "glotto:germ1287"
+        "annotation": "skos:exactMatch glotto:germ1287"
       },
       "explicitAttributes": {
         "hedId": "HED_0062017",
-        "annotation": "glotto:germ1287"
+        "annotation": "skos:exactMatch glotto:germ1287"
       }
     },
     "Danish": {
@@ -367,11 +367,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062018",
-        "annotation": "glotto:dani1285"
+        "annotation": "skos:exactMatch glotto:dani1285"
       },
       "explicitAttributes": {
         "hedId": "HED_0062018",
-        "annotation": "glotto:dani1285"
+        "annotation": "skos:exactMatch glotto:dani1285"
       }
     },
     "Dutch": {
@@ -386,11 +386,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062019",
-        "annotation": "glotto:dutc1256"
+        "annotation": "skos:exactMatch glotto:dutc1256"
       },
       "explicitAttributes": {
         "hedId": "HED_0062019",
-        "annotation": "glotto:dutc1256"
+        "annotation": "skos:exactMatch glotto:dutc1256"
       }
     },
     "English": {
@@ -405,11 +405,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062020",
-        "annotation": "glotto:stan1293"
+        "annotation": "skos:exactMatch glotto:stan1293"
       },
       "explicitAttributes": {
         "hedId": "HED_0062020",
-        "annotation": "glotto:stan1293"
+        "annotation": "skos:exactMatch glotto:stan1293"
       }
     },
     "German": {
@@ -424,11 +424,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062021",
-        "annotation": "glotto:stan1295"
+        "annotation": "skos:exactMatch glotto:stan1295"
       },
       "explicitAttributes": {
         "hedId": "HED_0062021",
-        "annotation": "glotto:stan1295"
+        "annotation": "skos:exactMatch glotto:stan1295"
       }
     },
     "Icelandic": {
@@ -443,11 +443,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062022",
-        "annotation": "glotto:icel1247"
+        "annotation": "skos:exactMatch glotto:icel1247"
       },
       "explicitAttributes": {
         "hedId": "HED_0062022",
-        "annotation": "glotto:icel1247"
+        "annotation": "skos:exactMatch glotto:icel1247"
       }
     },
     "Norwegian": {
@@ -462,11 +462,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062023",
-        "annotation": "glotto:norw1258"
+        "annotation": "skos:exactMatch glotto:norw1258"
       },
       "explicitAttributes": {
         "hedId": "HED_0062023",
-        "annotation": "glotto:norw1258"
+        "annotation": "skos:exactMatch glotto:norw1258"
       }
     },
     "Swedish": {
@@ -481,11 +481,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062024",
-        "annotation": "glotto:swed1254"
+        "annotation": "skos:exactMatch glotto:swed1254"
       },
       "explicitAttributes": {
         "hedId": "HED_0062024",
-        "annotation": "glotto:swed1254"
+        "annotation": "skos:exactMatch glotto:swed1254"
       }
     },
     "Romance-language": {
@@ -510,14 +510,14 @@
         ],
         "hedId": "HED_0062025",
         "annotation": [
-          "glotto:roma1334",
+          "skos:exactMatch glotto:roma1334",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages"
         ]
       },
       "explicitAttributes": {
         "hedId": "HED_0062025",
         "annotation": [
-          "glotto:roma1334",
+          "skos:exactMatch glotto:roma1334",
           "dc:source Adapted from https://en.wikipedia.org/wiki/Romance_languages"
         ]
       }
@@ -534,11 +534,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062026",
-        "annotation": "glotto:stan1289"
+        "annotation": "skos:exactMatch glotto:stan1289"
       },
       "explicitAttributes": {
         "hedId": "HED_0062026",
-        "annotation": "glotto:stan1289"
+        "annotation": "skos:exactMatch glotto:stan1289"
       }
     },
     "French": {
@@ -553,11 +553,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062027",
-        "annotation": "glotto:stan1290"
+        "annotation": "skos:exactMatch glotto:stan1290"
       },
       "explicitAttributes": {
         "hedId": "HED_0062027",
-        "annotation": "glotto:stan1290"
+        "annotation": "skos:exactMatch glotto:stan1290"
       }
     },
     "Galician": {
@@ -572,11 +572,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062028",
-        "annotation": "glotto:gali1258"
+        "annotation": "skos:exactMatch glotto:gali1258"
       },
       "explicitAttributes": {
         "hedId": "HED_0062028",
-        "annotation": "glotto:gali1258"
+        "annotation": "skos:exactMatch glotto:gali1258"
       }
     },
     "Gallo-Rhaetian-language": {
@@ -591,11 +591,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062029",
-        "annotation": "glotto:gall1280"
+        "annotation": "skos:exactMatch glotto:gall1280"
       },
       "explicitAttributes": {
         "hedId": "HED_0062029",
-        "annotation": "glotto:gall1280"
+        "annotation": "skos:exactMatch glotto:gall1280"
       }
     },
     "Italian": {
@@ -610,11 +610,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062030",
-        "annotation": "glotto:ital1282"
+        "annotation": "skos:exactMatch glotto:ital1282"
       },
       "explicitAttributes": {
         "hedId": "HED_0062030",
-        "annotation": "glotto:ital1282"
+        "annotation": "skos:exactMatch glotto:ital1282"
       }
     },
     "Portuguese": {
@@ -629,11 +629,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062031",
-        "annotation": "glotto:port1283"
+        "annotation": "skos:exactMatch glotto:port1283"
       },
       "explicitAttributes": {
         "hedId": "HED_0062031",
-        "annotation": "glotto:port1283"
+        "annotation": "skos:exactMatch glotto:port1283"
       }
     },
     "Romanian": {
@@ -648,11 +648,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062032",
-        "annotation": "glotto:roma1327"
+        "annotation": "skos:exactMatch glotto:roma1327"
       },
       "explicitAttributes": {
         "hedId": "HED_0062032",
-        "annotation": "glotto:roma1327"
+        "annotation": "skos:exactMatch glotto:roma1327"
       }
     },
     "Spanish": {
@@ -667,11 +667,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062033",
-        "annotation": "glotto:stan1288"
+        "annotation": "skos:exactMatch glotto:stan1288"
       },
       "explicitAttributes": {
         "hedId": "HED_0062033",
-        "annotation": "glotto:stan1288"
+        "annotation": "skos:exactMatch glotto:stan1288"
       }
     },
     "Slavic-language": {
@@ -695,11 +695,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062034",
-        "annotation": "glotto:slav1255"
+        "annotation": "skos:exactMatch glotto:slav1255"
       },
       "explicitAttributes": {
         "hedId": "HED_0062034",
-        "annotation": "glotto:slav1255"
+        "annotation": "skos:exactMatch glotto:slav1255"
       }
     },
     "Bulgarian": {
@@ -714,11 +714,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062035",
-        "annotation": "glotto:bulg1262"
+        "annotation": "skos:exactMatch glotto:bulg1262"
       },
       "explicitAttributes": {
         "hedId": "HED_0062035",
-        "annotation": "glotto:bulg1262"
+        "annotation": "skos:exactMatch glotto:bulg1262"
       }
     },
     "Croatian": {
@@ -733,11 +733,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062036",
-        "annotation": "glotto:croa1245"
+        "annotation": "skos:exactMatch glotto:croa1245"
       },
       "explicitAttributes": {
         "hedId": "HED_0062036",
-        "annotation": "glotto:croa1245"
+        "annotation": "skos:exactMatch glotto:croa1245"
       }
     },
     "Czech": {
@@ -752,11 +752,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062037",
-        "annotation": "glotto:czec1258"
+        "annotation": "skos:exactMatch glotto:czec1258"
       },
       "explicitAttributes": {
         "hedId": "HED_0062037",
-        "annotation": "glotto:czec1258"
+        "annotation": "skos:exactMatch glotto:czec1258"
       }
     },
     "Macedonian": {
@@ -771,11 +771,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062038",
-        "annotation": "glotto:mace1250"
+        "annotation": "skos:exactMatch glotto:mace1250"
       },
       "explicitAttributes": {
         "hedId": "HED_0062038",
-        "annotation": "glotto:mace1250"
+        "annotation": "skos:exactMatch glotto:mace1250"
       }
     },
     "Polish": {
@@ -790,11 +790,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062039",
-        "annotation": "glotto:poli1260"
+        "annotation": "skos:exactMatch glotto:poli1260"
       },
       "explicitAttributes": {
         "hedId": "HED_0062039",
-        "annotation": "glotto:poli1260"
+        "annotation": "skos:exactMatch glotto:poli1260"
       }
     },
     "Russian": {
@@ -809,11 +809,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062040",
-        "annotation": "glotto:russ1263"
+        "annotation": "skos:exactMatch glotto:russ1263"
       },
       "explicitAttributes": {
         "hedId": "HED_0062040",
-        "annotation": "glotto:russ1263"
+        "annotation": "skos:exactMatch glotto:russ1263"
       }
     },
     "Slovak": {
@@ -828,11 +828,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062041",
-        "annotation": "glotto:slov126"
+        "annotation": "skos:exactMatch glotto:slov1269"
       },
       "explicitAttributes": {
         "hedId": "HED_0062041",
-        "annotation": "glotto:slov126"
+        "annotation": "skos:exactMatch glotto:slov1269"
       }
     },
     "Ukrainian": {
@@ -847,11 +847,11 @@
           "Language-property"
         ],
         "hedId": "HED_0062042",
-        "annotation": "glotto:ukra1253"
+        "annotation": "skos:exactMatch glotto:ukra1253"
       },
       "explicitAttributes": {
         "hedId": "HED_0062042",
-        "annotation": "glotto:ukra1253"
+        "annotation": "skos:exactMatch glotto:ukra1253"
       }
     },
     "Japonic": {
@@ -865,11 +865,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062043",
-        "annotation": "glotto:japo1237"
+        "annotation": "skos:exactMatch glotto:japo1237"
       },
       "explicitAttributes": {
         "hedId": "HED_0062043",
-        "annotation": "glotto:japo1237"
+        "annotation": "skos:exactMatch glotto:japo1237"
       }
     },
     "Japanese": {
@@ -881,11 +881,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062044",
-        "annotation": "glotto:nucl1643"
+        "annotation": "skos:exactMatch glotto:nucl1643"
       },
       "explicitAttributes": {
         "hedId": "HED_0062044",
-        "annotation": "glotto:nucl1643"
+        "annotation": "skos:exactMatch glotto:nucl1643"
       }
     },
     "Koreanic": {
@@ -899,11 +899,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062045",
-        "annotation": "glotto:kore1284"
+        "annotation": "skos:exactMatch glotto:kore1284"
       },
       "explicitAttributes": {
         "hedId": "HED_0062045",
-        "annotation": "glotto:kore1284"
+        "annotation": "skos:exactMatch glotto:kore1284"
       }
     },
     "Korean": {
@@ -915,11 +915,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062046",
-        "annotation": "glotto:kore1280"
+        "annotation": "skos:exactMatch glotto:kore1280"
       },
       "explicitAttributes": {
         "hedId": "HED_0062046",
-        "annotation": "glotto:kore1280"
+        "annotation": "skos:exactMatch glotto:kore1280"
       }
     },
     "Sino-Tibetan-language": {
@@ -934,11 +934,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062047",
-        "annotation": "glotto:sino1245"
+        "annotation": "skos:exactMatch glotto:sino1245"
       },
       "explicitAttributes": {
         "hedId": "HED_0062047",
-        "annotation": "glotto:sino1245"
+        "annotation": "skos:exactMatch glotto:sino1245"
       }
     },
     "Burmo-Qiangic-language": {
@@ -952,11 +952,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062048",
-        "annotation": "glotto:burm1265"
+        "annotation": "skos:exactMatch glotto:burm1265"
       },
       "explicitAttributes": {
         "hedId": "HED_0062048",
-        "annotation": "glotto:burm1265"
+        "annotation": "skos:exactMatch glotto:burm1265"
       }
     },
     "Burmese": {
@@ -968,11 +968,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062049",
-        "annotation": "glotto:nucl1310"
+        "annotation": "skos:exactMatch glotto:nucl1310"
       },
       "explicitAttributes": {
         "hedId": "HED_0062049",
-        "annotation": "glotto:nucl1310"
+        "annotation": "skos:exactMatch glotto:nucl1310"
       }
     },
     "Sinitic": {
@@ -990,11 +990,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062050",
-        "annotation": "glotto:sini1245"
+        "annotation": "skos:exactMatch glotto:sini1245"
       },
       "explicitAttributes": {
         "hedId": "HED_0062050",
-        "annotation": "glotto:sini1245"
+        "annotation": "skos:exactMatch glotto:sini1245"
       }
     },
     "Gan-Chinese": {
@@ -1006,11 +1006,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062051",
-        "annotation": "glotto:ganc1239"
+        "annotation": "skos:exactMatch glotto:ganc1239"
       },
       "explicitAttributes": {
         "hedId": "HED_0062051",
-        "annotation": "glotto:ganc1239"
+        "annotation": "skos:exactMatch glotto:ganc1239"
       }
     },
     "Mandarin-Chinese": {
@@ -1025,17 +1025,15 @@
         "extensionAllowed": true,
         "hedId": "HED_0062052",
         "annotation": [
-          "glotto:mand1471",
-          "dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese",
-          "glotto:mand1471"
+          "skos:exactMatch glotto:mand1471",
+          "dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese"
         ]
       },
       "explicitAttributes": {
         "hedId": "HED_0062052",
         "annotation": [
-          "glotto:mand1471",
-          "dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese",
-          "glotto:mand1471"
+          "skos:exactMatch glotto:mand1471",
+          "dc:source https://en.wikipedia.org/wiki/Mandarin_Chinese"
         ]
       }
     },
@@ -1062,11 +1060,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062054",
-        "annotation": "glotto:wuch1236"
+        "annotation": "skos:exactMatch glotto:wuch1236"
       },
       "explicitAttributes": {
         "hedId": "HED_0062054",
-        "annotation": "glotto:wuch1236"
+        "annotation": "skos:exactMatch glotto:wuch1236"
       }
     },
     "Xiang-Chinese": {
@@ -1078,11 +1076,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062055",
-        "annotation": "glotto:xian1251"
+        "annotation": "skos:exactMatch glotto:xian1251"
       },
       "explicitAttributes": {
         "hedId": "HED_0062055",
-        "annotation": "glotto:xian1251"
+        "annotation": "skos:exactMatch glotto:xian1251"
       }
     },
     "Yue-Chinese": {
@@ -1096,11 +1094,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062056",
-        "annotation": "glotto:yuec1235"
+        "annotation": "skos:exactMatch glotto:yuec1235"
       },
       "explicitAttributes": {
         "hedId": "HED_0062056",
-        "annotation": "glotto:yuec1235"
+        "annotation": "skos:exactMatch glotto:yuec1235"
       }
     },
     "Cantonese": {
@@ -1112,11 +1110,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062057",
-        "annotation": "glotto:cant1236"
+        "annotation": "skos:exactMatch glotto:cant1236"
       },
       "explicitAttributes": {
         "hedId": "HED_0062057",
-        "annotation": "glotto:cant1236"
+        "annotation": "skos:exactMatch glotto:cant1236"
       }
     },
     "Tai-Kadai": {
@@ -1130,11 +1128,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062058",
-        "annotation": "glotto:taik1256"
+        "annotation": "skos:exactMatch glotto:taik1256"
       },
       "explicitAttributes": {
         "hedId": "HED_0062058",
-        "annotation": "glotto:taik1256"
+        "annotation": "skos:exactMatch glotto:taik1256"
       }
     },
     "Thai": {
@@ -1146,11 +1144,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062059",
-        "annotation": "glotto:thai1261"
+        "annotation": "skos:exactMatch glotto:thai1261"
       },
       "explicitAttributes": {
         "hedId": "HED_0062059",
-        "annotation": "glotto:thai1261"
+        "annotation": "skos:exactMatch glotto:thai1261"
       }
     },
     "Turkic": {
@@ -1164,11 +1162,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062060",
-        "annotation": "glotto:turk1311"
+        "annotation": "skos:exactMatch glotto:turk1311"
       },
       "explicitAttributes": {
         "hedId": "HED_0062060",
-        "annotation": "glotto:turk1311"
+        "annotation": "skos:exactMatch glotto:turk1311"
       }
     },
     "Turkish": {
@@ -1180,11 +1178,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062061",
-        "annotation": "glotto:nucl1301"
+        "annotation": "skos:exactMatch glotto:nucl1301"
       },
       "explicitAttributes": {
         "hedId": "HED_0062061",
-        "annotation": "glotto:nucl1301"
+        "annotation": "skos:exactMatch glotto:nucl1301"
       }
     },
     "Uralic": {
@@ -1200,11 +1198,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062062",
-        "annotation": "glotto:ural1272"
+        "annotation": "skos:exactMatch glotto:ural1272"
       },
       "explicitAttributes": {
         "hedId": "HED_0062062",
-        "annotation": "glotto:ural1272"
+        "annotation": "skos:exactMatch glotto:ural1272"
       }
     },
     "Estonian": {
@@ -1216,11 +1214,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062063",
-        "annotation": "glotto:esto1258"
+        "annotation": "skos:exactMatch glotto:esto1258"
       },
       "explicitAttributes": {
         "hedId": "HED_0062063",
-        "annotation": "glotto:esto1258"
+        "annotation": "skos:exactMatch glotto:esto1258"
       }
     },
     "Finnish": {
@@ -1232,11 +1230,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062064",
-        "annotation": "glotto:finn1318"
+        "annotation": "skos:exactMatch glotto:finn1318"
       },
       "explicitAttributes": {
         "hedId": "HED_0062064",
-        "annotation": "glotto:finn1318"
+        "annotation": "skos:exactMatch glotto:finn1318"
       }
     },
     "Hungarian": {
@@ -1248,11 +1246,11 @@
       "attributes": {
         "extensionAllowed": true,
         "hedId": "HED_0062065",
-        "annotation": "glotto:hung1274"
+        "annotation": "skos:exactMatch glotto:hung1274"
       },
       "explicitAttributes": {
         "hedId": "HED_0062065",
-        "annotation": "glotto:hung1274"
+        "annotation": "skos:exactMatch glotto:hung1274"
       }
     },
     "Bigram": {
@@ -1268,18 +1266,12 @@
         ],
         "hedId": "HED_0062066",
         "rooted": "Language-item",
-        "annotation": [
-          "glotto:hung1274",
-          "dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram"
-        ]
+        "annotation": "dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram"
       },
       "explicitAttributes": {
         "hedId": "HED_0062066",
         "rooted": "Language-item",
-        "annotation": [
-          "glotto:hung1274",
-          "dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram"
-        ]
+        "annotation": "dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram"
       }
     },
     "Letter-character": {
@@ -4751,188 +4743,20 @@
   "value_classes": {},
   "schema_attributes": {},
   "properties": {},
-  "epilogue": "The current prerelease of the schema is primarily centered around written language and current development focuses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary. ",
+  "epilogue": "The current prerelease of the schema is primarily centered around written language and current development focuses on adding grammatical aspect characteristics and spoken word characteristics into the vocabulary.",
   "sources": [
     {
-      "name": "Wikipedia",
-      "link": "https://en.wikipedia.org",
-      "description": "General definitions of concepts."
+      "name": "GOLD",
+      "link": "http://purl.org/linguistics/gold",
+      "description": "General Ontology for Linguistic Description."
     }
   ],
   "prefixes": [
     {
-      "name": "dc:",
-      "namespace": "http://purl.org/dc/elements/1.1/#",
-      "description": "The Dublin Core elements"
-    },
-    {
-      "name": "foaf:",
-      "namespace": "http://xmlns.com/foaf/0.1/#",
-      "description": "Friend-of-a-Friend http://xmlns.com/foaf/spec/"
-    },
-    {
       "name": "glotto:",
       "namespace": "https://glottolog.org/resource/languoid/id/#",
       "description": "Glottolog 5.1 Comprehensive language reference database"
-    },
-    {
-      "name": "iao:",
-      "namespace": "http://purl.obolibrary.org/obo/iao.owl",
-      "description": "Information Artifact Ontology (IAO)"
-    },
-    {
-      "name": "ncit:",
-      "namespace": "http://purl.obolibrary.org/obo/ncit.owl",
-      "description": "NCI Thesaurus OBO Edition"
-    },
-    {
-      "name": "obogo:",
-      "namespace": "http://www.geneontology.org/formats/oboInOwl",
-      "description": "The OBO Format Namespace"
-    },
-    {
-      "name": "owl:",
-      "namespace": "http://www.w3.org/2002/07/owl",
-      "description": "The OWL namespace [OWL2-OVERVIEW]"
-    },
-    {
-      "name": "prov:",
-      "namespace": "http://www.w3.org/ns/prov",
-      "description": "The PROV namespace [PROV-DM]"
-    },
-    {
-      "name": "rdf:",
-      "namespace": "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-      "description": "The RDF namespace [RDF-CONCEPTS]"
-    },
-    {
-      "name": "rdfs:",
-      "namespace": "http://www.w3.org/2000/01/rdf-schema",
-      "description": "The RDF Schema namespace [RDFS]"
-    },
-    {
-      "name": "skos:",
-      "namespace": "http://www.w3.org/2004/02/skos/core",
-      "description": "SKOS (Simple Knowledge Organization System) Vocabulary"
-    },
-    {
-      "name": "terms:",
-      "namespace": "http://purl.org/dc/terms/#",
-      "description": "The Dublin Core terms"
-    },
-    {
-      "name": "xml:",
-      "namespace": "http://www.w3.org/XML/1998/namespace",
-      "description": "XLM Namespace [XML]"
-    },
-    {
-      "name": "xsd:",
-      "namespace": "http://www.w3.org/2001/XMLSchema",
-      "description": "XML Schema Namespace [XMLSCHEMA11-2]"
     }
   ],
-  "external_annotations": [
-    {
-      "name": "dc:",
-      "id": "contributor",
-      "iri": "http://purl.org/dc/elements/1.1/contributor",
-      "description": "An entity responsible for making contributions to the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "creator",
-      "iri": "http://purl.org/dc/elements/1.1/creator",
-      "description": "An entity primarily responsible for making the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "date",
-      "iri": "http://purl.org/dc/elements/1.1/date",
-      "description": "A point or period of time associated with an event in the lifecycle of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "description",
-      "iri": "http://purl.org/dc/elements/1.1/description",
-      "description": "An account of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "format",
-      "iri": "http://purl.org/dc/elements/1.1/format",
-      "description": "The file format"
-    },
-    {
-      "name": "dc:",
-      "id": "identifier",
-      "iri": "http://purl.org/dc/elements/1.1/identifier",
-      "description": "An unambiguous reference to the resource within a given context."
-    },
-    {
-      "name": "dc:",
-      "id": "language",
-      "iri": "http://purl.org/dc/elements/1.1/language",
-      "description": "A language of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "publisher",
-      "iri": "http://purl.org/dc/elements/1.1/publisher",
-      "description": "An entity responsible for making the resource available."
-    },
-    {
-      "name": "dc:",
-      "id": "relation",
-      "iri": "http://purl.org/dc/elements/1.1/relation",
-      "description": "A related resource."
-    },
-    {
-      "name": "dc:",
-      "id": "source",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "description": "A related resource from which the described resource is derived."
-    },
-    {
-      "name": "dc:",
-      "id": "subject",
-      "iri": "http://purl.org/dc/elements/1.1/subject",
-      "description": "The topic of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "title",
-      "iri": "http://purl.org/dc/elements/1.1/title",
-      "description": "A name given to the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "type",
-      "iri": "http://purl.org/dc/elements/1.1/type",
-      "description": "The nature or genre of the resource."
-    },
-    {
-      "name": "foaf:",
-      "id": "homepage",
-      "iri": "http://xmlns.com/foaf/0.1/homepage",
-      "description": "A homepage for some thing."
-    },
-    {
-      "name": "glotto:",
-      "id": "Glottocode",
-      "iri": "https://glottolog.org/resource/languoid/id/#",
-      "description": "The ID for the language."
-    },
-    {
-      "name": "obogo:",
-      "id": "has_dbxref",
-      "iri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-      "description": "Property indicating that an ontology term has a cross-reference to a database."
-    },
-    {
-      "name": "terms:",
-      "id": "license",
-      "iri": "http://purl.org/dc/terms/license",
-      "description": "A legal document giving official permission to do something with the resource."
-    }
-  ]
+  "external_annotations": []
 }

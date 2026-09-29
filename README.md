@@ -69,6 +69,8 @@ As modifications to a HED schema are proposed, they are entered into the `PROPOS
 
 For a more complete view of the process see the [HED schema developer's guide](https://www.hedtags.org/hed-resources/HedSchemaDevelopersGuide.html).
 
+Changes arrive as pull requests from a fork, and the branch name decides what the pull request may touch. A `standard_*` branch may change only `standard_schema/`, and a `score_*`, `lang_*`, `slam_*`, `mouse_*`, or `testlib_*` branch only the matching `library_schemas/<name>/`; within that area, schema files (`.mediawiki`, `.xml`, `.json`, `.tsv`) must be under `prerelease/`, the released `hedwiki/`, `hedxml/`, `hedjson/`, and `hedtsv/` directories are never edited, and other files such as the area's README and `PROPOSED.md` may change. The generated `schema_versions.json` manifest at the repository root may be updated from any branch. An `admin_*` branch (maintainers) is not restricted and is used for documentation, scripts, and CI. CI checks every pull request against these rules and rejects one whose branch prefix does not match the files it changes. The [schema developer guide](https://www.hedtags.org/hed-schemas/developer_guide.html) in this repository has the full table and the step-by-step workflow.
+
 ## Installation and local development
 
 ### Prerequisites

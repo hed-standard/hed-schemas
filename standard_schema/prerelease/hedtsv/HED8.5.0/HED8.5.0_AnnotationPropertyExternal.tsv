@@ -15,4 +15,6 @@ dc:	type	http://purl.org/dc/elements/1.1/type		The nature or genre of the resour
 foaf:	homepage	http://xmlns.com/foaf/0.1/homepage		A homepage for some thing.
 obogo:	has_dbxref	http://www.geneontology.org/formats/oboInOwl#hasDbXref		Property indicating that an ontology term has a cross-reference to a database.
 rdfs:	comment	http://www.w3.org/2000/01/rdf-schema#comment		Standard way to provide a human-readable description.
+skos:	closeMatch	http://www.w3.org/2004/02/skos/core#closeMatch		The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.
+skos:	exactMatch	http://www.w3.org/2004/02/skos/core#exactMatch		The element denotes the same concept as the external term given as the value.
 terms:	license	http://purl.org/dc/terms/license		A legal document giving official permission to do something with the resource.

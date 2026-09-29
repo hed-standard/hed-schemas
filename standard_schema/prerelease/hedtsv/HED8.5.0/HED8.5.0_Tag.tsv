@@ -672,6 +672,8 @@ HED_0012637	4	Item-interval	Quantitative-value		An integer indicating how many i
 HED_0012638	5	Item-interval-#	Item-interval	takesValue, valueClass=numericClass	
 HED_0012639	4	Percentage	Quantitative-value		A fraction or ratio with 100 understood as the denominator.
 HED_0012640	5	Percentage-#	Percentage	takesValue, valueClass=numericClass	
+	4	Quantity	Quantitative-value		A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).
+	5	Quantity-#	Quantity	takesValue, valueClass=numericClass, unitClass=anyUnits	
 HED_0012641	4	Ratio	Quantitative-value		A quotient of quantities of the same kind for different components within the same system.
 HED_0012642	5	Ratio-#	Ratio	takesValue, valueClass=numericClass	
 HED_0012643	3	Spatiotemporal-value	Data-value		A property relating to space and/or time.

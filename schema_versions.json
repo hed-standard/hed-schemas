@@ -96,9 +96,9 @@
       ],
       "prerelease": [
         {
-          "date": "2026-09-05T10:49:47-05:00",
+          "date": "2026-09-28T05:30:55-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
-          "sha": "12c16f3abc55af944fe2d3a96a826daa41ddaa4a",
+          "sha": "4d669df775a3929f4e91bc34a740f65e74106efa",
           "version": "8.5.0"
         }
       ],
@@ -139,9 +139,9 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2025-06-10T09:12:40-05:00",
+          "date": "2026-09-18T09:14:28-05:00",
           "file": "library_schemas/lang/prerelease/HED_lang_1.2.0.xml",
-          "sha": "525db30e207348ad6326e9a3cdc02619f364d1d7",
+          "sha": "9203794d35f07a4df2269d49ac66f1ccc5f212e1",
           "version": "1.2.0"
         }
       ],
@@ -176,9 +176,9 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2025-06-09T11:19:31-05:00",
+          "date": "2026-09-29T12:58:37-05:00",
           "file": "library_schemas/score/prerelease/HED_score_2.2.0.xml",
-          "sha": "b02ca09070e16de00fa9dc34c21ad3aba18e9fb7",
+          "sha": "aa5d400093a3c9cb13cd0e494b9cbfbfbf843568",
           "version": "2.2.0"
         }
       ],

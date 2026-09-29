@@ -684,6 +684,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012638}</nowiki>
 **** Percentage <nowiki>{hedId=HED_0012639} [A fraction or ratio with 100 understood as the denominator.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012640}</nowiki>
+**** Quantity <nowiki>[A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).]</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=anyUnits}</nowiki>
 **** Ratio <nowiki>{hedId=HED_0012641} [A quotient of quantities of the same kind for different components within the same system.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012642}</nowiki>
 *** Spatiotemporal-value <nowiki>{hedId=HED_0012643} [A property relating to space and/or time.]</nowiki>
@@ -1262,6 +1264,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** radian <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011601}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011602}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
+* anyUnits <nowiki>[Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.]</nowiki>
 * areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502} [Units of area, for example the size of a stimulus region or a surface on a display.]</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
 * chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
@@ -1395,7 +1398,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * nameClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=underscore, allowedCharacter=hyphen, hedId=HED_0011302} [Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
 * numericClass <nowiki>{allowedCharacter=digits, allowedCharacter=E, allowedCharacter=e, allowedCharacter=plus, allowedCharacter=hyphen, allowedCharacter=period, hedId=HED_0011303} [Value must be a valid numerical value.]</nowiki>
 * posixPath <nowiki>{allowedCharacter=digits, allowedCharacter=letters, allowedCharacter=slash, allowedCharacter=colon, hedId=HED_0011304} [Posix path specification.]</nowiki>
-* textClass <nowiki>{allowedCharacter=text, hedId=HED_0011305} [Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).]</nowiki>
+* textClass <nowiki>{allowedCharacter=value-text, hedId=HED_0011305} [Values that have the characteristics of text. The allowed characters are the printable characters (32 <= ASCII < 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.]</nowiki>
 
 '''Schema attributes'''
 * annotation <nowiki>{elementDomain, stringRange, hedId=HED_0010504, annotationProperty} [A annotation link to an item in another ontology or item.]</nowiki>
@@ -1444,6 +1447,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 This schema is released under the Creative Commons Attribution 4.0 International and is a product of the HED Working Group. The DOI for the latest version of the HED standard schema is 10.5281/zenodo.7876037.
 
 '''Sources'''
+* <nowiki>source=Original,link=https://www.hedtags.org,description=The definition was written by the schema authors and has no external source.</nowiki>
 * <nowiki>source=Wikipedia,link=https://en.wikipedia.org,description=General definitions of concepts.</nowiki>
 
 '''Prefixes'''
@@ -1478,6 +1482,8 @@ This schema is released under the Creative Commons Attribution 4.0 International
 * <nowiki>prefix=foaf:,id=homepage,iri=http://xmlns.com/foaf/0.1/homepage,description=A homepage for some thing.</nowiki>
 * <nowiki>prefix=obogo:,id=has_dbxref,iri=http://www.geneontology.org/formats/oboInOwl#hasDbXref,description=Property indicating that an ontology term has a cross-reference to a database.</nowiki>
 * <nowiki>prefix=rdfs:,id=comment,iri=http://www.w3.org/2000/01/rdf-schema#comment,description=Standard way to provide a human-readable description.</nowiki>
+* <nowiki>prefix=skos:,id=closeMatch,iri=http://www.w3.org/2004/02/skos/core#closeMatch,description=The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</nowiki>
+* <nowiki>prefix=skos:,id=exactMatch,iri=http://www.w3.org/2004/02/skos/core#exactMatch,description=The element denotes the same concept as the external term given as the value.</nowiki>
 * <nowiki>prefix=terms:,id=license,iri=http://purl.org/dc/terms/license,description=A legal document giving official permission to do something with the resource.</nowiki>
 
 !# end hed
