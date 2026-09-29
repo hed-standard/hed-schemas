@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 ## Differences between HED_lang_1.1.0 and HED_lang_1.2.0
 
 **Tags:**
