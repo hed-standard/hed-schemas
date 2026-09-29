@@ -6,7 +6,7 @@ The HED-SCORE library schema allows the annotation of electrophysiology recordin
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
-For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.
+For more information see https://www.hedtags.org/hed-schemas.
 
 !# start schema
 
