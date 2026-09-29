@@ -1328,18 +1328,6 @@
                </attribute>
             </node>
             <node>
-               <name>Report</name>
-               <description>Register a response</description>
-               <attribute>
-                  <name>rooted</name>
-                  <value>Perform</value>
-               </attribute>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>mouse</value>
-               </attribute>
-            </node>
-            <node>
                <name>Rest</name>
                <description>Be inactive in order to regain strength, health, or energy.</description>
                <attribute>
@@ -6159,6 +6147,24 @@
                         <attribute>
                            <name>hedId</name>
                            <value>HED_0012640</value>
+                        </attribute>
+                     </node>
+                  </node>
+                  <node>
+                     <name>Quantity</name>
+                     <description>A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).</description>
+                     <node>
+                        <name>#</name>
+                        <attribute>
+                           <name>takesValue</name>
+                        </attribute>
+                        <attribute>
+                           <name>valueClass</name>
+                           <value>numericClass</value>
+                        </attribute>
+                        <attribute>
+                           <name>unitClass</name>
+                           <value>anyUnits</value>
                         </attribute>
                      </node>
                   </node>
@@ -11761,6 +11767,10 @@
          </unit>
       </unitClassDefinition>
       <unitClassDefinition>
+         <name>anyUnits</name>
+         <description>Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.</description>
+      </unitClassDefinition>
+      <unitClassDefinition>
          <name>areaUnits</name>
          <description>Units of area, for example the size of a stimulus region or a surface on a display.</description>
          <attribute>
@@ -13494,10 +13504,10 @@
       </valueClassDefinition>
       <valueClassDefinition>
          <name>textClass</name>
-         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes &gt; 127).</description>
+         <description>Values that have the characteristics of text. The allowed characters are the printable characters (32 &lt;= ASCII &lt; 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.</description>
          <attribute>
             <name>allowedCharacter</name>
-            <value>text</value>
+            <value>value-text</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -14001,6 +14011,11 @@
    </propertyDefinitions>
    <schemaSources>
       <schemaSource>
+         <name>Original</name>
+         <link>https://www.hedtags.org</link>
+         <description>The definition was written by the schema authors and has no external source.</description>
+      </schemaSource>
+      <schemaSource>
          <name>Wikipedia</name>
          <link>https://en.wikipedia.org</link>
          <description>General definitions of concepts.</description>
@@ -14169,6 +14184,18 @@
          <id>comment</id>
          <iri>http://www.w3.org/2000/01/rdf-schema#comment</iri>
          <description>Standard way to provide a human-readable description.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>closeMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#closeMatch</iri>
+         <description>The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.</description>
+      </externalAnnotation>
+      <externalAnnotation>
+         <name>skos:</name>
+         <id>exactMatch</id>
+         <iri>http://www.w3.org/2004/02/skos/core#exactMatch</iri>
+         <description>The element denotes the same concept as the external term given as the value.</description>
       </externalAnnotation>
       <externalAnnotation>
          <name>terms:</name>

@@ -13,8 +13,6 @@ The HED MOUSE HED library schema is designed to standardize the annotation of ro
 
 '''Nose-poke''' <nowiki>{rooted=Perform} [Nose enters or occupies a defined port/aperture location.]</nowiki>
 
-'''Report''' <nowiki>{rooted=Perform} [Register a response]</nowiki>
-
 '''Fore-limb''' <nowiki>{rooted=Body-part} [Either of the front pair of limbs in a quadruped.]</nowiki>
 
 '''Fore-limb-part''' <nowiki>{rooted=Body-part} [A part of the fore-limb.]</nowiki>
