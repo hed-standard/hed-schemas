@@ -3,11 +3,13 @@
 **Tags:**
 
 - Consume (Minor): Item Consume added
+- Report (Minor): Item Report added
 - Electrical-artifact (Minor): Item Electrical-artifact added
 - Localized-channel-artifact (Minor): Item Localized-channel-artifact added
 - Quantity (Minor): Item Quantity added
 - Cued (Minor): Item Cued added
 - Uncued (Minor): Item Uncued added
+- No-go-signal (Minor): Item No-go-signal added
 - Omitted-presentation (Minor): Item Omitted-presentation added
 - Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
 - Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
@@ -16,6 +18,9 @@
 - Event (Patch): Attribute annotation modified from ncit:C25499,rdfs:comment Should have this tag in every event process. to None
 - Electrode-pops-artifact (Patch): Suggested tag changed on Electrode-pops-artifact from empty to ID
 - Salt-bridge-artifact (Patch): Suggested tag changed on Salt-bridge-artifact from empty to ID
+- Go-signal (Patch): Related tag changed on Go-signal from Stop-signal to No-go-signal, Stop-signal
+- Stop-signal (Patch): Related tag changed on Stop-signal from Go-signal to Go-signal, No-go-signal
+- Stop-signal (Patch): Description of Stop-signal modified
 
 **Units:**
 
@@ -167,7 +172,7 @@
 **Misc Metadata:**
 
 - header_attributes (Patch): header_attributes changed from {'version': '8.4.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'} to {'version': '8.5.0', 'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'xsi:noNamespaceSchemaLocation': 'https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd', 'unmerged': 'True'}
-- prologue (Patch): prologue changed
+- prologue (Patch): prologue changed: 1 removed, 1 added; - The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HE... | + The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HE...
 
 **Sources:**
 
@@ -179,6 +184,6 @@
 
 **AnnotationPropertyExternal:**
 
-- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
-- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
 - ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
+- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
+- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
