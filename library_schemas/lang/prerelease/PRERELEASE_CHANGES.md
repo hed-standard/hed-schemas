@@ -2,18 +2,6 @@
 
 **Tags:**
 
-- Consume (Minor): Item Consume added
-- Electrical-artifact (Minor): Item Electrical-artifact added
-- Localized-channel-artifact (Minor): Item Localized-channel-artifact added
-- Quantity (Minor): Item Quantity added
-- Cued (Minor): Item Cued added
-- Uncued (Minor): Item Uncued added
-- Omitted-presentation (Minor): Item Omitted-presentation added
-- Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
-- Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
-- Line-noise-artifact (Minor): Tag Line-noise-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact
-- Salt-bridge-artifact (Minor): Tag Salt-bridge-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact
-- Event (Patch): Attribute annotation modified from ncit:C25499,rdfs:comment Should have this tag in every event process. to None
 - Afroasiatic-language (Patch): Attribute annotation modified from glotto:afro1255 to skos:exactMatch glotto:afro1255
 - Arabic (Patch): Attribute annotation modified from glotto:arab1395 to skos:exactMatch glotto:arab1395
 - Hebrew (Patch): Attribute annotation modified from glotto:hebr1245 to skos:exactMatch glotto:hebr1245
@@ -78,6 +66,40 @@
 - Finnish (Patch): Attribute annotation modified from glotto:finn1318 to skos:exactMatch glotto:finn1318
 - Hungarian (Patch): Attribute annotation modified from glotto:hung1274 to skos:exactMatch glotto:hung1274
 - Bigram (Patch): Attribute annotation modified from glotto:hung1274,dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram to dc:source Adapted from: https://en.wikipedia.org/wiki/Bigram
+
+**Misc Metadata:**
+
+- header_attributes (Patch): header_attributes changed from {'version': '1.1.0', 'library': 'lang', 'withStandard': '8.4.0', 'unmerged': 'True'} to {'version': '1.2.0', 'library': 'lang', 'withStandard': '8.5.0', 'unmerged': 'True'}
+- prologue (Patch): prologue changed: 1 removed, 1 added; - The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The sche... | + The HED Language schema is a Hierarchical Event Descriptors Library Schema Language stimuli and experiments. The sche...
+- epilogue (Patch): epilogue changed: 1 removed, 1 added; - The current prerelease of the schema is primarily centered around written language and current development focuses on... | + The current prerelease of the schema is primarily centered around written language and current development focuses on...
+
+**Sources:**
+
+- GOLD (Minor): Row GOLD missing in first schema
+
+**AnnotationPropertyExternal:**
+
+- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
+- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
+- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
+- ('glotto:', 'Glottocode') (Minor): Row ('glotto:', 'Glottocode') missing in second schema
+
+### From the partner standard schema (8.4.0 -> 8.5.0)
+
+**Tags:**
+
+- Consume (Minor): Item Consume added
+- Electrical-artifact (Minor): Item Electrical-artifact added
+- Localized-channel-artifact (Minor): Item Localized-channel-artifact added
+- Quantity (Minor): Item Quantity added
+- Cued (Minor): Item Cued added
+- Uncued (Minor): Item Uncued added
+- Omitted-presentation (Minor): Item Omitted-presentation added
+- Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
+- Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
+- Line-noise-artifact (Minor): Tag Line-noise-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact
+- Salt-bridge-artifact (Minor): Tag Salt-bridge-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact
+- Event (Patch): Attribute annotation modified from ncit:C25499,rdfs:comment Should have this tag in every event process. to None
 - Electrode-pops-artifact (Patch): Suggested tag changed on Electrode-pops-artifact from empty to ID
 - Salt-bridge-artifact (Patch): Suggested tag changed on Salt-bridge-artifact from empty to ID
 
@@ -146,6 +168,11 @@
 - volumeUnits (Patch): Unit L added to volumeUnits
 - volumeUnits (Patch): Description of volumeUnits modified
 - weightUnits (Patch): Description of weightUnits modified
+
+**Value Classes:**
+
+- textClass (Patch): Attribute allowedCharacter modified from text to value-text
+- textClass (Patch): Description of textClass modified
 
 **Unit Modifiers:**
 
@@ -223,24 +250,10 @@
 - unitPrefix (Patch): Attribute deprecatedFrom modified from None to 8.4.0
 - unitPrefix (Patch): Description of unitPrefix modified
 
-**Misc Metadata:**
-
-- header_attributes (Patch): header_attributes changed from {'version': '1.1.0', 'library': 'lang', 'withStandard': '8.4.0', 'unmerged': 'True'} to {'version': '1.2.0', 'library': 'lang', 'withStandard': '8.5.0', 'unmerged': 'True'}
-- prologue (Patch): prologue changed
-- epilogue (Patch): epilogue changed
-
 **Sources:**
 
 - Original (Minor): Row Original missing in first schema
-- GOLD (Minor): Row GOLD missing in first schema
 
 **Prefixes:**
 
 - xml: (Patch): Row xml: columns differ: description
-
-**AnnotationPropertyExternal:**
-
-- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
-- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
-- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
-- ('glotto:', 'Glottocode') (Minor): Row ('glotto:', 'Glottocode') missing in second schema
