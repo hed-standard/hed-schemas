@@ -5,7 +5,7 @@ The HED-SCORE library schema allows the annotation of electrophysiology recordin
 The resulting annotations are understandable to clinicians and directly usable in computer analysis.
 
 Future extensions may be implemented in the HED-SCORE library schema.
-For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.</prologue>
+For more information see https://www.hedtags.org/hed-schemas.</prologue>
    <schema>
       <node>
          <name>Modulator</name>
@@ -22778,10 +22778,10 @@ For more information see https://hed-schema-library.readthedocs.io/en/latest/ind
       </valueClassDefinition>
       <valueClassDefinition>
          <name>textClass</name>
-         <description>Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 &lt;= ASCII&lt; 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes &gt; 127).</description>
+         <description>Values that have the characteristics of text. The allowed characters are the printable characters (32 &lt;= ASCII &lt; 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.</description>
          <attribute>
             <name>allowedCharacter</name>
-            <value>text</value>
+            <value>value-text</value>
          </attribute>
          <attribute>
             <name>hedId</name>

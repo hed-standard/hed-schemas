@@ -2,17 +2,6 @@
 
 **Tags:**
 
-- Consume (Minor): Item Consume added
-- Electrical-artifact (Minor): Item Electrical-artifact added
-- Localized-channel-artifact (Minor): Item Localized-channel-artifact added
-- Quantity (Minor): Item Quantity added
-- Cued (Minor): Item Cued added
-- Uncued (Minor): Item Uncued added
-- Omitted-presentation (Minor): Item Omitted-presentation added
-- Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
-- Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
-- Line-noise-artifact (Minor): Tag Line-noise-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact
-- Salt-bridge-artifact (Minor): Tag Salt-bridge-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact
 - Posterior-dominant-rhythm (Patch): Attribute annotation modified from dc:source Beniczky ea 2013 Appendix S2,dc:source suggested tags from Beniczky ea 2017 Table 4. to dc:source Beniczky ea 2013 Appendix S2,dc:source Beniczky ea 2017 Table 4 (suggested tags)
 - Critically-ill-patient-periodic-discharges (Patch): Attribute annotation modified from dc:source Hirsch ea 2013,dc:source Suggested tags from Beniczky ea 2017 Table 8. to dc:source Hirsch ea 2013,dc:source Beniczky ea 2017 Table 8 (suggested tags)
 - Rhythmic-delta-activity (Patch): Attribute annotation modified from dc:source Hirsch ea 2013,dc:source Suggested tags from Beniczky ea 2017 Table 8. to dc:source Hirsch ea 2013,dc:source Beniczky ea 2017 Table 8 (suggested tags)
@@ -38,6 +27,37 @@
 - Abnormal-interictal-rhythmic-activity (Patch): Attribute annotation modified from dc:source Beniczky ea 2013 Appendix S4,dc:source Morphologies from Beniczky ea 2017 Table 5,dc:source Suggested tags from Beniczky ea 2017 Section 8 to dc:source Beniczky ea 2013 Appendix S4,dc:source Beniczky ea 2017 Table 5 (morphologies),dc:source Beniczky ea 2017 Section 8 (suggested tags)
 - Normal-sleep-architecture (Patch): Attribute annotation modified from dc:source Benizcky ea 2013 Appendix S3 to dc:source Beniczky ea 2013 Appendix S3
 - Abnormal-sleep-architecture (Patch): Attribute annotation modified from dc:source Benizcky ea 2013 Appendix S3 to dc:source Beniczky ea 2013 Appendix S3
+
+**Misc Metadata:**
+
+- header_attributes (Patch): header_attributes changed from {'version': '2.1.0', 'library': 'score', 'withStandard': '8.4.0', 'unmerged': 'True'} to {'version': '2.2.0', 'library': 'score', 'withStandard': '8.5.0', 'unmerged': 'True'}
+- prologue (Patch): prologue changed: 1 removed, 1 added; - For more information see https://hed-schema-library.readthedocs.io/en/latest/index.html. | + For more information see https://www.hedtags.org/hed-schemas.
+
+**Prefixes:**
+
+- xml: (Patch): Row xml: columns differ: description
+
+**AnnotationPropertyExternal:**
+
+- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
+- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
+- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
+
+### From the partner standard schema (8.4.0 -> 8.5.0)
+
+**Tags:**
+
+- Consume (Minor): Item Consume added
+- Electrical-artifact (Minor): Item Electrical-artifact added
+- Localized-channel-artifact (Minor): Item Localized-channel-artifact added
+- Quantity (Minor): Item Quantity added
+- Cued (Minor): Item Cued added
+- Uncued (Minor): Item Uncued added
+- Omitted-presentation (Minor): Item Omitted-presentation added
+- Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
+- Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
+- Line-noise-artifact (Minor): Tag Line-noise-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact
+- Salt-bridge-artifact (Minor): Tag Salt-bridge-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact
 - Event (Patch): Attribute annotation modified from ncit:C25499,rdfs:comment Should have this tag in every event process. to None
 - Electrode-pops-artifact (Patch): Suggested tag changed on Electrode-pops-artifact from empty to ID
 - Salt-bridge-artifact (Patch): Suggested tag changed on Salt-bridge-artifact from empty to ID
@@ -107,6 +127,11 @@
 - volumeUnits (Patch): Unit L added to volumeUnits
 - volumeUnits (Patch): Description of volumeUnits modified
 - weightUnits (Patch): Description of weightUnits modified
+
+**Value Classes:**
+
+- textClass (Patch): Attribute allowedCharacter modified from text to value-text
+- textClass (Patch): Description of textClass modified
 
 **Unit Modifiers:**
 
@@ -184,20 +209,6 @@
 - unitPrefix (Patch): Attribute deprecatedFrom modified from None to 8.4.0
 - unitPrefix (Patch): Description of unitPrefix modified
 
-**Misc Metadata:**
-
-- header_attributes (Patch): header_attributes changed from {'version': '2.1.0', 'library': 'score', 'withStandard': '8.4.0', 'unmerged': 'True'} to {'version': '2.2.0', 'library': 'score', 'withStandard': '8.5.0', 'unmerged': 'True'}
-
 **Sources:**
 
 - Original (Minor): Row Original missing in first schema
-
-**Prefixes:**
-
-- xml: (Patch): Row xml: columns differ: description
-
-**AnnotationPropertyExternal:**
-
-- ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
-- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
-- ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T10:13:30.913088+00:00",
+  "generated": "2026-09-29T17:56:49.384511+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -96,7 +96,7 @@
       ],
       "prerelease": [
         {
-          "date": "2026-09-17T13:49:27-05:00",
+          "date": "2026-09-28T05:30:55-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
           "sha": "4d669df775a3929f4e91bc34a740f65e74106efa",
           "version": "8.5.0"
@@ -178,7 +178,7 @@
         {
           "date": "2026-09-18T10:50:33-05:00",
           "file": "library_schemas/score/prerelease/HED_score_2.2.0.xml",
-          "sha": "eb029c2e93a0f6452fa84c6cd0268b419ce78a3b",
+          "sha": "aa5d400093a3c9cb13cd0e494b9cbfbfbf843568",
           "version": "2.2.0"
         }
       ],
