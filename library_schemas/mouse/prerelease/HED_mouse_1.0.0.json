@@ -61,20 +61,6 @@
         "rooted": "Perform"
       }
     },
-    "Report": {
-      "short_form": "Report",
-      "long_form": "Action/Perform/Report",
-      "description": "Register a response",
-      "parent": "Perform",
-      "children": [],
-      "attributes": {
-        "extensionAllowed": true,
-        "rooted": "Perform"
-      },
-      "explicitAttributes": {
-        "rooted": "Perform"
-      }
-    },
     "Fore-limb": {
       "short_form": "Fore-limb",
       "long_form": "Item/Biological-item/Anatomical-item/Body-part/Fore-limb",

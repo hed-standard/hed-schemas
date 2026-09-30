@@ -3,7 +3,6 @@ hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
 	0	Move-whiskers	Move-face	rooted=Move-face	Move the whiskers.
 	0	Groom	Perform	rooted=Perform	Engage in self-hygiene.
 	0	Nose-poke	Perform	rooted=Perform	Nose enters or occupies a defined port/aperture location.
-	0	Report	Perform	rooted=Perform	Register a response
 	0	Fore-limb	Body-part	rooted=Body-part	Either of the front pair of limbs in a quadruped.
 	0	Fore-limb-part	Body-part	rooted=Body-part	A part of the fore-limb.
 	1	Manus	Fore-limb-part		The distal segment of the fore-limb, homologous to the hand.
