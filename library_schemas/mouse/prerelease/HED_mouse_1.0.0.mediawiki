@@ -53,4 +53,10 @@ The HED MOUSE HED library schema is designed to standardize the annotation of ro
 
 '''Epilogue'''
 
+'''Sources'''
+
+'''Prefixes'''
+
+'''External annotations'''
+
 !# end hed
