@@ -1329,15 +1329,7 @@
             </node>
             <node>
                <name>Report</name>
-               <description>Register a response</description>
-               <attribute>
-                  <name>rooted</name>
-                  <value>Perform</value>
-               </attribute>
-               <attribute>
-                  <name>inLibrary</name>
-                  <value>mouse</value>
-               </attribute>
+               <description>Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.</description>
             </node>
             <node>
                <name>Rest</name>
@@ -10838,6 +10830,7 @@
                   <description>An indicator to proceed with a planned action.</description>
                   <attribute>
                      <name>relatedTag</name>
+                     <value>No-go-signal</value>
                      <value>Stop-signal</value>
                   </attribute>
                   <attribute>
@@ -10859,6 +10852,15 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013111</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>No-go-signal</name>
+                  <description>A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Go-signal</value>
+                     <value>Stop-signal</value>
                   </attribute>
                </node>
                <node>
@@ -10963,10 +10965,11 @@
                </node>
                <node>
                   <name>Stop-signal</name>
-                  <description>An indicator that the agent should stop the current activity.</description>
+                  <description>An indicator that the agent should stop the current activity regardless of the activity's purpose.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Go-signal</value>
+                     <value>No-go-signal</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
