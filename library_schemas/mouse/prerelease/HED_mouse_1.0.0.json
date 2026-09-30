@@ -268,5 +268,8 @@
   "unit_modifiers": {},
   "value_classes": {},
   "schema_attributes": {},
-  "properties": {}
+  "properties": {},
+  "sources": [],
+  "prefixes": [],
+  "external_annotations": []
 }
