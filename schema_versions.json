@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T10:49:41.426182+00:00",
+  "generated": "2026-09-30T17:14:52.523083+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -98,7 +98,7 @@
         {
           "date": "2026-09-30T05:26:53-05:00",
           "file": "standard_schema/prerelease/HED8.5.0.xml",
-          "sha": "54d91bd45eaee58e97abd8ee0f868ddb99f5a800",
+          "sha": "063bd1582009e70ad11385c4c206ff4e33f6b91e",
           "version": "8.5.0"
         }
       ],
@@ -164,7 +164,7 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2026-09-30T05:07:13-05:00",
+          "date": "2026-09-30T05:50:30-05:00",
           "file": "library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml",
           "sha": "2cb98ba5c797019ade06a7524ae5586f9a5edb80",
           "version": "1.0.0"

@@ -20532,13 +20532,16 @@
   },
   "value_classes": {
     "dateTimeClass": {
-      "description": "Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.",
+      "description": "Date-times conform to the BIDS Datetime format, RFC 3339 with an optional offset: YYYY-MM-DDThh:mm:ss (year, month, day, hour (24h), minute, second), an optional fraction of one to six digits, and an optional Z for UTC or a +hh:mm or -hh:mm offset.",
       "hedId": "HED_0011301",
       "allowed_characters": [
         "digits",
         "T",
         "hyphen",
-        "colon"
+        "colon",
+        "period",
+        "Z",
+        "plus"
       ]
     },
     "nameClass": {

@@ -90,6 +90,8 @@
 
 **Value Classes:**
 
+- dateTimeClass (Patch): Attribute allowedCharacter modified from digits,T,hyphen,colon to digits,T,hyphen,colon,period,Z,plus
+- dateTimeClass (Patch): Description of dateTimeClass modified
 - textClass (Patch): Attribute allowedCharacter modified from text to value-text
 - textClass (Patch): Description of textClass modified
 
