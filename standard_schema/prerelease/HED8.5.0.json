@@ -2290,6 +2290,7 @@
         "Play",
         "Read",
         "Repeat",
+        "Report",
         "Rest",
         "Ride",
         "Write"
@@ -2438,6 +2439,17 @@
       "explicitAttributes": {
         "hedId": "HED_0012145"
       }
+    },
+    "Report": {
+      "short_form": "Report",
+      "long_form": "Action/Perform/Report",
+      "description": "Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.",
+      "parent": "Perform",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Rest": {
       "short_form": "Rest",
@@ -17984,6 +17996,7 @@
         "Go-signal",
         "Meaningful",
         "Newly-learned",
+        "No-go-signal",
         "Non-informative",
         "Non-target",
         "Not-meaningful",
@@ -18073,12 +18086,14 @@
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
+          "No-go-signal",
           "Stop-signal"
         ],
         "hedId": "HED_0013109"
       },
       "explicitAttributes": {
         "relatedTag": [
+          "No-go-signal",
           "Stop-signal"
         ],
         "hedId": "HED_0013109"
@@ -18110,6 +18125,26 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0013111"
+      }
+    },
+    "No-go-signal": {
+      "short_form": "No-go-signal",
+      "long_form": "Property/Task-property/Task-stimulus-role/No-go-signal",
+      "description": "A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.",
+      "parent": "Task-stimulus-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Go-signal",
+          "Stop-signal"
+        ]
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Go-signal",
+          "Stop-signal"
+        ]
       }
     },
     "Non-informative": {
@@ -18290,19 +18325,21 @@
     "Stop-signal": {
       "short_form": "Stop-signal",
       "long_form": "Property/Task-property/Task-stimulus-role/Stop-signal",
-      "description": "An indicator that the agent should stop the current activity.",
+      "description": "An indicator that the agent should stop the current activity regardless of the activity's purpose.",
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
-          "Go-signal"
+          "Go-signal",
+          "No-go-signal"
         ],
         "hedId": "HED_0013122"
       },
       "explicitAttributes": {
         "relatedTag": [
-          "Go-signal"
+          "Go-signal",
+          "No-go-signal"
         ],
         "hedId": "HED_0013122"
       }

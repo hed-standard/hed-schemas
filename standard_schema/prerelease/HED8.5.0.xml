@@ -1282,6 +1282,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                </attribute>
             </node>
             <node>
+               <name>Report</name>
+               <description>Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.</description>
+            </node>
+            <node>
                <name>Rest</name>
                <description>Be inactive in order to regain strength, health, or energy.</description>
                <attribute>
@@ -10628,6 +10632,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <description>An indicator to proceed with a planned action.</description>
                   <attribute>
                      <name>relatedTag</name>
+                     <value>No-go-signal</value>
                      <value>Stop-signal</value>
                   </attribute>
                   <attribute>
@@ -10649,6 +10654,15 @@ Each term in this vocabulary has a human-readable description and may include ad
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013111</value>
+                  </attribute>
+               </node>
+               <node>
+                  <name>No-go-signal</name>
+                  <description>A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.</description>
+                  <attribute>
+                     <name>relatedTag</name>
+                     <value>Go-signal</value>
+                     <value>Stop-signal</value>
                   </attribute>
                </node>
                <node>
@@ -10753,10 +10767,11 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Stop-signal</name>
-                  <description>An indicator that the agent should stop the current activity.</description>
+                  <description>An indicator that the agent should stop the current activity regardless of the activity's purpose.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Go-signal</value>
+                     <value>No-go-signal</value>
                   </attribute>
                   <attribute>
                      <name>hedId</name>
