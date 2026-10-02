@@ -1161,10 +1161,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
-*** Go-signal <nowiki>{relatedTag=No-go-signal, relatedTag=Stop-signal, hedId=HED_0013109} [An indicator to proceed with a planned action.]</nowiki>
+*** Go-signal <nowiki>{relatedTag=No-go-signal, relatedTag=Stop-signal, hedId=HED_0013109} [A stimulus indicating that a task response is required.]</nowiki>
 *** Meaningful <nowiki>{hedId=HED_0013110} [Conveying significant or relevant information.]</nowiki>
 *** Newly-learned <nowiki>{hedId=HED_0013111} [Representing recently acquired information or understanding.]</nowiki>
-*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal} [A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.]</nowiki>
+*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal} [A stimulus indicating that the subject should withhold or suppress the task response.]</nowiki>
 *** Non-informative <nowiki>{hedId=HED_0013112} [Something that is not useful in forming an opinion or judging an outcome.]</nowiki>
 *** Non-target <nowiki>{relatedTag=Target, hedId=HED_0013113} [Something other than that done or looked for. Also tag Expected if the Non-target is frequent.]</nowiki>
 *** Not-meaningful <nowiki>{hedId=HED_0013114} [Not having a serious, important, or useful quality or purpose.]</nowiki>
@@ -1182,7 +1182,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Timed <nowiki>{hedId=HED_0013125} [Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.]</nowiki>
 *** Unexpected <nowiki>{relatedTag=Expected, hedId=HED_0013126} [Something that is not anticipated.]</nowiki>
 *** Unplanned <nowiki>{relatedTag=Planned, hedId=HED_0013127} [Something that has not been planned as part of the task.]</nowiki>
-
+** Task-trial-role <nowiki>[The category of a trial with respect to the task in a trial-based experiment.]</nowiki>
+*** Aborted-trial <nowiki>[A trial outcome in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
+*** Correct-reject-trial <nowiki>[A trial outcome in which the lack of response matches the task's expected behavior.]</nowiki>
+*** Catch-trial <nowiki>[A trial outcome in which the lack of response matches the task's expected behavior.]</nowiki>
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
 ** Approximately-equal-to <nowiki>{hedId=HED_0013130} [(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.]</nowiki>
