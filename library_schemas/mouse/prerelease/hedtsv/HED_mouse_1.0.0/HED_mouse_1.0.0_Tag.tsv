@@ -14,5 +14,3 @@ hedId	Level	rdfs:label	omn:SubClassOf	Attributes	dc:description
 	0	Cell	Anatomical-item	rooted=Anatomical-item, annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)	The smallest basic structural and functional unit of all living organisms, capable of independent existence and self-replication.
 	1	Neuron	Cell	annotation=dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron	An electrically excitable cell specialized for the initiation, conduction, and transmission of information throughout the body.
 	0	Lick-spout	Measurement-device	rooted=Measurement-device	Device that delivers reward
-	0	Aborted-trial	Task-action-type	rooted=Task-action-type	A trial outcome in which the trial is terminated early based on conditions set in the task logic.
-	0	Correct-reject	Task-action-type	rooted=Task-action-type	A trial outcome in which the lack of response matches the task's expected behavior.
