@@ -1116,6 +1116,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Task-action-type <nowiki>{hedId=HED_0013063} [How an agent action should be interpreted in terms of the task specification.]</nowiki>
 *** Appropriate-action <nowiki>{relatedTag=Inappropriate-action, hedId=HED_0013064} [An action suitable or proper in the circumstances.]</nowiki>
 *** Correct-action <nowiki>{relatedTag=Incorrect-action, relatedTag=Indeterminate-action, hedId=HED_0013065} [An action that was a correct response in the context of the task.]</nowiki>
+**** Correct-rejection <nowiki>[An action correctly designating rejection in the context of the task.]</nowiki>
 *** Correction <nowiki>{hedId=HED_0013066} [An action offering an improvement to replace a mistake or error.]</nowiki>
 *** Cued <nowiki>{relatedTag=Uncued} [An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 *** Done-indication <nowiki>{relatedTag=Ready-indication, hedId=HED_0013067} [An action that indicates that the participant has completed this step in the task.]</nowiki>
@@ -1161,10 +1162,10 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Distractor <nowiki>{hedId=HED_0013105} [A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.]</nowiki>
 *** Expected <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013106} [Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.]</nowiki>
 *** Extraneous <nowiki>{hedId=HED_0013107} [Irrelevant or unrelated to the subject being dealt with.]</nowiki>
-*** Go-signal <nowiki>{relatedTag=No-go-signal, relatedTag=Stop-signal, hedId=HED_0013109} [An indicator to proceed with a planned action.]</nowiki>
+*** Go-signal <nowiki>{relatedTag=No-go-signal, relatedTag=Stop-signal, hedId=HED_0013109} [A stimulus indicating that a task response is required.]</nowiki>
 *** Meaningful <nowiki>{hedId=HED_0013110} [Conveying significant or relevant information.]</nowiki>
 *** Newly-learned <nowiki>{hedId=HED_0013111} [Representing recently acquired information or understanding.]</nowiki>
-*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal} [A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.]</nowiki>
+*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal} [A stimulus indicating that the subject should withhold or suppress the task response.]</nowiki>
 *** Non-informative <nowiki>{hedId=HED_0013112} [Something that is not useful in forming an opinion or judging an outcome.]</nowiki>
 *** Non-target <nowiki>{relatedTag=Target, hedId=HED_0013113} [Something other than that done or looked for. Also tag Expected if the Non-target is frequent.]</nowiki>
 *** Not-meaningful <nowiki>{hedId=HED_0013114} [Not having a serious, important, or useful quality or purpose.]</nowiki>
@@ -1182,6 +1183,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Timed <nowiki>{hedId=HED_0013125} [Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.]</nowiki>
 *** Unexpected <nowiki>{relatedTag=Expected, hedId=HED_0013126} [Something that is not anticipated.]</nowiki>
 *** Unplanned <nowiki>{relatedTag=Planned, hedId=HED_0013127} [Something that has not been planned as part of the task.]</nowiki>
+** Task-trial-role <nowiki>[The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
+*** Aborted-trial <nowiki>[A trial in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
+*** Catch-trial <nowiki>[A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.]</nowiki>
 
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
@@ -1396,8 +1400,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 * y <nowiki>{SIUnitSymbolModifier, conversionFactor=1e-24, hedId=HED_0011439} [SI unit submultiple representing 10^-24.]</nowiki>
 
 '''Value classes'''
-* dateTimeClass <nowiki>{allowedCharacter=digits, allowedCharacter=T, allowedCharacter=hyphen, allowedCharacter=colon, hedId=HED_0011301} [Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.]</nowiki>
-* nameClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=underscore, allowedCharacter=hyphen, hedId=HED_0011302} [Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.]</nowiki>
+* dateTimeClass <nowiki>{allowedCharacter=digits, allowedCharacter=T, allowedCharacter=hyphen, allowedCharacter=colon, allowedCharacter=period, allowedCharacter=Z, allowedCharacter=plus, hedId=HED_0011301} [Date-times conform to the BIDS Datetime format, RFC 3339 with an optional offset: YYYY-MM-DDThh:mm:ss (year, month, day, hour (24h), minute, second), an optional fraction of one to six digits, and an optional Z for UTC or a +hh:mm or -hh:mm offset.]</nowiki>
+* nameClass <nowiki>{allowedCharacter=letters, allowedCharacter=digits, allowedCharacter=underscore, allowedCharacter=hyphen, allowedCharacter=nonascii, hedId=HED_0011302} [Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, underscore, and non-ASCII characters.]</nowiki>
 * numericClass <nowiki>{allowedCharacter=digits, allowedCharacter=E, allowedCharacter=e, allowedCharacter=plus, allowedCharacter=hyphen, allowedCharacter=period, hedId=HED_0011303} [Value must be a valid numerical value.]</nowiki>
 * posixPath <nowiki>{allowedCharacter=digits, allowedCharacter=letters, allowedCharacter=slash, allowedCharacter=colon, hedId=HED_0011304} [Posix path specification.]</nowiki>
 * textClass <nowiki>{allowedCharacter=value-text, hedId=HED_0011305} [Values that have the characteristics of text. The allowed characters are the printable characters (32 <= ASCII < 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.]</nowiki>
