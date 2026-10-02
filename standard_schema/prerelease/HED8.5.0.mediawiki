@@ -1116,6 +1116,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Task-action-type <nowiki>{hedId=HED_0013063} [How an agent action should be interpreted in terms of the task specification.]</nowiki>
 *** Appropriate-action <nowiki>{relatedTag=Inappropriate-action, hedId=HED_0013064} [An action suitable or proper in the circumstances.]</nowiki>
 *** Correct-action <nowiki>{relatedTag=Incorrect-action, relatedTag=Indeterminate-action, hedId=HED_0013065} [An action that was a correct response in the context of the task.]</nowiki>
+**** Correct-rejection <nowiki>[An action correctly designating rejection in the context of the task.]</nowiki>
 *** Correction <nowiki>{hedId=HED_0013066} [An action offering an improvement to replace a mistake or error.]</nowiki>
 *** Cued <nowiki>{relatedTag=Uncued} [An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 *** Done-indication <nowiki>{relatedTag=Ready-indication, hedId=HED_0013067} [An action that indicates that the participant has completed this step in the task.]</nowiki>
@@ -1182,10 +1183,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Timed <nowiki>{hedId=HED_0013125} [Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.]</nowiki>
 *** Unexpected <nowiki>{relatedTag=Expected, hedId=HED_0013126} [Something that is not anticipated.]</nowiki>
 *** Unplanned <nowiki>{relatedTag=Planned, hedId=HED_0013127} [Something that has not been planned as part of the task.]</nowiki>
-** Task-trial-role <nowiki>[The category of a trial with respect to the task in a trial-based experiment.]</nowiki>
-*** Aborted-trial <nowiki>[A trial outcome in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
-*** Correct-reject-trial <nowiki>[A trial outcome in which the lack of response matches the task's expected behavior.]</nowiki>
-*** Catch-trial <nowiki>[A trial outcome in which the lack of response matches the task's expected behavior.]</nowiki>
+** Task-trial-role <nowiki>[The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
+*** Aborted-trial <nowiki>[A trial in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
+*** Catch-trial <nowiki>[A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.]</nowiki>
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
 ** Approximately-equal-to <nowiki>{hedId=HED_0013130} [(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.]</nowiki>
