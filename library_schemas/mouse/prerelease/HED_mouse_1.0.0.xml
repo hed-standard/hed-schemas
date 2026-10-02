@@ -10353,18 +10353,6 @@
                   <value>HED_0013063</value>
                </attribute>
                <node>
-                  <name>Aborted-trial</name>
-                  <description>A trial outcome in which the trial is terminated early based on conditions set in the task logic.</description>
-                  <attribute>
-                     <name>rooted</name>
-                     <value>Task-action-type</value>
-                  </attribute>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>mouse</value>
-                  </attribute>
-               </node>
-               <node>
                   <name>Appropriate-action</name>
                   <description>An action suitable or proper in the circumstances.</description>
                   <attribute>
@@ -10387,18 +10375,6 @@
                   <attribute>
                      <name>hedId</name>
                      <value>HED_0013065</value>
-                  </attribute>
-               </node>
-               <node>
-                  <name>Correct-reject</name>
-                  <description>A trial outcome in which the lack of response matches the task's expected behavior.</description>
-                  <attribute>
-                     <name>rooted</name>
-                     <value>Task-action-type</value>
-                  </attribute>
-                  <attribute>
-                     <name>inLibrary</name>
-                     <value>mouse</value>
                   </attribute>
                </node>
                <node>

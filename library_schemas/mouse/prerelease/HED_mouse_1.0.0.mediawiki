@@ -32,10 +32,6 @@ The HED MOUSE HED library schema is designed to standardize the annotation of ro
 
 '''Lick-spout''' <nowiki>{rooted=Measurement-device} [Device that delivers reward]</nowiki>
 
-'''Aborted-trial''' <nowiki>{rooted=Task-action-type} [A trial outcome in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
-
-'''Correct-reject''' <nowiki>{rooted=Task-action-type} [A trial outcome in which the lack of response matches the task's expected behavior.]</nowiki>
-
 
 !# end schema
 
