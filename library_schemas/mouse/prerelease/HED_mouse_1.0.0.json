@@ -219,34 +219,6 @@
       "explicitAttributes": {
         "rooted": "Measurement-device"
       }
-    },
-    "Aborted-trial": {
-      "short_form": "Aborted-trial",
-      "long_form": "Property/Task-property/Task-action-type/Aborted-trial",
-      "description": "A trial outcome in which the trial is terminated early based on conditions set in the task logic.",
-      "parent": "Task-action-type",
-      "children": [],
-      "attributes": {
-        "extensionAllowed": true,
-        "rooted": "Task-action-type"
-      },
-      "explicitAttributes": {
-        "rooted": "Task-action-type"
-      }
-    },
-    "Correct-reject": {
-      "short_form": "Correct-reject",
-      "long_form": "Property/Task-property/Task-action-type/Correct-reject",
-      "description": "A trial outcome in which the lack of response matches the task's expected behavior.",
-      "parent": "Task-action-type",
-      "children": [],
-      "attributes": {
-        "extensionAllowed": true,
-        "rooted": "Task-action-type"
-      },
-      "explicitAttributes": {
-        "rooted": "Task-action-type"
-      }
     }
   },
   "units": {},
