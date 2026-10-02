@@ -7,10 +7,14 @@
 - Electrical-artifact (Minor): Item Electrical-artifact added
 - Localized-channel-artifact (Minor): Item Localized-channel-artifact added
 - Quantity (Minor): Item Quantity added
+- Correct-rejection (Minor): Item Correct-rejection added
 - Cued (Minor): Item Cued added
 - Uncued (Minor): Item Uncued added
 - No-go-signal (Minor): Item No-go-signal added
 - Omitted-presentation (Minor): Item Omitted-presentation added
+- Task-trial-role (Minor): Item Task-trial-role added
+- Aborted-trial (Minor): Item Aborted-trial added
+- Catch-trial (Minor): Item Catch-trial added
 - Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
 - Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact
 - Line-noise-artifact (Minor): Tag Line-noise-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact
@@ -19,6 +23,7 @@
 - Electrode-pops-artifact (Patch): Suggested tag changed on Electrode-pops-artifact from empty to ID
 - Salt-bridge-artifact (Patch): Suggested tag changed on Salt-bridge-artifact from empty to ID
 - Go-signal (Patch): Related tag changed on Go-signal from Stop-signal to No-go-signal, Stop-signal
+- Go-signal (Patch): Description of Go-signal modified
 - Stop-signal (Patch): Related tag changed on Stop-signal from Go-signal to Go-signal, No-go-signal
 - Stop-signal (Patch): Description of Stop-signal modified
 
@@ -92,6 +97,8 @@
 
 - dateTimeClass (Patch): Attribute allowedCharacter modified from digits,T,hyphen,colon to digits,T,hyphen,colon,period,Z,plus
 - dateTimeClass (Patch): Description of dateTimeClass modified
+- nameClass (Patch): Attribute allowedCharacter modified from letters,digits,underscore,hyphen to letters,digits,underscore,hyphen,nonascii
+- nameClass (Patch): Description of nameClass modified
 - textClass (Patch): Attribute allowedCharacter modified from text to value-text
 - textClass (Patch): Description of textClass modified
 
@@ -186,6 +193,6 @@
 
 **AnnotationPropertyExternal:**
 
-- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema
 - ('rdfs:', 'comment') (Minor): Row ('rdfs:', 'comment') missing in first schema
 - ('skos:', 'closeMatch') (Minor): Row ('skos:', 'closeMatch') missing in first schema
+- ('skos:', 'exactMatch') (Minor): Row ('skos:', 'exactMatch') missing in first schema

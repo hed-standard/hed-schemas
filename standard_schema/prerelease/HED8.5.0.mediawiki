@@ -1186,6 +1186,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Task-trial-role <nowiki>[The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
 *** Aborted-trial <nowiki>[A trial in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
 *** Catch-trial <nowiki>[A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.]</nowiki>
+
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
 ** Approximately-equal-to <nowiki>{hedId=HED_0013130} [(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.]</nowiki>

@@ -17205,7 +17205,8 @@
         "Task-effect-evidence",
         "Task-event-role",
         "Task-relationship",
-        "Task-stimulus-role"
+        "Task-stimulus-role",
+        "Task-trial-role"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -17270,7 +17271,9 @@
       "long_form": "Property/Task-property/Task-action-type/Correct-action",
       "description": "An action that was a correct response in the context of the task.",
       "parent": "Task-action-type",
-      "children": [],
+      "children": [
+        "Correct-rejection"
+      ],
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
@@ -17286,6 +17289,21 @@
         ],
         "hedId": "HED_0013065"
       }
+    },
+    "Correct-rejection": {
+      "short_form": "Correct-rejection",
+      "long_form": "Property/Task-property/Task-action-type/Correct-action/Correct-rejection",
+      "description": "An action correctly designating rejection in the context of the task.",
+      "parent": "Correct-action",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Incorrect-action",
+          "Indeterminate-action"
+        ]
+      },
+      "explicitAttributes": {}
     },
     "Correction": {
       "short_form": "Correction",
@@ -18080,7 +18098,7 @@
     "Go-signal": {
       "short_form": "Go-signal",
       "long_form": "Property/Task-property/Task-stimulus-role/Go-signal",
-      "description": "An indicator to proceed with a planned action.",
+      "description": "A stimulus indicating that a task response is required.",
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
@@ -18130,7 +18148,7 @@
     "No-go-signal": {
       "short_form": "No-go-signal",
       "long_form": "Property/Task-property/Task-stimulus-role/No-go-signal",
-      "description": "A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.",
+      "description": "A stimulus indicating that the subject should withhold or suppress the task response.",
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
@@ -18425,6 +18443,42 @@
         ],
         "hedId": "HED_0013127"
       }
+    },
+    "Task-trial-role": {
+      "short_form": "Task-trial-role",
+      "long_form": "Property/Task-property/Task-trial-role",
+      "description": "The type of a trial with respect to the task in a trial-based experiment.",
+      "parent": "Task-property",
+      "children": [
+        "Aborted-trial",
+        "Catch-trial"
+      ],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Aborted-trial": {
+      "short_form": "Aborted-trial",
+      "long_form": "Property/Task-property/Task-trial-role/Aborted-trial",
+      "description": "A trial in which the trial is terminated early based on conditions set in the task logic.",
+      "parent": "Task-trial-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
+    },
+    "Catch-trial": {
+      "short_form": "Catch-trial",
+      "long_form": "Property/Task-property/Task-trial-role/Catch-trial",
+      "description": "A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.",
+      "parent": "Task-trial-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Relation": {
       "short_form": "Relation",
@@ -20545,13 +20599,14 @@
       ]
     },
     "nameClass": {
-      "description": "Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.",
+      "description": "Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, underscore, and non-ASCII characters.",
       "hedId": "HED_0011302",
       "allowed_characters": [
         "letters",
         "digits",
         "underscore",
-        "hyphen"
+        "hyphen",
+        "nonascii"
       ]
     },
     "numericClass": {

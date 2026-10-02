@@ -1104,6 +1104,7 @@ HED_0013062	1	Task-property	Property	extensionAllowed	Something that pertains to
 HED_0013063	2	Task-action-type	Task-property		How an agent action should be interpreted in terms of the task specification.
 HED_0013064	3	Appropriate-action	Task-action-type	relatedTag=Inappropriate-action	An action suitable or proper in the circumstances.
 HED_0013065	3	Correct-action	Task-action-type	relatedTag=Incorrect-action, relatedTag=Indeterminate-action	An action that was a correct response in the context of the task.
+	4	Correct-rejection	Correct-action		An action correctly designating rejection in the context of the task.
 HED_0013066	3	Correction	Task-action-type		An action offering an improvement to replace a mistake or error.
 	3	Cued	Task-action-type	relatedTag=Uncued	An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.
 HED_0013067	3	Done-indication	Task-action-type	relatedTag=Ready-indication	An action that indicates that the participant has completed this step in the task.
@@ -1149,10 +1150,10 @@ HED_0013103	2	Task-stimulus-role	Task-property		The role the stimulus or other t
 HED_0013105	3	Distractor	Task-stimulus-role		A person or thing that distracts or a plausible but incorrect option in a multiple-choice question. In psychological studies this is sometimes referred to as a foil.
 HED_0013106	3	Expected	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Considered likely, probable or anticipated. Something of low information value as in frequent non-targets in an RSVP paradigm.
 HED_0013107	3	Extraneous	Task-stimulus-role		Irrelevant or unrelated to the subject being dealt with.
-HED_0013109	3	Go-signal	Task-stimulus-role	relatedTag=No-go-signal, relatedTag=Stop-signal	An indicator to proceed with a planned action.
+HED_0013109	3	Go-signal	Task-stimulus-role	relatedTag=No-go-signal, relatedTag=Stop-signal	A stimulus indicating that a task response is required.
 HED_0013110	3	Meaningful	Task-stimulus-role		Conveying significant or relevant information.
 HED_0013111	3	Newly-learned	Task-stimulus-role		Representing recently acquired information or understanding.
-	3	No-go-signal	Task-stimulus-role	relatedTag=Go-signal, relatedTag=Stop-signal	A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.
+	3	No-go-signal	Task-stimulus-role	relatedTag=Go-signal, relatedTag=Stop-signal	A stimulus indicating that the subject should withhold or suppress the task response.
 HED_0013112	3	Non-informative	Task-stimulus-role		Something that is not useful in forming an opinion or judging an outcome.
 HED_0013113	3	Non-target	Task-stimulus-role	relatedTag=Target	Something other than that done or looked for. Also tag Expected if the Non-target is frequent.
 HED_0013114	3	Not-meaningful	Task-stimulus-role		Not having a serious, important, or useful quality or purpose.
@@ -1170,6 +1171,9 @@ HED_0013124	3	Threat	Task-stimulus-role		An indicator that signifies hostility a
 HED_0013125	3	Timed	Task-stimulus-role		Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.
 HED_0013126	3	Unexpected	Task-stimulus-role	relatedTag=Expected	Something that is not anticipated.
 HED_0013127	3	Unplanned	Task-stimulus-role	relatedTag=Planned	Something that has not been planned as part of the task.
+	2	Task-trial-role	Task-property		The type of a trial with respect to the task in a trial-based experiment.
+	3	Aborted-trial	Task-trial-role		A trial in which the trial is terminated early based on conditions set in the task logic.
+	3	Catch-trial	Task-trial-role		A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.
 HED_0013128	0	Relation	HedTag	extensionAllowed	Concerns the way in which two or more people or things are connected.
 HED_0013129	1	Comparative-relation	Relation		Something considered in comparison to something else. The first entity is the focus.
 HED_0013130	2	Approximately-equal-to	Comparative-relation		(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.
