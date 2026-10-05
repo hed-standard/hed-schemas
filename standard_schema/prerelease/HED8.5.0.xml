@@ -10202,6 +10202,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>hedId</name>
                      <value>HED_0013065</value>
                   </attribute>
+                  <node>
+                     <name>Correct-rejection</name>
+                     <description>An action correctly designating rejection in the context of the task.</description>
+                  </node>
                </node>
                <node>
                   <name>Correction</name>
@@ -10629,7 +10633,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>Go-signal</name>
-                  <description>An indicator to proceed with a planned action.</description>
+                  <description>A stimulus indicating that a task response is required.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>No-go-signal</value>
@@ -10658,7 +10662,7 @@ Each term in this vocabulary has a human-readable description and may include ad
                </node>
                <node>
                   <name>No-go-signal</name>
-                  <description>A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.</description>
+                  <description>A stimulus indicating that the subject should withhold or suppress the task response.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Go-signal</value>
@@ -10825,6 +10829,18 @@ Each term in this vocabulary has a human-readable description and may include ad
                      <name>hedId</name>
                      <value>HED_0013127</value>
                   </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Task-trial-role</name>
+               <description>The type of a trial with respect to the task in a trial-based experiment.</description>
+               <node>
+                  <name>Aborted-trial</name>
+                  <description>A trial in which the trial is terminated early based on conditions set in the task logic.</description>
+               </node>
+               <node>
+                  <name>Catch-trial</name>
+                  <description>A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.</description>
                </node>
             </node>
          </node>
@@ -13259,13 +13275,16 @@ Each term in this vocabulary has a human-readable description and may include ad
    <valueClassDefinitions>
       <valueClassDefinition>
          <name>dateTimeClass</name>
-         <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.</description>
+         <description>Date-times conform to the BIDS Datetime format, RFC 3339 with an optional offset: YYYY-MM-DDThh:mm:ss (year, month, day, hour (24h), minute, second), an optional fraction of one to six digits, and an optional Z for UTC or a +hh:mm or -hh:mm offset.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
             <value>T</value>
             <value>hyphen</value>
             <value>colon</value>
+            <value>period</value>
+            <value>Z</value>
+            <value>plus</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -13274,13 +13293,14 @@ Each term in this vocabulary has a human-readable description and may include ad
       </valueClassDefinition>
       <valueClassDefinition>
          <name>nameClass</name>
-         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.</description>
+         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, underscore, and non-ASCII characters.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>letters</value>
             <value>digits</value>
             <value>underscore</value>
             <value>hyphen</value>
+            <value>nonascii</value>
          </attribute>
          <attribute>
             <name>hedId</name>
