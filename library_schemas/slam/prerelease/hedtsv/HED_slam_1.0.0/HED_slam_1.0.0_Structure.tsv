@@ -1,4 +1,4 @@
 hedId	rdfs:label	Attributes	omn:SubClassOf	dc:description
-HED_0080010	SlamHeader	version="1.0.0", library="slam", withStandard="8.4.0", unmerged="True"	HedHeader	
+HED_0080010	SlamHeader	version="1.0.0", library="slam", withStandard="8.5.0", unmerged="True"	HedHeader	
 HED_0080011	SlamPrologue		HedPrologue	The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields.
 HED_0080012	SlamEpilogue		HedEpilogue	
