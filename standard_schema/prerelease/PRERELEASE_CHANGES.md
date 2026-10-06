@@ -10,10 +10,10 @@
 - Correct-rejection (Minor): Item Correct-rejection added
 - Cued (Minor): Item Cued added
 - Uncued (Minor): Item Uncued added
+- Trial-abort (Minor): Item Trial-abort added
 - No-go-signal (Minor): Item No-go-signal added
 - Omitted-presentation (Minor): Item Omitted-presentation added
 - Task-trial-role (Minor): Item Task-trial-role added
-- Aborted-trial (Minor): Item Aborted-trial added
 - Catch-trial (Minor): Item Catch-trial added
 - Electrode-pops-artifact (Minor): Tag Electrode-pops-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact
 - Induction-artifact (Minor): Tag Induction-artifact moved in schema from Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact to Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact

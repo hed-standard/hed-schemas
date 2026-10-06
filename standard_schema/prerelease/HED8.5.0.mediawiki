@@ -1154,6 +1154,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Mishap <nowiki>{hedId=HED_0013096} [Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.]</nowiki>
 *** Participant-response <nowiki>{hedId=HED_0013097} [Something related to a participant actions in performing the task.]</nowiki>
 *** Task-activity <nowiki>{hedId=HED_0013098} [Something that is part of the overall task or is necessary to the overall experiment but is not directly part of a stimulus-response cycle. Examples would be taking a survey or provided providing a silva sample.]</nowiki>
+*** Trial-abort <nowiki>[An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.]</nowiki>
 *** Warning <nowiki>{hedId=HED_0013099} [Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.]</nowiki>
 ** Task-relationship <nowiki>{hedId=HED_0013100} [Specifying organizational importance of sub-tasks.]</nowiki>
 *** Background-subtask <nowiki>{hedId=HED_0013101} [A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.]</nowiki>
@@ -1184,8 +1185,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Unexpected <nowiki>{relatedTag=Expected, hedId=HED_0013126} [Something that is not anticipated.]</nowiki>
 *** Unplanned <nowiki>{relatedTag=Planned, hedId=HED_0013127} [Something that has not been planned as part of the task.]</nowiki>
 ** Task-trial-role <nowiki>[The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
-*** Aborted-trial <nowiki>[A trial in which the trial is terminated early based on conditions set in the task logic.]</nowiki>
-*** Catch-trial <nowiki>[A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.]</nowiki>
+*** Catch-trial <nowiki>[A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.]</nowiki>
 
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
