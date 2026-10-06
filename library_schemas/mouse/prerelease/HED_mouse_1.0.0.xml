@@ -10376,6 +10376,10 @@
                      <name>hedId</name>
                      <value>HED_0013065</value>
                   </attribute>
+                  <node>
+                     <name>Correct-rejection</name>
+                     <description>An action correctly designating rejection in the context of the task.</description>
+                  </node>
                </node>
                <node>
                   <name>Correction</name>
@@ -10730,6 +10734,10 @@
                   </attribute>
                </node>
                <node>
+                  <name>Trial-abort</name>
+                  <description>An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.</description>
+               </node>
+               <node>
                   <name>Warning</name>
                   <description>Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.</description>
                   <attribute>
@@ -10803,7 +10811,7 @@
                </node>
                <node>
                   <name>Go-signal</name>
-                  <description>An indicator to proceed with a planned action.</description>
+                  <description>A stimulus indicating that a task response is required.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>No-go-signal</value>
@@ -10832,7 +10840,7 @@
                </node>
                <node>
                   <name>No-go-signal</name>
-                  <description>A specific sensory cue instructing the subject to withhold or suppress an established behavioral response.</description>
+                  <description>A stimulus indicating that the subject should withhold or suppress the task response.</description>
                   <attribute>
                      <name>relatedTag</name>
                      <value>Go-signal</value>
@@ -10999,6 +11007,14 @@
                      <name>hedId</name>
                      <value>HED_0013127</value>
                   </attribute>
+               </node>
+            </node>
+            <node>
+               <name>Task-trial-role</name>
+               <description>The type of a trial with respect to the task in a trial-based experiment.</description>
+               <node>
+                  <name>Catch-trial</name>
+                  <description>A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.</description>
                </node>
             </node>
          </node>
@@ -13433,13 +13449,16 @@
    <valueClassDefinitions>
       <valueClassDefinition>
          <name>dateTimeClass</name>
-         <description>Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.</description>
+         <description>Date-times conform to the BIDS Datetime format, RFC 3339 with an optional offset: YYYY-MM-DDThh:mm:ss (year, month, day, hour (24h), minute, second), an optional fraction of one to six digits, and an optional Z for UTC or a +hh:mm or -hh:mm offset.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>digits</value>
             <value>T</value>
             <value>hyphen</value>
             <value>colon</value>
+            <value>period</value>
+            <value>Z</value>
+            <value>plus</value>
          </attribute>
          <attribute>
             <name>hedId</name>
@@ -13448,13 +13467,14 @@
       </valueClassDefinition>
       <valueClassDefinition>
          <name>nameClass</name>
-         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.</description>
+         <description>Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, underscore, and non-ASCII characters.</description>
          <attribute>
             <name>allowedCharacter</name>
             <value>letters</value>
             <value>digits</value>
             <value>underscore</value>
             <value>hyphen</value>
+            <value>nonascii</value>
          </attribute>
          <attribute>
             <name>hedId</name>
