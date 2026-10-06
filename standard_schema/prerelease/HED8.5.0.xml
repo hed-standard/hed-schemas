@@ -10560,6 +10560,10 @@ Each term in this vocabulary has a human-readable description and may include ad
                   </attribute>
                </node>
                <node>
+                  <name>Trial-abort</name>
+                  <description>An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.</description>
+               </node>
+               <node>
                   <name>Warning</name>
                   <description>Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.</description>
                   <attribute>
@@ -10835,12 +10839,8 @@ Each term in this vocabulary has a human-readable description and may include ad
                <name>Task-trial-role</name>
                <description>The type of a trial with respect to the task in a trial-based experiment.</description>
                <node>
-                  <name>Aborted-trial</name>
-                  <description>A trial in which the trial is terminated early based on conditions set in the task logic.</description>
-               </node>
-               <node>
                   <name>Catch-trial</name>
-                  <description>A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.</description>
+                  <description>A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.</description>
                </node>
             </node>
          </node>

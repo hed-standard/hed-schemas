@@ -1142,6 +1142,7 @@ HED_0013095	3	Instructional	Task-event-role		Usually associated with a sensory e
 HED_0013096	3	Mishap	Task-event-role		Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.
 HED_0013097	3	Participant-response	Task-event-role		Something related to a participant actions in performing the task.
 HED_0013098	3	Task-activity	Task-event-role		Something that is part of the overall task or is necessary to the overall experiment but is not directly part of a stimulus-response cycle. Examples would be taking a survey or provided providing a silva sample.
+	3	Trial-abort	Task-event-role		An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.
 HED_0013099	3	Warning	Task-event-role		Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.
 HED_0013100	2	Task-relationship	Task-property		Specifying organizational importance of sub-tasks.
 HED_0013101	3	Background-subtask	Task-relationship		A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.
@@ -1172,8 +1173,7 @@ HED_0013125	3	Timed	Task-stimulus-role		Something planned or scheduled to be don
 HED_0013126	3	Unexpected	Task-stimulus-role	relatedTag=Expected	Something that is not anticipated.
 HED_0013127	3	Unplanned	Task-stimulus-role	relatedTag=Planned	Something that has not been planned as part of the task.
 	2	Task-trial-role	Task-property		The type of a trial with respect to the task in a trial-based experiment.
-	3	Aborted-trial	Task-trial-role		A trial in which the trial is terminated early based on conditions set in the task logic.
-	3	Catch-trial	Task-trial-role		A trial in which no actual stimulus or target is presented, but the participant is still expected to respond or make a choice.
+	3	Catch-trial	Task-trial-role		A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.
 HED_0013128	0	Relation	HedTag	extensionAllowed	Concerns the way in which two or more people or things are connected.
 HED_0013129	1	Comparative-relation	Relation		Something considered in comparison to something else. The first entity is the focus.
 HED_0013130	2	Approximately-equal-to	Comparative-relation		(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.
