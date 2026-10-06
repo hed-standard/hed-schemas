@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T17:17:17.099458+00:00",
+  "generated": "2026-10-06T17:59:14.719348+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -219,9 +219,9 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2025-11-16T13:50:47-06:00",
+          "date": "2026-10-06T12:18:57-05:00",
           "file": "library_schemas/slam/prerelease/HED_slam_1.0.0.xml",
-          "sha": "5a2c0b9f1e6fd320221afaebfd5ccf9b063bbfdb",
+          "sha": "0e86be5b47596cfb24277df4f9b2340f95297cfc",
           "version": "1.0.0"
         }
       ],
