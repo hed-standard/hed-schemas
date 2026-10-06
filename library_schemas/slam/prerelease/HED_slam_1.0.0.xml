@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <HED version="1.0.0" library="slam" withStandard="8.4.0">
-   <prologue>The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields. </prologue>
+   <prologue>The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields.</prologue>
    <schema>
       <node>
          <name>Event</name>

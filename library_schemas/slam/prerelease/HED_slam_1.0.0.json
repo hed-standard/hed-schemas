@@ -3,7 +3,7 @@
   "library": "slam",
   "withStandard": "8.4.0",
   "unmerged": "True",
-  "prologue": "The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields. ",
+  "prologue": "The HED SLAM(Sensor Location and Motion) HED library schema is designed to standardize the annotation of sensor locations and human motion across recording modalities and diverse fields.",
   "tags": {
     "Anatomical-landmark": {
       "short_form": "Anatomical-landmark",
@@ -22,20 +22,10 @@
         "Upper-arm-landmark"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false,
+        "extensionAllowed": true,
+        "rooted": "Anatomical-item"
+      },
+      "explicitAttributes": {
         "rooted": "Anatomical-item"
       }
     },
@@ -50,21 +40,9 @@
         "Umbilicus"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Anterior-Superior-Iliac-Spine-ASIS": {
       "short_form": "Anterior-Superior-Iliac-Spine-ASIS",
@@ -73,21 +51,9 @@
       "parent": "Abdomen-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Posterior-Superior-Iliac-Spine-PSIS": {
       "short_form": "Posterior-Superior-Iliac-Spine-PSIS",
@@ -96,21 +62,9 @@
       "parent": "Abdomen-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Umbilicus": {
       "short_form": "Umbilicus",
@@ -119,21 +73,9 @@
       "parent": "Abdomen-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Foot-landmark": {
       "short_form": "Foot-landmark",
@@ -147,21 +89,9 @@
         "Medial-Malleolus-MM"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Calcaneal-Tuberosity-CT": {
       "short_form": "Calcaneal-Tuberosity-CT",
@@ -170,21 +100,9 @@
       "parent": "Foot-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "First-Metatarsal-Head-FMH": {
       "short_form": "First-Metatarsal-Head-FMH",
@@ -193,21 +111,9 @@
       "parent": "Foot-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Lateral-Malleolus-LM": {
       "short_form": "Lateral-Malleolus-LM",
@@ -216,21 +122,9 @@
       "parent": "Foot-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Medial-Malleolus-MM": {
       "short_form": "Medial-Malleolus-MM",
@@ -239,21 +133,9 @@
       "parent": "Foot-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Forearm-landmark": {
       "short_form": "Forearm-landmark",
@@ -265,21 +147,9 @@
         "Ulnar-Styloid-Process-USP"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Radial-Styloid-Process-RSP": {
       "short_form": "Radial-Styloid-Process-RSP",
@@ -288,21 +158,9 @@
       "parent": "Forearm-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Ulnar-Styloid-Process-USP": {
       "short_form": "Ulnar-Styloid-Process-USP",
@@ -311,21 +169,9 @@
       "parent": "Forearm-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Hand-landmark": {
       "short_form": "Hand-landmark",
@@ -336,21 +182,9 @@
         "Third-Metacarpophalangeal-Joint-MCP"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Third-Metacarpophalangeal-Joint-MCP": {
       "short_form": "Third-Metacarpophalangeal-Joint-MCP",
@@ -359,21 +193,9 @@
       "parent": "Hand-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Head-landmark": {
       "short_form": "Head-landmark",
@@ -390,21 +212,9 @@
         "Vertex"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Inion": {
       "short_form": "Inion",
@@ -413,21 +223,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Left-helix-tragus-junction-LHJ": {
       "short_form": "Left-helix-tragus-junction-LHJ",
@@ -436,21 +234,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Mastoid-process": {
       "short_form": "Mastoid-process",
@@ -459,21 +245,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Midpoint-between-mastoid-processes-MMP": {
       "short_form": "Midpoint-between-mastoid-processes-MMP",
@@ -482,21 +256,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Nasion": {
       "short_form": "Nasion",
@@ -505,21 +267,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Right-helix-tragus-junction-RHJ": {
       "short_form": "Right-helix-tragus-junction-RHJ",
@@ -528,21 +278,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Vertex": {
       "short_form": "Vertex",
@@ -551,21 +289,9 @@
       "parent": "Head-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Lower-leg-landmark": {
       "short_form": "Lower-leg-landmark",
@@ -576,21 +302,9 @@
         "Tibial-Tuberosity"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Tibial-Tuberosity": {
       "short_form": "Tibial-Tuberosity",
@@ -599,21 +313,9 @@
       "parent": "Lower-leg-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Thigh-landmark": {
       "short_form": "Thigh-landmark",
@@ -626,21 +328,9 @@
         "Greater-Trochanter"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Femur-Lateral-Epicondyle-FLE": {
       "short_form": "Femur-Lateral-Epicondyle-FLE",
@@ -649,21 +339,9 @@
       "parent": "Thigh-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Femur-Medial-Epicondyle-FME": {
       "short_form": "Femur-Medial-Epicondyle-FME",
@@ -672,21 +350,9 @@
       "parent": "Thigh-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Greater-Trochanter": {
       "short_form": "Greater-Trochanter",
@@ -695,21 +361,9 @@
       "parent": "Thigh-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Torso-chest-landmark": {
       "short_form": "Torso-chest-landmark",
@@ -723,21 +377,9 @@
         "Xiphoid-process"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Acromion-process": {
       "short_form": "Acromion-process",
@@ -746,21 +388,9 @@
       "parent": "Torso-chest-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Suprasternal-Notch-Jugular-Notch": {
       "short_form": "Suprasternal-Notch-Jugular-Notch",
@@ -769,21 +399,9 @@
       "parent": "Torso-chest-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Vertebra-prominens-C7": {
       "short_form": "Vertebra-prominens-C7",
@@ -792,21 +410,9 @@
       "parent": "Torso-chest-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Xiphoid-process": {
       "short_form": "Xiphoid-process",
@@ -815,21 +421,9 @@
       "parent": "Torso-chest-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Upper-arm-landmark": {
       "short_form": "Upper-arm-landmark",
@@ -841,21 +435,9 @@
         "Medial-Humerus-Epicondyle-MHE"
       ],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Lateral-Humerus-Epicondyle-LHE": {
       "short_form": "Lateral-Humerus-Epicondyle-LHE",
@@ -864,21 +446,9 @@
       "parent": "Upper-arm-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     },
     "Medial-Humerus-Epicondyle-MHE": {
       "short_form": "Medial-Humerus-Epicondyle-MHE",
@@ -887,21 +457,9 @@
       "parent": "Upper-arm-landmark",
       "children": [],
       "attributes": {
-        "extensionAllowed": false,
-        "requireChild": false,
-        "unique": false,
-        "reserved": false,
-        "tagGroup": false,
-        "topLevelTagGroup": false,
-        "recommended": false,
-        "required": false,
-        "suggestedTag": [],
-        "relatedTag": [],
-        "valueClass": [],
-        "unitClass": [],
-        "defaultUnits": null,
-        "takesValue": false
-      }
+        "extensionAllowed": true
+      },
+      "explicitAttributes": {}
     }
   },
   "units": {},
@@ -910,176 +468,7 @@
   "value_classes": {},
   "schema_attributes": {},
   "properties": {},
-  "sources": [
-    {
-      "name": "Wikipedia",
-      "link": "https://en.wikipedia.org",
-      "description": "General definitions of concepts."
-    }
-  ],
-  "prefixes": [
-    {
-      "name": "dc:",
-      "namespace": "http://purl.org/dc/elements/1.1/#",
-      "description": "The Dublin Core elements"
-    },
-    {
-      "name": "foaf:",
-      "namespace": "http://xmlns.com/foaf/0.1/#",
-      "description": "Friend-of-a-Friend http://xmlns.com/foaf/spec/"
-    },
-    {
-      "name": "iao:",
-      "namespace": "http://purl.obolibrary.org/obo/iao.owl",
-      "description": "Information Artifact Ontology (IAO)"
-    },
-    {
-      "name": "ncit:",
-      "namespace": "http://purl.obolibrary.org/obo/ncit.owl",
-      "description": "NCI Thesaurus OBO Edition"
-    },
-    {
-      "name": "obogo:",
-      "namespace": "http://www.geneontology.org/formats/oboInOwl",
-      "description": "The OBO Format Namespace"
-    },
-    {
-      "name": "owl:",
-      "namespace": "http://www.w3.org/2002/07/owl",
-      "description": "The OWL namespace [OWL2-OVERVIEW]"
-    },
-    {
-      "name": "prov:",
-      "namespace": "http://www.w3.org/ns/prov",
-      "description": "The PROV namespace [PROV-DM]"
-    },
-    {
-      "name": "rdf:",
-      "namespace": "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-      "description": "The RDF namespace [RDF-CONCEPTS]"
-    },
-    {
-      "name": "rdfs:",
-      "namespace": "http://www.w3.org/2000/01/rdf-schema",
-      "description": "The RDF Schema namespace [RDFS]"
-    },
-    {
-      "name": "skos:",
-      "namespace": "http://www.w3.org/2004/02/skos/core",
-      "description": "SKOS (Simple Knowledge Organization System) Vocabulary"
-    },
-    {
-      "name": "terms:",
-      "namespace": "http://purl.org/dc/terms/#",
-      "description": "The Dublin Core terms"
-    },
-    {
-      "name": "xml:",
-      "namespace": "http://www.w3.org/XML/1998/namespace",
-      "description": "XLM Namespace [XML]"
-    },
-    {
-      "name": "xsd:",
-      "namespace": "http://www.w3.org/2001/XMLSchema",
-      "description": "XML Schema Namespace [XMLSCHEMA11-2]"
-    }
-  ],
-  "external_annotations": [
-    {
-      "name": "dc:",
-      "id": "contributor",
-      "iri": "http://purl.org/dc/elements/1.1/contributor",
-      "description": "An entity responsible for making contributions to the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "creator",
-      "iri": "http://purl.org/dc/elements/1.1/creator",
-      "description": "An entity primarily responsible for making the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "date",
-      "iri": "http://purl.org/dc/elements/1.1/date",
-      "description": "A point or period of time associated with an event in the lifecycle of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "description",
-      "iri": "http://purl.org/dc/elements/1.1/description",
-      "description": "An account of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "format",
-      "iri": "http://purl.org/dc/elements/1.1/format",
-      "description": "The file format"
-    },
-    {
-      "name": "dc:",
-      "id": "identifier",
-      "iri": "http://purl.org/dc/elements/1.1/identifier",
-      "description": "An unambiguous reference to the resource within a given context."
-    },
-    {
-      "name": "dc:",
-      "id": "language",
-      "iri": "http://purl.org/dc/elements/1.1/language",
-      "description": "A language of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "publisher",
-      "iri": "http://purl.org/dc/elements/1.1/publisher",
-      "description": "An entity responsible for making the resource available."
-    },
-    {
-      "name": "dc:",
-      "id": "relation",
-      "iri": "http://purl.org/dc/elements/1.1/relation",
-      "description": "A related resource."
-    },
-    {
-      "name": "dc:",
-      "id": "source",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "description": "A related resource from which the described resource is derived."
-    },
-    {
-      "name": "dc:",
-      "id": "subject",
-      "iri": "http://purl.org/dc/elements/1.1/subject",
-      "description": "The topic of the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "title",
-      "iri": "http://purl.org/dc/elements/1.1/title",
-      "description": "A name given to the resource."
-    },
-    {
-      "name": "dc:",
-      "id": "type",
-      "iri": "http://purl.org/dc/elements/1.1/type",
-      "description": "The nature or genre of the resource."
-    },
-    {
-      "name": "foaf:",
-      "id": "homepage",
-      "iri": "http://xmlns.com/foaf/0.1/homepage",
-      "description": "A homepage for some thing."
-    },
-    {
-      "name": "obogo:",
-      "id": "has_dbxref",
-      "iri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-      "description": "Property indicating that an ontology term has a cross-reference to a database."
-    },
-    {
-      "name": "terms:",
-      "id": "license",
-      "iri": "http://purl.org/dc/terms/license",
-      "description": "A legal document giving official permission to do something with the resource."
-    }
-  ]
+  "sources": [],
+  "prefixes": [],
+  "external_annotations": []
 }
