@@ -50,9 +50,8 @@ The repository is organized into the following main directories:
   CI/CD pipeline definitions
   
   * ``validate_schemas.yaml`` - Schema validation
-  * ``update_and_convert_schemas.yaml`` - Format conversion
-  * ``add_hed_ids.yaml`` - HedId assignment
   * ``verify_source_branch.yaml`` - Branch verification
+  * ``update_manifests.yaml`` - Version manifest and latest-JSON copies
   * ``typos.yaml`` - Spell checking
   * ``mdformat.yaml`` - Markdown formatting
   * ``links.yaml`` - Link validation

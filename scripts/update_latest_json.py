@@ -1,28 +1,33 @@
 #!/usr/bin/env python3
-"""Keep ``schemas_latest_json/`` in sync with the latest *released* JSON schema of each library.
+"""Keep ``schemas_latest_json/`` in sync with the latest *released* version of each schema.
 
-``schemas_latest_json/`` holds one convenience copy of the newest released JSON schema per library:
+``schemas_latest_json/`` holds one merged JSON copy of the newest released version of each schema:
 
-    schemas_latest_json/HEDLatest.json          <- standard_schema/hedjson/HED<latest>.json
-    schemas_latest_json/HED_score_Latest.json   <- library_schemas/score/hedjson/HED_score_<latest>.json
-    schemas_latest_json/HED_lang_Latest.json    <- library_schemas/lang/hedjson/HED_lang_<latest>.json
+    schemas_latest_json/HEDLatest.json          <- standard_schema/hedjson/HED<latest>.json (copied)
+    schemas_latest_json/HED_score_Latest.json   <- library_schemas/score/hedxml/HED_score_<latest>.xml (converted)
+    schemas_latest_json/HED_lang_Latest.json    <- library_schemas/lang/hedxml/HED_lang_<latest>.xml (converted)
 
-These are currently maintained by hand. This script verifies (or fixes) that each ``*_Latest.json``
-is a byte-for-byte copy of the current latest released JSON, by comparing git blob SHAs.
+The repository rule (README, "HED formats"): ``hedjson/`` is unmerged, ``hedxml/`` is merged, and
+``schemas_latest_json/`` is merged. So a library's Latest copy cannot be copied from ``hedjson/``;
+it is generated from the merged released XML with hedtools (``load_schema(xml).get_as_json_string()``).
+The standard schema has no merged/unmerged distinction, so its copy is taken from ``hedjson/`` byte
+for byte, with no hedtools dependency.
 
-"Latest released" is determined from the canonical released set in ``<area>/hedxml/`` (the released
-XML files), and the matching JSON is taken from ``<area>/hedjson/``. A library whose latest released
-XML has no corresponding ``hedjson`` file is reported as a warning (the JSON has not been exported
-yet) rather than silently skipped.
+"Latest released" is determined from the canonical released set in ``<area>/hedxml/``. A standard
+version whose ``hedjson/`` file is missing is reported as a problem (export the JSON first).
 
 testlib is deliberately excluded: its versions are mutable "released" schemas used only for testing
 and must never appear in ``schemas_latest_json/``. Any ``*_Latest.json`` found for an excluded
 library is reported so it can be removed.
 
+Generating a library's JSON needs hedtools (``pip install git+https://github.com/hed-standard/hed-python.git@main``).
+The output depends on the hedtools version, so after hedtools changes its JSON writer ``--check`` can
+report a library out of date; ``--update`` then rewrites the copy.
+
 Usage::
 
     python scripts/update_latest_json.py --check     # exit 1 if anything is out of sync (CI gate)
-    python scripts/update_latest_json.py --update     # copy the latest released JSON into place
+    python scripts/update_latest_json.py --update     # write the latest released JSON into place
     python scripts/update_latest_json.py              # same as --check (read-only by default)
 """
 
@@ -31,8 +36,8 @@ from __future__ import annotations
 import argparse
 import os
 import re
-import shutil
 import sys
+from collections.abc import Callable
 from hashlib import sha1
 from pathlib import Path
 
@@ -53,6 +58,8 @@ _HED_VERSION_CORE = (
 )
 _XML_RE = re.compile(r"^[hH][eE][dD](_([a-z0-9]+)_)?(" + _HED_VERSION_CORE + r")\.[xX][mM][lL]$")
 
+Converter = Callable[[Path], str]
+
 
 def git_blob_sha(path: Path) -> str:
     """Return the git blob SHA-1 of a file's text, matching GitHub's contents-API ``sha``.
@@ -61,11 +68,29 @@ def git_blob_sha(path: Path) -> str:
     ``.gitattributes`` (``*.json text eol=lf``), so the comparison is stable regardless of a
     checkout's working-tree line endings (e.g. Windows CRLF vs Linux LF).
     """
-    data = path.read_bytes().replace(b"\r\n", b"\n")
+    return text_blob_sha(path.read_bytes())
+
+
+def text_blob_sha(data: bytes | str) -> str:
+    """Return the git blob SHA-1 of text or bytes, with CRLF normalized to LF first."""
+    if isinstance(data, str):
+        data = data.encode("utf-8")
+    data = data.replace(b"\r\n", b"\n")
     hasher = sha1()
     hasher.update(f"blob {len(data)}\0".encode())
     hasher.update(data)
     return hasher.hexdigest()
+
+
+def merged_json_with_hedtools(xml_path: Path) -> str:
+    """Convert a released (merged) XML schema to its merged JSON text with hedtools.
+
+    Raises ImportError when hedtools is not installed; schema load errors propagate as hedtools'
+    ``HedFileError``.
+    """
+    from hed.schema import load_schema  # imported here so the rest of the script works without hedtools
+
+    return load_schema(str(xml_path)).get_as_json_string(save_merged=True)
 
 
 def _version_key(version: str) -> tuple:
@@ -105,6 +130,11 @@ def released_json_name(library: str, version: str) -> str:
     return f"HED{version}.json" if not library else f"HED_{library}_{version}.json"
 
 
+def released_xml_name(library: str, version: str) -> str:
+    """Filename of a specific released XML schema. ``library`` is '' for the standard schema."""
+    return f"HED{version}.xml" if not library else f"HED_{library}_{version}.xml"
+
+
 def latest_json_name(library: str) -> str:
     """Filename of the *_Latest.json copy. ``library`` is '' for the standard schema."""
     return "HEDLatest.json" if not library else f"HED_{library}_Latest.json"
@@ -128,11 +158,37 @@ def area_dir(repo_root: Path, library: str) -> Path:
     return repo_root / STANDARD_AREA if not library else repo_root / LIBRARY_AREA / library
 
 
-def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[str], list[str]]:
+def latest_json_text(area: Path, library: str, version: str, converter: Converter) -> tuple[Path, str]:
+    """Return (source path, text) for a schema's Latest copy.
+
+    The standard schema's text is its ``hedjson/`` file as is. A library's text is the merged JSON
+    generated from its released ``hedxml/`` file by ``converter``.
+
+    Raises FileNotFoundError when the source file is missing.
+    """
+    if not library:
+        source = area / "hedjson" / released_json_name(library, version)
+        if not source.exists():
+            raise FileNotFoundError(source)
+        return source, source.read_text(encoding="utf-8")
+    source = area / "hedxml" / released_xml_name(library, version)
+    if not source.exists():
+        raise FileNotFoundError(source)
+    return source, converter(source)
+
+
+def check_and_update(
+    repo_root: Path, do_update: bool, converter: Converter | None = None
+) -> tuple[list[str], list[str], list[str]]:
     """Compare (and optionally fix) every managed *_Latest.json.
+
+    ``converter`` turns a library's released XML path into merged JSON text; the default uses
+    hedtools. Tests pass their own.
 
     Returns (updated, in_sync, problems) as lists of human-readable messages.
     """
+    if converter is None:
+        converter = merged_json_with_hedtools
     latest_dir = repo_root / LATEST_JSON_DIR
     updated: list[str] = []
     in_sync: list[str] = []
@@ -152,22 +208,32 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
             # no "latest released JSON" to publish, so it correctly gets no *_Latest.json. Its name
             # is deliberately left out of expected_targets so a stray copy is caught by the scan below.
             continue
-        # This library legitimately owns a *_Latest.json slot (even if its source JSON turns out to
-        # be missing below); record it so the stray-file scan doesn't misreport it.
+        # This library legitimately owns a *_Latest.json slot (even if its source turns out to be
+        # unusable below); record it so the stray-file scan doesn't misreport it.
         expected_targets.add(latest_json_name(library))
-
-        source = area / "hedjson" / released_json_name(library, version)
         target = latest_dir / latest_json_name(library)
 
-        if not source.exists():
+        try:
+            source, text = latest_json_text(area, library, version, converter)
+        except FileNotFoundError as e:
+            missing = Path(str(e))
             problems.append(
-                f"{label}: latest released version is {version} but its JSON "
-                f"({source.relative_to(repo_root).as_posix()}) is missing - cannot update "
-                f"{target.name}. Export the JSON schema for {version}."
+                f"{label}: latest released version is {version} but {missing.relative_to(repo_root).as_posix()} "
+                f"is missing - cannot update {target.name}. Export it for {version}."
             )
             continue
+        except ImportError:
+            problems.append(
+                f"{label}: generating {target.name} needs hedtools "
+                "(pip install git+https://github.com/hed-standard/hed-python.git@main)."
+            )
+            continue
+        except Exception as e:  # noqa: BLE001 - a conversion failure is reported, not raised
+            problems.append(f"{label}: cannot convert {released_xml_name(library, version)} to JSON: {e}")
+            continue
 
-        source_sha = git_blob_sha(source)
+        how = "copied from" if not library else "generated (merged) from"
+        source_sha = text_blob_sha(text)
         target_sha = git_blob_sha(target) if target.exists() else None
 
         if source_sha == target_sha:
@@ -175,13 +241,14 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
             continue
 
         if do_update:
-            shutil.copyfile(source, target)
+            with open(target, "w", encoding="utf-8", newline="\n") as fp:
+                fp.write(text.replace("\r\n", "\n"))
             verb = "created" if target_sha is None else "updated"
-            updated.append(f"{label}: {verb} {target.name} from {source.name} (sha {source_sha[:10]}).")
+            updated.append(f"{label}: {verb} {target.name}, {how} {source.name} (sha {source_sha[:10]}).")
         else:
             detail = "missing" if target_sha is None else f"has sha {target_sha[:10]}"
             problems.append(
-                f"{label}: {target.name} is out of date ({detail}; expected {source_sha[:10]} from {source.name})."
+                f"{label}: {target.name} is out of date ({detail}; expected {source_sha[:10]}, {how} {source.name})."
             )
 
     # Flag any *_Latest.json in the directory that we do not expect to be there. Something is
@@ -205,8 +272,8 @@ def check_and_update(repo_root: Path, do_update: bool) -> tuple[list[str], list[
     return updated, in_sync, problems
 
 
-def main() -> int:
-    """CLI entry point."""
+def main(converter: Converter | None = None) -> int:
+    """CLI entry point. ``converter`` is for tests; the command line always uses hedtools."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument(
         "--repo-root",
@@ -215,13 +282,15 @@ def main() -> int:
     )
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--check", action="store_true", help="Read-only. Exit 1 if anything is out of sync (default).")
-    group.add_argument("--update", action="store_true", help="Copy the latest released JSON into schemas_latest_json/.")
+    group.add_argument(
+        "--update", action="store_true", help="Write the latest released JSON of each schema into schemas_latest_json/."
+    )
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root).resolve()
     do_update = args.update
 
-    updated, in_sync, problems = check_and_update(repo_root, do_update)
+    updated, in_sync, problems = check_and_update(repo_root, do_update, converter)
 
     for msg in in_sync:
         print(f"OK       {msg}")
@@ -239,7 +308,7 @@ def main() -> int:
     if problems:
         print(
             f"\nCHECK FAILED: {len(problems)} item(s) out of sync. "
-            f"Run: python scripts/update_latest_json.py --update to copy the latest released JSON "
+            f"Run: python scripts/update_latest_json.py --update to write the latest released JSON "
             f"into place (then remove any stray files it reports and export any missing source JSON).",
             file=sys.stderr,
         )

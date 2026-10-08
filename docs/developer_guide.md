@@ -181,7 +181,7 @@ class: warning
 2. **Edit ONLY the `.mediawiki` file** OR ONLY the `.tsv` files during one PR (GitHub pull request)
 3. **Regenerate all four formats locally with `hed_update_schemas` and commit them together.** CI validates that the formats agree; it does not convert them.
 4. **Never edit released schemas**
-5. **NEVER assign or change `hedId` values. These are assigned system-wide programmatically.**
+5. **NEVER assign or change `hedId` values.** Maintainers assign them at release time with `hed_add_ids` (see `RELEASE_GUIDE.md`); a prerelease carries no id for a new element.
 ```
 
 The actual official release of a new version of a HED schema is a multistage process.
@@ -654,14 +654,14 @@ This places the entire `Linguistic-item` subtree under the standard schema's `It
 
 ## Release process
 
-The official release of a new schema version is performed by HED maintainers. This process involves:
+The official release of a new schema version is performed by HED maintainers following `RELEASE_GUIDE.md` in the repository root. In outline:
 
 1. Final review and approval by the HED Working Group
-2. Moving files from `prerelease/` to release directories
-3. Assigning permanent `hedId` values
+2. Assigning permanent `hedId` values with `hed_add_ids` and checking that no element lacks one (`hed_validate_schemas --require-ids`)
+3. Moving all four formats from `prerelease/` to the release directories and regenerating the generated version files
 4. Tagging the release in GitHub and publishing to Zenodo
 
-Developers do not need to perform these steps. Once your changes are merged into the `prerelease` directory and approved for release, the maintainers will handle the rest.
+A partnered library is released only after the standard version it partners with, since its merged XML embeds that standard. Developers do not need to perform these steps. Once your changes are merged into the `prerelease` directory and approved for release, the maintainers will handle the rest.
 
 ## Generated version files
 
