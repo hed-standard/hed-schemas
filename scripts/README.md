@@ -43,14 +43,16 @@ python scripts/generate_schema_versions.py --check     # exit 1 if the committed
 
 ### update_latest_json.py
 
-Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is a byte-for-byte copy of the current latest *released* JSON schema, by comparing git blob SHAs. `testlib` is excluded and must never appear in `schemas_latest_json/`.
+Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is the merged JSON of the current latest *released* version of that schema. The standard schema's copy is taken byte for byte from `standard_schema/hedjson/`; a library's copy is generated from its merged `hedxml/` file with hedtools, because `hedjson/` is unmerged. Comparison is by git blob SHA. `testlib` is excluded and must never appear in `schemas_latest_json/`.
 
 **Usage:**
 
 ```bash
 python scripts/update_latest_json.py --check     # read-only; exit 1 if anything is out of sync
-python scripts/update_latest_json.py --update     # copy the latest released JSON into place
+python scripts/update_latest_json.py --update     # write the latest released JSON into place
 ```
+
+Generating a library's JSON needs hedtools (`pip install git+https://github.com/hed-standard/hed-python.git@main`). The output depends on the hedtools version: after hedtools changes its JSON writer, `--check` can report a library out of date, and `--update` rewrites the copy.
 
 Both scripts are run by the `update_manifests.yaml` workflow: `--check` on pull requests, and regenerate-and-commit on push to `main`.
 

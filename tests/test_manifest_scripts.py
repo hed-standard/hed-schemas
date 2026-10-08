@@ -25,6 +25,7 @@ from hashlib import sha1
 from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).resolve().parent.parent / "scripts"
+REPO_ROOT = SCRIPTS_DIR.parent
 
 
 def _load(module_name: str):
@@ -333,13 +334,22 @@ class LatestJsonHelperTests(unittest.TestCase):
 
 
 class CheckAndUpdateTests(unittest.TestCase):
-    """check_and_update: in-sync, drift, missing source, and stray-file detection."""
+    """check_and_update: in-sync, drift, missing source, conversion failure, and stray-file detection.
+
+    The standard schema's Latest copy is a byte copy of ``hedjson/``; a library's is generated
+    (merged) from its released ``hedxml/`` file by a converter. These tests use a fake converter so
+    they need no hedtools; ``HedtoolsConverterTests`` below covers the real one.
+    """
+
+    @staticmethod
+    def _fake_converter(xml_path: Path) -> str:
+        return "MERGED:" + xml_path.read_text(encoding="utf-8")
 
     def _make_repo(self, root: Path) -> None:
         _write(root / "standard_schema/hedxml/HED8.4.0.xml", "std")
         _write(root / "standard_schema/hedjson/HED8.4.0.json", "stdjson")
         _write(root / "library_schemas/score/hedxml/HED_score_2.1.0.xml", "sc")
-        _write(root / "library_schemas/score/hedjson/HED_score_2.1.0.json", "scjson")
+        _write(root / "library_schemas/score/hedjson/HED_score_2.1.0.json", "scjson")  # unmerged; not the source
         _write(root / "library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml", "mo")  # prerelease only
         _write(root / "library_schemas/testlib/hedxml/HED_testlib_3.0.0.xml", "tl")
         _write(root / "library_schemas/testlib/hedjson/HED_testlib_3.0.0.json", "tljson")
@@ -348,16 +358,43 @@ class CheckAndUpdateTests(unittest.TestCase):
         ld = root / "schemas_latest_json"
         ld.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(root / "standard_schema/hedjson/HED8.4.0.json", ld / "HEDLatest.json")
-        shutil.copyfile(root / "library_schemas/score/hedjson/HED_score_2.1.0.json", ld / "HED_score_Latest.json")
+        _write(
+            ld / "HED_score_Latest.json",
+            self._fake_converter(root / "library_schemas/score/hedxml/HED_score_2.1.0.xml"),
+        )
+
+    def _check(self, root: Path, do_update: bool):
+        return ulj.check_and_update(root, do_update=do_update, converter=self._fake_converter)
 
     def test_in_sync(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             self._make_repo(root)
             self._make_correct_latest(root)
-            _, in_sync, problems = ulj.check_and_update(root, do_update=False)
+            _, in_sync, problems = self._check(root, do_update=False)
             self.assertEqual(problems, [])
             self.assertEqual(len(in_sync), 2)
+
+    def test_library_latest_is_generated_not_copied(self):
+        # A Latest copy equal to the unmerged hedjson file is out of date; --update writes the converter output.
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            self._make_correct_latest(root)
+            shutil.copyfile(
+                root / "library_schemas/score/hedjson/HED_score_2.1.0.json",
+                root / "schemas_latest_json/HED_score_Latest.json",
+            )
+            _, _, problems = self._check(root, do_update=False)
+            self.assertTrue(any("score" in p and "generated (merged) from HED_score_2.1.0.xml" in p for p in problems))
+
+            updated, _, _ = self._check(root, do_update=True)
+            self.assertTrue(any("score" in u for u in updated))
+            self.assertEqual(
+                (root / "schemas_latest_json/HED_score_Latest.json").read_text(encoding="utf-8"), "MERGED:sc"
+            )
+            _, _, problems = self._check(root, do_update=False)
+            self.assertEqual(problems, [])
 
     def test_drift_then_update_fixes(self):
         with tempfile.TemporaryDirectory() as d:
@@ -365,24 +402,48 @@ class CheckAndUpdateTests(unittest.TestCase):
             self._make_repo(root)
             self._make_correct_latest(root)
             (root / "schemas_latest_json/HED_score_Latest.json").write_text("STALE")
+            (root / "schemas_latest_json/HEDLatest.json").write_text("STALE")
 
-            _, _, problems = ulj.check_and_update(root, do_update=False)
+            _, _, problems = self._check(root, do_update=False)
             self.assertTrue(any("score" in p and "out of date" in p for p in problems))
+            self.assertTrue(any("standard" in p and "out of date" in p for p in problems))
 
-            updated, _, _ = ulj.check_and_update(root, do_update=True)
-            self.assertTrue(any("score" in u for u in updated))
+            updated, _, _ = self._check(root, do_update=True)
+            self.assertEqual(len(updated), 2)
 
-            _, _, problems = ulj.check_and_update(root, do_update=False)
+            _, _, problems = self._check(root, do_update=False)
             self.assertEqual(problems, [])
 
-    def test_missing_source_json(self):
+    def test_missing_standard_json(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             self._make_repo(root)
             self._make_correct_latest(root)
-            (root / "library_schemas/score/hedjson/HED_score_2.1.0.json").unlink()
-            _, _, problems = ulj.check_and_update(root, do_update=False)
-            self.assertTrue(any("score" in p and "missing" in p for p in problems))
+            (root / "standard_schema/hedjson/HED8.4.0.json").unlink()
+            _, _, problems = self._check(root, do_update=False)
+            self.assertTrue(any("standard" in p and "missing" in p for p in problems))
+
+    def test_library_conversion_failure_is_a_problem(self):
+        def failing(xml_path: Path) -> str:
+            raise ValueError("bad schema")
+
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            self._make_correct_latest(root)
+            _, _, problems = ulj.check_and_update(root, do_update=False, converter=failing)
+            self.assertTrue(any("score" in p and "cannot convert" in p and "bad schema" in p for p in problems))
+
+    def test_missing_hedtools_is_a_problem(self):
+        def no_hedtools(xml_path: Path) -> str:
+            raise ImportError("No module named 'hed'")
+
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self._make_repo(root)
+            self._make_correct_latest(root)
+            _, _, problems = ulj.check_and_update(root, do_update=False, converter=no_hedtools)
+            self.assertTrue(any("score" in p and "needs hedtools" in p for p in problems))
 
     def test_stray_prerelease_only_and_excluded_flagged(self):
         with tempfile.TemporaryDirectory() as d:
@@ -391,7 +452,7 @@ class CheckAndUpdateTests(unittest.TestCase):
             self._make_correct_latest(root)
             (root / "schemas_latest_json/HED_mouse_Latest.json").write_text("stray")  # no released version
             (root / "schemas_latest_json/HED_testlib_Latest.json").write_text("stray")  # excluded
-            _, _, problems = ulj.check_and_update(root, do_update=False)
+            _, _, problems = self._check(root, do_update=False)
             self.assertTrue(any("HED_mouse_Latest.json" in p for p in problems))
             self.assertTrue(any("HED_testlib_Latest.json" in p for p in problems))
 
@@ -401,9 +462,46 @@ class CheckAndUpdateTests(unittest.TestCase):
             self._make_repo(root)
             self._make_correct_latest(root)
             (root / "schemas_latest_json/HED_score_Latest.json").write_text("STALE")
-            rc, _, err = _run_main(ulj, ["--repo-root", str(root), "--check"])
+            saved = sys.argv
+            sys.argv = ["prog", "--repo-root", str(root), "--check"]
+            out, err = io.StringIO(), io.StringIO()
+            try:
+                with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                    rc = ulj.main(converter=self._fake_converter)
+            finally:
+                sys.argv = saved
             self.assertEqual(rc, 1)
-            self.assertIn("python scripts/update_latest_json.py --update", err)
+            self.assertIn("python scripts/update_latest_json.py --update", err.getvalue())
+
+
+def _hedtools_available() -> bool:
+    try:
+        import hed  # noqa: F401
+    except ImportError:
+        return False
+    return True
+
+
+@unittest.skipUnless(_hedtools_available(), "hedtools is not installed")
+class HedtoolsConverterTests(unittest.TestCase):
+    """The default converter: a released library XML becomes merged JSON that hedtools reads back."""
+
+    def test_merged_json_from_released_xml(self):
+        from hed.schema import from_string
+
+        xml_path = REPO_ROOT / "library_schemas/lang/hedxml/HED_lang_1.1.0.xml"
+        text = ulj.merged_json_with_hedtools(xml_path)
+        self.assertNotIn('"unmerged": "True"', text)  # merged output carries no unmerged marker
+        reloaded = from_string(text, schema_format=".json")
+        self.assertEqual(reloaded.library, "lang")
+        self.assertEqual(reloaded.version_number, "1.1.0")
+        self.assertIn("Event", reloaded.tags, "the merged JSON carries the standard schema's tags")
+
+    def test_repo_latest_copies_are_in_sync(self):
+        # The committed schemas_latest_json/ must match what the script generates with this hedtools.
+        _, in_sync, problems = ulj.check_and_update(REPO_ROOT, do_update=False)
+        self.assertEqual(problems, [])
+        self.assertGreaterEqual(len(in_sync), 3)
 
 
 if __name__ == "__main__":
