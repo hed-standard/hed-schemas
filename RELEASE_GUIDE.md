@@ -110,6 +110,8 @@ Each folder holds exactly one form of a schema. Check the moved files against th
 | `schemas_xml_unmerged/`           | unmerged XML, one per released library version           |
 | `schemas_latest_json/`            | merged JSON, only the latest released version per schema |
 
+The test-only library `testlib` is excluded from both generated folders.
+
 `hed_update_schemas` and `hed_add_ids` write the four prerelease files in these forms. The standard schema has no merged or unmerged distinction.
 
 ## hedId rules

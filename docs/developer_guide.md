@@ -700,17 +700,17 @@ Format (top level): `manifest_format_version` (int), `generated` (ISO-8601 times
 
 ### `scripts/update_latest_json.py` — keep the latest-JSON copies honest
 
-Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is a byte-for-byte copy of the current latest **released** JSON, by comparing git blob SHAs. "Latest released" is taken from the canonical released set in `<area>/hedxml/`, and the matching JSON from `<area>/hedjson/`. `testlib` is deliberately excluded and must never appear in `schemas_latest_json/`.
+Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is the merged JSON of the current latest **released** version of that schema, comparing git blob SHAs. "Latest released" is taken from the canonical released set in `<area>/hedxml/`. The standard schema's copy is taken byte for byte from `<area>/hedjson/`; a library's copy is generated from its merged `<area>/hedxml/` file with hedtools, because `hedjson/` holds the unmerged form. `testlib` is deliberately excluded and must never appear in `schemas_latest_json/`.
 
 ```bash
 # Read-only: exit 1 if any *_Latest.json is out of sync (used by CI on PRs)
 python scripts/update_latest_json.py --check
 
-# Copy the latest released JSON into schemas_latest_json/ where needed
+# Write the latest released JSON into schemas_latest_json/ where needed
 python scripts/update_latest_json.py --update
 ```
 
-If a library's latest released XML has no matching `hedjson/` file, the script reports it as a problem rather than guessing (export the JSON first).
+Generating a library's copy needs hedtools (`pip install git+https://github.com/hed-standard/hed-python.git@main`); the script reports a problem if it is missing or the XML does not load. The output depends on the hedtools version, so after hedtools changes its JSON writer `--check` can report a library out of date and `--update` rewrites the copy. If the standard schema's latest released XML has no matching `hedjson/` file, the script reports it as a problem rather than guessing (export the JSON first).
 
 ### Regenerating locally for a release PR
 
