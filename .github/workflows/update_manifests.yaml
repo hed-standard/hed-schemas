@@ -49,7 +49,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: Install hedtools (generates the merged library JSON)
-        run: pip install git+https://github.com/hed-standard/hed-python.git@main
+        run: pip install .
       - name: Check schema_versions.json is current
         run: python scripts/generate_schema_versions.py --check
       - name: Check schemas_latest_json/ is in sync
@@ -69,7 +69,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: Install hedtools (generates the merged library JSON)
-        run: pip install git+https://github.com/hed-standard/hed-python.git@main
+        run: pip install .
       - name: Regenerate manifest
         run: python scripts/generate_schema_versions.py
       - name: Refresh latest-JSON copies

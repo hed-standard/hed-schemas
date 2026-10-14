@@ -4,7 +4,7 @@ This guide describes how a HED maintainer releases a new version of a schema, st
 
 ## Before you start
 
-- **Install the current tools** in a Python environment: `pip install git+https://github.com/hed-standard/hed-python.git@main`. Everything below uses the `hed_*` commands it provides.
+- **Install the current tools** in a Python environment: `pip install -e .` from the repository root installs hedtools from hed-python `main`, as declared in `pyproject.toml`. pip does not refetch an already installed hedtools, so refresh it before every release with `pip install --force-reinstall "hedtools @ git+https://github.com/hed-standard/hed-python.git@main"`. Everything below uses the `hed_*` commands it provides.
 - **Work on an `admin_*` branch** off `upstream/main` (for example `admin_release_8.5.0`). The schema-area branches (`standard_*`, `score_*`, ...) may not touch the released folders `hedxml/`, `hedwiki/`, `hedtsv/` and `hedjson/`, so a release pull request from one of them is rejected by CI.
 - **Release the standard schema before any library that partners with it.** A library's merged XML embeds the standard schema that hedtools loads from its local cache, not the file in this checkout. Regenerating a library against a prerelease of the standard bakes stale standard content, without hedIds, into the library's released XML. For a library release: the partner standard version must be released and present in `schema_versions.json` on `main`, and your local cache must hold it. Delete any stale copy under `~/.hedtools/hed_cache/prerelease/` for that version first; hedtools then downloads the released file on demand.
 
