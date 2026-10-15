@@ -41,5 +41,12 @@ jobs:
     - name: Run command on file list
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      # Only files in the schema folders: hed_validate_schemas loads every .json it is given as a
+      # schema, so repository data such as schema_versions.json and library_data.json must not reach it.
       run: |
-        hed_validate_schemas $ALL_CHANGED_FILES
+        SCHEMA_FILES=$(printf '%s\n' $ALL_CHANGED_FILES | grep -E '^(standard_schema|library_schemas|schemas_latest_json|schemas_xml_unmerged)/' || true)
+        if [ -z "$SCHEMA_FILES" ]; then
+          echo "No schema files changed."
+          exit 0
+        fi
+        hed_validate_schemas $SCHEMA_FILES

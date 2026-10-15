@@ -7,7 +7,7 @@ Branch naming conventions:
 - score_*, lang_*, slam_*, mouse_*, testlib_*: Only corresponding library_schemas/{name}/ can be modified
 - admin_*: Any files can be modified (for docs, scripts, CI/CD)
 
-Schema files (.xml, .mediawiki, .tsv) must be in prerelease/ subdirectories.
+Schema files (.xml, .mediawiki, .tsv, .json) must be in prerelease/ subdirectories.
 Released schema directories (hedxml/, hedwiki/, hedtsv/, hedjson/) cannot be modified.
 
 The generated manifest schema_versions.json is exempt from branch scoping: any schema change
@@ -77,7 +77,7 @@ def get_banned_patterns(base_pattern: str) -> list[str]:
 
 def is_schema_file(filepath: str) -> bool:
     """Check if file is a schema file based on extension."""
-    schema_extensions = {".xml", ".mediawiki", ".tsv"}
+    schema_extensions = {".xml", ".mediawiki", ".tsv", ".json"}
     return Path(filepath).suffix in schema_extensions
 
 

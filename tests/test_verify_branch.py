@@ -121,6 +121,13 @@ class TestManifestExemption(unittest.TestCase):
         errors = vb.verify_files(["docs/schema_versions.json"], "mouse_update")
         self.assertEqual(len(errors), 1)
 
+    def test_json_is_a_schema_format(self):
+        # JSON is a schema format like XML, mediawiki and TSV: it must live in prerelease/.
+        self.assertTrue(vb.is_schema_file("standard_schema/prerelease/HED8.6.0.json"))
+        errors = vb.verify_files(["standard_schema/hedjson/HED8.5.0.json"], "standard_fix_typo")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("must be in 'standard_schema/prerelease/'", errors[0])
+
     def test_manifest_allowed_on_dependabot_branch(self):
         branch = "dependabot/github_actions/actions/checkout-5"
         self.assertEqual(vb.verify_files(["schema_versions.json"], branch), [])

@@ -68,14 +68,26 @@ This guide describes how a HED maintainer releases a new version of a schema, st
     )
     ```
 
-06. **Update the Latest files**:
+06. **Start the next prerelease** with the released content and an empty change log. Pick the next version (normally the next minor, 8.6.0 here), copy the released mediawiki into `prerelease/` under the new name, change the version in its first line, and let `hed_update_schemas` write the other three formats:
+
+    ```bash
+    cp standard_schema/hedwiki/HED8.5.0.mediawiki standard_schema/prerelease/HED8.6.0.mediawiki
+    # edit line 1: HED version="8.5.0" -> HED version="8.6.0"
+    hed_update_schemas standard_schema/prerelease/HED8.6.0.mediawiki
+    ```
+
+    Then replace `prerelease/PRERELEASE_CHANGES.md` with just its heading, `## Differences between HED8.5.0 and HED8.6.0`, and nothing under it. `PROPOSED.md` stays as it is. For a library the same steps apply under `library_schemas/<library>/prerelease/` (for example `HED_score_2.3.0.mediawiki`, changing `version=` and keeping `library=` and `withStandard=`).
+
+07. **Update the Latest files**:
 
     ```bash
     cp standard_schema/hedxml/HED8.5.0.xml standard_schema/hedxml/HEDLatest.xml
     cp library_schemas/score/hedxml/HED_score_2.2.0.xml library_schemas/score/hedxml/HED_score_Latest.xml
     ```
 
-07. **Regenerate the generated version files** and check them:
+    Then update the schema's table in `docs/schemas_overview.md`: the released version becomes Latest with its release date and links to `hedxml/`, `hedwiki/`, `hedjson/` and `hedtsv/`, and the new prerelease replaces it as Prerelease with links into `prerelease/`. The moves in step 05 break the old prerelease links, so this is not optional.
+
+08. **Regenerate the generated version files** and check them:
 
     ```bash
     python scripts/generate_schema_versions.py
@@ -86,18 +98,18 @@ This guide describes how a HED maintainer releases a new version of a schema, st
 
     `schemas_latest_json/` holds the merged JSON of the latest released version of each schema; the script generates a library's copy from its merged `hedxml/` file with hedtools. CI rejects a pull request whose manifest or Latest copies are stale.
 
-08. **Commit, push and open the pull request** against `main`; merge when CI is green.
+09. **Commit, push and open the pull request** against `main`; merge when CI is green.
 
-09. **Create the git tag** and the GitHub release with the CHANGELOG entry as its notes:
+10. **Create the git tag** and the GitHub release with the CHANGELOG entry as its notes:
 
     ```bash
     git tag -a v8.5.0 -m "Release HED standard schema 8.5.0"
     git push origin v8.5.0
     ```
 
-10. **Zenodo DOI** is minted automatically through the GitHub integration.
+11. **Zenodo DOI** is minted automatically through the GitHub integration.
 
-11. **Downstream**: hed-python bundles the released standard XML in `hed/schema/schema_data/` (and the released library XML it ships), hed-tests refreshes its schema snapshots, and the JavaScript validator picks up the new version.
+12. **Downstream**: hed-python bundles the released standard XML in `hed/schema/schema_data/` (and the released library XML it ships), hed-tests refreshes its schema snapshots, and the JavaScript validator picks up the new version.
 
 ## File forms
 
