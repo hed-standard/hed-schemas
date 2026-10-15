@@ -52,7 +52,7 @@ python scripts/update_latest_json.py --check     # read-only; exit 1 if anything
 python scripts/update_latest_json.py --update     # write the latest released JSON into place
 ```
 
-Generating a library's JSON needs hedtools (`pip install git+https://github.com/hed-standard/hed-python.git@main`). The output depends on the hedtools version: after hedtools changes its JSON writer, `--check` can report a library out of date, and `--update` rewrites the copy.
+Generating a library's JSON needs hedtools (`pip install -e .` from the repository root installs it). The output depends on the hedtools version: after hedtools changes its JSON writer, `--check` can report a library out of date, and `--update` rewrites the copy.
 
 Both scripts are run by the `update_manifests.yaml` workflow: `--check` on pull requests, and regenerate-and-commit on push to `main`.
 

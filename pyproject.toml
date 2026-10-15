@@ -1,7 +1,6 @@
-# This is NOT a Python package - it's a schema repository
-# The pyproject.toml file is used only for tool configuration (ruff, etc.)
-# HED schemas are accessed via URLs, not pip install
-# Each schema (standard, score, lang, etc.) has its own independent semantic version
+# hed-schemas is not a distributable package: schemas are accessed via URLs.
+# This file declares the tools the repo needs (hedtools for validation, hedIds and
+# generated files) and their configuration. Each schema has its own semantic version.
 
 [project]
 name = "hed-schemas"
@@ -17,6 +16,9 @@ maintainers = [
 license = "MIT"
 keywords = ["HED", "hierarchical event descriptors", "schemas", "vocabulary", "neuroscience", "BIDS", "events", "metadata", "annotation"]
 requires-python = ">=3.10,<3.15"
+dependencies = [
+    "hedtools @ git+https://github.com/hed-standard/hed-python.git@main",
+]
 
 [project.urls]
 "Homepage" = "https://www.hedtags.org/"

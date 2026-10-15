@@ -12,7 +12,7 @@ Run from the activated project venv, which has ruff, mdformat (with the myst plu
 - Lint: `python -m ruff check .` and `python -m ruff format --check .`
 - Spell check: `typos`
 - Markdown format check: `python -m mdformat --check --wrap no --number docs/ *.md`
-- Validate a schema: `hed_validate_schemas <path/to/schema.mediawiki>` (installed with `pip install git+https://github.com/hed-standard/hed-python.git@main`)
+- Validate a schema: `hed_validate_schemas <path/to/schema.mediawiki>` (hedtools is a dependency in `pyproject.toml`: `pip install -e .`; refresh it from hed-python `main` with `pip install --force-reinstall "hedtools @ git+https://github.com/hed-standard/hed-python.git@main"`)
 - Regenerate the other formats after editing a prerelease schema: `hed_update_schemas <path/to/prerelease/schema.mediawiki>` (or the edited `.tsv`); it rewrites the XML, JSON, TSV, and mediawiki in that prerelease folder. Never pass `--set-ids`: hedIds are assigned at release. Then run `python scripts/generate_schema_versions.py`, since the manifest records each file's sha.
 - Build docs: `sphinx-build -b html docs/ docs/_build/html` (requires `pip install ".[docs]"`)
 

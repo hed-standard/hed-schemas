@@ -273,7 +273,7 @@ The actual official release of a new version of a HED schema is a multistage pro
 
 06. **Regenerate the other formats and validate**:
 
-    Run the schema tools from a Python environment with `hedtools` installed (`pip install git+https://github.com/hed-standard/hed-python.git@main`):
+    Run the schema tools from a Python environment with `hedtools` installed (`pip install -e .` from the repository root installs it):
 
     ```bash
     hed_update_schemas standard_schema/prerelease/HED8.5.0.mediawiki
@@ -710,7 +710,7 @@ python scripts/update_latest_json.py --check
 python scripts/update_latest_json.py --update
 ```
 
-Generating a library's copy needs hedtools (`pip install git+https://github.com/hed-standard/hed-python.git@main`); the script reports a problem if it is missing or the XML does not load. The output depends on the hedtools version, so after hedtools changes its JSON writer `--check` can report a library out of date and `--update` rewrites the copy. If the standard schema's latest released XML has no matching `hedjson/` file, the script reports it as a problem rather than guessing (export the JSON first).
+Generating a library's copy needs hedtools (`pip install -e .` from the repository root installs it); the script reports a problem if it is missing or the XML does not load. The output depends on the hedtools version, so after hedtools changes its JSON writer `--check` can report a library out of date and `--update` rewrites the copy. If the standard schema's latest released XML has no matching `hedjson/` file, the script reports it as a problem rather than guessing (export the JSON first).
 
 ### Regenerating locally for a release PR
 
