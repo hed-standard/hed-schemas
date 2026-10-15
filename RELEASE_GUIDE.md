@@ -85,6 +85,8 @@ This guide describes how a HED maintainer releases a new version of a schema, st
     cp library_schemas/score/hedxml/HED_score_2.2.0.xml library_schemas/score/hedxml/HED_score_Latest.xml
     ```
 
+    Then update the schema's table in `docs/schemas_overview.md`: the released version becomes Latest with its release date and links to `hedxml/`, `hedwiki/`, `hedjson/` and `hedtsv/`, and the new prerelease replaces it as Prerelease with links into `prerelease/`. The moves in step 05 break the old prerelease links, so this is not optional.
+
 08. **Regenerate the generated version files** and check them:
 
     ```bash
