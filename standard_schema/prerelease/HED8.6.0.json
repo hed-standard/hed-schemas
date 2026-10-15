@@ -1,5 +1,5 @@
 {
-  "version": "8.5.0",
+  "version": "8.6.0",
   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
   "xsi:noNamespaceSchemaLocation": "https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd",
   "prologue": "The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema.\n\nEach term in this vocabulary has a human-readable description and may include additional attributes that give additional properties or that specify how tools should treat the tag during analysis. The meaning of these attributes is described in the Additional schema properties section.",
@@ -2338,9 +2338,12 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013234"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013234"
+      }
     },
     "Halt": {
       "short_form": "Halt",
@@ -2447,9 +2450,12 @@
       "parent": "Perform",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013235"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013235"
+      }
     },
     "Rest": {
       "short_form": "Rest",
@@ -9049,9 +9055,12 @@
         "Line-noise-artifact"
       ],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013236"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013236"
+      }
     },
     "Induction-artifact": {
       "short_form": "Induction-artifact",
@@ -9117,12 +9126,14 @@
         "extensionAllowed": true,
         "suggestedTag": [
           "ID"
-        ]
+        ],
+        "hedId": "HED_0013237"
       },
       "explicitAttributes": {
         "suggestedTag": [
           "ID"
-        ]
+        ],
+        "hedId": "HED_0013237"
       }
     },
     "Electrode-pops-artifact": {
@@ -11313,8 +11324,12 @@
       "description": "A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).",
       "parent": "Quantitative-value",
       "children": [],
-      "attributes": {},
-      "explicitAttributes": {},
+      "attributes": {
+        "hedId": "HED_0013238"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013238"
+      },
       "placeholder": {
         "takesValue": true,
         "unitClass": [
@@ -11322,7 +11337,8 @@
         ],
         "valueClass": [
           "numericClass"
-        ]
+        ],
+        "hedId": "HED_0013239"
       }
     },
     "Ratio": {
@@ -17301,9 +17317,12 @@
         "relatedTag": [
           "Incorrect-action",
           "Indeterminate-action"
-        ]
+        ],
+        "hedId": "HED_0013240"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013240"
+      }
     },
     "Correction": {
       "short_form": "Correction",
@@ -17329,12 +17348,14 @@
         "extensionAllowed": true,
         "relatedTag": [
           "Uncued"
-        ]
+        ],
+        "hedId": "HED_0013241"
       },
       "explicitAttributes": {
         "relatedTag": [
           "Uncued"
-        ]
+        ],
+        "hedId": "HED_0013241"
       }
     },
     "Done-indication": {
@@ -17523,12 +17544,14 @@
         "extensionAllowed": true,
         "relatedTag": [
           "Cued"
-        ]
+        ],
+        "hedId": "HED_0013242"
       },
       "explicitAttributes": {
         "relatedTag": [
           "Cued"
-        ]
+        ],
+        "hedId": "HED_0013242"
       }
     },
     "Task-attentional-demand": {
@@ -17951,9 +17974,12 @@
       "parent": "Task-event-role",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013243"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013243"
+      }
     },
     "Warning": {
       "short_form": "Warning",
@@ -18168,13 +18194,15 @@
         "relatedTag": [
           "Go-signal",
           "Stop-signal"
-        ]
+        ],
+        "hedId": "HED_0013244"
       },
       "explicitAttributes": {
         "relatedTag": [
           "Go-signal",
           "Stop-signal"
-        ]
+        ],
+        "hedId": "HED_0013244"
       }
     },
     "Non-informative": {
@@ -18272,9 +18300,12 @@
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013245"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013245"
+      }
     },
     "Penalty": {
       "short_form": "Penalty",
@@ -18465,9 +18496,12 @@
         "Catch-trial"
       ],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013246"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013246"
+      }
     },
     "Catch-trial": {
       "short_form": "Catch-trial",
@@ -18476,9 +18510,12 @@
       "parent": "Task-trial-role",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0013247"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0013247"
+      }
     },
     "Relation": {
       "short_form": "Relation",
@@ -19754,24 +19791,28 @@
     "coulomb": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011646"
     },
     "C": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011647"
     },
     "molar": {
       "description": "One mole per liter.",
       "SIUnit": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011648"
     },
     "mol-per-L": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011649"
     },
     "dollar": {
       "description": null,
@@ -19798,13 +19839,15 @@
     "ampere": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1000"
+      "conversionFactor": "1000",
+      "hedId": "HED_0011650"
     },
     "A": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1000"
+      "conversionFactor": "1000",
+      "hedId": "HED_0011651"
     },
     "V": {
       "description": null,
@@ -19822,29 +19865,34 @@
     "joule": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011652"
     },
     "J": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011653"
     },
     "calorie": {
       "description": "Thermochemical calorie. Use the kilo modifier for dietary kilocalories.",
       "SIUnit": true,
-      "conversionFactor": "4.184"
+      "conversionFactor": "4.184",
+      "hedId": "HED_0011654"
     },
     "newton": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011655"
     },
     "N": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011656"
     },
     "hertz": {
       "description": null,
@@ -19947,40 +19995,47 @@
     "watt": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1000"
+      "conversionFactor": "1000",
+      "hedId": "HED_0011657"
     },
     "W": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1000"
+      "conversionFactor": "1000",
+      "hedId": "HED_0011658"
     },
     "pascal": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011659"
     },
     "Pa": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "1.0"
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011660"
     },
     "mmHg": {
       "description": "Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.",
       "unitSymbol": true,
-      "conversionFactor": "133.322"
+      "conversionFactor": "133.322",
+      "hedId": "HED_0011661"
     },
     "ohm": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "0.001"
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011662"
     },
     "Ohm": {
       "description": "ASCII spelling of the ohm symbol.",
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "0.001"
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011663"
     },
     "m-per-s": {
       "description": null,
@@ -20041,7 +20096,8 @@
     },
     "week": {
       "description": null,
-      "conversionFactor": "604800"
+      "conversionFactor": "604800",
+      "hedId": "HED_0011664"
     },
     "month": {
       "description": null,
@@ -20072,18 +20128,21 @@
     "liter": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "0.001"
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011665"
     },
     "litre": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "0.001"
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011666"
     },
     "L": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "0.001"
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011667"
     },
     "g": {
       "description": null,
@@ -20130,6 +20189,7 @@
     },
     "anyUnits": {
       "description": "Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.",
+      "hedId": "HED_0011516",
       "units": []
     },
     "areaUnits": {
@@ -20142,6 +20202,7 @@
     },
     "chargeUnits": {
       "description": "Units of electric charge, for example the charge per phase delivered by electrical stimulation.",
+      "hedId": "HED_0011517",
       "units": [
         "coulomb",
         "C"
@@ -20150,6 +20211,7 @@
     },
     "concentrationUnits": {
       "description": "Units of molar concentration (amount of substance per unit volume).",
+      "hedId": "HED_0011518",
       "units": [
         "molar",
         "mol-per-L"
@@ -20169,6 +20231,7 @@
     },
     "currentUnits": {
       "description": "Units of electric current, for example the current delivered by electrical stimulation.",
+      "hedId": "HED_0011519",
       "units": [
         "ampere",
         "A"
@@ -20186,6 +20249,7 @@
     },
     "energyUnits": {
       "description": "Units of energy, for example the energy of a stimulation pulse or metabolic energy.",
+      "hedId": "HED_0011520",
       "units": [
         "joule",
         "J",
@@ -20195,6 +20259,7 @@
     },
     "forceUnits": {
       "description": "Units of force, for example grip force or the reading of a force plate.",
+      "hedId": "HED_0011521",
       "units": [
         "newton",
         "N"
@@ -20261,6 +20326,7 @@
     },
     "powerUnits": {
       "description": "Units of power, for example the output of an optogenetic light source or ultrasound transducer.",
+      "hedId": "HED_0011522",
       "units": [
         "watt",
         "W"
@@ -20269,6 +20335,7 @@
     },
     "pressureUnits": {
       "description": "Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.",
+      "hedId": "HED_0011523",
       "units": [
         "pascal",
         "Pa",
@@ -20278,6 +20345,7 @@
     },
     "resistanceUnits": {
       "description": "Units of electrical resistance or impedance, for example electrode impedance.",
+      "hedId": "HED_0011524",
       "units": [
         "ohm",
         "Ohm"

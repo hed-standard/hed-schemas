@@ -1,4 +1,4 @@
-HED version="8.5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd"
+HED version="8.6.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/hed-standard/hed-schemas/refs/heads/main/standard_schema/hedxml/HED8.4.0.xsd"
 
 '''Prologue'''
 The HED standard schema is a hierarchically-organized vocabulary for annotating events and experimental structure. HED annotations consist of comma-separated tags drawn from this vocabulary. This vocabulary can be augmented by terms drawn from specialized library schema.
@@ -147,7 +147,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 * Perform <nowiki>{hedId=HED_0012136} [Carry out or accomplish an action, task, or function.]</nowiki>
 ** Close <nowiki>{hedId=HED_0012137} [Act as to blocked against entry or passage.]</nowiki>
 ** Collide-with <nowiki>{hedId=HED_0012138} [Hit with force when moving.]</nowiki>
-** Consume <nowiki>[Take a substance into the body by eating or drinking.]</nowiki>
+** Consume <nowiki>{hedId=HED_0013234} [Take a substance into the body by eating or drinking.]</nowiki>
 ** Halt <nowiki>{hedId=HED_0012139} [Bring or come to an abrupt stop.]</nowiki>
 ** Modify <nowiki>{hedId=HED_0012140} [Change something.]</nowiki>
 ** Open <nowiki>{hedId=HED_0012141} [Widen an aperture, door, or gap, especially one allowing access to something.]</nowiki>
@@ -155,7 +155,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Play <nowiki>{hedId=HED_0012143} [Engage in activity for enjoyment and recreation rather than a serious or practical purpose.]</nowiki>
 ** Read <nowiki>{hedId=HED_0012144} [Interpret something that is written or printed.]</nowiki>
 ** Repeat <nowiki>{hedId=HED_0012145} [Make do or perform again.]</nowiki>
-** Report <nowiki>[Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.]</nowiki>
+** Report <nowiki>{hedId=HED_0013235} [Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.]</nowiki>
 ** Rest <nowiki>{hedId=HED_0012146} [Be inactive in order to regain strength, health, or energy.]</nowiki>
 ** Ride <nowiki>{hedId=HED_0012147} [Ride on an animal or in a vehicle. Ride conveys some notion that another agent has partial or total control of the motion.]</nowiki>
 ** Write <nowiki>{hedId=HED_0012148} [Communicate or express by means of letters or symbols written or imprinted on a surface.]</nowiki>
@@ -557,12 +557,12 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Nonbiological-artifact <nowiki>{hedId=HED_0012512} [A data artifact arising from a non-biological source.]</nowiki>
 **** Artificial-ventilation-artifact <nowiki>{hedId=HED_0012513} [Artifact stemming from mechanical ventilation. These can occur at the same rate as the ventilator, but also have other patterns.]</nowiki>
 **** Dialysis-artifact <nowiki>{hedId=HED_0012514} [Artifacts seen in recordings during continuous renal replacement therapy (dialysis).]</nowiki>
-**** Electrical-artifact <nowiki>[Signal Contamination due to extraneous or unwanted electrical signals.]</nowiki>
+**** Electrical-artifact <nowiki>{hedId=HED_0013236} [Signal Contamination due to extraneous or unwanted electrical signals.]</nowiki>
 ***** Induction-artifact <nowiki>{hedId=HED_0012517} [Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.]</nowiki>
 ***** Line-noise-artifact <nowiki>{hedId=HED_0012518} [Power line noise at 50 Hz or 60 Hz.]</nowiki>
 ******  <nowiki># {takesValue, valueClass=numericClass, unitClass=frequencyUnits, hedId=HED_0012519}</nowiki>
 **** Electrode-movement-artifact <nowiki>{hedId=HED_0012515} [Artifact from electrode movement.]</nowiki>
-**** Localized-channel-artifact <nowiki>{suggestedTag=ID} [Transient artifact usually involving a single channel or a small subset of channels.]</nowiki>
+**** Localized-channel-artifact <nowiki>{suggestedTag=ID, hedId=HED_0013237} [Transient artifact usually involving a single channel or a small subset of channels.]</nowiki>
 ***** Electrode-pops-artifact <nowiki>{hedId=HED_0012516} [Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.]</nowiki>
 ***** Salt-bridge-artifact <nowiki>{hedId=HED_0012520} [Artifact from salt-bridge between EEG electrodes.]</nowiki>
 ** Data-marker <nowiki>{hedId=HED_0012521} [An indicator placed to mark something.]</nowiki>
@@ -685,8 +685,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012638}</nowiki>
 **** Percentage <nowiki>{hedId=HED_0012639} [A fraction or ratio with 100 understood as the denominator.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012640}</nowiki>
-**** Quantity <nowiki>[A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).]</nowiki>
-*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=anyUnits}</nowiki>
+**** Quantity <nowiki>{hedId=HED_0013238} [A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).]</nowiki>
+*****  <nowiki># {takesValue, valueClass=numericClass, unitClass=anyUnits, hedId=HED_0013239}</nowiki>
 **** Ratio <nowiki>{hedId=HED_0012641} [A quotient of quantities of the same kind for different components within the same system.]</nowiki>
 *****  <nowiki># {takesValue, valueClass=numericClass, hedId=HED_0012642}</nowiki>
 *** Spatiotemporal-value <nowiki>{hedId=HED_0012643} [A property relating to space and/or time.]</nowiki>
@@ -1116,9 +1116,9 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** Task-action-type <nowiki>{hedId=HED_0013063} [How an agent action should be interpreted in terms of the task specification.]</nowiki>
 *** Appropriate-action <nowiki>{relatedTag=Inappropriate-action, hedId=HED_0013064} [An action suitable or proper in the circumstances.]</nowiki>
 *** Correct-action <nowiki>{relatedTag=Incorrect-action, relatedTag=Indeterminate-action, hedId=HED_0013065} [An action that was a correct response in the context of the task.]</nowiki>
-**** Correct-rejection <nowiki>[An action correctly designating rejection in the context of the task.]</nowiki>
+**** Correct-rejection <nowiki>{hedId=HED_0013240} [An action correctly designating rejection in the context of the task.]</nowiki>
 *** Correction <nowiki>{hedId=HED_0013066} [An action offering an improvement to replace a mistake or error.]</nowiki>
-*** Cued <nowiki>{relatedTag=Uncued} [An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
+*** Cued <nowiki>{relatedTag=Uncued, hedId=HED_0013241} [An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 *** Done-indication <nowiki>{relatedTag=Ready-indication, hedId=HED_0013067} [An action that indicates that the participant has completed this step in the task.]</nowiki>
 *** Imagined-action <nowiki>{hedId=HED_0013068} [Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.]</nowiki>
 *** Inappropriate-action <nowiki>{relatedTag=Appropriate-action, hedId=HED_0013069} [An action not in keeping with what is correct or proper for the task.]</nowiki>
@@ -1128,7 +1128,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Near-miss <nowiki>{relatedTag=Miss, hedId=HED_0013073} [An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.]</nowiki>
 *** Omitted-action <nowiki>{hedId=HED_0013074} [An expected response was skipped.]</nowiki>
 *** Ready-indication <nowiki>{relatedTag=Done-indication, hedId=HED_0013075} [An action that indicates that the participant is ready to perform the next step in the task.]</nowiki>
-*** Uncued <nowiki>{relatedTag=Cued} [An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
+*** Uncued <nowiki>{relatedTag=Cued, hedId=HED_0013242} [An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.]</nowiki>
 ** Task-attentional-demand <nowiki>{hedId=HED_0013076} [Strategy for allocating attention toward goal-relevant information.]</nowiki>
 *** Bottom-up-attention <nowiki>{relatedTag=Top-down-attention, hedId=HED_0013077} [Attentional guidance purely by externally driven factors to stimuli that are salient because of their inherent properties relative to the background. Sometimes this is referred to as stimulus driven.]</nowiki>
 *** Covert-attention <nowiki>{relatedTag=Overt-attention, hedId=HED_0013078} [Paying attention without moving the eyes.]</nowiki>
@@ -1154,7 +1154,7 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Mishap <nowiki>{hedId=HED_0013096} [Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.]</nowiki>
 *** Participant-response <nowiki>{hedId=HED_0013097} [Something related to a participant actions in performing the task.]</nowiki>
 *** Task-activity <nowiki>{hedId=HED_0013098} [Something that is part of the overall task or is necessary to the overall experiment but is not directly part of a stimulus-response cycle. Examples would be taking a survey or provided providing a silva sample.]</nowiki>
-*** Trial-abort <nowiki>[An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.]</nowiki>
+*** Trial-abort <nowiki>{hedId=HED_0013243} [An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.]</nowiki>
 *** Warning <nowiki>{hedId=HED_0013099} [Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.]</nowiki>
 ** Task-relationship <nowiki>{hedId=HED_0013100} [Specifying organizational importance of sub-tasks.]</nowiki>
 *** Background-subtask <nowiki>{hedId=HED_0013101} [A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.]</nowiki>
@@ -1166,13 +1166,13 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Go-signal <nowiki>{relatedTag=No-go-signal, relatedTag=Stop-signal, hedId=HED_0013109} [A stimulus indicating that a task response is required.]</nowiki>
 *** Meaningful <nowiki>{hedId=HED_0013110} [Conveying significant or relevant information.]</nowiki>
 *** Newly-learned <nowiki>{hedId=HED_0013111} [Representing recently acquired information or understanding.]</nowiki>
-*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal} [A stimulus indicating that the subject should withhold or suppress the task response.]</nowiki>
+*** No-go-signal <nowiki>{relatedTag=Go-signal, relatedTag=Stop-signal, hedId=HED_0013244} [A stimulus indicating that the subject should withhold or suppress the task response.]</nowiki>
 *** Non-informative <nowiki>{hedId=HED_0013112} [Something that is not useful in forming an opinion or judging an outcome.]</nowiki>
 *** Non-target <nowiki>{relatedTag=Target, hedId=HED_0013113} [Something other than that done or looked for. Also tag Expected if the Non-target is frequent.]</nowiki>
 *** Not-meaningful <nowiki>{hedId=HED_0013114} [Not having a serious, important, or useful quality or purpose.]</nowiki>
 *** Novel <nowiki>{hedId=HED_0013115} [Having no previous example or precedent or parallel.]</nowiki>
 *** Oddball <nowiki>{relatedTag=Unexpected, suggestedTag=Target, hedId=HED_0013116} [Something unusual, or infrequent.]</nowiki>
-*** Omitted-presentation <nowiki>[Something that is expected to happen or usually happens but doesn't.]</nowiki>
+*** Omitted-presentation <nowiki>{hedId=HED_0013245} [Something that is expected to happen or usually happens but doesn't.]</nowiki>
 *** Penalty <nowiki>{hedId=HED_0013117} [A disadvantage, loss, or hardship due to some action.]</nowiki>
 *** Planned <nowiki>{relatedTag=Unplanned, hedId=HED_0013118} [Something that was decided on or arranged in advance.]</nowiki>
 *** Priming <nowiki>{hedId=HED_0013119} [An implicit memory effect in which exposure to a stimulus influences response to a later stimulus.]</nowiki>
@@ -1184,8 +1184,8 @@ Each term in this vocabulary has a human-readable description and may include ad
 *** Timed <nowiki>{hedId=HED_0013125} [Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.]</nowiki>
 *** Unexpected <nowiki>{relatedTag=Expected, hedId=HED_0013126} [Something that is not anticipated.]</nowiki>
 *** Unplanned <nowiki>{relatedTag=Planned, hedId=HED_0013127} [Something that has not been planned as part of the task.]</nowiki>
-** Task-trial-role <nowiki>[The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
-*** Catch-trial <nowiki>[A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.]</nowiki>
+** Task-trial-role <nowiki>{hedId=HED_0013246} [The type of a trial with respect to the task in a trial-based experiment.]</nowiki>
+*** Catch-trial <nowiki>{hedId=HED_0013247} [A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.]</nowiki>
 
 '''Relation''' <nowiki>{extensionAllowed, hedId=HED_0013128} [Concerns the way in which two or more people or things are connected.]</nowiki>
 * Comparative-relation <nowiki>{hedId=HED_0013129} [Something considered in comparison to something else. The first entity is the focus.]</nowiki>
@@ -1270,33 +1270,33 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** radian <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011601}</nowiki>
 ** rad <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011602}</nowiki>
 ** degree <nowiki>{conversionFactor=0.0174533, hedId=HED_0011603}</nowiki>
-* anyUnits <nowiki>[Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.]</nowiki>
+* anyUnits <nowiki>{hedId=HED_0011516} [Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.]</nowiki>
 * areaUnits <nowiki>{defaultUnits=m^2, hedId=HED_0011502} [Units of area, for example the size of a stimulus region or a surface on a display.]</nowiki>
 ** m^2 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011604}</nowiki>
-* chargeUnits <nowiki>{defaultUnits=C} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
-** coulomb <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-** C <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-* concentrationUnits <nowiki>{defaultUnits=mol-per-L} [Units of molar concentration (amount of substance per unit volume).]</nowiki>
-** molar <nowiki>{SIUnit, conversionFactor=1.0} [One mole per liter.]</nowiki>
-** mol-per-L <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* chargeUnits <nowiki>{defaultUnits=C, hedId=HED_0011517} [Units of electric charge, for example the charge per phase delivered by electrical stimulation.]</nowiki>
+** coulomb <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011646}</nowiki>
+** C <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011647}</nowiki>
+* concentrationUnits <nowiki>{defaultUnits=mol-per-L, hedId=HED_0011518} [Units of molar concentration (amount of substance per unit volume).]</nowiki>
+** molar <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011648} [One mole per liter.]</nowiki>
+** mol-per-L <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011649}</nowiki>
 * currencyUnits <nowiki>{defaultUnits=dollar, hedId=HED_0011503} [Units indicating the worth of something.]</nowiki>
 ** dollar <nowiki>{conversionFactor=1.0, hedId=HED_0011605}</nowiki>
 ** $ <nowiki>{deprecatedFrom=8.4.0, unitPrefix, unitSymbol, conversionFactor=1.0, allowedCharacter=dollar, hedId=HED_0011606} [Prefix units are no longer supported. Use dollar.]</nowiki>
 ** euro <nowiki>{hedId=HED_0011607} [The official currency of a large subset of member countries of the European Union.]</nowiki>
 ** point <nowiki>{hedId=HED_0011608} [An arbitrary unit of value, usually an integer indicating reward or penalty.]</nowiki>
-* currentUnits <nowiki>{defaultUnits=mA} [Units of electric current, for example the current delivered by electrical stimulation.]</nowiki>
-** ampere <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
-** A <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
+* currentUnits <nowiki>{defaultUnits=mA, hedId=HED_0011519} [Units of electric current, for example the current delivered by electrical stimulation.]</nowiki>
+** ampere <nowiki>{SIUnit, conversionFactor=1000, hedId=HED_0011650}</nowiki>
+** A <nowiki>{SIUnit, unitSymbol, conversionFactor=1000, hedId=HED_0011651}</nowiki>
 * electricPotentialUnits <nowiki>{defaultUnits=uV, hedId=HED_0011504} [Units of electric potential, for example EEG and other electrophysiological signal amplitudes.]</nowiki>
 ** V <nowiki>{SIUnit, unitSymbol, conversionFactor=1000000, hedId=HED_0011609}</nowiki>
 ** volt <nowiki>{SIUnit, conversionFactor=1000000, hedId=HED_0011610}</nowiki>
-* energyUnits <nowiki>{defaultUnits=J} [Units of energy, for example the energy of a stimulation pulse or metabolic energy.]</nowiki>
-** joule <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-** J <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** calorie <nowiki>{SIUnit, conversionFactor=4.184} [Thermochemical calorie. Use the kilo modifier for dietary kilocalories.]</nowiki>
-* forceUnits <nowiki>{defaultUnits=N} [Units of force, for example grip force or the reading of a force plate.]</nowiki>
-** newton <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-** N <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
+* energyUnits <nowiki>{defaultUnits=J, hedId=HED_0011520} [Units of energy, for example the energy of a stimulation pulse or metabolic energy.]</nowiki>
+** joule <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011652}</nowiki>
+** J <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011653}</nowiki>
+** calorie <nowiki>{SIUnit, conversionFactor=4.184, hedId=HED_0011654} [Thermochemical calorie. Use the kilo modifier for dietary kilocalories.]</nowiki>
+* forceUnits <nowiki>{defaultUnits=N, hedId=HED_0011521} [Units of force, for example grip force or the reading of a force plate.]</nowiki>
+** newton <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011655}</nowiki>
+** N <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011656}</nowiki>
 * frequencyUnits <nowiki>{defaultUnits=Hz, hedId=HED_0011505} [Units of frequency, for example sampling rates, flicker rates, and tone frequencies.]</nowiki>
 ** hertz <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011611}</nowiki>
 ** Hz <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011612}</nowiki>
@@ -1319,16 +1319,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** metre <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011624}</nowiki>
 ** m <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011625}</nowiki>
 ** mile <nowiki>{conversionFactor=1609.34, hedId=HED_0011626}</nowiki>
-* powerUnits <nowiki>{defaultUnits=mW} [Units of power, for example the output of an optogenetic light source or ultrasound transducer.]</nowiki>
-** watt <nowiki>{SIUnit, conversionFactor=1000}</nowiki>
-** W <nowiki>{SIUnit, unitSymbol, conversionFactor=1000}</nowiki>
-* pressureUnits <nowiki>{defaultUnits=Pa} [Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.]</nowiki>
-** pascal <nowiki>{SIUnit, conversionFactor=1.0}</nowiki>
-** Pa <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0}</nowiki>
-** mmHg <nowiki>{unitSymbol, conversionFactor=133.322} [Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.]</nowiki>
-* resistanceUnits <nowiki>{defaultUnits=kOhm} [Units of electrical resistance or impedance, for example electrode impedance.]</nowiki>
-** ohm <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
-** Ohm <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001} [ASCII spelling of the ohm symbol.]</nowiki>
+* powerUnits <nowiki>{defaultUnits=mW, hedId=HED_0011522} [Units of power, for example the output of an optogenetic light source or ultrasound transducer.]</nowiki>
+** watt <nowiki>{SIUnit, conversionFactor=1000, hedId=HED_0011657}</nowiki>
+** W <nowiki>{SIUnit, unitSymbol, conversionFactor=1000, hedId=HED_0011658}</nowiki>
+* pressureUnits <nowiki>{defaultUnits=Pa, hedId=HED_0011523} [Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.]</nowiki>
+** pascal <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011659}</nowiki>
+** Pa <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011660}</nowiki>
+** mmHg <nowiki>{unitSymbol, conversionFactor=133.322, hedId=HED_0011661} [Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.]</nowiki>
+* resistanceUnits <nowiki>{defaultUnits=kOhm, hedId=HED_0011524} [Units of electrical resistance or impedance, for example electrode impedance.]</nowiki>
+** ohm <nowiki>{SIUnit, conversionFactor=0.001, hedId=HED_0011662}</nowiki>
+** Ohm <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001, hedId=HED_0011663} [ASCII spelling of the ohm symbol.]</nowiki>
 * speedUnits <nowiki>{defaultUnits=m-per-s, hedId=HED_0011511} [Units of speed, for example the speed of a moving stimulus or of a participant.]</nowiki>
 ** m-per-s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011627}</nowiki>
 ** mph <nowiki>{unitSymbol, conversionFactor=0.44704, hedId=HED_0011628}</nowiki>
@@ -1341,16 +1341,16 @@ Each term in this vocabulary has a human-readable description and may include ad
 ** second <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011633}</nowiki>
 ** s <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011634}</nowiki>
 ** day <nowiki>{conversionFactor=86400, hedId=HED_0011635}</nowiki>
-** week <nowiki>{conversionFactor=604800}</nowiki>
+** week <nowiki>{conversionFactor=604800, hedId=HED_0011664}</nowiki>
 ** month <nowiki>{hedId=HED_0011645}</nowiki>
 ** minute <nowiki>{conversionFactor=60, hedId=HED_0011636}</nowiki>
 ** hour <nowiki>{conversionFactor=3600, hedId=HED_0011637} [Should be in 24-hour format.]</nowiki>
 ** year <nowiki>{hedId=HED_0011638} [Years do not have a constant conversion factor to seconds.]</nowiki>
 * volumeUnits <nowiki>{defaultUnits=m^3, hedId=HED_0011514} [Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.]</nowiki>
 ** m^3 <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, allowedCharacter=caret, hedId=HED_0011639}</nowiki>
-** liter <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
-** litre <nowiki>{SIUnit, conversionFactor=0.001}</nowiki>
-** L <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001}</nowiki>
+** liter <nowiki>{SIUnit, conversionFactor=0.001, hedId=HED_0011665}</nowiki>
+** litre <nowiki>{SIUnit, conversionFactor=0.001, hedId=HED_0011666}</nowiki>
+** L <nowiki>{SIUnit, unitSymbol, conversionFactor=0.001, hedId=HED_0011667}</nowiki>
 * weightUnits <nowiki>{defaultUnits=g, hedId=HED_0011515} [Units of mass, for example body weight or the mass of a delivered substance.]</nowiki>
 ** g <nowiki>{SIUnit, unitSymbol, conversionFactor=1.0, hedId=HED_0011640}</nowiki>
 ** gram <nowiki>{SIUnit, conversionFactor=1.0, hedId=HED_0011641}</nowiki>

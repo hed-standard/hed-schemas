@@ -137,7 +137,7 @@ HED_0012135	2	Taste	Perceive		Sense a flavor in the mouth and throat on contact 
 HED_0012136	1	Perform	Action		Carry out or accomplish an action, task, or function.
 HED_0012137	2	Close	Perform		Act as to blocked against entry or passage.
 HED_0012138	2	Collide-with	Perform		Hit with force when moving.
-	2	Consume	Perform		Take a substance into the body by eating or drinking.
+HED_0013234	2	Consume	Perform		Take a substance into the body by eating or drinking.
 HED_0012139	2	Halt	Perform		Bring or come to an abrupt stop.
 HED_0012140	2	Modify	Perform		Change something.
 HED_0012141	2	Open	Perform		Widen an aperture, door, or gap, especially one allowing access to something.
@@ -145,7 +145,7 @@ HED_0012142	2	Operate	Perform		Control the functioning of a machine, process, or
 HED_0012143	2	Play	Perform		Engage in activity for enjoyment and recreation rather than a serious or practical purpose.
 HED_0012144	2	Read	Perform		Interpret something that is written or printed.
 HED_0012145	2	Repeat	Perform		Make do or perform again.
-	2	Report	Perform		Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.
+HED_0013235	2	Report	Perform		Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.
 HED_0012146	2	Rest	Perform		Be inactive in order to regain strength, health, or energy.
 HED_0012147	2	Ride	Perform		Ride on an animal or in a vehicle. Ride conveys some notion that another agent has partial or total control of the motion.
 HED_0012148	2	Write	Perform		Communicate or express by means of letters or symbols written or imprinted on a surface.
@@ -545,12 +545,12 @@ HED_0012511	4	Tongue-movement-artifact	Biological-artifact		Artifact from tongue
 HED_0012512	3	Nonbiological-artifact	Data-artifact		A data artifact arising from a non-biological source.
 HED_0012513	4	Artificial-ventilation-artifact	Nonbiological-artifact		Artifact stemming from mechanical ventilation. These can occur at the same rate as the ventilator, but also have other patterns.
 HED_0012514	4	Dialysis-artifact	Nonbiological-artifact		Artifacts seen in recordings during continuous renal replacement therapy (dialysis).
-	4	Electrical-artifact	Nonbiological-artifact		Signal Contamination due to extraneous or unwanted electrical signals.
+HED_0013236	4	Electrical-artifact	Nonbiological-artifact		Signal Contamination due to extraneous or unwanted electrical signals.
 HED_0012517	5	Induction-artifact	Electrical-artifact		Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.
 HED_0012518	5	Line-noise-artifact	Electrical-artifact		Power line noise at 50 Hz or 60 Hz.
 HED_0012519	6	Line-noise-artifact-#	Line-noise-artifact	takesValue, valueClass=numericClass, unitClass=frequencyUnits	
 HED_0012515	4	Electrode-movement-artifact	Nonbiological-artifact		Artifact from electrode movement.
-	4	Localized-channel-artifact	Nonbiological-artifact	suggestedTag=ID	Transient artifact usually involving a single channel or a small subset of channels.
+HED_0013237	4	Localized-channel-artifact	Nonbiological-artifact	suggestedTag=ID	Transient artifact usually involving a single channel or a small subset of channels.
 HED_0012516	5	Electrode-pops-artifact	Localized-channel-artifact		Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.
 HED_0012520	5	Salt-bridge-artifact	Localized-channel-artifact		Artifact from salt-bridge between EEG electrodes.
 HED_0012521	2	Data-marker	Data-property		An indicator placed to mark something.
@@ -673,8 +673,8 @@ HED_0012637	4	Item-interval	Quantitative-value		An integer indicating how many i
 HED_0012638	5	Item-interval-#	Item-interval	takesValue, valueClass=numericClass	
 HED_0012639	4	Percentage	Quantitative-value		A fraction or ratio with 100 understood as the denominator.
 HED_0012640	5	Percentage-#	Percentage	takesValue, valueClass=numericClass	
-	4	Quantity	Quantitative-value		A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).
-	5	Quantity-#	Quantity	takesValue, valueClass=numericClass, unitClass=anyUnits	
+HED_0013238	4	Quantity	Quantitative-value		A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).
+HED_0013239	5	Quantity-#	Quantity	takesValue, valueClass=numericClass, unitClass=anyUnits	
 HED_0012641	4	Ratio	Quantitative-value		A quotient of quantities of the same kind for different components within the same system.
 HED_0012642	5	Ratio-#	Ratio	takesValue, valueClass=numericClass	
 HED_0012643	3	Spatiotemporal-value	Data-value		A property relating to space and/or time.
@@ -1104,9 +1104,9 @@ HED_0013062	1	Task-property	Property	extensionAllowed	Something that pertains to
 HED_0013063	2	Task-action-type	Task-property		How an agent action should be interpreted in terms of the task specification.
 HED_0013064	3	Appropriate-action	Task-action-type	relatedTag=Inappropriate-action	An action suitable or proper in the circumstances.
 HED_0013065	3	Correct-action	Task-action-type	relatedTag=Incorrect-action, relatedTag=Indeterminate-action	An action that was a correct response in the context of the task.
-	4	Correct-rejection	Correct-action		An action correctly designating rejection in the context of the task.
+HED_0013240	4	Correct-rejection	Correct-action		An action correctly designating rejection in the context of the task.
 HED_0013066	3	Correction	Task-action-type		An action offering an improvement to replace a mistake or error.
-	3	Cued	Task-action-type	relatedTag=Uncued	An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.
+HED_0013241	3	Cued	Task-action-type	relatedTag=Uncued	An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.
 HED_0013067	3	Done-indication	Task-action-type	relatedTag=Ready-indication	An action that indicates that the participant has completed this step in the task.
 HED_0013068	3	Imagined-action	Task-action-type		Form a mental image or concept of something. This is used to identity something that only happened in the imagination of the participant as in imagined movements in motor imagery paradigms.
 HED_0013069	3	Inappropriate-action	Task-action-type	relatedTag=Appropriate-action	An action not in keeping with what is correct or proper for the task.
@@ -1116,7 +1116,7 @@ HED_0013072	3	Miss	Task-action-type	relatedTag=Near-miss	An action considered to
 HED_0013073	3	Near-miss	Task-action-type	relatedTag=Miss	An action barely satisfied the requirements of the task. In a driving experiment for example this could pertain to a narrowly avoided collision or other accident.
 HED_0013074	3	Omitted-action	Task-action-type		An expected response was skipped.
 HED_0013075	3	Ready-indication	Task-action-type	relatedTag=Done-indication	An action that indicates that the participant is ready to perform the next step in the task.
-	3	Uncued	Task-action-type	relatedTag=Cued	An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.
+HED_0013242	3	Uncued	Task-action-type	relatedTag=Cued	An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.
 HED_0013076	2	Task-attentional-demand	Task-property		Strategy for allocating attention toward goal-relevant information.
 HED_0013077	3	Bottom-up-attention	Task-attentional-demand	relatedTag=Top-down-attention	Attentional guidance purely by externally driven factors to stimuli that are salient because of their inherent properties relative to the background. Sometimes this is referred to as stimulus driven.
 HED_0013078	3	Covert-attention	Task-attentional-demand	relatedTag=Overt-attention	Paying attention without moving the eyes.
@@ -1142,7 +1142,7 @@ HED_0013095	3	Instructional	Task-event-role		Usually associated with a sensory e
 HED_0013096	3	Mishap	Task-event-role		Unplanned disruption such as an equipment or experiment control abnormality or experimenter error.
 HED_0013097	3	Participant-response	Task-event-role		Something related to a participant actions in performing the task.
 HED_0013098	3	Task-activity	Task-event-role		Something that is part of the overall task or is necessary to the overall experiment but is not directly part of a stimulus-response cycle. Examples would be taking a survey or provided providing a silva sample.
-	3	Trial-abort	Task-event-role		An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.
+HED_0013243	3	Trial-abort	Task-event-role		An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.
 HED_0013099	3	Warning	Task-event-role		Something that should warn the participant that the parameters of the task have been or are about to be exceeded such as a warning message about getting too close to the shoulder of the road in a driving task.
 HED_0013100	2	Task-relationship	Task-property		Specifying organizational importance of sub-tasks.
 HED_0013101	3	Background-subtask	Task-relationship		A part of the task which should be performed in the background as for example inhibiting blinks due to instruction while performing the primary task.
@@ -1154,13 +1154,13 @@ HED_0013107	3	Extraneous	Task-stimulus-role		Irrelevant or unrelated to the subj
 HED_0013109	3	Go-signal	Task-stimulus-role	relatedTag=No-go-signal, relatedTag=Stop-signal	A stimulus indicating that a task response is required.
 HED_0013110	3	Meaningful	Task-stimulus-role		Conveying significant or relevant information.
 HED_0013111	3	Newly-learned	Task-stimulus-role		Representing recently acquired information or understanding.
-	3	No-go-signal	Task-stimulus-role	relatedTag=Go-signal, relatedTag=Stop-signal	A stimulus indicating that the subject should withhold or suppress the task response.
+HED_0013244	3	No-go-signal	Task-stimulus-role	relatedTag=Go-signal, relatedTag=Stop-signal	A stimulus indicating that the subject should withhold or suppress the task response.
 HED_0013112	3	Non-informative	Task-stimulus-role		Something that is not useful in forming an opinion or judging an outcome.
 HED_0013113	3	Non-target	Task-stimulus-role	relatedTag=Target	Something other than that done or looked for. Also tag Expected if the Non-target is frequent.
 HED_0013114	3	Not-meaningful	Task-stimulus-role		Not having a serious, important, or useful quality or purpose.
 HED_0013115	3	Novel	Task-stimulus-role		Having no previous example or precedent or parallel.
 HED_0013116	3	Oddball	Task-stimulus-role	relatedTag=Unexpected, suggestedTag=Target	Something unusual, or infrequent.
-	3	Omitted-presentation	Task-stimulus-role		Something that is expected to happen or usually happens but doesn't.
+HED_0013245	3	Omitted-presentation	Task-stimulus-role		Something that is expected to happen or usually happens but doesn't.
 HED_0013117	3	Penalty	Task-stimulus-role		A disadvantage, loss, or hardship due to some action.
 HED_0013118	3	Planned	Task-stimulus-role	relatedTag=Unplanned	Something that was decided on or arranged in advance.
 HED_0013119	3	Priming	Task-stimulus-role		An implicit memory effect in which exposure to a stimulus influences response to a later stimulus.
@@ -1172,8 +1172,8 @@ HED_0013124	3	Threat	Task-stimulus-role		An indicator that signifies hostility a
 HED_0013125	3	Timed	Task-stimulus-role		Something planned or scheduled to be done at a particular time or lasting for a specified amount of time.
 HED_0013126	3	Unexpected	Task-stimulus-role	relatedTag=Expected	Something that is not anticipated.
 HED_0013127	3	Unplanned	Task-stimulus-role	relatedTag=Planned	Something that has not been planned as part of the task.
-	2	Task-trial-role	Task-property		The type of a trial with respect to the task in a trial-based experiment.
-	3	Catch-trial	Task-trial-role		A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.
+HED_0013246	2	Task-trial-role	Task-property		The type of a trial with respect to the task in a trial-based experiment.
+HED_0013247	3	Catch-trial	Task-trial-role		A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.
 HED_0013128	0	Relation	HedTag	extensionAllowed	Concerns the way in which two or more people or things are connected.
 HED_0013129	1	Comparative-relation	Relation		Something considered in comparison to something else. The first entity is the focus.
 HED_0013130	2	Approximately-equal-to	Comparative-relation		(A, (Approximately-equal-to, B)) indicates that A and B have almost the same value. Here A and B could refer to sizes, orders, positions or other quantities.
