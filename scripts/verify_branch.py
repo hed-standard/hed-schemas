@@ -107,7 +107,7 @@ def validate_schema_file(filepath: str, validate_all: bool = False) -> tuple[boo
     except FileNotFoundError:
         return (
             False,
-            "hed_validate_schemas command not found. Install hed-python tools.",
+            "hed_validate_schemas command not found. Install hedtools: pip install -e . from the repository root.",
         )
     except Exception as e:
         return False, f"Error validating '{filepath}': {e}"

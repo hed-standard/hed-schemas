@@ -20,7 +20,7 @@ testlib is deliberately excluded: its versions are mutable "released" schemas us
 and must never appear in ``schemas_latest_json/``. Any ``*_Latest.json`` found for an excluded
 library is reported so it can be removed.
 
-Generating a library's JSON needs hedtools (``pip install git+https://github.com/hed-standard/hed-python.git@main``).
+Generating a library's JSON needs hedtools (``pip install -e .`` from the repository root installs it).
 The output depends on the hedtools version, so after hedtools changes its JSON writer ``--check`` can
 report a library out of date; ``--update`` then rewrites the copy.
 
@@ -224,8 +224,7 @@ def check_and_update(
             continue
         except ImportError:
             problems.append(
-                f"{label}: generating {target.name} needs hedtools "
-                "(pip install git+https://github.com/hed-standard/hed-python.git@main)."
+                f"{label}: generating {target.name} needs hedtools (pip install -e . from the repository root)."
             )
             continue
         except Exception as e:  # noqa: BLE001 - a conversion failure is reported, not raised
