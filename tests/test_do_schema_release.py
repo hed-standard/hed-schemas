@@ -14,7 +14,10 @@ Run from the repository root::
 
 from __future__ import annotations
 
+import contextlib
 import datetime
+import io
+import tempfile
 import types
 import unittest
 from pathlib import Path
@@ -50,6 +53,7 @@ class TestKind(unittest.TestCase):
             kind.changelog_heading("8.6.0", datetime.date(2026, 3, 5)), "## Changes for HED 8.6.0 Release 3/5/2026"
         )
         self.assertEqual(kind.commit_message("8.6.0"), "Release HED standard schema 8.6.0")
+        self.assertEqual(kind.changelog_title(), "# CHANGELOG for HED standard schema")
 
     def test_library_names(self):
         kind = dr.Kind("score")
@@ -64,6 +68,7 @@ class TestKind(unittest.TestCase):
             "## Changes for HED score 2.2.0 Release 10/16/2026",
         )
         self.assertEqual(kind.commit_message("2.2.0"), "Release HED score library 2.2.0")
+        self.assertEqual(kind.changelog_title(), "# CHANGELOG for HED score library schema")
 
     def test_commit_messages_fit_subject_limit(self):
         # Commit subjects stay under 50 characters (.rules/git.md in the HED repositories).
@@ -97,6 +102,22 @@ class TestCheckIdsOnly(unittest.TestCase):
             "* Tag-c <nowiki>{suggestedTag=Tag-a, hedId=HED_0040001} [Has an id.]</nowiki>\n"
         )
         self.assertEqual(dr.check_ids_only("x.mediawiki", self.BEFORE, after, self.RANGE), 2)
+
+    def test_accepts_id_only_wrapper_on_bare_element(self):
+        # An element with no attributes and no description gains a whole <nowiki> wrapper.
+        before = (
+            "'''Tag-a''' <nowiki>[First tag.]</nowiki>\n* Medication-modulator\n** Child <nowiki>[A child.]</nowiki>\n"
+        )
+        after = before.replace(
+            "* Medication-modulator\n", "* Medication-modulator <nowiki>{hedId=HED_0042013}</nowiki>\n"
+        )
+        self.assertEqual(dr.check_ids_only("x.mediawiki", before, after, self.RANGE), 1)
+
+    def test_rejects_wrapper_hiding_other_text(self):
+        before = "* Medication-modulator\n"
+        after = "* Medication-modulator <nowiki>{hedId=HED_0042013} [Added text.]</nowiki>\n"
+        with self.assertRaises(dr.ReleaseError):
+            dr.check_ids_only("x.mediawiki", before, after, self.RANGE)
 
     def test_no_change_is_zero_ids(self):
         self.assertEqual(dr.check_ids_only("x.mediawiki", self.BEFORE, self.BEFORE, self.RANGE), 0)
@@ -152,6 +173,22 @@ class TestChangelog(unittest.TestCase):
     def test_extract_handles_crlf_and_last_entry(self):
         text = "# CHANGELOG\r\n\r\n" + self.ENTRY.replace("\n", "\r\n")
         self.assertEqual(dr.extract_changelog_entry(text, dr.Kind("score"), "2.2.0"), self.ENTRY.strip() + "\n")
+
+    def test_first_release_creates_changelog(self):
+        # A library awaiting its first release (no earlier version, no CHANGELOG.md yet).
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            pre = repo / "library_schemas" / "slam" / "prerelease"
+            pre.mkdir(parents=True)
+            (pre / "PRERELEASE_CHANGES.md").write_text(
+                "## Differences between HED_slam_0.0.0 and HED_slam_1.0.0\n\n**Tags:**\n\n- Item (Minor): added\n",
+                encoding="utf-8",
+            )
+            with contextlib.redirect_stdout(io.StringIO()):
+                dr.update_changelog(repo, dr.Kind("slam"), None, "1.0.0", datetime.date(2026, 10, 16))
+            text = (repo / "library_schemas" / "slam" / "CHANGELOG.md").read_text(encoding="utf-8")
+        self.assertTrue(text.startswith("# CHANGELOG for HED slam library schema\n\n## Changes for HED slam 1.0.0"))
+        self.assertIn("- Item (Minor): added", text)
 
     def test_extract_requires_the_entry(self):
         with self.assertRaises(dr.ReleaseError):

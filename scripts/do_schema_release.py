@@ -68,6 +68,13 @@ class Kind:
         label = "HED" if self.is_standard else f"HED {self.name}"
         return f"## Changes for {label} {version} Release {date.month}/{date.day}/{date.year}"
 
+    def changelog_title(self) -> str:
+        return (
+            "# CHANGELOG for HED standard schema"
+            if self.is_standard
+            else f"# CHANGELOG for HED {self.name} library schema"
+        )
+
     def changelog_heading_prefix(self, version: str) -> str:
         label = "HED" if self.is_standard else f"HED {self.name}"
         return f"## Changes for {label} {version} Release "
@@ -285,7 +292,9 @@ def check_ids_only(rel: str, before: str, after: str, id_range: list[int]) -> in
     ids = []
     for old, new in zip(removed, added, strict=True):
         ids += [int(n) for n in re.findall(r"hedId=HED_(\d+)", new)]
-        stripped = re.sub(r"\{hedId=HED_\d+\} ", "", new)
+        # An element with neither attributes nor a description gains a whole <nowiki> wrapper.
+        stripped = re.sub(r" <nowiki>\{hedId=HED_\d+\}</nowiki>$", "", new)
+        stripped = re.sub(r"\{hedId=HED_\d+\} ", "", stripped)
         stripped = re.sub(r", *hedId=HED_\d+", "", stripped)
         stripped = re.sub(r"hedId=HED_\d+, *", "", stripped)
         require(stripped == old, f"{rel}: a line changed by more than a hedId:\n     - {old}\n     + {new}")
@@ -350,6 +359,9 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
     entry = kind.changelog_heading(version, today) + "\n\n" + body + "\n\n"
 
     path = repo / kind.folder / "CHANGELOG.md"
+    if not path.is_file():
+        write(path, kind.changelog_title() + "\n\n")
+        ok(f"created {kind.folder}/CHANGELOG.md (first release)")
     write(path, insert_changelog_entry(read(path), kind, version, entry))
     ok(
         f"inserted '{kind.changelog_heading(version, today)}' into {kind.folder}/CHANGELOG.md ({len(body.splitlines())} lines)"
@@ -359,6 +371,13 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
 def move_formats(repo: Path, kind: Kind, version: str) -> None:
     stem = kind.stem(version)
     pre = f"{kind.folder}/prerelease"
+    # A first release has no release folders yet. git mv refuses to move a file into a missing
+    # folder, and moving the TSV folder to a missing hedtsv/ would rename it to hedtsv itself.
+    for folder in ("hedwiki", "hedxml", "hedjson", "hedtsv"):
+        target = repo / kind.folder / folder
+        if not target.is_dir():
+            target.mkdir(parents=True)
+            ok(f"created {kind.folder}/{folder}/ (first release)")
     git(repo, "mv", f"{pre}/{stem}.mediawiki", f"{kind.folder}/hedwiki/")
     git(repo, "mv", f"{pre}/{stem}.xml", f"{kind.folder}/hedxml/")
     git(repo, "mv", f"{pre}/{stem}.json", f"{kind.folder}/hedjson/")
