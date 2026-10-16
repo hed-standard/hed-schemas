@@ -44,6 +44,7 @@ Working with HED schemas
 
    HED schemas overview <schemas_overview>
    Schema developer guide <developer_guide>
+   Schema release guide <release_guide>
    API reference <api>
 
 * :ref:`genindex`

@@ -1,8 +1,8 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "library": "score",
-  "withStandard": "8.4.0",
-  "prologue": "This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.\nThe HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .\nThe resulting annotations are understandable to clinicians and directly usable in computer analysis.\n\nFuture extensions may be implemented in the HED-SCORE library schema.\nFor more information see https://hed-schema-library.readthedocs.io/en/latest/index.html.",
+  "withStandard": "8.5.0",
+  "prologue": "This schema is a Hierarchical Event Descriptors (HED) Library Schema implementation of Standardized Computer-based Organized Reporting of EEG (SCORE)(1-2) for describing events occurring during neuroimaging time series recordings.\nThe HED-SCORE library schema allows the annotation of electrophysiology recordings using terms from an internationally accepted set of defined terms (SCORE) compatible with the HED framework .\nThe resulting annotations are understandable to clinicians and directly usable in computer analysis.\n\nFuture extensions may be implemented in the HED-SCORE library schema.\nFor more information see https://www.hedtags.org/hed-schemas.",
   "tags": {
     "Modulator": {
       "short_form": "Modulator",
@@ -668,7 +668,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S2",
-          "dc:source suggested tags from Beniczky ea 2017 Table 4."
+          "dc:source Beniczky ea 2017 Table 4 (suggested tags)"
         ]
       },
       "explicitAttributes": {
@@ -681,7 +681,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S2",
-          "dc:source suggested tags from Beniczky ea 2017 Table 4."
+          "dc:source Beniczky ea 2017 Table 4 (suggested tags)"
         ]
       }
     },
@@ -1021,7 +1021,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       },
       "explicitAttributes": {
@@ -1036,7 +1036,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       }
     },
@@ -1059,7 +1059,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       },
       "explicitAttributes": {
@@ -1075,7 +1075,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       }
     },
@@ -1103,7 +1103,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       },
       "explicitAttributes": {
@@ -1124,7 +1124,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Hirsch ea 2013",
-          "dc:source Suggested tags from Beniczky ea 2017 Table 8."
+          "dc:source Beniczky ea 2017 Table 8 (suggested tags)"
         ]
       }
     },
@@ -1175,7 +1175,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2017 Table 9 Supplement 1",
-          "dc:source Selection-tree and list of seizure-types according to the current ILAE seizure classification Fisher ea 2017."
+          "dc:source Fisher ea 2017 (selection-tree and list of seizure-types according to the current ILAE seizure classification)"
         ]
       },
       "explicitAttributes": {
@@ -1189,7 +1189,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2017 Table 9 Supplement 1",
-          "dc:source Selection-tree and list of seizure-types according to the current ILAE seizure classification Fisher ea 2017."
+          "dc:source Fisher ea 2017 (selection-tree and list of seizure-types according to the current ILAE seizure classification)"
         ]
       }
     },
@@ -1227,9 +1227,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I."
         ]
       },
       "explicitAttributes": {
@@ -1251,9 +1251,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I."
         ]
       }
     },
@@ -1286,9 +1286,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I."
         ]
       },
       "explicitAttributes": {
@@ -1296,9 +1296,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I."
         ]
       }
     },
@@ -1332,7 +1332,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.B."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.B."
         ]
       },
       "explicitAttributes": {
@@ -1341,7 +1341,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.B."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.B."
         ]
       }
     },
@@ -1375,7 +1375,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.C."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.C."
         ]
       },
       "explicitAttributes": {
@@ -1384,7 +1384,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.C."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.C."
         ]
       }
     },
@@ -1418,7 +1418,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.D.01."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.D.01."
         ]
       },
       "explicitAttributes": {
@@ -1427,7 +1427,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code I.D.01."
+          "dc:source Fisher ea 2017 ILAE seizure classification code I.D.01."
         ]
       }
     },
@@ -1460,9 +1460,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code II."
+          "dc:source Fisher ea 2017 ILAE seizure classification code II."
         ]
       },
       "explicitAttributes": {
@@ -1484,9 +1484,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2 and Key Points",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code II."
+          "dc:source Fisher ea 2017 ILAE seizure classification code II."
         ]
       }
     },
@@ -1512,9 +1512,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 page 532",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code III."
+          "dc:source Fisher ea 2017 ILAE seizure classification code III."
         ]
       },
       "explicitAttributes": {
@@ -1527,9 +1527,9 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 page 532",
-          "dc:source Suggested tags from Fisher ea 2017 Figure 2",
+          "dc:source Fisher ea 2017 Figure 2 (suggested tags)",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code III."
+          "dc:source Fisher ea 2017 ILAE seizure classification code III."
         ]
       }
     },
@@ -1554,7 +1554,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code III.C.01."
+          "dc:source Fisher ea 2017 ILAE seizure classification code III.C.01."
         ]
       },
       "explicitAttributes": {
@@ -1563,7 +1563,7 @@
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
           "dc:source Beniczky ea 2017 Supplement 1",
-          "dc:source ILAE seizure classification code III.C.01."
+          "dc:source Fisher ea 2017 ILAE seizure classification code III.C.01."
         ]
       }
     },
@@ -2497,7 +2497,7 @@
         "hedId": "HED_0042108",
         "inLibrary": "score",
         "annotation": [
-          "dc:sourceBeniczky ea 2017 Table 5",
+          "dc:source Beniczky ea 2017 Table 5",
           "dc:source Beniczky ea 2013 Appendix S4"
         ]
       },
@@ -2505,7 +2505,7 @@
         "hedId": "HED_0042108",
         "inLibrary": "score",
         "annotation": [
-          "dc:sourceBeniczky ea 2017 Table 5",
+          "dc:source Beniczky ea 2017 Table 5",
           "dc:source Beniczky ea 2013 Appendix S4"
         ]
       },
@@ -5264,7 +5264,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -5275,14 +5275,14 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
     "Negative-myoclonic-seizure": {
       "short_form": "Negative-myoclonic-seizure",
       "long_form": "Feature-property/Episode-property/Seizure-classification/Negative-myoclonic-seizure",
-      "description": "annotation=dc:source Beniczky ea 2017 Supplement 1, annotation=dc:source Duration tag from Beniczky ea Table 13",
+      "description": null,
       "parent": "Seizure-classification",
       "children": [],
       "attributes": {
@@ -5290,14 +5290,22 @@
           "Duration"
         ],
         "hedId": "HED_0042254",
-        "inLibrary": "score"
+        "inLibrary": "score",
+        "annotation": [
+          "dc:source Beniczky ea 2017 Supplement 1",
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
+        ]
       },
       "explicitAttributes": {
         "suggestedTag": [
           "Duration"
         ],
         "hedId": "HED_0042254",
-        "inLibrary": "score"
+        "inLibrary": "score",
+        "annotation": [
+          "dc:source Beniczky ea 2017 Supplement 1",
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
+        ]
       }
     },
     "Motor-seizure": {
@@ -5324,7 +5332,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -5335,7 +5343,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
@@ -5539,7 +5547,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -5550,7 +5558,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
@@ -5673,7 +5681,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -5684,7 +5692,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Fisher ea 2017 Table 2",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
@@ -5793,7 +5801,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2017 Section 10",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -5805,7 +5813,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2017 Section 10",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
@@ -7809,7 +7817,7 @@
         "annotation": [
           "dc:source Blume ea 2001",
           "dc:source Beniczky ea 2017 Table 11",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       },
       "explicitAttributes": {
@@ -7822,7 +7830,7 @@
         "annotation": [
           "dc:source Blume ea 2001",
           "dc:source Beniczky ea 2017 Table 11",
-          "dc:source Duration tag from Beniczky ea Table 13"
+          "dc:source Beniczky ea 2017 Table 13 (duration tag)"
         ]
       }
     },
@@ -8828,7 +8836,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S4",
-          "dc:source Morphologies from Beniczky ea 2017 Table 5. annotation"
+          "dc:source Beniczky ea 2017 Table 5 (morphologies)"
         ]
       },
       "explicitAttributes": {
@@ -8856,7 +8864,7 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S4",
-          "dc:source Morphologies from Beniczky ea 2017 Table 5. annotation"
+          "dc:source Beniczky ea 2017 Table 5 (morphologies)"
         ]
       }
     },
@@ -8883,8 +8891,8 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S4",
-          "dc:source Morphologies from Beniczky ea 2017 Table 5",
-          "dc:source Suggested tags from Beniczky ea 2017 Section 8"
+          "dc:source Beniczky ea 2017 Table 5 (morphologies)",
+          "dc:source Beniczky ea 2017 Section 8 (suggested tags)"
         ]
       },
       "explicitAttributes": {
@@ -8904,8 +8912,8 @@
         "inLibrary": "score",
         "annotation": [
           "dc:source Beniczky ea 2013 Appendix S4",
-          "dc:source Morphologies from Beniczky ea 2017 Table 5",
-          "dc:source Suggested tags from Beniczky ea 2017 Section 8"
+          "dc:source Beniczky ea 2017 Table 5 (morphologies)",
+          "dc:source Beniczky ea 2017 Section 8 (suggested tags)"
         ]
       }
     },
@@ -10554,12 +10562,12 @@
         ],
         "hedId": "HED_0042477",
         "inLibrary": "score",
-        "annotation": "dc:source Benizcky ea 2013 Appendix S3"
+        "annotation": "dc:source Beniczky ea 2013 Appendix S3"
       },
       "explicitAttributes": {
         "hedId": "HED_0042477",
         "inLibrary": "score",
-        "annotation": "dc:source Benizcky ea 2013 Appendix S3"
+        "annotation": "dc:source Beniczky ea 2013 Appendix S3"
       }
     },
     "Abnormal-sleep-architecture": {
@@ -10574,12 +10582,12 @@
         ],
         "hedId": "HED_0042478",
         "inLibrary": "score",
-        "annotation": "dc:source Benizcky ea 2013 Appendix S3"
+        "annotation": "dc:source Beniczky ea 2013 Appendix S3"
       },
       "explicitAttributes": {
         "hedId": "HED_0042478",
         "inLibrary": "score",
-        "annotation": "dc:source Benizcky ea 2013 Appendix S3"
+        "annotation": "dc:source Beniczky ea 2013 Appendix S3"
       }
     },
     "Sleep-stage-reached": {
@@ -11465,21 +11473,13 @@
         "suggestedTag": [
           "Task-property"
         ],
-        "hedId": "HED_0012001",
-        "annotation": [
-          "ncit:C25499",
-          "rdfs:comment Should have this tag in every event process."
-        ]
+        "hedId": "HED_0012001"
       },
       "explicitAttributes": {
         "suggestedTag": [
           "Task-property"
         ],
-        "hedId": "HED_0012001",
-        "annotation": [
-          "ncit:C25499",
-          "rdfs:comment Should have this tag in every event process."
-        ]
+        "hedId": "HED_0012001"
       }
     },
     "Sensory-event": {
@@ -13733,6 +13733,7 @@
       "children": [
         "Close",
         "Collide-with",
+        "Consume",
         "Halt",
         "Modify",
         "Open",
@@ -13740,6 +13741,7 @@
         "Play",
         "Read",
         "Repeat",
+        "Report",
         "Rest",
         "Ride",
         "Write"
@@ -13778,6 +13780,20 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0012138"
+      }
+    },
+    "Consume": {
+      "short_form": "Consume",
+      "long_form": "Action/Perform/Consume",
+      "description": "Take a substance into the body by eating or drinking.",
+      "parent": "Perform",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013234"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013234"
       }
     },
     "Halt": {
@@ -13876,6 +13892,20 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0012145"
+      }
+    },
+    "Report": {
+      "short_form": "Report",
+      "long_form": "Action/Perform/Report",
+      "description": "Exhibit a specific behavioral response to indicate detection of a signal or the making of a decision. For example, a mouse places its snout into a specific illuminated port to report a choice.",
+      "parent": "Perform",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013235"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013235"
       }
     },
     "Rest": {
@@ -20426,11 +20456,9 @@
       "children": [
         "Artificial-ventilation-artifact",
         "Dialysis-artifact",
+        "Electrical-artifact",
         "Electrode-movement-artifact",
-        "Electrode-pops-artifact",
-        "Induction-artifact",
-        "Line-noise-artifact",
-        "Salt-bridge-artifact"
+        "Localized-channel-artifact"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -20468,39 +20496,28 @@
         "hedId": "HED_0012514"
       }
     },
-    "Electrode-movement-artifact": {
-      "short_form": "Electrode-movement-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-movement-artifact",
-      "description": "Artifact from electrode movement.",
+    "Electrical-artifact": {
+      "short_form": "Electrical-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact",
+      "description": "Signal Contamination due to extraneous or unwanted electrical signals.",
       "parent": "Nonbiological-artifact",
-      "children": [],
+      "children": [
+        "Induction-artifact",
+        "Line-noise-artifact"
+      ],
       "attributes": {
         "extensionAllowed": true,
-        "hedId": "HED_0012515"
+        "hedId": "HED_0013236"
       },
       "explicitAttributes": {
-        "hedId": "HED_0012515"
-      }
-    },
-    "Electrode-pops-artifact": {
-      "short_form": "Electrode-pops-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-pops-artifact",
-      "description": "Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.",
-      "parent": "Nonbiological-artifact",
-      "children": [],
-      "attributes": {
-        "extensionAllowed": true,
-        "hedId": "HED_0012516"
-      },
-      "explicitAttributes": {
-        "hedId": "HED_0012516"
+        "hedId": "HED_0013236"
       }
     },
     "Induction-artifact": {
       "short_form": "Induction-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Induction-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Induction-artifact",
       "description": "Artifacts induced by nearby equipment. In EEG, these are usually of high frequency.",
-      "parent": "Nonbiological-artifact",
+      "parent": "Electrical-artifact",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
@@ -20512,9 +20529,9 @@
     },
     "Line-noise-artifact": {
       "short_form": "Line-noise-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Line-noise-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrical-artifact/Line-noise-artifact",
       "description": "Power line noise at 50 Hz or 60 Hz.",
-      "parent": "Nonbiological-artifact",
+      "parent": "Electrical-artifact",
       "children": [],
       "attributes": {
         "hedId": "HED_0012518"
@@ -20533,14 +20550,71 @@
         "hedId": "HED_0012519"
       }
     },
-    "Salt-bridge-artifact": {
-      "short_form": "Salt-bridge-artifact",
-      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Salt-bridge-artifact",
-      "description": "Artifact from salt-bridge between EEG electrodes.",
+    "Electrode-movement-artifact": {
+      "short_form": "Electrode-movement-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Electrode-movement-artifact",
+      "description": "Artifact from electrode movement.",
       "parent": "Nonbiological-artifact",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0012515"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0012515"
+      }
+    },
+    "Localized-channel-artifact": {
+      "short_form": "Localized-channel-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact",
+      "description": "Transient artifact usually involving a single channel or a small subset of channels.",
+      "parent": "Nonbiological-artifact",
+      "children": [
+        "Electrode-pops-artifact",
+        "Salt-bridge-artifact"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ],
+        "hedId": "HED_0013237"
+      },
+      "explicitAttributes": {
+        "suggestedTag": [
+          "ID"
+        ],
+        "hedId": "HED_0013237"
+      }
+    },
+    "Electrode-pops-artifact": {
+      "short_form": "Electrode-pops-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Electrode-pops-artifact",
+      "description": "Brief artifact with a steep rise and slow fall of an electrophysiological signal, most often caused by a loose electrode.",
+      "parent": "Localized-channel-artifact",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ],
+        "hedId": "HED_0012516"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0012516"
+      }
+    },
+    "Salt-bridge-artifact": {
+      "short_form": "Salt-bridge-artifact",
+      "long_form": "Property/Data-property/Data-artifact/Nonbiological-artifact/Localized-channel-artifact/Salt-bridge-artifact",
+      "description": "Artifact from salt-bridge between EEG electrodes.",
+      "parent": "Localized-channel-artifact",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "suggestedTag": [
+          "ID"
+        ],
         "hedId": "HED_0012520"
       },
       "explicitAttributes": {
@@ -22584,6 +22658,7 @@
         "Item-index",
         "Item-interval",
         "Percentage",
+        "Quantity",
         "Ratio"
       ],
       "attributes": {
@@ -22692,6 +22767,29 @@
           "numericClass"
         ],
         "hedId": "HED_0012640"
+      }
+    },
+    "Quantity": {
+      "short_form": "Quantity",
+      "long_form": "Property/Data-property/Data-value/Quantitative-value/Quantity",
+      "description": "A numeric value with a unit from any unit class of the schema. Use it for an amount whose kind is conveyed by its unit or by an accompanying tag, for example (Parameter-label/ISI, Quantity/500 ms).",
+      "parent": "Quantitative-value",
+      "children": [],
+      "attributes": {
+        "hedId": "HED_0013238"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013238"
+      },
+      "placeholder": {
+        "takesValue": true,
+        "unitClass": [
+          "anyUnits"
+        ],
+        "valueClass": [
+          "numericClass"
+        ],
+        "hedId": "HED_0013239"
       }
     },
     "Ratio": {
@@ -24335,7 +24433,7 @@
     "ID": {
       "short_form": "ID",
       "long_form": "Property/Informational-property/ID",
-      "description": "An alphanumeric name that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).",
+      "description": "A text string that identifies either a unique object or a unique class of objects. Here the object or class may be an idea, physical countable object (or class), or physical uncountable substance (or class).",
       "parent": "Informational-property",
       "children": [],
       "attributes": {
@@ -28574,7 +28672,8 @@
         "Task-effect-evidence",
         "Task-event-role",
         "Task-relationship",
-        "Task-stimulus-role"
+        "Task-stimulus-role",
+        "Task-trial-role"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -28594,6 +28693,7 @@
         "Appropriate-action",
         "Correct-action",
         "Correction",
+        "Cued",
         "Done-indication",
         "Imagined-action",
         "Inappropriate-action",
@@ -28602,7 +28702,8 @@
         "Miss",
         "Near-miss",
         "Omitted-action",
-        "Ready-indication"
+        "Ready-indication",
+        "Uncued"
       ],
       "attributes": {
         "extensionAllowed": true,
@@ -28637,7 +28738,9 @@
       "long_form": "Property/Task-property/Task-action-type/Correct-action",
       "description": "An action that was a correct response in the context of the task.",
       "parent": "Task-action-type",
-      "children": [],
+      "children": [
+        "Correct-rejection"
+      ],
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
@@ -28654,6 +28757,24 @@
         "hedId": "HED_0013065"
       }
     },
+    "Correct-rejection": {
+      "short_form": "Correct-rejection",
+      "long_form": "Property/Task-property/Task-action-type/Correct-action/Correct-rejection",
+      "description": "An action correctly designating rejection in the context of the task.",
+      "parent": "Correct-action",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Incorrect-action",
+          "Indeterminate-action"
+        ],
+        "hedId": "HED_0013240"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013240"
+      }
+    },
     "Correction": {
       "short_form": "Correction",
       "long_form": "Property/Task-property/Task-action-type/Correction",
@@ -28666,6 +28787,26 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0013066"
+      }
+    },
+    "Cued": {
+      "short_form": "Cued",
+      "long_form": "Property/Task-property/Task-action-type/Cued",
+      "description": "An action performed in response to an explicit external signal indicating that the action should occur or when it should occur.",
+      "parent": "Task-action-type",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Uncued"
+        ],
+        "hedId": "HED_0013241"
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Uncued"
+        ],
+        "hedId": "HED_0013241"
       }
     },
     "Done-indication": {
@@ -28842,6 +28983,26 @@
           "Done-indication"
         ],
         "hedId": "HED_0013075"
+      }
+    },
+    "Uncued": {
+      "short_form": "Uncued",
+      "long_form": "Property/Task-property/Task-action-type/Uncued",
+      "description": "An action initiated by the agent without an explicit external signal indicating that the action should occur or when it should occur.",
+      "parent": "Task-action-type",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Cued"
+        ],
+        "hedId": "HED_0013242"
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Cued"
+        ],
+        "hedId": "HED_0013242"
       }
     },
     "Task-attentional-demand": {
@@ -29134,6 +29295,7 @@
         "Mishap",
         "Participant-response",
         "Task-activity",
+        "Trial-abort",
         "Warning"
       ],
       "attributes": {
@@ -29256,6 +29418,20 @@
         "hedId": "HED_0013098"
       }
     },
+    "Trial-abort": {
+      "short_form": "Trial-abort",
+      "long_form": "Property/Task-property/Task-event-role/Trial-abort",
+      "description": "An event that causes the trial to terminate because of a time-out, because the subject response violated the requirements of the task, or because something unexpected interrupted the trial.",
+      "parent": "Task-event-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013243"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013243"
+      }
+    },
     "Warning": {
       "short_form": "Warning",
       "long_form": "Property/Task-property/Task-event-role/Warning",
@@ -29327,11 +29503,13 @@
         "Go-signal",
         "Meaningful",
         "Newly-learned",
+        "No-go-signal",
         "Non-informative",
         "Non-target",
         "Not-meaningful",
         "Novel",
         "Oddball",
+        "Omitted-presentation",
         "Penalty",
         "Planned",
         "Priming",
@@ -29409,18 +29587,20 @@
     "Go-signal": {
       "short_form": "Go-signal",
       "long_form": "Property/Task-property/Task-stimulus-role/Go-signal",
-      "description": "An indicator to proceed with a planned action.",
+      "description": "A stimulus indicating that a task response is required.",
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
+          "No-go-signal",
           "Stop-signal"
         ],
         "hedId": "HED_0013109"
       },
       "explicitAttributes": {
         "relatedTag": [
+          "No-go-signal",
           "Stop-signal"
         ],
         "hedId": "HED_0013109"
@@ -29452,6 +29632,28 @@
       },
       "explicitAttributes": {
         "hedId": "HED_0013111"
+      }
+    },
+    "No-go-signal": {
+      "short_form": "No-go-signal",
+      "long_form": "Property/Task-property/Task-stimulus-role/No-go-signal",
+      "description": "A stimulus indicating that the subject should withhold or suppress the task response.",
+      "parent": "Task-stimulus-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "relatedTag": [
+          "Go-signal",
+          "Stop-signal"
+        ],
+        "hedId": "HED_0013244"
+      },
+      "explicitAttributes": {
+        "relatedTag": [
+          "Go-signal",
+          "Stop-signal"
+        ],
+        "hedId": "HED_0013244"
       }
     },
     "Non-informative": {
@@ -29542,6 +29744,20 @@
         "hedId": "HED_0013116"
       }
     },
+    "Omitted-presentation": {
+      "short_form": "Omitted-presentation",
+      "long_form": "Property/Task-property/Task-stimulus-role/Omitted-presentation",
+      "description": "Something that is expected to happen or usually happens but doesn't.",
+      "parent": "Task-stimulus-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013245"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013245"
+      }
+    },
     "Penalty": {
       "short_form": "Penalty",
       "long_form": "Property/Task-property/Task-stimulus-role/Penalty",
@@ -29621,19 +29837,21 @@
     "Stop-signal": {
       "short_form": "Stop-signal",
       "long_form": "Property/Task-property/Task-stimulus-role/Stop-signal",
-      "description": "An indicator that the agent should stop the current activity.",
+      "description": "An indicator that the agent should stop the current activity regardless of the activity's purpose.",
       "parent": "Task-stimulus-role",
       "children": [],
       "attributes": {
         "extensionAllowed": true,
         "relatedTag": [
-          "Go-signal"
+          "Go-signal",
+          "No-go-signal"
         ],
         "hedId": "HED_0013122"
       },
       "explicitAttributes": {
         "relatedTag": [
-          "Go-signal"
+          "Go-signal",
+          "No-go-signal"
         ],
         "hedId": "HED_0013122"
       }
@@ -29718,6 +29936,36 @@
           "Planned"
         ],
         "hedId": "HED_0013127"
+      }
+    },
+    "Task-trial-role": {
+      "short_form": "Task-trial-role",
+      "long_form": "Property/Task-property/Task-trial-role",
+      "description": "The type of a trial with respect to the task in a trial-based experiment.",
+      "parent": "Task-property",
+      "children": [
+        "Catch-trial"
+      ],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013246"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013246"
+      }
+    },
+    "Catch-trial": {
+      "short_form": "Catch-trial",
+      "long_form": "Property/Task-property/Task-trial-role/Catch-trial",
+      "description": "A control trial randomly interleaved within a trial-based experiment in which the target stimulus, predictive cue, or environmental perturbation is withheld, altered, or presented at a highly obvious baseline level. Its primary purpose is to empirically measure a subject’s false alarm (false positive) rate, allowing researchers to isolate true sensory/cognitive sensitivity from individual response bias, guessing, or lapses in attention.",
+      "parent": "Task-trial-role",
+      "children": [],
+      "attributes": {
+        "extensionAllowed": true,
+        "hedId": "HED_0013247"
+      },
+      "explicitAttributes": {
+        "hedId": "HED_0013247"
       }
     },
     "Relation": {
@@ -30991,13 +31239,40 @@
       "allowedCharacter": "caret",
       "hedId": "HED_0011604"
     },
+    "coulomb": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011646"
+    },
+    "C": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011647"
+    },
+    "molar": {
+      "description": "One mole per liter.",
+      "SIUnit": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011648"
+    },
+    "mol-per-L": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011649"
+    },
     "dollar": {
       "description": null,
       "conversionFactor": "1.0",
       "hedId": "HED_0011605"
     },
     "$": {
-      "description": null,
+      "description": "Prefix units are no longer supported. Use dollar.",
+      "deprecatedFrom": "8.4.0",
       "unitPrefix": true,
       "unitSymbol": true,
       "conversionFactor": "1.0",
@@ -31012,23 +31287,63 @@
       "description": "An arbitrary unit of value, usually an integer indicating reward or penalty.",
       "hedId": "HED_0011608"
     },
+    "ampere": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1000",
+      "hedId": "HED_0011650"
+    },
+    "A": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1000",
+      "hedId": "HED_0011651"
+    },
     "V": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "0.000001",
+      "conversionFactor": "1000000",
       "hedId": "HED_0011609"
-    },
-    "uV": {
-      "description": "Added as a direct unit because it is the default unit.",
-      "conversionFactor": "1.0",
-      "hedId": "HED_0011644"
     },
     "volt": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "0.000001",
+      "conversionFactor": "1000000",
       "hedId": "HED_0011610"
+    },
+    "joule": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011652"
+    },
+    "J": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011653"
+    },
+    "calorie": {
+      "description": "Thermochemical calorie. Use the kilo modifier for dietary kilocalories.",
+      "SIUnit": true,
+      "conversionFactor": "4.184",
+      "hedId": "HED_0011654"
+    },
+    "newton": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011655"
+    },
+    "N": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011656"
     },
     "hertz": {
       "description": null,
@@ -31062,6 +31377,7 @@
     },
     "m-per-s^3": {
       "description": null,
+      "SIUnit": true,
       "unitSymbol": true,
       "conversionFactor": "1.0",
       "allowedCharacter": "caret",
@@ -31070,14 +31386,14 @@
     "tesla": {
       "description": null,
       "SIUnit": true,
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1.0",
       "hedId": "HED_0011617"
     },
     "T": {
       "description": null,
       "SIUnit": true,
       "unitSymbol": true,
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1.0",
       "hedId": "HED_0011618"
     },
     "byte": {
@@ -31126,6 +31442,51 @@
       "description": null,
       "conversionFactor": "1609.34",
       "hedId": "HED_0011626"
+    },
+    "watt": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1000",
+      "hedId": "HED_0011657"
+    },
+    "W": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1000",
+      "hedId": "HED_0011658"
+    },
+    "pascal": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011659"
+    },
+    "Pa": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "1.0",
+      "hedId": "HED_0011660"
+    },
+    "mmHg": {
+      "description": "Millimeters of mercury, the conventional unit for blood pressure and intracranial pressure.",
+      "unitSymbol": true,
+      "conversionFactor": "133.322",
+      "hedId": "HED_0011661"
+    },
+    "ohm": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011662"
+    },
+    "Ohm": {
+      "description": "ASCII spelling of the ohm symbol.",
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011663"
     },
     "m-per-s": {
       "description": null,
@@ -31184,6 +31545,11 @@
       "conversionFactor": "86400",
       "hedId": "HED_0011635"
     },
+    "week": {
+      "description": null,
+      "conversionFactor": "604800",
+      "hedId": "HED_0011664"
+    },
     "month": {
       "description": null,
       "hedId": "HED_0011645"
@@ -31209,6 +31575,25 @@
       "conversionFactor": "1.0",
       "allowedCharacter": "caret",
       "hedId": "HED_0011639"
+    },
+    "liter": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011665"
+    },
+    "litre": {
+      "description": null,
+      "SIUnit": true,
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011666"
+    },
+    "L": {
+      "description": null,
+      "SIUnit": true,
+      "unitSymbol": true,
+      "conversionFactor": "0.001",
+      "hedId": "HED_0011667"
     },
     "g": {
       "description": null,
@@ -31236,7 +31621,7 @@
   },
   "unit_classes": {
     "accelerationUnits": {
-      "description": null,
+      "description": "Units of acceleration, for example the acceleration of a limb or head measured by an accelerometer.",
       "hedId": "HED_0011500",
       "units": [
         "m-per-s^2"
@@ -31244,7 +31629,7 @@
       "default_units": "m-per-s^2"
     },
     "angleUnits": {
-      "description": null,
+      "description": "Units of plane angle, for example visual angle or joint rotation.",
       "hedId": "HED_0011501",
       "units": [
         "radian",
@@ -31253,13 +31638,36 @@
       ],
       "default_units": "radian"
     },
+    "anyUnits": {
+      "description": "Pseudo unit class with no units of its own. A placeholder with unitClass=anyUnits accepts a unit from any unit class of the schema; the value converts to the default unit of the class that unit belongs to.",
+      "hedId": "HED_0011516",
+      "units": []
+    },
     "areaUnits": {
-      "description": null,
+      "description": "Units of area, for example the size of a stimulus region or a surface on a display.",
       "hedId": "HED_0011502",
       "units": [
         "m^2"
       ],
       "default_units": "m^2"
+    },
+    "chargeUnits": {
+      "description": "Units of electric charge, for example the charge per phase delivered by electrical stimulation.",
+      "hedId": "HED_0011517",
+      "units": [
+        "coulomb",
+        "C"
+      ],
+      "default_units": "C"
+    },
+    "concentrationUnits": {
+      "description": "Units of molar concentration (amount of substance per unit volume).",
+      "hedId": "HED_0011518",
+      "units": [
+        "molar",
+        "mol-per-L"
+      ],
+      "default_units": "mol-per-L"
     },
     "currencyUnits": {
       "description": "Units indicating the worth of something.",
@@ -31270,20 +31678,47 @@
         "euro",
         "point"
       ],
-      "default_units": "$"
+      "default_units": "dollar"
+    },
+    "currentUnits": {
+      "description": "Units of electric current, for example the current delivered by electrical stimulation.",
+      "hedId": "HED_0011519",
+      "units": [
+        "ampere",
+        "A"
+      ],
+      "default_units": "mA"
     },
     "electricPotentialUnits": {
-      "description": null,
+      "description": "Units of electric potential, for example EEG and other electrophysiological signal amplitudes.",
       "hedId": "HED_0011504",
       "units": [
         "V",
-        "uV",
         "volt"
       ],
       "default_units": "uV"
     },
+    "energyUnits": {
+      "description": "Units of energy, for example the energy of a stimulation pulse or metabolic energy.",
+      "hedId": "HED_0011520",
+      "units": [
+        "joule",
+        "J",
+        "calorie"
+      ],
+      "default_units": "J"
+    },
+    "forceUnits": {
+      "description": "Units of force, for example grip force or the reading of a force plate.",
+      "hedId": "HED_0011521",
+      "units": [
+        "newton",
+        "N"
+      ],
+      "default_units": "N"
+    },
     "frequencyUnits": {
-      "description": null,
+      "description": "Units of frequency, for example sampling rates, flicker rates, and tone frequencies.",
       "hedId": "HED_0011505",
       "units": [
         "hertz",
@@ -31292,7 +31727,7 @@
       "default_units": "Hz"
     },
     "intensityUnits": {
-      "description": null,
+      "description": "Units of intensity expressed as a ratio to a reference level, for example sound pressure level in dB, together with candela for luminous intensity.",
       "hedId": "HED_0011506",
       "units": [
         "dB",
@@ -31302,7 +31737,7 @@
       "default_units": "dB"
     },
     "jerkUnits": {
-      "description": null,
+      "description": "Units of jerk, the rate of change of acceleration, for example in measures of movement smoothness.",
       "hedId": "HED_0011507",
       "units": [
         "m-per-s^3"
@@ -31310,7 +31745,7 @@
       "default_units": "m-per-s^3"
     },
     "magneticFieldUnits": {
-      "description": null,
+      "description": "Units of magnetic flux density, for example MEG signal amplitudes and MRI field strength.",
       "hedId": "HED_0011508",
       "units": [
         "tesla",
@@ -31319,7 +31754,7 @@
       "default_units": "T"
     },
     "memorySizeUnits": {
-      "description": null,
+      "description": "Units of digital storage size, for example the size of a data file. Byte is treated as an SI unit for prefix purposes although it is not part of the SI.",
       "hedId": "HED_0011509",
       "units": [
         "byte",
@@ -31328,7 +31763,7 @@
       "default_units": "B"
     },
     "physicalLengthUnits": {
-      "description": null,
+      "description": "Units of length, for example distances, positions, and sizes of objects or stimuli.",
       "hedId": "HED_0011510",
       "units": [
         "foot",
@@ -31340,8 +31775,36 @@
       ],
       "default_units": "m"
     },
+    "powerUnits": {
+      "description": "Units of power, for example the output of an optogenetic light source or ultrasound transducer.",
+      "hedId": "HED_0011522",
+      "units": [
+        "watt",
+        "W"
+      ],
+      "default_units": "mW"
+    },
+    "pressureUnits": {
+      "description": "Units of pressure, for example blood pressure or the pressure of a tactile or pneumatic stimulus.",
+      "hedId": "HED_0011523",
+      "units": [
+        "pascal",
+        "Pa",
+        "mmHg"
+      ],
+      "default_units": "Pa"
+    },
+    "resistanceUnits": {
+      "description": "Units of electrical resistance or impedance, for example electrode impedance.",
+      "hedId": "HED_0011524",
+      "units": [
+        "ohm",
+        "Ohm"
+      ],
+      "default_units": "kOhm"
+    },
     "speedUnits": {
-      "description": null,
+      "description": "Units of speed, for example the speed of a moving stimulus or of a participant.",
       "hedId": "HED_0011511",
       "units": [
         "m-per-s",
@@ -31351,7 +31814,7 @@
       "default_units": "m-per-s"
     },
     "temperatureUnits": {
-      "description": null,
+      "description": "Units of temperature, for example ambient or skin temperature.",
       "hedId": "HED_0011512",
       "units": [
         "degree-Celsius",
@@ -31361,12 +31824,13 @@
       "default_units": "degree-Celsius"
     },
     "timeUnits": {
-      "description": null,
+      "description": "Units of time, for example durations, delays, and intervals between events.",
       "hedId": "HED_0011513",
       "units": [
         "second",
         "s",
         "day",
+        "week",
         "month",
         "minute",
         "hour",
@@ -31375,15 +31839,18 @@
       "default_units": "s"
     },
     "volumeUnits": {
-      "description": null,
+      "description": "Units of volume, for example the amount of liquid reward delivered or the volume of an infusion.",
       "hedId": "HED_0011514",
       "units": [
-        "m^3"
+        "m^3",
+        "liter",
+        "litre",
+        "L"
       ],
       "default_units": "m^3"
     },
     "weightUnits": {
-      "description": null,
+      "description": "Units of mass, for example body weight or the mass of a delivered substance.",
       "hedId": "HED_0011515",
       "units": [
         "g",
@@ -31396,265 +31863,269 @@
   },
   "unit_modifiers": {
     "deca": {
-      "description": "SI unit multiple representing 10e1.",
+      "description": "SI unit multiple representing 10^1.",
       "hedId": "HED_0011400",
       "conversionFactor": "10.0",
       "SIUnitModifier": true
     },
     "da": {
-      "description": "SI unit multiple representing 10e1.",
+      "description": "SI unit multiple representing 10^1.",
       "hedId": "HED_0011401",
       "conversionFactor": "10.0",
       "SIUnitSymbolModifier": true
     },
     "hecto": {
-      "description": "SI unit multiple representing 10e2.",
+      "description": "SI unit multiple representing 10^2.",
       "hedId": "HED_0011402",
       "conversionFactor": "100.0",
       "SIUnitModifier": true
     },
     "h": {
-      "description": "SI unit multiple representing 10e2.",
+      "description": "SI unit multiple representing 10^2.",
       "hedId": "HED_0011403",
       "conversionFactor": "100.0",
       "SIUnitSymbolModifier": true
     },
     "kilo": {
-      "description": "SI unit multiple representing 10e3.",
+      "description": "SI unit multiple representing 10^3.",
       "hedId": "HED_0011404",
       "conversionFactor": "1000.0",
       "SIUnitModifier": true
     },
     "k": {
-      "description": "SI unit multiple representing 10e3.",
+      "description": "SI unit multiple representing 10^3.",
       "hedId": "HED_0011405",
       "conversionFactor": "1000.0",
       "SIUnitSymbolModifier": true
     },
     "mega": {
-      "description": "SI unit multiple representing 10e6.",
+      "description": "SI unit multiple representing 10^6.",
       "hedId": "HED_0011406",
-      "conversionFactor": "10e6",
+      "conversionFactor": "1e6",
       "SIUnitModifier": true
     },
     "M": {
-      "description": "SI unit multiple representing 10e6.",
+      "description": "SI unit multiple representing 10^6.",
       "hedId": "HED_0011407",
-      "conversionFactor": "10e6",
+      "conversionFactor": "1e6",
       "SIUnitSymbolModifier": true
     },
     "giga": {
-      "description": "SI unit multiple representing 10e9.",
+      "description": "SI unit multiple representing 10^9.",
       "hedId": "HED_0011408",
-      "conversionFactor": "10e9",
+      "conversionFactor": "1e9",
       "SIUnitModifier": true
     },
     "G": {
-      "description": "SI unit multiple representing 10e9.",
+      "description": "SI unit multiple representing 10^9.",
       "hedId": "HED_0011409",
-      "conversionFactor": "10e9",
+      "conversionFactor": "1e9",
       "SIUnitSymbolModifier": true
     },
     "tera": {
-      "description": "SI unit multiple representing 10e12.",
+      "description": "SI unit multiple representing 10^12.",
       "hedId": "HED_0011410",
-      "conversionFactor": "10e12",
+      "conversionFactor": "1e12",
       "SIUnitModifier": true
     },
     "T": {
-      "description": "SI unit multiple representing 10e12.",
+      "description": "SI unit multiple representing 10^12.",
       "hedId": "HED_0011411",
-      "conversionFactor": "10e12",
+      "conversionFactor": "1e12",
       "SIUnitSymbolModifier": true
     },
     "peta": {
-      "description": "SI unit multiple representing 10e15.",
+      "description": "SI unit multiple representing 10^15.",
       "hedId": "HED_0011412",
-      "conversionFactor": "10e15",
+      "conversionFactor": "1e15",
       "SIUnitModifier": true
     },
     "P": {
-      "description": "SI unit multiple representing 10e15.",
+      "description": "SI unit multiple representing 10^15.",
       "hedId": "HED_0011413",
-      "conversionFactor": "10e15",
+      "conversionFactor": "1e15",
       "SIUnitSymbolModifier": true
     },
     "exa": {
-      "description": "SI unit multiple representing 10e18.",
+      "description": "SI unit multiple representing 10^18.",
       "hedId": "HED_0011414",
-      "conversionFactor": "10e18",
+      "conversionFactor": "1e18",
       "SIUnitModifier": true
     },
     "E": {
-      "description": "SI unit multiple representing 10e18.",
+      "description": "SI unit multiple representing 10^18.",
       "hedId": "HED_0011415",
-      "conversionFactor": "10e18",
+      "conversionFactor": "1e18",
       "SIUnitSymbolModifier": true
     },
     "zetta": {
-      "description": "SI unit multiple representing 10e21.",
+      "description": "SI unit multiple representing 10^21.",
       "hedId": "HED_0011416",
-      "conversionFactor": "10e21",
+      "conversionFactor": "1e21",
       "SIUnitModifier": true
     },
     "Z": {
-      "description": "SI unit multiple representing 10e21.",
+      "description": "SI unit multiple representing 10^21.",
       "hedId": "HED_0011417",
-      "conversionFactor": "10e21",
+      "conversionFactor": "1e21",
       "SIUnitSymbolModifier": true
     },
     "yotta": {
-      "description": "SI unit multiple representing 10e24.",
+      "description": "SI unit multiple representing 10^24.",
       "hedId": "HED_0011418",
-      "conversionFactor": "10e24",
+      "conversionFactor": "1e24",
       "SIUnitModifier": true
     },
     "Y": {
-      "description": "SI unit multiple representing 10e24.",
+      "description": "SI unit multiple representing 10^24.",
       "hedId": "HED_0011419",
-      "conversionFactor": "10e24",
+      "conversionFactor": "1e24",
       "SIUnitSymbolModifier": true
     },
     "deci": {
-      "description": "SI unit submultiple representing 10e-1.",
+      "description": "SI unit submultiple representing 10^-1.",
       "hedId": "HED_0011420",
       "conversionFactor": "0.1",
       "SIUnitModifier": true
     },
     "d": {
-      "description": "SI unit submultiple representing 10e-1.",
+      "description": "SI unit submultiple representing 10^-1.",
       "hedId": "HED_0011421",
       "conversionFactor": "0.1",
       "SIUnitSymbolModifier": true
     },
     "centi": {
-      "description": "SI unit submultiple representing 10e-2.",
+      "description": "SI unit submultiple representing 10^-2.",
       "hedId": "HED_0011422",
       "conversionFactor": "0.01",
       "SIUnitModifier": true
     },
     "c": {
-      "description": "SI unit submultiple representing 10e-2.",
+      "description": "SI unit submultiple representing 10^-2.",
       "hedId": "HED_0011423",
       "conversionFactor": "0.01",
       "SIUnitSymbolModifier": true
     },
     "milli": {
-      "description": "SI unit submultiple representing 10e-3.",
+      "description": "SI unit submultiple representing 10^-3.",
       "hedId": "HED_0011424",
       "conversionFactor": "0.001",
       "SIUnitModifier": true
     },
     "m": {
-      "description": "SI unit submultiple representing 10e-3.",
+      "description": "SI unit submultiple representing 10^-3.",
       "hedId": "HED_0011425",
       "conversionFactor": "0.001",
       "SIUnitSymbolModifier": true
     },
     "micro": {
-      "description": "SI unit submultiple representing 10e-6.",
+      "description": "SI unit submultiple representing 10^-6.",
       "hedId": "HED_0011426",
-      "conversionFactor": "10e-6",
+      "conversionFactor": "1e-6",
       "SIUnitModifier": true
     },
     "u": {
-      "description": "SI unit submultiple representing 10e-6.",
+      "description": "SI unit submultiple representing 10^-6.",
       "hedId": "HED_0011427",
-      "conversionFactor": "10e-6",
+      "conversionFactor": "1e-6",
       "SIUnitSymbolModifier": true
     },
     "nano": {
-      "description": "SI unit submultiple representing 10e-9.",
+      "description": "SI unit submultiple representing 10^-9.",
       "hedId": "HED_0011428",
-      "conversionFactor": "10e-9",
+      "conversionFactor": "1e-9",
       "SIUnitModifier": true
     },
     "n": {
-      "description": "SI unit submultiple representing 10e-9.",
+      "description": "SI unit submultiple representing 10^-9.",
       "hedId": "HED_0011429",
-      "conversionFactor": "10e-9",
+      "conversionFactor": "1e-9",
       "SIUnitSymbolModifier": true
     },
     "pico": {
-      "description": "SI unit submultiple representing 10e-12.",
+      "description": "SI unit submultiple representing 10^-12.",
       "hedId": "HED_0011430",
-      "conversionFactor": "10e-12",
+      "conversionFactor": "1e-12",
       "SIUnitModifier": true
     },
     "p": {
-      "description": "SI unit submultiple representing 10e-12.",
+      "description": "SI unit submultiple representing 10^-12.",
       "hedId": "HED_0011431",
-      "conversionFactor": "10e-12",
+      "conversionFactor": "1e-12",
       "SIUnitSymbolModifier": true
     },
     "femto": {
-      "description": "SI unit submultiple representing 10e-15.",
+      "description": "SI unit submultiple representing 10^-15.",
       "hedId": "HED_0011432",
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1e-15",
       "SIUnitModifier": true
     },
     "f": {
-      "description": "SI unit submultiple representing 10e-15.",
+      "description": "SI unit submultiple representing 10^-15.",
       "hedId": "HED_0011433",
-      "conversionFactor": "10e-15",
+      "conversionFactor": "1e-15",
       "SIUnitSymbolModifier": true
     },
     "atto": {
-      "description": "SI unit submultiple representing 10e-18.",
+      "description": "SI unit submultiple representing 10^-18.",
       "hedId": "HED_0011434",
-      "conversionFactor": "10e-18",
+      "conversionFactor": "1e-18",
       "SIUnitModifier": true
     },
     "a": {
-      "description": "SI unit submultiple representing 10e-18.",
+      "description": "SI unit submultiple representing 10^-18.",
       "hedId": "HED_0011435",
-      "conversionFactor": "10e-18",
+      "conversionFactor": "1e-18",
       "SIUnitSymbolModifier": true
     },
     "zepto": {
-      "description": "SI unit submultiple representing 10e-21.",
+      "description": "SI unit submultiple representing 10^-21.",
       "hedId": "HED_0011436",
-      "conversionFactor": "10e-21",
+      "conversionFactor": "1e-21",
       "SIUnitModifier": true
     },
     "z": {
-      "description": "SI unit submultiple representing 10e-21.",
+      "description": "SI unit submultiple representing 10^-21.",
       "hedId": "HED_0011437",
-      "conversionFactor": "10e-21",
+      "conversionFactor": "1e-21",
       "SIUnitSymbolModifier": true
     },
     "yocto": {
-      "description": "SI unit submultiple representing 10e-24.",
+      "description": "SI unit submultiple representing 10^-24.",
       "hedId": "HED_0011438",
-      "conversionFactor": "10e-24",
+      "conversionFactor": "1e-24",
       "SIUnitModifier": true
     },
     "y": {
-      "description": "SI unit submultiple representing 10e-24.",
+      "description": "SI unit submultiple representing 10^-24.",
       "hedId": "HED_0011439",
-      "conversionFactor": "10e-24",
+      "conversionFactor": "1e-24",
       "SIUnitSymbolModifier": true
     }
   },
   "value_classes": {
     "dateTimeClass": {
-      "description": "Date-times should conform to ISO8601 date-time format YYYY-MM-DDThh:mm:ss.000000Z (year, month, day, hour (24h), minute, second, optional fractional seconds, and optional UTC time indicator. Any variation on the full form is allowed.",
+      "description": "Date-times conform to the BIDS Datetime format, RFC 3339 with an optional offset: YYYY-MM-DDThh:mm:ss (year, month, day, hour (24h), minute, second), an optional fraction of one to six digits, and an optional Z for UTC or a +hh:mm or -hh:mm offset.",
       "hedId": "HED_0011301",
       "allowed_characters": [
         "digits",
         "T",
         "hyphen",
-        "colon"
+        "colon",
+        "period",
+        "Z",
+        "plus"
       ]
     },
     "nameClass": {
-      "description": "Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, and underscore.",
+      "description": "Value class designating values that have the characteristics of node names. The allowed characters are alphanumeric, hyphen, underscore, and non-ASCII characters.",
       "hedId": "HED_0011302",
       "allowed_characters": [
         "letters",
         "digits",
         "underscore",
-        "hyphen"
+        "hyphen",
+        "nonascii"
       ]
     },
     "numericClass": {
@@ -31680,10 +32151,10 @@
       ]
     },
     "textClass": {
-      "description": "Values that have the characteristics of text such as in descriptions. The text characters include printable characters (32 <= ASCII< 127) excluding comma, square bracket and curly braces as well as non ASCII (ASCII codes > 127).",
+      "description": "Values that have the characteristics of text. The allowed characters are the printable characters (32 <= ASCII < 127) and non-ASCII characters, excluding comma, square brackets, curly braces, parentheses, number sign, and tilde, which are structural in HED strings.",
       "hedId": "HED_0011305",
       "allowed_characters": [
-        "text"
+        "value-text"
       ]
     }
   },
@@ -31835,8 +32306,9 @@
       "boolRange": true
     },
     "unitPrefix": {
-      "description": "This unit is a prefix unit (e.g., dollar sign in the currency units).",
+      "description": "This unit is a prefix unit (e.g., dollar sign in the currency units). Prefix units are no longer supported.",
       "hedId": "HED_0010317",
+      "deprecatedFrom": "8.4.0",
       "unitDomain": true,
       "boolRange": true
     },
@@ -31938,6 +32410,11 @@
       "inLibrary": "score"
     },
     {
+      "name": "Original",
+      "link": "https://www.hedtags.org",
+      "description": "The definition was written by the schema authors and has no external source."
+    },
+    {
       "name": "Trenite ea 2001",
       "link": "https://doi.org/10.1046/j.1528-1157.2001.30600.X",
       "description": "Visual sensitivity and epilepsy: a proposed terminology and classification for clinical and EEG phenomenology. Epilepsia 42(5) pp.692-701.",
@@ -31946,8 +32423,7 @@
     {
       "name": "Wikipedia",
       "link": "https://en.wikipedia.org",
-      "description": "General definitions of concepts.",
-      "inLibrary": "score"
+      "description": "General definitions of concepts."
     }
   ],
   "prefixes": [
@@ -32020,7 +32496,7 @@
     {
       "name": "xml:",
       "namespace": "http://www.w3.org/XML/1998/namespace",
-      "description": "XLM Namespace [XML]",
+      "description": "XML Namespace [XML]",
       "inLibrary": "score"
     },
     {
@@ -32134,6 +32610,27 @@
       "id": "has_dbxref",
       "iri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "description": "Property indicating that an ontology term has a cross-reference to a database.",
+      "inLibrary": "score"
+    },
+    {
+      "name": "rdfs:",
+      "id": "comment",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "description": "Standard way to provide a human-readable description.",
+      "inLibrary": "score"
+    },
+    {
+      "name": "skos:",
+      "id": "closeMatch",
+      "iri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "description": "The element denotes a concept close enough to the external term given as the value to be used interchangeably in most applications.",
+      "inLibrary": "score"
+    },
+    {
+      "name": "skos:",
+      "id": "exactMatch",
+      "iri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "description": "The element denotes the same concept as the external term given as the value.",
       "inLibrary": "score"
     },
     {
