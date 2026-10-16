@@ -28,6 +28,29 @@ python scripts/verify_branch.py file1.xml --branch standard_new_feature
 
 Used by the `verify_source_branch.yaml` workflow to ensure PRs follow repository conventions.
 
+## Release script
+
+### do_schema_release.py
+
+Releases a schema, the standard schema or a library, following the [Schema release guide](../docs/release_guide.md). Maintainers only. It has two subcommands:
+
+- **`prepare <standard|library> <version> --next <next>`** runs the release steps on an `admin_*` branch, before the pull request: preflight checks; for a library, regenerating the prerelease from its unmerged mediawiki against the released partner standard; validation; hedId assignment with `hed_add_ids` and a check that only hedIds were added; validation with `--require-ids` and the unit tests; regenerating `PRERELEASE_CHANGES.md` with the hedtools `SchemaComparer` and adding it to the schema's `CHANGELOG.md`; moving the four formats out of `prerelease/` (plus the `schemas_xml_unmerged/` copy for a library); starting the next prerelease with an empty change log; updating the Latest XML and the schema's rows in `docs/schemas_overview.md`; and regenerating and checking `schema_versions.json` and `schemas_latest_json/`. It ends with everything staged and prints the `git commit` command. It never commits.
+- **`notes <standard|library> <version>`** runs after the pull request has merged: it checks that hed-standard `main` holds the release and that the tag does not exist yet, writes the version's CHANGELOG entry to a file, and prints the tag, target and title to enter when creating the release by hand in the GitHub web interface.
+
+Every step prints what it does; the first failed command or check prints `FAILED:` with the reason and exits with status 1. The script never pushes, tags, or calls the GitHub API.
+
+**Usage:**
+
+```bash
+python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0
+python scripts/do_schema_release.py prepare standard 8.6.0 --next 8.7.0
+python scripts/do_schema_release.py notes score 2.2.0
+python scripts/do_schema_release.py notes score 2.2.0 --out notes.md     # choose the notes file
+python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0 --repo /path/to/clone   # another checkout
+```
+
+Run it with the Python environment that has hedtools installed (`pip install -e .`); it finds the `hed_*` commands next to that interpreter. It needs a git remote pointing at `hed-standard/hed-schemas` (any name) and, for `prepare`, a clean working tree on an `admin_*` branch that contains hed-standard `main`. The pure logic is covered by `tests/test_do_schema_release.py`.
+
 ## Manifest and latest-JSON scripts
 
 ### generate_schema_versions.py
