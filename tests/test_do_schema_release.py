@@ -76,6 +76,38 @@ class TestKind(unittest.TestCase):
         self.assertLess(len(dr.Kind("score").commit_message("10.10.10")), 50)
 
 
+class TestReleasePaths(unittest.TestCase):
+    def test_library_release_includes_tsv_and_unmerged_copy(self):
+        self.assertEqual(
+            dr.released_paths(dr.Kind("score"), "2.2.0"),
+            [
+                "library_schemas/score/hedwiki/HED_score_2.2.0.mediawiki",
+                "library_schemas/score/hedxml/HED_score_2.2.0.xml",
+                "library_schemas/score/hedjson/HED_score_2.2.0.json",
+                "library_schemas/score/hedtsv/HED_score_2.2.0",
+                "library_schemas/score/hedxml/HED_score_Latest.xml",
+                "schemas_xml_unmerged/HED_score_2.2.0.xml",
+            ],
+        )
+
+    def test_standard_release_has_no_unmerged_copy(self):
+        paths = dr.released_paths(dr.Kind("standard"), "8.5.0")
+        self.assertIn("standard_schema/hedtsv/HED8.5.0", paths)
+        self.assertIn("standard_schema/hedxml/HEDLatest.xml", paths)
+        self.assertFalse([p for p in paths if p.startswith("schemas_xml_unmerged/")])
+
+    def test_prerelease_paths_cover_all_four_formats(self):
+        self.assertEqual(
+            dr.prerelease_paths(dr.Kind("standard"), "8.5.0"),
+            [
+                "standard_schema/prerelease/HED8.5.0.mediawiki",
+                "standard_schema/prerelease/HED8.5.0.xml",
+                "standard_schema/prerelease/HED8.5.0.json",
+                "standard_schema/prerelease/hedtsv/HED8.5.0",
+            ],
+        )
+
+
 class TestVersionKey(unittest.TestCase):
     def test_orders_numerically(self):
         self.assertLess(dr.version_key("2.9.0"), dr.version_key("2.10.0"))

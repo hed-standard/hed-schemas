@@ -593,6 +593,29 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
 # ---------------------------------------------------------------------------------------------
 
 
+def released_paths(kind: Kind, version: str) -> list[str]:
+    """Every path a completed release puts on main: the four formats, the Latest XML, and for a
+    library the unmerged XML copy. ``hedtsv/<stem>`` is a folder."""
+    stem = kind.stem(version)
+    paths = [
+        f"{kind.folder}/hedwiki/{stem}.mediawiki",
+        f"{kind.folder}/hedxml/{stem}.xml",
+        f"{kind.folder}/hedjson/{stem}.json",
+        f"{kind.folder}/hedtsv/{stem}",
+        kind.latest_xml(),
+    ]
+    if not kind.is_standard:
+        paths.append(f"schemas_xml_unmerged/{stem}.xml")
+    return paths
+
+
+def prerelease_paths(kind: Kind, version: str) -> list[str]:
+    """The prerelease paths of ``version``, none of which may remain after its release."""
+    stem = kind.stem(version)
+    pre = f"{kind.folder}/prerelease"
+    return [f"{pre}/{stem}.mediawiki", f"{pre}/{stem}.xml", f"{pre}/{stem}.json", f"{pre}/hedtsv/{stem}"]
+
+
 def notes(repo: Path, kind: Kind, version: str, out: Path | None) -> None:
     stem = kind.stem(version)
     print(f"Release notes for {kind.name} {version} from hed-standard main")
@@ -600,21 +623,15 @@ def notes(repo: Path, kind: Kind, version: str, out: Path | None) -> None:
     remote = upstream_remote(repo)
     git(repo, "fetch", remote)
     ref = f"{remote}/main"
-    for rel in (
-        f"{kind.folder}/hedxml/{stem}.xml",
-        f"{kind.folder}/hedwiki/{stem}.mediawiki",
-        f"{kind.folder}/hedjson/{stem}.json",
-        kind.latest_xml(),
-    ):
+    released = released_paths(kind, version)
+    for rel in released:
         require(
             git_quiet(repo, "cat-file", "-e", f"{ref}:{rel}").returncode == 0, f"{ref} has no {rel}; is the PR merged?"
         )
-    ok(f"{ref} has the released {stem} files")
-    require(
-        git_quiet(repo, "cat-file", "-e", f"{ref}:{kind.folder}/prerelease/{stem}.mediawiki").returncode != 0,
-        f"{ref} still has prerelease/{stem}.mediawiki",
-    )
-    ok(f"{ref} no longer has the {stem} prerelease")
+    ok(f"{ref} has all {len(released)} released {stem} paths: " + ", ".join(released))
+    for rel in prerelease_paths(kind, version):
+        require(git_quiet(repo, "cat-file", "-e", f"{ref}:{rel}").returncode != 0, f"{ref} still has {rel}")
+    ok(f"{ref} no longer has any {stem} prerelease file")
     tags = git_quiet(repo, "ls-remote", "--tags", remote, kind.tag(version)).stdout.strip()
     require(not tags, f"tag {kind.tag(version)} already exists on {remote}")
     ok(f"tag {kind.tag(version)} does not exist yet")
