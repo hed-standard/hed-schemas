@@ -316,21 +316,49 @@ def comparison_report(repo: Path, kind: Kind, last: str | None, version: str) ->
     return SchemaComparer(old, new).compare_differences(title=title)
 
 
+# A CHANGELOG entry starts with a level-2 heading that names a release ("## Changes for HED lang 1.2.0
+# Release 10/17/2026", and older forms such as "## Release 1.1.0 - June 10, 2025"). Inside an entry,
+# level-2 sections such as "## Key overall changes:" or "## Changes to LANG" are allowed as long as
+# they do not contain the word "release".
+RELEASE_HEADING = re.compile(r"^## .*release", flags=re.IGNORECASE)
+PARTNER_SECTION = re.compile(r"^#{2,3} From the partner standard schema (\(.*\))[ \t]*$", flags=re.MULTILINE)
+
+
+def is_release_heading(line: str) -> bool:
+    return RELEASE_HEADING.match(line) is not None
+
+
+def format_changelog_entry(kind: Kind, version: str, date: datetime.date, body: str, first_release: bool) -> str:
+    """Return the CHANGELOG entry for a release from the comparison report ``body`` (without its title).
+
+    For a library that has an earlier release, the library's own changes go under ``## Changes to <LIB>``
+    and the comparer's partner section becomes ``## Changes to the partner standard schema (<a> -> <b>)``.
+    """
+    body = body.strip()
+    if not kind.is_standard and not first_release:
+        body = PARTNER_SECTION.sub(r"## Changes to the partner standard schema \1", body)
+        body = f"## Changes to {kind.name.upper()}\n\n{body}"
+    return kind.changelog_heading(version, date) + "\n\n" + body + "\n\n"
+
+
 def insert_changelog_entry(text: str, kind: Kind, version: str, entry: str) -> str:
-    """Return CHANGELOG ``text`` with ``entry`` placed before the first ``## `` heading (newest first)."""
+    """Return CHANGELOG ``text`` with ``entry`` placed before the first release heading (newest first)."""
     require(kind.changelog_heading_prefix(version) not in text, f"CHANGELOG.md already has an entry for {version}")
-    match = re.search(r"^## ", text, flags=re.MULTILINE)
-    position = match.start() if match else len(text)
+    lines = text.split("\n")
+    index = next((i for i, line in enumerate(lines) if is_release_heading(line)), None)
+    if index is None:
+        return text + entry
+    position = sum(len(line) + 1 for line in lines[:index])
     return text[:position] + entry + text[position:]
 
 
 def extract_changelog_entry(text: str, kind: Kind, version: str) -> str:
-    """Return the CHANGELOG entry for ``version``: its heading up to the next ``## `` heading."""
+    """Return the CHANGELOG entry for ``version``: its heading up to the next release heading."""
     lines = text.replace("\r\n", "\n").split("\n")
     prefix = kind.changelog_heading_prefix(version)
     starts = [i for i, line in enumerate(lines) if line.startswith(prefix)]
     require(len(starts) == 1, f"expected one CHANGELOG heading starting '{prefix}', found {len(starts)}")
-    end = next((i for i in range(starts[0] + 1, len(lines)) if lines[i].startswith("## ")), len(lines))
+    end = next((i for i in range(starts[0] + 1, len(lines)) if is_release_heading(lines[i])), len(lines))
     return "\n".join(lines[starts[0] : end]).strip() + "\n"
 
 
@@ -356,7 +384,7 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
     lines = committed.strip().split("\n")
     require(lines[0].startswith("## "), "PRERELEASE_CHANGES.md does not start with a ## heading")
     body = "\n".join(lines[1:]).strip()
-    entry = kind.changelog_heading(version, today) + "\n\n" + body + "\n\n"
+    entry = format_changelog_entry(kind, version, today, body, first_release=last is None)
 
     path = repo / kind.folder / "CHANGELOG.md"
     if not path.is_file():

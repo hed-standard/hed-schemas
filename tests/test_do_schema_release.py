@@ -222,6 +222,70 @@ class TestChangelog(unittest.TestCase):
         self.assertTrue(text.startswith("# CHANGELOG for HED slam library schema\n\n## Changes for HED slam 1.0.0"))
         self.assertIn("- Item (Minor): added", text)
 
+    def test_release_headings_in_the_repository(self):
+        # Every release heading form found in the CHANGELOGs, and the section headings used inside entries.
+        for heading in (
+            "## Changes for HED 8.5.0 Release 10/15/2026",
+            "## Changes for HED 8.3.0 Released 6/10/2024",
+            "## Changes for HED lang 1.2.0 Release 10/17/2026",
+            "## Release 1.1.0 - June 10, 2025",
+            "##  Initial release October 28, 2024",
+            "## Minor release score 2.1.0 June 9, 2025.",
+            "## Changes for score 1.2.0 released July 16, 2024.",
+        ):
+            self.assertTrue(dr.is_release_heading(heading), heading)
+        for heading in (
+            "## Key overall changes:",
+            "## Changes to LANG",
+            "## Changes to the partner standard schema (8.4.0 -> 8.5.0)",
+            "### Release notes",
+            "**Tags:**",
+        ):
+            self.assertFalse(dr.is_release_heading(heading), heading)
+
+    def test_library_entry_layout(self):
+        body = "**Tags:**\n\n- A (Minor): added\n\n### From the partner standard schema (8.4.0 -> 8.5.0)\n\n**Tags:**\n\n- B (Minor): added"
+        entry = dr.format_changelog_entry(
+            dr.Kind("lang"), "1.2.0", datetime.date(2026, 10, 17), body, first_release=False
+        )
+        self.assertEqual(
+            entry,
+            "## Changes for HED lang 1.2.0 Release 10/17/2026\n\n## Changes to LANG\n\n**Tags:**\n\n- A (Minor): added\n\n"
+            "## Changes to the partner standard schema (8.4.0 -> 8.5.0)\n\n**Tags:**\n\n- B (Minor): added\n\n",
+        )
+
+    def test_standard_and_first_release_entries_keep_the_body(self):
+        body = "**Tags:**\n\n- A (Minor): added"
+        standard = dr.format_changelog_entry(dr.Kind("standard"), "8.6.0", datetime.date(2027, 3, 5), body, False)
+        self.assertEqual(standard, "## Changes for HED 8.6.0 Release 3/5/2027\n\n" + body + "\n\n")
+        first = dr.format_changelog_entry(dr.Kind("slam"), "1.0.0", datetime.date(2026, 10, 17), "Initial.", True)
+        self.assertEqual(first, "## Changes for HED slam 1.0.0 Release 10/17/2026\n\nInitial.\n\n")
+
+    def test_entry_with_sections_is_extracted_whole(self):
+        text = (
+            "# CHANGELOG for HED lang library schema\n\n\n"
+            "## Changes for HED lang 1.2.0 Release 10/17/2026\n\n"
+            "## Key overall changes:\n\n- Summary.\n\n"
+            "## Changes to LANG\n\n**Tags:**\n\n- A (Minor): added\n\n"
+            "## Changes to the partner standard schema (8.4.0 -> 8.5.0)\n\n- B (Minor): added\n\n"
+            "## Release 1.1.0 - June 10, 2025\n\nOlder.\n"
+        )
+        entry = dr.extract_changelog_entry(text, dr.Kind("lang"), "1.2.0")
+        self.assertTrue(entry.startswith("## Changes for HED lang 1.2.0 Release"))
+        self.assertIn("- Summary.", entry)
+        self.assertTrue(entry.endswith("- B (Minor): added\n"))
+        self.assertNotIn("Older.", entry)
+
+    def test_insert_goes_before_the_latest_release_not_its_sections(self):
+        text = (
+            "# CHANGELOG\n\n## Changes for HED lang 1.2.0 Release 10/17/2026\n\n## Key overall changes:\n\n- Summary.\n"
+        )
+        result = dr.insert_changelog_entry(
+            text, dr.Kind("lang"), "1.3.0", "## Changes for HED lang 1.3.0 Release 1/2/2027\n\nNew.\n\n"
+        )
+        self.assertTrue(result.startswith("# CHANGELOG\n\n## Changes for HED lang 1.3.0 Release"))
+        self.assertLess(result.index("1.3.0 Release"), result.index("1.2.0 Release"))
+
     def test_extract_requires_the_entry(self):
         with self.assertRaises(dr.ReleaseError):
             dr.extract_changelog_entry(self.TEXT, dr.Kind("score"), "2.2.0")
