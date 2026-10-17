@@ -130,7 +130,7 @@ The HED SLAM library schema provides vocabulary for Sensor Location and Motion a
 
 | Version | Status     | Release date | Partnered with | XML                                                                                                                       | MEDIAWIKI                                                                                                                       | JSON                                                                                                                       |
 | ------- | ---------- | ------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | Prerelease |              | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.json) |
+| 1.0.0   | Prerelease |              | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.json) |
 
 ______________________________________________________________________
 
@@ -140,7 +140,7 @@ The HED MOUSE library schema provides vocabulary for mouse/rodent experiment ann
 
 | Version | Status     | Release date | Partnered with | XML                                                                                                                         | MEDIAWIKI                                                                                                                         | JSON                                                                                                                         |
 | ------- | ---------- | ------------ | -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | Prerelease |              | Standard 8.3.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.json) |
+| 1.0.0   | Prerelease |              | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.json) |
 
 ______________________________________________________________________
 
@@ -225,7 +225,7 @@ class: tip
 {
   "Name": "My Dataset",
   "BIDSVersion": "1.9.0",
-  "HEDVersion": "8.4.0"
+  "HEDVersion": "8.5.0"
 }
 ```
 ````
@@ -238,7 +238,7 @@ class: tip
 {
   "Name": "My Dataset",
   "BIDSVersion": "1.9.0",
-  "HEDVersion": ["score_2.1.0", "lang_1.1.0"]
+  "HEDVersion": ["score_2.2.0", "lang_1.2.0"]
 }
 ```
 ````
@@ -253,7 +253,7 @@ class: tip
 ---
 ```python
 from hed import load_schema_version
-schema = load_schema_version('8.4.0')
+schema = load_schema_version('8.5.0')
 ```
 ````
 
@@ -262,7 +262,7 @@ schema = load_schema_version('8.4.0')
 class: tip
 ---
 ```matlab
-hedTools = HedToolsPython('8.4.0');
+hedTools = HedToolsPython('8.5.0');
 ```
 ````
 
@@ -274,7 +274,7 @@ class: tip
 ---
 ```javascript
 import { buildSchema, SchemaSpec, SchemaSpecs } from '@hed-standard/hed-validator';
-const spec1 = new SchemaSpec('', '8.4.0', '', '')
+const spec1 = new SchemaSpec('', '8.5.0', '', '')
 const specs = new SchemaSpecs().addSchemaSpec(spec1)
 const hedSchemas = await buildSchemas(specs)
 ```
