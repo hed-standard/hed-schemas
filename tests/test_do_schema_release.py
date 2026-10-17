@@ -318,5 +318,50 @@ class TestOverviewRows(unittest.TestCase):
             dr.replace_overview_rows(lines, dr.Kind("score"), "2.2.0", "2.3.0", "October 16, 2026", "8.5.0")
 
 
+class TestReadmeRow(unittest.TestCase):
+    HEADER = "| Schema | Latest | Description | Prerelease | DOI |"
+    LINES = [
+        "## Viewing HED schemas",
+        "",
+        HEADER,
+        "| --- | --- | --- | --- | --- |",
+        "| [**standard**](./standard_schema) | 8.4.0 | Basic vocabulary.<br/> HED_0010000 - HED_0039999 | 8.5.0 | 10.5281/zenodo.7876037 |",
+        "| [**score**](library_schemas/score) | 2.1.0 | SCORE vocabulary | 2.2.0 | 10.5281/zenodo.7897596 |",
+        "| [**slam**](library_schemas/slam) |  | SLAM (Sensor Location and Motion). | 1.0.0 |  |",
+    ]
+
+    def test_standard_row(self):
+        lines = dr.replace_readme_row(self.LINES, dr.Kind("standard"), "8.5.0", "8.6.0")
+        self.assertEqual(
+            lines[4],
+            "| [**standard**](./standard_schema) | 8.5.0 | Basic vocabulary.<br/> HED_0010000 - HED_0039999 | 8.6.0 | 10.5281/zenodo.7876037 |",
+        )
+        self.assertEqual(lines[5:], self.LINES[5:])
+
+    def test_library_row(self):
+        lines = dr.replace_readme_row(self.LINES, dr.Kind("score"), "2.2.0", "2.3.0")
+        self.assertEqual(
+            lines[5],
+            "| [**score**](library_schemas/score) | 2.2.0 | SCORE vocabulary | 2.3.0 | 10.5281/zenodo.7897596 |",
+        )
+        self.assertEqual(lines[4], self.LINES[4])
+
+    def test_first_release_fills_empty_latest(self):
+        lines = dr.replace_readme_row(self.LINES, dr.Kind("slam"), "1.0.0", "1.1.0")
+        self.assertEqual(
+            lines[6], "| [**slam**](library_schemas/slam) | 1.0.0 | SLAM (Sensor Location and Motion). | 1.1.0 |  |"
+        )
+
+    def test_requires_the_row(self):
+        with self.assertRaises(dr.ReleaseError):
+            dr.replace_readme_row(self.LINES, dr.Kind("mouse"), "1.0.0", "1.1.0")
+
+    def test_requires_latest_and_prerelease_columns(self):
+        lines = list(self.LINES)
+        lines[2] = "| Schema | Current | Description | Next | DOI |"
+        with self.assertRaises(dr.ReleaseError):
+            dr.replace_readme_row(lines, dr.Kind("score"), "2.2.0", "2.3.0")
+
+
 if __name__ == "__main__":
     unittest.main()

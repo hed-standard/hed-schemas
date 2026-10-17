@@ -481,6 +481,43 @@ def replace_overview_rows(
     return lines
 
 
+def replace_readme_row(lines: list[str], kind: Kind, version: str, next_version: str) -> list[str]:
+    """Return README.md ``lines`` with the schema's Latest and Prerelease cells set.
+
+    The schema table has a header starting ``| Schema`` with ``Latest`` and ``Prerelease`` columns, and
+    one row per schema whose first cell starts with ``[**<name>**]``. The other cells are kept.
+    """
+    lines = list(lines)
+
+    def cells(line: str) -> list[str]:
+        return [c.strip() for c in line.strip().strip("|").split("|")]
+
+    marker = f"[**{kind.name}**]"
+    rows = [i for i, line in enumerate(lines) if line.startswith("|") and cells(line)[0].startswith(marker)]
+    require(len(rows) == 1, f"expected one row for '{kind.name}' in the README.md schema table, found {len(rows)}")
+    header_index = next((i for i in range(rows[0], -1, -1) if lines[i].startswith("| Schema")), None)
+    require(header_index is not None, "no '| Schema' header above the schema's row in README.md")
+    header = cells(lines[header_index])
+    require("Latest" in header and "Prerelease" in header, "README.md schema table has no Latest or Prerelease column")
+    row = cells(lines[rows[0]])
+    require(len(row) == len(header), f"README.md row for '{kind.name}' does not have {len(header)} cells")
+    row[header.index("Latest")] = version
+    row[header.index("Prerelease")] = next_version
+    lines[rows[0]] = "| " + " | ".join(row) + " |"
+    return lines
+
+
+def update_readme(repo: Path, kind: Kind, version: str, next_version: str) -> None:
+    path = repo / "README.md"
+    write(path, "\n".join(replace_readme_row(read(path).split("\n"), kind, version, next_version)))
+    ok(f"README.md: {kind.name} Latest {version}, Prerelease {next_version}")
+    run(
+        [sys.executable, "-m", "mdformat", "--wrap", "no", "--number", "README.md"],
+        repo,
+        "python -m mdformat --wrap no --number README.md",
+    )
+
+
 def update_overview(repo: Path, kind: Kind, version: str, next_version: str, today: datetime.date) -> None:
     path = repo / "docs" / "schemas_overview.md"
     pre = repo / kind.folder / "prerelease" / f"{kind.stem(next_version)}.mediawiki"
@@ -546,12 +583,13 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     step(6, f"Start the {next_version} prerelease")
     start_next_prerelease(repo, kind, version, next_version, tools)
 
-    step(7, "Update the Latest file and the overview table")
+    step(7, "Update the Latest file, the overview table and the README table")
     latest = repo / kind.latest_xml()
     shutil.copyfile(repo / kind.folder / "hedxml" / f"{stem}.xml", latest)
     require(latest.read_bytes() == (repo / kind.folder / "hedxml" / f"{stem}.xml").read_bytes(), "Latest copy differs")
     ok(f"{kind.latest_xml()} is a copy of {stem}.xml")
     update_overview(repo, kind, version, next_version, today)
+    update_readme(repo, kind, version, next_version)
 
     step(8, "Regenerate the generated files and check them")
     run([sys.executable, "scripts/generate_schema_versions.py"], repo, "python scripts/generate_schema_versions.py")
@@ -573,7 +611,7 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests"], repo, "python -m unittest discover -s tests")
 
     print("\n== Done: staging the release (nothing is committed)")
-    paths = [kind.folder, "docs/schemas_overview.md", "schema_versions.json", "schemas_latest_json"]
+    paths = [kind.folder, "docs/schemas_overview.md", "README.md", "schema_versions.json", "schemas_latest_json"]
     if not kind.is_standard:
         paths.append("schemas_xml_unmerged")
     git(repo, "add", "-A", "--", *paths)
