@@ -316,21 +316,49 @@ def comparison_report(repo: Path, kind: Kind, last: str | None, version: str) ->
     return SchemaComparer(old, new).compare_differences(title=title)
 
 
+# A CHANGELOG entry starts with a level-2 heading that names a release ("## Changes for HED lang 1.2.0
+# Release 10/17/2026", and older forms such as "## Release 1.1.0 - June 10, 2025"). Inside an entry,
+# level-2 sections such as "## Key overall changes:" or "## Changes to LANG" are allowed as long as
+# they do not contain the word "release".
+RELEASE_HEADING = re.compile(r"^## .*release", flags=re.IGNORECASE)
+PARTNER_SECTION = re.compile(r"^#{2,3} From the partner standard schema (\(.*\))[ \t]*$", flags=re.MULTILINE)
+
+
+def is_release_heading(line: str) -> bool:
+    return RELEASE_HEADING.match(line) is not None
+
+
+def format_changelog_entry(kind: Kind, version: str, date: datetime.date, body: str, first_release: bool) -> str:
+    """Return the CHANGELOG entry for a release from the comparison report ``body`` (without its title).
+
+    For a library that has an earlier release, the library's own changes go under ``## Changes to <LIB>``
+    and the comparer's partner section becomes ``## Changes to the partner standard schema (<a> -> <b>)``.
+    """
+    body = body.strip()
+    if not kind.is_standard and not first_release:
+        body = PARTNER_SECTION.sub(r"## Changes to the partner standard schema \1", body)
+        body = f"## Changes to {kind.name.upper()}\n\n{body}"
+    return kind.changelog_heading(version, date) + "\n\n" + body + "\n\n"
+
+
 def insert_changelog_entry(text: str, kind: Kind, version: str, entry: str) -> str:
-    """Return CHANGELOG ``text`` with ``entry`` placed before the first ``## `` heading (newest first)."""
+    """Return CHANGELOG ``text`` with ``entry`` placed before the first release heading (newest first)."""
     require(kind.changelog_heading_prefix(version) not in text, f"CHANGELOG.md already has an entry for {version}")
-    match = re.search(r"^## ", text, flags=re.MULTILINE)
-    position = match.start() if match else len(text)
+    lines = text.split("\n")
+    index = next((i for i, line in enumerate(lines) if is_release_heading(line)), None)
+    if index is None:
+        return text + entry
+    position = sum(len(line) + 1 for line in lines[:index])
     return text[:position] + entry + text[position:]
 
 
 def extract_changelog_entry(text: str, kind: Kind, version: str) -> str:
-    """Return the CHANGELOG entry for ``version``: its heading up to the next ``## `` heading."""
+    """Return the CHANGELOG entry for ``version``: its heading up to the next release heading."""
     lines = text.replace("\r\n", "\n").split("\n")
     prefix = kind.changelog_heading_prefix(version)
     starts = [i for i, line in enumerate(lines) if line.startswith(prefix)]
     require(len(starts) == 1, f"expected one CHANGELOG heading starting '{prefix}', found {len(starts)}")
-    end = next((i for i in range(starts[0] + 1, len(lines)) if lines[i].startswith("## ")), len(lines))
+    end = next((i for i in range(starts[0] + 1, len(lines)) if is_release_heading(lines[i])), len(lines))
     return "\n".join(lines[starts[0] : end]).strip() + "\n"
 
 
@@ -356,7 +384,7 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
     lines = committed.strip().split("\n")
     require(lines[0].startswith("## "), "PRERELEASE_CHANGES.md does not start with a ## heading")
     body = "\n".join(lines[1:]).strip()
-    entry = kind.changelog_heading(version, today) + "\n\n" + body + "\n\n"
+    entry = format_changelog_entry(kind, version, today, body, first_release=last is None)
 
     path = repo / kind.folder / "CHANGELOG.md"
     if not path.is_file():
@@ -481,6 +509,43 @@ def replace_overview_rows(
     return lines
 
 
+def replace_readme_row(lines: list[str], kind: Kind, version: str, next_version: str) -> list[str]:
+    """Return README.md ``lines`` with the schema's Latest and Prerelease cells set.
+
+    The schema table has a header starting ``| Schema`` with ``Latest`` and ``Prerelease`` columns, and
+    one row per schema whose first cell starts with ``[**<name>**]``. The other cells are kept.
+    """
+    lines = list(lines)
+
+    def cells(line: str) -> list[str]:
+        return [c.strip() for c in line.strip().strip("|").split("|")]
+
+    marker = f"[**{kind.name}**]"
+    rows = [i for i, line in enumerate(lines) if line.startswith("|") and cells(line)[0].startswith(marker)]
+    require(len(rows) == 1, f"expected one row for '{kind.name}' in the README.md schema table, found {len(rows)}")
+    header_index = next((i for i in range(rows[0], -1, -1) if lines[i].startswith("| Schema")), None)
+    require(header_index is not None, "no '| Schema' header above the schema's row in README.md")
+    header = cells(lines[header_index])
+    require("Latest" in header and "Prerelease" in header, "README.md schema table has no Latest or Prerelease column")
+    row = cells(lines[rows[0]])
+    require(len(row) == len(header), f"README.md row for '{kind.name}' does not have {len(header)} cells")
+    row[header.index("Latest")] = version
+    row[header.index("Prerelease")] = next_version
+    lines[rows[0]] = "| " + " | ".join(row) + " |"
+    return lines
+
+
+def update_readme(repo: Path, kind: Kind, version: str, next_version: str) -> None:
+    path = repo / "README.md"
+    write(path, "\n".join(replace_readme_row(read(path).split("\n"), kind, version, next_version)))
+    ok(f"README.md: {kind.name} Latest {version}, Prerelease {next_version}")
+    run(
+        [sys.executable, "-m", "mdformat", "--wrap", "no", "--number", "README.md"],
+        repo,
+        "python -m mdformat --wrap no --number README.md",
+    )
+
+
 def update_overview(repo: Path, kind: Kind, version: str, next_version: str, today: datetime.date) -> None:
     path = repo / "docs" / "schemas_overview.md"
     pre = repo / kind.folder / "prerelease" / f"{kind.stem(next_version)}.mediawiki"
@@ -546,12 +611,13 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     step(6, f"Start the {next_version} prerelease")
     start_next_prerelease(repo, kind, version, next_version, tools)
 
-    step(7, "Update the Latest file and the overview table")
+    step(7, "Update the Latest file, the overview table and the README table")
     latest = repo / kind.latest_xml()
     shutil.copyfile(repo / kind.folder / "hedxml" / f"{stem}.xml", latest)
     require(latest.read_bytes() == (repo / kind.folder / "hedxml" / f"{stem}.xml").read_bytes(), "Latest copy differs")
     ok(f"{kind.latest_xml()} is a copy of {stem}.xml")
     update_overview(repo, kind, version, next_version, today)
+    update_readme(repo, kind, version, next_version)
 
     step(8, "Regenerate the generated files and check them")
     run([sys.executable, "scripts/generate_schema_versions.py"], repo, "python scripts/generate_schema_versions.py")
@@ -573,7 +639,7 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests"], repo, "python -m unittest discover -s tests")
 
     print("\n== Done: staging the release (nothing is committed)")
-    paths = [kind.folder, "docs/schemas_overview.md", "schema_versions.json", "schemas_latest_json"]
+    paths = [kind.folder, "docs/schemas_overview.md", "README.md", "schema_versions.json", "schemas_latest_json"]
     if not kind.is_standard:
         paths.append("schemas_xml_unmerged")
     git(repo, "add", "-A", "--", *paths)
