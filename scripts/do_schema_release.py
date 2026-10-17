@@ -26,6 +26,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import textwrap
 from pathlib import Path
 
 RAW = "https://raw.githubusercontent.com/hed-standard/hed-schemas/main"
@@ -362,7 +363,9 @@ def extract_changelog_entry(text: str, kind: Kind, version: str) -> str:
     return "\n".join(lines[starts[0] : end]).strip() + "\n"
 
 
-def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, today: datetime.date) -> None:
+def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, today: datetime.date) -> dict:
+    """Add the release entry to the schema's CHANGELOG.md; return what was done for the commit message."""
+    done = {"report_regenerated": False, "created": []}
     changes = repo / kind.folder / "prerelease" / "PRERELEASE_CHANGES.md"
     committed = read(changes).replace("\r\n", "\n")
     if last:
@@ -376,6 +379,7 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
             ok("regenerated comparison equals the committed PRERELEASE_CHANGES.md")
         else:
             write(changes, report.strip() + "\n")
+            done["report_regenerated"] = True
             old_n, new_n = len(committed.strip().splitlines()), len(report.strip().splitlines())
             ok(f"PRERELEASE_CHANGES.md regenerated ({old_n} -> {new_n} lines); the CHANGELOG entry uses the new report")
         committed = report
@@ -390,15 +394,20 @@ def update_changelog(repo: Path, kind: Kind, last: str | None, version: str, tod
     if not path.is_file():
         write(path, kind.changelog_title() + "\n\n")
         ok(f"created {kind.folder}/CHANGELOG.md (first release)")
+        done["created"].append(f"{kind.folder}/CHANGELOG.md")
     write(path, insert_changelog_entry(read(path), kind, version, entry))
     ok(
         f"inserted '{kind.changelog_heading(version, today)}' into {kind.folder}/CHANGELOG.md ({len(body.splitlines())} lines)"
     )
+    done["report_lines"] = len(body.splitlines())
+    return done
 
 
-def move_formats(repo: Path, kind: Kind, version: str) -> None:
+def move_formats(repo: Path, kind: Kind, version: str) -> list[str]:
+    """Move the four formats to the release folders; return the folders a first release had to create."""
     stem = kind.stem(version)
     pre = f"{kind.folder}/prerelease"
+    created = []
     # A first release has no release folders yet. git mv refuses to move a file into a missing
     # folder, and moving the TSV folder to a missing hedtsv/ would rename it to hedtsv itself.
     for folder in ("hedwiki", "hedxml", "hedjson", "hedtsv"):
@@ -406,21 +415,29 @@ def move_formats(repo: Path, kind: Kind, version: str) -> None:
         if not target.is_dir():
             target.mkdir(parents=True)
             ok(f"created {kind.folder}/{folder}/ (first release)")
+            created.append(f"{kind.folder}/{folder}/")
     git(repo, "mv", f"{pre}/{stem}.mediawiki", f"{kind.folder}/hedwiki/")
     git(repo, "mv", f"{pre}/{stem}.xml", f"{kind.folder}/hedxml/")
     git(repo, "mv", f"{pre}/{stem}.json", f"{kind.folder}/hedjson/")
     git(repo, "mv", f"{pre}/hedtsv/{stem}", f"{kind.folder}/hedtsv/")
-    if not kind.is_standard:
-        target = repo / "schemas_xml_unmerged" / f"{stem}.xml"
+    released_xml = repo / kind.folder / "hedxml" / f"{stem}.xml"
+    target = repo / "schemas_xml_unmerged" / f"{stem}.xml"
+    if kind.is_standard:
+        # The standard schema has no merged form, so its unmerged copy is the released XML itself.
+        shutil.copyfile(released_xml, target)
+        require(target.read_bytes() == released_xml.read_bytes(), f"schemas_xml_unmerged/{stem}.xml differs")
+        ok(f"schemas_xml_unmerged/{stem}.xml is a copy of {kind.folder}/hedxml/{stem}.xml")
+    else:
         print(f"   writing the unmerged XML copy schemas_xml_unmerged/{stem}.xml")
         try:
             from hed.schema import load_schema
 
-            load_schema(str(repo / kind.folder / "hedxml" / f"{stem}.xml")).save_as_xml(str(target), save_merged=False)
+            load_schema(str(released_xml)).save_as_xml(str(target), save_merged=False)
         except Exception as e:  # noqa: BLE001
             raise ReleaseError(f"could not write the unmerged XML: {e}") from e
         require(target.is_file(), f"schemas_xml_unmerged/{stem}.xml was not written")
         ok(f"schemas_xml_unmerged/{stem}.xml written")
+    return created
 
 
 def start_next_prerelease(repo: Path, kind: Kind, version: str, next_version: str, tools: dict) -> None:
@@ -565,12 +582,50 @@ def update_overview(repo: Path, kind: Kind, version: str, next_version: str, tod
     )
 
 
+def release_commit_message(kind: Kind, version: str, next_version: str, run: dict, date: datetime.date) -> str:
+    """Return the commit message for a ``prepare`` run: the subject and a summary of what the run did.
+
+    ``run`` holds what the steps reported: ``partner``, ``regenerated`` (prerelease files changed by
+    step 1), ``ids`` (hedIds added in step 2), ``last`` (the previous release or None),
+    ``report_lines`` and ``report_regenerated`` (step 4), and ``created`` (folders or files a first
+    release had to create).
+    """
+    stem = kind.stem(version)
+    items = []
+    if run.get("partner"):
+        changed = ", ".join(run["regenerated"]) if run["regenerated"] else "nothing changed"
+        items.append(f"Regenerated the prerelease against released standard {run['partner']} ({changed}).")
+    items.append(f"Assigned {run['ids']} new hedId{'' if run['ids'] == 1 else 's'}; validated with --require-ids.")
+    if run["last"]:
+        how = "regenerated" if run["report_regenerated"] else "unchanged"
+        items.append(
+            f"Added the CHANGELOG entry from the SchemaComparer report against {run['last']} "
+            f"({run['report_lines']} lines; PRERELEASE_CHANGES.md {how})."
+        )
+    else:
+        items.append("Added the CHANGELOG entry from PRERELEASE_CHANGES.md (first release).")
+    items.append(
+        f"Moved the four formats to hedwiki/, hedxml/, hedjson/ and hedtsv/ and wrote schemas_xml_unmerged/{stem}.xml."
+    )
+    if run.get("created"):
+        items.append("Created " + ", ".join(run["created"]) + " (first release).")
+    items.append(f"Started the {next_version} prerelease with an empty PRERELEASE_CHANGES.md.")
+    items.append(f"Updated {Path(kind.latest_xml()).name}, the docs/schemas_overview.md rows and the README.md row.")
+    items.append("Regenerated schema_versions.json and schemas_latest_json/.")
+    body = "\n".join(textwrap.fill(item, width=72, initial_indent="- ", subsequent_indent="  ") for item in items)
+    return (
+        f"{kind.commit_message(version)}\n\n"
+        f"Prepared with scripts/do_schema_release.py on {date.month}/{date.day}/{date.year}.\n\n{body}\n"
+    )
+
+
 def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     today = datetime.date.today()
     print(f"Releasing {kind.name} {version} (next prerelease {next_version}) in {repo}")
     facts = preflight(repo, kind, version, next_version)
     tools, stem = facts["tools"], kind.stem(version)
     rel = f"{kind.folder}/prerelease/{stem}.mediawiki"
+    record = {"partner": facts["partner"], "last": facts["last"], "regenerated": [], "created": []}
 
     if kind.is_standard:
         step(1, "Validate the prerelease")
@@ -582,6 +637,8 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
         run([tools["hed_update_schemas"], rel], repo, f"hed_update_schemas {rel}")
         changed = git_quiet(repo, "diff", "--stat", "--", f"{kind.folder}/prerelease").stdout.rstrip()
         ok("regeneration changed nothing" if not changed else "regeneration changed:\n" + changed)
+        names = git_quiet(repo, "diff", "--name-only", "--", f"{kind.folder}/prerelease").stdout.split()
+        record["regenerated"] = [Path(name).name for name in names]
     run(
         [tools["hed_validate_schemas"], rel, "--add-all-extensions"],
         repo,
@@ -593,6 +650,7 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     run([tools["hed_add_ids"], ".", kind.name, version], repo, f"hed_add_ids . {kind.name} {version}")
     count = check_ids_only(rel, before, read(repo / rel), facts["id_range"])
     ok(f"{count} hedIds added to {stem}.mediawiki; no other line changed; all inside the range")
+    record["ids"] = count
 
     step(3, "Verify the release candidate")
     run(
@@ -603,10 +661,13 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests"], repo, "python -m unittest discover -s tests")
 
     step(4, "Update CHANGELOG.md")
-    update_changelog(repo, kind, facts["last"], version, today)
+    changelog = update_changelog(repo, kind, facts["last"], version, today)
+    record["report_lines"] = changelog["report_lines"]
+    record["report_regenerated"] = changelog["report_regenerated"]
+    record["created"] += changelog["created"]
 
     step(5, "Move the four formats to the release folders")
-    move_formats(repo, kind, version)
+    record["created"] += move_formats(repo, kind, version)
 
     step(6, f"Start the {next_version} prerelease")
     start_next_prerelease(repo, kind, version, next_version, tools)
@@ -639,9 +700,14 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests"], repo, "python -m unittest discover -s tests")
 
     print("\n== Done: staging the release (nothing is committed)")
-    paths = [kind.folder, "docs/schemas_overview.md", "README.md", "schema_versions.json", "schemas_latest_json"]
-    if not kind.is_standard:
-        paths.append("schemas_xml_unmerged")
+    paths = [
+        kind.folder,
+        "docs/schemas_overview.md",
+        "README.md",
+        "schema_versions.json",
+        "schemas_latest_json",
+        "schemas_xml_unmerged",
+    ]
     git(repo, "add", "-A", "--", *paths)
     leftover = git_quiet(repo, "status", "--porcelain").stdout
     # porcelain "XY path": X is the staged state, Y the unstaged one; only "X " lines are fully staged
@@ -650,8 +716,14 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
         "unstaged or untracked changes remain after staging:\n" + leftover,
     )
     print(git_quiet(repo, "status", "--short").stdout.rstrip())
-    print("\nReview the staged changes, then commit and push:")
-    print(f'   git commit -m "{kind.commit_message(version)}"')
+
+    message = release_commit_message(kind, version, next_version, record, today)
+    message_file = Path(tempfile.gettempdir()) / f"release_commit_{kind.tag(version)}.txt"
+    write(message_file, message)
+    print(f"\nCommit message for this run (written to {message_file}):\n")
+    print("\n".join("   " + line if line else "" for line in message.splitlines()))
+    print("\nReview the staged changes, then commit with that message and push:")
+    print(f'   git commit -F "{message_file}"')
 
 
 # ---------------------------------------------------------------------------------------------
@@ -660,8 +732,8 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
 
 
 def released_paths(kind: Kind, version: str) -> list[str]:
-    """Every path a completed release puts on main: the four formats, the Latest XML, and for a
-    library the unmerged XML copy. ``hedtsv/<stem>`` is a folder."""
+    """Every path a completed release puts on main: the four formats, the Latest XML, and the copy in
+    schemas_xml_unmerged/. ``hedtsv/<stem>`` is a folder."""
     stem = kind.stem(version)
     paths = [
         f"{kind.folder}/hedwiki/{stem}.mediawiki",
@@ -670,8 +742,7 @@ def released_paths(kind: Kind, version: str) -> list[str]:
         f"{kind.folder}/hedtsv/{stem}",
         kind.latest_xml(),
     ]
-    if not kind.is_standard:
-        paths.append(f"schemas_xml_unmerged/{stem}.xml")
+    paths.append(f"schemas_xml_unmerged/{stem}.xml")
     return paths
 
 

@@ -90,11 +90,11 @@ class TestReleasePaths(unittest.TestCase):
             ],
         )
 
-    def test_standard_release_has_no_unmerged_copy(self):
+    def test_standard_release_includes_its_copy(self):
         paths = dr.released_paths(dr.Kind("standard"), "8.5.0")
         self.assertIn("standard_schema/hedtsv/HED8.5.0", paths)
         self.assertIn("standard_schema/hedxml/HEDLatest.xml", paths)
-        self.assertFalse([p for p in paths if p.startswith("schemas_xml_unmerged/")])
+        self.assertIn("schemas_xml_unmerged/HED8.5.0.xml", paths)
 
     def test_prerelease_paths_cover_all_four_formats(self):
         self.assertEqual(
@@ -380,6 +380,70 @@ class TestOverviewRows(unittest.TestCase):
         lines[2] = lines[2].replace("Partnered with", "Notes")
         with self.assertRaises(dr.ReleaseError):
             dr.replace_overview_rows(lines, dr.Kind("score"), "2.2.0", "2.3.0", "October 16, 2026", "8.5.0")
+
+
+class TestCommitMessage(unittest.TestCase):
+    DATE = datetime.date(2026, 10, 17)
+
+    def test_library_release_describes_the_run(self):
+        run = {
+            "partner": "8.5.0",
+            "regenerated": ["HED_lang_1.2.0.xml"],
+            "ids": 0,
+            "last": "1.1.0",
+            "report_lines": 274,
+            "report_regenerated": True,
+            "created": [],
+        }
+        message = dr.release_commit_message(dr.Kind("lang"), "1.2.0", "1.3.0", run, self.DATE)
+        flat = " ".join(message.split())  # bullets are wrapped at 72 columns
+        lines = message.splitlines()
+        self.assertEqual(lines[0], "Release HED lang library 1.2.0")
+        self.assertEqual(lines[1], "")
+        self.assertEqual(lines[2], "Prepared with scripts/do_schema_release.py on 10/17/2026.")
+        self.assertIn("released standard 8.5.0 (HED_lang_1.2.0.xml)", flat)
+        self.assertIn("Assigned 0 new hedIds", flat)
+        self.assertIn("against 1.1.0 (274 lines; PRERELEASE_CHANGES.md regenerated)", flat)
+        self.assertIn("schemas_xml_unmerged/HED_lang_1.2.0.xml", flat)
+        self.assertIn("Started the 1.3.0 prerelease", flat)
+        self.assertIn("HED_lang_Latest.xml", flat)
+        self.assertNotIn("Created", flat)
+        self.assertTrue(all(len(line) <= 72 for line in lines), [line for line in lines if len(line) > 72])
+
+    def test_first_library_release_lists_created_items(self):
+        run = {
+            "partner": "8.5.0",
+            "regenerated": [],
+            "ids": 37,
+            "last": None,
+            "report_lines": 1,
+            "report_regenerated": False,
+            "created": ["library_schemas/slam/CHANGELOG.md", "library_schemas/slam/hedwiki/"],
+        }
+        message = dr.release_commit_message(dr.Kind("slam"), "1.0.0", "1.1.0", run, self.DATE)
+        flat = " ".join(message.split())
+        self.assertIn("(nothing changed)", flat)
+        self.assertIn("Assigned 37 new hedIds", flat)
+        self.assertIn("from PRERELEASE_CHANGES.md (first release)", flat)
+        self.assertIn("library_schemas/slam/CHANGELOG.md", flat)
+
+    def test_standard_release_has_no_partner(self):
+        run = {
+            "partner": None,
+            "regenerated": [],
+            "ids": 1,
+            "last": "8.5.0",
+            "report_lines": 50,
+            "report_regenerated": False,
+            "created": [],
+        }
+        message = dr.release_commit_message(dr.Kind("standard"), "8.6.0", "8.7.0", run, self.DATE)
+        flat = " ".join(message.split())
+        self.assertTrue(message.startswith("Release HED standard schema 8.6.0\n\n"))
+        self.assertIn("Assigned 1 new hedId;", flat)
+        self.assertNotIn("Regenerated the prerelease", flat)
+        self.assertIn("schemas_xml_unmerged/HED8.6.0.xml", flat)
+        self.assertIn("HEDLatest.xml", flat)
 
 
 class TestReadmeRow(unittest.TestCase):
