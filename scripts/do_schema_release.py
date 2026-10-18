@@ -182,6 +182,16 @@ def read(path: Path) -> str:
     return path.read_bytes().decode("utf-8")
 
 
+def write_new_temp_file(prefix: str, suffix: str, text: str) -> Path:
+    """Write ``text`` to a newly created file with an unpredictable name in the temp directory.
+
+    The file is created exclusively, so an existing file or symlink of that name is never followed.
+    """
+    with tempfile.NamedTemporaryFile("wb", prefix=prefix, suffix=suffix, delete=False) as f:
+        f.write(text.encode("utf-8"))
+    return Path(f.name)
+
+
 def write(path: Path, text: str) -> None:
     path.write_bytes(text.encode("utf-8"))
 
@@ -718,8 +728,7 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     print(git_quiet(repo, "status", "--short").stdout.rstrip())
 
     message = release_commit_message(kind, version, next_version, record, today)
-    message_file = Path(tempfile.gettempdir()) / f"release_commit_{kind.tag(version)}.txt"
-    write(message_file, message)
+    message_file = write_new_temp_file(f"release_commit_{kind.tag(version)}_", ".txt", message)
     print(f"\nCommit message for this run (written to {message_file}):\n")
     print("\n".join("   " + line if line else "" for line in message.splitlines()))
     print("\nReview the staged changes, then commit with that message and push:")
@@ -777,8 +786,10 @@ def notes(repo: Path, kind: Kind, version: str, out: Path | None) -> None:
     changelog = git_quiet(repo, "show", f"{ref}:{kind.folder}/CHANGELOG.md")
     require(changelog.returncode == 0, f"cannot read {kind.folder}/CHANGELOG.md on {ref}")
     entry = extract_changelog_entry(changelog.stdout, kind, version)
-    out = out or Path(tempfile.gettempdir()) / f"release_notes_{kind.tag(version)}.md"
-    write(out, entry)
+    if out:
+        write(out, entry)
+    else:
+        out = write_new_temp_file(f"release_notes_{kind.tag(version)}_", ".md", entry)
     ok(f"wrote {len(entry.splitlines())} lines to {out}")
 
     print("\nCreate the release in the GitHub web interface:")

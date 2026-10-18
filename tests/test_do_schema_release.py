@@ -446,6 +446,20 @@ class TestCommitMessage(unittest.TestCase):
         self.assertIn("HEDLatest.xml", flat)
 
 
+class TestNewTempFile(unittest.TestCase):
+    def test_each_call_creates_a_new_file(self):
+        first = dr.write_new_temp_file("release_commit_score_v2.2.0_", ".txt", "Subject\n\n- one\n")
+        second = dr.write_new_temp_file("release_commit_score_v2.2.0_", ".txt", "Other\n")
+        try:
+            self.assertNotEqual(first, second)
+            self.assertTrue(first.name.startswith("release_commit_score_v2.2.0_") and first.suffix == ".txt")
+            self.assertEqual(first.read_text(encoding="utf-8"), "Subject\n\n- one\n")
+            self.assertEqual(second.read_text(encoding="utf-8"), "Other\n")
+        finally:
+            first.unlink()
+            second.unlink()
+
+
 class TestReadmeRow(unittest.TestCase):
     HEADER = "| Schema | Latest | Description | Prerelease | DOI |"
     LINES = [
