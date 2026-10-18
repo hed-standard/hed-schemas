@@ -113,7 +113,7 @@ Every step prints a `== Step N` header, then each command before it runs and an 
 
 ### Example: score 2.2.0
 
-This is a trial run of the score 2.2.0 release on a throwaway clone of the repository (`--repo` pointing at the clone, on a branch named `admin_score_test`). The output is shortened; repeated lines are removed:
+This is a trial run of the score 2.2.0 release on a throwaway clone of the repository (`--repo` pointing at the clone, on a branch named `admin_score_test`). The output is shortened; repeated lines are removed, and `<temp>` stands for the system temporary directory:
 
 ```text
 == Step 0: Preflight checks
@@ -154,7 +154,7 @@ A  library_schemas/score/prerelease/HED_score_2.3.0.mediawiki
 M  schema_versions.json
 A  schemas_xml_unmerged/HED_score_2.2.0.xml
 
-Commit message for this run (written to C:\Users\<you>\AppData\Local\Temp\release_commit_score_v2.2.0_k3x9q2.txt):
+Commit message for this run (written to <temp>/release_commit_score_v2.2.0_k3x9q2.txt):
 
    Release HED score library 2.2.0
 
@@ -173,7 +173,7 @@ Commit message for this run (written to C:\Users\<you>\AppData\Local\Temp\releas
    - Regenerated schema_versions.json and schemas_latest_json/.
 
 Review the staged changes, then commit with that message and push:
-   git commit -F "C:\Users\<you>\AppData\Local\Temp\release_commit_score_v2.2.0_k3x9q2.txt"
+   git commit -F "<temp>/release_commit_score_v2.2.0_k3x9q2.txt"
 ```
 
 Two things in this run are typical of a library release:
