@@ -1,4 +1,4 @@
-[![Documentation](https://img.shields.io/badge/docs-hedtags.org-blue.svg)](https://www.hedtags.org/hed-schemas) Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596) LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483)
+[![Documentation](https://img.shields.io/badge/docs-hedtags.org-blue.svg)](https://www.hedtags.org/hed-schemas) Standard:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7876037.svg)](https://doi.org/10.5281/zenodo.7876037) LANG:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13987483.svg)](https://doi.org/10.5281/zenodo.13987483) MOUSE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23645814.svg)](https://doi.org/10.5281/zenodo.23645814) SCORE:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7897596.svg)](https://doi.org/10.5281/zenodo.7897596)
 
 ## About HED
 
@@ -20,7 +20,7 @@ The following table summarizes the current versions of the HED schemas.
 | ---------------------------------- | ------ | ------------------------------------------------------------------------------------------------- | ---------- | ----------------------- |
 | [**standard**](./standard_schema)  | 8.5.0  | Basic vocabulary for annotating data.<br/> HED_0010000 - HED_0039999                              | 8.6.0      | 10.5281/zenodo.7876037  |
 | [**lang**](library_schemas/lang)   | 1.2.0  | LANG linguistic stimuli annotation vocabulary.<br/> HED_0060000 - HED_0079999                     | 1.3.0      | 10.5281/zenodo.13987483 |
-| [**mouse**](library_schemas/mouse) | 1.0.0  | Mouse-specific behavioral vocabulary.<br/> HED_0100000 - HED_0119999                              | 1.1.0      |                         |
+| [**mouse**](library_schemas/mouse) | 1.0.0  | Mouse-specific behavioral vocabulary.<br/> HED_0100000 - HED_0119999                              | 1.1.0      | 10.5281/zenodo.23645814 |
 | [**score**](library_schemas/score) | 2.2.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>HED_0040000 - HED_0059999 | 2.3.0      | 10.5281/zenodo.7897596  |
 | [**slam**](library_schemas/slam)   |        | SLAM (Sensor Location and Motion).<br/> HED_0080000 - HED_0099999                                 | 1.0.0      |                         |
 
