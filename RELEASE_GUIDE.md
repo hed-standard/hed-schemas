@@ -14,4 +14,4 @@ Review the staged result, commit, push and open a pull request. After it merges:
 python scripts/do_schema_release.py notes score 2.2.0
 ```
 
-Then create the tag and the GitHub release by hand in the GitHub web interface, pasting the notes file as the description.
+Then create the tag and the GitHub release by hand in the GitHub web interface, pasting the release notes it prints as the description.

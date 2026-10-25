@@ -382,7 +382,7 @@ class TestOverviewRows(unittest.TestCase):
             dr.replace_overview_rows(lines, dr.Kind("score"), "2.2.0", "2.3.0", "October 16, 2026", "8.5.0")
 
 
-class TestCommitMessage(unittest.TestCase):
+class TestReleaseSummary(unittest.TestCase):
     DATE = datetime.date(2026, 10, 17)
 
     def test_library_release_describes_the_run(self):
@@ -395,12 +395,12 @@ class TestCommitMessage(unittest.TestCase):
             "report_regenerated": True,
             "created": [],
         }
-        message = dr.release_commit_message(dr.Kind("lang"), "1.2.0", "1.3.0", run, self.DATE)
-        flat = " ".join(message.split())  # bullets are wrapped at 72 columns
-        lines = message.splitlines()
-        self.assertEqual(lines[0], "Release HED lang library 1.2.0")
+        summary = dr.release_summary(dr.Kind("lang"), "1.2.0", "1.3.0", run, self.DATE)
+        flat = " ".join(summary.split())  # bullets are wrapped at 72 columns
+        lines = summary.splitlines()
+        self.assertEqual(lines[0], "Prepared with scripts/do_schema_release.py on 10/17/2026.")
         self.assertEqual(lines[1], "")
-        self.assertEqual(lines[2], "Prepared with scripts/do_schema_release.py on 10/17/2026.")
+        self.assertNotIn("Release HED", flat)
         self.assertIn("released standard 8.5.0 (HED_lang_1.2.0.xml)", flat)
         self.assertIn("Assigned 0 new hedIds", flat)
         self.assertIn("against 1.1.0 (274 lines; PRERELEASE_CHANGES.md regenerated)", flat)
@@ -420,8 +420,8 @@ class TestCommitMessage(unittest.TestCase):
             "report_regenerated": False,
             "created": ["library_schemas/slam/CHANGELOG.md", "library_schemas/slam/hedwiki/"],
         }
-        message = dr.release_commit_message(dr.Kind("slam"), "1.0.0", "1.1.0", run, self.DATE)
-        flat = " ".join(message.split())
+        summary = dr.release_summary(dr.Kind("slam"), "1.0.0", "1.1.0", run, self.DATE)
+        flat = " ".join(summary.split())
         self.assertIn("(nothing changed)", flat)
         self.assertIn("Assigned 37 new hedIds", flat)
         self.assertIn("from PRERELEASE_CHANGES.md (first release)", flat)
@@ -437,27 +437,20 @@ class TestCommitMessage(unittest.TestCase):
             "report_regenerated": False,
             "created": [],
         }
-        message = dr.release_commit_message(dr.Kind("standard"), "8.6.0", "8.7.0", run, self.DATE)
-        flat = " ".join(message.split())
-        self.assertTrue(message.startswith("Release HED standard schema 8.6.0\n\n"))
+        summary = dr.release_summary(dr.Kind("standard"), "8.6.0", "8.7.0", run, self.DATE)
+        flat = " ".join(summary.split())
         self.assertIn("Assigned 1 new hedId;", flat)
         self.assertNotIn("Regenerated the prerelease", flat)
         self.assertIn("schemas_xml_unmerged/HED8.6.0.xml", flat)
         self.assertIn("HEDLatest.xml", flat)
 
 
-class TestNewTempFile(unittest.TestCase):
-    def test_each_call_creates_a_new_file(self):
-        first = dr.write_new_temp_file("release_commit_score_v2.2.0_", ".txt", "Subject\n\n- one\n")
-        second = dr.write_new_temp_file("release_commit_score_v2.2.0_", ".txt", "Other\n")
-        try:
-            self.assertNotEqual(first, second)
-            self.assertTrue(first.name.startswith("release_commit_score_v2.2.0_") and first.suffix == ".txt")
-            self.assertEqual(first.read_text(encoding="utf-8"), "Subject\n\n- one\n")
-            self.assertEqual(second.read_text(encoding="utf-8"), "Other\n")
-        finally:
-            first.unlink()
-            second.unlink()
+class TestCommitSubject(unittest.TestCase):
+    def test_subject_is_safe_inside_double_quotes(self):
+        # prepare prints git commit -m "<subject>", which must work unchanged in bash, PowerShell and cmd
+        for name, version in (("standard", "8.6.0"), ("mouse", "1.0.0")):
+            subject = dr.Kind(name).commit_message(version)
+            self.assertFalse(set(subject) & set("\"'`$%!\\"), subject)
 
 
 class TestReadmeRow(unittest.TestCase):

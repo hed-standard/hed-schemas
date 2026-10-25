@@ -25,7 +25,6 @@ import re
 import shutil
 import subprocess
 import sys
-import tempfile
 import textwrap
 from pathlib import Path
 
@@ -180,16 +179,6 @@ def upstream_remote(repo: Path) -> str:
 
 def read(path: Path) -> str:
     return path.read_bytes().decode("utf-8")
-
-
-def write_new_temp_file(prefix: str, suffix: str, text: str) -> Path:
-    """Write ``text`` to a newly created file with an unpredictable name in the temp directory.
-
-    The file is created exclusively, so an existing file or symlink of that name is never followed.
-    """
-    with tempfile.NamedTemporaryFile("wb", prefix=prefix, suffix=suffix, delete=False) as f:
-        f.write(text.encode("utf-8"))
-    return Path(f.name)
 
 
 def write(path: Path, text: str) -> None:
@@ -592,8 +581,8 @@ def update_overview(repo: Path, kind: Kind, version: str, next_version: str, tod
     )
 
 
-def release_commit_message(kind: Kind, version: str, next_version: str, run: dict, date: datetime.date) -> str:
-    """Return the commit message for a ``prepare`` run: the subject and a summary of what the run did.
+def release_summary(kind: Kind, version: str, next_version: str, run: dict, date: datetime.date) -> str:
+    """Return a summary of what a ``prepare`` run did, for the pull request description.
 
     ``run`` holds what the steps reported: ``partner``, ``regenerated`` (prerelease files changed by
     step 1), ``ids`` (hedIds added in step 2), ``last`` (the previous release or None),
@@ -623,10 +612,7 @@ def release_commit_message(kind: Kind, version: str, next_version: str, run: dic
     items.append(f"Updated {Path(kind.latest_xml()).name}, the docs/schemas_overview.md rows and the README.md row.")
     items.append("Regenerated schema_versions.json and schemas_latest_json/.")
     body = "\n".join(textwrap.fill(item, width=72, initial_indent="- ", subsequent_indent="  ") for item in items)
-    return (
-        f"{kind.commit_message(version)}\n\n"
-        f"Prepared with scripts/do_schema_release.py on {date.month}/{date.day}/{date.year}.\n\n{body}\n"
-    )
+    return f"Prepared with scripts/do_schema_release.py on {date.month}/{date.day}/{date.year}.\n\n{body}\n"
 
 
 def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
@@ -727,12 +713,11 @@ def prepare(repo: Path, kind: Kind, version: str, next_version: str) -> None:
     )
     print(git_quiet(repo, "status", "--short").stdout.rstrip())
 
-    message = release_commit_message(kind, version, next_version, record, today)
-    message_file = write_new_temp_file(f"release_commit_{kind.tag(version)}_", ".txt", message)
-    print(f"\nCommit message for this run (written to {message_file}):\n")
-    print("\n".join("   " + line if line else "" for line in message.splitlines()))
-    print("\nReview the staged changes, then commit with that message and push:")
-    print(f'   git commit -F "{message_file}"')
+    summary = release_summary(kind, version, next_version, record, today)
+    print("\nSummary of this run, for the pull request description:\n")
+    print("\n".join("   " + line if line else "" for line in summary.splitlines()))
+    print("\nReview the staged changes, then commit and push:")
+    print(f'   git commit -m "{kind.commit_message(version)}"')
 
 
 # ---------------------------------------------------------------------------------------------
@@ -788,16 +773,22 @@ def notes(repo: Path, kind: Kind, version: str, out: Path | None) -> None:
     entry = extract_changelog_entry(changelog.stdout, kind, version)
     if out:
         write(out, entry)
+        ok(f"wrote {len(entry.splitlines())} lines to {out}")
     else:
-        out = write_new_temp_file(f"release_notes_{kind.tag(version)}_", ".md", entry)
-    ok(f"wrote {len(entry.splitlines())} lines to {out}")
+        ok(f"{len(entry.splitlines())} lines, printed between the markers below")
 
     print("\nCreate the release in the GitHub web interface:")
     print("   https://github.com/hed-standard/hed-schemas/releases/new")
     print(f"   Tag:    {kind.tag(version)}   (create it on publish)")
     print("   Target: main")
     print(f"   Title:  {kind.title(version)}")
-    print(f"   Notes:  paste the contents of {out}")
+    if out:
+        print(f"   Notes:  paste the contents of {out}")
+    else:
+        print("   Notes:  paste the text between the markers")
+        print("\n----- release notes -----")
+        print(entry.rstrip("\n"))
+        print("----- end of release notes -----")
 
 
 # ---------------------------------------------------------------------------------------------
@@ -815,7 +806,7 @@ def main(argv: list[str] | None = None) -> int:
     n.add_argument("schema")
     n.add_argument("version")
     n.add_argument("--repo", default=".")
-    n.add_argument("--out", help="file for the CHANGELOG entry (default: temp directory)")
+    n.add_argument("--out", help="also write the CHANGELOG entry to this file (default: print it only)")
     args = parser.parse_args(argv)
 
     sys.stdout.reconfigure(line_buffering=True)
