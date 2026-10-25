@@ -193,6 +193,12 @@ class TestChangelog(unittest.TestCase):
         result = dr.insert_changelog_entry("# CHANGELOG\n\n", dr.Kind("score"), "2.2.0", self.ENTRY)
         self.assertEqual(result, "# CHANGELOG\n\n" + self.ENTRY)
 
+    def test_first_entry_is_one_blank_line_below_the_title(self):
+        # the committed mouse and slam CHANGELOGs hold only the title and one newline
+        for text in ("# CHANGELOG\n", "# CHANGELOG", "# CHANGELOG\r\n", "# CHANGELOG\n\n\n"):
+            result = dr.insert_changelog_entry(text, dr.Kind("score"), "2.2.0", self.ENTRY)
+            self.assertEqual(result, "# CHANGELOG\n\n" + self.ENTRY, repr(text))
+
     def test_refuses_duplicate_entry(self):
         once = dr.insert_changelog_entry(self.TEXT, dr.Kind("score"), "2.2.0", self.ENTRY)
         with self.assertRaises(dr.ReleaseError):

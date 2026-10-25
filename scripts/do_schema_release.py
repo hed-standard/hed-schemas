@@ -342,12 +342,16 @@ def format_changelog_entry(kind: Kind, version: str, date: datetime.date, body: 
 
 
 def insert_changelog_entry(text: str, kind: Kind, version: str, entry: str) -> str:
-    """Return CHANGELOG ``text`` with ``entry`` placed before the first release heading (newest first)."""
+    """Return CHANGELOG ``text`` with ``entry`` placed before the first release heading (newest first).
+
+    With no release heading yet (a first release), the entry follows the title after one blank line.
+    """
     require(kind.changelog_heading_prefix(version) not in text, f"CHANGELOG.md already has an entry for {version}")
     lines = text.split("\n")
     index = next((i for i, line in enumerate(lines) if is_release_heading(line)), None)
     if index is None:
-        return text + entry
+        head = text.rstrip("\r\n")
+        return (head + "\n\n" if head else "") + entry
     position = sum(len(line) + 1 for line in lines[:index])
     return text[:position] + entry + text[position:]
 
