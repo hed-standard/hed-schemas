@@ -168,16 +168,16 @@ Then open your browser to [http://localhost:8000](http://localhost:8000). Press 
 
 ### Schema validation and conversion
 
-For schema validation and conversion, install the repository's dependencies, which include the HED Python tools (hedtools, from hed-python `main`):
+For schema validation and conversion, install the repository's dependencies, which include the HED Python tools (hedtools, from PyPI):
 
 ```bash
 pip install -e .
 ```
 
-pip does not refetch an already installed hedtools. To update it to the current hed-python `main`:
+pip does not upgrade an already installed hedtools. To update it to the latest release:
 
 ```bash
-pip install --force-reinstall "hedtools @ git+https://github.com/hed-standard/hed-python.git@main"
+pip install --upgrade hedtools
 ```
 
 Key commands:

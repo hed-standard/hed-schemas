@@ -51,16 +51,16 @@ For a library release, `prepare` therefore stops unless:
 
 ### Tools
 
-hedtools is a dependency of this repository (`pyproject.toml`). From the repository root:
+hedtools is a dependency of this repository (`pyproject.toml`), installed from PyPI. From the repository root:
 
 ```bash
 pip install -e .
 ```
 
-The dependency tracks hed-python `main`, and pip does not refetch an installed hedtools, so refresh it before every release:
+pip does not upgrade an installed hedtools that already satisfies the requirement, so before every release update it to the latest release:
 
 ```bash
-pip install --force-reinstall "hedtools @ git+https://github.com/hed-standard/hed-python.git@main"
+pip install --upgrade hedtools
 ```
 
 `prepare` checks that the installed hedtools has `hed_validate_schemas --require-ids` and stops if it is too old. Run the script with the Python of that environment (for example `.venv\Scripts\python.exe` on Windows); it finds the `hed_*` commands next to that interpreter.
