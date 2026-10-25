@@ -15,7 +15,7 @@ A release is done in three parts:
 
 1. **`prepare`** - on an `admin_*` branch, `scripts/do_schema_release.py prepare` runs every file-level release step, checks each one, and leaves the result staged for review.
 2. **Pull request** - you review, commit and push, open a pull request against hed-standard `main`, and merge it when CI is green.
-3. **`notes` and the GitHub release** - after the merge, `scripts/do_schema_release.py notes` checks `main` and writes the CHANGELOG entry to a file; you create the tag and the GitHub release by hand in the GitHub web interface.
+3. **`notes` and the GitHub release** - after the merge, `scripts/do_schema_release.py notes` checks `main` and prints the CHANGELOG entry to paste as the release description; you create the tag and the GitHub release by hand in the GitHub web interface.
 
 The script never commits, pushes, tags, or calls the GitHub API. The final look over everything, and the release itself, stay with a person.
 

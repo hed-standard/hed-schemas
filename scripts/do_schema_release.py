@@ -7,9 +7,9 @@ Two subcommands, run from the repository root:
     python scripts/do_schema_release.py notes score 2.2.0                  # after the PR has merged
 
 ``prepare`` runs every release step on an ``admin_*`` branch and ends with all changes staged
-(never committed). ``notes`` checks that the release is on hed-standard main and writes the
-CHANGELOG entry to a file for pasting into the GitHub release, which is always created by hand in
-the GitHub web interface. The script never pushes, tags, or calls the GitHub API.
+(never committed). ``notes`` checks that the release is on hed-standard main and prints the
+CHANGELOG entry for pasting into the GitHub release (``--out FILE`` also writes it to a file); the
+release is always created by hand in the GitHub web interface. The script never pushes, tags, or calls the GitHub API.
 
 Every step prints what it does; the first failed command or check prints the reason and exits 1.
 Run it with the Python environment that has hedtools installed (``pip install -e .``).
@@ -220,7 +220,8 @@ def preflight(repo: Path, kind: Kind, version: str, next_version: str) -> dict:
     tools = {name: tool(name) for name in TOOLS}
     help_text = run([tools["hed_validate_schemas"], "--help"], repo, "hed_validate_schemas --help")
     require(
-        "--require-ids" in help_text, "hedtools is too old (no --require-ids); refresh it with pip --force-reinstall"
+        "--require-ids" in help_text,
+        "hedtools is too old (no --require-ids); update it with pip install --upgrade hedtools",
     )
     ok("hedtools has --require-ids")
 
