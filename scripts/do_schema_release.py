@@ -775,24 +775,20 @@ def notes(repo: Path, kind: Kind, version: str, out: Path | None) -> None:
     changelog = git_quiet(repo, "show", f"{ref}:{kind.folder}/CHANGELOG.md")
     require(changelog.returncode == 0, f"cannot read {kind.folder}/CHANGELOG.md on {ref}")
     entry = extract_changelog_entry(changelog.stdout, kind, version)
+    ok(f"{len(entry.splitlines())} lines, printed between the markers below")
     if out:
         write(out, entry)
-        ok(f"wrote {len(entry.splitlines())} lines to {out}")
-    else:
-        ok(f"{len(entry.splitlines())} lines, printed between the markers below")
+        ok(f"also wrote them to {out}")
 
     print("\nCreate the release in the GitHub web interface:")
     print("   https://github.com/hed-standard/hed-schemas/releases/new")
     print(f"   Tag:    {kind.tag(version)}   (create it on publish)")
     print("   Target: main")
     print(f"   Title:  {kind.title(version)}")
-    if out:
-        print(f"   Notes:  paste the contents of {out}")
-    else:
-        print("   Notes:  paste the text between the markers")
-        print("\n----- release notes -----")
-        print(entry.rstrip("\n"))
-        print("----- end of release notes -----")
+    print("   Notes:  paste the text between the markers" + (f" (or the contents of {out})" if out else ""))
+    print("\n----- release notes -----")
+    print(entry.rstrip("\n"))
+    print("----- end of release notes -----")
 
 
 # ---------------------------------------------------------------------------------------------
