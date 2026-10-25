@@ -280,6 +280,20 @@ def preflight(repo: Path, kind: Kind, version: str, next_version: str) -> dict:
         )
         ok(f"partner standard {partner} is the latest released standard and not stale in the cache")
 
+    for where, names in (
+        ("README.md schema table", readme_schema_names(read(repo / "README.md").split("\n"))),
+        (
+            "docs/schemas_overview.md sections",
+            overview_schema_names(read(repo / "docs" / "schemas_overview.md").split("\n")),
+        ),
+    ):
+        require(kind.name in names, f"the {where} has no entry for '{kind.name}'; add it by hand first")
+        problem = schema_order_problem(names)
+        require(
+            problem is None, f"the {where} is not in order (standard first, then libraries alphabetically): {problem}"
+        )
+        ok(f"the {where} lists {kind.name} and is in order")
+
     return {"tools": tools, "id_range": id_range, "last": last, "partner": partner}
 
 
@@ -463,6 +477,28 @@ def start_next_prerelease(repo: Path, kind: Kind, version: str, next_version: st
         repo / kind.folder / "prerelease" / "PRERELEASE_CHANGES.md", f"## Differences between {stem} and {next_stem}\n"
     )
     ok("PRERELEASE_CHANGES.md reset to its heading only")
+
+
+def schema_order_problem(names: list[str]) -> str | None:
+    """Return why ``names`` are out of order, or None. The standard schema comes first, then the libraries alphabetically."""
+    expected = sorted(names, key=lambda name: (name != "standard", name))
+    return None if names == expected else f"found {', '.join(names)}; expected {', '.join(expected)}"
+
+
+def readme_schema_names(lines: list[str]) -> list[str]:
+    """Schema names in the order of the README.md schema table rows (first cell ``[**<name>**]``)."""
+    return [m.group(1).lower() for line in lines if (m := re.match(r"\|\s*\[\*\*([^*]+)\*\*\]", line))]
+
+
+def overview_schema_names(lines: list[str]) -> list[str]:
+    """Schema names in the order of the ``### Standard schema`` and ``### <NAME> library schema`` sections."""
+    names = []
+    for line in lines:
+        if line.strip() == "### Standard schema":
+            names.append("standard")
+        elif m := re.fullmatch(r"### (\w+) library schema", line.strip()):
+            names.append(m.group(1).lower())
+    return names
 
 
 def overview_row(

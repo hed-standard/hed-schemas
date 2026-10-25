@@ -2,9 +2,10 @@
 """Unit tests for the pure logic of ``scripts/do_schema_release.py``.
 
 Covers the naming rules for the standard schema and a library, version checks, the check that
-``hed_add_ids`` only added hedIds, CHANGELOG insertion and extraction, and the replacement of a
-schema's rows in ``docs/schemas_overview.md``. Uses only the standard library (``unittest``); no git
-repo, network or hedtools. The steps that run hedtools and git are exercised by a full ``prepare``
+``hed_add_ids`` only added hedIds, CHANGELOG insertion and extraction, the replacement of a
+schema's rows in ``docs/schemas_overview.md``, and the order of the schemas in ``README.md`` and
+``docs/schemas_overview.md`` (including the committed files). Uses only the standard library
+(``unittest``); no git, network or hedtools. The steps that run hedtools and git are exercised by a full ``prepare``
 run on a throwaway clone (see docs/release_guide.md).
 
 Run from the repository root::
@@ -502,6 +503,36 @@ class TestReadmeRow(unittest.TestCase):
         lines[2] = "| Schema | Current | Description | Next | DOI |"
         with self.assertRaises(dr.ReleaseError):
             dr.replace_readme_row(lines, dr.Kind("score"), "2.2.0", "2.3.0")
+
+
+class TestSchemaOrder(unittest.TestCase):
+    REPO = SCRIPTS_DIR.parent
+
+    def test_standard_first_then_libraries_alphabetically(self):
+        self.assertIsNone(dr.schema_order_problem(["standard", "lang", "mouse", "score", "slam", "testlib"]))
+
+    def test_out_of_order_names_the_expected_order(self):
+        problem = dr.schema_order_problem(["standard", "score", "lang"])
+        self.assertEqual(problem, "found standard, score, lang; expected standard, lang, score")
+        self.assertIsNotNone(dr.schema_order_problem(["lang", "standard"]))
+
+    def test_readme_names(self):
+        self.assertEqual(dr.readme_schema_names(TestReadmeRow.LINES), ["standard", "score", "slam"])
+
+    def test_overview_names(self):
+        lines = ["## Available schemas", "### Standard schema", "text", "### LANG library schema", "### Schema formats"]
+        self.assertEqual(dr.overview_schema_names(lines), ["standard", "lang"])
+
+    def test_committed_readme_is_in_order(self):
+        names = dr.readme_schema_names((self.REPO / "README.md").read_text(encoding="utf-8").splitlines())
+        self.assertIn("standard", names)
+        self.assertIsNone(dr.schema_order_problem(names))
+
+    def test_committed_overview_is_in_order(self):
+        path = self.REPO / "docs" / "schemas_overview.md"
+        names = dr.overview_schema_names(path.read_text(encoding="utf-8").splitlines())
+        self.assertIn("standard", names)
+        self.assertIsNone(dr.schema_order_problem(names))
 
 
 if __name__ == "__main__":
