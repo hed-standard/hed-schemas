@@ -71,7 +71,7 @@ The script needs a git remote that points at `hed-standard/hed-schemas`. The rem
 
 ### Branch
 
-A release must be done on an **`admin_*` branch** that starts from hed-standard `main`:
+A release must be done on an **`admin_*` branch** that starts from hed-standard `main`. The following example assumes that you are on the `main` branch in your local repository and that you are going to release the SCORE HED library schema version 2.2.0:
 
 ```bash
 git fetch upstream
@@ -84,15 +84,27 @@ The working tree must be clean when `prepare` starts, and the branch must contai
 
 ## Releasing with do_schema_release.py
 
-The script takes `standard` or a library name, exactly as `hed_add_ids` does:
+The script takes `standard` or a library name, exactly as `hed_add_ids` does. A release uses one `prepare` command and, after the merge, one `notes` command. The following examples assume that you are in the root of your local repository with its venv activated, on the `admin_*` branch made in [Branch](#branch).
+
+**Prepare a library release.** This example releases the SCORE 2.2.0 prerelease and starts 2.3.0 as the next SCORE prerelease:
 
 ```bash
-python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0       # a library
-python scripts/do_schema_release.py prepare standard 8.6.0 --next 8.7.0    # the standard schema
-python scripts/do_schema_release.py notes score 2.2.0                      # after the merge
+python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0
+```
+
+**Prepare a standard schema release.** This example releases the standard schema 8.6.0 prerelease and starts 8.7.0 as the next standard prerelease:
+
+```bash
+python scripts/do_schema_release.py prepare standard 8.6.0 --next 8.7.0
 ```
 
 `--next` is required: it is the version of the prerelease that `prepare` starts after the release. It is normally the next minor version, but the choice is yours. `--repo PATH` runs the script against another checkout (the default is the current directory); this is how the script is tried out on a throwaway clone.
+
+**Write the release notes after the merge.** This example assumes that the pull request that released SCORE 2.2.0 has been merged:
+
+```bash
+python scripts/do_schema_release.py notes score 2.2.0
+```
 
 Every step prints a `== Step N` header, then each command before it runs and an `ok:` line with its result. The first command that exits with an error, or the first check that fails, prints `FAILED:` with the reason (and the last lines of the command's output) and stops the script with exit status 1. Nothing after that point runs.
 
@@ -113,7 +125,7 @@ Every step prints a `== Step N` header, then each command before it runs and an 
 
 ### Example: score 2.2.0
 
-This is a trial run of the score 2.2.0 release on a throwaway clone of the repository (`--repo` pointing at the clone, on a branch named `admin_score_test`). The output is shortened; repeated lines are removed:
+This is a trial run of the SCORE 2.2.0 release on a throwaway clone of the repository. The following example assumes that the clone is on a branch named `admin_score_test` made from hed-standard `main`, that its remote for hed-standard is named `upstream`, and that the script was run with `--repo` pointing at the clone. At the time, SCORE 2.1.0 (partnered with standard 8.4.0) was the last SCORE release, the SCORE 2.2.0 prerelease was partnered with standard 8.5.0, and 8.5.0 was the latest released standard schema. The output is shortened; repeated lines are removed:
 
 ```text
 == Step 0: Preflight checks
@@ -192,7 +204,7 @@ Then commit with the printed `git commit -m` command, push the branch, and open 
 
 ### If prepare fails
 
-A failure leaves the steps before it done and the rest undone. Nothing is committed, so the branch can always be put back:
+A failure leaves the steps before it done and the rest undone. Nothing is committed, so the branch can always be put back. The following example assumes that you are in the root of your local repository, on the `admin_*` branch where `prepare` failed, and that the branch had no uncommitted changes of your own before `prepare` started (these commands discard every uncommitted change):
 
 ```bash
 git restore --staged --worktree .
@@ -204,7 +216,7 @@ Fix the cause the `FAILED:` line names, and run `prepare` again from a clean tre
 
 ### After the merge: notes and the GitHub release
 
-When the pull request is merged, run:
+When the pull request is merged, run `notes`. The following example assumes that you are in the root of your local repository with its venv activated, and that the pull request that released SCORE 2.2.0 has been merged into hed-standard `main` (any local branch will do, since `notes` reads hed-standard `main` directly):
 
 ```bash
 python scripts/do_schema_release.py notes score 2.2.0
@@ -212,22 +224,58 @@ python scripts/do_schema_release.py notes score 2.2.0
 
 `notes` fetches hed-standard `main` and checks that it holds the released files and the Latest file, that it no longer holds the prerelease of that version, and that the tag does not exist yet. It then extracts the version's entry from the schema's `CHANGELOG.md` on `main`, prints what to enter, and prints the entry between `----- release notes -----` and `----- end of release notes -----` markers. With `--out FILE` it also writes the entry to that file.
 
+The following example is the end of the actual output of `notes mouse 1.0.0`, run on 10/25/2026 after the pull request that released MOUSE 1.0.0 (the first MOUSE release) was merged. The two marker lines are not part of the notes: paste only the lines between them into the release description.
+
+```text
+== Step 2: Extract the CHANGELOG entry
+   ok: 3 lines, printed between the markers below
+
 Create the release in the GitHub web interface:
+   https://github.com/hed-standard/hed-schemas/releases/new
+   Tag:    mouse_v1.0.0   (create it on publish)
+   Target: main
+   Title:  HED MOUSE v1.0.0
+   Notes:  paste the text between the markers
+
+----- release notes -----
+## Changes for HED mouse 1.0.0 Release 10/25/2026
+
+This is the initial release of the HED MOUSE library schema, partnered with HED standard schema 8.5.0.
+----- end of release notes -----
+```
+
+Create the release in the GitHub web interface. The following steps use SCORE 2.2.0 as the example; `notes` prints the tag and title for your release, and [Naming](#naming) shows the pattern:
 
 1. Open [https://github.com/hed-standard/hed-schemas/releases/new](https://github.com/hed-standard/hed-schemas/releases/new).
 2. In the tag field, type the new tag (for example `score_v2.2.0`) and choose to create it when the release is published. Set the target branch to `main`.
 3. Enter the title (for example `HED SCORE v2.2.0`).
-4. Paste the release notes (the text between the markers, or the `--out` file) into the description, and look everything over one last time.
-5. Publish the release.
+4. Paste the release notes (the text between the markers, or the `--out` file) into the description.
+5. Attach the released files (drag them onto the box below the description). For SCORE 2.2.0 they are, from `library_schemas/score/`:
+   - `hedxml/HED_score_2.2.0.xml` (for a library, this is the merged file that includes the standard schema)
+   - `hedjson/HED_score_2.2.0.json`
+   - `hedwiki/HED_score_2.2.0.mediawiki`
+   - `hedtsv.zip`, a zip of the `hedtsv/HED_score_2.2.0/` folder. The following example assumes that you are in the root of your local repository with its venv activated; it writes the zip next to the repository, not inside it, and works the same in bash, PowerShell and cmd:
+     ```bash
+     python -m zipfile -c ../hedtsv.zip library_schemas/score/hedtsv/HED_score_2.2.0
+     ```
+   For the standard schema the files are in `standard_schema/` and named `HED8.6.0.xml`, `HED8.6.0.json`, `HED8.6.0.mediawiki` and `hedtsv/HED8.6.0/`. The same files are uploaded to Zenodo (see [After the release](#after-the-release)).
+6. Look everything over one last time and publish the release.
 
 GitHub creates the tag on `main` when the release is published; no tag is made locally.
 
 ## Releasing the standard schema
 
-The same commands apply, with `standard` in place of a library name:
+The same commands apply, with `standard` in place of a library name. The following example assumes that you are in the root of your local repository with its venv activated, on an `admin_*` branch made from hed-standard `main` (for example `admin_8.6.0`), that 8.5.0 is the latest released standard schema, and that you are going to release the standard schema prerelease 8.6.0 and start 8.7.0 as the next prerelease.
+
+**Prepare the release** (before the pull request):
 
 ```bash
 python scripts/do_schema_release.py prepare standard 8.6.0 --next 8.7.0
+```
+
+**Write the release notes** (after the pull request is merged):
+
+```bash
 python scripts/do_schema_release.py notes standard 8.6.0
 ```
 
@@ -242,6 +290,8 @@ After a standard release, the libraries that will partner with it are repartnere
 
 ## Naming
 
+The following table assumes a release of standard schema 8.6.0 and of SCORE library schema 2.2.0; substitute your own schema name and version:
+
 | Item              | Standard schema                             | Library schema (score)                            |
 | ----------------- | ------------------------------------------- | ------------------------------------------------- |
 | Folder            | `standard_schema/`                          | `library_schemas/score/`                          |
@@ -254,7 +304,7 @@ After a standard release, the libraries that will partner with it are repartnere
 
 ## The steps by hand
 
-The script follows these steps; use them to understand a failure, or when the script cannot be used. The commands are for score 2.2.0 with 2.3.0 next; for the standard schema, use `standard_schema/` and `HED8.6.0` and skip the library-only parts.
+The script follows these steps; use them to understand a failure, or when the script cannot be used. The following steps assume that you are in the root of your local repository with its venv activated, on the `admin_*` branch made in [Branch](#branch), and that you are going to release the SCORE 2.2.0 prerelease (partnered with standard 8.5.0, the latest released standard schema), that SCORE 2.1.0 is the last SCORE release, and that 2.3.0 will be the next SCORE prerelease. For the standard schema, use `standard_schema/` and `HED8.6.0` in place of `library_schemas/score/` and `HED_score_2.2.0`, and skip the library-only parts. The `cp` commands work in bash and PowerShell; in cmd use `copy`.
 
 1. **Regenerate (library) and validate the prerelease.**
 
@@ -345,7 +395,7 @@ The script follows these steps; use them to understand a failure, or when the sc
 
 ## After the release
 
-- **Zenodo**: the DOI is minted automatically through the GitHub integration when the release is published.
+- **Zenodo**: a HED maintainer creates the Zenodo upload by hand; nothing happens automatically when the GitHub release is published. Each schema has its own Zenodo record (the DOIs in the `README.md` schema table), so a release of an existing schema is uploaded as a new version of that schema's record, and the first release of a new library creates a new record. Upload the same files that are attached to the GitHub release (step 5 in [After the merge](#after-the-merge-notes-and-the-github-release)). In the upload form, set **Copyright** to the line in the schema's `LICENSE` file (for example `Copyright (c) 2021, HED Contributors.`) and **License** to Creative Commons Attribution 4.0 International, which is the license in that file. When a new record's DOI is minted, add it in a small `admin_*` pull request: to the badges on the first line of `README.md`, the schema's row in the `README.md` schema table, its section in `docs/schemas_overview.md`, and as a badge on the first line of the schema's own `README.md` (for example `library_schemas/mouse/README.md`). A new version of an existing record keeps the same DOI, so nothing changes.
 - **Downstream**: hed-python bundles the released standard XML in `hed/schema/schema_data/` (and the released library XML it ships), hed-tests refreshes its schema snapshots, and the JavaScript validator picks up the new version.
 - **Partnered libraries**: after a standard release, a library that should use the new standard is repartnered and regenerated on its own branch, then released with this guide.
 
@@ -357,7 +407,7 @@ The script follows these steps; use them to understand a failure, or when the sc
 
 **`partner standard X is not the latest released standard`** - the library must be repartnered with the latest standard on its own branch, and that change merged, before it is released.
 
-**`hedtools is too old (no --require-ids)`** - refresh hedtools with the `--force-reinstall` command in [Tools](#tools).
+**`hedtools is too old (no --require-ids)`** - update hedtools with `pip install --upgrade hedtools` (see [Tools](#tools)).
 
 **Step 2 reports a line changed by more than a hedId** - the prerelease formats were not in step with each other; validate and regenerate the prerelease on its schema branch first.
 
@@ -388,7 +438,7 @@ The test-only library `testlib` is excluded from both generated folders. `hed_up
 
 ### CHANGELOG entries
 
-Each schema's `CHANGELOG.md` starts with its title and lists the releases newest first. An entry starts with a release heading and runs to the next release heading. For a library with an earlier release, `prepare` writes:
+Each schema's `CHANGELOG.md` starts with its title and lists the releases newest first. An entry starts with a release heading and runs to the next release heading. For a library with an earlier release, `prepare` writes an entry like the following. The following example assumes the LANG 1.2.0 release of 10/17/2026, whose previous release, LANG 1.1.0, was partnered with standard 8.4.0, while LANG 1.2.0 is partnered with standard 8.5.0:
 
 ```markdown
 ## Changes for HED lang 1.2.0 Release 10/17/2026
@@ -406,7 +456,7 @@ Each schema's `CHANGELOG.md` starts with its title and lists the releases newest
 - ...
 ```
 
-Before committing, a summary can be added directly under the release heading:
+Before committing, a summary can be added directly under the release heading. The following example is the summary written for that LANG 1.2.0 release:
 
 ```markdown
 ## Key overall changes:

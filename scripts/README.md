@@ -13,16 +13,23 @@ Python script that verifies:
 - Changes are in prerelease/ subdirectories
 - Schema files pass validation using hed-python tools
 
-**Usage:**
+**Usage:** the following examples assume that you are in the root of your local repository with its venv activated, and that `file1.xml` and `file2.mediawiki` are the changed files to check.
+
+**Check the changed files.**
 
 ```bash
-# Basic usage
 python scripts/verify_branch.py file1.xml file2.mediawiki
+```
 
-# Validate all schema extensions
+**Also validate all schema extensions.**
+
+```bash
 python scripts/verify_branch.py file1.mediawiki --validate-all
+```
 
-# Override branch name
+**Check against a different branch name** than the current one.
+
+```bash
 python scripts/verify_branch.py file1.xml --branch standard_new_feature
 ```
 
@@ -35,18 +42,40 @@ Used by the `verify_source_branch.yaml` workflow to ensure PRs follow repository
 Releases a schema, the standard schema or a library, following the [Schema release guide](../docs/release_guide.md). Maintainers only. It has two subcommands:
 
 - **`prepare <standard|library> <version> --next <next>`** runs the release steps on an `admin_*` branch, before the pull request: preflight checks; for a library, regenerating the prerelease from its unmerged mediawiki against the released partner standard; validation; hedId assignment with `hed_add_ids` and a check that only hedIds were added; validation with `--require-ids` and the unit tests; regenerating `PRERELEASE_CHANGES.md` with the hedtools `SchemaComparer` and adding it to the schema's `CHANGELOG.md`; moving the four formats out of `prerelease/` and writing the copy in `schemas_xml_unmerged/`; starting the next prerelease with an empty change log; updating the Latest XML, the schema's rows in `docs/schemas_overview.md` and its row in the `README.md` schema table; and regenerating and checking `schema_versions.json` and `schemas_latest_json/`. It ends with everything staged, prints a summary of what the run did for the pull request description, and prints the `git commit -m` command for the release. It never commits.
-- **`notes <standard|library> <version>`** runs after the pull request has merged: it checks that hed-standard `main` holds the release and that the tag does not exist yet, writes the version's CHANGELOG entry to a file, and prints the tag, target and title to enter when creating the release by hand in the GitHub web interface.
+- **`notes <standard|library> <version>`** runs after the pull request has merged: it checks that hed-standard `main` holds the release and that the tag does not exist yet, prints the tag, target and title to enter when creating the release by hand in the GitHub web interface, and prints the version's CHANGELOG entry between `----- release notes -----` and `----- end of release notes -----` markers (with `--out FILE` it also writes the entry to that file).
 
 Every step prints what it does; the first failed command or check prints `FAILED:` with the reason and exits with status 1. The script never pushes, tags, or calls the GitHub API.
 
-**Usage:**
+**Usage:** the following examples assume that you are in the root of your local repository with its venv activated, on an `admin_*` branch made from hed-standard `main`, and that you are releasing either the SCORE 2.2.0 prerelease (with 2.3.0 as the next prerelease) or the standard schema 8.6.0 prerelease (with 8.7.0 as the next prerelease).
+
+**Prepare a library release.**
 
 ```bash
 python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0
+```
+
+**Prepare a standard schema release.**
+
+```bash
 python scripts/do_schema_release.py prepare standard 8.6.0 --next 8.7.0
+```
+
+**Prepare a release in another checkout** than the current directory (here `/path/to/clone`).
+
+```bash
+python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0 --repo /path/to/clone
+```
+
+**Print the release notes after the merge.**
+
+```bash
 python scripts/do_schema_release.py notes score 2.2.0
-python scripts/do_schema_release.py notes score 2.2.0 --out notes.md     # also write the notes to a file
-python scripts/do_schema_release.py prepare score 2.2.0 --next 2.3.0 --repo /path/to/clone   # another checkout
+```
+
+**Print the release notes and also write them to a file** (here `notes.md`).
+
+```bash
+python scripts/do_schema_release.py notes score 2.2.0 --out notes.md
 ```
 
 Run it with the Python environment that has hedtools installed (`pip install -e .`); it finds the `hed_*` commands next to that interpreter. It needs a git remote pointing at `hed-standard/hed-schemas` (any name) and, for `prepare`, a clean working tree on an `admin_*` branch that contains hed-standard `main`. The pure logic is covered by `tests/test_do_schema_release.py`.
@@ -59,9 +88,16 @@ Generates `schema_versions.json` at the repository root: a single manifest listi
 
 **Usage:**
 
+**Write `schema_versions.json`.**
+
 ```bash
-python scripts/generate_schema_versions.py            # write schema_versions.json
-python scripts/generate_schema_versions.py --check     # exit 1 if the committed file is stale
+python scripts/generate_schema_versions.py
+```
+
+**Check the committed file** (read-only; exits 1 if it is stale).
+
+```bash
+python scripts/generate_schema_versions.py --check
 ```
 
 ### update_latest_json.py
@@ -70,9 +106,16 @@ Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is the merged 
 
 **Usage:**
 
+**Check the Latest copies** (read-only; exits 1 if anything is out of sync).
+
 ```bash
-python scripts/update_latest_json.py --check     # read-only; exit 1 if anything is out of sync
-python scripts/update_latest_json.py --update     # write the latest released JSON into place
+python scripts/update_latest_json.py --check
+```
+
+**Write the latest released JSON into place.**
+
+```bash
+python scripts/update_latest_json.py --update
 ```
 
 Generating a library's JSON needs hedtools (`pip install -e .` from the repository root installs it). The output depends on the hedtools version: after hedtools changes its JSON writer, `--check` can report a library out of date, and `--update` rewrites the copy.

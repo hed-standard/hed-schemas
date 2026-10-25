@@ -124,7 +124,7 @@ Release workflow
 3. Move files from ``prerelease/`` to release directories
 4. Create git tag
 5. Create GitHub release
-6. DOI automatically updated via Zenodo
+6. Upload the released files to the schema's Zenodo record by hand (Zenodo does not update automatically)
 
 File naming conventions
 -----------------------

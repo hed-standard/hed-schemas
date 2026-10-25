@@ -659,7 +659,7 @@ The official release of a new schema version is performed by HED maintainers fol
 1. Final review and approval by the HED Working Group
 2. Regenerating a library against its released partner, assigning permanent `hedId` values with `hed_add_ids`, and checking that no element lacks one (`hed_validate_schemas --require-ids`)
 3. Moving all four formats from `prerelease/` to the release directories, starting the next prerelease, and regenerating the generated version files
-4. Creating the tag and the GitHub release by hand after the pull request merges; Zenodo mints the DOI
+4. Creating the tag and the GitHub release by hand after the pull request merges, then uploading the released files to the schema's Zenodo record by hand (Zenodo does not do this automatically)
 
 A partnered library is released only after the standard version it partners with, since its merged XML embeds that standard. Developers do not need to perform these steps. Once your changes are merged into the `prerelease` directory and approved for release, the maintainers will handle the rest.
 
@@ -684,11 +684,15 @@ Scans `standard_schema/` and every folder under `library_schemas/`:
 - `prerelease` — the `.xml` files in `<area>/prerelease/`
 - `deprecated` — the `.xml` files in `<area>/hedxml/deprecated/` (best effort; a few very old non-semver names such as `HED1.3.xml` are omitted)
 
-```bash
-# Write schema_versions.json at the repo root
-python scripts/generate_schema_versions.py
+**Write `schema_versions.json` at the repo root.**
 
-# Read-only: exit 1 if the committed manifest is out of date (used by CI on PRs)
+```bash
+python scripts/generate_schema_versions.py
+```
+
+**Check the committed manifest** (read-only; exits 1 if it is out of date; CI runs this on pull requests).
+
+```bash
 python scripts/generate_schema_versions.py --check
 ```
 
@@ -702,11 +706,15 @@ Format (top level): `manifest_format_version` (int), `generated` (ISO-8601 times
 
 Verifies (or fixes) that each `schemas_latest_json/*_Latest.json` is the merged JSON of the current latest **released** version of that schema, comparing git blob SHAs. "Latest released" is taken from the canonical released set in `<area>/hedxml/`. The standard schema's copy is taken byte for byte from `<area>/hedjson/`; a library's copy is generated from its merged `<area>/hedxml/` file with hedtools, because `hedjson/` holds the unmerged form. `testlib` is deliberately excluded and must never appear in `schemas_latest_json/`.
 
-```bash
-# Read-only: exit 1 if any *_Latest.json is out of sync (used by CI on PRs)
-python scripts/update_latest_json.py --check
+**Check the Latest copies** (read-only; exits 1 if any `*_Latest.json` is out of sync; CI runs this on pull requests).
 
-# Write the latest released JSON into schemas_latest_json/ where needed
+```bash
+python scripts/update_latest_json.py --check
+```
+
+**Write the latest released JSON into `schemas_latest_json/`** where needed.
+
+```bash
 python scripts/update_latest_json.py --update
 ```
 
