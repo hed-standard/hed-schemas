@@ -250,7 +250,12 @@ Create the release in the GitHub web interface. The following steps use SCORE 2.
 2. In the tag field, type the new tag (for example `score_v2.2.0`) and choose to create it when the release is published. Set the target branch to `main`.
 3. Enter the title (for example `HED SCORE v2.2.0`).
 4. Paste the release notes (the text between the markers, or the `--out` file) into the description.
-5. Attach the released files (drag them onto the box below the description). For SCORE 2.2.0 they are, from `library_schemas/score/`:
+5. Attach the released files (drag them onto the box below the description). Take them from hed-standard `main` as merged, not from whatever branch you ran `notes` on: `notes` reads `main` remotely and does not change your working tree. With a clean working tree, check out the merged `main` first (switch back to your branch afterwards):
+   ```bash
+   git fetch upstream
+   git switch --detach upstream/main
+   ```
+   For SCORE 2.2.0 the files are, from `library_schemas/score/`:
    - `hedxml/HED_score_2.2.0.xml` (for a library, this is the merged file that includes the standard schema)
    - `hedjson/HED_score_2.2.0.json`
    - `hedwiki/HED_score_2.2.0.mediawiki`
