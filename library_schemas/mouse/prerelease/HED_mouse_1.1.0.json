@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "library": "mouse",
   "withStandard": "8.5.0",
   "unmerged": "True",
@@ -13,9 +13,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102001",
         "rooted": "Move-face"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102001",
         "rooted": "Move-face"
       }
     },
@@ -27,9 +29,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102002",
         "rooted": "Move-face"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102002",
         "rooted": "Move-face"
       }
     },
@@ -41,9 +45,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102003",
         "rooted": "Perform"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102003",
         "rooted": "Perform"
       }
     },
@@ -55,9 +61,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102004",
         "rooted": "Perform"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102004",
         "rooted": "Perform"
       }
     },
@@ -69,9 +77,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102005",
         "rooted": "Body-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102005",
         "rooted": "Body-part"
       }
     },
@@ -85,9 +95,11 @@
       ],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102006",
         "rooted": "Body-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102006",
         "rooted": "Body-part"
       }
     },
@@ -98,9 +110,12 @@
       "parent": "Fore-limb-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0102007"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0102007"
+      }
     },
     "Whiskers": {
       "short_form": "Whiskers",
@@ -110,9 +125,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102008",
         "rooted": "Face-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102008",
         "rooted": "Face-part"
       }
     },
@@ -124,9 +141,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102009",
         "rooted": "Body-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102009",
         "rooted": "Body-part"
       }
     },
@@ -140,9 +159,11 @@
       ],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102010",
         "rooted": "Body-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102010",
         "rooted": "Body-part"
       }
     },
@@ -153,9 +174,12 @@
       "parent": "Hind-limb-part",
       "children": [],
       "attributes": {
-        "extensionAllowed": true
+        "extensionAllowed": true,
+        "hedId": "HED_0102011"
       },
-      "explicitAttributes": {}
+      "explicitAttributes": {
+        "hedId": "HED_0102011"
+      }
     },
     "Tail": {
       "short_form": "Tail",
@@ -165,9 +189,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102012",
         "rooted": "Body-part"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102012",
         "rooted": "Body-part"
       }
     },
@@ -181,10 +207,12 @@
       ],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102013",
         "rooted": "Anatomical-item",
         "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102013",
         "rooted": "Anatomical-item",
         "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)"
       }
@@ -197,9 +225,11 @@
       "children": [],
       "attributes": {
         "extensionAllowed": true,
+        "hedId": "HED_0102014",
         "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102014",
         "annotation": "dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron"
       }
     },
@@ -214,9 +244,11 @@
         "suggestedTag": [
           "Sensory-presentation"
         ],
+        "hedId": "HED_0102015",
         "rooted": "Measurement-device"
       },
       "explicitAttributes": {
+        "hedId": "HED_0102015",
         "rooted": "Measurement-device"
       }
     }

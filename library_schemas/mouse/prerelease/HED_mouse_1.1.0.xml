@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<HED version="1.0.0" library="mouse" withStandard="8.5.0">
+<HED version="1.1.0" library="mouse" withStandard="8.5.0">
    <prologue>The HED MOUSE HED library schema is designed to standardize the annotation of rodent behavioral experiments.</prologue>
    <schema>
       <node>
@@ -841,6 +841,10 @@
                         <value>Move-face</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102001</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>mouse</value>
                      </attribute>
@@ -851,6 +855,10 @@
                      <attribute>
                         <name>rooted</name>
                         <value>Move-face</value>
+                     </attribute>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102002</value>
                      </attribute>
                      <attribute>
                         <name>inLibrary</name>
@@ -1259,6 +1267,10 @@
                   <value>Perform</value>
                </attribute>
                <attribute>
+                  <name>hedId</name>
+                  <value>HED_0102003</value>
+               </attribute>
+               <attribute>
                   <name>inLibrary</name>
                   <value>mouse</value>
                </attribute>
@@ -1285,6 +1297,10 @@
                <attribute>
                   <name>rooted</name>
                   <value>Perform</value>
+               </attribute>
+               <attribute>
+                  <name>hedId</name>
+                  <value>HED_0102004</value>
                </attribute>
                <attribute>
                   <name>inLibrary</name>
@@ -1588,6 +1604,10 @@
                         <value>Body-part</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102005</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>mouse</value>
                      </attribute>
@@ -1600,12 +1620,20 @@
                         <value>Body-part</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102006</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>mouse</value>
                      </attribute>
                      <node>
                         <name>Manus</name>
                         <description>The distal segment of the fore-limb, homologous to the hand.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0102007</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>mouse</value>
@@ -1806,6 +1834,10 @@
                               <value>Face-part</value>
                            </attribute>
                            <attribute>
+                              <name>hedId</name>
+                              <value>HED_0102008</value>
+                           </attribute>
+                           <attribute>
                               <name>inLibrary</name>
                               <value>mouse</value>
                            </attribute>
@@ -1828,6 +1860,10 @@
                         <value>Body-part</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102009</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>mouse</value>
                      </attribute>
@@ -1840,12 +1876,20 @@
                         <value>Body-part</value>
                      </attribute>
                      <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102010</value>
+                     </attribute>
+                     <attribute>
                         <name>inLibrary</name>
                         <value>mouse</value>
                      </attribute>
                      <node>
                         <name>Pes</name>
                         <description>The distal segment of the hind-limb, homologous to the foot.</description>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0102011</value>
+                        </attribute>
                         <attribute>
                            <name>inLibrary</name>
                            <value>mouse</value>
@@ -2022,6 +2066,10 @@
                      <attribute>
                         <name>rooted</name>
                         <value>Body-part</value>
+                     </attribute>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102012</value>
                      </attribute>
                      <attribute>
                         <name>inLibrary</name>
@@ -2321,6 +2369,10 @@
                      <value>dc:source Wikipedia https://en.wikipedia.org/wiki/Cell_(biology)</value>
                   </attribute>
                   <attribute>
+                     <name>hedId</name>
+                     <value>HED_0102013</value>
+                  </attribute>
+                  <attribute>
                      <name>inLibrary</name>
                      <value>mouse</value>
                   </attribute>
@@ -2330,6 +2382,10 @@
                      <attribute>
                         <name>annotation</name>
                         <value>dc:source Wikipedia https://en.wikipedia.org/wiki/Neuron</value>
+                     </attribute>
+                     <attribute>
+                        <name>hedId</name>
+                        <value>HED_0102014</value>
                      </attribute>
                      <attribute>
                         <name>inLibrary</name>
@@ -3155,6 +3211,10 @@
                         <attribute>
                            <name>rooted</name>
                            <value>Measurement-device</value>
+                        </attribute>
+                        <attribute>
+                           <name>hedId</name>
+                           <value>HED_0102015</value>
                         </attribute>
                         <attribute>
                            <name>inLibrary</name>
