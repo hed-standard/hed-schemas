@@ -147,6 +147,7 @@ To propose a new library schema:
      - Compatible standard schema version (`withStandard`)
      - Prologue and epilogue text
    - Create initial documentation files (`README.md`, `LICENSE`, `CONTRIBUTORS.md`)
+   - Add a row for the library to the schema table in the repository `README.md` and a `### <NAME> library schema` section to `docs/schemas_overview.md`, each in alphabetical position after the standard schema. The release script checks this order and stops if it is wrong.
 
 6. **Begin development**:
 

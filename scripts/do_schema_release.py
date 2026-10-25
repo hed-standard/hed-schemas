@@ -7,9 +7,9 @@ Two subcommands, run from the repository root:
     python scripts/do_schema_release.py notes score 2.2.0                  # after the PR has merged
 
 ``prepare`` runs every release step on an ``admin_*`` branch and ends with all changes staged
-(never committed). ``notes`` checks that the release is on hed-standard main and writes the
-CHANGELOG entry to a file for pasting into the GitHub release, which is always created by hand in
-the GitHub web interface. The script never pushes, tags, or calls the GitHub API.
+(never committed). ``notes`` checks that the release is on hed-standard main and prints the
+CHANGELOG entry for pasting into the GitHub release (``--out FILE`` also writes it to a file); the
+release is always created by hand in the GitHub web interface. The script never pushes, tags, or calls the GitHub API.
 
 Every step prints what it does; the first failed command or check prints the reason and exits 1.
 Run it with the Python environment that has hedtools installed (``pip install -e .``).
@@ -220,7 +220,8 @@ def preflight(repo: Path, kind: Kind, version: str, next_version: str) -> dict:
     tools = {name: tool(name) for name in TOOLS}
     help_text = run([tools["hed_validate_schemas"], "--help"], repo, "hed_validate_schemas --help")
     require(
-        "--require-ids" in help_text, "hedtools is too old (no --require-ids); refresh it with pip --force-reinstall"
+        "--require-ids" in help_text,
+        "hedtools is too old (no --require-ids); update it with pip install --upgrade hedtools",
     )
     ok("hedtools has --require-ids")
 
@@ -279,6 +280,20 @@ def preflight(repo: Path, kind: Kind, version: str, next_version: str) -> dict:
             "     Delete it so hedtools loads the released file, then rerun.",
         )
         ok(f"partner standard {partner} is the latest released standard and not stale in the cache")
+
+    for where, names in (
+        ("README.md schema table", readme_schema_names(read(repo / "README.md").split("\n"))),
+        (
+            "docs/schemas_overview.md sections",
+            overview_schema_names(read(repo / "docs" / "schemas_overview.md").split("\n")),
+        ),
+    ):
+        require(kind.name in names, f"the {where} has no entry for '{kind.name}'; add it by hand first")
+        problem = schema_order_problem(names)
+        require(
+            problem is None, f"the {where} is not in order (standard first, then libraries alphabetically): {problem}"
+        )
+        ok(f"the {where} lists {kind.name} and is in order")
 
     return {"tools": tools, "id_range": id_range, "last": last, "partner": partner}
 
@@ -463,6 +478,28 @@ def start_next_prerelease(repo: Path, kind: Kind, version: str, next_version: st
         repo / kind.folder / "prerelease" / "PRERELEASE_CHANGES.md", f"## Differences between {stem} and {next_stem}\n"
     )
     ok("PRERELEASE_CHANGES.md reset to its heading only")
+
+
+def schema_order_problem(names: list[str]) -> str | None:
+    """Return why ``names`` are out of order, or None. The standard schema comes first, then the libraries alphabetically."""
+    expected = sorted(names, key=lambda name: (name != "standard", name))
+    return None if names == expected else f"found {', '.join(names)}; expected {', '.join(expected)}"
+
+
+def readme_schema_names(lines: list[str]) -> list[str]:
+    """Schema names in the order of the README.md schema table rows (first cell ``[**<name>**]``)."""
+    return [m.group(1).lower() for line in lines if (m := re.match(r"\|\s*\[\*\*([^*]+)\*\*\]", line))]
+
+
+def overview_schema_names(lines: list[str]) -> list[str]:
+    """Schema names in the order of the ``### Standard schema`` and ``### <NAME> library schema`` sections."""
+    names = []
+    for line in lines:
+        if line.strip() == "### Standard schema":
+            names.append("standard")
+        elif m := re.fullmatch(r"### (\w+) library schema", line.strip()):
+            names.append(m.group(1).lower())
+    return names
 
 
 def overview_row(
