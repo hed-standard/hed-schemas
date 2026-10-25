@@ -19,10 +19,10 @@ The following table summarizes the current versions of the HED schemas.
 | Schema                             | Latest | Description                                                                                       | Prerelease | DOI                     |
 | ---------------------------------- | ------ | ------------------------------------------------------------------------------------------------- | ---------- | ----------------------- |
 | [**standard**](./standard_schema)  | 8.5.0  | Basic vocabulary for annotating data.<br/> HED_0010000 - HED_0039999                              | 8.6.0      | 10.5281/zenodo.7876037  |
-| [**score**](library_schemas/score) | 2.2.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>HED_0040000 - HED_0059999 | 2.3.0      | 10.5281/zenodo.7897596  |
 | [**lang**](library_schemas/lang)   | 1.2.0  | LANG linguistic stimuli annotation vocabulary.<br/> HED_0060000 - HED_0079999                     | 1.3.0      | 10.5281/zenodo.13987483 |
+| [**mouse**](library_schemas/mouse) | 1.0.0  | Mouse-specific behavioral vocabulary.<br/> HED_0100000 - HED_0119999                              | 1.1.0      |                         |
+| [**score**](library_schemas/score) | 2.2.0  | SCORE standard vocabulary for <br/>clinical neurological annotation<br/>HED_0040000 - HED_0059999 | 2.3.0      | 10.5281/zenodo.7897596  |
 | [**slam**](library_schemas/slam)   |        | SLAM (Sensor Location and Motion).<br/> HED_0080000 - HED_0099999                                 | 1.0.0      |                         |
-| [**mouse**](library_schemas/mouse) |        | Mouse-specific behavioral vocabulary.<br/> HED_0100000 - HED_0119999                              | 1.0.0      |                         |
 
 ## HED formats
 

@@ -65,35 +65,6 @@ The standard schema is organized into the following top-level hierarchies:
 
 ______________________________________________________________________
 
-### SCORE library schema
-
-HED-SCORE implements the Standardized Computer-based Organized Reporting of EEG (SCORE) standard for clinical neurological annotation. The SCORE library schema DOI is [10.5281/zenodo.7897596](https://doi.org/10.5281/zenodo.7897596) and has HED IDs in the range HED_40000-HED_59999.
-
-The SCORE library allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms compatible with the HED framework. The vocabulary covers:
-
-- **Finding**: EEG phenomena and patterns observed in recordings
-- **Sleep-related**: Sleep stages and sleep-specific phenomena
-- **Modulators**: Factors affecting EEG patterns (eye state, vigilance, medication)
-- **Background-activity**: Characteristics of ongoing EEG
-- **Episode**: Specific event types (seizures, epileptic episodes)
-
-| Version | Status     | Release date     | Partnered with | XML                                                                                                                         | MEDIAWIKI                                                                                                                         | JSON                                                                                                                         | TSV                                                                                                                        |
-| ------- | ---------- | ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 2.2.0   | Latest     | October 16, 2026 | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_2.2.0.xml)     | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedwiki/HED_score_2.2.0.mediawiki)    | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedjson/HED_score_2.2.0.json)    | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/hedtsv/HED_score_2.2.0)            |
-| 2.3.0   | Prerelease |                  | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/prerelease/hedtsv/HED_score_2.3.0) |
-
-**Latest version (stable link):** [HED_score_Latest.xml](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_Latest.xml)
-
-**References:**
-
-> Hermes, D., Pal Attia, T., Beniczky, S. et al.\\ Hierarchical Event Descriptor library schema for EEG data annotation.\\ Sci Data 12, 1448 (2025). [https://doi.org/10.1038/s41597-025-05791-2](https://doi.org/10.1038/s41597-025-05791-2)
-
-> Beniczky, S, et al. (2013). Standardized computer based organized reporting of EEG: SCORE.\\ Epilepsia 54.6 (2013).
-
-> Beniczky, S., et al. (2017). Standardized computer based organized reporting of EEG: SCORE second version.\\ Clinical Neurophysiology 128.11 (2017).
-
-______________________________________________________________________
-
 ### LANG library schema
 
 The HED Language library schema (HED LANG) contains vocabulary for annotating language experiments in cognitive science. The LANG library schema DOI is [10.5281/zenodo.13987483](https://doi.org/10.5281/zenodo.13987483) and has HED IDs in the range HED_60000-HED_79999.
@@ -124,6 +95,46 @@ The schema supports both carefully controlled experiments addressing specific ps
 
 ______________________________________________________________________
 
+### MOUSE library schema
+
+The HED MOUSE library schema provides vocabulary for mouse/rodent experiment annotation. The MOUSE library schema has HED IDs in the range HED_100000-HED_119999. The DOI has not yet been assigned. Version 1.0.0 is the first stable release, and 1.1.0 is the prerelease under development. The library provides vocabulary specific to mouse and rodent experiments, including rodent-specific behaviors, experimental paradigms for animal studies, sensory stimuli relevant to rodent research, and recording techniques specific to animal models.
+
+| Version | Status     | Release date     | Partnered with | XML                                                                                                                         | MEDIAWIKI                                                                                                                         | JSON                                                                                                                         |
+| ------- | ---------- | ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 1.0.0   | Latest     | October 25, 2026 | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/hedxml/HED_mouse_1.0.0.xml)     | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/hedwiki/HED_mouse_1.0.0.mediawiki)    | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/hedjson/HED_mouse_1.0.0.json)    |
+| 1.1.0   | Prerelease |                  | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.1.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.1.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.1.0.json) |
+
+______________________________________________________________________
+
+### SCORE library schema
+
+HED-SCORE implements the Standardized Computer-based Organized Reporting of EEG (SCORE) standard for clinical neurological annotation. The SCORE library schema DOI is [10.5281/zenodo.7897596](https://doi.org/10.5281/zenodo.7897596) and has HED IDs in the range HED_40000-HED_59999.
+
+The SCORE library allows neurologists, neurophysiologists, and brain researchers to annotate electrophysiology recordings using terms from an internationally accepted set of defined terms compatible with the HED framework. The vocabulary covers:
+
+- **Finding**: EEG phenomena and patterns observed in recordings
+- **Sleep-related**: Sleep stages and sleep-specific phenomena
+- **Modulators**: Factors affecting EEG patterns (eye state, vigilance, medication)
+- **Background-activity**: Characteristics of ongoing EEG
+- **Episode**: Specific event types (seizures, epileptic episodes)
+
+| Version | Status     | Release date     | Partnered with | XML                                                                                                                         | MEDIAWIKI                                                                                                                         | JSON                                                                                                                         | TSV                                                                                                                        |
+| ------- | ---------- | ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 2.2.0   | Latest     | October 16, 2026 | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_2.2.0.xml)     | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedwiki/HED_score_2.2.0.mediawiki)    | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedjson/HED_score_2.2.0.json)    | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/hedtsv/HED_score_2.2.0)            |
+| 2.3.0   | Prerelease |                  | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/prerelease/HED_score_2.3.0.json) | [Directory](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score/prerelease/hedtsv/HED_score_2.3.0) |
+
+**Latest version (stable link):** [HED_score_Latest.xml](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/score/hedxml/HED_score_Latest.xml)
+
+**References:**
+
+> Hermes, D., Pal Attia, T., Beniczky, S. et al.\\ Hierarchical Event Descriptor library schema for EEG data annotation.\\ Sci Data 12, 1448 (2025). [https://doi.org/10.1038/s41597-025-05791-2](https://doi.org/10.1038/s41597-025-05791-2)
+
+> Beniczky, S, et al. (2013). Standardized computer based organized reporting of EEG: SCORE.\\ Epilepsia 54.6 (2013).
+
+> Beniczky, S., et al. (2017). Standardized computer based organized reporting of EEG: SCORE second version.\\ Clinical Neurophysiology 128.11 (2017).
+
+______________________________________________________________________
+
 ### SLAM library schema
 
 The HED SLAM library schema provides vocabulary for Sensor Location and Motion annotation. The SLAM library schema has HED IDs in the range HED_80000-HED_99999. The DOI has not yet been assigned. This library is currently in prerelease development and provides vocabulary for describing sensor locations and positioning, motion tracking and recording, spatial relationships, and movement characteristics.
@@ -131,16 +142,6 @@ The HED SLAM library schema provides vocabulary for Sensor Location and Motion a
 | Version | Status     | Release date | Partnered with | XML                                                                                                                       | MEDIAWIKI                                                                                                                       | JSON                                                                                                                       |
 | ------- | ---------- | ------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | 1.0.0   | Prerelease |              | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/slam/prerelease/HED_slam_1.0.0.json) |
-
-______________________________________________________________________
-
-### MOUSE library schema
-
-The HED MOUSE library schema provides vocabulary for mouse/rodent experiment annotation. The MOUSE library schema has HED IDs in the range HED_100000-HED_119999. The DOI has not yet been assigned. This library is currently in prerelease development and provides vocabulary specific to mouse and rodent experiments, including rodent-specific behaviors, experimental paradigms for animal studies, sensory stimuli relevant to rodent research, and recording techniques specific to animal models.
-
-| Version | Status     | Release date | Partnered with | XML                                                                                                                         | MEDIAWIKI                                                                                                                         | JSON                                                                                                                         |
-| ------- | ---------- | ------------ | -------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | Prerelease |              | Standard 8.5.0 | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.mediawiki) | [Raw](https://raw.githubusercontent.com/hed-standard/hed-schemas/main/library_schemas/mouse/prerelease/HED_mouse_1.0.0.json) |
 
 ______________________________________________________________________
 

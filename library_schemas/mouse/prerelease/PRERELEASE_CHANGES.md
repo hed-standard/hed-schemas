@@ -1,3 +1,1 @@
-## Summary of changes since last release
-
-This is the initial release of the HED MOUSE library schema, partnered with HED standard schema 8.5.0.
+## Differences between HED_mouse_1.0.0 and HED_mouse_1.1.0

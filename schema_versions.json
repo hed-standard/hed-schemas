@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T20:17:31.847860+00:00",
+  "generated": "2026-10-25T14:43:16.270942+00:00",
   "libraries": {
     "": {
       "deprecated": [
@@ -176,13 +176,20 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2026-10-06T05:47:41-05:00",
-          "file": "library_schemas/mouse/prerelease/HED_mouse_1.0.0.xml",
-          "sha": "81456a6b0f2f5618a900f0b06abb29311dfd97e0",
-          "version": "1.0.0"
+          "date": "2026-10-25T14:43:02.402150+00:00",
+          "file": "library_schemas/mouse/prerelease/HED_mouse_1.1.0.xml",
+          "sha": "1671763db5a9300db7d7abb275a8f6cbde19e8fc",
+          "version": "1.1.0"
         }
       ],
-      "released": []
+      "released": [
+        {
+          "date": "2026-10-25T14:42:42.725296+00:00",
+          "file": "library_schemas/mouse/hedxml/HED_mouse_1.0.0.xml",
+          "sha": "a4ecc73348d6eb83b16ac48b9ad19b47cf19e8a2",
+          "version": "1.0.0"
+        }
+      ]
     },
     "score": {
       "deprecated": [],
@@ -237,7 +244,7 @@
       "deprecated": [],
       "prerelease": [
         {
-          "date": "2026-10-06T12:59:43-05:00",
+          "date": "2026-10-17T16:32:24-05:00",
           "file": "library_schemas/slam/prerelease/HED_slam_1.0.0.xml",
           "sha": "e98884aa662f05c591caa31bf0996cf12dae912e",
           "version": "1.0.0"
